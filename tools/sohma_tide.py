@@ -16,6 +16,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import urllib.parse
 import urllib.request
 
 PORT = "punta-del-este"
@@ -56,7 +57,8 @@ def find_pdf(year):
         for href in re.findall(r'href="([^"]+\.pdf)"', html, flags=re.I):
             name = href.upper().replace("%20", " ")
             if "PUNTA" in name and "ESTE" in name and str(year) in name:
-                return href if href.startswith("http") else SITE + "/" + href.lstrip("/")
+                url = href if href.startswith("http") else SITE + "/" + href.lstrip("/")
+                return urllib.parse.quote(url, safe=":/%?=&")      # the SOHMA links carry literal spaces
     for g in GUESSES:
         url = g.format(s=SITE, y=year)
         try:
