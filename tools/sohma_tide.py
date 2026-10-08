@@ -134,7 +134,7 @@ def main():
         months.append(key)
     # índice: meses disponibles (todos los años ya publicados)
     have = sorted(f[:-5] for f in os.listdir(a.out) if re.match(r"^\d{4}-\d{2}\.json$", f))
-    changed += write_json(os.path.join(a.out, "index.json"), dict(PORT_INFO, months=have, updated=dt.date.today().isoformat()))
+    changed += write_json(os.path.join(a.out, "index.json"), dict(PORT_INFO, months=have))   # no date: runs without news must not commit
     print("%s: %d meses, %d archivos cambiados" % (a.year, len(months), changed))
     return 0
 
