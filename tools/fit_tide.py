@@ -8,6 +8,7 @@ pegar en shared/TideTable.mc del repo del reloj.
 Uso: python3 tools/fit_tide.py --port la-paloma --year 2026
 """
 import argparse
+import calendar
 import datetime as dt
 import json
 import math
@@ -71,7 +72,7 @@ def main():
     res = [y - sum(ci * ri for ci, ri in zip(coef, row(t))) for t, y in zip(T, Y)]
     rms = math.sqrt(sum(e * e for e in res) / len(res))
     print("%s %d: media %.1f cm, RMS %.2f cm, max %.1f cm" % (a.port, a.year, coef[0], rms, max(abs(e) for e in res)))
-    out = {"port": a.port, "year": a.year, "t0": "%d-01-01T00:00-03:00" % a.year, "t0_epoch": int(t0.timestamp()) + 3 * 3600,
+    out = {"port": a.port, "year": a.year, "t0": "%d-01-01T00:00-03:00" % a.year, "t0_epoch": calendar.timegm(t0.timetuple()) + 3 * 3600,
            "mean_cm": coef[0], "rms_cm": rms,
            "cons": {names[i]: {"period_h": CONS[names[i]], "cos": coef[1 + 2 * i], "sin": coef[2 + 2 * i]} for i in range(len(names))}}
     json.dump(out, open(os.path.join(root, "harmonics.json"), "w"), indent=1)
