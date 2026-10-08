@@ -13,6 +13,15 @@ sin horario de verano). `harmonics.json` en cada carpeta son los armónicos
 ajustados a la tabla anual (`tools/fit_tide.py`), el respaldo offline del reloj.
 Para agregar un puerto del SOHMA: una entrada en `PORTS` de `tools/sohma_tide.py`.
 
+**Brasil — `tide/imbituba/`:** la tábua oficial de la **DHN (Marinha do Brasil)** para el
+Porto de Imbituba, tomada del PDF anual que republica la Epagri/CIRAM de Santa
+Catarina (el sitio de la Marinha bloquea descargas automáticas). El PDF trae
+sólo horas y alturas de cada pleamar/bajamar; `tools/ciram_tide.py` las
+interpola a alturas horarias (medios cosenos, cm sobre el nivel de reducción de la
+DHN) y guarda los extremos originales en `x`. Mismo formato que los puertos
+uruguayos. Florianópolis también está en el PDF pero es la estación de la bahía;
+para las playas oceánicas de la isla se usa Imbituba.
+
 ```json
 {"port":"punta-del-este","month":"2026-10","days":31,"utc_offset":-3,"unit":"cm",
  "h":[99,98,96, ...]}            // 24 valores por día, h[(día-1)*24 + hora]

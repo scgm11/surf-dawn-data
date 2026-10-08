@@ -18,6 +18,8 @@ jobs:
         run: python3 tools/sohma_tide.py --year "$(date +%Y)"
       - name: Año siguiente (si el SOHMA ya lo publicó)
         run: python3 tools/sohma_tide.py --year "$(( $(date +%Y) + 1 ))" || echo "todavía no está"
+      - name: Brasil, Imbituba (DHN vía Epagri/CIRAM; el PDF anual se renueva solo)
+        run: python3 tools/ciram_tide.py --port imbituba
       - name: Publicar cambios
         run: |
           git config user.name "surf-dawn-bot"
