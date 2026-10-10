@@ -3,7 +3,8 @@
 del reloj cuando no puede bajar el mes). Lee tide/<puerto>/<año>-MM.json,
 ajusta por mínimos cuadrados 30 constituyentes y escribe
 tide/<puerto>/harmonics.json; imprime además las constantes en Monkey C para
-pegar en shared/TideTable.mc del repo del reloj.
+pegar en shared-bg/TideTable.mc del repo del reloj (scripts/build.sh copia ese
+archivo para Pronóstico y Sesión).
 
 Uso: python3 tools/fit_tide.py --port la-paloma --year 2026
 """
