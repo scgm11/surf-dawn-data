@@ -1,0 +1,568 @@
+
+==== NOAA stations ====
+GET https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions -> 2042754 bytes
+count 3502 R 1260
+{"state": "HI", "tidepredoffsets": {"self": "https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1610367/tidepredoffsets.json"}, "type": "S", "timemeridian": -150, "reference_id": "1612340", "timezonecorr": -10, "id": "1610367", "name": "Nonopapa, Niihau Island", "lat": 21.87, "lng": -160.235, "affiliations": "", "portscode": "", "products": null, "disclaimers": null, "notices": null, "self": null, "expand": null, "tideType": ""}
+[{'state': '', 'tidepredoffsets': {'self': 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9684403/tidepredoffsets.json'}, 'type': 'R', 'timemeridian': 0, 'reference_id': '', 'timezonecorr': -6, 'id': '9684403', 'name': 'Puntarenas', 'lat': 9.973299980163574, 'lng': -84.83170318603516, 'affiliations': '', 'portscode': '', 'products': None, 'disclaimers': None, 'notices': None, 'self': None, 'expand': None, 'tideType': ''}]
+[{'state': '', 'tidepredoffsets': {'self': 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9812501/tidepredoffsets.json'}, 'type': 'R', 'timemeridian': 0, 'reference_id': '', 'timezonecorr': -5, 'id': '9812501', 'name': 'Balboa, Canal Zone', 'lat': 8.966699600219727, 'lng': -79.56670379638672, 'affiliations': '', 'portscode': '', 'products': None, 'disclaimers': None, 'notices': None, 'self': None, 'expand': None, 'tideType': ''}]
+[{'state': '', 'tidepredoffsets': {'self': 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1910000/tidepredoffsets.json'}, 'type': 'R', 'timemeridian': 180, 'reference_id': '', 'timezonecorr': 12, 'id': '1910000', 'name': 'SUVA HARBOR, Viti Levu Island', 'lat': -18.1333, 'lng': 178.425, 'affiliations': '', 'portscode': '', 'products': None, 'disclaimers': None, 'notices': None, 'self': None, 'expand': None, 'tideType': ''}]
+[{'state': '', 'tidepredoffsets': {'self': 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1732417/tidepredoffsets.json'}, 'type': 'R', 'timemeridian': None, 'reference_id': '', 'timezonecorr': -10, 'id': '1732417', 'name': 'Papeete Harbor, Fare Ute Point', 'lat': -17.535, 'lng': -149.572, 'affiliations': '', 'portscode': '', 'products': None, 'disclaimers': None, 'notices': None, 'self': None, 'expand': None, 'tideType': ''}]
+[{'state': 'CA', 'tidepredoffsets': {'self': 'https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/9410230/tidepredoffsets.json'}, 'type': 'R', 'timemeridian': 0, 'reference_id': '', 'timezonecorr': -8, 'id': '9410230', 'name': 'La Jolla (Scripps Institution Wharf)', 'lat': 32.86688888888889, 'lng': -117.2571388888889, 'affiliations': '', 'portscode': '', 'products': None, 'disclaimers': None, 'notices': None, 'self': None, 'expand': None, 'tideType': ''}]
+non-US R: [('1619000', 'JOHNSTON ATOLL', 16.74, -169.53), ('1619910', 'SAND ISLAND, MIDWAY ISLANDS', 28.21, -177.36), ('1630000', 'APRA HARBOR, GUAM', 13.44, 144.66), ('1631428', 'Pago Bay, Guam', 13.43, 144.8), ('1732417', 'Papeete Harbor, Fare Ute Point', -17.54, -149.57), ('1770000', 'PAGO PAGO Harbor, Tutuila Island', -14.28, -170.69), ('1820000', 'KWAJALEIN ATOLL (Kwajalein I.)', 8.73, 167.74), ('1890000', 'WAKE ISLAND (U.S.)', 19.29, 166.62), ('1910000', 'SUVA HARBOR, Viti Levu Island', -18.13, 178.43), ('2431000', 'Diego Garcia', -7.29, 72.39), ('2695535', 'Ferry Reach (Biological Station)', 32.37, -64.7), ('2695540', 'St. Georges Island', 32.37, -64.7), ('6835001', 'Djakarta, Java', -2.2, 106.87), ('9500966', 'Madero, Tampico Harbor, Mexico', 22.26, -97.79), ('9504651', 'Salina Cruz', 16.16, -95.2), ('9507601', 'Guaymas', 27.92, -110.91), ('9640507', 'La Union (Cutuco)', 13.33, -87.82), ('9684403', 'Puntarenas', 9.97, -84.83), ('9710441', 'SETTLEMENT POINT, GRAND BAHAMAS ISLAND', 26.71, -79.0), ('9761115', 'Barbuda', 17.59, -61.82), ('9812501', 'Balboa, Canal Zone', 8.97, -79.57), ('9817583', 'Cristobal (Colon), Panama Canal', 9.35, -79.92), ('9991474', 'La Libertad, Bahia de Santa Elena', -2.2, -80.91), ('9991475', 'Guayaquil', -2.2, -79.87), ('9992401', 'San Cristobal, Galapagos islands', -0.9, -89.62)]
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260101&datum=MLLW&station=1910000&time_zone=gmt&units=metric&interval=h&format=json -> 937 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.464"},{"t":"2026-01-01 01:00", "v":"0.768"},{"t":"2026-01-01 02:00", "v":"1.094"},{"t":"2026-01-01 03:00", "v":"1.36"},{"t":"2026-01-01 04:00", "v":"1.501"},{"t":"2026-01-01 05:00", "v":"1.476"},{"t":"2026-01-01 06:00", "v":"1.284"},{"t":"2026-01-01 07:00", "v":"0.965"},{"t":"2026-01-01 08:00", "v":"0.587"},{"t":"2026-01-01 09:00", "v":"0.236"},{'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260101&datum=MLLW&station=1732417&time_zone=gmt&units=metric&interval=h&format=json -> 931 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.132"},{"t":"2026-01-01 01:00", "v":"0.097"},{"t":"2026-01-01 02:00", "v":"0.067"},{"t":"2026-01-01 03:00", "v":"0.05"},{"t":"2026-01-01 04:00", "v":"0.05"},{"t":"2026-01-01 05:00", "v":"0.066"},{"t":"2026-01-01 06:00", "v":"0.092"},{"t":"2026-01-01 07:00", "v":"0.124"},{"t":"2026-01-01 08:00", "v":"0.154"},{"t":"2026-01-01 09:00", "v":"0.17"},{"t'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260101&datum=MLLW&station=9812501&time_zone=gmt&units=metric&interval=h&format=json -> 935 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.859"},{"t":"2026-01-01 01:00", "v":"1.109"},{"t":"2026-01-01 02:00", "v":"1.786"},{"t":"2026-01-01 03:00", "v":"2.698"},{"t":"2026-01-01 04:00", "v":"3.604"},{"t":"2026-01-01 05:00", "v":"4.291"},{"t":"2026-01-01 06:00", "v":"4.592"},{"t":"2026-01-01 07:00", "v":"4.423"},{"t":"2026-01-01 08:00", "v":"3.823"},{"t":"2026-01-01 09:00", "v":"2.937"},'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260101&datum=MLLW&station=9684403&time_zone=gmt&units=metric&interval=h&format=json -> 935 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.421"},{"t":"2026-01-01 01:00", "v":"0.671"},{"t":"2026-01-01 02:00", "v":"1.118"},{"t":"2026-01-01 03:00", "v":"1.662"},{"t":"2026-01-01 04:00", "v":"2.185"},{"t":"2026-01-01 05:00", "v":"2.569"},{"t":"2026-01-01 06:00", "v":"2.714"},{"t":"2026-01-01 07:00", "v":"2.571"},{"t":"2026-01-01 08:00", "v":"2.158"},{"t":"2026-01-01 09:00", "v":"1.571"},'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260101&datum=MSL&station=1732417&time_zone=gmt&units=metric&interval=h&format=json -> 944 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.024"},{"t":"2026-01-01 01:00", "v":"-0.011"},{"t":"2026-01-01 02:00", "v":"-0.041"},{"t":"2026-01-01 03:00", "v":"-0.058"},{"t":"2026-01-01 04:00", "v":"-0.058"},{"t":"2026-01-01 05:00", "v":"-0.042"},{"t":"2026-01-01 06:00", "v":"-0.016"},{"t":"2026-01-01 07:00", "v":"0.016"},{"t":"2026-01-01 08:00", "v":"0.046"},{"t":"2026-01-01 09:00", "v":"0.'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20271231&datum=MLLW&station=9410230&time_zone=gmt&units=metric&interval=h&format=json -> 664860 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 00:00", "v":"0.183"},{"t":"2026-01-01 01:00", "v":"0.508"},{"t":"2026-01-01 02:00", "v":"0.792"},{"t":"2026-01-01 03:00", "v":"0.977"},{"t":"2026-01-01 04:00", "v":"1.037"},{"t":"2026-01-01 05:00", "v":"0.982"},{"t":"2026-01-01 06:00", "v":"0.856"},{"t":"2026-01-'
+GET https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&application=surf-dawn&begin_date=20260101&end_date=20260102&datum=MLLW&station=9410230&time_zone=gmt&units=metric&interval=hilo&format=json -> 424 bytes
+'{ "predictions" : [\n{"t":"2026-01-01 03:59", "v":"1.037", "type":"H"},{"t":"2026-01-01 08:10", "v":"0.654", "type":"L"},{"t":"2026-01-01 14:38", "v":"2.035", "type":"H"},{"t":"2026-01-01 22:08", "v":"-0.485", "type":"L"},{"t":"2026-01-02 04:45", "v":"1.107", "type":"H"},{"t":"2026-01-02 09:05", "v":"0.63", "type":"L"},{"t":"2026-01-02 15:26", "v":"2.109", "type":"H"},{"t":"2026-01-02 22:52", "v":"-0.564", "type":"L"}\n]}\n'
+GET https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1732417/harcon.json?units=metric -> 11933 bytes
+'{\n  "units": "meters",\n  "HarmonicConstituents": [\n    {\n      "number": 1,\n      "name": "M2",\n      "description": "Principal lunar semidiurnal constituent",\n      "amplitude": 0.061,\n      "phase_GMT": 308.4,\n      "phase_local": 18.5,\n      "speed": 28.984104,\n      "comments": "Vector Averaged of 4 years (1996, 1997, 1999, 2001).  SSa and Msf are not used."\n    },\n    {\n      "number": 2,\n      "name": "S2",\n      "description": "Principal solar semidiurnal constituent",\n      "amplitude": 0.072,\n      "phase_GMT": 320.2,\n      "phase_local": 20.2,\n      "speed": 30.0,\n      "comments": "Vector Averaged of 4 years (1996, 1997, 1999, 2001).  SSa and Msf are not used."\n    },\n    {\n      "number": 3,\n      "name": "N2",\n      "description": "Larger lunar elliptic semidiurnal constituent'
+GET https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations/1732417/datums.json?units=metric -> 2161 bytes
+'{\n  "accepted": "Apr 17 2003",\n  "superseded": "",\n  "epoch": "1983-2001",\n  "units": "meters",\n  "OrthometricDatum": "Ortho",\n  "datums": [\n    {\n      "name": "STND",\n      "description": "Station Datum",\n      "value": 0.0\n    },\n    {\n      "name": "MHHW",\n      "description": "Mean Higher-High Water",\n      "value": 12.948\n    },\n    {\n      "name": "MHW",\n      "description": "Mean High Water",\n      "value": 12.933\n    },\n    {\n      "name": "DTL",\n      "description": "Mean Diurnal Tide Level",\n      "value": 12.839\n    },\n    {\n      "name": "MTL",\n      "description": "Mean Tide Level",\n      "value": 12.836\n    },\n    {\n      "name": "MSL",\n      "description": "Mean Sea Level",\n      "value": 12.837\n    },\n    {\n      "name": "MLW",\n      "description": "Mean Low Water",\n      "value": 12.74\n    },\n    {\n      "name": "MLLW",\n      "description": "Mean Lower-Low Water",\n      "value": 12.729\n    },\n    {\n      "name": "GT",\n      "description": "Great Diurnal Range",\n      "value": 0.219\n    },\n    {\n      "name": "MN",\n      "description": "Mean Range of Tide",\n      "value": 0.193\n    },\n    {\n      "name": "DHQ",\n      "description": "Mean Diurnal High Water Inequali'
+
+==== JMA ====
+GET https://www.data.jma.go.jp/kaiyou/db/tide/suisan/station2026.php -> 103933 bytes
+'<table class="data2" summary=" 潮位表掲載地点一覧表 ">\n    <tr class="mtx">\n    <th rowspan="3" abbr="番号">番号</th>\n    <th rowspan="3" abbr="地点記号">地点<br />記号</th>\n    <th rowspan="3" abbr="掲載地点名">掲載地点名</th>\n    <th rowspan="3" abbr="緯度">緯度<br />（北緯）</th>\n    <th rowspan="3" abbr="経度">経度<br />（東経）</th>\n    <th rowspan="3" abbr="MSL-潮位表基準面">MSL-<br />潮位表<br />基準面<br />（cm）</th>\n    <th rowspan="3" abbr="MSLの標高">MSLの<br />標高<br />（cm）</th>\n    <th rowspan="3" abbr="潮位表基準面の標高">潮位表<br />基準面<br />の標高<br />（cm）</th>\n    <th colspan="8" abbr="主要4分潮">主要4分潮</th>\n    <th rowspan="3" abbr="分潮一覧表">分潮一覧表</th>\n    <th rowspan="3" abbr="備考">備考</th>\n  </tr>\n  <tr>\n  <th colspan="2" abbr="M2">M<sub>2</sub></th>\n  <th colspan="2" abbr="S2">S<sub>2</sub></th>\n  <th colspan="2" abbr="K1">K<sub>1</sub></th>\n  <th colspan="2" abbr="O1">O<sub>1</sub></th>\n  </tr>\n  <tr>\n  <th abbr="M2の振幅">振幅<br />（cm）</th>\n  <th abbr="M2の遅角">遅角<br />（°）</th>\n  <th abbr="S2の振幅">振幅<br />（cm）</th>\n  <th abbr="S2の遅角">遅角<br />（°）</th>\n  <th abbr="K1の振幅">振幅<br />（cm）</th>\n  <th abbr="K1の遅角">遅角<br />（°）</th>\n  <th abbr="O1の振幅">振幅<br />（cm）</th>\n  <th abbr="O1の遅角">遅角<br />（°）</th>\n  </tr>\n<tr  class="mtx"><td>1</td>\n<td>WN</td><td><a href="suisan.php?stn=WN&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">稚内</a></td>\n<td>45゜24\'</td>\n<td>141゜41\'</td>\n<td>18.0</td>\n<td>-3.8</td>\n<td>-21.8</td>\n<td>2.18</td>\n<td>109.78</td>\n<td>1.93</td>\n<td>141.52</td>\n<td>6.41</td>\n<td>17.95</td>\n<td>6.23</td>\n<td>351.89\r\n</td>\n<td><a href="harms60.php?stn=WN&amp;year=2026&amp;tyear=2026">2026年</a></td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>2</td>\n<td>KE</td><td><a href="suisan.php?stn=KE&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">枝幸</a></td>\n<td>44゜56\'</td>\n<td>142゜35\'</td>\n<td>57.0</td>\n<td>-</td>\n<td>-</td>\n<td>16.83</td>\n<td>85.95</td>\n<td>7.96</td>\n<td>130.10</td>\n<td>17.34</td>\n<td>172.72</td>\n<td>16.54</td>\n<td>152.17\r\n</td>\n<td>-</td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>3</td>\n<td>A0</td><td><a href="suisan.php?stn=A0&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">紋別</a></td>\n<td>44゜21\'</td>\n<td>143゜22\'</td>\n<td>71.0</td>\n<td>-</td>\n<td>-</td>\n<td>17.43</td>\n<td>88.58</td>\n<td>8.08</td>\n<td>132.29</td>\n<td>21.36</td>\n<td>183.00</td>\n<td>21.01</td>\n<td>160.48\r\n</td>\n<td>-</td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>4</td>\n<td>AS</td><td><a href="suisan.php?stn=AS&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">網走</a></td>\n<td>44゜01\'</td>\n<td>144゜17\'</td>\n<td>68.0</td>\n<td>-19.0</td>\n<td>-87.0</td>\n<td>16.99</td>\n<td>90.77</td>\n<td>7.82</td>\n<td>134.83</td>\n<td>21.24</td>\n<td>197.59</td>\n<td>21.90</td>\n<td>176.24\r\n</td>\n<td><a href="harms60.php?stn=AS&amp;year=2026&amp;tyear=2026">2026年</a></td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>5</td>\n<td>A6</td><td><a href="suisan.php?stn=A6&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">羅臼</a></td>\n<td>44゜01\'</td>\n<td>145゜12\'</td>\n<td>64.0</td>\n<td>-</td>\n<td>-</td>\n<td>17.26</td>\n<td>94.28</td>\n<td>7.74</td>\n<td>138.38</td>\n<td>19.75</td>\n<td>197.41</td>\n<td>19.96</td>\n<td>176.77\r\n</td>\n<td>-</td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>6</td>\n<td>NM</td><td><a href="suisan.php?stn=NM&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">根室</a></td>\n<td>43゜21\'</td>\n<td>145゜35\'</td>\n<td>87.0</td>\n<td>-</td>\n<td>-</td>\n<td>30.29</td>\n<td>104.30</td>\n<td>13.93</td>\n<td>148.86</td>\n<td>23.58</td>\n<td>171.31</td>\n<td>18.27</td>\n<td>144.99\r\n</td>\n<td>-</td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>7</td>\n<td>HN</td><td><a href="suisan.php?stn=HN&amp;ys=2026&amp;ms=10&amp;ds=13&amp;ye=2026&amp;me=10&amp;de=27">花咲</a></td>\n<td>43゜17\'</td>\n<td>145゜34\'</td>\n<td>86.0</td>\n<td>-23.0</td>\n<td>-109.0</td>\n<td>28.72</td>\n<td>105.14</td>\n<td>12.98</td>\n<td>146.89</td>\n<td>21.53</td>\n<td>172.96</td>\n<td>22.82</td>\n<td>159.43\r\n</td>\n<td><a href="harms60.php?stn=HN&amp;year=2026&amp;tyear=2026">2026年</a></td>\n<td>&nbsp;</td></tr>\n<tr  class="mtx"><td>8</t'
+rows with codes: 243
+GET https://www.data.jma.go.jp/kaiyou/data/db/tide/suisan/txt/2026/TK.txt -> 50005 bytes
+2026 lines 365
+' 87119145162169166154140128123128140155168175172157130 94 55 22  2  0 1726 1 1TK 4 8169141517699999999999999 9 11232135 -299999999999999'
+' 48 86124155175182176160142128122127140158174182179160126 84 42  7-11-1026 1 2TK 45818215141839999999999999910 21222225-1399999999999999'
+'116 99 84 75 74 84102125146161166160146128109 94 83 80 83 92104116124127261231TK 95716623 112799999999999999 333 7317 0 8099999999999999'
+GET https://www.data.jma.go.jp/kaiyou/data/db/tide/suisan/txt/2027/TK.txt -> 50005 bytes
+2027 lines 365
+'125118109101 96 97105120137153162162154140123106 90 77 70 70 77 8910311527 1 1TK1034163999999999999999999999 421 951830 6999999999999999'
+'122126125122118114114120131144156162160152138122103 84 68 58 56 64 79 9627 1 2TK 122126111716299999999999999 5311131938 5699999999999999'
+' 16 14 29 59 97134161175173158137115 98 93101122148170180175153122 86 54271231TK 72117618 918099999999999999 039 131254 9399999999999999'
+GET https://www.data.jma.go.jp/kaiyou/data/db/tide/suisan/txt/2028/TK.txt -> ERROR HTTP Error 404: Not Found
+
+==== IMI ====
+GET https://erddap.marine.ie/erddap/tabledap/IMI-TidePrediction.csv?stationID,latitude,longitude&distinct() -> 1188 bytes
+'stationID,latitude,longitude\n,degrees_north,degrees_east\nAchill_Island_MODELLED,53.9522,-10.1016\nAranmore,54.9896,-8.49562\nArklow,52.79205,-6.145231\nBallycotton,51.82776,-8.0007\nBallyglass,54.253,-9.89\nBray_Harbour_MODELLED,53.2191,-6.0901\nBuncranna,55.12662,-7.464125\nCarrigaholt_MODELLED,52.5965,-9.6812\nCastletownbere,51.6496,-9.9034\nClare_Island_MODELLED,53.8019,-9.9443\nCrosshaven_MODELLED,51.7794,-8.2411\nDingle,52.13924,-10.27732\nDublin_Port,53.34574,-6.22166\nDungarvan_MODELLED,52.0672,-7.5521\nDunmore,52.14754,-6.99166\nFenit,52.27129,-9.8644\nGalway,53.26895,-9.04796\nHowth,53.39148,-6.0683\nInishmore,53.126,-9.66\nKillary_Harbour_MODELLED,53.6316,-9.9016\nKillybegs,54.6364,-8.3949\nKilrush,52.63191,-9.50208\nKinsale_MODELLED,51.6777,-8.446\nLahinch_MODELLED,52.911,-9.3899\nLetterfrack_MODELLED,53.582,-10.0388\nMalin_Head,55.37168,-7.33432\nPort_Oriel,53.79899,-6.221713\nRingaskiddy,51.84,-8.304\nRoonagh,53.76235,-9.90442\nRossaveel,53.26693,-9.562056\nRosslare,52.2546,-6.334861\nSkerries,53.585,-6.108117\nSligo,54.3046,-8.5689\nTom_Clarke_Bridge,53.34623,-6.227383\nTory_Island_MODELLED,55.2508,-8.1962\nUnion_Hall,51.559,-9.1335\nWexford,52.33852,-6.4589\nWicklow_MODELLED,52.9889,-6.0127\n'
+GET https://erddap.marine.ie/erddap/tabledap/IMI-TidePrediction.csv?time,stationID,Water_Level&time%3E=2026-01-01T00:00:00Z&time%3C=2026-01-01T02:00:00Z -> 35697 bytes
+'time,stationID,Water_Level\nUTC,,metres\n2026-01-01T00:15:00Z,Achill_Island_MODELLED,2.47\n2026-01-01T00:20:00Z,Achill_Island_MODELLED,2.53\n2026-01-01T00:25:00Z,Achill_Island_MODELLED,2.59\n2026-01-01T00:30:00Z,Achill_Island_MODELLED,2.65\n2026-01-01T00:35:00Z,Achill_Island_MODELLED,2.71\n2026-01-01T00:40:00Z,Achill_Island_MODELLED,2.77\n2026-01-01T00:45:00Z,Achill_Island_MODELLED,2.83\n2026-01-01T00:50:00Z,Achill_Island_MODELLED,2.89\n2026-01-01T00:55:00Z,Achill_Island_MODELLED,2.95\n2026-01-01T01:00:00Z,Achill_Island_MODELLED,3.01\n2026-01-01T01:05:00Z,Achill_Island_MODELLED,3.07\n2026-01-01T01:10:00Z,Achill_Island_MODELLED,3.12\n2026-01-01T01:15:00Z,Achill_Island_MODELLED,3.18\n2026-01-01T01:20:00Z,Achill_Island_MODELLED,3.23\n2026-01-01T01:25:00Z,Achill_Island_MODELLED,3.29\n2026-01-01T01:30:00Z,Achill_Island_MODELLED,3.34\n2026-01-01T01:35:00Z,Achill_Island_MODELLED,3.39\n2026-01-01T01:40:00Z,Achill_Island_MODELLED,3.44\n2026-01-01T01:45:00Z,Achill_Island_MODELLED,3.48\n2026-01-01T01:50:00Z,Achill_Island_MODELLED,3.53\n2026-01-01T01:55:00Z,Achill_Island_MODELLED,3.57\n2026-01-01T02:00:00Z,Achill_Island_MODELLED,3.62\n2026-01-01T00:00:00Z,Aranmore,2.0\n2026-01-01T00:05:00Z,Aranmore,2.05\n2026-01-01T00:10:00Z,Aranmore,2.1\n2026-01-01T00:15:00Z,Aranmore,2.15\n2026-01-01T00:20:00Z,Aranmore,2.2\n2026-01-01T00:25:00Z,Aranmore,2.25\n2026-01-01T00:30:00Z,Aranmore,2.3\n2026-01-01T00:35:00Z,Aranmore,2.35\n2026-01-01T00:40:00Z,Aranmore,2.4\n2026-01-01T00:45:00Z,Aranmore,2.45\n2026-01-01T00:50:00Z,Aranmore,2.5\n2026-01-01T00:55:00Z,Aranmore,2.55\n2026-01-01T01:00:00Z,Aranmore,2.6\n2026-01-01T01:05:00Z,Aranmore,2.65\n2026-01-01T01:10:00Z,Aranmore,2.69\n2026-01-01T01:15:00Z,Aranmore,2.74\n2026-01-01T01:20:00Z,Aranmore,2.78\n2026-01-01T01:25:00Z,Aranmore,2.83\n2026-01-01T01:30:00Z,Aranmore,2.87\n2026-01-01T01:35:00Z,Aranmore,2.91\n2026-01-01T01:40:00Z,Aranmore,2.95\n2026-01-01T01:45:00Z,Aranmore,2.99\n2026-01-01T01:50:00Z,Aranmore,3.03\n2026-01-01T01:55:00Z,Aranmore,3.06\n2026-01-01T02:00:00Z,Aranmore,3.1\n2026-01-01T00:00:00Z,Arklow,0.74\n2026-01-01T00:05:00Z,Arklow,0.72\n2026-01-01T00:10:00Z,Arklow,0.7\n2026-01-01T00:15:00Z,Arklow,0.68\n2026-01-01T00:20:00Z,Arklow,0.66\n2026-01-01T00:25:00Z,Arklow,0.64\n2026-01-01T00:30:00Z,Arklow,0.63\n2026-01-01T00:35:00Z,Arklow,0.61\n2026-01-01T00:40:00Z,Arklow,0.6\n2026-01-01T00:45:00Z,Arklow,0.58\n2026-01-01T00:50:00Z,Arklow,0.57\n2026-01-01T00:55:00Z,Arklow,0.55\n2026-01-01T01:00:00Z,Arklow,0.54\n2026-01-01T01:05:00Z,Arklow,0.53\n2026-01-01T01:10:00Z,Arklow,0.52\n2026-01-01T01:15:00Z,Arklow,0.51\n2026-01-01T01:20:00Z,Arklow,0.51\n2026-01-01T01:25:00Z,Arklow,0.5\n2026-01-01T01:30:00Z,Arklow,0.5\n2026-01-01T01:35:00Z,Arklow,0.49\n2026-01-01T01:40:00Z,Arklow,0.49\n2026-01-01T01:45:00Z,Arklow,0.49\n2026-01-01T01:50:00Z,Arklow,0.49\n2026-01-01T01:55:00Z,Arklow,0.49\n2026-01-01T02:00:00Z,Arklow,0.49\n2026-01-01T00:00:00Z,Ballycotton,2.61\n2026-01-01T00:05:00Z,Ballycotton,2.67\n2026-01-01T00:10:00Z,Ballycotton,2.73\n2026-01-01T00:15:00Z,Ballycotton,2.79\n2026-01-01T00:20:00Z,Ballycotton,2.85\n2026-'
+
+==== LINZ ====
+GET https://www.linz.govt.nz/products-services/tides-and-tidal-streams/tide-predictions/tide-predictions-list-view -> 496001 bytes
+435 csv links
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Akaroa 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Akaroa 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Akaroa 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Akaroa 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Akaroa 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anakakata Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anakakata Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anakakata Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anakakata Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anakakata Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anawhata 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anawhata 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anawhata 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anawhata 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Anawhata 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ben Gunn Wharf 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ben Gunn Wharf 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ben Gunn Wharf 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ben Gunn Wharf 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ben Gunn Wharf 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Bluff 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Bluff 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Bluff 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Bluff 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Bluff 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Castlepoint 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Castlepoint 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Castlepoint 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Castlepoint 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Castlepoint 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Charleston 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Charleston 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Charleston 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Charleston 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Charleston 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dargaville 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dargaville 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dargaville 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dargaville 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dargaville 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Deep Cove 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Deep Cove 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Deep Cove 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Deep Cove 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Deep Cove 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dog Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dog Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dog Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dog Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dog Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dunedin 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dunedin 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dunedin 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dunedin 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Dunedin 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elaine Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elaine Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elaine Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elaine Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elaine Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elie Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elie Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elie Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elie Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Elie Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fishing Rock - Raoul Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fishing Rock - Raoul Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fishing Rock - Raoul Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fishing Rock - Raoul Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fishing Rock - Raoul Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Flour Cask Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Flour Cask Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Flour Cask Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Flour Cask Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Flour Cask Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fresh Water Basin 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fresh Water Basin 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fresh Water Basin 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fresh Water Basin 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Fresh Water Basin 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Gisborne 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Gisborne 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Gisborne 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Gisborne 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Gisborne 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Green Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Green Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Green Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Green Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Green Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Halfmoon Bay - Oban 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Halfmoon Bay - Oban 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Halfmoon Bay - Oban 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Halfmoon Bay - Oban 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Halfmoon Bay - Oban 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Havelock 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Havelock 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Havelock 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Havelock 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Havelock 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Helensville 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Helensville 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Helensville 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Helensville 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Helensville 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Huruhi Harbour 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Huruhi Harbour 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Huruhi Harbour 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Huruhi Harbour 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Huruhi Harbour 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Jackson Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Jackson Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Jackson Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Jackson Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Jackson Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaikōura 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaikōura 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaikōura 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaikōura 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaikōura 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaingaroa - Chatham Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaingaroa - Chatham Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaingaroa - Chatham Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaingaroa - Chatham Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaingaroa - Chatham Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaiteriteri 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaiteriteri 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaiteriteri 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaiteriteri 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaiteriteri 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaituna River Entrance 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaituna River Entrance 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaituna River Entrance 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaituna River Entrance 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kaituna River Entrance 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kawhia 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kawhia 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kawhia 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kawhia 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Kawhia 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Korotiti Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Korotiti Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Korotiti Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Korotiti Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Korotiti Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Leigh 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Leigh 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Leigh 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Leigh 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Leigh 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Long Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Long Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Long Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Long Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Long Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lottin Point - Wakatiri 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lottin Point - Wakatiri 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lottin Point - Wakatiri 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lottin Point - Wakatiri 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lottin Point - Wakatiri 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lyttelton 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lyttelton 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lyttelton 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lyttelton 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Lyttelton 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Man o‘War Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Man o‘War Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Man o‘War Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Man o‘War Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Man o‘War Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mana Marina 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mana Marina 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mana Marina 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mana Marina 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mana Marina 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Marsden Point 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Marsden Point 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Marsden Point 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Marsden Point 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Marsden Point 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Motuara Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Motuara Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Motuara Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Motuara Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Motuara Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Moturiki Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Moturiki Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Moturiki Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Moturiki Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Moturiki Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Māpua 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Māpua 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Māpua 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Māpua 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Māpua 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mātiatia Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mātiatia Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mātiatia Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mātiatia Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Mātiatia Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Napier 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Napier 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Napier 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Napier 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Napier 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Nelson 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Nelson 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Nelson 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Nelson 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Nelson 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/New Brighton Pier 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/New Brighton Pier 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/New Brighton Pier 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/New Brighton Pier 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/New Brighton Pier 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/North Cape - Otou 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/North Cape - Otou 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/North Cape - Otou 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/North Cape - Otou 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/North Cape - Otou 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Oamaru 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Oamaru 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Oamaru 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Oamaru 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Oamaru 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Omaha Bridge 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Omaha Bridge 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Omaha Bridge 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Omaha Bridge 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Omaha Bridge 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Onehunga 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Onehunga 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Onehunga 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Onehunga 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Onehunga 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opononi 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opononi 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opononi 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opononi 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opononi 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opua 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opua 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opua 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opua 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Opua 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Owenga - Chatham Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Owenga - Chatham Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Owenga - Chatham Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Owenga - Chatham Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Owenga - Chatham Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Paratutae Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Paratutae Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Paratutae Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Paratutae Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Paratutae Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Picton 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Picton 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Picton 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Picton 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Picton 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Chalmers 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Chalmers 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Chalmers 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Chalmers 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Chalmers 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Taranaki 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Taranaki 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Taranaki 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Taranaki 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Taranaki 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Ōhope Wharf 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Ōhope Wharf 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Ōhope Wharf 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Ōhope Wharf 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Port Ōhope Wharf 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Pouto Point 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Pouto Point 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Pouto Point 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Pouto Point 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Pouto Point 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Raglan 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangatira Point 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangatira Point 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangatira Point 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangatira Point 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangatira Point 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangitaiki River Entrance 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangitaiki River Entrance 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangitaiki River Entrance 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangitaiki River Entrance 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Rangitaiki River Entrance 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Richmond Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Richmond Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Richmond Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Richmond Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Richmond Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Riverton - Aparima 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Riverton - Aparima 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Riverton - Aparima 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Riverton - Aparima 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Riverton - Aparima 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Scott Base 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Scott Base 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Scott Base 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Scott Base 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Scott Base 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Spit Wharf 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Spit Wharf 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Spit Wharf 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Spit Wharf 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Spit Wharf 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Sumner Head 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Sumner Head 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Sumner Head 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Sumner Head 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Sumner Head 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tarakohe 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tarakohe 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tarakohe 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tarakohe 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tarakohe 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tauranga 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tauranga 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tauranga 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tauranga 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tauranga 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Thames 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Thames 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Thames 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Thames 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Thames 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Timaru 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Timaru 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Timaru 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Timaru 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Timaru 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Town Basin 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Town Basin 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Town Basin 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Town Basin 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Town Basin 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tāmaki River 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tāmaki River 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tāmaki River 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tāmaki River 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Tāmaki River 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waihopai River Entrance 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waihopai River Entrance 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waihopai River Entrance 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waihopai River Entrance 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waihopai River Entrance 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waitangi - Chatham Island 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waitangi - Chatham Island 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waitangi - Chatham Island 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waitangi - Chatham Island 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Waitangi - Chatham Island 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Weiti River Entrance 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Weiti River Entrance 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Weiti River Entrance 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Weiti River Entrance 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Weiti River Entrance 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Welcombe Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Welcombe Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Welcombe Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Welcombe Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Welcombe Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wellington 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wellington 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wellington 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wellington 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wellington 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Westport 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Westport 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Westport 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Westport 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Westport 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whakatāne 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whakatāne 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whakatāne 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whakatāne 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whakatāne 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whanganui River Entrance 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whanganui River Entrance 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whanganui River Entrance 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whanganui River Entrance 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whanganui River Entrance 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangaroa 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangaroa 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangaroa 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangaroa 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangaroa 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangārei 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangārei 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangārei 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangārei 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whangārei 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whitianga 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whitianga 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whitianga 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whitianga 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Whitianga 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wilson Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wilson Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wilson Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wilson Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Wilson Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōkukari Bay 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōkukari Bay 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōkukari Bay 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōkukari Bay 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōkukari Bay 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōmokoroa 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōmokoroa 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōmokoroa 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōmokoroa 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōmokoroa 2029.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōpōtiki Wharf 2025.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōpōtiki Wharf 2026.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōpōtiki Wharf 2027.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōpōtiki Wharf 2028.csv
+  https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Ōpōtiki Wharf 2029.csv
+14 sec-port links; first: ['https://static.charts.linz.govt.nz/tide-tables/sec-ports/auckland.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/bluff.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/gisborne.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/lyttelton.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/marsden-point.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/napier.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/nelson.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/onehunga.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/picton.pdf', 'https://static.charts.linz.govt.nz/tide-tables/sec-ports/port-taranaki.pdf']
+GET https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu%20Bay%202026.csv -> 19450 bytes
+Manu Bay 2026 lines 368
+"\ufeff396,Manu Bay,37°49'S,174°49'E"
+'Based on constituent set with reference date:,31-Dec-2022'
+'Local Std or Daylight Time,Tidal heights in metres.'
+'1,Th,1,2026,02:21,0.8,08:41,3.2,14:56,0.9,21:06,3.2'
+'2,Fr,1,2026,03:22,0.7,09:42,3.3,15:56,0.8,22:06,3.3'
+'3,Sa,1,2026,04:18,0.6,10:38,3.5,16:51,0.6,23:00,3.4'
+'4,Su,1,2026,05:10,0.5,11:29,3.6,17:43,0.6,23:51,3.4'
+'5,Mo,1,2026,06:00,0.5,12:17,3.6,18:31,0.5,,'
+'30,We,12,2026,03:27,3.1,09:36,0.9,15:50,3.2,22:10,0.9'
+'31,Th,12,2026,04:23,3.0,10:31,1.1,16:45,3.0,23:06,1.0'
+GET https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Manu%20Bay%202028.csv -> 19504 bytes
+Manu Bay 2028 lines 369
+"\ufeff396,Manu Bay,37°49'S,174°49'E"
+'Based on constituent set with reference date:,31-Dec-2022'
+'Local Std or Daylight Time,Tidal heights in metres.'
+'1,Sa,1,2028,01:22,3.1,07:29,0.9,13:40,3.2,19:57,0.9'
+'2,Su,1,2028,01:59,3.0,08:07,1.0,14:16,3.1,20:35,1.0'
+'3,Mo,1,2028,02:37,2.9,08:46,1.1,14:54,3.0,21:16,1.1'
+'4,Tu,1,2028,03:18,2.9,09:29,1.2,15:35,2.9,22:00,1.1'
+'5,We,1,2028,04:04,2.8,10:17,1.3,16:22,2.8,22:49,1.2'
+'30,Sa,12,2028,03:32,0.9,09:50,3.1,16:02,1.0,22:06,3.1'
+'31,Su,12,2028,04:17,0.8,10:33,3.3,16:47,0.8,22:50,3.2'
+GET https://static.charts.linz.govt.nz/tide-tables/maj-ports/csv/Auckland%202027.csv -> 19494 bytes
+Auckland 2027 lines 368
+"\ufeff070,Auckland,36°51'S,174°46'E                                          "
+'Based on constituent set with reference date:,31-Dec-2014'
+'Local Std or Daylight Time,Tidal heights in metres.'
+'1,Fr,1,2027,02:42,3.0,08:44,0.9,15:04,3.1,21:17,0.8'
+'2,Sa,1,2027,03:39,2.9,09:43,1.0,15:57,3.0,22:13,0.9'
+'3,Su,1,2027,04:39,2.9,10:42,1.1,16:51,2.9,23:08,1.0'
+'4,Mo,1,2027,05:37,2.9,11:37,1.1,17:46,2.8,,'
+'5,Tu,1,2027,00:03,1.0,06:32,2.9,12:28,1.1,18:40,2.8'
+'30,Th,12,2027,03:34,0.7,10:03,3.2,16:00,0.9,22:20,3.0'
+'31,Fr,12,2027,04:13,0.7,10:44,3.2,16:41,0.9,23:00,3.0'
+GET https://www.linz.govt.nz/sites/default/files/2026-06/NZNA_Secondary-ports-2026-27.csv -> 35577 bytes
+secondary lines 414
+'6400,Auckland,36,51,174,46,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,3.3,2.8,1.0,0.5,1.94,,,,,,'
+'6504,Bluff,46,36,168,21,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.8,2.4,1.1,0.6,1.77,,,,,,'
+'6425,Gisborne,38,40,178,02,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.0,1.7,0.8,0.4,1.26,,,,,,'
+'6490,Lyttelton,43,36,172,43,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.6,2.0,0.8,0.3,1.46,,,,,,'
+'6487,Kaikōura,42,25,173,42,+0017,+0010 to +0025,+0017,+0007 to +0029,1.8,1.3,0.4,0.1,0.9,0.74,,,,,'
+'6394,Marsden Point,35,50,174,30,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.7,2.3,0.9,0.5,1.63,,,,,,'
+'6432,Napier,39,29,176,55,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,1.9,1.4,0.4,0.1,1.01,,,,,,'
+'6436,Castlepoint,40,55,176,13,-0018,-0027 to -0011,-0018,-0027 to -0011,1.6,1.2,0.3,0.0,0.8,0.89,,,,,'
+'6458,Nelson,41,16,173,16,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,4.2,3.2,1.5,0.6,2.40,,,,,,'
+'6375,Onehunga,36,56,174,47,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,4.1,3.3,1.4,0.5,2.44,,,,,,'
+',Manukau Harbour,,,,,,,,,,,,,,,,,,,'
+'6375c,Anawhata,36,56,174,27,-0101,-0113 to -0043,-0058,-0109 to -0043,3.1,2.4,1.1,0.4,1.7,0.75,,,,,'
+'6477,Picton,41,17,174,00,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,1.5,1.0,0.5,0.1,0.84,,,,,,'
+'6497,Port Chalmers,45,49,170,39,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.1,1.7,0.5,0.2,1.15,,,,,,'
+'6366,Port Taranaki,39,03,174,02,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,3.5,2.7,1.2,0.4,1.99,,,,,,'
+'6372a,Manu Bay,37,49,174,49,-0006,-0046 to +0028,-0009,-0059 to +0024,3.4,2.7,1.2,0.5,2.0,0.94,,,,,'
+'6371,Raglan,37,48,174,53,+0031,+0008 to +0046,+0014,+0003 to +0025,3.3,2.5,1.0,0.2,1.8,1.00,,,,,'
+'6415,Tauranga,37,39,176,11,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,1.9,1.6,0.5,0.2,1.13,,,,,,'
+'6492,Timaru,44,23,171,15,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,2.5,2.0,0.9,0.4,1.50,,,,,,'
+'6439,Wellington,41,17,174,47,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,1.8,1.5,0.7,0.5,1.15,,,,,,'
+'6526,Westport,41,45,171,36,hhmm,hhmm to hhmm,hhmm,hhmm to hhmm,3.5,2.8,1.2,0.5,2.06,,,,,,'
+',Kaikiekie / Bradshaw Sound,,,,,,,,,,,,,,,,,,,'
+
+==== TICON-3 ====
+GET https://download.pangaea.de/dataset/951610/files/TICON_3.zip -> 2836543 bytes
+TICON_3.txt 14548217
+TICON_3_UserManual.pdf 940679
+TICON_3.txt lines 138840
+'55.400\t3.810\tM2\t27.119\t130.965\t0.009\t0.000\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+'55.400\t3.810\tK1\t3.637\t311.713\t0.001\t0.003\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+'55.400\t3.810\tN2\t5.114\t104.929\t0.002\t0.003\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+'55.400\t3.810\tO1\t3.842\t154.299\t0.002\t0.003\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+'55.400\t3.810\tP1\t1.140\t293.805\t0.000\t0.008\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+'55.400\t3.810\tQ1\t1.263\t103.765\t0.001\t0.009\t0.000\t254777\t68.6\t28/06/2015\t06/10/2020\tgesla.cmems\tCoastal'
+cons 40 ['2N2', '2Q1', 'EP2', 'J1', 'K1', 'K2', 'L2', 'LM2', 'M1', 'M2', 'M3', 'M4', 'M6', 'M8', 'MA2', 'MB2', 'MF', 'MI2', 'MKS', 'MM', 'MN4', 'MS4', 'MSF', 'MSQ', 'MTM', 'N2', 'N4', 'NI2', 'O1', 'OO1', 'P1', 'Q1', 'R2', 'S1', 'S2', 'S3', 'S4', 'SA', 'SSA', 'T2']
+locations 3140
+types ['Coastal', 'Lake', 'River']
+sources ['gesla.bfg', 'gesla.bodc', 'gesla.bom', 'gesla.cco', 'gesla.cdwr', 'gesla.cmems', 'gesla.da_idh', 'gesla.da_mm', 'gesla.da_sat', 'gesla.dmi', 'gesla.eseas', 'gesla.fmi', 'gesla.gloss', 'gesla.ieo', 'gesla.ispra', 'gesla.jodc_giaj', 'gesla.jodc_jcg', 'gesla.jodc_jma', 'gesla.jodc_pahb', 'gesla.meds', 'gesla.mi_c', 'gesla.mi_r', 'gesla.ncdem', 'gesla.nhs', 'gesla.noaa', 'gesla.noc', 'gesla.nwfwmd', 'gesla.refmar', 'gesla.rws', 'gesla.sfwmd', 'gesla.smhi', 'gesla.uhslc', 'gesla.unam', 'gesla.usgs', 'gesla.uz', 'gesla.wsv']
+'32.835\t279.976\tM2\t81.234\t23.212\t0.044\t0.000\t1.850\t116286\t18\t01/10/2007\t06/04/2021\tgesla.bom\tCoastal'
