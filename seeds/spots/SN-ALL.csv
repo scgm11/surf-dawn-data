@@ -1,0 +1,6 @@
+name,lat,lon,type,conf,src,flags,note
+NGOR RIGHT,14.7540,-17.5150,R,L,local,,isla de Ngor; Dakar
+NGOR LEFT,14.7525,-17.5210,R,L,local,,isla de Ngor; Dakar
+VIRAGE,14.7520,-17.5090,R,L,local,,Dakar; posicion dudosa
+ALMADIES,14.7440,-17.5265,R,L,local,,Dakar
+YOFF,14.7660,-17.4900,B,L,local,,Dakar

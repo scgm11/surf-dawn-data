@@ -1,0 +1,19 @@
+name,lat,lon,type,conf,src,flags,note
+SÃO TORPES,37.9170,-8.7970,B,L,local,,Sines; posicion aproximada
+PORTO COVO,37.8540,-8.7940,B,L,local,,Sines; posicion aproximada
+MALHÃO,37.8000,-8.8070,B,L,local,,Vila Nova de Milfontes; posicion aproximada
+ALMOGRAVE,37.6530,-8.8010,B,L,local,,Odemira; posicion aproximada
+CARVALHAL,37.5920,-8.7990,B,L,local,,Odemira; posicion aproximada
+ZAMBUJEIRA,37.5030,-8.7890,B,L,local,,Zambujeira do Mar; posicion aproximada
+ODECEIXE,37.4360,-8.8010,B,K,local,,
+AMOREIRA,37.3470,-8.8630,B,L,local,,Aljezur; posicion aproximada
+MONTE CLÉRIGO,37.3350,-8.8560,B,L,local,,Aljezur; posicion aproximada
+ARRIFANA,37.2910,-8.8680,P,K,local,top,Aljezur
+BORDEIRA,37.1950,-8.9040,B,K,local,,Carrapateira
+AMADO,37.1670,-8.9020,B,K,local,top,Carrapateira
+CASTELEJO,37.1580,-8.9210,B,L,local,,Vila do Bispo; posicion aproximada
+CORDOAMA,37.1450,-8.9380,B,L,local,,Vila do Bispo; posicion aproximada
+MURRAÇÃO,37.1330,-8.9440,B,L,local,,Vila do Bispo; posicion aproximada
+BELICHE,37.0310,-8.9500,B,K,local,,Sagres
+TONEL,37.0070,-8.9500,B,K,local,top,Sagres
+ZAVIAL,37.0180,-8.8700,B,L,local,,Vila do Bispo; posicion aproximada

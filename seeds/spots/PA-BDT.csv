@@ -1,0 +1,5 @@
+name,lat,lon,type,conf,src,flags,note
+BLUFF,9.4239,-82.2562,B,V,web:mondo.surf,,Isla Colón; costa este; tubular
+PUNCH,9.4000,-82.2450,R,L,local,,Isla Colón; entre Dumpers y Bluff; posición aproximada
+DUMPERS,9.3821,-82.2351,R,V,web:mondo.surf,,Isla Colón; costa este
+CARENERO,9.3455,-82.2300,R,K,local,,Isla Carenero; punta este

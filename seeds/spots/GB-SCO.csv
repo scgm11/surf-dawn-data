@@ -1,0 +1,22 @@
+name,lat,lon,type,conf,src,flags,note
+BAY OF SKAILL,59.0480,-3.3480,B,L,local,,Orkney; posicion aproximada
+STRATHY,58.5900,-4.0170,B,L,local,,Sutherland; posicion aproximada
+MELVICH,58.5580,-3.9190,B,L,local,,Sutherland; posicion aproximada
+SANDSIDE BAY,58.5920,-3.7750,B,L,local,,Reay; posicion aproximada
+BRIMS NESS,58.6000,-3.6600,R,K,local,top,Caithness; ola grande
+THURSO EAST,58.5992,-3.5103,R,V,web:wikipedia.org,top,WC; ola de arrecife
+DUNNET BAY,58.6140,-3.3530,B,K,local,,Caithness
+EOROPIE,58.5050,-6.2420,B,L,local,,Lewis; posicion aproximada
+LUSKENTYRE,57.8650,-6.9940,B,L,local,,Harris; posicion aproximada
+SCARISTA,57.8630,-7.0330,B,L,local,,Harris; posicion aproximada
+MACHIR BAY,55.7940,-6.4490,B,K,local,,Islay
+GOTT BAY,56.5190,-6.8000,B,L,local,,Tiree; posicion aproximada
+LOSSIEMOUTH,57.7250,-3.2740,B,L,local,,Moray; posicion aproximada
+FRASERBURGH,57.6940,-2.0010,B,L,local,,posicion aproximada
+CRUDEN BAY,57.4150,-1.8400,B,K,local,,
+BALMEDIE,57.2530,-2.0440,B,L,local,,Aberdeenshire; posicion aproximada
+ABERDEEN,57.1650,-2.0600,B,K,local,,Aberdeen Beach; muelle norte
+WEST SANDS,56.3740,-2.8180,B,K,local,,St Andrews
+BELHAVEN BAY,56.0000,-2.5800,B,L,local,,Dunbar; posicion aproximada
+PEASE BAY,55.9340,-2.3710,B,L,local,,Cockburnspath; posicion aproximada
+COLDINGHAM,55.8960,-2.0980,B,L,local,,Coldingham Bay; posicion aproximada

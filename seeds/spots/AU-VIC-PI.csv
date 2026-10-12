@@ -1,0 +1,19 @@
+name,lat,lon,type,conf,src,flags,note
+SUMMERLAND,-38.5080,145.1435,B,L,local,,Phillip Island
+KITTY MILLER BAY,-38.5040,145.1840,B,L,local,,Phillip Island
+FLYNNS BEACH,-38.5110,145.2120,B,L,local,,Phillip Island
+FOREST CAVES,-38.5320,145.2380,B,L,local,,Phillip Island
+SMITHS BEACH,-38.5185,145.2735,B,K,local,,Phillip Island
+SURFIES POINT,-38.5115,145.2805,P,K,local,top,Phillip Island
+SUNSET STRIP,-38.5240,145.2960,B,L,local,,Phillip Island
+SUNDERLAND BAY,-38.5270,145.3100,B,L,local,,Phillip Island
+WOOLAMAI,-38.5510,145.3390,B,K,local,top,Cape Woolamai
+PORTSEA BACK BEACH,-38.3460,144.7080,B,L,local,,
+SORRENTO BACK,-38.3665,144.7340,B,L,local,,
+NUMBER 16,-38.3790,144.7620,B,L,local,,
+RYE BACK BEACH,-38.4040,144.7900,B,L,local,,
+ST ANDREWS BEACH,-38.4235,144.8200,B,L,local,,
+GUNNAMATTA,-38.4493,144.8579,B,V,web:mondo.surf,top,
+FINGAL BEACH,-38.4800,144.8700,B,L,local,,
+CAPE SCHANCK,-38.4940,144.8820,B,L,local,,
+FLINDERS,-38.4890,145.0130,B,L,local,,Back Beach

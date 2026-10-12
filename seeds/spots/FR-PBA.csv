@@ -1,0 +1,25 @@
+name,lat,lon,type,conf,src,flags,note
+HENDAYE,43.3800,-1.7760,B,K,local,,plage de Hendaye
+BELHARRA,43.4150,-1.7000,R,L,local,top nosnap facing=315,ola grande; ~2 km mar adentro; posicion dudosa
+SOCOA,43.3965,-1.6845,R,K,local,,junto al fuerte
+SAINTE BARBE,43.4030,-1.6500,B,K,local,,St-Jean-de-Luz
+ERROMARDIE,43.4090,-1.6440,B,K,local,,
+LAFITENIA,43.4150,-1.6300,P,K,local,top,
+PARLEMENTIA,43.4265,-1.6090,R,K,local,top,Guethary
+AVALANCHE,43.4300,-1.6120,R,K,local,,ola grande; Guethary
+CENITZ,43.4310,-1.6010,R,K,local,,Guethary norte
+BIDART,43.4370,-1.5960,B,K,local,,plage du Centre
+UHABIA,43.4440,-1.5910,B,K,local,,Bidart
+ILBARRITZ,43.4620,-1.5790,B,K,local,,
+COTE DES BASQUES,43.4780,-1.5710,B,K,local,top,Biarritz; longboard
+MILADY,43.4700,-1.5660,B,K,local,,Biarritz
+GRANDE PLAGE,43.4850,-1.5620,B,K,local,top,Biarritz
+MIRAMAR,43.4905,-1.5585,B,K,local,,Biarritz
+CHAMBRE D'AMOUR,43.5005,-1.5560,B,K,local,,Anglet
+LES CORSAIRES,43.5030,-1.5540,B,K,local,,Anglet
+LA MADRAGUE,43.5055,-1.5520,B,K,local,,Anglet
+SABLES D'OR,43.5080,-1.5495,B,K,local,,Anglet
+VVF,43.5105,-1.5470,B,K,local,,Anglet
+MARINELLA,43.5135,-1.5440,B,K,local,,Anglet
+LES CAVALIERS,43.5200,-1.5370,B,K,local,top,Anglet
+LA BARRE,43.5260,-1.5320,B,K,local,,Anglet; junto a la escollera del Adour

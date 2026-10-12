@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+KEKERENGU,-42.0027,174.0129,P,V,web:mondo.surf,,
+MANGAMAUNU,-42.3047,173.7521,P,V,web:mondo.surf,top,NZCPS; izquierda larga
+MEATWORKS,-42.3208,173.7518,P,V,web:mondo.surf,top,NZCPS
+SOUTH BAY,-42.4260,173.7030,B,L,local,,Kaikoura
+MOTUNAU,-43.0420,172.9190,B,L,local,,
+WAIKUKU,-43.2810,172.7700,B,L,local,,
+NEW BRIGHTON,-43.5090,172.7480,B,K,local,,Christchurch
+SUMNER,-43.5740,172.7760,B,K,local,,Christchurch
+TAYLORS MISTAKE,-43.5790,172.8010,B,L,local,,Banks Peninsula

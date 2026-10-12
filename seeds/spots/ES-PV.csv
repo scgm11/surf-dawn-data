@@ -1,0 +1,27 @@
+name,lat,lon,type,conf,src,flags,note
+HONDARRIBIA,43.3790,-1.7860,B,K,local,,Fuenterrabia
+ZURRIOLA,43.3265,-1.9790,B,K,local,top,Donostia-Gros
+ORIO,43.2890,-2.1250,B,L,local,,barra del rio Oria; posicion aproximada
+ZARAUTZ,43.2885,-2.1700,B,K,local,top,
+GAZTETAPE,43.2985,-2.1930,B,L,local,,Getaria; posicion aproximada
+SANTIAGO,43.3005,-2.2515,B,L,local,,Zumaia; posicion aproximada
+ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
+DEBA,43.3010,-2.3560,B,K,local,,
+SATURRARAN,43.3170,-2.3790,B,K,local,,Mutriku
+KARRASPIO,43.3730,-2.4550,B,L,local,,Mendexa; posicion aproximada
+EA,43.3780,-2.5890,B,L,local,,posicion aproximada
+LAGA,43.4030,-2.6380,B,L,local,,Ibarrangelu; posicion aproximada
+LAIDA,43.4090,-2.6720,B,L,local,,estuario de Urdaibai; posicion aproximada
+MUNDAKA,43.4090,-2.6970,B,K,local,top,barra de rio; WC exCT
+BAKIO,43.4370,-2.8100,B,K,local,top,
+ARMINTZA,43.4300,-2.9060,B,L,local,,posicion aproximada
+GORLIZ,43.4170,-2.9330,B,K,local,,
+PLENTZIA,43.4090,-2.9470,B,K,local,,
+BARRIKA,43.4050,-2.9610,B,K,local,,
+MEÑAKOZ,43.4010,-2.9650,R,L,local,top,ola grande
+ARRIETARA,43.3945,-2.9820,B,L,local,,Sopelana; posicion aproximada
+SOPELA,43.3925,-2.9890,B,K,local,top,Sopelana
+LA SALVAJE,43.3870,-3.0050,B,L,local,,Barinatxe-Sopelana; posicion aproximada
+AZKORRI,43.3790,-3.0100,B,L,local,,Getxo-Gorrondatxe; posicion aproximada
+PUNTA GALEA,43.3760,-3.0210,R,L,local,,Getxo; ola grande
+LA ARENA,43.3560,-3.1300,B,L,local,,Muskiz-Zierbena; posicion aproximada

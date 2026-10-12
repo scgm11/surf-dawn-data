@@ -21,7 +21,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 330
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -29,7 +29,7 @@ jobs:
           python-version: "3.12"
       - run: pip install global-land-mask==1.0.0
       - name: Cachés de OSM y Open-Meteo (la costa y las celdas de tierra no cambian)
-        uses: actions/cache@v4
+        uses: actions/cache/restore@v4
         with:
           path: |
             tools/.osm_cache
@@ -40,6 +40,14 @@ jobs:
         run: python3 tools/check_seeds.py --present
       - name: Zonas
         run: python3 tools/build_zones.py
+      - name: Guardar cachés (también si el build se corta: la próxima corrida sigue desde ahí)
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            tools/.osm_cache
+            tools/.cache
+          key: zones-${{ github.run_id }}
       - name: Publicar
         run: |
           git config user.name "surf-dawn-bot"

@@ -1,0 +1,15 @@
+name,lat,lon,type,conf,src,flags,note
+MERON,43.3820,-4.3680,B,L,local,,San Vicente de la Barquera; posicion aproximada
+GERRA,43.3915,-4.3330,B,L,local,,Oyambre; posicion aproximada
+OYAMBRE,43.3910,-4.3070,B,L,local,,posicion aproximada
+LA CONCHA,43.4430,-4.0480,B,L,local,,Suances; posicion aproximada
+LOS LOCOS,43.4440,-4.0410,B,K,local,top,Suances
+LIENCRES,43.4610,-3.9620,B,K,local,top,Valdearenas
+PORTIO,43.4640,-3.9440,B,L,local,,Liencres; posicion aproximada
+SOMO,43.4580,-3.7340,B,K,local,top,
+LOREDO,43.4660,-3.7050,B,K,local,,
+GALIZANO,43.4780,-3.6580,B,L,local,,posicion aproximada
+LANGRE,43.4770,-3.6350,B,L,local,,posicion aproximada
+JOYEL,43.4760,-3.5890,B,L,local,,Arnuero; posicion aproximada
+TRENGANDIN,43.4890,-3.5300,B,L,local,,Noja; posicion aproximada
+BERRIA,43.4560,-3.4640,B,L,local,,Santoña; posicion aproximada

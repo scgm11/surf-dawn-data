@@ -1,0 +1,5 @@
+name,lat,lon,type,conf,src,flags,note
+PLAYAS DE TIJUANA,32.5280,-117.1230,B,K,local,,frontera; zona del Bullring
+ROSARITO,32.3500,-117.0640,B,K,local,,
+SAN MIGUEL,31.9040,-116.7330,P,K,local,top,Ensenada; derecha
+TODOS SANTOS,31.8105,-116.8095,R,K,local,top nosnap facing=295,Killers; isla norte; ola grande de invierno

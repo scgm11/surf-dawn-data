@@ -5,6 +5,7 @@ AR-MDP,AR,Mar del Plata–Necochea,Mar del Plata–Necochea
 AR-BAN,AR,Pinamar y Villa Gesell,Pinamar and Villa Gesell
 AR-SUR,AR,Patagonia,Patagonia
 BR-RS,BR,Rio Grande do Sul,Rio Grande do Sul
+BR-RS-SUL,BR,Rio Grande do Sul sur,South Rio Grande do Sul
 BR-SC-FLN,BR,Florianópolis,Florianópolis
 BR-SC-SUL,BR,Praia do Rosa y Garopaba,Praia do Rosa and Garopaba
 BR-SC-NOR,BR,Santa Catarina norte y Paraná,North Santa Catarina and Paraná
@@ -13,7 +14,9 @@ BR-RJ,BR,Río de Janeiro,Rio de Janeiro
 BR-RJL,BR,Saquarema y Región de los Lagos,Saquarema and Lakes Region
 BR-ES,BR,Espírito Santo,Espírito Santo
 BR-BA,BR,Bahía,Bahia
-BR-NE,BR,Nordeste,Northeast
+BR-NE-CE,BR,Ceará,Ceará
+BR-NE-RN,BR,Rio Grande do Norte y Paraíba,Rio Grande do Norte and Paraíba
+BR-NE-PE,BR,Pernambuco Alagoas y Sergipe,Pernambuco Alagoas and Sergipe
 BR-NOR,BR,Fernando de Noronha,Fernando de Noronha
 CL-NOR,CL,Arica a Antofagasta,Arica to Antofagasta
 CL-CEN,CL,Valparaíso y Coquimbo,Valparaíso and Coquimbo
@@ -45,6 +48,7 @@ MX-OAX,MX,Oaxaca,Oaxaca
 MX-PAC,MX,Colima Michoacán y Guerrero,Colima Michoacán and Guerrero
 MX-NAY,MX,Nayarit Jalisco y Sinaloa,Nayarit Jalisco and Sinaloa
 MX-BCS,MX,Baja California Sur,Baja California Sur
+MX-BCS-N,MX,Baja Sur Pacífico norte,North Baja Sur Pacific
 MX-BCN,MX,Baja California,Baja California
 MX-CAR,MX,Caribe mexicano,Mexican Caribbean
 PR-NW,PR,Rincón e Isabela,Rincón and Isabela
@@ -64,9 +68,12 @@ US-CA-SC,US,Santa Cruz y Monterey,Santa Cruz and Monterey
 US-CA-SF,US,San Francisco y San Mateo,San Francisco and San Mateo
 US-CA-NOR,US,Humboldt y Mendocino,Humboldt and Mendocino
 US-PNW,US,Oregón y Washington,Oregon and Washington
-US-GULF,US,Texas y golfo,Texas and Gulf
+US-GULF,US,Texas,Texas
 US-FL,US,Florida,Florida
-US-SE,US,Carolina del Norte a Georgia,North Carolina to Georgia
+US-FL-PAN,US,Golfo este (Luisiana a Florida),Eastern Gulf (Louisiana to Florida)
+US-SE,US,Carolina del Norte,North Carolina
+US-SC-GA,US,Carolina del Sur y Georgia,South Carolina and Georgia
+US-MID,US,Virginia Maryland y Delaware,Virginia Maryland and Delaware
 US-NE,US,Nueva Inglaterra Nueva York y Nueva Jersey,New England New York and New Jersey
 US-HI-OAN,US,North Shore de Oahu,Oahu North Shore
 US-HI-OAS,US,Oahu sur oeste y este,Oahu South West and East
@@ -87,9 +94,11 @@ AU-VIC-PI,AU,Phillip Island y Mornington,Phillip Island and Mornington
 AU-VIC-W,AU,Oeste de Victoria,West Victoria
 AU-TAS,AU,Tasmania,Tasmania
 AU-SA,AU,Australia del Sur,South Australia
+AU-SA-EYR,AU,Península de Eyre,Eyre Peninsula
 AU-WA-MR,AU,Margaret River,Margaret River
 AU-WA-PER,AU,Perth y Rottnest,Perth and Rottnest
-AU-WA-NW,AU,Gascoyne y Mid West,Gascoyne and Mid West
+AU-WA-NW,AU,Kalbarri y Geraldton,Kalbarri and Geraldton
+AU-WA-GAS,AU,Gascoyne,Gascoyne
 NZ-NTL,NZ,Northland,Northland
 NZ-AKL,NZ,Auckland oeste,West Auckland
 NZ-RAG,NZ,Raglan,Raglan
@@ -115,7 +124,8 @@ ID-JAV-E,ID,Java oriental,East Java
 ID-JAV-W,ID,Java occidental,West Java
 ID-LOM,ID,Lombok,Lombok
 ID-SBW,ID,Sumbawa,Sumbawa
-ID-NTT,ID,Sumba y Rote,Sumba and Rote
+ID-SMB,ID,Sumba,Sumba
+ID-ROT,ID,Rote,Rote
 ID-MEN,ID,Mentawai,Mentawai
 ID-NIA,ID,Nias y Banyak,Nias and Banyak
 ID-KRU,ID,Krui y Lampung,Krui and Lampung
@@ -136,7 +146,8 @@ JP-SHK,JP,Shikoku,Shikoku
 JP-KYU,JP,Miyazaki y Kyushu,Miyazaki and Kyushu
 TW-E,TW,Taitung y Hualien,Taitung and Hualien
 TW-NE,TW,Yilan y costa norte,Yilan and north coast
-IN-ALL,IN,India,India
+IN-W,IN,India oeste,West India
+IN-E,IN,India este,East India
 VN-ALL,VN,Vietnam,Vietnam
 KR-ALL,KR,Corea del Sur,South Korea
 CN-HAI,CN,Hainan,Hainan
@@ -156,7 +167,8 @@ MA-S,MA,Mirleft y Sidi Ifni,Mirleft and Sidi Ifni
 SN-ALL,SN,Senegal,Senegal
 LR-ALL,LR,Liberia,Liberia
 GH-ALL,GH,Ghana,Ghana
-MZ-ALL,MZ,Mozambique,Mozambique
+MZ-S,MZ,Ponta do Ouro,Ponta do Ouro
+MZ-INH,MZ,Inhambane y Tofo,Inhambane and Tofo
 MG-ALL,MG,Madagascar,Madagascar
 RE-ALL,RE,Reunión,Réunion
 MU-ALL,MU,Mauricio,Mauritius
@@ -183,6 +195,7 @@ PT-AZO,PT,Azores,Azores
 PT-MAD,PT,Madeira,Madeira
 GB-CON,GB,Cornualles,Cornwall
 GB-DEV,GB,Devon,Devon
+GB-SOU,GB,Dorset e Isla de Wight,Dorset and Isle of Wight
 GB-WAL,GB,Gales,Wales
 GB-SCO,GB,Escocia,Scotland
 GB-NE,GB,Noreste de Inglaterra,North East England
@@ -190,9 +203,11 @@ GB-NIR,GB,Irlanda del Norte,Northern Ireland
 IE-NW,IE,Donegal Sligo y Mayo,Donegal Sligo and Mayo
 IE-SW,IE,Clare y Kerry,Clare and Kerry
 IE-SE,IE,Waterford y Cork,Waterford and Cork
-NO-ALL,NO,Noruega,Norway
+NO-S,NO,Noruega sur (Jæren y Stad),South Norway (Jæren and Stad)
+NO-N,NO,Lofoten,Lofoten
 DK-ALL,DK,Dinamarca,Denmark
 NL-ALL,NL,Países Bajos,Netherlands
 DE-ALL,DE,Alemania,Germany
-IT-ALL,IT,Italia,Italy
+IT-ALL,IT,Italia peninsular y Sicilia,Mainland Italy and Sicily
+IT-SAR,IT,Cerdeña,Sardinia
 IS-ALL,IS,Islandia,Iceland

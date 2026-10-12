@@ -1,0 +1,21 @@
+name,lat,lon,type,conf,src,flags,note
+BIG BAY,-33.7930,18.4555,B,K,local,top,Blouberg
+TABLE VIEW,-33.8250,18.4660,B,L,local,,Blouberg; posicion aproximada
+CAMPS BAY,-33.9510,18.3770,B,K,local,,
+GLEN BEACH,-33.9440,18.3775,B,L,local,,norte de Camps Bay
+LLANDUDNO,-34.0085,18.3395,B,K,local,top,
+HOUT BAY,-34.0475,18.3545,B,K,local,,
+DUNGEONS,-34.0618,18.3266,R,V,web:mondo.surf,top,ola grande; 1.5 km mar adentro
+SUNSET REEF,-34.1210,18.3280,R,K,local,top,ola grande; frente a Noordhoek
+NOORDHOEK,-34.1100,18.3440,B,K,local,,
+LONG BEACH,-34.1330,18.3270,B,K,local,top,Kommetjie
+INNER KOM,-34.1415,18.3235,R,L,local,,Kommetjie
+OUTER KOM,-34.1425,18.3150,R,L,local,,Kommetjie; ola grande
+CRAYFISH FACTORY,-34.1475,18.3225,R,L,local,,Kommetjie
+MISTY CLIFFS,-34.1840,18.3510,,L,local,,posicion dudosa
+SCARBOROUGH,-34.2025,18.3620,B,K,local,,
+KALK BAY REEF,-34.1300,18.4535,R,K,local,,frente al puerto
+MUIZENBERG,-34.1090,18.4700,B,K,local,top,Surfers Corner
+FISH HOEK,-34.1370,18.4340,B,K,local,,
+KOGEL BAY,-34.2570,18.8250,B,L,local,,False Bay este
+ROOI-ELS,-34.2975,18.8160,P,L,local,,False Bay este

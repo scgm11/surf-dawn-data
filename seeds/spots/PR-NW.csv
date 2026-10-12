@@ -1,0 +1,16 @@
+name,lat,lon,type,conf,src,flags,note
+TUNELES,18.5180,-66.9700,B,L,local,,Isabela este; posición aproximada
+GAS CHAMBERS,18.5150,-67.0650,R,L,local,,Isabela; izquierda pesada; posición aproximada
+SHACKS,18.5120,-67.0950,R,L,local,,Isabela; posición aproximada
+JOBOS,18.5116,-67.0790,R,K,local,top,Isabela; arrecife
+WILDERNESS,18.4870,-67.1610,R,K,local,top,Aguadilla; Punta Borinquen
+CRASH BOAT,18.4600,-67.1650,B,K,local,,Aguadilla
+TABLE TOPS,18.4930,-67.1595,R,L,local,,Aguadilla; Punta Borinquen; posición aproximada
+INDICATORS,18.3640,-67.2770,R,K,local,,Rincón norte; ola grande
+DOMES,18.3575,-67.2705,R,K,local,top,Rincón; frente a la cúpula del reactor
+SANDY BEACH,18.3520,-67.2685,B,K,local,,Rincón
+DOGMAN'S,18.3490,-67.2670,R,K,local,,Rincón
+STEPS,18.3460,-67.2652,R,K,local,,Rincón
+TRES PALMAS,18.3440,-67.2635,R,K,local,top,Rincón; ola grande de invierno; reserva marina
+MARIA'S,18.3415,-67.2565,R,K,local,,Rincón
+CÓRCEGA,18.3300,-67.2535,B,K,local,,Rincón sur

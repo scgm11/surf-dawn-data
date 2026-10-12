@@ -1,0 +1,16 @@
+name,lat,lon,type,conf,src,flags,note
+WAIKIKI,-12.1200,-77.0450,R,L,local,,Costa Verde Miraflores
+MAKAHA,-12.1260,-77.0400,R,L,local,,Costa Verde Miraflores
+REDONDO,-12.1330,-77.0350,R,L,local,,Costa Verde
+LOS YUYOS,-12.1480,-77.0290,R,L,local,,Barranco
+LA HERRADURA,-12.1700,-77.0300,P,K,local,top,Chorrillos
+AGUA DULCE,-12.1800,-77.0240,B,L,local,,Chorrillos
+SEÑORITAS,-12.3300,-76.8300,P,K,local,top,Punta Hermosa
+PULPOS,-12.3340,-76.8260,R,L,local,,Punta Hermosa
+CABALLEROS,-12.3360,-76.8230,P,K,local,,Punta Hermosa
+PICO ALTO,-12.3400,-76.8300,R,K,local,top,ola grande; Punta Hermosa
+PUNTA ROCAS,-12.3600,-76.8100,R,K,local,top,
+PUNTA NEGRA,-12.3700,-76.7920,P,K,local,,
+SAN BARTOLO,-12.3880,-76.7830,P,K,local,,
+SANTA MARÍA,-12.4100,-76.7650,B,L,local,,
+CERRO AZUL,-13.0300,-76.4830,P,K,local,,Cañete

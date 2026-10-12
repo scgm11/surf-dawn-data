@@ -1,0 +1,21 @@
+name,lat,lon,type,conf,src,flags,note
+ESMORIZ,40.9640,-8.6500,B,L,local,,Ovar; posicion aproximada
+CORTEGACA,40.9180,-8.6470,B,L,local,,Ovar; posicion aproximada
+FURADOURO,40.8710,-8.6560,B,K,local,,Ovar
+TORREIRA,40.7860,-8.6900,B,L,local,,Murtosa; posicion aproximada
+BARRA,40.6420,-8.7510,B,K,local,,Aveiro; junto al faro
+COSTA NOVA,40.6130,-8.7560,B,L,local,,Aveiro; posicion aproximada
+VAGUEIRA,40.5470,-8.7640,B,L,local,,Vagos; posicion aproximada
+PRAIA DE MIRA,40.4400,-8.8200,B,K,local,,
+TOCHA,40.3330,-8.8390,B,L,local,,Cantanhede; posicion aproximada
+QUIAIOS,40.2150,-8.8920,B,L,local,,Figueira da Foz; posicion aproximada
+CABEDELO,40.1330,-8.8740,B,K,local,top,Figueira da Foz
+COSTA DE LAVOS,40.0950,-8.8850,B,L,local,,Figueira da Foz; posicion aproximada
+LEIROSA,40.0450,-8.8970,B,L,local,,Figueira da Foz; posicion aproximada
+PEDROGAO,39.9230,-8.9520,B,L,local,,Leiria; posicion aproximada
+VIEIRA,39.8830,-9.0160,B,L,local,,Marinha Grande; posicion aproximada
+SAO PEDRO DE MOEL,39.7570,-9.0270,B,K,local,,
+PAREDES DA VITORIA,39.7000,-9.0560,B,L,local,,Alcobaca; posicion aproximada
+PRAIA DO NORTE,39.6060,-9.0860,B,K,local,top,Nazaré; ola grande; canon submarino
+NAZARE,39.6010,-9.0770,B,K,local,,Nazaré; praia da vila
+SALGADO,39.5390,-9.1370,B,L,local,,Nazaré-Alfeizerão; posicion aproximada
