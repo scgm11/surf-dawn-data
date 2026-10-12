@@ -1,7 +1,8 @@
 """Checks the seed tables (seeds/README.md): columns, names, positions, types and flags,
 and that every region has its file and every file its region. Offline; exits 1 on errors.
 
-Usage: python3 tools/check_seeds.py [REGION ...]     (no arguments: every region)
+Usage: python3 tools/check_seeds.py [--present] [REGION ...]   (no regions: every region;
+       --present: a region without its file yet is a warning, not an error)
 """
 import csv
 import math
@@ -28,10 +29,10 @@ def km(a, b):
     return math.hypot(a[0] - b[0], dlon * math.cos(math.radians((a[0] + b[0]) / 2))) * 111.2
 
 
-def check_region(code, errors, warnings):
+def check_region(code, errors, warnings, present=False):
     path = os.path.join(SEEDS, "spots", code + ".csv")
     if not os.path.exists(path):
-        errors.append("%s: no seeds/spots/%s.csv" % (code, code))
+        (warnings if present else errors).append("%s: no seeds/spots/%s.csv" % (code, code))
         return 0
     with open(path, newline="", encoding="utf-8") as f:
         reader = csv.reader(f)
@@ -116,13 +117,15 @@ def main():
     files = {f[:-4] for f in os.listdir(os.path.join(SEEDS, "spots")) if f.endswith(".csv")}
     for f in sorted(files - set(codes)):
         errors.append("seeds/spots/%s.csv has no row in regions.csv" % f)
-    want = sys.argv[1:] or codes
+    args = sys.argv[1:]
+    present = "--present" in args
+    want = [x for x in args if x != "--present"] or codes
     total = 0
     for code in want:
         if code not in codes:
             errors.append("%s is not in regions.csv" % code)
             continue
-        total += check_region(code, errors, warnings)
+        total += check_region(code, errors, warnings, present)
     for w in warnings:
         print("warning:", w)
     for e in errors:

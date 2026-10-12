@@ -1,0 +1,5 @@
+region,wave,wind,why
+UY-MAL,ncep_gfswave025,gfs_seamless,issue #7: como Windguru (validado 2026-10-07)
+UY-ROC,ncep_gfswave025,gfs_seamless,issue #7: como Windguru (validado 2026-10-07)
+BR-SC-FLN,ncep_gfswave025,gfs_seamless,issue #7: como Windguru
+BR-SC-SUL,ncep_gfswave025,gfs_seamless,issue #7: como Windguru
