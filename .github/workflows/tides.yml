@@ -1,0 +1,45 @@
+name: Mareas del mundo
+# Arma tide/ para todas las regiones de seeds/regions.csv (tools/tide/build_tides.py): NOAA, JMA,
+# Marine Institute, LINZ y armónicos TICON-3. La salida queda siempre en tide/build.log.
+on:
+  push:
+    branches: [main, mareas-mundo]
+    paths:
+      - "tools/tide/**"
+      - "tools/lib/**"
+      - "tools/fit_tide.py"
+      - "tools/ciram_tide.py"
+      - "seeds/regions.csv"
+      - "seeds/spots/**"
+      - ".github/workflows/tides.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "41 10 1,15 * *"     # los días 1 y 15 de cada mes, 10:41 UTC
+permissions:
+  contents: write
+concurrency:
+  group: data-commit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sondeo de fuentes
+        run: |
+          set -o pipefail
+          python3 tools/tide/probe.py 2>&1 | tee tide/build.log
+      - name: Publicar
+        if: always()
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add tide
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Mareas: $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
