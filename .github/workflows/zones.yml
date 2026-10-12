@@ -40,7 +40,7 @@ jobs:
         run: python3 tools/check_seeds.py --present
       - name: Zonas
         run: python3 tools/build_zones.py
-      - name: Guardar cachés (también si el build se corta: la próxima corrida sigue desde ahí)
+      - name: "Guardar cachés (también si el build se corta: la próxima corrida sigue desde ahí)"
         if: always()
         uses: actions/cache/save@v4
         with:
