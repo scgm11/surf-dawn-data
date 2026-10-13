@@ -1,0 +1,88 @@
+{
+ "region": "AU-VIC-SC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:indented-head",
+  "aodn:apollo-bay",
+  "aodn:central"
+ ],
+ "excluded": [
+  {
+   "id": "aodn:rosebud",
+   "km": 23.0,
+   "why": "sesgo de Hs +140%, +326%, +145% en todos los modelos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 1106,
+   "hs_bias": 0.199,
+   "hs_rmse": 0.28,
+   "hs_si": 0.396,
+   "tp_bias": 1.06,
+   "dir_mae": 23.2,
+   "dir_bias": 9.8,
+   "tm_bias": 2.04,
+   "obs_hs": 0.63,
+   "tp_type": "peak"
+  },
+  "ncep_gfswave025": {
+   "n": 1106,
+   "hs_bias": 0.444,
+   "hs_rmse": 0.404,
+   "hs_si": 0.462,
+   "tp_bias": 6.32,
+   "dir_mae": 58.2,
+   "dir_bias": 29.5,
+   "tm_bias": 8.89,
+   "obs_hs": 0.63,
+   "tp_type": "mean"
+  },
+  "meteofrance_wave": {
+   "n": 1106,
+   "hs_bias": 0.637,
+   "hs_rmse": 0.508,
+   "hs_si": 0.492,
+   "tp_bias": 1.62,
+   "dir_mae": 51.9,
+   "dir_bias": 14.6,
+   "tm_bias": 4.19,
+   "obs_hs": 0.63,
+   "tp_type": "mean"
+  }
+ },
+ "confidence": "baja",
+ "per_buoy": {
+  "aodn:indented-head": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 22.3
+  },
+  "aodn:apollo-bay": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 32.3
+  },
+  "aodn:central": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 34.8
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.075,
+  "hours": 744,
+  "point": [
+   -38.3715,
+   144.277
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.32,
+   "meteofrance_wave": 1.37,
+   "ecmwf_wam": 1.53
+  }
+ }
+}

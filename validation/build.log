@@ -1,18 +1,316 @@
-ok  ndbc_active              0.4s
-ok  ndbc_listing             0.9s
-ok  ndbc_46225               0.2s
-ERR ndbc_31260               urllib.error.HTTPError: HTTP Error 404: Not Found
-ok  cdip_catalog             0.7s
-ok  cdip_das                 0.3s
-ok  cdip_dds                 0.2s
-ok  cdip_ascii               0.2s
-ok  cdip_erddap_info         0.6s
-ok  cdip_erddap_list         0.2s
-ok  mi_info                  0.9s
-ERR mi_rows                  urllib.error.HTTPError: HTTP Error 400: 
-ok  aodn_schema              3.4s
-ERR aodn_rows                ModuleNotFoundError: No module named 'pandas'
-ok  om_all                   0.5s
-ok  om_ewam_eu               0.5s
-ok  om_ewam_out              0.5s
-ok  om_wam025                0.5s
+[    0s] 212 regions, window 2026-09-13 .. 2026-10-13
+[    3s] cdip: 126534 rows, 80 stations
+[    3s] cdip: 80 stations with >= 72 hourly Hs (3s)
+[   19s] aodn: 88991 rows since 2026-09-01
+[   19s]   aodn TIME timestamp[ns] 
+[   19s]   aodn WSSH double 
+[   19s]   aodn WPPE double 
+[   19s]   aodn WPDI double 
+[   19s]   aodn WPFM double 
+[   20s] aodn: 48 stations with >= 72 hourly Hs (16s)
+[   23s] mi FAILED: HTTP Error 404: 
+mi FAILED
+[   24s] ndbc: 1354 active stations, 159 with recent files near the regions
+[  100s] ndbc: 123 stations with >= 72 hourly Hs (77s)
+[  100s]   same buoy: cdip:073 = cdip:201 (kept cdip:201)
+[  100s]   same buoy: ndbc:41110 = cdip:150 (kept cdip:150)
+[  100s]   same buoy: ndbc:41112 = cdip:132 (kept cdip:132)
+[  100s]   same buoy: ndbc:41113 = cdip:143 (kept cdip:143)
+[  100s]   same buoy: ndbc:41117 = cdip:194 (kept cdip:194)
+[  100s]   same buoy: ndbc:41120 = cdip:250 (kept cdip:250)
+[  100s]   same buoy: ndbc:41121 = cdip:249 (kept cdip:249)
+[  100s]   same buoy: ndbc:42084 = cdip:256 (kept cdip:256)
+[  100s]   same buoy: ndbc:42092 = cdip:252 (kept cdip:252)
+[  100s]   same buoy: ndbc:44014 = cdip:171 (kept cdip:171)
+[  100s]   same buoy: ndbc:44056 = cdip:433 (kept cdip:433)
+[  100s]   same buoy: ndbc:44085 = cdip:260 (kept cdip:260)
+[  100s]   same buoy: ndbc:44086 = cdip:243 (kept cdip:243)
+[  100s]   same buoy: ndbc:44087 = cdip:240 (kept cdip:240)
+[  100s]   same buoy: ndbc:44091 = cdip:209 (kept cdip:209)
+[  100s]   same buoy: ndbc:44095 = cdip:192 (kept cdip:192)
+[  100s]   same buoy: ndbc:44097 = cdip:154 (kept cdip:154)
+[  100s]   same buoy: ndbc:44098 = cdip:160 (kept cdip:160)
+[  100s]   same buoy: ndbc:44099 = cdip:147 (kept cdip:147)
+[  100s]   same buoy: ndbc:44100 = cdip:430 (kept cdip:430)
+[  100s]   same buoy: ndbc:46213 = cdip:094 (kept cdip:094)
+[  100s]   same buoy: ndbc:46214 = cdip:029 (kept cdip:029)
+[  100s]   same buoy: ndbc:46218 = cdip:071 (kept cdip:071)
+[  100s]   same buoy: ndbc:46219 = cdip:067 (kept cdip:067)
+[  100s]   same buoy: ndbc:46221 = cdip:028 (kept cdip:028)
+[  100s]   same buoy: ndbc:46222 = cdip:092 (kept cdip:092)
+[  100s]   same buoy: ndbc:46224 = cdip:045 (kept cdip:045)
+[  100s]   same buoy: ndbc:46225 = cdip:100 (kept cdip:100)
+[  100s]   same buoy: ndbc:46229 = cdip:139 (kept cdip:139)
+[  100s]   same buoy: ndbc:46236 = cdip:156 (kept cdip:156)
+[  100s]   same buoy: ndbc:46239 = cdip:157 (kept cdip:157)
+[  100s]   same buoy: ndbc:46243 = cdip:162 (kept cdip:162)
+[  100s]   same buoy: ndbc:46248 = cdip:179 (kept cdip:179)
+[  100s]   same buoy: ndbc:46253 = cdip:213 (kept cdip:213)
+[  100s]   same buoy: ndbc:46254 = cdip:201 (kept cdip:201)
+[  100s]   same buoy: ndbc:46256 = cdip:215 (kept cdip:215)
+[  100s]   same buoy: ndbc:46258 = cdip:220 (kept cdip:220)
+[  100s]   same buoy: ndbc:46259 = cdip:222 (kept cdip:222)
+[  100s]   same buoy: ndbc:46266 = cdip:153 (kept cdip:153)
+[  100s]   same buoy: ndbc:46267 = cdip:248 (kept cdip:248)
+[  100s]   same buoy: ndbc:46277 = cdip:271 (kept cdip:271)
+[  100s]   same buoy: ndbc:46278 = cdip:270 (kept cdip:270)
+[  100s]   same buoy: ndbc:46285 = cdip:284 (kept cdip:284)
+[  100s]   same buoy: ndbc:51201 = cdip:106 (kept cdip:106)
+[  100s]   same buoy: ndbc:51202 = cdip:098 (kept cdip:098)
+[  100s]   same buoy: ndbc:51205 = cdip:187 (kept cdip:187)
+[  100s]   same buoy: ndbc:51206 = cdip:188 (kept cdip:188)
+[  100s]   same buoy: ndbc:51209 = cdip:189 (kept cdip:189)
+[  100s]   same buoy: ndbc:51211 = cdip:233 (kept cdip:233)
+[  100s]   same buoy: ndbc:51212 = cdip:238 (kept cdip:238)
+[  100s]   same buoy: ndbc:46211 = cdip:036 (kept cdip:036)
+[  100s]   same buoy: ndbc:46215 = cdip:076 (kept cdip:076)
+[  100s]   same buoy: ndbc:46274 = cdip:262 (kept cdip:262)
+[  100s]   same buoy: ndbc:46275 = cdip:264 (kept cdip:264)
+[  100s]   same buoy: ndbc:51214 = cdip:273 (kept cdip:273)
+[  100s]   same buoy: ndbc:41122 = cdip:265 (kept cdip:265)
+[  100s]   same buoy: ndbc:44088 = cdip:171 (kept cdip:171)
+[  100s]   same buoy: ndbc:46268 = cdip:103 (kept cdip:103)
+[  100s]   same buoy: ndbc:41159 = cdip:217 (kept cdip:217)
+[  100s]   same buoy: ndbc:44084 = cdip:263 (kept cdip:263)
+[  100s]   same buoy: ndbc:44090 = cdip:221 (kept cdip:221)
+[  100s]   same buoy: ndbc:LJPC1 = cdip:201 (kept cdip:201)
+[  100s]   same buoy: ndbc:46232 = cdip:191 (kept cdip:191)
+[  100s]   same buoy: ndbc:41114 = cdip:134 (kept cdip:134)
+[  100s]   same buoy: ndbc:46286 = cdip:285 (kept cdip:285)
+[  100s]   same buoy: ndbc:42354 = cdip:279 (kept cdip:279)
+[  100s]   same buoy: ndbc:46237 = cdip:142 (kept cdip:142)
+[  100s]   same buoy: ndbc:46244 = cdip:168 (kept cdip:168)
+[  100s] 183 stations after removing 68 duplicates
+[  100s] 114 buoys within 150 km of 41 regions
+[  100s] open-meteo: 114 buoy points to fetch (0 cached)
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+[  390s] open-meteo: 212 spread points to fetch (0 cached)
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+[  686s] open-meteo: 35 requests, 326 locations, 846 weighted calls (free limit 10000/day); cache {'downloads': 163, 'hits': 0, 'bytes': 58720421}
+[  686s] UY-MAL      (no buoys; spread 0.125)               best -                 n      rmse       bias        media
+[  686s] UY-ROC      (no buoys; spread 0.129)               best -                 n      rmse       bias        media
+[  686s] AR-MDP      (no buoys; spread 0.07)                best -                 n      rmse       bias        media
+[  686s] AR-BAN      (no buoys; spread 0.125)               best -                 n      rmse       bias        media
+[  686s] AR-SUR      (no buoys; spread 0.064)               best -                 n      rmse       bias        media
+[  686s] BR-RS       (no buoys; spread 0.096)               best -                 n      rmse       bias        media
+[  687s] BR-RS-SUL   (no buoys; spread 0.09)                best -                 n      rmse       bias        media
+[  687s] BR-SC-FLN   (no buoys; spread 0.268)               best -                 n      rmse       bias        media
+[  687s] BR-SC-SUL   (no buoys; spread 0.078)               best -                 n      rmse       bias        media
+[  687s] BR-SC-NOR   (no buoys; spread 0.224)               best -                 n      rmse       bias        media
+[  687s] BR-SP       (no buoys; spread 0.158)               best -                 n      rmse       bias        media
+[  687s] BR-RJ       (no buoys; spread 0.211)               best -                 n      rmse       bias        media
+[  687s] BR-RJL      (no buoys; spread 0.105)               best -                 n      rmse       bias        media
+[  687s] BR-ES       (no buoys; spread 0.067)               best -                 n      rmse       bias        media
+[  687s] BR-BA       (no buoys; spread 0.058)               best -                 n      rmse       bias        media
+[  687s] BR-NE-CE    (no buoys; spread 0.107)               best -                 n      rmse       bias        media
+[  687s] BR-NE-RN    (no buoys; spread 0.106)               best -                 n      rmse       bias        media
+[  687s] BR-NE-PE    (no buoys; spread 0.05)                best -                 n      rmse       bias        media
+[  687s] BR-NOR      (no buoys; spread 0.105)               best -                 n      rmse       bias        media
+[  687s] CL-NOR      (no buoys; spread 0.128)               best -                 n      rmse       bias        media
+[  687s] CL-CEN      (no buoys; spread 0.038)               best -                 n      rmse       bias        media
+[  687s] CL-PIC      (no buoys; spread 0.088)               best -                 n      rmse       bias        media
+[  687s] CL-MAU      (no buoys; spread 0.095)               best -                 n      rmse       bias        media
+[  687s] CL-SUR      (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  687s] PE-NOR      (no buoys; spread 0.164)               best -                 n      rmse       bias        media
+[  687s] PE-LLB      (no buoys; spread 0.06)                best -                 n      rmse       bias        media
+[  687s] PE-LIM      (no buoys; spread 0.047)               best -                 n      rmse       bias        media
+[  687s] PE-SUR      (no buoys; spread 0.024)               best -                 n      rmse       bias        media
+[  687s] EC-COS      (no buoys; spread 0.344)               best -                 n      rmse       bias        baja
+[  687s] EC-GAL      (no buoys; spread 0.176)               best -                 n      rmse       bias        media
+[  687s] CO-PAC      (no buoys; spread 0.127)               best -                 n      rmse       bias        media
+[  687s] CO-CAR      (no buoys; spread 0.068)               best -                 n      rmse       bias        media
+[  687s] VE-ALL      (no buoys; spread 0.453)               best -                 n      rmse       bias        baja
+[  687s] PA-PAC      (no buoys; spread 0.066)               best -                 n      rmse       bias        media
+[  687s] PA-BDT      (no buoys; spread 0.136)               best -                 n      rmse       bias        media
+[  687s] CR-GUA      (no buoys; spread 0.058)               best -                 n      rmse       bias        media
+[  687s] CR-NIC      (no buoys; spread 0.065)               best -                 n      rmse       bias        media
+[  687s] CR-PAC      (no buoys; spread 0.077)               best -                 n      rmse       bias        media
+[  687s] CR-OSA      (no buoys; spread 0.241)               best -                 n      rmse       bias        media
+[  687s] CR-CAR      (no buoys; spread 0.089)               best -                 n      rmse       bias        media
+[  687s] NI-RIV      (no buoys; spread 0.066)               best -                 n      rmse       bias        media
+[  687s] NI-NW       (no buoys; spread 0.18)                best -                 n      rmse       bias        media
+[  687s] SV-LIB      (no buoys; spread 0.041)               best -                 n      rmse       bias        media
+[  687s] SV-ORI      (no buoys; spread 0.091)               best -                 n      rmse       bias        media
+[  687s] GT-PAC      (no buoys; spread 0.072)               best -                 n      rmse       bias        media
+[  687s] MX-OAX      (no buoys; spread 0.082)               best -                 n      rmse       bias        media
+[  687s] MX-PAC      (no buoys; spread 0.06)                best -                 n      rmse       bias        media
+[  687s] MX-NAY      (no buoys; spread 0.205)               best -                 n      rmse       bias        media
+[  688s] MX-BCS      (no buoys; spread 0.079)               best -                 n      rmse       bias        media
+[  688s] MX-BCS-N    (no buoys; spread 0.094)               best -                 n      rmse       bias        media
+[  688s] MX-BCN      cdip:191,cdip:220,cdip:100             best ecmwf_wam         n 2056 rmse 0.129 bias 0.001  alta
+[  688s] MX-CAR      (no buoys; spread 0.197)               best -                 n      rmse       bias        media
+[  688s] PR-NW       cdip:249,ndbc:42085,ndbc:41053         best ncep_gfswave025   n 2099 rmse 0.141 bias -0.006 baja
+[  688s] PR-N        ndbc:41053,cdip:249,ndbc:41056         best ncep_gfswave025   n 2097 rmse 0.148 bias -0.027 baja
+[  688s] BB-ALL      (no buoys; spread 0.132)               best -                 n      rmse       bias        media
+[  688s] DO-ALL      (no buoys; spread 0.076)               best -                 n      rmse       bias        media
+[  688s] GP-ALL      (no buoys; spread 0.127)               best -                 n      rmse       bias        media
+[  688s] MQ-ALL      (no buoys; spread 0.03)                best -                 n      rmse       bias        media
+[  688s] BS-ALL      (no buoys; spread 0.28)                best -                 n      rmse       bias        media
+[  688s] TT-ALL      (no buoys; spread 0.182)               best -                 n      rmse       bias        media
+[  688s] US-CA-SD    cdip:045,cdip:100                      best meteofrance_wave  n 1446 rmse 0.15  bias 0.019  alta
+[  688s] US-CA-OC    cdip:271,cdip:215,cdip:264             best ecmwf_wam         n 2168 rmse 0.178 bias 0.007  alta
+[  688s] US-CA-LA    cdip:103,cdip:215,cdip:092             best ecmwf_wam         n 2168 rmse 0.174 bias 0.015  alta
+[  688s] US-CA-SB    ndbc:46054,cdip:071,ndbc:46025         best meteofrance_wave  n 2168 rmse 0.22  bias 0.03   alta
+[  688s] US-CA-CEN   cdip:076,cdip:157,ndbc:46011           best ecmwf_wam         n 2168 rmse 0.307 bias 0.003  alta
+[  688s] US-CA-SC    cdip:156,cdip:157,ndbc:46042           best ecmwf_wam         n 2168 rmse 0.273 bias -0.016 alta
+[  688s] US-CA-SF    cdip:142,ndbc:46026,ndbc:46013         best meteofrance_wave  n 1692 rmse 0.2   bias 0.06   alta
+[  688s] US-CA-NOR   cdip:168,ndbc:46014,ndbc:46022         best meteofrance_wave  n 2026 rmse 0.202 bias -0.003 alta
+[  688s] US-PNW      cdip:270,cdip:036,cdip:162             best meteofrance_wave  n 2169 rmse 0.199 bias 0.015  alta
+[  688s] US-GULF     ndbc:PHCT2,cdip:252,ndbc:42035         best ecmwf_wam         n 2150 rmse 0.163 bias -0.075 alta
+[  688s] US-FL       cdip:265,cdip:143,cdip:134             best ncep_gfswave016   n 1961 rmse 0.2   bias 0.068  baja
+[  688s] US-FL-PAN   ndbc:42357,ndbc:42012,cdip:256         best ecmwf_wam         n 1853 rmse 0.176 bias 0.042  media
+[  689s] US-SE       cdip:433,cdip:150,ndbc:SSBN7           best ncep_gfswave016   n 1894 rmse 0.159 bias -0.071 baja
+[  689s] US-SC-GA    ndbc:41067,ndbc:41076,cdip:132         best ecmwf_wam         n 2157 rmse 0.186 bias -0.062 baja
+[  689s] US-MID      cdip:263,cdip:147,cdip:430             best ncep_gfswave025   n 2153 rmse 0.204 bias -0.03  alta
+[  689s] US-NE       ndbc:44007,ndbc:44029,cdip:260         best ecmwf_wam         n 2001 rmse 0.165 bias 0.006  alta
+[  689s] US-HI-OAN   cdip:238,cdip:233,cdip:098             best ecmwf_wam         n 2169 rmse 0.199 bias -0.026 alta
+[  689s] US-HI-OAS   cdip:238,cdip:098,cdip:233             best ecmwf_wam         n 2169 rmse 0.199 bias -0.026 alta
+[  689s] US-HI-MAU   cdip:187,cdip:098,cdip:233             best ecmwf_wam         n 2169 rmse 0.227 bias 0.033  alta
+[  689s] US-HI-KAU   cdip:238                               best ecmwf_wam         n  723 rmse 0.184 bias -0.076 media
+[  689s] US-HI-BIG   cdip:187                               best ecmwf_wam         n  723 rmse 0.264 bias 0.094  media
+[  689s] CA-BC-VI    ndbc:46087,ndbc:46041                  best meteofrance_wave  n 1319 rmse 0.252 bias -0.022 alta
+[  689s] CA-NS       (no buoys; spread 0.084)               best -                 n      rmse       bias        media
+[  689s] AU-QLD-SC   (no buoys; spread 0.081)               best -                 n      rmse       bias        media
+[  689s] AU-QLD-GC   (no buoys; spread 0.158)               best -                 n      rmse       bias        media
+[  689s] AU-NSW-NR   aodn:wooli                             best ecmwf_wam         n  194 rmse 0.323 bias 0.081  baja
+[  689s] AU-NSW-MN   aodn:crowdy,aodn:wooli                 best ncep_gfswave025   n  408 rmse 0.299 bias -0.094 baja
+[  689s] AU-NSW-NC   aodn:collaroy-narrabeen,aodn:crowdy    best meteofrance_wave  n  407 rmse 0.289 bias 0.087  media
+[  689s] AU-NSW-SYD  aodn:collaroy-narrabeen                best -                 n      rmse       bias        baja
+[  689s] AU-NSW-SC   aodn:bengello,aodn:collaroy-narrabeen  best -                 n      rmse       bias        baja
+[  689s] AU-VIC-SC   aodn:indented-head,aodn:apollo-bay,aodn:central best -                 n      rmse       bias        baja
+[  689s] AU-VIC-PI   aodn:indented-head,aodn:central,aodn:mt-eliza best -                 n      rmse       bias        baja
+[  689s] AU-VIC-W    aodn:port-fairy,aodn:cape-bridgewater,aodn:apollo-bay best meteofrance_wave  n 1108 rmse 0.462 bias 0.119  alta
+[  689s] AU-TAS      aodn:storm-bay                         best ecmwf_wam         n  193 rmse 0.222 bias 0.013  baja
+[  689s] AU-SA       aodn:victor-harbouroffshore,aodn:brighton,aodn:west-beach best meteofrance_wave  n 1631 rmse 0.301 bias -0.002 baja
+[  689s] AU-SA-EYR   aodn:ceduna                            best ecmwf_wam         n  194 rmse 0.151 bias -0.072 baja
+[  689s] AU-WA-MR    aodn:augusta-offshore,aodn:bunbury     best ncep_gfswave025   n  387 rmse 0.222 bias -0.048 media
+[  689s] AU-WA-PER   aodn:hillarys,aodn:jurien-bay-inshore,aodn:bunbury best ncep_gfswave025   n 1108 rmse 0.32  bias -0.072 baja
+[  689s] AU-WA-NW    aodn:dongara-inshore,aodn:dongara-offshore best ncep_gfswave025   n 1443 rmse 0.361 bias 0.135  baja
+[  689s] AU-WA-GAS   aodn:coral-bay-0-2,aodn:shark-bay-0-2  best ecmwf_wam         n  387 rmse 0.22  bias 0.097  media
+[  689s] NZ-NTL      (no buoys; spread 0.046)               best -                 n      rmse       bias        media
+[  689s] NZ-AKL      (no buoys; spread 0.109)               best -                 n      rmse       bias        media
+[  690s] NZ-RAG      (no buoys; spread 0.088)               best -                 n      rmse       bias        media
+[  690s] NZ-TAR      (no buoys; spread 0.035)               best -                 n      rmse       bias        media
+[  690s] NZ-BOP      (no buoys; spread 0.28)                best -                 n      rmse       bias        media
+[  690s] NZ-GIS      (no buoys; spread 0.058)               best -                 n      rmse       bias        media
+[  690s] NZ-WEL      (no buoys; spread 0.092)               best -                 n      rmse       bias        media
+[  690s] NZ-KAI      (no buoys; spread 0.1)                 best -                 n      rmse       bias        media
+[  690s] NZ-OTA      (no buoys; spread 0.065)               best -                 n      rmse       bias        media
+[  690s] NZ-WC       (no buoys; spread 0.076)               best -                 n      rmse       bias        media
+[  690s] FJ-MAM      (no buoys; spread 0.356)               best -                 n      rmse       bias        baja
+[  690s] FJ-SOU      (no buoys; spread 0.069)               best -                 n      rmse       bias        media
+[  690s] PF-TAH      (no buoys; spread 0.086)               best -                 n      rmse       bias        media
+[  690s] PF-ISL      (no buoys; spread 0.269)               best -                 n      rmse       bias        media
+[  690s] WS-ALL      (no buoys; spread 0.015)               best -                 n      rmse       bias        media
+[  690s] TO-ALL      (no buoys; spread 0.19)                best -                 n      rmse       bias        media
+[  690s] VU-ALL      (no buoys; spread 0.086)               best -                 n      rmse       bias        media
+[  690s] PG-ALL      (no buoys; spread 0.078)               best -                 n      rmse       bias        media
+[  690s] ID-BAL-BUK  (no buoys; spread 0.101)               best -                 n      rmse       bias        media
+[  690s] ID-BAL-W    (no buoys; spread 0.067)               best -                 n      rmse       bias        media
+[  690s] ID-BAL-E    (no buoys; spread 0.144)               best -                 n      rmse       bias        media
+[  690s] ID-JAV-E    (no buoys; spread 0.064)               best -                 n      rmse       bias        media
+[  690s] ID-JAV-W    (no buoys; spread 0.247)               best -                 n      rmse       bias        media
+[  690s] ID-LOM      (no buoys; spread 0.062)               best -                 n      rmse       bias        media
+[  690s] ID-SBW      (no buoys; spread 0.097)               best -                 n      rmse       bias        media
+[  690s] ID-SMB      (no buoys; spread 0.072)               best -                 n      rmse       bias        media
+[  690s] ID-ROT      (no buoys; spread 0.188)               best -                 n      rmse       bias        media
+[  690s] ID-MEN      (no buoys; spread 0.09)                best -                 n      rmse       bias        media
+[  690s] ID-NIA      (no buoys; spread 0.058)               best -                 n      rmse       bias        media
+[  690s] ID-KRU      (no buoys; spread 0.037)               best -                 n      rmse       bias        media
+[  690s] PH-SIA      (no buoys; spread 0.062)               best -                 n      rmse       bias        media
+[  690s] PH-LUZ      (no buoys; spread 0.093)               best -                 n      rmse       bias        media
+[  690s] PH-EAS      (no buoys; spread 0.092)               best -                 n      rmse       bias        media
+[  690s] LK-E        (no buoys; spread 0.139)               best -                 n      rmse       bias        media
+[  690s] LK-S        (no buoys; spread 0.05)                best -                 n      rmse       bias        media
+[  690s] MV-NMA      (no buoys; spread 0.182)               best -                 n      rmse       bias        media
+[  690s] MV-SMA      (no buoys; spread 0.088)               best -                 n      rmse       bias        media
+[  690s] MV-SOU      (no buoys; spread 0.23)                best -                 n      rmse       bias        media
+[  690s] MV-CEN      (no buoys; spread 0.203)               best -                 n      rmse       bias        media
+[  690s] JP-CHI      (no buoys; spread 0.096)               best -                 n      rmse       bias        media
+[  690s] JP-SHO      (no buoys; spread 0.118)               best -                 n      rmse       bias        media
+[  690s] JP-IZU      (no buoys; spread 0.175)               best -                 n      rmse       bias        media
+[  690s] JP-IBA      (no buoys; spread 0.06)                best -                 n      rmse       bias        media
+[  690s] JP-SHK      (no buoys; spread 0.091)               best -                 n      rmse       bias        media
+[  691s] JP-KYU      (no buoys; spread 0.118)               best -                 n      rmse       bias        media
+[  691s] TW-E        (no buoys; spread 0.166)               best -                 n      rmse       bias        media
+[  691s] TW-NE       (no buoys; spread 0.082)               best -                 n      rmse       bias        media
+[  691s] IN-W        (no buoys; spread 0.102)               best -                 n      rmse       bias        media
+[  691s] IN-E        (no buoys; spread 0.122)               best -                 n      rmse       bias        media
+[  691s] VN-ALL      (no buoys; spread 0.226)               best -                 n      rmse       bias        media
+[  691s] KR-ALL      (no buoys; spread 0.137)               best -                 n      rmse       bias        media
+[  691s] CN-HAI      (no buoys; spread 0.131)               best -                 n      rmse       bias        media
+[  691s] ZA-WC-CPT   (no buoys; spread 0.243)               best -                 n      rmse       bias        media
+[  691s] ZA-WC-WCO   (no buoys; spread 0.142)               best -                 n      rmse       bias        media
+[  691s] ZA-WC-GR    (no buoys; spread 0.093)               best -                 n      rmse       bias        media
+[  691s] ZA-EC-JB    (no buoys; spread 0.04)                best -                 n      rmse       bias        media
+[  691s] ZA-EC-PE    (no buoys; spread 0.056)               best -                 n      rmse       bias        media
+[  691s] ZA-EC-WLD   (no buoys; spread 0.059)               best -                 n      rmse       bias        media
+[  691s] ZA-KZN-DBN  (no buoys; spread 0.055)               best -                 n      rmse       bias        media
+[  691s] ZA-KZN-N    (no buoys; spread 0.069)               best -                 n      rmse       bias        media
+[  691s] ZA-KZN-S    (no buoys; spread 0.052)               best -                 n      rmse       bias        media
+[  691s] NA-ERO      (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  691s] MA-TAG      (no buoys; spread 0.114)               best -                 n      rmse       bias        media
+[  691s] MA-N        (no buoys; spread 0.081)               best -                 n      rmse       bias        media
+[  691s] MA-S        (no buoys; spread 0.102)               best -                 n      rmse       bias        media
+[  691s] SN-ALL      (no buoys; spread 0.075)               best -                 n      rmse       bias        media
+[  691s] LR-ALL      (no buoys; spread 0.037)               best -                 n      rmse       bias        media
+[  691s] GH-ALL      (no buoys; spread 0.093)               best -                 n      rmse       bias        media
+[  691s] MZ-S        (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  691s] MZ-INH      (no buoys; spread 0.176)               best -                 n      rmse       bias        media
+[  691s] MG-ALL      (no buoys; spread 0.038)               best -                 n      rmse       bias        media
+[  691s] RE-ALL      (no buoys; spread 0.135)               best -                 n      rmse       bias        media
+[  691s] MU-ALL      (no buoys; spread 0.106)               best -                 n      rmse       bias        media
+[  691s] CV-ALL      (no buoys; spread 0.151)               best -                 n      rmse       bias        media
+[  691s] FR-PBA      (no buoys; spread 0.092)               best -                 n      rmse       bias        media
+[  691s] FR-HOS      (no buoys; spread 0.066)               best -                 n      rmse       bias        media
+[  691s] FR-GIR      (no buoys; spread 0.096)               best -                 n      rmse       bias        media
+[  691s] FR-VEN      (no buoys; spread 0.161)               best -                 n      rmse       bias        media
+[  691s] FR-BRE      (no buoys; spread 0.126)               best -                 n      rmse       bias        media
+[  691s] ES-PV       (no buoys; spread 0.205)               best -                 n      rmse       bias        media
+[  691s] ES-CAN      (no buoys; spread 0.09)                best -                 n      rmse       bias        media
+[  691s] ES-AST      (no buoys; spread 0.076)               best -                 n      rmse       bias        media
+[  691s] ES-GAL      (no buoys; spread 0.114)               best -                 n      rmse       bias        media
+[  691s] ES-AND      (no buoys; spread 0.237)               best -                 n      rmse       bias        media
+[  691s] ES-CN-E     (no buoys; spread 0.299)               best -                 n      rmse       bias        media
+[  692s] ES-CN-W     (no buoys; spread 0.166)               best -                 n      rmse       bias        media
+[  692s] PT-NOR      (no buoys; spread 0.082)               best -                 n      rmse       bias        media
+[  692s] PT-CEN      (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  692s] PT-PEN      (no buoys; spread 0.081)               best -                 n      rmse       bias        media
+[  692s] PT-ERI      (no buoys; spread 0.085)               best -                 n      rmse       bias        media
+[  692s] PT-LIS      (no buoys; spread 0.329)               best -                 n      rmse       bias        baja
+[  692s] PT-ALG      (no buoys; spread 0.089)               best -                 n      rmse       bias        media
+[  692s] PT-AZO      (no buoys; spread 0.09)                best -                 n      rmse       bias        media
+[  692s] PT-MAD      (no buoys; spread 0.118)               best -                 n      rmse       bias        media
+[  692s] GB-CON      (no buoys; spread 0.077)               best -                 n      rmse       bias        media
+[  692s] GB-DEV      (no buoys; spread 0.17)                best -                 n      rmse       bias        media
+[  692s] GB-SOU      (no buoys; spread 0.31)                best -                 n      rmse       bias        baja
+[  692s] GB-WAL      (no buoys; spread 0.091)               best -                 n      rmse       bias        media
+[  692s] GB-SCO      (no buoys; spread 0.147)               best -                 n      rmse       bias        media
+[  692s] GB-NE       (no buoys; spread 0.145)               best -                 n      rmse       bias        media
+[  692s] GB-NIR      (no buoys; spread 0.299)               best -                 n      rmse       bias        media
+[  692s] IE-NW       (no buoys; spread 0.292)               best -                 n      rmse       bias        media
+[  692s] IE-SW       (no buoys; spread 0.16)                best -                 n      rmse       bias        media
+[  692s] IE-SE       (no buoys; spread 0.173)               best -                 n      rmse       bias        media
+[  692s] NO-S        (no buoys; spread 0.179)               best -                 n      rmse       bias        media
+[  692s] NO-N        (no buoys; spread 0.056)               best -                 n      rmse       bias        media
+[  692s] DK-ALL      (no buoys; spread 0.173)               best -                 n      rmse       bias        media
+[  692s] NL-ALL      (no buoys; spread 0.115)               best -                 n      rmse       bias        media
+[  692s] DE-ALL      (no buoys; spread 0.284)               best -                 n      rmse       bias        media
+[  692s] IT-ALL      (no buoys; spread 0.196)               best -                 n      rmse       bias        media
+[  692s] IT-SAR      (no buoys; spread 0.18)                best -                 n      rmse       bias        media
+[  692s] IS-ALL      (no buoys; spread 0.127)               best -                 n      rmse       bias        media
+[  692s] check aodn  ncep_gfswave025   {'n': 10781, 'tp_bias': 1.36, 'tm_bias': 5.59, 'dir_mae': 33.51, 'dir_bias': 3.64}
+[  692s] check aodn  meteofrance_wave  {'n': 10781, 'tp_bias': -1.31, 'tm_bias': 2.92, 'dir_mae': 28.56, 'dir_bias': 1.27}
+[  692s] check aodn  ecmwf_wam         {'n': 10781, 'tp_bias': 0.75, 'tm_bias': 2.86, 'dir_mae': 21.31, 'dir_bias': 2.02}
+[  692s] check cdip  ncep_gfswave016   {'n': 32297, 'tp_bias': 0.62, 'tm_bias': 5.03, 'dir_mae': 23.22, 'dir_bias': -0.49}
+[  692s] check cdip  ncep_gfswave025   {'n': 32297, 'tp_bias': 0.38, 'tm_bias': 4.79, 'dir_mae': 22.79, 'dir_bias': -3.44}
+[  692s] check cdip  meteofrance_wave  {'n': 30851, 'tp_bias': -1.88, 'tm_bias': 2.61, 'dir_mae': 23.06, 'dir_bias': 5.38}
+[  692s] check cdip  ecmwf_wam         {'n': 32297, 'tp_bias': -0.53, 'tm_bias': 2.32, 'dir_mae': 19.32, 'dir_bias': 4.73}
+[  692s] check ndbc  ncep_gfswave016   {'n': 15569, 'tp_bias': 0.61, 'tm_bias': 4.14, 'dir_mae': 23.09, 'dir_bias': -13.14}
+[  692s] check ndbc  ncep_gfswave025   {'n': 15569, 'tp_bias': 0.42, 'tm_bias': 4.04, 'dir_mae': 20.64, 'dir_bias': -8.89}
+[  692s] check ndbc  ecmwf_wam         {'n': 15569, 'tp_bias': -0.51, 'tm_bias': 1.79, 'dir_mae': 16.89, 'dir_bias': -4.91}
+[  692s] check ndbc  meteofrance_wave  {'n': 12819, 'tp_bias': -1.09, 'tm_bias': 2.2, 'dir_mae': 19.68, 'dir_bias': -5.62}
+[  692s] done: 212 regions, 40 with buoys, 23 suggestions
+[  692s] ERROR: sources that failed: mi (the outputs are written without them)

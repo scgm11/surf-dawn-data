@@ -1,0 +1,22 @@
+{
+ "region": "NZ-TAR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.035,
+  "hours": 744,
+  "point": [
+   -39.0372,
+   174.1025
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.84,
+   "meteofrance_wave": 1.87,
+   "ecmwf_wam": 1.82
+  }
+ },
+ "confidence": "media"
+}

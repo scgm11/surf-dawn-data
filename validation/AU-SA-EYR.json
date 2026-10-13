@@ -1,0 +1,74 @@
+{
+ "region": "AU-SA-EYR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:ceduna"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 194,
+   "hs_bias": -0.072,
+   "hs_rmse": 0.151,
+   "hs_si": 0.097,
+   "tp_bias": 0.19,
+   "dir_mae": 8.6,
+   "dir_bias": 1.2,
+   "tm_bias": 3.49,
+   "obs_hs": 1.25,
+   "tp_type": "peak"
+  },
+  "meteofrance_wave": {
+   "n": 194,
+   "hs_bias": 0.238,
+   "hs_rmse": 0.337,
+   "hs_si": 0.129,
+   "tp_bias": -2.86,
+   "dir_mae": 13.0,
+   "dir_bias": -5.9,
+   "tm_bias": 2.66,
+   "obs_hs": 1.25,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave025": {
+   "n": 194,
+   "hs_bias": -0.794,
+   "hs_rmse": 1.068,
+   "hs_si": 0.319,
+   "tp_bias": -10.23,
+   "dir_mae": 74.9,
+   "dir_bias": -42.0,
+   "tm_bias": -4.71,
+   "obs_hs": 1.25,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave025",
+ "margin": 6.073,
+ "per_buoy": {
+  "aodn:ceduna": {
+   "n": 194,
+   "best": "ecmwf_wam",
+   "km": 68.3
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.2,
+  "hours": 744,
+  "point": [
+   -32.083,
+   132.989
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.33,
+   "meteofrance_wave": 2.19,
+   "ecmwf_wam": 2.04
+  }
+ }
+}

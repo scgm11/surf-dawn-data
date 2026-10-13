@@ -1,0 +1,21 @@
+{
+ "region": "PE-SUR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.024,
+  "hours": 744,
+  "point": [
+   -17.02,
+   -72.03
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.42,
+   "ecmwf_wam": 1.36
+  }
+ },
+ "confidence": "media"
+}

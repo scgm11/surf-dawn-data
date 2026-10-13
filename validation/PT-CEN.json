@@ -1,0 +1,24 @@
+{
+ "region": "PT-CEN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.061,
+  "hours": 744,
+  "point": [
+   40.215,
+   -8.892
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.65,
+   "ncep_gfswave025": 1.67,
+   "meteofrance_wave": 1.59,
+   "ecmwf_wam": 1.68,
+   "dwd_ewam": 1.64
+  }
+ },
+ "confidence": "media"
+}

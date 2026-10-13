@@ -1,0 +1,23 @@
+{
+ "region": "CO-PAC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.127,
+  "hours": 744,
+  "point": [
+   5.713,
+   -77.264
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.63,
+   "ncep_gfswave025": 0.84,
+   "meteofrance_wave": 0.75,
+   "ecmwf_wam": 0.66
+  }
+ },
+ "confidence": "media"
+}

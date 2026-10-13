@@ -1,0 +1,98 @@
+{
+ "region": "AU-WA-PER",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:hillarys",
+  "aodn:jurien-bay-inshore",
+  "aodn:bunbury"
+ ],
+ "excluded": [
+  {
+   "id": "aodn:quinns-dog-beach",
+   "km": 1.8,
+   "why": "sesgo de Hs +59%, +101%, +130% en todos los modelos"
+  },
+  {
+   "id": "aodn:cockburn-sound",
+   "km": 11.9,
+   "why": "sesgo de Hs +214%, +134%, +60% en todos los modelos"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1108,
+   "hs_bias": -0.072,
+   "hs_rmse": 0.32,
+   "hs_si": 0.128,
+   "tp_bias": 0.52,
+   "dir_mae": 8.9,
+   "dir_bias": 4.5,
+   "tm_bias": 5.1,
+   "obs_hs": 2.18,
+   "tp_type": "mean"
+  },
+  "meteofrance_wave": {
+   "n": 1108,
+   "hs_bias": 0.117,
+   "hs_rmse": 0.335,
+   "hs_si": 0.1,
+   "tp_bias": -2.35,
+   "dir_mae": 15.5,
+   "dir_bias": -12.4,
+   "tm_bias": 2.23,
+   "obs_hs": 2.18,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 1108,
+   "hs_bias": -0.095,
+   "hs_rmse": 0.444,
+   "hs_si": 0.18,
+   "tp_bias": 0.21,
+   "dir_mae": 14.0,
+   "dir_bias": -11.3,
+   "tm_bias": 2.84,
+   "obs_hs": 2.18,
+   "tp_type": "peak"
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "baja",
+ "vs": "meteofrance_wave",
+ "margin": 0.047,
+ "per_buoy": {
+  "aodn:hillarys": {
+   "n": 193,
+   "best": "meteofrance_wave",
+   "km": 9.5
+  },
+  "aodn:jurien-bay-inshore": {
+   "n": 722,
+   "best": "ncep_gfswave025",
+   "km": 144.3
+  },
+  "aodn:bunbury": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 145.4
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.043,
+  "hours": 744,
+  "point": [
+   -31.762,
+   115.722
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.88,
+   "meteofrance_wave": 1.82,
+   "ecmwf_wam": 1.77
+  }
+ }
+}

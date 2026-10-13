@@ -1,0 +1,23 @@
+{
+ "region": "BR-NE-RN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.106,
+  "hours": 744,
+  "point": [
+   -6.37,
+   -35.0
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.07,
+   "ncep_gfswave025": 1.42,
+   "meteofrance_wave": 1.33,
+   "ecmwf_wam": 1.24
+  }
+ },
+ "confidence": "media"
+}

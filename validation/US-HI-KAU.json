@@ -1,0 +1,87 @@
+{
+ "region": "US-HI-KAU",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "cdip:238"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 723,
+   "hs_bias": -0.076,
+   "hs_rmse": 0.184,
+   "hs_si": 0.133,
+   "tp_bias": -0.7,
+   "dir_mae": 19.6,
+   "dir_bias": -6.9,
+   "tm_bias": 3.25,
+   "obs_hs": 1.2,
+   "tp_type": "peak"
+  },
+  "ncep_gfswave025": {
+   "n": 723,
+   "hs_bias": 0.097,
+   "hs_rmse": 0.366,
+   "hs_si": 0.288,
+   "tp_bias": -0.43,
+   "dir_mae": 32.4,
+   "dir_bias": 1.2,
+   "tm_bias": 5.56,
+   "obs_hs": 1.2,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave016": {
+   "n": 723,
+   "hs_bias": -0.175,
+   "hs_rmse": 0.308,
+   "hs_si": 0.187,
+   "tp_bias": 0.72,
+   "dir_mae": 20.4,
+   "dir_bias": 2.3,
+   "tm_bias": 6.71,
+   "obs_hs": 1.2,
+   "tp_type": "mean"
+  },
+  "meteofrance_wave": {
+   "n": 723,
+   "hs_bias": 0.196,
+   "hs_rmse": 0.372,
+   "hs_si": 0.239,
+   "tp_bias": -3.55,
+   "dir_mae": 27.9,
+   "dir_bias": -21.1,
+   "tm_bias": 2.44,
+   "obs_hs": 1.2,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "media",
+ "vs": "ncep_gfswave016",
+ "margin": 0.674,
+ "per_buoy": {
+  "cdip:238": {
+   "n": 723,
+   "best": "ecmwf_wam",
+   "km": 142.6
+  }
+ },
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.12,
+  "hours": 744,
+  "point": [
+   21.944,
+   -159.648
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.3,
+   "ncep_gfswave025": 1.41,
+   "meteofrance_wave": 1.48,
+   "ecmwf_wam": 1.12
+  }
+ }
+}

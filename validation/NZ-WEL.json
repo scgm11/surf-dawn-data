@@ -1,0 +1,22 @@
+{
+ "region": "NZ-WEL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.092,
+  "hours": 744,
+  "point": [
+   -41.614,
+   175.289
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.81,
+   "meteofrance_wave": 2.02,
+   "ecmwf_wam": 1.94
+  }
+ },
+ "confidence": "media"
+}

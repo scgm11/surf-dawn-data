@@ -1,0 +1,24 @@
+{
+ "region": "ES-CAN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.09,
+  "hours": 744,
+  "point": [
+   43.464,
+   -3.944
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.44,
+   "ncep_gfswave025": 1.44,
+   "meteofrance_wave": 1.61,
+   "ecmwf_wam": 1.44,
+   "dwd_ewam": 1.71
+  }
+ },
+ "confidence": "media"
+}

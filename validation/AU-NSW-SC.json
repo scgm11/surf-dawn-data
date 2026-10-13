@@ -1,0 +1,75 @@
+{
+ "region": "AU-NSW-SC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:bengello",
+  "aodn:collaroy-narrabeen"
+ ],
+ "wave": {
+  "meteofrance_wave": {
+   "n": 387,
+   "hs_bias": 0.326,
+   "hs_rmse": 0.454,
+   "hs_si": 0.349,
+   "tp_bias": -1.85,
+   "dir_mae": 33.7,
+   "dir_bias": 31.7,
+   "tm_bias": 2.2,
+   "obs_hs": 0.95,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 387,
+   "hs_bias": 0.502,
+   "hs_rmse": 0.708,
+   "hs_si": 0.551,
+   "tp_bias": -0.66,
+   "dir_mae": 42.2,
+   "dir_bias": 40.6,
+   "tm_bias": 1.85,
+   "obs_hs": 0.95,
+   "tp_type": "peak"
+  },
+  "ncep_gfswave025": {
+   "n": 387,
+   "hs_bias": 0.465,
+   "hs_rmse": 0.874,
+   "hs_si": 0.794,
+   "tp_bias": -2.16,
+   "dir_mae": 47.3,
+   "dir_bias": 35.7,
+   "tm_bias": 1.89,
+   "obs_hs": 0.95,
+   "tp_type": "mean"
+  }
+ },
+ "confidence": "baja",
+ "per_buoy": {
+  "aodn:bengello": {
+   "n": 194,
+   "best": "ncep_gfswave025",
+   "km": 3.4
+  },
+  "aodn:collaroy-narrabeen": {
+   "n": 193,
+   "best": null,
+   "km": 62.9
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.11,
+  "hours": 744,
+  "point": [
+   -35.3395,
+   150.479
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.43,
+   "meteofrance_wave": 1.21,
+   "ecmwf_wam": 1.53
+  }
+ }
+}

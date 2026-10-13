@@ -1,0 +1,23 @@
+{
+ "region": "FR-GIR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.096,
+  "hours": 744,
+  "point": [
+   44.639,
+   -1.265
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.34,
+   "meteofrance_wave": 1.48,
+   "ecmwf_wam": 1.2,
+   "dwd_ewam": 1.4
+  }
+ },
+ "confidence": "media"
+}

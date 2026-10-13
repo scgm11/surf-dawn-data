@@ -1,0 +1,23 @@
+{
+ "region": "DK-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.173,
+  "hours": 744,
+  "point": [
+   56.79,
+   8.22
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.97,
+   "meteofrance_wave": 1.31,
+   "ecmwf_wam": 1.53,
+   "dwd_ewam": 1.49
+  }
+ },
+ "confidence": "media"
+}

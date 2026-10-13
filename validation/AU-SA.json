@@ -1,0 +1,86 @@
+{
+ "region": "AU-SA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:victor-harbouroffshore",
+  "aodn:brighton",
+  "aodn:west-beach"
+ ],
+ "wave": {
+  "meteofrance_wave": {
+   "n": 1631,
+   "hs_bias": -0.002,
+   "hs_rmse": 0.301,
+   "hs_si": 0.29,
+   "tp_bias": -2.73,
+   "dir_mae": 16.5,
+   "dir_bias": 2.4,
+   "tm_bias": 2.66,
+   "obs_hs": 1.04,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 1631,
+   "hs_bias": -0.095,
+   "hs_rmse": 0.324,
+   "hs_si": 0.298,
+   "tp_bias": 0.96,
+   "dir_mae": 14.2,
+   "dir_bias": 1.5,
+   "tm_bias": 3.44,
+   "obs_hs": 1.04,
+   "tp_type": "peak"
+  },
+  "ncep_gfswave025": {
+   "n": 1631,
+   "hs_bias": 0.111,
+   "hs_rmse": 0.348,
+   "hs_si": 0.318,
+   "tp_bias": -2.36,
+   "dir_mae": 22.8,
+   "dir_bias": -3.8,
+   "tm_bias": 3.02,
+   "obs_hs": 1.04,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "meteofrance_wave"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave025",
+ "margin": 0.156,
+ "per_buoy": {
+  "aodn:victor-harbouroffshore": {
+   "n": 722,
+   "best": "meteofrance_wave",
+   "km": 9.0
+  },
+  "aodn:brighton": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 13.7
+  },
+  "aodn:west-beach": {
+   "n": 716,
+   "best": "ecmwf_wam",
+   "km": 22.0
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.1,
+  "hours": 744,
+  "point": [
+   -35.866,
+   137.765
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.79,
+   "meteofrance_wave": 1.47,
+   "ecmwf_wam": 1.55
+  }
+ }
+}

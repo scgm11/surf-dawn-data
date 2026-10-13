@@ -1,0 +1,22 @@
+{
+ "region": "ID-SBW",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.097,
+  "hours": 744,
+  "point": [
+   -8.905,
+   116.83
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.18,
+   "meteofrance_wave": 1.41,
+   "ecmwf_wam": 1.17
+  }
+ },
+ "confidence": "media"
+}

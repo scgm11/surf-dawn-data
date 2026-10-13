@@ -1,0 +1,23 @@
+{
+ "region": "LK-E",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.139,
+  "hours": 744,
+  "point": [
+   6.8,
+   81.82
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.2,
+   "ncep_gfswave025": 1.44,
+   "meteofrance_wave": 0.99,
+   "ecmwf_wam": 1.28
+  }
+ },
+ "confidence": "media"
+}

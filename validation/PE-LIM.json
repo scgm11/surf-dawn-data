@@ -1,0 +1,22 @@
+{
+ "region": "PE-LIM",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.047,
+  "hours": 744,
+  "point": [
+   -12.41,
+   -76.765
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.45,
+   "meteofrance_wave": 1.35,
+   "ecmwf_wam": 1.38
+  }
+ },
+ "confidence": "media"
+}

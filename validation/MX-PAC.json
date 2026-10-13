@@ -1,0 +1,22 @@
+{
+ "region": "MX-PAC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.06,
+  "hours": 744,
+  "point": [
+   17.833,
+   -101.77
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.88,
+   "meteofrance_wave": 1.92,
+   "ecmwf_wam": 1.73
+  }
+ },
+ "confidence": "media"
+}

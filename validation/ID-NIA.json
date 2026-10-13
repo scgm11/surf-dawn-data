@@ -1,0 +1,23 @@
+{
+ "region": "ID-NIA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.058,
+  "hours": 744,
+  "point": [
+   -0.585,
+   97.735
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.79,
+   "ncep_gfswave025": 1.75,
+   "meteofrance_wave": 1.97,
+   "ecmwf_wam": 1.96
+  }
+ },
+ "confidence": "media"
+}

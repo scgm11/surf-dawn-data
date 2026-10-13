@@ -1,0 +1,24 @@
+{
+ "region": "MA-N",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.081,
+  "hours": 744,
+  "point": [
+   33.529,
+   -7.801
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.33,
+   "ncep_gfswave025": 1.33,
+   "meteofrance_wave": 1.45,
+   "ecmwf_wam": 1.33,
+   "dwd_ewam": 1.22
+  }
+ },
+ "confidence": "media"
+}

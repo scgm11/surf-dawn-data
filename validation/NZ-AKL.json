@@ -1,0 +1,22 @@
+{
+ "region": "NZ-AKL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.109,
+  "hours": 744,
+  "point": [
+   -37.041,
+   174.501
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 2.27,
+   "meteofrance_wave": 2.43,
+   "ecmwf_wam": 1.88
+  }
+ },
+ "confidence": "media"
+}

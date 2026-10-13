@@ -1,0 +1,23 @@
+{
+ "region": "GB-WAL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.091,
+  "hours": 744,
+  "point": [
+   52.413,
+   -4.09
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.0,
+   "meteofrance_wave": 1.0,
+   "ecmwf_wam": 0.92,
+   "dwd_ewam": 1.02
+  }
+ },
+ "confidence": "media"
+}

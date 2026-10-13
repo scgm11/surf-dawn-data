@@ -1,0 +1,23 @@
+{
+ "region": "GB-SCO",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.147,
+  "hours": 744,
+  "point": [
+   57.725,
+   -3.274
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.72,
+   "meteofrance_wave": 0.71,
+   "ecmwf_wam": 0.63,
+   "dwd_ewam": 0.7
+  }
+ },
+ "confidence": "media"
+}

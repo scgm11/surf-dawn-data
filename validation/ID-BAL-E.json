@@ -1,0 +1,23 @@
+{
+ "region": "ID-BAL-E",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.144,
+  "hours": 744,
+  "point": [
+   -8.607,
+   115.325
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.09,
+   "ncep_gfswave025": 1.48,
+   "meteofrance_wave": 1.06,
+   "ecmwf_wam": 1.25
+  }
+ },
+ "confidence": "media"
+}

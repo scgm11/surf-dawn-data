@@ -1,0 +1,23 @@
+{
+ "region": "MX-OAX",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.082,
+  "hours": 744,
+  "point": [
+   15.74,
+   -96.75
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.54,
+   "ncep_gfswave025": 1.68,
+   "meteofrance_wave": 1.54,
+   "ecmwf_wam": 1.38
+  }
+ },
+ "confidence": "media"
+}

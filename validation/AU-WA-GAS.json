@@ -1,0 +1,80 @@
+{
+ "region": "AU-WA-GAS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:coral-bay-0-2",
+  "aodn:shark-bay-0-2"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 387,
+   "hs_bias": 0.097,
+   "hs_rmse": 0.22,
+   "hs_si": 0.14,
+   "tp_bias": 1.18,
+   "dir_mae": 48.5,
+   "dir_bias": -37.0,
+   "tm_bias": 3.9,
+   "obs_hs": 1.29,
+   "tp_type": "peak"
+  },
+  "meteofrance_wave": {
+   "n": 387,
+   "hs_bias": 0.104,
+   "hs_rmse": 0.232,
+   "hs_si": 0.146,
+   "tp_bias": -2.45,
+   "dir_mae": 45.7,
+   "dir_bias": -32.8,
+   "tm_bias": 3.31,
+   "obs_hs": 1.29,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave025": {
+   "n": 387,
+   "hs_bias": 0.229,
+   "hs_rmse": 0.818,
+   "hs_si": 0.591,
+   "tp_bias": 1.85,
+   "dir_mae": 39.7,
+   "dir_bias": -21.0,
+   "tm_bias": 7.61,
+   "obs_hs": 1.29,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "media",
+ "vs": "ncep_gfswave025",
+ "margin": 2.718,
+ "per_buoy": {
+  "aodn:coral-bay-0-2": {
+   "n": 194,
+   "best": "ecmwf_wam",
+   "km": 84.7
+  },
+  "aodn:shark-bay-0-2": {
+   "n": 193,
+   "best": null,
+   "km": 129.1
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.078,
+  "hours": 744,
+  "point": [
+   -24.0309,
+   113.4394
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.77,
+   "meteofrance_wave": 2.01,
+   "ecmwf_wam": 1.72
+  }
+ }
+}

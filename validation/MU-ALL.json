@@ -1,0 +1,22 @@
+{
+ "region": "MU-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.106,
+  "hours": 744,
+  "point": [
+   -20.47,
+   57.299
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.61,
+   "meteofrance_wave": 2.07,
+   "ecmwf_wam": 1.89
+  }
+ },
+ "confidence": "media"
+}

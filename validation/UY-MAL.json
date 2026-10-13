@@ -1,0 +1,22 @@
+{
+ "region": "UY-MAL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.125,
+  "hours": 744,
+  "point": [
+   -34.9072,
+   -54.8199
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.38,
+   "meteofrance_wave": 1.11,
+   "ecmwf_wam": 1.47
+  }
+ },
+ "confidence": "media"
+}

@@ -1,0 +1,22 @@
+{
+ "region": "AR-BAN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.125,
+  "hours": 744,
+  "point": [
+   -36.79,
+   -56.685
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.33,
+   "meteofrance_wave": 1.3,
+   "ecmwf_wam": 1.01
+  }
+ },
+ "confidence": "media"
+}

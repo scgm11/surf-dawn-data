@@ -1,0 +1,22 @@
+{
+ "region": "NZ-RAG",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.088,
+  "hours": 744,
+  "point": [
+   -37.829,
+   174.785
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.97,
+   "meteofrance_wave": 2.18,
+   "ecmwf_wam": 2.42
+  }
+ },
+ "confidence": "media"
+}

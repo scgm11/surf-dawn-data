@@ -1,0 +1,80 @@
+{
+ "region": "AU-NSW-MN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:crowdy",
+  "aodn:wooli"
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 408,
+   "hs_bias": -0.094,
+   "hs_rmse": 0.299,
+   "hs_si": 0.162,
+   "tp_bias": -1.2,
+   "dir_mae": 25.5,
+   "dir_bias": -14.1,
+   "tm_bias": 2.48,
+   "obs_hs": 1.59,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 408,
+   "hs_bias": -0.038,
+   "hs_rmse": 0.325,
+   "hs_si": 0.201,
+   "tp_bias": -0.83,
+   "dir_mae": 20.3,
+   "dir_bias": 0.3,
+   "tm_bias": 1.59,
+   "obs_hs": 1.59,
+   "tp_type": "peak"
+  },
+  "meteofrance_wave": {
+   "n": 408,
+   "hs_bias": -0.143,
+   "hs_rmse": 0.421,
+   "hs_si": 0.222,
+   "tp_bias": -2.34,
+   "dir_mae": 20.5,
+   "dir_bias": -7.7,
+   "tm_bias": 1.34,
+   "obs_hs": 1.59,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "baja",
+ "vs": "ecmwf_wam",
+ "margin": 0.087,
+ "per_buoy": {
+  "aodn:crowdy": {
+   "n": 214,
+   "best": "meteofrance_wave",
+   "km": 4.5
+  },
+  "aodn:wooli": {
+   "n": 194,
+   "best": "ecmwf_wam",
+   "km": 17.3
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.158,
+  "hours": 744,
+  "point": [
+   -31.19,
+   152.9835
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.2,
+   "meteofrance_wave": 1.72,
+   "ecmwf_wam": 1.41
+  }
+ }
+}

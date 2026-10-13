@@ -1,0 +1,22 @@
+{
+ "region": "BR-BA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.058,
+  "hours": 744,
+  "point": [
+   -14.347,
+   -38.98
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.17,
+   "meteofrance_wave": 1.13,
+   "ecmwf_wam": 1.03
+  }
+ },
+ "confidence": "media"
+}

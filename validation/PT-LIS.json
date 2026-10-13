@@ -1,0 +1,24 @@
+{
+ "region": "PT-LIS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.329,
+  "hours": 744,
+  "point": [
+   38.68,
+   -9.338
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.07,
+   "ncep_gfswave025": 1.63,
+   "meteofrance_wave": 1.37,
+   "ecmwf_wam": 0.78,
+   "dwd_ewam": 0.7
+  }
+ },
+ "confidence": "baja"
+}

@@ -1,0 +1,22 @@
+{
+ "region": "ZA-KZN-DBN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.055,
+  "hours": 744,
+  "point": [
+   -29.8545,
+   31.0495
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.8,
+   "meteofrance_wave": 1.83,
+   "ecmwf_wam": 1.7
+  }
+ },
+ "confidence": "media"
+}

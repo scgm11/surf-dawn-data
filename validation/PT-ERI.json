@@ -1,0 +1,24 @@
+{
+ "region": "PT-ERI",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.085,
+  "hours": 744,
+  "point": [
+   38.97,
+   -9.4215
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.58,
+   "ncep_gfswave025": 1.58,
+   "meteofrance_wave": 1.83,
+   "ecmwf_wam": 1.63,
+   "dwd_ewam": 1.76
+  }
+ },
+ "confidence": "media"
+}

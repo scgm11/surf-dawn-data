@@ -1,0 +1,23 @@
+{
+ "region": "MX-CAR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.197,
+  "hours": 744,
+  "point": [
+   20.634,
+   -87.074
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.55,
+   "ncep_gfswave025": 0.36,
+   "meteofrance_wave": 0.45,
+   "ecmwf_wam": 0.43
+  }
+ },
+ "confidence": "media"
+}

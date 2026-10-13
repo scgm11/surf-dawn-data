@@ -1,0 +1,23 @@
+{
+ "region": "GB-CON",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.077,
+  "hours": 744,
+  "point": [
+   50.417,
+   -5.1
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.53,
+   "meteofrance_wave": 1.63,
+   "ecmwf_wam": 1.43,
+   "dwd_ewam": 1.51
+  }
+ },
+ "confidence": "media"
+}

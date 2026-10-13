@@ -1,0 +1,22 @@
+{
+ "region": "CA-NS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.084,
+  "hours": 744,
+  "point": [
+   44.444,
+   -63.628
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.29,
+   "meteofrance_wave": 1.1,
+   "ecmwf_wam": 1.13
+  }
+ },
+ "confidence": "media"
+}

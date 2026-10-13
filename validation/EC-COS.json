@@ -1,0 +1,23 @@
+{
+ "region": "EC-COS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.344,
+  "hours": 744,
+  "point": [
+   -0.939,
+   -80.733
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.66,
+   "ncep_gfswave025": 0.86,
+   "meteofrance_wave": 1.09,
+   "ecmwf_wam": 0.4
+  }
+ },
+ "confidence": "baja"
+}

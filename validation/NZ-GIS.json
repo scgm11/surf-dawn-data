@@ -1,0 +1,21 @@
+{
+ "region": "NZ-GIS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.058,
+  "hours": 744,
+  "point": [
+   -38.673,
+   178.077
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.03,
+   "ecmwf_wam": 1.11
+  }
+ },
+ "confidence": "media"
+}

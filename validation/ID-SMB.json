@@ -1,0 +1,22 @@
+{
+ "region": "ID-SMB",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.072,
+  "hours": 744,
+  "point": [
+   -9.738,
+   119.314
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.64,
+   "meteofrance_wave": 1.47,
+   "ecmwf_wam": 1.69
+  }
+ },
+ "confidence": "media"
+}

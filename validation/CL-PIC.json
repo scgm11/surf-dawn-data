@@ -1,0 +1,21 @@
+{
+ "region": "CL-PIC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.088,
+  "hours": 744,
+  "point": [
+   -34.38,
+   -72.01
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.74,
+   "ecmwf_wam": 1.47
+  }
+ },
+ "confidence": "media"
+}

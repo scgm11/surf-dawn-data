@@ -1,0 +1,23 @@
+{
+ "region": "GB-NIR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.299,
+  "hours": 744,
+  "point": [
+   55.203,
+   -6.238
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.13,
+   "meteofrance_wave": 1.83,
+   "ecmwf_wam": 0.91,
+   "dwd_ewam": 1.54
+  }
+ },
+ "confidence": "media"
+}

@@ -1,0 +1,23 @@
+{
+ "region": "PE-NOR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.164,
+  "hours": 744,
+  "point": [
+   -4.171,
+   -81.126
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.93,
+   "ncep_gfswave025": 1.34,
+   "meteofrance_wave": 1.16,
+   "ecmwf_wam": 0.95
+  }
+ },
+ "confidence": "media"
+}

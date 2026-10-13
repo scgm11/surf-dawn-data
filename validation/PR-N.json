@@ -1,0 +1,87 @@
+{
+ "region": "PR-N",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "ndbc:41053",
+  "cdip:249",
+  "ndbc:41056"
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 2097,
+   "hs_bias": -0.027,
+   "hs_rmse": 0.148,
+   "hs_si": 0.181,
+   "tp_bias": -0.32,
+   "dir_mae": 12.3,
+   "dir_bias": -3.2,
+   "tm_bias": 3.47,
+   "obs_hs": 0.81,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave016": {
+   "n": 2097,
+   "hs_bias": -0.07,
+   "hs_rmse": 0.144,
+   "hs_si": 0.164,
+   "tp_bias": 0.72,
+   "dir_mae": 13.1,
+   "dir_bias": -6.2,
+   "tm_bias": 3.59,
+   "obs_hs": 0.81,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 2097,
+   "hs_bias": 0.025,
+   "hs_rmse": 0.151,
+   "hs_si": 0.185,
+   "tp_bias": 0.04,
+   "dir_mae": 13.4,
+   "dir_bias": 6.9,
+   "tm_bias": 1.91,
+   "obs_hs": 0.81,
+   "tp_type": "peak"
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave016",
+ "margin": -0.027,
+ "per_buoy": {
+  "ndbc:41053": {
+   "n": 688,
+   "best": "ncep_gfswave025",
+   "km": 4.9
+  },
+  "cdip:249": {
+   "n": 723,
+   "best": "ecmwf_wam",
+   "km": 18.6
+  },
+  "ndbc:41056": {
+   "n": 686,
+   "best": null,
+   "km": 30.8
+  }
+ },
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.089,
+  "hours": 744,
+  "point": [
+   18.4582,
+   -66.056
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.81,
+   "ncep_gfswave025": 0.93,
+   "meteofrance_wave": 0.82,
+   "ecmwf_wam": 0.76
+  }
+ }
+}

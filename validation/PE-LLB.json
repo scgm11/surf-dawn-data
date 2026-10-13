@@ -1,0 +1,23 @@
+{
+ "region": "PE-LLB",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.06,
+  "hours": 744,
+  "point": [
+   -7.41,
+   -79.58
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.17,
+   "ncep_gfswave025": 1.26,
+   "meteofrance_wave": 1.15,
+   "ecmwf_wam": 1.29
+  }
+ },
+ "confidence": "media"
+}

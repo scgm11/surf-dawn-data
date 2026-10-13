@@ -1,0 +1,22 @@
+{
+ "region": "NZ-BOP",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.28,
+  "hours": 744,
+  "point": [
+   -37.659,
+   176.213
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.68,
+   "meteofrance_wave": 0.39,
+   "ecmwf_wam": 0.4
+  }
+ },
+ "confidence": "media"
+}

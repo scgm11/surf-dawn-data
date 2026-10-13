@@ -1,0 +1,106 @@
+{
+ "region": "US-CA-CEN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "cdip:076",
+  "cdip:157",
+  "ndbc:46011"
+ ],
+ "excluded": [
+  {
+   "id": "cdip:285",
+   "km": 1.8,
+   "why": "sesgo de Hs +145%, +154%, +173%, +147% en todos los modelos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 2168,
+   "hs_bias": 0.003,
+   "hs_rmse": 0.307,
+   "hs_si": 0.166,
+   "tp_bias": -1.09,
+   "dir_mae": 21.4,
+   "dir_bias": 1.0,
+   "tm_bias": 2.04,
+   "obs_hs": 1.85,
+   "tp_type": "peak"
+  },
+  "meteofrance_wave": {
+   "n": 2168,
+   "hs_bias": -0.013,
+   "hs_rmse": 0.324,
+   "hs_si": 0.175,
+   "tp_bias": -1.31,
+   "dir_mae": 21.7,
+   "dir_bias": -2.5,
+   "tm_bias": 2.44,
+   "obs_hs": 1.85,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave016": {
+   "n": 2168,
+   "hs_bias": -0.128,
+   "hs_rmse": 0.407,
+   "hs_si": 0.179,
+   "tp_bias": 0.98,
+   "dir_mae": 26.4,
+   "dir_bias": -9.5,
+   "tm_bias": 4.73,
+   "obs_hs": 1.85,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave025": {
+   "n": 2168,
+   "hs_bias": -0.101,
+   "hs_rmse": 0.453,
+   "hs_si": 0.223,
+   "tp_bias": 1.06,
+   "dir_mae": 30.1,
+   "dir_bias": -13.5,
+   "tm_bias": 4.81,
+   "obs_hs": 1.85,
+   "tp_type": "mean"
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.326,
+ "per_buoy": {
+  "cdip:076": {
+   "n": 723,
+   "best": "ncep_gfswave016",
+   "km": 6.1
+  },
+  "cdip:157": {
+   "n": 722,
+   "best": "ecmwf_wam",
+   "km": 19.6
+  },
+  "ndbc:46011": {
+   "n": 723,
+   "best": "ecmwf_wam",
+   "km": 33.9
+  }
+ },
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.075,
+  "hours": 744,
+  "point": [
+   35.571,
+   -121.128
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.44,
+   "ncep_gfswave025": 1.61,
+   "meteofrance_wave": 1.62,
+   "ecmwf_wam": 1.73
+  }
+ }
+}

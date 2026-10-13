@@ -1,0 +1,22 @@
+{
+ "region": "NZ-NTL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.046,
+  "hours": 744,
+  "point": [
+   -35.961,
+   173.748
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 2.72,
+   "meteofrance_wave": 2.62,
+   "ecmwf_wam": 2.55
+  }
+ },
+ "confidence": "media"
+}

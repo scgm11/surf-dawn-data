@@ -1,0 +1,23 @@
+{
+ "region": "ID-LOM",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.062,
+  "hours": 744,
+  "point": [
+   -8.89,
+   116.15
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.78,
+   "ncep_gfswave025": 1.76,
+   "meteofrance_wave": 1.59,
+   "ecmwf_wam": 1.83
+  }
+ },
+ "confidence": "media"
+}

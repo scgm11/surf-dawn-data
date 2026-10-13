@@ -1,0 +1,23 @@
+{
+ "region": "ID-BAL-BUK",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.101,
+  "hours": 744,
+  "point": [
+   -8.84,
+   115.155
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.69,
+   "ncep_gfswave025": 1.48,
+   "meteofrance_wave": 1.91,
+   "ecmwf_wam": 1.83
+  }
+ },
+ "confidence": "media"
+}

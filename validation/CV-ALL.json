@@ -1,0 +1,23 @@
+{
+ "region": "CV-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.151,
+  "hours": 744,
+  "point": [
+   16.587,
+   -22.94
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.24,
+   "ncep_gfswave025": 1.22,
+   "meteofrance_wave": 1.27,
+   "ecmwf_wam": 0.86
+  }
+ },
+ "confidence": "media"
+}
