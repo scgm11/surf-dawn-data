@@ -126,3 +126,55 @@ def wave_points(model, spots):
             good = [c for c in more if mh.get(c)]
         out[i] = good[0] if good else "none"
     return out
+
+
+# --- Hourly series (validate/): several models and points per request -------------------------
+
+DAY_VARS = 10                                    # the free API counts a location as one call up to
+DAY_SPAN = 14                                    # 10 variables and 2 weeks, proportionally more above
+
+
+def call_weight(n_points, n_vars, n_days):
+    """How many calls of the daily allowance a request costs (each location counts)."""
+    return n_points * max(1.0, n_vars / DAY_VARS) * max(1.0, n_days / DAY_SPAN)
+
+
+def get_json(params, url=MARINE, tries=6):
+    """GET url?params: the decoded answer as a list (one entry per location), or the error dict of a
+    request the API refuses (HTTP 400, e.g. a point outside every requested model). Retries the rest."""
+    import urllib.error
+    q = urllib.parse.urlencode(params, safe=",")
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(url + "?" + q, timeout=120) as r:
+                res = json.load(r)
+            return res if isinstance(res, list) else [res]
+        except urllib.error.HTTPError as e:
+            if e.code == 400:
+                try:
+                    return json.load(e)
+                except ValueError:
+                    return {"error": True, "reason": "HTTP 400"}
+            print("  open-meteo failed (%s), retrying" % str(e)[:80], file=sys.stderr)
+        except Exception as e:                    # noqa: BLE001 - timeouts, resets: retry
+            print("  open-meteo failed (%s), retrying" % str(e)[:80], file=sys.stderr)
+        time.sleep(15 * (attempt + 1))
+    raise RuntimeError("Open-Meteo unavailable")
+
+
+def split_models(block, models, variables):
+    """One location of a multi-model hourly answer -> (times, {model: {variable: [values]}}).
+    Several models come as '<variable>_<model>'; a single one as the bare variable. A model the API
+    left out (outside its domain) or with every value null is not in the result."""
+    h = block.get("hourly") or {}
+    times = h.get("time") or []
+    out = {}
+    for m in models:
+        cols = {}
+        for v in variables:
+            col = h.get(v if len(models) == 1 else "%s_%s" % (v, m))
+            if col is not None and len(col) == len(times):
+                cols[v] = col
+        if cols and any(x is not None for c in cols.values() for x in c):
+            out[m] = cols
+    return times, out
