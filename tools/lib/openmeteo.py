@@ -15,6 +15,7 @@ import math
 import os
 import sys
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 
@@ -54,7 +55,8 @@ def _key(lat, lon):
     return "%.4f,%.4f" % (lat, lon)
 
 
-def _fetch(model, points):
+def _get(model, points):
+    """The decoded answer for these points: a list (one entry per point), or an error dict."""
     q = urllib.parse.urlencode({
         "latitude": ",".join("%.4f" % p[0] for p in points),
         "longitude": ",".join("%.4f" % p[1] for p in points),
@@ -63,12 +65,32 @@ def _fetch(model, points):
         try:
             with urllib.request.urlopen(MARINE + "?" + q, timeout=60) as r:
                 res = json.load(r)
-            res = res if isinstance(res, list) else [res]
-            return [(b.get("current") or {}).get("wave_height") for b in res]
-        except Exception as e:
+            return res if isinstance(res, list) else [res]
+        except urllib.error.HTTPError as e:
+            if e.code == 400:                     # the request itself is refused (e.g. a point off the model's grid)
+                try:
+                    return json.load(e)
+                except ValueError:
+                    return {"error": True, "reason": "HTTP 400"}
             print("  open-meteo failed (%s), retrying" % str(e)[:80], file=sys.stderr)
-            time.sleep(15 * (attempt + 1))
+        except Exception as e:                    # noqa: BLE001 - timeouts, resets: retry
+            print("  open-meteo failed (%s), retrying" % str(e)[:80], file=sys.stderr)
+        time.sleep(15 * (attempt + 1))
     raise RuntimeError("Open-Meteo unavailable")
+
+
+def _fetch(model, points):
+    """Current wave height at each point (None where the model has no sea). A refused request is
+    split until the point it refuses is alone; that point counts as no sea."""
+    res = _get(model, points)
+    if isinstance(res, dict) or len(res) != len(points) or any(isinstance(b, dict) and b.get("error") for b in res):
+        if len(points) == 1:
+            reason = res.get("reason") if isinstance(res, dict) else "bad answer"
+            print("  open-meteo: %s at %.4f,%.4f: %s" % (model, points[0][0], points[0][1], reason), file=sys.stderr)
+            return [None]
+        half = len(points) // 2
+        return _fetch(model, points[:half]) + _fetch(model, points[half:])
+    return [(b.get("current") or {}).get("wave_height") if isinstance(b, dict) else None for b in res]
 
 
 def heights(model, points):

@@ -39,7 +39,9 @@ jobs:
       - name: Semillas
         run: python3 tools/check_seeds.py --present
       - name: Zonas
-        run: python3 tools/build_zones.py
+        run: |
+          set -o pipefail
+          python3 tools/build_zones.py --strict 2>&1 | tee spots/build.log
       - name: "Guardar cachés (también si el build se corta: la próxima corrida sigue desde ahí)"
         if: always()
         uses: actions/cache/save@v4
@@ -48,7 +50,8 @@ jobs:
             tools/.osm_cache
             tools/.cache
           key: zones-${{ github.run_id }}
-      - name: Publicar
+      - name: "Publicar (también con errores: las regiones buenas, el reporte y el log)"
+        if: always()
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"

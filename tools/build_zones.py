@@ -237,10 +237,16 @@ def main():
         if reg is None:
             rep["errors"].append("%s is not in seeds/regions.csv" % code)
             continue
-        b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
+        try:
+            b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
+        except Exception as e:                     # noqa: BLE001 - one region must not stop the rest
+            import traceback
+            rep["errors"].append("%s: %s (%s)" % (code, type(e).__name__, traceback.format_exc().strip().splitlines()[-2].strip()[:160]))
+            print("ERROR %s:\n%s" % (code, traceback.format_exc()), file=sys.stderr, flush=True)
+            continue
         if b:
             built.append(b)
-            print("%-11s %2d spots %5d bytes  v%s" % (code, b["n"], b["bytes"], b["v"]))
+            print("%-11s %2d spots %5d bytes  v%s" % (code, b["n"], b["bytes"], b["v"]), flush=True)
     if a.regions:                                  # a partial run only rewrites its regions
         for b in built:
             write("r/%s.json" % b["code"], b["text"])
