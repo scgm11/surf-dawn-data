@@ -43,6 +43,32 @@ MI_CSV = """station_id,time,latitude,longitude,SignificantWaveHeight,PeakPeriod,
 AMETS Berth B Wave Buoy,2026-10-12T00:00:00Z,54.2753,-10.1497,250.0,11.1,90.0,8.2
 """
 
+MI_INFO = """Row Type,Variable Name,Attribute Name,Data Type,Value
+attribute,NC_GLOBAL,title,String,Irish Wave Buoys 30 Min
+variable,PeakPeriod,,float,
+attribute,PeakPeriod,standard_name,String,sea_surface_wave_period_at_variance_spectral_density_maximum
+attribute,PeakPeriod,units,String,s
+variable,PeakDirection,,float,
+attribute,PeakDirection,standard_name,String,sea_surface_wave_to_direction
+attribute,PeakDirection,units,String,degrees_true
+variable,EnergyPeriod,,double,
+attribute,EnergyPeriod,standard_name,String,sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment
+variable,SignificantWaveHeight,,float,
+attribute,SignificantWaveHeight,standard_name,String,sea_surface_wave_significant_height
+attribute,SignificantWaveHeight,units,String,cm
+variable,SignificantWaveHeight_qc,,double,
+"""
+
+IWB_INFO = """Row Type,Variable Name,Attribute Name,Data Type,Value
+variable,WaveHeight,,double,
+attribute,WaveHeight,units,String,m
+variable,WavePeriod,,double,
+attribute,WavePeriod,units,String,s
+variable,MeanWaveDirection,,double,
+attribute,MeanWaveDirection,units,String,degrees_true
+variable,Tp,,double,
+"""
+
 
 def obs(hs, tp=10.0, dp=270.0, tm=8.0, start=T0, step=3600):
     return {(start + i * step) // 3600: (h, tp, dp, tm) for i, h in enumerate(hs)}
@@ -81,13 +107,24 @@ class Parsers(unittest.TestCase):
         self.assertAlmostEqual(s.lon, -117.392)
 
     def test_mi_units_and_direction(self):
+        cols = buoys.wave_columns(buoys.erddap_vars(MI_INFO))
+        self.assertEqual(cols["hs"], ("SignificantWaveHeight", 0.01))
+        self.assertEqual(cols["dir"], ("PeakDirection", 180.0))
+        self.assertEqual(cols["tm"], "EnergyPeriod")
         rows = buoys.parse_erddap_csv(MI_CSV)
-        s = buoys.stations_from_rows("mi", rows, "station_id", buoys.mi_conv, slug=True)[0]
+        s = buoys.stations_from_rows("mi", rows, "station_id", buoys.column_conv(cols), slug=True)[0]
         self.assertEqual(s.id, "mi:amets-berth-b-wave-buoy")
         t, hs, tp, dp, tm = s.records[0]
         self.assertAlmostEqual(hs, 2.5)                # cm -> m
         self.assertAlmostEqual(dp, 270.0)              # "to" 90 -> "from" 270
         self.assertAlmostEqual(tp, 11.1)
+
+    def test_weather_buoys_by_name(self):
+        cols = buoys.wave_columns(buoys.erddap_vars(IWB_INFO))
+        self.assertEqual(cols, {"hs": ("WaveHeight", 1.0), "tp": "Tp", "tm": "WavePeriod", "dir": ("MeanWaveDirection", 0.0)})
+        conv = buoys.column_conv(cols)
+        self.assertEqual(conv({"WaveHeight": "2.5", "Tp": "11", "MeanWaveDirection": "250", "WavePeriod": "7"}), (2.5, 11.0, 250.0, 7.0))
+        self.assertIsNone(buoys.wave_columns({"AirTemperature": {}}))
 
     def test_aodn_columns(self):
         c = {"TIME": [T0, T0 + 1800, T0 + 3600], "LATITUDE": [-33.8, -33.8, -33.8], "LONGITUDE": [151.4] * 3,
@@ -97,6 +134,10 @@ class Parsers(unittest.TestCase):
         buoys.finish(s, 0)
         self.assertEqual(s.id, "aodn:sydney")
         self.assertEqual(len(s.hourly), 2)
+        c["site_name"] = ["APOLLO-BAY", "Apollo%20Bay", "Apollo%20Bay"]
+        st = buoys.aodn_stations(c)
+        self.assertEqual([x.id for x in st], ["aodn:apollo-bay"])   # two spellings, one buoy
+        self.assertEqual(len(st[0].records), 3)
 
     def test_hourly_nearest(self):
         recs = [(T0 - 600, 1.0, None, None, None), (T0 + 300, 2.0, None, None, None), (T0 + 1800, 3.0, None, None, None)]
@@ -173,6 +214,7 @@ class Scores(unittest.TestCase):
         self.assertEqual(kind, "mean")
         self.assertEqual(tp, [8.5])
         self.assertEqual(score.model_columns(cols([1.0], peak=12.0))[2], "peak")
+        self.assertEqual(score.model_columns(cols([1.0]), "ncep_gfswave025")[2], "primary")
 
     def test_pairs_drop_missing_and_limit_hours(self):
         o = obs([1.0, None, 1.0])
@@ -230,16 +272,40 @@ class Regions(unittest.TestCase):
         r = regions.Region("FJ-X", "FJ", "x", [(-18.0, 179.9), (-18.1, 179.8)])
         near = buoys.Station("ndbc", "1", "", -18.0, -179.5, [])
         far = buoys.Station("ndbc", "2", "", -18.0, -170.0, [])
-        m = regions.match(r, [far, near])
-        self.assertEqual([s.id for s, _ in m], ["ndbc:1"])
+        m, _ = regions.match(r, [far, near])
+        self.assertEqual([s.id for s, _, _ in m], ["ndbc:1"])
         self.assertLess(m[0][1], 70)                   # 0.6° of longitude across ±180
 
     def test_match_order_and_cap(self):
         r = regions.Region("US-X", "US", "x", [(33.0, -117.3)])
         st = [buoys.Station("cdip", str(i), "", 33.0 + 0.2 * i, -117.3, []) for i in range(6)]
-        m = regions.match(r, st, top=3)
-        self.assertEqual([s.sid for s, _ in m], ["0", "1", "2"])
-        self.assertEqual(len(regions.match(r, st)), regions.CANDIDATES)
+        m, _ = regions.match(r, st, top=3)
+        self.assertEqual([s.sid for s, _, _ in m], ["0", "1", "2"])
+        self.assertEqual(len(regions.match(r, st)[0]), regions.CANDIDATES)
+
+    def test_same_sea(self):
+        # land: everything east of lon 10.0 (a straight north-south coast facing west), plus a
+        # closed bay: a lagoon west of the coast walled off to the open sea
+        def is_land(lats, lons):
+            out = []
+            for a, b in zip(lats, lons):
+                lagoon_wall = 9.9 <= b <= 9.92 and -0.2 <= a <= 0.2 or -0.2 <= a <= -0.18 and 9.9 <= b <= 10.0 \
+                    or 0.18 <= a <= 0.2 and 9.9 <= b <= 10.0
+                out.append(b >= 10.0 or lagoon_wall)
+            return out
+        ex = regions.Exposure(is_land)
+        r = regions.Region("X", "X", "x", [(1.0, 9.995), (1.2, 9.995)])     # spots on the open coast
+        sea = buoys.Station("x", "sea", "", 1.1, 9.8, [])
+        bay = buoys.Station("x", "bay", "", 0.0, 9.96, [])                  # inside the lagoon
+        other = buoys.Station("x", "east", "", 1.1, 10.6, [])               # inland "buoy": another sea
+        self.assertGreater(ex.shared(r, 1.1, 9.8), 0.9)
+        m, blocked = regions.match(r, [bay, sea, other], exposure=ex)
+        self.assertEqual([s.sid for s, _, _ in m], ["sea"])
+        self.assertEqual({s.sid for s, _, _ in blocked}, {"bay", "east"})
+        rays = regions.open_rays(1.0, 9.995, is_land, 2.0)
+        self.assertEqual(len(rays), regions.RAYS)
+        self.assertFalse(rays[8])                      # east (bearing 90°) is land
+        self.assertTrue(rays[24])                      # west is open sea
 
     def test_seeds_load(self):
         rs = {r.code: r for r in regions.load()}
@@ -263,7 +329,7 @@ class Evaluate(unittest.TestCase):
                                                       "meteofrance_wave": cols(good), "ecmwf_wam": cols(good, peak=10.0)})}
 
     def test_region_result(self):
-        body, info = evaluate.region_result(self.r, [(self.st, 6.0)], self.series, ("2026-09-12", "2026-10-12"),
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("2026-09-12", "2026-10-12"),
                                             (self.times, {"a": {"wave_height": [1.0] * 300}, "b": {"wave_height": [1.2] * 300}}))
         self.assertEqual(body["buoys"], ["cdip:100"])
         self.assertIn(body["best"]["wave"], ("meteofrance_wave", "ecmwf_wam"))
@@ -281,16 +347,25 @@ class Evaluate(unittest.TestCase):
         bay = buoys.Station("cdip", "bay", "", 32.96, -117.41, [])
         bay.hourly = {h: (v[0] * 0.3,) + v[1:] for h, v in self.st.hourly.items()}
         self.series[(32.96, -117.41)] = self.series[(32.95, -117.4)]
-        body, info = evaluate.region_result(self.r, [(bay, 2.0), (self.st, 6.0)], self.series, ("a", "b"))
+        body, info = evaluate.region_result(self.r, [(bay, 2.0, None), (self.st, 6.0, None)], self.series, ("a", "b"))
         self.assertEqual(body["buoys"], ["cdip:100"])
         self.assertEqual(body["excluded"][0]["id"], "cdip:bay")
 
     def test_fixed_never_suggested(self):
         r = regions.Region("UY-X", "UY", "x", [(33.0, -117.3)])
-        body, info = evaluate.region_result(r, [(self.st, 6.0)], self.series, ("a", "b"))
+        body, info = evaluate.region_result(r, [(self.st, 6.0, None)], self.series, ("a", "b"))
         self.assertTrue(body["fixed"])
         self.assertIn("best", body)
         self.assertEqual(report.suggestions([(body, info)]), [])
+
+    def test_buoy_without_current_model(self):
+        st = buoys.Station("cdip", "106", "", 33.01, -117.31, [])
+        st.hourly = self.st.hourly
+        t, c = self.series[(32.95, -117.4)]
+        self.series[(33.01, -117.31)] = (t, {m: v for m, v in c.items() if m != "ncep_gfswave016"})
+        body, info = evaluate.region_result(self.r, [(st, 1.0, None), (self.st, 6.0, None)], self.series, ("a", "b"))
+        self.assertEqual(body["buoys"], ["cdip:100"])
+        self.assertIn("ncep_gfswave016", body["excluded"][0]["why"])
 
     def test_no_buoys(self):
         body, info = evaluate.region_result(self.r, [], {}, ("a", "b"),
@@ -301,7 +376,7 @@ class Evaluate(unittest.TestCase):
         self.assertAlmostEqual(body["spread"]["hs"], 0.5)
 
     def test_markdown_renders(self):
-        body, info = evaluate.region_result(self.r, [(self.st, 6.0)], self.series, ("a", "b"))
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("a", "b"))
         nob, ninfo = evaluate.region_result(regions.Region("US-Y", "US", "y", [(10.0, 10.0)]), [], {}, ("a", "b"))
         md = report.markdown([(body, info), (nob, ninfo)], ("a", "b"), {"cdip": "ok"}, {}, models.USED, [])
         self.assertIn("US-X", md)

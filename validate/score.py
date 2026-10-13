@@ -6,7 +6,7 @@ direction) at the same hour. Definitions (docs/formatos.md, Validación):
   hs_rmse   sqrt(mean((model - obs)^2))                            m
   hs_si     sqrt(mean((model - obs - mean bias)^2)) / mean(obs)    scatter index (bias removed)
   tp_bias   mean(model Tp - obs Tp)                                s; the model's peak period, or its
-            wave_period when it has none (tp_type "mean")
+            wave_period when it has none (tp_type "primary" or "mean", see PERIOD_KIND)
   tm_bias   mean(model wave_period - obs mean period)              s (the buoys' mean periods differ by source)
   dir_mae   mean |circular(model dir - obs peak dir)|              deg, pairs with obs Hs >= DIR_MIN_HS
   dir_bias  circular mean of (model dir - obs peak dir)             deg (near ±180: a from/to mix-up)
@@ -36,9 +36,16 @@ def circ_mean(ds):
     return circ(0.0, math.degrees(math.atan2(y, x)))
 
 
-def model_columns(cols):
+# What wave_period is in Open-Meteo for the models without wave_peak_period. GFS-Wave's is the
+# period of the primary (dominant) wave system, close to the peak period: against the buoys it is
+# ~0.5 s off their peak period and ~4-5 s above their mean period (validation of 2026-10).
+PERIOD_KIND = {"ncep_gfswave016": "primary", "ncep_gfswave025": "primary"}
+
+
+def model_columns(cols, model=None):
     """A model's columns {'wave_height': [...], ...} -> (hs, tp, tp_type, per, dp) lists.
-    tp is the peak period when the model has one (any non-null value), else its wave_period."""
+    tp is the peak period when the model has one (any non-null value), else its wave_period, with
+    tp_type "primary" (PERIOD_KIND) or "mean"."""
     n = len(cols.get("wave_height") or [])
     nul = [None] * n
     hs = cols.get("wave_height") or nul
@@ -47,7 +54,7 @@ def model_columns(cols):
     dp = cols.get("wave_direction") or nul
     if any(x is not None for x in pk):
         return hs, pk, "peak", per, dp
-    return hs, per, "mean", per, dp
+    return hs, per, PERIOD_KIND.get(model, "mean"), per, dp
 
 
 def pairs(obs_hourly, times, cols, hours=None):

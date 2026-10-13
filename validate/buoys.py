@@ -8,7 +8,8 @@ Sources (no account needed):
   ndbc   NOAA NDBC realtime2 standard met files (WVHT, DPD, APD, MWD), last 45 days
   cdip   CDIP (Scripps) ERDDAP wave_agg, primary QC flag 1 (waveHs, waveTp, waveTa, waveDp)
   aodn   AODN/IMOS Australian wave buoys, cloud-optimised parquet on S3 (WSSH, WPPE, WPDI, WPFM)
-  mi     Marine Institute Ireland ERDDAP IWaveBNetwork30Min (Hs in cm; PeakDirection is "to")
+  mi     Marine Institute Ireland ERDDAP IWaveBNetwork30Min (Hs in cm; PeakDirection is "to") and
+         IWBNetwork (weather buoys M2-M6); columns chosen by CF standard name (wave_columns)
 """
 import calendar
 import csv
@@ -28,7 +29,8 @@ UA = {"User-Agent": "surf-dawn-validation/1.0 (+https://github.com/scgm11/surf-d
 NDBC_STATIONS = "https://www.ndbc.noaa.gov/activestations.xml"
 NDBC_DIR = "https://www.ndbc.noaa.gov/data/realtime2/"
 CDIP_ERDDAP = "https://erddap.cdip.ucsd.edu/erddap/tabledap/wave_agg.csv"
-MI_ERDDAP = "https://erddap.marine.ie/erddap/tabledap/IWaveBNetwork30Min.csv"
+MI_BASE = "https://erddap.marine.ie/erddap/"
+MI_DATASETS = ("IWaveBNetwork30Min", "IWBNetwork")       # wave buoys; weather buoys M2-M6
 AODN_S3 = "aodn-cloud-optimised/wave_buoy_realtime_nonqc.parquet"
 PRIORITY = {"cdip": 0, "aodn": 1, "mi": 2, "ndbc": 3}   # same buoy in two sources: keep the first
 DAYS = 31                                                # observations asked for (the model window is 30 + today)
@@ -185,6 +187,10 @@ def fetch_ndbc(near, since, log):
 
 # --- ERDDAP (CDIP, Marine Institute) ------------------------------------------------------------
 
+def erddap_time(t):
+    return time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(t))
+
+
 def erddap_url(base, variables, constraints):
     """A tabledap query with the constraints percent-encoded (the servers refuse a bare '>')."""
     q = ",".join(variables)
@@ -233,9 +239,9 @@ def cdip_conv(r):
 
 def fetch_cdip(since, log):
     url = erddap_url(CDIP_ERDDAP, ["station_id", "time", "latitude", "longitude", "waveHs", "waveTp", "waveTa", "waveDp"],
-                     ["time>=now-%ddays" % DAYS, "waveFlagPrimary=1"])
+                     ["time>=" + erddap_time(since - 3600), "waveFlagPrimary=1"])
     rows = parse_erddap_csv(cache.get_text("cdip", "wave_agg.csv", url, UA, timeout=600))
-    nurl = erddap_url(CDIP_ERDDAP, ["station_id", "metaStationName"], ["time>=now-3days", "distinct()"])
+    nurl = erddap_url(CDIP_ERDDAP, ["station_id", "metaStationName"], ["time>=" + erddap_time(time.time() - 3 * 86400), "distinct()"])
     try:
         names = {r["station_id"]: r["metaStationName"] for r in parse_erddap_csv(cache.get_text("cdip", "names.csv", nurl, UA))}
     except Exception as e:                        # noqa: BLE001 - names are cosmetic
@@ -246,32 +252,116 @@ def fetch_cdip(since, log):
     return [finish(s, since) for s in st]
 
 
-def mi_conv(r):
-    hs = num(r.get("SignificantWaveHeight"))
-    to = num(r.get("PeakDirection"))
-    return (hs / 100.0 if hs is not None else None, num(r.get("PeakPeriod")),
-            (to + 180.0) % 360.0 if to is not None else None, num(r.get("EnergyPeriod")))
+# Columns by CF standard name (the Marine Institute datasets differ: cm or m, "to" or "from").
+HS_NAMES = ("sea_surface_wave_significant_height",)
+TP_NAMES = ("sea_surface_wave_period_at_variance_spectral_density_maximum",)
+DIR_FROM = ("sea_surface_wave_from_direction_at_variance_spectral_density_maximum", "sea_surface_wave_from_direction")
+DIR_TO = ("sea_surface_wave_to_direction_at_variance_spectral_density_maximum", "sea_surface_wave_to_direction")
+TM_NAMES = ("sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+            "sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment",
+            "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+            "sea_surface_wave_mean_period")
+BY_NAME = {"hs": ("SignificantWaveHeight", "WaveHeight"), "tp": ("PeakPeriod", "Tp"),
+           "dir_to": ("PeakDirection",), "dir_from": ("MeanWaveDirection", "ThTp"), "tm": ("EnergyPeriod", "WavePeriod")}
+
+
+def erddap_vars(info_csv):
+    """ERDDAP info/<dataset>/index.csv -> {variable: {attribute: value}}."""
+    out = {}
+    for r in csv.reader(io.StringIO(info_csv)):
+        if len(r) >= 5 and r[0] == "variable":
+            out.setdefault(r[1], {})
+        elif len(r) >= 5 and r[0] == "attribute" and r[1] != "NC_GLOBAL":
+            out.setdefault(r[1], {})[r[2]] = r[4]
+    return out
+
+
+def wave_columns(vs):
+    """Pick the Hs, Tp, direction and mean period columns of an ERDDAP dataset by standard name
+    (else by the known names). Returns {"hs": (var, scale), "tp": var, "dir": (var, add), "tm": var}."""
+    def by_std(names):
+        for n in names:
+            for v, a in vs.items():
+                if a.get("standard_name") == n and not v.endswith("_qc"):
+                    return v
+        return None
+
+    def by_name(key):
+        return next((v for v in BY_NAME[key] if v in vs), None)
+    hs = by_std(HS_NAMES) or by_name("hs")
+    if hs is None:
+        return None
+    unit = (vs[hs].get("units") or "m").strip().lower()
+    out = {"hs": (hs, 0.01 if unit == "cm" else 1.0), "tp": by_std(TP_NAMES) or by_name("tp"), "tm": by_std(TM_NAMES) or by_name("tm")}
+    d = by_std(DIR_FROM)
+    if d:
+        out["dir"] = (d, 0.0)
+    else:
+        d = by_std(DIR_TO) or by_name("dir_to")
+        out["dir"] = (d, 180.0) if d else (by_name("dir_from"), 0.0)
+    return out
+
+
+def column_conv(cols):
+    hs, k = cols["hs"]
+    dv, add = cols.get("dir") or (None, 0.0)
+
+    def conv(r):
+        h = num(r.get(hs))
+        d = num(r.get(dv)) if dv else None
+        return (h * k if h is not None else None, num(r.get(cols["tp"])) if cols["tp"] else None,
+                (d + add) % 360.0 if d is not None else None, num(r.get(cols["tm"])) if cols["tm"] else None)
+    return conv
 
 
 def fetch_mi(since, log):
-    url = erddap_url(MI_ERDDAP, ["station_id", "time", "latitude", "longitude", "SignificantWaveHeight", "PeakPeriod",
-                                 "PeakDirection", "EnergyPeriod"], ["time>=now-%ddays" % DAYS])
-    rows = parse_erddap_csv(cache.get_text("mi", "IWaveBNetwork30Min.csv", url, UA, timeout=300))
-    st = stations_from_rows("mi", rows, "station_id", mi_conv, slug=True)
-    log("mi: %d rows, %d stations" % (len(rows), len(st)))
-    return [finish(s, since) for s in st]
+    """Marine Institute: the wave buoy network (30 min) and the weather buoys M2-M6 (hourly)."""
+    out, errs = [], []
+    for ds in MI_DATASETS:
+        base = MI_BASE + "tabledap/%s.csv" % ds
+        try:
+            vs = erddap_vars(cache.get_text("mi", ds + "-info.csv", MI_BASE + "info/%s/index.csv" % ds, UA))
+            cols = wave_columns(vs)
+            if not cols:
+                raise RuntimeError("no significant wave height column in %s" % ", ".join(sorted(vs)))
+            log("mi %s: columns %s" % (ds, cols))
+            try:
+                last = parse_erddap_csv(cache.get_text("mi", ds + "-last.csv", erddap_url(
+                    base, ["station_id", "time"], ['orderByMax("station_id,time")']), UA, timeout=300))
+                log("  last records: %s" % ", ".join("%s %s" % (r["station_id"], r["time"][:16]) for r in last))
+            except Exception as e:                # noqa: BLE001 - only a diagnostic
+                log("  last records: %s" % str(e)[:200])
+            want = ["station_id", "time", "latitude", "longitude", cols["hs"][0]] + \
+                [c for c in (cols["tp"], (cols.get("dir") or (None,))[0], cols["tm"]) if c]
+            rows = parse_erddap_csv(cache.get_text("mi", ds + ".csv", erddap_url(base, want, ["time>=" + erddap_time(since - 3600)]),
+                                                   UA, timeout=300))
+            st = stations_from_rows("mi", rows, "station_id", column_conv(cols), slug=True)
+            log("mi %s: %d rows, %d stations" % (ds, len(rows), len(st)))
+            out += [finish(x, since) for x in st]
+        except Exception as e:                    # noqa: BLE001 - the other dataset may still work
+            if "no matching results" in str(e).lower():
+                log("  mi %s: no data in the window" % ds)
+                continue
+            errs.append("%s: %s" % (ds, str(e)[:300]))
+            log("  mi %s failed: %s" % (ds, str(e)[:300]))
+    if errs and len(errs) == len(MI_DATASETS):
+        raise RuntimeError("; ".join(errs))
+    return out
 
 
 # --- AODN --------------------------------------------------------------------------------------
 
 def aodn_stations(cols):
     """Columns of the AODN parquet (dict of lists) -> stations by site name."""
-    by = {}
+    by, names = {}, {}
     n = len(cols["TIME"])
-    for i in range(n):
-        by.setdefault(cols["site_name"][i], []).append(i)
+    for i in range(n):                            # one buoy can come under two spellings ("APOLLO-BAY", "Apollo%20Bay")
+        site = urllib.parse.unquote(cols["site_name"][i])
+        sid = re.sub(r"[^A-Za-z0-9]+", "-", site).strip("-").lower()
+        by.setdefault(sid, []).append(i)
+        names.setdefault(sid, site)
     out = []
-    for site, idx in by.items():
+    for sid, idx in by.items():
         lats = [x for x in (num(cols["LATITUDE"][i]) for i in idx) if x is not None]
         lons = [x for x in (num(cols["LONGITUDE"][i]) for i in idx) if x is not None]
         if not lats or not lons:
@@ -281,8 +371,7 @@ def aodn_stations(cols):
             t = cols["TIME"][i]
             t = calendar.timegm(t.utctimetuple()) if hasattr(t, "utctimetuple") else int(t)
             recs.append((t, num(cols["WSSH"][i]), num(cols["WPPE"][i]), num(cols["WPDI"][i]), num(cols["WPFM"][i])))
-        sid = re.sub(r"[^A-Za-z0-9]+", "-", urllib.parse.unquote(site)).strip("-").lower()
-        out.append(Station("aodn", sid, urllib.parse.unquote(site), statistics.median(lats), statistics.median(lons), recs))
+        out.append(Station("aodn", sid, names[sid], statistics.median(lats), statistics.median(lons), recs))
     return out
 
 

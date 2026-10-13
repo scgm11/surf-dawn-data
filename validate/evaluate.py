@@ -10,20 +10,25 @@ NOT_REPR = 0.5              # a buoy where every model is off by more than this 
                             # not representative of the open coast (a bay, a harbour, a sheltered reef)
 
 
-def region_result(region, matched, series, window, spread_pt=None):
-    """matched: [(Station, km)] nearest first (more than MAX_BUOYS: the unrepresentative ones are
+def region_result(region, matched, series, window, spread_pt=None, blocked=()):
+    """matched: [(Station, km, shared)] nearest first (more than MAX_BUOYS: the unrepresentative ones are
     skipped and the next ones used); series: {(lat, lon): (times, {model: cols})} at the buoys;
-    window: (from, to) dates; spread_pt: (times, {model: cols}) at the region's middle spot.
+    window: (from, to) dates; spread_pt: (times, {model: cols}) at the region's middle spot;
+    blocked: [(Station, km, shared)] near but facing another sea (regions.match), only recorded.
     Returns (body, info) where info has what the report needs beyond the JSON."""
     body = {"region": region.code, "from": window[0], "to": window[1], "buoys": []}
     info = {"region": region, "matched": [], "dropped_models": []}
     cands = models_for(region.lat, region.lon)
     usable = []
-    for st, d in matched:
+    for st, d, sh in blocked:
+        body.setdefault("excluded", []).append({"id": st.id, "km": round(d, 1), "why": "otro mar o abrigada: ve %.0f %% de las direcciones abiertas de los picos" % (100 * sh)})
+    for st, d, _ in matched:
         times, cols = series.get((round(st.lat, 4), round(st.lon, 4)), ([], {}))
         have = [m for m in cands if m in cols]
         cur = region.current[0]
         if not times or not have or (cur in cands and cur not in have):   # a buoy must show today's model
+            body.setdefault("excluded", []).append({"id": st.id, "km": round(d, 1), "why": "sin serie de %s en Open-Meteo" % (
+                cur if have else "ningún modelo")})
             continue
         usable.append((st, d, times, cols, have))
     if usable:
@@ -58,7 +63,7 @@ def region_result(region, matched, series, window, spread_pt=None):
         tp_type = {}
         for st, d, times, cols, _ in usable:
             for m in scores:
-                tp_type.setdefault(m, score.model_columns(cols[m])[2])
+                tp_type.setdefault(m, score.model_columns(cols[m], m)[2])
         wave = {}
         for m in score.rank(scores):
             s = dict(scores[m])

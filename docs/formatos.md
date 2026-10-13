@@ -110,13 +110,17 @@ Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos
 
 - `wave.<modelo>`: además `dir_bias` (media circular de modelo − boya, °), `tm_bias` (período medio
   del modelo − período medio de la boya, s), `obs_hs` (Hs media de las boyas, m) y `tp_type`:
-  `"peak"` si `tp_bias` usa el período pico del modelo, `"mean"` si el modelo no lo da en Open-Meteo
-  y se usó su `wave_period`. Los modelos van ordenados del mejor al peor.
+  `"peak"` si `tp_bias` usa el período pico del modelo; si el modelo no lo da en Open-Meteo se usa su
+  `wave_period`: `"primary"` en GFS-Wave (período del sistema principal, se comporta como un pico) y
+  `"mean"` en MFWAM y EWAM (período medio: `tp_bias` negativo por construcción). Los modelos van
+  ordenados del mejor al peor.
 - `best` y `confidence` (`alta`/`media`/`baja`); sin `best` si ningún modelo tiene |`hs_bias`| ≤ 0,15
   o hay menos de 72 horas. `vs`: el modelo contra el que se mide la confianza (el de hoy, o el segundo
   si el mejor ya es el de hoy); `margin`: cuánto peor es su `hs_rmse` (fracción).
 - `per_buoy`: por boya, `n`, el mejor modelo con esa boya sola y la distancia `km` al pico más cercano.
-- `excluded`: boyas cercanas descartadas por no representativas (todos los modelos con |sesgo| > 0,5).
+- `excluded`: boyas a menos de 150 km que no se usaron, con el motivo (`why`): miran a otro mar o
+  están abrigadas (ven menos de la mitad de las direcciones abiertas de los picos), todos los modelos
+  con |sesgo| > 0,5, o Open-Meteo no tiene ahí el modelo de hoy.
 - `current`: el modelo de olas que usa hoy la región; `fixed`: `true` en las regiones fijas del issue #7.
 - `spread`: dispersión de Hs entre modelos en el pico central (`point`): `hs` (desvío / media,
   promedio de `hours` horas) y `mean_hs` por modelo. En una región sin boyas (`"buoys": []`) es lo

@@ -59,8 +59,12 @@ def get_bytes(source, name, url, headers=None, timeout=120, pause=0.0, tries=4):
                 time.sleep(pause)
             return data
         except urllib.error.HTTPError as e:
-            if e.code in (400, 403, 404):           # will not change on retry
-                raise
+            if e.code in (400, 403, 404):           # will not change on retry: say what the server said
+                try:
+                    body = e.read()[:400].decode("utf-8", "replace").replace("\n", " ")
+                except Exception:                 # noqa: BLE001
+                    body = ""
+                raise RuntimeError("HTTP %d %s" % (e.code, body.strip())) from None
             err = e
         except Exception as e:                    # noqa: BLE001 - timeouts, resets: retry
             err = e

@@ -90,8 +90,16 @@ def main():
         log("  same buoy: %s = %s (kept %s)" % (s.id, k.id, k.id))
     log("%d stations after removing %d duplicates" % (len(stations), len(twins)))
 
-    matched = {r.code: regs.match(r, stations) for r in rs}
-    used = {s.id: s for m in matched.values() for s, _ in m}
+    try:
+        exposure = regs.Exposure(regs.land_mask())
+    except ImportError as e:
+        log("ERROR: no land mask (%s): buoys are matched by distance only" % e)
+        exposure = None
+    found = {r.code: regs.match(r, stations, exposure=exposure) for r in rs}
+    matched = {c: m for c, (m, _) in found.items()}
+    blocked = {c: b for c, (_, b) in found.items()}
+    log("%d buoy-region pairs left out: facing another sea or sheltered" % sum(len(b) for b in blocked.values()))
+    used = {s.id: s for m in matched.values() for s, _, _ in m}
     log("%d buoys within %d km of %d regions" % (len(used), regs.MATCH_KM, sum(1 for m in matched.values() if m)))
     at_buoys = models.series([(s.lat, s.lon) for s in used.values()], log, "buoy")
     at_spots = models.series([r.mid for r in rs], log, "spread", ["wave_height"])
@@ -103,7 +111,7 @@ def main():
     results = []
     for r in rs:
         sp = at_spots.get((round(r.mid[0], 4), round(r.mid[1], 4)))
-        body, info = evaluate.region_result(r, matched[r.code], at_buoys, window, sp)
+        body, info = evaluate.region_result(r, matched[r.code], at_buoys, window, sp, blocked[r.code])
         results.append((body, info))
         write("%s.json" % r.code, json.dumps(body, ensure_ascii=False, indent=1) + "\n")
         b = body.get("best", {}).get("wave", "-")
@@ -126,7 +134,8 @@ def main():
         for b in body["buoys"]:
             validates.setdefault(b, []).append(body["region"])
         for x in body.get("excluded", []):
-            validates.setdefault(x["id"], []).append("(%s: no representativa)" % body["region"])
+            if x["id"] in used:
+                validates.setdefault(x["id"], []).append("(%s: %s)" % (body["region"], x["why"]))
     for sid, s in sorted(used.items()):
         if sid in validates:
             wr.writerow([sid, s.name, round(s.lat, 4), round(s.lon, 4), len(s.hourly), " ".join(validates[sid])])

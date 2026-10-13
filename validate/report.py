@@ -54,7 +54,7 @@ def _row(body, info):
     return "| %s%s | %s | %s%s | %s | %s | %s | %s | %s | %s | %s | %s | %s |" % (
         r.code, tag, "<br>".join("%s (%.0f km)" % (b, body["per_buoy"][b]["km"]) for b in body["buoys"]),
         LABEL.get(name, name), flag, shown["n"], f(shown["hs_rmse"]), f(shown["hs_bias"], pct=True), f(shown["hs_si"]),
-        f(shown["tp_bias"], 1) + ("ᵐ" if shown.get("tp_type") == "mean" else ""), f(shown["dir_mae"], 0),
+        f(shown["tp_bias"], 1) + {"mean": "ᵐ", "primary": "ᵖ"}.get(shown.get("tp_type"), ""), f(shown["dir_mae"], 0),
         LABEL.get(r.current[0], r.current[0]), f(cur.get("hs_rmse")), body["confidence"])
 
 
@@ -108,7 +108,9 @@ def markdown(results, window, status, checks, used, twins):
                                        ", ".join("%s %d" % (LABEL.get(m, m), n) for m, n in sorted(cnt.items(), key=lambda x: -x[1]))))
     L += ["", "## Regiones con boyas", "",
           "Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo de período del modelo contra el "
-          "período pico de la boya; con ᵐ el modelo no da período pico en Open-Meteo y se usa su `wave_period`. "
+          "período pico de la boya; ᵖ: GFS-Wave no da período pico en Open-Meteo y se usa su `wave_period`, que es el del "
+          "sistema de olas principal (se comporta como un pico); ᵐ: MFWAM y EWAM tampoco lo dan y su `wave_period` es un "
+          "período medio, así que su `Tp` sale negativo por construcción. "
           "⇐ = se sugiere cambiar (en `models-suggested.csv`). Las regiones fijas (issue #7) se validan sólo para informar.", "",
           "| Región | Boyas | Mejor | n | rmse m | sesgo | SI | Tp s | dir ° | Hoy | rmse hoy | Confianza |",
           "|---|---|---|---|---|---|---|---|---|---|---|---|"]
