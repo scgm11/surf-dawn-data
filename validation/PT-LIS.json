@@ -20,5 +20,9 @@
    "dwd_ewam": 0.7
   }
  },
- "confidence": "baja"
+ "confidence": "baja",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
 }

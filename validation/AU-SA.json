@@ -30,53 +30,59 @@
   }
  ],
  "wave": {
+  "ecmwf_wam": {
+   "n": 1647,
+   "hs_bias": -0.094,
+   "hs_rmse": 0.322,
+   "hs_si": 0.296,
+   "tp_bias": 0.97,
+   "tp_mae": 2.45,
+   "dir_mae": 14.1,
+   "dir_bias": 1.4,
+   "tm_bias": 3.44,
+   "obs_hs": 1.04,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 1647,
+   "hs_bias": 0.111,
+   "hs_rmse": 0.349,
+   "hs_si": 0.317,
+   "tp_bias": -2.36,
+   "tp_mae": 3.66,
+   "dir_mae": 22.7,
+   "dir_bias": -3.9,
+   "tm_bias": 3.03,
+   "obs_hs": 1.04,
+   "tp_type": "primary",
+   "eligible": true
+  },
   "meteofrance_wave": {
-   "n": 1633,
+   "n": 1647,
    "hs_bias": -0.002,
-   "hs_rmse": 0.3,
-   "hs_si": 0.29,
+   "hs_rmse": 0.299,
+   "hs_si": 0.288,
    "tp_bias": -2.73,
-   "dir_mae": 16.4,
+   "tp_mae": 3.59,
+   "dir_mae": 16.3,
    "dir_bias": 2.4,
    "tm_bias": 2.66,
    "obs_hs": 1.04,
-   "tp_type": "mean"
-  },
-  "ecmwf_wam": {
-   "n": 1633,
-   "hs_bias": -0.095,
-   "hs_rmse": 0.323,
-   "hs_si": 0.298,
-   "tp_bias": 0.96,
-   "dir_mae": 14.1,
-   "dir_bias": 1.5,
-   "tm_bias": 3.44,
-   "obs_hs": 1.04,
-   "tp_type": "peak"
-  },
-  "ncep_gfswave025": {
-   "n": 1633,
-   "hs_bias": 0.111,
-   "hs_rmse": 0.348,
-   "hs_si": 0.318,
-   "tp_bias": -2.36,
-   "dir_mae": 22.8,
-   "dir_bias": -3.8,
-   "tm_bias": 3.02,
-   "obs_hs": 1.04,
-   "tp_type": "primary"
+   "tp_type": "mean",
+   "eligible": false
   }
  },
  "best": {
-  "wave": "meteofrance_wave"
+  "wave": "ecmwf_wam"
  },
- "confidence": "baja",
+ "confidence": "media",
  "vs": "ncep_gfswave025",
- "margin": 0.16,
+ "margin": 0.084,
  "per_buoy": {
   "aodn:victor-harbouroffshore": {
-   "n": 723,
-   "best": "meteofrance_wave",
+   "n": 730,
+   "best": "ecmwf_wam",
    "km": 9.0
   },
   "aodn:brighton": {
@@ -85,7 +91,7 @@
    "km": 13.7
   },
   "aodn:west-beach": {
-   "n": 717,
+   "n": 724,
    "best": "ecmwf_wam",
    "km": 22.0
   }
@@ -104,5 +110,9 @@
    "meteofrance_wave": 1.47,
    "ecmwf_wam": 1.55
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }

@@ -20,5 +20,9 @@
    "dwd_ewam": 1.53
   }
  },
- "confidence": "media"
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
 }

@@ -7,29 +7,19 @@
   "aodn:crowdy"
  ],
  "wave": {
-  "meteofrance_wave": {
-   "n": 407,
-   "hs_bias": 0.087,
-   "hs_rmse": 0.289,
-   "hs_si": 0.215,
-   "tp_bias": -1.4,
-   "dir_mae": 31.3,
-   "dir_bias": 16.2,
-   "tm_bias": 2.12,
-   "obs_hs": 1.25,
-   "tp_type": "mean"
-  },
   "ecmwf_wam": {
    "n": 407,
    "hs_bias": 0.16,
    "hs_rmse": 0.664,
    "hs_si": 0.509,
    "tp_bias": -0.54,
+   "tp_mae": 1.39,
    "dir_mae": 35.9,
    "dir_bias": 21.0,
    "tm_bias": 1.85,
    "obs_hs": 1.25,
-   "tp_type": "peak"
+   "tp_type": "peak",
+   "eligible": true
   },
   "ncep_gfswave025": {
    "n": 407,
@@ -37,19 +27,30 @@
    "hs_rmse": 0.826,
    "hs_si": 0.586,
    "tp_bias": -1.38,
+   "tp_mae": 1.82,
    "dir_mae": 41.3,
    "dir_bias": 19.5,
    "tm_bias": 2.14,
    "obs_hs": 1.25,
-   "tp_type": "primary"
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 407,
+   "hs_bias": 0.087,
+   "hs_rmse": 0.289,
+   "hs_si": 0.215,
+   "tp_bias": -1.4,
+   "tp_mae": 2.18,
+   "dir_mae": 31.3,
+   "dir_bias": 16.2,
+   "tm_bias": 2.12,
+   "obs_hs": 1.25,
+   "tp_type": "mean",
+   "eligible": false
   }
  },
- "best": {
-  "wave": "meteofrance_wave"
- },
- "confidence": "media",
- "vs": "ncep_gfswave025",
- "margin": 1.858,
+ "confidence": "baja",
  "per_buoy": {
   "aodn:collaroy-narrabeen": {
    "n": 193,
@@ -58,7 +59,7 @@
   },
   "aodn:crowdy": {
    "n": 214,
-   "best": "meteofrance_wave",
+   "best": "ncep_gfswave025",
    "km": 113.4
   }
  },
@@ -76,5 +77,9 @@
    "meteofrance_wave": 1.21,
    "ecmwf_wam": 1.36
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }

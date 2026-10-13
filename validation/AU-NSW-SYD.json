@@ -6,29 +6,19 @@
   "aodn:collaroy-narrabeen"
  ],
  "wave": {
-  "meteofrance_wave": {
-   "n": 193,
-   "hs_bias": 0.194,
-   "hs_rmse": 0.375,
-   "hs_si": 0.397,
-   "tp_bias": -1.68,
-   "dir_mae": 44.0,
-   "dir_bias": 44.0,
-   "tm_bias": 2.57,
-   "obs_hs": 0.85,
-   "tp_type": "mean"
-  },
   "ecmwf_wam": {
    "n": 193,
    "hs_bias": 0.796,
    "hs_rmse": 0.901,
    "hs_si": 0.703,
    "tp_bias": -0.42,
+   "tp_mae": 1.45,
    "dir_mae": 53.3,
    "dir_bias": 53.6,
    "tm_bias": 2.41,
    "obs_hs": 0.85,
-   "tp_type": "peak"
+   "tp_type": "peak",
+   "eligible": true
   },
   "ncep_gfswave025": {
    "n": 193,
@@ -36,11 +26,27 @@
    "hs_rmse": 1.168,
    "hs_si": 0.969,
    "tp_bias": -1.59,
+   "tp_mae": 2.01,
    "dir_mae": 57.8,
    "dir_bias": 54.2,
    "tm_bias": 2.66,
    "obs_hs": 0.85,
-   "tp_type": "primary"
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 193,
+   "hs_bias": 0.194,
+   "hs_rmse": 0.375,
+   "hs_si": 0.397,
+   "tp_bias": -1.68,
+   "tp_mae": 2.57,
+   "dir_mae": 44.0,
+   "dir_bias": 44.0,
+   "tm_bias": 2.57,
+   "obs_hs": 0.85,
+   "tp_type": "mean",
+   "eligible": false
   }
  },
  "confidence": "baja",
@@ -65,5 +71,9 @@
    "meteofrance_wave": 1.35,
    "ecmwf_wam": 1.12
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }

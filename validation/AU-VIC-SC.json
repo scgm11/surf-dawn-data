@@ -46,48 +46,54 @@
  ],
  "wave": {
   "ncep_gfswave025": {
-   "n": 1109,
-   "hs_bias": -0.141,
-   "hs_rmse": 0.404,
-   "hs_si": 0.144,
-   "tp_bias": 0.53,
-   "dir_mae": 12.1,
+   "n": 1116,
+   "hs_bias": -0.142,
+   "hs_rmse": 0.408,
+   "hs_si": 0.145,
+   "tp_bias": 0.54,
+   "tp_mae": 1.32,
+   "dir_mae": 12.0,
    "dir_bias": 4.9,
    "tm_bias": 4.93,
-   "obs_hs": 2.0,
-   "tp_type": "primary"
-  },
-  "meteofrance_wave": {
-   "n": 1109,
-   "hs_bias": 0.116,
-   "hs_rmse": 0.44,
-   "hs_si": 0.187,
-   "tp_bias": -2.33,
-   "dir_mae": 14.5,
-   "dir_bias": 11.6,
-   "tm_bias": 2.07,
-   "obs_hs": 2.0,
-   "tp_type": "mean"
+   "obs_hs": 2.01,
+   "tp_type": "primary",
+   "eligible": true
   },
   "ecmwf_wam": {
-   "n": 1109,
-   "hs_bias": 0.165,
+   "n": 1116,
+   "hs_bias": 0.164,
    "hs_rmse": 0.423,
-   "hs_si": 0.133,
-   "tp_bias": 0.44,
+   "hs_si": 0.132,
+   "tp_bias": 0.45,
+   "tp_mae": 1.08,
    "dir_mae": 13.3,
-   "dir_bias": 11.2,
+   "dir_bias": 11.1,
    "tm_bias": 2.76,
-   "obs_hs": 2.0,
-   "tp_type": "peak"
+   "obs_hs": 2.01,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1116,
+   "hs_bias": 0.115,
+   "hs_rmse": 0.439,
+   "hs_si": 0.186,
+   "tp_bias": -2.32,
+   "tp_mae": 2.53,
+   "dir_mae": 14.4,
+   "dir_bias": 11.6,
+   "tm_bias": 2.07,
+   "obs_hs": 2.01,
+   "tp_type": "mean",
+   "eligible": false
   }
  },
  "best": {
   "wave": "ncep_gfswave025"
  },
  "confidence": "baja",
- "vs": "meteofrance_wave",
- "margin": 0.089,
+ "vs": "ecmwf_wam",
+ "margin": 0.037,
  "per_buoy": {
   "aodn:apollo-bay": {
    "n": 193,
@@ -95,13 +101,13 @@
    "km": 32.3
   },
   "aodn:inverloch": {
-   "n": 723,
-   "best": "meteofrance_wave",
+   "n": 730,
+   "best": null,
    "km": 113.7
   },
   "aodn:bob": {
    "n": 193,
-   "best": "meteofrance_wave",
+   "best": "ecmwf_wam",
    "km": 145.4
   }
  },
@@ -119,5 +125,9 @@
    "meteofrance_wave": 1.37,
    "ecmwf_wam": 1.53
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }

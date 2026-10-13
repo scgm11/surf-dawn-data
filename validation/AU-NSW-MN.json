@@ -13,11 +13,13 @@
    "hs_rmse": 0.299,
    "hs_si": 0.162,
    "tp_bias": -1.2,
+   "tp_mae": 1.72,
    "dir_mae": 25.5,
    "dir_bias": -14.1,
    "tm_bias": 2.48,
    "obs_hs": 1.59,
-   "tp_type": "primary"
+   "tp_type": "primary",
+   "eligible": true
   },
   "ecmwf_wam": {
    "n": 408,
@@ -25,11 +27,13 @@
    "hs_rmse": 0.325,
    "hs_si": 0.201,
    "tp_bias": -0.83,
+   "tp_mae": 1.3,
    "dir_mae": 20.3,
    "dir_bias": 0.3,
    "tm_bias": 1.59,
    "obs_hs": 1.59,
-   "tp_type": "peak"
+   "tp_type": "peak",
+   "eligible": true
   },
   "meteofrance_wave": {
    "n": 408,
@@ -37,11 +41,13 @@
    "hs_rmse": 0.421,
    "hs_si": 0.222,
    "tp_bias": -2.34,
+   "tp_mae": 2.75,
    "dir_mae": 20.5,
    "dir_bias": -7.7,
    "tm_bias": 1.34,
    "obs_hs": 1.59,
-   "tp_type": "mean"
+   "tp_type": "mean",
+   "eligible": false
   }
  },
  "best": {
@@ -53,7 +59,7 @@
  "per_buoy": {
   "aodn:crowdy": {
    "n": 214,
-   "best": "meteofrance_wave",
+   "best": "ncep_gfswave025",
    "km": 4.5
   },
   "aodn:wooli": {
@@ -76,5 +82,9 @@
    "meteofrance_wave": 1.72,
    "ecmwf_wam": 1.41
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }

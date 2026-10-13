@@ -10,17 +10,17 @@ aodn:ceduna,CEDUNA,-32.3496,133.6483,194,AU-SA-EYR
 aodn:collaroy-narrabeen,COLLAROY-NARRABEEN,-33.7267,151.306,193,AU-NSW-NC AU-NSW-SYD AU-NSW-SC
 aodn:coral-bay-0-2,CORAL-BAY-0-2,-23.1549,113.737,194,AU-WA-GAS
 aodn:crowdy,CROWDY,-31.8494,152.7557,214,AU-NSW-MN AU-NSW-NC
-aodn:dongara-inshore,DONGARA-INSHORE,-29.181,114.862,723,AU-WA-NW
-aodn:dongara-offshore,DONGARA-OFFSHORE,-29.1972,114.8313,722,AU-WA-NW
+aodn:dongara-inshore,DONGARA-INSHORE,-29.181,114.862,730,AU-WA-NW
+aodn:dongara-offshore,DONGARA-OFFSHORE,-29.1972,114.8313,729,AU-WA-NW
 aodn:hillarys,HILLARYS,-31.852,115.6469,193,AU-WA-PER
-aodn:inverloch,INVERLOCH,-38.7618,145.7749,723,AU-VIC-SC AU-VIC-PI
-aodn:jurien-bay-inshore,JURIEN-BAY-INSHORE,-30.3146,114.9613,723,AU-WA-PER
-aodn:jurien-bay-offshore,JURIEN-BAY-OFFSHORE,-30.3145,114.9228,723,AU-WA-PER
-aodn:port-fairy,PORT-FAIRY,-38.3818,142.2874,723,(AU-VIC-SC: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) AU-VIC-W
-aodn:quinns-dog-beach,QUINNS-DOG-BEACH,-31.66,115.6646,203,"(AU-WA-PER: sesgo de Hs +59%, +101%, +130% en todos los modelos)"
+aodn:inverloch,INVERLOCH,-38.7618,145.7749,730,AU-VIC-SC AU-VIC-PI
+aodn:jurien-bay-inshore,JURIEN-BAY-INSHORE,-30.3146,114.9613,730,AU-WA-PER
+aodn:jurien-bay-offshore,JURIEN-BAY-OFFSHORE,-30.3145,114.9228,730,AU-WA-PER
+aodn:port-fairy,PORT-FAIRY,-38.3818,142.2874,730,(AU-VIC-SC: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) AU-VIC-W
+aodn:quinns-dog-beach,QUINNS-DOG-BEACH,-31.66,115.6646,210,"(AU-WA-PER: sesgo de Hs +59%, +101%, +130% en todos los modelos)"
 aodn:storm-bay,STORM-BAY,-43.2109,147.4554,193,AU-TAS
-aodn:victor-harbouroffshore,VICTOR-HARBOUROFFSHORE,-35.6083,138.6359,723,AU-SA
-aodn:west-beach,WEST-BEACH,-34.9533,138.4898,717,AU-SA
+aodn:victor-harbouroffshore,VICTOR-HARBOUROFFSHORE,-35.6082,138.6359,730,AU-SA
+aodn:west-beach,WEST-BEACH,-34.9533,138.4898,724,AU-SA
 aodn:wilsons-prom,WILSONS-PROM,-39.5438,146.4649,127,AU-VIC-PI
 aodn:wooli,WOOLI,-29.857,153.314,194,AU-NSW-NR AU-NSW-MN
 cdip:028,"SANTA MONICA BAY, CA BUOY - 028p1",33.8599,-118.6411,723,US-CA-LA US-CA-SB

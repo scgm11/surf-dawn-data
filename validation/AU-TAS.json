@@ -12,23 +12,13 @@
    "hs_rmse": 0.222,
    "hs_si": 0.168,
    "tp_bias": -1.24,
+   "tp_mae": 1.52,
    "dir_mae": 46.5,
    "dir_bias": 44.5,
    "tm_bias": 1.21,
    "obs_hs": 1.31,
-   "tp_type": "peak"
-  },
-  "meteofrance_wave": {
-   "n": 193,
-   "hs_bias": -0.09,
-   "hs_rmse": 0.284,
-   "hs_si": 0.197,
-   "tp_bias": -5.11,
-   "dir_mae": 40.9,
-   "dir_bias": 40.9,
-   "tm_bias": 0.54,
-   "obs_hs": 1.31,
-   "tp_type": "mean"
+   "tp_type": "peak",
+   "eligible": true
   },
   "ncep_gfswave025": {
    "n": 193,
@@ -36,11 +26,27 @@
    "hs_rmse": 0.337,
    "hs_si": 0.255,
    "tp_bias": 0.26,
+   "tp_mae": 2.02,
    "dir_mae": 25.3,
    "dir_bias": 23.9,
    "tm_bias": 5.92,
    "obs_hs": 1.31,
-   "tp_type": "primary"
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 193,
+   "hs_bias": -0.09,
+   "hs_rmse": 0.284,
+   "hs_si": 0.197,
+   "tp_bias": -5.11,
+   "tp_mae": 5.12,
+   "dir_mae": 40.9,
+   "dir_bias": 40.9,
+   "tm_bias": 0.54,
+   "obs_hs": 1.31,
+   "tp_type": "mean",
+   "eligible": false
   }
  },
  "best": {
@@ -70,5 +76,9 @@
    "meteofrance_wave": 3.31,
    "ecmwf_wam": 3.15
   }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
  }
 }
