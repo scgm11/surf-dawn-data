@@ -6,6 +6,7 @@ from models import models_for
 from regions import MAX_BUOYS
 
 MIN_PAIRS = 72              # below this (3 days of hourly pairs) a region gets no best
+COVER = 0.8                 # a model with fewer hours than this share of the best-covered one is left out
 NOT_REPR = 0.5              # a buoy where every model is off by more than this (relative Hs bias) is
                             # not representative of the open coast (a bay, a harbour, a sheltered reef)
 
@@ -31,8 +32,24 @@ def region_result(region, matched, series, window, spread_pt=None, blocked=()):
                 cur if have else "ningún modelo")})
             continue
         usable.append((st, d, times, cols, have))
+    cur = region.current[0]
     if usable:
-        common = [m for m in cands if all(m in u[4] for u in usable)]
+        # a model counts at a buoy if it has most of the hours the best-covered model has there
+        cover = []
+        for st, d, times, cols, have in usable:
+            obs = set(st.hourly)
+            n = {m: len(obs & score.model_hours(times, cols[m])) for m in have}
+            top = max(n.values()) if n else 0
+            ok = [m for m in have if top and n[m] >= COVER * top]
+            info["coverage"] = info.get("coverage", []) + [(st.id, n)]
+            cover.append(ok)
+        keep = [(u, ok) for u, ok in zip(usable, cover) if cur not in cands or cur in ok]
+        for u, ok in zip(usable, cover):
+            if (u, ok) not in keep:
+                body.setdefault("excluded", []).append({"id": u[0].id, "km": round(u[1], 1),
+                                                        "why": "pocas horas de %s en Open-Meteo" % cur})
+        usable = [u for u, _ in keep]
+        common = [m for m in cands if keep and all(m in ok for _, ok in keep)]
         info["dropped_models"] = [m for m in cands if m not in common]
         pooled = {m: [] for m in common}
         per_buoy = {}
@@ -43,6 +60,8 @@ def region_result(region, matched, series, window, spread_pt=None, blocked=()):
             ps = {m: score.pairs(st.hourly, times, cols[m], hours) for m in common}
             sc = {m: score.metrics(p) for m, p in ps.items() if p}
             if not sc:
+                body.setdefault("excluded", []).append({"id": st.id, "km": round(d, 1),
+                                                        "why": "sin horas en común entre la boya y los modelos"})
                 continue
             if all(s["hs_bias"] is None or abs(s["hs_bias"]) > NOT_REPR for s in sc.values()):
                 body.setdefault("excluded", []).append(

@@ -396,10 +396,20 @@ def fetch_aodn(since, log):
     div = {"s": 1, "ms": 10 ** 3, "us": 10 ** 6, "ns": 10 ** 9}[unit]
     secs = pc.divide(t.cast(pa.int64()), div)
     tab = tab.set_column(0, "TIME", secs).filter(pc.greater_equal(secs, since))
-    return [finish(s, since) for s in aodn_stations(tab.to_pydict())]
+    st = [finish(s, since) for s in aodn_stations(tab.to_pydict())]
+    short = [s for s in st if 0 < len(s.hourly) < 600]
+    for s in short[:12]:                          # why does a buoy have few hours: late start, gaps, no Hs?
+        hs = sorted(s.hourly)
+        log("  aodn %s: %d records, %d hours, %s .. %s" % (s.id, len(s.records), len(hs),
+                                                            time.strftime("%m-%d %H", time.gmtime(hs[0] * 3600)),
+                                                            time.strftime("%m-%d %H", time.gmtime(hs[-1] * 3600))))
+    return st
 
 
 # --- all ---------------------------------------------------------------------------------------
+
+STATIONS = []                                    # every station read (also the short ones), for stations.csv
+
 
 def dedupe(stations, km_fn, within=3.0, same=1.0):
     """The same buoy published twice (an NDBC id for a CDIP buoy, an AODN site renamed): keep one,
@@ -431,6 +441,7 @@ def fetch_all(near, since, log, sources=("cdip", "aodn", "mi", "ndbc")):
                 st = fetch_mi(since, log)
             good = [s for s in st if len(s.hourly) >= 72]
             status[src] = "%d estaciones, %d con ≥ 72 h de Hs" % (len(st), len(good))
+            STATIONS.extend(st)
             log("%s: %d stations with >= 72 hourly Hs (%.0fs)" % (src, len(good), time.time() - t))
             out += good
         except Exception as e:                    # noqa: BLE001 - one source down does not stop the rest

@@ -367,6 +367,24 @@ class Evaluate(unittest.TestCase):
         self.assertEqual(body["buoys"], ["cdip:100"])
         self.assertIn("ncep_gfswave016", body["excluded"][0]["why"])
 
+    def test_model_with_few_hours_left_out(self):
+        t, c = self.series[(32.95, -117.4)]
+        c = dict(c)
+        half = dict(c["meteofrance_wave"])
+        half["wave_height"] = [h if i % 2 else None for i, h in enumerate(half["wave_height"])]
+        c["meteofrance_wave"] = half
+        self.series[(32.95, -117.4)] = (t, c)
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("a", "b"))
+        self.assertEqual(body["buoys"], ["cdip:100"])
+        self.assertNotIn("meteofrance_wave", body["wave"])
+        self.assertEqual(body["wave"]["ecmwf_wam"]["n"], 300)          # the others keep every hour
+        cur = dict(c["ncep_gfswave016"])
+        cur["wave_height"] = [h if i < 30 else None for i, h in enumerate(cur["wave_height"])]
+        c["ncep_gfswave016"] = cur
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("a", "b"))
+        self.assertEqual(body["buoys"], [])                             # today's model barely there
+        self.assertIn("pocas horas", body["excluded"][0]["why"])
+
     def test_no_buoys(self):
         body, info = evaluate.region_result(self.r, [], {}, ("a", "b"),
                                             ([1, 2], {"a": {"wave_height": [1.0, 1.0]}, "b": {"wave_height": [3.0, 3.0]}}))

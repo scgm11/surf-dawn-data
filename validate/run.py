@@ -7,6 +7,7 @@ validation/ (docs/formatos.md, section Validación; validate/README.md):
   validation/models-suggested.csv  rows for models.csv: regions with a confident best that is not
                                  the model they use today (never the fixed regions of issue #7)
   validation/buoys.csv           the buoys used, with the regions each one validates
+  validation/stations.csv        every station read from the sources, with its hours (diagnostics)
 
 Usage: python3 validate/run.py [--regions CODE ...] [--sources cdip aodn mi ndbc]
 """
@@ -70,6 +71,35 @@ def direction_check(results):
     return out
 
 
+def spread_points(rs, log, tries=4):
+    """For each region, the wave heights of every model at one spot for the inter-model spread: the
+    spot nearest the centre, or the next ones while the region's own model has no sea there.
+    Sets region.mid to the spot used. Returns {code: (times, {model: cols})}."""
+    out, todo = {}, list(rs)
+    order = {r.code: sorted(r.spots, key=lambda s: geo.km((r.lat, r.lon), s))[:tries] for r in rs}
+    for k in range(tries):
+        if not todo:
+            break
+        pts = {r.code: order[r.code][k] for r in todo if k < len(order[r.code])}
+        got = models.series(list(pts.values()), log, "spread", ["wave_height"])
+        left = []
+        for r in todo:
+            if r.code not in pts:
+                continue
+            p = (round(pts[r.code][0], 4), round(pts[r.code][1], 4))
+            sp = got.get(p)
+            if sp is None:
+                continue
+            if r.code not in out or len(sp[1]) > len(out[r.code][1]):
+                out[r.code], r.mid = sp, pts[r.code]
+            if r.current[0] not in sp[1]:
+                left.append(r)
+        todo = left
+    if todo:
+        log("spread: %d regions without their own model at %d spots: %s" % (len(todo), tries, " ".join(r.code for r in todo)))
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
@@ -102,7 +132,7 @@ def main():
     used = {s.id: s for m in matched.values() for s, _, _ in m}
     log("%d buoys within %d km of %d regions" % (len(used), regs.MATCH_KM, sum(1 for m in matched.values() if m)))
     at_buoys = models.series([(s.lat, s.lon) for s in used.values()], log, "buoy")
-    at_spots = models.series([r.mid for r in rs], log, "spread", ["wave_height"])
+    at_spots = spread_points(rs, log)
     log("open-meteo: %d requests, %d locations, %.0f weighted calls (free limit 10000/day); cache %s"
         % (models.USED["requests"], models.USED["locations"], models.USED["weight"], cache.STATS))
 
@@ -110,9 +140,11 @@ def main():
         os.remove(p)
     results = []
     for r in rs:
-        sp = at_spots.get((round(r.mid[0], 4), round(r.mid[1], 4)))
+        sp = at_spots.get(r.code)
         body, info = evaluate.region_result(r, matched[r.code], at_buoys, window, sp, blocked[r.code])
         results.append((body, info))
+        if matched[r.code] and not body["buoys"]:
+            log("  %s: no buoy left of %s; coverage %s" % (r.code, [s.id for s, _, _ in matched[r.code]], info.get("coverage")))
         write("%s.json" % r.code, json.dumps(body, ensure_ascii=False, indent=1) + "\n")
         b = body.get("best", {}).get("wave", "-")
         w = body.get("wave", {}).get(b, {})
@@ -140,6 +172,15 @@ def main():
         if sid in validates:
             wr.writerow([sid, s.name, round(s.lat, 4), round(s.lon, 4), len(s.hourly), " ".join(validates[sid])])
     write("buoys.csv", f.getvalue())
+    f = io.StringIO()
+    wr = csv.writer(f, lineterminator="\n")
+    wr.writerow(["id", "name", "lat", "lon", "records", "hours", "first", "last"])
+    for s in sorted(buoys.STATIONS, key=lambda s: s.id):
+        hs = sorted(s.hourly)
+        wr.writerow([s.id, s.name, round(s.lat, 4), round(s.lon, 4), len(s.records), len(hs),
+                     time.strftime("%Y-%m-%dT%H", time.gmtime(hs[0] * 3600)) if hs else "",
+                     time.strftime("%Y-%m-%dT%H", time.gmtime(hs[-1] * 3600)) if hs else ""])
+    write("stations.csv", f.getvalue())
     checks = direction_check(results)
     for src, ms in sorted(checks.items()):
         for m, c in ms.items():

@@ -120,15 +120,18 @@ Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos
 - `per_buoy`: por boya, `n`, el mejor modelo con esa boya sola y la distancia `km` al pico más cercano.
 - `excluded`: boyas a menos de 150 km que no se usaron, con el motivo (`why`): miran a otro mar o
   están abrigadas (ven menos de la mitad de las direcciones abiertas de los picos), todos los modelos
-  con |sesgo| > 0,5, o Open-Meteo no tiene ahí el modelo de hoy.
+  con |sesgo| > 0,5, o Open-Meteo no tiene ahí (o tiene pocas horas de) el modelo de hoy. Un modelo
+  con menos del 80 % de las horas del mejor cubierto en una boya no se compara en esa región.
 - `current`: el modelo de olas que usa hoy la región; `fixed`: `true` en las regiones fijas del issue #7.
-- `spread`: dispersión de Hs entre modelos en el pico central (`point`): `hs` (desvío / media,
+- `spread`: dispersión de Hs entre modelos en un pico (`point`: el más cercano al centro donde el
+  modelo de hoy tiene mar, probando hasta 4): `hs` (desvío / media,
   promedio de `hours` horas) y `mean_hs` por modelo. En una región sin boyas (`"buoys": []`) es lo
   único que hay, y `confidence` es `baja` si `hs` > 0,30.
 
 `validation/models-suggested.csv` tiene las columnas de `models.csv` y sólo las regiones no fijas con
 un mejor modelo de confianza alta o media distinto del de hoy; `validation/buoys.csv`, las boyas usadas
-(`id,name,lat,lon,hours,regions`).
+(`id,name,lat,lon,hours,regions`); `validation/stations.csv`, todas las estaciones leídas con sus horas
+(`id,name,lat,lon,records,hours,first,last`, para diagnóstico).
 
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 

@@ -56,10 +56,12 @@ Las descargas del día quedan en `validate/.cache/<fecha>/` (no se versiona; la 
    de menor `dir_mae`. **Confianza** `alta` / `media` / `baja` según las horas (≥ 480 / ≥ 240), cuánto
    peor es el modelo de hoy (≥ 10 % / ≥ 5 % de `hs_rmse`), que la mayoría de las boyas coincida y,
    para `alta`, una boya a ≤ 100 km.
-7. **Sin boyas**: la dispersión de Hs entre modelos en el pico central de la región (desvío / media,
-   promedio de las horas); más de 0,30 es confianza `baja`.
+7. **Sin boyas**: la dispersión de Hs entre modelos en el pico más cercano al centro de la región
+   donde el modelo de hoy tiene mar (desvío / media, promedio de las horas); más de 0,30 es
+   confianza `baja`.
 8. **Salidas**: `validation/<REGIÓN>.json`, `report.md`, `models-suggested.csv` (sólo regiones con
-   confianza alta o media cuyo mejor modelo no es el de hoy) y `buoys.csv` (las boyas usadas).
+   confianza alta o media cuyo mejor modelo no es el de hoy), `buoys.csv` (las boyas usadas) y
+   `stations.csv` (todas las estaciones leídas, con sus horas: para ver por qué falta una boya).
 
 **Regiones fijas (issue #7)**: Uruguay, Argentina, Santa Catarina y Rio Grande do Sul (`UY-*`,
 `AR-*`, `BR-SC-*`, `BR-RS*`) quedan en `ncep_gfswave025` + `gfs_seamless`, como Windguru. Se
