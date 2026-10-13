@@ -16,6 +16,7 @@ FIXED_MODELS = ("ncep_gfswave025", "gfs_seamless")
 MATCH_KM = 150.0                               # a buoy validates a region if this close to one of its spots
 MAX_BUOYS = 3
 CANDIDATES = 5                                 # buoys looked at per region (some may not be representative)
+WIND_CANDIDATES = 8                            # wind stations looked at per region (many coastal ones are sheltered)
 # Same sea: a buoy validates a region if it is open to the directions the region's spots are open
 # to. A direction is open at a point when a ray of RAY_KM in that bearing meets no land (the 1 km
 # mask tools/ use), starting RAY_SKIP_KM out (spots sit on the coastline; buoys a bit off it).

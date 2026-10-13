@@ -99,25 +99,36 @@ en cm, con `t0` en segundos Unix. El reloj calcula
 
 ```json
 {"region":"US-CA-SD","from":"2026-09-01","to":"2026-09-30","buoys":["cdip:100","ndbc:46225"],
- "wave":{"ncep_gfswave016":{"n":712,"hs_bias":0.05,"hs_rmse":0.21,"hs_si":0.18,"tp_bias":-0.4,"dir_mae":14},
-         "meteofrance_wave":{"n":712,"hs_bias":-0.02,"hs_rmse":0.19,"hs_si":0.16,"tp_bias":-2.1,"dir_mae":12}},
- "best":{"wave":"ncep_gfswave016"},"confidence":"media"}
+ "wave":{"ecmwf_wam":{"n":712,"hs_bias":0.05,"hs_rmse":0.19,"hs_si":0.18,"tp_bias":-0.4,"tp_mae":1.6,"dir_mae":14,"eligible":true},
+         "meteofrance_wave":{"n":712,"hs_bias":-0.02,"hs_rmse":0.18,"hs_si":0.16,"tp_bias":-2.1,"tp_mae":2.4,"dir_mae":12,"eligible":false}},
+ "wind":{"stations":["ndbc:46086"],"current":"gfs_seamless",
+         "models":{"ecmwf_ifs":{"n":700,"spd_bias":0.04,"spd_bias_ms":0.2,"spd_rmse":1.5,"dir_mae":21,"dir_bias":-3,"dir_n":520,"obs_spd":5.6},
+                   "gfs_seamless":{"n":700,"spd_bias":0.12,"spd_bias_ms":0.7,"spd_rmse":1.8,"dir_mae":24,"dir_bias":-5,"dir_n":520,"obs_spd":5.6}},
+         "best":"ecmwf_ifs","confidence":"media","vs":"gfs_seamless","margin":0.2,
+         "per_station":{"ndbc:46086":{"n":700,"best":"ecmwf_ifs","km":76.4,"kind":"buoy","z":4.1}}},
+ "best":{"wave":"ecmwf_wam","wind":"ecmwf_ifs"},"confidence":"media"}
 ```
 
-`hs_bias` relativo (fracción), `hs_rmse` en m, `tp_bias` en s, `dir_mae` en grados.
+`hs_bias` relativo (fracción), `hs_rmse` en m, `tp_bias` y `tp_mae` en s, `dir_mae` en grados.
 
 Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos:
 
 - `wave.<modelo>`: además `dir_bias` (media circular de modelo − boya, °), `tm_bias` (período medio
-  del modelo − período medio de la boya, s), `obs_hs` (Hs media de las boyas, m) y `tp_type`:
-  `"peak"` si `tp_bias` usa el período pico del modelo; si el modelo no lo da en Open-Meteo se usa su
-  `wave_period`: `"primary"` en GFS-Wave (período del sistema principal, se comporta como un pico) y
-  `"mean"` en MFWAM y EWAM (período medio: `tp_bias` negativo por construcción). Los modelos van
-  ordenados del mejor al peor.
-- `best` y `confidence` (`alta`/`media`/`baja`); sin `best` si ningún modelo tiene |`hs_bias`| ≤ 0,15
-  o hay menos de 72 horas. `vs`: el modelo contra el que se mide la confianza (el de hoy, o el segundo
-  si el mejor ya es el de hoy); `margin`: cuánto peor es su `hs_rmse` (fracción).
-- `per_buoy`: por boya, `n`, el mejor modelo con esa boya sola y la distancia `km` al pico más cercano.
+  del modelo − período medio de la boya, s), `obs_hs` (Hs media de las boyas, m), `tp_mae` (error
+  medio absoluto de período contra el período pico de la boya, s) y `tp_type`: `"peak"` si `tp_bias`
+  usa el período pico del modelo (ECMWF WAM, siempre su `wave_peak_period`); si el modelo no lo da en
+  Open-Meteo se usa su `wave_period`: `"primary"` en GFS-Wave (período del sistema principal, se
+  comporta como un pico) y `"mean"` en MFWAM y EWAM (período medio: `tp_bias` negativo por
+  construcción). `eligible`: si el modelo se puede elegir (`ecmwf_wam`, `ncep_gfswave016`,
+  `ncep_gfswave025`, los que dan período pico); MFWAM y EWAM se miden para informar. Van primero los
+  elegibles, cada grupo del mejor al peor.
+- `best.wave` y `confidence` (`alta`/`media`/`baja`): el elegible de menor `hs_rmse` con
+  |`hs_bias`| ≤ 0,15 (empates de 0,01 m: menor `tp_mae`, después menor `dir_mae`); sin `best.wave` si
+  ningún elegible califica o hay menos de 72 horas. `vs`: el modelo contra el que se mide la confianza
+  (el de hoy, o el segundo elegible si el mejor ya es el de hoy); `margin`: cuánto peor es su
+  `hs_rmse` (fracción).
+- `per_buoy`: por boya, `n`, el mejor modelo elegible con esa boya sola y la distancia `km` al pico
+  más cercano.
 - `excluded`: boyas a menos de 150 km que no se usaron, con el motivo (`why`): miran a otro mar o
   están abrigadas (ven menos de la mitad de las direcciones abiertas de los picos), todos los modelos
   con |sesgo| > 0,5, o Open-Meteo no tiene ahí (o tiene pocas horas de) el modelo de hoy. Un modelo
@@ -127,15 +138,36 @@ Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos
   modelo de hoy tiene mar, probando hasta 4): `hs` (desvío / media,
   promedio de `hours` horas) y `mean_hs` por modelo. En una región sin boyas (`"buoys": []`) es lo
   único que hay, y `confidence` es `baja` si `hs` > 0,30.
+- `wind`: el viento a 10 m de los modelos de Open-Meteo contra hasta 3 estaciones (boyas y estaciones
+  costeras) a menos de 150 km, con la misma lógica (la más cercana primero, mismo mar, mismas horas
+  para todos los modelos). `stations` (vacío si no hay), `current` (el modelo de viento de hoy) y,
+  con estaciones, `models.<modelo>`: `n`, `spd_bias` (relativo, fracción), `spd_bias_ms` (m/s),
+  `spd_rmse` (m/s), `dir_mae` y `dir_bias` (°, sólo horas con viento observado ≥ 3 m/s, `dir_n`
+  horas) y `obs_spd` (velocidad media observada a 10 m, m/s), del mejor al peor. `best`: el de menor
+  `spd_rmse` con |`spd_bias`| ≤ 0,20 (con ≥ 72 horas); `confidence`, `vs` y `margin` como en olas
+  (con `spd_rmse`); `per_station`: `n`, `best`, `km`, `kind` (`buoy` o `fixed`, en tierra) y `z`
+  (altura del anemómetro sobre el mar, m; `null` si la estación no la publica: entonces la velocidad
+  va sin ajustar); `excluded` como en olas (una estación donde todos los modelos erran la velocidad
+  por más de 35 % no se usa). Se comparan `gfs_seamless` y `ecmwf_ifs` en todas partes, y
+  `meteofrance_seamless` (Europa), `ukmo_seamless` (Islas Británicas), `cmc_gem_seamless`
+  (Norteamérica), `jma_seamless` (Japón, Corea, Taiwán), `bom_access_global` (Australia, Nueva Zelanda,
+  Pacífico sudoeste) e `icon_seamless` (Europa) en su dominio (`validate/models.py`, `WIND_DOMAINS`).
+- `best`: `{"wave": ..., "wind": ...}`, cada uno sólo si hay un mejor; `confidence` (arriba) es la de olas.
 
-`validation/models-suggested.csv` tiene las columnas de `models.csv` y sólo las regiones no fijas con
-un mejor modelo de confianza alta o media distinto del de hoy; `validation/buoys.csv`, las boyas usadas
-(`id,name,lat,lon,hours,regions`); `validation/stations.csv`, todas las estaciones leídas con sus horas
-(`id,name,lat,lon,records,hours,first,last`, para diagnóstico).
+`validation/models-suggested.csv` tiene las columnas de `models.csv` y sólo las regiones no fijas en
+las que el mejor modelo de olas o de viento, con confianza alta o media, no es el de hoy (la regla por
+defecto o la fila de `models.csv`); la otra columna queda con el modelo de hoy y `why` explica cada
+cambio. `validation/buoys.csv` tiene las boyas de olas usadas (`id,name,lat,lon,hours,regions`);
+`validation/wind-stations.csv`, las estaciones de viento usadas o descartadas
+(`id,name,lat,lon,kind,z,factor,hours,regions`: `factor` es lo que se multiplicó la velocidad para
+llevarla a 10 m); `validation/stations.csv`, todas las estaciones leídas con sus horas
+(`id,name,lat,lon,kind,records,hours,wind_hours,first,last`, para diagnóstico).
 
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 
 `region,wave,wind,why`. Una región sin fila usa la regla por defecto: olas `ncep_gfswave016`
 entre 15°S y 52,5°N y `ncep_gfswave025` fuera; viento `gfs_seamless`. Uruguay, Santa Catarina y
 Argentina quedan fijos en `ncep_gfswave025` + `gfs_seamless` (como Windguru, decidido en el
-issue #7). Una fila nueva entra por PR con su `validation/<REGIÓN>.json`.
+issue #7). Una fila nueva entra por PR con su `validation/<REGIÓN>.json`. En `wave` sólo van modelos
+que dan período pico (el reloj lo muestra y puntúa las horas con él): `ecmwf_wam`, `ncep_gfswave016`
+(en su dominio) o `ncep_gfswave025`; MFWAM y DWD EWAM no, sólo dan período medio.

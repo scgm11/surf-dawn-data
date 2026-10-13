@@ -25,8 +25,34 @@ NDBC_TXT = """#YY  MM DD hh mm WDIR WSPD GST  WVHT   DPD   APD MWD   PRES  ATMP 
 
 NDBC_XML = """<?xml version="1.0" encoding="utf-8"?><stations created="x" count="2">
   <station id="46225" lat="32.93" lon="-117.391" name="Torrey Pines Outer, CA (100)" owner="CDIP" pgm="IOOS Partners" type="buoy" met="n"/>
-  <station id="ygnn6" lat="43.262" lon="-79.064" name="Niagara" owner="x" pgm="x" type="fixed" met="n"/>
+  <station id="ygnn6" lat="43.262" lon="-79.064" name="Niagara" owner="x" pgm="x" type="fixed" met="y"/>
 </stations>"""
+
+NDBC_WIND = """#YY  MM DD hh mm WDIR WSPD GST  WVHT   DPD   APD MWD   PRES  ATMP  WTMP  DEWP  VIS PTDY  TIDE
+#yr  mo dy hr mn degT m/s  m/s     m   sec   sec degT   hPa  degC  degC  degC  nmi  hPa    ft
+2026 10 13 00 50 310  7.2  9.0   1.4    12   6.0 300 1013.0  17.0  18.1    MM   MM   MM    MM
+2026 10 12 23 50  MM   MM   MM   1.5    12   6.1 300 1013.0  17.0  18.1    MM   MM   MM    MM
+2026 10 12 22 50 300 99.0 99.0    MM    MM    MM  MM 1013.0  17.0  18.1    MM   MM   MM    MM
+"""
+
+NDBC_PAGE_BUOY = """<div id="stn_metadata"><p>Owned and maintained by National Data Buoy Center<br>
+<b>3-meter foam buoy</b><br><b>33.749 N 119.053 W (33&#176;44'56" N 119&#176;3'10" W)</b><br><br>
+<b>Site elevation:</b> sea level<br><b>Air temp height:</b> 3.7 m above site elevation<br>
+<b>Anemometer height:</b> 4.1 m above site elevation<br><b>Barometer elevation:</b> 2.7 m above mean sea level<br>"""
+
+NDBC_PAGE_SHORE = """<p><b>Site elevation:</b> 5.6 m above mean sea level<br>
+<b>Air temp height:</b> 4.3 m above site elevation<br><b>Anemometer height:</b>&nbsp;14.4 m above site elevation<br>"""
+
+MI_IWB_INFO = """Row Type,Variable Name,Attribute Name,Data Type,Value
+variable,WaveHeight,,double,
+attribute,WaveHeight,units,String,m
+variable,WindSpeed,,double,
+attribute,WindSpeed,standard_name,String,wind_speed
+attribute,WindSpeed,units,String,knots
+variable,WindDirection,,double,
+attribute,WindDirection,standard_name,String,wind_from_direction
+attribute,WindDirection,units,String,degrees_true
+"""
 
 NDBC_HTML = """<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="46225.txt">46225.txt</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 95K</td></tr>
 <tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="46225.spec">46225.spec</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 95K</td></tr>"""
@@ -157,6 +183,64 @@ class Parsers(unittest.TestCase):
         self.assertEqual({s.id for s in kept}, {"cdip:100", "ndbc:46232"})
         self.assertEqual(dropped[0][0].id, "ndbc:46225")
 
+    def test_ndbc_wind(self):
+        r = buoys.parse_ndbc_wind(NDBC_WIND)
+        self.assertEqual(r[0][1:], (7.2, 310.0))
+        self.assertEqual(r[1][1:], (None, None))
+        st = buoys.Station("ndbc", "46025", "", 33.7, -119.1, buoys.parse_ndbc_txt(NDBC_WIND), "buoy", r)
+        buoys.finish(st, 0)
+        self.assertEqual(len(st.wind_raw), 1)          # MM and the 99.0 sentinel are dropped
+        self.assertEqual(len(st.hourly), 2)
+        st.set_height(4.1)
+        h = next(iter(st.wind))
+        self.assertAlmostEqual(st.wind[h][0], 7.2 * (10 / 4.1) ** 0.11, places=6)
+        self.assertAlmostEqual(st.factor, 1.103, places=3)
+        st.set_height(None)                            # unknown height: as measured
+        self.assertEqual(st.wind[h][0], 7.2)
+        self.assertTrue(buoys.parse_ndbc_stations(NDBC_XML)["YGNN6"][4])
+
+    def test_ndbc_height(self):
+        self.assertAlmostEqual(buoys.parse_ndbc_height(NDBC_PAGE_BUOY), 4.1)
+        self.assertAlmostEqual(buoys.parse_ndbc_height(NDBC_PAGE_SHORE), 20.0)
+        self.assertIsNone(buoys.parse_ndbc_height("<p>Water depth: 20 m</p>"))
+
+    def test_mi_wind_knots(self):
+        vs = buoys.erddap_vars(MI_IWB_INFO)
+        w = buoys.wind_columns(vs)
+        self.assertEqual(w["spd"][0], "WindSpeed")
+        self.assertAlmostEqual(w["spd"][1], 0.514444)
+        self.assertEqual(w["dir"], "WindDirection")
+        conv = buoys.wind_conv_of(w)
+        spd, d = conv({"WindSpeed": "20", "WindDirection": "250"})
+        self.assertAlmostEqual(spd, 10.289, places=3)
+        self.assertEqual(d, 250.0)
+        self.assertIsNone(buoys.wind_columns(buoys.erddap_vars(MI_INFO)))           # wave buoys: no wind
+        vs["WindSpeed"]["units"] = "furlongs"
+        self.assertIsNone(buoys.wind_columns(vs))                                    # unknown unit: not used
+        rows = [{"station_id": "M3", "time": "2026-10-12T00:00:00Z", "latitude": "51.2", "longitude": "-10.5",
+                 "WaveHeight": "2.0", "WindSpeed": "10", "WindDirection": "200"}]
+        cols = buoys.wave_columns(buoys.erddap_vars(IWB_INFO))
+        st = buoys.stations_from_rows("mi", rows, "station_id", buoys.column_conv(cols), slug=True,
+                                      wind_conv=buoys.wind_conv_of(buoys.wind_columns(buoys.erddap_vars(MI_IWB_INFO))))[0]
+        buoys.finish(st, 0)
+        self.assertAlmostEqual(next(iter(st.wind.values()))[0], 5.14444, places=4)
+
+    def test_aodn_wind(self):
+        c = {"TIME": [T0, T0 + 3600], "LATITUDE": [-33.8] * 2, "LONGITUDE": [151.4] * 2, "WSSH": [1.5, 1.6],
+             "WPPE": [10.0] * 2, "WPDI": [170.0] * 2, "WPFM": [7.0] * 2, "site_name": ["Sydney"] * 2,
+             "WSPD": [5.0, None], "WDIR": [180.0, 190.0]}
+        s = buoys.finish(buoys.aodn_stations(c)[0], 0)
+        self.assertEqual(len(s.wind), 1)
+        del c["WSPD"]
+        self.assertEqual(buoys.finish(buoys.aodn_stations(c)[0], 0).wind, {})
+
+    def test_dedupe_by_wind_hours(self):
+        a = buoys.Station("ndbc", "A", "", 30.0, -80.0, [])
+        b = buoys.Station("ndbc", "B", "", 30.001, -80.0, [])
+        a.wind_raw, b.wind_raw = {1: (1, 1)}, {1: (1, 1), 2: (1, 1)}
+        kept, _ = buoys.dedupe([a, b], geo.km, hours=lambda s: len(s.wind_raw))
+        self.assertEqual([s.sid for s in kept], ["B"])
+
     def test_erddap_url_encoding(self):
         u = buoys.erddap_url("https://x/t.csv", ["a", "b"], ["time>=now-31days", "flag=1"])
         self.assertIn("time%3E=now-31days", u)
@@ -183,6 +267,29 @@ class OpenMeteo(unittest.TestCase):
         self.assertIn("dwd_ewam", models.models_for(43.5, -1.6))
         self.assertNotIn("dwd_ewam", models.models_for(53.0, -11.0))   # west of 10.5°W
 
+    def test_api_weight(self):
+        self.assertEqual(models.weight(1, 1, 1), 1)                       # the minimum is one call
+        self.assertAlmostEqual(models.weight(10, 20, 31), 10 * 2 * 31 / 14)   # 4 wave variables x 5 models
+        self.assertAlmostEqual(models.weight(10, 5, 31), 10 * 0.5 * 31 / 14)  # the spread: 1 variable x 5 models
+        self.assertAlmostEqual(models.weight(3, 16, 31), 3 * 1.6 * 31 / 14)   # wind: 2 variables x 8 models
+
+    def test_wind_models_for(self):
+        self.assertEqual(models.wind_models_for(-34.9, -54.9), ["gfs_seamless", "ecmwf_ifs"])
+        uk = models.wind_models_for(50.4, -5.1)                            # Cornwall
+        for m in ("ukmo_seamless", "meteofrance_seamless", "icon_seamless"):
+            self.assertIn(m, uk)
+        self.assertIn("cmc_gem_seamless", models.wind_models_for(33.0, -117.3))
+        self.assertIn("jma_seamless", models.wind_models_for(35.0, 140.2))
+        self.assertIn("bom_access_global", models.wind_models_for(-33.8, 151.3))
+        models.REFUSED["jma_seamless"] = "unknown"
+        try:
+            self.assertNotIn("jma_seamless", models.wind_models_for(35.0, 140.2))
+        finally:
+            del models.REFUSED["jma_seamless"]
+
+    def test_eligible(self):
+        self.assertEqual(set(models.ELIGIBLE), {"ecmwf_wam", "ncep_gfswave016", "ncep_gfswave025"})
+
     def test_pacer(self):
         clock = [0.0]
         slept = []
@@ -208,6 +315,17 @@ class Scores(unittest.TestCase):
         self.assertAlmostEqual(m["dir_mae"], 20.0)     # 350 -> 10 across north
         self.assertAlmostEqual(m["dir_bias"], 20.0)
         self.assertAlmostEqual(m["hs_si"], 0.05 / 1.5, places=3)
+
+    def test_ecmwf_peak_period(self):
+        c = cols([1.0, 1.0], per=7.0, peak=12.0)
+        self.assertEqual(score.model_columns(c, "ecmwf_wam")[1], [12.0, 12.0])
+        c = cols([1.0], per=7.0, peak=None)            # ECMWF WAM without peak period: no Tp, never the mean one
+        hs, tp, kind, per, dp = score.model_columns(c, "ecmwf_wam")
+        self.assertEqual((tp, kind), ([None], "peak"))
+        m = score.metrics(score.pairs(obs([1.0], tp=12.0), [T0], c, model="ecmwf_wam"))
+        self.assertIsNone(m["tp_bias"])
+        m = score.metrics(score.pairs(obs([1.0, 1.0], tp=12.0), [T0, T0 + 3600], cols([1.0, 1.0], per=7.0, peak=11.0), model="ecmwf_wam"))
+        self.assertEqual((m["tp_bias"], m["tp_mae"]), (-1.0, 1.0))
 
     def test_mean_period_fallback(self):
         hs, tp, kind, per, dp = score.model_columns(cols([1.0], per=8.5, peak=None))
@@ -238,6 +356,30 @@ class Scores(unittest.TestCase):
         s = {"a": self.S(0.200, 0.0, 20), "b": self.S(0.205, 0.0, 12)}
         self.assertEqual(score.best(s), "b")           # tie within 1 cm: direction decides
         self.assertIsNone(score.best({"a": self.S(0.2, 0.5)}))
+
+    def test_peak_period_breaks_ties_and_eligibility(self):
+        s = {"ecmwf_wam": dict(self.S(0.200, 0.0, 20), tp_mae=1.0), "ncep_gfswave016": dict(self.S(0.205, 0.0, 10), tp_mae=1.5)}
+        self.assertEqual(score.best(s, models.ELIGIBLE), "ecmwf_wam")     # tie in Hs: peak period first
+        s["meteofrance_wave"] = dict(self.S(0.10, 0.0, 5), tp_mae=2.0)
+        self.assertEqual(score.best(s, models.ELIGIBLE), "ecmwf_wam")     # MFWAM is better but cannot be chosen
+        self.assertEqual(score.rank(s, models.ELIGIBLE)[-1], "meteofrance_wave")
+        self.assertIsNone(score.best({"meteofrance_wave": self.S(0.1, 0.0)}, models.ELIGIBLE))
+
+    def test_wind_metrics_and_best(self):
+        o = {T0 // 3600 + i: (v, 270.0) for i, v in enumerate([2.0, 4.0, 6.0])}
+        c = {"wind_speed_10m": [3.0, 5.0, 7.0], "wind_direction_10m": [0.0, 280.0, 290.0]}
+        m = score.wind_metrics(score.wind_pairs(o, [T0, T0 + 3600, T0 + 7200], c))
+        self.assertEqual(m["n"], 3)
+        self.assertAlmostEqual(m["spd_bias_ms"], 1.0)
+        self.assertAlmostEqual(m["spd_bias"], 0.25)
+        self.assertAlmostEqual(m["spd_rmse"], 1.0)
+        self.assertEqual(m["dir_n"], 2)                # the 2 m/s hour has no direction score
+        self.assertAlmostEqual(m["dir_mae"], 15.0)
+        W = lambda r, b: {"spd_rmse": r, "spd_bias": b, "dir_mae": 20.0}  # noqa: E731
+        self.assertEqual(score.wind_best({"a": W(1.2, 0.25), "b": W(1.5, 0.05)}), "b")
+        self.assertIsNone(score.wind_best({"a": W(1.2, 0.25)}))
+        s = {"a": W(1.0, 0.0), "b": W(1.2, 0.0)}
+        self.assertEqual(score.confidence(s, "a", "b", 600, 2, 2, 20, "spd_rmse")[0], "alta")
 
     def test_confidence(self):
         s = {"a": self.S(0.20, 0.0), "b": self.S(0.25, 0.0)}
@@ -332,7 +474,9 @@ class Evaluate(unittest.TestCase):
         body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("2026-09-12", "2026-10-12"),
                                             (self.times, {"a": {"wave_height": [1.0] * 300}, "b": {"wave_height": [1.2] * 300}}))
         self.assertEqual(body["buoys"], ["cdip:100"])
-        self.assertIn(body["best"]["wave"], ("meteofrance_wave", "ecmwf_wam"))
+        self.assertEqual(body["best"]["wave"], "ecmwf_wam")         # MFWAM as good, but only a mean period
+        self.assertFalse(body["wave"]["meteofrance_wave"]["eligible"])
+        self.assertTrue(body["wave"]["ecmwf_wam"]["eligible"])
         self.assertEqual(body["wave"]["meteofrance_wave"]["tp_type"], "mean")
         self.assertEqual(body["wave"]["ecmwf_wam"]["tp_type"], "peak")
         self.assertEqual(body["confidence"], "media")  # 300 h: not enough for alta
@@ -384,6 +528,58 @@ class Evaluate(unittest.TestCase):
         body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("a", "b"))
         self.assertEqual(body["buoys"], [])                             # today's model barely there
         self.assertIn("pocas horas", body["excluded"][0]["why"])
+
+    def wind_station(self, kind="buoy", scale=1.0, sid="46025"):
+        n = 300
+        truth = [5.0 + 3.0 * math.sin(i / 10.0) for i in range(n)]
+        st = buoys.Station("ndbc", sid, "", 32.9, -117.5, [], kind)
+        st.wind_raw = {T0 // 3600 + i: (v * scale, 250.0) for i, v in enumerate(truth)}
+        st.set_height(None)
+        good = {"wind_speed_10m": [v * 1.03 for v in truth], "wind_direction_10m": [255.0] * n}
+        bad = {"wind_speed_10m": [v * 1.15 + 0.8 for v in truth], "wind_direction_10m": [280.0] * n}
+        return st, (self.times, {"gfs_seamless": bad, "ecmwf_ifs": good, "cmc_gem_seamless": bad})
+
+    def test_wind_block_and_suggestion(self):
+        st, ser = self.wind_station()
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("2026-09-12", "2026-10-12"),
+                                            wind=([(st, 20.0, None)], [], {evaluate.station_key(st): ser}))
+        w = body["wind"]
+        self.assertEqual(w["stations"], ["ndbc:46025"])
+        self.assertEqual(w["best"], "ecmwf_ifs")
+        self.assertEqual(body["best"], {"wave": "ecmwf_wam", "wind": "ecmwf_ifs"})
+        self.assertEqual(w["current"], "gfs_seamless")
+        self.assertEqual(w["vs"], "gfs_seamless")
+        self.assertEqual(w["confidence"], "media")     # 300 h
+        self.assertEqual(list(w["models"])[0], "ecmwf_ifs")
+        self.assertEqual(w["per_station"]["ndbc:46025"]["kind"], "buoy")
+        rows = report.suggestions([(body, info)])
+        self.assertEqual(rows[0][:3], ["US-X", "ecmwf_wam", "ecmwf_ifs"])
+        self.assertIn("viento (media)", rows[0][3])
+        md = report.markdown([(body, info)], ("a", "b"), {}, {}, models.USED, [], {}, [])
+        self.assertIn("## Viento", md)
+        self.assertIn("ndbc:46025 (20 km, z ?)", md)
+
+    def test_wind_only_change(self):
+        st, ser = self.wind_station()
+        t, c = self.series[(32.95, -117.4)]
+        self.series[(32.95, -117.4)] = (t, dict(c, ncep_gfswave016=c["ecmwf_wam"]))   # today's wave model is fine
+        body, info = evaluate.region_result(self.r, [(self.st, 6.0, None)], self.series, ("a", "b"),
+                                            wind=([(st, 20.0, None)], [], {evaluate.station_key(st): ser}))
+        rows = report.suggestions([(body, info)])
+        self.assertEqual(rows[0][1:3], ["ncep_gfswave016", "ecmwf_ifs"])
+        self.assertNotIn("olas", rows[0][3])
+
+    def test_wind_sheltered_station_and_fixed(self):
+        st, ser = self.wind_station(scale=0.5, sid="HARB1")             # every model 100 % too strong
+        body, _ = evaluate.region_result(self.r, [], {}, ("a", "b"),
+                                         wind=([(st, 3.0, None)], [], {evaluate.station_key(st): ser}))
+        self.assertEqual(body["wind"]["stations"], [])
+        self.assertIn("sesgo de viento", body["wind"]["excluded"][0]["why"])
+        r = regions.Region("UY-X", "UY", "x", [(33.0, -117.3)])
+        st, ser = self.wind_station()
+        body, info = evaluate.region_result(r, [], {}, ("a", "b"), wind=([(st, 3.0, None)], [], {evaluate.station_key(st): ser}))
+        self.assertEqual(body["wind"]["best"], "ecmwf_ifs")
+        self.assertEqual(report.suggestions([(body, info)]), [])          # fixed: informational only
 
     def test_no_buoys(self):
         body, info = evaluate.region_result(self.r, [], {}, ("a", "b"),

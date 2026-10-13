@@ -1,6 +1,6 @@
-name: Validación de modelos de olas
-# Compara los modelos de olas de Open-Meteo con boyas (NDBC, CDIP, AODN, Marine Institute) de
-# los últimos 30 días y publica validation/ (docs/formatos.md, sección Validación).
+name: Validación de modelos de olas y viento
+# Compara los modelos de olas y de viento de Open-Meteo con boyas y estaciones costeras (NDBC, CDIP,
+# AODN, Marine Institute) de los últimos 30 días y publica validation/ (docs/formatos.md, sección Validación).
 on:
   push:
     branches: [validacion-mundo]
@@ -52,6 +52,6 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add validation
           git diff --cached --quiet && echo "sin cambios" && exit 0
-          git commit -m "Validación: modelos de olas contra boyas $(date -u +%Y-%m-%d)"
+          git commit -m "Validación: modelos de olas y viento contra boyas $(date -u +%Y-%m-%d)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
