@@ -1,0 +1,18 @@
+451 bytes
+Dataset {
+    Int32 waveTime[waveTime = 4];
+    Float32 waveHs[waveTime = 4];
+    String metaStationName;
+    Float32 metaDeployLatitude;
+    Float32 metaDeployLongitude;
+} cdip/realtime/100p1_rt.nc;
+---------------------------------------------
+waveTime[4]
+1777320000, 1777321800, 1777323600, 1777325400
+
+waveHs[4]
+0.74, 0.74, 0.71, 0.76
+
+metaStationName, "TORREY PINES OUTER, CA BUOY - 100p1"
+metaDeployLatitude, 32.93
+metaDeployLongitude, -117.392

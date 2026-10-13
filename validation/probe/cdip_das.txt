@@ -1,0 +1,229 @@
+30519 bytes
+Attributes {
+    sourceFilename {
+        String long_name "source file name";
+        String _FillValue "_";
+        DODS {
+            Int32 strlen 30;
+            String dimName "sourceNameLength";
+        }
+    }
+    waveTime {
+        String long_name "UTC sample start time";
+        String standard_name "time";
+        String units "seconds since 1970-01-01 00:00:00 UTC";
+        String calendar "standard";
+        String axis "T";
+        String coverage_content_type "coordinate";
+        String bounds "waveTimeBounds";
+        String comment "Spectral processing performed on 1600-second samples specified by waveTimeBounds.";
+    }
+    waveTimeBounds {
+        String long_name "time cell bounds";
+        String units "seconds since 1970-01-01 00:00:00 UTC";
+        String calendar "standard";
+        String coverage_content_type "auxiliaryInformation";
+    }
+    waveFlagPrimary {
+        String _Unsigned "false";
+        String long_name "primary wave QC flag";
+        Int16 _FillValue -127;
+        String standard_name "status_flag";
+        Byte valid_min 1;
+        Byte valid_max 9;
+        Byte flag_values 1, 2, 3, 4, 9;
+        String flag_meanings "good not_evaluated questionable bad missing";
+        String reference "Ocean Data Standards, UNESCO 2013 - IOC Manuals and Guides, 54, Volume 3 Version 1";
+        String ancillary_variables "waveFlagSecondary";
+        String coverage_content_type "qualityInformation";
+    }
+    waveFlagSecondary {
+        String _Unsigned "false";
+        String long_name "secondary wave QC flag";
+        Int16 _FillValue -127;
+        Byte valid_min 0;
+        Byte valid_max 20;
+        Byte flag_values 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20;
+        String flag_meanings "unspecified sensor_issues Hs_out_of_range Tp_out_of_range Ta_out_of_range elevated_check_factors Hs_spike Ta_spike low_freq_energy_spike excessive_low_freq_energy hf_transmission_errors_fixed hf_transmission_errors_present directional_coeffs_out_of_range incomplete_spectrum spectrum_layout_modified too_few_segments inclination_off max_energy_at_highest_freq freq_over_hull_response_limit a0_hs_discrepancy duplicate_record";
+        String reference "http://cdip.ucsd.edu/documentation";
+        String coverage_content_type "qualityInformation";
+    }
+    waveHs {
+        String long_name "significant wave height";
+        String units "meter";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_significant_height";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 20.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+        String ncei_name "WAVE HEIGHT - SIGNIFICANT";
+        String additional_processing "Calculated from the full-spectrum, buoy-returned energy density values.";
+    }
+    waveTp {
+        String long_name "peak wave period";
+        String units "second";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_period_at_variance_spectral_density_maximum";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 40.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+        String ncei_name "WAVE - PEAK PERIOD";
+    }
+    waveTa {
+        String long_name "average wave period";
+        String units "second";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 40.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+        String ncei_name "WAVE PERIOD - AVERAGE";
+        String additional_processing "Calculated from the full-spectrum, buoy-returned energy density values.";
+    }
+    waveDp {
+        String long_name "peak wave direction";
+        String units "degreeT";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_from_direction_at_variance_spectral_density_maximum";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 360.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+        String ncei_name "WAVE DIRECTION";
+        String additional_processing "Magnetic declination - INT(metaDeclination) - added to buoy-returned direction to shift to degrees true.";
+    }
+    wavePeakPSD {
+        String long_name "peak wave power spectral density";
+        String units "m*m/hertz";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_energy_at_variance_spectral_density_maximum";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 5000.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+    }
+    waveTz {
+        String long_name "spectral zero-upcross wave period";
+        String units "second";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Float32 valid_max 40.0;
+        String ancillary_variables "waveFlagPrimary waveFlagSecondary";
+        String additional_processing "Calculated from the full-spectrum, buoy-returned energy density values.";
+    }
+    waveSourceIndex {
+        String long_name "source file index";
+        Int32 _FillValue -99999;
+    }
+    waveFrequency {
+        String long_name "band center frequency";
+        String units "hertz";
+        String standard_name "wave_frequency";
+        String bounds "waveFrequencyBounds";
+    }
+    waveFrequencyBounds {
+        String long_name "frequency cell bounds";
+        String units "hertz";
+    }
+    waveFrequencyFlagPrimary {
+        String _Unsigned "false";
+        String long_name "primary waveFrequency QC flag";
+        Int16 _FillValue -127;
+        String standard_name "status_flag";
+        Byte valid_min 1;
+        Byte valid_max 9;
+        Byte flag_values 1, 2, 3, 4, 9;
+        String flag_meanings "good not_evaluated questionable bad missing";
+        String reference "Ocean Data Standards, UNESCO 2013 - IOC Manuals and Guides, 54, Volume 3 Version 1";
+        String ancillary_variables "waveFrequencyFlagSecondary";
+        String coverage_content_type "qualityInformation";
+    }
+    waveFrequencyFlagSecondary {
+        String _Unsigned "false";
+        String long_name "secondary waveFrequency QC flag";
+        Int16 _FillValue -127;
+        Byte valid_min 0;
+        Byte valid_max 2;
+        Byte flag_values 0, 1, 2;
+        String flag_meanings "unspecified out_of_range above_hull_response_limit";
+        String reference "http://cdip.ucsd.edu/documentation";
+        String coverage_content_type "qualityInformation";
+    }
+    waveBandwidth {
+        String long_name "bandwidth";
+        String units "hertz";
+        Float32 _FillValue -999.99;
+        String ncei_name "WAVE ENERGY - WIDTH OF SPECTRAL BANDS";
+    }
+    waveEnergyDensity {
+        String long_name "band energy density";
+        String units "meter^2 second";
+        Float32 _FillValue -999.99;
+        String standard_name "sea_surface_wave_variance_spectral_density";
+        String coordinates "metaDeployLatitude metaDeployLongitude";
+        String grid_mapping "metaGridMapping";
+        Float32 valid_min 0.0;
+        Str
+...
+ata Information Program (CDIP)";
+        String processing_level "QA/QC information available at http://cdip.ucsd.edu/documentation";
+        String standard_name_vocabulary "CF Standard Name Table v79";
+        String Conventions "ACDD-1.3, CF-1.8, IOOS-1.2";
+        String license "These data may be redistributed and used without restriction.";
+        String cdm_data_type "Station";
+        String featureType "timeSeries";
+        String ncei_template_version "NCEI_NetCDF_TimeSeries_Orthogonal_Template_v2.0";
+        String references "http://cdip.ucsd.edu/documentation";
+        String uuid "97E2A5A9-D3F2-4CCB-9CD2-ED245B177AD8";
+        String title "Directional wave, sea surface temperature, and air temperature measurements collected in situ by Datawell DWR-M3 directional buoy located near TORREY PINES OUTER, CA from 2026/04/27 20:00:00 to 2026/10/13 01:26:40.";
+        String summary "Directional wave, sea surface temperature, and air temperature measurements collected in situ by Datawell DWR-M3 directional buoy located near TORREY PINES OUTER, CA from 2026/04/27 20:00:00 to 2026/10/13 01:26:40. A total of 8073 wave samples were analyzed for this site, where the water depth is approximately 572 meters.";
+        String keywords "EARTH SCIENCE, OCEANS, OCEAN WAVES, GRAVITY WAVES, WIND WAVES, SIGNIFICANT WAVE HEIGHT, WAVE FREQUENCY, WAVE PERIOD, WAVE SPECTRA, OCEAN TEMPERATURE, SEA SURFACE TEMPERATURE, WATER TEMPERATURE, ATMOSPHERE, ATMOSPHERIC TEMPERATURE, SURFACE TEMPERATURE, OCEAN, PACIFIC OCEAN, EASTERN PACIFIC OCEAN";
+        String cdip_station_id "100";
+        String platform_id "100p1";
+        String cdip_deployment_id "100p1_d20";
+        String wmo_id "46225";
+        String wmo_platform_code "46225";
+        String id "CDIP_100p1_20260427-20261013";
+        String history "2026-10-13T01:44:12Z: dataset created; multiple updates - last run program, arguments: process_dw_realtime v3.2, is70491_202610130130 If date_modified is after date_created, contact CDIP for details of changes.";
+        String comment "This dataset contains data as acquired in real-time, the QC performed upon it is not as complete as for historic CDIP datasets. All values are decoded directly from the instruments in accordance with the manufacturers documentation EXCEPT for those with the attribute :additional_processing which describes further data handling performed by CDIP.";
+        String acknowledgment "CDIP is primarily supported by the U.S. Army Corps of Engineers (USACE). Station partner: CDBW ; Field operator: CDIP";
+        String metadata_link "http://cdip.ucsd.edu/metadata/100p1";
+        String infoUrl "http://cdip.ucsd.edu/metadata/100p1";
+        String contributor_name "CDIP, CDBW/USACE";
+        String contributor_role "station operation, station funding";
+        Float32 geospatial_lat_min 32.91946;
+        Float32 geospatial_lat_max 32.94054;
+        String geospatial_lat_units "degrees_north";
+        Float32 geospatial_lat_resolution 1.0E-4;
+        Float32 geospatial_lon_min -117.40456;
+        Float32 geospatial_lon_max -117.37944;
+        String geospatial_lon_units "degrees_east";
+        Float32 geospatial_lon_resolution 1.0E-4;
+        Float32 geospatial_vertical_min 0.0;
+        Float32 geospatial_vertical_max 0.0;
+        String geospatial_vertical_units "meters";
+        String geospatial_vertical_origin "sea surface";
+        String geospatial_vertical_positive "up";
+        Float32 geospatial_vertical_resolution 1.0;
+        String time_coverage_start "2026-04-27T20:00:00Z";
+        String time_coverage_end "2026-10-13T01:26:40Z";
+        String time_coverage_duration "P168DT05H27M";
+        String time_coverage_resolution "PT30M";
+        String source "insitu observations";
+        String instrument "metaInstrumentation";
+        String platform "wave_buoy";
+        String platform_vocabulary "http://mmisw.org/ont/ioos/platform";
+        String platform_name "TORREY PINES OUTER, CA BUOY - 100p1";
+    }
+}

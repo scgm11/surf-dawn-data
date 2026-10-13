@@ -1,0 +1,18 @@
+FAILED
+Traceback (most recent call last):
+  File "/home/runner/work/surf-dawn-data/surf-dawn-data/validate/probe.py", line 30, in probe
+    save(name, fn())
+               ^^^^
+  File "/home/runner/work/surf-dawn-data/surf-dawn-data/validate/probe.py", line 67, in aodn_rows
+    out.append(t.slice(max(0, t.num_rows - 5), 5).to_pandas().to_string())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "pyarrow/array.pxi", line 885, in pyarrow.lib._PandasConvertible.to_pandas
+  File "pyarrow/table.pxi", line 5002, in pyarrow.lib.Table._to_pandas
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/pyarrow/pandas_compat.py", line 777, in table_to_dataframe
+    index = _pandas_api.pd.RangeIndex(table.num_rows)
+            ^^^^^^^^^^^^^^
+  File "pyarrow/pandas-shim.pxi", line 138, in pyarrow.lib._PandasAPIShim.pd.__get__
+  File "pyarrow/pandas-shim.pxi", line 112, in pyarrow.lib._PandasAPIShim._check_import
+  File "pyarrow/pandas-shim.pxi", line 55, in pyarrow.lib._PandasAPIShim._import_pandas
+  File "pyarrow/pandas-shim.pxi", line 50, in pyarrow.lib._PandasAPIShim._import_pandas
+ModuleNotFoundError: No module named 'pandas'

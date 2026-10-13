@@ -1,0 +1,118 @@
+41124 bytes
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2">
+  <service name="all" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="dap4" serviceType="DAP4" base="/thredds/dap4/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="wcs" serviceType="WCS" base="/thredds/wcs/" />
+    <service name="wms" serviceType="WMS" base="/thredds/wms/" />
+    <service name="ncssGrid" serviceType="NetcdfSubset" base="/thredds/ncss/grid/" />
+    <service name="ncssPoint" serviceType="NetcdfSubset" base="/thredds/ncss/point/" />
+    <service name="cdmremote" serviceType="CdmRemote" base="/thredds/cdmremote/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/" />
+    <service name="ncml" serviceType="NCML" base="/thredds/ncml/" />
+    <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
+  </service>
+  <service name="cdip1" serviceType="compound" base="">
+    <service name="odap" serviceType="OpenDAP" base="/thredds/dodsC/" />
+    <service name="http" serviceType="HTTPServer" base="/thredds/fileServer/" />
+    <service name="ncssPoint" serviceType="NetcdfSubset" base="/thredds/ncss/point/" />
+    <service name="iso" serviceType="ISO" base="/thredds/iso/" />
+    <service name="ncml" serviceType="NCML" base="/thredds/ncml/" />
+    <service name="uddc" serviceType="UDDC" base="/thredds/uddc/" />
+  </service>
+  <dataset name="CDIP Realtime">
+    <property name="DatasetScan" value="true" />
+    <metadata inherited="true">
+      <serviceName>cdip1</serviceName>
+      <dataType>Station</dataType>
+      <documentation xlink:href="https://docs.google.com/document/d/1Uz_xIAVD2M6WeqQQ_x7ycoM3iKENO38S4Bmn6SasHtY/edit?usp=sharing" xlink:title="CDIP THREDDS Data Access Instructions" />
+      <documentation type="rights">These data may be redistributed and used without restriction.</documentation>
+      <documentation type="summary">Directional wave and sea surface temperature measurements collected in situ by Datawell buoys. Only the 'historic' ARCHIVE datasets exclude bad data. The REALTIME datasets and all the single-deployment ARCHIVE datasets include bad data, with the qc 'Flag' variables appropriately set; it is up to users to mask off bad values as needed.</documentation>
+      <documentation type="processing_level" xlink:href="http://cdip.ucsd.edu/documentation" xlink:title="QA/QC information available" />
+      <contributor role="data management">CDIP</contributor>
+      <contributor role="sponsor">Various buoys are sponsored by: Pacific Islands Ocean Observing System (PacIOOS), National Oceanic and Atmospheric Administration (NOAA), U.S. Geological Survey (USGS), National Weather Service (NWS), Coastal Observing Research and Development Center (CORDC), Central and Northern California Ocean Observing System (CENCOOS), Applied Physics Laboratory of the University of Washington (UW-APL), US Army Corps of Engineers(USACE)</contributor>
+      <keyword>EARTH SCIENCE</keyword>
+      <keyword>OCEANS</keyword>
+      <keyword>OCEAN WAVES</keyword>
+      <keyword>GRAVITY WAVES</keyword>
+      <keyword>WIND WAVES</keyword>
+      <keyword>SIGNIFICANT WAVE HEIGHT</keyword>
+      <keyword>WAVE FREQUENCY</keyword>
+      <keyword>WAVE PERIOD</keyword>
+      <keyword>WAVE SPECTRA</keyword>
+      <keyword>OCEAN TEMPERATURE</keyword>
+      <keyword>SEA SURFACE TEMPERATURE</keyword>
+      <keyword>WATER TEMPERATURE</keyword>
+      <keyword>OCEAN</keyword>
+      <property name="viewer2" value="http://cdip.ucsd.edu/offline/wavecdf/wnc_browse.php?REALTIME+{url},CDIP Realtime Viewer (browser-based)" />
+    </metadata>
+    <dataset name="028p1_rt.nc" ID="CDIP_Realtime/028p1_rt.nc" urlPath="cdip/realtime/028p1_rt.nc">
+      <dataSize units="Mbytes">19.03</dataSize>
+      <date type="modified">2026-10-13T01:41:55.137Z</date>
+    </dataset>
+    <dataset name="028p1_xy.nc" ID="CDIP_Realtime/028p1_xy.nc" urlPath="cdip/realtime/028p1_xy.nc">
+      <dataSize units="Mbytes">388.4</dataSize>
+      <date type="modified">2026-10-13T01:43:19.265Z</date>
+    </dataset>
+    <dataset name="029p1_rt.nc" ID="CDIP_Realtime/029p1_rt.nc" urlPath="cdip/realtime/029p1_rt.nc">
+      <dataSize units="Mbytes">33.95</dataSize>
+      <date type="modified">2026-10-13T01:45:29.014Z</date>
+    </dataset>
+    <dataset name="029p1_xy.nc" ID="CDIP_Realtime/029p1_xy.nc" urlPath="cdip/realtime/029p1_xy.nc">
+      <dataSize units="Mbytes">690.8</dataSize>
+      <date type="modified">2026-10-13T01:46:45.581Z</date>
+    </dataset>
+    <dataset name="036p1_rt.nc" ID="CDIP_Realtime/036p1_rt.nc" urlPath="cdip/realtime/036p1_rt.nc">
+      <dataSize units="Mbytes">39.72</dataSize>
+      <date type="modified">2026-10-13T01:31:42.775Z</date>
+    </dataset>
+    <dataset 
+...
+Realtime/282p1_xy.nc" urlPath="cdip/realtime/282p1_xy.nc">
+      <dataSize units="Mbytes">565.7</dataSize>
+      <date type="modified">2026-10-13T01:19:59.067Z</date>
+    </dataset>
+    <dataset name="284p1_rt.nc" ID="CDIP_Realtime/284p1_rt.nc" urlPath="cdip/realtime/284p1_rt.nc">
+      <dataSize units="Mbytes">60.11</dataSize>
+      <date type="modified">2026-10-13T01:32:58.371Z</date>
+    </dataset>
+    <dataset name="284p1_xy.nc" ID="CDIP_Realtime/284p1_xy.nc" urlPath="cdip/realtime/284p1_xy.nc">
+      <dataSize units="Gbytes">1.224</dataSize>
+      <date type="modified">2026-10-13T01:34:15.408Z</date>
+    </dataset>
+    <dataset name="285p1_rt.nc" ID="CDIP_Realtime/285p1_rt.nc" urlPath="cdip/realtime/285p1_rt.nc">
+      <dataSize units="Mbytes">2.805</dataSize>
+      <date type="modified">2026-10-13T01:43:31.883Z</date>
+    </dataset>
+    <dataset name="285p1_xy.nc" ID="CDIP_Realtime/285p1_xy.nc" urlPath="cdip/realtime/285p1_xy.nc">
+      <dataSize units="Mbytes">59.30</dataSize>
+      <date type="modified">2026-10-13T01:44:45.466Z</date>
+    </dataset>
+    <dataset name="430p1_rt.nc" ID="CDIP_Realtime/430p1_rt.nc" urlPath="cdip/realtime/430p1_rt.nc">
+      <dataSize units="Mbytes">37.32</dataSize>
+      <date type="modified">2026-10-13T01:36:21.228Z</date>
+    </dataset>
+    <dataset name="430p1_xy.nc" ID="CDIP_Realtime/430p1_xy.nc" urlPath="cdip/realtime/430p1_xy.nc">
+      <dataSize units="Mbytes">714.8</dataSize>
+      <date type="modified">2026-10-12T02:10:50.887Z</date>
+    </dataset>
+    <dataset name="433p1_rt.nc" ID="CDIP_Realtime/433p1_rt.nc" urlPath="cdip/realtime/433p1_rt.nc">
+      <dataSize units="Mbytes">105.5</dataSize>
+      <date type="modified">2026-10-13T01:36:05.179Z</date>
+    </dataset>
+    <dataset name="433p1_xy.nc" ID="CDIP_Realtime/433p1_xy.nc" urlPath="cdip/realtime/433p1_xy.nc">
+      <dataSize units="Gbytes">2.278</dataSize>
+      <date type="modified">2026-10-11T17:10:10.653Z</date>
+    </dataset>
+    <dataset name="latest_3day.nc" ID="CDIP_Realtime/latest_3day.nc" urlPath="cdip/realtime/latest_3day.nc">
+      <dataSize units="Mbytes">28.32</dataSize>
+      <date type="modified">2026-10-13T01:47:04.630Z</date>
+    </dataset>
+    <dataset name="latest_7day.nc" ID="CDIP_Realtime/latest_7day.nc" urlPath="cdip/realtime/latest_7day.nc">
+      <dataSize units="Mbytes">66.07</dataSize>
+      <date type="modified">2026-10-13T01:42:22.421Z</date>
+    </dataset>
+  </dataset>
+</catalog>

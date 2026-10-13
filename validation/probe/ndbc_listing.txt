@@ -1,0 +1,64 @@
+551947 bytes
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>NDBC - Index of /data/realtime2/</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Type" content="Text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="/style/dirindex.css" type="text/css">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+<script async id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOC&subagency=NOAA"></script>
+<script src="https://touchpoints.app.cloud.gov/touchpoints/b5347857.js" defer></script>
+
+
+</head>
+<body>
+<main>
+<h1>Index of /data/realtime2/</h1>
+
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/data/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="32ST0.ocean">32ST0.ocean</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 82K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="32ST0.srad">32ST0.srad</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 38K</td><td>Solar Radiation Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="32ST0.txt">32ST0.txt</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 95K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="51WH0.ocean">51WH0.ocean</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 82K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="51WH0.srad">51WH0.srad</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 39K</td><td>Solar Radiation Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="51WH0.txt">51WH0.txt</a></td><td align="right">2026-10-13 01:10  </td><td align="right"> 95K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="14049.txt">14049.txt</a></td><td align="right">2026-10-01 13:25  </td><td align="right"> 49K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="15001.txt">15001.txt</a></td><td align="right">2026-10-01 13:25  </td><td align="right">101K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="15006.txt">15006.txt</a></td><td align="right">2026-10-01 13:25  </td><td align="right">101K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="15009.txt">15009.txt</a></td><td align="right">2026-10-13 01:40  </td><td align="right"> 38K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21414.dart">21414.dart</a></td><td align="right">2026-09-10 18:35  </td><td align="right">276K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21415.dart">21415.dart</a></td><td align="right">2026-10-13 01:45  </td><td align="right">131K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21416.dart">21416.dart</a></td><td align="right">2026-09-01 00:35  </td><td align="right">109K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21418.dart">21418.dart</a></td><td align="right">2026-10-13 01:45  </td><td align="right">131K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21419.dart">21419.dart</a></td><td align="right">2026-10-01 07:50  </td><td align="right">126K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="21420.dart">21420.dart</a></td><td align="right">2026-10-13 00:35  </td><td align="right">131K</td><td>Water Column Height (DART) Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22101.drift">22101.drift</a></td><td align="right">2026-10-13 01:25  </td><td align="right"> 93K</td><td>Standard Meteorological Data for Drifting Buoys</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22102.drift">22102.drift</a></td><td align="right">2026-10-13 01:25  </td><td align="right"> 92K</td><td>Standard Meteorological Data for Drifting Buoys</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22103.drift">22103.drift</a></td><td align="right">2026-10-13 01:25  </td><td align="right"> 91K</td><td>Standard Meteorological Data for Drifting Buoys</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22104.drift">22104.drift</a></td><td align="right">2026-10-12 23:25  </td><td align="right"> 92K</td><td>Standard Meteorological Data for Drifting Buoys</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22105.drift">22105.drift</a></td><td align="right">2026-10-13 01:25  </td><td align="right"> 93K</td><td>Standard Meteorological Data for Drifting Buoys</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="22106.drift">22106.drift</a></td><td align="right">2026-10-13 01:25  </td><td align="right"> 93K</td><td>Standard Meteorological Data for Drifting Buoy
+...
+ alt="[TXT]"></td><td><a href="WRBF1.ocean">WRBF1.ocean</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 62K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WRBF1.rain">WRBF1.rain</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 19K</td><td>Hourly Rain Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WRBF1.txt">WRBF1.txt</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 73K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WRXA2.txt">WRXA2.txt</a></td><td align="right">2026-10-13 01:40  </td><td align="right">594K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WWEF1.ocean">WWEF1.ocean</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 62K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WWEF1.rain">WWEF1.rain</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 18K</td><td>Hourly Rain Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WWEF1.txt">WWEF1.txt</a></td><td align="right">2026-10-12 21:55  </td><td align="right"> 72K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WYBS1.ocean">WYBS1.ocean</a></td><td align="right">2026-10-07 21:55  </td><td align="right">5.7K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WYCM6.txt">WYCM6.txt</a></td><td align="right">2026-10-13 01:45  </td><td align="right">1.0M</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="WYSS1.ocean">WYSS1.ocean</a></td><td align="right">2026-10-13 00:55  </td><td align="right">341K</td><td>Oceanographic Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="YATA2.txt">YATA2.txt</a></td><td align="right">2026-10-13 01:45  </td><td align="right">1.0M</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="YKTV2.txt">YKTV2.txt</a></td><td align="right">2026-10-13 01:35  </td><td align="right">1.0M</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="YRSV2.txt">YRSV2.txt</a></td><td align="right">2026-10-13 00:55  </td><td align="right">377K</td><td>Standard Meteorological Data</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="ship_obs.txt">ship_obs.txt</a></td><td align="right">2026-10-13 01:45  </td><td align="right">1.5M</td><td>Standard Meteorological Data</td></tr>
+</table>
+</main>
+</body>
+</html>

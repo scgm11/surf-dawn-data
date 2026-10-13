@@ -1,0 +1,162 @@
+10504 bytes
+Row Type,Variable Name,Attribute Name,Data Type,Value
+attribute,NC_GLOBAL,cdm_data_type,String,TimeSeries
+attribute,NC_GLOBAL,cdm_timeseries_variables,String,"station_id, longitude, latitude"
+attribute,NC_GLOBAL,Conventions,String,"COARDS, CF-1.4, Unidata Dataset Discovery v1.0"
+attribute,NC_GLOBAL,Easternmost_Easting,double,-9.267
+attribute,NC_GLOBAL,featureType,String,TimeSeries
+attribute,NC_GLOBAL,geospatial_lat_max,double,54.27978
+attribute,NC_GLOBAL,geospatial_lat_min,double,51.71026
+attribute,NC_GLOBAL,geospatial_lat_units,String,degrees_north
+attribute,NC_GLOBAL,geospatial_lon_max,double,-9.267
+attribute,NC_GLOBAL,geospatial_lon_min,double,-10.29743
+attribute,NC_GLOBAL,geospatial_lon_units,String,degrees_east
+attribute,NC_GLOBAL,infoUrl,String,http://www.isde.ie/#/55eb27e0-2fc3-4dab-9963-a99d12402a9e
+attribute,NC_GLOBAL,institution,String,Marine Institute
+attribute,NC_GLOBAL,license,String,Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/)
+attribute,NC_GLOBAL,Northernmost_Northing,double,54.27978
+attribute,NC_GLOBAL,sourceUrl,String,(source database)
+attribute,NC_GLOBAL,Southernmost_Northing,double,51.71026
+attribute,NC_GLOBAL,standard_name_vocabulary,String,CF-18
+attribute,NC_GLOBAL,subsetVariables,String,"station_id, longitude, latitude"
+attribute,NC_GLOBAL,summary,String,Irish Wave Buoys 30 minute
+attribute,NC_GLOBAL,title,String,Irish Wave Buoys 30 Min
+attribute,NC_GLOBAL,Westernmost_Easting,double,-10.29743
+variable,longitude,,float,
+attribute,longitude,_CoordinateAxisType,String,Lon
+attribute,longitude,actual_range,float,"-10.297428, -9.267"
+attribute,longitude,axis,String,X
+attribute,longitude,ioos_category,String,Location
+attribute,longitude,long_name,String,Longitude
+attribute,longitude,standard_name,String,longitude
+attribute,longitude,units,String,degrees_east
+variable,latitude,,float,
+attribute,latitude,_CoordinateAxisType,String,Lat
+attribute,latitude,actual_range,float,"51.71026, 54.279778"
+attribute,latitude,axis,String,Y
+attribute,latitude,ioos_category,String,Location
+attribute,latitude,long_name,String,Latitude
+attribute,latitude,standard_name,String,latitude
+attribute,latitude,units,String,degrees_north
+variable,time,,double,
+attribute,time,_CoordinateAxisType,String,Time
+attribute,time,axis,String,T
+attribute,time,ioos_category,String,Time
+attribute,time,long_name,String,Detection Time
+attribute,time,standard_name,String,time
+attribute,time,time_origin,String,01-JAN-1970 00:00:00
+attribute,time,units,String,seconds since 1970-01-01T00:00:00Z
+variable,station_id,,String,
+attribute,station_id,cf_role,String,timeseries_id
+attribute,station_id,ioos_category,String,Identifier
+attribute,station_id,long_name,String,Station ID
+variable,instrument,,String,
+attribute,instrument,ioos_category,String,Unknown
+variable,PeakPeriod,,float,
+attribute,PeakPeriod,ioos_category,String,Surface Waves
+attribute,PeakPeriod,long_name,String,sea_surface_wave_period_at_variance_spectral_density_maximum
+attribute,PeakPeriod,standard_name,String,sea_surface_wave_period_at_variance_spectral_density_maximum
+attribute,PeakPeriod,units,String,s
+variable,PeakDirection,,float,
+attribute,PeakDirection,ioos_category,String,Surface Waves
+attribute,PeakDirection,long_name,String,sea_surface_wave_to_direction
+attribute,PeakDirection,standard_name,String,sea_surface_wave_to_direction
+attribute,PeakDirection,units,String,degrees_true
+variable,PeakSpread,,double,
+attribute,PeakSpread,colorBarMaximum,String,359.0
+attribute,PeakSpread,colorBarMinimum,String,0.0
+attribute,PeakSpread,comment,String,Dsprp Directional spread of waves at peak of wave energy spectrum
+attribute,PeakSpread,ioos_category,String,Surface Waves
+attribute,PeakSpread,long_name,String,PeakSpread
+attribute,PeakSpread,missing_value,double,-999.0
+attribute,PeakSpread,standard_name,String,sea_surface_wave_directional_spread
+attribute,PeakSpread,units,String,degrees_true
+variable,UpcrossPeriod,,float,
+attribute,UpcrossPeriod,comment,String,The zero upcrossing period is defined as the time interval between consecutive occasions on which the surface height passes upward above the mean level. Swell waves are waves on the ocean surface.
+attribute,UpcrossPeriod,ioos_category,String,Surface Waves
+attribute,UpcrossPeriod,long_name,String,Sea Surface Swell Wave Zero upcrossing Period
+attribute,UpcrossPeriod,standard_name,String,sea_surface_swell_wave_zero_upcrossing_period
+attribute,UpcrossPeriod,units,String,s
+variable,EnergyPeriod,,double,
+attribute,EnergyPeriod,colorBarMaximum,String,20.0
+attribute,EnergyPeriod,colorBarMinimum,String,0.0
+attribute,EnergyPeriod,comment,String,"Te Energy period derived from spectral moments, m-1 and m0"
+attribute,EnergyPeriod,ioos_category,String,Surface Waves
+attribute,EnergyPeriod,long_name,String,EnergyPeriod
+attribute,EnergyPeriod,missing_value,double,-999.0
+attribute,EnergyPeriod,standard_name,String,sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment
+attribute,EnergyPeriod,units,String,s
+variable,SignificantWaveHeight,,float,
+attribute,SignificantWaveHeight,colorBarMaximum,String,1500.0
+attribute,SignificantWaveHeight,colorBarMinimum,String,0.0
+attribute,SignificantWaveHeight,ioos_category,String,Surface Waves
+attribute,SignificantWaveHeight,long_name,String,Sea Surface Wave Significant Height
+attribute,SignificantWaveHeight,standard_name,String,sea_surface_wave_significant_height
+attribute,SignificantWaveHeight,units,String,cm
+variable,SeaTemperature,,float,
+attribute,SeaTemperature,colorBarMaximum,String,32.0
+attribute,SeaTemperature,colorBarMinimum,String,0.0
+attribute,SeaTemperature,ioos_category,String,Temperature
+attribute,SeaTemperature,long_name,String,Sea Surface Temperature
+attribute,SeaTemperature,missing_value,float,-999.0
+attribute,SeaTemperature,standard_name,String,sea_surface_temperature
+attribute,SeaTemperature,units,String,degree_C
+variable,Hmax,,float,
+attribute,Hmax,colorBarMaximum,String,1500.0
+attribute,Hmax,colorBarMinimum,St
+...
+n sea water speed
+attribute,MeanCurSpeed,standard_name,String,sea_water_speed
+attribute,MeanCurSpeed,units,String,m/s
+variable,SignificantWaveHeight_qc,,double,
+attribute,SignificantWaveHeight_qc,comment,String,0.0 = No quality control
+attribute,SignificantWaveHeight_qc,ioos_category,String,Quality
+attribute,SignificantWaveHeight_qc,long_name,String,SigWaveHeight Quality Control Flag
+variable,PeakPeriod_qc,,double,
+attribute,PeakPeriod_qc,comment,String,0.0 = No quality control
+attribute,PeakPeriod_qc,ioos_category,String,Quality
+attribute,PeakPeriod_qc,long_name,String,PeakPeriod Control Flag
+variable,PeakDirection_qc,,double,
+attribute,PeakDirection_qc,comment,String,0.0 = No quality control
+attribute,PeakDirection_qc,ioos_category,String,Quality
+attribute,PeakDirection_qc,long_name,String,PeakDirection Quality Control Flag
+variable,PeakSpread_qc,,double,
+attribute,PeakSpread_qc,comment,String,0.0 = No quality control
+attribute,PeakSpread_qc,ioos_category,String,Quality
+attribute,PeakSpread_qc,long_name,String,PeakSpread Control Flag
+variable,EnergyPeriod_qc,,double,
+attribute,EnergyPeriod_qc,comment,String,0.0 = No quality control
+attribute,EnergyPeriod_qc,ioos_category,String,Quality
+attribute,EnergyPeriod_qc,long_name,String,EnergyPeriod Quality Control Flag
+variable,UpcrossPeriod_qc,,double,
+attribute,UpcrossPeriod_qc,comment,String,0.0 = No quality control
+attribute,UpcrossPeriod_qc,ioos_category,String,Quality
+attribute,UpcrossPeriod_qc,long_name,String,UpcrossPeriod Quality Control Flag
+variable,SeaTemperature_qc,,double,
+attribute,SeaTemperature_qc,comment,String,0.0 = No quality control
+attribute,SeaTemperature_qc,ioos_category,String,Quality
+attribute,SeaTemperature_qc,long_name,String,SeaTemperature Quality Control Flag
+variable,Hmax_qc,,double,
+attribute,Hmax_qc,comment,String,0.0 = No quality control
+attribute,Hmax_qc,ioos_category,String,Quality
+attribute,Hmax_qc,long_name,String,Hmax Quality Control Flag
+variable,THmax_qc,,double,
+attribute,THmax_qc,comment,String,0.0 = No quality control
+attribute,THmax_qc,ioos_category,String,Quality
+attribute,THmax_qc,long_name,String,THmax Quality Control Flag
+variable,Havg_qc,,double,
+attribute,Havg_qc,comment,String,0.0 = No quality control
+attribute,Havg_qc,ioos_category,String,Quality
+attribute,Havg_qc,long_name,String,Havg Quality Control Flag
+variable,Tavg_qc,,double,
+attribute,Tavg_qc,comment,String,0.0 = No quality control
+attribute,Tavg_qc,ioos_category,String,Quality
+attribute,Tavg_qc,long_name,String,Tavg Quality Control Flag
+variable,MeanCurDirTo_qc,,double,
+attribute,MeanCurDirTo_qc,comment,String,0.0 = No quality control
+attribute,MeanCurDirTo_qc,ioos_category,String,Quality
+attribute,MeanCurDirTo_qc,long_name,String,MeanCurDirTo Quality Control Flag
+variable,MeanCurSpeed_qc,,double,
+attribute,MeanCurSpeed_qc,comment,String,0.0 = No quality control
+attribute,MeanCurSpeed_qc,ioos_category,String,Quality
+attribute,MeanCurSpeed_qc,long_name,String,MeanCurSpeed Quality Control Flag
