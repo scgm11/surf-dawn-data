@@ -106,6 +106,26 @@ en cm, con `t0` en segundos Unix. El reloj calcula
 
 `hs_bias` relativo (fracción), `hs_rmse` en m, `tp_bias` en s, `dir_mae` en grados.
 
+Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos:
+
+- `wave.<modelo>`: además `dir_bias` (media circular de modelo − boya, °), `tm_bias` (período medio
+  del modelo − período medio de la boya, s), `obs_hs` (Hs media de las boyas, m) y `tp_type`:
+  `"peak"` si `tp_bias` usa el período pico del modelo, `"mean"` si el modelo no lo da en Open-Meteo
+  y se usó su `wave_period`. Los modelos van ordenados del mejor al peor.
+- `best` y `confidence` (`alta`/`media`/`baja`); sin `best` si ningún modelo tiene |`hs_bias`| ≤ 0,15
+  o hay menos de 72 horas. `vs`: el modelo contra el que se mide la confianza (el de hoy, o el segundo
+  si el mejor ya es el de hoy); `margin`: cuánto peor es su `hs_rmse` (fracción).
+- `per_buoy`: por boya, `n`, el mejor modelo con esa boya sola y la distancia `km` al pico más cercano.
+- `excluded`: boyas cercanas descartadas por no representativas (todos los modelos con |sesgo| > 0,5).
+- `current`: el modelo de olas que usa hoy la región; `fixed`: `true` en las regiones fijas del issue #7.
+- `spread`: dispersión de Hs entre modelos en el pico central (`point`): `hs` (desvío / media,
+  promedio de `hours` horas) y `mean_hs` por modelo. En una región sin boyas (`"buoys": []`) es lo
+  único que hay, y `confidence` es `baja` si `hs` > 0,30.
+
+`validation/models-suggested.csv` tiene las columnas de `models.csv` y sólo las regiones no fijas con
+un mejor modelo de confianza alta o media distinto del de hoy; `validation/buoys.csv`, las boyas usadas
+(`id,name,lat,lon,hours,regions`).
+
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 
 `region,wave,wind,why`. Una región sin fila usa la regla por defecto: olas `ncep_gfswave016`
