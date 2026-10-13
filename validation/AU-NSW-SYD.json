@@ -40,7 +40,7 @@
    "dir_bias": 54.2,
    "tm_bias": 2.66,
    "obs_hs": 0.85,
-   "tp_type": "mean"
+   "tp_type": "primary"
   }
  },
  "confidence": "baja",

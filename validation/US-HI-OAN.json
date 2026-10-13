@@ -2,84 +2,24 @@
  "region": "US-HI-OAN",
  "from": "2026-09-13",
  "to": "2026-10-13",
- "buoys": [
-  "cdip:238",
-  "cdip:233",
-  "cdip:098"
+ "buoys": [],
+ "excluded": [
+  {
+   "id": "cdip:238",
+   "km": 29.1,
+   "why": "otro mar o abrigada: ve 56 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cdip:233",
+   "km": 37.1,
+   "why": "otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cdip:098",
+   "km": 47.0,
+   "why": "otro mar o abrigada: ve 52 % de las direcciones abiertas de los picos"
+  }
  ],
- "wave": {
-  "ecmwf_wam": {
-   "n": 2169,
-   "hs_bias": -0.026,
-   "hs_rmse": 0.199,
-   "hs_si": 0.142,
-   "tp_bias": -0.12,
-   "dir_mae": 17.8,
-   "dir_bias": 3.8,
-   "tm_bias": 2.91,
-   "obs_hs": 1.38,
-   "tp_type": "peak"
-  },
-  "meteofrance_wave": {
-   "n": 2169,
-   "hs_bias": 0.08,
-   "hs_rmse": 0.34,
-   "hs_si": 0.234,
-   "tp_bias": -2.16,
-   "dir_mae": 33.7,
-   "dir_bias": 11.6,
-   "tm_bias": 2.9,
-   "obs_hs": 1.38,
-   "tp_type": "mean"
-  },
-  "ncep_gfswave016": {
-   "n": 2169,
-   "hs_bias": -0.014,
-   "hs_rmse": 0.391,
-   "hs_si": 0.284,
-   "tp_bias": 1.01,
-   "dir_mae": 38.3,
-   "dir_bias": 15.1,
-   "tm_bias": 6.07,
-   "obs_hs": 1.38,
-   "tp_type": "mean"
-  },
-  "ncep_gfswave025": {
-   "n": 2169,
-   "hs_bias": 0.065,
-   "hs_rmse": 0.411,
-   "hs_si": 0.292,
-   "tp_bias": 0.29,
-   "dir_mae": 33.8,
-   "dir_bias": 4.3,
-   "tm_bias": 5.35,
-   "obs_hs": 1.38,
-   "tp_type": "mean"
-  }
- },
- "best": {
-  "wave": "ecmwf_wam"
- },
- "confidence": "alta",
- "vs": "ncep_gfswave016",
- "margin": 0.965,
- "per_buoy": {
-  "cdip:238": {
-   "n": 723,
-   "best": "ecmwf_wam",
-   "km": 29.1
-  },
-  "cdip:233": {
-   "n": 723,
-   "best": "ecmwf_wam",
-   "km": 37.1
-  },
-  "cdip:098": {
-   "n": 723,
-   "best": "ecmwf_wam",
-   "km": 47.0
-  }
- },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
@@ -94,5 +34,6 @@
    "meteofrance_wave": 1.41,
    "ecmwf_wam": 1.21
   }
- }
+ },
+ "confidence": "media"
 }

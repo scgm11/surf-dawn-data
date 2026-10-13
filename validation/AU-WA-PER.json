@@ -5,64 +5,69 @@
  "buoys": [
   "aodn:hillarys",
   "aodn:jurien-bay-inshore",
-  "aodn:bunbury"
+  "aodn:jurien-bay-offshore"
  ],
  "excluded": [
+  {
+   "id": "aodn:cockburn-sound",
+   "km": 11.9,
+   "why": "otro mar o abrigada: ve 48 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:bunbury",
+   "km": 145.4,
+   "why": "otro mar o abrigada: ve 49 % de las direcciones abiertas de los picos"
+  },
   {
    "id": "aodn:quinns-dog-beach",
    "km": 1.8,
    "why": "sesgo de Hs +59%, +101%, +130% en todos los modelos"
-  },
-  {
-   "id": "aodn:cockburn-sound",
-   "km": 11.9,
-   "why": "sesgo de Hs +214%, +134%, +60% en todos los modelos"
   }
  ],
  "wave": {
-  "ncep_gfswave025": {
-   "n": 1108,
-   "hs_bias": -0.072,
-   "hs_rmse": 0.32,
-   "hs_si": 0.128,
-   "tp_bias": 0.52,
-   "dir_mae": 8.9,
-   "dir_bias": 4.5,
-   "tm_bias": 5.1,
-   "obs_hs": 2.18,
+  "meteofrance_wave": {
+   "n": 1639,
+   "hs_bias": 0.104,
+   "hs_rmse": 0.33,
+   "hs_si": 0.091,
+   "tp_bias": -2.35,
+   "dir_mae": 15.7,
+   "dir_bias": -13.9,
+   "tm_bias": 2.29,
+   "obs_hs": 2.38,
    "tp_type": "mean"
   },
-  "meteofrance_wave": {
-   "n": 1108,
-   "hs_bias": 0.117,
-   "hs_rmse": 0.335,
-   "hs_si": 0.1,
-   "tp_bias": -2.35,
-   "dir_mae": 15.5,
-   "dir_bias": -12.4,
-   "tm_bias": 2.23,
-   "obs_hs": 2.18,
-   "tp_type": "mean"
+  "ncep_gfswave025": {
+   "n": 1639,
+   "hs_bias": -0.1,
+   "hs_rmse": 0.375,
+   "hs_si": 0.122,
+   "tp_bias": 0.45,
+   "dir_mae": 11.9,
+   "dir_bias": 9.7,
+   "tm_bias": 5.08,
+   "obs_hs": 2.38,
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
-   "n": 1108,
-   "hs_bias": -0.095,
-   "hs_rmse": 0.444,
-   "hs_si": 0.18,
-   "tp_bias": 0.21,
-   "dir_mae": 14.0,
-   "dir_bias": -11.3,
-   "tm_bias": 2.84,
-   "obs_hs": 2.18,
+   "n": 1639,
+   "hs_bias": 0.026,
+   "hs_rmse": 0.516,
+   "hs_si": 0.215,
+   "tp_bias": 0.3,
+   "dir_mae": 15.4,
+   "dir_bias": -14.2,
+   "tm_bias": 2.97,
+   "obs_hs": 2.38,
    "tp_type": "peak"
   }
  },
  "best": {
-  "wave": "ncep_gfswave025"
+  "wave": "meteofrance_wave"
  },
- "confidence": "baja",
- "vs": "meteofrance_wave",
- "margin": 0.047,
+ "confidence": "alta",
+ "vs": "ncep_gfswave025",
+ "margin": 0.136,
  "per_buoy": {
   "aodn:hillarys": {
    "n": 193,
@@ -70,14 +75,14 @@
    "km": 9.5
   },
   "aodn:jurien-bay-inshore": {
-   "n": 722,
+   "n": 723,
    "best": "ncep_gfswave025",
    "km": 144.3
   },
-  "aodn:bunbury": {
-   "n": 193,
-   "best": "ncep_gfswave025",
-   "km": 145.4
+  "aodn:jurien-bay-offshore": {
+   "n": 723,
+   "best": "meteofrance_wave",
+   "km": 145.9
   }
  },
  "current": "ncep_gfswave025",

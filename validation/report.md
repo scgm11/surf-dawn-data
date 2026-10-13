@@ -1,16 +1,16 @@
 # Validación de los modelos de olas
 
-Ventana: **2026-09-13 a 2026-10-13** (UTC), hora a hora. Generado el 2026-10-13 02:40 UTC por `validate/run.py` (ver `validate/README.md`).
+Ventana: **2026-09-13 a 2026-10-13** (UTC), hora a hora. Generado el 2026-10-13 03:12 UTC por `validate/run.py` (ver `validate/README.md`).
 
 Cada región se compara con hasta 3 boyas a menos de 150 km de alguno de sus picos (la más cercana primero). Todos los modelos se miden sobre las mismas horas. El mejor es el de menor `hs_rmse` con |sesgo| ≤ 15 % (empates de 0.01 m: menor error de dirección). La confianza mira las horas (≥ 480 alta, ≥ 240 media), cuánto peor es el modelo de hoy (≥ 10 % alta, ≥ 5 % media), que la mayoría de las boyas coincida y que la boya más cercana esté a ≤ 100 km (alta).
 
 ## Resumen
 
-- Regiones: **212**; con boyas: **40**; sin boyas: **172**.
-- Regiones con boyas por fuente: CDIP 24, AODN / IMOS 15, NOAA NDBC 13.
-- Mejor modelo (regiones con boyas): ECMWF WAM 18, MFWAM 9, GFS-Wave 0,25° 7, ninguno 4, GFS-Wave 0,16° 2.
-- Confianza: alta 18, media 6, baja 16.
-- Open-Meteo: 35 pedidos, 326 ubicaciones, ~846 llamadas ponderadas (límite gratuito 10.000/día).
+- Regiones: **212**; con boyas: **43**; sin boyas: **169**.
+- Regiones con boyas por fuente: CDIP 22, AODN / IMOS 15, NOAA NDBC 14, Marine Institute 4.
+- Mejor modelo (regiones con boyas): ECMWF WAM 17, MFWAM 13, GFS-Wave 0,25° 7, ninguno 3, GFS-Wave 0,16° 2, DWD EWAM 1.
+- Confianza: alta 19, media 6, baja 18.
+- Open-Meteo: 4 pedidos, 9 ubicaciones, ~30 llamadas ponderadas (límite gratuito 10.000/día).
 
 ## Fuentes
 
@@ -18,7 +18,7 @@ Cada región se compara con hasta 3 boyas a menos de 150 km de alguno de sus pic
 |---|---|---|---|
 | CDIP | Coastal Data Information Program, Scripps Institution of Oceanography (UCSD); ERDDAP `wave_agg` | uso libre, se agradece el crédito a CDIP | 80 estaciones, 80 con ≥ 72 h de Hs |
 | AODN / IMOS | Boyas de olas de Australia (IMOS, estados y universidades), parquet `wave_buoy_realtime_nonqc` | CC BY 4.0 | 77 estaciones, 48 con ≥ 72 h de Hs |
-| Marine Institute | Irish Wave Buoy Network, ERDDAP `IWaveBNetwork30Min` | CC BY 4.0 | falló: HTTP Error 404:  |
+| Marine Institute | Irish Wave Buoy Network, ERDDAP `IWaveBNetwork30Min` | CC BY 4.0 | 4 estaciones, 4 con ≥ 72 h de Hs |
 | NOAA NDBC | National Data Buoy Center, `realtime2` (incluye socios: PNBOIA, Canadá, etc.) | dominio público | 159 estaciones, 123 con ≥ 72 h de Hs |
 
 Boyas publicadas por dos fuentes (se usa una): cdip:201 = cdip:073, cdip:150 = ndbc:41110, cdip:132 = ndbc:41112, cdip:143 = ndbc:41113, cdip:194 = ndbc:41117, cdip:250 = ndbc:41120, cdip:249 = ndbc:41121, cdip:256 = ndbc:42084, cdip:252 = ndbc:42092, cdip:171 = ndbc:44014, cdip:433 = ndbc:44056, cdip:260 = ndbc:44085, cdip:243 = ndbc:44086, cdip:240 = ndbc:44087, cdip:209 = ndbc:44091, cdip:192 = ndbc:44095, cdip:154 = ndbc:44097, cdip:160 = ndbc:44098, cdip:147 = ndbc:44099, cdip:430 = ndbc:44100, cdip:094 = ndbc:46213, cdip:029 = ndbc:46214, cdip:071 = ndbc:46218, cdip:067 = ndbc:46219, cdip:028 = ndbc:46221, cdip:092 = ndbc:46222, cdip:045 = ndbc:46224, cdip:100 = ndbc:46225, cdip:139 = ndbc:46229, cdip:156 = ndbc:46236, cdip:157 = ndbc:46239, cdip:162 = ndbc:46243, cdip:179 = ndbc:46248, cdip:213 = ndbc:46253, cdip:201 = ndbc:46254, cdip:215 = ndbc:46256, cdip:220 = ndbc:46258, cdip:222 = ndbc:46259, cdip:153 = ndbc:46266, cdip:248 = ndbc:46267, cdip:271 = ndbc:46277, cdip:270 = ndbc:46278, cdip:284 = ndbc:46285, cdip:106 = ndbc:51201, cdip:098 = ndbc:51202, cdip:187 = ndbc:51205, cdip:188 = ndbc:51206, cdip:189 = ndbc:51209, cdip:233 = ndbc:51211, cdip:238 = ndbc:51212, cdip:036 = ndbc:46211, cdip:076 = ndbc:46215, cdip:262 = ndbc:46274, cdip:264 = ndbc:46275, cdip:273 = ndbc:51214, cdip:265 = ndbc:41122, cdip:171 = ndbc:44088, cdip:103 = ndbc:46268, cdip:217 = ndbc:41159, cdip:263 = ndbc:44084, cdip:221 = ndbc:44090, cdip:201 = ndbc:LJPC1, cdip:191 = ndbc:46232, cdip:134 = ndbc:41114, cdip:285 = ndbc:46286, cdip:279 = ndbc:42354, cdip:142 = ndbc:46237, cdip:168 = ndbc:46244.
@@ -27,60 +27,65 @@ Boyas publicadas por dos fuentes (se usa una): cdip:201 = cdip:073, cdip:150 = n
 
 | País | Regiones con boyas | Gana |
 |---|---|---|
-| Estados Unidos | 21 | ECMWF WAM 13, MFWAM 5, GFS-Wave 0,16° 2, GFS-Wave 0,25° 1 |
-| Australia | 15 | ECMWF WAM 4, GFS-Wave 0,25° 4, ninguno 4, MFWAM 3 |
+| Estados Unidos | 20 | ECMWF WAM 11, MFWAM 6, GFS-Wave 0,16° 2, GFS-Wave 0,25° 1 |
+| Australia | 15 | ECMWF WAM 4, GFS-Wave 0,25° 4, MFWAM 4, ninguno 3 |
+| Reino Unido | 2 | DWD EWAM 1, ECMWF WAM 1 |
+| Irlanda | 2 | MFWAM 2 |
 | Puerto Rico | 2 | GFS-Wave 0,25° 2 |
 | Canadá | 1 | MFWAM 1 |
 | México | 1 | ECMWF WAM 1 |
 
 ## Regiones con boyas
 
-Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo de período del modelo contra el período pico de la boya; con ᵐ el modelo no da período pico en Open-Meteo y se usa su `wave_period`. ⇐ = se sugiere cambiar (en `models-suggested.csv`). Las regiones fijas (issue #7) se validan sólo para informar.
+Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo de período del modelo contra el período pico de la boya; ᵖ: GFS-Wave no da período pico en Open-Meteo y se usa su `wave_period`, que es el del sistema de olas principal (se comporta como un pico); ᵐ: MFWAM y EWAM tampoco lo dan y su `wave_period` es un período medio, así que su `Tp` sale negativo por construcción. ⇐ = se sugiere cambiar (en `models-suggested.csv`). Las regiones fijas (issue #7) se validan sólo para informar.
 
 | Región | Boyas | Mejor | n | rmse m | sesgo | SI | Tp s | dir ° | Hoy | rmse hoy | Confianza |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | MX-BCN | cdip:191 (28 km)<br>cdip:220 (43 km)<br>cdip:100 (51 km) | ECMWF WAM ⇐ | 2056 | 0.13 | +0 % | 0.11 | -1.3 | 25 | GFS-Wave 0,16° | 0.32 | alta |
-| PR-NW | cdip:249 (29 km)<br>ndbc:42085 (85 km)<br>ndbc:41053 (92 km) | GFS-Wave 0,25° | 2099 | 0.14 | -1 % | 0.16 | 0.2ᵐ | 12 | GFS-Wave 0,16° | 0.15 | baja |
-| PR-N | ndbc:41053 (5 km)<br>cdip:249 (19 km)<br>ndbc:41056 (31 km) | GFS-Wave 0,25° | 2097 | 0.15 | -3 % | 0.18 | -0.3ᵐ | 12 | GFS-Wave 0,16° | 0.14 | baja |
+| PR-NW | cdip:249 (29 km)<br>ndbc:41053 (92 km) | GFS-Wave 0,25° | 1411 | 0.14 | +4 % | 0.16 | 0.5ᵖ | 12 | GFS-Wave 0,16° | 0.14 | baja |
+| PR-N | ndbc:41053 (5 km)<br>cdip:249 (19 km) | GFS-Wave 0,25° | 1411 | 0.14 | +4 % | 0.16 | 0.5ᵖ | 12 | GFS-Wave 0,16° | 0.14 | baja |
 | US-CA-SD | cdip:045 (8 km)<br>cdip:100 (12 km) | MFWAM ⇐ | 1446 | 0.15 | +2 % | 0.14 | -2.9ᵐ | 17 | GFS-Wave 0,16° | 0.31 | alta |
-| US-CA-OC | cdip:271 (8 km)<br>cdip:215 (10 km)<br>cdip:264 (11 km) | ECMWF WAM ⇐ | 2168 | 0.18 | +1 % | 0.20 | -1.2 | 19 | GFS-Wave 0,16° | 0.30 | alta |
-| US-CA-LA | cdip:103 (2 km)<br>cdip:215 (7 km)<br>cdip:092 (11 km) | ECMWF WAM ⇐ | 2168 | 0.17 | +2 % | 0.21 | -0.6 | 25 | GFS-Wave 0,16° | 0.33 | alta |
-| US-CA-SB | ndbc:46054 (26 km)<br>cdip:071 (26 km)<br>ndbc:46025 (34 km) | MFWAM ⇐ | 2168 | 0.22 | +3 % | 0.13 | -1.8ᵐ | 27 | GFS-Wave 0,16° | 0.41 | alta |
+| US-CA-OC | cdip:271 (8 km)<br>cdip:264 (11 km)<br>cdip:045 (23 km) | ECMWF WAM ⇐ | 2168 | 0.15 | +8 % | 0.14 | -1.4 | 20 | GFS-Wave 0,16° | 0.23 | alta |
+| US-CA-LA | cdip:103 (2 km)<br>cdip:028 (20 km)<br>ndbc:46025 (34 km) | ECMWF WAM ⇐ | 2168 | 0.15 | +9 % | 0.13 | -0.6 | 25 | GFS-Wave 0,16° | 0.31 | alta |
+| US-CA-SB | cdip:071 (26 km)<br>ndbc:46025 (34 km)<br>cdip:028 (37 km) | MFWAM ⇐ | 2169 | 0.20 | +3 % | 0.14 | -2.7ᵐ | 28 | GFS-Wave 0,16° | 0.35 | alta |
 | US-CA-CEN | cdip:076 (6 km)<br>cdip:157 (20 km)<br>ndbc:46011 (34 km) | ECMWF WAM ⇐ | 2168 | 0.31 | +0 % | 0.17 | -1.1 | 21 | GFS-Wave 0,16° | 0.41 | alta |
 | US-CA-SC | cdip:156 (14 km)<br>cdip:157 (26 km)<br>ndbc:46042 (30 km) | ECMWF WAM ⇐ | 2168 | 0.27 | -2 % | 0.15 | -0.2 | 16 | GFS-Wave 0,16° | 0.44 | alta |
 | US-CA-SF | cdip:142 (9 km)<br>ndbc:46026 (22 km)<br>ndbc:46013 (44 km) | MFWAM ⇐ | 1692 | 0.20 | +6 % | 0.10 | -1.4ᵐ | 14 | GFS-Wave 0,16° | 0.42 | alta |
 | US-CA-NOR | cdip:168 (16 km)<br>ndbc:46014 (18 km)<br>ndbc:46022 (24 km) | MFWAM ⇐ | 2026 | 0.20 | -0 % | 0.10 | -0.8ᵐ | 12 | GFS-Wave 0,16° | 0.28 | alta |
 | US-PNW | cdip:270 (7 km)<br>cdip:036 (10 km)<br>cdip:162 (10 km) | MFWAM ⇐ | 2169 | 0.20 | +2 % | 0.13 | -1.4ᵐ | 13 | GFS-Wave 0,16° | 0.34 | alta |
-| US-GULF | ndbc:PHCT2 (1 km)<br>cdip:252 (21 km)<br>ndbc:42035 (35 km) | ECMWF WAM ⇐ | 2150 | 0.16 | -8 % | 0.16 | -0.3 | 13 | GFS-Wave 0,16° | 0.21 | alta |
-| US-FL | cdip:265 (2 km)<br>cdip:143 (6 km)<br>cdip:134 (13 km) | GFS-Wave 0,16° | 1961 | 0.20 | +7 % | 0.29 | 0.4ᵐ | 26 | GFS-Wave 0,16° | 0.20 | baja |
+| US-GULF | cdip:252 (21 km)<br>ndbc:42035 (35 km) | MFWAM ⇐ | 1446 | 0.15 | -8 % | 0.13 | -0.9ᵐ | 12 | GFS-Wave 0,16° | 0.21 | alta |
+| US-FL | cdip:265 (2 km)<br>cdip:143 (6 km)<br>cdip:134 (13 km) | GFS-Wave 0,16° | 1961 | 0.20 | +7 % | 0.29 | 0.4ᵖ | 26 | GFS-Wave 0,16° | 0.20 | baja |
 | US-FL-PAN | ndbc:42357 (20 km)<br>ndbc:42012 (24 km)<br>cdip:256 (42 km) | ECMWF WAM ⇐ | 1853 | 0.18 | +4 % | 0.24 | -0.1 | 29 | GFS-Wave 0,16° | 0.19 | media |
-| US-SE | cdip:433 (5 km)<br>cdip:150 (10 km)<br>ndbc:SSBN7 (13 km) | GFS-Wave 0,16° | 1894 | 0.16 | -7 % | 0.15 | 0.1ᵐ | 12 | GFS-Wave 0,16° | 0.16 | baja |
+| US-SE | cdip:433 (5 km)<br>cdip:150 (10 km)<br>ndbc:SSBN7 (13 km) | GFS-Wave 0,16° | 1894 | 0.16 | -7 % | 0.15 | 0.1ᵖ | 12 | GFS-Wave 0,16° | 0.16 | baja |
 | US-SC-GA | ndbc:41067 (12 km)<br>ndbc:41076 (29 km)<br>cdip:132 (45 km) | ECMWF WAM | 2157 | 0.19 | -6 % | 0.19 | -1.9 | 19 | GFS-Wave 0,16° | 0.20 | baja |
-| US-MID | cdip:263 (1 km)<br>cdip:147 (23 km)<br>cdip:430 (60 km) | GFS-Wave 0,25° ⇐ | 2153 | 0.20 | -3 % | 0.16 | -0.5ᵐ | 15 | GFS-Wave 0,16° | 0.27 | alta |
-| US-NE | ndbc:44007 (7 km)<br>ndbc:44029 (10 km)<br>cdip:260 (13 km) | ECMWF WAM ⇐ | 2001 | 0.17 | +1 % | 0.17 | -0.0 | 22 | GFS-Wave 0,16° | 0.19 | alta |
-| US-HI-OAN | cdip:238 (29 km)<br>cdip:233 (37 km)<br>cdip:098 (47 km) | ECMWF WAM ⇐ | 2169 | 0.20 | -3 % | 0.14 | -0.1 | 18 | GFS-Wave 0,16° | 0.39 | alta |
-| US-HI-OAS | cdip:238 (4 km)<br>cdip:098 (5 km)<br>cdip:233 (10 km) | ECMWF WAM ⇐ | 2169 | 0.20 | -3 % | 0.14 | -0.1 | 18 | GFS-Wave 0,16° | 0.39 | alta |
-| US-HI-MAU | cdip:187 (10 km)<br>cdip:098 (115 km)<br>cdip:233 (138 km) | ECMWF WAM ⇐ | 2169 | 0.23 | +3 % | 0.14 | -0.2 | 20 | GFS-Wave 0,16° | 0.44 | alta |
+| US-MID | cdip:263 (1 km)<br>cdip:147 (23 km)<br>cdip:430 (60 km) | GFS-Wave 0,25° ⇐ | 2153 | 0.20 | -3 % | 0.16 | -0.5ᵖ | 15 | GFS-Wave 0,16° | 0.27 | alta |
+| US-NE | ndbc:44007 (7 km)<br>ndbc:44029 (10 km)<br>ndbc:44030 (14 km) | ECMWF WAM ⇐ | 1609 | 0.18 | +0 % | 0.18 | 0.3 | 20 | GFS-Wave 0,16° | 0.21 | alta |
+| US-HI-OAS | cdip:238 (4 km)<br>cdip:233 (10 km) | ECMWF WAM ⇐ | 1446 | 0.19 | +2 % | 0.17 | 0.0 | 18 | GFS-Wave 0,16° | 0.42 | alta |
+| US-HI-MAU | cdip:187 (10 km)<br>cdip:233 (138 km) | ECMWF WAM ⇐ | 1446 | 0.23 | +11 % | 0.12 | -0.0 | 21 | GFS-Wave 0,16° | 0.49 | alta |
 | US-HI-KAU | cdip:238 (143 km) | ECMWF WAM ⇐ | 723 | 0.18 | -8 % | 0.13 | -0.7 | 20 | GFS-Wave 0,16° | 0.31 | media |
 | US-HI-BIG | cdip:187 (116 km) | ECMWF WAM ⇐ | 723 | 0.26 | +9 % | 0.11 | -0.8 | 26 | GFS-Wave 0,16° | 0.47 | media |
 | CA-BC-VI | ndbc:46087 (31 km)<br>ndbc:46041 (130 km) | MFWAM ⇐ | 1319 | 0.25 | -2 % | 0.15 | -0.9ᵐ | 12 | GFS-Wave 0,16° | 0.37 | alta |
 | AU-NSW-NR | aodn:wooli (28 km) | ECMWF WAM | 194 | 0.32 | +8 % | 0.19 | -1.0 | 20 | GFS-Wave 0,25° | 0.33 | baja |
-| AU-NSW-MN | aodn:crowdy (4 km)<br>aodn:wooli (17 km) | GFS-Wave 0,25° | 408 | 0.30 | -9 % | 0.16 | -1.2ᵐ | 26 | GFS-Wave 0,25° | 0.30 | baja |
+| AU-NSW-MN | aodn:crowdy (4 km)<br>aodn:wooli (17 km) | GFS-Wave 0,25° | 408 | 0.30 | -9 % | 0.16 | -1.2ᵖ | 26 | GFS-Wave 0,25° | 0.30 | baja |
 | AU-NSW-NC | aodn:collaroy-narrabeen (20 km)<br>aodn:crowdy (113 km) | MFWAM ⇐ | 407 | 0.29 | +9 % | 0.21 | -1.4ᵐ | 31 | GFS-Wave 0,25° | 0.83 | media |
-| AU-NSW-SYD | aodn:collaroy-narrabeen (1 km) | ninguno | 193 | 1.17 | +98 % | 0.97 | -1.6ᵐ | 58 | GFS-Wave 0,25° | 1.17 | baja |
-| AU-NSW-SC | aodn:bengello (3 km)<br>aodn:collaroy-narrabeen (63 km) | ninguno | 387 | 0.87 | +46 % | 0.79 | -2.2ᵐ | 47 | GFS-Wave 0,25° | 0.87 | baja |
-| AU-VIC-SC | aodn:indented-head (22 km)<br>aodn:apollo-bay (32 km)<br>aodn:central (35 km) | ninguno | 1106 | 0.40 | +44 % | 0.46 | 6.3ᵐ | 58 | GFS-Wave 0,25° | 0.40 | baja |
-| AU-VIC-PI | aodn:indented-head (24 km)<br>aodn:central (34 km)<br>aodn:mt-eliza (35 km) | ninguno | 1635 | 0.60 | +132 % | 0.90 | 8.3ᵐ | 67 | GFS-Wave 0,25° | 0.60 | baja |
-| AU-VIC-W | aodn:port-fairy (3 km)<br>aodn:cape-bridgewater (11 km)<br>aodn:apollo-bay (16 km) | MFWAM ⇐ | 1108 | 0.46 | +12 % | 0.17 | -2.6ᵐ | 21 | GFS-Wave 0,25° | 0.60 | alta |
+| AU-NSW-SYD | aodn:collaroy-narrabeen (1 km) | ninguno | 193 | 1.17 | +98 % | 0.97 | -1.6ᵖ | 58 | GFS-Wave 0,25° | 1.17 | baja |
+| AU-NSW-SC | aodn:bengello (3 km)<br>aodn:collaroy-narrabeen (63 km) | ninguno | 387 | 0.87 | +46 % | 0.79 | -2.2ᵖ | 47 | GFS-Wave 0,25° | 0.87 | baja |
+| AU-VIC-SC | aodn:apollo-bay (32 km)<br>aodn:inverloch (114 km)<br>aodn:bob (145 km) | GFS-Wave 0,25° | 1109 | 0.40 | -14 % | 0.14 | 0.5ᵖ | 12 | GFS-Wave 0,25° | 0.40 | baja |
+| AU-VIC-PI | aodn:inverloch (44 km)<br>aodn:apollo-bay (97 km)<br>aodn:wilsons-prom (147 km) | ninguno | 1043 | 0.39 | -16 % | 0.15 | 0.5ᵖ | 12 | GFS-Wave 0,25° | 0.39 | baja |
+| AU-VIC-W | aodn:port-fairy (3 km)<br>aodn:cape-bridgewater (11 km)<br>aodn:apollo-bay (16 km) | MFWAM ⇐ | 1109 | 0.46 | +12 % | 0.17 | -2.6ᵐ | 21 | GFS-Wave 0,25° | 0.60 | alta |
 | AU-TAS | aodn:storm-bay (24 km) | ECMWF WAM | 193 | 0.22 | +1 % | 0.17 | -1.2 | 46 | GFS-Wave 0,25° | 0.34 | baja |
-| AU-SA | aodn:victor-harbouroffshore (9 km)<br>aodn:brighton (14 km)<br>aodn:west-beach (22 km) | MFWAM | 1631 | 0.30 | -0 % | 0.29 | -2.7ᵐ | 16 | GFS-Wave 0,25° | 0.35 | baja |
+| AU-SA | aodn:victor-harbouroffshore (9 km)<br>aodn:brighton (14 km)<br>aodn:west-beach (22 km) | MFWAM | 1633 | 0.30 | -0 % | 0.29 | -2.7ᵐ | 16 | GFS-Wave 0,25° | 0.35 | baja |
 | AU-SA-EYR | aodn:ceduna (68 km) | ECMWF WAM | 194 | 0.15 | -7 % | 0.10 | 0.2 | 9 | GFS-Wave 0,25° | 1.07 | baja |
-| AU-WA-MR | aodn:augusta-offshore (43 km)<br>aodn:bunbury (47 km) | GFS-Wave 0,25° | 387 | 0.22 | -5 % | 0.08 | 0.8ᵐ | 8 | GFS-Wave 0,25° | 0.22 | media |
-| AU-WA-PER | aodn:hillarys (10 km)<br>aodn:jurien-bay-inshore (144 km)<br>aodn:bunbury (145 km) | GFS-Wave 0,25° | 1108 | 0.32 | -7 % | 0.13 | 0.5ᵐ | 9 | GFS-Wave 0,25° | 0.32 | baja |
-| AU-WA-NW | aodn:dongara-inshore (51 km)<br>aodn:dongara-offshore (51 km) | GFS-Wave 0,25° | 1443 | 0.36 | +14 % | 0.14 | 0.3ᵐ | 7 | GFS-Wave 0,25° | 0.36 | baja |
-| AU-WA-GAS | aodn:coral-bay-0-2 (85 km)<br>aodn:shark-bay-0-2 (129 km) | ECMWF WAM ⇐ | 387 | 0.22 | +10 % | 0.14 | 1.2 | 48 | GFS-Wave 0,25° | 0.82 | media |
+| AU-WA-MR | aodn:augusta-offshore (43 km)<br>aodn:bunbury (47 km) | GFS-Wave 0,25° | 387 | 0.22 | -5 % | 0.08 | 0.8ᵖ | 8 | GFS-Wave 0,25° | 0.22 | media |
+| AU-WA-PER | aodn:hillarys (10 km)<br>aodn:jurien-bay-inshore (144 km)<br>aodn:jurien-bay-offshore (146 km) | MFWAM ⇐ | 1639 | 0.33 | +10 % | 0.09 | -2.4ᵐ | 16 | GFS-Wave 0,25° | 0.38 | alta |
+| AU-WA-NW | aodn:dongara-inshore (51 km)<br>aodn:dongara-offshore (51 km) | GFS-Wave 0,25° | 1445 | 0.36 | +14 % | 0.14 | 0.2ᵖ | 7 | GFS-Wave 0,25° | 0.36 | baja |
+| AU-WA-GAS | aodn:coral-bay-0-2 (85 km) | ECMWF WAM | 194 | 0.18 | +2 % | 0.10 | -0.0 | 28 | GFS-Wave 0,25° | 0.47 | baja |
+| GB-WAL | mi:m5 (99 km) | DWD EWAM | 723 | 0.24 | -2 % | 0.13 | -1.4ᵐ | 9 | GFS-Wave 0,16° | 0.24 | baja |
+| GB-NIR | mi:m2 (86 km) | ECMWF WAM ⇐ | 723 | 0.20 | -6 % | 0.15 | -0.4 | 19 | GFS-Wave 0,25° | 0.26 | alta |
+| IE-SW | mi:m3 (102 km) | MFWAM ⇐ | 723 | 0.26 | -2 % | 0.08 | -1.9ᵐ | 9 | GFS-Wave 0,25° | 0.42 | media |
+| IE-SE | mi:m3 (58 km)<br>mi:m5 (60 km) | MFWAM | 1446 | 0.25 | -4 % | 0.09 | -1.6ᵐ | 9 | GFS-Wave 0,16° | 0.34 | baja |
 
-## Regiones sin boyas (172)
+## Regiones sin boyas (169)
 
 Dispersión entre modelos de la altura de ola en el pico central de la región (desvío / media, promedio de las horas). Más de 0.30 ⇒ confianza baja: los modelos no coinciden y conviene buscar boyas.
 
@@ -92,7 +97,6 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | PT-LIS | 0.33 | GFS-Wave 0,16° 1.07, GFS-Wave 0,25° 1.63, MFWAM 1.37, ECMWF WAM 0.78, DWD EWAM 0.70 | baja |
 | GB-SOU | 0.31 | GFS-Wave 0,16° 0.57, GFS-Wave 0,25° 0.90, MFWAM 0.49, ECMWF WAM 0.47, DWD EWAM 0.49 | baja |
 | ES-CN-E | 0.30 | GFS-Wave 0,16° 1.20, GFS-Wave 0,25° 0.81, MFWAM 1.33, ECMWF WAM 0.62 | media |
-| GB-NIR | 0.30 | GFS-Wave 0,25° 1.13, MFWAM 1.83, ECMWF WAM 0.91, DWD EWAM 1.54 | media |
 | IE-NW | 0.29 | MFWAM 1.91, ECMWF WAM 1.06, DWD EWAM 1.09 | media |
 | DE-ALL | 0.28 | GFS-Wave 0,25° 1.17, MFWAM 1.22, ECMWF WAM 1.20, DWD EWAM 0.51 | media |
 | BS-ALL | 0.28 | GFS-Wave 0,16° 0.86, GFS-Wave 0,25° 0.99, MFWAM 0.57, ECMWF WAM 0.50 | media |
@@ -122,14 +126,12 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | EC-GAL | 0.18 | GFS-Wave 0,16° 1.04, GFS-Wave 0,25° 1.23, MFWAM 1.33, ECMWF WAM 0.83 | media |
 | MZ-INH | 0.18 | GFS-Wave 0,25° 1.03, MFWAM 1.33, ECMWF WAM 1.58 | media |
 | JP-IZU | 0.17 | GFS-Wave 0,16° 1.19, GFS-Wave 0,25° 1.60, MFWAM 1.62, ECMWF WAM 1.83 | media |
-| IE-SE | 0.17 | GFS-Wave 0,16° 1.50, GFS-Wave 0,25° 1.47, MFWAM 1.24, ECMWF WAM 1.08, DWD EWAM 1.05 | media |
 | DK-ALL | 0.17 | GFS-Wave 0,25° 0.97, MFWAM 1.31, ECMWF WAM 1.53, DWD EWAM 1.49 | media |
 | GB-DEV | 0.17 | GFS-Wave 0,16° 1.22, MFWAM 1.10, ECMWF WAM 0.81, DWD EWAM 1.18 | media |
 | TW-E | 0.17 | GFS-Wave 0,16° 0.97, GFS-Wave 0,25° 1.38, MFWAM 1.38, ECMWF WAM 1.42 | media |
 | ES-CN-W | 0.17 | GFS-Wave 0,16° 0.55, GFS-Wave 0,25° 0.81, MFWAM 0.74, ECMWF WAM 0.63 | media |
 | PE-NOR | 0.16 | GFS-Wave 0,16° 0.93, GFS-Wave 0,25° 1.34, MFWAM 1.16, ECMWF WAM 0.95 | media |
 | FR-VEN | 0.16 | GFS-Wave 0,16° 0.83, GFS-Wave 0,25° 0.90, MFWAM 1.02, ECMWF WAM 0.67, DWD EWAM 0.74 | media |
-| IE-SW | 0.16 | MFWAM 1.70, ECMWF WAM 1.31, DWD EWAM 1.19 | media |
 | BR-SP | 0.16 | GFS-Wave 0,25° 0.92, MFWAM 1.35, ECMWF WAM 1.11 | media |
 | AU-QLD-GC | 0.16 | GFS-Wave 0,25° 0.99, MFWAM 0.88, ECMWF WAM 1.25 | media |
 | CV-ALL | 0.15 | GFS-Wave 0,16° 1.24, GFS-Wave 0,25° 1.22, MFWAM 1.27, ECMWF WAM 0.86 | media |
@@ -167,6 +169,7 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | IN-W | 0.10 | GFS-Wave 0,16° 0.92, GFS-Wave 0,25° 0.97, MFWAM 1.18, ECMWF WAM 1.10 | media |
 | MA-S | 0.10 | GFS-Wave 0,16° 1.12, GFS-Wave 0,25° 1.22, MFWAM 1.41, ECMWF WAM 1.36 | media |
 | ID-BAL-BUK | 0.10 | GFS-Wave 0,16° 1.69, GFS-Wave 0,25° 1.48, MFWAM 1.91, ECMWF WAM 1.83 | media |
+| US-HI-OAN | 0.10 | GFS-Wave 0,16° 1.15, MFWAM 1.41, ECMWF WAM 1.21 | media |
 | NZ-KAI | 0.10 | GFS-Wave 0,25° 0.77, MFWAM 0.78, ECMWF WAM 0.86 | media |
 | ID-SBW | 0.10 | GFS-Wave 0,16° 1.18, MFWAM 1.41, ECMWF WAM 1.17 | media |
 | BR-RS | 0.10 | MFWAM 1.17, ECMWF WAM 1.42 | media |
@@ -182,7 +185,6 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | FR-PBA | 0.09 | GFS-Wave 0,16° 1.37, MFWAM 1.32, ECMWF WAM 1.55, DWD EWAM 1.56 | media |
 | SV-ORI | 0.09 | GFS-Wave 0,16° 1.06, GFS-Wave 0,25° 1.02, MFWAM 0.91, ECMWF WAM 1.14 | media |
 | JP-SHK | 0.09 | GFS-Wave 0,16° 1.42, GFS-Wave 0,25° 1.52, MFWAM 1.53, ECMWF WAM 1.37 | media |
-| GB-WAL | 0.09 | GFS-Wave 0,25° 1.00, MFWAM 1.00, ECMWF WAM 0.92, DWD EWAM 1.02 | media |
 | BR-RS-SUL | 0.09 | GFS-Wave 0,25° 1.23, MFWAM 1.09, ECMWF WAM 1.33 | media |
 | ID-MEN | 0.09 | GFS-Wave 0,16° 1.38, GFS-Wave 0,25° 1.69, MFWAM 1.66, ECMWF WAM 1.72 | media |
 | ES-CAN | 0.09 | GFS-Wave 0,16° 1.44, GFS-Wave 0,25° 1.44, MFWAM 1.61, ECMWF WAM 1.44, DWD EWAM 1.71 | media |
@@ -265,17 +267,22 @@ Promedios ponderados por horas sobre todas las boyas de cada fuente. `Tp` = mode
 
 | Fuente | Modelo | horas | Tp s | Tm s | dir ° | sesgo dir ° |
 |---|---|---|---|---|---|---|
-| AODN / IMOS | ECMWF WAM | 10781 | 0.8 | 2.9 | 21 | 2 |
-| AODN / IMOS | MFWAM | 10781 | -1.3 | 2.9 | 29 | 1 |
-| AODN / IMOS | GFS-Wave 0,25° | 10781 | 1.4 | 5.6 | 34 | 4 |
-| CDIP | ECMWF WAM | 32297 | -0.5 | 2.3 | 19 | 5 |
-| CDIP | MFWAM | 30851 | -1.9 | 2.6 | 23 | 5 |
-| CDIP | GFS-Wave 0,16° | 32297 | 0.6 | 5.0 | 23 | -0 |
-| CDIP | GFS-Wave 0,25° | 32297 | 0.4 | 4.8 | 23 | -3 |
-| NOAA NDBC | ECMWF WAM | 15569 | -0.5 | 1.8 | 17 | -5 |
-| NOAA NDBC | MFWAM | 12819 | -1.1 | 2.2 | 20 | -6 |
-| NOAA NDBC | GFS-Wave 0,16° | 15569 | 0.6 | 4.1 | 23 | -13 |
-| NOAA NDBC | GFS-Wave 0,25° | 15569 | 0.4 | 4.0 | 21 | -9 |
+| AODN / IMOS | ECMWF WAM | 10535 | 0.2 | 2.9 | 18 | 4 |
+| AODN / IMOS | MFWAM | 10535 | -2.4 | 2.3 | 19 | 3 |
+| AODN / IMOS | GFS-Wave 0,25° | 10535 | -0.5 | 4.3 | 19 | 4 |
+| CDIP | ECMWF WAM | 27959 | -0.6 | 2.4 | 19 | 6 |
+| CDIP | MFWAM | 26513 | -2.0 | 2.7 | 19 | 2 |
+| CDIP | GFS-Wave 0,16° | 27959 | 0.6 | 5.1 | 19 | -4 |
+| CDIP | GFS-Wave 0,25° | 27959 | 0.4 | 5.0 | 21 | -4 |
+| Marine Institute | DWD EWAM | 1446 | -1.1 | 1.1 | 14 | -3 |
+| Marine Institute | ECMWF WAM | 3615 | -0.5 | 1.3 | 10 | -2 |
+| Marine Institute | MFWAM | 3615 | -1.5 | 1.6 | 12 | -2 |
+| Marine Institute | GFS-Wave 0,16° | 2169 | 0.0 | 3.4 | 12 | 3 |
+| Marine Institute | GFS-Wave 0,25° | 3615 | -0.3 | 2.8 | 14 | 1 |
+| NOAA NDBC | ECMWF WAM | 13823 | -0.6 | 1.9 | 19 | -3 |
+| NOAA NDBC | MFWAM | 12447 | -1.2 | 2.2 | 20 | -3 |
+| NOAA NDBC | GFS-Wave 0,16° | 13823 | 0.6 | 4.2 | 22 | -10 |
+| NOAA NDBC | GFS-Wave 0,25° | 13823 | 0.6 | 4.2 | 21 | -9 |
 
 ## Próximos pasos
 

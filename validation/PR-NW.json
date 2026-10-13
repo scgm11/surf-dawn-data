@@ -4,44 +4,50 @@
  "to": "2026-10-13",
  "buoys": [
   "cdip:249",
-  "ndbc:42085",
   "ndbc:41053"
+ ],
+ "excluded": [
+  {
+   "id": "ndbc:42085",
+   "km": 85.4,
+   "why": "otro mar o abrigada: ve 38 % de las direcciones abiertas de los picos"
+  }
  ],
  "wave": {
   "ncep_gfswave025": {
-   "n": 2099,
-   "hs_bias": -0.006,
-   "hs_rmse": 0.141,
-   "hs_si": 0.163,
-   "tp_bias": 0.2,
-   "dir_mae": 12.0,
-   "dir_bias": -3.6,
+   "n": 1411,
+   "hs_bias": 0.038,
+   "hs_rmse": 0.14,
+   "hs_si": 0.16,
+   "tp_bias": 0.5,
+   "dir_mae": 12.1,
+   "dir_bias": -3.7,
    "tm_bias": 3.47,
-   "obs_hs": 0.87,
-   "tp_type": "mean"
+   "obs_hs": 0.85,
+   "tp_type": "primary"
   },
   "ncep_gfswave016": {
-   "n": 2099,
-   "hs_bias": -0.06,
-   "hs_rmse": 0.147,
+   "n": 1411,
+   "hs_bias": -0.025,
+   "hs_rmse": 0.137,
    "hs_si": 0.159,
-   "tp_bias": 0.24,
-   "dir_mae": 12.2,
-   "dir_bias": -5.2,
+   "tp_bias": 0.58,
+   "dir_mae": 12.3,
+   "dir_bias": -5.3,
    "tm_bias": 3.59,
-   "obs_hs": 0.87,
-   "tp_type": "mean"
+   "obs_hs": 0.85,
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
-   "n": 2099,
-   "hs_bias": -0.034,
-   "hs_rmse": 0.143,
-   "hs_si": 0.161,
-   "tp_bias": 0.05,
-   "dir_mae": 13.3,
-   "dir_bias": 7.0,
+   "n": 1411,
+   "hs_bias": -0.037,
+   "hs_rmse": 0.15,
+   "hs_si": 0.172,
+   "tp_bias": 0.23,
+   "dir_mae": 13.4,
+   "dir_bias": 7.3,
    "tm_bias": 1.91,
-   "obs_hs": 0.87,
+   "obs_hs": 0.85,
    "tp_type": "peak"
   }
  },
@@ -50,17 +56,12 @@
  },
  "confidence": "baja",
  "vs": "ncep_gfswave016",
- "margin": 0.043,
+ "margin": -0.021,
  "per_buoy": {
   "cdip:249": {
    "n": 723,
    "best": "ecmwf_wam",
    "km": 28.6
-  },
-  "ndbc:42085": {
-   "n": 688,
-   "best": "ecmwf_wam",
-   "km": 85.4
   },
   "ndbc:41053": {
    "n": 688,

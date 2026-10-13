@@ -4,57 +4,63 @@
  "to": "2026-10-13",
  "buoys": [
   "cdip:187",
-  "cdip:098",
   "cdip:233"
+ ],
+ "excluded": [
+  {
+   "id": "cdip:098",
+   "km": 115.0,
+   "why": "otro mar o abrigada: ve 50 % de las direcciones abiertas de los picos"
+  }
  ],
  "wave": {
   "ecmwf_wam": {
-   "n": 2169,
-   "hs_bias": 0.033,
-   "hs_rmse": 0.227,
-   "hs_si": 0.14,
-   "tp_bias": -0.17,
-   "dir_mae": 19.9,
-   "dir_bias": 11.2,
-   "tm_bias": 2.29,
-   "obs_hs": 1.58,
+   "n": 1446,
+   "hs_bias": 0.108,
+   "hs_rmse": 0.233,
+   "hs_si": 0.123,
+   "tp_bias": -0.03,
+   "dir_mae": 21.3,
+   "dir_bias": 13.6,
+   "tm_bias": 2.71,
+   "obs_hs": 1.43,
    "tp_type": "peak"
   },
   "meteofrance_wave": {
-   "n": 2169,
-   "hs_bias": -0.046,
-   "hs_rmse": 0.335,
-   "hs_si": 0.207,
-   "tp_bias": -1.87,
-   "dir_mae": 33.2,
-   "dir_bias": 21.5,
-   "tm_bias": 2.47,
-   "obs_hs": 1.58,
+   "n": 1446,
+   "hs_bias": -0.001,
+   "hs_rmse": 0.355,
+   "hs_si": 0.249,
+   "tp_bias": -2.36,
+   "dir_mae": 21.3,
+   "dir_bias": 9.6,
+   "tm_bias": 2.59,
+   "obs_hs": 1.43,
    "tp_type": "mean"
   },
   "ncep_gfswave016": {
-   "n": 2169,
-   "hs_bias": -0.058,
-   "hs_rmse": 0.443,
-   "hs_si": 0.274,
-   "tp_bias": 0.51,
-   "dir_mae": 38.6,
-   "dir_bias": 18.0,
-   "tm_bias": 4.85,
-   "obs_hs": 1.58,
-   "tp_type": "mean"
+   "n": 1446,
+   "hs_bias": -0.008,
+   "hs_rmse": 0.495,
+   "hs_si": 0.347,
+   "tp_bias": 0.12,
+   "dir_mae": 31.3,
+   "dir_bias": 13.8,
+   "tm_bias": 5.08,
+   "obs_hs": 1.43,
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
-   "n": 2169,
-   "hs_bias": -0.058,
-   "hs_rmse": 0.447,
-   "hs_si": 0.277,
-   "tp_bias": 0.19,
-   "dir_mae": 30.1,
-   "dir_bias": 7.1,
-   "tm_bias": 4.52,
-   "obs_hs": 1.58,
-   "tp_type": "mean"
+   "n": 1446,
+   "hs_bias": -0.008,
+   "hs_rmse": 0.495,
+   "hs_si": 0.347,
+   "tp_bias": 0.14,
+   "dir_mae": 31.3,
+   "dir_bias": 13.8,
+   "tm_bias": 5.1,
+   "obs_hs": 1.43,
+   "tp_type": "primary"
   }
  },
  "best": {
@@ -62,17 +68,12 @@
  },
  "confidence": "alta",
  "vs": "ncep_gfswave016",
- "margin": 0.952,
+ "margin": 1.124,
  "per_buoy": {
   "cdip:187": {
    "n": 723,
    "best": "ecmwf_wam",
    "km": 10.0
-  },
-  "cdip:098": {
-   "n": 723,
-   "best": "ecmwf_wam",
-   "km": 115.0
   },
   "cdip:233": {
    "n": 723,

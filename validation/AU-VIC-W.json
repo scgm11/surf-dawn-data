@@ -7,10 +7,47 @@
   "aodn:cape-bridgewater",
   "aodn:apollo-bay"
  ],
+ "excluded": [
+  {
+   "id": "aodn:dutton-way",
+   "km": 23.7,
+   "why": "otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:rosebud",
+   "km": 93.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:indented-head",
+   "km": 93.9,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:werribee",
+   "km": 106.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:central",
+   "km": 106.8,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:mt-eliza",
+   "km": 114.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:sandringham",
+   "km": 121.5,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
   "meteofrance_wave": {
-   "n": 1108,
-   "hs_bias": 0.119,
+   "n": 1109,
+   "hs_bias": 0.118,
    "hs_rmse": 0.462,
    "hs_si": 0.174,
    "tp_bias": -2.64,
@@ -21,26 +58,26 @@
    "tp_type": "mean"
   },
   "ncep_gfswave025": {
-   "n": 1108,
-   "hs_bias": 0.105,
-   "hs_rmse": 0.602,
+   "n": 1109,
+   "hs_bias": 0.106,
+   "hs_rmse": 0.603,
    "hs_si": 0.253,
    "tp_bias": 0.34,
    "dir_mae": 17.3,
    "dir_bias": 13.0,
    "tm_bias": 4.67,
    "obs_hs": 2.2,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
-   "n": 1108,
+   "n": 1109,
    "hs_bias": 0.151,
    "hs_rmse": 0.433,
    "hs_si": 0.127,
    "tp_bias": 0.11,
    "dir_mae": 21.3,
    "dir_bias": 20.7,
-   "tm_bias": 2.45,
+   "tm_bias": 2.44,
    "obs_hs": 2.2,
    "tp_type": "peak"
   }
@@ -50,10 +87,10 @@
  },
  "confidence": "alta",
  "vs": "ncep_gfswave025",
- "margin": 0.303,
+ "margin": 0.305,
  "per_buoy": {
   "aodn:port-fairy": {
-   "n": 722,
+   "n": 723,
    "best": "meteofrance_wave",
    "km": 2.6
   },

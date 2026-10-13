@@ -17,7 +17,7 @@
    "dir_bias": -14.1,
    "tm_bias": 2.48,
    "obs_hs": 1.59,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
    "n": 408,

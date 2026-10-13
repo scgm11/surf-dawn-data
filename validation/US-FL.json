@@ -18,7 +18,7 @@
    "dir_bias": -11.4,
    "tm_bias": 3.41,
    "obs_hs": 0.66,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
    "n": 1961,
@@ -30,7 +30,7 @@
    "dir_bias": -13.9,
    "tm_bias": 3.5,
    "obs_hs": 0.66,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "meteofrance_wave": {
    "n": 1961,

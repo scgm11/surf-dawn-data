@@ -7,33 +7,55 @@
   "aodn:brighton",
   "aodn:west-beach"
  ],
+ "excluded": [
+  {
+   "id": "aodn:semaphore",
+   "km": 34.7,
+   "why": "otro mar o abrigada: ve 38 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:north-haven",
+   "km": 39.2,
+   "why": "otro mar o abrigada: ve 47 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:spilsby-south",
+   "km": 60.0,
+   "why": "otro mar o abrigada: ve 32 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:black-point",
+   "km": 67.1,
+   "why": "otro mar o abrigada: ve 30 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
   "meteofrance_wave": {
-   "n": 1631,
+   "n": 1633,
    "hs_bias": -0.002,
-   "hs_rmse": 0.301,
+   "hs_rmse": 0.3,
    "hs_si": 0.29,
    "tp_bias": -2.73,
-   "dir_mae": 16.5,
+   "dir_mae": 16.4,
    "dir_bias": 2.4,
    "tm_bias": 2.66,
    "obs_hs": 1.04,
    "tp_type": "mean"
   },
   "ecmwf_wam": {
-   "n": 1631,
+   "n": 1633,
    "hs_bias": -0.095,
-   "hs_rmse": 0.324,
+   "hs_rmse": 0.323,
    "hs_si": 0.298,
    "tp_bias": 0.96,
-   "dir_mae": 14.2,
+   "dir_mae": 14.1,
    "dir_bias": 1.5,
    "tm_bias": 3.44,
    "obs_hs": 1.04,
    "tp_type": "peak"
   },
   "ncep_gfswave025": {
-   "n": 1631,
+   "n": 1633,
    "hs_bias": 0.111,
    "hs_rmse": 0.348,
    "hs_si": 0.318,
@@ -42,7 +64,7 @@
    "dir_bias": -3.8,
    "tm_bias": 3.02,
    "obs_hs": 1.04,
-   "tp_type": "mean"
+   "tp_type": "primary"
   }
  },
  "best": {
@@ -50,10 +72,10 @@
  },
  "confidence": "baja",
  "vs": "ncep_gfswave025",
- "margin": 0.156,
+ "margin": 0.16,
  "per_buoy": {
   "aodn:victor-harbouroffshore": {
-   "n": 722,
+   "n": 723,
    "best": "meteofrance_wave",
    "km": 9.0
   },
@@ -63,7 +85,7 @@
    "km": 13.7
   },
   "aodn:west-beach": {
-   "n": 716,
+   "n": 717,
    "best": "ecmwf_wam",
    "km": 22.0
   }

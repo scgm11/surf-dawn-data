@@ -7,6 +7,23 @@
   "cdip:150",
   "ndbc:SSBN7"
  ],
+ "excluded": [
+  {
+   "id": "cdip:240",
+   "km": 79.2,
+   "why": "otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44072",
+   "km": 100.0,
+   "why": "otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44058",
+   "km": 138.0,
+   "why": "otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
   "ncep_gfswave016": {
    "n": 1894,
@@ -18,7 +35,7 @@
    "dir_bias": -2.8,
    "tm_bias": 3.35,
    "obs_hs": 0.97,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
    "n": 1894,
@@ -30,7 +47,7 @@
    "dir_bias": -3.7,
    "tm_bias": 3.34,
    "obs_hs": 0.97,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
    "n": 1894,

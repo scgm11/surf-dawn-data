@@ -2,7 +2,91 @@
  "region": "GB-WAL",
  "from": "2026-09-13",
  "to": "2026-10-13",
- "buoys": [],
+ "buoys": [
+  "mi:m5"
+ ],
+ "excluded": [
+  {
+   "id": "mi:m2",
+   "km": 67.0,
+   "why": "otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "dwd_ewam": {
+   "n": 723,
+   "hs_bias": -0.021,
+   "hs_rmse": 0.236,
+   "hs_si": 0.133,
+   "tp_bias": -1.37,
+   "dir_mae": 8.9,
+   "dir_bias": -6.1,
+   "tm_bias": 1.69,
+   "obs_hs": 1.76,
+   "tp_type": "mean"
+  },
+  "ncep_gfswave016": {
+   "n": 723,
+   "hs_bias": -0.087,
+   "hs_rmse": 0.24,
+   "hs_si": 0.105,
+   "tp_bias": 0.19,
+   "dir_mae": 11.9,
+   "dir_bias": 1.2,
+   "tm_bias": 3.26,
+   "obs_hs": 1.76,
+   "tp_type": "primary"
+  },
+  "meteofrance_wave": {
+   "n": 723,
+   "hs_bias": -0.079,
+   "hs_rmse": 0.249,
+   "hs_si": 0.118,
+   "tp_bias": -1.33,
+   "dir_mae": 9.3,
+   "dir_bias": -5.1,
+   "tm_bias": 1.73,
+   "obs_hs": 1.76,
+   "tp_type": "mean"
+  },
+  "ecmwf_wam": {
+   "n": 723,
+   "hs_bias": -0.097,
+   "hs_rmse": 0.274,
+   "hs_si": 0.122,
+   "tp_bias": -0.63,
+   "dir_mae": 8.3,
+   "dir_bias": -5.0,
+   "tm_bias": 1.23,
+   "obs_hs": 1.76,
+   "tp_type": "peak"
+  },
+  "ncep_gfswave025": {
+   "n": 723,
+   "hs_bias": -0.117,
+   "hs_rmse": 0.285,
+   "hs_si": 0.113,
+   "tp_bias": -0.27,
+   "dir_mae": 11.8,
+   "dir_bias": -2.6,
+   "tm_bias": 2.8,
+   "obs_hs": 1.76,
+   "tp_type": "primary"
+  }
+ },
+ "best": {
+  "wave": "dwd_ewam"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave016",
+ "margin": 0.017,
+ "per_buoy": {
+  "mi:m5": {
+   "n": 723,
+   "best": "dwd_ewam",
+   "km": 99.3
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
@@ -18,6 +102,5 @@
    "ecmwf_wam": 0.92,
    "dwd_ewam": 1.02
   }
- },
- "confidence": "media"
+ }
 }

@@ -11,7 +11,7 @@
   {
    "id": "cdip:285",
    "km": 1.8,
-   "why": "sesgo de Hs +145%, +154%, +173%, +147% en todos los modelos"
+   "why": "otro mar o abrigada: ve 54 % de las direcciones abiertas de los picos"
   }
  ],
  "wave": {
@@ -49,7 +49,7 @@
    "dir_bias": -9.5,
    "tm_bias": 4.73,
    "obs_hs": 1.85,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
    "n": 2168,
@@ -61,7 +61,7 @@
    "dir_bias": -13.5,
    "tm_bias": 4.81,
    "obs_hs": 1.85,
-   "tp_type": "mean"
+   "tp_type": "primary"
   }
  },
  "best": {

@@ -42,7 +42,7 @@
    "dir_bias": -29.0,
    "tm_bias": 5.11,
    "obs_hs": 1.86,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ncep_gfswave016": {
    "n": 2168,
@@ -54,7 +54,7 @@
    "dir_bias": -31.3,
    "tm_bias": 5.35,
    "obs_hs": 1.86,
-   "tp_type": "mean"
+   "tp_type": "primary"
   }
  },
  "best": {

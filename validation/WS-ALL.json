@@ -3,6 +3,18 @@
  "from": "2026-09-13",
  "to": "2026-10-13",
  "buoys": [],
+ "excluded": [
+  {
+   "id": "cdip:273",
+   "km": 72.3,
+   "why": "sin serie de ncep_gfswave016 en Open-Meteo"
+  },
+  {
+   "id": "cdip:189",
+   "km": 107.1,
+   "why": "sin serie de ncep_gfswave016 en Open-Meteo"
+  }
+ ],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {

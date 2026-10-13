@@ -8,19 +8,19 @@
  ],
  "wave": {
   "ncep_gfswave025": {
-   "n": 1443,
+   "n": 1445,
    "hs_bias": 0.135,
    "hs_rmse": 0.361,
    "hs_si": 0.144,
-   "tp_bias": 0.26,
+   "tp_bias": 0.25,
    "dir_mae": 6.9,
    "dir_bias": -6.1,
    "tm_bias": 6.09,
    "obs_hs": 1.83,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "meteofrance_wave": {
-   "n": 1443,
+   "n": 1445,
    "hs_bias": 0.162,
    "hs_rmse": 0.35,
    "hs_si": 0.102,
@@ -32,11 +32,11 @@
    "tp_type": "mean"
   },
   "ecmwf_wam": {
-   "n": 1443,
+   "n": 1445,
    "hs_bias": 0.224,
    "hs_rmse": 0.483,
    "hs_si": 0.14,
-   "tp_bias": 0.26,
+   "tp_bias": 0.25,
    "dir_mae": 13.2,
    "dir_bias": -12.3,
    "tm_bias": 3.85,
@@ -52,12 +52,12 @@
  "margin": -0.03,
  "per_buoy": {
   "aodn:dongara-inshore": {
-   "n": 722,
+   "n": 723,
    "best": "meteofrance_wave",
    "km": 51.1
   },
   "aodn:dongara-offshore": {
-   "n": 721,
+   "n": 722,
    "best": "ncep_gfswave025",
    "km": 51.2
   }

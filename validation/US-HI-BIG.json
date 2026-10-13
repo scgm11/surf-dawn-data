@@ -5,6 +5,13 @@
  "buoys": [
   "cdip:187"
  ],
+ "excluded": [
+  {
+   "id": "cdip:188",
+   "km": 7.2,
+   "why": "otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
   "ecmwf_wam": {
    "n": 723,
@@ -40,7 +47,7 @@
    "dir_bias": 9.1,
    "tm_bias": 3.05,
    "obs_hs": 1.81,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
    "n": 723,
@@ -52,7 +59,7 @@
    "dir_bias": 9.2,
    "tm_bias": 3.09,
    "obs_hs": 1.81,
-   "tp_type": "mean"
+   "tp_type": "primary"
   }
  },
  "best": {

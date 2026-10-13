@@ -3,72 +3,73 @@
  "from": "2026-09-13",
  "to": "2026-10-13",
  "buoys": [
-  "ndbc:PHCT2",
   "cdip:252",
   "ndbc:42035"
  ],
+ "excluded": [
+  {
+   "id": "ndbc:PHCT2",
+   "km": 1.0,
+   "why": "otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
-  "ecmwf_wam": {
-   "n": 2150,
-   "hs_bias": -0.075,
-   "hs_rmse": 0.163,
-   "hs_si": 0.164,
-   "tp_bias": -0.28,
-   "dir_mae": 12.9,
-   "dir_bias": -6.6,
-   "tm_bias": 0.46,
-   "obs_hs": 0.91,
-   "tp_type": "peak"
-  },
   "meteofrance_wave": {
-   "n": 2150,
-   "hs_bias": 0.008,
-   "hs_rmse": 0.197,
-   "hs_si": 0.218,
-   "tp_bias": -0.87,
+   "n": 1446,
+   "hs_bias": -0.08,
+   "hs_rmse": 0.154,
+   "hs_si": 0.132,
+   "tp_bias": -0.88,
    "dir_mae": 12.4,
    "dir_bias": -6.4,
    "tm_bias": 0.76,
-   "obs_hs": 0.91,
+   "obs_hs": 1.0,
    "tp_type": "mean"
   },
+  "ecmwf_wam": {
+   "n": 1446,
+   "hs_bias": -0.058,
+   "hs_rmse": 0.147,
+   "hs_si": 0.135,
+   "tp_bias": -0.41,
+   "dir_mae": 12.9,
+   "dir_bias": -6.6,
+   "tm_bias": 0.46,
+   "obs_hs": 1.0,
+   "tp_type": "peak"
+  },
   "ncep_gfswave016": {
-   "n": 2150,
-   "hs_bias": -0.062,
-   "hs_rmse": 0.208,
-   "hs_si": 0.222,
-   "tp_bias": -0.37,
+   "n": 1446,
+   "hs_bias": -0.141,
+   "hs_rmse": 0.214,
+   "hs_si": 0.162,
+   "tp_bias": -0.4,
    "dir_mae": 10.2,
    "dir_bias": -1.6,
    "tm_bias": 1.23,
-   "obs_hs": 0.91,
-   "tp_type": "mean"
+   "obs_hs": 1.0,
+   "tp_type": "primary"
   },
   "ncep_gfswave025": {
-   "n": 2150,
-   "hs_bias": -0.074,
-   "hs_rmse": 0.253,
-   "hs_si": 0.27,
-   "tp_bias": -0.41,
+   "n": 1446,
+   "hs_bias": -0.185,
+   "hs_rmse": 0.258,
+   "hs_si": 0.18,
+   "tp_bias": -0.47,
    "dir_mae": 9.9,
    "dir_bias": 0.4,
    "tm_bias": 1.16,
-   "obs_hs": 0.91,
-   "tp_type": "mean"
+   "obs_hs": 1.0,
+   "tp_type": "primary"
   }
  },
  "best": {
-  "wave": "ecmwf_wam"
+  "wave": "meteofrance_wave"
  },
  "confidence": "alta",
  "vs": "ncep_gfswave016",
- "margin": 0.276,
+ "margin": 0.39,
  "per_buoy": {
-  "ndbc:PHCT2": {
-   "n": 704,
-   "best": "ecmwf_wam",
-   "km": 1.0
-  },
   "cdip:252": {
    "n": 723,
    "best": "meteofrance_wave",

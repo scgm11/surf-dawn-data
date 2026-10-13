@@ -7,6 +7,43 @@
   "cdip:147",
   "cdip:430"
  ],
+ "excluded": [
+  {
+   "id": "cdip:240",
+   "km": 25.6,
+   "why": "otro mar o abrigada: ve 50 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44072",
+   "km": 47.0,
+   "why": "otro mar o abrigada: ve 23 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44058",
+   "km": 83.5,
+   "why": "otro mar o abrigada: ve 17 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44042",
+   "km": 105.9,
+   "why": "otro mar o abrigada: ve 7 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44062",
+   "km": 115.6,
+   "why": "otro mar o abrigada: ve 4 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44063",
+   "km": 118.9,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "ndbc:44080",
+   "km": 133.4,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  }
+ ],
  "wave": {
   "ncep_gfswave025": {
    "n": 2153,
@@ -18,7 +55,7 @@
    "dir_bias": 6.2,
    "tm_bias": 2.61,
    "obs_hs": 1.23,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "ecmwf_wam": {
    "n": 2153,
@@ -42,7 +79,7 @@
    "dir_bias": 3.9,
    "tm_bias": 2.63,
    "obs_hs": 1.23,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "meteofrance_wave": {
    "n": 2153,

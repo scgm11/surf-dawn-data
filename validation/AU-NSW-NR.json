@@ -28,7 +28,7 @@
    "dir_bias": -19.7,
    "tm_bias": 3.36,
    "obs_hs": 1.58,
-   "tp_type": "mean"
+   "tp_type": "primary"
   },
   "meteofrance_wave": {
    "n": 194,

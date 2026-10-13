@@ -3,71 +3,96 @@
  "from": "2026-09-13",
  "to": "2026-10-13",
  "buoys": [
-  "aodn:indented-head",
-  "aodn:central",
-  "aodn:mt-eliza"
+  "aodn:inverloch",
+  "aodn:apollo-bay",
+  "aodn:wilsons-prom"
  ],
  "excluded": [
   {
    "id": "aodn:rosebud",
    "km": 12.9,
-   "why": "sesgo de Hs +140%, +326%, +145% en todos los modelos"
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:indented-head",
+   "km": 23.8,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:central",
+   "km": 34.4,
+   "why": "otro mar o abrigada: ve 9 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:mt-eliza",
+   "km": 35.0,
+   "why": "otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:werribee",
+   "km": 41.0,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:sandringham",
+   "km": 48.0,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
   }
  ],
  "wave": {
+  "ncep_gfswave025": {
+   "n": 1043,
+   "hs_bias": -0.163,
+   "hs_rmse": 0.392,
+   "hs_si": 0.148,
+   "tp_bias": 0.51,
+   "dir_mae": 11.8,
+   "dir_bias": 5.1,
+   "tm_bias": 4.79,
+   "obs_hs": 1.78,
+   "tp_type": "primary"
+  },
   "ecmwf_wam": {
-   "n": 1635,
-   "hs_bias": 0.249,
-   "hs_rmse": 0.179,
-   "hs_si": 0.405,
-   "tp_bias": 3.31,
-   "dir_mae": 20.9,
-   "dir_bias": -5.4,
-   "tm_bias": 3.22,
-   "obs_hs": 0.38,
+   "n": 1043,
+   "hs_bias": 0.21,
+   "hs_rmse": 0.437,
+   "hs_si": 0.126,
+   "tp_bias": 0.63,
+   "dir_mae": 12.0,
+   "dir_bias": 9.1,
+   "tm_bias": 2.86,
+   "obs_hs": 1.78,
    "tp_type": "peak"
   },
   "meteofrance_wave": {
-   "n": 1635,
-   "hs_bias": 0.77,
-   "hs_rmse": 0.354,
-   "hs_si": 0.535,
-   "tp_bias": 2.39,
-   "dir_mae": 46.9,
-   "dir_bias": -10.8,
-   "tm_bias": 4.48,
-   "obs_hs": 0.38,
-   "tp_type": "mean"
-  },
-  "ncep_gfswave025": {
-   "n": 1635,
-   "hs_bias": 1.319,
-   "hs_rmse": 0.602,
-   "hs_si": 0.898,
-   "tp_bias": 8.29,
-   "dir_mae": 67.4,
-   "dir_bias": -21.6,
-   "tm_bias": 10.37,
-   "obs_hs": 0.38,
+   "n": 1043,
+   "hs_bias": 0.166,
+   "hs_rmse": 0.447,
+   "hs_si": 0.188,
+   "tp_bias": -2.11,
+   "dir_mae": 13.5,
+   "dir_bias": 10.1,
+   "tm_bias": 2.18,
+   "obs_hs": 1.78,
    "tp_type": "mean"
   }
  },
  "confidence": "baja",
  "per_buoy": {
-  "aodn:indented-head": {
-   "n": 720,
-   "best": "ecmwf_wam",
-   "km": 23.8
+  "aodn:inverloch": {
+   "n": 723,
+   "best": "meteofrance_wave",
+   "km": 44.5
   },
-  "aodn:central": {
+  "aodn:apollo-bay": {
    "n": 193,
    "best": "ncep_gfswave025",
-   "km": 34.4
+   "km": 96.9
   },
-  "aodn:mt-eliza": {
-   "n": 722,
-   "best": null,
-   "km": 35.0
+  "aodn:wilsons-prom": {
+   "n": 127,
+   "best": "ncep_gfswave025",
+   "km": 147.1
   }
  },
  "current": "ncep_gfswave025",
