@@ -3,8 +3,9 @@
  "from": "2026-09-13",
  "to": "2026-10-13",
  "buoys": [
-  "cdip:045",
-  "cdip:100"
+  "cdip:262",
+  "cdip:153",
+  "cdip:201"
  ],
  "excluded": [
   {
@@ -29,71 +30,64 @@
   }
  ],
  "wave": {
-  "meteofrance_wave": {
-   "n": 1446,
-   "hs_bias": 0.019,
-   "hs_rmse": 0.15,
-   "hs_si": 0.145,
-   "tp_bias": -2.86,
-   "dir_mae": 17.2,
-   "dir_bias": 8.0,
-   "tm_bias": 3.92,
-   "obs_hs": 1.02,
-   "tp_type": "mean"
-  },
   "ecmwf_wam": {
-   "n": 1446,
-   "hs_bias": 0.023,
-   "hs_rmse": 0.14,
-   "hs_si": 0.135,
-   "tp_bias": -1.4,
-   "dir_mae": 24.8,
-   "dir_bias": 20.4,
-   "tm_bias": 3.04,
-   "obs_hs": 1.02,
+   "n": 2168,
+   "hs_bias": 0.106,
+   "hs_rmse": 0.178,
+   "hs_si": 0.184,
+   "tp_bias": -0.44,
+   "dir_mae": 21.6,
+   "dir_bias": -11.7,
+   "tm_bias": 3.55,
+   "obs_hs": 0.84,
    "tp_type": "peak"
   },
-  "ncep_gfswave025": {
-   "n": 1446,
-   "hs_bias": -0.222,
-   "hs_rmse": 0.281,
-   "hs_si": 0.162,
-   "tp_bias": 0.55,
-   "dir_mae": 14.5,
-   "dir_bias": -5.3,
-   "tm_bias": 7.33,
-   "obs_hs": 1.02,
+  "ncep_gfswave016": {
+   "n": 2168,
+   "hs_bias": -0.081,
+   "hs_rmse": 0.173,
+   "hs_si": 0.189,
+   "tp_bias": 1.87,
+   "dir_mae": 44.2,
+   "dir_bias": -43.8,
+   "tm_bias": 8.05,
+   "obs_hs": 0.84,
    "tp_type": "primary"
   },
-  "ncep_gfswave016": {
-   "n": 1446,
-   "hs_bias": -0.247,
-   "hs_rmse": 0.308,
-   "hs_si": 0.171,
-   "tp_bias": 0.52,
-   "dir_mae": 14.3,
-   "dir_bias": -4.2,
-   "tm_bias": 7.3,
-   "obs_hs": 1.02,
-   "tp_type": "primary"
+  "meteofrance_wave": {
+   "n": 2168,
+   "hs_bias": 0.176,
+   "hs_rmse": 0.213,
+   "hs_si": 0.182,
+   "tp_bias": -1.66,
+   "dir_mae": 26.7,
+   "dir_bias": -24.3,
+   "tm_bias": 4.53,
+   "obs_hs": 0.84,
+   "tp_type": "mean"
   }
  },
  "best": {
-  "wave": "meteofrance_wave"
+  "wave": "ecmwf_wam"
  },
- "confidence": "alta",
+ "confidence": "baja",
  "vs": "ncep_gfswave016",
- "margin": 1.053,
+ "margin": -0.028,
  "per_buoy": {
-  "cdip:045": {
-   "n": 723,
-   "best": "meteofrance_wave",
-   "km": 7.6
+  "cdip:262": {
+   "n": 722,
+   "best": "ecmwf_wam",
+   "km": 0.6
   },
-  "cdip:100": {
+  "cdip:153": {
    "n": 723,
    "best": "ecmwf_wam",
-   "km": 11.7
+   "km": 0.8
+  },
+  "cdip:201": {
+   "n": 723,
+   "best": "ncep_gfswave016",
+   "km": 0.9
   }
  },
  "current": "ncep_gfswave016",

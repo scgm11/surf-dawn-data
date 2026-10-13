@@ -1,16 +1,16 @@
 # Validación de los modelos de olas
 
-Ventana: **2026-09-13 a 2026-10-13** (UTC), hora a hora. Generado el 2026-10-13 03:12 UTC por `validate/run.py` (ver `validate/README.md`).
+Ventana: **2026-09-13 a 2026-10-13** (UTC), hora a hora. Generado el 2026-10-13 03:22 UTC por `validate/run.py` (ver `validate/README.md`).
 
 Cada región se compara con hasta 3 boyas a menos de 150 km de alguno de sus picos (la más cercana primero). Todos los modelos se miden sobre las mismas horas. El mejor es el de menor `hs_rmse` con |sesgo| ≤ 15 % (empates de 0.01 m: menor error de dirección). La confianza mira las horas (≥ 480 alta, ≥ 240 media), cuánto peor es el modelo de hoy (≥ 10 % alta, ≥ 5 % media), que la mayoría de las boyas coincida y que la boya más cercana esté a ≤ 100 km (alta).
 
 ## Resumen
 
-- Regiones: **212**; con boyas: **43**; sin boyas: **169**.
-- Regiones con boyas por fuente: CDIP 22, AODN / IMOS 15, NOAA NDBC 14, Marine Institute 4.
-- Mejor modelo (regiones con boyas): ECMWF WAM 17, MFWAM 13, GFS-Wave 0,25° 7, ninguno 3, GFS-Wave 0,16° 2, DWD EWAM 1.
-- Confianza: alta 19, media 6, baja 18.
-- Open-Meteo: 4 pedidos, 9 ubicaciones, ~30 llamadas ponderadas (límite gratuito 10.000/día).
+- Regiones: **212**; con boyas: **44**; sin boyas: **168**.
+- Regiones con boyas por fuente: CDIP 23, AODN / IMOS 15, NOAA NDBC 14, Marine Institute 4.
+- Mejor modelo (regiones con boyas): ECMWF WAM 18, MFWAM 12, GFS-Wave 0,25° 7, GFS-Wave 0,16° 3, ninguno 3, DWD EWAM 1.
+- Confianza: alta 19, media 6, baja 19.
+- Open-Meteo: 6 pedidos, 10 ubicaciones, ~22 llamadas ponderadas (límite gratuito 10.000/día).
 
 ## Fuentes
 
@@ -27,7 +27,7 @@ Boyas publicadas por dos fuentes (se usa una): cdip:201 = cdip:073, cdip:150 = n
 
 | País | Regiones con boyas | Gana |
 |---|---|---|
-| Estados Unidos | 20 | ECMWF WAM 11, MFWAM 6, GFS-Wave 0,16° 2, GFS-Wave 0,25° 1 |
+| Estados Unidos | 21 | ECMWF WAM 12, MFWAM 5, GFS-Wave 0,16° 3, GFS-Wave 0,25° 1 |
 | Australia | 15 | ECMWF WAM 4, GFS-Wave 0,25° 4, MFWAM 4, ninguno 3 |
 | Reino Unido | 2 | DWD EWAM 1, ECMWF WAM 1 |
 | Irlanda | 2 | MFWAM 2 |
@@ -41,11 +41,11 @@ Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo 
 
 | Región | Boyas | Mejor | n | rmse m | sesgo | SI | Tp s | dir ° | Hoy | rmse hoy | Confianza |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| MX-BCN | cdip:191 (28 km)<br>cdip:220 (43 km)<br>cdip:100 (51 km) | ECMWF WAM ⇐ | 2056 | 0.13 | +0 % | 0.11 | -1.3 | 25 | GFS-Wave 0,16° | 0.32 | alta |
+| MX-BCN | cdip:191 (28 km)<br>cdip:201 (40 km)<br>cdip:220 (43 km) | ECMWF WAM ⇐ | 2056 | 0.19 | +8 % | 0.16 | 0.3 | 31 | GFS-Wave 0,16° | 0.26 | alta |
 | PR-NW | cdip:249 (29 km)<br>ndbc:41053 (92 km) | GFS-Wave 0,25° | 1411 | 0.14 | +4 % | 0.16 | 0.5ᵖ | 12 | GFS-Wave 0,16° | 0.14 | baja |
 | PR-N | ndbc:41053 (5 km)<br>cdip:249 (19 km) | GFS-Wave 0,25° | 1411 | 0.14 | +4 % | 0.16 | 0.5ᵖ | 12 | GFS-Wave 0,16° | 0.14 | baja |
-| US-CA-SD | cdip:045 (8 km)<br>cdip:100 (12 km) | MFWAM ⇐ | 1446 | 0.15 | +2 % | 0.14 | -2.9ᵐ | 17 | GFS-Wave 0,16° | 0.31 | alta |
-| US-CA-OC | cdip:271 (8 km)<br>cdip:264 (11 km)<br>cdip:045 (23 km) | ECMWF WAM ⇐ | 2168 | 0.15 | +8 % | 0.14 | -1.4 | 20 | GFS-Wave 0,16° | 0.23 | alta |
+| US-CA-SD | cdip:262 (1 km)<br>cdip:153 (1 km)<br>cdip:201 (1 km) | ECMWF WAM | 2168 | 0.18 | +11 % | 0.18 | -0.4 | 22 | GFS-Wave 0,16° | 0.17 | baja |
+| US-CA-OC | cdip:284 (1 km)<br>cdip:271 (8 km)<br>cdip:264 (11 km) | ECMWF WAM ⇐ | 2168 | 0.15 | +7 % | 0.15 | -1.4 | 16 | GFS-Wave 0,16° | 0.23 | alta |
 | US-CA-LA | cdip:103 (2 km)<br>cdip:028 (20 km)<br>ndbc:46025 (34 km) | ECMWF WAM ⇐ | 2168 | 0.15 | +9 % | 0.13 | -0.6 | 25 | GFS-Wave 0,16° | 0.31 | alta |
 | US-CA-SB | cdip:071 (26 km)<br>ndbc:46025 (34 km)<br>cdip:028 (37 km) | MFWAM ⇐ | 2169 | 0.20 | +3 % | 0.14 | -2.7ᵐ | 28 | GFS-Wave 0,16° | 0.35 | alta |
 | US-CA-CEN | cdip:076 (6 km)<br>cdip:157 (20 km)<br>ndbc:46011 (34 km) | ECMWF WAM ⇐ | 2168 | 0.31 | +0 % | 0.17 | -1.1 | 21 | GFS-Wave 0,16° | 0.41 | alta |
@@ -60,8 +60,9 @@ Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo 
 | US-SC-GA | ndbc:41067 (12 km)<br>ndbc:41076 (29 km)<br>cdip:132 (45 km) | ECMWF WAM | 2157 | 0.19 | -6 % | 0.19 | -1.9 | 19 | GFS-Wave 0,16° | 0.20 | baja |
 | US-MID | cdip:263 (1 km)<br>cdip:147 (23 km)<br>cdip:430 (60 km) | GFS-Wave 0,25° ⇐ | 2153 | 0.20 | -3 % | 0.16 | -0.5ᵖ | 15 | GFS-Wave 0,16° | 0.27 | alta |
 | US-NE | ndbc:44007 (7 km)<br>ndbc:44029 (10 km)<br>ndbc:44030 (14 km) | ECMWF WAM ⇐ | 1609 | 0.18 | +0 % | 0.18 | 0.3 | 20 | GFS-Wave 0,16° | 0.21 | alta |
+| US-HI-OAN | cdip:106 (6 km) | GFS-Wave 0,16° | 723 | 0.24 | -14 % | 0.11 | 0.6ᵖ | 24 | GFS-Wave 0,16° | 0.24 | alta |
 | US-HI-OAS | cdip:238 (4 km)<br>cdip:233 (10 km) | ECMWF WAM ⇐ | 1446 | 0.19 | +2 % | 0.17 | 0.0 | 18 | GFS-Wave 0,16° | 0.42 | alta |
-| US-HI-MAU | cdip:187 (10 km)<br>cdip:233 (138 km) | ECMWF WAM ⇐ | 1446 | 0.23 | +11 % | 0.12 | -0.0 | 21 | GFS-Wave 0,16° | 0.49 | alta |
+| US-HI-MAU | cdip:187 (10 km)<br>cdip:233 (138 km)<br>cdip:188 (148 km) | ECMWF WAM ⇐ | 2169 | 0.21 | +5 % | 0.12 | -0.2 | 20 | GFS-Wave 0,16° | 0.51 | alta |
 | US-HI-KAU | cdip:238 (143 km) | ECMWF WAM ⇐ | 723 | 0.18 | -8 % | 0.13 | -0.7 | 20 | GFS-Wave 0,16° | 0.31 | media |
 | US-HI-BIG | cdip:187 (116 km) | ECMWF WAM ⇐ | 723 | 0.26 | +9 % | 0.11 | -0.8 | 26 | GFS-Wave 0,16° | 0.47 | media |
 | CA-BC-VI | ndbc:46087 (31 km)<br>ndbc:46041 (130 km) | MFWAM ⇐ | 1319 | 0.25 | -2 % | 0.15 | -0.9ᵐ | 12 | GFS-Wave 0,16° | 0.37 | alta |
@@ -85,7 +86,7 @@ Métricas del mejor modelo (o del de hoy si ninguno califica). `Tp` es el sesgo 
 | IE-SW | mi:m3 (102 km) | MFWAM ⇐ | 723 | 0.26 | -2 % | 0.08 | -1.9ᵐ | 9 | GFS-Wave 0,25° | 0.42 | media |
 | IE-SE | mi:m3 (58 km)<br>mi:m5 (60 km) | MFWAM | 1446 | 0.25 | -4 % | 0.09 | -1.6ᵐ | 9 | GFS-Wave 0,16° | 0.34 | baja |
 
-## Regiones sin boyas (169)
+## Regiones sin boyas (168)
 
 Dispersión entre modelos de la altura de ola en el pico central de la región (desvío / media, promedio de las horas). Más de 0.30 ⇒ confianza baja: los modelos no coinciden y conviene buscar boyas.
 
@@ -131,6 +132,7 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | TW-E | 0.17 | GFS-Wave 0,16° 0.97, GFS-Wave 0,25° 1.38, MFWAM 1.38, ECMWF WAM 1.42 | media |
 | ES-CN-W | 0.17 | GFS-Wave 0,16° 0.55, GFS-Wave 0,25° 0.81, MFWAM 0.74, ECMWF WAM 0.63 | media |
 | PE-NOR | 0.16 | GFS-Wave 0,16° 0.93, GFS-Wave 0,25° 1.34, MFWAM 1.16, ECMWF WAM 0.95 | media |
+| NL-ALL | 0.16 | GFS-Wave 0,25° 0.93, MFWAM 0.88, ECMWF WAM 0.67, DWD EWAM 0.85 | media |
 | FR-VEN | 0.16 | GFS-Wave 0,16° 0.83, GFS-Wave 0,25° 0.90, MFWAM 1.02, ECMWF WAM 0.67, DWD EWAM 0.74 | media |
 | BR-SP | 0.16 | GFS-Wave 0,25° 0.92, MFWAM 1.35, ECMWF WAM 1.11 | media |
 | AU-QLD-GC | 0.16 | GFS-Wave 0,25° 0.99, MFWAM 0.88, ECMWF WAM 1.25 | media |
@@ -157,7 +159,6 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | JP-SHO | 0.12 | GFS-Wave 0,16° 0.90, GFS-Wave 0,25° 0.90, MFWAM 0.85, ECMWF WAM 0.91 | media |
 | JP-KYU | 0.12 | GFS-Wave 0,16° 1.38, GFS-Wave 0,25° 1.50, MFWAM 1.78, ECMWF WAM 1.48 | media |
 | PT-MAD | 0.12 | GFS-Wave 0,16° 0.79, GFS-Wave 0,25° 0.79, MFWAM 0.88, ECMWF WAM 0.66 | media |
-| NL-ALL | 0.12 | ECMWF WAM 0.97, DWD EWAM 0.89 | media |
 | MA-TAG | 0.11 | GFS-Wave 0,16° 1.16, GFS-Wave 0,25° 1.36, MFWAM 1.52, ECMWF WAM 1.44, DWD EWAM 1.48 | media |
 | ES-GAL | 0.11 | GFS-Wave 0,16° 1.49, GFS-Wave 0,25° 1.87, MFWAM 1.55, ECMWF WAM 1.63, DWD EWAM 1.85 | media |
 | NZ-AKL | 0.11 | GFS-Wave 0,25° 2.27, MFWAM 2.43, ECMWF WAM 1.88 | media |
@@ -169,7 +170,6 @@ Dispersión entre modelos de la altura de ola en el pico central de la región (
 | IN-W | 0.10 | GFS-Wave 0,16° 0.92, GFS-Wave 0,25° 0.97, MFWAM 1.18, ECMWF WAM 1.10 | media |
 | MA-S | 0.10 | GFS-Wave 0,16° 1.12, GFS-Wave 0,25° 1.22, MFWAM 1.41, ECMWF WAM 1.36 | media |
 | ID-BAL-BUK | 0.10 | GFS-Wave 0,16° 1.69, GFS-Wave 0,25° 1.48, MFWAM 1.91, ECMWF WAM 1.83 | media |
-| US-HI-OAN | 0.10 | GFS-Wave 0,16° 1.15, MFWAM 1.41, ECMWF WAM 1.21 | media |
 | NZ-KAI | 0.10 | GFS-Wave 0,25° 0.77, MFWAM 0.78, ECMWF WAM 0.86 | media |
 | ID-SBW | 0.10 | GFS-Wave 0,16° 1.18, MFWAM 1.41, ECMWF WAM 1.17 | media |
 | BR-RS | 0.10 | MFWAM 1.17, ECMWF WAM 1.42 | media |
@@ -270,10 +270,10 @@ Promedios ponderados por horas sobre todas las boyas de cada fuente. `Tp` = mode
 | AODN / IMOS | ECMWF WAM | 10535 | 0.2 | 2.9 | 18 | 4 |
 | AODN / IMOS | MFWAM | 10535 | -2.4 | 2.3 | 19 | 3 |
 | AODN / IMOS | GFS-Wave 0,25° | 10535 | -0.5 | 4.3 | 19 | 4 |
-| CDIP | ECMWF WAM | 27959 | -0.6 | 2.4 | 19 | 6 |
-| CDIP | MFWAM | 26513 | -2.0 | 2.7 | 19 | 2 |
-| CDIP | GFS-Wave 0,16° | 27959 | 0.6 | 5.1 | 19 | -4 |
-| CDIP | GFS-Wave 0,25° | 27959 | 0.4 | 5.0 | 21 | -4 |
+| CDIP | ECMWF WAM | 30127 | -0.4 | 2.4 | 20 | 2 |
+| CDIP | MFWAM | 28681 | -1.7 | 2.8 | 21 | -2 |
+| CDIP | GFS-Wave 0,16° | 30127 | 0.7 | 5.2 | 23 | -8 |
+| CDIP | GFS-Wave 0,25° | 19398 | 0.4 | 4.1 | 22 | -5 |
 | Marine Institute | DWD EWAM | 1446 | -1.1 | 1.1 | 14 | -3 |
 | Marine Institute | ECMWF WAM | 3615 | -0.5 | 1.3 | 10 | -2 |
 | Marine Institute | MFWAM | 3615 | -1.5 | 1.6 | 12 | -2 |
@@ -282,7 +282,7 @@ Promedios ponderados por horas sobre todas las boyas de cada fuente. `Tp` = mode
 | NOAA NDBC | ECMWF WAM | 13823 | -0.6 | 1.9 | 19 | -3 |
 | NOAA NDBC | MFWAM | 12447 | -1.2 | 2.2 | 20 | -3 |
 | NOAA NDBC | GFS-Wave 0,16° | 13823 | 0.6 | 4.2 | 22 | -10 |
-| NOAA NDBC | GFS-Wave 0,25° | 13823 | 0.6 | 4.2 | 21 | -9 |
+| NOAA NDBC | GFS-Wave 0,25° | 13100 | 0.5 | 3.9 | 20 | -10 |
 
 ## Próximos pasos
 

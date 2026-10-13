@@ -54,18 +54,6 @@
    "obs_hs": 0.9,
    "tp_type": "mean"
   },
-  "ncep_gfswave025": {
-   "n": 2168,
-   "hs_bias": -0.218,
-   "hs_rmse": 0.248,
-   "hs_si": 0.166,
-   "tp_bias": 0.92,
-   "dir_mae": 20.1,
-   "dir_bias": 6.3,
-   "tm_bias": 8.29,
-   "obs_hs": 0.9,
-   "tp_type": "primary"
-  },
   "ncep_gfswave016": {
    "n": 2168,
    "hs_bias": -0.297,

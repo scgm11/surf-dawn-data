@@ -25,40 +25,40 @@ aodn:wilsons-prom,WILSONS-PROM,-39.5438,146.4649,127,AU-VIC-PI
 aodn:wooli,WOOLI,-29.857,153.314,194,AU-NSW-NR AU-NSW-MN
 cdip:028,"SANTA MONICA BAY, CA BUOY - 028p1",33.8599,-118.6411,723,US-CA-LA US-CA-SB
 cdip:036,"GRAYS HARBOR, WA BUOY - 036p1",46.8568,-124.2433,723,US-PNW
-cdip:045,"OCEANSIDE OFFSHORE, CA BUOY - 045p1",33.1808,-117.475,723,US-CA-SD US-CA-OC
 cdip:071,"HARVEST, CA BUOY - 071p1",34.4515,-120.78,723,US-CA-SB
 cdip:076,"DIABLO CANYON, CA BUOY - 076p1",35.2038,-120.8593,723,(US-CA-SB: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) US-CA-CEN
-cdip:100,"TORREY PINES OUTER, CA BUOY - 100p1",32.93,-117.392,723,MX-BCN US-CA-SD
 cdip:103,"TOPANGA NEARSHORE, CA BUOY - 103p1",34.0222,-118.5783,722,(US-CA-SD: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos) US-CA-LA (US-CA-SB: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos)
-cdip:106,"WAIMEA BAY, HI BUOY - 106p1",21.67,-158.1177,723,(US-HI-OAS: otro mar o abrigada: ve 31 % de las direcciones abiertas de los picos) (US-HI-KAU: otro mar o abrigada: ve 33 % de las direcciones abiertas de los picos)
+cdip:106,"WAIMEA BAY, HI BUOY - 106p1",21.67,-158.1177,723,US-HI-OAN (US-HI-OAS: otro mar o abrigada: ve 31 % de las direcciones abiertas de los picos) (US-HI-KAU: otro mar o abrigada: ve 33 % de las direcciones abiertas de los picos)
 cdip:132,"FERNANDINA BEACH, FL BUOY - 132p1",30.7091,-81.2921,723,US-SC-GA
 cdip:134,"FORT PIERCE, FL BUOY - 134p1",27.5638,-80.2154,515,US-FL
 cdip:142,"SAN FRANCISCO BAR, CA BUOY - 142p1",37.7881,-122.6325,246,US-CA-SF
 cdip:143,"CAPE CANAVERAL NEARSHORE, FL BUOY - 143p1",28.3999,-80.5333,723,US-FL
 cdip:147,"CAPE HENRY, VA BUOY - 147p1",36.9142,-75.7203,723,US-MID
 cdip:150,"MASONBORO INLET, ILM2, NC BUOY - 150p1",34.1438,-77.7153,723,US-SE
-cdip:153,"DEL MAR NEARSHORE, CA BUOY - 153p1",32.9565,-117.2796,723,(US-CA-OC: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos)
+cdip:153,"DEL MAR NEARSHORE, CA BUOY - 153p1",32.9565,-117.2796,723,US-CA-SD (US-CA-OC: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos)
 cdip:156,"MONTEREY CANYON OUTER, CA BUOY - 156p1",36.7592,-121.9503,723,US-CA-SC
 cdip:157,"POINT SUR, CA BUOY - 157p1",36.3416,-122.1096,722,US-CA-CEN US-CA-SC
 cdip:162,"CLATSOP SPIT, OR BUOY - 162p1",46.2151,-124.1286,723,US-PNW
 cdip:168,"HUMBOLDT BAY NORTH SPIT, CA BUOY - 168p1",40.8926,-124.3567,580,US-CA-NOR
 cdip:187,"PAUWELA, MAUI, HI BUOY - 187p1",21.0185,-156.4215,723,(US-HI-OAS: otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos) US-HI-MAU US-HI-BIG
-cdip:188,"HILO, HAWAII, HI BUOY - 188p1",19.779,-154.97,723,(US-HI-BIG: otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos)
+cdip:188,"HILO, HAWAII, HI BUOY - 188p1",19.779,-154.97,723,US-HI-MAU (US-HI-BIG: otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos)
 cdip:189,"AUNUU, AMERICAN SAMOA BUOY - 189p1",-14.2724,-170.501,723,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
 cdip:191,"POINT LOMA SOUTH, CA BUOY - 191p1",32.5169,-117.4252,610,MX-BCN
-cdip:201,"SCRIPPS NEARSHORE, CA BUOY - 201p1",32.8678,-117.2667,723,(US-CA-OC: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos)
+cdip:201,"SCRIPPS NEARSHORE, CA BUOY - 201p1",32.8678,-117.2667,723,MX-BCN US-CA-SD (US-CA-OC: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos)
 cdip:220,"MISSION BAY WEST, CA BUOY - 220p1",32.7494,-117.4985,723,MX-BCN
 cdip:233,"PEARL HARBOR ENTRANCE, HI BUOY - 233p1",21.2974,-157.9589,723,(US-HI-OAN: otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos) US-HI-OAS US-HI-MAU
 cdip:238,"BARBERS POINT, KALAELOA, HI BUOY - 238p1",21.3231,-158.1495,723,(US-HI-OAN: otro mar o abrigada: ve 56 % de las direcciones abiertas de los picos) US-HI-OAS US-HI-KAU
 cdip:249,"ARECIBO, PUERTO RICO BUOY - 249p1",18.4908,-66.7005,723,PR-NW PR-N
 cdip:252,"ARANSAS PASS CHANNEL ENTRANCE S, TX BUOY - 252p1",27.6403,-97.0115,723,US-GULF
 cdip:256,"SOUTHWEST PASS ENTRANCE W, LA BUOY - 256p1",28.988,-89.6488,723,US-FL-PAN
+cdip:262,"LEUCADIA NEARSHORE, CA BUOY - 262p1",33.0621,-117.3141,722,US-CA-SD
 cdip:263,"BETHANY BEACH, DE BUOY - 263p1",38.5368,-75.044,707,US-MID
 cdip:264,"RED BEACH NEARSHORE, CA BUOY - 264p1",33.2908,-117.5015,722,US-CA-OC
 cdip:265,"HOLLYWOOD BEACH, FL BUOY - 265p1",26.001,-80.096,723,US-FL
 cdip:270,"TILLAMOOK BAY SOUTH JETTY, OR BUOY - 270p1",45.5608,-123.9905,723,US-PNW
 cdip:271,"GREEN BEACH OFFSHORE, CA BUOY - 271p1",33.3364,-117.6586,723,US-CA-OC
 cdip:273,"KING-POLOA, AMERICAN SAMOA BUOY - 273p1",-14.2965,-170.8747,723,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
+cdip:284,"CAPISTRANO BEACH NEARSHORE, CA BUOY - 284p1",33.4452,-117.6801,723,US-CA-OC
 cdip:430,"DUCK FRF 26M, NC BUOY - 430p1",36.2572,-75.5933,723,US-MID
 cdip:433,"DUCK FRF 17M, NC BUOY - 433p1",36.1997,-75.7143,723,US-SE
 mi:m2,M2,53.4836,-5.4302,723,(GB-WAL: otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos) GB-NIR

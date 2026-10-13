@@ -90,17 +90,18 @@
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.091,
+  "hs": 0.074,
   "hours": 744,
   "point": [
-   52.413,
-   -4.09
+   52.118,
+   -4.696
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.0,
+   "ncep_gfswave016": 0.98,
+   "ncep_gfswave025": 1.07,
    "meteofrance_wave": 1.0,
-   "ecmwf_wam": 0.92,
-   "dwd_ewam": 1.02
+   "ecmwf_wam": 1.0,
+   "dwd_ewam": 0.99
   }
  }
 }

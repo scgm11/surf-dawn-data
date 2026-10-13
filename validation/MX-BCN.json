@@ -4,56 +4,44 @@
  "to": "2026-10-13",
  "buoys": [
   "cdip:191",
-  "cdip:220",
-  "cdip:100"
+  "cdip:201",
+  "cdip:220"
  ],
  "wave": {
   "ecmwf_wam": {
    "n": 2056,
-   "hs_bias": 0.001,
-   "hs_rmse": 0.129,
-   "hs_si": 0.11,
-   "tp_bias": -1.26,
-   "dir_mae": 25.1,
-   "dir_bias": 17.7,
-   "tm_bias": 2.87,
-   "obs_hs": 1.17,
+   "hs_bias": 0.082,
+   "hs_rmse": 0.192,
+   "hs_si": 0.159,
+   "tp_bias": 0.31,
+   "dir_mae": 31.2,
+   "dir_bias": -2.2,
+   "tm_bias": 3.35,
+   "obs_hs": 1.07,
    "tp_type": "peak"
   },
   "meteofrance_wave": {
    "n": 2056,
-   "hs_bias": 0.016,
-   "hs_rmse": 0.144,
-   "hs_si": 0.122,
-   "tp_bias": -2.85,
-   "dir_mae": 20.6,
-   "dir_bias": 8.8,
-   "tm_bias": 3.56,
-   "obs_hs": 1.17,
+   "hs_bias": 0.1,
+   "hs_rmse": 0.208,
+   "hs_si": 0.166,
+   "tp_bias": -1.31,
+   "dir_mae": 33.0,
+   "dir_bias": -10.2,
+   "tm_bias": 4.03,
+   "obs_hs": 1.07,
    "tp_type": "mean"
-  },
-  "ncep_gfswave025": {
-   "n": 2056,
-   "hs_bias": -0.228,
-   "hs_rmse": 0.312,
-   "hs_si": 0.137,
-   "tp_bias": 0.83,
-   "dir_mae": 18.7,
-   "dir_bias": -9.1,
-   "tm_bias": 7.25,
-   "obs_hs": 1.17,
-   "tp_type": "primary"
   },
   "ncep_gfswave016": {
    "n": 2056,
-   "hs_bias": -0.234,
-   "hs_rmse": 0.319,
-   "hs_si": 0.138,
-   "tp_bias": 0.83,
-   "dir_mae": 18.5,
-   "dir_bias": -8.1,
-   "tm_bias": 7.25,
-   "obs_hs": 1.17,
+   "hs_bias": -0.153,
+   "hs_rmse": 0.26,
+   "hs_si": 0.187,
+   "tp_bias": 2.41,
+   "dir_mae": 37.2,
+   "dir_bias": -29.8,
+   "tm_bias": 7.75,
+   "obs_hs": 1.07,
    "tp_type": "primary"
   }
  },
@@ -62,22 +50,22 @@
  },
  "confidence": "alta",
  "vs": "ncep_gfswave016",
- "margin": 1.473,
+ "margin": 0.354,
  "per_buoy": {
   "cdip:191": {
    "n": 610,
    "best": "ecmwf_wam",
    "km": 28.4
   },
+  "cdip:201": {
+   "n": 723,
+   "best": "ncep_gfswave016",
+   "km": 40.1
+  },
   "cdip:220": {
    "n": 723,
    "best": "ecmwf_wam",
    "km": 42.9
-  },
-  "cdip:100": {
-   "n": 723,
-   "best": "ecmwf_wam",
-   "km": 51.3
   }
  },
  "current": "ncep_gfswave016",
