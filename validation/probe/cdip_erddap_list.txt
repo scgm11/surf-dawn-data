@@ -1,9 +1,0 @@
-531 bytes
-datasetID,title
-,
-allDatasets,* The List of All Active Datasets in this ERDDAP *
-cat4_agg,Aggregation of Air measurements collected in situ by Datawell Waverider buoys.
-gps_agg,Aggregation of GPS measurements collected in situ by Datawell Waverider buoys.
-sst_agg,Aggregation of SST measurements collected in situ by Datawell Waverider buoys.
-acm_agg,Aggregation of Surface Current measurements collected in situ by Datawell Waverider buoys.
-wave_agg,Aggregation of Wave measurements collected in situ by Datawell Waverider buoys.

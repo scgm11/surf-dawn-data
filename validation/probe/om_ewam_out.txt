@@ -1,2 +1,0 @@
-HTTP 400
-{"error":true,"reason":"No data is available for this location"}
