@@ -18,6 +18,11 @@ on:
         type: boolean
         required: false
         default: true
+      unsourced:
+        description: "Sólo buscar de nuevo los emblemáticos que no tenían fuente"
+        type: boolean
+        required: false
+        default: false
 permissions:
   contents: write
 concurrency:
@@ -39,6 +44,7 @@ jobs:
           mkdir -p validation
           args=()
           [ "${{ github.event.inputs.wikidata }}" = "false" ] && args+=(--no-wikidata)
+          [ "${{ github.event.inputs.unsourced }}" = "true" ] && args+=(--unsourced)
           python3 tools/check_spots.py "${args[@]}" 2>&1 | tee validation/spots.log
       - name: Publicar
         if: always()

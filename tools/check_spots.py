@@ -192,6 +192,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
     ap.add_argument("--no-wikidata", action="store_true")
+    ap.add_argument("--unsourced", action="store_true",
+                    help="look again only for the flagship spots the last run found no source for")
     a = ap.parse_args()
     zs = zones(set(a.regions or []))
     tops, checked = {}, set()
@@ -260,7 +262,7 @@ def main():
         result["flags"] = [f for f in result["flags"] if f["why"]]
         result["season_cleared"] = cleared
         print("%d facing flags cleared over %d days" % (cleared, LONG_DAYS))
-    if a.no_wikidata:                              # the last run's, as they were
+    if a.no_wikidata or a.unsourced:               # the last run's, as they were
         try:
             with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
                 result["flagship"] = json.load(f).get("flagship", [])
@@ -269,6 +271,18 @@ def main():
         for c in result["flagship"]:
             if c.get("status") in ("lejos", "revisado"):
                 c["status"] = "revisado" if (c["region"], c["spot"]) in checked else "lejos"
+        if a.unsourced:
+            OVERPASS_UNTIL[0] = time.time() + 2 * OVERPASS_MIN * 60
+            rows = {(z["id"], s[0]): (z, s) for z in zs for s in z["s"]}
+            for i, c in enumerate(result["flagship"]):
+                if c.get("status") in ("sin fuente", "error") and (c["region"], c["spot"]) in rows:
+                    z, s = rows[(c["region"], c["spot"])]
+                    n = check_flagship(z["id"], s, z["c"])
+                    if n["status"] == "lejos" and (z["id"], s[0]) in checked:
+                        n["status"] = "revisado"
+                    n.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
+                    result["flagship"][i] = n
+                    print("  %s/%s: %s %s" % (z["id"], s[0], n["status"], n.get("km", "")))
     else:
         OVERPASS_UNTIL[0] = time.time() + OVERPASS_MIN * 60
         for z in zs:

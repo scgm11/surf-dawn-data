@@ -32,6 +32,7 @@ for each set of nodal corrections; the best set is the one used.
 Usage: python3 tools/tide/build_tides.py [--regions CODE ...] [--years 2026 2027]
 """
 import argparse
+import calendar
 import datetime as dt
 import hashlib
 import itertools
@@ -495,6 +496,68 @@ def validate(st, coastal, heights, year, rep):
     return best
 
 
+def legacy_year(key, year):
+    """The hourly heights (cm) of a legacy port's published months (local clock -> UTC epochs), or None."""
+    t, h = [], []
+    for m in range(1, 13):
+        path = os.path.join(OUT, key, "%d-%02d.json" % (year, m))
+        if not os.path.exists(path):
+            return None
+        with open(path, encoding="utf-8") as f:
+            d = json.load(f)
+        t0 = calendar.timegm((year, m, 1, 0, 0, 0)) - int(d.get("utc_offset", 0)) * 3600
+        t += [t0 + 3600 * i for i in range(len(d["h"]))]
+        h += d["h"]
+    return np.array(t, dtype=float), np.array(h, dtype=float)
+
+
+def validate_got(st, heights, year, rep):
+    """GOT5.6 (tier 6) against official predictions: NOAA's validation stations, a few JMA, LINZ and
+    Marine Institute ones, and the tables of Uruguay and Brazil. RMS (cm) of the hourly difference,
+    each series without its mean, and the ratio of the ranges; at the gauge itself, the hardest place
+    for a global model (harbours, bays)."""
+    picks = []
+    noaa = {s["ref"]: s for s in st if s["kind"] == "noaa"}
+    picks += [noaa[k] for k in VALIDATION if k in noaa][:6]
+    for kind, n in (("jma", 3), ("linz", 3), ("imi", 2)):
+        picks += [s for s in st if s["kind"] == kind][:n]
+    picks += [dict(p, kind="legacy") for p in LEGACY]
+    hours = S.year_hours(year).astype(float)
+    try:
+        model = G.heights_many([(s["lat"], s["lon"]) for s in picks], hours, CACHE)
+    except Exception as e:                                 # noqa: BLE001 - the report says so
+        rep["warnings"].append("validación GOT5.6: %s" % e)
+        return
+    rows = []
+    for s, g in zip(picks, model):
+        if isinstance(g, G.ModelError):
+            rows.append({"key": s["key"], "name": s["name"], "rms": None, "why": str(g)[:80]})
+            continue
+        try:
+            if s["kind"] == "noaa":
+                obs, t = heights.noaa(s["ref"], year)[0], hours
+            elif s["kind"] == "legacy":
+                ly = legacy_year(s["key"], year)
+                if ly is None:
+                    continue
+                t, obs = ly
+            else:
+                obs, t = heights.series(s)["y"][year], hours
+        except S.SourceError as e:
+            rows.append({"key": s["key"], "name": s["name"], "rms": None, "why": str(e)[:80]})
+            continue
+        p = np.interp(t, hours, g)
+        ok = np.isfinite(obs) & np.isfinite(p)
+        if ok.sum() < 24 * 30:
+            continue
+        e = (p[ok] - p[ok].mean()) - (obs[ok] - obs[ok].mean())
+        rows.append({"key": s["key"], "name": s["name"], "rms": float(np.sqrt(np.mean(e ** 2))),
+                     "range": float(np.ptp(obs[ok])), "ratio": float(np.ptp(p[ok]) / max(1.0, np.ptp(obs[ok])))})
+        log("validación GOT5.6 %s %s: RMS %.1f cm, rango %.0f cm, modelo/oficial %.2f" % (
+            s["key"], s["name"], rows[-1]["rms"], rows[-1]["range"], rows[-1]["ratio"]))
+    rep["validation_got"] = rows
+
+
 # ---------------------------------------------------------------- output
 
 def month_json(key, year, month, h, src, datum):
@@ -592,6 +655,21 @@ def report_md(rep, regions, sel, st, used, years):
         L.append("| %s %s | %s, a %.2f km | %d días | %.0f cm | %s | %.1f |" % (
             r["id"], r["name"], r["source"], r["km"], r["days"], r["range"],
             " | ".join("%.1f" % r["rms"][c] for c in H.CORRECTIONS), r["rms_nosa"][rep.get("corrections", "FES")]))
+    got_rows = rep.get("validation_got", [])
+    if got_rows:
+        good = [r["rms"] for r in got_rows if r.get("rms") is not None]
+        L += ["", "## Validación GOT5.6 vs tablas oficiales", "",
+              "El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho %d en la posición de estaciones con "
+              "tabla oficial, contra esa tabla: RMS en cm de la diferencia horaria, cada serie sin su media, y cuánto "
+              "del rango de la tabla da el modelo. En el mismo mareógrafo, el lugar más difícil para un modelo global "
+              "(puertos, bahías, el Río de la Plata). Mediana del RMS: %s cm." % (
+                  years[0], "%.1f" % float(np.median(good)) if good else "—"), "",
+              "| Estación | Rango oficial | RMS GOT5.6 | Rango modelo / oficial |", "|---|---|---|---|"]
+        for r in got_rows:
+            if r.get("rms") is None:
+                L.append("| %s %s | — | — | %s |" % (r["key"], r["name"], r.get("why", "")))
+            else:
+                L.append("| %s %s | %.0f cm | %.1f | %.2f |" % (r["key"], r["name"], r["range"], r["rms"], r["ratio"]))
     L += ["", "## Puertos", "",
           "| Clave | Fuente | Nombre | Datum | Rango (cm) | Horas completadas | Ajuste 30 períodos (RMS cm) |",
           "|---|---|---|---|---|---|---|"]
@@ -747,6 +825,8 @@ def main():
         got_n += 1
         log("  %-12s %s %5.0f..%4.0f cm  %d spots" % (c, s["key"], ser["lo"], ser["hi"], len(g)))
     log("GOT5.6: %d model points" % got_n)
+    if got_n:
+        validate_got(st, heights, years[0], rep)
 
     # radius conflicts: a spot that the watch (nearest covering port) would give to another port
     for c, r in sel.items():
