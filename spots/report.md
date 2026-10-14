@@ -68,7 +68,7 @@
 | MX-CAR | 3 | 281 | ncep_gfswave016 | gfs_seamless | 1 | 359 m | 0 |
 | PR-NW | 15 | 794 | ncep_gfswave016 | cmc_gem_seamless | 3 | 202 m | 0 |
 | PR-N | 8 | 569 | ncep_gfswave016 | cmc_gem_seamless | 3 | 388 m | 0 |
-| BB-ALL | 8 | 446 | ncep_gfswave016 | gfs_seamless | 1 | 558 m | 0 |
+| BB-ALL | 8 | 445 | ncep_gfswave016 | gfs_seamless | 1 | 551 m | 0 |
 | DO-ALL | 2 | 245 | ncep_gfswave016 | gfs_seamless | 1 | 178 m | 0 |
 | GP-ALL | 3 | 266 | ncep_gfswave016 | gfs_seamless | 1 | 881 m | 0 |
 | MQ-ALL | 3 | 266 | ncep_gfswave016 | gfs_seamless | 1 | 508 m | 0 |
@@ -137,8 +137,8 @@
 | ID-BAL-E | 12 | 617 | ncep_gfswave016 | gfs_seamless | 1 | 883 m | 0 |
 | ID-JAV-E | 7 | 392 | ncep_gfswave016 | gfs_seamless | 0 | 560 m | 0 |
 | ID-JAV-W | 7 | 420 | ncep_gfswave016 | gfs_seamless | 1 | 1165 m | 0 |
-| ID-LOM | 14 | 648 | ncep_gfswave016 | gfs_seamless | 1 | 467 m | 0 |
-| ID-SBW | 9 | 444 | ncep_gfswave016 | gfs_seamless | 0 | 665 m | 0 |
+| ID-LOM | 14 | 648 | ncep_gfswave016 | gfs_seamless | 1 | 464 m | 0 |
+| ID-SBW | 9 | 445 | ncep_gfswave016 | gfs_seamless | 0 | 664 m | 0 |
 | ID-SMB | 2 | 184 | ncep_gfswave016 | gfs_seamless | 0 | 993 m | 0 |
 | ID-ROT | 4 | 252 | ncep_gfswave016 | gfs_seamless | 0 | 545 m | 0 |
 | ID-MEN | 10 | 477 | ncep_gfswave016 | gfs_seamless | 0 | 355 m | 0 |
@@ -172,7 +172,7 @@
 | ZA-EC-JB | 10 | 627 | ncep_gfswave025 | gfs_seamless | 0 | 159 m | 8 |
 | ZA-EC-PE | 17 | 841 | ncep_gfswave025 | gfs_seamless | 1 | 526 m | 0 |
 | ZA-EC-WLD | 5 | 310 | ncep_gfswave025 | gfs_seamless | 0 | 596 m | 0 |
-| ZA-KZN-DBN | 8 | 416 | ncep_gfswave025 | gfs_seamless | 0 | 610 m | 0 |
+| ZA-KZN-DBN | 8 | 416 | ncep_gfswave025 | gfs_seamless | 0 | 596 m | 0 |
 | ZA-KZN-N | 6 | 371 | ncep_gfswave025 | gfs_seamless | 0 | 450 m | 1 |
 | ZA-KZN-S | 9 | 471 | ncep_gfswave025 | gfs_seamless | 0 | 293 m | 0 |
 | NA-ERO | 3 | 264 | ncep_gfswave025 | gfs_seamless | 0 | 284 m | 0 |
@@ -189,7 +189,7 @@
 | MU-ALL | 3 | 261 | ncep_gfswave025 | gfs_seamless | 1 | 682 m | 0 |
 | CV-ALL | 3 | 277 | ncep_gfswave016 | gfs_seamless | 1 | 835 m | 0 |
 | FR-PBA | 24 | 1077 | ncep_gfswave016 | gfs_seamless | 2 | 353 m | 0 |
-| FR-HOS | 16 | 799 | ncep_gfswave016 | gfs_seamless | 2 | 784 m | 0 |
+| FR-HOS | 16 | 799 | ncep_gfswave016 | gfs_seamless | 2 | 760 m | 0 |
 | FR-GIR | 18 | 905 | ncep_gfswave016 | gfs_seamless | 3 | 617 m | 0 |
 | FR-VEN | 12 | 698 | ncep_gfswave016 | gfs_seamless | 3 | 488 m | 0 |
 | FR-BRE | 15 | 760 | ncep_gfswave016 | gfs_seamless | 3 | 666 m | 0 |
@@ -316,7 +316,7 @@
 | PR-NW | DOMES | K | 91 m | 252° | — |
 | PR-NW | TRES PALMAS | K | 242 m | 216° | — |
 | BB-ALL | SOUP BOWL | K | 51 m | 28° | — |
-| BB-ALL | FREIGHTS BAY | K | 87 m | 175° | — |
+| BB-ALL | FREIGHTS BAY | V | 25 m | 255° | — |
 | DO-ALL | ENCUENTRO | V | 51 m | 18° | — |
 | US-CA-SD | OCEANSIDE PIER | K | 780 m | 234° | — |
 | US-CA-SD | SWAMI'S | K | 187 m | 232° | — |
@@ -471,9 +471,9 @@
 | ID-BAL-E | SHIPWRECKS | L | 1037 m | 327° | — |
 | ID-JAV-E | MONEY TREES | K | 401 m | 287° | — |
 | ID-JAV-W | BATU KARAS | K | 112 m | 81° | — |
-| ID-LOM | DESERT POINT | K | 172 m | 276° | — |
+| ID-LOM | DESERT POINT | V | 142 m | 274° | — |
 | ID-LOM | GERUPUK | K | 136 m | 117° | — |
-| ID-SBW | LAKEY PEAK | K | 100 m | 272° | — |
+| ID-SBW | LAKEY PEAK | V | 99 m | 265° | — |
 | ID-SBW | SCAR REEF | L | 784 m | 322° | — |
 | ID-SBW | SUPERSUCK | K | 210 m | 330° | — |
 | ID-ROT | T-LAND | K | 973 m | 274° | — |
@@ -528,7 +528,7 @@
 | ZA-EC-JB | SEAL POINT | K | 44 m | 74° | — |
 | ZA-EC-PE | NAHOON REEF | K | 246 m | 69° | — |
 | ZA-EC-WLD | COFFEE BAY | K | 100 m | 139° | — |
-| ZA-KZN-DBN | NEW PIER | K | 172 m | 49° | — |
+| ZA-KZN-DBN | NEW PIER | V | 60 m | 70° | — |
 | ZA-KZN-DBN | CAVE ROCK | K | 1403 m | 132° | — |
 | ZA-KZN-N | BALLITO | K | 169 m | 121° | — |
 | NA-ERO | SKELETON BAY | V | 27 m | 321° | — |
@@ -550,7 +550,7 @@
 | FR-HOS | LA GRAVIERE | K | 496 m | 271° | — |
 | FR-HOS | LA NORD | K | 629 m | 273° | — |
 | FR-HOS | LES CULS NULS | K | 760 m | 276° | — |
-| FR-HOS | LES ESTAGNOTS | K | 909 m | 276° | — |
+| FR-HOS | LES ESTAGNOTS | V | 528 m | 272° | — |
 | FR-HOS | LE PENON | K | 1194 m | 284° | — |
 | FR-GIR | LACANAU CENTRALE | K | 94 m | 272° | — |
 | FR-GIR | BISCARROSSE | K | 314 m | 275° | — |
