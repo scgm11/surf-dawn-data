@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-DESERT POINT,-8.7600,115.8230,R,K,local,top,WC; izquierda tubular de Bangko Bangko
+DESERT POINT,-8.7347,115.8363,R,V,osm:way/292730630,top,WC; izquierda tubular de Bangko Bangko; posición OSM
 BLONGAS,-8.8710,115.9590,R,L,local,,Sekotong; posicion dudosa
 SELONG BELANAK,-8.8900,116.1500,B,L,local,,posicion aprox
 BUMBANG,-8.8950,116.1050,R,L,local,,posicion dudosa

@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-LAKEY PEAK,-8.8170,118.3810,R,K,local,top,Hu'u; WC
+LAKEY PEAK,-8.7965,118.3786,R,V,osm:node/4395829390,top,Hu'u; WC; posición OSM
 LAKEY PIPE,-8.8160,118.3760,R,L,local,,Hu'u; posicion aprox
 NUNGAS,-8.8140,118.3670,R,L,local,,Hu'u; posicion aprox
 PERISCOPES,-8.8130,118.3610,R,L,local,,Hu'u; posicion aprox
