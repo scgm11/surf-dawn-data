@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 15:52 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 16:53 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 426 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
+- Puertos nuevos: 425 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 167); más los 3 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 208 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
-- Picos con puerto: 2328 de 2439.
-- Archivos: 10650, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
+- Picos con puerto: 2326 de 2437.
+- Archivos: 10625, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
@@ -322,7 +322,6 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | ticon-3eec34 | ticon3:-14.283,-170.683 | TICON-3 14.283S 170.683W (gesla.uhslc) | MSL+ΣA (MSL+81 cm) | 22..147 | — | 0.7 |
 | ticon-406688 | ticon3:38.533,-28.622 | TICON-3 38.533N 28.622W (gesla.noaa) | MSL+ΣA (MSL+105 cm) | 33..186 | — | 1.2 |
 | ticon-41bc98 | ticon3:-12.068,-77.167 | TICON-3 12.068S 77.167W (gesla.cmems) | MSL+ΣA (MSL+91 cm) | 36..155 | — | 0.7 |
-| ticon-42b1f5 | ticon3:13.775,109.255 | TICON-3 13.775N 109.255E (gesla.uhslc) | MSL+ΣA (MSL+150 cm) | 35..258 | — | 0.8 |
 | ticon-440073 | ticon3:28.936,-95.294 | TICON-3 28.936N 95.294W (gesla.noaa) | MSL+ΣA (MSL+93 cm) | 25..145 | — | 1.1 |
 | ticon-448fcc | ticon3:68.213,14.482 | TICON-3 68.213N 14.482E (gesla.uhslc) | MSL+ΣA (MSL+236 cm) | 66..413 | — | 1.7 |
 | ticon-44917a | ticon3:61.934,5.113 | TICON-3 61.934N 5.113E (gesla.uhslc) | MSL+ΣA (MSL+144 cm) | 37..244 | — | 1.1 |
@@ -536,9 +535,9 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BUSCA VIDA → got-b18ed4
 - Descartadas: `ticon-f5b09a` 61 km, cruza 51 km de tierra; `ticon-890b60` 80 km, cruza 25 km de tierra
 
-### BR-NE-CE — Ceará (13 picos)
+### BR-NE-CE — Ceará (12 picos)
 
-- `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 7 picos a 2.0–102 km, radio 113 km (niveles 2,4)
+- `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 6 picos a 2.0–102 km, radio 113 km (niveles 2,4)
 - `ticon-cf2b1c` TICON-3 4.817S 37.050W (gesla.cmems) — TICON-3, misma costa: 1 picos a 81–81 km, radio 92 km
 - `got-0a9164` GOT5.6 2.497S 44.248W (BR-NE-CE) — modelo global GOT5.6: 2 picos a 0.0–7.9 km, radio 18 km
 - Sin puerto (Open-Meteo): JERICOACOARA, PREÁ, MUNDAÚ (ticon-c1874d a 115 km: cruza 22 km de tierra)
@@ -1369,10 +1368,9 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 - `got-b495c3` GOT5.6 12.787N 80.255E (IN-E) — modelo global GOT5.6: 2 picos a 0.0–20 km, radio 31 km
 - `got-e5aa1d` GOT5.6 11.978N 79.833E (IN-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
-### VN-ALL — Vietnam (5 picos)
+### VN-ALL — Vietnam (4 picos)
 
 - `ticon-458133` TICON-3 10.340N 107.072E (gesla.meds) — TICON-3, misma costa: 2 picos a 3.6–20 km, radio 30 km
-- `ticon-42b1f5` TICON-3 13.775N 109.255E (gesla.uhslc) — TICON-3, misma costa: 1 picos a 6.2–6.2 km, radio 17 km
 - `got-c38d4b` GOT5.6 16.062N 108.249E (VN-ALL) — modelo global GOT5.6: 2 picos a 0.0–7.1 km, radio 18 km
 
 ### KR-ALL — Corea del Sur (6 picos)
