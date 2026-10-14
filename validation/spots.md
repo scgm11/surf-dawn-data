@@ -1,13 +1,13 @@
 # Picos: controles por pico
 
-Generado 2026-10-14 12:55 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
+Generado 2026-10-14 13:46 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
 - **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta 6 km; si no tiene, OpenStreetMap): 279 bien (a menos de 1.5 km), 36 lejos, 77 sin fuente (revisar a mano), 0 sin respuesta.
 - Open-Meteo: 30 pedidos, ~1327 llamadas de las 10.000 diarias gratuitas.
 
-## Orientación probablemente del lado equivocado (26)
+## Orientación probablemente del lado equivocado (6)
 
 Mira a más de 135° de sus vecinos (a 30 km) y de las olas, y dada vuelta coincide con ellos: casi seguro se calculó del otro lado de una punta, una isla o una laguna. Se corrige con `facing=` en la semilla.
 
@@ -16,31 +16,11 @@ Mira a más de 135° de sus vecinos (a 30 km) y de las olas, y dada vuelta coinc
 | AU-NSW-NR | THE PASS | 304° | 86° | 122° |
 | AU-QLD-SC | FIRST POINT | 310° | 86° | 108° |
 | AU-VIC-W | PORT FAIRY EAST | 75° | 229° | 216° |
-| AU-WA-NW | POINT MOORE | 35° | 224° | 231° |
-| AU-WA-PER | MINDARIE | 36° | 260° | 245° |
-| BR-ES | MEAÍPE | 270° | 131° | 91° |
-| BR-RJL | PRAINHAS DO PONTAL | 306° | 156° | 153° |
-| BR-SC-NOR | ILHA DO MEL | 274° | 124° | 120° |
+| BR-RJL | TUCUNS | 314° | 157° | 153° |
 | ES-CN-E | PUNTA MUJERES | 128° | 321° | 344° |
-| FR-BRE | BLANCS SABLONS | 61° | 274° | 278° |
-| FR-PBA | GRANDE PLAGE | 131° | 311° | 301° |
-| IE-NW | EASKEY | 67° | 290° | 290° |
-| LK-S | WELIGAMA | 0° | 192° | 195° |
-| PT-NOR | CABEDELO | 93° | 274° | 304° |
-| US-CA-CEN | PORT SAN LUIS | 100° | 246° | 272° |
-| US-CA-NOR | WESTPORT | 90° | 290° | 296° |
-| US-CA-SC | COWELL'S | 59° | 198° | 255° |
-| US-CA-SC | CARMEL BEACH | 129° | 298° | 296° |
-| US-CA-SF | SURFER'S BEACH | 97° | 263° | 287° |
-| US-FL | LAKE WORTH PIER | 261° | 67° | 61° |
-| US-MID | DEWEY BEACH | 254° | 100° | 108° |
-| US-NE | MATUNUCK | 353° | 135° | 171° |
-| US-NE | ROBERT MOSES | 358° | 174° | 154° |
-| US-NE | SEA BRIGHT | 266° | 109° | 91° |
-| US-SE | WRIGHTSVILLE | 298° | 124° | 112° |
 | ZA-WC-GR | INNER POOL | 331° | 141° | 192° |
 
-## Picos marcados (200)
+## Picos marcados (180)
 
 Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y el semáforo del swell es conservador ahí); se revisan a mano.
 
@@ -62,20 +42,16 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | AU-VIC-W | WYE RIVER |  | 110° | 227° | — | las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) |
 | AU-VIC-W | PORT FAIRY EAST |  | 75° | 216° | 229° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | AU-WA-NW | JAKES POINT | sí | 320° | 243° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) |
-| AU-WA-NW | POINT MOORE |  | 35° | 231° | 224° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| AU-WA-PER | MINDARIE |  | 36° | 245° | 260° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| AU-WA-PER | STRICKLAND BAY | sí | 175° | 256° | 276° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| AU-WA-PER | STRICKLAND BAY | sí | 169° | 256° | 277° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | AU-WA-PER | STARK BAY |  | 163° | 256° | 276° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| BB-ALL | SANDY LANE |  | 262° | 33° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %) |
-| BB-ALL | DRILL HALL |  | 259° | 33° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %) |
-| BB-ALL | SURFERS POINT |  | 235° | 98° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %) |
-| BR-ES | MEAÍPE |  | 270° | 91° | 131° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| BB-ALL | SANDY LANE |  | 262° | 33° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) |
+| BB-ALL | DRILL HALL |  | 259° | 33° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) |
+| BB-ALL | FREIGHTS BAY | sí | 255° | 98° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) |
+| BB-ALL | SURFERS POINT |  | 235° | 98° | 325° | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) |
 | BR-NE-CE | PARACURU |  | 334° | 74° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) |
 | BR-NE-RN | PIPA | sí | 6° | 93° | 59° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) |
-| BR-RJL | PRAINHAS DO PONTAL |  | 306° | 153° | 156° | las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %) |
-| BR-RJL | TUCUNS |  | 314° | 153° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %) |
+| BR-RJL | TUCUNS |  | 314° | 153° | 157° | las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %) |
 | BR-RJL | TARTARUGA |  | 275° | 140° | 165° | las olas casi nunca le entran de frente (1 % de las horas; la zona 91 %) |
-| BR-SC-NOR | ILHA DO MEL |  | 274° | 120° | 124° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | BR-SP | PAÚBA |  | 273° | 158° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
 | BR-SP | CAMBURI |  | 261° | 157° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
 | BR-SP | ILHA COMPRIDA |  | 322° | 139° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
@@ -113,16 +89,14 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | ES-PV | LAGA |  | 60° | 324° | 353° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | ES-PV | MUNDAKA | sí | 60° | 324° | 349° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | FJ-MAM | CLOUDBREAK | sí | 220° | 209° | 254° | 1.1 m de media, más del doble de la zona (0.5 m) |
-| FR-BRE | BLANCS SABLONS |  | 61° | 278° | 274° | las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %) |
 | FR-BRE | LE POULDU |  | 132° | 255° | 221° | las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %) |
-| FR-PBA | GRANDE PLAGE | sí | 131° | 301° | 311° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| FR-PBA | MIRAMAR |  | 180° | 301° | 314° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| FR-PBA | MIRAMAR |  | 180° | 301° | 313° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | FR-VEN | LA TRANCHE |  | 151° | 267° | 211° | las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) |
 | FR-VEN | LA GRANDE COTE |  | 155° | 271° | 247° | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) |
 | GB-CON | TOWAN |  | 73° | 283° | 300° | las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) |
 | GB-CON | CHAPEL PORTH |  | 170° | 283° | 307° | las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) |
 | GB-CON | GODREVY |  | 186° | 292° | 333° | las olas casi nunca le entran de frente (2 % de las horas; la zona 93 %) |
-| GB-SCO | BAY OF SKAILL |  | 16° | 278° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 43 %) |
+| GB-SCO | BAY OF SKAILL |  | 16° | 278° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 40 %) |
 | GH-ALL | BUSUA |  | 92° | 187° | — | las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) |
 | ID-BAL-E | SANUR REEF | sí | 79° | 195° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | ID-BAL-E | MERTASARI |  | 64° | 195° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
@@ -131,20 +105,18 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | ID-BAL-E | PLAYGROUNDS |  | 289° | 197° | 115° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | ID-BAL-W | KUTA REEF |  | 295° | 195° | 238° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | ID-BAL-W | HALFWAY KUTA |  | 312° | 195° | 237° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| ID-LOM | MAWI |  | 0° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) |
-| ID-LOM | KUTA LOMBOK |  | 65° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) |
-| ID-LOM | GERUPUK | sí | 117° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) |
-| ID-LOM | DON DON |  | 0° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) |
-| ID-LOM | EKAS |  | 303° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) |
+| ID-LOM | MAWI |  | 0° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) |
+| ID-LOM | KUTA LOMBOK |  | 65° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) |
+| ID-LOM | GERUPUK | sí | 117° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) |
+| ID-LOM | DON DON |  | 0° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) |
+| ID-LOM | EKAS |  | 303° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) |
 | ID-SBW | SCAR REEF | sí | 322° | 208° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | ID-SBW | SUPERSUCK | sí | 330° | 208° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| IE-NW | MULLAGHMORE | sí | 37° | 283° | 315° | las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) |
-| IE-NW | EASKEY | sí | 67° | 290° | 290° | las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) |
+| IE-NW | MULLAGHMORE | sí | 37° | 283° | 315° | las olas casi nunca le entran de frente (0 % de las horas; la zona 95 %) |
 | IE-SW | ROSSBEIGH |  | 23° | 256° | 242° | las olas casi nunca le entran de frente (1 % de las horas; la zona 96 %) |
 | IS-ALL | THORLAKSHOFN |  | 61° | 197° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) |
 | JP-KYU | AOSHIMA |  | 236° | 96° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) |
 | LK-E | ARUGAM BAY | sí | 22° | 182° | 123° | las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) |
-| LK-S | WELIGAMA | sí | 0° | 195° | 192° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | MA-TAG | BOILERS | sí | 185° | 320° | 230° | las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) |
 | MA-TAG | KILLER POINT | sí | 213° | 320° | 224° | las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) |
 | MA-TAG | ANCHOR POINT | sí | 199° | 320° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) |
@@ -181,59 +153,47 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | PH-SIA | JACKING HORSE | sí | 158° | 52° | 58° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | PR-N | CERRO GORDO |  | 246° | 33° | 7° | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) |
 | PT-ALG | ZAVIAL |  | 173° | 297° | 279° | las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) |
-| PT-NOR | CABEDELO |  | 93° | 304° | 274° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | RE-ALL | BOUCAN CANOT |  | 307° | 208° | 258° | las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) |
 | RE-ALL | BARACHOIS |  | 317° | 119° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) |
 | SV-ORI | LAS FLORES | sí | 121° | 205° | 172° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | TO-ALL | PASS LEFTS |  | 5° | 130° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %) |
 | TO-ALL | PASS RIGHTS |  | 5° | 130° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %) |
 | TT-ALL | MOUNT IRVINE |  | 280° | 82° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-CEN | PIRATE'S COVE |  | 175° | 272° | 250° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
-| US-CA-CEN | PORT SAN LUIS |  | 100° | 272° | 246° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-CEN | SANDSPIT |  | 102° | 280° | 233° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-CEN | PIRATE'S COVE |  | 175° | 272° | 248° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
+| US-CA-CEN | SANDSPIT |  | 102° | 280° | 235° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-CEN | ANDREW MOLERA |  | 181° | 288° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-NOR | WESTPORT |  | 90° | 296° | 290° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | FOUR MILE |  | 145° | 274° | 195° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | NATURAL BRIDGES |  | 156° | 255° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | STEAMER LANE | sí | 130° | 255° | 199° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | COWELL'S |  | 59° | 255° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | PLEASURE POINT | sí | 130° | 255° | 196° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | MORAN LAKE |  | 130° | 255° | 196° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | CAPITOLA |  | 157° | 255° | 195° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | LOVER'S POINT |  | 56° | 296° | 283° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | CARMEL BEACH |  | 129° | 296° | 298° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SC | GHOST TREE | sí | 209° | 296° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | FOUR MILE |  | 145° | 274° | 196° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | NATURAL BRIDGES |  | 156° | 255° | 200° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | STEAMER LANE | sí | 130° | 255° | 201° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | PLEASURE POINT | sí | 130° | 255° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | MORAN LAKE |  | 130° | 255° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | CAPITOLA |  | 157° | 255° | 197° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | LOVER'S POINT |  | 56° | 296° | 288° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SC | GHOST TREE | sí | 209° | 296° | 306° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-SD | LA JOLLA SHORES |  | 298° | 209° | 260° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-SD | BIRD ROCK |  | 0° | 209° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-SD | SOUTH MISSION |  | 349° | 209° | 264° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-SF | LINDA MAR |  | 10° | 287° | 256° | las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) |
-| US-CA-SF | MIRADA SURF |  | 174° | 287° | 265° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-CA-SF | SURFER'S BEACH |  | 97° | 287° | 263° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
+| US-CA-SF | MIRADA SURF |  | 174° | 287° | 264° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-CA-SF | MUIR BEACH |  | 142° | 273° | 270° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-FL | FERNANDINA |  | 251° | 92° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-FL | THE POLES |  | 348° | 83° | 88° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) |
 | US-FL | FORT PIERCE INLET |  | 186° | 74° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) |
 | US-FL | JENSEN BEACH |  | 227° | 72° | 216° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-FL | STUART BEACH |  | 245° | 72° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
-| US-FL | LAKE WORTH PIER |  | 261° | 61° | 67° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-GULF | PADRE SEASHORE |  | 112° | 101° | — | 1.2 m de media, más del doble de la zona (0.6 m) |
 | US-HI-KAU | KALAPAKI |  | 225° | 97° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-HI-OAS | CONCESSIONS |  | 284° | 175° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) |
 | US-HI-OAS | CANOES |  | 268° | 175° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) |
 | US-HI-OAS | QUEENS | sí | 268° | 175° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) |
 | US-HI-OAS | CHINA WALLS |  | 255° | 160° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 96 %) |
-| US-MID | DEWEY BEACH |  | 254° | 108° | 100° | las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %) |
-| US-NE | MATUNUCK |  | 353° | 171° | 135° | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) |
-| US-NE | ROBERT MOSES |  | 358° | 154° | 174° | las olas casi nunca le entran de frente (3 % de las horas; la zona 74 %) |
-| US-NE | SEA BRIGHT |  | 266° | 91° | 109° | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) |
-| US-NE | BEACH HAVEN |  | 276° | 114° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) |
+| US-NE | BEACH HAVEN |  | 276° | 114° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) |
 | US-PNW | HOBUCK |  | 88° | 274° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-PNW | WESTPORT JETTY |  | 44° | 280° | 262° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-PNW | PORT ORFORD |  | 162° | 305° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
 | US-SE | OREGON INLET |  | 322° | 92° | 69° | las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) |
 | US-SE | OCRACOKE |  | 264° | 122° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) |
 | US-SE | SURF CITY PIER |  | 2° | 115° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) |
-| US-SE | WRIGHTSVILLE | sí | 298° | 112° | 124° | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) |
 | VU-ALL | DEVIL'S POINT |  | 225° | 102° | 186° | las olas casi nunca le entran de frente (4 % de las horas; la zona 46 %) |
 | ZA-WC-CPT | LLANDUDNO | sí | 335° | 234° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) |
 | ZA-WC-CPT | DUNGEONS | sí | 101° | 234° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) |
@@ -316,7 +276,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | AU-WA-MR | ncep_gfswave025 | 3.1 m | 97 % |
 | AU-WA-NW | ncep_gfswave025 | 2.0 m | 100 % |
 | AU-WA-PER | ncep_gfswave025 | 2.0 m | 100 % |
-| BB-ALL | ncep_gfswave016 | 1.1 m | 59 % |
+| BB-ALL | ncep_gfswave016 | 1.1 m | 35 % |
 | BR-BA | ncep_gfswave025 | 1.1 m | 100 % |
 | BR-ES | ncep_gfswave025 | 1.2 m | 100 % |
 | BR-NE-CE | ncep_gfswave016 | 1.2 m | 100 % |
@@ -371,7 +331,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | GB-DEV | ncep_gfswave016 | 1.4 m | 92 % |
 | GB-NE | ncep_gfswave025 | 0.8 m | 67 % |
 | GB-NIR | ecmwf_wam | 1.0 m | 82 % |
-| GB-SCO | ncep_gfswave025 | 1.5 m | 43 % |
+| GB-SCO | ncep_gfswave025 | 1.5 m | 40 % |
 | GB-SOU | ncep_gfswave016 | 0.7 m | 89 % |
 | GB-WAL | ncep_gfswave025 | 1.5 m | 89 % |
 | GH-ALL | ncep_gfswave016 | 0.9 m | 100 % |
@@ -383,13 +343,13 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | ID-JAV-E | ncep_gfswave016 | 1.5 m | 0 % |
 | ID-JAV-W | ncep_gfswave016 | 1.6 m | 0 % |
 | ID-KRU | ncep_gfswave016 | 1.9 m | 0 % |
-| ID-LOM | ncep_gfswave016 | 1.8 m | 68 % |
+| ID-LOM | ncep_gfswave016 | 1.8 m | 76 % |
 | ID-MEN | ncep_gfswave016 | 1.2 m | 0 % |
 | ID-NIA | ncep_gfswave016 | 1.3 m | 6 % |
 | ID-ROT | ncep_gfswave016 | 0.9 m | 100 % |
 | ID-SBW | ncep_gfswave016 | 1.5 m | 100 % |
 | ID-SMB | ncep_gfswave016 | 1.5 m | 100 % |
-| IE-NW | ncep_gfswave025 | 2.1 m | 93 % |
+| IE-NW | ncep_gfswave025 | 2.1 m | 95 % |
 | IE-SE | ncep_gfswave016 | 1.5 m | 89 % |
 | IE-SW | ecmwf_wam | 1.6 m | 96 % |
 | IN-E | ncep_gfswave016 | 0.6 m | 100 % |
@@ -489,7 +449,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | US-HI-OAN | ncep_gfswave016 | 1.1 m | 96 % |
 | US-HI-OAS | ecmwf_wam | 1.2 m | 96 % |
 | US-MID | ncep_gfswave025 | 0.8 m | 89 % |
-| US-NE | ecmwf_wam | 0.6 m | 74 % |
+| US-NE | ecmwf_wam | 0.6 m | 82 % |
 | US-PNW | ecmwf_wam | 1.5 m | 100 % |
 | US-SC-GA | ncep_gfswave016 | 0.6 m | 98 % |
 | US-SE | ncep_gfswave025 | 0.8 m | 99 % |

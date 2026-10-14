@@ -105,7 +105,7 @@
   "BB-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 1.09,
-   "median_share": 0.59
+   "median_share": 0.35
   },
   "BR-BA": {
    "model": "ncep_gfswave025",
@@ -380,7 +380,7 @@
   "GB-SCO": {
    "model": "ncep_gfswave025",
    "median_m": 1.51,
-   "median_share": 0.43
+   "median_share": 0.4
   },
   "GB-SOU": {
    "model": "ncep_gfswave016",
@@ -440,7 +440,7 @@
   "ID-LOM": {
    "model": "ncep_gfswave016",
    "median_m": 1.84,
-   "median_share": 0.68
+   "median_share": 0.76
   },
   "ID-MEN": {
    "model": "ncep_gfswave016",
@@ -470,7 +470,7 @@
   "IE-NW": {
    "model": "ncep_gfswave025",
    "median_m": 2.1,
-   "median_share": 0.93
+   "median_share": 0.95
   },
   "IE-SE": {
    "model": "ncep_gfswave016",
@@ -970,7 +970,7 @@
   "US-NE": {
    "model": "ecmwf_wam",
    "median_m": 0.64,
-   "median_share": 0.74
+   "median_share": 0.82
   },
   "US-PNW": {
    "model": "ecmwf_wam",
@@ -1258,38 +1258,14 @@
    "top": true
   },
   {
-   "region": "AU-WA-NW",
-   "spot": "POINT MOORE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 35,
-   "swell": 231,
-   "near": 224,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "AU-WA-PER",
-   "spot": "MINDARIE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 36,
-   "swell": 245,
-   "near": 260,
-   "flipped": true,
-   "top": false
-  },
-  {
    "region": "AU-WA-PER",
    "spot": "STRICKLAND BAY",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
-   "facing": 175,
+   "facing": 169,
    "swell": 256,
-   "near": 276,
+   "near": 277,
    "flipped": false,
    "top": true
   },
@@ -1309,7 +1285,7 @@
    "region": "BB-ALL",
    "spot": "SANDY LANE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %)"
    ],
    "facing": 262,
    "swell": 33,
@@ -1321,7 +1297,7 @@
    "region": "BB-ALL",
    "spot": "DRILL HALL",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %)"
    ],
    "facing": 259,
    "swell": 33,
@@ -1331,26 +1307,26 @@
   },
   {
    "region": "BB-ALL",
-   "spot": "SURFERS POINT",
+   "spot": "FREIGHTS BAY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %)"
    ],
-   "facing": 235,
+   "facing": 255,
    "swell": 98,
    "near": null,
    "flipped": false,
-   "top": false
+   "top": true
   },
   {
-   "region": "BR-ES",
-   "spot": "MEAÍPE",
+   "region": "BB-ALL",
+   "spot": "SURFERS POINT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %)"
    ],
-   "facing": 270,
-   "swell": 91,
-   "near": 131,
-   "flipped": true,
+   "facing": 235,
+   "swell": 98,
+   "near": 325,
+   "flipped": false,
    "top": false
   },
   {
@@ -1379,26 +1355,14 @@
   },
   {
    "region": "BR-RJL",
-   "spot": "PRAINHAS DO PONTAL",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %)"
-   ],
-   "facing": 306,
-   "swell": 153,
-   "near": 156,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "BR-RJL",
    "spot": "TUCUNS",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %)"
    ],
    "facing": 314,
    "swell": 153,
-   "near": null,
-   "flipped": false,
+   "near": 157,
+   "flipped": true,
    "top": false
   },
   {
@@ -1411,18 +1375,6 @@
    "swell": 140,
    "near": 165,
    "flipped": false,
-   "top": false
-  },
-  {
-   "region": "BR-SC-NOR",
-   "spot": "ILHA DO MEL",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 274,
-   "swell": 120,
-   "near": 124,
-   "flipped": true,
    "top": false
   },
   {
@@ -1871,18 +1823,6 @@
   },
   {
    "region": "FR-BRE",
-   "spot": "BLANCS SABLONS",
-   "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %)"
-   ],
-   "facing": 61,
-   "swell": 278,
-   "near": 274,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "FR-BRE",
    "spot": "LE POULDU",
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %)"
@@ -1895,25 +1835,13 @@
   },
   {
    "region": "FR-PBA",
-   "spot": "GRANDE PLAGE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 131,
-   "swell": 301,
-   "near": 311,
-   "flipped": true,
-   "top": true
-  },
-  {
-   "region": "FR-PBA",
    "spot": "MIRAMAR",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
    "facing": 180,
    "swell": 301,
-   "near": 314,
+   "near": 313,
    "flipped": false,
    "top": false
   },
@@ -1981,7 +1909,7 @@
    "region": "GB-SCO",
    "spot": "BAY OF SKAILL",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 43 %)"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 40 %)"
    ],
    "facing": 16,
    "swell": 278,
@@ -2089,7 +2017,7 @@
    "region": "ID-LOM",
    "spot": "MAWI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %)"
    ],
    "facing": 0,
    "swell": 207,
@@ -2101,7 +2029,7 @@
    "region": "ID-LOM",
    "spot": "KUTA LOMBOK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %)"
    ],
    "facing": 65,
    "swell": 207,
@@ -2113,7 +2041,7 @@
    "region": "ID-LOM",
    "spot": "GERUPUK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %)"
    ],
    "facing": 117,
    "swell": 207,
@@ -2125,7 +2053,7 @@
    "region": "ID-LOM",
    "spot": "DON DON",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %)"
    ],
    "facing": 0,
    "swell": 207,
@@ -2137,7 +2065,7 @@
    "region": "ID-LOM",
    "spot": "EKAS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %)"
    ],
    "facing": 303,
    "swell": 208,
@@ -2173,24 +2101,12 @@
    "region": "IE-NW",
    "spot": "MULLAGHMORE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 95 %)"
    ],
    "facing": 37,
    "swell": 283,
    "near": 315,
    "flipped": false,
-   "top": true
-  },
-  {
-   "region": "IE-NW",
-   "spot": "EASKEY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
-   ],
-   "facing": 67,
-   "swell": 290,
-   "near": 290,
-   "flipped": true,
    "top": true
   },
   {
@@ -2239,18 +2155,6 @@
    "swell": 182,
    "near": 123,
    "flipped": false,
-   "top": true
-  },
-  {
-   "region": "LK-S",
-   "spot": "WELIGAMA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 0,
-   "swell": 195,
-   "near": 192,
-   "flipped": true,
    "top": true
   },
   {
@@ -2686,18 +2590,6 @@
    "top": false
   },
   {
-   "region": "PT-NOR",
-   "spot": "CABEDELO",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 93,
-   "swell": 304,
-   "near": 274,
-   "flipped": true,
-   "top": false
-  },
-  {
    "region": "RE-ALL",
    "spot": "BOUCAN CANOT",
    "why": [
@@ -2777,20 +2669,8 @@
    ],
    "facing": 175,
    "swell": 272,
-   "near": 250,
+   "near": 248,
    "flipped": false,
-   "top": false
-  },
-  {
-   "region": "US-CA-CEN",
-   "spot": "PORT SAN LUIS",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 100,
-   "swell": 272,
-   "near": 246,
-   "flipped": true,
    "top": false
   },
   {
@@ -2801,7 +2681,7 @@
    ],
    "facing": 102,
    "swell": 280,
-   "near": 233,
+   "near": 235,
    "flipped": false,
    "top": false
   },
@@ -2818,18 +2698,6 @@
    "top": false
   },
   {
-   "region": "US-CA-NOR",
-   "spot": "WESTPORT",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 90,
-   "swell": 296,
-   "near": 290,
-   "flipped": true,
-   "top": false
-  },
-  {
    "region": "US-CA-SC",
    "spot": "FOUR MILE",
    "why": [
@@ -2837,7 +2705,7 @@
    ],
    "facing": 145,
    "swell": 274,
-   "near": 195,
+   "near": 196,
    "flipped": false,
    "top": false
   },
@@ -2849,7 +2717,7 @@
    ],
    "facing": 156,
    "swell": 255,
-   "near": 198,
+   "near": 200,
    "flipped": false,
    "top": false
   },
@@ -2861,21 +2729,9 @@
    ],
    "facing": 130,
    "swell": 255,
-   "near": 199,
+   "near": 201,
    "flipped": false,
    "top": true
-  },
-  {
-   "region": "US-CA-SC",
-   "spot": "COWELL'S",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 59,
-   "swell": 255,
-   "near": 198,
-   "flipped": true,
-   "top": false
   },
   {
    "region": "US-CA-SC",
@@ -2885,7 +2741,7 @@
    ],
    "facing": 130,
    "swell": 255,
-   "near": 196,
+   "near": 198,
    "flipped": false,
    "top": true
   },
@@ -2897,7 +2753,7 @@
    ],
    "facing": 130,
    "swell": 255,
-   "near": 196,
+   "near": 198,
    "flipped": false,
    "top": false
   },
@@ -2909,7 +2765,7 @@
    ],
    "facing": 157,
    "swell": 255,
-   "near": 195,
+   "near": 197,
    "flipped": false,
    "top": false
   },
@@ -2921,20 +2777,8 @@
    ],
    "facing": 56,
    "swell": 296,
-   "near": 283,
+   "near": 288,
    "flipped": false,
-   "top": false
-  },
-  {
-   "region": "US-CA-SC",
-   "spot": "CARMEL BEACH",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 129,
-   "swell": 296,
-   "near": 298,
-   "flipped": true,
    "top": false
   },
   {
@@ -2945,7 +2789,7 @@
    ],
    "facing": 209,
    "swell": 296,
-   "near": null,
+   "near": 306,
    "flipped": false,
    "top": true
   },
@@ -3005,20 +2849,8 @@
    ],
    "facing": 174,
    "swell": 287,
-   "near": 265,
+   "near": 264,
    "flipped": false,
-   "top": false
-  },
-  {
-   "region": "US-CA-SF",
-   "spot": "SURFER'S BEACH",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 97,
-   "swell": 287,
-   "near": 263,
-   "flipped": true,
    "top": false
   },
   {
@@ -3094,18 +2926,6 @@
    "top": false
   },
   {
-   "region": "US-FL",
-   "spot": "LAKE WORTH PIER",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 261,
-   "swell": 61,
-   "near": 67,
-   "flipped": true,
-   "top": false
-  },
-  {
    "region": "US-GULF",
    "spot": "PADRE SEASHORE",
    "why": [
@@ -3178,58 +2998,10 @@
    "top": false
   },
   {
-   "region": "US-MID",
-   "spot": "DEWEY BEACH",
-   "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %)"
-   ],
-   "facing": 254,
-   "swell": 108,
-   "near": 100,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "US-NE",
-   "spot": "MATUNUCK",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
-   ],
-   "facing": 353,
-   "swell": 171,
-   "near": 135,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "US-NE",
-   "spot": "ROBERT MOSES",
-   "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 74 %)"
-   ],
-   "facing": 358,
-   "swell": 154,
-   "near": 174,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "US-NE",
-   "spot": "SEA BRIGHT",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
-   ],
-   "facing": 266,
-   "swell": 91,
-   "near": 109,
-   "flipped": true,
-   "top": false
-  },
-  {
    "region": "US-NE",
    "spot": "BEACH HAVEN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %)"
    ],
    "facing": 276,
    "swell": 114,
@@ -3308,18 +3080,6 @@
    "near": null,
    "flipped": false,
    "top": false
-  },
-  {
-   "region": "US-SE",
-   "spot": "WRIGHTSVILLE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
-   ],
-   "facing": 298,
-   "swell": 112,
-   "near": 124,
-   "flipped": true,
-   "top": true
   },
   {
    "region": "VU-ALL",
