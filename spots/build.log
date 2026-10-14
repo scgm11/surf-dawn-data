@@ -147,8 +147,6 @@ TW-E         4 spots   279 bytes  v87b437
 TW-NE        6 spots   422 bytes  vedab9f
 IN-W         3 spots   218 bytes  v0ccc16
 IN-E         3 spots   239 bytes  v7ee93f
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 VN-ALL       4 spots   289 bytes  vf15dbc
 KR-ALL       6 spots   368 bytes  v143473
 CN-HAI       2 spots   184 bytes  v5118a4
