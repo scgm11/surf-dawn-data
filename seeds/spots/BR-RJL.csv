@@ -16,6 +16,6 @@ FORTE,-22.8800,-41.9980,B,K,local,,Praia do Forte Cabo Frio
 PERÓ,-22.8440,-41.9360,B,K,local,,Cabo Frio
 GERIBÁ,-22.7800,-41.9100,B,K,local,top,Búzios
 FERRADURA,-22.7820,-41.8720,B,L,local,,Búzios
-TUCUNS,-22.7520,-41.9120,B,L,local,,Búzios
+TUCUNS,-22.7520,-41.9120,B,L,local,facing=140,Búzios; orientación a mano (la calculada miraba a la bahía)
 TARTARUGA,-22.5280,-41.9380,B,L,local,,Rio das Ostras
 COSTAZUL,-22.5330,-41.9100,B,L,local,,Rio das Ostras
