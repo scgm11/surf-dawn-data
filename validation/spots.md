@@ -1,11 +1,11 @@
 # Picos: controles por pico
 
-Generado 2026-10-14 20:07 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
+Generado 2026-10-14 21:18 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 33 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
-- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta 6 km; si no tiene, OpenStreetMap): 289 bien (a menos de 1.5 km), 26 lejos, 77 sin fuente (revisar a mano), 0 sin respuesta.
+- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta 6 km; si no tiene, OpenStreetMap): 289 bien (a menos de 1.5 km), 3 lejos, 23 lejos pero revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), 77 sin fuente (revisar a mano), 0 sin respuesta.
 - Open-Meteo: 35 pedidos, ~2220 llamadas de las 10.000 diarias gratuitas.
 
 ## Orientación probablemente del lado equivocado (5)
@@ -178,31 +178,8 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | Región | Pico | Distancia | Ítem |
 |---|---|---|---|
 | CO-CAR | PUERTO COLOMBIA | 5.3 km | [osm:relation/1335183](https://www.openstreetmap.org/relation/1335183) Puerto Colombia (10.99571, -74.9161) |
-| MA-TAG | BOILERS | 4.7 km | [osm:node/7151636186](https://www.openstreetmap.org/node/7151636186) Boilers Café (30.62494, -9.88) |
 | ZA-KZN-DBN | CAVE ROCK | 4.6 km | [Q31511084](https://www.wikidata.org/wiki/Q31511084) Cave Rock (-29.87998, 31.05608) |
-| US-FL | NEW SMYRNA INLET | 4.1 km | [Q7011545](https://www.wikidata.org/wiki/Q7011545) Aeroportul Municipal New Smyrna Beach (29.05556, -80.94889) |
-| FJ-SOU | FRIGATE PASSAGE | 4.1 km | [Q24570185](https://www.wikidata.org/wiki/Q24570185) Frigate Passage (-18.44472, 177.945) |
-| US-HI-MAU | JAWS | 4.0 km | [Q1684289](https://www.wikidata.org/wiki/Q1684289) Jaws (20.93861, -156.26083) |
-| ZA-WC-CPT | BIG BAY | 3.8 km | [Q61792877](https://www.wikidata.org/wiki/Q61792877) Big Bay Academy (-33.80479, 18.49491) |
-| US-CA-SF | MAVERICKS | 3.5 km | [Q1627108](https://www.wikidata.org/wiki/Q1627108) Mavericks, Kaliforniya (37.48521, -122.46992) |
-| CR-NIC | GUIONES | 3.3 km | [Q23741910](https://www.wikidata.org/wiki/Q23741910) Punta Guiones (9.90806, -85.67083) |
-| CL-PIC | LA PUNTILLA | 3.1 km | [Q22629520](https://www.wikidata.org/wiki/Q22629520) Puntilla Pichilemu (-34.4105, -72.0167) |
-| SV-LIB | PUNTA ROCA | 2.9 km | [Q112020487](https://www.wikidata.org/wiki/Q112020487) Punta Roca Surf Resort (13.48572, -89.34949) |
-| ID-NIA | LAGUNDRI | 2.8 km | [Q12493470](https://www.wikidata.org/wiki/Q12493470) Lagundri (0.595, 97.737) |
-| ID-MEN | HT'S | 2.6 km | [osm:node/8377755317](https://www.openstreetmap.org/node/8377755317) HT'S surf camp katiet (-2.37634, 99.85629) |
-| ID-MEN | LANCE'S LEFT | 2.2 km | [Q61987172](https://www.wikidata.org/wiki/Q61987172) Lance's Right (-2.37567, 99.85954) |
-| MX-OAX | BARRA DE LA CRUZ | 2.2 km | [Q5493820](https://www.wikidata.org/wiki/Q5493820) Barra de la Cruz (15.84056, -95.97083) |
-| CR-PAC | PLAYA HERMOSA | 2.2 km | [Q9067479](https://www.wikidata.org/wiki/Q9067479) Refugi de Vida Silvestre Playa Hermosa-Punta Mala (9.57444, -84.6025) |
-| NZ-OTA | PAPATOWAI | 2.0 km | [Q7615649](https://www.wikidata.org/wiki/Q7615649) Papatowai (-46.55957, 169.46916) |
-| PE-LLB | CHICAMA | 2.0 km | [Q7258550](https://www.wikidata.org/wiki/Q7258550) Puerto Chicama (-7.7, -79.43333) |
-| TW-NE | WAI'AO | 2.0 km | [Q97021077](https://www.wikidata.org/wiki/Q97021077) Wai'ao Village (24.89262, 121.83744) |
-| NZ-TAR | STENT ROAD | 1.7 km | [osm:way/172901710](https://www.openstreetmap.org/way/172901710) Stent Road (-39.23063, 173.79468) |
-| US-HI-OAN | VELZYLAND | 1.7 km | [Q49395692](https://www.wikidata.org/wiki/Q49395692) Velzyland (21.67569, -158.0397) |
-| JP-SHK | KAIFU | 1.7 km | [Q11559321](https://www.wikidata.org/wiki/Q11559321) château de Kaifu (33.59444, 134.35794) |
-| AU-NSW-SYD | NORTH NARRABEEN | 1.7 km | [Q7056174](https://www.wikidata.org/wiki/Q7056174) North Narrabeen (-33.70306, 151.29194) |
 | BR-RJL | ITAÚNA | 1.7 km | [osm:node/651221993](https://www.openstreetmap.org/node/651221993) Itaúna (-22.93355, -42.47566) |
-| AU-VIC-PI | GUNNAMATTA | 1.6 km | [Q21955874](https://www.wikidata.org/wiki/Q21955874) Gunnamatta Beach (-38.45917, 144.87083) |
-| PF-TAH | PAPARA | 1.5 km | [Q120473666](https://www.wikidata.org/wiki/Q120473666) complexe sportif communal Tavana Reia de Papara (-17.7622, -149.50607) |
 
 ## Emblemáticos sin fuente en Wikidata ni OpenStreetMap (revisar a mano)
 
