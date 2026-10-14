@@ -4,7 +4,7 @@ name: Mareas del mundo
 # resumen en tide/report.md.
 on:
   push:
-    branches: [main]
+    branches: [main, zonas-mundo]
     paths:
       - "tools/tide/**"
       - "tools/lib/tide.py"
@@ -16,6 +16,7 @@ on:
     - cron: "41 10 1,15 * *"     # los días 1 y 15 de cada mes, 10:41 UTC
 permissions:
   contents: write
+  actions: write                 # para pedir el build de las zonas cuando cambian los puertos de las regiones
 concurrency:
   group: data-commit-${{ github.ref }}
   cancel-in-progress: false
@@ -47,6 +48,8 @@ jobs:
           key: tides-${{ github.run_id }}
       - name: Publicar
         if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -55,3 +58,8 @@ jobs:
           git commit -m "Mareas: $(date -u +%Y-%m-%d)"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+          # un push con GITHUB_TOKEN no dispara otras Actions: si cambiaron los puertos de las
+          # regiones, las zonas se arman de nuevo (zones.yml lee tide/regions.json)
+          if git diff --name-only HEAD~1 HEAD | grep -q "^tide/regions.json$"; then
+            gh workflow run zones.yml --ref "${GITHUB_REF_NAME}" || echo "no se pudo pedir zones.yml"
+          fi
