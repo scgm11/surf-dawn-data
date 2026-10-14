@@ -307,7 +307,7 @@ def ticon_gauges(zip_path):
     name = [i.filename for i in z.infolist() if i.filename.lower().endswith(".txt")][0]
     gauges = {}
     for ln in z.read(name).decode("utf-8", "replace").splitlines():
-        p = ln.split("\t")
+        p = [x.strip() for x in ln.split("\t")]
         if len(p) < 14:
             p = ln.split()
         if len(p) < 14:
