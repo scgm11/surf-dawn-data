@@ -163,7 +163,7 @@
 | TW-NE | 6 | 422 | ncep_gfswave016 | gfs_seamless | 2 | 604 m | 0 |
 | IN-W | 3 | 284 | ncep_gfswave016 | gfs_seamless | 2 | 617 m | 0 |
 | IN-E | 3 | 306 | ncep_gfswave016 | gfs_seamless | 2 | 474 m | 0 |
-| VN-ALL | 5 | 396 | ncep_gfswave016 | gfs_seamless | 3 | 710 m | 0 |
+| VN-ALL | 5 | 395 | ncep_gfswave016 | gfs_seamless | 3 | 582 m | 0 |
 | KR-ALL | 6 | 439 | ncep_gfswave016 | gfs_seamless | 3 | 105 m | 0 |
 | CN-HAI | 2 | 257 | ncep_gfswave016 | gfs_seamless | 2 | 48 m | 0 |
 | ZA-WC-CPT | 20 | 951 | ncep_gfswave025 | gfs_seamless | 1 | 446 m | 2 |
