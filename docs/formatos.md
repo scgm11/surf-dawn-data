@@ -166,8 +166,10 @@ llevarla a 10 m); `validation/stations.csv`, todas las estaciones leídas con su
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 
 `region,wave,wind,why`. Una región sin fila usa la regla por defecto: olas `ncep_gfswave016`
-entre 15°S y 52,5°N y `ncep_gfswave025` fuera; viento `gfs_seamless`. Uruguay, Santa Catarina y
-Argentina quedan fijos en `ncep_gfswave025` + `gfs_seamless` (como Windguru, decidido en el
-issue #7). Una fila nueva entra por PR con su `validation/<REGIÓN>.json`. En `wave` sólo van modelos
+entre 15°S y 52,5°N y `ncep_gfswave025` fuera; viento `gfs_seamless`. Uruguay, Santa Catarina,
+Rio Grande do Sul y Argentina quedan fijos en `ncep_gfswave025` + `gfs_seamless` (como Windguru,
+decidido en el issue #7). La regla y la lectura de este archivo están una sola vez, en
+`tools/lib/models.py` (las usan `build_zones.py` y `validate/`). Una fila nueva entra por PR con su
+`validation/<REGIÓN>.json`; las de la validación del 2026-10-13 (confianza alta o media) ya están. En `wave` sólo van modelos
 que dan período pico (el reloj lo muestra y puntúa las horas con él): `ecmwf_wam`, `ncep_gfswave016`
 (en su dominio) o `ncep_gfswave025`; MFWAM y DWD EWAM no, sólo dan período medio.

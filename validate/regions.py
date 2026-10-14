@@ -1,5 +1,5 @@
-"""The regions to validate, from the seed tables: spots, centre, default models (the rule of
-tools/build_zones.py and docs/formatos.md) and whether the region is fixed by issue #7."""
+"""The regions to validate, from the seed tables: spots, centre, default models and whether the
+region is fixed by issue #7 (tools/lib/models.py, the rule tools/build_zones.py uses)."""
 import math
 import os
 import sys
@@ -8,11 +8,8 @@ ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)),
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
 from tools.lib import geo, seeds  # noqa: E402
-
-DEFAULT_WIND = "gfs_seamless"
-FIXED_COUNTRIES = {"UY", "AR"}
-FIXED_PREFIXES = ("BR-SC-", "BR-RS")          # Santa Catarina and Rio Grande do Sul
-FIXED_MODELS = ("ncep_gfswave025", "gfs_seamless")
+from tools.lib import models as rule  # noqa: E402
+from tools.lib.models import DEFAULT_WIND, is_fixed  # noqa: E402,F401  (evaluate, report, run)
 MATCH_KM = 150.0                               # a buoy validates a region if this close to one of its spots
 MAX_BUOYS = 3
 CANDIDATES = 5                                 # buoys looked at per region (some may not be representative)
@@ -27,16 +24,8 @@ SEA_MIN = 0.5                                  # the buoy must see at least half
 SEA_DROP = 0.3                                 # ... and not much less than the best buoy of the region
 
 
-def is_fixed(code, country):
-    """Issue #7: Uruguay, Argentina, Santa Catarina and Rio Grande do Sul stay on GFS-Wave 0.25 +
-    GFS (like Windguru). They are validated for information, never moved."""
-    return country in FIXED_COUNTRIES or code.startswith(FIXED_PREFIXES)
-
-
 def default_models(code, country, lat):
-    if is_fixed(code, country):
-        return list(FIXED_MODELS)
-    return ["ncep_gfswave016" if -15.0 <= lat <= 52.5 else "ncep_gfswave025", DEFAULT_WIND]
+    return rule.default(code, country, lat)
 
 
 class Region:
@@ -59,12 +48,7 @@ class Region:
 
 
 def load(models_csv=None):
-    import csv
-    rows = {}
-    path = models_csv or os.path.join(ROOT, "models.csv")
-    if os.path.exists(path):
-        with open(path, newline="", encoding="utf-8") as f:
-            rows = {r["region"]: (r["wave"], r["wind"]) for r in csv.DictReader(f)}
+    rows = rule.read(models_csv)
     out = []
     for code, r in seeds.regions().items():
         sp = [(s["lat"], s["lon"]) for s in seeds.spots(code)]

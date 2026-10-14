@@ -18,7 +18,6 @@ Usage: python3 tools/build_zones.py [--regions CODE ...] [--offline] [--strict]
              the spots in error
 """
 import argparse
-import csv
 import hashlib
 import json
 import math
@@ -28,6 +27,7 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.lib import geo, osm, seeds  # noqa: E402
+from tools.lib import models as rule  # noqa: E402
 
 ROOT = seeds.ROOT
 OUT = os.path.join(ROOT, "spots")
@@ -35,23 +35,6 @@ MAX_BYTES = 6144                     # per file: the face's background process h
 NEAR_KM = 25                         # Spots.RADIUS_KM on the watch: a region's circle reaches this far past its spots
 CELL = 10                            # degrees of a lookup cell (spots/g/)
 FROZEN = {"UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
-FIXED = {"UY", "AR"}                 # countries fixed to today's models (issue #7: Windguru)
-FIXED_REGIONS = {"BR-SC-FLN", "BR-SC-SUL", "BR-SC-NOR", "BR-RS"}
-DEFAULT_WIND = "gfs_seamless"
-
-
-def default_models(code, country, lat):
-    if country in FIXED or code in FIXED_REGIONS:
-        return ["ncep_gfswave025", DEFAULT_WIND]
-    return ["ncep_gfswave016" if -15.0 <= lat <= 52.5 else "ncep_gfswave025", DEFAULT_WIND]
-
-
-def read_models():
-    path = os.path.join(ROOT, "models.csv")
-    if not os.path.exists(path):
-        return {}
-    with open(path, newline="", encoding="utf-8") as f:
-        return {r["region"]: [r["wave"], r["wind"]] for r in csv.DictReader(f)}
 
 
 def read_ports():
@@ -135,7 +118,7 @@ def build_region(code, reg, country, models, ports, offline, rep):
         errs.append("%s: no spot left" % code)
         return None
     clat, clon = geo.center([(s["lat"], s["lon"]) for s in spots])
-    m = models.get(code) or default_models(code, country, clat)
+    m = rule.for_region(code, country, clat, models)
     if not frozen:
         todo = [s for s in spots if s["wave"] is None]
         if todo and not offline:
@@ -228,7 +211,7 @@ def main():
     ap.add_argument("--strict", action="store_true")
     a = ap.parse_args()
     conts, countries, regions = seeds.continents(), seeds.countries(), seeds.regions()
-    models, ports = read_models(), read_ports()
+    models, ports = rule.read(), read_ports()
     want = a.regions or list(regions)
     rep = {"errors": [], "warnings": [], "regions": {}, "offline_waves": 0}
     built = []
