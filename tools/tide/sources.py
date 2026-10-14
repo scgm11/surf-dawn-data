@@ -241,13 +241,14 @@ def _linz_csv(name, year):
 
 
 def _dm(deg, mins, hemi):
-    v = int(deg) + int(mins) / 60.0
+    v = int(deg) + float(mins) / 60.0
     return -v if hemi in "SW" else v
 
 
 def linz_position(name, year):
+    """The port's position in the CSV header: 41°17'S or 41°54.5'S (the minute mark is sometimes missing)."""
     head = _linz_csv(name, year).splitlines()[0]
-    m = re.search(r"(\d+)°\s*(\d+)'\s*([NS])\s*,\s*(\d+)°\s*(\d+)'\s*([EW])", head)
+    m = re.search(r"(\d+)°\s*(\d+(?:\.\d+)?)'?\s*([NS])\s*,\s*(\d+)°\s*(\d+(?:\.\d+)?)'?\s*([EW])", head)
     if not m:
         raise SourceError("linz %s: no position in %r" % (name, head[:80]))
     return _dm(*m.group(1, 2, 3)), _dm(*m.group(4, 5, 6))
