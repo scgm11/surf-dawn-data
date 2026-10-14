@@ -229,7 +229,7 @@
   },
   "CO-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.84,
+   "median_m": 0.83,
    "median_share": 1.0
   },
   "CR-CAR": {
@@ -310,7 +310,7 @@
   "ES-CN-W": {
    "model": "ncep_gfswave016",
    "median_m": 1.15,
-   "median_share": 0.64
+   "median_share": 0.65
   },
   "ES-GAL": {
    "model": "ncep_gfswave016",
@@ -359,12 +359,12 @@
   },
   "GB-CON": {
    "model": "ncep_gfswave016",
-   "median_m": 1.67,
+   "median_m": 1.66,
    "median_share": 0.93
   },
   "GB-DEV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.38,
+   "median_m": 1.37,
    "median_share": 0.92
   },
   "GB-NE": {
@@ -474,7 +474,7 @@
   },
   "IE-SE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.55,
+   "median_m": 1.54,
    "median_share": 0.89
   },
   "IE-SW": {
@@ -504,12 +504,12 @@
   },
   "IT-SAR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.69,
+   "median_m": 0.68,
    "median_share": 0.76
   },
   "JP-CHI": {
    "model": "ncep_gfswave016",
-   "median_m": 2.01,
+   "median_m": 2.0,
    "median_share": 0.99
   },
   "JP-IBA": {
@@ -534,7 +534,7 @@
   },
   "JP-SHO": {
    "model": "ncep_gfswave016",
-   "median_m": 0.84,
+   "median_m": 0.83,
    "median_share": 0.83
   },
   "KR-ALL": {
@@ -544,7 +544,7 @@
   },
   "LK-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.1,
+   "median_m": 1.11,
    "median_share": 0.83
   },
   "LK-S": {
@@ -594,7 +594,7 @@
   },
   "MV-NMA": {
    "model": "ncep_gfswave016",
-   "median_m": 0.82,
+   "median_m": 0.83,
    "median_share": 0.0
   },
   "MV-SMA": {
@@ -625,16 +625,16 @@
   "MX-CAR": {
    "model": "ncep_gfswave016",
    "median_m": 0.91,
-   "median_share": 1.0
+   "median_share": 0.99
   },
   "MX-NAY": {
    "model": "ncep_gfswave016",
-   "median_m": 1.35,
-   "median_share": 0.48
+   "median_m": 1.36,
+   "median_share": 0.49
   },
   "MX-OAX": {
    "model": "ncep_gfswave016",
-   "median_m": 1.6,
+   "median_m": 1.61,
    "median_share": 1.0
   },
   "MX-PAC": {
@@ -664,7 +664,7 @@
   },
   "NI-RIV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.09,
+   "median_m": 1.1,
    "median_share": 1.0
   },
   "NL-ALL": {
@@ -774,7 +774,7 @@
   },
   "PG-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.94,
+   "median_m": 0.95,
    "median_share": 0.7
   },
   "PH-EAS": {
@@ -1044,17 +1044,17 @@
   },
   "ZA-KZN-S": {
    "model": "ncep_gfswave025",
-   "median_m": 1.87,
-   "median_share": 0.83
+   "median_m": 1.88,
+   "median_share": 0.84
   },
   "ZA-WC-CPT": {
    "model": "ncep_gfswave025",
-   "median_m": 2.17,
+   "median_m": 2.16,
    "median_share": 0.73
   },
   "ZA-WC-GR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.96,
+   "median_m": 1.97,
    "median_share": 0.78
   },
   "ZA-WC-WCO": {
@@ -1070,6 +1070,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 62 %)"
    ],
+   "facing": 234,
+   "swell": 110,
+   "near": 119,
+   "flipped": false,
    "top": false
   },
   {
@@ -1078,6 +1082,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 79 %)"
    ],
+   "facing": 250,
+   "swell": 136,
+   "near": 111,
+   "flipped": false,
    "top": false
   },
   {
@@ -1086,6 +1094,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 82 %)"
    ],
+   "facing": 304,
+   "swell": 122,
+   "near": 86,
+   "flipped": true,
    "top": true
   },
   {
@@ -1094,6 +1106,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 258,
+   "swell": 136,
+   "near": 104,
+   "flipped": false,
    "top": false
   },
   {
@@ -1102,6 +1118,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 310,
+   "swell": 108,
+   "near": 86,
+   "flipped": true,
    "top": true
   },
   {
@@ -1110,6 +1130,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 312,
+   "swell": 108,
+   "near": 86,
+   "flipped": false,
    "top": false
   },
   {
@@ -1118,6 +1142,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 142,
+   "swell": 226,
+   "near": 259,
+   "flipped": false,
    "top": false
   },
   {
@@ -1126,6 +1154,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 325,
+   "swell": 235,
+   "near": 244,
+   "flipped": false,
    "top": false
   },
   {
@@ -1134,6 +1166,10 @@
    "why": [
     "3.2 m de media, más del doble de la zona (1.4 m)"
    ],
+   "facing": 314,
+   "swell": 232,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1143,6 +1179,10 @@
     "3.2 m de media, más del doble de la zona (1.4 m)",
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 53 %)"
    ],
+   "facing": 61,
+   "swell": 232,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1151,6 +1191,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 341,
+   "swell": 222,
+   "near": 214,
+   "flipped": false,
    "top": false
   },
   {
@@ -1159,6 +1203,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 127,
+   "swell": 222,
+   "near": 212,
+   "flipped": false,
    "top": false
   },
   {
@@ -1167,6 +1215,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %)"
    ],
+   "facing": 65,
+   "swell": 194,
+   "near": 151,
+   "flipped": false,
    "top": false
   },
   {
@@ -1175,6 +1227,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %)"
    ],
+   "facing": 43,
+   "swell": 226,
+   "near": 159,
+   "flipped": false,
    "top": true
   },
   {
@@ -1183,6 +1239,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 75,
+   "swell": 216,
+   "near": 229,
+   "flipped": true,
    "top": false
   },
   {
@@ -1191,6 +1251,10 @@
    "why": [
     "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %)"
    ],
+   "facing": 320,
+   "swell": 243,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -1199,6 +1263,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 35,
+   "swell": 231,
+   "near": 224,
+   "flipped": true,
    "top": false
   },
   {
@@ -1207,6 +1275,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 36,
+   "swell": 245,
+   "near": 260,
+   "flipped": true,
    "top": false
   },
   {
@@ -1215,6 +1287,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 175,
+   "swell": 256,
+   "near": 276,
+   "flipped": false,
    "top": true
   },
   {
@@ -1223,6 +1299,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 163,
+   "swell": 256,
+   "near": 276,
+   "flipped": false,
    "top": false
   },
   {
@@ -1231,6 +1311,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
    ],
+   "facing": 262,
+   "swell": 33,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1239,6 +1323,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
    ],
+   "facing": 259,
+   "swell": 33,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1247,6 +1335,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %)"
    ],
+   "facing": 235,
+   "swell": 98,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1255,6 +1347,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 270,
+   "swell": 90,
+   "near": 131,
+   "flipped": true,
    "top": false
   },
   {
@@ -1263,6 +1359,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %)"
    ],
+   "facing": 334,
+   "swell": 74,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1271,6 +1371,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %)"
    ],
+   "facing": 6,
+   "swell": 93,
+   "near": 59,
+   "flipped": false,
    "top": true
   },
   {
@@ -1279,6 +1383,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %)"
    ],
+   "facing": 306,
+   "swell": 153,
+   "near": 156,
+   "flipped": true,
    "top": false
   },
   {
@@ -1287,6 +1395,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %)"
    ],
+   "facing": 314,
+   "swell": 153,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1295,6 +1407,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 91 %)"
    ],
+   "facing": 275,
+   "swell": 140,
+   "near": 165,
+   "flipped": false,
    "top": false
   },
   {
@@ -1303,6 +1419,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 274,
+   "swell": 120,
+   "near": 124,
+   "flipped": true,
    "top": false
   },
   {
@@ -1311,6 +1431,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
+   "facing": 273,
+   "swell": 158,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1319,6 +1443,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
+   "facing": 261,
+   "swell": 157,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1327,6 +1455,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 322,
+   "swell": 139,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1335,6 +1467,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 55 %)"
    ],
+   "facing": 19,
+   "swell": 161,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1343,6 +1479,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %)"
    ],
+   "facing": 305,
+   "swell": 221,
+   "near": 283,
+   "flipped": false,
    "top": true
   },
   {
@@ -1351,6 +1491,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 324,
+   "swell": 221,
+   "near": 279,
+   "flipped": false,
    "top": false
   },
   {
@@ -1359,6 +1503,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 68 %)"
    ],
+   "facing": 338,
+   "swell": 249,
+   "near": 326,
+   "flipped": false,
    "top": false
   },
   {
@@ -1367,6 +1515,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 68 %)"
    ],
+   "facing": 357,
+   "swell": 237,
+   "near": 331,
+   "flipped": false,
    "top": false
   },
   {
@@ -1375,6 +1527,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 68 %)"
    ],
+   "facing": 6,
+   "swell": 241,
+   "near": 305,
+   "flipped": false,
    "top": true
   },
   {
@@ -1383,6 +1539,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 68 %)"
    ],
+   "facing": 344,
+   "swell": 241,
+   "near": 307,
+   "flipped": false,
    "top": false
   },
   {
@@ -1391,6 +1551,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 68 %)"
    ],
+   "facing": 358,
+   "swell": 241,
+   "near": 299,
+   "flipped": false,
    "top": true
   },
   {
@@ -1399,6 +1563,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
+   "facing": 312,
+   "swell": 231,
+   "near": 225,
+   "flipped": false,
    "top": false
   },
   {
@@ -1407,6 +1575,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 321,
+   "swell": 55,
+   "near": 15,
+   "flipped": false,
    "top": false
   },
   {
@@ -1415,6 +1587,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 144,
+   "swell": 238,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1423,6 +1599,10 @@
    "why": [
     "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %)"
    ],
+   "facing": 331,
+   "swell": 232,
+   "near": 249,
+   "flipped": false,
    "top": false
   },
   {
@@ -1431,6 +1611,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 71 %)"
    ],
+   "facing": 311,
+   "swell": 218,
+   "near": 245,
+   "flipped": false,
    "top": false
   },
   {
@@ -1439,6 +1623,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 355,
+   "swell": 237,
+   "near": 278,
+   "flipped": false,
    "top": false
   },
   {
@@ -1447,6 +1635,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 49 %)"
    ],
+   "facing": 322,
+   "swell": 212,
+   "near": 262,
+   "flipped": false,
    "top": false
   },
   {
@@ -1455,6 +1647,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 49 %)"
    ],
+   "facing": 298,
+   "swell": 212,
+   "near": 269,
+   "flipped": false,
    "top": true
   },
   {
@@ -1463,6 +1659,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 41 %)"
    ],
+   "facing": 191,
+   "swell": 74,
+   "near": 227,
+   "flipped": false,
    "top": false
   },
   {
@@ -1471,6 +1671,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 96,
+   "swell": 335,
+   "near": 9,
+   "flipped": false,
    "top": false
   },
   {
@@ -1479,6 +1683,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 76,
+   "swell": 327,
+   "near": 334,
+   "flipped": false,
    "top": true
   },
   {
@@ -1487,6 +1695,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 91,
+   "swell": 331,
+   "near": 329,
+   "flipped": false,
    "top": false
   },
   {
@@ -1495,6 +1707,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %)"
    ],
+   "facing": 128,
+   "swell": 344,
+   "near": 321,
+   "flipped": true,
    "top": false
   },
   {
@@ -1503,6 +1719,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 64 %)"
    ],
+   "facing": 88,
+   "swell": 343,
+   "near": 275,
+   "flipped": false,
    "top": false
   },
   {
@@ -1511,30 +1731,70 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %)"
    ],
+   "facing": 218,
+   "swell": 344,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
    "region": "ES-CN-W",
    "spot": "LAS CANTERAS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %)"
    ],
+   "facing": 215,
+   "swell": 356,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
    "region": "ES-CN-W",
    "spot": "EL FRONTON",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %)"
    ],
+   "facing": 221,
+   "swell": 355,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
    "region": "ES-CN-W",
    "spot": "SARDINA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %)"
    ],
+   "facing": 215,
+   "swell": 355,
+   "near": null,
+   "flipped": false,
+   "top": false
+  },
+  {
+   "region": "ES-CN-W",
+   "spot": "EL CAMISON",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 65 %)"
+   ],
+   "facing": 293,
+   "swell": 165,
+   "near": null,
+   "flipped": false,
+   "top": false
+  },
+  {
+   "region": "ES-CN-W",
+   "spot": "PUNTA BLANCA",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 65 %)"
+   ],
+   "facing": 293,
+   "swell": 165,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1543,6 +1803,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 96 %)"
    ],
+   "facing": 81,
+   "swell": 313,
+   "near": 302,
+   "flipped": false,
    "top": false
   },
   {
@@ -1551,6 +1815,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 59,
+   "swell": 309,
+   "near": 330,
+   "flipped": false,
    "top": false
   },
   {
@@ -1559,6 +1827,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 97,
+   "swell": 327,
+   "near": 352,
+   "flipped": false,
    "top": false
   },
   {
@@ -1567,6 +1839,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 196,
+   "swell": 315,
+   "near": 18,
+   "flipped": false,
    "top": false
   },
   {
@@ -1575,6 +1851,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 60,
+   "swell": 324,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1583,6 +1863,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 60,
+   "swell": 324,
+   "near": 345,
+   "flipped": false,
    "top": true
   },
   {
@@ -1591,6 +1875,10 @@
    "why": [
     "1.1 m de media, más del doble de la zona (0.5 m)"
    ],
+   "facing": 220,
+   "swell": 209,
+   "near": 254,
+   "flipped": false,
    "top": true
   },
   {
@@ -1599,6 +1887,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %)"
    ],
+   "facing": 61,
+   "swell": 278,
+   "near": 274,
+   "flipped": true,
    "top": false
   },
   {
@@ -1607,6 +1899,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %)"
    ],
+   "facing": 132,
+   "swell": 255,
+   "near": 221,
+   "flipped": false,
    "top": false
   },
   {
@@ -1615,6 +1911,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 131,
+   "swell": 301,
+   "near": 311,
+   "flipped": true,
    "top": true
   },
   {
@@ -1623,6 +1923,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 180,
+   "swell": 301,
+   "near": 314,
+   "flipped": false,
    "top": false
   },
   {
@@ -1631,6 +1935,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %)"
    ],
+   "facing": 151,
+   "swell": 267,
+   "near": 211,
+   "flipped": false,
    "top": false
   },
   {
@@ -1639,6 +1947,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 155,
+   "swell": 271,
+   "near": 247,
+   "flipped": false,
    "top": false
   },
   {
@@ -1647,6 +1959,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
    ],
+   "facing": 73,
+   "swell": 283,
+   "near": 300,
+   "flipped": false,
    "top": false
   },
   {
@@ -1655,6 +1971,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
    ],
+   "facing": 170,
+   "swell": 283,
+   "near": 307,
+   "flipped": false,
    "top": false
   },
   {
@@ -1663,6 +1983,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 93 %)"
    ],
+   "facing": 186,
+   "swell": 292,
+   "near": 333,
+   "flipped": false,
    "top": false
   },
   {
@@ -1671,6 +1995,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 43 %)"
    ],
+   "facing": 16,
+   "swell": 278,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1679,6 +2007,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %)"
    ],
+   "facing": 139,
+   "swell": 248,
+   "near": 225,
+   "flipped": false,
    "top": false
   },
   {
@@ -1687,6 +2019,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %)"
    ],
+   "facing": 92,
+   "swell": 187,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1695,6 +2031,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 79,
+   "swell": 195,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -1703,6 +2043,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 64,
+   "swell": 195,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1711,6 +2055,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 327,
+   "swell": 197,
+   "near": 120,
+   "flipped": false,
    "top": true
   },
   {
@@ -1719,6 +2067,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 23,
+   "swell": 197,
+   "near": 125,
+   "flipped": false,
    "top": false
   },
   {
@@ -1727,6 +2079,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 289,
+   "swell": 197,
+   "near": 115,
+   "flipped": false,
    "top": false
   },
   {
@@ -1735,6 +2091,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 295,
+   "swell": 195,
+   "near": 238,
+   "flipped": false,
    "top": false
   },
   {
@@ -1743,6 +2103,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 312,
+   "swell": 195,
+   "near": 237,
+   "flipped": false,
    "top": false
   },
   {
@@ -1751,6 +2115,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 0,
+   "swell": 207,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1759,6 +2127,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 65,
+   "swell": 207,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1767,6 +2139,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 117,
+   "swell": 207,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -1775,6 +2151,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 0,
+   "swell": 207,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1783,6 +2163,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 303,
+   "swell": 208,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1791,6 +2175,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 322,
+   "swell": 208,
+   "near": 234,
+   "flipped": false,
    "top": true
   },
   {
@@ -1799,6 +2187,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 330,
+   "swell": 208,
+   "near": 234,
+   "flipped": false,
    "top": true
   },
   {
@@ -1807,6 +2199,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
    ],
+   "facing": 37,
+   "swell": 283,
+   "near": 314,
+   "flipped": false,
    "top": true
   },
   {
@@ -1815,6 +2211,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %)"
    ],
+   "facing": 67,
+   "swell": 290,
+   "near": 290,
+   "flipped": true,
    "top": true
   },
   {
@@ -1823,6 +2223,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %)"
    ],
+   "facing": 23,
+   "swell": 257,
+   "near": 238,
+   "flipped": false,
    "top": false
   },
   {
@@ -1831,6 +2235,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %)"
    ],
+   "facing": 61,
+   "swell": 197,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1839,6 +2247,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %)"
    ],
+   "facing": 236,
+   "swell": 96,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1847,6 +2259,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %)"
    ],
+   "facing": 22,
+   "swell": 182,
+   "near": 123,
+   "flipped": false,
    "top": true
   },
   {
@@ -1855,6 +2271,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 0,
+   "swell": 195,
+   "near": 192,
+   "flipped": true,
    "top": true
   },
   {
@@ -1863,6 +2283,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 185,
+   "swell": 320,
+   "near": 230,
+   "flipped": false,
    "top": true
   },
   {
@@ -1871,6 +2295,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 213,
+   "swell": 320,
+   "near": 224,
+   "flipped": false,
    "top": true
   },
   {
@@ -1879,6 +2307,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 199,
+   "swell": 320,
+   "near": 225,
+   "flipped": false,
    "top": true
   },
   {
@@ -1887,6 +2319,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 189,
+   "swell": 320,
+   "near": 226,
+   "flipped": false,
    "top": false
   },
   {
@@ -1895,6 +2331,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 188,
+   "swell": 320,
+   "near": 226,
+   "flipped": false,
    "top": true
   },
   {
@@ -1903,6 +2343,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 199,
+   "swell": 320,
+   "near": 225,
+   "flipped": false,
    "top": false
   },
   {
@@ -1911,6 +2355,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 200,
+   "swell": 320,
+   "near": 225,
+   "flipped": false,
    "top": false
   },
   {
@@ -1919,6 +2367,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %)"
    ],
+   "facing": 153,
+   "swell": 322,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1927,6 +2379,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %)"
    ],
+   "facing": 299,
+   "swell": 211,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -1935,6 +2391,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %)"
    ],
+   "facing": 317,
+   "swell": 203,
+   "near": 206,
+   "flipped": false,
    "top": false
   },
   {
@@ -1943,6 +2403,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 88 %)"
    ],
+   "facing": 270,
+   "swell": 149,
+   "near": 99,
+   "flipped": false,
    "top": false
   },
   {
@@ -1951,14 +2415,22 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %)"
    ],
+   "facing": 90,
+   "swell": 216,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
    "region": "MX-NAY",
    "spot": "SAYULITA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 48 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 49 %)"
    ],
+   "facing": 353,
+   "swell": 227,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -1967,6 +2439,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 123,
+   "swell": 219,
+   "near": 187,
+   "flipped": false,
    "top": false
   },
   {
@@ -1975,6 +2451,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 84 %)"
    ],
+   "facing": 14,
+   "swell": 107,
+   "near": 104,
+   "flipped": false,
    "top": false
   },
   {
@@ -1983,6 +2463,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 321,
+   "swell": 218,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -1991,6 +2475,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 146,
+   "swell": 247,
+   "near": 247,
+   "flipped": false,
    "top": false
   },
   {
@@ -1999,6 +2487,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 127,
+   "swell": 247,
+   "near": 246,
+   "flipped": false,
    "top": false
   },
   {
@@ -2007,6 +2499,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %)"
    ],
+   "facing": 358,
+   "swell": 243,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2015,6 +2511,10 @@
    "why": [
     "2.2 m de media, más del doble de la zona (1.1 m)"
    ],
+   "facing": 235,
+   "swell": 227,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2023,6 +2523,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %)"
    ],
+   "facing": 284,
+   "swell": 148,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2031,6 +2535,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %)"
    ],
+   "facing": 311,
+   "swell": 148,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2039,6 +2547,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %)"
    ],
+   "facing": 353,
+   "swell": 148,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2047,6 +2559,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %)"
    ],
+   "facing": 43,
+   "swell": 268,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2055,6 +2571,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 258,
+   "swell": 170,
+   "near": 210,
+   "flipped": false,
    "top": false
   },
   {
@@ -2063,6 +2583,10 @@
    "why": [
     "0.9 m de media, más del doble de la zona (0.4 m)"
    ],
+   "facing": 235,
+   "swell": 210,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2071,6 +2595,10 @@
    "why": [
     "0.8 m de media, más del doble de la zona (0.4 m)"
    ],
+   "facing": 153,
+   "swell": 199,
+   "near": 209,
+   "flipped": false,
    "top": false
   },
   {
@@ -2079,6 +2607,10 @@
    "why": [
     "1.1 m de media, más del doble de la zona (0.4 m)"
    ],
+   "facing": 183,
+   "swell": 212,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2087,6 +2619,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 336,
+   "swell": 217,
+   "near": 232,
+   "flipped": false,
    "top": true
   },
   {
@@ -2095,6 +2631,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 327,
+   "swell": 226,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2103,6 +2643,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %)"
    ],
+   "facing": 316,
+   "swell": 225,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2111,6 +2655,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %)"
    ],
+   "facing": 339,
+   "swell": 233,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2119,6 +2667,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %)"
    ],
+   "facing": 309,
+   "swell": 225,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2127,6 +2679,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 158,
+   "swell": 52,
+   "near": 58,
+   "flipped": false,
    "top": true
   },
   {
@@ -2135,6 +2691,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %)"
    ],
+   "facing": 246,
+   "swell": 33,
+   "near": 7,
+   "flipped": false,
    "top": false
   },
   {
@@ -2143,6 +2703,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %)"
    ],
+   "facing": 174,
+   "swell": 297,
+   "near": 279,
+   "flipped": false,
    "top": false
   },
   {
@@ -2151,6 +2715,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 93,
+   "swell": 304,
+   "near": 274,
+   "flipped": true,
    "top": false
   },
   {
@@ -2159,6 +2727,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %)"
    ],
+   "facing": 307,
+   "swell": 208,
+   "near": 258,
+   "flipped": false,
    "top": false
   },
   {
@@ -2167,6 +2739,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %)"
    ],
+   "facing": 317,
+   "swell": 119,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2175,6 +2751,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 121,
+   "swell": 205,
+   "near": 172,
+   "flipped": false,
    "top": true
   },
   {
@@ -2183,6 +2763,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %)"
    ],
+   "facing": 5,
+   "swell": 128,
+   "near": 271,
+   "flipped": false,
    "top": false
   },
   {
@@ -2191,6 +2775,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %)"
    ],
+   "facing": 5,
+   "swell": 128,
+   "near": 271,
+   "flipped": false,
    "top": false
   },
   {
@@ -2199,6 +2787,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 280,
+   "swell": 82,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2207,6 +2799,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
+   "facing": 175,
+   "swell": 272,
+   "near": 250,
+   "flipped": false,
    "top": false
   },
   {
@@ -2215,6 +2811,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 100,
+   "swell": 272,
+   "near": 246,
+   "flipped": true,
    "top": false
   },
   {
@@ -2223,6 +2823,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 102,
+   "swell": 280,
+   "near": 233,
+   "flipped": false,
    "top": false
   },
   {
@@ -2231,6 +2835,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 181,
+   "swell": 288,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2239,6 +2847,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 90,
+   "swell": 296,
+   "near": 290,
+   "flipped": true,
    "top": false
   },
   {
@@ -2247,6 +2859,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 145,
+   "swell": 274,
+   "near": 195,
+   "flipped": false,
    "top": false
   },
   {
@@ -2255,6 +2871,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 156,
+   "swell": 255,
+   "near": 198,
+   "flipped": false,
    "top": false
   },
   {
@@ -2263,6 +2883,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 130,
+   "swell": 255,
+   "near": 199,
+   "flipped": false,
    "top": true
   },
   {
@@ -2271,6 +2895,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 59,
+   "swell": 255,
+   "near": 198,
+   "flipped": true,
    "top": false
   },
   {
@@ -2279,6 +2907,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 130,
+   "swell": 255,
+   "near": 196,
+   "flipped": false,
    "top": true
   },
   {
@@ -2287,6 +2919,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 130,
+   "swell": 255,
+   "near": 196,
+   "flipped": false,
    "top": false
   },
   {
@@ -2295,6 +2931,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 157,
+   "swell": 255,
+   "near": 195,
+   "flipped": false,
    "top": false
   },
   {
@@ -2303,6 +2943,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 56,
+   "swell": 296,
+   "near": 283,
+   "flipped": false,
    "top": false
   },
   {
@@ -2311,6 +2955,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 129,
+   "swell": 296,
+   "near": 298,
+   "flipped": true,
    "top": false
   },
   {
@@ -2319,6 +2967,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 209,
+   "swell": 296,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2327,6 +2979,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 298,
+   "swell": 209,
+   "near": 260,
+   "flipped": false,
    "top": false
   },
   {
@@ -2335,6 +2991,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 0,
+   "swell": 209,
+   "near": 259,
+   "flipped": false,
    "top": false
   },
   {
@@ -2343,6 +3003,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 349,
+   "swell": 209,
+   "near": 264,
+   "flipped": false,
    "top": false
   },
   {
@@ -2351,6 +3015,10 @@
    "why": [
     "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %)"
    ],
+   "facing": 10,
+   "swell": 287,
+   "near": 256,
+   "flipped": false,
    "top": false
   },
   {
@@ -2359,6 +3027,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 174,
+   "swell": 287,
+   "near": 265,
+   "flipped": false,
    "top": false
   },
   {
@@ -2367,6 +3039,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 97,
+   "swell": 287,
+   "near": 263,
+   "flipped": true,
    "top": false
   },
   {
@@ -2375,6 +3051,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 142,
+   "swell": 273,
+   "near": 270,
+   "flipped": false,
    "top": false
   },
   {
@@ -2383,6 +3063,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 251,
+   "swell": 92,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2391,6 +3075,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %)"
    ],
+   "facing": 348,
+   "swell": 83,
+   "near": 88,
+   "flipped": false,
    "top": false
   },
   {
@@ -2399,6 +3087,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %)"
    ],
+   "facing": 186,
+   "swell": 74,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2407,6 +3099,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 227,
+   "swell": 72,
+   "near": 216,
+   "flipped": false,
    "top": false
   },
   {
@@ -2415,6 +3111,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 245,
+   "swell": 72,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2423,6 +3123,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 261,
+   "swell": 61,
+   "near": 67,
+   "flipped": true,
    "top": false
   },
   {
@@ -2431,6 +3135,10 @@
    "why": [
     "1.2 m de media, más del doble de la zona (0.6 m)"
    ],
+   "facing": 112,
+   "swell": 101,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2439,6 +3147,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 225,
+   "swell": 97,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2447,6 +3159,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %)"
    ],
+   "facing": 284,
+   "swell": 175,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2455,6 +3171,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %)"
    ],
+   "facing": 268,
+   "swell": 175,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2463,6 +3183,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %)"
    ],
+   "facing": 268,
+   "swell": 175,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2471,6 +3195,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 96 %)"
    ],
+   "facing": 255,
+   "swell": 160,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2479,6 +3207,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %)"
    ],
+   "facing": 254,
+   "swell": 107,
+   "near": 100,
+   "flipped": true,
    "top": false
   },
   {
@@ -2487,6 +3219,10 @@
    "why": [
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 74 %)"
    ],
+   "facing": 353,
+   "swell": 171,
+   "near": 135,
+   "flipped": true,
    "top": false
   },
   {
@@ -2495,6 +3231,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 74 %)"
    ],
+   "facing": 358,
+   "swell": 154,
+   "near": 174,
+   "flipped": true,
    "top": false
   },
   {
@@ -2503,6 +3243,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
    ],
+   "facing": 266,
+   "swell": 91,
+   "near": 109,
+   "flipped": true,
    "top": false
   },
   {
@@ -2511,6 +3255,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
    ],
+   "facing": 276,
+   "swell": 114,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2519,6 +3267,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 88,
+   "swell": 274,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2527,6 +3279,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 44,
+   "swell": 280,
+   "near": 262,
+   "flipped": false,
    "top": false
   },
   {
@@ -2535,6 +3291,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
+   "facing": 162,
+   "swell": 305,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2543,6 +3303,10 @@
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %)"
    ],
+   "facing": 322,
+   "swell": 92,
+   "near": 69,
+   "flipped": false,
    "top": false
   },
   {
@@ -2551,6 +3315,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 264,
+   "swell": 122,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2559,6 +3327,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %)"
    ],
+   "facing": 2,
+   "swell": 115,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2567,6 +3339,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
+   "facing": 298,
+   "swell": 112,
+   "near": 124,
+   "flipped": true,
    "top": true
   },
   {
@@ -2575,6 +3351,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 46 %)"
    ],
+   "facing": 225,
+   "swell": 102,
+   "near": 186,
+   "flipped": false,
    "top": false
   },
   {
@@ -2583,6 +3363,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 335,
+   "swell": 234,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2591,6 +3375,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 101,
+   "swell": 234,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2599,6 +3387,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 73 %)"
    ],
+   "facing": 320,
+   "swell": 233,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2607,6 +3399,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 343,
+   "swell": 233,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2615,6 +3411,10 @@
    "why": [
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 73 %)"
    ],
+   "facing": 127,
+   "swell": 222,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2623,6 +3423,10 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 73 %)"
    ],
+   "facing": 122,
+   "swell": 222,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2631,6 +3435,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 332,
+   "swell": 215,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2639,6 +3447,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %)"
    ],
+   "facing": 328,
+   "swell": 215,
+   "near": null,
+   "flipped": false,
    "top": false
   },
   {
@@ -2647,6 +3459,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 78 %)"
    ],
+   "facing": 331,
+   "swell": 192,
+   "near": 141,
+   "flipped": true,
    "top": true
   },
   {
@@ -2655,6 +3471,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 27 %)"
    ],
+   "facing": 339,
+   "swell": 245,
+   "near": null,
+   "flipped": false,
    "top": true
   },
   {
@@ -2663,6 +3483,10 @@
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 27 %)"
    ],
+   "facing": 351,
+   "swell": 237,
+   "near": null,
+   "flipped": false,
    "top": false
   }
  ],
@@ -2671,11 +3495,13 @@
    "km": 0.22,
    "qid": "Q30262816",
    "label": "Instituto de Biología Marina",
-   "lat": -38.0298,
-   "lon": -57.5312,
+   "wd_lat": -38.03122,
+   "wd_lon": -57.53301,
    "status": "ok",
    "region": "AR-MDP",
-   "spot": "BIOLOGÍA"
+   "spot": "BIOLOGÍA",
+   "lat": -38.0298,
+   "lon": -57.5312
   },
   {
    "status": "sin fuente",
@@ -2688,161 +3514,193 @@
    "km": 0.23,
    "qid": "Q84504583",
    "label": "Museo Unidad Turística Chapadmalal Eva Perón",
-   "lat": -38.1799,
-   "lon": -57.6501,
+   "wd_lat": -38.17805,
+   "wd_lon": -57.65137,
    "status": "ok",
    "region": "AR-MDP",
-   "spot": "CHAPADMALAL"
+   "spot": "CHAPADMALAL",
+   "lat": -38.1799,
+   "lon": -57.6501
   },
   {
    "km": 0.41,
    "qid": "Q93821278",
    "label": "Comir Centro Oftalmologico Miramar",
-   "lat": -38.2758,
-   "lon": -57.8321,
+   "wd_lat": -38.27233,
+   "wd_lon": -57.83364,
    "status": "ok",
    "region": "AR-MDP",
-   "spot": "MIRAMAR"
+   "spot": "MIRAMAR",
+   "lat": -38.2758,
+   "lon": -57.8321
   },
   {
    "km": 0.29,
    "qid": "Q111386484",
    "label": "Quequen",
-   "lat": -38.5811,
-   "lon": -58.7017,
+   "wd_lat": -38.58333,
+   "wd_lon": -58.7,
    "status": "ok",
    "region": "AR-MDP",
-   "spot": "QUEQUÉN"
+   "spot": "QUEQUÉN",
+   "lat": -38.5811,
+   "lon": -58.7017
   },
   {
    "km": 0.23,
    "qid": "Q123630475",
    "label": "SCOTTS HEAD POST OFFICE",
-   "lat": -30.7484,
-   "lon": 153.0015,
+   "wd_lat": -30.75,
+   "wd_lon": 153.0,
    "status": "ok",
    "region": "AU-NSW-MN",
-   "spot": "SCOTTS HEAD"
+   "spot": "SCOTTS HEAD",
+   "lat": -30.7484,
+   "lon": 153.0015
   },
   {
    "km": 0.66,
    "qid": "Q5184368",
    "label": "Crescent Head",
-   "lat": -31.1905,
-   "lon": 152.983,
+   "wd_lat": -31.19,
+   "wd_lon": 152.97611,
    "status": "ok",
    "region": "AU-NSW-MN",
-   "spot": "CRESCENT HEAD"
+   "spot": "CRESCENT HEAD",
+   "lat": -31.1905,
+   "lon": 152.983
   },
   {
    "km": 0.24,
    "qid": "Q21957213",
    "label": "Bar Beach",
-   "lat": -32.9416,
-   "lon": 151.7698,
+   "wd_lat": -32.9402,
+   "wd_lon": 151.7679,
    "status": "ok",
    "region": "AU-NSW-NC",
-   "spot": "BAR BEACH"
+   "spot": "BAR BEACH",
+   "lat": -32.9416,
+   "lon": 151.7698
   },
   {
    "km": 0.43,
    "qid": "Q21957003",
    "label": "Merewether Beach",
-   "lat": -32.9517,
-   "lon": 151.7569,
+   "wd_lat": -32.94861,
+   "wd_lon": 151.75972,
    "status": "ok",
    "region": "AU-NSW-NC",
-   "spot": "MEREWETHER"
+   "spot": "MEREWETHER",
+   "lat": -32.9517,
+   "lon": 151.7569
   },
   {
    "km": 0.24,
    "qid": "Q130427047",
    "label": "The Pass",
-   "lat": -28.6392,
-   "lon": 153.6273,
+   "wd_lat": -28.6372,
+   "wd_lon": 153.62814,
    "status": "ok",
    "region": "AU-NSW-NR",
-   "spot": "THE PASS"
+   "spot": "THE PASS",
+   "lat": -28.6392,
+   "lon": 153.6273
   },
   {
    "km": 0.2,
    "qid": "Q4973384",
    "label": "Broken Head Nature Reserve",
-   "lat": -28.7093,
-   "lon": 153.618,
+   "wd_lat": -28.709,
+   "wd_lon": 153.616,
    "status": "ok",
    "region": "AU-NSW-NR",
-   "spot": "BROKEN HEAD"
+   "spot": "BROKEN HEAD",
+   "lat": -28.7093,
+   "lon": 153.618
   },
   {
    "km": 0.3,
    "qid": "Q123630175",
    "label": "LENNOX HEAD",
-   "lat": -28.8026,
-   "lon": 153.5991,
+   "wd_lat": -28.8,
+   "wd_lon": 153.6,
    "status": "ok",
    "region": "AU-NSW-NR",
-   "spot": "LENNOX HEAD"
+   "spot": "LENNOX HEAD",
+   "lat": -28.8026,
+   "lon": 153.5991
   },
   {
    "km": 0.43,
    "qid": "Q4763883",
    "label": "Angourie Point",
-   "lat": -29.4818,
-   "lon": 153.3648,
+   "wd_lat": -29.4779,
+   "wd_lon": 153.36489,
    "status": "ok",
    "region": "AU-NSW-NR",
-   "spot": "ANGOURIE POINT"
+   "spot": "ANGOURIE POINT",
+   "lat": -29.4818,
+   "lon": 153.3648
   },
   {
    "km": 0.79,
    "qid": "Q17001781",
    "label": "Bulli Jetty, Sandon Point, New South Wales",
-   "lat": -34.3228,
-   "lon": 150.9251,
+   "wd_lat": -34.32965,
+   "wd_lon": 150.92733,
    "status": "ok",
    "region": "AU-NSW-SC",
-   "spot": "SANDON POINT"
+   "spot": "SANDON POINT",
+   "lat": -34.3228,
+   "lon": 150.9251
   },
   {
    "km": 1.67,
    "qid": "Q7056174",
    "label": "North Narrabeen",
-   "lat": -33.7037,
-   "lon": 151.31,
+   "wd_lat": -33.70306,
+   "wd_lon": 151.29194,
    "status": "lejos",
    "region": "AU-NSW-SYD",
-   "spot": "NORTH NARRABEEN"
+   "spot": "NORTH NARRABEEN",
+   "lat": -33.7037,
+   "lon": 151.31
   },
   {
    "km": 0.12,
    "qid": "Q3271969",
    "label": "Manly Beach",
-   "lat": -33.7908,
-   "lon": 151.2876,
+   "wd_lat": -33.78972,
+   "wd_lon": 151.28778,
    "status": "ok",
    "region": "AU-NSW-SYD",
-   "spot": "MANLY"
+   "spot": "MANLY",
+   "lat": -33.7908,
+   "lon": 151.2876
   },
   {
    "km": 0.14,
    "qid": "Q107393812",
    "label": "Bondi Outdoor Gym",
-   "lat": -33.891,
-   "lon": 151.2794,
+   "wd_lat": -33.8901,
+   "wd_lon": 151.28042,
    "status": "ok",
    "region": "AU-NSW-SYD",
-   "spot": "BONDI"
+   "spot": "BONDI",
+   "lat": -33.891,
+   "lon": 151.2794
   },
   {
    "km": 0.25,
    "qid": "Q21921810",
    "label": "Maroubra Beach",
-   "lat": -33.9509,
-   "lon": 151.2569,
+   "wd_lat": -33.94868,
+   "wd_lon": 151.25723,
    "status": "ok",
    "region": "AU-NSW-SYD",
-   "spot": "MAROUBRA"
+   "spot": "MAROUBRA",
+   "lat": -33.9509,
+   "lon": 151.2569
   },
   {
    "status": "sin fuente",
@@ -2855,71 +3713,85 @@
    "km": 0.1,
    "qid": "Q7489797",
    "label": "Shark Island",
-   "lat": -34.0599,
-   "lon": 151.1601,
+   "wd_lat": -34.0597,
+   "wd_lon": 151.159,
    "status": "ok",
    "region": "AU-NSW-SYD",
-   "spot": "SHARK ISLAND"
+   "spot": "SHARK ISLAND",
+   "lat": -34.0599,
+   "lon": 151.1601
   },
   {
    "km": 0.09,
    "qid": "Q7547336",
    "label": "Snapper Rocks",
-   "lat": -28.1627,
-   "lon": 153.5491,
+   "wd_lat": -28.1625,
+   "wd_lon": 153.55,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "SNAPPER ROCKS"
+   "spot": "SNAPPER ROCKS",
+   "lat": -28.1627,
+   "lon": 153.5491
   },
   {
    "km": 0.16,
    "qid": "Q111124612",
    "label": "Rainbow Bay Backpackers",
-   "lat": -28.1646,
-   "lon": 153.5447,
+   "wd_lat": -28.16598,
+   "wd_lon": 153.54508,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "RAINBOW BAY"
+   "spot": "RAINBOW BAY",
+   "lat": -28.1646,
+   "lon": 153.5447
   },
   {
    "km": 0.09,
    "qid": "Q5604331",
    "label": "Greenmount Beach",
-   "lat": -28.1659,
-   "lon": 153.5399,
+   "wd_lat": -28.16647,
+   "wd_lon": 153.5405,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "GREENMOUNT"
+   "spot": "GREENMOUNT",
+   "lat": -28.1659,
+   "lon": 153.5399
   },
   {
    "km": 0.06,
    "qid": "Q6415994",
    "label": "Kirra",
-   "lat": -28.1664,
-   "lon": 153.532,
+   "wd_lat": -28.16682,
+   "wd_lon": 153.53154,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "KIRRA"
+   "spot": "KIRRA",
+   "lat": -28.1664,
+   "lon": 153.532
   },
   {
    "km": 0.69,
    "qid": "Q16969931",
    "label": "Duranbah Beach",
-   "lat": -28.1728,
-   "lon": 153.5555,
+   "wd_lat": -28.1674,
+   "wd_lon": 153.552,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "DURANBAH"
+   "spot": "DURANBAH",
+   "lat": -28.1728,
+   "lon": 153.5555
   },
   {
    "km": 0.46,
    "qid": "Q1016604",
    "label": "Vườn quốc gia Burleigh Head",
-   "lat": -28.0944,
-   "lon": 153.4618,
+   "wd_lat": -28.09528,
+   "wd_lon": 153.45722,
    "status": "ok",
    "region": "AU-QLD-GC",
-   "spot": "BURLEIGH HEADS"
+   "spot": "BURLEIGH HEADS",
+   "lat": -28.0944,
+   "lon": 153.4618
   },
   {
    "status": "sin fuente",
@@ -2939,41 +3811,49 @@
    "km": 0.03,
    "qid": "Q21956399",
    "label": "Cactus Beach",
-   "lat": -32.0845,
-   "lon": 132.9822,
+   "wd_lat": -32.08472,
+   "wd_lon": 132.98194,
    "status": "ok",
    "region": "AU-SA-EYR",
-   "spot": "CACTUS"
+   "spot": "CACTUS",
+   "lat": -32.0845,
+   "lon": 132.9822
   },
   {
    "km": 0.78,
    "qid": "Q21896703",
    "label": "Waitpinga Beach",
-   "lat": -35.6347,
-   "lon": 138.4984,
+   "wd_lat": -35.63306,
+   "wd_lon": 138.49,
    "status": "ok",
    "region": "AU-SA",
-   "spot": "WAITPINGA"
+   "spot": "WAITPINGA",
+   "lat": -35.6347,
+   "lon": 138.4984
   },
   {
    "km": 0.14,
    "qid": "Q3959613",
    "label": "Shipstern Bluff",
-   "lat": -43.2087,
-   "lon": 147.7503,
+   "wd_lat": -43.20917,
+   "wd_lon": 147.75194,
    "status": "ok",
    "region": "AU-TAS",
-   "spot": "SHIPSTERN BLUFF"
+   "spot": "SHIPSTERN BLUFF",
+   "lat": -43.2087,
+   "lon": 147.7503
   },
   {
    "km": 0.42,
    "qid": "Q286900",
    "label": "Clifton Beach",
-   "lat": -42.9929,
-   "lon": 147.5238,
+   "wd_lat": -42.98944,
+   "wd_lon": 147.52167,
    "status": "ok",
    "region": "AU-TAS",
-   "spot": "CLIFTON BEACH"
+   "spot": "CLIFTON BEACH",
+   "lat": -42.9929,
+   "lon": 147.5238
   },
   {
    "status": "sin fuente",
@@ -2986,31 +3866,37 @@
    "km": 0.2,
    "qid": "Q21956139",
    "label": "Woolamai Surf Beach",
-   "lat": -38.5488,
-   "lon": 145.343,
+   "wd_lat": -38.54722,
+   "wd_lon": 145.34194,
    "status": "ok",
    "region": "AU-VIC-PI",
-   "spot": "WOOLAMAI"
+   "spot": "WOOLAMAI",
+   "lat": -38.5488,
+   "lon": 145.343
   },
   {
    "km": 1.55,
    "qid": "Q21955874",
    "label": "Gunnamatta Beach",
-   "lat": -38.4486,
-   "lon": 144.8592,
+   "wd_lat": -38.45917,
+   "wd_lon": 144.87083,
    "status": "lejos",
    "region": "AU-VIC-PI",
-   "spot": "GUNNAMATTA"
+   "spot": "GUNNAMATTA",
+   "lat": -38.4486,
+   "lon": 144.8592
   },
   {
    "km": 0.25,
    "qid": "Q137645094",
    "label": "Spiaggia del surf di Torquay",
-   "lat": -38.3414,
-   "lon": 144.3226,
+   "wd_lat": -38.3427,
+   "wd_lon": 144.3203,
    "status": "ok",
    "region": "AU-VIC-SC",
-   "spot": "TORQUAY POINT"
+   "spot": "TORQUAY POINT",
+   "lat": -38.3414,
+   "lon": 144.3226
   },
   {
    "status": "sin fuente",
@@ -3023,21 +3909,25 @@
    "km": 0.07,
    "qid": "Q21961453",
    "label": "Bells Beach",
-   "lat": -38.3696,
-   "lon": 144.2818,
+   "wd_lat": -38.36958,
+   "wd_lon": 144.28264,
    "status": "ok",
    "region": "AU-VIC-SC",
-   "spot": "BELLS BEACH"
+   "spot": "BELLS BEACH",
+   "lat": -38.3696,
+   "lon": 144.2818
   },
   {
    "km": 0.34,
    "qid": "Q111868168",
    "label": "Lorne Hotel",
-   "lat": -38.5435,
-   "lon": 143.9795,
+   "wd_lat": -38.54274,
+   "wd_lon": 143.97567,
    "status": "ok",
    "region": "AU-VIC-SC",
-   "spot": "LORNE POINT"
+   "spot": "LORNE POINT",
+   "lat": -38.5435,
+   "lon": 143.9795
   },
   {
    "status": "sin fuente",
@@ -3050,11 +3940,13 @@
    "km": 1.17,
    "qid": "Q123618288",
    "label": "RED BLUFF",
-   "lat": -24.0311,
-   "lon": 113.4394,
+   "wd_lat": -24.0305,
+   "wd_lon": 113.4509,
    "status": "ok",
    "region": "AU-WA-GAS",
-   "spot": "RED BLUFF"
+   "spot": "RED BLUFF",
+   "lat": -24.0311,
+   "lon": 113.4394
   },
   {
    "status": "sin fuente",
@@ -3081,51 +3973,61 @@
    "km": 0.71,
    "qid": "Q7644300",
    "label": "Supertubes",
-   "lat": -33.6534,
-   "lon": 115.0201,
+   "wd_lat": -33.6585,
+   "wd_lon": 115.0154,
    "status": "ok",
    "region": "AU-WA-MR",
-   "spot": "SUPERTUBES"
+   "spot": "SUPERTUBES",
+   "lat": -33.6534,
+   "lon": 115.0201
   },
   {
    "km": 0.57,
    "qid": "Q8047495",
    "label": "Yallingup",
-   "lat": -33.6426,
-   "lon": 115.0212,
+   "wd_lat": -33.63971,
+   "wd_lon": 115.0263,
    "status": "ok",
    "region": "AU-WA-MR",
-   "spot": "YALLINGUP"
+   "spot": "YALLINGUP",
+   "lat": -33.6426,
+   "lon": 115.0212
   },
   {
    "km": 0.1,
    "qid": "Q21951299",
    "label": "Jakes Corner",
-   "lat": -27.7351,
-   "lon": 114.1462,
+   "wd_lat": -27.73444,
+   "wd_lon": 114.14694,
    "status": "ok",
    "region": "AU-WA-NW",
-   "spot": "JAKES POINT"
+   "spot": "JAKES POINT",
+   "lat": -27.7351,
+   "lon": 114.1462
   },
   {
    "km": 0.38,
    "qid": "Q28220089",
    "label": "Trigg Adası",
-   "lat": -31.8726,
-   "lon": 115.7521,
+   "wd_lat": -31.87586,
+   "wd_lon": 115.751,
    "status": "ok",
    "region": "AU-WA-PER",
-   "spot": "TRIGG POINT"
+   "spot": "TRIGG POINT",
+   "lat": -31.8726,
+   "lon": 115.7521
   },
   {
    "km": 1.61,
    "qid": "Q21896354",
    "label": "Strickland Bay",
-   "lat": -32.0193,
-   "lon": 115.4933,
+   "wd_lat": -32.01722,
+   "wd_lon": 115.4764,
    "status": "lejos",
    "region": "AU-WA-PER",
-   "spot": "STRICKLAND BAY"
+   "spot": "STRICKLAND BAY",
+   "lat": -32.0193,
+   "lon": 115.4933
   },
   {
    "status": "sin fuente",
@@ -3145,31 +4047,37 @@
    "km": 0.98,
    "qid": "Q111883593",
    "label": "Pousada Costa do Cacau Itacare",
-   "lat": -14.2881,
-   "lon": -38.9855,
+   "wd_lat": -14.28004,
+   "wd_lon": -38.98927,
    "status": "ok",
    "region": "BR-BA",
-   "spot": "ITACARÉ"
+   "spot": "ITACARÉ",
+   "lat": -14.2881,
+   "lon": -38.9855
   },
   {
    "km": 0.13,
    "qid": "Q111413717",
    "label": "Hotel Pipa Atlântico",
-   "lat": -6.2278,
-   "lon": -35.0499,
+   "wd_lat": -6.22833,
+   "wd_lon": -35.05098,
    "status": "ok",
    "region": "BR-NE-RN",
-   "spot": "PIPA"
+   "spot": "PIPA",
+   "lat": -6.2278,
+   "lon": -35.0499
   },
   {
    "km": 0.87,
    "qid": "Q22061669",
    "label": "Baía Formosa",
-   "lat": -6.3699,
-   "lon": -34.9999,
+   "wd_lat": -6.36944,
+   "wd_lon": -35.00778,
    "status": "ok",
    "region": "BR-NE-RN",
-   "spot": "BAÍA FORMOSA"
+   "spot": "BAÍA FORMOSA",
+   "lat": -6.3699,
+   "lon": -34.9999
   },
   {
    "status": "sin fuente",
@@ -3182,31 +4090,37 @@
    "km": 0.13,
    "qid": "Q4795756",
    "label": "Parque do Arpoador",
-   "lat": -22.9892,
-   "lon": -43.1921,
+   "wd_lat": -22.98812,
+   "wd_lon": -43.19168,
    "status": "ok",
    "region": "BR-RJ",
-   "spot": "ARPOADOR"
+   "spot": "ARPOADOR",
+   "lat": -22.9892,
+   "lon": -43.1921
   },
   {
    "km": 0.94,
    "qid": "Q111414469",
    "label": "Novotel Rio de Janeiro Barra da Tijuca",
-   "lat": -23.0111,
-   "lon": -43.36,
+   "wd_lat": -23.01006,
+   "wd_lon": -43.35084,
    "status": "ok",
    "region": "BR-RJ",
-   "spot": "BARRA DA TIJUCA"
+   "spot": "BARRA DA TIJUCA",
+   "lat": -23.0111,
+   "lon": -43.36
   },
   {
    "km": 0.37,
    "qid": "Q3401244",
    "label": "Prainha (strand i Brasilien, Rio de Janeiro)",
-   "lat": -23.0424,
-   "lon": -43.5073,
+   "wd_lat": -23.03965,
+   "wd_lon": -43.50528,
    "status": "ok",
    "region": "BR-RJ",
-   "spot": "PRAINHA"
+   "spot": "PRAINHA",
+   "lat": -23.0424,
+   "lon": -43.5073
   },
   {
    "status": "sin fuente",
@@ -3219,141 +4133,169 @@
    "km": 0.58,
    "qid": "Q112020155",
    "label": "Mirante de geriba!",
-   "lat": -22.779,
-   "lon": -41.9105,
+   "wd_lat": -22.77675,
+   "wd_lon": -41.90539,
    "status": "ok",
    "region": "BR-RJL",
-   "spot": "GERIBÁ"
+   "spot": "GERIBÁ",
+   "lat": -22.779,
+   "lon": -41.9105
   },
   {
    "km": 0.24,
    "qid": "Q124394402",
    "label": "Praia de Itamambuca",
-   "lat": -23.4025,
-   "lon": -45.0032,
+   "wd_lat": -23.4011,
+   "wd_lon": -45.0014,
    "status": "ok",
    "region": "BR-SP",
-   "spot": "ITAMAMBUCA"
+   "spot": "ITAMAMBUCA",
+   "lat": -23.4025,
+   "lon": -45.0032
   },
   {
    "km": 0.23,
    "qid": "Q111414361",
    "label": "Coconut's Maresias Hotel",
-   "lat": -23.7922,
-   "lon": -45.5607,
+   "wd_lat": -23.79086,
+   "wd_lon": -45.56244,
    "status": "ok",
    "region": "BR-SP",
-   "spot": "MARESIAS"
+   "spot": "MARESIAS",
+   "lat": -23.7922,
+   "lon": -45.5607
   },
   {
    "km": 0.49,
    "qid": "Q22490147",
    "label": "Chesterman Beach",
-   "lat": 49.1162,
-   "lon": -125.9009,
+   "wd_lat": 49.11593,
+   "wd_lon": -125.89418,
    "status": "ok",
    "region": "CA-BC-VI",
-   "spot": "CHESTERMAN"
+   "spot": "CHESTERMAN",
+   "lat": 49.1162,
+   "lon": -125.9009
   },
   {
    "km": 0.53,
    "qid": "Q22407979",
    "label": "Cox Point",
-   "lat": 49.0967,
-   "lon": -125.8828,
+   "wd_lat": 49.09444,
+   "wd_lon": -125.88924,
    "status": "ok",
    "region": "CA-BC-VI",
-   "spot": "COX BAY"
+   "spot": "COX BAY",
+   "lat": 49.0967,
+   "lon": -125.8828
   },
   {
    "km": 0.31,
    "qid": "Q6276922",
    "label": "Jordan River",
-   "lat": 48.4212,
-   "lon": -124.0509,
+   "wd_lat": 48.4219,
+   "wd_lon": -124.055,
    "status": "ok",
    "region": "CA-BC-VI",
-   "spot": "JORDAN RIVER"
+   "spot": "JORDAN RIVER",
+   "lat": 48.4212,
+   "lon": -124.0509
   },
   {
    "km": 0.1,
    "qid": "Q112330309",
    "label": "Conrods and Lawrencetown Beach",
-   "lat": 44.6436,
-   "lon": -63.344,
+   "wd_lat": 44.64404,
+   "wd_lon": -63.34294,
    "status": "ok",
    "region": "CA-NS",
-   "spot": "LAWRENCETOWN"
+   "spot": "LAWRENCETOWN",
+   "lat": 44.6436,
+   "lon": -63.344
   },
   {
    "km": 1.14,
    "qid": "Q22622300",
    "label": "Martinique Beach Provincial Park",
-   "lat": 44.6999,
-   "lon": -63.1412,
+   "wd_lat": 44.69222,
+   "wd_lon": -63.13167,
    "status": "ok",
    "region": "CA-NS",
-   "spot": "MARTINIQUE BEACH"
+   "spot": "MARTINIQUE BEACH",
+   "lat": 44.6999,
+   "lon": -63.1412
   },
   {
    "km": 0.17,
    "qid": "Q23305913",
    "label": "Punta Maitencillo",
-   "lat": -32.6485,
-   "lon": -71.4398,
+   "wd_lat": -32.64917,
+   "wd_lon": -71.44139,
    "status": "ok",
    "region": "CL-CEN",
-   "spot": "MAITENCILLO"
+   "spot": "MAITENCILLO",
+   "lat": -32.6485,
+   "lon": -71.4398
   },
   {
    "km": 0.1,
    "qid": "Q2737863",
    "label": "Reñaca",
-   "lat": -32.9697,
-   "lon": -71.546,
+   "wd_lat": -32.96939,
+   "wd_lon": -71.54503,
    "status": "ok",
    "region": "CL-CEN",
-   "spot": "REÑACA"
+   "spot": "REÑACA",
+   "lat": -32.9697,
+   "lon": -71.546
   },
   {
    "km": 0.19,
    "qid": "Q51086",
    "label": "Pelluhue",
-   "lat": -35.8133,
-   "lon": -72.5771,
+   "wd_lat": -35.815,
+   "wd_lon": -72.577,
    "status": "ok",
    "region": "CL-MAU",
-   "spot": "PELLUHUE"
+   "spot": "PELLUHUE",
+   "lat": -35.8133,
+   "lon": -72.5771
   },
   {
    "km": 0.89,
    "qid": "Q23652636",
    "label": "Río Buchupureo",
-   "lat": -36.0719,
-   "lon": -72.7916,
+   "wd_lat": -36.07861,
+   "wd_lon": -72.79694,
    "status": "ok",
    "region": "CL-MAU",
-   "spot": "BUCHUPUREO"
+   "spot": "BUCHUPUREO",
+   "lat": -36.0719,
+   "lon": -72.7916
   },
   {
    "km": 0.59,
    "qid": "Q118488597",
    "label": "Cobquecura sin acuícolas",
-   "lat": -36.1292,
-   "lon": -72.8053,
+   "wd_lat": -36.1345,
+   "wd_lon": -72.8056,
    "status": "ok",
    "region": "CL-MAU",
-   "spot": "COBQUECURA"
+   "spot": "COBQUECURA",
+   "lat": -36.1292,
+   "lon": -72.8053
   },
   {
    "km": 1.17,
    "qid": "Q86281101",
    "label": "Museo Minero de Lebu",
-   "lat": -37.6068,
-   "lon": -73.6729,
+   "wd_lat": -37.59824,
+   "wd_lon": -73.66523,
    "status": "ok",
    "region": "CL-MAU",
-   "spot": "LEBU"
+   "spot": "LEBU",
+   "lat": -37.6068,
+   "lon": -73.6729
   },
   {
    "status": "sin fuente",
@@ -3366,21 +4308,25 @@
    "km": 0.73,
    "qid": "Q7258536",
    "label": "Puertecillo",
-   "lat": -34.0735,
-   "lon": -71.946,
+   "wd_lat": -34.06828,
+   "wd_lon": -71.94116,
    "status": "ok",
    "region": "CL-PIC",
-   "spot": "PUERTECILLO"
+   "spot": "PUERTECILLO",
+   "lat": -34.0735,
+   "lon": -71.946
   },
   {
    "km": 3.06,
    "qid": "Q22629520",
    "label": "Puntilla Pichilemu",
-   "lat": -34.3835,
-   "lon": -72.0104,
+   "wd_lat": -34.4105,
+   "wd_lon": -72.0167,
    "status": "lejos",
    "region": "CL-PIC",
-   "spot": "LA PUNTILLA"
+   "spot": "LA PUNTILLA",
+   "lat": -34.3835,
+   "lon": -72.0104
   },
   {
    "status": "sin fuente",
@@ -3393,11 +4339,13 @@
    "km": 0.5,
    "qid": "Q111124032",
    "label": "Conviento de Lobos",
-   "lat": -34.4265,
-   "lon": -72.0404,
+   "wd_lat": -34.42616,
+   "wd_lon": -72.04581,
    "status": "ok",
    "region": "CL-PIC",
-   "spot": "PUNTA DE LOBOS"
+   "spot": "PUNTA DE LOBOS",
+   "lat": -34.4265,
+   "lon": -72.0404
   },
   {
    "status": "sin fuente",
@@ -3410,11 +4358,13 @@
    "km": 0.5,
    "qid": "Q23681582",
    "label": "Río Valle",
-   "lat": 6.0953,
-   "lon": -77.425,
+   "wd_lat": 6.09861,
+   "wd_lon": -77.42806,
    "status": "ok",
    "region": "CO-PAC",
-   "spot": "EL VALLE"
+   "spot": "EL VALLE",
+   "lat": 6.0953,
+   "lon": -77.425
   },
   {
    "status": "sin fuente",
@@ -3434,41 +4384,49 @@
    "km": 0.12,
    "qid": "Q125952944",
    "label": "Tamarindo Playa",
-   "lat": 10.2986,
-   "lon": -85.8433,
+   "wd_lat": 10.29766,
+   "wd_lon": -85.84375,
    "status": "ok",
    "region": "CR-GUA",
-   "spot": "TAMARINDO"
+   "spot": "TAMARINDO",
+   "lat": 10.2986,
+   "lon": -85.8433
   },
   {
    "km": 0.95,
    "qid": "Q17085640",
    "label": "Playa Negra",
-   "lat": 10.2004,
-   "lon": -85.8353,
+   "wd_lat": 10.19389,
+   "wd_lon": -85.82972,
    "status": "ok",
    "region": "CR-GUA",
-   "spot": "PLAYA NEGRA"
+   "spot": "PLAYA NEGRA",
+   "lat": 10.2004,
+   "lon": -85.8353
   },
   {
    "km": 3.26,
    "qid": "Q23741910",
    "label": "Punta Guiones",
-   "lat": 9.9371,
-   "lon": -85.6669,
+   "wd_lat": 9.90806,
+   "wd_lon": -85.67083,
    "status": "lejos",
    "region": "CR-NIC",
-   "spot": "GUIONES"
+   "spot": "GUIONES",
+   "lat": 9.9371,
+   "lon": -85.6669
   },
   {
    "km": 0.08,
    "qid": "Q2223261",
    "label": "Santa Teresa",
-   "lat": 9.6479,
-   "lon": -85.1748,
+   "wd_lat": 9.64861,
+   "wd_lon": -85.175,
    "status": "ok",
    "region": "CR-NIC",
-   "spot": "SANTA TERESA"
+   "spot": "SANTA TERESA",
+   "lat": 9.6479,
+   "lon": -85.1748
   },
   {
    "status": "sin fuente",
@@ -3488,11 +4446,13 @@
    "km": 2.17,
    "qid": "Q9067479",
    "label": "Refugi de Vida Silvestre Playa Hermosa-Punta Mala",
-   "lat": 9.5624,
-   "lon": -84.5869,
+   "wd_lat": 9.57444,
+   "wd_lon": -84.6025,
    "status": "lejos",
    "region": "CR-PAC",
-   "spot": "PLAYA HERMOSA"
+   "spot": "PLAYA HERMOSA",
+   "lat": 9.5624,
+   "lon": -84.5869
   },
   {
    "status": "sin fuente",
@@ -3505,41 +4465,49 @@
    "km": 0.16,
    "qid": "Q1321816",
    "label": "Playa Encuentro",
-   "lat": 19.7825,
-   "lon": -70.45,
+   "wd_lat": 19.7831,
+   "wd_lon": -70.45135,
    "status": "ok",
    "region": "DO-ALL",
-   "spot": "ENCUENTRO"
+   "spot": "ENCUENTRO",
+   "lat": 19.7825,
+   "lon": -70.45
   },
   {
    "km": 0.09,
    "qid": "Q111111107",
    "label": "La Casa Mompiche",
-   "lat": 0.5082,
-   "lon": -80.0225,
+   "wd_lat": 0.50776,
+   "wd_lon": -80.02184,
    "status": "ok",
    "region": "EC-COS",
-   "spot": "MOMPICHE"
+   "spot": "MOMPICHE",
+   "lat": 0.5082,
+   "lon": -80.0225
   },
   {
    "km": 0.35,
    "qid": "Q111120279",
    "label": "Selina Montañita",
-   "lat": -1.8306,
-   "lon": -80.7531,
+   "wd_lat": -1.82747,
+   "wd_lon": -80.75342,
    "status": "ok",
    "region": "EC-COS",
-   "spot": "MONTAÑITA"
+   "spot": "MONTAÑITA",
+   "lat": -1.8306,
+   "lon": -80.7531
   },
   {
    "km": 0.19,
    "qid": "Q60823613",
    "label": "La Chocolatera",
-   "lat": -2.1899,
-   "lon": -81.0104,
+   "wd_lat": -2.18824,
+   "wd_lon": -81.01007,
    "status": "ok",
    "region": "EC-COS",
-   "spot": "LA CHOCOLATERA"
+   "spot": "LA CHOCOLATERA",
+   "lat": -2.1899,
+   "lon": -81.0104
   },
   {
    "status": "sin fuente",
@@ -3552,11 +4520,13 @@
    "km": 0.3,
    "qid": "Q112021731",
    "label": "Hostal Tongo Reef",
-   "lat": -0.9001,
-   "lon": -89.61,
+   "wd_lat": -0.90086,
+   "wd_lon": -89.60745,
    "status": "ok",
    "region": "EC-GAL",
-   "spot": "TONGO REEF"
+   "spot": "TONGO REEF",
+   "lat": -0.9001,
+   "lon": -89.61
   },
   {
    "status": "sin fuente",
@@ -3569,51 +4539,61 @@
    "km": 0.25,
    "qid": "Q6078968",
    "label": "Praia de Rodiles",
-   "lat": 43.5342,
-   "lon": -5.3804,
+   "wd_lat": 43.53253,
+   "wd_lon": -5.38244,
    "status": "ok",
    "region": "ES-AST",
-   "spot": "RODILES"
+   "spot": "RODILES",
+   "lat": 43.5342,
+   "lon": -5.3804
   },
   {
    "km": 0.44,
    "qid": "Q97166016",
    "label": "Real Club Náutico de Salinas",
-   "lat": 43.5803,
-   "lon": -5.9668,
+   "wd_lat": 43.57678,
+   "wd_lon": -5.96443,
    "status": "ok",
    "region": "ES-AST",
-   "spot": "SALINAS"
+   "spot": "SALINAS",
+   "lat": 43.5803,
+   "lon": -5.9668
   },
   {
    "km": 0.53,
    "qid": "Q5979921",
    "label": "Los Locos (Suances)",
-   "lat": 43.4422,
-   "lon": -4.0422,
+   "wd_lat": 43.43882,
+   "wd_lon": -4.04674,
    "status": "ok",
    "region": "ES-CAN",
-   "spot": "LOS LOCOS"
+   "spot": "LOS LOCOS",
+   "lat": 43.4422,
+   "lon": -4.0422
   },
   {
    "km": 1.32,
    "qid": "Q3384715",
    "label": "Dunas de Liencres y Costa Quebrada Natural Park",
-   "lat": 43.4583,
-   "lon": -3.9551,
+   "wd_lat": 43.44781,
+   "wd_lon": -3.96263,
    "status": "ok",
    "region": "ES-CAN",
-   "spot": "LIENCRES"
+   "spot": "LIENCRES",
+   "lat": 43.4583,
+   "lon": -3.9551
   },
   {
    "km": 0.67,
    "qid": "Q6079020",
    "label": "Playa Somo",
-   "lat": 43.4586,
-   "lon": -3.7343,
+   "wd_lat": 43.45691,
+   "wd_lon": -3.7423,
    "status": "ok",
    "region": "ES-CAN",
-   "spot": "SOMO"
+   "spot": "SOMO",
+   "lat": 43.4586,
+   "lon": -3.7343
   },
   {
    "status": "sin fuente",
@@ -3626,51 +4606,61 @@
    "km": 0.19,
    "qid": "Q28119689",
    "label": "La Santa (Pueblo)",
-   "lat": 29.109,
-   "lon": -13.6678,
+   "wd_lat": 29.1093,
+   "wd_lon": -13.6659,
    "status": "ok",
    "region": "ES-CN-E",
-   "spot": "LA SANTA"
+   "spot": "LA SANTA",
+   "lat": 29.109,
+   "lon": -13.6678
   },
   {
    "km": 0.16,
    "qid": "Q28117554",
    "label": "Caleta de Famara",
-   "lat": 29.1156,
-   "lon": -13.558,
+   "wd_lat": 29.1159,
+   "wd_lon": -13.5564,
    "status": "ok",
    "region": "ES-CN-E",
-   "spot": "FAMARA"
+   "spot": "FAMARA",
+   "lat": 29.1156,
+   "lon": -13.558
   },
   {
    "km": 0.44,
    "qid": "Q115500514",
    "label": "Caldera de Lobos",
-   "lat": 28.7495,
-   "lon": -13.834,
+   "wd_lat": 28.75179,
+   "wd_lon": -13.83038,
    "status": "ok",
    "region": "ES-CN-E",
-   "spot": "LOBOS"
+   "spot": "LOBOS",
+   "lat": 28.7495,
+   "lon": -13.834
   },
   {
    "km": 0.37,
    "qid": "Q1324017",
    "label": "El Cotillo",
-   "lat": 28.6857,
-   "lon": -14.014,
+   "wd_lat": 28.68361,
+   "wd_lon": -14.01111,
    "status": "ok",
    "region": "ES-CN-E",
-   "spot": "EL COTILLO"
+   "spot": "EL COTILLO",
+   "lat": 28.6857,
+   "lon": -14.014
   },
   {
    "km": 0.33,
    "qid": "Q23987029",
    "label": "Punta del Confital",
-   "lat": 28.1658,
-   "lon": -15.4417,
+   "wd_lat": 28.16282,
+   "wd_lon": -15.44171,
    "status": "ok",
    "region": "ES-CN-W",
-   "spot": "EL CONFITAL"
+   "spot": "EL CONFITAL",
+   "lat": 28.1658,
+   "lon": -15.4417
   },
   {
    "status": "sin fuente",
@@ -3690,91 +4680,109 @@
    "km": 0.27,
    "qid": "Q5669924",
    "label": "Almáciga (Santa Cruz de Tenerife)",
-   "lat": 28.5723,
-   "lon": -16.1995,
+   "wd_lat": 28.57139,
+   "wd_lon": -16.19694,
    "status": "ok",
    "region": "ES-CN-W",
-   "spot": "ALMACIGA"
+   "spot": "ALMACIGA",
+   "lat": 28.5723,
+   "lon": -16.1995
   },
   {
    "km": 0.83,
    "qid": "Q3986817",
    "label": "The Ferrolterra Pantin Classic",
-   "lat": 43.6455,
-   "lon": -8.1045,
+   "wd_lat": 43.6389,
+   "wd_lon": -8.10944,
    "status": "ok",
    "region": "ES-GAL",
-   "spot": "PANTIN"
+   "spot": "PANTIN",
+   "lat": 43.6455,
+   "lon": -8.1045
   },
   {
    "km": 1.37,
    "qid": "Q28121665",
    "label": "Razo",
-   "lat": 43.2932,
-   "lon": -8.6962,
+   "wd_lat": 43.2897,
+   "wd_lon": -8.7124,
    "status": "ok",
    "region": "ES-GAL",
-   "spot": "RAZO"
+   "spot": "RAZO",
+   "lat": 43.2932,
+   "lon": -8.6962
   },
   {
    "km": 0.28,
    "qid": "Q23990653",
    "label": "Zurriola badia / Bahía Zurriola",
-   "lat": 43.326,
-   "lon": -1.9792,
+   "wd_lat": 43.32605,
+   "wd_lon": -1.97574,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "ZURRIOLA"
+   "spot": "ZURRIOLA",
+   "lat": 43.326,
+   "lon": -1.9792
   },
   {
    "km": 0.08,
    "qid": "Q33204654",
    "label": "Gran Hotel Zarautz",
-   "lat": 43.2877,
-   "lon": -2.1698,
+   "wd_lat": 43.287,
+   "wd_lon": -2.17,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "ZARAUTZ"
+   "spot": "ZARAUTZ",
+   "lat": 43.2877,
+   "lon": -2.1698
   },
   {
    "km": 0.16,
    "qid": "Q2980098",
    "label": "Mundakako Arraun Taldea",
-   "lat": 43.409,
-   "lon": -2.697,
+   "wd_lat": 43.40762,
+   "wd_lon": -2.69743,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "MUNDAKA"
+   "spot": "MUNDAKA",
+   "lat": 43.409,
+   "lon": -2.697
   },
   {
    "km": 0.41,
    "qid": "Q24003133",
    "label": "Bakioko senadia / Ensenada de Bakio",
-   "lat": 43.4326,
-   "lon": -2.8113,
+   "wd_lat": 43.43269,
+   "wd_lon": -2.80621,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "BAKIO"
+   "spot": "BAKIO",
+   "lat": 43.4326,
+   "lon": -2.8113
   },
   {
    "km": 1.45,
    "qid": "Q28120559",
    "label": "Meñakoz",
-   "lat": 43.4044,
-   "lon": -2.9738,
+   "wd_lat": 43.3948,
+   "wd_lon": -2.986,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "MEÑAKOZ"
+   "spot": "MEÑAKOZ",
+   "lat": 43.4044,
+   "lon": -2.9738
   },
   {
    "km": 1.44,
    "qid": "Q657407",
    "label": "Sopelana",
-   "lat": 43.393,
-   "lon": -2.9901,
+   "wd_lat": 43.38139,
+   "wd_lon": -2.98222,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "SOPELA"
+   "spot": "SOPELA",
+   "lat": 43.393,
+   "lon": -2.9901
   },
   {
    "status": "sin fuente",
@@ -3794,11 +4802,13 @@
    "km": 0.09,
    "qid": "Q13155006",
    "label": "Namotu Island",
-   "lat": -17.845,
-   "lon": 177.1835,
+   "wd_lat": -17.8442,
+   "wd_lon": 177.1834,
    "status": "ok",
    "region": "FJ-MAM",
-   "spot": "NAMOTU LEFT"
+   "spot": "NAMOTU LEFT",
+   "lat": -17.845,
+   "lon": 177.1835
   },
   {
    "status": "sin fuente",
@@ -3811,31 +4821,37 @@
    "km": 4.06,
    "qid": "Q24570185",
    "label": "Frigate Passage",
-   "lat": -18.4763,
-   "lon": 177.9256,
+   "wd_lat": -18.44472,
+   "wd_lon": 177.945,
    "status": "lejos",
    "region": "FJ-SOU",
-   "spot": "FRIGATE PASSAGE"
+   "spot": "FRIGATE PASSAGE",
+   "lat": -18.4763,
+   "lon": 177.9256
   },
   {
    "km": 0.3,
    "qid": "Q116591237",
    "label": "allée couverte de la presqu'île de la Torche",
-   "lat": 47.8379,
-   "lon": -4.3494,
+   "wd_lat": 47.83716,
+   "wd_lon": -4.35325,
    "status": "ok",
    "region": "FR-BRE",
-   "spot": "LA TORCHE"
+   "spot": "LA TORCHE",
+   "lat": 47.8379,
+   "lon": -4.3494
   },
   {
    "km": 0.37,
    "qid": "Q120210056",
    "label": "centre nautique de Guidel Plage",
-   "lat": 47.7635,
-   "lon": -3.5247,
+   "wd_lat": 47.76684,
+   "wd_lon": -3.52491,
    "status": "ok",
    "region": "FR-BRE",
-   "spot": "GUIDEL"
+   "spot": "GUIDEL",
+   "lat": 47.7635,
+   "lon": -3.5247
   },
   {
    "status": "sin fuente",
@@ -3848,11 +4864,13 @@
    "km": 0.49,
    "qid": "Q119901398",
    "label": "école primaire Plage de Biscarrosse",
-   "lat": 44.4448,
-   "lon": -1.2571,
+   "wd_lat": 44.44288,
+   "wd_lon": -1.25155,
    "status": "ok",
    "region": "FR-GIR",
-   "spot": "BISCARROSSE"
+   "spot": "BISCARROSSE",
+   "lat": 44.4448,
+   "lon": -1.2571
   },
   {
    "status": "sin fuente",
@@ -3865,11 +4883,13 @@
    "km": 0.63,
    "qid": "Q49322634",
    "label": "plage de la Gravière",
-   "lat": 43.68,
-   "lon": -1.4418,
+   "wd_lat": 43.67439,
+   "wd_lon": -1.44101,
    "status": "ok",
    "region": "FR-HOS",
-   "spot": "LA GRAVIERE"
+   "spot": "LA GRAVIERE",
+   "lat": 43.68,
+   "lon": -1.4418
   },
   {
    "status": "sin fuente",
@@ -3903,51 +4923,61 @@
    "km": 1.91,
    "qid": "Q2894399",
    "label": "Belharra",
-   "lat": 43.415,
-   "lon": -1.7,
+   "wd_lat": 43.40361,
+   "wd_lon": -1.71778,
    "status": "lejos",
    "region": "FR-PBA",
-   "spot": "BELHARRA"
+   "spot": "BELHARRA",
+   "lat": 43.415,
+   "lon": -1.7
   },
   {
    "km": 0.18,
    "qid": "Q120215060",
    "label": "plage de Lafiténia",
-   "lat": 43.4158,
-   "lon": -1.6287,
+   "wd_lat": 43.41419,
+   "wd_lon": -1.62826,
    "status": "ok",
    "region": "FR-PBA",
-   "spot": "LAFITENIA"
+   "spot": "LAFITENIA",
+   "lat": 43.4158,
+   "lon": -1.6287
   },
   {
    "km": 0.4,
    "qid": "Q120215227",
    "label": "plage de Parlementia",
-   "lat": 43.4265,
-   "lon": -1.6092,
+   "wd_lat": 43.42889,
+   "wd_lon": -1.60556,
    "status": "ok",
    "region": "FR-PBA",
-   "spot": "PARLEMENTIA"
+   "spot": "PARLEMENTIA",
+   "lat": 43.4265,
+   "lon": -1.6092
   },
   {
    "km": 0.03,
    "qid": "Q120215557",
    "label": "plage de la Côte des Basques",
-   "lat": 43.477,
-   "lon": -1.5674,
+   "wd_lat": 43.47685,
+   "wd_lon": -1.56702,
    "status": "ok",
    "region": "FR-PBA",
-   "spot": "COTE DES BASQUES"
+   "spot": "COTE DES BASQUES",
+   "lat": 43.477,
+   "lon": -1.5674
   },
   {
    "km": 0.3,
    "qid": "Q25478600",
    "label": "Grande plage",
-   "lat": 43.4853,
-   "lon": -1.5626,
+   "wd_lat": 43.485,
+   "wd_lon": -1.55889,
    "status": "ok",
    "region": "FR-PBA",
-   "spot": "GRANDE PLAGE"
+   "spot": "GRANDE PLAGE",
+   "lat": 43.4853,
+   "lon": -1.5626
   },
   {
    "status": "sin fuente",
@@ -3960,81 +4990,97 @@
    "km": 0.52,
    "qid": "Q7974111",
    "label": "Watergate Beach",
-   "lat": 50.4411,
-   "lon": -5.0457,
+   "wd_lat": 50.444,
+   "wd_lon": -5.04,
    "status": "ok",
    "region": "GB-CON",
-   "spot": "WATERGATE BAY"
+   "spot": "WATERGATE BAY",
+   "lat": 50.4411,
+   "lon": -5.0457
   },
   {
    "km": 0.2,
    "qid": "Q5455353",
    "label": "Fistral Beach",
-   "lat": 50.4169,
-   "lon": -5.0996,
+   "wd_lat": 50.4165,
+   "wd_lon": -5.10235,
    "status": "ok",
    "region": "GB-CON",
-   "spot": "FISTRAL"
+   "spot": "FISTRAL",
+   "lat": 50.4169,
+   "lon": -5.0996
   },
   {
    "km": 0.35,
    "qid": "Q7450856",
    "label": "Sennen Cove Lifeboat Station",
-   "lat": 50.0783,
-   "lon": -5.6989,
+   "wd_lat": 50.0779,
+   "wd_lon": -5.70373,
    "status": "ok",
    "region": "GB-CON",
-   "spot": "SENNEN"
+   "spot": "SENNEN",
+   "lat": 50.0783,
+   "lon": -5.6989
   },
   {
    "km": 0.12,
    "qid": "Q132552800",
    "label": "Porthleven Lifeboat Station",
-   "lat": 50.0817,
-   "lon": -5.3184,
+   "wd_lat": 50.08278,
+   "wd_lon": -5.31811,
    "status": "ok",
    "region": "GB-CON",
-   "spot": "PORTHLEVEN"
+   "spot": "PORTHLEVEN",
+   "lat": 50.0817,
+   "lon": -5.3184
   },
   {
    "km": 0.46,
    "qid": "Q26400919",
    "label": "Limekiln To North Side Of Croyde Beach At O.S.",
-   "lat": 51.1297,
-   "lon": -4.2378,
+   "wd_lat": 51.13372,
+   "wd_lon": -4.23941,
    "status": "ok",
    "region": "GB-DEV",
-   "spot": "CROYDE"
+   "spot": "CROYDE",
+   "lat": 51.1297,
+   "lon": -4.2378
   },
   {
    "km": 0.23,
    "qid": "Q542671",
    "label": "Woolacombe",
-   "lat": 51.1728,
-   "lon": -4.21,
+   "wd_lat": 51.172,
+   "wd_lon": -4.207,
    "status": "ok",
    "region": "GB-DEV",
-   "spot": "WOOLACOMBE"
+   "spot": "WOOLACOMBE",
+   "lat": 51.1728,
+   "lon": -4.21
   },
   {
    "km": 0.15,
    "qid": "Q26480287",
    "label": "Tynemouth Watch House",
-   "lat": 55.0139,
-   "lon": -1.421,
+   "wd_lat": 55.01464,
+   "wd_lon": -1.41899,
    "status": "ok",
    "region": "GB-NE",
-   "spot": "TYNEMOUTH"
+   "spot": "TYNEMOUTH",
+   "lat": 55.0139,
+   "lon": -1.421
   },
   {
    "km": 0.17,
    "qid": "Q26667174",
    "label": "Saltburn Pier Entrance Building",
-   "lat": 54.5858,
-   "lon": -0.9682,
+   "wd_lat": 54.58638,
+   "wd_lon": -0.97056,
    "status": "ok",
    "region": "GB-NE",
-   "spot": "SALTBURN"
+   "spot": "SALTBURN",
+   "lat": 54.5858,
+   "lon": -0.9682
   },
   {
    "status": "sin fuente",
@@ -4047,71 +5093,85 @@
    "km": 2.15,
    "qid": "Q24654399",
    "label": "Brims Ness",
-   "lat": 58.6067,
-   "lon": -3.6728,
+   "wd_lat": 58.62266,
+   "wd_lon": -3.65178,
    "status": "lejos",
    "region": "GB-SCO",
-   "spot": "BRIMS NESS"
+   "spot": "BRIMS NESS",
+   "lat": 58.6067,
+   "lon": -3.6728
   },
   {
    "km": 0.04,
    "qid": "Q3990974",
    "label": "Thurso East",
-   "lat": 58.5989,
-   "lon": -3.5099,
+   "wd_lat": 58.5992,
+   "wd_lon": -3.51028,
    "status": "ok",
    "region": "GB-SCO",
-   "spot": "THURSO EAST"
+   "spot": "THURSO EAST",
+   "lat": 58.5989,
+   "lon": -3.5099
   },
   {
    "km": 0.22,
    "qid": "Q107357993",
    "label": "Freshwater West Public Conveniences",
-   "lat": 51.6532,
-   "lon": -5.0592,
+   "wd_lat": 51.6549,
+   "wd_lon": -5.05761,
    "status": "ok",
    "region": "GB-WAL",
-   "spot": "FRESHWATER WEST"
+   "spot": "FRESHWATER WEST",
+   "lat": 51.6532,
+   "lon": -5.0592
   },
   {
    "km": 0.28,
    "qid": "Q115713271",
    "label": "llongddrylliad dienw ar traeth Llangennith, Bae Rhossili",
-   "lat": 51.6005,
-   "lon": -4.2993,
+   "wd_lat": 51.59831,
+   "wd_lon": -4.2972,
    "status": "ok",
    "region": "GB-WAL",
-   "spot": "LLANGENNITH"
+   "spot": "LLANGENNITH",
+   "lat": 51.6005,
+   "lon": -4.2993
   },
   {
    "km": 0.18,
    "qid": "Q111115543",
    "label": "Cocorí Lodge El Paredon",
-   "lat": 13.9152,
-   "lon": -91.0718,
+   "wd_lat": 13.916,
+   "wd_lon": -91.07039,
    "status": "ok",
    "region": "GT-PAC",
-   "spot": "EL PAREDON"
+   "spot": "EL PAREDON",
+   "lat": 13.9152,
+   "lon": -91.0718
   },
   {
    "km": 0.1,
    "qid": "Q110978588",
    "label": "LaBomie Uluwatu",
-   "lat": -8.8157,
-   "lon": 115.0883,
+   "wd_lat": -8.81496,
+   "wd_lon": 115.08887,
    "status": "ok",
    "region": "ID-BAL-BUK",
-   "spot": "ULUWATU"
+   "spot": "ULUWATU",
+   "lat": -8.8157,
+   "lon": 115.0883
   },
   {
    "km": 0.17,
    "qid": "Q125700900",
    "label": "Padang Padang Beach",
-   "lat": -8.8109,
-   "lon": 115.0997,
+   "wd_lat": -8.81114,
+   "wd_lon": 115.1012,
    "status": "ok",
    "region": "ID-BAL-BUK",
-   "spot": "PADANG PADANG"
+   "spot": "PADANG PADANG",
+   "lat": -8.8109,
+   "lon": 115.0997
   },
   {
    "status": "sin fuente",
@@ -4124,41 +5184,49 @@
    "km": 0.56,
    "qid": "Q110982165",
    "label": "Bingin Beach House",
-   "lat": -8.8079,
-   "lon": 115.1084,
+   "wd_lat": -8.80643,
+   "wd_lon": 115.11329,
    "status": "ok",
    "region": "ID-BAL-BUK",
-   "spot": "BINGIN"
+   "spot": "BINGIN",
+   "lat": -8.8079,
+   "lon": 115.1084
   },
   {
    "km": 0.11,
-   "qid": "Q136117567",
-   "label": "Balangan Beach",
-   "lat": -8.7912,
-   "lon": 115.1241,
+   "qid": "Q25020266",
+   "label": "Balangan River",
+   "wd_lat": -8.79167,
+   "wd_lon": 115.125,
    "status": "ok",
    "region": "ID-BAL-BUK",
-   "spot": "BALANGAN"
+   "spot": "BALANGAN",
+   "lat": -8.7912,
+   "lon": 115.1241
   },
   {
    "km": 0.5,
    "qid": "Q111100382",
    "label": "Tamiu Guesthouse at Desa Wisata Keramas",
-   "lat": -8.5982,
-   "lon": 115.3392,
+   "wd_lat": -8.59583,
+   "wd_lon": 115.33535,
    "status": "ok",
    "region": "ID-BAL-E",
-   "spot": "KERAMAS"
+   "spot": "KERAMAS",
+   "lat": -8.5982,
+   "lon": 115.3392
   },
   {
    "km": 0.25,
    "qid": "Q111331515",
    "label": "Sari Villa Sanur Beach",
-   "lat": -8.6908,
-   "lon": 115.267,
+   "wd_lat": -8.69099,
+   "wd_lon": 115.26477,
    "status": "ok",
    "region": "ID-BAL-E",
-   "spot": "SANUR REEF"
+   "spot": "SANUR REEF",
+   "lat": -8.6908,
+   "lon": 115.267
   },
   {
    "status": "sin fuente",
@@ -4171,31 +5239,37 @@
    "km": 0.06,
    "qid": "Q110775194",
    "label": "Kuta Sea View",
-   "lat": -8.7195,
-   "lon": 115.1688,
+   "wd_lat": -8.71912,
+   "wd_lon": 115.16917,
    "status": "ok",
    "region": "ID-BAL-W",
-   "spot": "KUTA BEACH"
+   "spot": "KUTA BEACH",
+   "lat": -8.7195,
+   "lon": 115.1688
   },
   {
    "km": 0.08,
    "qid": "Q111078280",
    "label": "Bima Sakti Echo Beach Canggu",
-   "lat": -8.6553,
-   "lon": 115.1251,
+   "wd_lat": -8.65517,
+   "wd_lon": 115.12584,
    "status": "ok",
    "region": "ID-BAL-W",
-   "spot": "ECHO BEACH"
+   "spot": "ECHO BEACH",
+   "lat": -8.6553,
+   "lon": 115.1251
   },
   {
    "km": 0.31,
    "qid": "Q111855254",
    "label": "Bombora Medewi Wavelodge",
-   "lat": -8.4167,
-   "lon": 114.8045,
+   "wd_lat": -8.41938,
+   "wd_lon": 114.80531,
    "status": "ok",
    "region": "ID-BAL-W",
-   "spot": "MEDEWI"
+   "spot": "MEDEWI",
+   "lat": -8.4167,
+   "lon": 114.8045
   },
   {
    "status": "sin fuente",
@@ -4208,11 +5282,13 @@
    "km": 0.62,
    "qid": "Q10981490",
    "label": "Batu Karas",
-   "lat": -7.745,
-   "lon": 108.4975,
+   "wd_lat": -7.75,
+   "wd_lon": 108.5,
    "status": "ok",
    "region": "ID-JAV-W",
-   "spot": "BATU KARAS"
+   "spot": "BATU KARAS",
+   "lat": -7.745,
+   "lon": 108.4975
   },
   {
    "status": "sin fuente",
@@ -4225,11 +5301,13 @@
    "km": 1.14,
    "qid": "Q64844354",
    "label": "SD Negeri Gerupuk",
-   "lat": -8.9167,
-   "lon": 116.3488,
+   "wd_lat": -8.91076,
+   "wd_lon": 116.34032,
    "status": "ok",
    "region": "ID-LOM",
-   "spot": "GERUPUK"
+   "spot": "GERUPUK",
+   "lat": -8.9167,
+   "lon": 116.3488
   },
   {
    "status": "sin fuente",
@@ -4242,11 +5320,13 @@
    "km": 2.22,
    "qid": "Q61987172",
    "label": "Lance's Right",
-   "lat": -2.3953,
-   "lon": 99.8629,
+   "wd_lat": -2.37567,
+   "wd_lon": 99.85954,
    "status": "lejos",
    "region": "ID-MEN",
-   "spot": "LANCE'S LEFT"
+   "spot": "LANCE'S LEFT",
+   "lat": -2.3953,
+   "lon": 99.8629
   },
   {
    "status": "sin fuente",
@@ -4273,31 +5353,37 @@
    "km": 2.82,
    "qid": "Q12493470",
    "label": "Lagundri",
-   "lat": 0.5701,
-   "lon": 97.7322,
+   "wd_lat": 0.595,
+   "wd_lon": 97.737,
    "status": "lejos",
    "region": "ID-NIA",
-   "spot": "LAGUNDRI"
+   "spot": "LAGUNDRI",
+   "lat": 0.5701,
+   "lon": 97.7322
   },
   {
    "km": 1.36,
    "qid": "Q24821652",
    "label": "Asu Island",
-   "lat": 0.9118,
-   "lon": 97.2651,
+   "wd_lat": 0.90529,
+   "wd_lon": 97.27549,
    "status": "ok",
    "region": "ID-NIA",
-   "spot": "ASU"
+   "spot": "ASU",
+   "lat": 0.9118,
+   "lon": 97.2651
   },
   {
    "km": 0.85,
    "qid": "Q13545213",
    "label": "Bawasawa",
-   "lat": 0.8134,
-   "lon": 97.3483,
+   "wd_lat": 0.817,
+   "wd_lon": 97.355,
    "status": "ok",
    "region": "ID-NIA",
-   "spot": "BAWA"
+   "spot": "BAWA",
+   "lat": 0.8134,
+   "lon": 97.3483
   },
   {
    "status": "sin fuente",
@@ -4338,21 +5424,25 @@
    "km": 0.68,
    "qid": "Q2577946",
    "label": "Mullaghmore",
-   "lat": 54.4719,
-   "lon": -8.4532,
+   "wd_lat": 54.46639,
+   "wd_lon": -8.44861,
    "status": "ok",
    "region": "IE-NW",
-   "spot": "MULLAGHMORE"
+   "spot": "MULLAGHMORE",
+   "lat": 54.4719,
+   "lon": -8.4532
   },
   {
    "km": 0.93,
    "qid": "Q282407",
    "label": "Strandhill",
-   "lat": 54.2732,
-   "lon": -8.6074,
+   "wd_lat": 54.2719,
+   "wd_lon": -8.5933,
    "status": "ok",
    "region": "IE-NW",
-   "spot": "STRANDHILL"
+   "spot": "STRANDHILL",
+   "lat": 54.2732,
+   "lon": -8.6074
   },
   {
    "status": "sin fuente",
@@ -4365,21 +5455,25 @@
    "km": 0.17,
    "qid": "Q507924",
    "label": "Tramore",
-   "lat": 52.1578,
-   "lon": -7.1444,
+   "wd_lat": 52.1588,
+   "wd_lon": -7.1463,
    "status": "ok",
    "region": "IE-SE",
-   "spot": "TRAMORE"
+   "spot": "TRAMORE",
+   "lat": 52.1578,
+   "lon": -7.1444
   },
   {
    "km": 0.34,
    "qid": "Q6473234",
    "label": "Lahinch Golf Club",
-   "lat": 52.933,
-   "lon": -9.348,
+   "wd_lat": 52.9358,
+   "wd_lon": -9.34582,
    "status": "ok",
    "region": "IE-SW",
-   "spot": "LAHINCH"
+   "spot": "LAHINCH",
+   "lat": 52.933,
+   "lon": -9.348
   },
   {
    "status": "sin fuente",
@@ -4392,51 +5486,61 @@
    "km": 0.6,
    "qid": "Q26716096",
    "label": "Crab Island",
-   "lat": 53.016,
-   "lon": -9.4141,
+   "wd_lat": 53.02056,
+   "wd_lon": -9.40917,
    "status": "ok",
    "region": "IE-SW",
-   "spot": "CRAB ISLAND"
+   "spot": "CRAB ISLAND",
+   "lat": 53.016,
+   "lon": -9.4141
   },
   {
    "km": 0.69,
    "qid": "Q3657146",
    "label": "Capo Mannu",
-   "lat": 40.0298,
-   "lon": 8.382,
+   "wd_lat": 40.0352,
+   "wd_lon": 8.37791,
    "status": "ok",
    "region": "IT-SAR",
-   "spot": "CAPO MANNU"
+   "spot": "CAPO MANNU",
+   "lat": 40.0298,
+   "lon": 8.382
   },
   {
    "km": 3.25,
    "qid": "Q55524061",
    "label": "platja de Tsurigasaki",
-   "lat": 35.3651,
-   "lon": 140.3934,
+   "wd_lat": 35.33589,
+   "wd_lon": 140.39464,
    "status": "lejos",
    "region": "JP-CHI",
-   "spot": "TSURIGASAKI"
+   "spot": "TSURIGASAKI",
+   "lat": 35.3651,
+   "lon": 140.3934
   },
   {
    "km": 1.48,
    "qid": "Q552783",
    "label": "Onjuku Station",
-   "lat": 35.1803,
-   "lon": 140.3652,
+   "wd_lat": 35.188,
+   "wd_lon": 140.3519,
    "status": "ok",
    "region": "JP-CHI",
-   "spot": "ONJUKU"
+   "spot": "ONJUKU",
+   "lat": 35.1803,
+   "lon": 140.3652
   },
   {
    "km": 1.02,
    "qid": "Q112009231",
    "label": "Garden Villa Shirahama",
-   "lat": 34.6745,
-   "lon": 138.9727,
+   "wd_lat": 34.68315,
+   "wd_lon": 138.97646,
    "status": "ok",
    "region": "JP-IZU",
-   "spot": "SHIRAHAMA"
+   "spot": "SHIRAHAMA",
+   "lat": 34.6745,
+   "lon": 138.9727
   },
   {
    "status": "sin fuente",
@@ -4449,31 +5553,37 @@
    "km": 1.68,
    "qid": "Q11559321",
    "label": "château de Kaifu",
-   "lat": 33.5794,
-   "lon": 134.36,
+   "wd_lat": 33.59444,
+   "wd_lon": 134.35794,
    "status": "lejos",
    "region": "JP-SHK",
-   "spot": "KAIFU"
+   "spot": "KAIFU",
+   "lat": 33.5794,
+   "lon": 134.36
   },
   {
    "km": 0.35,
    "qid": "Q11569920",
    "label": "Katase Nishihama–kugenuma Beach",
-   "lat": 35.3124,
-   "lon": 139.4749,
+   "wd_lat": 35.31056,
+   "wd_lon": 139.47806,
    "status": "ok",
    "region": "JP-SHO",
-   "spot": "KUGENUMA"
+   "spot": "KUGENUMA",
+   "lat": 35.3124,
+   "lon": 139.4749
   },
   {
    "km": 0.81,
    "qid": "Q111112472",
    "label": "Surf Gangs Hotel Arugambay",
-   "lat": 6.8405,
-   "lon": 81.8378,
+   "wd_lat": 6.84366,
+   "wd_lon": 81.83116,
    "status": "ok",
    "region": "LK-E",
-   "spot": "ARUGAM BAY"
+   "spot": "ARUGAM BAY",
+   "lat": 6.8405,
+   "lon": 81.8378
   },
   {
    "status": "sin fuente",
@@ -4493,41 +5603,49 @@
    "km": 0.13,
    "qid": "Q126478138",
    "label": "Hikkaduwa Beach",
-   "lat": 6.1358,
-   "lon": 80.0993,
+   "wd_lat": 6.13469,
+   "wd_lon": 80.09971,
    "status": "ok",
    "region": "LK-S",
-   "spot": "HIKKADUWA"
+   "spot": "HIKKADUWA",
+   "lat": 6.1358,
+   "lon": 80.0993
   },
   {
    "km": 0.75,
    "qid": "Q27457960",
    "label": "Midigama East",
-   "lat": 5.9626,
-   "lon": 80.3937,
+   "wd_lat": 5.9675,
+   "wd_lon": 80.39833,
    "status": "ok",
    "region": "LK-S",
-   "spot": "MIDIGAMA"
+   "spot": "MIDIGAMA",
+   "lat": 5.9626,
+   "lon": 80.3937
   },
   {
    "km": 0.67,
    "qid": "Q111122486",
    "label": "Doray Hostel Weligama",
-   "lat": 5.9679,
-   "lon": 80.433,
+   "wd_lat": 5.97208,
+   "wd_lon": 80.42858,
    "status": "ok",
    "region": "LK-S",
-   "spot": "WELIGAMA"
+   "spot": "WELIGAMA",
+   "lat": 5.9679,
+   "lon": 80.433
   },
   {
    "km": 1.2,
    "qid": "Q598684",
    "label": "Mehdía",
-   "lat": 34.262,
-   "lon": -6.6851,
+   "wd_lat": 34.25572,
+   "wd_lon": -6.67454,
    "status": "ok",
    "region": "MA-N",
-   "spot": "MEHDIA"
+   "spot": "MEHDIA",
+   "lat": 34.262,
+   "lon": -6.6851
   },
   {
    "status": "sin fuente",
@@ -4575,11 +5693,13 @@
    "km": 0.33,
    "qid": "Q3149573",
    "label": "Imsouane",
-   "lat": 30.8425,
-   "lon": -9.8219,
+   "wd_lat": 30.84337,
+   "wd_lon": -9.81857,
    "status": "ok",
    "region": "MA-TAG",
-   "spot": "IMSOUANE"
+   "spot": "IMSOUANE",
+   "lat": 30.8425,
+   "lon": -9.8219
   },
   {
    "status": "sin fuente",
@@ -4627,11 +5747,13 @@
    "km": 0.52,
    "qid": "Q2100734",
    "label": "Kandoomaafushi",
-   "lat": 3.9003,
-   "lon": 73.4696,
+   "wd_lat": 3.90283,
+   "wd_lon": 73.4735,
    "status": "ok",
    "region": "MV-SMA",
-   "spot": "KANDOOMA RIGHT"
+   "spot": "KANDOOMA RIGHT",
+   "lat": 3.9003,
+   "lon": 73.4696
   },
   {
    "status": "sin fuente",
@@ -4651,21 +5773,25 @@
    "km": 1.0,
    "qid": "Q27780184",
    "label": "Punta San Miguel",
-   "lat": 31.9022,
-   "lon": -116.7343,
+   "wd_lat": 31.9023,
+   "wd_lon": -116.74488,
    "status": "ok",
    "region": "MX-BCN",
-   "spot": "SAN MIGUEL"
+   "spot": "SAN MIGUEL",
+   "lat": 31.9022,
+   "lon": -116.7343
   },
   {
    "km": 0.18,
    "qid": "Q118583053",
    "label": "Islas de Todos Santos Lighthouse",
-   "lat": 31.8105,
-   "lon": -116.8095,
+   "wd_lat": 31.8117,
+   "wd_lon": -116.8083,
    "status": "ok",
    "region": "MX-BCN",
-   "spot": "TODOS SANTOS"
+   "spot": "TODOS SANTOS",
+   "lat": 31.8105,
+   "lon": -116.8095
   },
   {
    "status": "sin fuente",
@@ -4678,11 +5804,13 @@
    "km": 0.18,
    "qid": "Q49930169",
    "label": "Cerritos Surf Colony",
-   "lat": 23.3292,
-   "lon": -110.1758,
+   "wd_lat": 23.32928,
+   "wd_lon": -110.17408,
    "status": "ok",
    "region": "MX-BCS",
-   "spot": "LOS CERRITOS"
+   "spot": "LOS CERRITOS",
+   "lat": 23.3292,
+   "lon": -110.1758
   },
   {
    "status": "sin fuente",
@@ -4695,11 +5823,13 @@
    "km": 0.06,
    "qid": "Q131598099",
    "label": "Playa Sayulita",
-   "lat": 20.8705,
-   "lon": -105.442,
+   "wd_lat": 20.87037,
+   "wd_lon": -105.44253,
    "status": "ok",
    "region": "MX-NAY",
-   "spot": "SAYULITA"
+   "spot": "SAYULITA",
+   "lat": 20.8705,
+   "lon": -105.442
   },
   {
    "status": "sin fuente",
@@ -4712,91 +5842,109 @@
    "km": 0.7,
    "qid": "Q61277335",
    "label": "Chacahua",
-   "lat": 15.9649,
-   "lon": -97.6764,
+   "wd_lat": 15.97,
+   "wd_lon": -97.68028,
    "status": "ok",
    "region": "MX-OAX",
-   "spot": "CHACAHUA"
+   "spot": "CHACAHUA",
+   "lat": 15.9649,
+   "lon": -97.6764
   },
   {
    "km": 0.1,
    "qid": "Q6078541",
    "label": "Playa Zicatela",
-   "lat": 15.8501,
-   "lon": -97.0563,
+   "wd_lat": 15.85025,
+   "wd_lon": -97.05534,
    "status": "ok",
    "region": "MX-OAX",
-   "spot": "ZICATELA"
+   "spot": "ZICATELA",
+   "lat": 15.8501,
+   "lon": -97.0563
   },
   {
    "km": 0.34,
    "qid": "Q111114976",
    "label": "Hostal Akumal La Punta",
-   "lat": 15.8373,
-   "lon": -97.0472,
+   "wd_lat": 15.83719,
+   "wd_lon": -97.04402,
    "status": "ok",
    "region": "MX-OAX",
-   "spot": "LA PUNTA"
+   "spot": "LA PUNTA",
+   "lat": 15.8373,
+   "lon": -97.0472
   },
   {
    "km": 2.2,
    "qid": "Q5493820",
    "label": "Barra de la Cruz",
-   "lat": 15.8294,
-   "lon": -95.9539,
+   "wd_lat": 15.84056,
+   "wd_lon": -95.97083,
    "status": "lejos",
    "region": "MX-OAX",
-   "spot": "BARRA DE LA CRUZ"
+   "spot": "BARRA DE LA CRUZ",
+   "lat": 15.8294,
+   "lon": -95.9539
   },
   {
    "km": 1.07,
    "qid": "Q111110915",
    "label": "Troncones Point Hostel",
-   "lat": 17.7878,
-   "lon": -101.7375,
+   "wd_lat": 17.79353,
+   "wd_lon": -101.74566,
    "status": "ok",
    "region": "MX-PAC",
-   "spot": "TRONCONES"
+   "spot": "TRONCONES",
+   "lat": 17.7878,
+   "lon": -101.7375
   },
   {
    "km": 0.41,
    "qid": "Q49004962",
    "label": "Boca La Saladita",
-   "lat": 17.833,
-   "lon": -101.7697,
+   "wd_lat": 17.83667,
+   "wd_lon": -101.76944,
    "status": "ok",
    "region": "MX-PAC",
-   "spot": "LA SALADITA"
+   "spot": "LA SALADITA",
+   "lat": 17.833,
+   "lon": -101.7697
   },
   {
    "km": 0.73,
    "qid": "Q5677039",
    "label": "Barra de Nexpa",
-   "lat": 18.0832,
-   "lon": -102.7898,
+   "wd_lat": 18.08905,
+   "wd_lon": -102.79291,
    "status": "ok",
    "region": "MX-PAC",
-   "spot": "NEXPA"
+   "spot": "NEXPA",
+   "lat": 18.0832,
+   "lon": -102.7898
   },
   {
    "km": 0.36,
    "qid": "Q20137144",
    "label": "La Ticla",
-   "lat": 18.4532,
-   "lon": -103.558,
+   "wd_lat": 18.45472,
+   "wd_lon": -103.555,
    "status": "ok",
    "region": "MX-PAC",
-   "spot": "LA TICLA"
+   "spot": "LA TICLA",
+   "lat": 18.4532,
+   "lon": -103.558
   },
   {
    "km": 0.22,
    "qid": "Q24040452",
    "label": "Boca de Pascuales",
-   "lat": 18.8556,
-   "lon": -103.962,
+   "wd_lat": 18.8575,
+   "wd_lon": -103.9625,
    "status": "ok",
    "region": "MX-PAC",
-   "spot": "PASCUALES"
+   "spot": "PASCUALES",
+   "lat": 18.8556,
+   "lon": -103.962
   },
   {
    "status": "sin fuente",
@@ -4809,41 +5957,49 @@
    "km": 0.77,
    "qid": "Q14229773",
    "label": "Popoyo",
-   "lat": 11.4686,
-   "lon": -86.1224,
+   "wd_lat": 11.47294,
+   "wd_lon": -86.12786,
    "status": "ok",
    "region": "NI-RIV",
-   "spot": "POPOYO"
+   "spot": "POPOYO",
+   "lat": 11.4686,
+   "lon": -86.1224
   },
   {
    "km": 0.27,
    "qid": "Q111888768",
    "label": "Villas Playa Maderas",
-   "lat": 11.2955,
-   "lon": -85.9127,
+   "wd_lat": 11.29445,
+   "wd_lon": -85.91045,
    "status": "ok",
    "region": "NI-RIV",
-   "spot": "MADERAS"
+   "spot": "MADERAS",
+   "lat": 11.2955,
+   "lon": -85.9127
   },
   {
    "km": 0.37,
    "qid": "Q19393966",
    "label": "Unstad",
-   "lat": 68.2679,
-   "lon": 13.5793,
+   "wd_lat": 68.267,
+   "wd_lon": 13.588,
    "status": "ok",
    "region": "NO-N",
-   "spot": "UNSTAD"
+   "spot": "UNSTAD",
+   "lat": 68.2679,
+   "lon": 13.5793
   },
   {
    "km": 0.2,
    "qid": "Q122312963",
    "label": "Piha Stream",
-   "lat": -36.9531,
-   "lon": 174.466,
+   "wd_lat": -36.95348,
+   "wd_lon": 174.46816,
    "status": "ok",
    "region": "NZ-AKL",
-   "spot": "PIHA"
+   "spot": "PIHA",
+   "lat": -36.9531,
+   "lon": 174.466
   },
   {
    "status": "sin fuente",
@@ -4856,11 +6012,13 @@
    "km": 0.76,
    "qid": "Q833634",
    "label": "Mount Maunganui",
-   "lat": -37.6375,
-   "lon": 176.1799,
+   "wd_lat": -37.643,
+   "wd_lon": 176.185,
    "status": "ok",
    "region": "NZ-BOP",
-   "spot": "MOUNT MAUNGANUI"
+   "spot": "MOUNT MAUNGANUI",
+   "lat": -37.6375,
+   "lon": 176.1799
   },
   {
    "status": "sin fuente",
@@ -4873,11 +6031,13 @@
    "km": 1.19,
    "qid": "Q32254104",
    "label": "Makorori Point",
-   "lat": -38.6574,
-   "lon": 178.1122,
+   "wd_lat": -38.666,
+   "wd_lon": 178.104,
    "status": "ok",
    "region": "NZ-GIS",
-   "spot": "MAKORORI POINT"
+   "spot": "MAKORORI POINT",
+   "lat": -38.6574,
+   "lon": 178.1122
   },
   {
    "status": "sin fuente",
@@ -4890,11 +6050,13 @@
    "km": 0.22,
    "qid": "Q106237344",
    "label": "Wainui Beach School",
-   "lat": -38.6829,
-   "lon": 178.0775,
+   "wd_lat": -38.68369,
+   "wd_lon": 178.07512,
    "status": "ok",
    "region": "NZ-GIS",
-   "spot": "WAINUI"
+   "spot": "WAINUI",
+   "lat": -38.6829,
+   "lon": 178.0775
   },
   {
    "status": "sin fuente",
@@ -4914,21 +6076,25 @@
    "km": 0.13,
    "qid": "Q125754950",
    "label": "Tuamotu Island",
-   "lat": -38.7068,
-   "lon": 178.0491,
+   "wd_lat": -38.706,
+   "wd_lon": 178.048,
    "status": "ok",
    "region": "NZ-GIS",
-   "spot": "THE ISLAND"
+   "spot": "THE ISLAND",
+   "lat": -38.7068,
+   "lon": 178.0491
   },
   {
    "km": 0.44,
    "qid": "Q137832175",
    "label": "Mangamaunu marae",
-   "lat": -42.3052,
-   "lon": 173.7514,
+   "wd_lat": -42.30908,
+   "wd_lon": 173.75058,
    "status": "ok",
    "region": "NZ-KAI",
-   "spot": "MANGAMAUNU"
+   "spot": "MANGAMAUNU",
+   "lat": -42.3052,
+   "lon": 173.7514
   },
   {
    "status": "sin fuente",
@@ -4941,11 +6107,13 @@
    "km": 4.53,
    "qid": "Q49391921",
    "label": "Shipwreck Bay",
-   "lat": -35.1646,
-   "lon": 173.0723,
+   "wd_lat": -35.17736,
+   "wd_lon": 173.11964,
    "status": "lejos",
    "region": "NZ-NTL",
-   "spot": "SHIPWRECK BAY"
+   "spot": "SHIPWRECK BAY",
+   "lat": -35.1646,
+   "lon": 173.0723
   },
   {
    "status": "sin fuente",
@@ -4979,21 +6147,25 @@
    "km": 0.54,
    "qid": "Q105672440",
    "label": "Karitane Cemetery",
-   "lat": -45.6397,
-   "lon": 170.6655,
+   "wd_lat": -45.6422,
+   "wd_lon": 170.6596,
    "status": "ok",
    "region": "NZ-OTA",
-   "spot": "KARITANE"
+   "spot": "KARITANE",
+   "lat": -45.6397,
+   "lon": 170.6655
   },
   {
    "km": 0.45,
    "qid": "Q49325281",
    "label": "Whareakeake",
-   "lat": -45.7615,
-   "lon": 170.6737,
+   "wd_lat": -45.762,
+   "wd_lon": 170.668,
    "status": "ok",
    "region": "NZ-OTA",
-   "spot": "WHAREAKEAKE"
+   "spot": "WHAREAKEAKE",
+   "lat": -45.7615,
+   "lon": 170.6737
   },
   {
    "status": "sin fuente",
@@ -5006,31 +6178,37 @@
    "km": 2.03,
    "qid": "Q7615649",
    "label": "Papatowai",
-   "lat": -46.5778,
-   "lon": 169.4702,
+   "wd_lat": -46.55957,
+   "wd_lon": 169.46916,
    "status": "lejos",
    "region": "NZ-OTA",
-   "spot": "PAPATOWAI"
+   "spot": "PAPATOWAI",
+   "lat": -46.5778,
+   "lon": 169.4702
   },
   {
    "km": 0.49,
    "qid": "Q32267802",
    "label": "Manu Bay",
-   "lat": -37.8208,
-   "lon": 174.8121,
+   "wd_lat": -37.82208,
+   "wd_lon": 174.81745,
    "status": "ok",
    "region": "NZ-RAG",
-   "spot": "MANU BAY"
+   "spot": "MANU BAY",
+   "lat": -37.8208,
+   "lon": 174.8121
   },
   {
    "km": 0.12,
    "qid": "Q33622565",
    "label": "Whale Bay",
-   "lat": -37.824,
-   "lon": 174.7999,
+   "wd_lat": -37.82364,
+   "wd_lon": 174.79856,
    "status": "ok",
    "region": "NZ-RAG",
-   "spot": "WHALE BAY"
+   "spot": "WHALE BAY",
+   "lat": -37.824,
+   "lon": 174.7999
   },
   {
    "status": "sin fuente",
@@ -5050,51 +6228,61 @@
    "km": 0.31,
    "qid": "Q7960674",
    "label": "Waiwhakaiho River",
-   "lat": -39.037,
-   "lon": 174.1037,
+   "wd_lat": -39.0371,
+   "wd_lon": 174.1073,
    "status": "ok",
    "region": "NZ-TAR",
-   "spot": "WAIWHAKAIHO"
+   "spot": "WAIWHAKAIHO",
+   "lat": -39.037,
+   "lon": 174.1037
   },
   {
    "km": 0.06,
    "qid": "Q117768976",
    "label": "Lyall Bay Surf Life Saving Club",
-   "lat": -41.3298,
-   "lon": 174.7954,
+   "wd_lat": -41.32978,
+   "wd_lon": 174.79465,
    "status": "ok",
    "region": "NZ-WEL",
-   "spot": "LYALL BAY"
+   "spot": "LYALL BAY",
+   "lat": -41.3298,
+   "lon": 174.7954
   },
   {
    "km": 1.5,
    "qid": "Q111117251",
    "label": "Bodhi Santa Catalina",
-   "lat": 7.6266,
-   "lon": -81.2458,
+   "wd_lat": 7.63532,
+   "wd_lon": -81.25619,
    "status": "ok",
    "region": "PA-PAC",
-   "spot": "SANTA CATALINA"
+   "spot": "SANTA CATALINA",
+   "lat": 7.6266,
+   "lon": -81.2458
   },
   {
    "km": 0.27,
    "qid": "Q111111151",
    "label": "Selina Playa Venao",
-   "lat": 7.4288,
-   "lon": -80.1872,
+   "wd_lat": 7.43073,
+   "wd_lon": -80.18868,
    "status": "ok",
    "region": "PA-PAC",
-   "spot": "PLAYA VENAO"
+   "spot": "PLAYA VENAO",
+   "lat": 7.4288,
+   "lon": -80.1872
   },
   {
    "km": 1.1,
    "qid": "Q111833994",
    "label": "La Herradura",
-   "lat": -12.166,
-   "lon": -77.0296,
+   "wd_lat": -12.17495,
+   "wd_lon": -77.034,
    "status": "ok",
    "region": "PE-LIM",
-   "spot": "LA HERRADURA"
+   "spot": "LA HERRADURA",
+   "lat": -12.166,
+   "lon": -77.0296
   },
   {
    "status": "sin fuente",
@@ -5114,101 +6302,121 @@
    "km": 0.33,
    "qid": "Q26823227",
    "label": "Punta Rocas",
-   "lat": -12.3561,
-   "lon": -76.8085,
+   "wd_lat": -12.35454,
+   "wd_lon": -76.81103,
    "status": "ok",
    "region": "PE-LIM",
-   "spot": "PUNTA ROCAS"
+   "spot": "PUNTA ROCAS",
+   "lat": -12.3561,
+   "lon": -76.8085
   },
   {
    "km": 1.16,
    "qid": "Q42843259",
    "label": "Club Pacasmayo",
-   "lat": -7.4092,
-   "lon": -79.5803,
+   "wd_lat": -7.40135,
+   "wd_lon": -79.57338,
    "status": "ok",
    "region": "PE-LLB",
-   "spot": "PACASMAYO"
+   "spot": "PACASMAYO",
+   "lat": -7.4092,
+   "lon": -79.5803
   },
   {
    "km": 2.03,
    "qid": "Q7258550",
    "label": "Puerto Chicama",
-   "lat": -7.7059,
-   "lon": -79.4508,
+   "wd_lat": -7.7,
+   "wd_lon": -79.43333,
    "status": "lejos",
    "region": "PE-LLB",
-   "spot": "CHICAMA"
+   "spot": "CHICAMA",
+   "lat": -7.7059,
+   "lon": -79.4508
   },
   {
    "km": 0.09,
    "qid": "Q42842481",
    "label": "Inmueble la climática en la caleta de Huanchaco",
-   "lat": -8.0786,
-   "lon": -79.1209,
+   "wd_lat": -8.07884,
+   "wd_lon": -79.12015,
    "status": "ok",
    "region": "PE-LLB",
-   "spot": "HUANCHACO"
+   "spot": "HUANCHACO",
+   "lat": -8.0786,
+   "lon": -79.1209
   },
   {
    "km": 0.29,
    "qid": "Q111125140",
    "label": "Wild Rover Beach Resort Mancora",
-   "lat": -4.0997,
-   "lon": -81.0518,
+   "wd_lat": -4.09768,
+   "wd_lon": -81.05016,
    "status": "ok",
    "region": "PE-NOR",
-   "spot": "MÁNCORA"
+   "spot": "MÁNCORA",
+   "lat": -4.0997,
+   "lon": -81.0518
   },
   {
    "km": 0.14,
    "qid": "Q115204821",
    "label": "Cabo Blanco Lighthouse",
-   "lat": -4.2507,
-   "lon": -81.2391,
+   "wd_lat": -4.2517,
+   "wd_lon": -81.2383,
    "status": "ok",
    "region": "PE-NOR",
-   "spot": "CABO BLANCO"
+   "spot": "CABO BLANCO",
+   "lat": -4.2507,
+   "lon": -81.2391
   },
   {
    "km": 0.26,
    "qid": "Q6663726",
    "label": "Lobitos tumani",
-   "lat": -4.4508,
-   "lon": -81.2789,
+   "wd_lat": -4.45279,
+   "wd_lon": -81.27771,
    "status": "ok",
    "region": "PE-NOR",
-   "spot": "LOBITOS"
+   "spot": "LOBITOS",
+   "lat": -4.4508,
+   "lon": -81.2789
   },
   {
    "km": 0.73,
    "qid": "Q127881429",
    "label": "Teahupo'o",
-   "lat": -17.855,
-   "lon": -149.2586,
+   "wd_lat": -17.8615,
+   "wd_lon": -149.25744,
    "status": "ok",
    "region": "PF-TAH",
-   "spot": "TEAHUPO'O"
+   "spot": "TEAHUPO'O",
+   "lat": -17.855,
+   "lon": -149.2586
   },
   {
    "km": 1.52,
    "qid": "Q120473666",
    "label": "complexe sportif communal Tavana Reia de Papara",
-   "lat": -17.7603,
-   "lon": -149.5203,
+   "wd_lat": -17.7622,
+   "wd_lon": -149.50607,
    "status": "lejos",
    "region": "PF-TAH",
-   "spot": "PAPARA"
+   "spot": "PAPARA",
+   "lat": -17.7603,
+   "lon": -149.5203
   },
   {
    "km": 0.37,
    "qid": "Q31930394",
    "label": "passe de Taapuna",
-   "lat": -17.6029,
-   "lon": -149.6149,
+   "wd_lat": -17.6,
+   "wd_lon": -149.61667,
    "status": "ok",
    "region": "PF-TAH",
-   "spot": "TAAPUNA"
+   "spot": "TAAPUNA",
+   "lat": -17.6029,
+   "lon": -149.6149
   },
   {
    "status": "sin fuente",
@@ -5221,11 +6429,13 @@
    "km": 0.22,
    "qid": "Q111113917",
    "label": "The Escape San Juan",
-   "lat": 16.6624,
-   "lon": 120.3232,
+   "wd_lat": 16.66066,
+   "wd_lon": 120.32214,
    "status": "ok",
    "region": "PH-LUZ",
-   "spot": "SAN JUAN"
+   "spot": "SAN JUAN",
+   "lat": 16.6624,
+   "lon": 120.3232
   },
   {
    "status": "sin fuente",
@@ -5238,11 +6448,13 @@
    "km": 0.18,
    "qid": "Q123496861",
    "label": "Cloud 9",
-   "lat": 9.8123,
-   "lon": 126.1643,
+   "wd_lat": 9.81367,
+   "wd_lon": 126.16518,
    "status": "ok",
    "region": "PH-SIA",
-   "spot": "CLOUD 9"
+   "spot": "CLOUD 9",
+   "lat": 9.8123,
+   "lon": 126.1643
   },
   {
    "status": "sin fuente",
@@ -5262,11 +6474,13 @@
    "km": 0.35,
    "qid": "Q6206837",
    "label": "Jobos Beach",
-   "lat": 18.5132,
-   "lon": -67.0789,
+   "wd_lat": 18.51422,
+   "wd_lon": -67.07574,
    "status": "ok",
    "region": "PR-NW",
-   "spot": "JOBOS"
+   "spot": "JOBOS",
+   "lat": 18.5132,
+   "lon": -67.0789
   },
   {
    "status": "sin fuente",
@@ -5279,11 +6493,13 @@
    "km": 0.68,
    "qid": "Q49320541",
    "label": "Playa Domes",
-   "lat": 18.3581,
-   "lon": -67.27,
+   "wd_lat": 18.36417,
+   "wd_lon": -67.27028,
    "status": "ok",
    "region": "PR-NW",
-   "spot": "DOMES"
+   "spot": "DOMES",
+   "lat": 18.3581,
+   "lon": -67.27
   },
   {
    "status": "sin fuente",
@@ -5296,41 +6512,49 @@
    "km": 0.11,
    "qid": "Q7237764",
    "label": "Praia da Arrifana",
-   "lat": 37.2918,
-   "lon": -8.8648,
+   "wd_lat": 37.29278,
+   "wd_lon": -8.865,
    "status": "ok",
    "region": "PT-ALG",
-   "spot": "ARRIFANA"
+   "spot": "ARRIFANA",
+   "lat": 37.2918,
+   "lon": -8.8648
   },
   {
    "km": 0.15,
    "qid": "Q10352935",
    "label": "Praia do Amado",
-   "lat": 37.167,
-   "lon": -8.9029,
+   "wd_lat": 37.16654,
+   "wd_lon": -8.90455,
    "status": "ok",
    "region": "PT-ALG",
-   "spot": "AMADO"
+   "spot": "AMADO",
+   "lat": 37.167,
+   "lon": -8.9029
   },
   {
    "km": 0.18,
    "qid": "Q49324213",
    "label": "Praia do Tonel (lapyahan sa Distrito de Faro)",
-   "lat": 37.0075,
-   "lon": -8.949,
+   "wd_lat": 37.00595,
+   "wd_lon": -8.94843,
    "status": "ok",
    "region": "PT-ALG",
-   "spot": "TONEL"
+   "spot": "TONEL",
+   "lat": 37.0075,
+   "lon": -8.949
   },
   {
    "km": 1.46,
    "qid": "Q111871433",
    "label": "Santa Barbara Eco-Beach Resort",
-   "lat": 37.8215,
-   "lon": -25.5371,
+   "wd_lat": 37.81377,
+   "wd_lon": -25.55052,
    "status": "ok",
    "region": "PT-AZO",
-   "spot": "SANTA BÁRBARA"
+   "spot": "SANTA BÁRBARA",
+   "lat": 37.8215,
+   "lon": -25.5371
   },
   {
    "status": "sin fuente",
@@ -5343,41 +6567,49 @@
    "km": 0.18,
    "qid": "Q10353058",
    "label": "Praia do Norte (Nazaré)",
-   "lat": 39.606,
-   "lon": -9.0856,
+   "wd_lat": 39.60442,
+   "wd_lon": -9.08558,
    "status": "ok",
    "region": "PT-CEN",
-   "spot": "PRAIA DO NORTE"
+   "spot": "PRAIA DO NORTE",
+   "lat": 39.606,
+   "lon": -9.0856
   },
   {
    "km": 0.33,
    "qid": "Q110884230",
    "label": "Ermida de São Lourenço",
-   "lat": 39.0139,
-   "lon": -9.4222,
+   "wd_lat": 39.01292,
+   "wd_lon": -9.41858,
    "status": "ok",
    "region": "PT-ERI",
-   "spot": "SÃO LOURENÇO"
+   "spot": "SÃO LOURENÇO",
+   "lat": 39.0139,
+   "lon": -9.4222
   },
   {
    "km": 0.28,
    "qid": "Q49324252",
    "label": "Praia dos Coxos",
-   "lat": 39.0025,
-   "lon": -9.4277,
+   "wd_lat": 39.00444,
+   "wd_lon": -9.42556,
    "status": "ok",
    "region": "PT-ERI",
-   "spot": "COXOS"
+   "spot": "COXOS",
+   "lat": 39.0025,
+   "lon": -9.4277
   },
   {
    "km": 0.55,
    "qid": "Q10352663",
    "label": "Praia de Ribeira d'Ilhas",
-   "lat": 38.9918,
-   "lon": -9.4231,
+   "wd_lat": 38.9878,
+   "wd_lon": -9.4193,
    "status": "ok",
    "region": "PT-ERI",
-   "spot": "RIBEIRA D'ILHAS"
+   "spot": "RIBEIRA D'ILHAS",
+   "lat": 38.9918,
+   "lon": -9.4231
   },
   {
    "status": "sin fuente",
@@ -5390,151 +6622,181 @@
    "km": 0.24,
    "qid": "Q10352601",
    "label": "Praia da Foz do Lizandro",
-   "lat": 38.941,
-   "lon": -9.4184,
+   "wd_lat": 38.94265,
+   "wd_lon": -9.41664,
    "status": "ok",
    "region": "PT-ERI",
-   "spot": "FOZ DO LIZANDRO"
+   "spot": "FOZ DO LIZANDRO",
+   "lat": 38.941,
+   "lon": -9.4184
   },
   {
    "km": 0.0,
    "qid": "Q51882986",
    "label": "Ribeira da Foz do Guincho",
-   "lat": 38.7336,
-   "lon": -9.4736,
+   "wd_lat": 38.7336,
+   "wd_lon": -9.47358,
    "status": "ok",
    "region": "PT-LIS",
-   "spot": "GUINCHO"
+   "spot": "GUINCHO",
+   "lat": 38.7336,
+   "lon": -9.4736
   },
   {
    "km": 0.38,
    "qid": "Q10352764",
    "label": "Praia de Carcavelos",
-   "lat": 38.6796,
-   "lon": -9.3383,
+   "wd_lat": 38.67838,
+   "wd_lon": -9.33416,
    "status": "ok",
    "region": "PT-LIS",
-   "spot": "CARCAVELOS"
+   "spot": "CARCAVELOS",
+   "lat": 38.6796,
+   "lon": -9.3383
   },
   {
    "km": 0.45,
    "qid": "Q34796808",
    "label": "Costa da Caparica",
-   "lat": 38.6413,
-   "lon": -9.2388,
+   "wd_lat": 38.64444,
+   "wd_lon": -9.23556,
    "status": "ok",
    "region": "PT-LIS",
-   "spot": "COSTA DA CAPARICA"
+   "spot": "COSTA DA CAPARICA",
+   "lat": 38.6413,
+   "lon": -9.2388
   },
   {
    "km": 0.22,
    "qid": "Q49355030",
    "label": "Jardim do Mar",
-   "lat": 32.7405,
-   "lon": -17.2128,
+   "wd_lat": 32.73884,
+   "wd_lon": -17.21146,
    "status": "ok",
    "region": "PT-MAD",
-   "spot": "JARDIM DO MAR"
+   "spot": "JARDIM DO MAR",
+   "lat": 32.7405,
+   "lon": -17.2128
   },
   {
    "km": 0.43,
    "qid": "Q18480375",
    "label": "Padrão do Bom Jesus de Matosinhos",
-   "lat": 41.1786,
-   "lon": -8.6981,
+   "wd_lat": 41.18115,
+   "wd_lon": -8.69431,
    "status": "ok",
    "region": "PT-NOR",
-   "spot": "MATOSINHOS"
+   "spot": "MATOSINHOS",
+   "lat": 41.1786,
+   "lon": -8.6981
   },
   {
    "km": 0.4,
    "qid": "Q9702029",
    "label": "Casino Espinho",
-   "lat": 41.0086,
-   "lon": -8.6496,
+   "wd_lat": 41.0088,
+   "wd_lon": -8.6449,
    "status": "ok",
    "region": "PT-NOR",
-   "spot": "ESPINHO"
+   "spot": "ESPINHO",
+   "lat": 41.0086,
+   "lon": -8.6496
   },
   {
    "km": 0.26,
    "qid": "Q833967",
    "label": "Baleal",
-   "lat": 39.3743,
-   "lon": -9.3415,
+   "wd_lat": 39.37306,
+   "wd_lon": -9.33889,
    "status": "ok",
    "region": "PT-PEN",
-   "spot": "BALEAL"
+   "spot": "BALEAL",
+   "lat": 39.3743,
+   "lon": -9.3415
   },
   {
    "km": 0.22,
    "qid": "Q49324144",
    "label": "Praia do Molhe Leste",
-   "lat": 39.3487,
-   "lon": -9.3665,
+   "wd_lat": 39.35044,
+   "wd_lon": -9.36775,
    "status": "ok",
    "region": "PT-PEN",
-   "spot": "MOLHE LESTE"
+   "spot": "MOLHE LESTE",
+   "lat": 39.3487,
+   "lon": -9.3665
   },
   {
    "km": 0.55,
    "qid": "Q49324285",
    "label": "Praia dos Supertubos",
-   "lat": 39.3415,
-   "lon": -9.3619,
+   "wd_lat": 39.34596,
+   "wd_lon": -9.36469,
    "status": "ok",
    "region": "PT-PEN",
-   "spot": "SUPERTUBOS"
+   "spot": "SUPERTUBOS",
+   "lat": 39.3415,
+   "lon": -9.3619
   },
   {
    "km": 0.4,
    "qid": "Q10352581",
    "label": "Praia da Consolação",
-   "lat": 39.3308,
-   "lon": -9.3595,
+   "wd_lat": 39.32717,
+   "wd_lon": -9.35985,
    "status": "ok",
    "region": "PT-PEN",
-   "spot": "CONSOLAÇÃO"
+   "spot": "CONSOLAÇÃO",
+   "lat": 39.3308,
+   "lon": -9.3595
   },
   {
    "km": 0.1,
    "qid": "Q31933720",
    "label": "Bocana del Zonte",
-   "lat": 13.4945,
-   "lon": -89.4409,
+   "wd_lat": 13.49361,
+   "wd_lon": -89.44111,
    "status": "ok",
    "region": "SV-LIB",
-   "spot": "EL ZONTE"
+   "spot": "EL ZONTE",
+   "lat": 13.4945,
+   "lon": -89.4409
   },
   {
    "km": 0.76,
    "qid": "Q134300530",
    "label": "Ola Verde Sunzal",
-   "lat": 13.4937,
-   "lon": -89.3998,
+   "wd_lat": 13.49603,
+   "wd_lon": -89.3932,
    "status": "ok",
    "region": "SV-LIB",
-   "spot": "SUNZAL"
+   "spot": "SUNZAL",
+   "lat": 13.4937,
+   "lon": -89.3998
   },
   {
    "km": 0.21,
    "qid": "Q111113413",
    "label": "Tunco Lodge",
-   "lat": 13.493,
-   "lon": -89.385,
+   "wd_lat": 13.49471,
+   "wd_lon": -89.38427,
    "status": "ok",
    "region": "SV-LIB",
-   "spot": "EL TUNCO"
+   "spot": "EL TUNCO",
+   "lat": 13.493,
+   "lon": -89.385
   },
   {
    "km": 2.91,
    "qid": "Q112020487",
    "label": "Punta Roca Surf Resort",
-   "lat": 13.4861,
-   "lon": -89.3226,
+   "wd_lat": 13.48572,
+   "wd_lon": -89.34949,
    "status": "lejos",
    "region": "SV-LIB",
-   "spot": "PUNTA ROCA"
+   "spot": "PUNTA ROCA",
+   "lat": 13.4861,
+   "lon": -89.3226
   },
   {
    "status": "sin fuente",
@@ -5554,111 +6816,133 @@
    "km": 2.01,
    "qid": "Q97021077",
    "label": "Wai'ao Village",
-   "lat": 24.8753,
-   "lon": 121.8432,
+   "wd_lat": 24.89262,
+   "wd_lon": 121.83744,
    "status": "lejos",
    "region": "TW-NE",
-   "spot": "WAI'AO"
+   "spot": "WAI'AO",
+   "lat": 24.8753,
+   "lon": 121.8432
   },
   {
    "km": 0.11,
    "qid": "Q115967333",
    "label": "Fullon Hotel Fulong",
-   "lat": 25.0218,
-   "lon": 121.9447,
+   "wd_lat": 25.021,
+   "wd_lon": 121.944,
    "status": "ok",
    "region": "TW-NE",
-   "spot": "FULONG"
+   "spot": "FULONG",
+   "lat": 25.0218,
+   "lon": 121.9447
   },
   {
    "km": 0.25,
    "qid": "Q111887713",
    "label": "Vespera Resort on Pismo Beach, Autograph Collection",
-   "lat": 35.1383,
-   "lon": -120.6444,
+   "wd_lat": 35.13825,
+   "wd_lon": -120.64164,
    "status": "ok",
    "region": "US-CA-CEN",
-   "spot": "PISMO PIER"
+   "spot": "PISMO PIER",
+   "lat": 35.1383,
+   "lon": -120.6444
   },
   {
    "km": 0.08,
    "qid": "Q49322093",
    "label": "Morro Rock Beach",
-   "lat": 35.3718,
-   "lon": -120.8654,
+   "wd_lat": 35.37139,
+   "wd_lon": -120.86611,
    "status": "ok",
    "region": "US-CA-CEN",
-   "spot": "MORRO ROCK"
+   "spot": "MORRO ROCK",
+   "lat": 35.3718,
+   "lon": -120.8654
   },
   {
    "km": 0.98,
    "qid": "Q8075217",
    "label": "Zuma Beach",
-   "lat": 34.0167,
-   "lon": -118.8251,
+   "wd_lat": 34.02273,
+   "wd_lon": -118.83287,
    "status": "ok",
    "region": "US-CA-LA",
-   "spot": "ZUMA"
+   "spot": "ZUMA",
+   "lat": 34.0167,
+   "lon": -118.8251
   },
   {
    "km": 0.04,
    "qid": "Q6743409",
    "label": "Bãi biển Tiểu bang Phá Malibu",
-   "lat": 34.0332,
-   "lon": -118.6794,
+   "wd_lat": 34.0333,
+   "wd_lon": -118.679,
    "status": "ok",
    "region": "US-CA-LA",
-   "spot": "MALIBU"
+   "spot": "MALIBU",
+   "lat": 34.0332,
+   "lon": -118.6794
   },
   {
    "km": 0.15,
    "qid": "Q5351870",
    "label": "El Porto Beach",
-   "lat": 33.9037,
-   "lon": -118.4227,
+   "wd_lat": 33.905,
+   "wd_lon": -118.423,
    "status": "ok",
    "region": "US-CA-LA",
-   "spot": "EL PORTO"
+   "spot": "EL PORTO",
+   "lat": 33.9037,
+   "lon": -118.4227
   },
   {
    "km": 0.17,
    "qid": "Q23892826",
    "label": "Lunada Ba",
-   "lat": 33.7705,
-   "lon": -118.4221,
+   "wd_lat": 33.77,
+   "wd_lon": -118.42379,
    "status": "ok",
    "region": "US-CA-LA",
-   "spot": "LUNADA BAY"
+   "spot": "LUNADA BAY",
+   "lat": 33.7705,
+   "lon": -118.4221
   },
   {
    "km": 0.08,
    "qid": "Q5945277",
    "label": "Huntington Beach Municipal Pier",
-   "lat": 33.6553,
-   "lon": -118.0037,
+   "wd_lat": 33.65598,
+   "wd_lon": -118.00331,
    "status": "ok",
    "region": "US-CA-OC",
-   "spot": "HUNTINGTON PIER"
+   "spot": "HUNTINGTON PIER",
+   "lat": 33.6553,
+   "lon": -118.0037
   },
   {
    "km": 0.2,
    "qid": "Q7774093",
    "label": "The Wedge",
-   "lat": 33.5942,
-   "lon": -117.8828,
+   "wd_lat": 33.5925,
+   "wd_lon": -117.882,
    "status": "ok",
    "region": "US-CA-OC",
-   "spot": "THE WEDGE"
+   "spot": "THE WEDGE",
+   "lat": 33.5942,
+   "lon": -117.8828
   },
   {
    "km": 0.31,
    "qid": "Q7405822",
    "label": "Salt Creek Beach Park",
-   "lat": 33.4737,
-   "lon": -117.7218,
+   "wd_lat": 33.4765,
+   "wd_lon": -117.7217,
    "status": "ok",
    "region": "US-CA-OC",
-   "spot": "SALT CREEK"
+   "spot": "SALT CREEK",
+   "lat": 33.4737,
+   "lon": -117.7218
   },
   {
    "status": "sin fuente",
@@ -5685,151 +6969,181 @@
    "km": 0.09,
    "qid": "Q21196769",
    "label": "Rincon Deresi",
-   "lat": 34.3734,
-   "lon": -119.4757,
+   "wd_lat": 34.37333,
+   "wd_lon": -119.47667,
    "status": "ok",
    "region": "US-CA-SB",
-   "spot": "RINCON"
+   "spot": "RINCON",
+   "lat": 34.3734,
+   "lon": -119.4757
   },
   {
    "km": 0.27,
    "qid": "Q49506468",
    "label": "Jalama Beach County Park",
-   "lat": 34.5087,
-   "lon": -120.5019,
+   "wd_lat": 34.51083,
+   "wd_lon": -120.50056,
    "status": "ok",
    "region": "US-CA-SB",
-   "spot": "JALAMA"
+   "spot": "JALAMA",
+   "lat": 34.5087,
+   "lon": -120.5019
   },
   {
    "km": 0.44,
    "qid": "Q7605460",
    "label": "Steamer Lane",
-   "lat": 36.9505,
-   "lon": -122.0265,
+   "wd_lat": 36.9539,
+   "wd_lon": -122.024,
    "status": "ok",
    "region": "US-CA-SC",
-   "spot": "STEAMER LANE"
+   "spot": "STEAMER LANE",
+   "lat": 36.9505,
+   "lon": -122.0265
   },
   {
    "km": 0.48,
    "qid": "Q49544291",
    "label": "Công viên Quận Bãi biển Pleasure Point",
-   "lat": 36.9546,
-   "lon": -121.9725,
+   "wd_lat": 36.95778,
+   "wd_lon": -121.96889,
    "status": "ok",
    "region": "US-CA-SC",
-   "spot": "PLEASURE POINT"
+   "spot": "PLEASURE POINT",
+   "lat": 36.9546,
+   "lon": -121.9725
   },
   {
    "km": 1.32,
    "qid": "Q5557204",
    "label": "Ghost Trees",
-   "lat": 36.5671,
-   "lon": -121.9641,
+   "wd_lat": 36.5608,
+   "wd_lon": -121.9516,
    "status": "ok",
    "region": "US-CA-SC",
-   "spot": "GHOST TREE"
+   "spot": "GHOST TREE",
+   "lat": 36.5671,
+   "lon": -121.9641
   },
   {
    "km": 0.31,
    "qid": "Q49322335",
    "label": "Oceanside City Beach",
-   "lat": 33.1974,
-   "lon": -117.3875,
+   "wd_lat": 33.19528,
+   "wd_lon": -117.38528,
    "status": "ok",
    "region": "US-CA-SD",
-   "spot": "OCEANSIDE PIER"
+   "spot": "OCEANSIDE PIER",
+   "lat": 33.1974,
+   "lon": -117.3875
   },
   {
    "km": 0.2,
    "qid": "Q14684060",
    "label": "Swami's",
-   "lat": 33.035,
-   "lon": -117.2941,
+   "wd_lat": 33.0346,
+   "wd_lon": -117.292,
    "status": "ok",
    "region": "US-CA-SD",
-   "spot": "SWAMI'S"
+   "spot": "SWAMI'S",
+   "lat": 33.035,
+   "lon": -117.2941
   },
   {
    "km": 0.33,
    "qid": "Q880988",
    "label": "Black's Beach",
-   "lat": 32.8895,
-   "lon": -117.2534,
+   "wd_lat": 32.8925,
+   "wd_lon": -117.25361,
    "status": "ok",
    "region": "US-CA-SD",
-   "spot": "BLACK'S"
+   "spot": "BLACK'S",
+   "lat": 32.8895,
+   "lon": -117.2534
   },
   {
    "km": 0.17,
    "qid": "Q8024063",
    "label": "Windansea Beach",
-   "lat": 32.8296,
-   "lon": -117.281,
+   "wd_lat": 32.8311,
+   "wd_lon": -117.281,
    "status": "ok",
    "region": "US-CA-SD",
-   "spot": "WINDANSEA"
+   "spot": "WINDANSEA",
+   "lat": 32.8296,
+   "lon": -117.281
   },
   {
    "km": 0.04,
    "qid": "Q1438659",
    "label": "Fort Point National Historical Site",
-   "lat": 37.8105,
-   "lon": -122.4777,
+   "wd_lat": 37.81056,
+   "wd_lon": -122.47722,
    "status": "ok",
    "region": "US-CA-SF",
-   "spot": "FORT POINT"
+   "spot": "FORT POINT",
+   "lat": 37.8105,
+   "lon": -122.4777
   },
   {
    "km": 0.1,
    "qid": "Q2350498",
    "label": "Ocean Beach (San Francisco)",
-   "lat": 37.7602,
-   "lon": -122.5114,
+   "wd_lat": 37.75944,
+   "wd_lon": -122.51083,
    "status": "ok",
    "region": "US-CA-SF",
-   "spot": "OCEAN BEACH"
+   "spot": "OCEAN BEACH",
+   "lat": 37.7602,
+   "lon": -122.5114
   },
   {
    "km": 3.46,
    "qid": "Q1627108",
    "label": "Mavericks, Kaliforniya",
-   "lat": 37.4915,
-   "lon": -122.5083,
+   "wd_lat": 37.48521,
+   "wd_lon": -122.46992,
    "status": "lejos",
    "region": "US-CA-SF",
-   "spot": "MAVERICKS"
+   "spot": "MAVERICKS",
+   "lat": 37.4915,
+   "lon": -122.5083
   },
   {
    "km": 4.12,
    "qid": "Q7011545",
    "label": "Aeroportul Municipal New Smyrna Beach",
-   "lat": 29.0675,
-   "lon": -80.9088,
+   "wd_lat": 29.05556,
+   "wd_lon": -80.94889,
    "status": "lejos",
    "region": "US-FL",
-   "spot": "NEW SMYRNA INLET"
+   "spot": "NEW SMYRNA INLET",
+   "lat": 29.0675,
+   "lon": -80.9088
   },
   {
    "km": 0.01,
    "qid": "Q118466252",
    "label": "Muelle de Cocoa Beach",
-   "lat": 28.3677,
-   "lon": -80.6018,
+   "wd_lat": 28.36774,
+   "wd_lon": -80.60189,
    "status": "ok",
    "region": "US-FL",
-   "spot": "COCOA BEACH PIER"
+   "spot": "COCOA BEACH PIER",
+   "lat": 28.3677,
+   "lon": -80.6018
   },
   {
    "km": 0.12,
    "qid": "Q7442437",
    "label": "Sebastian Inlet",
-   "lat": 27.8611,
-   "lon": -80.4464,
+   "wd_lat": 27.8603,
+   "wd_lon": -80.44727,
    "status": "ok",
    "region": "US-FL",
-   "spot": "SEBASTIAN INLET"
+   "spot": "SEBASTIAN INLET",
+   "lat": 27.8611,
+   "lon": -80.4464
   },
   {
    "status": "sin fuente",
@@ -5849,21 +7163,25 @@
    "km": 0.34,
    "qid": "Q4495384",
    "label": "Hanalei",
-   "lat": 22.2199,
-   "lon": -159.4984,
+   "wd_lat": 22.21778,
+   "wd_lon": -159.50083,
    "status": "ok",
    "region": "US-HI-KAU",
-   "spot": "HANALEI"
+   "spot": "HANALEI",
+   "lat": 22.2199,
+   "lon": -159.4984
   },
   {
    "km": 0.07,
    "qid": "Q49325075",
    "label": "Tunnels Beach",
-   "lat": 22.225,
-   "lon": -159.56,
+   "wd_lat": 22.22444,
+   "wd_lon": -159.56028,
    "status": "ok",
    "region": "US-HI-KAU",
-   "spot": "TUNNELS"
+   "spot": "TUNNELS",
+   "lat": 22.225,
+   "lon": -159.56
   },
   {
    "status": "sin fuente",
@@ -5876,11 +7194,13 @@
    "km": 4.02,
    "qid": "Q1684289",
    "label": "Jaws",
-   "lat": 20.947,
-   "lon": -156.2985,
+   "wd_lat": 20.93861,
+   "wd_lon": -156.26083,
    "status": "lejos",
    "region": "US-HI-MAU",
-   "spot": "JAWS"
+   "spot": "JAWS",
+   "lat": 20.947,
+   "lon": -156.2985
   },
   {
    "status": "sin fuente",
@@ -5893,41 +7213,49 @@
    "km": 0.17,
    "qid": "Q3140164",
    "label": "Honolua Bay",
-   "lat": 21.0131,
-   "lon": -156.6388,
+   "wd_lat": 21.01449,
+   "wd_lon": -156.63955,
    "status": "ok",
    "region": "US-HI-MAU",
-   "spot": "HONOLUA"
+   "spot": "HONOLUA",
+   "lat": 21.0131,
+   "lon": -156.6388
   },
   {
    "km": 0.59,
    "qid": "Q5641466",
    "label": "Haleiwa Fighter Strip",
-   "lat": 21.6027,
-   "lon": -158.1074,
+   "wd_lat": 21.6044,
+   "wd_lon": -158.102,
    "status": "ok",
    "region": "US-HI-OAN",
-   "spot": "HALEIWA"
+   "spot": "HALEIWA",
+   "lat": 21.6027,
+   "lon": -158.1074
   },
   {
    "km": 0.35,
    "qid": "Q49576211",
    "label": "Waimea Beach Park",
-   "lat": 21.644,
-   "lon": -158.065,
+   "wd_lat": 21.64222,
+   "wd_lon": -158.06778,
    "status": "ok",
    "region": "US-HI-OAN",
-   "spot": "WAIMEA BAY"
+   "spot": "WAIMEA BAY",
+   "lat": 21.644,
+   "lon": -158.065
   },
   {
    "km": 0.17,
    "qid": "Q2735557",
    "label": "Banzai Pipeline",
-   "lat": 21.6646,
-   "lon": -158.0523,
+   "wd_lat": 21.66402,
+   "wd_lon": -158.05385,
    "status": "ok",
    "region": "US-HI-OAN",
-   "spot": "PIPELINE"
+   "spot": "PIPELINE",
+   "lat": 21.6646,
+   "lon": -158.0523
   },
   {
    "status": "sin fuente",
@@ -5947,21 +7275,25 @@
    "km": 0.39,
    "qid": "Q49568025",
    "label": "Sunset Point Beach Park",
-   "lat": 21.679,
-   "lon": -158.0392,
+   "wd_lat": 21.6825,
+   "wd_lon": -158.03972,
    "status": "ok",
    "region": "US-HI-OAN",
-   "spot": "SUNSET"
+   "spot": "SUNSET",
+   "lat": 21.679,
+   "lon": -158.0392
   },
   {
    "km": 1.69,
    "qid": "Q49395692",
    "label": "Velzyland",
-   "lat": 21.6874,
-   "lon": -158.0293,
+   "wd_lat": 21.67569,
+   "wd_lon": -158.0397,
    "status": "lejos",
    "region": "US-HI-OAN",
-   "spot": "VELZYLAND"
+   "spot": "VELZYLAND",
+   "lat": 21.6874,
+   "lon": -158.0293
   },
   {
    "status": "sin fuente",
@@ -5974,31 +7306,37 @@
    "km": 0.73,
    "qid": "Q49547252",
    "label": "Queens Surf Beach Park",
-   "lat": 21.265,
-   "lon": -157.8225,
+   "wd_lat": 21.27083,
+   "wd_lon": -157.82583,
    "status": "ok",
    "region": "US-HI-OAS",
-   "spot": "QUEENS"
+   "spot": "QUEENS",
+   "lat": 21.265,
+   "lon": -157.8225
   },
   {
    "km": 0.16,
    "qid": "Q7417163",
    "label": "Sandy Beach",
-   "lat": 21.2852,
-   "lon": -157.6734,
+   "wd_lat": 21.2847,
+   "wd_lon": -157.672,
    "status": "ok",
    "region": "US-HI-OAS",
-   "spot": "SANDY BEACH"
+   "spot": "SANDY BEACH",
+   "lat": 21.2852,
+   "lon": -157.6734
   },
   {
    "km": 1.33,
    "qid": "Q2588359",
    "label": "Makaha",
-   "lat": 21.4783,
-   "lon": -158.224,
+   "wd_lat": 21.47056,
+   "wd_lon": -158.21417,
    "status": "ok",
    "region": "US-HI-OAS",
-   "spot": "MAKAHA"
+   "spot": "MAKAHA",
+   "lat": 21.4783,
+   "lon": -158.224
   },
   {
    "status": "sin fuente",
@@ -6011,41 +7349,49 @@
    "km": 0.2,
    "qid": "Q122598518",
    "label": "Ditch Plains",
-   "lat": 41.0389,
-   "lon": -71.9178,
+   "wd_lat": 41.04066,
+   "wd_lon": -71.91785,
    "status": "ok",
    "region": "US-NE",
-   "spot": "DITCH PLAINS"
+   "spot": "DITCH PLAINS",
+   "lat": 41.0389,
+   "lon": -71.9178
   },
   {
    "km": 0.26,
    "qid": "Q7354964",
    "label": "Rockaways' Playland",
-   "lat": 40.5822,
-   "lon": -73.8164,
+   "wd_lat": 40.58389,
+   "wd_lon": -73.81861,
    "status": "ok",
    "region": "US-NE",
-   "spot": "ROCKAWAY"
+   "spot": "ROCKAWAY",
+   "lat": 40.5822,
+   "lon": -73.8164
   },
   {
    "km": 0.04,
    "qid": "Q6747006",
    "label": "Manasquan Inlet",
-   "lat": 40.1024,
-   "lon": -74.0354,
+   "wd_lat": 40.1025,
+   "wd_lon": -74.035,
    "status": "ok",
    "region": "US-NE",
-   "spot": "MANASQUAN INLET"
+   "spot": "MANASQUAN INLET",
+   "lat": 40.1024,
+   "lon": -74.0354
   },
   {
    "km": 0.39,
    "qid": "Q7989599",
    "label": "Westport Light State Park",
-   "lat": 46.8935,
-   "lon": -124.129,
+   "wd_lat": 46.8929,
+   "wd_lon": -124.124,
    "status": "ok",
    "region": "US-PNW",
-   "spot": "WESTPORT"
+   "spot": "WESTPORT",
+   "lat": 46.8935,
+   "lon": -124.129
   },
   {
    "status": "sin fuente",
@@ -6058,41 +7404,49 @@
    "km": 0.44,
    "qid": "Q3279197",
    "label": "Otter Rock",
-   "lat": 44.7455,
-   "lon": -124.0653,
+   "wd_lat": 44.74722,
+   "wd_lon": -124.06028,
    "status": "ok",
    "region": "US-PNW",
-   "spot": "OTTER ROCK"
+   "spot": "OTTER ROCK",
+   "lat": 44.7455,
+   "lon": -124.0653
   },
   {
    "km": 0.55,
-   "qid": "Q109235124",
-   "label": "Cape Hatteras Light",
-   "lat": 35.2485,
-   "lon": -75.5233,
+   "qid": "Q2508238",
+   "label": "Cape Hatteras Lighthouse",
+   "wd_lat": 35.25056,
+   "wd_lon": -75.52881,
    "status": "ok",
    "region": "US-SE",
-   "spot": "HATTERAS LIGHT"
+   "spot": "HATTERAS LIGHT",
+   "lat": 35.2485,
+   "lon": -75.5233
   },
   {
    "km": 0.31,
    "qid": "Q2025155",
    "label": "Wrightsville Beach",
-   "lat": 34.2102,
-   "lon": -77.7954,
+   "wd_lat": 34.21111,
+   "wd_lon": -77.79861,
    "status": "ok",
    "region": "US-SE",
-   "spot": "WRIGHTSVILLE"
+   "spot": "WRIGHTSVILLE",
+   "lat": 34.2102,
+   "lon": -77.7954
   },
   {
    "km": 0.77,
    "qid": "Q111859688",
    "label": "Shaloha Guesthouse on Supertubes",
-   "lat": -34.039,
-   "lon": 24.932,
+   "wd_lat": -34.03208,
+   "wd_lon": 24.93218,
    "status": "ok",
    "region": "ZA-EC-JB",
-   "spot": "SUPERTUBES"
+   "spot": "SUPERTUBES",
+   "lat": -34.039,
+   "lon": 24.932
   },
   {
    "status": "sin fuente",
@@ -6105,31 +7459,37 @@
    "km": 0.37,
    "qid": "Q3642870",
    "label": "Seal Point fyr",
-   "lat": -34.2096,
-   "lon": 24.838,
+   "wd_lat": -34.21253,
+   "wd_lon": 24.83617,
    "status": "ok",
    "region": "ZA-EC-JB",
-   "spot": "SEAL POINT"
+   "spot": "SEAL POINT",
+   "lat": -34.2096,
+   "lon": 24.838
   },
   {
    "km": 0.32,
    "qid": "Q1963705",
    "label": "Nahoon Point",
-   "lat": -32.9942,
-   "lon": 27.9502,
+   "wd_lat": -32.99701,
+   "wd_lon": 27.95082,
    "status": "ok",
    "region": "ZA-EC-PE",
-   "spot": "NAHOON REEF"
+   "spot": "NAHOON REEF",
+   "lat": -32.9942,
+   "lon": 27.9502
   },
   {
    "km": 0.27,
    "qid": "Q31908047",
    "label": "Coffee Bay",
-   "lat": -31.9807,
-   "lon": 29.1536,
+   "wd_lat": -31.9825,
+   "wd_lon": 29.15556,
    "status": "ok",
    "region": "ZA-EC-WLD",
-   "spot": "COFFEE BAY"
+   "spot": "COFFEE BAY",
+   "lat": -31.9807,
+   "lon": 29.1536
   },
   {
    "status": "sin fuente",
@@ -6142,41 +7502,49 @@
    "km": 4.64,
    "qid": "Q31511084",
    "label": "Cave Rock",
-   "lat": -29.9149,
-   "lon": 31.0298,
+   "wd_lat": -29.87998,
+   "wd_lon": 31.05608,
    "status": "lejos",
    "region": "ZA-KZN-DBN",
-   "spot": "CAVE ROCK"
+   "spot": "CAVE ROCK",
+   "lat": -29.9149,
+   "lon": 31.0298
   },
   {
    "km": 0.5,
    "qid": "Q805287",
    "label": "IBallito",
-   "lat": -29.5382,
-   "lon": 31.222,
+   "wd_lat": -29.5425,
+   "wd_lon": 31.22056,
    "status": "ok",
    "region": "ZA-KZN-N",
-   "spot": "BALLITO"
+   "spot": "BALLITO",
+   "lat": -29.5382,
+   "lon": 31.222
   },
   {
    "km": 3.82,
    "qid": "Q61792877",
    "label": "Big Bay Academy",
-   "lat": -33.7925,
-   "lon": 18.4563,
+   "wd_lat": -33.80479,
+   "wd_lon": 18.49491,
    "status": "lejos",
    "region": "ZA-WC-CPT",
-   "spot": "BIG BAY"
+   "spot": "BIG BAY",
+   "lat": -33.7925,
+   "lon": 18.4563
   },
   {
    "km": 0.21,
    "qid": "Q31943180",
    "label": "Llandudno Bay",
-   "lat": -34.009,
-   "lon": 18.3403,
+   "wd_lat": -34.0075,
+   "wd_lon": 18.33889,
    "status": "ok",
    "region": "ZA-WC-CPT",
-   "spot": "LLANDUDNO"
+   "spot": "LLANDUDNO",
+   "lat": -34.009,
+   "lon": 18.3403
   },
   {
    "status": "sin fuente",
@@ -6196,21 +7564,25 @@
    "km": 0.25,
    "qid": "Q111859257",
    "label": "The Last Word Long Beach",
-   "lat": -34.1367,
-   "lon": 18.3269,
+   "wd_lat": -34.13765,
+   "wd_lon": 18.32933,
    "status": "ok",
    "region": "ZA-WC-CPT",
-   "spot": "LONG BEACH"
+   "spot": "LONG BEACH",
+   "lat": -34.1367,
+   "lon": 18.3269
   },
   {
    "km": 0.08,
    "qid": "Q131611188",
    "label": "Muizenberg Beach",
-   "lat": -34.1088,
-   "lon": 18.4699,
+   "wd_lat": -34.10833,
+   "wd_lon": 18.47056,
    "status": "ok",
    "region": "ZA-WC-CPT",
-   "spot": "MUIZENBERG"
+   "spot": "MUIZENBERG",
+   "lat": -34.1088,
+   "lon": 18.4699
   },
   {
    "status": "sin fuente",
@@ -6223,21 +7595,25 @@
    "km": 0.64,
    "qid": "Q2093759",
    "label": "Victoria Bay",
-   "lat": -33.998,
-   "lon": 22.5565,
+   "wd_lat": -34.0,
+   "wd_lon": 22.55,
    "status": "ok",
    "region": "ZA-WC-GR",
-   "spot": "VICTORIA BAY"
+   "spot": "VICTORIA BAY",
+   "lat": -33.998,
+   "lon": 22.5565
   },
   {
    "km": 0.83,
    "qid": "Q24233920",
    "label": "Elands Bay Cave",
-   "lat": -32.3161,
-   "lon": 18.3266,
+   "wd_lat": -32.31764,
+   "wd_lon": 18.31794,
    "status": "ok",
    "region": "ZA-WC-WCO",
-   "spot": "ELANDS BAY"
+   "spot": "ELANDS BAY",
+   "lat": -32.3161,
+   "lon": 18.3266
   }
  ],
  "open_meteo": {
