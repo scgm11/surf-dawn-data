@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-STENT ROAD,-39.2269,173.7745,R,V,web:mondo.surf,top,NZCPS; Backdoor y Farmhouse Stent cerca
+STENT ROAD,-39.2269,173.7745,R,V,web:mondo.surf,top checked,NZCPS; Backdoor y Farmhouse Stent cerca
 WAIWHAKAIHO,-39.0372,174.1025,R,K,local,top,NZCPS; desembocadura; The Groyne
 EAST END,-39.0500,174.0630,B,L,local,,New Plymouth
 FITZROY BEACH,-39.0430,174.0600,B,L,local,,New Plymouth

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-HT'S,-2.4000,99.8650,R,L,local,top,Hollow Trees; Lance's Right; WC; posicion dudosa
-LANCE'S LEFT,-2.3950,99.8700,R,L,local,top,izquierda; posicion dudosa
+HT'S,-2.4000,99.8650,R,L,local,top checked,Hollow Trees; Lance's Right; WC; posicion dudosa
+LANCE'S LEFT,-2.3950,99.8700,R,L,local,top checked,izquierda; posicion dudosa
 BANKVAULTS,-2.4050,99.8600,R,L,local,,posicion aprox
 PITSTOPS,-2.4100,99.8550,R,L,local,,posicion aprox
 MACARONIS,-2.7900,99.9800,R,L,local,top,WC; izquierda; Pagai; posicion a verificar

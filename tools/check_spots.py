@@ -194,10 +194,12 @@ def main():
     ap.add_argument("--no-wikidata", action="store_true")
     a = ap.parse_args()
     zs = zones(set(a.regions or []))
-    tops = {}
+    tops, checked = {}, set()
     for z in zs:
         for r in seeds.spots(z["id"]):
             tops[(z["id"], r["name"])] = bool(r["f"].get("top"))
+            if r["f"].get("checked"):
+                checked.add((z["id"], r["name"]))
     used = {"calls": 0.0, "requests": 0}
     waves = fetch_waves(zs, used)
     result = {"days": DAYS + FORECAST, "facing_deg": FACING_DEG, "regions": {}, "flags": [], "flagship": []}
@@ -264,12 +266,17 @@ def main():
                 result["flagship"] = json.load(f).get("flagship", [])
         except (OSError, ValueError):
             pass
+        for c in result["flagship"]:
+            if c.get("status") in ("lejos", "revisado"):
+                c["status"] = "revisado" if (c["region"], c["spot"]) in checked else "lejos"
     else:
         OVERPASS_UNTIL[0] = time.time() + OVERPASS_MIN * 60
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):
                     c = check_flagship(z["id"], s, z["c"])
+                    if c["status"] == "lejos" and (z["id"], s[0]) in checked:
+                        c["status"] = "revisado"            # the item is a town, a hotel, another wave... (seed flag)
                     c.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
                     result["flagship"].append(c)
                     print("  %s/%s: %s %s" % (z["id"], s[0], c["status"], c.get("km", "")))
@@ -288,7 +295,7 @@ def main():
 def report(r, zs):
     n = sum(len(z["s"]) for z in zs)
     fl = r["flagship"]
-    count = {k: sum(1 for c in fl if c["status"] == k) for k in ("ok", "lejos", "sin fuente", "error")}
+    count = {k: sum(1 for c in fl if c["status"] == k) for k in ("ok", "lejos", "revisado", "sin fuente", "error")}
     L = ["# Picos: controles por pico", "",
          "Generado %s UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). %d regiones, %d picos." % (
              time.strftime("%Y-%m-%d %H:%M", time.gmtime()), len(zs), n), "",
@@ -301,9 +308,10 @@ def report(r, zs):
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
          "- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta %d km; "
-         "si no tiene, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d sin fuente (revisar a mano), "
+         "si no tiene, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d lejos pero revisados a mano (el "
+         "ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), %d sin fuente (revisar a mano), "
          "%d sin respuesta." % (
-             WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["sin fuente"], count["error"]),
+             WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["revisado"], count["sin fuente"], count["error"]),
          "- Open-Meteo: %d pedidos, ~%d llamadas de las 10.000 diarias gratuitas." % (
              r["open_meteo"]["requests"], r["open_meteo"]["calls"]), ""]
     flipped = [f for f in r["flags"] if f.get("flipped")]

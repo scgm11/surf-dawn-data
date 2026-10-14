@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-JAWS,20.9470,-156.2985,R,K,local,top nosnap facing=10,Pe'ahi; ola grande; mar adentro
+JAWS,20.9470,-156.2985,R,K,local,top nosnap facing=10 checked,Pe'ahi; ola grande; mar adentro
 HO'OKIPA,20.9355,-156.3570,R,K,local,top,
 PAVILIONS,20.9350,-156.3590,R,L,local,,Ho'okipa oeste
 LANES,20.9362,-156.3540,R,L,local,,Ho'okipa este

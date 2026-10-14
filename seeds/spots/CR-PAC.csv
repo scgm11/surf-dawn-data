@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 BOCA BARRANCA,9.9700,-84.7300,P,K,local,top,Puntarenas; izquierda larga en boca de río
 JACO,9.5986,-84.6216,B,V,web:mondo.surf,,
-PLAYA HERMOSA,9.5590,-84.5890,B,K,local,top,Jacó sur; tubular
+PLAYA HERMOSA,9.5590,-84.5890,B,K,local,top checked,Jacó sur; tubular
 ESTERILLOS OESTE,9.5247,-84.5026,B,V,web:mondo.surf,,
 ESTERILLOS ESTE,9.5140,-84.4400,B,L,local,,posición aproximada
 PALO SECO,9.4840,-84.2900,B,L,local,,Parrita; posición aproximada

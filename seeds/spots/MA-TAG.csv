@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-BOILERS,30.6400,-9.8300,R,L,local,top,posicion dudosa; ola pesada
+BOILERS,30.6400,-9.8300,R,L,local,top checked,posicion dudosa; ola pesada
 KILLER POINT,30.5750,-9.7480,P,L,local,top,posicion dudosa
 ANCHOR POINT,30.5640,-9.7240,P,K,local,top,derecha larga; 3 km al norte de Taghazout
 LA SOURCE,30.5575,-9.7185,P,L,local,,

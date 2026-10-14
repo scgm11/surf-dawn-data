@@ -15,7 +15,7 @@ PEDRO POINT,37.5935,-122.5185,P,K,local,,Pacifica
 MONTARA,37.5380,-122.5120,B,K,local,,
 MIRADA SURF,37.5110,-122.4880,P,L,local,,Half Moon Bay
 SURFER'S BEACH,37.5000,-122.4800,B,L,local,facing=230,Pillar Point Harbor; orientación a mano (la calculada miraba a la laguna o la bahía)
-MAVERICKS,37.4915,-122.5083,R,V,web:wikipedia.org,top nosnap facing=240,ola grande
+MAVERICKS,37.4915,-122.5083,R,V,web:wikipedia.org,top nosnap facing=240 checked,ola grande
 MIRAMAR,37.4700,-122.4560,B,L,local,,Half Moon Bay
 POPLAR BEACH,37.4730,-122.4600,B,L,local,,Half Moon Bay
 FRANCIS BEACH,37.4605,-122.4425,B,L,local,,Half Moon Bay
