@@ -8,6 +8,8 @@
      3  official station <= 60 km across land
      4  TICON-3 gauge <= 60 km across land, record >= 1 year
      5  TICON-3 gauge <= 120 km on the same coast, record >= 180 days
+     6  where none of these reaches a spot: the global model GOT5.6 (NASA GSFC, tools/tide/got.py) at
+        a spot of each group of such spots within GOT_KM, as long as the region has room (3 ports)
    "Across land": the straight line between spot and station runs over land (global-land-mask) for
    more than max(4 km, 15 % of the distance). A region keeps the set of at most 3 ports that
    serves its spots best (score per spot: tier weight minus distance/100, minus 0.5 per port);
@@ -48,6 +50,7 @@ sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(os.path.abspath
 from tools.lib import geo, seeds  # noqa: E402
 from tools.lib import tide as tidelib  # noqa: E402
 from tools.tide import harmonic as H  # noqa: E402
+from tools.tide import got as G  # noqa: E402
 from tools.tide import sources as S  # noqa: E402
 
 ROOT = seeds.ROOT
@@ -62,7 +65,8 @@ MAX_PORTS = 3
 PORT_COST = 0.5
 TIER_W = {1: 10.0, 2: 8.0, 3: 6.0, 4: 5.0, 5: 4.0}
 TIER_TXT = {1: "oficial, misma costa", 2: "TICON-3, misma costa", 3: "oficial, cruzando tierra",
-            4: "TICON-3, cruzando tierra", 5: "TICON-3, registro corto"}
+            4: "TICON-3, cruzando tierra", 5: "TICON-3, registro corto", 6: "modelo global GOT5.6"}
+GOT_KM = 50.0                      # tier 6: spots this close share the model's point
 FROZEN = ["UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"]
 LEGACY = [
     {"key": "imbituba", "name": "Porto de Imbituba (DHN)", "lat": -28.2297, "lon": -48.6525, "utc_offset": -3,
@@ -86,6 +90,7 @@ LIC = {
     "imi": ("CC BY 4.0", "Marine Institute (Ireland)"),
     "linz": ("CC BY 4.0", "Land Information New Zealand (LINZ), Crown copyright"),
     "ticon": ("CC BY 4.0", "TICON-3, Hart-Davis et al. 2022 (doi:10.1594/PANGAEA.951610), datos GESLA-3"),
+    "got": ("dominio público (NASA)", "GOT5.6, R. Ray, NASA Goddard Space Flight Center (predicción con pyTMD)"),
 }
 
 
@@ -368,8 +373,22 @@ class Heights:
                 amp = [g["cons"][c][0] for c in g["cons"]]
                 pha = [g["cons"][c][1] for c in g["cons"]]
                 y[yr] = H.predict(S.year_hours(yr), names, amp, pha, self.corr)
+            elif kind == "got":
+                try:
+                    y[yr] = G.heights(s["lat"], s["lon"], S.year_hours(yr), CACHE)
+                except G.ModelError as e:
+                    raise S.SourceError(str(e))
         out = {"y": y, "datum": datum, "filled": {}, "mask": {}, "rms_fill": 0.0}
-        if kind == "ticon":
+        if kind == "got":                      # about MSL: raised so every height is >= 0, like TICON's
+            lo = min(float(np.nanmin(v)) for v in y.values())
+            off = int(math.ceil(max(0.0, -lo))) + 5
+            for yr in y:
+                y[yr] = np.where(np.isfinite(y[yr]), y[yr] + off, np.nan)
+                if not np.isfinite(y[yr]).all():
+                    raise S.SourceError("%s: the model has gaps" % s["key"])
+            out["datum"] = "MSL+%d cm (modelo)" % off
+            out["offset"] = off
+        elif kind == "ticon":
             g = s["gauge"]
             names = [H.pytmd_name(c) for c in g["cons"]]
             fmax = H.max_nodal(names, self.corr)
@@ -672,6 +691,44 @@ def main():
                 log("  %s: %s" % (s["key"], e))
         if not new_fail:
             break
+
+    # tier 6: the global model for the spots no gauge reaches, a point per group within GOT_KM
+    got_n = 0
+    for c in codes:
+        r = sel[c]
+        groups = []
+        for sp in r["nop"]:
+            for g in groups:
+                if geo.km((g[0]["lat"], g[0]["lon"]), (sp["lat"], sp["lon"])) <= GOT_KM:
+                    g.append(sp)
+                    break
+            else:
+                groups.append([sp])
+        groups.sort(key=lambda g: -len(g))
+        for g in groups[:max(0, MAX_PORTS - len(r["ports"]))]:
+            # the group's spot with the smallest farthest distance to the others stands for it
+            mid = min(g, key=lambda p: max(geo.km((p["lat"], p["lon"]), (q["lat"], q["lon"])) for q in g))
+            h = hashlib.sha1(("%.3f,%.3f" % (mid["lat"], mid["lon"])).encode()).hexdigest()[:6]
+            s = {"key": "got-" + h, "kind": "got", "official": False, "lat": mid["lat"], "lon": mid["lon"],
+                 "name": "%s %.3f%s %.3f%s (%s)" % (G.MODEL, abs(mid["lat"]), "N" if mid["lat"] >= 0 else "S",
+                                                    abs(mid["lon"]), "E" if mid["lon"] >= 0 else "W", c),
+                 "ref": "%.3f,%.3f" % (mid["lat"], mid["lon"]), "src": "got5.6:%.3f,%.3f" % (mid["lat"], mid["lon"]),
+                 "datum": "MSL (modelo)"}
+            s["license"], s["credit"] = LIC["got"]
+            try:
+                ser = heights.series(s)
+            except S.SourceError as e:
+                rep["warnings"].append("%s: %s" % (c, e))
+                log("  %s: %s" % (c, e))
+                continue
+            st.append(s)
+            ds = [(sp, geo.km((mid["lat"], mid["lon"]), (sp["lat"], sp["lon"])), 6, 0) for sp in g]
+            r["ports"].append({"i": len(st) - 1, "spots": ds, "radius": int(math.ceil(max(x[1] for x in ds))) + 10,
+                               "tier": 6})
+            r["nop"] = [sp for sp in r["nop"] if not any(sp is x for x in g)]
+            got_n += 1
+            log("  %-12s %s %5.0f..%4.0f cm  %d spots" % (c, s["key"], ser["lo"], ser["hi"], len(g)))
+    log("GOT5.6: %d model points" % got_n)
 
     # radius conflicts: a spot that the watch (nearest covering port) would give to another port
     for c, r in sel.items():

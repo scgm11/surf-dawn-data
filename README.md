@@ -52,6 +52,10 @@ está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regi
   hay, las constantes armónicas de **TICON-3** (mareógrafos GESLA-3) con correcciones nodales de pyTMD.
   Las predicciones de TICON-3 se comparan con las de NOAA en las mismas estaciones (el reporte trae la
   tabla: entre 1,6 y 3,7 cm de error RMS).
+- **Donde no hay mareógrafo cerca** (Argentina, buena parte de Indonesia, Centroamérica, Maldivas…): el
+  modelo global **GOT5.6** de la NASA (R. Ray, GSFC; dominio público), con sus grillas extendidas a la
+  costa, predicho con pyTMD en un pico de cada grupo de picos a menos de 50 km (`tools/tide/got.py`).
+  Es menos preciso que un mareógrafo cerca, pero mejor que el nivel del mar genérico.
 
 Son predicciones astronómicas: no incluyen el viento ni la presión, que en el Río de la Plata suelen
 mover el agua más que la marea.
@@ -75,7 +79,7 @@ La regla y la lectura de `models.csv` están en `tools/lib/models.py`. Detalle e
   gratis), con los modelos de NOAA, ECMWF, Météo-France, DWD, ECCC, JMA, UK Met Office y BoM.
 - Mareas: SOHMA (Uruguay), DHN vía Epagri/CIRAM (Brasil), NOAA CO-OPS (dominio público), JMA
   (Public Data License 1.0), Marine Institute (CC BY 4.0), LINZ (CC BY 4.0, Crown copyright) y
-  TICON-3 (CC BY 4.0, Hart-Davis et al. 2022), con pyTMD.
+  TICON-3 (CC BY 4.0, Hart-Davis et al. 2022) y el modelo GOT5.6 (NASA GSFC, dominio público), con pyTMD.
 - Boyas y estaciones: NOAA NDBC, CDIP (SIO/UCSD), IMOS/AODN y Marine Institute (detalle y licencias
   en `validate/README.md`).
 - Tierra y mar para los puntos de olas: `global-land-mask`.

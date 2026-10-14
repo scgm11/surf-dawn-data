@@ -68,7 +68,9 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
 24 alturas horarias por día en cm, `h[(día-1)*24 + hora]`, con día y hora en el reloj de
 `utc_offset` (horas). Los puertos de Uruguay y Brasil siguen en −3; los nuevos van en UTC (0).
 Alturas sobre el datum del puerto (`datum`): `LAT`/`MLLW`/cero de carta en las tablas oficiales;
-en las calculadas desde armónicos, el nivel medio más la suma de amplitudes (siempre ≥ 0).
+en las calculadas desde armónicos, el nivel medio más la suma de amplitudes (siempre ≥ 0); en las del
+modelo global GOT5.6 (`got-…`, donde no hay mareógrafo cerca), el nivel medio más lo justo para que
+ninguna altura sea negativa (`"datum":"MSL+N cm (modelo)"`).
 
 ### `tide/<clave>/harmonics.json` — respaldo sin red
 
