@@ -52,8 +52,6 @@ MX-BCN       4 spots   362 bytes  ve5eb28
 MX-CAR       3 spots   281 bytes  vda8403
 PR-NW       15 spots   794 bytes  ve600bf
 PR-N         8 spots   569 bytes  v2f5448
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 BB-ALL       8 spots   445 bytes  vd55fc2
 DO-ALL       2 spots   245 bytes  v9822a6
 GP-ALL       3 spots   266 bytes  v5db007
@@ -123,10 +121,7 @@ ID-BAL-W    18 spots   821 bytes  veec375
 ID-BAL-E    12 spots   617 bytes  vb9d72f
 ID-JAV-E     7 spots   392 bytes  v7e55a5
 ID-JAV-W     7 spots   420 bytes  v14e133
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 ID-LOM      14 spots   648 bytes  v479e02
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 ID-SBW       9 spots   445 bytes  v63117d
 ID-SMB       2 spots   184 bytes  vd8713c
 ID-ROT       4 spots   252 bytes  v04ffa7
@@ -161,7 +156,6 @@ ZA-WC-GR    11 spots   609 bytes  v1f4e34
 ZA-EC-JB    10 spots   627 bytes  v3cec26
 ZA-EC-PE    17 spots   841 bytes  v0c9370
 ZA-EC-WLD    5 spots   310 bytes  v5c4da7
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 ZA-KZN-DBN   8 spots   416 bytes  v546125
 ZA-KZN-N     6 spots   371 bytes  vd160c9
 ZA-KZN-S     9 spots   471 bytes  v17b0cf
@@ -179,7 +173,7 @@ RE-ALL       8 spots   463 bytes  vf1b4bd
 MU-ALL       3 spots   261 bytes  v0c8dae
 CV-ALL       3 spots   277 bytes  vb954b7
 FR-PBA      24 spots  1077 bytes  v451dc8
-FR-HOS      16 spots   799 bytes  v7008b2
+FR-HOS      16 spots   799 bytes  v5b7eae
 FR-GIR      18 spots   905 bytes  v32bee8
 FR-VEN      12 spots   698 bytes  v076903
 FR-BRE      15 spots   760 bytes  vbed782
