@@ -3,7 +3,7 @@ MOLEDO,41.8420,-8.8780,B,L,local,,Caminha; posicion aproximada
 ANCORA,41.8080,-8.8670,B,K,local,,Vila Praia de Ancora
 AFIFE,41.7640,-8.8730,B,L,local,,Viana do Castelo; posicion aproximada
 PRAIA NORTE,41.7050,-8.8500,B,L,local,,Viana do Castelo; posicion aproximada
-CABEDELO,41.6780,-8.8600,B,L,local,,Viana do Castelo; posicion aproximada
+CABEDELO,41.6780,-8.8600,B,L,local,facing=273,Viana do Castelo; posicion aproximada; orientación a mano (la calculada miraba a la laguna o la bahía)
 ESPOSENDE,41.5370,-8.7900,B,L,local,,posicion aproximada
 APULIA,41.4650,-8.7880,B,L,local,,Esposende; posicion aproximada
 AGUCADOURA,41.4420,-8.7890,B,L,local,,Povoa de Varzim; posicion aproximada

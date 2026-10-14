@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-ILHA DO MEL,-25.5450,-48.3050,B,L,local,,Praia Grande da ilha
+ILHA DO MEL,-25.5450,-48.3050,B,L,local,facing=110,Praia Grande da ilha; orientación a mano (la calculada miraba a la laguna o la bahía)
 SHANGRI-LÁ,-25.6400,-48.4180,B,K,local,,Pontal do Paraná
 PRAIA DE LESTE,-25.6973,-48.4672,B,K,osm:way/320453872,,Pontal do Paraná; posición OSM
 CAIOBÁ,-25.8430,-48.5360,B,K,local,,Matinhos

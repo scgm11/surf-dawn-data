@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 TWO ROCKS,-31.4960,115.5880,B,L,local,,
 YANCHEP,-31.5480,115.6300,B,L,local,,
 QUINNS ROCKS,-31.6700,115.6790,B,L,local,,
-MINDARIE,-31.6900,115.6910,R,L,local,,
+MINDARIE,-31.6900,115.6910,R,L,local,facing=260,orientación a mano (la calculada miraba a la laguna o la bahía)
 BURNS BEACH,-31.7130,115.7120,B,L,local,,
 OCEAN REEF,-31.7620,115.7220,R,L,local,,
 MULLALOO,-31.7820,115.7350,B,K,local,,
@@ -16,6 +16,6 @@ SWANBOURNE,-31.9620,115.7520,B,L,local,,
 COTTESLOE,-31.9930,115.7510,B,K,local,,
 LEIGHTON,-32.0190,115.7480,B,L,local,,
 NORTH MOLE,-32.0430,115.7390,R,L,local,,Fremantle
-STRICKLAND BAY,-32.0290,115.4930,R,K,local,top,Rottnest
+STRICKLAND BAY,-32.0172,115.4764,R,V,wd:Q21896354,top,Rottnest; posición de Wikidata
 SALMON BAY,-32.0270,115.5120,R,L,local,,Rottnest
 STARK BAY,-32.0300,115.5020,R,L,local,,Rottnest

@@ -36,7 +36,7 @@ JENSEN BEACH,27.2490,-80.1950,B,L,local,,
 STUART BEACH,27.1950,-80.1640,B,L,local,,
 JUPITER INLET,26.9460,-80.0675,B,K,local,,
 JUNO PIER,26.8790,-80.0540,B,K,local,,
-LAKE WORTH PIER,26.6140,-80.0340,B,K,local,,
+LAKE WORTH PIER,26.6140,-80.0340,B,K,local,facing=90,orientación a mano (la calculada miraba a la laguna o la bahía)
 BOYNTON INLET,26.5430,-80.0465,B,L,local,,
 DELRAY BEACH,26.4600,-80.0590,B,K,local,,
 BOCA INLET,26.3380,-80.0690,B,L,local,,

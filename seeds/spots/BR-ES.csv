@@ -14,7 +14,7 @@ BARRA DO JUCU,-20.4285,-40.3252,B,K,osm:relation/1864814,,posición OSM
 PONTA DA FRUTA,-20.5210,-40.3720,B,K,local,,
 SETIBA,-20.6253,-40.4380,B,K,osm:node/2102079688,,Guarapari; posición OSM
 PRAIA DO MORRO,-20.6590,-40.4880,B,K,local,,Guarapari
-MEAÍPE,-20.7050,-40.4300,B,L,local,,Guarapari
+MEAÍPE,-20.7050,-40.4300,B,L,local,facing=120,Guarapari; orientación a mano (la calculada miraba a la laguna o la bahía)
 IRIRI,-20.8311,-40.6942,B,K,osm:node/280620984,,Anchieta; posición OSM
 PIÚMA,-20.8330,-40.7260,B,L,local,,
 MARATAÍZES,-21.0400,-40.8330,B,K,local,,

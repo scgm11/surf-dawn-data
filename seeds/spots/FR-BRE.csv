@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 SILLON,48.6540,-2.0230,B,L,local,,Saint-Malo; posicion aproximada
 DOSSEN,48.7080,-4.0300,B,L,local,,Santec; posicion aproximada
-BLANCS SABLONS,48.3750,-4.7800,B,L,local,,Le Conquet; posicion aproximada
+BLANCS SABLONS,48.3750,-4.7800,B,L,local,facing=270,Le Conquet; posicion aproximada; orientación a mano (la calculada miraba a la laguna o la bahía)
 LOSTMARC'H,48.2200,-4.6000,B,L,local,,Crozon; posicion aproximada
 LA PALUE,48.2060,-4.5800,B,L,local,,Crozon; posicion aproximada
 STE ANNE LA PALUD,48.1470,-4.2830,B,L,local,,Plonevez-Porzay; posicion aproximada

@@ -5,7 +5,7 @@ PISMO PIER,35.1385,-120.6435,B,K,local,top,
 SHELL BEACH,35.1550,-120.6780,B,K,local,,
 PIRATE'S COVE,35.1660,-120.7170,B,K,local,,
 AVILA BEACH,35.1790,-120.7310,B,K,local,,
-PORT SAN LUIS,35.1690,-120.7570,R,K,local,,
+PORT SAN LUIS,35.1690,-120.7570,R,K,local,facing=200,orientación a mano (la calculada miraba a la laguna o la bahía)
 HAZARD CANYON,35.2560,-120.8790,R,L,local,,Montana de Oro
 SPOONER'S COVE,35.2765,-120.8830,B,K,local,,Montana de Oro
 SANDSPIT,35.3200,-120.8620,B,L,local,,Morro Bay

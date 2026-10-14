@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HENDAYE,43.3800,-1.7760,B,K,local,,plage de Hendaye
-BELHARRA,43.4150,-1.7000,R,L,local,top nosnap facing=315,ola grande; ~2 km mar adentro; posicion dudosa
+BELHARRA,43.4036,-1.7178,R,V,wd:Q2894399,top nosnap facing=315,ola grande; ~2 km mar adentro; posición de Wikidata
 SOCOA,43.3965,-1.6845,R,K,local,,junto al fuerte
 SAINTE BARBE,43.4030,-1.6500,B,K,local,,St-Jean-de-Luz
 ERROMARDIE,43.4090,-1.6440,B,K,local,,
@@ -13,7 +13,7 @@ UHABIA,43.4440,-1.5910,B,K,local,,Bidart
 ILBARRITZ,43.4620,-1.5790,B,K,local,,
 COTE DES BASQUES,43.4780,-1.5710,B,K,local,top,Biarritz; longboard
 MILADY,43.4700,-1.5660,B,K,local,,Biarritz
-GRANDE PLAGE,43.4850,-1.5620,B,K,local,top,Biarritz
+GRANDE PLAGE,43.4850,-1.5620,B,K,local,top facing=300,Biarritz; orientación a mano (la calculada miraba a la laguna o la bahía)
 MIRAMAR,43.4905,-1.5585,B,K,local,,Biarritz
 CHAMBRE D'AMOUR,43.5005,-1.5560,B,K,local,,Anglet
 LES CORSAIRES,43.5030,-1.5540,B,K,local,,Anglet

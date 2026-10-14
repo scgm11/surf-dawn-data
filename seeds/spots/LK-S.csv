@@ -7,6 +7,6 @@ LAZY RIGHT,5.9640,80.3880,R,L,local,,Midigama
 COCONUTS,5.9620,80.3920,R,L,local,,Midigama; posicion aprox
 RAMS,5.9610,80.3950,R,L,local,,Midigama; posicion aprox
 MIDIGAMA,5.9600,80.3930,R,K,local,top,zona de arrecifes
-WELIGAMA,5.9690,80.4310,B,K,local,top,bahia; principiantes
+WELIGAMA,5.9690,80.4310,B,K,local,top facing=180,bahia; principiantes; orientación a mano (la calculada miraba a la laguna o la bahía)
 MIRISSA,5.9460,80.4600,R,L,local,,posicion aprox
 HIRIKETIYA,5.9680,80.6850,P,L,local,,Dikwella; posicion aprox

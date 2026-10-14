@@ -9,7 +9,7 @@ PRAIA DA VILA,-22.9390,-42.5150,B,K,local,,Saquarema
 ITAÚNA,-22.9400,-42.4900,B,K,local,top,CT 2026
 PRAIA SECA,-22.9420,-42.3590,B,L,local,,Araruama
 MASSAMBABA,-22.9440,-42.2200,B,L,local,,
-PRAINHAS DO PONTAL,-22.9600,-42.0150,B,L,local,,Arraial do Cabo
+PRAINHAS DO PONTAL,-22.9600,-42.0150,B,L,local,facing=160,Arraial do Cabo; orientación a mano (la calculada miraba a la laguna o la bahía)
 PRAIA GRANDE,-22.9670,-42.0220,B,K,local,,Arraial do Cabo
 PRAIA DO FORNO,-22.9740,-42.0010,B,L,local,,Arraial do Cabo
 FORTE,-22.8800,-41.9980,B,K,local,,Praia do Forte Cabo Frio

@@ -7,6 +7,6 @@ OC MD INLET,38.3270,-75.0850,B,K,local,,Ocean City MD
 FENWICK ISLAND,38.4600,-75.0510,B,L,local,,Delaware
 BETHANY BEACH,38.5350,-75.0560,B,K,local,,Delaware
 INDIAN RIVER INLET,38.6110,-75.0670,B,K,local,,Delaware
-DEWEY BEACH,38.6900,-75.0750,B,L,local,,Delaware
+DEWEY BEACH,38.6900,-75.0750,B,L,local,facing=100,Delaware; orientación a mano (la calculada miraba a la laguna o la bahía)
 REHOBOTH,38.7140,-75.0760,B,L,local,,Delaware
 HERRING POINT,38.7780,-75.0950,B,L,local,,Cape Henlopen

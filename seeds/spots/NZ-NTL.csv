@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-SHIPWRECK BAY,-35.1590,173.0730,P,L,local,top,Ahipara (Te Kohanga); NZCPS; izquierda larga; posicion dudosa
+SHIPWRECK BAY,-35.1774,173.1196,P,V,wd:Q49391921,top,Ahipara (Te Kohanga); NZCPS; izquierda larga; posición de Wikidata
 SUPER TUBES,-35.1651,173.0825,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
 MUKIES 2,-35.1683,173.0900,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
 MUKIES 1,-35.1705,173.0960,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
