@@ -95,8 +95,6 @@ AU-TAS      12 spots   693 bytes  v85e900
 AU-SA       14 spots   787 bytes  v8e36f1
 AU-SA-EYR    3 spots   241 bytes  v5720a6
 AU-WA-MR    32 spots  1805 bytes  vd0d6b0
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 AU-WA-PER   20 spots  1012 bytes  v8f31fe
 AU-WA-NW     5 spots   397 bytes  v4204fc
 AU-WA-GAS    3 spots   230 bytes  v16342d
@@ -140,15 +138,8 @@ MV-SMA       3 spots   267 bytes  v7f3090
 MV-SOU       2 spots   239 bytes  vf90716
 MV-CEN       1 spots   163 bytes  vdb3487
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
   overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-JP-CHI       8 spots   490 bytes  vd0eee6
+JP-CHI       8 spots   458 bytes  va63f62
 JP-SHO       9 spots   465 bytes  v25b55c
 JP-IZU       4 spots   308 bytes  v660a3c
 JP-IBA       5 spots   397 bytes  vbd4290
@@ -207,11 +198,6 @@ GB-CON      28 spots  1248 bytes  v21faa7
 GB-DEV       9 spots   540 bytes  v9b5a90
 GB-SOU       3 spots   328 bytes  v68a672
 GB-WAL      21 spots  1070 bytes  v143808
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 GB-SCO      21 spots  1048 bytes  v4ac0c5
 GB-NE       25 spots  1095 bytes  va72e90
 GB-NIR       9 spots   562 bytes  vb0fe7e
@@ -229,8 +215,6 @@ IS-ALL       3 spots   263 bytes  v57f496
 warning: BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
 warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
-warning: JP-CHI: kept the previous version
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-ERROR: JP-CHI: Overpass unavailable for region JP-CHI
-212 regions, 2494 spots, 1 errors, 6 warnings
+212 regions, 2494 spots, 0 errors, 5 warnings

@@ -1,17 +1,12 @@
 # Picos: reporte del último build
 
-212 regiones, 2494 picos. Errores: 1. Avisos: 6.
-
-## Errores
-
-- JP-CHI: Overpass unavailable for region JP-CHI
+212 regiones, 2494 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
 - BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
 - PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 - WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
-- JP-CHI: kept the previous version
 - GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 - NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 
@@ -158,7 +153,7 @@
 | MV-SMA | 3 | 267 | ncep_gfswave016 | gfs_seamless | 1 | 761 m | 0 |
 | MV-SOU | 2 | 239 | ncep_gfswave016 | gfs_seamless | 1 | 258 m | 0 |
 | MV-CEN | 1 | 163 | ncep_gfswave016 | gfs_seamless | 0 | 1063 m | 0 |
-| JP-CHI | 8 | 490 | (anterior) | | | | |
+| JP-CHI | 8 | 458 | ncep_gfswave016 | gfs_seamless | 2 | 716 m | 0 |
 | JP-SHO | 9 | 465 | ncep_gfswave016 | gfs_seamless | 1 | 421 m | 0 |
 | JP-IZU | 4 | 308 | ncep_gfswave016 | gfs_seamless | 2 | 1012 m | 0 |
 | JP-IBA | 5 | 397 | ncep_gfswave016 | gfs_seamless | 3 | 946 m | 0 |
@@ -510,6 +505,8 @@
 | MV-SMA | KANDOOMA RIGHT | L | 69 m | 108° | — |
 | MV-SOU | TIGER STRIPES | K | 183 m | 213° | — |
 | MV-SOU | BEACONS | L | 332 m | 154° | — |
+| JP-CHI | TSURIGASAKI | V | 81 m | 77° | — |
+| JP-CHI | ONJUKU | K | 34 m | 206° | — |
 | JP-SHO | KUGENUMA | K | 13 m | 209° | — |
 | JP-IZU | SHIRAHAMA | K | 251 m | 93° | — |
 | JP-SHK | KAIFU | L | 69 m | 117° | — |
