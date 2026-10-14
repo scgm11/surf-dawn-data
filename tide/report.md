@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 11:48 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 13:22 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -1011,8 +1011,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### ID-LOM — Lombok (14 picos)
 
 - `ticon-0ccd99` TICON-3 8.747S 115.212E (gesla.usgs) — TICON-3, misma costa: 5 picos a 83–115 km, radio 125 km
-- Sin puerto (Open-Meteo): DESERT POINT (ticon-0ccd99 a 67 km: cruza 18 km de tierra), KUTA LOMBOK (ticon-0ccd99 a 118 km: cruza 28 km de tierra), SEGER (ticon-0ccd99 a 119 km: cruza 28 km de tierra), TANJUNG AAN, GERUPUK, OUTSIDE GERUPUK, DON DON, KIDS CORNER, EKAS
-- Descartadas: `ticon-0ccd99` 67 km, cruza 18 km de tierra
+- Sin puerto (Open-Meteo): DESERT POINT (ticon-0ccd99 a 69 km: cruza 20 km de tierra), KUTA LOMBOK (ticon-0ccd99 a 118 km: cruza 28 km de tierra), SEGER (ticon-0ccd99 a 119 km: cruza 28 km de tierra), TANJUNG AAN, GERUPUK, OUTSIDE GERUPUK, DON DON, KIDS CORNER, EKAS
+- Descartadas: `ticon-0ccd99` 69 km, cruza 20 km de tierra
 
 ### ID-SBW — Sumbawa (9 picos)
 
@@ -1250,9 +1250,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### FR-HOS — Hossegor y Capbreton (16 picos)
 
-- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 9 picos a 6.2–25 km, radio 35 km (niveles 2,4)
-- `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 7 picos a 33–36 km, radio 47 km
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): L'ESTACADE → ticon-920ef6, SANTOCHA → ticon-920ef6, LE PREVENT → ticon-920ef6, LA PISTE → ticon-920ef6, LA SUD → ticon-920ef6, LA CENTRALE → ticon-920ef6, LA GRAVIERE → ticon-920ef6
+- `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 8 picos a 33–37 km, radio 48 km
+- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 8 picos a 6.2–25 km, radio 35 km (niveles 2,4)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): L'ESTACADE → ticon-920ef6, SANTOCHA → ticon-920ef6, LE PREVENT → ticon-920ef6, LA PISTE → ticon-920ef6, LA SUD → ticon-920ef6, LA CENTRALE → ticon-920ef6, LA GRAVIERE → ticon-920ef6, LES ESTAGNOTS → ticon-920ef6
 - Descartadas: `ticon-66c157` 53 km, cruza 13 km de tierra; `ticon-b486e0` 105 km, cruza 43 km de tierra
 
 ### FR-GIR — Gironda y Landas norte (18 picos)
