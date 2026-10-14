@@ -337,6 +337,7 @@ class Heights:
         self.corr = corrections
         self.cache = {}
         self.noaa_cache = {}
+        self.got = {}                          # key -> heights of both years (cm) or a ModelError, computed at once
 
     def noaa(self, sid, year):
         k = (sid, year)
@@ -374,10 +375,17 @@ class Heights:
                 pha = [g["cons"][c][1] for c in g["cons"]]
                 y[yr] = H.predict(S.year_hours(yr), names, amp, pha, self.corr)
             elif kind == "got":
-                try:
-                    y[yr] = G.heights(s["lat"], s["lon"], S.year_hours(yr), CACHE)
-                except G.ModelError as e:
-                    raise S.SourceError(str(e))
+                pre = self.got.get(s["key"])
+                if isinstance(pre, G.ModelError):
+                    raise S.SourceError(str(pre))
+                if pre is not None:
+                    k = sum(len(S.year_hours(x)) for x in self.years if x < yr)
+                    y[yr] = pre[k:k + len(S.year_hours(yr))]
+                else:
+                    try:
+                        y[yr] = G.heights(s["lat"], s["lon"], S.year_hours(yr), CACHE)
+                    except G.ModelError as e:
+                        raise S.SourceError(str(e))
         out = {"y": y, "datum": datum, "filled": {}, "mask": {}, "rms_fill": 0.0}
         if kind == "got":                      # about MSL: raised so every height is >= 0, like TICON's
             lo = min(float(np.nanmin(v)) for v in y.values())
@@ -694,6 +702,7 @@ def main():
 
     # tier 6: the global model for the spots no gauge reaches, a point per group within GOT_KM
     got_n = 0
+    todo = []
     for c in codes:
         r = sel[c]
         groups = []
@@ -708,26 +717,35 @@ def main():
         for g in groups[:max(0, MAX_PORTS - len(r["ports"]))]:
             # the group's spot with the smallest farthest distance to the others stands for it
             mid = min(g, key=lambda p: max(geo.km((p["lat"], p["lon"]), (q["lat"], q["lon"])) for q in g))
-            h = hashlib.sha1(("%.3f,%.3f" % (mid["lat"], mid["lon"])).encode()).hexdigest()[:6]
-            s = {"key": "got-" + h, "kind": "got", "official": False, "lat": mid["lat"], "lon": mid["lon"],
-                 "name": "%s %.3f%s %.3f%s (%s)" % (G.MODEL, abs(mid["lat"]), "N" if mid["lat"] >= 0 else "S",
-                                                    abs(mid["lon"]), "E" if mid["lon"] >= 0 else "W", c),
-                 "ref": "%.3f,%.3f" % (mid["lat"], mid["lon"]), "src": "got5.6:%.3f,%.3f" % (mid["lat"], mid["lon"]),
-                 "datum": "MSL (modelo)"}
-            s["license"], s["credit"] = LIC["got"]
-            try:
-                ser = heights.series(s)
-            except S.SourceError as e:
-                rep["warnings"].append("%s: %s" % (c, e))
-                log("  %s: %s" % (c, e))
-                continue
-            st.append(s)
-            ds = [(sp, geo.km((mid["lat"], mid["lon"]), (sp["lat"], sp["lon"])), 6, 0) for sp in g]
-            r["ports"].append({"i": len(st) - 1, "spots": ds, "radius": int(math.ceil(max(x[1] for x in ds))) + 10,
-                               "tier": 6})
-            r["nop"] = [sp for sp in r["nop"] if not any(sp is x for x in g)]
-            got_n += 1
-            log("  %-12s %s %5.0f..%4.0f cm  %d spots" % (c, s["key"], ser["lo"], ser["hi"], len(g)))
+            todo.append((c, g, mid))
+    if todo:
+        t_all = np.concatenate([S.year_hours(yr) for yr in years])
+        pts = [(m["lat"], m["lon"]) for _, _, m in todo]
+        log("GOT5.6: %d points, %d hours each" % (len(pts), len(t_all)))
+        for (c, g, mid), v in zip(todo, G.heights_many(pts, t_all, CACHE)):
+            heights.got["got-" + hashlib.sha1(("%.3f,%.3f" % (mid["lat"], mid["lon"])).encode()).hexdigest()[:6]] = v
+    for c, g, mid in todo:
+        r = sel[c]
+        h = hashlib.sha1(("%.3f,%.3f" % (mid["lat"], mid["lon"])).encode()).hexdigest()[:6]
+        s = {"key": "got-" + h, "kind": "got", "official": False, "lat": mid["lat"], "lon": mid["lon"],
+             "name": "%s %.3f%s %.3f%s (%s)" % (G.MODEL, abs(mid["lat"]), "N" if mid["lat"] >= 0 else "S",
+                                                abs(mid["lon"]), "E" if mid["lon"] >= 0 else "W", c),
+             "ref": "%.3f,%.3f" % (mid["lat"], mid["lon"]), "src": "got5.6:%.3f,%.3f" % (mid["lat"], mid["lon"]),
+             "datum": "MSL (modelo)"}
+        s["license"], s["credit"] = LIC["got"]
+        try:
+            ser = heights.series(s)
+        except S.SourceError as e:
+            rep["warnings"].append("%s: %s" % (c, e))
+            log("  %s: %s" % (c, e))
+            continue
+        st.append(s)
+        ds = [(sp, geo.km((mid["lat"], mid["lon"]), (sp["lat"], sp["lon"])), 6, 0) for sp in g]
+        r["ports"].append({"i": len(st) - 1, "spots": ds, "radius": int(math.ceil(max(x[1] for x in ds))) + 10,
+                           "tier": 6})
+        r["nop"] = [sp for sp in r["nop"] if not any(sp is x for x in g)]
+        got_n += 1
+        log("  %-12s %s %5.0f..%4.0f cm  %d spots" % (c, s["key"], ser["lo"], ser["hi"], len(g)))
     log("GOT5.6: %d model points" % got_n)
 
     # radius conflicts: a spot that the watch (nearest covering port) would give to another port
