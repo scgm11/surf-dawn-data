@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-212 regiones, 2496 picos. Errores: 0. Avisos: 5.
+212 regiones, 2494 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
@@ -29,7 +29,7 @@
 | BR-RJL | 20 | 1031 | ncep_gfswave025 | gfs_seamless | 3 | 594 m | 0 |
 | BR-ES | 19 | 1020 | ncep_gfswave025 | gfs_seamless | 3 | 640 m | 5 |
 | BR-BA | 21 | 1011 | ncep_gfswave025 | gfs_seamless | 3 | 755 m | 0 |
-| BR-NE-CE | 13 | 692 | ncep_gfswave016 | gfs_seamless | 3 | 859 m | 0 |
+| BR-NE-CE | 12 | 657 | ncep_gfswave016 | gfs_seamless | 3 | 908 m | 0 |
 | BR-NE-RN | 13 | 731 | ncep_gfswave016 | gfs_seamless | 3 | 478 m | 0 |
 | BR-NE-PE | 14 | 770 | ncep_gfswave016 | gfs_seamless | 3 | 506 m | 0 |
 | BR-NOR | 5 | 366 | ncep_gfswave016 | gfs_seamless | 1 | 483 m | 0 |
@@ -163,7 +163,7 @@
 | TW-NE | 6 | 422 | ncep_gfswave016 | gfs_seamless | 2 | 604 m | 0 |
 | IN-W | 3 | 284 | ncep_gfswave016 | gfs_seamless | 2 | 617 m | 0 |
 | IN-E | 3 | 306 | ncep_gfswave016 | gfs_seamless | 2 | 474 m | 0 |
-| VN-ALL | 5 | 395 | ncep_gfswave016 | gfs_seamless | 3 | 582 m | 0 |
+| VN-ALL | 4 | 324 | ncep_gfswave016 | gfs_seamless | 2 | 720 m | 0 |
 | KR-ALL | 6 | 439 | ncep_gfswave016 | gfs_seamless | 3 | 105 m | 0 |
 | CN-HAI | 2 | 257 | ncep_gfswave016 | gfs_seamless | 2 | 48 m | 0 |
 | ZA-WC-CPT | 20 | 951 | ncep_gfswave025 | gfs_seamless | 1 | 446 m | 2 |

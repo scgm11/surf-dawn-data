@@ -13,7 +13,7 @@ BR-RJ       17 spots   779 bytes  vb3d071
 BR-RJL      20 spots  1031 bytes  vef1cb8
 BR-ES       19 spots  1020 bytes  v828b10
 BR-BA       21 spots  1011 bytes  v6331cc
-BR-NE-CE    13 spots   692 bytes  v3aec92
+BR-NE-CE    12 spots   657 bytes  v8d5e30
 BR-NE-RN    13 spots   731 bytes  vd895c6
 BR-NE-PE    14 spots   770 bytes  v86474b
 BR-NOR       5 spots   366 bytes  vb99b41
@@ -147,7 +147,7 @@ TW-E         4 spots   348 bytes  vf78c31
 TW-NE        6 spots   422 bytes  vedab9f
 IN-W         3 spots   284 bytes  v840d55
 IN-E         3 spots   306 bytes  v1000d5
-VN-ALL       5 spots   395 bytes  vc20a8a
+VN-ALL       4 spots   324 bytes  v75adef
 KR-ALL       6 spots   439 bytes  vc7143b
 CN-HAI       2 spots   257 bytes  v13014b
 ZA-WC-CPT   20 spots   951 bytes  va843f4
@@ -215,4 +215,4 @@ warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-212 regions, 2496 spots, 0 errors, 5 warnings
+212 regions, 2494 spots, 0 errors, 5 warnings
