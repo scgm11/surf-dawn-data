@@ -1,3 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
-RIYUE BAY,18.6480,110.5180,B,L,local,,Wanning; posicion aprox
-HOUHAI,18.6330,110.4050,B,L,local,,Wanning; posicion dudosa
+RIYUE BAY,18.6303,110.2221,B,K,web:surfnerd,,Wanning; izquierda principal
+HOUHAI,18.2712,109.7234,B,K,web:surfnerd,,"Haitang Bay, Sanya"

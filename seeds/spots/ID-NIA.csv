@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-LAGUNDRI,-0.5800,97.7300,R,L,local,top,WC; derecha de la bahia; posicion a verificar
-SORAKE,-0.5900,97.7400,R,L,local,,playa y arrecife; posicion aprox
-INDICATORS,-0.5850,97.7350,R,L,local,,posicion aprox
+LAGUNDRI,0.5686,97.7339,R,K,web:surfnerd,top,WC; The Point de Lagundri / Sorake (norte del ecuador)
+ASU,0.9118,97.2635,R,L,web:surfnerd,top,Hinako; izquierda; dos fuentes difieren 9 km
+BAWA,0.8125,97.3472,R,L,web:mondo.surf,top,Hinako; derecha; una sola fuente
