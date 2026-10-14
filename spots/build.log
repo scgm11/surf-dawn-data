@@ -3,320 +3,69 @@ UY-ROC      19 spots   888 bytes  vadebc0
 AR-MDP      22 spots   993 bytes  v12125d
 AR-BAN      16 spots   788 bytes  v64a7d5
 AR-SUR       6 spots   359 bytes  v250696
-ERROR BR-RS:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
+BR-RS       17 spots   880 bytes  v6c4da0
 BR-RS-SUL    1 spots   191 bytes  v05fc1f
 BR-SC-FLN   14 spots   862 bytes  v1b65d5
 BR-SC-SUL    6 spots   436 bytes  vef75ae
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR BR-SC-NOR:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+BR-SC-NOR   19 spots   921 bytes  v348a29
 BR-SP       28 spots  1179 bytes  vc989d5
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 BR-RJ       17 spots   742 bytes  v7a740c
 BR-RJL      20 spots   922 bytes  v3ebc36
-ERROR BR-ES:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+BR-ES       16 spots   803 bytes  vbdc0b3
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo: ncep_gfswave016 at -16.4384,-39.0625: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.5916,-39.0881: No data is available for this location
-ERROR BR-BA:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+  open-meteo: ncep_gfswave016 at -16.5000,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-39.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.3333,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.8333,-39.0000: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -15.1667,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.1667,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.5000,-38.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.3333,-38.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -16.8333,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-38.6667: No data is available for this location
+BR-BA       19 spots   858 bytes  vc8808f
 BR-NE-CE    11 spots   514 bytes  v1ab20e
 BR-NE-RN    13 spots   627 bytes  v09cd67
 BR-NE-PE    13 spots   634 bytes  v37f86a
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 BR-NOR       5 spots   330 bytes  v354a39
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 CL-NOR      11 spots   557 bytes  vf5d464
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR CL-CEN:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR CL-PIC:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR CL-MAU:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+CL-CEN      20 spots  1018 bytes  vd62865
+CL-PIC       9 spots   552 bytes  v5f11a9
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+CL-MAU      12 spots   600 bytes  v9bd658
 CL-SUR      10 spots   526 bytes  v744e99
 PE-NOR       9 spots   460 bytes  v707fa1
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 PE-LLB       7 spots   411 bytes  vc2d8ad
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR PE-LIM:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR PE-SUR:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+PE-LIM      15 spots   679 bytes  v12ce98
+PE-SUR       5 spots   355 bytes  v2032bd
 EC-COS      11 spots   535 bytes  vb12fdb
 EC-GAL       4 spots   267 bytes  vdf813a
 CO-PAC       6 spots   345 bytes  vcc979e
 CO-CAR       2 spots   213 bytes  v0eacd7
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
 VE-ALL       2 spots   186 bytes  v04dbef
 PA-PAC       7 spots   394 bytes  v24b725
 PA-BDT       4 spots   258 bytes  v051efb
 CR-GUA       9 spots   478 bytes  ve3dcd3
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
 CR-NIC      11 spots   504 bytes  vd36dd6
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 CR-PAC      10 spots   502 bytes  va789f1
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 CR-OSA       4 spots   275 bytes  vf51b05
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 CR-CAR       5 spots   318 bytes  vd81a5c
 NI-RIV       8 spots   412 bytes  ve26d91
 NI-NW        2 spots   215 bytes  vba285d
 SV-LIB       8 spots   409 bytes  vb7a149
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 SV-ORI       3 spots   252 bytes  vc80ada
 GT-PAC       4 spots   290 bytes  v3490a6
 MX-OAX      13 spots   618 bytes  vac19ff
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 MX-PAC      11 spots   587 bytes  v7b0f63
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 MX-NAY       7 spots   415 bytes  v9020f7
 MX-BCS       6 spots   367 bytes  ve8f943
 MX-BCS-N     2 spots   231 bytes  v6d8511
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 MX-BCN       4 spots   292 bytes  v21c435
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 MX-CAR       3 spots   245 bytes  v5b82d5
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 PR-NW       14 spots   639 bytes  v3d5f84
 PR-N         8 spots   449 bytes  v66c298
 BB-ALL       8 spots   412 bytes  v681480
@@ -324,747 +73,120 @@ DO-ALL       2 spots   209 bytes  v54c3e4
 GP-ALL       3 spots   230 bytes  v17e1cf
 MQ-ALL       3 spots   230 bytes  v750222
 BS-ALL       1 spots   155 bytes  v840430
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 TT-ALL       4 spots   295 bytes  v7e721f
 US-CA-SD    38 spots  1616 bytes  v5984d5
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 US-CA-OC    32 spots  1414 bytes  v7de8a0
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 US-CA-LA    23 spots  1027 bytes  v664917
 US-CA-SB    27 spots  1176 bytes  v029fff
 US-CA-CEN   16 spots   793 bytes  v7b248b
 US-CA-SC    30 spots  1337 bytes  v9ae98b
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 US-CA-SF    29 spots  1280 bytes  v15d162
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 US-CA-NOR   25 spots  1126 bytes  vca5bca
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 US-PNW      33 spots  1421 bytes  vff644a
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 US-GULF     12 spots   586 bytes  ve8458c
 US-FL       46 spots  1897 bytes  v5624cc
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 US-FL-PAN    6 spots   412 bytes  v9300ab
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 US-SE       22 spots   999 bytes  v3649fe
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 US-SC-GA    10 spots   552 bytes  v42ad7d
 US-MID      11 spots   591 bytes  v78dfe0
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 US-NE       60 spots  2501 bytes  v7190f1
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 US-HI-OAN   21 spots   940 bytes  v649a45
 US-HI-OAS   25 spots  1071 bytes  v34404b
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 US-HI-MAU   21 spots   877 bytes  vf930ce
 US-HI-KAU   21 spots   857 bytes  v58fdca
 US-HI-BIG   15 spots   693 bytes  v8e542e
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR CA-BC-VI:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+CA-BC-VI    12 spots   626 bytes  v3206b8
 CA-NS       10 spots   532 bytes  v84c052
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 AU-QLD-SC   27 spots  1172 bytes  vbdf82f
 AU-QLD-GC   24 spots  1041 bytes  vfa5a51
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR AU-NSW-NR:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR AU-NSW-MN:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR AU-NSW-NC:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+AU-NSW-NR   26 spots  1233 bytes  vbe3b94
+AU-NSW-MN   32 spots  1478 bytes  v89ea00
+AU-NSW-NC   30 spots  1408 bytes  v8a9491
 AU-NSW-SYD  37 spots  1486 bytes  v1f6f17
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 AU-NSW-SC   31 spots  1337 bytes  v7508b8
-ERROR AU-VIC-SC:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+AU-VIC-SC   20 spots   967 bytes  vd15494
 AU-VIC-PI   18 spots   899 bytes  v464982
-ERROR AU-VIC-W:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR AU-TAS:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR AU-SA:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+AU-VIC-W     9 spots   525 bytes  ve267a6
+AU-TAS      12 spots   618 bytes  v5da9b0
+AU-SA       13 spots   740 bytes  v134909
 AU-SA-EYR    3 spots   241 bytes  v5720a6
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR AU-WA-MR:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+AU-WA-MR    29 spots  1619 bytes  v2d854c
 AU-WA-PER   20 spots   901 bytes  ve5a515
 AU-WA-NW     4 spots   301 bytes  v4e3355
 AU-WA-GAS    3 spots   230 bytes  v16342d
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 NZ-NTL      12 spots   575 bytes  vbadbb7
 NZ-AKL       9 spots   462 bytes  vde7ae1
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 NZ-RAG       4 spots   262 bytes  vd64c48
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 NZ-TAR       7 spots   379 bytes  v32b237
-ERROR NZ-BOP:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR NZ-GIS:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+NZ-BOP      10 spots   550 bytes  v6f159c
+NZ-GIS      13 spots   725 bytes  v506364
 NZ-WEL      12 spots   586 bytes  v421b43
-ERROR NZ-KAI:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+NZ-KAI       7 spots   463 bytes  v4f6a12
 NZ-OTA      12 spots   605 bytes  vd48964
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 NZ-WC        4 spots   275 bytes  v0674bc
 FJ-MAM       6 spots   368 bytes  v0d7fe5
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 FJ-SOU       2 spots   226 bytes  v30bdea
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-ERROR PF-TAH:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+PF-TAH       8 spots   469 bytes  vfd3c92
 PF-ISL       2 spots   211 bytes  va56577
-ERROR WS-ALL:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+WS-ALL       4 spots   268 bytes  v2c3c3e
 TO-ALL       6 spots   342 bytes  v11b9a4
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR VU-ALL:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+VU-ALL       4 spots   284 bytes  v0f5269
 PG-ALL       2 spots   209 bytes  va0fbca
 ID-BAL-BUK  16 spots   720 bytes  v786b71
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 ID-BAL-W    15 spots   684 bytes  v5bc3c4
 ID-BAL-E    12 spots   581 bytes  vd076f7
 ID-JAV-E     7 spots   392 bytes  v7e55a5
 ID-JAV-W     6 spots   348 bytes  v247f2d
 ID-LOM      14 spots   611 bytes  v4a81eb
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 ID-SBW       5 spots   297 bytes  v6f1a6e
 ID-SMB       2 spots   184 bytes  vd8713c
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 ID-ROT       3 spots   213 bytes  ve34d7a
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 ID-MEN      10 spots   477 bytes  v29a3d4
 ID-KRU       2 spots   208 bytes  vd8b914
 PH-SIA       8 spots   404 bytes  vde9da5
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 PH-LUZ       5 spots   325 bytes  vf36cf2
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 PH-EAS       2 spots   211 bytes  v0bca65
 LK-E         8 spots   417 bytes  vd1f5d9
 LK-S        10 spots   484 bytes  v15c990
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 MV-NMA       6 spots   323 bytes  v07e495
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 MV-SMA       2 spots   199 bytes  vf3f7c1
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 MV-CEN       1 spots   163 bytes  vdb3487
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
 JP-CHI       8 spots   392 bytes  v2aee8d
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 JP-SHO       9 spots   436 bytes  v65efe4
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 JP-IZU       4 spots   243 bytes  v0f89a8
 JP-IBA       5 spots   307 bytes  v971540
 JP-SHK       3 spots   216 bytes  v8079bc
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 JP-KYU       2 spots   209 bytes  v18b4f3
 TW-E         4 spots   279 bytes  v87b437
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 TW-NE        6 spots   348 bytes  v313d60
 IN-W         3 spots   218 bytes  v0ccc16
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 IN-E         3 spots   239 bytes  v7ee93f
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 VN-ALL       4 spots   254 bytes  vd97ed2
 KR-ALL       6 spots   332 bytes  v32ca4a
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR ZA-WC-CPT:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR ZA-WC-WCO:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+ZA-WC-CPT   20 spots   917 bytes  v9bcd0f
+ZA-WC-WCO    6 spots   402 bytes  vbc70b3
+ZA-WC-GR    11 spots   609 bytes  v1f4e34
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR ZA-WC-GR:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-ERROR ZA-EC-JB:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+ZA-EC-JB    10 spots   627 bytes  v3cec26
 ZA-EC-PE    16 spots   768 bytes  vd55332
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 ZA-EC-WLD    5 spots   310 bytes  v5c4da7
 ZA-KZN-DBN   8 spots   416 bytes  v74fab6
-ERROR ZA-KZN-N:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
+ZA-KZN-N     5 spots   333 bytes  v8a8f94
 ZA-KZN-S     9 spots   471 bytes  v17b0cf
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 NA-ERO       3 spots   264 bytes  v76f29c
 MA-TAG      19 spots   821 bytes  va1935e
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 MA-N         6 spots   339 bytes  va4c0c1
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 MA-S         4 spots   278 bytes  v8f1013
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 SN-ALL       5 spots   292 bytes  vd290dc
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 LR-ALL       3 spots   235 bytes  v036e7d
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 GH-ALL       3 spots   209 bytes  vadef3b
 MZ-S         2 spots   208 bytes  v3f425d
-ERROR MZ-INH:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+MZ-INH       3 spots   245 bytes  v85b97f
 MG-ALL       3 spots   225 bytes  v6952f6
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 RE-ALL       8 spots   427 bytes  v897f11
 MU-ALL       3 spots   226 bytes  v09aed0
 CV-ALL       2 spots   198 bytes  vcb9e55
@@ -1073,279 +195,128 @@ FR-HOS      15 spots   695 bytes  v2cd5e4
 FR-GIR      18 spots   797 bytes  v2074ef
 FR-VEN      12 spots   591 bytes  vaf1bba
 FR-BRE      14 spots   616 bytes  v583589
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 ES-PV       25 spots   955 bytes  v6dbaa7
 ES-CAN      14 spots   576 bytes  v86ba58
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 ES-AST      13 spots   566 bytes  vd8f33c
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 ES-GAL      18 spots   727 bytes  v961530
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 ES-AND      15 spots   645 bytes  v52aa90
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 ES-CN-E     11 spots   550 bytes  vc4505e
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 ES-CN-W     17 spots   793 bytes  vaf1392
 PT-NOR      19 spots   785 bytes  ve51b1d
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 PT-CEN      19 spots   842 bytes  vf3954d
 PT-PEN      12 spots   564 bytes  vc91d00
 PT-ERI      11 spots   524 bytes  v9dc2c8
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 PT-LIS      14 spots   630 bytes  v813296
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 PT-ALG      17 spots   740 bytes  v774118
 PT-AZO       6 spots   341 bytes  v91f051
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
 PT-MAD       8 spots   431 bytes  v7965a5
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 GB-CON      28 spots  1140 bytes  v109813
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 GB-DEV       9 spots   432 bytes  v268782
 GB-SOU       3 spots   257 bytes  vb0f1ee
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  open-meteo: ncep_gfswave016 at 53.2233,-4.5182: No data is available for this location
-  open-meteo: ncep_gfswave016 at 52.8304,-4.7368: No data is available for this location
-  open-meteo: ncep_gfswave016 at 52.8045,-4.5437: No data is available for this location
-  open-meteo: ncep_gfswave016 at 52.7967,-4.4698: No data is available for this location
-ERROR GB-WAL:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-ERROR GB-SCO:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR GB-NE:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.1667,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.6667,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.0000,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-5.0000: No data is available for this location
+GB-WAL      20 spots   871 bytes  v5faa47
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+GB-SCO      21 spots   941 bytes  v6f9f5c
+GB-NE       25 spots  1060 bytes  v0cb916
 GB-NIR       9 spots   461 bytes  vcbe433
+IE-NW        8 spots   469 bytes  vcec842
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR IE-NW:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ERROR IE-SW:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+IE-SW       11 spots   610 bytes  v3484be
 IE-SE       10 spots   494 bytes  v7d5ff9
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 NO-S         2 spots   220 bytes  v91a616
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-ERROR NO-N:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+NO-N         3 spots   226 bytes  v5918af
 DK-ALL       5 spots   287 bytes  v9939cb
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo: ncep_gfswave016 at 52.6191,4.6186: No data is available for this location
-  open-meteo: ncep_gfswave016 at 52.6661,4.6280: No data is available for this location
-  open-meteo: ncep_gfswave016 at 53.0846,4.7380: No data is available for this location
-ERROR NL-ALL:
-Traceback (most recent call last):
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 241, in main
-    b = build_region(code, reg, reg["country"], models, ports, a.offline, rep)
-        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/build_zones.py", line 144, in build_region
-    wps = openmeteo.wave_points(m[0], [(s["lat"], s["lon"]) for s in todo])
-          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 140, in wave_points
-    cands = {i: candidates(model, *spots[i]) for i in land}
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in candidates
-    if all(_is_sea(a, b) for a, b in ring):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 126, in <genexpr>
-    if all(_is_sea(a, b) for a, b in ring):
-           ^^^^^^^^^^^^^
-  File "/home/runner/work/surf-dawn-data/surf-dawn-data/tools/lib/openmeteo.py", line 110, in _is_sea
-    from global_land_mask import globe          # imported here: only the wave-point step needs it
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/__init__.py", line 3, in <module>
-    from .globe import *
-  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/global_land_mask/globe.py", line 14, in <module>
-    import numpy as np
-ModuleNotFoundError: No module named 'numpy'
-
+  open-meteo: ncep_gfswave016 at 52.6667,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,5.0000: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.6667,4.1667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.8333,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,4.1667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,4.3333: No data is available for this location
+NL-ALL      11 spots   525 bytes  v40bee9
 DE-ALL       4 spots   252 bytes  v551068
 IT-ALL       7 spots   403 bytes  vae7cc7
 IT-SAR       4 spots   255 bytes  vc1d8f1
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 IS-ALL       3 spots   228 bytes  va33939
+warning: BR-BA/STELLA MARIS: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/FLAMENGO: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/JAGUARIBE: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/ITAPUÃ: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/RESENDE: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/ITACARÉ: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/TIRIRICA: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/ENGENHOCA: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/HAVAIZINHO: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/ITACARÉZINHO: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/JERIBUCAÇU: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/CURURUPE: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/MUCUGÊ: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: BR-BA/TRANCOSO: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: PE-LIM/CERRO AZUL: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: WS-ALL/COCONUTS: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: WS-ALL/BOULDERS: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: WS-ALL/DEVIL'S ISLAND: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: WS-ALL/TAFATAFA: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: GB-WAL/RHOSNEIGR: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: GB-WAL/PORTH OER: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: GB-WAL/HELLS MOUTH: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: GB-WAL/PORTH CEIRIAD: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/HOEK VAN HOLLAND: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/KIJKDUIN: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/SCHEVENINGEN: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/NOORDWIJK: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/ZANDVOORT: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/IJMUIDEN: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/WIJK AAN ZEE: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/EGMOND: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/BERGEN AAN ZEE: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
+warning: NL-ALL/TEXEL: land cell in ncep_gfswave016 and no sea cell nearby (no wave point)
 ERROR: BR-RS/QUINTÃO: not within 2500 m of a coastline (2572 m)
-ERROR: BR-RS: ModuleNotFoundError (import numpy as np)
 ERROR: BR-RS-SUL/HERMENEGILDO: not within 2500 m of a coastline (4032 m)
 ERROR: BR-SC-NOR/PRAIA DE LESTE: not within 2500 m of a coastline (4607 m)
-ERROR: BR-SC-NOR: ModuleNotFoundError (import numpy as np)
 ERROR: BR-SP/TOQUE-TOQUE: not within 2500 m of a coastline (2990 m)
 ERROR: BR-ES/BARRA DO JUCU: not within 2500 m of a coastline (3612 m)
 ERROR: BR-ES/SETIBA: not within 2500 m of a coastline (2565 m)
 ERROR: BR-ES/IRIRI: not within 2500 m of a coastline (5027 m)
-ERROR: BR-ES: ModuleNotFoundError (import numpy as np)
 ERROR: BR-BA/IMBASSAÍ: not within 2500 m of a coastline (2895 m)
 ERROR: BR-BA/OLIVENÇA: not within 2500 m of a coastline (3475 m)
-ERROR: BR-BA: ModuleNotFoundError (import numpy as np)
 ERROR: BR-NE-CE/MUNDAÚ: not within 2500 m of a coastline (10759 m)
 ERROR: BR-NE-CE/LAGOINHA: not within 2500 m of a coastline (16049 m)
 ERROR: BR-NE-PE/ARUANA: not within 2500 m of a coastline (2791 m)
-ERROR: CL-CEN: ModuleNotFoundError (import numpy as np)
 ERROR: CL-PIC/TOPOCALMA: not within 2500 m of a coastline (2540 m)
 ERROR: CL-PIC/CAHUIL: not within 2500 m of a coastline (2525 m)
 ERROR: CL-PIC/CIRUELOS: not within 2500 m of a coastline (2540 m)
-ERROR: CL-PIC: ModuleNotFoundError (import numpy as np)
 ERROR: CL-MAU/LLICO: not within 2500 m of a coastline (17870 m)
 ERROR: CL-MAU/CHANCO: not within 2500 m of a coastline (3126 m)
-ERROR: CL-MAU: ModuleNotFoundError (import numpy as np)
 ERROR: CL-SUR/CUCAO: not within 2500 m of a coastline (80492 m)
 ERROR: PE-NOR/EL ALTO: not within 2500 m of a coastline (2608 m)
-ERROR: PE-LIM: ModuleNotFoundError (import numpy as np)
-ERROR: PE-SUR: ModuleNotFoundError (import numpy as np)
 ERROR: EC-COS/MOMPICHE: not within 2500 m of a coastline (43473 m)
 ERROR: EC-COS/ENGABAO: not within 2500 m of a coastline (3865 m)
 ERROR: CO-CAR/COSTEÑO: not within 2500 m of a coastline (4728 m)
@@ -1362,39 +333,24 @@ ERROR: PR-NW/TUNELES: not within 2500 m of a coastline (2706 m)
 ERROR: US-GULF/PADRE SEASHORE: not within 2500 m of a coastline (3146 m)
 ERROR: CA-BC-VI/RAFT COVE: not within 2500 m of a coastline (4566 m)
 ERROR: CA-BC-VI/FLORENCIA BAY: not within 2500 m of a coastline (2535 m)
-ERROR: CA-BC-VI: ModuleNotFoundError (import numpy as np)
 ERROR: CA-NS/SUMMERVILLE: not within 2500 m of a coastline (23704 m)
-ERROR: AU-NSW-NR: ModuleNotFoundError (import numpy as np)
 ERROR: AU-NSW-MN/GRASSY HEAD: not within 2500 m of a coastline (2851 m)
-ERROR: AU-NSW-MN: ModuleNotFoundError (import numpy as np)
-ERROR: AU-NSW-NC: ModuleNotFoundError (import numpy as np)
-ERROR: AU-VIC-SC: ModuleNotFoundError (import numpy as np)
-ERROR: AU-VIC-W: ModuleNotFoundError (import numpy as np)
-ERROR: AU-TAS: ModuleNotFoundError (import numpy as np)
 ERROR: AU-SA/DALY HEAD: not within 2500 m of a coastline (6312 m)
-ERROR: AU-SA: ModuleNotFoundError (import numpy as np)
 ERROR: AU-WA-MR/BORANUP: not within 2500 m of a coastline (3181 m)
 ERROR: AU-WA-MR/THREE BEARS: not within 2500 m of a coastline (2534 m)
 ERROR: AU-WA-MR/WINDMILLS: not within 2500 m of a coastline (3455 m)
-ERROR: AU-WA-MR: ModuleNotFoundError (import numpy as np)
 ERROR: AU-WA-NW/CORONATION BEACH: not within 2500 m of a coastline (3509 m)
 ERROR: NZ-NTL/MATAPOURI: not within 2500 m of a coastline (4428 m)
 ERROR: NZ-NTL/WAIPU COVE: not within 2500 m of a coastline (3527 m)
 ERROR: NZ-RAG/RUAPUKE: not within 2500 m of a coastline (4918 m)
 ERROR: NZ-BOP/WHIRITOA: not within 2500 m of a coastline (4806 m)
-ERROR: NZ-BOP: ModuleNotFoundError (import numpy as np)
-ERROR: NZ-GIS: ModuleNotFoundError (import numpy as np)
 ERROR: NZ-WEL/RIVERSDALE: not within 2500 m of a coastline (5973 m)
 ERROR: NZ-KAI/MOTUNAU: not within 2500 m of a coastline (21402 m)
 ERROR: NZ-KAI/WAIKUKU: not within 2500 m of a coastline (3578 m)
-ERROR: NZ-KAI: ModuleNotFoundError (import numpy as np)
 ERROR: NZ-OTA/BRIGHTON: not within 2500 m of a coastline (19299 m)
-ERROR: PF-TAH: ModuleNotFoundError (import numpy as np)
 ERROR: WS-ALL/WACKAS: not within 2500 m of a coastline (2745 m)
 ERROR: WS-ALL/TIAVEA: not within 2500 m of a coastline (5689 m)
-ERROR: WS-ALL: ModuleNotFoundError (import numpy as np)
 ERROR: VU-ALL/DEVIL'S POINT: not within 2500 m of a coastline (2797 m)
-ERROR: VU-ALL: ModuleNotFoundError (import numpy as np)
 ERROR: ID-BAL-W/KEDUNGU: not within 2500 m of a coastline (2762 m)
 ERROR: ID-BAL-W/SOKA: not within 2500 m of a coastline (3410 m)
 ERROR: ID-BAL-W/BALIAN: not within 2500 m of a coastline (3479 m)
@@ -1421,17 +377,11 @@ ERROR: VN-ALL/BAI XEP: not within 2500 m of a coastline (3357 m)
 ERROR: CN-HAI/RIYUE BAY: not within 2500 m of a coastline (3119 m)
 ERROR: CN-HAI/HOUHAI: not within 2500 m of a coastline (3070 m)
 ERROR: CN-HAI: no spot left
-ERROR: ZA-WC-CPT: ModuleNotFoundError (import numpy as np)
-ERROR: ZA-WC-WCO: ModuleNotFoundError (import numpy as np)
-ERROR: ZA-WC-GR: ModuleNotFoundError (import numpy as np)
-ERROR: ZA-EC-JB: ModuleNotFoundError (import numpy as np)
 ERROR: ZA-EC-PE/SARDINIA BAY: not within 2500 m of a coastline (3994 m)
 ERROR: ZA-KZN-N/BLYTHEDALE: not within 2500 m of a coastline (19060 m)
-ERROR: ZA-KZN-N: ModuleNotFoundError (import numpy as np)
 ERROR: MA-S/TIFNIT: not within 2500 m of a coastline (38978 m)
 ERROR: MA-S/AGLOU: not within 2500 m of a coastline (4032 m)
 ERROR: MZ-S/PONTA MAMOLI: not within 2500 m of a coastline (4296 m)
-ERROR: MZ-INH: ModuleNotFoundError (import numpy as np)
 ERROR: CV-ALL/PRAIA DE CHAVES: not within 2500 m of a coastline (2789 m)
 ERROR: FR-HOS/ONDRES: not within 2500 m of a coastline (2811 m)
 ERROR: FR-BRE/KERHILLIO: not within 2500 m of a coastline (4032 m)
@@ -1442,14 +392,7 @@ ERROR: PT-LIS/MECO: not within 2500 m of a coastline (3739 m)
 ERROR: PT-ALG/ZAVIAL: not within 2500 m of a coastline (2651 m)
 ERROR: PT-AZO/ALMOXARIFE: not within 2500 m of a coastline (2726 m)
 ERROR: GB-WAL/BROAD HAVEN SOUTH: not within 2500 m of a coastline (2679 m)
-ERROR: GB-WAL: ModuleNotFoundError (import numpy as np)
-ERROR: GB-SCO: ModuleNotFoundError (import numpy as np)
-ERROR: GB-NE: ModuleNotFoundError (import numpy as np)
 ERROR: IE-NW/ROSSNOWLAGH: not within 2500 m of a coastline (3547 m)
-ERROR: IE-NW: ModuleNotFoundError (import numpy as np)
 ERROR: IE-SW/BANNA: not within 2500 m of a coastline (2531 m)
-ERROR: IE-SW: ModuleNotFoundError (import numpy as np)
 ERROR: NO-S/HODDEVIK: not within 2500 m of a coastline (2562 m)
-ERROR: NO-N: ModuleNotFoundError (import numpy as np)
-ERROR: NL-ALL: ModuleNotFoundError (import numpy as np)
-172 regions, 1889 spots, 134 errors, 0 warnings
+209 regions, 2404 spots, 97 errors, 33 warnings
