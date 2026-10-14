@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 46 s
+catalogs: 3902 stations in 36 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -278,167 +278,168 @@ pass 1: 264 ports for 152 regions
   ticon-f1b139     ticon    45.. 260 cm  TICON-3 14.300N 91.917W (gesla.usgs)
   ticon-c9798b     ticon    41.. 288 cm  TICON-3 28.047N 16.718W (gesla.ispra)
   ticon-c17f38     ticon    34.. 159 cm  TICON-3 4.183N 73.517E (gesla.uhslc)
-  AR-MDP: GOT5.6 at -37.995,-57.544: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-MDP: GOT5.6 at -38.270,-57.840: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-MDP: GOT5.6 at -38.589,-58.740: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-BAN: GOT5.6 at -37.230,-56.948: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-BAN: GOT5.6 at -36.580,-56.690: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-SUR: GOT5.6 at -38.999,-61.295: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-SUR: GOT5.6 at -41.053,-62.823: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AR-SUR: GOT5.6 at -40.812,-65.085: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RS: GOT5.6 at -29.544,-49.875: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RS: GOT5.6 at -29.976,-50.121: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RS: GOT5.6 at -30.240,-50.230: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RS-SUL: GOT5.6 at -33.743,-53.370: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-SC-NOR: GOT5.6 at -26.630,-48.678: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-SC-NOR: GOT5.6 at -25.697,-48.467: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-SC-NOR: GOT5.6 at -27.115,-48.605: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-SP: GOT5.6 at -23.760,-45.870: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RJL: GOT5.6 at -22.752,-41.912: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-RJL: GOT5.6 at -22.942,-42.359: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-ES: GOT5.6 at -20.330,-40.285: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-ES: GOT5.6 at -20.659,-40.488: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-ES: GOT5.6 at -18.426,-39.704: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-BA: GOT5.6 at -14.347,-38.980: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-BA: GOT5.6 at -12.577,-38.003: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-CE: GOT5.6 at -2.497,-44.248: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-RN: GOT5.6 at -5.877,-35.173: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-RN: GOT5.6 at -7.148,-34.796: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-RN: GOT5.6 at -6.237,-35.046: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-PE: GOT5.6 at -9.667,-35.710: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BR-NE-PE: GOT5.6 at -11.000,-37.040: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-NOR: GOT5.6 at -20.237,-70.140: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-CEN: GOT5.6 at -30.092,-71.360: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-PIC: GOT5.6 at -34.129,-71.998: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-PIC: GOT5.6 at -34.516,-72.041: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-MAU: GOT5.6 at -36.070,-72.800: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-MAU: GOT5.6 at -34.923,-72.174: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-MAU: GOT5.6 at -35.344,-72.430: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-SUR: GOT5.6 at -39.390,-73.215: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-SUR: GOT5.6 at -40.575,-73.736: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CL-SUR: GOT5.6 at -39.774,-73.400: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PE-NOR: GOT5.6 at -3.677,-80.670: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PE-LLB: GOT5.6 at -6.880,-79.950: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PE-LLB: GOT5.6 at -7.410,-79.580: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PE-LLB: GOT5.6 at -8.062,-79.123: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  EC-COS: GOT5.6 at 0.870,-79.850: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  EC-COS: GOT5.6 at -0.939,-80.733: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CO-PAC: GOT5.6 at 6.100,-77.420: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CO-PAC: GOT5.6 at 5.713,-77.264: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CO-CAR: GOT5.6 at 11.040,-74.910: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CO-CAR: GOT5.6 at 11.243,-73.568: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  VE-ALL: GOT5.6 at 10.500,-67.690: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  VE-ALL: GOT5.6 at 11.130,-63.850: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PA-PAC: GOT5.6 at 7.619,-81.243: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PA-PAC: GOT5.6 at 7.300,-80.380: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PA-PAC: GOT5.6 at 8.456,-79.966: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PA-BDT: GOT5.6 at 9.382,-82.235: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CR-GUA: GOT5.6 at 10.240,-85.842: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CR-GUA: GOT5.6 at 10.850,-85.801: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CR-NIC: GOT5.6 at 9.876,-85.628: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CR-CAR: GOT5.6 at 9.634,-82.712: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CR-CAR: GOT5.6 at 10.003,-83.027: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NI-RIV: GOT5.6 at 11.300,-85.910: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NI-NW: GOT5.6 at 12.378,-87.042: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NI-NW: GOT5.6 at 12.760,-87.450: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-OAX: GOT5.6 at 15.861,-97.063: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-NAY: GOT5.6 at 20.955,-105.356: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-NAY: GOT5.6 at 20.769,-105.526: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-BCS: GOT5.6 at 23.400,-110.211: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-BCS-N: GOT5.6 at 26.704,-113.578: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-BCS-N: GOT5.6 at 26.250,-112.480: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MX-CAR: GOT5.6 at 20.214,-87.429: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  BS-ALL: GOT5.6 at 25.420,-76.623: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  TT-ALL: GOT5.6 at 11.196,-60.800: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  US-HI-BIG: GOT5.6 at 19.415,-155.909: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CA-NS: GOT5.6 at 43.951,-64.818: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-QLD-SC: GOT5.6 at -26.596,153.107: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-QLD-SC: GOT5.6 at -25.932,153.189: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-NSW-MN: GOT5.6 at -32.181,152.524: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-VIC-W: GOT5.6 at -38.780,143.400: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-TAS: GOT5.6 at -41.880,148.296: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-SA-EYR: GOT5.6 at -32.083,132.989: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-WA-MR: GOT5.6 at -34.169,115.030: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-WA-NW: GOT5.6 at -27.720,114.151: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-WA-GAS: GOT5.6 at -23.881,113.488: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  AU-WA-GAS: GOT5.6 at -24.366,113.406: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NZ-WC: GOT5.6 at -42.450,171.198: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  FJ-SOU: GOT5.6 at -18.162,177.504: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  VU-ALL: GOT5.6 at -19.532,169.268: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PG-ALL: GOT5.6 at -2.674,141.299: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-JAV-E: GOT5.6 at -8.724,114.350: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-JAV-E: GOT5.6 at -8.218,111.095: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-JAV-W: GOT5.6 at -7.063,106.508: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-LOM: GOT5.6 at -8.915,116.355: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-LOM: GOT5.6 at -8.735,115.836: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-SBW: GOT5.6 at -8.816,118.376: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-SBW: GOT5.6 at -8.973,116.729: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-SMB: GOT5.6 at -9.738,119.314: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-ROT: GOT5.6 at -10.893,122.812: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-MEN: GOT5.6 at -2.410,99.855: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-MEN: GOT5.6 at -1.900,99.300: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-NIA: GOT5.6 at 0.912,97.263: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-NIA: GOT5.6 at 0.569,97.734: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ID-KRU: GOT5.6 at -5.305,103.992: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PH-SIA: GOT5.6 at 9.818,126.170: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PH-LUZ: GOT5.6 at 16.669,120.320: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PH-LUZ: GOT5.6 at 15.765,121.574: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PH-EAS: GOT5.6 at 13.659,124.398: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PH-EAS: GOT5.6 at 11.605,125.440: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  LK-E: GOT5.6 at 6.800,81.820: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  LK-S: GOT5.6 at 5.998,80.269: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  LK-S: GOT5.6 at 5.968,80.685: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MV-CEN: GOT5.6 at 2.919,73.570: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  TW-E: GOT5.6 at 22.900,121.233: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  TW-E: GOT5.6 at 24.027,121.627: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  IN-W: GOT5.6 at 8.731,76.703: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  IN-W: GOT5.6 at 13.077,74.787: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  IN-E: GOT5.6 at 12.787,80.255: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  IN-E: GOT5.6 at 11.978,79.833: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  VN-ALL: GOT5.6 at 16.062,108.249: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  KR-ALL: GOT5.6 at 37.969,128.760: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  KR-ALL: GOT5.6 at 33.245,126.412: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CN-HAI: GOT5.6 at 18.630,110.222: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  CN-HAI: GOT5.6 at 18.271,109.723: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-WC-WCO: GOT5.6 at -32.312,18.324: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-WC-WCO: GOT5.6 at -32.811,17.885: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-WC-GR: GOT5.6 at -34.046,22.418: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-WC-GR: GOT5.6 at -34.078,22.954: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-WC-GR: GOT5.6 at -33.984,23.562: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-JB: GOT5.6 at -34.055,24.925: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-PE: GOT5.6 at -33.023,27.919: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-PE: GOT5.6 at -33.605,26.922: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-WLD: GOT5.6 at -31.980,29.153: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-WLD: GOT5.6 at -32.682,28.383: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-EC-WLD: GOT5.6 at -31.643,29.550: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-DBN: GOT5.6 at -29.855,31.049: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-N: GOT5.6 at -29.493,31.275: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-N: GOT5.6 at -28.957,31.780: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-N: GOT5.6 at -28.125,32.558: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-S: GOT5.6 at -30.891,30.354: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ZA-KZN-S: GOT5.6 at -30.200,30.807: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NA-ERO: GOT5.6 at -22.938,14.418: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  NA-ERO: GOT5.6 at -22.115,14.268: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-TAG: GOT5.6 at 30.640,-9.830: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-TAG: GOT5.6 at 31.359,-9.809: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-N: GOT5.6 at 34.257,-6.689: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-N: GOT5.6 at 33.597,-7.679: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-N: GOT5.6 at 33.790,-7.175: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-S: GOT5.6 at 29.430,-10.130: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MA-S: GOT5.6 at 30.198,-9.639: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  SN-ALL: GOT5.6 at 14.752,-17.509: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  LR-ALL: GOT5.6 at 6.753,-11.379: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  GH-ALL: GOT5.6 at 5.490,-0.405: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MZ-S: GOT5.6 at -26.846,32.895: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MZ-INH: GOT5.6 at -23.858,35.549: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MG-ALL: GOT5.6 at -25.030,46.999: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  MG-ALL: GOT5.6 at -23.650,43.635: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ES-CAN: GOT5.6 at 43.443,-4.048: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ES-AST: GOT5.6 at 43.564,-6.703: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  ES-AST: GOT5.6 at 43.427,-4.893: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PT-CEN: GOT5.6 at 40.133,-8.874: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PT-ALG: GOT5.6 at 37.653,-8.801: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  PT-MAD: GOT5.6 at 32.643,-16.955: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-  IS-ALL: GOT5.6 at 63.405,-19.071: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-GOT5.6: 0 model points
-done: 264 ports, 152 regions with ports, 1775/2439 spots, 6600 files 17.7 MB, 2500 s
+GOT5.6: 162 points, 17520 hours each
+  AR-MDP       got-6cb02d     6.. 187 cm  14 spots
+  AR-MDP       got-7d5db3     6.. 193 cm  4 spots
+  AR-MDP       got-798f17     6.. 205 cm  3 spots
+  AR-BAN       got-2613c9     5.. 171 cm  10 spots
+  AR-BAN       got-d42e6d     5.. 164 cm  6 spots
+  AR-SUR       got-b2745e     6.. 308 cm  2 spots
+  AR-SUR       got-2c8cf0     5.. 476 cm  1 spots
+  AR-SUR       got-1940fc     6.. 873 cm  1 spots
+  BR-RS        got-11c637     6..  95 cm  7 spots
+  BR-RS        got-642556     6..  91 cm  7 spots
+  BR-RS        got-a0b2f5     6..  87 cm  2 spots
+  BR-RS-SUL    got-47f025     5.. 119 cm  2 spots
+  BR-SC-NOR    got-c94e22     6.. 150 cm  6 spots
+  BR-SC-NOR    got-d8f761     5.. 219 cm  5 spots
+  BR-SC-NOR    got-dfbfb8     5.. 133 cm  5 spots
+  BR-SP        got-9803e3     6.. 165 cm  6 spots
+  BR-RJL       got-5c5f01     5.. 159 cm  10 spots
+  BR-RJL       got-243beb     6.. 145 cm  4 spots
+  BR-ES        got-d43a78     6.. 189 cm  9 spots
+  BR-ES        got-1a5319     6.. 188 cm  5 spots
+  BR-ES        got-1426bf     5.. 327 cm  2 spots
+  BR-BA        got-260f66     5.. 255 cm  7 spots
+  BR-BA        got-b18ed4     6.. 259 cm  4 spots
+  BR-NE-CE     got-0a9164     6.. 545 cm  2 spots
+  BR-NE-RN     got-a8e5b2     5.. 286 cm  5 spots
+  BR-NE-RN     got-770eaa     6.. 283 cm  5 spots
+  BR-NE-RN     got-f89309     5.. 285 cm  3 spots
+  BR-NE-PE     got-aa96f4     5.. 269 cm  3 spots
+  BR-NE-PE     got-1afd1e     6.. 264 cm  2 spots
+  CL-NOR       got-332a05     6.. 149 cm  5 spots
+  CL-CEN       got-22dcfd     6.. 177 cm  1 spots
+  CL-PIC       got-668790     5.. 186 cm  6 spots
+  CL-PIC       got-dfa80c     6.. 189 cm  6 spots
+  CL-MAU       got-5888b8     6.. 192 cm  4 spots
+  CL-MAU       got-def45c     5.. 189 cm  3 spots
+  CL-MAU       got-04ac46     5.. 191 cm  2 spots
+  CL-SUR       got-0d6795     5.. 199 cm  3 spots
+  CL-SUR       got-b81c05     6.. 199 cm  3 spots
+  CL-SUR       got-9decc4     6.. 200 cm  2 spots
+  PE-NOR       got-04911c     6.. 246 cm  2 spots
+  PE-LLB       got-30731c     5.. 177 cm  3 spots
+  PE-LLB       got-ddd9f6     6.. 169 cm  2 spots
+  PE-LLB       got-8a708f     5.. 161 cm  2 spots
+  EC-COS       got-26250e     5.. 366 cm  2 spots
+  EC-COS       got-cff16a     5.. 314 cm  2 spots
+  CO-PAC       got-cb31f0     5.. 406 cm  3 spots
+  CO-PAC       got-b461dd     5.. 401 cm  1 spots
+  CO-CAR       got-f4a045     6..  56 cm  1 spots
+  CO-CAR       got-d2f680     6..  57 cm  1 spots
+  VE-ALL       got-c73835     5..  60 cm  1 spots
+  VE-ALL       got-c96e4a     6..  71 cm  1 spots
+  PA-PAC       got-5e72ab     6.. 397 cm  3 spots
+  PA-PAC       got-f0c08b     6.. 412 cm  3 spots
+  PA-PAC       got-b6d772     6.. 518 cm  1 spots
+  PA-BDT       got-707910     6..  64 cm  4 spots
+  CR-GUA       got-3d80b7     6.. 293 cm  10 spots
+  CR-GUA       got-91f084     6.. 294 cm  2 spots
+  CR-NIC       got-06d168     6.. 301 cm  7 spots
+  CR-CAR       got-95d729     6..  67 cm  3 spots
+  CR-CAR       got-2175da     5..  64 cm  2 spots
+  NI-RIV       got-8bd957     6.. 288 cm  8 spots
+  NI-NW        got-e7ff80     6.. 288 cm  3 spots
+  NI-NW        got-6f9c71     6.. 310 cm  1 spots
+  MX-OAX       got-56fcd4     6.. 143 cm  6 spots
+  MX-NAY       got-addc69     6.. 185 cm  4 spots
+  MX-NAY       got-c504a0     6.. 182 cm  3 spots
+  MX-BCS       got-6d1313     5.. 220 cm  1 spots
+  MX-BCS-N     got-8d76ed     6.. 258 cm  1 spots
+  MX-BCS-N     got-a806af     5.. 260 cm  1 spots
+  MX-CAR       got-713511     5..  38 cm  1 spots
+  BS-ALL       got-87528f     5.. 138 cm  1 spots
+  TT-ALL       got-7c798b     6.. 116 cm  2 spots
+  US-HI-BIG    got-b07ca8     5.. 113 cm  1 spots
+  CA-NS        got-e49ea1     5.. 219 cm  1 spots
+  AU-QLD-SC    got-7a487c     5.. 224 cm  21 spots
+  AU-QLD-SC    got-3334f6     6.. 228 cm  1 spots
+  AU-NSW-MN    got-03f20d     5.. 210 cm  6 spots
+  AU-VIC-W     got-78d608     6.. 172 cm  2 spots
+  AU-TAS       got-23237f     6.. 168 cm  2 spots
+  AU-SA-EYR    got-a905b1     5.. 178 cm  3 spots
+  AU-WA-MR     got-210825     5.. 117 cm  2 spots
+  AU-WA-NW     got-68a040     5.. 111 cm  2 spots
+  AU-WA-GAS    got-d032d9     5.. 162 cm  2 spots
+  AU-WA-GAS    got-91ed50     6.. 161 cm  1 spots
+  NZ-WC        got-bea209     5.. 327 cm  2 spots
+  FJ-SOU       got-295992     5.. 199 cm  1 spots
+  VU-ALL       got-1e8580     5.. 160 cm  2 spots
+  PG-ALL       got-c1e848     5.. 150 cm  1 spots
+  ID-JAV-E     got-125cb8     6.. 304 cm  6 spots
+  ID-JAV-E     got-d5b42a     5.. 244 cm  1 spots
+  ID-JAV-W     got-2f1c38     5.. 169 cm  4 spots
+  ID-LOM       got-b32477     6.. 311 cm  8 spots
+  ID-LOM       got-2e40a2     6.. 243 cm  1 spots
+  ID-SBW       got-82a78a     5.. 351 cm  5 spots
+  ID-SBW       got-684e80     5.. 314 cm  4 spots
+  ID-SMB       got-28a8b3     5.. 358 cm  2 spots
+  ID-ROT       got-799775     5.. 380 cm  4 spots
+  ID-MEN       got-56d0a4     5.. 146 cm  5 spots
+  ID-MEN       got-c774f7     6.. 135 cm  5 spots
+  ID-NIA       got-d76764     6.. 105 cm  2 spots
+  ID-NIA       got-39b84c     6.. 111 cm  1 spots
+  ID-KRU       got-d30559     6.. 150 cm  4 spots
+  PH-SIA       got-1682f6     6.. 226 cm  8 spots
+  PH-LUZ       got-f8b86d     5.. 138 cm  3 spots
+  PH-LUZ       got-529ee2     6.. 211 cm  2 spots
+  PH-EAS       got-72b502     5.. 223 cm  1 spots
+  PH-EAS       got-9b0ee7     5.. 183 cm  1 spots
+  LK-E         got-94cadf     6..  35 cm  8 spots
+  LK-S         got-964843     5..  79 cm  10 spots
+  LK-S         got-d6cb2e     6..  72 cm  1 spots
+  MV-CEN       got-4e1d64     6.. 121 cm  1 spots
+  TW-E         got-a1d318     5.. 208 cm  3 spots
+  TW-E         got-a95390     5.. 193 cm  1 spots
+  IN-W         got-af9925     6.. 115 cm  2 spots
+  IN-W         got-528c98     6.. 213 cm  1 spots
+  IN-E         got-b495c3     5.. 132 cm  2 spots
+  IN-E         got-e5aa1d     5.. 120 cm  1 spots
+  VN-ALL       got-c38d4b     5.. 129 cm  2 spots
+  KR-ALL       got-a989b9     6..  52 cm  2 spots
+  KR-ALL       got-0e82ac     5.. 308 cm  2 spots
+  CN-HAI       got-0548a0     5.. 202 cm  1 spots
+  CN-HAI       got-2ee07d     6.. 209 cm  1 spots
+  ZA-WC-WCO    got-b68b0a     5.. 215 cm  2 spots
+  ZA-WC-WCO    got-8af89e     5.. 202 cm  1 spots
+  ZA-WC-GR     got-f03581     5.. 240 cm  7 spots
+  ZA-WC-GR     got-38e06a     5.. 233 cm  3 spots
+  ZA-WC-GR     got-ec35aa     5.. 225 cm  1 spots
+  ZA-EC-JB     got-4b911c     6.. 212 cm  10 spots
+  ZA-EC-PE     got-63d295     6.. 210 cm  7 spots
+  ZA-EC-PE     got-07bdb8     6.. 209 cm  2 spots
+  ZA-EC-WLD    got-e4029c     5.. 215 cm  2 spots
+  ZA-EC-WLD    got-041b3c     5.. 212 cm  2 spots
+  ZA-EC-WLD    got-913e13     6.. 216 cm  1 spots
+  ZA-KZN-DBN   got-e07ca7     5.. 227 cm  8 spots
+  ZA-KZN-N     got-57076f     5.. 234 cm  4 spots
+  ZA-KZN-N     got-16f772     6.. 245 cm  1 spots
+  ZA-KZN-N     got-a0b028     6.. 253 cm  1 spots
+  ZA-KZN-S     got-c939f5     5.. 220 cm  5 spots
+  ZA-KZN-S     got-b0dc74     6.. 224 cm  4 spots
+  NA-ERO       got-f341c0     5.. 190 cm  2 spots
+  NA-ERO       got-439ad8     6.. 189 cm  1 spots
+  MA-TAG       got-1a2bc4     5.. 350 cm  17 spots
+  MA-TAG       got-bbafe3     6.. 357 cm  2 spots
+  MA-N         got-3cd5c4     5.. 359 cm  2 spots
+  MA-N         got-1c5103     5.. 359 cm  2 spots
+  MA-N         got-ca232b     6.. 359 cm  1 spots
+  MA-S         got-cb786a     6.. 350 cm  4 spots
+  MA-S         got-360725     5.. 347 cm  2 spots
+  SN-ALL       got-48d2ad     6.. 164 cm  5 spots
+  LR-ALL       got-3ba912     6.. 166 cm  3 spots
+  GH-ALL       got-ef40bc     5.. 189 cm  1 spots
+  MZ-S         got-0f94d8     6.. 269 cm  3 spots
+  MZ-INH       got-e51b06     6.. 330 cm  3 spots
+  MG-ALL       got-56aa18     6..  64 cm  2 spots
+  MG-ALL       got-ab6d4c     5.. 314 cm  1 spots
+  ES-CAN       got-441786     6.. 464 cm  7 spots
+  ES-AST       got-0bc1cc     5.. 447 cm  2 spots
+  ES-AST       got-70a590     5.. 464 cm  1 spots
+  PT-CEN       got-a65a9d     5.. 373 cm  1 spots
+  PT-ALG       got-f0b002     6.. 363 cm  1 spots
+  PT-MAD       got-043c05     6.. 264 cm  8 spots
+  IS-ALL       got-8ae671     5.. 307 cm  1 spots
+GOT5.6: 162 model points
+done: 426 ports, 208 regions with ports, 2328/2439 spots, 10650 files 28.2 MB, 470 s

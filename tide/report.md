@@ -1,179 +1,14 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 15:39 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 15:52 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 264 (imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
-- Regiones con puerto: 152 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 56.
-- Picos con puerto: 1775 de 2439.
-- Archivos: 6600, 17.7 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
+- Puertos nuevos: 426 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
+- Regiones con puerto: 208 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
+- Picos con puerto: 2328 de 2439.
+- Archivos: 10650, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
-
-## Avisos
-
-- AR-MDP: GOT5.6 at -37.995,-57.544: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-MDP: GOT5.6 at -38.270,-57.840: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-MDP: GOT5.6 at -38.589,-58.740: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-BAN: GOT5.6 at -37.230,-56.948: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-BAN: GOT5.6 at -36.580,-56.690: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-SUR: GOT5.6 at -38.999,-61.295: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-SUR: GOT5.6 at -41.053,-62.823: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AR-SUR: GOT5.6 at -40.812,-65.085: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RS: GOT5.6 at -29.544,-49.875: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RS: GOT5.6 at -29.976,-50.121: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RS: GOT5.6 at -30.240,-50.230: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RS-SUL: GOT5.6 at -33.743,-53.370: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-SC-NOR: GOT5.6 at -26.630,-48.678: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-SC-NOR: GOT5.6 at -25.697,-48.467: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-SC-NOR: GOT5.6 at -27.115,-48.605: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-SP: GOT5.6 at -23.760,-45.870: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RJL: GOT5.6 at -22.752,-41.912: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-RJL: GOT5.6 at -22.942,-42.359: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-ES: GOT5.6 at -20.330,-40.285: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-ES: GOT5.6 at -20.659,-40.488: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-ES: GOT5.6 at -18.426,-39.704: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-BA: GOT5.6 at -14.347,-38.980: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-BA: GOT5.6 at -12.577,-38.003: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-CE: GOT5.6 at -2.497,-44.248: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-RN: GOT5.6 at -5.877,-35.173: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-RN: GOT5.6 at -7.148,-34.796: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-RN: GOT5.6 at -6.237,-35.046: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-PE: GOT5.6 at -9.667,-35.710: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BR-NE-PE: GOT5.6 at -11.000,-37.040: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-NOR: GOT5.6 at -20.237,-70.140: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-CEN: GOT5.6 at -30.092,-71.360: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-PIC: GOT5.6 at -34.129,-71.998: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-PIC: GOT5.6 at -34.516,-72.041: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-MAU: GOT5.6 at -36.070,-72.800: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-MAU: GOT5.6 at -34.923,-72.174: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-MAU: GOT5.6 at -35.344,-72.430: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-SUR: GOT5.6 at -39.390,-73.215: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-SUR: GOT5.6 at -40.575,-73.736: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CL-SUR: GOT5.6 at -39.774,-73.400: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PE-NOR: GOT5.6 at -3.677,-80.670: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PE-LLB: GOT5.6 at -6.880,-79.950: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PE-LLB: GOT5.6 at -7.410,-79.580: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PE-LLB: GOT5.6 at -8.062,-79.123: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- EC-COS: GOT5.6 at 0.870,-79.850: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- EC-COS: GOT5.6 at -0.939,-80.733: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CO-PAC: GOT5.6 at 6.100,-77.420: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CO-PAC: GOT5.6 at 5.713,-77.264: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CO-CAR: GOT5.6 at 11.040,-74.910: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CO-CAR: GOT5.6 at 11.243,-73.568: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- VE-ALL: GOT5.6 at 10.500,-67.690: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- VE-ALL: GOT5.6 at 11.130,-63.850: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PA-PAC: GOT5.6 at 7.619,-81.243: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PA-PAC: GOT5.6 at 7.300,-80.380: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PA-PAC: GOT5.6 at 8.456,-79.966: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PA-BDT: GOT5.6 at 9.382,-82.235: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CR-GUA: GOT5.6 at 10.240,-85.842: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CR-GUA: GOT5.6 at 10.850,-85.801: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CR-NIC: GOT5.6 at 9.876,-85.628: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CR-CAR: GOT5.6 at 9.634,-82.712: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CR-CAR: GOT5.6 at 10.003,-83.027: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NI-RIV: GOT5.6 at 11.300,-85.910: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NI-NW: GOT5.6 at 12.378,-87.042: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NI-NW: GOT5.6 at 12.760,-87.450: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-OAX: GOT5.6 at 15.861,-97.063: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-NAY: GOT5.6 at 20.955,-105.356: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-NAY: GOT5.6 at 20.769,-105.526: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-BCS: GOT5.6 at 23.400,-110.211: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-BCS-N: GOT5.6 at 26.704,-113.578: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-BCS-N: GOT5.6 at 26.250,-112.480: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MX-CAR: GOT5.6 at 20.214,-87.429: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- BS-ALL: GOT5.6 at 25.420,-76.623: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- TT-ALL: GOT5.6 at 11.196,-60.800: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- US-HI-BIG: GOT5.6 at 19.415,-155.909: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CA-NS: GOT5.6 at 43.951,-64.818: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-QLD-SC: GOT5.6 at -26.596,153.107: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-QLD-SC: GOT5.6 at -25.932,153.189: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-NSW-MN: GOT5.6 at -32.181,152.524: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-VIC-W: GOT5.6 at -38.780,143.400: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-TAS: GOT5.6 at -41.880,148.296: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-SA-EYR: GOT5.6 at -32.083,132.989: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-WA-MR: GOT5.6 at -34.169,115.030: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-WA-NW: GOT5.6 at -27.720,114.151: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-WA-GAS: GOT5.6 at -23.881,113.488: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- AU-WA-GAS: GOT5.6 at -24.366,113.406: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NZ-WC: GOT5.6 at -42.450,171.198: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- FJ-SOU: GOT5.6 at -18.162,177.504: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- VU-ALL: GOT5.6 at -19.532,169.268: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PG-ALL: GOT5.6 at -2.674,141.299: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-JAV-E: GOT5.6 at -8.724,114.350: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-JAV-E: GOT5.6 at -8.218,111.095: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-JAV-W: GOT5.6 at -7.063,106.508: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-LOM: GOT5.6 at -8.915,116.355: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-LOM: GOT5.6 at -8.735,115.836: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-SBW: GOT5.6 at -8.816,118.376: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-SBW: GOT5.6 at -8.973,116.729: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-SMB: GOT5.6 at -9.738,119.314: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-ROT: GOT5.6 at -10.893,122.812: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-MEN: GOT5.6 at -2.410,99.855: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-MEN: GOT5.6 at -1.900,99.300: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-NIA: GOT5.6 at 0.912,97.263: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-NIA: GOT5.6 at 0.569,97.734: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ID-KRU: GOT5.6 at -5.305,103.992: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PH-SIA: GOT5.6 at 9.818,126.170: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PH-LUZ: GOT5.6 at 16.669,120.320: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PH-LUZ: GOT5.6 at 15.765,121.574: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PH-EAS: GOT5.6 at 13.659,124.398: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PH-EAS: GOT5.6 at 11.605,125.440: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- LK-E: GOT5.6 at 6.800,81.820: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- LK-S: GOT5.6 at 5.998,80.269: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- LK-S: GOT5.6 at 5.968,80.685: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MV-CEN: GOT5.6 at 2.919,73.570: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- TW-E: GOT5.6 at 22.900,121.233: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- TW-E: GOT5.6 at 24.027,121.627: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- IN-W: GOT5.6 at 8.731,76.703: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- IN-W: GOT5.6 at 13.077,74.787: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- IN-E: GOT5.6 at 12.787,80.255: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- IN-E: GOT5.6 at 11.978,79.833: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- VN-ALL: GOT5.6 at 16.062,108.249: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- KR-ALL: GOT5.6 at 37.969,128.760: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- KR-ALL: GOT5.6 at 33.245,126.412: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CN-HAI: GOT5.6 at 18.630,110.222: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- CN-HAI: GOT5.6 at 18.271,109.723: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-WC-WCO: GOT5.6 at -32.312,18.324: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-WC-WCO: GOT5.6 at -32.811,17.885: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-WC-GR: GOT5.6 at -34.046,22.418: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-WC-GR: GOT5.6 at -34.078,22.954: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-WC-GR: GOT5.6 at -33.984,23.562: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-JB: GOT5.6 at -34.055,24.925: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-PE: GOT5.6 at -33.023,27.919: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-PE: GOT5.6 at -33.605,26.922: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-WLD: GOT5.6 at -31.980,29.153: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-WLD: GOT5.6 at -32.682,28.383: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-EC-WLD: GOT5.6 at -31.643,29.550: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-DBN: GOT5.6 at -29.855,31.049: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-N: GOT5.6 at -29.493,31.275: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-N: GOT5.6 at -28.957,31.780: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-N: GOT5.6 at -28.125,32.558: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-S: GOT5.6 at -30.891,30.354: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ZA-KZN-S: GOT5.6 at -30.200,30.807: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NA-ERO: GOT5.6 at -22.938,14.418: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- NA-ERO: GOT5.6 at -22.115,14.268: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-TAG: GOT5.6 at 30.640,-9.830: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-TAG: GOT5.6 at 31.359,-9.809: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-N: GOT5.6 at 34.257,-6.689: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-N: GOT5.6 at 33.597,-7.679: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-N: GOT5.6 at 33.790,-7.175: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-S: GOT5.6 at 29.430,-10.130: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MA-S: GOT5.6 at 30.198,-9.639: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- SN-ALL: GOT5.6 at 14.752,-17.509: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- LR-ALL: GOT5.6 at 6.753,-11.379: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- GH-ALL: GOT5.6 at 5.490,-0.405: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MZ-S: GOT5.6 at -26.846,32.895: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MZ-INH: GOT5.6 at -23.858,35.549: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MG-ALL: GOT5.6 at -25.030,46.999: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- MG-ALL: GOT5.6 at -23.650,43.635: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ES-CAN: GOT5.6 at 43.443,-4.048: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ES-AST: GOT5.6 at 43.564,-6.703: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- ES-AST: GOT5.6 at 43.427,-4.893: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PT-CEN: GOT5.6 at 40.133,-8.874: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PT-ALG: GOT5.6 at 37.653,-8.801: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- PT-MAD: GOT5.6 at 32.643,-16.955: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
-- IS-ALL: GOT5.6 at 63.405,-19.071: GOT5.6_extrapolated: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.; GOT5.6: chunk manager 'dask' is not available. Please make sure 'dask' is installed and importable.
 
 ## Validación TICON-3 vs NOAA
 
@@ -192,6 +27,168 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 
 | Clave | Fuente | Nombre | Datum | Rango (cm) | Horas completadas | Ajuste 30 períodos (RMS cm) |
 |---|---|---|---|---|---|---|
+| got-03f20d | got5.6:-32.181,152.524 | GOT5.6 32.181S 152.524E (AU-NSW-MN) | MSL+95 cm (modelo) | 5..210 | — | 1.1 |
+| got-041b3c | got5.6:-32.682,28.383 | GOT5.6 32.682S 28.383E (ZA-EC-WLD) | MSL+106 cm (modelo) | 5..212 | — | 1.4 |
+| got-043c05 | got5.6:32.643,-16.955 | GOT5.6 32.643N 16.955W (PT-MAD) | MSL+131 cm (modelo) | 6..264 | — | 1.4 |
+| got-04911c | got5.6:-3.677,-80.670 | GOT5.6 3.677S 80.670W (PE-NOR) | MSL+127 cm (modelo) | 6..246 | — | 1.3 |
+| got-04ac46 | got5.6:-35.344,-72.430 | GOT5.6 35.344S 72.430W (CL-MAU) | MSL+87 cm (modelo) | 5..191 | — | 1.1 |
+| got-0548a0 | got5.6:18.630,110.222 | GOT5.6 18.630N 110.222E (CN-HAI) | MSL+102 cm (modelo) | 5..202 | — | 1.5 |
+| got-06d168 | got5.6:9.876,-85.628 | GOT5.6 9.876N 85.628W (CR-NIC) | MSL+151 cm (modelo) | 6..301 | — | 1.5 |
+| got-07bdb8 | got5.6:-33.605,26.922 | GOT5.6 33.605S 26.922E (ZA-EC-PE) | MSL+104 cm (modelo) | 6..209 | — | 1.4 |
+| got-0a9164 | got5.6:-2.497,-44.248 | GOT5.6 2.497S 44.248W (BR-NE-CE) | MSL+277 cm (modelo) | 6..545 | — | 2.5 |
+| got-0bc1cc | got5.6:43.564,-6.703 | GOT5.6 43.564N 6.703W (ES-AST) | MSL+226 cm (modelo) | 5..447 | — | 2.5 |
+| got-0d6795 | got5.6:-39.390,-73.215 | GOT5.6 39.390S 73.215W (CL-SUR) | MSL+90 cm (modelo) | 5..199 | — | 1.2 |
+| got-0e82ac | got5.6:33.245,126.412 | GOT5.6 33.245N 126.412E (KR-ALL) | MSL+160 cm (modelo) | 5..308 | — | 1.8 |
+| got-0f94d8 | got5.6:-26.846,32.895 | GOT5.6 26.846S 32.895E (MZ-S) | MSL+136 cm (modelo) | 6..269 | — | 1.9 |
+| got-11c637 | got5.6:-29.544,-49.875 | GOT5.6 29.544S 49.875W (BR-RS) | MSL+52 cm (modelo) | 6..95 | — | 1.2 |
+| got-125cb8 | got5.6:-8.724,114.350 | GOT5.6 8.724S 114.350E (ID-JAV-E) | MSL+152 cm (modelo) | 6..304 | — | 2.1 |
+| got-1426bf | got5.6:-18.426,-39.704 | GOT5.6 18.426S 39.704W (BR-ES) | MSL+167 cm (modelo) | 5..327 | — | 2.2 |
+| got-1682f6 | got5.6:9.818,126.170 | GOT5.6 9.818N 126.170E (PH-SIA) | MSL+126 cm (modelo) | 6..226 | — | 1.4 |
+| got-16f772 | got5.6:-28.957,31.780 | GOT5.6 28.957S 31.780E (ZA-KZN-N) | MSL+123 cm (modelo) | 6..245 | — | 1.7 |
+| got-1940fc | got5.6:-40.812,-65.085 | GOT5.6 40.812S 65.085W (AR-SUR) | MSL+446 cm (modelo) | 6..873 | — | 4.8 |
+| got-1a2bc4 | got5.6:30.640,-9.830 | GOT5.6 30.640N 9.830W (MA-TAG) | MSL+172 cm (modelo) | 5..350 | — | 1.9 |
+| got-1a5319 | got5.6:-20.659,-40.488 | GOT5.6 20.659S 40.488W (BR-ES) | MSL+102 cm (modelo) | 6..188 | — | 1.3 |
+| got-1afd1e | got5.6:-11.000,-37.040 | GOT5.6 11.000S 37.040W (BR-NE-PE) | MSL+135 cm (modelo) | 6..264 | — | 1.5 |
+| got-1c5103 | got5.6:33.597,-7.679 | GOT5.6 33.597N 7.679W (MA-N) | MSL+178 cm (modelo) | 5..359 | — | 2.0 |
+| got-1e8580 | got5.6:-19.532,169.268 | GOT5.6 19.532S 169.268E (VU-ALL) | MSL+93 cm (modelo) | 5..160 | — | 0.9 |
+| got-210825 | got5.6:-34.169,115.030 | GOT5.6 34.169S 115.030E (AU-WA-MR) | MSL+61 cm (modelo) | 5..117 | — | 1.1 |
+| got-2175da | got5.6:10.003,-83.027 | GOT5.6 10.003N 83.027W (CR-CAR) | MSL+34 cm (modelo) | 5..64 | — | 0.4 |
+| got-22dcfd | got5.6:-30.092,-71.360 | GOT5.6 30.092S 71.360W (CL-CEN) | MSL+80 cm (modelo) | 6..177 | — | 1.0 |
+| got-23237f | got5.6:-41.880,148.296 | GOT5.6 41.880S 148.296E (AU-TAS) | MSL+90 cm (modelo) | 6..168 | — | 1.0 |
+| got-243beb | got5.6:-22.942,-42.359 | GOT5.6 22.942S 42.359W (BR-RJL) | MSL+83 cm (modelo) | 6..145 | — | 1.1 |
+| got-260f66 | got5.6:-14.347,-38.980 | GOT5.6 14.347S 38.980W (BR-BA) | MSL+132 cm (modelo) | 5..255 | — | 1.5 |
+| got-2613c9 | got5.6:-37.230,-56.948 | GOT5.6 37.230S 56.948W (AR-BAN) | MSL+78 cm (modelo) | 5..171 | — | 1.5 |
+| got-26250e | got5.6:0.870,-79.850 | GOT5.6 0.870N 79.850W (EC-COS) | MSL+185 cm (modelo) | 5..366 | — | 1.9 |
+| got-28a8b3 | got5.6:-9.738,119.314 | GOT5.6 9.738S 119.314E (ID-SMB) | MSL+180 cm (modelo) | 5..358 | — | 2.5 |
+| got-295992 | got5.6:-18.162,177.504 | GOT5.6 18.162S 177.504E (FJ-SOU) | MSL+105 cm (modelo) | 5..199 | — | 0.9 |
+| got-2c8cf0 | got5.6:-41.053,-62.823 | GOT5.6 41.053S 62.823W (AR-SUR) | MSL+245 cm (modelo) | 5..476 | — | 2.7 |
+| got-2e40a2 | got5.6:-8.735,115.836 | GOT5.6 8.735S 115.836E (ID-LOM) | MSL+122 cm (modelo) | 6..243 | — | 1.8 |
+| got-2ee07d | got5.6:18.271,109.723 | GOT5.6 18.271N 109.723E (CN-HAI) | MSL+104 cm (modelo) | 6..209 | — | 1.7 |
+| got-2f1c38 | got5.6:-7.063,106.508 | GOT5.6 7.063S 106.508E (ID-JAV-W) | MSL+80 cm (modelo) | 5..169 | — | 1.2 |
+| got-30731c | got5.6:-6.880,-79.950 | GOT5.6 6.880S 79.950W (PE-LLB) | MSL+91 cm (modelo) | 5..177 | — | 1.0 |
+| got-332a05 | got5.6:-20.237,-70.140 | GOT5.6 20.237S 70.140W (CL-NOR) | MSL+66 cm (modelo) | 6..149 | — | 1.0 |
+| got-3334f6 | got5.6:-25.932,153.189 | GOT5.6 25.932S 153.189E (AU-QLD-SC) | MSL+103 cm (modelo) | 6..228 | — | 1.3 |
+| got-360725 | got5.6:30.198,-9.639 | GOT5.6 30.198N 9.639W (MA-S) | MSL+171 cm (modelo) | 5..347 | — | 1.9 |
+| got-38e06a | got5.6:-34.078,22.954 | GOT5.6 34.078S 22.954E (ZA-WC-GR) | MSL+114 cm (modelo) | 5..233 | — | 1.6 |
+| got-39b84c | got5.6:0.569,97.734 | GOT5.6 0.569N 97.734E (ID-NIA) | MSL+51 cm (modelo) | 6..111 | — | 0.8 |
+| got-3ba912 | got5.6:6.753,-11.379 | GOT5.6 6.753N 11.379W (LR-ALL) | MSL+82 cm (modelo) | 6..166 | — | 0.9 |
+| got-3cd5c4 | got5.6:34.257,-6.689 | GOT5.6 34.257N 6.689W (MA-N) | MSL+178 cm (modelo) | 5..359 | — | 2.0 |
+| got-3d80b7 | got5.6:10.240,-85.842 | GOT5.6 10.240N 85.842W (CR-GUA) | MSL+147 cm (modelo) | 6..293 | — | 1.4 |
+| got-439ad8 | got5.6:-22.115,14.268 | GOT5.6 22.115S 14.268E (NA-ERO) | MSL+97 cm (modelo) | 6..189 | — | 1.1 |
+| got-441786 | got5.6:43.443,-4.048 | GOT5.6 43.443N 4.048W (ES-CAN) | MSL+235 cm (modelo) | 6..464 | — | 2.6 |
+| got-47f025 | got5.6:-33.743,-53.370 | GOT5.6 33.743S 53.370W (BR-RS-SUL) | MSL+59 cm (modelo) | 5..119 | — | 1.1 |
+| got-48d2ad | got5.6:14.752,-17.509 | GOT5.6 14.752N 17.509W (SN-ALL) | MSL+81 cm (modelo) | 6..164 | — | 0.9 |
+| got-4b911c | got5.6:-34.055,24.925 | GOT5.6 34.055S 24.925E (ZA-EC-JB) | MSL+105 cm (modelo) | 6..212 | — | 1.4 |
+| got-4e1d64 | got5.6:2.919,73.570 | GOT5.6 2.919N 73.570E (MV-CEN) | MSL+65 cm (modelo) | 6..121 | — | 1.0 |
+| got-528c98 | got5.6:13.077,74.787 | GOT5.6 13.077N 74.787E (IN-W) | MSL+126 cm (modelo) | 6..213 | — | 1.4 |
+| got-529ee2 | got5.6:15.765,121.574 | GOT5.6 15.765N 121.574E (PH-LUZ) | MSL+116 cm (modelo) | 6..211 | — | 1.3 |
+| got-56aa18 | got5.6:-25.030,46.999 | GOT5.6 25.030S 46.999E (MG-ALL) | MSL+33 cm (modelo) | 6..64 | — | 0.6 |
+| got-56d0a4 | got5.6:-2.410,99.855 | GOT5.6 2.410S 99.855E (ID-MEN) | MSL+66 cm (modelo) | 5..146 | — | 1.0 |
+| got-56fcd4 | got5.6:15.861,-97.063 | GOT5.6 15.861N 97.063W (MX-OAX) | MSL+67 cm (modelo) | 6..143 | — | 0.8 |
+| got-57076f | got5.6:-29.493,31.275 | GOT5.6 29.493S 31.275E (ZA-KZN-N) | MSL+117 cm (modelo) | 5..234 | — | 1.6 |
+| got-5888b8 | got5.6:-36.070,-72.800 | GOT5.6 36.070S 72.800W (CL-MAU) | MSL+87 cm (modelo) | 6..192 | — | 1.1 |
+| got-5c5f01 | got5.6:-22.752,-41.912 | GOT5.6 22.752S 41.912W (BR-RJL) | MSL+89 cm (modelo) | 5..159 | — | 1.1 |
+| got-5e72ab | got5.6:7.619,-81.243 | GOT5.6 7.619N 81.243W (PA-PAC) | MSL+200 cm (modelo) | 6..397 | — | 2.0 |
+| got-63d295 | got5.6:-33.023,27.919 | GOT5.6 33.023S 27.919E (ZA-EC-PE) | MSL+105 cm (modelo) | 6..210 | — | 1.4 |
+| got-642556 | got5.6:-29.976,-50.121 | GOT5.6 29.976S 50.121W (BR-RS) | MSL+48 cm (modelo) | 6..91 | — | 1.2 |
+| got-668790 | got5.6:-34.129,-71.998 | GOT5.6 34.129S 71.998W (CL-PIC) | MSL+84 cm (modelo) | 5..186 | — | 1.1 |
+| got-684e80 | got5.6:-8.973,116.729 | GOT5.6 8.973S 116.729E (ID-SBW) | MSL+157 cm (modelo) | 5..314 | — | 2.3 |
+| got-68a040 | got5.6:-27.720,114.151 | GOT5.6 27.720S 114.151E (AU-WA-NW) | MSL+56 cm (modelo) | 5..111 | — | 1.1 |
+| got-6cb02d | got5.6:-37.995,-57.544 | GOT5.6 37.995S 57.544W (AR-MDP) | MSL+89 cm (modelo) | 6..187 | — | 1.6 |
+| got-6d1313 | got5.6:23.400,-110.211 | GOT5.6 23.400N 110.211W (MX-BCS) | MSL+116 cm (modelo) | 5..220 | — | 1.6 |
+| got-6f9c71 | got5.6:12.760,-87.450 | GOT5.6 12.760N 87.450W (NI-NW) | MSL+154 cm (modelo) | 6..310 | — | 1.5 |
+| got-707910 | got5.6:9.382,-82.235 | GOT5.6 9.382N 82.235W (PA-BDT) | MSL+33 cm (modelo) | 6..64 | — | 0.5 |
+| got-70a590 | got5.6:43.427,-4.893 | GOT5.6 43.427N 4.893W (ES-AST) | MSL+235 cm (modelo) | 5..464 | — | 2.7 |
+| got-713511 | got5.6:20.214,-87.429 | GOT5.6 20.214N 87.429W (MX-CAR) | MSL+22 cm (modelo) | 5..38 | — | 0.4 |
+| got-72b502 | got5.6:13.659,124.398 | GOT5.6 13.659N 124.398E (PH-EAS) | MSL+125 cm (modelo) | 5..223 | — | 1.4 |
+| got-770eaa | got5.6:-7.148,-34.796 | GOT5.6 7.148S 34.796W (BR-NE-RN) | MSL+143 cm (modelo) | 6..283 | — | 1.5 |
+| got-78d608 | got5.6:-38.780,143.400 | GOT5.6 38.780S 143.400E (AU-VIC-W) | MSL+94 cm (modelo) | 6..172 | — | 1.3 |
+| got-798f17 | got5.6:-38.589,-58.740 | GOT5.6 38.589S 58.740W (AR-MDP) | MSL+103 cm (modelo) | 6..205 | — | 1.4 |
+| got-799775 | got5.6:-10.893,122.812 | GOT5.6 10.893S 122.812E (ID-ROT) | MSL+193 cm (modelo) | 5..380 | — | 2.7 |
+| got-7a487c | got5.6:-26.596,153.107 | GOT5.6 26.596S 153.107E (AU-QLD-SC) | MSL+101 cm (modelo) | 5..224 | — | 1.3 |
+| got-7c798b | got5.6:11.196,-60.800 | GOT5.6 11.196N 60.800W (TT-ALL) | MSL+63 cm (modelo) | 6..116 | — | 0.7 |
+| got-7d5db3 | got5.6:-38.270,-57.840 | GOT5.6 38.270S 57.840W (AR-MDP) | MSL+96 cm (modelo) | 6..193 | — | 1.5 |
+| got-82a78a | got5.6:-8.816,118.376 | GOT5.6 8.816S 118.376E (ID-SBW) | MSL+176 cm (modelo) | 5..351 | — | 2.5 |
+| got-87528f | got5.6:25.420,-76.623 | GOT5.6 25.420N 76.623W (BS-ALL) | MSL+65 cm (modelo) | 5..138 | — | 0.6 |
+| got-8a708f | got5.6:-8.062,-79.123 | GOT5.6 8.062S 79.123W (PE-LLB) | MSL+83 cm (modelo) | 5..161 | — | 1.0 |
+| got-8ae671 | got5.6:63.405,-19.071 | GOT5.6 63.405N 19.071W (IS-ALL) | MSL+151 cm (modelo) | 5..307 | — | 1.8 |
+| got-8af89e | got5.6:-32.811,17.885 | GOT5.6 32.811S 17.885E (ZA-WC-WCO) | MSL+99 cm (modelo) | 5..202 | — | 1.3 |
+| got-8bd957 | got5.6:11.300,-85.910 | GOT5.6 11.300N 85.910W (NI-RIV) | MSL+144 cm (modelo) | 6..288 | — | 1.4 |
+| got-8d76ed | got5.6:26.704,-113.578 | GOT5.6 26.704N 113.578W (MX-BCS-N) | MSL+132 cm (modelo) | 6..258 | — | 1.8 |
+| got-913e13 | got5.6:-31.643,29.550 | GOT5.6 31.643S 29.550E (ZA-EC-WLD) | MSL+108 cm (modelo) | 6..216 | — | 1.4 |
+| got-91ed50 | got5.6:-24.366,113.406 | GOT5.6 24.366S 113.406E (AU-WA-GAS) | MSL+85 cm (modelo) | 6..161 | — | 1.2 |
+| got-91f084 | got5.6:10.850,-85.801 | GOT5.6 10.850N 85.801W (CR-GUA) | MSL+147 cm (modelo) | 6..294 | — | 1.4 |
+| got-94cadf | got5.6:6.800,81.820 | GOT5.6 6.800N 81.820E (LK-E) | MSL+21 cm (modelo) | 6..35 | — | 0.3 |
+| got-95d729 | got5.6:9.634,-82.712 | GOT5.6 9.634N 82.712W (CR-CAR) | MSL+37 cm (modelo) | 6..67 | — | 0.4 |
+| got-964843 | got5.6:5.998,80.269 | GOT5.6 5.998N 80.269E (LK-S) | MSL+41 cm (modelo) | 5..79 | — | 0.7 |
+| got-9803e3 | got5.6:-23.760,-45.870 | GOT5.6 23.760S 45.870W (BR-SP) | MSL+90 cm (modelo) | 6..165 | — | 2.4 |
+| got-9b0ee7 | got5.6:11.605,125.440 | GOT5.6 11.605N 125.440E (PH-EAS) | MSL+99 cm (modelo) | 5..183 | — | 1.1 |
+| got-9decc4 | got5.6:-39.774,-73.400 | GOT5.6 39.774S 73.400W (CL-SUR) | MSL+91 cm (modelo) | 6..200 | — | 1.2 |
+| got-a0b028 | got5.6:-28.125,32.558 | GOT5.6 28.125S 32.558E (ZA-KZN-N) | MSL+127 cm (modelo) | 6..253 | — | 1.8 |
+| got-a0b2f5 | got5.6:-30.240,-50.230 | GOT5.6 30.240S 50.230W (BR-RS) | MSL+45 cm (modelo) | 6..87 | — | 1.2 |
+| got-a1d318 | got5.6:22.900,121.233 | GOT5.6 22.900N 121.233E (TW-E) | MSL+113 cm (modelo) | 5..208 | — | 1.3 |
+| got-a65a9d | got5.6:40.133,-8.874 | GOT5.6 40.133N 8.874W (PT-CEN) | MSL+185 cm (modelo) | 5..373 | — | 2.1 |
+| got-a806af | got5.6:26.250,-112.480 | GOT5.6 26.250N 112.480W (MX-BCS-N) | MSL+134 cm (modelo) | 5..260 | — | 1.8 |
+| got-a8e5b2 | got5.6:-5.877,-35.173 | GOT5.6 5.877S 35.173W (BR-NE-RN) | MSL+145 cm (modelo) | 5..286 | — | 1.6 |
+| got-a905b1 | got5.6:-32.083,132.989 | GOT5.6 32.083S 132.989E (AU-SA-EYR) | MSL+83 cm (modelo) | 5..178 | — | 3.9 |
+| got-a95390 | got5.6:24.027,121.627 | GOT5.6 24.027N 121.627E (TW-E) | MSL+108 cm (modelo) | 5..193 | — | 1.3 |
+| got-a989b9 | got5.6:37.969,128.760 | GOT5.6 37.969N 128.760E (KR-ALL) | MSL+32 cm (modelo) | 6..52 | — | 0.3 |
+| got-aa96f4 | got5.6:-9.667,-35.710 | GOT5.6 9.667S 35.710W (BR-NE-PE) | MSL+138 cm (modelo) | 5..269 | — | 1.5 |
+| got-ab6d4c | got5.6:-23.650,43.635 | GOT5.6 23.650S 43.635E (MG-ALL) | MSL+158 cm (modelo) | 5..314 | — | 2.3 |
+| got-addc69 | got5.6:20.955,-105.356 | GOT5.6 20.955N 105.356W (MX-NAY) | MSL+101 cm (modelo) | 6..185 | — | 1.4 |
+| got-af9925 | got5.6:8.731,76.703 | GOT5.6 8.731N 76.703E (IN-W) | MSL+64 cm (modelo) | 6..115 | — | 0.9 |
+| got-b07ca8 | got5.6:19.415,-155.909 | GOT5.6 19.415N 155.909W (US-HI-BIG) | MSL+49 cm (modelo) | 5..113 | — | 0.7 |
+| got-b0dc74 | got5.6:-30.200,30.807 | GOT5.6 30.200S 30.807E (ZA-KZN-S) | MSL+113 cm (modelo) | 6..224 | — | 1.5 |
+| got-b18ed4 | got5.6:-12.577,-38.003 | GOT5.6 12.577S 38.003W (BR-BA) | MSL+134 cm (modelo) | 6..259 | — | 1.5 |
+| got-b2745e | got5.6:-38.999,-61.295 | GOT5.6 38.999S 61.295W (AR-SUR) | MSL+166 cm (modelo) | 6..308 | — | 1.9 |
+| got-b32477 | got5.6:-8.915,116.355 | GOT5.6 8.915S 116.355E (ID-LOM) | MSL+157 cm (modelo) | 6..311 | — | 2.2 |
+| got-b461dd | got5.6:5.713,-77.264 | GOT5.6 5.713N 77.264W (CO-PAC) | MSL+202 cm (modelo) | 5..401 | — | 2.1 |
+| got-b495c3 | got5.6:12.787,80.255 | GOT5.6 12.787N 80.255E (IN-E) | MSL+66 cm (modelo) | 5..132 | — | 0.8 |
+| got-b68b0a | got5.6:-32.312,18.324 | GOT5.6 32.312S 18.324E (ZA-WC-WCO) | MSL+105 cm (modelo) | 5..215 | — | 1.4 |
+| got-b6d772 | got5.6:8.456,-79.966 | GOT5.6 8.456N 79.966W (PA-PAC) | MSL+263 cm (modelo) | 6..518 | — | 2.7 |
+| got-b81c05 | got5.6:-40.575,-73.736 | GOT5.6 40.575S 73.736W (CL-SUR) | MSL+90 cm (modelo) | 6..199 | — | 1.2 |
+| got-bbafe3 | got5.6:31.359,-9.809 | GOT5.6 31.359N 9.809W (MA-TAG) | MSL+176 cm (modelo) | 6..357 | — | 1.9 |
+| got-bea209 | got5.6:-42.450,171.198 | GOT5.6 42.450S 171.198E (NZ-WC) | MSL+166 cm (modelo) | 5..327 | — | 1.5 |
+| got-c1e848 | got5.6:-2.674,141.299 | GOT5.6 2.674S 141.299E (PG-ALL) | MSL+98 cm (modelo) | 5..150 | — | 1.1 |
+| got-c38d4b | got5.6:16.062,108.249 | GOT5.6 16.062N 108.249E (VN-ALL) | MSL+76 cm (modelo) | 5..129 | — | 1.0 |
+| got-c504a0 | got5.6:20.769,-105.526 | GOT5.6 20.769N 105.526W (MX-NAY) | MSL+100 cm (modelo) | 6..182 | — | 1.4 |
+| got-c73835 | got5.6:10.500,-67.690 | GOT5.6 10.500N 67.690W (VE-ALL) | MSL+29 cm (modelo) | 5..60 | — | 0.4 |
+| got-c774f7 | got5.6:-1.900,99.300 | GOT5.6 1.900S 99.300E (ID-MEN) | MSL+61 cm (modelo) | 6..135 | — | 0.9 |
+| got-c939f5 | got5.6:-30.891,30.354 | GOT5.6 30.891S 30.354E (ZA-KZN-S) | MSL+110 cm (modelo) | 5..220 | — | 1.5 |
+| got-c94e22 | got5.6:-26.630,-48.678 | GOT5.6 26.630S 48.678W (BR-SC-NOR) | MSL+75 cm (modelo) | 6..150 | — | 2.8 |
+| got-c96e4a | got5.6:11.130,-63.850 | GOT5.6 11.130N 63.850W (VE-ALL) | MSL+37 cm (modelo) | 6..71 | — | 0.4 |
+| got-ca232b | got5.6:33.790,-7.175 | GOT5.6 33.790N 7.175W (MA-N) | MSL+178 cm (modelo) | 6..359 | — | 2.0 |
+| got-cb31f0 | got5.6:6.100,-77.420 | GOT5.6 6.100N 77.420W (CO-PAC) | MSL+204 cm (modelo) | 5..406 | — | 2.1 |
+| got-cb786a | got5.6:29.430,-10.130 | GOT5.6 29.430N 10.130W (MA-S) | MSL+173 cm (modelo) | 6..350 | — | 1.9 |
+| got-cff16a | got5.6:-0.939,-80.733 | GOT5.6 0.939S 80.733W (EC-COS) | MSL+159 cm (modelo) | 5..314 | — | 1.6 |
+| got-d032d9 | got5.6:-23.881,113.488 | GOT5.6 23.881S 113.488E (AU-WA-GAS) | MSL+84 cm (modelo) | 5..162 | — | 1.2 |
+| got-d2f680 | got5.6:11.243,-73.568 | GOT5.6 11.243N 73.568W (CO-CAR) | MSL+25 cm (modelo) | 6..57 | — | 0.5 |
+| got-d30559 | got5.6:-5.305,103.992 | GOT5.6 5.305S 103.992E (ID-KRU) | MSL+69 cm (modelo) | 6..150 | — | 1.0 |
+| got-d42e6d | got5.6:-36.580,-56.690 | GOT5.6 36.580S 56.690W (AR-BAN) | MSL+81 cm (modelo) | 5..164 | — | 1.4 |
+| got-d43a78 | got5.6:-20.330,-40.285 | GOT5.6 20.330S 40.285W (BR-ES) | MSL+103 cm (modelo) | 6..189 | — | 1.2 |
+| got-d5b42a | got5.6:-8.218,111.095 | GOT5.6 8.218S 111.095E (ID-JAV-E) | MSL+119 cm (modelo) | 5..244 | — | 1.7 |
+| got-d6cb2e | got5.6:5.968,80.685 | GOT5.6 5.968N 80.685E (LK-S) | MSL+38 cm (modelo) | 6..72 | — | 0.6 |
+| got-d76764 | got5.6:0.912,97.263 | GOT5.6 0.912N 97.263E (ID-NIA) | MSL+48 cm (modelo) | 6..105 | — | 0.8 |
+| got-d8f761 | got5.6:-25.697,-48.467 | GOT5.6 25.697S 48.467W (BR-SC-NOR) | MSL+106 cm (modelo) | 5..219 | — | 4.4 |
+| got-ddd9f6 | got5.6:-7.410,-79.580 | GOT5.6 7.410S 79.580W (PE-LLB) | MSL+88 cm (modelo) | 6..169 | — | 1.0 |
+| got-def45c | got5.6:-34.923,-72.174 | GOT5.6 34.923S 72.174W (CL-MAU) | MSL+86 cm (modelo) | 5..189 | — | 1.1 |
+| got-dfa80c | got5.6:-34.516,-72.041 | GOT5.6 34.516S 72.041W (CL-PIC) | MSL+86 cm (modelo) | 6..189 | — | 1.1 |
+| got-dfbfb8 | got5.6:-27.115,-48.605 | GOT5.6 27.115S 48.605W (BR-SC-NOR) | MSL+70 cm (modelo) | 5..133 | — | 2.3 |
+| got-e07ca7 | got5.6:-29.855,31.049 | GOT5.6 29.855S 31.049E (ZA-KZN-DBN) | MSL+114 cm (modelo) | 5..227 | — | 1.5 |
+| got-e4029c | got5.6:-31.980,29.153 | GOT5.6 31.980S 29.153E (ZA-EC-WLD) | MSL+107 cm (modelo) | 5..215 | — | 1.4 |
+| got-e49ea1 | got5.6:43.951,-64.818 | GOT5.6 43.951N 64.818W (CA-NS) | MSL+114 cm (modelo) | 5..219 | — | 1.0 |
+| got-e51b06 | got5.6:-23.858,35.549 | GOT5.6 23.858S 35.549E (MZ-INH) | MSL+167 cm (modelo) | 6..330 | — | 2.4 |
+| got-e5aa1d | got5.6:11.978,79.833 | GOT5.6 11.978N 79.833E (IN-E) | MSL+61 cm (modelo) | 5..120 | — | 0.7 |
+| got-e7ff80 | got5.6:12.378,-87.042 | GOT5.6 12.378N 87.042W (NI-NW) | MSL+143 cm (modelo) | 6..288 | — | 1.4 |
+| got-ec35aa | got5.6:-33.984,23.562 | GOT5.6 33.984S 23.562E (ZA-WC-GR) | MSL+110 cm (modelo) | 5..225 | — | 1.5 |
+| got-ef40bc | got5.6:5.490,-0.405 | GOT5.6 5.490N 0.405W (GH-ALL) | MSL+100 cm (modelo) | 5..189 | — | 1.0 |
+| got-f03581 | got5.6:-34.046,22.418 | GOT5.6 34.046S 22.418E (ZA-WC-GR) | MSL+117 cm (modelo) | 5..240 | — | 1.6 |
+| got-f0b002 | got5.6:37.653,-8.801 | GOT5.6 37.653N 8.801W (PT-ALG) | MSL+182 cm (modelo) | 6..363 | — | 2.0 |
+| got-f0c08b | got5.6:7.300,-80.380 | GOT5.6 7.300N 80.380W (PA-PAC) | MSL+208 cm (modelo) | 6..412 | — | 2.1 |
+| got-f341c0 | got5.6:-22.938,14.418 | GOT5.6 22.938S 14.418E (NA-ERO) | MSL+98 cm (modelo) | 5..190 | — | 1.1 |
+| got-f4a045 | got5.6:11.040,-74.910 | GOT5.6 11.040N 74.910W (CO-CAR) | MSL+24 cm (modelo) | 6..56 | — | 0.4 |
+| got-f89309 | got5.6:-6.237,-35.046 | GOT5.6 6.237S 35.046W (BR-NE-RN) | MSL+144 cm (modelo) | 5..285 | — | 1.5 |
+| got-f8b86d | got5.6:16.669,120.320 | GOT5.6 16.669N 120.320E (PH-LUZ) | MSL+63 cm (modelo) | 5..138 | — | 1.1 |
 | imi-achill-island | imi:Achill_Island_MODELLED | Achill Island (modelado) | LAT | 9..467 | 2026: 1 | 0.3 |
 | imi-castletownbere | imi:Castletownbere | Castletownbere | LAT | 11..374 | — | 2.2 |
 | imi-dingle | imi:Dingle | Dingle | LAT | 8..440 | — | 2.7 |
@@ -461,35 +458,52 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 
 ### AR-MDP — Mar del Plata–Necochea (22 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-6cb02d` GOT5.6 37.995S 57.544W (AR-MDP) — modelo global GOT5.6: 14 picos a 0.0–30 km, radio 40 km
+- `got-7d5db3` GOT5.6 38.270S 57.840W (AR-MDP) — modelo global GOT5.6: 4 picos a 0.0–19 km, radio 30 km
+- `got-798f17` GOT5.6 38.589S 58.740W (AR-MDP) — modelo global GOT5.6: 3 picos a 0.0–10 km, radio 20 km
+- Sin puerto (Open-Meteo): CLAROMECÓ
 
 ### AR-BAN — Pinamar y Villa Gesell (16 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-2613c9` GOT5.6 37.230S 56.948W (AR-BAN) — modelo global GOT5.6: 10 picos a 0.0–15 km, radio 26 km
+- `got-d42e6d` GOT5.6 36.580S 56.690W (AR-BAN) — modelo global GOT5.6: 6 picos a 0.0–25 km, radio 35 km
 
 ### AR-SUR — Patagonia (6 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-b2745e` GOT5.6 38.999S 61.295W (AR-SUR) — modelo global GOT5.6: 2 picos a 0.0–22 km, radio 33 km
+- `got-2c8cf0` GOT5.6 41.053S 62.823W (AR-SUR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-1940fc` GOT5.6 40.812S 65.085W (AR-SUR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Sin puerto (Open-Meteo): PLAYA UNIÓN (ticon-1d4610 a 62 km: cruza 59 km de tierra), RADA TILLY
 - Descartadas: `ticon-1d4610` 62 km, cruza 59 km de tierra
 
 ### BR-RS — Rio Grande do Sul (18 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-11c637` GOT5.6 29.544S 49.875W (BR-RS) — modelo global GOT5.6: 7 picos a 0.0–28 km, radio 39 km
+- `got-642556` GOT5.6 29.976S 50.121W (BR-RS) — modelo global GOT5.6: 7 picos a 0.0–25 km, radio 36 km
+- `got-a0b2f5` GOT5.6 30.240S 50.230W (BR-RS) — modelo global GOT5.6: 2 picos a 0.0–12 km, radio 22 km
+- Sin puerto (Open-Meteo): CASSINO, MOLHES DA BARRA
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): CIDREIRA → got-a0b2f5
 
 ### BR-RS-SUL — Rio Grande do Sul sur (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-47f025` GOT5.6 33.743S 53.370W (BR-RS-SUL) — modelo global GOT5.6: 2 picos a 0.0–13 km, radio 24 km
 
 ### BR-SC-NOR — Santa Catarina norte y Paraná (20 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-c94e22` GOT5.6 26.630S 48.678W (BR-SC-NOR) — modelo global GOT5.6: 6 picos a 0.0–30 km, radio 40 km
+- `got-d8f761` GOT5.6 25.697S 48.467W (BR-SC-NOR) — modelo global GOT5.6: 5 picos a 0.0–23 km, radio 34 km
+- `got-dfbfb8` GOT5.6 27.115S 48.605W (BR-SC-NOR) — modelo global GOT5.6: 5 picos a 0.0–19 km, radio 30 km
+- Sin puerto (Open-Meteo): BREJATUBA, ITAPOÁ, ENSEADA, UBATUBA
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): NAVEGANTES → got-dfbfb8
 - Descartadas: `ticon-757122` 70 km, cruza 59 km de tierra
 
 ### BR-SP — São Paulo (29 picos)
 
 - `ticon-752b4c` TICON-3 23.500S 45.117W (gesla.cmems) — TICON-3, misma costa: 16 picos a 1.3–55 km, radio 66 km (niveles 2,4)
 - `ticon-757122` TICON-3 25.017S 47.925W (gesla.meds) — TICON-3, cruzando tierra: 1 picos a 49–49 km, radio 60 km
-- Sin puerto (Open-Meteo): BOIÇUCANGA (ticon-752b4c a 61 km: cruza 22 km de tierra), CAMBURI (ticon-752b4c a 62 km: cruza 24 km de tierra), BARRA DO SAHY (ticon-752b4c a 65 km: cruza 25 km de tierra), JUQUEHY (ticon-752b4c a 69 km: cruza 25 km de tierra), BORACÉIA (ticon-752b4c a 82 km: cruza 67 km de tierra), ITAGUARÉ (ticon-752b4c a 94 km: cruza 73 km de tierra), TOMBO, ASTÚRIAS, PITANGUEIRAS, ENSEADA, PRAIA GRANDE SP, ITANHAÉM
+- `got-9803e3` GOT5.6 23.760S 45.870W (BR-SP) — modelo global GOT5.6: 6 picos a 0.0–26 km, radio 36 km
+- Sin puerto (Open-Meteo): TOMBO, ASTÚRIAS, PITANGUEIRAS, ENSEADA, PRAIA GRANDE SP, ITANHAÉM
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): TOQUE-TOQUE → got-9803e3, PAÚBA → got-9803e3, MARESIAS → got-9803e3
 - Descartadas: `ticon-752b4c` 61 km, cruza 22 km de tierra
 
 ### BR-RJ — Río de Janeiro (17 picos)
@@ -500,35 +514,48 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### BR-RJL — Saquarema y Región de los Lagos (20 picos)
 
 - `ticon-2559e1` TICON-3 22.933S 43.133W (gesla.noaa) — TICON-3, cruzando tierra: 6 picos a 17–59 km, radio 69 km
-- Sin puerto (Open-Meteo): PRAIA DA VILA (ticon-2559e1 a 63 km: cruza 46 km de tierra), ITAÚNA (ticon-2559e1 a 66 km: cruza 46 km de tierra), PRAIA SECA (ticon-2559e1 a 79 km: cruza 46 km de tierra), MASSAMBABA (ticon-2559e1 a 94 km: cruza 46 km de tierra), PRAINHAS DO PONTAL (ticon-2559e1 a 115 km: cruza 45 km de tierra), PRAIA GRANDE (ticon-2559e1 a 114 km: cruza 45 km de tierra), PRAIA DO FORNO (ticon-2559e1 a 116 km: cruza 45 km de tierra), FORTE (ticon-2559e1 a 116 km: cruza 112 km de tierra), PERÓ, GERIBÁ, FERRADURA, TUCUNS, TARTARUGA, COSTAZUL
+- `got-5c5f01` GOT5.6 22.752S 41.912W (BR-RJL) — modelo global GOT5.6: 10 picos a 0.0–26 km, radio 37 km
+- `got-243beb` GOT5.6 22.942S 42.359W (BR-RJL) — modelo global GOT5.6: 4 picos a 0.0–16 km, radio 26 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): VILATUR → got-243beb, BARRA NOVA → got-243beb
 - Descartadas: `ticon-cd2c42` 21 km, fuera por el tope de 3 puertos (nivel 4); `ticon-2559e1` 63 km, cruza 46 km de tierra
 
 ### BR-ES — Espírito Santo (19 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-d43a78` GOT5.6 20.330S 40.285W (BR-ES) — modelo global GOT5.6: 9 picos a 0.0–23 km, radio 34 km
+- `got-1a5319` GOT5.6 20.659S 40.488W (BR-ES) — modelo global GOT5.6: 5 picos a 0.0–31 km, radio 42 km
+- `got-1426bf` GOT5.6 18.426S 39.704W (BR-ES) — modelo global GOT5.6: 2 picos a 0.0–32 km, radio 43 km
+- Sin puerto (Open-Meteo): REGÊNCIA, BARRA DO RIACHO, MARATAÍZES
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): PONTA DA FRUTA → got-1a5319
 
 ### BR-BA — Bahía (21 picos)
 
 - `ticon-f5b09a` TICON-3 12.973S 38.517W (gesla.cmems) — TICON-3, cruzando tierra: 6 picos a 17–55 km, radio 66 km
-- Sin puerto (Open-Meteo): GUARAJUBA (ticon-f5b09a a 61 km: cruza 51 km de tierra), ITACIMIRIM (ticon-f5b09a a 65 km: cruza 56 km de tierra), PRAIA DO FORTE (ticon-f5b09a a 71 km: cruza 64 km de tierra), IMBASSAÍ (ticon-f5b09a a 80 km: cruza 77 km de tierra), RESENDE, ITACARÉ, TIRIRICA, ENGENHOCA, HAVAIZINHO, ITACARÉZINHO, JERIBUCAÇU, CURURUPE (ticon-890b60 a 91 km: cruza 25 km de tierra), OLIVENÇA (ticon-890b60 a 80 km: cruza 25 km de tierra), MUCUGÊ (ticon-890b60 a 87 km: cruza 85 km de tierra), TRANCOSO (ticon-890b60 a 104 km: cruza 84 km de tierra)
+- `got-260f66` GOT5.6 14.347S 38.980W (BR-BA) — modelo global GOT5.6: 7 picos a 0.0–6.7 km, radio 17 km
+- `got-b18ed4` GOT5.6 12.577S 38.003W (BR-BA) — modelo global GOT5.6: 4 picos a 0.0–11 km, radio 21 km
+- Sin puerto (Open-Meteo): CURURUPE (ticon-890b60 a 91 km: cruza 25 km de tierra), OLIVENÇA (ticon-890b60 a 80 km: cruza 25 km de tierra), MUCUGÊ (ticon-890b60 a 87 km: cruza 85 km de tierra), TRANCOSO (ticon-890b60 a 104 km: cruza 84 km de tierra)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BUSCA VIDA → got-b18ed4
 - Descartadas: `ticon-f5b09a` 61 km, cruza 51 km de tierra; `ticon-890b60` 80 km, cruza 25 km de tierra
 
 ### BR-NE-CE — Ceará (13 picos)
 
 - `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 7 picos a 2.0–102 km, radio 113 km (niveles 2,4)
 - `ticon-cf2b1c` TICON-3 4.817S 37.050W (gesla.cmems) — TICON-3, misma costa: 1 picos a 81–81 km, radio 92 km
-- Sin puerto (Open-Meteo): CALHAU, ARAÇAGI, JERICOACOARA, PREÁ, MUNDAÚ (ticon-c1874d a 115 km: cruza 22 km de tierra)
+- `got-0a9164` GOT5.6 2.497S 44.248W (BR-NE-CE) — modelo global GOT5.6: 2 picos a 0.0–7.9 km, radio 18 km
+- Sin puerto (Open-Meteo): JERICOACOARA, PREÁ, MUNDAÚ (ticon-c1874d a 115 km: cruza 22 km de tierra)
 - Descartadas: `ticon-ee2dcc` 0.3 km, cruza 22 km de tierra; `ticon-c1874d` 115 km, cruza 22 km de tierra
 
 ### BR-NE-RN — Rio Grande do Norte y Paraíba (13 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-a8e5b2` GOT5.6 5.877S 35.173W (BR-NE-RN) — modelo global GOT5.6: 5 picos a 0.0–20 km, radio 31 km
+- `got-770eaa` GOT5.6 7.148S 34.796W (BR-NE-RN) — modelo global GOT5.6: 5 picos a 0.0–20 km, radio 31 km
+- `got-f89309` GOT5.6 6.237S 35.046W (BR-NE-RN) — modelo global GOT5.6: 3 picos a 0.0–16 km, radio 26 km
 - Descartadas: `ticon-ead2f2` 85 km, cruza 22 km de tierra; `ticon-2b1454` 119 km, cruza 72 km de tierra
 
 ### BR-NE-PE — Pernambuco Alagoas y Sergipe (14 picos)
 
 - `ticon-2b1454` TICON-3 8.350S 34.950W (gesla.noaa) — TICON-3, misma costa: 9 picos a 1.6–26 km, radio 37 km (niveles 2,4)
-- Sin puerto (Open-Meteo): PRAIA DO FRANCÊS, PAJUÇARA, JATIÚCA, ATALAIA, ARUANA
+- `got-aa96f4` GOT5.6 9.667S 35.710W (BR-NE-PE) — modelo global GOT5.6: 3 picos a 0.0–18 km, radio 28 km
+- `got-1afd1e` GOT5.6 11.000S 37.040W (BR-NE-PE) — modelo global GOT5.6: 2 picos a 0.0–5.8 km, radio 16 km
 - Descartadas: `ticon-ead2f2` 8.4 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### BR-NOR — Fernando de Noronha (5 picos)
@@ -538,37 +565,48 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### CL-NOR — Arica a Antofagasta (11 picos)
 
 - `ticon-39e748` TICON-3 18.467S 70.333W (gesla.uhslc) — TICON-3, misma costa: 6 picos a 1.5–7.3 km, radio 18 km (niveles 2,4)
-- Sin puerto (Open-Meteo): PUNTA GRUESA, CAVANCHA, PLAYA BRAVA, HUAYQUIQUE, LOBITO
+- `got-332a05` GOT5.6 20.237S 70.140W (CL-NOR) — modelo global GOT5.6: 5 picos a 0.0–6.9 km, radio 17 km
 
 ### CL-CEN — Valparaíso y Coquimbo (20 picos)
 
 - `ticon-9450da` TICON-3 33.027S 71.627W (gesla.noaa) — TICON-3, misma costa: 19 picos a 8.3–99 km, radio 110 km (niveles 2,4)
-- Sin puerto (Open-Meteo): TOTORALILLO
+- `got-22dcfd` GOT5.6 30.092S 71.360W (CL-CEN) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### CL-PIC — Pichilemu (12 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-668790` GOT5.6 34.129S 71.998W (CL-PIC) — modelo global GOT5.6: 6 picos a 0.0–29 km, radio 40 km
+- `got-dfa80c` GOT5.6 34.516S 72.041W (CL-PIC) — modelo global GOT5.6: 6 picos a 0.0–13 km, radio 24 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LA PUNTILLA → got-dfa80c, PLAYA PRINCIPAL → got-dfa80c, LAS TERRAZAS → got-dfa80c
 - Descartadas: `ticon-9450da` 107 km, cruza 26 km de tierra
 
 ### CL-MAU — Maule y Biobío (14 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-5888b8` GOT5.6 36.070S 72.800W (CL-MAU) — modelo global GOT5.6: 4 picos a 0.0–35 km, radio 45 km
+- `got-def45c` GOT5.6 34.923S 72.174W (CL-MAU) — modelo global GOT5.6: 3 picos a 0.0–20 km, radio 31 km
+- `got-04ac46` GOT5.6 35.344S 72.430W (CL-MAU) — modelo global GOT5.6: 2 picos a 0.0–46 km, radio 57 km
+- Sin puerto (Open-Meteo): DICHATO, COCHOLGÜE, PUNTA LAVAPIÉ, LEBU, TIRÚA
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): CHANCO → got-5888b8
 
 ### CL-SUR — Araucanía a Los Lagos (11 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-0d6795` GOT5.6 39.390S 73.215W (CL-SUR) — modelo global GOT5.6: 3 picos a 0.0–20 km, radio 31 km
+- `got-b81c05` GOT5.6 40.575S 73.736W (CL-SUR) — modelo global GOT5.6: 3 picos a 0.0–4.3 km, radio 15 km
+- `got-9decc4` GOT5.6 39.774S 73.400W (CL-SUR) — modelo global GOT5.6: 2 picos a 0.0–11 km, radio 21 km
+- Sin puerto (Open-Meteo): PUERTO SAAVEDRA, MAR BRAVA (ticon-7b3808 a 100 km: cruza 66 km de tierra), CUCAO
 - Descartadas: `ticon-7b3808` 100 km, cruza 66 km de tierra
 
 ### PE-NOR — Tumbes y Piura (10 picos)
 
 - `ticon-55de77` TICON-3 4.582S 81.282W (gesla.cmems) — TICON-3, cruzando tierra: 7 picos a 15–59 km, radio 70 km
 - `ticon-d44c01` TICON-3 5.083S 81.167W (gesla.meds) — TICON-3, misma costa: 1 picos a 14–14 km, radio 25 km
-- Sin puerto (Open-Meteo): ZORRITOS, PUNTA SAL (ticon-55de77 a 75 km: cruza 62 km de tierra)
+- `got-04911c` GOT5.6 3.677S 80.670W (PE-NOR) — modelo global GOT5.6: 2 picos a 0.0–48 km, radio 59 km
 - Descartadas: `ticon-d44c01` 71 km, cruza 42 km de tierra; `ticon-55de77` 75 km, cruza 62 km de tierra
 
 ### PE-LLB — La Libertad y Lambayeque (7 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-30731c` GOT5.6 6.880S 79.950W (PE-LLB) — modelo global GOT5.6: 3 picos a 0.0–11 km, radio 22 km
+- `got-ddd9f6` GOT5.6 7.410S 79.580W (PE-LLB) — modelo global GOT5.6: 2 picos a 0.0–36 km, radio 47 km
+- `got-8a708f` GOT5.6 8.062S 79.123W (PE-LLB) — modelo global GOT5.6: 2 picos a 0.0–2.0 km, radio 13 km
 
 ### PE-LIM — Lima (15 picos)
 
@@ -583,7 +621,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### EC-COS — Costa de Ecuador (13 picos)
 
 - `noaa-9991474` La Libertad, Bahia de Santa Elena — oficial, misma costa: 6 picos a 3.7–59 km, radio 70 km
-- Sin puerto (Open-Meteo): ATACAMES, MOMPICHE, CANOA, MURCIÉLAGO, SAN LORENZO, ENGABAO (ticon-9f8ea6 a 63 km: cruza 34 km de tierra), PLAYAS (ticon-9f8ea6 a 76 km: cruza 73 km de tierra)
+- `got-26250e` GOT5.6 0.870N 79.850W (EC-COS) — modelo global GOT5.6: 2 picos a 0.0–45 km, radio 55 km
+- `got-cff16a` GOT5.6 0.939S 80.733W (EC-COS) — modelo global GOT5.6: 2 picos a 0.0–21 km, radio 32 km
+- Sin puerto (Open-Meteo): CANOA, ENGABAO (ticon-9f8ea6 a 63 km: cruza 34 km de tierra), PLAYAS (ticon-9f8ea6 a 76 km: cruza 73 km de tierra)
 - Descartadas: `ticon-9f8ea6` 4.3 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### EC-GAL — Galápagos (4 picos)
@@ -594,36 +634,42 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### CO-PAC — Pacífico colombiano (6 picos)
 
 - `ticon-67a479` TICON-3 3.890N 77.062W (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 35–35 km, radio 45 km
-- Sin puerto (Open-Meteo): HUINA, EL VALLE, ALMEJAL, NUQUÍ
+- `got-cb31f0` GOT5.6 6.100N 77.420W (CO-PAC) — modelo global GOT5.6: 3 picos a 0.0–19 km, radio 29 km
+- `got-b461dd` GOT5.6 5.713N 77.264W (CO-PAC) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### CO-CAR — Caribe colombiano (3 picos)
 
 - `ticon-c8afda` TICON-3 11.235N 74.222W (gesla.noaa) — TICON-3, cruzando tierra: 1 picos a 42–42 km, radio 52 km
-- Sin puerto (Open-Meteo): PUERTO COLOMBIA (ticon-c8afda a 78 km: cruza 15 km de tierra), PALOMINO (ticon-c8afda a 71 km: cruza 69 km de tierra)
+- `got-f4a045` GOT5.6 11.040N 74.910W (CO-CAR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-d2f680` GOT5.6 11.243N 73.568W (CO-CAR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-c8afda` 71 km, cruza 69 km de tierra; `ticon-6f989c` 100 km, cruza 97 km de tierra
 
 ### VE-ALL — Venezuela (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-c73835` GOT5.6 10.500N 67.690W (VE-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-c96e4a` GOT5.6 11.130N 63.850W (VE-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### PA-PAC — Pacífico de Panamá (7 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-5e72ab` GOT5.6 7.619N 81.243W (PA-PAC) — modelo global GOT5.6: 3 picos a 0.0–0.8 km, radio 11 km
+- `got-f0c08b` GOT5.6 7.300N 80.380W (PA-PAC) — modelo global GOT5.6: 3 picos a 0.0–26 km, radio 36 km
+- `got-b6d772` GOT5.6 8.456N 79.966W (PA-PAC) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-8ab032` 70 km, cruza 20 km de tierra; `ticon-eebce1` 71 km, cruza 35 km de tierra; `ticon-9edf76` 100 km, cruza 95 km de tierra
 
 ### PA-BDT — Bocas del Toro (4 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-707910` GOT5.6 9.382N 82.235W (PA-BDT) — modelo global GOT5.6: 4 picos a 0.0–5.2 km, radio 16 km
 
 ### CR-GUA — Guanacaste norte (12 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-3d80b7` GOT5.6 10.240N 85.842W (CR-GUA) — modelo global GOT5.6: 10 picos a 0.0–10 km, radio 21 km
+- `got-91f084` GOT5.6 10.850N 85.801W (CR-GUA) — modelo global GOT5.6: 2 picos a 0.0–13 km, radio 23 km
 - Descartadas: `ticon-c1d17a` 109 km, cruza 70 km de tierra
 
 ### CR-NIC — Nicoya sur (11 picos)
 
 - `ticon-293edc` TICON-3 9.425N 84.172W (gesla.uhslc) — TICON-3, misma costa: 4 picos a 110–115 km, radio 125 km
-- Sin puerto (Open-Meteo): OSTIONAL (ticon-c1d17a a 96 km: cruza 72 km de tierra), PELADA (ticon-c1d17a a 93 km: cruza 71 km de tierra), GUIONES (ticon-c1d17a a 91 km: cruza 68 km de tierra), GARZA (ticon-c1d17a a 88 km: cruza 63 km de tierra), SAMARA (ticon-c1d17a a 77 km: cruza 56 km de tierra), CARRILLO (ticon-c1d17a a 72 km: cruza 53 km de tierra), CAMARONAL (ticon-c1d17a a 68 km: cruza 50 km de tierra)
+- `got-06d168` GOT5.6 9.876N 85.628W (CR-NIC) — modelo global GOT5.6: 7 picos a 0.0–20 km, radio 31 km
 - Descartadas: `ticon-c1d17a` 51 km, cruza 50 km de tierra; `noaa-9684403` 51 km, fuera por el tope de 3 puertos (nivel 3); `ticon-f6d60a` 111 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### CR-PAC — Pacífico central (10 picos)
@@ -639,15 +685,18 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### CR-CAR — Caribe de Costa Rica (5 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-95d729` GOT5.6 9.634N 82.712W (CR-CAR) — modelo global GOT5.6: 3 picos a 0.0–2.6 km, radio 13 km
+- `got-2175da` GOT5.6 10.003N 83.027W (CR-CAR) — modelo global GOT5.6: 2 picos a 0.0–49 km, radio 60 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): SALSA BRAVA → got-95d729
 
 ### NI-RIV — Rivas y Popoyo (8 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-8bd957` GOT5.6 11.300N 85.910W (NI-RIV) — modelo global GOT5.6: 8 picos a 0.0–32 km, radio 42 km
 
 ### NI-NW — Chinandega y León (4 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-e7ff80` GOT5.6 12.378N 87.042W (NI-NW) — modelo global GOT5.6: 3 picos a 0.0–38 km, radio 49 km
+- `got-6f9c71` GOT5.6 12.760N 87.450W (NI-NW) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-955da1` 75 km, cruza 33 km de tierra
 
 ### SV-LIB — La Libertad (8 picos)
@@ -670,7 +719,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-45502d` TICON-3 15.667N 96.492W (gesla.noaa) — TICON-3, misma costa: 5 picos a 3.0–59 km, radio 69 km (niveles 2,4)
 - `ticon-73effe` TICON-3 15.753N 96.130W (gesla.noaa) — TICON-3, cruzando tierra: 1 picos a 21–21 km, radio 31 km
-- Sin puerto (Open-Meteo): CHACAHUA, BACOCHO (ticon-45502d a 68 km: cruza 66 km de tierra), CARRIZALILLO (ticon-45502d a 66 km: cruza 63 km de tierra), PLAYA PRINCIPAL (ticon-45502d a 65 km: cruza 62 km de tierra), MARINERO (ticon-45502d a 64 km: cruza 62 km de tierra), ZICATELA (ticon-45502d a 64 km: cruza 61 km de tierra), LA PUNTA (ticon-45502d a 62 km: cruza 60 km de tierra)
+- `got-56fcd4` GOT5.6 15.861N 97.063W (MX-OAX) — modelo global GOT5.6: 6 picos a 0.0–3.5 km, radio 14 km
+- Sin puerto (Open-Meteo): CHACAHUA
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BARRA DE COLOTEPEC → got-56fcd4
 - Descartadas: `ticon-3a8b4f` 2.8 km, cruza 60 km de tierra; `ticon-45502d` 60 km, cruza 58 km de tierra; `ticon-73effe` 66 km, cruza 64 km de tierra; `ticon-da7060` 88 km, cruza 82 km de tierra
 
 ### MX-PAC — Colima Michoacán y Guerrero (12 picos)
@@ -684,17 +735,20 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### MX-NAY — Nayarit Jalisco y Sinaloa (9 picos)
 
 - `ticon-9bc4f0` TICON-3 23.198N 106.422W (gesla.rws) — TICON-3, misma costa: 2 picos a 1.3–12 km, radio 23 km (niveles 2,4)
-- Sin puerto (Open-Meteo): CHACALA, LO DE MARCOS, SAN PANCHO, SAYULITA, STINKY'S, LA LANCHA, EL ANCLOTE
+- `got-addc69` GOT5.6 20.955N 105.356W (MX-NAY) — modelo global GOT5.6: 4 picos a 0.0–27 km, radio 37 km
+- `got-c504a0` GOT5.6 20.769N 105.526W (MX-NAY) — modelo global GOT5.6: 3 picos a 0.0–0.9 km, radio 11 km
 
 ### MX-BCS — Baja California Sur (6 picos)
 
 - `ticon-8e0567` TICON-3 22.880N 109.908W (gesla.sfwmd) — TICON-3, cruzando tierra: 5 picos a 24–57 km, radio 67 km
-- Sin puerto (Open-Meteo): SAN PEDRITO (ticon-8e0567 a 66 km: cruza 55 km de tierra)
+- `got-6d1313` GOT5.6 23.400N 110.211W (MX-BCS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LOS CERRITOS → got-6d1313
 - Descartadas: `ticon-8e0567` 66 km, cruza 55 km de tierra; `ticon-1e3abf` 86 km, cruza 83 km de tierra; `ticon-19b631` 97 km, cruza 84 km de tierra
 
 ### MX-BCS-N — Baja Sur Pacífico norte (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-8d76ed` GOT5.6 26.704N 113.578W (MX-BCS-N) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-a806af` GOT5.6 26.250N 112.480W (MX-BCS-N) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### MX-BCN — Baja California (4 picos)
 
@@ -705,7 +759,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### MX-CAR — Caribe mexicano (3 picos)
 
 - `ticon-de0584` TICON-3 20.868N 86.867W (gesla.smhi) — TICON-3, cruzando tierra: 2 picos a 23–34 km, radio 44 km
-- Sin puerto (Open-Meteo): TULUM (ticon-de0584 a 93 km: cruza 43 km de tierra)
+- `got-713511` GOT5.6 20.214N 87.429W (MX-CAR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-de0584` 93 km, cruza 43 km de tierra
 
 ### PR-NW — Rincón e Isabela (15 picos)
@@ -743,12 +797,12 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### BS-ALL — Bahamas (1 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-87528f` GOT5.6 25.420N 76.623W (BS-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### TT-ALL — Trinidad y Tobago (4 picos)
 
 - `ticon-73a14b` TICON-3 10.650N 61.517W (gesla.meds) — TICON-3, cruzando tierra: 2 picos a 15–18 km, radio 29 km
-- Sin puerto (Open-Meteo): MOUNT IRVINE (ticon-73a14b a 99 km: cruza 26 km de tierra), LITTLE BACOLET (ticon-73a14b a 107 km: cruza 28 km de tierra)
+- `got-7c798b` GOT5.6 11.196N 60.800W (TT-ALL) — modelo global GOT5.6: 2 picos a 0.0–9.3 km, radio 20 km
 - Descartadas: `ticon-73a14b` 99 km, cruza 26 km de tierra
 
 ### US-CA-SD — San Diego (38 picos)
@@ -908,7 +962,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `noaa-1617433` Kawaihae, HI — oficial, misma costa: 10 picos a 4.9–55 km, radio 65 km (niveles 1,3)
 - `noaa-1617760` HILO, HI — oficial, misma costa: 4 picos a 4.3–40 km, radio 51 km (niveles 1,3)
-- Sin puerto (Open-Meteo): HOOKENA (ticon-311cc3 a 70 km: cruza 62 km de tierra)
+- `got-b07ca8` GOT5.6 19.415N 155.909W (US-HI-BIG) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-67ab43` 4.8 km, fuera por el tope de 3 puertos (nivel 2); `ticon-311cc3` 4.9 km, cruza 60 km de tierra; `ticon-215748` 109 km, cruza 42 km de tierra; `ticon-828e7d` 109 km, cruza 41 km de tierra
 
 ### CA-BC-VI — Isla de Vancouver (14 picos)
@@ -923,13 +977,15 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-c39d93` TICON-3 44.667N 63.583W (gesla.cmems) — TICON-3, cruzando tierra: 8 picos a 12–35 km, radio 46 km
 - `ticon-10c275` TICON-3 44.520N 64.000W (gesla.uhslc) — TICON-3, misma costa: 2 picos a 40–43 km, radio 53 km
-- Sin puerto (Open-Meteo): SUMMERVILLE (ticon-10c275 a 91 km: cruza 15 km de tierra)
+- `got-e49ea1` GOT5.6 43.951N 64.818W (CA-NS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-d63c38` 15 km, fuera por el tope de 3 puertos (nivel 4); `ticon-827ed5` 34 km, fuera por el tope de 3 puertos (nivel 4); `ticon-2a5ef5` 37 km, fuera por el tope de 3 puertos (nivel 4); `ticon-307108` 41 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### AU-QLD-SC — Sunshine Coast (27 picos)
 
 - `ticon-cb76c0` TICON-3 27.361S 153.172E (gesla.noaa) — TICON-3, misma costa: 5 picos a 31–109 km, radio 120 km
-- Sin puerto (Open-Meteo): DOUBLE ISLAND PT (ticon-a04e3a a 76 km: cruza 22 km de tierra), FIRST POINT (ticon-cb76c0 a 109 km: cruza 19 km de tierra), LITTLE COVE (ticon-cb76c0 a 109 km: cruza 19 km de tierra), SUNSHINE BEACH (ticon-cb76c0 a 106 km: cruza 16 km de tierra), CASTAWAYS (ticon-cb76c0 a 103 km: cruza 16 km de tierra), MARCUS BEACH (ticon-cb76c0 a 102 km: cruza 20 km de tierra), PEREGIAN (ticon-cb76c0 a 98 km: cruza 19 km de tierra), COOLUM BEACH (ticon-cb76c0 a 93 km: cruza 44 km de tierra), YAROOMBA (ticon-cb76c0 a 90 km: cruza 26 km de tierra), MARCOOLA (ticon-cb76c0 a 85 km: cruza 26 km de tierra), MUDJIMBA (ticon-cb76c0 a 83 km: cruza 19 km de tierra), COTTON TREE (ticon-cb76c0 a 79 km: cruza 21 km de tierra), MAROOCHYDORE (ticon-cb76c0 a 78 km: cruza 21 km de tierra), ALEX HEADS (ticon-cb76c0 a 77 km: cruza 26 km de tierra), MOOLOOLABA (ticon-cb76c0 a 76 km: cruza 19 km de tierra), BUDDINA (ticon-cb76c0 a 74 km: cruza 16 km de tierra), WARANA (ticon-cb76c0 a 72 km: cruza 16 km de tierra), WURTULLA (ticon-cb76c0 a 70 km: cruza 16 km de tierra), CURRIMUNDI (ticon-cb76c0 a 66 km: cruza 16 km de tierra), MOFFAT BEACH (ticon-cb76c0 a 64 km: cruza 16 km de tierra), DICKY BEACH (ticon-cb76c0 a 63 km: cruza 16 km de tierra), KINGS BEACH (ticon-cb76c0 a 62 km: cruza 16 km de tierra)
+- `got-7a487c` GOT5.6 26.596S 153.107E (AU-QLD-SC) — modelo global GOT5.6: 21 picos a 0.0–24 km, radio 34 km
+- `got-3334f6` GOT5.6 25.932S 153.189E (AU-QLD-SC) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): TEA TREE BAY → got-7a487c, GRANITE BAY → got-7a487c, ALEXANDRIA BAY → got-7a487c, SUNRISE BEACH → got-7a487c
 - Descartadas: `ticon-cb76c0` 62 km, cruza 16 km de tierra; `ticon-a04e3a` 76 km, cruza 22 km de tierra; `ticon-a1343b` 101 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### AU-QLD-GC — Gold Coast (24 picos)
@@ -949,8 +1005,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-5dd235` TICON-3 30.303S 153.146E (gesla.uhslc) — TICON-3, misma costa: 16 picos a 0.8–85 km, radio 95 km (niveles 2,4)
 - `ticon-8ea705` TICON-3 31.427S 152.911E (gesla.usgs) — TICON-3, misma costa: 11 picos a 1.2–117 km, radio 127 km (niveles 2,4)
-- Sin puerto (Open-Meteo): OLD BAR (ticon-8ea705 a 66 km: cruza 63 km de tierra), DIAMOND BEACH (ticon-8ea705 a 77 km: cruza 75 km de tierra), BLACK HEAD (ticon-8ea705 a 79 km: cruza 62 km de tierra), FORSTER MAIN (ticon-8ea705 a 91 km: cruza 56 km de tierra), ONE MILE BEACH (ticon-8ea705 a 93 km: cruza 54 km de tierra), BOOMERANG BEACH (ticon-03a6be a 96 km: cruza 55 km de tierra)
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BACK BEACH → ticon-8ea705, HAT HEAD → ticon-8ea705
+- `got-03f20d` GOT5.6 32.181S 152.524E (AU-NSW-MN) — modelo global GOT5.6: 6 picos a 0.0–26 km, radio 37 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BACK BEACH → ticon-8ea705, HAT HEAD → ticon-8ea705, BLUEYS BEACH → got-03f20d, TREACHERY BEACH → got-03f20d
 - Descartadas: `ticon-8ea705` 61 km, cruza 29 km de tierra; `ticon-2fe7b0` 64 km, cruza 17 km de tierra; `ticon-03a6be` 89 km, cruza 53 km de tierra; `ticon-5dd235` 99 km, cruza 31 km de tierra
 
 ### AU-NSW-NC — Newcastle y Central Coast (30 picos)
@@ -992,14 +1048,16 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-3927f3` TICON-3 38.351S 141.620E (gesla.mi_c) — TICON-3, misma costa: 4 picos a 20–112 km, radio 123 km (niveles 2,4)
 - `ticon-902798` TICON-3 38.292S 144.614E (gesla.uhslc) — TICON-3, misma costa: 2 picos a 74–77 km, radio 87 km
-- Sin puerto (Open-Meteo): JOHANNA BEACH (ticon-a1d519 a 109 km: cruza 107 km de tierra), PRINCETOWN, KILLARNEY BEACH (ticon-3927f3 a 61 km: cruza 18 km de tierra)
+- `got-78d608` GOT5.6 38.780S 143.400E (AU-VIC-W) — modelo global GOT5.6: 2 picos a 0.0–21 km, radio 32 km
+- Sin puerto (Open-Meteo): KILLARNEY BEACH (ticon-3927f3 a 61 km: cruza 18 km de tierra)
 - Descartadas: `ticon-4ab7b4` 19 km, cruza 18 km de tierra; `ticon-3927f3` 61 km, cruza 18 km de tierra; `ticon-a1d519` 69 km, cruza 45 km de tierra; `ticon-dd3cfd` 79 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### AU-TAS — Tasmania (12 picos)
 
 - `ticon-48cda1` TICON-3 42.877S 147.341E (gesla.noaa) — TICON-3, misma costa: 4 picos a 19–50 km, radio 61 km (niveles 2,4)
 - `ticon-00efc3` TICON-3 42.549S 147.928E (gesla.cmems) — TICON-3, misma costa: 2 picos a 2.3–31 km, radio 42 km (niveles 2,4)
-- Sin puerto (Open-Meteo): BICHENO (ticon-00efc3 a 80 km: cruza 13 km de tierra), FRIENDLY BEACHES (ticon-00efc3 a 69 km: cruza 12 km de tierra), BINALONG BAY, MARRAWAH (ticon-c246f2 a 107 km: cruza 104 km de tierra), GREEN POINT (ticon-c246f2 a 108 km: cruza 106 km de tierra), OCEAN BEACH
+- `got-23237f` GOT5.6 41.880S 148.296E (AU-TAS) — modelo global GOT5.6: 2 picos a 0.0–13 km, radio 23 km
+- Sin puerto (Open-Meteo): BINALONG BAY, MARRAWAH (ticon-c246f2 a 107 km: cruza 104 km de tierra), GREEN POINT (ticon-c246f2 a 108 km: cruza 106 km de tierra), OCEAN BEACH
 - Descartadas: `ticon-48cda1` 60 km, cruza 41 km de tierra; `ticon-00efc3` 69 km, cruza 12 km de tierra; `ticon-c246f2` 107 km, cruza 104 km de tierra
 
 ### AU-SA — Australia del Sur (14 picos)
@@ -1013,15 +1071,15 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### AU-SA-EYR — Península de Eyre (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-a905b1` GOT5.6 32.083S 132.989E (AU-SA-EYR) — modelo global GOT5.6: 3 picos a 0.0–0.6 km, radio 11 km
 - Descartadas: `ticon-ad0e9d` 61 km, cruza 40 km de tierra
 
 ### AU-WA-MR — Margaret River (32 picos)
 
 - `ticon-fd3ce7` TICON-3 33.630S 115.394E (gesla.sfwmd) — TICON-3, misma costa: 25 picos a 37–59 km, radio 70 km (niveles 2,4)
 - `ticon-9e0a4e` TICON-3 33.323S 115.660E (gesla.noaa) — TICON-3, misma costa: 5 picos a 67–70 km, radio 80 km
-- Sin puerto (Open-Meteo): BORANUP (ticon-fd3ce7 a 69 km: cruza 66 km de tierra), CONTOS (ticon-fd3ce7 a 64 km: cruza 60 km de tierra)
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): SUPERTUBES → ticon-fd3ce7, SMITHS → ticon-fd3ce7, YALLINGUP → ticon-fd3ce7, RABBIT HILL → ticon-fd3ce7, THREE BEARS → ticon-fd3ce7
+- `got-210825` GOT5.6 34.169S 115.030E (AU-WA-MR) — modelo global GOT5.6: 2 picos a 0.0–10 km, radio 20 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): REDGATE → got-210825, BOODJIDUP → got-210825, GAS BAY → got-210825, SUPERTUBES → ticon-fd3ce7, SMITHS → ticon-fd3ce7, YALLINGUP → ticon-fd3ce7, RABBIT HILL → ticon-fd3ce7, THREE BEARS → ticon-fd3ce7
 - Descartadas: `ticon-fd3ce7` 64 km, cruza 60 km de tierra; `ticon-9e0a4e` 74 km, cruza 13 km de tierra; `ticon-a99647` 114 km, fuera por el tope de 3 puertos (nivel 2); `ticon-95a181` 120 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### AU-WA-PER — Perth y Rottnest (20 picos)
@@ -1035,11 +1093,12 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### AU-WA-NW — Kalbarri y Geraldton (5 picos)
 
 - `ticon-92ede9` TICON-3 28.776S 114.602E (gesla.uhslc) — TICON-3, misma costa: 3 picos a 0.6–25 km, radio 36 km
-- Sin puerto (Open-Meteo): BLUE HOLES, JAKES POINT
+- `got-68a040` GOT5.6 27.720S 114.151E (AU-WA-NW) — modelo global GOT5.6: 2 picos a 0.0–1.7 km, radio 12 km
 
 ### AU-WA-GAS — Gascoyne (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-d032d9` GOT5.6 23.881S 113.488E (AU-WA-GAS) — modelo global GOT5.6: 2 picos a 0.0–17 km, radio 28 km
+- `got-91ed50` GOT5.6 24.366S 113.406E (AU-WA-GAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-d814a1` 64 km, cruza 35 km de tierra
 
 ### NZ-NTL — Northland (14 picos)
@@ -1105,7 +1164,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### NZ-WC — Costa Oeste (4 picos)
 
 - `linz-westport` Westport — oficial, misma costa: 2 picos a 3.1–11 km, radio 21 km
-- Sin puerto (Open-Meteo): COBDEN (ticon-5b5bc7 a 86 km: cruza 61 km de tierra), HOKITIKA
+- `got-bea209` GOT5.6 42.450S 171.198E (NZ-WC) — modelo global GOT5.6: 2 picos a 0.0–36 km, radio 46 km
 - Descartadas: `ticon-5b5bc7` 2.5 km, fuera por el tope de 3 puertos (nivel 2); `linz-charleston` 18 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### FJ-MAM — Mamanucas (6 picos)
@@ -1115,7 +1174,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### FJ-SOU — Coral Coast y Beqa (2 picos)
 
 - `ticon-233ae7` TICON-3 18.132S 178.427E (gesla.cmems) — TICON-3, misma costa: 1 picos a 65–65 km, radio 76 km
-- Sin puerto (Open-Meteo): SIGATOKA MOUTH (ticon-1c9970 a 62 km: cruza 59 km de tierra)
+- `got-295992` GOT5.6 18.162S 177.504E (FJ-SOU) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-1c9970` 62 km, cruza 59 km de tierra; `ticon-233ae7` 98 km, cruza 84 km de tierra
 
 ### PF-TAH — Tahití y Moorea (8 picos)
@@ -1141,13 +1200,13 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### VU-ALL — Vanuatu (5 picos)
 
 - `ticon-fc3571` TICON-3 17.762S 168.293E (gesla.cmems) — TICON-3, misma costa: 3 picos a 2.8–12 km, radio 23 km
-- Sin puerto (Open-Meteo): LENAKEL, PORT RESOLUTION
+- `got-1e8580` GOT5.6 19.532S 169.268E (VU-ALL) — modelo global GOT5.6: 2 picos a 0.0–25 km, radio 35 km
 - Descartadas: `ticon-1af54e` 6.9 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### PG-ALL — Papúa Nueva Guinea (2 picos)
 
 - `ticon-27bb40` TICON-3 9.478S 147.140E (gesla.uhslc) — TICON-3, cruzando tierra: 1 picos a 10–10 km, radio 20 km
-- Sin puerto (Open-Meteo): LIDO
+- `got-c1e848` GOT5.6 2.674S 141.299E (PG-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ID-BAL-BUK — Bukit (Bali) (16 picos)
 
@@ -1166,63 +1225,72 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### ID-JAV-E — Java oriental (7 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-125cb8` GOT5.6 8.724S 114.350E (ID-JAV-E) — modelo global GOT5.6: 6 picos a 0.0–39 km, radio 49 km
+- `got-d5b42a` GOT5.6 8.218S 111.095E (ID-JAV-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-8bef32` 66 km, cruza 28 km de tierra; `ticon-6b6562` 70 km, cruza 68 km de tierra; `ticon-0ccd99` 92 km, cruza 24 km de tierra
 
 ### ID-JAV-W — Java occidental (7 picos)
 
 - `ticon-e6afd5` TICON-3 7.752S 109.017E (gesla.noaa) — TICON-3, cruzando tierra: 3 picos a 42–58 km, radio 69 km
-- Sin puerto (Open-Meteo): CIMAJA, KARANG HAWU, OMBAK TUJUH, SAWARNA
+- `got-2f1c38` GOT5.6 7.063S 106.508E (ID-JAV-W) — modelo global GOT5.6: 4 picos a 0.0–34 km, radio 44 km
 
 ### ID-LOM — Lombok (14 picos)
 
 - `ticon-0ccd99` TICON-3 8.747S 115.212E (gesla.usgs) — TICON-3, misma costa: 5 picos a 83–115 km, radio 125 km
-- Sin puerto (Open-Meteo): DESERT POINT (ticon-0ccd99 a 69 km: cruza 20 km de tierra), KUTA LOMBOK (ticon-0ccd99 a 118 km: cruza 28 km de tierra), SEGER (ticon-0ccd99 a 119 km: cruza 28 km de tierra), TANJUNG AAN, GERUPUK, OUTSIDE GERUPUK, DON DON, KIDS CORNER, EKAS
+- `got-b32477` GOT5.6 8.915S 116.355E (ID-LOM) — modelo global GOT5.6: 8 picos a 0.0–9.4 km, radio 20 km
+- `got-2e40a2` GOT5.6 8.735S 115.836E (ID-LOM) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): MAWI → got-b32477, MAWUN → got-b32477
 - Descartadas: `ticon-0ccd99` 69 km, cruza 20 km de tierra
 
 ### ID-SBW — Sumbawa (9 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-82a78a` GOT5.6 8.816S 118.376E (ID-SBW) — modelo global GOT5.6: 5 picos a 0.0–2.2 km, radio 13 km
+- `got-684e80` GOT5.6 8.973S 116.729E (ID-SBW) — modelo global GOT5.6: 4 picos a 0.0–4.9 km, radio 15 km
 
 ### ID-SMB — Sumba (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-28a8b3` GOT5.6 9.738S 119.314E (ID-SMB) — modelo global GOT5.6: 2 picos a 0.0–34 km, radio 45 km
 
 ### ID-ROT — Rote (4 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-799775` GOT5.6 10.893S 122.812E (ID-ROT) — modelo global GOT5.6: 4 picos a 0.0–6.0 km, radio 17 km
 
 ### ID-MEN — Mentawai (10 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-56d0a4` GOT5.6 2.410S 99.855E (ID-MEN) — modelo global GOT5.6: 5 picos a 0.0–44 km, radio 55 km
+- `got-c774f7` GOT5.6 1.900S 99.300E (ID-MEN) — modelo global GOT5.6: 5 picos a 0.0–1.6 km, radio 12 km
 
 ### ID-NIA — Nias y Banyak (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-d76764` GOT5.6 0.912N 97.263E (ID-NIA) — modelo global GOT5.6: 2 picos a 0.0–14 km, radio 25 km
+- `got-39b84c` GOT5.6 0.569N 97.734E (ID-NIA) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ID-KRU — Krui y Lampung (4 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-d30559` GOT5.6 5.305S 103.992E (ID-KRU) — modelo global GOT5.6: 4 picos a 0.0–15 km, radio 25 km
 
 ### PH-SIA — Siargao (8 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-1682f6` GOT5.6 9.818N 126.170E (PH-SIA) — modelo global GOT5.6: 8 picos a 0.0–16 km, radio 27 km
 
 ### PH-LUZ — La Union y Baler (5 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-f8b86d` GOT5.6 16.669N 120.320E (PH-LUZ) — modelo global GOT5.6: 3 picos a 0.0–0.8 km, radio 11 km
+- `got-529ee2` GOT5.6 15.765N 121.574E (PH-LUZ) — modelo global GOT5.6: 2 picos a 0.0–0.5 km, radio 11 km
 
 ### PH-EAS — Samar y Catanduanes (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-72b502` GOT5.6 13.659N 124.398E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-9b0ee7` GOT5.6 11.605N 125.440E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### LK-E — Arugam Bay (8 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-94cadf` GOT5.6 6.800N 81.820E (LK-E) — modelo global GOT5.6: 8 picos a 0.0–15 km, radio 25 km
 
 ### LK-S — Sur y oeste de Sri Lanka (11 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-964843` GOT5.6 5.998N 80.269E (LK-S) — modelo global GOT5.6: 10 picos a 0.0–24 km, radio 35 km
+- `got-d6cb2e` GOT5.6 5.968N 80.685E (LK-S) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-ef0f0a` 93 km, cruza 39 km de tierra; `ticon-afdd8d` 94 km, cruza 49 km de tierra
 
 ### MV-NMA — Malé Norte (6 picos)
@@ -1241,7 +1309,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### MV-CEN — Atolones centrales (1 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-4e1d64` GOT5.6 2.919N 73.570E (MV-CEN) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### JP-CHI — Chiba (8 picos)
 
@@ -1281,7 +1349,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### TW-E — Taitung y Hualien (4 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-a1d318` GOT5.6 22.900N 121.233E (TW-E) — modelo global GOT5.6: 3 picos a 0.0–11 km, radio 21 km
+- `got-a95390` GOT5.6 24.027N 121.627E (TW-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-f34273` 96 km, cruza 93 km de tierra
 
 ### TW-NE — Yilan y costa norte (6 picos)
@@ -1292,27 +1361,31 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### IN-W — India oeste (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-af9925` GOT5.6 8.731N 76.703E (IN-W) — modelo global GOT5.6: 2 picos a 0.0–49 km, radio 59 km
+- `got-528c98` GOT5.6 13.077N 74.787E (IN-W) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### IN-E — India este (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-b495c3` GOT5.6 12.787N 80.255E (IN-E) — modelo global GOT5.6: 2 picos a 0.0–20 km, radio 31 km
+- `got-e5aa1d` GOT5.6 11.978N 79.833E (IN-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### VN-ALL — Vietnam (5 picos)
 
 - `ticon-458133` TICON-3 10.340N 107.072E (gesla.meds) — TICON-3, misma costa: 2 picos a 3.6–20 km, radio 30 km
 - `ticon-42b1f5` TICON-3 13.775N 109.255E (gesla.uhslc) — TICON-3, misma costa: 1 picos a 6.2–6.2 km, radio 17 km
-- Sin puerto (Open-Meteo): MY KHE, NON NUOC
+- `got-c38d4b` GOT5.6 16.062N 108.249E (VN-ALL) — modelo global GOT5.6: 2 picos a 0.0–7.1 km, radio 18 km
 
 ### KR-ALL — Corea del Sur (6 picos)
 
 - `ticon-041ef0` TICON-3 34.655N 129.478E (gesla.noaa) — TICON-3, misma costa: 2 picos a 63–64 km, radio 74 km
-- Sin puerto (Open-Meteo): JUKDO, DONGHO, JUNGMUN, HAMDEOK
+- `got-a989b9` GOT5.6 37.969N 128.760E (KR-ALL) — modelo global GOT5.6: 2 picos a 0.0–7.1 km, radio 18 km
+- `got-0e82ac` GOT5.6 33.245N 126.412E (KR-ALL) — modelo global GOT5.6: 2 picos a 0.0–41 km, radio 51 km
 - Descartadas: `ticon-bc0ee6` 101 km, cruza 19 km de tierra; `ticon-bd10b8` 108 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### CN-HAI — Hainan (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-0548a0` GOT5.6 18.630N 110.222E (CN-HAI) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-2ee07d` GOT5.6 18.271N 109.723E (CN-HAI) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ZA-WC-CPT — Península del Cabo (20 picos)
 
@@ -1321,79 +1394,96 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### ZA-WC-WCO — Costa Oeste del Cabo (6 picos)
 
 - `ticon-fb0d01` TICON-3 33.900S 18.433E (gesla.meds) — TICON-3, misma costa: 3 picos a 19–116 km, radio 126 km
-- Sin puerto (Open-Meteo): ELANDS BAY, LAMBERTS BAY, PATERNOSTER
+- `got-b68b0a` GOT5.6 32.312S 18.324E (ZA-WC-WCO) — modelo global GOT5.6: 2 picos a 0.0–25 km, radio 35 km
+- `got-8af89e` GOT5.6 32.811S 17.885E (ZA-WC-WCO) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ZA-WC-GR — Garden Route (11 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-f03581` GOT5.6 34.046S 22.418E (ZA-WC-GR) — modelo global GOT5.6: 7 picos a 0.0–37 km, radio 48 km
+- `got-38e06a` GOT5.6 34.078S 22.954E (ZA-WC-GR) — modelo global GOT5.6: 3 picos a 0.0–14 km, radio 25 km
+- `got-ec35aa` GOT5.6 33.984S 23.562E (ZA-WC-GR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ZA-EC-JB — Jeffreys Bay y St Francis (10 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-4b911c` GOT5.6 34.055S 24.925E (ZA-EC-JB) — modelo global GOT5.6: 10 picos a 0.0–19 km, radio 29 km
 - Descartadas: `ticon-86ec39` 64 km, cruza 30 km de tierra
 
 ### ZA-EC-PE — Gqeberha y East London (17 picos)
 
 - `ticon-86ec39` TICON-3 33.960S 25.630E (gesla.usgs) — TICON-3, misma costa: 6 picos a 0.9–87 km, radio 98 km (niveles 2,4)
-- Sin puerto (Open-Meteo): KELLY'S BEACH, KENTON-ON-SEA (ticon-86ec39 a 101 km: cruza 27 km de tierra), KIDDS BEACH, ORIENT BEACH, EASTERN BEACH, NAHOON BEACH, NAHOON REEF, BONZA BAY, GONUBIE, CINTSA, HAGA HAGA
+- `got-63d295` GOT5.6 33.023S 27.919E (ZA-EC-PE) — modelo global GOT5.6: 7 picos a 0.0–24 km, radio 34 km
+- `got-07bdb8` GOT5.6 33.605S 26.922E (ZA-EC-PE) — modelo global GOT5.6: 2 picos a 0.0–25 km, radio 36 km
+- Sin puerto (Open-Meteo): CINTSA, HAGA HAGA
 - Descartadas: `ticon-86ec39` 101 km, cruza 27 km de tierra
 
 ### ZA-EC-WLD — Wild Coast (5 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-e4029c` GOT5.6 31.980S 29.153E (ZA-EC-WLD) — modelo global GOT5.6: 2 picos a 0.0–15 km, radio 25 km
+- `got-041b3c` GOT5.6 32.682S 28.383E (ZA-EC-WLD) — modelo global GOT5.6: 2 picos a 0.0–5.8 km, radio 16 km
+- `got-913e13` GOT5.6 31.643S 29.550E (ZA-EC-WLD) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ZA-KZN-DBN — Durban (8 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-e07ca7` GOT5.6 29.855S 31.049E (ZA-KZN-DBN) — modelo global GOT5.6: 8 picos a 0.0–24 km, radio 34 km
 
 ### ZA-KZN-N — KwaZulu-Natal norte (6 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-57076f` GOT5.6 29.493S 31.275E (ZA-KZN-N) — modelo global GOT5.6: 4 picos a 0.0–16 km, radio 26 km
+- `got-16f772` GOT5.6 28.957S 31.780E (ZA-KZN-N) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-a0b028` GOT5.6 28.125S 32.558E (ZA-KZN-N) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### ZA-KZN-S — KwaZulu-Natal sur (9 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-c939f5` GOT5.6 30.891S 30.354E (ZA-KZN-S) — modelo global GOT5.6: 5 picos a 0.0–10 km, radio 20 km
+- `got-b0dc74` GOT5.6 30.200S 30.807E (ZA-KZN-S) — modelo global GOT5.6: 4 picos a 0.0–18 km, radio 29 km
 
 ### NA-ERO — Walvis Bay y Swakopmund (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-f341c0` GOT5.6 22.938S 14.418E (NA-ERO) — modelo global GOT5.6: 2 picos a 0.0–30 km, radio 41 km
+- `got-439ad8` GOT5.6 22.115S 14.268E (NA-ERO) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### MA-TAG — Taghazout y Agadir (19 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-1a2bc4` GOT5.6 30.640N 9.830W (MA-TAG) — modelo global GOT5.6: 17 picos a 0.0–31 km, radio 41 km
+- `got-bbafe3` GOT5.6 31.359N 9.809W (MA-TAG) — modelo global GOT5.6: 2 picos a 0.0–17 km, radio 27 km
 
 ### MA-N — Rabat a Safi (6 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-3cd5c4` GOT5.6 34.257N 6.689W (MA-N) — modelo global GOT5.6: 2 picos a 0.0–28 km, radio 39 km
+- `got-1c5103` GOT5.6 33.597N 7.679W (MA-N) — modelo global GOT5.6: 2 picos a 0.0–14 km, radio 24 km
+- `got-ca232b` GOT5.6 33.790N 7.175W (MA-N) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Sin puerto (Open-Meteo): SAFI LE JARDIN
 
 ### MA-S — Mirleft y Sidi Ifni (6 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-cb786a` GOT5.6 29.430N 10.130W (MA-S) — modelo global GOT5.6: 4 picos a 0.0–18 km, radio 29 km
+- `got-360725` GOT5.6 30.198N 9.639W (MA-S) — modelo global GOT5.6: 2 picos a 0.0–47 km, radio 58 km
 
 ### SN-ALL — Senegal (5 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-48d2ad` GOT5.6 14.752N 17.509W (SN-ALL) — modelo global GOT5.6: 5 picos a 0.0–2.6 km, radio 13 km
 
 ### LR-ALL — Liberia (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-3ba912` GOT5.6 6.753N 11.379W (LR-ALL) — modelo global GOT5.6: 3 picos a 0.0–1.7 km, radio 12 km
 
 ### GH-ALL — Ghana (3 picos)
 
 - `ticon-930b55` TICON-3 4.883N 1.750W (gesla.wsv) — TICON-3, misma costa: 2 picos a 23–25 km, radio 35 km
-- Sin puerto (Open-Meteo): KOKROBITE
+- `got-ef40bc` GOT5.6 5.490N 0.405W (GH-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### MZ-S — Ponta do Ouro (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-0f94d8` GOT5.6 26.846S 32.895E (MZ-S) — modelo global GOT5.6: 3 picos a 0.0–15 km, radio 26 km
 
 ### MZ-INH — Inhambane y Tofo (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-e51b06` GOT5.6 23.858S 35.549E (MZ-INH) — modelo global GOT5.6: 3 picos a 0.0–7.9 km, radio 18 km
 
 ### MG-ALL — Madagascar (3 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-56aa18` GOT5.6 25.030S 46.999E (MG-ALL) — modelo global GOT5.6: 2 picos a 0.0–2.3 km, radio 13 km
+- `got-ab6d4c` GOT5.6 23.650S 43.635E (MG-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### RE-ALL — Reunión (8 picos)
 
@@ -1455,13 +1545,16 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### ES-CAN — Cantabria (14 picos)
 
 - `ticon-513a8d` TICON-3 43.357N 3.050W (gesla.meds) — TICON-3, misma costa: 7 picos a 35–56 km, radio 67 km (niveles 2,4)
-- Sin puerto (Open-Meteo): MERON (ticon-513a8d a 107 km: cruza 95 km de tierra), GERRA (ticon-513a8d a 104 km: cruza 92 km de tierra), OYAMBRE (ticon-513a8d a 102 km: cruza 90 km de tierra), LA CONCHA (ticon-513a8d a 81 km: cruza 26 km de tierra), LOS LOCOS (ticon-513a8d a 81 km: cruza 26 km de tierra), LIENCRES (ticon-513a8d a 75 km: cruza 25 km de tierra), PORTIO (ticon-513a8d a 73 km: cruza 25 km de tierra)
+- `got-441786` GOT5.6 43.443N 4.048W (ES-CAN) — modelo global GOT5.6: 7 picos a 0.0–27 km, radio 37 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): SOMO → got-441786, LOREDO → got-441786, GALIZANO → got-441786, LANGRE → got-441786
 - Descartadas: `ticon-513a8d` 73 km, cruza 25 km de tierra; `ticon-bdc867` 109 km, cruza 34 km de tierra
 
 ### ES-AST — Asturias (14 picos)
 
 - `ticon-bdc867` TICON-3 43.558N 5.698W (gesla.uhslc) — TICON-3, misma costa: 11 picos a 3.5–60 km, radio 70 km (niveles 2,4)
-- Sin puerto (Open-Meteo): SAN ANTOLIN (ticon-bdc867 a 67 km: cruza 35 km de tierra), FREJULFE (ticon-bdc867 a 81 km: cruza 29 km de tierra), PENARRONDA (ticon-bdc867 a 102 km: cruza 29 km de tierra)
+- `got-0bc1cc` GOT5.6 43.564N 6.703W (ES-AST) — modelo global GOT5.6: 2 picos a 0.0–21 km, radio 31 km
+- `got-70a590` GOT5.6 43.427N 4.893W (ES-AST) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): OTUR → got-0bc1cc
 - Descartadas: `ticon-bdc867` 67 km, cruza 35 km de tierra; `ticon-283bad` 111 km, cruza 93 km de tierra; `ticon-2a8e09` 118 km, cruza 97 km de tierra; `ticon-67d63b` 118 km, cruza 96 km de tierra
 
 ### ES-GAL — Galicia (18 picos)
@@ -1507,7 +1600,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-a6ef88` TICON-3 41.187N 8.704W (gesla.fmi) — TICON-3, misma costa: 10 picos a 25–109 km, radio 120 km
 - `ticon-5b4329` TICON-3 39.586N 9.074W (gesla.uhslc) — TICON-3, misma costa: 9 picos a 1.7–59 km, radio 69 km (niveles 2,4)
-- Sin puerto (Open-Meteo): CABEDELO (ticon-5b4329 a 63 km: cruza 29 km de tierra)
+- `got-a65a9d` GOT5.6 40.133N 8.874W (PT-CEN) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): QUIAIOS → got-a65a9d, COSTA DE LAVOS → got-a65a9d, LEIROSA → got-a65a9d
 - Descartadas: `ticon-5b4329` 63 km, cruza 29 km de tierra; `ticon-5da85d` 97 km, cruza 92 km de tierra; `ticon-a6ef88` 118 km, cruza 19 km de tierra
 
 ### PT-PEN — Peniche (12 picos)
@@ -1529,7 +1623,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-4a3da2` TICON-3 37.098N 8.668W (gesla.meds) — TICON-3, misma costa: 14 picos a 19–56 km, radio 67 km (niveles 2,4)
 - `ticon-5da85d` TICON-3 38.692N 9.417W (gesla.cmems) — TICON-3, misma costa: 3 picos a 102–113 km, radio 123 km
-- Sin puerto (Open-Meteo): ALMOGRAVE (ticon-4a3da2 a 63 km: cruza 60 km de tierra)
+- `got-f0b002` GOT5.6 37.653N 8.801W (PT-ALG) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): CARVALHAL → got-f0b002
 - Descartadas: `ticon-4a3da2` 63 km, cruza 60 km de tierra
 
 ### PT-AZO — Azores (7 picos)
@@ -1540,7 +1635,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### PT-MAD — Madeira (8 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `got-043c05` GOT5.6 32.643N 16.955W (PT-MAD) — modelo global GOT5.6: 8 picos a 0.0–28 km, radio 39 km
 
 ### GB-CON — Cornualles (28 picos)
 
@@ -1663,7 +1758,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### IS-ALL — Islandia (3 picos)
 
 - `ticon-c4827f` TICON-3 64.151N 21.940W (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 43–53 km, radio 63 km
-- Sin puerto (Open-Meteo): REYNISFJARA
+- `got-8ae671` GOT5.6 63.405N 19.071W (IS-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ## Fuentes y licencias
 
