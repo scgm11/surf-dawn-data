@@ -1,0 +1,25 @@
+{
+ "region": "CL-CEN",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.038,
+  "hours": 744,
+  "point": [
+   -32.137,
+   -71.529
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.65,
+   "ecmwf_wam": 1.77
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

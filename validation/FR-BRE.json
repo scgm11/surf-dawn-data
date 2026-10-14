@@ -1,0 +1,27 @@
+{
+ "region": "FR-BRE",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.126,
+  "hours": 744,
+  "point": [
+   47.765,
+   -3.523
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.85,
+   "meteofrance_wave": 1.08,
+   "ecmwf_wam": 0.91,
+   "dwd_ewam": 0.84
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "region": "NA-ERO",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.061,
+  "hours": 744,
+  "point": [
+   -22.683,
+   14.517
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.1,
+   "meteofrance_wave": 1.11,
+   "ecmwf_wam": 1.19
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

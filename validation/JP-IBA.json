@@ -1,0 +1,27 @@
+{
+ "region": "JP-IBA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.06,
+  "hours": 744,
+  "point": [
+   36.312,
+   140.59
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.58,
+   "ncep_gfswave025": 1.7,
+   "meteofrance_wave": 1.63,
+   "ecmwf_wam": 1.61
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "region": "NL-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.162,
+  "hours": 744,
+  "point": [
+   52.11,
+   4.265
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.93,
+   "meteofrance_wave": 0.88,
+   "ecmwf_wam": 0.67,
+   "dwd_ewam": 0.85
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

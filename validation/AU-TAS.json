@@ -1,0 +1,84 @@
+{
+ "region": "AU-TAS",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:storm-bay"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 193,
+   "hs_bias": 0.013,
+   "hs_rmse": 0.222,
+   "hs_si": 0.168,
+   "tp_bias": -1.24,
+   "tp_mae": 1.52,
+   "dir_mae": 46.5,
+   "dir_bias": 44.5,
+   "tm_bias": 1.21,
+   "obs_hs": 1.31,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 193,
+   "hs_bias": -0.027,
+   "hs_rmse": 0.337,
+   "hs_si": 0.255,
+   "tp_bias": 0.26,
+   "tp_mae": 2.02,
+   "dir_mae": 25.3,
+   "dir_bias": 23.9,
+   "tm_bias": 5.92,
+   "obs_hs": 1.31,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 193,
+   "hs_bias": -0.09,
+   "hs_rmse": 0.284,
+   "hs_si": 0.197,
+   "tp_bias": -5.11,
+   "tp_mae": 5.12,
+   "dir_mae": 40.9,
+   "dir_bias": 40.9,
+   "tm_bias": 0.54,
+   "obs_hs": 1.31,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave025",
+ "margin": 0.518,
+ "per_buoy": {
+  "aodn:storm-bay": {
+   "n": 193,
+   "best": "ecmwf_wam",
+   "km": 23.9
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.074,
+  "hours": 744,
+  "point": [
+   -42.148,
+   145.233
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 2.8,
+   "meteofrance_wave": 3.31,
+   "ecmwf_wam": 3.15
+  }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

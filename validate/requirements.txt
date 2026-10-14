@@ -1,0 +1,2 @@
+pyarrow==17.0.0
+global-land-mask==1.0.0

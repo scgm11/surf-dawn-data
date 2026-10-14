@@ -1,0 +1,27 @@
+{
+ "region": "FR-PBA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.092,
+  "hours": 744,
+  "point": [
+   43.43,
+   -1.612
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.37,
+   "meteofrance_wave": 1.32,
+   "ecmwf_wam": 1.55,
+   "dwd_ewam": 1.56
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

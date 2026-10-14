@@ -1,0 +1,27 @@
+{
+ "region": "CR-GUA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.058,
+  "hours": 744,
+  "point": [
+   10.33,
+   -85.853
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.24,
+   "ncep_gfswave025": 1.25,
+   "meteofrance_wave": 1.27,
+   "ecmwf_wam": 1.17
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}
