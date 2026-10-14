@@ -12,6 +12,12 @@ on:
   schedule:
     - cron: "29 7 5 * *"          # el día 5 de cada mes, 07:29 UTC
   workflow_dispatch:
+    inputs:
+      wikidata:
+        description: "Revisar los emblemáticos contra Wikidata (unos 25 min)"
+        type: boolean
+        required: false
+        default: true
 permissions:
   contents: write
 concurrency:
@@ -31,7 +37,9 @@ jobs:
         run: |
           set -o pipefail
           mkdir -p validation
-          python3 tools/check_spots.py 2>&1 | tee validation/spots.log
+          args=()
+          [ "${{ github.event.inputs.wikidata }}" = "false" ] && args+=(--no-wikidata)
+          python3 tools/check_spots.py "${args[@]}" 2>&1 | tee validation/spots.log
       - name: Publicar
         if: always()
         run: |

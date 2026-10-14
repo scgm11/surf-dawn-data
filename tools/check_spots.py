@@ -19,6 +19,7 @@ request, paced well under the free limits. Usage: python3 tools/check_spots.py [
 import argparse
 import glob
 import json
+import math
 import os
 import statistics
 import sys
@@ -40,6 +41,9 @@ NEIGHBOURS = 0.25               # ... while the zone's median spot gets them at 
 MIN_H = 0.3                     # m: hours with less are not counted for the direction
 DOUBLE = 2.0                    # more than this times the zone's median mean height (§5.4)
 BATCH = 40                      # locations per Open-Meteo request
+NEAR_KM = 30                    # neighbours whose facing a spot's is compared with
+FLIPPED = 135                   # a facing this far from its neighbours' and the waves', and close to them
+                                # turned around, was most likely computed on the wrong side of the coast
 WD = "https://query.wikidata.org/sparql"
 WD_KM = 6                       # Wikidata items looked at around a flagship spot
 WD_FAR_KM = 1.5                 # farther than this from the matching item: flagged
@@ -105,7 +109,23 @@ def spot_stats(series, facing):
     mean = sum(vals) / len(vals) if vals else None
     hours = [(h, d) for h, d in zip(hs, ds) if isinstance(h, (int, float)) and isinstance(d, (int, float)) and h >= MIN_H]
     share = sum(1 for _, d in hours if ang(d, facing) < FACING_DEG) / len(hours) if hours else None
-    return {"mean": mean, "max": max(vals) if vals else None, "share": share, "hours": len(hours)}
+    x = sum(h * math.sin(math.radians(d)) for h, d in hours)
+    y = sum(h * math.cos(math.radians(d)) for h, d in hours)
+    swell = round(math.degrees(math.atan2(x, y)) % 360) if hours else None   # where the waves come from, mostly
+    return {"mean": mean, "max": max(vals) if vals else None, "share": share, "hours": len(hours), "swell": swell}
+
+
+def neighbours_facing(z, i, km=NEAR_KM):
+    """The circular median-ish (mean of unit vectors) facing of the zone's other spots within km of spot i."""
+    s = z["s"][i]
+    fs = [r[3] for k, r in enumerate(z["s"]) if k != i and geo.km((s[1], s[2]), (r[1], r[2])) <= km]
+    if len(fs) < 2:
+        return None
+    x = sum(math.sin(math.radians(f)) for f in fs)
+    y = sum(math.cos(math.radians(f)) for f in fs)
+    if math.hypot(x, y) < 0.5 * len(fs):
+        return None                                  # they face every way (an island, a cape): no reference
+    return round(math.degrees(math.atan2(x, y)) % 360)
 
 
 def wikidata(lat, lon, names):
@@ -148,7 +168,7 @@ def check_flagship(code, s):
         if matches(label, names):
             d = geo.km((s[1], s[2]), (lat, lon))
             if best is None or d < best["km"]:
-                best = {"km": round(d, 2), "qid": qid, "label": label, "lat": lat, "lon": lon}
+                best = {"km": round(d, 2), "qid": qid, "label": label, "wd_lat": round(lat, 5), "wd_lon": round(lon, 5)}
     if best is None:
         return {"status": "sin fuente"}
     best["status"] = "ok" if best["km"] <= WD_FAR_KM else "lejos"
@@ -171,10 +191,12 @@ def main():
     for z in zs:
         model = z["m"][0]
         rows = []
-        for s in z["s"]:
+        for i, s in enumerate(z["s"]):
             lat, lon = (s[5], s[6]) if len(s) == 7 else (s[1], s[2])
             st = spot_stats(waves.get(cell(model, lat, lon), ([], [])), s[3])
             st["name"] = s[0]
+            st["facing"] = s[3]
+            st["near"] = neighbours_facing(z, i)
             rows.append(st)
         means = [r["mean"] for r in rows if r["mean"]]
         shares = [r["share"] for r in rows if r["share"] is not None]
@@ -188,15 +210,26 @@ def main():
                 why.append("sin olas en %d días" % (DAYS + FORECAST))
             elif med and r["mean"] > DOUBLE * med:
                 why.append("%.1f m de media, más del doble de la zona (%.1f m)" % (r["mean"], med))
+            flipped = False
             if r["share"] is not None and r["share"] < NEVER and med_share is not None and med_share >= NEIGHBOURS:
                 why.append("las olas casi nunca le entran de frente (%d %% de las horas; la zona %d %%)"
                            % (round(100 * r["share"]), round(100 * med_share)))
+                f, n, w = r["facing"], r["near"], r["swell"]
+                flipped = (n is not None and w is not None and ang(f, n) >= FLIPPED and ang(f, w) >= FLIPPED
+                           and ang((f + 180) % 360, n) <= 180 - FLIPPED)
             if why:
-                result["flags"].append({"region": z["id"], "spot": r["name"], "why": why,
+                result["flags"].append({"region": z["id"], "spot": r["name"], "why": why, "facing": r["facing"],
+                                        "swell": r["swell"], "near": r["near"], "flipped": flipped,
                                         "top": tops.get((z["id"], r["name"]), False)})
         print("%-11s %2d spots  media %s m  de frente %s" % (z["id"], len(rows), med and "%.1f" % med,
                                                               med_share is not None and "%d %%" % round(100 * med_share)))
-    if not a.no_wikidata:
+    if a.no_wikidata:                              # the last run's, as they were
+        try:
+            with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
+                result["flagship"] = json.load(f).get("flagship", [])
+        except (OSError, ValueError):
+            pass
+    else:
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):
@@ -234,11 +267,27 @@ def report(r, zs):
              WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["sin fuente"], count["error"]),
          "- Open-Meteo: %d pedidos, ~%d llamadas de las 10.000 diarias gratuitas." % (
              r["open_meteo"]["requests"], r["open_meteo"]["calls"]), ""]
-    L += ["## Picos marcados (%d)" % len(r["flags"]), ""]
+    flipped = [f for f in r["flags"] if f.get("flipped")]
+    L += ["## Orientación probablemente del lado equivocado (%d)" % len(flipped), "",
+          "Mira a más de %d° de sus vecinos (a %d km) y de las olas, y dada vuelta coincide con ellos: casi seguro "
+          "se calculó del otro lado de una punta, una isla o una laguna. Se corrige con `facing=` en la semilla." % (
+              FLIPPED, NEAR_KM), ""]
+    if flipped:
+        L += ["| Región | Pico | Mira a | Vecinos | Olas desde |", "|---|---|---|---|---|"]
+        for f in flipped:
+            L.append("| %s | %s | %d° | %d° | %d° |" % (f["region"], f["spot"], f["facing"], f["near"], f["swell"]))
+    else:
+        L.append("Ninguno.")
+    L += ["", "## Picos marcados (%d)" % len(r["flags"]), "",
+          "Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y "
+          "el semáforo del swell es conservador ahí); se revisan a mano.", ""]
     if r["flags"]:
-        L += ["| Región | Pico | Emblemático | Por qué |", "|---|---|---|---|"]
+        L += ["| Región | Pico | Emblemático | Mira a | Olas desde | Vecinos | Por qué |", "|---|---|---|---|---|---|---|"]
         for f in r["flags"]:
-            L.append("| %s | %s | %s | %s |" % (f["region"], f["spot"], "sí" if f["top"] else "", "; ".join(f["why"])))
+            L.append("| %s | %s | %s | %s° | %s | %s | %s |" % (
+                f["region"], f["spot"], "sí" if f["top"] else "", f["facing"],
+                "—" if f["swell"] is None else "%d°" % f["swell"], "—" if f["near"] is None else "%d°" % f["near"],
+                "; ".join(f["why"])))
     else:
         L.append("Ninguno.")
     L += ["", "## Emblemáticos lejos de su ítem de Wikidata", ""]
@@ -246,8 +295,8 @@ def report(r, zs):
     if far:
         L += ["| Región | Pico | Distancia | Ítem |", "|---|---|---|---|"]
         for c in sorted(far, key=lambda c: -c["km"]):
-            L.append("| %s | %s | %.1f km | [%s](https://www.wikidata.org/wiki/%s) %s |" % (
-                c["region"], c["spot"], c["km"], c["qid"], c["qid"], c["label"]))
+            L.append("| %s | %s | %.1f km | [%s](https://www.wikidata.org/wiki/%s) %s (%s, %s) |" % (
+                c["region"], c["spot"], c["km"], c["qid"], c["qid"], c["label"], c.get("wd_lat"), c.get("wd_lon")))
     else:
         L.append("Ninguno.")
     L += ["", "## Emblemáticos sin ítem en Wikidata (revisar a mano)", ""]
