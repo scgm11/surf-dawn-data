@@ -106,7 +106,7 @@ IE-SW       12 spots  media 1.6 m  de frente 96 %
 IN-E         3 spots  media 0.6 m  de frente 100 %
 IN-W         3 spots  media 0.7 m  de frente 100 %
 IS-ALL       3 spots  media 3.0 m  de frente 82 %
-IT-ALL       7 spots  media 0.4 m  de frente 82 %
+IT-ALL       7 spots  media 0.4 m  de frente 80 %
 IT-SAR       4 spots  media 0.7 m  de frente 76 %
 JP-CHI       8 spots  media 2.0 m  de frente 99 %
 JP-IBA       5 spots  media 1.7 m  de frente 99 %
@@ -132,7 +132,7 @@ MX-BCN       4 spots  media 1.2 m  de frente 95 %
 MX-BCS-N     2 spots  media 1.3 m  de frente 50 %
 MX-BCS       6 spots  media 1.6 m  de frente 100 %
 MX-CAR       3 spots  media 0.9 m  de frente 99 %
-MX-NAY       9 spots  media 1.4 m  de frente 49 %
+MX-NAY       9 spots  media 1.4 m  de frente 52 %
 MX-OAX      13 spots  media 1.6 m  de frente 100 %
 MX-PAC      12 spots  media 2.1 m  de frente 100 %
 MZ-INH       3 spots  media 1.1 m  de frente 84 %
@@ -162,61 +162,63 @@ PE-SUR       5 spots  media 1.5 m  de frente 100 %
 PF-ISL       2 spots  media 2.2 m  de frente 25 %
 PF-TAH       8 spots  media 2.2 m  de frente 82 %
 PG-ALL       2 spots  media 0.9 m  de frente 70 %
-PH-EAS       2 spots  media 1.0 m  de frente 99 %
+PH-EAS       2 spots  media 1.1 m  de frente 99 %
 PH-LUZ       5 spots  media 0.6 m  de frente 100 %
 PH-SIA       8 spots  media 1.0 m  de frente 100 %
 PR-N         8 spots  media 0.9 m  de frente 98 %
 PR-NW       15 spots  media 0.6 m  de frente 2 %
 PT-ALG      18 spots  media 1.5 m  de frente 100 %
 PT-AZO       7 spots  media 1.0 m  de frente 22 %
-PT-CEN      20 spots  media 1.5 m  de frente 100 %
-PT-ERI      11 spots  media 1.6 m  de frente 100 %
-PT-LIS      15 spots  media 1.1 m  de frente 97 %
-PT-MAD       8 spots  media 0.8 m  de frente 20 %
-PT-NOR      19 spots  media 1.5 m  de frente 100 %
-PT-PEN      12 spots  media 1.7 m  de frente 96 %
-RE-ALL       8 spots  media 1.3 m  de frente 65 %
-SN-ALL       5 spots  media 1.3 m  de frente 89 %
-SV-LIB       8 spots  media 1.2 m  de frente 100 %
-SV-ORI       4 spots  media 1.1 m  de frente 100 %
-TO-ALL       6 spots  media 1.7 m  de frente 43 %
-TT-ALL       4 spots  media 0.8 m  de frente 100 %
-TW-E         4 spots  media 1.2 m  de frente 93 %
-TW-NE        6 spots  media 0.9 m  de frente 94 %
-US-CA-CEN   16 spots  media 1.4 m  de frente 100 %
-US-CA-LA    23 spots  media 0.9 m  de frente 100 %
-US-CA-NOR   25 spots  media 1.8 m  de frente 100 %
-US-CA-OC    32 spots  media 1.0 m  de frente 100 %
-US-CA-SB    27 spots  media 0.8 m  de frente 100 %
-US-CA-SC    30 spots  media 1.1 m  de frente 100 %
-US-CA-SD    38 spots  media 0.8 m  de frente 100 %
-US-CA-SF    29 spots  media 1.3 m  de frente 100 %
-US-FL-PAN    6 spots  media 0.7 m  de frente 89 %
-US-FL       46 spots  media 0.7 m  de frente 100 %
-US-GULF     13 spots  media 0.6 m  de frente 99 %
-US-HI-BIG   15 spots  media 1.0 m  de frente 100 %
-US-HI-KAU   21 spots  media 1.4 m  de frente 100 %
-US-HI-MAU   21 spots  media 1.4 m  de frente 100 %
-US-HI-OAN   21 spots  media 1.1 m  de frente 96 %
-US-HI-OAS   25 spots  media 1.2 m  de frente 96 %
-US-MID      11 spots  media 0.8 m  de frente 89 %
-US-NE       60 spots  media 0.6 m  de frente 82 %
-US-PNW      33 spots  media 1.5 m  de frente 100 %
-US-SC-GA    10 spots  media 0.6 m  de frente 98 %
-US-SE       22 spots  media 0.8 m  de frente 99 %
-UY-MAL      18 spots  media 1.4 m  de frente 100 %
-UY-ROC      19 spots  media 1.6 m  de frente 92 %
-VE-ALL       2 spots  media 0.5 m  de frente 100 %
-VN-ALL       4 spots  media 0.5 m  de frente 99 %
-VU-ALL       5 spots  media 1.4 m  de frente 46 %
-WS-ALL       6 spots  media 2.2 m  de frente 100 %
-ZA-EC-JB    10 spots  media 2.4 m  de frente 21 %
-ZA-EC-PE    17 spots  media 2.1 m  de frente 74 %
-ZA-EC-WLD    5 spots  media 1.8 m  de frente 85 %
-ZA-KZN-DBN   8 spots  media 1.8 m  de frente 86 %
-ZA-KZN-N     6 spots  media 1.8 m  de frente 98 %
-ZA-KZN-S     9 spots  media 1.9 m  de frente 84 %
-ZA-WC-CPT   20 spots  media 2.2 m  de frente 73 %
-ZA-WC-GR    11 spots  media 2.0 m  de frente 78 %
-ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
-179 spots flagged; flagship: {'ok': 279, 'lejos': 36, 'sin fuente': 77, 'error': 0}; Open-Meteo 30 requests, ~1326 calls
+PT-CEN      20 spots  media 1.5 m  de frente 100 %  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 502: Bad Gateway)
+  overpass maps.mail.ru failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (The read operation timed out)
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
