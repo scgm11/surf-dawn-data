@@ -1,13 +1,13 @@
 name,lat,lon,type,conf,src,flags,note
 MATANZAS,-33.9640,-71.8780,B,K,local,,Navidad
 PUERTECILLO,-34.0800,-71.9300,P,K,local,top,
-TOPOCALMA,-34.1480,-71.9750,P,L,local,,posición aproximada
+TOPOCALMA,-34.1289,-71.9981,P,K,osm:node/3889423146,,posición aproximada; posición OSM
 LA PUNTILLA,-34.3800,-72.0100,P,K,local,top,Pichilemu
 PLAYA PRINCIPAL,-34.3860,-72.0050,B,K,local,,Pichilemu
 LAS TERRAZAS,-34.3920,-72.0110,B,L,local,,Pichilemu
 INFIERNILLO,-34.4000,-72.0200,P,K,local,top,Pichilemu
 PLAYA HERMOSA,-34.4080,-72.0300,B,L,local,,Pichilemu
 PUNTA DE LOBOS,-34.4300,-72.0400,P,K,local,top,ola grande
-CAHUIL,-34.4700,-72.0580,B,L,local,,
+CAHUIL,-34.4786,-72.0168,B,K,osm:node/1085350813,,posición OSM
 CIRUELOS,-34.5100,-72.0650,B,L,local,,
 BUCALEMU,-34.6320,-72.0450,B,L,local,,Paredones

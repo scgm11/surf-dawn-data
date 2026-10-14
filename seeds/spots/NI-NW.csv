@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-LAS PENITAS,12.4590,-87.0120,B,L,local,,León; posición aproximada
-PONELOYA,12.4900,-87.0450,B,L,local,,León; posición aproximada
+LAS PENITAS,12.3631,-87.0270,B,K,osm:relation/6017152,,León; posición aproximada; posición OSM
+PONELOYA,12.3783,-87.0422,B,K,osm:relation/6017149,,León; posición aproximada; posición OSM
 ASERRADORES,12.6100,-87.3000,B,L,local,,Chinandega; posición aproximada
 JIQUILILLO,12.7600,-87.4500,B,L,local,,Chinandega; posición aproximada

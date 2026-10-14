@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-LLICO,-34.7620,-72.0240,B,L,local,,Vichuquén
+LLICO,-34.7549,-72.0841,B,K,osm:way/202052557,,Vichuquén; posición OSM
 ILOCA,-34.9230,-72.1740,B,K,local,,
 DUAO,-35.0150,-72.1950,B,L,local,,
 CONSTITUCIÓN,-35.3440,-72.4300,B,L,local,,

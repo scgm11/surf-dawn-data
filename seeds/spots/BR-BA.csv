@@ -8,7 +8,7 @@ BUSCA VIDA,-12.7050,-38.0900,B,L,local,,
 GUARAJUBA,-12.6590,-38.0580,B,L,local,,
 ITACIMIRIM,-12.6240,-38.0380,B,L,local,,
 PRAIA DO FORTE,-12.5770,-38.0030,B,K,local,,
-IMBASSAÍ,-12.4860,-37.9820,B,K,local,,
+IMBASSAÍ,-12.4912,-37.9634,B,K,osm:node/805530720,,posición OSM
 RESENDE,-14.2870,-38.9850,B,K,local,,Itacaré
 ITACARÉ,-14.2900,-38.9900,B,K,local,top,Concha y Tiririca
 TIRIRICA,-14.3010,-38.9890,B,K,local,,Itacaré
@@ -17,6 +17,6 @@ HAVAIZINHO,-14.3190,-38.9980,B,L,local,,Itacaré
 ITACARÉZINHO,-14.3470,-38.9800,B,L,local,,Itacaré
 JERIBUCAÇU,-14.4000,-39.0100,B,L,local,,Itacaré
 CURURUPE,-14.8500,-39.0100,B,L,local,,Ilhéus
-OLIVENÇA,-14.9990,-39.0300,B,L,local,,Ilhéus
+OLIVENÇA,-14.9476,-39.0106,B,K,osm:node/416644184,,Ilhéus; posición OSM
 MUCUGÊ,-16.4435,-39.0850,B,L,local,,Arraial d'Ajuda
 TRANCOSO,-16.5920,-39.0850,B,L,local,,

@@ -8,6 +8,6 @@ PICO PEQUEÑO,10.2955,-85.8465,R,L,local,,roca frente al hotel; posición aproxi
 LANGOSTA,10.2840,-85.8470,B,K,local,,
 PARGOS,10.2400,-85.8420,B,L,local,,posición aproximada
 PLAYA NEGRA,10.2010,-85.8350,R,K,local,top,derecha sobre roca
-AVELLANAS,10.1480,-85.8560,B,K,local,,
+AVELLANAS,10.2293,-85.8378,B,K,osm:way/518442272,,posición OSM
 LITTLE HAWAII,10.1530,-85.8550,R,L,local,,Avellanas norte; posición aproximada
-JUNQUILLAL,10.1130,-85.8760,B,L,local,,posición aproximada
+JUNQUILLAL,10.1581,-85.8069,B,K,osm:node/4300006594,,posición aproximada; posición OSM
