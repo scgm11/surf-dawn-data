@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HIKKADUWA,6.1350,80.0970,R,K,local,top,arrecife frente a la playa
-DALAWELLA,6.0620,80.2380,R,L,local,,posicion aprox
+DALAWELLA,5.9983,80.2685,R,K,web:mondo.surf,,arrecife frente a Wijaya Beach
 KABALANA,5.9670,80.3750,B,L,local,,Ahangama
 LAZY LEFT,5.9640,80.3860,R,L,local,,Midigama
 LAZY RIGHT,5.9640,80.3880,R,L,local,,Midigama

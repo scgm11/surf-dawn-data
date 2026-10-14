@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 BOCA CHICA,25.9960,-97.1500,B,K,local,,Brownsville
 SPI JETTIES,26.0700,-97.1570,B,K,local,,South Padre
 SOUTH PADRE,26.1140,-97.1670,B,K,local,,
-PADRE SEASHORE,27.4300,-97.3290,B,L,local,,Malaquite
+PADRE SEASHORE,27.4240,-97.2980,B,V,gov:nps,,Malaquite
 BOB HALL PIER,27.5810,-97.2210,B,K,local,,Corpus Christi
 PORT A JETTY,27.8350,-97.0480,B,K,local,,Port Aransas
 PORT A BEACH,27.8200,-97.0630,B,K,local,,Port Aransas

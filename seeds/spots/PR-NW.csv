@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-TUNELES,18.5180,-66.9700,B,L,local,,Isabela este; posición aproximada
+TUNELES,18.5153,-67.1011,B,K,web:puertoricodaytrips,,"Shacks, Isabela"
 GAS CHAMBERS,18.5150,-67.0650,R,L,local,,Isabela; izquierda pesada; posición aproximada
 SHACKS,18.5120,-67.0950,R,L,local,,Isabela; posición aproximada
 JOBOS,18.5116,-67.0790,R,K,local,top,Isabela; arrecife

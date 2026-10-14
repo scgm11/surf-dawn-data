@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-TIFNIT,30.1850,-9.7300,,L,local,,posicion dudosa
-AGLOU,29.8070,-9.8900,B,L,local,,
+TIFNIT,30.1980,-9.6393,,K,web:mondo.surf,,
+AGLOU,29.8108,-9.8382,B,K,web:wikipedia,,playa frente al pueblo
 MIRLEFT,29.5800,-10.0600,B,K,local,,
 AFTAS,29.5720,-10.0650,B,L,local,,Mirleft
 LEGZIRA,29.4300,-10.1300,B,L,local,,

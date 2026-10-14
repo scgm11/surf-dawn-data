@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 BALLYBUNION,52.5130,-9.6820,B,K,local,,Kerry
 BALLYHEIGUE,52.3880,-9.8230,B,L,local,,Kerry; posicion aproximada
-BANNA,52.3510,-9.8760,B,L,local,,Kerry; posicion aproximada
+BANNA,52.3400,-9.8397,B,L,local,,"Banna Strand, Kerry; sobre la costa GSHHS; sin fuente publicada"
 STRADBALLY,52.2750,-10.0400,B,L,local,,Brandon Bay; posicion aproximada
 INCH,52.1380,-10.0200,B,L,local,,Kerry; Inch Strand; posicion aproximada
 VENTRY,52.1290,-10.3550,B,L,local,,Dingle; posicion aproximada
