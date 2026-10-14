@@ -1,15 +1,8 @@
 SIN RESOLVER BR-NE-CE/LAGOINHA (-3.3496, -39.1142; costa a ?): 0 candidatos por nombre, ninguno en la costa
-OK ID-JAV-W/MADASARI (-7.8213, 108.4325; costa a ?) -> -7.7853, 108.4908 (osm:way/703258203, other 'DUSUN MADASARI DESA MASAWAH', a 7.6 km de la semilla, costa a 919 m)
 OK VN-ALL/BAI XEP (13.7270, 109.2250; costa a ?) -> 13.1906, 109.3020 (osm:node/4172081938, other 'Bãi Xép', a 60.2 km de la semilla, costa a 24 m)
 SIN RESOLVER FR-HOS/ONDRES (43.5785, -1.4862; costa a ?): 1 candidatos por nombre, ninguno en la costa
-OK ES-PV/KARRASPIO (43.3646, -2.4955; costa a ?) -> 43.3628, -2.4945 (osm:way/652032389, beach 'Karraspio hondartza', a 0.2 km de la semilla, costa a 3 m)
-OK PT-ALG/ZAVIAL (37.0461, -8.8736; costa a ?) -> 37.0463, -8.8715 (osm:way/156814657, beach 'Praia do Zavial', a 0.2 km de la semilla, costa a 17 m)
-OK PT-AZO/ALMOXARIFE (38.5578, -28.6113; costa a ?) -> 38.5595, -28.6230 (osm:relation/6938706, other 'Praia do Almoxarife', a 1.0 km de la semilla, costa a 993 m)
-OK GB-WAL/BROAD HAVEN SOUTH (51.6086, -4.9225; costa a ?) -> 51.6090, -4.9207 (osm:way/1493746576, beach 'Broad Haven South', a 0.1 km de la semilla, costa a 61 m)
-OK IE-NW/ROSSNOWLAGH (54.5555, -8.2200; costa a ?) -> 54.5544, -8.2098 (osm:node/2349484921, place 'Rossnowlagh', a 0.7 km de la semilla, costa a 207 m)
-OK IE-SW/BANNA (52.3400, -9.8397; costa a ?) -> 52.3338, -9.8386 (osm:way/57734398, beach 'Banna Strand', a 0.7 km de la semilla, costa a 55 m)
 SIN RESOLVER CL-MAU/CHANCO (-35.7450, -72.5704; costa a ?): 2 candidatos por nombre, ninguno en la costa
 SIN RESOLVER CL-PIC/CIRUELOS (-34.5159, -72.0413; costa a ?): 1 candidatos por nombre, ninguno en la costa
 SIN RESOLVER BR-NE-PE/ARUANA (-11.0300, -37.0838; costa a ?): 1 candidatos por nombre, ninguno en la costa
 SIN RESOLVER MV-SMA/GURAIDHOO (3.8960, 73.4750; costa a ?): 0 candidatos por nombre, ninguno en la costa
-8 semillas movidas, 6 sin resolver
+1 semillas movidas, 6 sin resolver
