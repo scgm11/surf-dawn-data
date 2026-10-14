@@ -145,7 +145,7 @@
   "BR-RJL": {
    "model": "ncep_gfswave025",
    "median_m": 1.08,
-   "median_share": 0.91
+   "median_share": 0.94
   },
   "BR-RS-SUL": {
    "model": "ncep_gfswave025",
@@ -1355,25 +1355,13 @@
   },
   {
    "region": "BR-RJL",
-   "spot": "TUCUNS",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %)"
-   ],
-   "facing": 314,
-   "swell": 153,
-   "near": 157,
-   "flipped": true,
-   "top": false
-  },
-  {
-   "region": "BR-RJL",
    "spot": "TARTARUGA",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 91 %)"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 94 %)"
    ],
    "facing": 275,
    "swell": 140,
-   "near": 165,
+   "near": 151,
    "flipped": false,
    "top": false
   },

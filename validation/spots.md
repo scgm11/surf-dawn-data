@@ -1,13 +1,13 @@
 # Picos: controles por pico
 
-Generado 2026-10-14 13:46 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
+Generado 2026-10-14 14:19 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
 - **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta 6 km; si no tiene, OpenStreetMap): 279 bien (a menos de 1.5 km), 36 lejos, 77 sin fuente (revisar a mano), 0 sin respuesta.
 - Open-Meteo: 30 pedidos, ~1327 llamadas de las 10.000 diarias gratuitas.
 
-## Orientación probablemente del lado equivocado (6)
+## Orientación probablemente del lado equivocado (5)
 
 Mira a más de 135° de sus vecinos (a 30 km) y de las olas, y dada vuelta coincide con ellos: casi seguro se calculó del otro lado de una punta, una isla o una laguna. Se corrige con `facing=` en la semilla.
 
@@ -16,11 +16,10 @@ Mira a más de 135° de sus vecinos (a 30 km) y de las olas, y dada vuelta coinc
 | AU-NSW-NR | THE PASS | 304° | 86° | 122° |
 | AU-QLD-SC | FIRST POINT | 310° | 86° | 108° |
 | AU-VIC-W | PORT FAIRY EAST | 75° | 229° | 216° |
-| BR-RJL | TUCUNS | 314° | 157° | 153° |
 | ES-CN-E | PUNTA MUJERES | 128° | 321° | 344° |
 | ZA-WC-GR | INNER POOL | 331° | 141° | 192° |
 
-## Picos marcados (180)
+## Picos marcados (179)
 
 Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y el semáforo del swell es conservador ahí); se revisan a mano.
 
@@ -50,8 +49,7 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | BB-ALL | SURFERS POINT |  | 235° | 98° | 325° | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) |
 | BR-NE-CE | PARACURU |  | 334° | 74° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) |
 | BR-NE-RN | PIPA | sí | 6° | 93° | 59° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) |
-| BR-RJL | TUCUNS |  | 314° | 153° | 157° | las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %) |
-| BR-RJL | TARTARUGA |  | 275° | 140° | 165° | las olas casi nunca le entran de frente (1 % de las horas; la zona 91 %) |
+| BR-RJL | TARTARUGA |  | 275° | 140° | 151° | las olas casi nunca le entran de frente (1 % de las horas; la zona 94 %) |
 | BR-SP | PAÚBA |  | 273° | 158° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
 | BR-SP | CAMBURI |  | 261° | 157° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) |
 | BR-SP | ILHA COMPRIDA |  | 322° | 139° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) |
@@ -284,7 +282,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | BR-NE-RN | ncep_gfswave016 | 1.1 m | 100 % |
 | BR-NOR | ncep_gfswave016 | 1.4 m | 26 % |
 | BR-RJ | ncep_gfswave025 | 0.8 m | 100 % |
-| BR-RJL | ncep_gfswave025 | 1.1 m | 91 % |
+| BR-RJL | ncep_gfswave025 | 1.1 m | 94 % |
 | BR-RS-SUL | ncep_gfswave025 | 1.3 m | 100 % |
 | BR-RS | ncep_gfswave025 | 1.4 m | 100 % |
 | BR-SC-FLN | ncep_gfswave025 | 1.4 m | 99 % |
