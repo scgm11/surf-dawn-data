@@ -1,3 +1,4 @@
+TICON-3: downloading https://download.pangaea.de/dataset/951610/files/TICON_3.zip
 NOAA: 1260 harmonic stations
 JMA: 239 stations
 IMI: variable Water_Level, attributes {"": "", "actual_range": "-0.04, 5.79", "ioos_category": "Sea Level", "long_name": "sea surface height above local LAT", "units": "metres"}; time coverage 2026-01-01T00:00:00Z .. 2029-01-01T00:20:00Z
@@ -5,7 +6,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 39 s
+catalogs: 3902 stations in 97 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -13,7 +14,7 @@ validación 8518750 NEW YORK (The Battery), NY: TICON gesla.uhslc a 0.05 km, 369
 validación 8724580 KEY WEST, FL: TICON gesla.uhslc a 0.30 km, 38697 días; RMS FES 1.6 GOT 1.6 perth3 1.6 OTIS 1.8
 validación 1910000 SUVA HARBOR, Viti Levu Island: TICON gesla.jodc_jma a 0.03 km, 1095 días; RMS FES 2.4 GOT 2.4 perth3 2.4 OTIS 2.5
 nodal corrections: FES
-pass 1: 263 ports for 151 regions
+pass 1: 263 ports for 152 regions
   noaa-1611347     noaa    -19..  83 cm  Port Allen, Hanapepe Bay, HI
   noaa-1611400     noaa    -15..  79 cm  NAWILIWILI, HI
   noaa-1612340     noaa    -13..  82 cm  HONOLULU, HI
@@ -40,7 +41,7 @@ pass 1: 263 ports for 151 regions
   noaa-8729210     noaa    -31..  68 cm  Panama City Beach, FL
   noaa-8731269     noaa    -30..  67 cm  Gulf State Park Pier, AL
   noaa-8761724     noaa    -33..  56 cm  EAST POINT, GRAND ISLE, LA
-  noaa-8775870     noaa    -36..  78 cm  Corpus Christi, Bob Hall Pier, TX
+  noaa-8775270     noaa    -48..  92 cm  Port Aransas (H. Caldwell Pier), TX
   noaa-8779770     noaa    -30..  66 cm  Port Isabel, TX
   noaa-9410135     noaa    -62.. 240 cm  South San Diego Bay, CA
   noaa-9410196     noaa    -58.. 224 cm  Mission Bay, Campland, CA
@@ -95,8 +96,8 @@ pass 1: 263 ports for 151 regions
   linz-castlepoint linz      0.. 180 cm  Castlepoint
   linz-dargaville  linz     50.. 450 cm  Dargaville
   linz-dog-island  linz     40.. 330 cm  Dog Island
-  linz-dunedin     linz     -9.. 240 cm  Dunedin
   linz-gisborne    linz     40.. 220 cm  Gisborne
+  linz-green-island linz      0.. 227 cm  Green Island
   linz-huruhi-harbour linz     20.. 260 cm  Huruhi Harbour
   linz-kaikoura    linz      0.. 190 cm  Kaikōura
   linz-manu-bay    linz     30.. 379 cm  Manu Bay
@@ -183,6 +184,7 @@ pass 1: 263 ports for 151 regions
   ticon-4a4b08     ticon    12..  57 cm  TICON-3 39.148N 8.309E (gesla.uhslc)
   ticon-c0a455     ticon    51.. 248 cm  TICON-3 33.825S 151.258E (gesla.wsv)
   ticon-448fcc     ticon    66.. 413 cm  TICON-3 68.213N 14.482E (gesla.uhslc)
+  ticon-62701e     ticon    30.. 164 cm  TICON-3 0.687S 73.152E (gesla.noaa)
   ticon-9ab05d     ticon    47.. 160 cm  TICON-3 55.628N 6.190W (gesla.usgs)
   ticon-cead8e     ticon  -482.. 517 cm  TICON-3 51.217N 4.117W (gesla.meds)
   ticon-7b004f     ticon   122.. 865 cm  TICON-3 51.717N 5.050W (gesla.meds)
@@ -237,7 +239,6 @@ pass 1: 263 ports for 151 regions
   ticon-e56019     ticon    99.. 557 cm  TICON-3 53.392N 6.068W (gesla.cmems)
   ticon-0ccd99     ticon    87.. 393 cm  TICON-3 8.747S 115.212E (gesla.usgs)
   ticon-ae29cb     ticon    48.. 319 cm  TICON-3 28.100N 15.400W (gesla.jodc_jcg)
-  ticon-42b1f5     ticon    35.. 258 cm  TICON-3 13.775N 109.255E (gesla.uhslc)
   ticon-b849f8     ticon   132.. 946 cm  TICON-3 50.594N 4.834W (gesla.meds)
   ticon-e6afd5     ticon    67.. 298 cm  TICON-3 7.752S 109.017E (gesla.noaa)
   ticon-041ef0     ticon    30.. 188 cm  TICON-3 34.655N 129.478E (gesla.noaa)
@@ -277,5 +278,7 @@ pass 1: 263 ports for 151 regions
   ticon-f1b139     ticon    45.. 260 cm  TICON-3 14.300N 91.917W (gesla.usgs)
   ticon-c9798b     ticon    41.. 288 cm  TICON-3 28.047N 16.718W (gesla.ispra)
   ticon-c17f38     ticon    34.. 159 cm  TICON-3 4.183N 73.517E (gesla.uhslc)
-removing tide/linz-sumner-head (no region uses it)
-done: 263 ports, 151 regions with ports, 1772/2441 spots, 6575 files 17.7 MB, 463 s
+removing tide/linz-dunedin (no region uses it)
+removing tide/noaa-8775870 (no region uses it)
+removing tide/ticon-42b1f5 (no region uses it)
+done: 263 ports, 152 regions with ports, 1772/2436 spots, 6575 files 17.7 MB, 488 s

@@ -1,12 +1,12 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 01:29 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 06:21 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
 - Puertos nuevos: 263 (imi 10, jma 9, linz 20, noaa 57, ticon 167); más los 3 de Uruguay y Brasil, sin cambios.
-- Regiones con puerto: 151 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 57.
-- Picos con puerto: 1772 de 2441.
+- Regiones con puerto: 152 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 56.
+- Picos con puerto: 1772 de 2436.
 - Archivos: 6575, 17.7 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
@@ -51,8 +51,8 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | linz-castlepoint | linz:Castlepoint | Castlepoint | Chart Datum (LINZ) | 0..180 | — | 2.6 |
 | linz-dargaville | linz:Dargaville | Dargaville | Chart Datum (LINZ) | 50..450 | — | 6.8 |
 | linz-dog-island | linz:Dog Island | Dog Island | Chart Datum (LINZ) | 40..330 | — | 2.8 |
-| linz-dunedin | linz:Dunedin | Dunedin | Chart Datum (LINZ) | -9..240 | — | 3.0 |
 | linz-gisborne | linz:Gisborne | Gisborne | Chart Datum (LINZ) | 40..220 | — | 2.7 |
+| linz-green-island | linz:Green Island | Green Island | Chart Datum (LINZ) | 0..227 | — | 2.7 |
 | linz-huruhi-harbour | linz:Huruhi Harbour | Huruhi Harbour | Chart Datum (LINZ) | 20..260 | — | 2.6 |
 | linz-kaikoura | linz:Kaikōura | Kaikōura | Chart Datum (LINZ) | 0..190 | — | 2.5 |
 | linz-manu-bay | linz:Manu Bay | Manu Bay | Chart Datum (LINZ) | 30..379 | — | 2.6 |
@@ -92,7 +92,7 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | noaa-8729210 | noaa:8729210 | Panama City Beach, FL | MLLW | -31..68 | — | 1.0 |
 | noaa-8731269 | noaa:8731269 | Gulf State Park Pier, AL | MLLW | -30..67 | — | 0.9 |
 | noaa-8761724 | noaa:8761724 | EAST POINT, GRAND ISLE, LA | MLLW | -33..56 | — | 0.6 |
-| noaa-8775870 | noaa:8775870 | Corpus Christi, Bob Hall Pier, TX | MLLW | -36..78 | — | 0.7 |
+| noaa-8775270 | noaa:8775270 | Port Aransas (H. Caldwell Pier), TX | MLLW | -48..92 | — | 1.2 |
 | noaa-8779770 | noaa:8779770 | Port Isabel, TX | MLLW | -30..66 | — | 0.7 |
 | noaa-9410135 | noaa:9410135 | South San Diego Bay, CA | MLLW | -62..240 | — | 1.7 |
 | noaa-9410196 | noaa:9410196 | Mission Bay, Campland, CA | MLLW | -58..224 | — | 1.7 |
@@ -160,7 +160,6 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | ticon-3eec34 | ticon3:-14.283,-170.683 | TICON-3 14.283S 170.683W (gesla.uhslc) | MSL+ΣA (MSL+81 cm) | 22..147 | — | 0.7 |
 | ticon-406688 | ticon3:38.533,-28.622 | TICON-3 38.533N 28.622W (gesla.noaa) | MSL+ΣA (MSL+105 cm) | 33..186 | — | 1.2 |
 | ticon-41bc98 | ticon3:-12.068,-77.167 | TICON-3 12.068S 77.167W (gesla.cmems) | MSL+ΣA (MSL+91 cm) | 36..155 | — | 0.7 |
-| ticon-42b1f5 | ticon3:13.775,109.255 | TICON-3 13.775N 109.255E (gesla.uhslc) | MSL+ΣA (MSL+150 cm) | 35..258 | — | 0.8 |
 | ticon-440073 | ticon3:28.936,-95.294 | TICON-3 28.936N 95.294W (gesla.noaa) | MSL+ΣA (MSL+93 cm) | 25..145 | — | 1.1 |
 | ticon-448fcc | ticon3:68.213,14.482 | TICON-3 68.213N 14.482E (gesla.uhslc) | MSL+ΣA (MSL+236 cm) | 66..413 | — | 1.7 |
 | ticon-44917a | ticon3:61.934,5.113 | TICON-3 61.934N 5.113E (gesla.uhslc) | MSL+ΣA (MSL+144 cm) | 37..244 | — | 1.1 |
@@ -184,6 +183,7 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | ticon-5b4329 | ticon3:39.586,-9.074 | TICON-3 39.586N 9.074W (gesla.uhslc) | MSL+ΣA (MSL+231 cm) | 60..416 | — | 4.3 |
 | ticon-5da85d | ticon3:38.692,-9.417 | TICON-3 38.692N 9.417W (gesla.cmems) | MSL+ΣA (MSL+225 cm) | 53..409 | — | 1.8 |
 | ticon-5dd235 | ticon3:-30.303,153.146 | TICON-3 30.303S 153.146E (gesla.uhslc) | MSL+ΣA (MSL+153 cm) | 60..273 | — | 1.1 |
+| ticon-62701e | ticon3:-0.687,73.152 | TICON-3 0.687S 73.152E (gesla.noaa) | MSL+ΣA (MSL+100 cm) | 30..164 | — | 1.0 |
 | ticon-66c157 | ticon3:44.211,-1.295 | TICON-3 44.211N 1.295W (gesla.noaa) | MSL+ΣA (MSL+286 cm) | 138..505 | — | 7.7 |
 | ticon-66dd4f | ticon3:43.546,10.299 | TICON-3 43.546N 10.299E (gesla.rws) | MSL+ΣA (MSL+33 cm) | 11..52 | — | 0.3 |
 | ticon-67a479 | ticon3:3.890,-77.062 | TICON-3 3.890N 77.062W (gesla.noaa) | MSL+ΣA (MSL+332 cm) | 95..585 | — | 2.9 |
@@ -344,15 +344,15 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### BR-BA — Bahía (21 picos)
 
 - `ticon-f5b09a` TICON-3 12.973S 38.517W (gesla.cmems) — TICON-3, cruzando tierra: 6 picos a 17–55 km, radio 66 km
-- Sin puerto (Open-Meteo): GUARAJUBA (ticon-f5b09a a 61 km: cruza 51 km de tierra), ITACIMIRIM (ticon-f5b09a a 65 km: cruza 56 km de tierra), PRAIA DO FORTE (ticon-f5b09a a 71 km: cruza 64 km de tierra), IMBASSAÍ (ticon-f5b09a a 79 km: cruza 77 km de tierra), RESENDE, ITACARÉ, TIRIRICA, ENGENHOCA, HAVAIZINHO, ITACARÉZINHO, JERIBUCAÇU, CURURUPE (ticon-890b60 a 91 km: cruza 25 km de tierra), OLIVENÇA (ticon-890b60 a 75 km: cruza 46 km de tierra), MUCUGÊ (ticon-890b60 a 87 km: cruza 85 km de tierra), TRANCOSO (ticon-890b60 a 104 km: cruza 84 km de tierra)
-- Descartadas: `ticon-f5b09a` 61 km, cruza 51 km de tierra; `ticon-890b60` 75 km, cruza 46 km de tierra
+- Sin puerto (Open-Meteo): GUARAJUBA (ticon-f5b09a a 61 km: cruza 51 km de tierra), ITACIMIRIM (ticon-f5b09a a 65 km: cruza 56 km de tierra), PRAIA DO FORTE (ticon-f5b09a a 71 km: cruza 64 km de tierra), IMBASSAÍ (ticon-f5b09a a 80 km: cruza 77 km de tierra), RESENDE, ITACARÉ, TIRIRICA, ENGENHOCA, HAVAIZINHO, ITACARÉZINHO, JERIBUCAÇU, CURURUPE (ticon-890b60 a 91 km: cruza 25 km de tierra), OLIVENÇA (ticon-890b60 a 80 km: cruza 25 km de tierra), MUCUGÊ (ticon-890b60 a 87 km: cruza 85 km de tierra), TRANCOSO (ticon-890b60 a 104 km: cruza 84 km de tierra)
+- Descartadas: `ticon-f5b09a` 61 km, cruza 51 km de tierra; `ticon-890b60` 80 km, cruza 25 km de tierra
 
-### BR-NE-CE — Ceará (13 picos)
+### BR-NE-CE — Ceará (12 picos)
 
-- `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 7 picos a 2.0–102 km, radio 113 km (niveles 2,4)
+- `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 6 picos a 2.0–102 km, radio 113 km (niveles 2,4)
 - `ticon-cf2b1c` TICON-3 4.817S 37.050W (gesla.cmems) — TICON-3, misma costa: 1 picos a 81–81 km, radio 92 km
-- Sin puerto (Open-Meteo): CALHAU, ARAÇAGI, JERICOACOARA, PREÁ, MUNDAÚ
-- Descartadas: `ticon-ee2dcc` 0.3 km, fuera por el tope de 3 puertos (nivel 2)
+- Sin puerto (Open-Meteo): CALHAU, ARAÇAGI, JERICOACOARA, PREÁ, MUNDAÚ (ticon-c1874d a 115 km: cruza 22 km de tierra)
+- Descartadas: `ticon-ee2dcc` 0.3 km, cruza 22 km de tierra; `ticon-c1874d` 115 km, cruza 22 km de tierra
 
 ### BR-NE-RN — Rio Grande do Norte y Paraíba (13 picos)
 
@@ -417,7 +417,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### EC-COS — Costa de Ecuador (13 picos)
 
 - `noaa-9991474` La Libertad, Bahia de Santa Elena — oficial, misma costa: 6 picos a 3.7–59 km, radio 70 km
-- Sin puerto (Open-Meteo): ATACAMES, MOMPICHE, CANOA, MURCIÉLAGO, SAN LORENZO, ENGABAO (ticon-9f8ea6 a 67 km: cruza 65 km de tierra), PLAYAS (ticon-9f8ea6 a 76 km: cruza 73 km de tierra)
+- Sin puerto (Open-Meteo): ATACAMES, MOMPICHE, CANOA, MURCIÉLAGO, SAN LORENZO, ENGABAO (ticon-9f8ea6 a 63 km: cruza 34 km de tierra), PLAYAS (ticon-9f8ea6 a 76 km: cruza 73 km de tierra)
 - Descartadas: `ticon-9f8ea6` 4.3 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### EC-GAL — Galápagos (4 picos)
@@ -432,7 +432,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### CO-CAR — Caribe colombiano (3 picos)
 
-- `ticon-c8afda` TICON-3 11.235N 74.222W (gesla.noaa) — TICON-3, cruzando tierra: 1 picos a 44–44 km, radio 54 km
+- `ticon-c8afda` TICON-3 11.235N 74.222W (gesla.noaa) — TICON-3, cruzando tierra: 1 picos a 42–42 km, radio 52 km
 - Sin puerto (Open-Meteo): PUERTO COLOMBIA (ticon-c8afda a 78 km: cruza 15 km de tierra), PALOMINO (ticon-c8afda a 71 km: cruza 69 km de tierra)
 - Descartadas: `ticon-c8afda` 71 km, cruza 69 km de tierra; `ticon-6f989c` 100 km, cruza 97 km de tierra
 
@@ -452,7 +452,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### CR-GUA — Guanacaste norte (12 picos)
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
-- Descartadas: `ticon-c1d17a` 113 km, cruza 76 km de tierra
+- Descartadas: `ticon-c1d17a` 109 km, cruza 70 km de tierra
 
 ### CR-NIC — Nicoya sur (11 picos)
 
@@ -491,7 +491,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### SV-ORI — Oriente de El Salvador (4 picos)
 
-- `noaa-9640507` La Union (Cutuco) — oficial, cruzando tierra: 4 picos a 33–56 km, radio 66 km
+- `noaa-9640507` La Union (Cutuco) — oficial, cruzando tierra: 4 picos a 33–44 km, radio 54 km
 - Descartadas: `ticon-955da1` 33 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### GT-PAC — Pacífico de Guatemala (4 picos)
@@ -545,10 +545,10 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### PR-NW — Rincón e Isabela (15 picos)
 
 - `noaa-9759412` Aguadilla, PR — oficial, misma costa: 11 picos a 0.4–16 km, radio 27 km (niveles 1,3)
-- `noaa-9757809` Arecibo, PR — oficial, misma costa: 3 picos a 29–40 km, radio 50 km
+- `noaa-9757809` Arecibo, PR — oficial, misma costa: 3 picos a 38–42 km, radio 53 km
 - `noaa-9759394` Mayaguez, PR — oficial, misma costa: 1 picos a 16–16 km, radio 26 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): TUNELES → noaa-9759412, GAS CHAMBERS → noaa-9759412, JOBOS → noaa-9759412
-- Descartadas: `ticon-b30a21` 0.3 km, fuera por el tope de 3 puertos (nivel 4); `noaa-9759421` 20 km, fuera por el tope de 3 puertos (nivel 3); `noaa-9759183` 25 km, fuera por el tope de 3 puertos (nivel 3); `ticon-c352c9` 29 km, fuera por el tope de 3 puertos (nivel 2)
+- Descartadas: `ticon-b30a21` 0.3 km, fuera por el tope de 3 puertos (nivel 4); `noaa-9759421` 20 km, fuera por el tope de 3 puertos (nivel 3); `noaa-9759183` 25 km, fuera por el tope de 3 puertos (nivel 3); `noaa-9759189` 29 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### PR-N — San Juan y costa norte (8 picos)
 
@@ -659,7 +659,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### US-GULF — Texas (13 picos)
 
 - `ticon-440073` TICON-3 28.936N 95.294W (gesla.noaa) — TICON-3, misma costa: 6 picos a 1.0–66 km, radio 76 km (niveles 2,4)
-- `noaa-8775870` Corpus Christi, Bob Hall Pier, TX — oficial, misma costa: 4 picos a 0.4–33 km, radio 43 km (niveles 1,3)
+- `noaa-8775270` Port Aransas (H. Caldwell Pier), TX — oficial, misma costa: 4 picos a 0.9–51 km, radio 62 km
 - `noaa-8779770` Port Isabel, TX — oficial, misma costa: 3 picos a 5.9–10 km, radio 20 km
 - Descartadas: `noaa-8779750` 0.2 km, fuera por el tope de 3 puertos (nivel 3); `noaa-8772479` 0.4 km, fuera por el tope de 3 puertos (nivel 1); `noaa-8779749` 0.4 km, fuera por el tope de 3 puertos (nivel 3); `ticon-cf3fe8` 0.4 km, fuera por el tope de 3 puertos (nivel 4)
 
@@ -747,17 +747,17 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### CA-BC-VI — Isla de Vancouver (14 picos)
 
-- `ticon-a43379` TICON-3 48.368N 124.617W (gesla.cmems) — TICON-3, misma costa: 7 picos a 27–115 km, radio 126 km
-- `ticon-7cfb7a` TICON-3 49.150N 125.910W (gesla.noaa) — TICON-3, misma costa: 5 picos a 1.4–22 km, radio 32 km (niveles 2,4)
-- `ticon-488f81` TICON-3 50.510N 128.030W (gesla.uhslc) — TICON-3, cruzando tierra: 2 picos a 24–27 km, radio 37 km
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LONG BEACH → ticon-7cfb7a, COMBERS → ticon-7cfb7a, WICK BEACH → ticon-7cfb7a, WYA POINT → ticon-7cfb7a
+- `ticon-a43379` TICON-3 48.368N 124.617W (gesla.cmems) — TICON-3, misma costa: 8 picos a 27–115 km, radio 126 km
+- `ticon-7cfb7a` TICON-3 49.150N 125.910W (gesla.noaa) — TICON-3, misma costa: 4 picos a 1.4–11 km, radio 21 km
+- `ticon-488f81` TICON-3 50.510N 128.030W (gesla.uhslc) — TICON-3, cruzando tierra: 2 picos a 18–27 km, radio 37 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LONG BEACH → ticon-7cfb7a, COMBERS → ticon-7cfb7a
 - Descartadas: `ticon-a68c68` 7.9 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8bf5f3` 11 km, cruza 62 km de tierra; `noaa-9443361` 24 km, fuera por el tope de 3 puertos (nivel 1); `ticon-7b82ce` 24 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### CA-NS — Nueva Escocia (11 picos)
 
 - `ticon-c39d93` TICON-3 44.667N 63.583W (gesla.cmems) — TICON-3, cruzando tierra: 8 picos a 12–35 km, radio 46 km
 - `ticon-10c275` TICON-3 44.520N 64.000W (gesla.uhslc) — TICON-3, misma costa: 2 picos a 40–43 km, radio 53 km
-- Sin puerto (Open-Meteo): SUMMERVILLE (ticon-10c275 a 70 km: cruza 45 km de tierra)
+- Sin puerto (Open-Meteo): SUMMERVILLE (ticon-10c275 a 91 km: cruza 15 km de tierra)
 - Descartadas: `ticon-d63c38` 15 km, fuera por el tope de 3 puertos (nivel 4); `ticon-827ed5` 34 km, fuera por el tope de 3 puertos (nivel 4); `ticon-2a5ef5` 37 km, fuera por el tope de 3 puertos (nivel 4); `ticon-307108` 41 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### AU-QLD-SC — Sunshine Coast (27 picos)
@@ -839,7 +839,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### AU-SA — Australia del Sur (14 picos)
 
 - `ticon-ec093c` TICON-3 35.109S 138.467E (gesla.jodc_jma) — TICON-3, misma costa: 8 picos a 4.6–105 km, radio 116 km (niveles 2,4)
-- `ticon-e0b462` TICON-3 34.716S 135.870E (gesla.cco) — TICON-3, misma costa: 3 picos a 102–108 km, radio 118 km
+- `ticon-e0b462` TICON-3 34.716S 135.870E (gesla.cco) — TICON-3, misma costa: 3 picos a 103–108 km, radio 118 km
 - `ticon-afa9fb` TICON-3 34.780S 138.481E (gesla.unam) — TICON-3, misma costa: 2 picos a 54–62 km, radio 72 km
 - Sin puerto (Open-Meteo): VIVONNE BAY (ticon-e560dd a 94 km: cruza 57 km de tierra)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): PORT WILLUNGA → ticon-ec093c, SELLICKS → ticon-ec093c
@@ -852,11 +852,11 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### AU-WA-MR — Margaret River (32 picos)
 
-- `ticon-fd3ce7` TICON-3 33.630S 115.394E (gesla.sfwmd) — TICON-3, cruzando tierra: 24 picos a 38–59 km, radio 70 km
-- `ticon-9e0a4e` TICON-3 33.323S 115.660E (gesla.noaa) — TICON-3, misma costa: 6 picos a 69–70 km, radio 80 km
-- Sin puerto (Open-Meteo): BORANUP (ticon-fd3ce7 a 72 km: cruza 66 km de tierra), CONTOS (ticon-fd3ce7 a 64 km: cruza 60 km de tierra)
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): SUPERTUBES → ticon-fd3ce7, SMITHS → ticon-fd3ce7, YALLINGUP → ticon-fd3ce7, RABBIT HILL → ticon-fd3ce7, THREE BEARS → ticon-fd3ce7, WINDMILLS → ticon-fd3ce7
-- Descartadas: `ticon-fd3ce7` 64 km, cruza 60 km de tierra; `ticon-9e0a4e` 74 km, cruza 13 km de tierra; `ticon-a99647` 116 km, fuera por el tope de 3 puertos (nivel 2)
+- `ticon-fd3ce7` TICON-3 33.630S 115.394E (gesla.sfwmd) — TICON-3, misma costa: 25 picos a 37–59 km, radio 70 km (niveles 2,4)
+- `ticon-9e0a4e` TICON-3 33.323S 115.660E (gesla.noaa) — TICON-3, misma costa: 5 picos a 67–70 km, radio 80 km
+- Sin puerto (Open-Meteo): BORANUP (ticon-fd3ce7 a 69 km: cruza 66 km de tierra), CONTOS (ticon-fd3ce7 a 64 km: cruza 60 km de tierra)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): SUPERTUBES → ticon-fd3ce7, SMITHS → ticon-fd3ce7, YALLINGUP → ticon-fd3ce7, RABBIT HILL → ticon-fd3ce7, THREE BEARS → ticon-fd3ce7
+- Descartadas: `ticon-fd3ce7` 64 km, cruza 60 km de tierra; `ticon-9e0a4e` 74 km, cruza 13 km de tierra; `ticon-a99647` 114 km, fuera por el tope de 3 puertos (nivel 2); `ticon-95a181` 120 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### AU-WA-PER — Perth y Rottnest (20 picos)
 
@@ -868,7 +868,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### AU-WA-NW — Kalbarri y Geraldton (5 picos)
 
-- `ticon-92ede9` TICON-3 28.776S 114.602E (gesla.uhslc) — TICON-3, misma costa: 3 picos a 0.6–19 km, radio 30 km (niveles 2,4)
+- `ticon-92ede9` TICON-3 28.776S 114.602E (gesla.uhslc) — TICON-3, misma costa: 3 picos a 0.6–25 km, radio 36 km
 - Sin puerto (Open-Meteo): BLUE HOLES, JAKES POINT
 
 ### AU-WA-GAS — Gascoyne (3 picos)
@@ -879,9 +879,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 ### NZ-NTL — Northland (14 picos)
 
 - `linz-ben-gunn-wharf` Ben Gunn Wharf — oficial, cruzando tierra: 7 picos a 24–60 km, radio 70 km
-- `linz-marsden-point` Marsden Point — oficial, misma costa: 6 picos a 4.7–34 km, radio 45 km (niveles 1,3)
+- `linz-marsden-point` Marsden Point — oficial, misma costa: 6 picos a 4.7–33 km, radio 44 km (niveles 1,3)
 - `linz-dargaville` Dargaville — oficial, cruzando tierra: 1 picos a 11–11 km, radio 22 km
-- Descartadas: `ticon-563267` 4.7 km, cruza 63 km de tierra; `linz-whangaroa` 12 km, fuera por el tope de 3 puertos (nivel 3); `linz-whangarei` 19 km, fuera por el tope de 3 puertos (nivel 3); `linz-town-basin` 24 km, fuera por el tope de 3 puertos (nivel 3)
+- Descartadas: `ticon-563267` 4.7 km, cruza 63 km de tierra; `linz-whangaroa` 12 km, fuera por el tope de 3 puertos (nivel 3); `linz-whangarei` 19 km, fuera por el tope de 3 puertos (nivel 3); `linz-town-basin` 23 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### NZ-AKL — Auckland oeste (9 picos)
 
@@ -891,8 +891,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### NZ-RAG — Raglan (5 picos)
 
-- `linz-manu-bay` Manu Bay — oficial, misma costa: 5 picos a 0.6–13 km, radio 23 km
-- Descartadas: `linz-raglan` 5.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-kawhia` 23 km, fuera por el tope de 3 puertos (nivel 3); `ticon-c2422a` 107 km, cruza 97 km de tierra
+- `linz-manu-bay` Manu Bay — oficial, misma costa: 5 picos a 0.6–10 km, radio 21 km (niveles 1,3)
+- Descartadas: `linz-raglan` 5.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-kawhia` 19 km, fuera por el tope de 3 puertos (nivel 3); `ticon-c2422a` 107 km, cruza 97 km de tierra
 
 ### NZ-TAR — Taranaki (7 picos)
 
@@ -903,7 +903,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### NZ-BOP — Coromandel y Bay of Plenty (11 picos)
 
-- `linz-moturiki-island` Moturiki Island — oficial, misma costa: 9 picos a 0.5–57 km, radio 67 km (niveles 1,3)
+- `linz-moturiki-island` Moturiki Island — oficial, misma costa: 9 picos a 0.5–57 km, radio 67 km
 - `linz-huruhi-harbour` Huruhi Harbour — oficial, misma costa: 1 picos a 32–32 km, radio 43 km
 - `linz-port-ohope-wharf` Port Ōhope Wharf — oficial, misma costa: 1 picos a 4.4–4.4 km, radio 15 km
 - Descartadas: `ticon-232aea` 1.5 km, fuera por el tope de 3 puertos (nivel 2); `linz-tauranga` 1.5 km, fuera por el tope de 3 puertos (nivel 1); `linz-kaituna-river-entrance` 3.0 km, fuera por el tope de 3 puertos (nivel 1); `linz-whakatane` 5.4 km, fuera por el tope de 3 puertos (nivel 1)
@@ -917,24 +917,24 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `linz-rangatira-point` Rangatira Point — oficial, misma costa: 6 picos a 6.2–45 km, radio 56 km
 - `linz-wellington` Wellington — oficial, misma costa: 5 picos a 5.4–56 km, radio 66 km (niveles 1,3)
-- `linz-castlepoint` Castlepoint — oficial, misma costa: 2 picos a 0.9–12 km, radio 23 km (niveles 1,3)
+- `linz-castlepoint` Castlepoint — oficial, misma costa: 2 picos a 0.9–22 km, radio 33 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): MAKARA BEACH → linz-wellington, TITAHI BAY → linz-wellington
 - Descartadas: `linz-mana-marina` 3.5 km, fuera por el tope de 3 puertos (nivel 3); `ticon-9caabc` 5.4 km, fuera por el tope de 3 puertos (nivel 2); `linz-okukari-bay` 33 km, fuera por el tope de 3 puertos (nivel 3); `linz-long-island` 38 km, fuera por el tope de 3 puertos (nivel 3)
 
-### NZ-KAI — Kaikōura y Canterbury (9 picos)
+### NZ-KAI — Kaikoura y Canterbury (9 picos)
 
-- `linz-new-brighton-pier` New Brighton Pier — oficial, misma costa: 5 picos a 1.1–54 km, radio 64 km
+- `linz-new-brighton-pier` New Brighton Pier — oficial, misma costa: 5 picos a 1.1–58 km, radio 69 km
 - `linz-kaikoura` Kaikōura — oficial, misma costa: 3 picos a 1.1–13 km, radio 24 km
 - `ticon-9caabc` TICON-3 41.283S 174.783E (gesla.noaa) — TICON-3, misma costa: 1 picos a 102–102 km, radio 113 km
-- Descartadas: `linz-sumner-head` 1.1 km, fuera por el tope de 3 puertos (nivel 1); `ticon-2f9d0a` 5.6 km, fuera por el tope de 3 puertos (nivel 2); `linz-lyttelton` 5.6 km, fuera por el tope de 3 puertos (nivel 1); `linz-akaroa` 28 km, fuera por el tope de 3 puertos (nivel 3)
+- Descartadas: `linz-sumner-head` 1.1 km, fuera por el tope de 3 puertos (nivel 1); `ticon-2f9d0a` 5.6 km, fuera por el tope de 3 puertos (nivel 2); `linz-lyttelton` 5.6 km, fuera por el tope de 3 puertos (nivel 3); `linz-akaroa` 28 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### NZ-OTA — Otago y Southland (13 picos)
 
-- `linz-dunedin` Dunedin — oficial, misma costa: 4 picos a 3.6–28 km, radio 39 km
+- `linz-green-island` Green Island — oficial, misma costa: 4 picos a 4.1–10 km, radio 21 km
 - `linz-spit-wharf` Spit Wharf — oficial, misma costa: 4 picos a 1.0–17 km, radio 27 km
 - `linz-dog-island` Dog Island — oficial, misma costa: 3 picos a 24–53 km, radio 63 km (niveles 1,3)
 - Sin puerto (Open-Meteo): KAKA POINT, PAPATOWAI
-- Descartadas: `linz-port-chalmers` 6.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-riverton-aparima` 7.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-waihopai-river-entrance` 7.5 km, fuera por el tope de 3 puertos (nivel 3); `linz-green-island` 8.2 km, fuera por el tope de 3 puertos (nivel 3)
+- Descartadas: `linz-dunedin` 3.6 km, fuera por el tope de 3 puertos (nivel 3); `linz-port-chalmers` 6.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-riverton-aparima` 7.4 km, fuera por el tope de 3 puertos (nivel 1); `linz-waihopai-river-entrance` 7.5 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### NZ-WC — Costa Oeste (4 picos)
 
@@ -963,8 +963,8 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### WS-ALL — Samoa (6 picos)
 
-- `noaa-1778000` APIA (Observatory), Upolu Island, AS — oficial, misma costa: 3 picos a 23–39 km, radio 49 km (niveles 1,3)
-- `ticon-3eec34` TICON-3 14.283S 170.683W (gesla.uhslc) — TICON-3, misma costa: 3 picos a 114–119 km, radio 130 km
+- `ticon-3eec34` TICON-3 14.283S 170.683W (gesla.uhslc) — TICON-3, misma costa: 4 picos a 92–119 km, radio 130 km
+- `noaa-1778000` APIA (Observatory), Upolu Island, AS — oficial, cruzando tierra: 2 picos a 23–23 km, radio 34 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BOULDERS → noaa-1778000, DEVIL'S ISLAND → noaa-1778000, TAFATAFA → noaa-1778000
 - Descartadas: `ticon-7abf3a` 22 km, fuera por el tope de 3 puertos (nivel 4); `ticon-cbe192` 23 km, fuera por el tope de 3 puertos (nivel 4)
 
@@ -974,7 +974,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### VU-ALL — Vanuatu (5 picos)
 
-- `ticon-fc3571` TICON-3 17.762S 168.293E (gesla.cmems) — TICON-3, misma costa: 3 picos a 2.8–6.5 km, radio 17 km
+- `ticon-fc3571` TICON-3 17.762S 168.293E (gesla.cmems) — TICON-3, misma costa: 3 picos a 2.8–12 km, radio 23 km
 - Sin puerto (Open-Meteo): LENAKEL, PORT RESOLUTION
 - Descartadas: `ticon-1af54e` 6.9 km, fuera por el tope de 3 puertos (nivel 2)
 
@@ -1003,11 +1003,10 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 - Descartadas: `ticon-8bef32` 66 km, cruza 28 km de tierra; `ticon-6b6562` 70 km, cruza 68 km de tierra; `ticon-0ccd99` 92 km, cruza 24 km de tierra
 
-### ID-JAV-W — Java occidental (7 picos)
+### ID-JAV-W — Java occidental (6 picos)
 
 - `ticon-e6afd5` TICON-3 7.752S 109.017E (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 42–57 km, radio 68 km
-- Sin puerto (Open-Meteo): MADASARI (ticon-e6afd5 a 65 km: cruza 16 km de tierra), CIMAJA, KARANG HAWU, OMBAK TUJUH, SAWARNA
-- Descartadas: `ticon-e6afd5` 65 km, cruza 16 km de tierra
+- Sin puerto (Open-Meteo): CIMAJA, KARANG HAWU, OMBAK TUJUH, SAWARNA
 
 ### ID-LOM — Lombok (14 picos)
 
@@ -1035,7 +1034,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
-### ID-KRU — Krui y Lampung (5 picos)
+### ID-KRU — Krui y Lampung (4 picos)
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
@@ -1047,7 +1046,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
-### PH-EAS — Samar y Catanduanes (3 picos)
+### PH-EAS — Samar y Catanduanes (2 picos)
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
@@ -1072,7 +1071,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### MV-SOU — Atolones del sur (2 picos)
 
-Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
+- `ticon-62701e` TICON-3 0.687S 73.152E (gesla.noaa) — TICON-3, misma costa: 2 picos a 100–113 km, radio 123 km
 
 ### MV-CEN — Atolones centrales (1 picos)
 
@@ -1134,10 +1133,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
-### VN-ALL — Vietnam (5 picos)
+### VN-ALL — Vietnam (4 picos)
 
 - `ticon-458133` TICON-3 10.340N 107.072E (gesla.meds) — TICON-3, misma costa: 2 picos a 3.6–20 km, radio 30 km
-- `ticon-42b1f5` TICON-3 13.775N 109.255E (gesla.uhslc) — TICON-3, misma costa: 1 picos a 5.5–5.5 km, radio 16 km
 - Sin puerto (Open-Meteo): MY KHE, NON NUOC
 
 ### KR-ALL — Corea del Sur (6 picos)
@@ -1242,7 +1240,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### CV-ALL — Cabo Verde (3 picos)
 
-- `ticon-18a200` TICON-3 16.755N 22.983W (gesla.refmar) — TICON-3, misma costa: 3 picos a 19–68 km, radio 78 km (niveles 2,4)
+- `ticon-18a200` TICON-3 16.755N 22.983W (gesla.refmar) — TICON-3, misma costa: 3 picos a 19–72 km, radio 82 km (niveles 2,4)
 
 ### FR-PBA — País Vasco francés (24 picos)
 
@@ -1253,7 +1251,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### FR-HOS — Hossegor y Capbreton (16 picos)
 
-- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 9 picos a 7.5–25 km, radio 35 km (niveles 2,4)
+- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 9 picos a 6.2–25 km, radio 35 km (niveles 2,4)
 - `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 7 picos a 33–36 km, radio 47 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): L'ESTACADE → ticon-920ef6, SANTOCHA → ticon-920ef6, LE PREVENT → ticon-920ef6, LA PISTE → ticon-920ef6, LA SUD → ticon-920ef6, LA CENTRALE → ticon-920ef6, LA GRAVIERE → ticon-920ef6
 - Descartadas: `ticon-66c157` 53 km, cruza 13 km de tierra; `ticon-b486e0` 105 km, cruza 43 km de tierra
@@ -1358,12 +1356,12 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### PT-LIS — Lisboa y Caparica (15 picos)
 
-- `ticon-5da85d` TICON-3 38.692N 9.417W (gesla.cmems) — TICON-3, misma costa: 15 picos a 4.8–28 km, radio 39 km (niveles 2,4)
+- `ticon-5da85d` TICON-3 38.692N 9.417W (gesla.cmems) — TICON-3, misma costa: 15 picos a 4.8–30 km, radio 40 km (niveles 2,4)
 - Descartadas: `ticon-5b4329` 90 km, cruza 75 km de tierra
 
 ### PT-ALG — Alentejo y Algarve (18 picos)
 
-- `ticon-4a3da2` TICON-3 37.098N 8.668W (gesla.meds) — TICON-3, misma costa: 14 picos a 20–56 km, radio 67 km (niveles 2,4)
+- `ticon-4a3da2` TICON-3 37.098N 8.668W (gesla.meds) — TICON-3, misma costa: 14 picos a 19–56 km, radio 67 km (niveles 2,4)
 - `ticon-5da85d` TICON-3 38.692N 9.417W (gesla.cmems) — TICON-3, misma costa: 3 picos a 102–113 km, radio 123 km
 - Sin puerto (Open-Meteo): ALMOGRAVE (ticon-4a3da2 a 63 km: cruza 60 km de tierra)
 - Descartadas: `ticon-4a3da2` 63 km, cruza 60 km de tierra
@@ -1372,7 +1370,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `ticon-e3d81c` TICON-3 37.735N 25.672W (gesla.noaa) — TICON-3, misma costa: 5 picos a 3.0–21 km, radio 32 km (niveles 2,4)
 - `ticon-67b5b2` TICON-3 38.650N 27.240W (gesla.cmems) — TICON-3, cruzando tierra: 1 picos a 19–19 km, radio 30 km
-- `ticon-406688` TICON-3 38.533N 28.622W (gesla.noaa) — TICON-3, cruzando tierra: 1 picos a 10–10 km, radio 21 km
+- `ticon-406688` TICON-3 38.533N 28.622W (gesla.noaa) — TICON-3, misma costa: 1 picos a 2.9–2.9 km, radio 13 km
 
 ### PT-MAD — Madeira (8 picos)
 
@@ -1431,18 +1429,18 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### IE-NW — Donegal Sligo y Mayo (9 picos)
 
-- `imi-killybegs` Killybegs — oficial, misma costa: 4 picos a 8.6–19 km, radio 30 km
+- `imi-killybegs` Killybegs — oficial, misma costa: 4 picos a 14–19 km, radio 30 km
 - `imi-sligo` Sligo — oficial, misma costa: 4 picos a 4.4–36 km, radio 46 km (niveles 1,3)
 - `imi-achill-island` Achill Island (modelado) — oficial, misma costa: 1 picos a 4.0–4.0 km, radio 15 km
-- Descartadas: `ticon-c46c58` 4.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-a7e19b` 4.5 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8f786f` 8.6 km, fuera por el tope de 3 puertos (nivel 2); `imi-clare-island` 22 km, fuera por el tope de 3 puertos (nivel 1)
+- Descartadas: `ticon-c46c58` 4.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-a7e19b` 4.5 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8f786f` 14 km, fuera por el tope de 3 puertos (nivel 2); `imi-clare-island` 22 km, fuera por el tope de 3 puertos (nivel 1)
 
 ### IE-SW — Clare y Kerry (12 picos)
 
 - `imi-inishmore` Inishmore — oficial, misma costa: 5 picos a 20–34 km, radio 44 km (niveles 1,3)
-- `imi-fenit` Fenit — oficial, misma costa: 4 picos a 8.9–30 km, radio 40 km (niveles 1,3)
+- `imi-fenit` Fenit — oficial, misma costa: 4 picos a 7.8–30 km, radio 40 km (niveles 1,3)
 - `imi-dingle` Dingle — oficial, misma costa: 3 picos a 5.4–24 km, radio 35 km (niveles 1,3)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): ROSSBEIGH → imi-fenit
-- Descartadas: `imi-lahinch` 3.7 km, fuera por el tope de 3 puertos (nivel 3); `ticon-2bef8b` 5.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-cff91b` 9.1 km, fuera por el tope de 3 puertos (nivel 4); `imi-carrigaholt` 9.3 km, fuera por el tope de 3 puertos (nivel 1)
+- Descartadas: `imi-lahinch` 3.7 km, fuera por el tope de 3 puertos (nivel 3); `ticon-2bef8b` 5.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-cff91b` 7.9 km, fuera por el tope de 3 puertos (nivel 4); `imi-carrigaholt` 9.3 km, fuera por el tope de 3 puertos (nivel 1)
 
 ### IE-SE — Waterford y Cork (10 picos)
 
@@ -1452,11 +1450,11 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): ARDMORE → imi-dungarvan
 - Descartadas: `ticon-fbe95e` 10 km, cruza 16 km de tierra; `imi-dunmore` 11 km, fuera por el tope de 3 puertos (nivel 1); `imi-union-hall` 12 km, fuera por el tope de 3 puertos (nivel 3); `ticon-c1f60c` 16 km, fuera por el tope de 3 puertos (nivel 4)
 
-### NO-S — Noruega sur (Jæren y Stad) (3 picos)
+### NO-S — Noruega sur (Jaeren y Stad) (3 picos)
 
-- `ticon-44917a` TICON-3 61.934N 5.113E (gesla.uhslc) — TICON-3, cruzando tierra: 2 picos a 14–14 km, radio 25 km
+- `ticon-44917a` TICON-3 61.934N 5.113E (gesla.uhslc) — TICON-3, cruzando tierra: 2 picos a 14–21 km, radio 32 km
 - `ticon-db052f` TICON-3 58.974N 5.730E (gesla.cmems) — TICON-3, cruzando tierra: 1 picos a 34–34 km, radio 45 km
-- Descartadas: `ticon-72a205` 69 km, cruza 15 km de tierra
+- Descartadas: `ticon-72a205` 64 km, cruza 12 km de tierra
 
 ### NO-N — Lofoten (3 picos)
 
