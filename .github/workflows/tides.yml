@@ -4,7 +4,7 @@ name: Mareas del mundo
 # resumen en tide/report.md.
 on:
   push:
-    branches: [main, mareas-mundo]
+    branches: [main]
     paths:
       - "tools/tide/**"
       - "tools/lib/tide.py"

@@ -3,7 +3,7 @@ name: Validación de modelos de olas y viento
 # AODN, Marine Institute) de los últimos 30 días y publica validation/ (docs/formatos.md, sección Validación).
 on:
   push:
-    branches: [validacion-mundo]
+    branches: [main]
     paths:
       - "validate/**"
       - ".github/workflows/validation.yml"
