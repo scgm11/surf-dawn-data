@@ -4,8 +4,9 @@ validation/spots.json (docs/formatos.md):
 
 - §5.2 Facing: the waves of the spot's own wave point over the last DAYS days (its zone's model,
   Open-Meteo Marine). A spot whose waves almost never come from within FACING_DEG of the way its
-  beach faces (under NEVER of the hours) while its zone's spots do (at least NEIGHBOURS) is flagged:
-  that is usually a facing computed on the wrong side of a headland or a lagoon.
+  beach faces (under NEVER of the hours) while its zone's spots do (at least NEIGHBOURS) is looked at
+  again over LONG_DAYS (a season can hide a swell window); still so, it is flagged: that is usually a
+  facing computed on the wrong side of a headland or a lagoon, or a point the swell wraps into.
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
 - §5.8 Flagship spots (`top` in the seeds): their position against Wikidata, a public source: the
@@ -35,6 +36,7 @@ from tools.lib.names import matches, regex, variants  # noqa: E402
 ROOT = seeds.ROOT
 OUT = os.path.join(ROOT, "validation")
 DAYS = 14                       # past days of waves (plus FORECAST days ahead)
+LONG_DAYS = 92                  # the spots flagged for their facing, looked at again over this many
 FORECAST = 2
 FACING_DEG = 75                 # waves within this of the beach's facing reach it (issue #7 §5.2)
 NEVER = 0.05                    # "almost never": under this share of the hours with waves
@@ -72,12 +74,14 @@ def cell(model, lat, lon):
     return model, round(lat / dlat), round(geo.wrap(lon) / dlon)
 
 
-def fetch_waves(zs, used):
-    """{(model, i, j): (heights, directions)} for the wave cell of every spot."""
+def fetch_waves(zs, used, days=DAYS, only=None):
+    """{(model, i, j): (heights, directions)} for the wave cell of every spot (only: those (zone, name))."""
     want = {}
     for z in zs:
         model = z["m"][0]
         for s in z["s"]:
+            if only is not None and (z["id"], s[0]) not in only:
+                continue
             lat, lon = (s[5], s[6]) if len(s) == 7 else (s[1], s[2])
             want.setdefault(cell(model, lat, lon), (lat, lon))
     out = {}
@@ -89,10 +93,10 @@ def fetch_waves(zs, used):
             part = items[i:i + BATCH]
             params = {"latitude": ",".join("%.4f" % p[0] for _, p in part),
                       "longitude": ",".join("%.4f" % p[1] for _, p in part),
-                      "hourly": "wave_height,wave_direction", "models": model, "past_days": DAYS,
+                      "hourly": "wave_height,wave_direction", "models": model, "past_days": days,
                       "forecast_days": FORECAST, "timeformat": "unixtime", "timezone": "GMT"}
             res = openmeteo.get_json(params)
-            used["calls"] += openmeteo.call_weight(len(part), 2, DAYS + FORECAST)
+            used["calls"] += openmeteo.call_weight(len(part), 2, days + FORECAST)
             used["requests"] += 1
             if isinstance(res, dict):
                 print("  open-meteo refused %s x%d: %s" % (model, len(part), res.get("reason")), file=sys.stderr)
@@ -167,6 +171,8 @@ def check_flagship(code, s, cc):
     if not any(matches(i[0], names) for i in items):          # not in Wikidata: OpenStreetMap
         items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.nominatim(names, cc)
                  if geo.km((s[1], s[2]), (c["lat"], c["lon"])) <= WD_KM]
+    if not any(matches(i[0], names) for i in items):          # nor Nominatim: OSM features around it
+        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.named_near(s[1], s[2], names, WD_KM)]
     best = None
     for label, lat, lon, qid in items:
         if matches(label, names):
@@ -227,6 +233,28 @@ def main():
                                         "top": tops.get((z["id"], r["name"]), False)})
         print("%-11s %2d spots  media %s m  de frente %s" % (z["id"], len(rows), med and "%.1f" % med,
                                                               med_share is not None and "%d %%" % round(100 * med_share)))
+    # the facing flags, again over a season
+    facing_flags = {(f["region"], f["spot"]): f for f in result["flags"] if any("de frente" in w for w in f["why"])}
+    if facing_flags:
+        long = fetch_waves(zs, used, LONG_DAYS, set(facing_flags))
+        for z in zs:
+            for s in z["s"]:
+                f = facing_flags.get((z["id"], s[0]))
+                if f is None:
+                    continue
+                lat, lon = (s[5], s[6]) if len(s) == 7 else (s[1], s[2])
+                st = spot_stats(long.get(cell(z["m"][0], lat, lon), ([], [])), s[3])
+                f["share_long"] = st["share"]
+                if st["share"] is not None and st["share"] >= NEVER:
+                    f["why"] = [w for w in f["why"] if "de frente" not in w]
+                    f["flipped"] = False
+                else:
+                    f["why"] = [w + (" y en %d días %d %%" % (LONG_DAYS, round(100 * st["share"])) if "de frente" in w
+                                     and st["share"] is not None else "") for w in f["why"]]
+        cleared = sum(1 for f in facing_flags.values() if not f["why"])
+        result["flags"] = [f for f in result["flags"] if f["why"]]
+        result["season_cleared"] = cleared
+        print("%d facing flags cleared over %d days" % (cleared, LONG_DAYS))
     if a.no_wikidata:                              # the last run's, as they were
         try:
             with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
@@ -264,6 +292,8 @@ def report(r, zs):
          "(el modelo de su zona). Se marca un pico al que las olas de al menos %.1f m casi nunca le llegan a menos "
          "de %d° de hacia donde mira (menos del %d %% de las horas) mientras a su zona sí (al menos %d %%)." % (
              DAYS, FORECAST, MIN_H, FACING_DEG, round(100 * NEVER), round(100 * NEIGHBOURS)),
+         "- **Temporada:** los marcados por la orientación se miran de nuevo con %d días de olas; %d dejaron de "
+         "estarlo (en dos semanas no les tocaba su ventana de swell)." % (LONG_DAYS, r.get("season_cleared", 0)),
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
          "- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta %d km; "

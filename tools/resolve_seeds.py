@@ -23,18 +23,14 @@ Usage: python3 tools/resolve_seeds.py [--regions CODE ...] [--names REGION/NAME 
 """
 import argparse
 import csv
-import json
 import os
 import re
 import sys
-import time
-import urllib.parse
-import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.lib import geo, osm, seeds  # noqa: E402
-from tools.lib.osm import kind, nominatim  # noqa: E402
-from tools.lib.names import fold, regex, variants  # noqa: E402
+from tools.lib.osm import named_near, nominatim  # noqa: E402
+from tools.lib.names import fold, variants  # noqa: E402
 
 ROOT = seeds.ROOT
 LOG = os.path.join(ROOT, "seeds", "resolve.log")
@@ -42,35 +38,6 @@ SEARCH_KM = 60
 FAR_KM = 150
 FROZEN = {"UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
 RANK = {"beach": 0, "surf": 0, "bay": 1, "cape": 1, "peninsula": 1, "headland": 1, "place": 2, "other": 3}
-
-
-def overpass(lat, lon, names):
-    rx = "|".join(regex(v) for v in names)
-    q = ('[out:json][timeout:90];('
-         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["natural"~"^(beach|bay|cape|peninsula|headland)$"];'
-         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["place"];'
-         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["sport"~"surf"];'
-         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["leisure"="beach_resort"];'
-         ');out center tags;').format(r=SEARCH_KM * 1000, la=lat, lo=lon, rx=rx)
-    body = urllib.parse.urlencode({"data": q}).encode()
-    for attempt in range(6):
-        url = osm.MIRRORS[attempt % len(osm.MIRRORS)]
-        try:
-            req = urllib.request.Request(url, body, osm.UA)
-            data = json.loads(urllib.request.urlopen(req, timeout=120).read())
-            out = []
-            for e in data.get("elements", []):
-                c = e.get("center") or e
-                if "lat" in c:
-                    t = e.get("tags", {})
-                    out.append({"lat": c["lat"], "lon": c["lon"], "name": t.get("name", ""), "kind": kind(t),
-                                "src": "osm:%s/%d" % (e["type"], e["id"])})
-            time.sleep(1.5)
-            return out
-        except Exception as e:  # noqa: BLE001
-            print("  overpass %s failed (%s)" % (url.split("/")[2], str(e)[:80]), file=sys.stderr)
-            time.sleep(8 + 8 * attempt)
-    return []
 
 
 def matches(cand, names):
@@ -81,7 +48,7 @@ def matches(cand, names):
 def resolve(code, row, cc, use_overpass=True):
     names = variants(row["name"])
     seed = (row["lat"], row["lon"])
-    cands = [c for c in overpass(row["lat"], row["lon"], names) if matches(c, names)] if use_overpass else []
+    cands = [c for c in named_near(row["lat"], row["lon"], names, SEARCH_KM) if matches(c, names)] if use_overpass else []
     cands += [c for c in nominatim(names, cc) if matches(c, names) and geo.km(seed, (c["lat"], c["lon"])) <= FAR_KM]
     seen, good = set(), []
     for c in cands:

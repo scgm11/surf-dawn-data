@@ -158,3 +158,35 @@ def nominatim(names, cc):
             out.append({"lat": float(r["lat"]), "lon": float(r["lon"]), "name": r.get("name") or r.get("display_name", ""),
                         "kind": kind(t), "src": "osm:%s/%s" % (r.get("osm_type", "?"), r.get("osm_id", "?"))})
     return out
+
+
+def named_near(lat, lon, names, km):
+    """OSM features named like one of the names (accents and case aside) within km of (lat, lon): beaches,
+    bays, capes, places, surf spots, beach resorts, as candidates {lat, lon, name, kind, src}."""
+    from .names import regex
+    rx = "|".join(regex(v) for v in names)
+    q = ('[out:json][timeout:90];('
+         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["natural"~"^(beach|bay|cape|peninsula|headland)$"];'
+         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["place"];'
+         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["sport"~"surf"];'
+         'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["leisure"="beach_resort"];'
+         ');out center tags;').format(r=int(km * 1000), la=lat, lo=lon, rx=rx)
+    body = urllib.parse.urlencode({"data": q}).encode()
+    for attempt in range(6):
+        url = MIRRORS[attempt % len(MIRRORS)]
+        try:
+            req = urllib.request.Request(url, body, UA)
+            data = json.loads(urllib.request.urlopen(req, timeout=120).read())
+            out = []
+            for e in data.get("elements", []):
+                c = e.get("center") or e
+                if "lat" in c:
+                    t = e.get("tags", {})
+                    out.append({"lat": c["lat"], "lon": c["lon"], "name": t.get("name", ""), "kind": kind(t),
+                                "src": "osm:%s/%d" % (e["type"], e["id"])})
+            time.sleep(1.5)
+            return out
+        except Exception as e:  # noqa: BLE001
+            print("  overpass %s failed (%s)" % (url.split("/")[2], str(e)[:80]), file=sys.stderr)
+            time.sleep(8 + 8 * attempt)
+    return []
