@@ -45,11 +45,11 @@ def matches(cand, names):
     return any(fold(v) in f for v in names)
 
 
-def resolve(code, row, cc, use_overpass=True):
+def resolve(code, row, cc, use_overpass=True, far_km=FAR_KM):
     names = variants(row["name"])
     seed = (row["lat"], row["lon"])
     cands = [c for c in named_near(row["lat"], row["lon"], names, SEARCH_KM) if matches(c, names)] if use_overpass else []
-    cands += [c for c in nominatim(names, cc) if matches(c, names) and geo.km(seed, (c["lat"], c["lon"])) <= FAR_KM]
+    cands += [c for c in nominatim(names, cc) if matches(c, names) and geo.km(seed, (c["lat"], c["lon"])) <= far_km]
     seen, good = set(), []
     for c in cands:
         k = (round(c["lat"], 3), round(c["lon"], 3))
@@ -112,7 +112,8 @@ def main():
             table = list(csv.reader(f))
         cc = regions[code]["country"]
         for r, d in far:
-            good, n = resolve(code, r, cc, not a.no_overpass)
+            # a seed asked for by name is on its coast already: a namesake farther than SEARCH_KM is another place
+            good, n = resolve(code, r, cc, not a.no_overpass, SEARCH_KM if named else FAR_KM)
             where = "%s/%s (%.4f, %.4f; costa a %s)" % (code, r["name"], r["lat"], r["lon"],
                                                        "?" if d is None else "%.0f m" % d)
             if not good:
