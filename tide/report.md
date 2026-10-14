@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 01:20 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 01:29 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -9,16 +9,6 @@ Generado 2026-10-14 01:20 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027
 - Picos con puerto: 1772 de 2441.
 - Archivos: 6575, 17.7 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
-
-## Avisos
-
-- LINZ Charleston: linz Charleston: no position in "407,Charleston,41°54.5'S,171°26.0'E"
-- LINZ Elie Bay: linz Elie Bay: no position in "446,Elie Bay,41°07.9'S,173°59.5'E"
-- LINZ Motuara Island: linz Motuara Island: no position in "472,Motuara Island,41°05.6'S,174°16.3'E"
-- LINZ New Brighton Pier: linz New Brighton Pier: no position in "468,New Brighton Pier,43°30.4'S,172°44.1E"
-- LINZ Omaha Bridge: linz Omaha Bridge: no position in "462,Omaha Bridge,36°20.5'S,174°45.9'E"
-- LINZ Richmond Bay: linz Richmond Bay: no position in "445,Richmond Bay,41°00.9'S,173°59.3'E"
-- LINZ Tāmaki River: linz Tāmaki River: no position in "463,Tāmaki River,36°54.7'S,174°51.7'E"
 
 ## Validación TICON-3 vs NOAA
 
@@ -68,12 +58,12 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | linz-manu-bay | linz:Manu Bay | Manu Bay | Chart Datum (LINZ) | 30..379 | — | 2.6 |
 | linz-marsden-point | linz:Marsden Point | Marsden Point | Chart Datum (LINZ) | 30..300 | — | 2.9 |
 | linz-moturiki-island | linz:Moturiki Island | Moturiki Island | Chart Datum (LINZ) | 10..220 | — | 2.8 |
+| linz-new-brighton-pier | linz:New Brighton Pier | New Brighton Pier | Chart Datum (LINZ) | 20..259 | — | 3.7 |
 | linz-paratutae-island | linz:Paratutae Island | Paratutae Island | Chart Datum (LINZ) | 20..360 | — | 3.3 |
 | linz-port-ohope-wharf | linz:Port Ōhope Wharf | Port Ōhope Wharf | Chart Datum (LINZ) | 0..210 | — | 2.9 |
 | linz-port-taranaki | linz:Port Taranaki | Port Taranaki | Chart Datum (LINZ) | 10..390 | — | 3.4 |
 | linz-rangatira-point | linz:Rangatira Point | Rangatira Point | Chart Datum (LINZ) | 10..200 | — | 3.7 |
 | linz-spit-wharf | linz:Spit Wharf | Spit Wharf | Chart Datum (LINZ) | 20..210 | — | 2.7 |
-| linz-sumner-head | linz:Sumner Head | Sumner Head | Chart Datum (LINZ) | 20..260 | — | 2.7 |
 | linz-wellington | linz:Wellington | Wellington | Chart Datum (LINZ) | 50..190 | — | 2.5 |
 | linz-westport | linz:Westport | Westport | Chart Datum (LINZ) | 30..380 | — | 3.0 |
 | noaa-1611347 | noaa:1611347 | Port Allen, Hanapepe Bay, HI | MLLW | -19..83 | — | 0.6 |
@@ -933,10 +923,10 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### NZ-KAI — Kaikōura y Canterbury (9 picos)
 
-- `linz-sumner-head` Sumner Head — oficial, misma costa: 5 picos a 1.1–60 km, radio 70 km
+- `linz-new-brighton-pier` New Brighton Pier — oficial, misma costa: 5 picos a 1.1–54 km, radio 64 km
 - `linz-kaikoura` Kaikōura — oficial, misma costa: 3 picos a 1.1–13 km, radio 24 km
 - `ticon-9caabc` TICON-3 41.283S 174.783E (gesla.noaa) — TICON-3, misma costa: 1 picos a 102–102 km, radio 113 km
-- Descartadas: `ticon-2f9d0a` 5.6 km, fuera por el tope de 3 puertos (nivel 2); `linz-lyttelton` 5.6 km, fuera por el tope de 3 puertos (nivel 1); `linz-akaroa` 28 km, fuera por el tope de 3 puertos (nivel 3)
+- Descartadas: `linz-sumner-head` 1.1 km, fuera por el tope de 3 puertos (nivel 1); `ticon-2f9d0a` 5.6 km, fuera por el tope de 3 puertos (nivel 2); `linz-lyttelton` 5.6 km, fuera por el tope de 3 puertos (nivel 1); `linz-akaroa` 28 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### NZ-OTA — Otago y Southland (13 picos)
 
@@ -950,7 +940,7 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 - `linz-westport` Westport — oficial, misma costa: 2 picos a 3.1–11 km, radio 21 km
 - Sin puerto (Open-Meteo): COBDEN (ticon-5b5bc7 a 86 km: cruza 61 km de tierra), HOKITIKA
-- Descartadas: `ticon-5b5bc7` 2.5 km, fuera por el tope de 3 puertos (nivel 2)
+- Descartadas: `ticon-5b5bc7` 2.5 km, fuera por el tope de 3 puertos (nivel 2); `linz-charleston` 18 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### FJ-MAM — Mamanucas (6 picos)
 
