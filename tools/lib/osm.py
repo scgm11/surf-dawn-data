@@ -61,7 +61,9 @@ def coastline(name, points):
     path = os.path.join(CACHE, "coast-%s-%s.json" % (name, key))
     if os.path.exists(path):
         with open(path) as f:
-            return json.load(f)
+            ways = json.load(f)
+        if ways:                                 # an empty answer may have been a busy server's: asked again
+            return ways
     stmts = "".join('way["natural"="coastline"](%.4f,%.4f,%.4f,%.4f);' % b for b in boxes)
     query = "[out:json][timeout:170];(%s);out geom;" % stmts
     body = urllib.parse.urlencode({"data": query}).encode()
@@ -70,6 +72,9 @@ def coastline(name, points):
         try:
             req = urllib.request.Request(url, body, UA)
             data = json.loads(urllib.request.urlopen(req, timeout=180).read())
+            remark = data.get("remark") or ""
+            if "error" in remark or "timed out" in remark or "out of memory" in remark:
+                raise RuntimeError(remark)       # a 200 with a partial answer: not kept
             ways = [{"g": [[p["lat"], p["lon"]] for p in e["geometry"]]} for e in data.get("elements", []) if e.get("geometry")]
             with open(path, "w") as f:
                 json.dump(ways, f)
