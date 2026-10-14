@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 36 s
+catalogs: 3902 stations in 45 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -441,5 +441,4 @@ GOT5.6: 162 points, 17520 hours each
   PT-MAD       got-043c05     6.. 264 cm  8 spots
   IS-ALL       got-8ae671     5.. 307 cm  1 spots
 GOT5.6: 162 model points
-removing tide/ticon-42b1f5 (no region uses it)
-done: 425 ports, 208 regions with ports, 2326/2437 spots, 10625 files 28.2 MB, 468 s
+done: 425 ports, 208 regions with ports, 2326/2437 spots, 10625 files 28.2 MB, 495 s
