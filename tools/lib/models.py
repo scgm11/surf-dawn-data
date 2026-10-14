@@ -10,6 +10,7 @@ import os
 from tools.lib import seeds
 
 DEFAULT_WIND = "gfs_seamless"
+GLOBAL_WAVE = "ncep_gfswave025"               # covers every sea: where the 0.16° grids leave a coast out
 FIXED_COUNTRIES = {"UY", "AR"}
 FIXED_PREFIXES = ("BR-SC-", "BR-RS")          # Santa Catarina and Rio Grande do Sul
 FIXED_MODELS = ("ncep_gfswave025", "gfs_seamless")
