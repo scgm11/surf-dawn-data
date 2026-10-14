@@ -2,20 +2,26 @@ name: Semillas fuera de la costa
 # Busca por nombre en OpenStreetMap las semillas que build_zones.py no puede ubicar (a más de
 # 2,5 km de la costa) y las mueve al lugar con ese nombre que está sobre la costa
 # (tools/resolve_seeds.py). Deja seeds/resolve.log con cada cambio y lo que quedó sin resolver.
+# Se corre a mano (puede tardar horas con Overpass ocupado); si mueve semillas, pide el build de las zonas.
 on:
-  push:
-    branches: [zonas-mundo]
-    paths:
-      - "tools/resolve_seeds.py"
-      - ".github/workflows/resolve.yml"
   workflow_dispatch:
     inputs:
       regions:
         description: "Regiones (vacío: todas)"
         required: false
         default: ""
+      names:
+        description: "Picos REGIÓN/NOMBRE separados por ';' que se buscan aunque estén sobre la costa (sólo esos)"
+        required: false
+        default: ""
+      no_overpass:
+        description: "Sólo Nominatim (más rápido)"
+        type: boolean
+        required: false
+        default: false
 permissions:
   contents: write
+  actions: write                 # para pedir el build de las zonas
 concurrency:
   group: data-commit-${{ github.ref }}
   cancel-in-progress: false
@@ -38,9 +44,18 @@ jobs:
           key: zones-${{ github.run_id }}
           restore-keys: zones-
       - name: Resolver
+        shell: bash
+        env:
+          REGIONS: ${{ github.event.inputs.regions }}
+          NAMES: ${{ github.event.inputs.names }}
+          NO_OVERPASS: ${{ github.event.inputs.no_overpass }}
         run: |
           set -o pipefail
-          python3 tools/resolve_seeds.py ${{ github.event.inputs.regions && format('--regions {0}', github.event.inputs.regions) || '' }} 2>&1 | tee /tmp/resolve.out
+          args=()
+          [ -n "$REGIONS" ] && read -ra R <<< "$REGIONS" && args+=(--regions "${R[@]}")
+          [ -n "$NAMES" ] && IFS=';' read -ra N <<< "$NAMES" && args+=(--names "${N[@]}")
+          [ "$NO_OVERPASS" = "true" ] && args+=(--no-overpass)
+          python3 tools/resolve_seeds.py "${args[@]}" 2>&1 | tee /tmp/resolve.out
           python3 tools/check_seeds.py --present
       - name: Guardar cachés
         if: always()
@@ -52,6 +67,8 @@ jobs:
           key: zones-${{ github.run_id }}
       - name: Publicar
         if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"
@@ -60,3 +77,6 @@ jobs:
           git commit -m "Semillas: posiciones de OSM para las que estaban fuera de la costa"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
+          if git diff --name-only HEAD~1 HEAD | grep -q "^seeds/spots/"; then
+            gh workflow run zones.yml --ref "${GITHUB_REF_NAME}" || echo "no se pudo pedir zones.yml"
+          fi

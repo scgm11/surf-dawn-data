@@ -16,12 +16,16 @@ For each such seed:
 
 Seeds with no candidate are listed for a fix by hand. Everything goes to seeds/resolve.log.
 
-Usage: python3 tools/resolve_seeds.py [--regions CODE ...] [--dry-run]
+Usage: python3 tools/resolve_seeds.py [--regions CODE ...] [--names REGION/NAME ...] [--no-overpass] [--dry-run]
+  --names        these seeds are looked up even if they are on the coast (a position without a
+                 source: it gets the OSM feature's), and only them
+  --no-overpass  candidates from Nominatim only (Overpass's name search is the slow part)
 """
 import argparse
 import csv
 import json
 import os
+import re
 import sys
 import time
 import urllib.parse
@@ -109,10 +113,10 @@ def matches(cand, names):
     return any(fold(v) in f for v in names)
 
 
-def resolve(code, row, cc):
+def resolve(code, row, cc, use_overpass=True):
     names = variants(row["name"])
     seed = (row["lat"], row["lon"])
-    cands = [c for c in overpass(row["lat"], row["lon"], names) if matches(c, names)]
+    cands = [c for c in overpass(row["lat"], row["lon"], names) if matches(c, names)] if use_overpass else []
     cands += [c for c in nominatim(names, cc) if matches(c, names) and geo.km(seed, (c["lat"], c["lon"])) <= FAR_KM]
     seen, good = set(), []
     for c in cands:
@@ -136,28 +140,39 @@ def resolve(code, row, cc):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
+    ap.add_argument("--names", nargs="*")
+    ap.add_argument("--no-overpass", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     regions = seeds.regions()
+    named = {}
+    for n in a.names or []:
+        code, _, name = n.partition("/")
+        named.setdefault(code, set()).add(name)
     log = []
     fixed = unresolved = 0
-    for code in a.regions or list(regions):
+    for code in (list(named) if named else a.regions or list(regions)):
         if code in FROZEN:
             continue
         rows = seeds.spots(code)
-        bad = [r for r in rows if not r["f"].get("nosnap")]
-        if not bad:
-            continue
-        try:
-            ways = osm.coastline(code, [(r["lat"], r["lon"]) for r in bad])
-        except RuntimeError as e:
-            log.append("%s: %s" % (code, e))
-            continue
-        far = []
-        for r in bad:
-            s = osm.snap(r["lat"], r["lon"], ways)
-            if s is None or s[0] > osm.SNAP_MAX_M:
-                far.append((r, None if s is None else s[0]))
+        if named:
+            far = [(r, None) for r in rows if r["name"] in named[code]]
+            missing = named[code] - {r["name"] for r in rows}
+            log += ["NO ESTÁ %s/%s" % (code, n) for n in sorted(missing)]
+        else:
+            bad = [r for r in rows if not r["f"].get("nosnap")]
+            if not bad:
+                continue
+            try:
+                ways = osm.coastline(code, [(r["lat"], r["lon"]) for r in bad])
+            except RuntimeError as e:
+                log.append("%s: %s" % (code, e))
+                continue
+            far = []
+            for r in bad:
+                s = osm.snap(r["lat"], r["lon"], ways)
+                if s is None or s[0] > osm.SNAP_MAX_M:
+                    far.append((r, None if s is None else s[0]))
         if not far:
             continue
         path = os.path.join(seeds.SEEDS, "spots", code + ".csv")
@@ -165,7 +180,7 @@ def main():
             table = list(csv.reader(f))
         cc = regions[code]["country"]
         for r, d in far:
-            good, n = resolve(code, r, cc)
+            good, n = resolve(code, r, cc, not a.no_overpass)
             where = "%s/%s (%.4f, %.4f; costa a %s)" % (code, r["name"], r["lat"], r["lon"],
                                                        "?" if d is None else "%.0f m" % d)
             if not good:
@@ -181,7 +196,9 @@ def main():
                     row[1], row[2] = "%.4f" % c["lat"], "%.4f" % c["lon"]
                     row[4] = "K" if row[4] == "L" else row[4]
                     row[5] = c["src"]
-                    row[7] = (row[7] + "; " if row[7] else "") + "posición OSM"
+                    keep = [x for x in row[7].split("; ") if x and not re.search(
+                        r"GSHHS|sin fuente|aprox|dudosa|estimada|buscar por nombre", x)]
+                    row[7] = "; ".join(keep + ["posición OSM"])
         if not a.dry_run:
             with open(path, "w", newline="", encoding="utf-8") as f:
                 csv.writer(f, lineterminator="\n").writerows(table)
