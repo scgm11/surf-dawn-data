@@ -7,11 +7,11 @@ BR-RS       18 spots   930 bytes  v959929
 BR-RS-SUL    2 spots   232 bytes  v990dc3
 BR-SC-FLN   14 spots   862 bytes  v1b65d5
 BR-SC-SUL    6 spots   436 bytes  vef75ae
-BR-SC-NOR   20 spots   978 bytes  v601862
+BR-SC-NOR   20 spots   978 bytes  vc84907
 BR-SP       29 spots  1291 bytes  vf68e76
 BR-RJ       17 spots   779 bytes  vb3d071
-BR-RJL      20 spots   959 bytes  v413cfe
-BR-ES       19 spots   914 bytes  v00dc0c
+BR-RJL      20 spots   959 bytes  v154730
+BR-ES       19 spots   914 bytes  v10db0d
 BR-BA       21 spots   940 bytes  vbc0ade
 BR-NE-CE    12 spots   622 bytes  veaa0df
 BR-NE-RN    13 spots   627 bytes  v09cd67
@@ -62,18 +62,18 @@ US-CA-SD    38 spots  1735 bytes  v4590d9
 US-CA-OC    32 spots  1524 bytes  vdaeb1b
 US-CA-LA    23 spots  1131 bytes  v497e46
 US-CA-SB    27 spots  1288 bytes  v9b051b
-US-CA-CEN   16 spots   905 bytes  vfe6727
-US-CA-SC    30 spots  1409 bytes  va076b9
-US-CA-SF    29 spots  1392 bytes  v3b0eed
-US-CA-NOR   25 spots  1237 bytes  vbc727e
+US-CA-CEN   16 spots   905 bytes  v99dc57
+US-CA-SC    30 spots  1410 bytes  va8d908
+US-CA-SF    29 spots  1393 bytes  v6a5fae
+US-CA-NOR   25 spots  1238 bytes  v65ddd2
 US-PNW      33 spots  1531 bytes  va40a50
 US-GULF     13 spots   734 bytes  v78f77b
-US-FL       46 spots  2007 bytes  vf6ddef
+US-FL       46 spots  2006 bytes  vad81d0
 US-FL-PAN    6 spots   522 bytes  v515245
-US-SE       22 spots  1181 bytes  ve59eaf
+US-SE       22 spots  1181 bytes  v2f6c99
 US-SC-GA    10 spots   662 bytes  vde82cc
-US-MID      11 spots   731 bytes  v7c62e3
-US-NE       60 spots  2609 bytes  vccb86a
+US-MID      11 spots   731 bytes  v24b23d
+US-NE       60 spots  2608 bytes  v0c3949
 US-HI-OAN   21 spots   979 bytes  v42b876
 US-HI-OAS   25 spots  1178 bytes  v0924f3
 US-HI-MAU   21 spots   983 bytes  v78a053
@@ -95,10 +95,12 @@ AU-TAS      12 spots   693 bytes  v85e900
 AU-SA       14 spots   787 bytes  v8e36f1
 AU-SA-EYR    3 spots   241 bytes  v5720a6
 AU-WA-MR    32 spots  1805 bytes  vd0d6b0
-AU-WA-PER   20 spots  1012 bytes  v39673a
-AU-WA-NW     5 spots   396 bytes  v841fc6
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+AU-WA-PER   20 spots  1012 bytes  v8f31fe
+AU-WA-NW     5 spots   397 bytes  v4204fc
 AU-WA-GAS    3 spots   230 bytes  v16342d
-NZ-NTL      14 spots   778 bytes  v50cd1f
+NZ-NTL      14 spots   778 bytes  v7b1595
 NZ-AKL       9 spots   547 bytes  v4fc862
 NZ-RAG       5 spots   338 bytes  vf6f1e5
 NZ-TAR       7 spots   459 bytes  v44428e
@@ -120,7 +122,7 @@ ID-BAL-BUK  16 spots   756 bytes  v8c0121
 ID-BAL-W    18 spots   821 bytes  veec375
 ID-BAL-E    12 spots   617 bytes  vb9d72f
 ID-JAV-E     7 spots   392 bytes  v7e55a5
-ID-JAV-W     7 spots   420 bytes  vf602b0
+ID-JAV-W     7 spots   420 bytes  v14e133
 ID-LOM      14 spots   648 bytes  vf39e15
 ID-SBW       9 spots   444 bytes  v3e5455
 ID-SMB       2 spots   184 bytes  vd8713c
@@ -132,11 +134,20 @@ PH-SIA       8 spots   404 bytes  vde9da5
 PH-LUZ       5 spots   325 bytes  vf36cf2
 PH-EAS       2 spots   211 bytes  v5af1de
 LK-E         8 spots   417 bytes  vd1f5d9
-LK-S        11 spots   519 bytes  v031425
+LK-S        11 spots   521 bytes  v57edfd
 MV-NMA       6 spots   356 bytes  v75f10f
 MV-SMA       3 spots   267 bytes  v7f3090
 MV-SOU       2 spots   239 bytes  vf90716
 MV-CEN       1 spots   163 bytes  vdb3487
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 JP-CHI       8 spots   490 bytes  vd0eee6
 JP-SHO       9 spots   465 bytes  v25b55c
 JP-IZU       4 spots   308 bytes  v660a3c
@@ -172,11 +183,11 @@ MG-ALL       3 spots   225 bytes  v6952f6
 RE-ALL       8 spots   463 bytes  vf1b4bd
 MU-ALL       3 spots   261 bytes  v0c8dae
 CV-ALL       3 spots   277 bytes  vb954b7
-FR-PBA      24 spots  1073 bytes  v0458a6
+FR-PBA      24 spots  1077 bytes  v451dc8
 FR-HOS      16 spots   799 bytes  v511a63
 FR-GIR      18 spots   905 bytes  v32bee8
 FR-VEN      12 spots   698 bytes  v076903
-FR-BRE      15 spots   759 bytes  vd2cc9f
+FR-BRE      15 spots   760 bytes  vbed782
 ES-PV       26 spots  1099 bytes  v696ec3
 ES-CAN      14 spots   610 bytes  vb6375a
 ES-AST      14 spots   635 bytes  v7b77cd
@@ -184,7 +195,7 @@ ES-GAL      18 spots   832 bytes  v97926a
 ES-AND      15 spots   752 bytes  v626de8
 ES-CN-E     11 spots   653 bytes  v0ed856
 ES-CN-W     17 spots   902 bytes  ve83976
-PT-NOR      19 spots   855 bytes  ve9d55a
+PT-NOR      19 spots   856 bytes  v2cd7d1
 PT-CEN      20 spots   947 bytes  ve41cd2
 PT-PEN      12 spots   599 bytes  v54e8ed
 PT-ERI      11 spots   559 bytes  v58a955
@@ -196,10 +207,15 @@ GB-CON      28 spots  1248 bytes  v21faa7
 GB-DEV       9 spots   540 bytes  v9b5a90
 GB-SOU       3 spots   328 bytes  v68a672
 GB-WAL      21 spots  1070 bytes  v143808
-GB-SCO      21 spots  1049 bytes  v0bfee1
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+GB-SCO      21 spots  1048 bytes  v4ac0c5
 GB-NE       25 spots  1095 bytes  va72e90
 GB-NIR       9 spots   562 bytes  vb0fe7e
-IE-NW        9 spots   623 bytes  v79a3df
+IE-NW        9 spots   624 bytes  v28e182
 IE-SW       12 spots   652 bytes  v306890
 IE-SE       10 spots   612 bytes  ve7801f
 NO-S         3 spots   332 bytes  vbfeede
@@ -213,6 +229,8 @@ IS-ALL       3 spots   263 bytes  v57f496
 warning: BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
 warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
+warning: JP-CHI: kept the previous version
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-212 regions, 2494 spots, 0 errors, 5 warnings
+ERROR: JP-CHI: Overpass unavailable for region JP-CHI
+212 regions, 2494 spots, 1 errors, 6 warnings
