@@ -1,12 +1,12 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 06:21 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 11:48 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
 - Puertos nuevos: 263 (imi 10, jma 9, linz 20, noaa 57, ticon 167); más los 3 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 152 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 56.
-- Picos con puerto: 1772 de 2436.
+- Picos con puerto: 1773 de 2437.
 - Archivos: 6575, 17.7 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
@@ -1003,9 +1003,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 - Descartadas: `ticon-8bef32` 66 km, cruza 28 km de tierra; `ticon-6b6562` 70 km, cruza 68 km de tierra; `ticon-0ccd99` 92 km, cruza 24 km de tierra
 
-### ID-JAV-W — Java occidental (6 picos)
+### ID-JAV-W — Java occidental (7 picos)
 
-- `ticon-e6afd5` TICON-3 7.752S 109.017E (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 42–57 km, radio 68 km
+- `ticon-e6afd5` TICON-3 7.752S 109.017E (gesla.noaa) — TICON-3, cruzando tierra: 3 picos a 42–58 km, radio 69 km
 - Sin puerto (Open-Meteo): CIMAJA, KARANG HAWU, OMBAK TUJUH, SAWARNA
 
 ### ID-LOM — Lombok (14 picos)
@@ -1079,10 +1079,9 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### JP-CHI — Chiba (8 picos)
 
-- `ticon-56fc43` TICON-3 35.745N 140.858E (gesla.bom) — TICON-3, misma costa: 4 picos a 59–77 km, radio 88 km
-- `jma-cs` 銚子漁港 (JMA CS) — oficial, misma costa: 3 picos a 43–59 km, radio 70 km (niveles 1,3)
-- `jma-zf` 勝浦 (JMA ZF) — oficial, cruzando tierra: 1 picos a 13–13 km, radio 24 km
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): OHARA → jma-zf, ONJUKU → jma-zf, TSURIGASAKI → ticon-56fc43, HASUNUMA → ticon-56fc43, KATAKAI → ticon-56fc43
+- `ticon-56fc43` TICON-3 35.745N 140.858E (gesla.bom) — TICON-3, misma costa: 5 picos a 59–77 km, radio 88 km
+- `jma-zf` 勝浦 (JMA ZF) — oficial, cruzando tierra: 3 picos a 13–51 km, radio 62 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): TSURIGASAKI → jma-zf, SHIDASHITA → jma-zf, ICHINOMIYA → jma-zf, OHARA → jma-zf, ONJUKU → jma-zf, HASUNUMA → ticon-56fc43, KATAKAI → ticon-56fc43
 - Descartadas: `ticon-a9d86d` 12 km, fuera por el tope de 3 puertos (nivel 4); `jma-tt` 27 km, fuera por el tope de 3 puertos (nivel 3); `jma-cb` 32 km, fuera por el tope de 3 puertos (nivel 3); `jma-mr` 33 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### JP-SHO — Shonan (9 picos)
@@ -1429,18 +1428,18 @@ Sin puerto: el reloj usa `sea_level_height_msl` de Open-Meteo.
 
 ### IE-NW — Donegal Sligo y Mayo (9 picos)
 
-- `imi-killybegs` Killybegs — oficial, misma costa: 4 picos a 14–19 km, radio 30 km
+- `imi-killybegs` Killybegs — oficial, misma costa: 4 picos a 15–19 km, radio 30 km
 - `imi-sligo` Sligo — oficial, misma costa: 4 picos a 4.4–36 km, radio 46 km (niveles 1,3)
 - `imi-achill-island` Achill Island (modelado) — oficial, misma costa: 1 picos a 4.0–4.0 km, radio 15 km
-- Descartadas: `ticon-c46c58` 4.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-a7e19b` 4.5 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8f786f` 14 km, fuera por el tope de 3 puertos (nivel 2); `imi-clare-island` 22 km, fuera por el tope de 3 puertos (nivel 1)
+- Descartadas: `ticon-c46c58` 4.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-a7e19b` 4.5 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8f786f` 15 km, fuera por el tope de 3 puertos (nivel 2); `imi-clare-island` 22 km, fuera por el tope de 3 puertos (nivel 1)
 
 ### IE-SW — Clare y Kerry (12 picos)
 
 - `imi-inishmore` Inishmore — oficial, misma costa: 5 picos a 20–34 km, radio 44 km (niveles 1,3)
-- `imi-fenit` Fenit — oficial, misma costa: 4 picos a 7.8–30 km, radio 40 km (niveles 1,3)
+- `imi-fenit` Fenit — oficial, misma costa: 4 picos a 7.2–30 km, radio 40 km (niveles 1,3)
 - `imi-dingle` Dingle — oficial, misma costa: 3 picos a 5.4–24 km, radio 35 km (niveles 1,3)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): ROSSBEIGH → imi-fenit
-- Descartadas: `imi-lahinch` 3.7 km, fuera por el tope de 3 puertos (nivel 3); `ticon-2bef8b` 5.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-cff91b` 7.9 km, fuera por el tope de 3 puertos (nivel 4); `imi-carrigaholt` 9.3 km, fuera por el tope de 3 puertos (nivel 1)
+- Descartadas: `imi-lahinch` 3.7 km, fuera por el tope de 3 puertos (nivel 3); `ticon-2bef8b` 5.4 km, fuera por el tope de 3 puertos (nivel 4); `ticon-cff91b` 7.3 km, fuera por el tope de 3 puertos (nivel 4); `imi-carrigaholt` 9.3 km, fuera por el tope de 3 puertos (nivel 1)
 
 ### IE-SE — Waterford y Cork (10 picos)
 

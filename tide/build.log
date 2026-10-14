@@ -1,4 +1,3 @@
-TICON-3: downloading https://download.pangaea.de/dataset/951610/files/TICON_3.zip
 NOAA: 1260 harmonic stations
 JMA: 239 stations
 IMI: variable Water_Level, attributes {"": "", "actual_range": "-0.04, 5.79", "ioos_category": "Sea Level", "long_name": "sea surface height above local LAT", "units": "metres"}; time coverage 2026-01-01T00:00:00Z .. 2029-01-01T00:20:00Z
@@ -6,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 97 s
+catalogs: 3902 stations in 56 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -278,7 +277,4 @@ pass 1: 263 ports for 152 regions
   ticon-f1b139     ticon    45.. 260 cm  TICON-3 14.300N 91.917W (gesla.usgs)
   ticon-c9798b     ticon    41.. 288 cm  TICON-3 28.047N 16.718W (gesla.ispra)
   ticon-c17f38     ticon    34.. 159 cm  TICON-3 4.183N 73.517E (gesla.uhslc)
-removing tide/linz-dunedin (no region uses it)
-removing tide/noaa-8775870 (no region uses it)
-removing tide/ticon-42b1f5 (no region uses it)
-done: 263 ports, 152 regions with ports, 1772/2436 spots, 6575 files 17.7 MB, 488 s
+done: 263 ports, 152 regions with ports, 1773/2437 spots, 6575 files 17.7 MB, 417 s
