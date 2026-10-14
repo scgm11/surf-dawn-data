@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 FERNANDINA,30.6700,-81.4390,B,K,local,,Amelia Island
 HUGUENOT,30.4260,-81.4130,B,K,local,,Jacksonville
-THE POLES,30.3850,-81.4035,B,K,local,,Mayport
+THE POLES,30.3850,-81.4035,B,K,local,facing=90,Mayport; orientación a mano (la calculada miraba a otra costa)
 HANNA PARK,30.3735,-81.4020,B,K,local,,Jacksonville
 ATLANTIC BEACH,30.3340,-81.3980,B,K,local,,
 NEPTUNE BEACH,30.3130,-81.3955,B,K,local,,

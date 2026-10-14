@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 PALM BEACH,-33.5985,151.3290,B,K,local,,
-WHALE BEACH,-33.6120,151.3290,B,K,local,,
+WHALE BEACH,-33.6120,151.3290,B,K,local,facing=100,orientación a mano (la calculada miraba a otra costa)
 AVALON,-33.6335,151.3345,B,K,local,,
 BILGOLA,-33.6410,151.3340,B,K,local,,
 NEWPORT,-33.6535,151.3290,B,K,local,,

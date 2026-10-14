@@ -4,7 +4,7 @@ DUCK,36.1640,-75.7480,B,K,local,,Outer Banks
 KITTY HAWK PIER,36.0650,-75.6950,B,L,local,,
 AVALON PIER,36.0270,-75.6640,B,L,local,,Kill Devil Hills
 JENNETTE'S PIER,35.9125,-75.5960,B,K,local,,Nags Head
-OREGON INLET,35.7790,-75.5290,B,L,local,,
+OREGON INLET,35.7790,-75.5290,B,L,local,facing=100,orientación a mano (la calculada miraba a otra costa)
 RODANTHE PIER,35.6003,-75.4660,B,L,local,,
 AVON PIER,35.3490,-75.5020,B,L,local,,
 HATTERAS LIGHT,35.2490,-75.5260,B,K,local,top,Buxton

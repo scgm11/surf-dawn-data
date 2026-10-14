@@ -4,7 +4,7 @@ ARRAWARRA,-30.0690,153.2050,P,L,local,,Arrawarra Headland
 WOOLGOOLGA,-30.1060,153.2040,P,K,local,,
 EMERALD BEACH,-30.1870,153.1910,B,L,local,,
 SAPPHIRE BEACH,-30.2150,153.1820,B,L,local,,
-MOONEE BEACH,-30.2400,153.1730,B,L,local,,
+MOONEE BEACH,-30.2400,153.1730,B,L,local,facing=100,orientación a mano (la calculada miraba a otra costa)
 DIGGERS BEACH,-30.2880,153.1495,B,K,local,,Coffs Harbour
 PARK BEACH,-30.2965,153.1490,B,K,local,,Coffs Harbour
 SAWTELL,-30.3840,153.1040,B,K,local,,

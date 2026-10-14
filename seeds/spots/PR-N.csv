@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 MAR CHIQUITA,18.4880,-66.5240,R,L,local,,Manatí; posición aproximada
 LOS TUBOS,18.4900,-66.4500,R,L,local,,Vega Baja/Manatí; posición aproximada
 PUERTO NUEVO,18.4910,-66.3950,B,L,local,,Vega Baja; posición aproximada
-CERRO GORDO,18.4900,-66.3400,B,L,local,,Vega Alta; posición aproximada
+CERRO GORDO,18.4900,-66.3400,B,L,local,facing=5,Vega Alta; posición aproximada; orientación a mano (la calculada miraba a otra costa)
 PINE GROVE,18.4490,-66.0030,B,L,local,,Isla Verde/Carolina; posición aproximada
 PUNTA LAS MARIAS,18.4554,-66.0410,R,L,local,,San Juan; entre Ocean Park e Isla Verde
 OCEAN PARK,18.4582,-66.0560,B,K,local,,San Juan

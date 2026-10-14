@@ -9,5 +9,5 @@ BUD BUD,46.3950,-1.5200,B,L,local,,Longeville-sur-Mer; posicion aproximada
 LA TRANCHE,46.3400,-1.4350,B,K,local,,La Tranche-sur-Mer
 VERT BOIS,45.9000,-1.3400,B,L,local,,Oleron; posicion aproximada
 GATSEAU,45.8300,-1.2480,B,L,local,,Oleron; Saint-Trojan
-LA GRANDE COTE,45.6700,-1.1900,B,L,local,,Saint-Palais-La Palmyre; posicion aproximada
+LA GRANDE COTE,45.6700,-1.1900,B,L,local,facing=250,Saint-Palais-La Palmyre; posicion aproximada; orientación a mano (la calculada miraba a otra costa)
 PONTAILLAC,45.6270,-1.0510,B,K,local,,Royan

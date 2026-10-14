@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-SUMMERLAND,-38.5080,145.1435,B,L,local,,Phillip Island
+SUMMERLAND,-38.5080,145.1435,B,L,local,facing=210,Phillip Island; orientación a mano (la calculada miraba a otra costa)
 KITTY MILLER BAY,-38.5040,145.1840,B,L,local,,Phillip Island
 FLYNNS BEACH,-38.5110,145.2120,B,L,local,,Phillip Island
 FOREST CAVES,-38.5320,145.2380,B,L,local,,Phillip Island

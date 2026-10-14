@@ -10,6 +10,6 @@ SOMO,43.4580,-3.7340,B,K,local,top,
 LOREDO,43.4660,-3.7050,B,K,local,,
 GALIZANO,43.4780,-3.6580,B,L,local,,posicion aproximada
 LANGRE,43.4770,-3.6350,B,L,local,,posicion aproximada
-JOYEL,43.4760,-3.5890,B,L,local,,Arnuero; posicion aproximada
+JOYEL,43.4760,-3.5890,B,L,local,facing=345,Arnuero; posicion aproximada; orientación a mano (la calculada miraba a otra costa)
 TRENGANDIN,43.4890,-3.5300,B,L,local,,Noja; posicion aproximada
 BERRIA,43.4560,-3.4640,B,L,local,,Santoña; posicion aproximada

@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 HOBUCK,48.2990,-124.6730,B,L,local,,Neah Bay
 RIALTO,47.9215,-124.6400,B,K,local,,La Push
 SECOND BEACH,47.8770,-124.6385,B,K,local,,La Push
-WESTPORT JETTY,46.9100,-124.1400,B,L,local,,
+WESTPORT JETTY,46.9100,-124.1400,B,L,local,facing=265,orientación a mano (la calculada miraba a otra costa)
 WESTPORT,46.8950,-124.1200,B,K,local,top,
 GRAYLAND,46.7950,-124.1070,B,L,local,,
 LONG BEACH,46.3400,-124.0640,B,K,local,,

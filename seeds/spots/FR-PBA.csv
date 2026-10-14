@@ -14,7 +14,7 @@ ILBARRITZ,43.4620,-1.5790,B,K,local,,
 COTE DES BASQUES,43.4780,-1.5710,B,K,local,top,Biarritz; longboard
 MILADY,43.4700,-1.5660,B,K,local,,Biarritz
 GRANDE PLAGE,43.4850,-1.5620,B,K,local,top facing=300,Biarritz; orientación a mano (la calculada miraba a la laguna o la bahía)
-MIRAMAR,43.4905,-1.5585,B,K,local,,Biarritz
+MIRAMAR,43.4905,-1.5585,B,K,local,facing=300,Biarritz; orientación a mano (la calculada miraba a otra costa)
 CHAMBRE D'AMOUR,43.5005,-1.5560,B,K,local,,Anglet
 LES CORSAIRES,43.5030,-1.5540,B,K,local,,Anglet
 LA MADRAGUE,43.5055,-1.5520,B,K,local,,Anglet

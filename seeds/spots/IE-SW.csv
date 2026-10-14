@@ -5,7 +5,7 @@ BANNA,52.3338,-9.8386,B,K,osm:way/57734398,,"Banna Strand, Kerry; posición OSM"
 STRADBALLY,52.2750,-10.0400,B,L,local,,Brandon Bay; posicion aproximada
 INCH,52.1380,-10.0200,B,L,local,,Kerry; Inch Strand; posicion aproximada
 VENTRY,52.1290,-10.3550,B,L,local,,Dingle; posicion aproximada
-ROSSBEIGH,52.0780,-9.9350,B,L,local,,Kerry; posicion aproximada
+ROSSBEIGH,52.0780,-9.9350,B,L,local,facing=270,Kerry; posicion aproximada; orientación a mano (la calculada miraba a otra costa)
 SPANISH POINT,52.8510,-9.4410,B,K,local,,Clare
 LAHINCH,52.9330,-9.3480,B,K,local,top,Clare
 FANORE,53.1040,-9.3040,B,L,local,,Clare; posicion aproximada

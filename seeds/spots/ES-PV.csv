@@ -6,7 +6,7 @@ ZARAUTZ,43.2885,-2.1700,B,K,local,top,
 GAZTETAPE,43.2985,-2.1930,B,L,local,,Getaria; posicion aproximada
 SANTIAGO,43.3005,-2.2515,B,L,local,,Zumaia; posicion aproximada
 ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
-DEBA,43.3010,-2.3560,B,K,local,,
+DEBA,43.3010,-2.3560,B,K,local,facing=10,orientación a mano (la calculada miraba a otra costa)
 SATURRARAN,43.3170,-2.3790,B,K,local,,Mutriku
 KARRASPIO,43.3628,-2.4945,B,K,osm:way/652032389,,"Mendexa, frente a San Nicolas; posición OSM"
 EA,43.3780,-2.5890,B,L,local,,posicion aproximada
