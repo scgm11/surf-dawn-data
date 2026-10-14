@@ -3,6 +3,11 @@ name: Semillas fuera de la costa
 # 2,5 km de la costa) y las mueve al lugar con ese nombre que está sobre la costa
 # (tools/resolve_seeds.py). Deja seeds/resolve.log con cada cambio y lo que quedó sin resolver.
 on:
+  push:
+    branches: [zonas-mundo]
+    paths:
+      - "tools/resolve_seeds.py"
+      - ".github/workflows/resolve.yml"
   workflow_dispatch:
     inputs:
       regions:
