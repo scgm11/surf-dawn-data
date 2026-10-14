@@ -13,7 +13,7 @@ BR-RJ       17 spots   779 bytes  vb3d071
 BR-RJL      20 spots   959 bytes  v413cfe
 BR-ES       19 spots   914 bytes  v00dc0c
 BR-BA       21 spots   940 bytes  vbc0ade
-BR-NE-CE    12 spots   622 bytes  veaa0df
+BR-NE-CE    13 spots   657 bytes  v6a5287
 BR-NE-RN    13 spots   627 bytes  v09cd67
 BR-NE-PE    14 spots   703 bytes  vc33902
 BR-NOR       5 spots   366 bytes  vb99b41
@@ -120,7 +120,9 @@ ID-BAL-BUK  16 spots   756 bytes  v8c0121
 ID-BAL-W    18 spots   821 bytes  veec375
 ID-BAL-E    12 spots   617 bytes  vb9d72f
 ID-JAV-E     7 spots   392 bytes  v7e55a5
-ID-JAV-W     6 spots   384 bytes  v32a9e3
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+ID-JAV-W     7 spots   420 bytes  vf602b0
 ID-LOM      14 spots   648 bytes  vf39e15
 ID-SBW       9 spots   444 bytes  v3e5455
 ID-SMB       2 spots   184 bytes  vd8713c
@@ -147,7 +149,8 @@ TW-E         4 spots   279 bytes  v87b437
 TW-NE        6 spots   422 bytes  vedab9f
 IN-W         3 spots   218 bytes  v0ccc16
 IN-E         3 spots   239 bytes  v7ee93f
-VN-ALL       4 spots   289 bytes  vf15dbc
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+VN-ALL       5 spots   323 bytes  v79432b
 KR-ALL       6 spots   368 bytes  v143473
 CN-HAI       2 spots   184 bytes  v5118a4
 ZA-WC-CPT   20 spots   951 bytes  va843f4
@@ -177,7 +180,8 @@ FR-HOS      16 spots   799 bytes  v511a63
 FR-GIR      18 spots   905 bytes  v32bee8
 FR-VEN      12 spots   698 bytes  v076903
 FR-BRE      15 spots   759 bytes  vd2cc9f
-ES-PV       26 spots  1099 bytes  vd620be
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+ES-PV       26 spots  1099 bytes  v696ec3
 ES-CAN      14 spots   610 bytes  vb6375a
 ES-AST      14 spots   635 bytes  v7b77cd
 ES-GAL      18 spots   832 bytes  v97926a
@@ -189,18 +193,26 @@ PT-CEN      20 spots   947 bytes  ve41cd2
 PT-PEN      12 spots   599 bytes  v54e8ed
 PT-ERI      11 spots   559 bytes  v58a955
 PT-LIS      15 spots   696 bytes  v385f37
-PT-ALG      18 spots   844 bytes  ved791b
-PT-AZO       7 spots   486 bytes  v552b68
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+PT-ALG      18 spots   845 bytes  v86e38a
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+PT-AZO       7 spots   485 bytes  v24419b
 PT-MAD       8 spots   431 bytes  v7965a5
 GB-CON      28 spots  1248 bytes  v21faa7
 GB-DEV       9 spots   540 bytes  v9b5a90
 GB-SOU       3 spots   328 bytes  v68a672
-GB-WAL      21 spots  1070 bytes  v0f0b5c
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+GB-WAL      21 spots  1070 bytes  v143808
 GB-SCO      21 spots  1049 bytes  v0bfee1
 GB-NE       25 spots  1095 bytes  va72e90
 GB-NIR       9 spots   562 bytes  vb0fe7e
-IE-NW        9 spots   624 bytes  v57e79c
-IE-SW       12 spots   652 bytes  v873439
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+IE-NW        9 spots   623 bytes  v79a3df
+IE-SW       12 spots   652 bytes  v306890
 IE-SE       10 spots   612 bytes  ve7801f
 NO-S         3 spots   332 bytes  vbfeede
 NO-N         3 spots   296 bytes  v47a59e
@@ -215,4 +227,4 @@ warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-212 regions, 2493 spots, 0 errors, 5 warnings
+212 regions, 2496 spots, 0 errors, 5 warnings

@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-212 regiones, 2493 picos. Errores: 0. Avisos: 5.
+212 regiones, 2496 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
@@ -29,7 +29,7 @@
 | BR-RJL | 20 | 959 | ncep_gfswave025 | gfs_seamless | 1 | 594 m | 0 |
 | BR-ES | 19 | 914 | ncep_gfswave025 | gfs_seamless | 0 | 640 m | 5 |
 | BR-BA | 21 | 940 | ncep_gfswave025 | gfs_seamless | 1 | 755 m | 0 |
-| BR-NE-CE | 12 | 622 | ncep_gfswave016 | gfs_seamless | 2 | 908 m | 0 |
+| BR-NE-CE | 13 | 657 | ncep_gfswave016 | gfs_seamless | 2 | 859 m | 0 |
 | BR-NE-RN | 13 | 627 | ncep_gfswave016 | gfs_seamless | 0 | 478 m | 0 |
 | BR-NE-PE | 14 | 703 | ncep_gfswave016 | gfs_seamless | 1 | 506 m | 0 |
 | BR-NOR | 5 | 366 | ncep_gfswave016 | gfs_seamless | 1 | 483 m | 0 |
@@ -136,7 +136,7 @@
 | ID-BAL-W | 18 | 821 | ncep_gfswave016 | gfs_seamless | 1 | 249 m | 0 |
 | ID-BAL-E | 12 | 617 | ncep_gfswave016 | gfs_seamless | 1 | 883 m | 0 |
 | ID-JAV-E | 7 | 392 | ncep_gfswave016 | gfs_seamless | 0 | 560 m | 0 |
-| ID-JAV-W | 6 | 384 | ncep_gfswave016 | gfs_seamless | 1 | 1206 m | 0 |
+| ID-JAV-W | 7 | 420 | ncep_gfswave016 | gfs_seamless | 1 | 1165 m | 0 |
 | ID-LOM | 14 | 648 | ncep_gfswave016 | gfs_seamless | 1 | 467 m | 0 |
 | ID-SBW | 9 | 444 | ncep_gfswave016 | gfs_seamless | 0 | 665 m | 0 |
 | ID-SMB | 2 | 184 | ncep_gfswave016 | gfs_seamless | 0 | 993 m | 0 |
@@ -163,7 +163,7 @@
 | TW-NE | 6 | 422 | ncep_gfswave016 | gfs_seamless | 2 | 604 m | 0 |
 | IN-W | 3 | 218 | ncep_gfswave016 | gfs_seamless | 0 | 617 m | 0 |
 | IN-E | 3 | 239 | ncep_gfswave016 | gfs_seamless | 0 | 474 m | 0 |
-| VN-ALL | 4 | 289 | ncep_gfswave016 | gfs_seamless | 1 | 720 m | 0 |
+| VN-ALL | 5 | 323 | ncep_gfswave016 | gfs_seamless | 1 | 582 m | 0 |
 | KR-ALL | 6 | 368 | ncep_gfswave016 | gfs_seamless | 1 | 105 m | 0 |
 | CN-HAI | 2 | 184 | ncep_gfswave016 | gfs_seamless | 0 | 48 m | 0 |
 | ZA-WC-CPT | 20 | 951 | ncep_gfswave025 | gfs_seamless | 1 | 446 m | 2 |
@@ -193,7 +193,7 @@
 | FR-GIR | 18 | 905 | ncep_gfswave016 | gfs_seamless | 3 | 617 m | 0 |
 | FR-VEN | 12 | 698 | ncep_gfswave016 | gfs_seamless | 3 | 488 m | 0 |
 | FR-BRE | 15 | 759 | ncep_gfswave016 | gfs_seamless | 3 | 666 m | 0 |
-| ES-PV | 26 | 1099 | ncep_gfswave016 | gfs_seamless | 3 | 261 m | 0 |
+| ES-PV | 26 | 1099 | ncep_gfswave016 | gfs_seamless | 3 | 258 m | 0 |
 | ES-CAN | 14 | 610 | ncep_gfswave016 | gfs_seamless | 1 | 616 m | 0 |
 | ES-AST | 14 | 635 | ncep_gfswave016 | gfs_seamless | 1 | 563 m | 0 |
 | ES-GAL | 18 | 832 | ncep_gfswave016 | gfs_seamless | 3 | 510 m | 0 |
@@ -205,18 +205,18 @@
 | PT-PEN | 12 | 599 | ncep_gfswave016 | gfs_seamless | 1 | 550 m | 0 |
 | PT-ERI | 11 | 559 | ncep_gfswave016 | gfs_seamless | 1 | 207 m | 0 |
 | PT-LIS | 15 | 696 | ncep_gfswave016 | gfs_seamless | 1 | 534 m | 0 |
-| PT-ALG | 18 | 844 | ncep_gfswave016 | gfs_seamless | 2 | 601 m | 0 |
-| PT-AZO | 7 | 486 | ncep_gfswave016 | gfs_seamless | 3 | 517 m | 0 |
+| PT-ALG | 18 | 845 | ncep_gfswave016 | gfs_seamless | 2 | 600 m | 0 |
+| PT-AZO | 7 | 485 | ncep_gfswave016 | gfs_seamless | 3 | 645 m | 0 |
 | PT-MAD | 8 | 431 | ncep_gfswave016 | gfs_seamless | 0 | 440 m | 0 |
 | GB-CON | 28 | 1248 | ncep_gfswave016 | gfs_seamless | 3 | 267 m | 0 |
 | GB-DEV | 9 | 540 | ncep_gfswave016 | gfs_seamless | 3 | 217 m | 0 |
 | GB-SOU | 3 | 328 | ncep_gfswave016 | gfs_seamless | 2 | 790 m | 0 |
-| GB-WAL | 21 | 1070 | ncep_gfswave025 | gfs_seamless | 3 | 451 m | 6 |
+| GB-WAL | 21 | 1070 | ncep_gfswave025 | gfs_seamless | 3 | 452 m | 6 |
 | GB-SCO | 21 | 1049 | ncep_gfswave025 | gfs_seamless | 3 | 628 m | 6 |
 | GB-NE | 25 | 1095 | ncep_gfswave025 | gfs_seamless | 1 | 404 m | 3 |
 | GB-NIR | 9 | 562 | ecmwf_wam | gfs_seamless | 3 | 433 m | 0 |
-| IE-NW | 9 | 624 | ncep_gfswave025 | gfs_seamless | 3 | 591 m | 4 |
-| IE-SW | 12 | 652 | ecmwf_wam | gfs_seamless | 3 | 218 m | 0 |
+| IE-NW | 9 | 623 | ncep_gfswave025 | gfs_seamless | 3 | 568 m | 4 |
+| IE-SW | 12 | 652 | ecmwf_wam | gfs_seamless | 3 | 199 m | 0 |
 | IE-SE | 10 | 612 | ncep_gfswave016 | gfs_seamless | 3 | 696 m | 0 |
 | NO-S | 3 | 332 | ncep_gfswave025 | gfs_seamless | 2 | 406 m | 1 |
 | NO-N | 3 | 296 | ncep_gfswave025 | gfs_seamless | 2 | 177 m | 1 |
