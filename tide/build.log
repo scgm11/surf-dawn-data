@@ -1,0 +1,281 @@
+NOAA: 1260 harmonic stations
+JMA: 239 stations
+IMI: variable Water_Level, attributes {"": "", "actual_range": "-0.04, 5.79", "ioos_category": "Sea Level", "long_name": "sea surface height above local LAT", "units": "metres"}; time coverage 2026-01-01T00:00:00Z .. 2029-01-01T00:20:00Z
+IMI: 38 stations (datum LAT)
+LINZ: 87 ports with CSV
+TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
+TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
+catalogs: 3902 stations in 39 s
+validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
+validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
+validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
+validación 8518750 NEW YORK (The Battery), NY: TICON gesla.uhslc a 0.05 km, 36981 días; RMS FES 3.7 GOT 3.7 perth3 3.7 OTIS 3.9
+validación 8724580 KEY WEST, FL: TICON gesla.uhslc a 0.30 km, 38697 días; RMS FES 1.6 GOT 1.6 perth3 1.6 OTIS 1.8
+validación 1910000 SUVA HARBOR, Viti Levu Island: TICON gesla.jodc_jma a 0.03 km, 1095 días; RMS FES 2.4 GOT 2.4 perth3 2.4 OTIS 2.5
+nodal corrections: FES
+pass 1: 263 ports for 151 regions
+  noaa-1611347     noaa    -19..  83 cm  Port Allen, Hanapepe Bay, HI
+  noaa-1611400     noaa    -15..  79 cm  NAWILIWILI, HI
+  noaa-1612340     noaa    -13..  82 cm  HONOLULU, HI
+  noaa-1612401     noaa    -13..  84 cm  Ford Island, Pearl Harbor, HI
+  noaa-1613198     noaa    -14..  88 cm  Kaunakakai, HI
+  noaa-1615680     noaa    -23..  93 cm  KAHULUI, HI
+  noaa-1617433     noaa    -15..  91 cm  Kawaihae, HI
+  noaa-1617760     noaa    -22..  99 cm  HILO, HI
+  noaa-1732417     noaa     -8..  33 cm  Papeete Harbor, Fare Ute Point
+  noaa-1778000     noaa     95.. 228 cm  APIA (Observatory), Upolu Island, AS
+  noaa-8459338     noaa    -26.. 126 cm  Block Island (Old Harbor), RI
+  noaa-8517137     noaa    -37.. 218 cm  Beach Channel (bridge), NY
+  noaa-8534720     noaa    -34.. 172 cm  Atlantic City (Ocean), NJ
+  noaa-8536110     noaa    -30.. 197 cm  Cape May, ferry terminal, NJ
+  noaa-8570280     noaa    -32.. 152 cm  OCEAN CITY (FISHING PIER), MD
+  noaa-8639207     noaa    -26.. 141 cm  Rudee Inlet, interior channel, VA
+  noaa-8658163     noaa    -37.. 173 cm  Wrightsville Beach, NC
+  noaa-8659897     noaa    -36.. 212 cm  Sunset Beach Pier, NC
+  noaa-8665530     noaa    -44.. 209 cm  CHARLESTON (Customhouse Wharf), SC
+  noaa-8668498     noaa    -46.. 242 cm  Fripps Inlet, Hunting Island Bridge, SC
+  noaa-8677344     noaa    -54.. 267 cm  St. Simons Light, GA
+  noaa-8721649     noaa    -31.. 155 cm  Cocoa Beach, FL
+  noaa-8723080     noaa    -25.. 112 cm  Haulover Pier, N. Miami Beach, FL
+  noaa-8729210     noaa    -31..  68 cm  Panama City Beach, FL
+  noaa-8731269     noaa    -30..  67 cm  Gulf State Park Pier, AL
+  noaa-8761724     noaa    -33..  56 cm  EAST POINT, GRAND ISLE, LA
+  noaa-8775870     noaa    -36..  78 cm  Corpus Christi, Bob Hall Pier, TX
+  noaa-8779770     noaa    -30..  66 cm  Port Isabel, TX
+  noaa-9410135     noaa    -62.. 240 cm  South San Diego Bay, CA
+  noaa-9410196     noaa    -58.. 224 cm  Mission Bay, Campland, CA
+  noaa-9410230     noaa    -57.. 218 cm  La Jolla (Scripps Institution Wharf), CA
+  noaa-9410580     noaa    -56.. 218 cm  Newport Bay Entrance, Corona del Mar, CA
+  noaa-9410660     noaa    -58.. 221 cm  LOS ANGELES (Outer Harbor), CA
+  noaa-9410678     noaa    -55.. 220 cm  Long Beach Fire Boat Pier, CA
+  noaa-9410840     noaa    -59.. 222 cm  Santa Monica, Municipal Pier, CA
+  noaa-9411270     noaa    -58.. 220 cm  Rincon Island, Mussel Shoals, CA
+  noaa-9411340     noaa    -59.. 220 cm  Santa Barbara, CA
+  noaa-9411406     noaa    -54.. 210 cm  Oil Platform Harvest, CA
+  noaa-9412110     noaa    -57.. 214 cm  PORT SAN LUIS, CA
+  noaa-9413450     noaa    -58.. 212 cm  MONTEREY, MONTEREY BAY, CA
+  noaa-9413631     noaa    -50.. 203 cm  Elkhorn, Elkhorn Slough, CA
+  noaa-9414131     noaa    -64.. 219 cm  Pillar Point Harbor, Half Moon Bay, CA
+  noaa-9414958     noaa    -28.. 161 cm  Bolinas Lagoon, CA
+  noaa-9415020     noaa    -65.. 226 cm  Point Reyes, CA
+  noaa-9416841     noaa    -66.. 232 cm  ARENA COVE, CA
+  noaa-9418817     noaa    -72.. 281 cm  Samoa, CA
+  noaa-9435380     noaa    -85.. 320 cm  Southbeach, OR
+  noaa-9640507     noaa    -37.. 338 cm  La Union (Cutuco)
+  noaa-9684403     noaa    -34.. 321 cm  Puntarenas
+  noaa-9753766     noaa    -15..  62 cm  Luquillo, PR
+  noaa-9754986     noaa    -14..  57 cm  Boca de Cangrejos, PR
+  noaa-9756567     noaa    -15..  74 cm  Boca del Cibuco, PR
+  noaa-9757809     noaa    -16..  70 cm  Arecibo, PR
+  noaa-9759394     noaa    -11..  54 cm  Mayaguez, PR
+  noaa-9759412     noaa    -16..  58 cm  Aguadilla, PR
+  noaa-9991474     noaa    -29.. 245 cm  La Libertad, Bahia de Santa Elena
+  noaa-9992401     noaa    -24.. 213 cm  San Cristobal, Galapagos islands
+  jma-on           jma     -20.. 151 cm  小名浜 (JMA ON)
+  jma-d2           jma     -21.. 156 cm  鹿島 (JMA D2)
+  jma-cs           jma     -19.. 160 cm  銚子漁港 (JMA CS)
+  jma-zf           jma     -24.. 165 cm  勝浦 (JMA ZF)
+  jma-ok           jma     -25.. 161 cm  岡田 (JMA OK)
+  jma-d8           jma     -20.. 161 cm  湘南港 (JMA D8)
+  jma-d6           jma     -25.. 181 cm  下田 (JMA D6)
+  jma-hw           jma     -23.. 204 cm  日和佐 (JMA HW)
+  jma-mg           jma     -37.. 221 cm  宮崎 (JMA MG)
+  imi-achill-island imi       9.. 467 cm  Achill Island (modelado)
+  imi-castletownbere imi      11.. 374 cm  Castletownbere
+  imi-dingle       imi       8.. 440 cm  Dingle
+  imi-dungarvan    imi       1.. 412 cm  Dungarvan (modelado)
+  imi-fenit        imi      15.. 532 cm  Fenit
+  imi-inishmore    imi      15.. 537 cm  Inishmore
+  imi-killybegs    imi      17.. 459 cm  Killybegs
+  imi-kinsale      imi      -2.. 396 cm  Kinsale (modelado)
+  imi-port-oriel   imi       8.. 564 cm  Port Oriel
+  imi-sligo        imi      16.. 465 cm  Sligo
+  linz-anawhata    linz     20.. 340 cm  Anawhata
+  linz-ben-gunn-wharf linz     10.. 259 cm  Ben Gunn Wharf
+  linz-castlepoint linz      0.. 180 cm  Castlepoint
+  linz-dargaville  linz     50.. 450 cm  Dargaville
+  linz-dog-island  linz     40.. 330 cm  Dog Island
+  linz-dunedin     linz     -9.. 240 cm  Dunedin
+  linz-gisborne    linz     40.. 220 cm  Gisborne
+  linz-huruhi-harbour linz     20.. 260 cm  Huruhi Harbour
+  linz-kaikoura    linz      0.. 190 cm  Kaikōura
+  linz-manu-bay    linz     30.. 379 cm  Manu Bay
+  linz-marsden-point linz     30.. 300 cm  Marsden Point
+  linz-moturiki-island linz     10.. 220 cm  Moturiki Island
+  linz-new-brighton-pier linz     20.. 259 cm  New Brighton Pier
+  linz-paratutae-island linz     20.. 360 cm  Paratutae Island
+  linz-port-taranaki linz     10.. 390 cm  Port Taranaki
+  linz-port-ohope-wharf linz      0.. 210 cm  Port Ōhope Wharf
+  linz-rangatira-point linz     10.. 200 cm  Rangatira Point
+  linz-spit-wharf  linz     20.. 210 cm  Spit Wharf
+  linz-wellington  linz     50.. 190 cm  Wellington
+  linz-westport    linz     30.. 380 cm  Westport
+  ticon-bfaae8     ticon    26.. 127 cm  TICON-3 32.056S 115.740E (gesla.noaa)
+  ticon-c39d93     ticon    43.. 256 cm  TICON-3 44.667N 63.583W (gesla.cmems)
+  ticon-7cfb7a     ticon    80.. 498 cm  TICON-3 49.150N 125.910W (gesla.noaa)
+  ticon-db052f     ticon    18..  95 cm  TICON-3 58.974N 5.730E (gesla.cmems)
+  ticon-4f62f3     ticon   102.. 663 cm  TICON-3 50.102N 5.542W (gesla.uhslc)
+  ticon-f96d3c     ticon    58.. 327 cm  TICON-3 32.867N 117.257W (gesla.usgs)
+  ticon-1fb951     ticon    71.. 532 cm  TICON-3 57.144N 2.080W (gesla.noaa)
+  ticon-48327e     ticon    35.. 288 cm  TICON-3 28.480N 16.240W (gesla.cmems)
+  ticon-a43379     ticon    63.. 474 cm  TICON-3 48.368N 124.617W (gesla.cmems)
+  ticon-afa9fb     ticon   104.. 373 cm  TICON-3 34.780S 138.481E (gesla.unam)
+  ticon-ae0728     ticon    63.. 527 cm  TICON-3 43.398N 1.673W (gesla.nwfwmd)
+  ticon-44917a     ticon    37.. 244 cm  TICON-3 61.934N 5.113E (gesla.uhslc)
+  ticon-9450da     ticon    50.. 232 cm  TICON-3 33.027S 71.627W (gesla.noaa)
+  ticon-67d63b     ticon    59.. 470 cm  TICON-3 43.367N 8.400W (gesla.usgs)
+  ticon-a3cf33     ticon    92.. 601 cm  TICON-3 45.568N 1.062W (gesla.bom)
+  ticon-9caabc     ticon    31.. 172 cm  TICON-3 41.283S 174.783E (gesla.noaa)
+  ticon-91c7f2     ticon    57.. 443 cm  TICON-3 42.238N 8.730W (gesla.noaa)
+  ticon-8ecb10     ticon    34.. 188 cm  TICON-3 36.009N 5.603W (gesla.noaa)
+  ticon-90ea2b     ticon    59.. 370 cm  TICON-3 67.292N 14.400E (gesla.usgs)
+  ticon-3eec34     ticon    22.. 147 cm  TICON-3 14.283S 170.683W (gesla.uhslc)
+  ticon-215748     ticon    29.. 145 cm  TICON-3 20.900N 156.467W (gesla.noaa)
+  ticon-c238b7     ticon    47.. 326 cm  TICON-3 28.147N 15.408W (gesla.cmems)
+  ticon-34de1f     ticon    30.. 142 cm  TICON-3 16.838N 99.903W (gesla.meds)
+  ticon-b7fd2a     ticon    52.. 431 cm  TICON-3 39.050S 174.033E (gesla.noaa)
+  ticon-f5d38f     ticon    51.. 250 cm  TICON-3 34.475S 150.910E (gesla.meds)
+  ticon-03a6be     ticon    51.. 247 cm  TICON-3 32.924S 151.789E (gesla.cmems)
+  ticon-cb76c0     ticon    84.. 339 cm  TICON-3 27.361S 153.172E (gesla.noaa)
+  ticon-67a479     ticon    95.. 585 cm  TICON-3 3.890N 77.062W (gesla.noaa)
+  ticon-48cda1     ticon    29.. 190 cm  TICON-3 42.877S 147.341E (gesla.noaa)
+  ticon-902798     ticon    49.. 228 cm  TICON-3 38.292S 144.614E (gesla.uhslc)
+  ticon-488f81     ticon    76.. 522 cm  TICON-3 50.510N 128.030W (gesla.uhslc)
+  ticon-b027ca     ticon    72.. 440 cm  TICON-3 58.441N 3.086W (gesla.meds)
+  ticon-a8dc55     ticon    89.. 406 cm  TICON-3 38.374S 145.223E (gesla.noaa)
+  ticon-92ede9     ticon    32.. 146 cm  TICON-3 28.776S 114.602E (gesla.uhslc)
+  ticon-9e0a4e     ticon    28.. 143 cm  TICON-3 33.323S 115.660E (gesla.noaa)
+  ticon-701a8e     ticon    80.. 632 cm  TICON-3 57.895N 5.158W (gesla.meds)
+  ticon-e0b462     ticon    77.. 255 cm  TICON-3 34.716S 135.870E (gesla.cco)
+  ticon-22ec01     ticon    62.. 434 cm  TICON-3 36.540N 6.283W (gesla.cmems)
+  ticon-f72d96     ticon    70.. 592 cm  TICON-3 47.644N 3.446W (gesla.jodc_jma)
+  ticon-2ebaf5     ticon    16.. 102 cm  TICON-3 20.935S 55.285E (gesla.noaa)
+  ticon-920ef6     ticon    58.. 489 cm  TICON-3 43.527N 1.515W (gesla.meds)
+  ticon-45502d     ticon    41.. 188 cm  TICON-3 15.667N 96.492W (gesla.noaa)
+  ticon-757122     ticon    60.. 243 cm  TICON-3 25.017S 47.925W (gesla.meds)
+  ticon-56fc43     ticon    33.. 209 cm  TICON-3 35.745N 140.858E (gesla.bom)
+  ticon-ea07a4     ticon    59.. 424 cm  TICON-3 43.345N 124.322W (gesla.uhslc)
+  ticon-00efc3     ticon    26.. 167 cm  TICON-3 42.549S 147.928E (gesla.cmems)
+  ticon-c4827f     ticon    79.. 536 cm  TICON-3 64.151N 21.940W (gesla.noaa)
+  ticon-66dd4f     ticon    11..  52 cm  TICON-3 43.546N 10.299E (gesla.rws)
+  ticon-ad634c     ticon   113.. 701 cm  TICON-3 45.853N 1.178W (gesla.meds)
+  ticon-2cdea6     ticon    14..  59 cm  TICON-3 42.094N 11.790E (gesla.bom)
+  ticon-e56f80     ticon    93.. 725 cm  TICON-3 46.007N 1.174W (gesla.noaa)
+  ticon-41bc98     ticon    36.. 155 cm  TICON-3 12.068S 77.167W (gesla.cmems)
+  ticon-fb0d01     ticon    33.. 223 cm  TICON-3 33.900S 18.433E (gesla.meds)
+  ticon-5da85d     ticon    53.. 409 cm  TICON-3 38.692N 9.417W (gesla.cmems)
+  ticon-86ec39     ticon    35.. 241 cm  TICON-3 33.960S 25.630E (gesla.usgs)
+  ticon-8d43eb     ticon    84.. 666 cm  TICON-3 54.490N 0.615W (gesla.uhslc)
+  ticon-e3d81c     ticon    29.. 209 cm  TICON-3 37.735N 25.672W (gesla.noaa)
+  ticon-cc4437     ticon    47.. 291 cm  TICON-3 13.583N 89.833W (gesla.jodc_jma)
+  ticon-809086     ticon    53.. 250 cm  TICON-3 33.968S 151.220E (gesla.meds)
+  ticon-3927f3     ticon    41.. 165 cm  TICON-3 38.351S 141.620E (gesla.mi_c)
+  ticon-789208     ticon   120.. 364 cm  TICON-3 52.462N 4.555E (gesla.uhslc)
+  ticon-5969a5     ticon    28.. 188 cm  TICON-3 25.155N 121.752E (gesla.noaa)
+  ticon-a75e0c     ticon    86.. 674 cm  TICON-3 47.025N 2.298W (gesla.usgs)
+  ticon-e5fdba     ticon    60.. 324 cm  TICON-3 31.850N 116.633W (gesla.noaa)
+  ticon-16f890     ticon  -651.. 632 cm  TICON-3 48.641N 2.028W (gesla.bodc)
+  ticon-f6d60a     ticon    51.. 375 cm  TICON-3 9.400N 84.167W (gesla.noaa)
+  ticon-acd761     ticon   105.. 671 cm  TICON-3 50.368N 4.185W (gesla.noaa)
+  ticon-dcec93     ticon    64.. 258 cm  TICON-3 28.537S 153.552E (gesla.noaa)
+  ticon-8ea705     ticon    57.. 228 cm  TICON-3 31.427S 152.911E (gesla.usgs)
+  ticon-2fe7b0     ticon    57.. 243 cm  TICON-3 29.429S 153.362E (gesla.cmems)
+  ticon-4a4b08     ticon    12..  57 cm  TICON-3 39.148N 8.309E (gesla.uhslc)
+  ticon-c0a455     ticon    51.. 248 cm  TICON-3 33.825S 151.258E (gesla.wsv)
+  ticon-448fcc     ticon    66.. 413 cm  TICON-3 68.213N 14.482E (gesla.uhslc)
+  ticon-9ab05d     ticon    47.. 160 cm  TICON-3 55.628N 6.190W (gesla.usgs)
+  ticon-cead8e     ticon  -482.. 517 cm  TICON-3 51.217N 4.117W (gesla.meds)
+  ticon-7b004f     ticon   122.. 865 cm  TICON-3 51.717N 5.050W (gesla.meds)
+  ticon-a03088     ticon   103.. 598 cm  TICON-3 52.017N 4.983W (gesla.usgs)
+  ticon-ec093c     ticon    98.. 341 cm  TICON-3 35.109S 138.467E (gesla.jodc_jma)
+  ticon-388f65     ticon   101.. 379 cm  TICON-3 50.608N 2.448W (gesla.noaa)
+  ticon-8e0567     ticon    49.. 261 cm  TICON-3 22.880N 109.908W (gesla.sfwmd)
+  ticon-d44c01     ticon    38.. 239 cm  TICON-3 5.083S 81.167W (gesla.meds)
+  ticon-513a8d     ticon    63.. 523 cm  TICON-3 43.357N 3.050W (gesla.meds)
+  ticon-f5f23b     ticon    53.. 316 cm  TICON-3 34.469N 120.682W (gesla.jodc_pahb)
+  ticon-5699c9     ticon    23.. 190 cm  TICON-3 21.140S 175.180W (gesla.jodc_jcg)
+  ticon-e27616     ticon    28.. 138 cm  TICON-3 31.826S 115.739E (gesla.meds)
+  ticon-2aab05     ticon    26.. 145 cm  TICON-3 4.190N 73.527E (gesla.uhslc)
+  ticon-e3c7ab     ticon    51.. 229 cm  TICON-3 34.907S 150.759E (gesla.meds)
+  ticon-393286     ticon    52.. 248 cm  TICON-3 33.551S 151.275E (gesla.cmems)
+  ticon-1c9970     ticon    34.. 257 cm  TICON-3 17.605S 177.438E (gesla.uhslc)
+  ticon-55de77     ticon    38.. 252 cm  TICON-3 4.582S 81.282W (gesla.cmems)
+  ticon-f58020     ticon    99.. 678 cm  TICON-3 49.918N 6.316W (gesla.cdwr)
+  ticon-c94350     ticon    42.. 201 cm  TICON-3 35.223N 75.635W (gesla.noaa)
+  ticon-2e5983     ticon    26.. 124 cm  TICON-3 32.601S 115.630E (gesla.noaa)
+  ticon-fc3571     ticon    23.. 183 cm  TICON-3 17.762S 168.293E (gesla.cmems)
+  ticon-3b2a68     ticon    47.. 183 cm  TICON-3 17.002S 72.108W (gesla.cmems)
+  ticon-bdc867     ticon    63.. 512 cm  TICON-3 43.558N 5.698W (gesla.uhslc)
+  ticon-1bb5de     ticon    67.. 300 cm  TICON-3 55.200N 6.667W (gesla.usgs)
+  ticon-233ae7     ticon    29.. 218 cm  TICON-3 18.132S 178.427E (gesla.cmems)
+  ticon-079795     ticon    48.. 228 cm  TICON-3 35.705S 150.178E (gesla.cmems)
+  ticon-07792e     ticon    47.. 272 cm  TICON-3 50.714N 1.875W (gesla.noaa)
+  ticon-c5c611     ticon    15..  54 cm  TICON-3 16.722S 151.032W (gesla.meds)
+  ticon-936e57     ticon    58.. 434 cm  TICON-3 37.132N 6.834W (gesla.uhslc)
+  ticon-b604d6     ticon    19..  86 cm  TICON-3 16.303N 61.072W (gesla.usgs)
+  ticon-dad966     ticon    39.. 152 cm  TICON-3 13.417S 76.133W (gesla.meds)
+  ticon-1b2d0f     ticon    63.. 293 cm  TICON-3 29.857N 81.263W (gesla.meds)
+  ticon-5dd235     ticon    60.. 273 cm  TICON-3 30.303S 153.146E (gesla.uhslc)
+  ticon-b3b22e     ticon    36.. 270 cm  TICON-3 24.452N 122.942E (gesla.meds)
+  ticon-9bc4f0     ticon    50.. 268 cm  TICON-3 23.198N 106.422W (gesla.rws)
+  ticon-ce6910     ticon    11..  58 cm  TICON-3 44.410N 8.925E (gesla.cmems)
+  ticon-6b84e3     ticon    37.. 181 cm  TICON-3 19.063N 104.298W (gesla.usgs)
+  ticon-b76b33     ticon    46.. 280 cm  TICON-3 13.917N 90.833W (gesla.uhslc)
+  ticon-a1343b     ticon    65.. 264 cm  TICON-3 27.967S 153.417E (gesla.noaa)
+  ticon-d1d551     ticon    58.. 421 cm  TICON-3 8.273N 82.860W (gesla.meds)
+  ticon-18a200     ticon    34.. 151 cm  TICON-3 16.755N 22.983W (gesla.refmar)
+  ticon-fd3ce7     ticon    28.. 144 cm  TICON-3 33.630S 115.394E (gesla.sfwmd)
+  ticon-9cf100     ticon    49.. 347 cm  TICON-3 28.500N 13.850W (gesla.noaa)
+  ticon-458133     ticon    68.. 499 cm  TICON-3 10.340N 107.072E (gesla.meds)
+  ticon-39e748     ticon    48.. 188 cm  TICON-3 18.467S 70.333W (gesla.uhslc)
+  ticon-4a3da2     ticon    55.. 418 cm  TICON-3 37.098N 8.668W (gesla.meds)
+  ticon-f5b09a     ticon    47.. 333 cm  TICON-3 12.973S 38.517W (gesla.cmems)
+  ticon-283bad     ticon    58.. 472 cm  TICON-3 43.463N 8.326W (gesla.meds)
+  ticon-c1874d     ticon    55.. 371 cm  TICON-3 3.717S 38.483W (gesla.cmems)
+  ticon-2559e1     ticon    31.. 182 cm  TICON-3 22.933S 43.133W (gesla.noaa)
+  ticon-5336d6     ticon    49.. 362 cm  TICON-3 28.950N 13.567W (gesla.uhslc)
+  ticon-e56019     ticon    99.. 557 cm  TICON-3 53.392N 6.068W (gesla.cmems)
+  ticon-0ccd99     ticon    87.. 393 cm  TICON-3 8.747S 115.212E (gesla.usgs)
+  ticon-ae29cb     ticon    48.. 319 cm  TICON-3 28.100N 15.400W (gesla.jodc_jcg)
+  ticon-42b1f5     ticon    35.. 258 cm  TICON-3 13.775N 109.255E (gesla.uhslc)
+  ticon-b849f8     ticon   132.. 946 cm  TICON-3 50.594N 4.834W (gesla.meds)
+  ticon-e6afd5     ticon    67.. 298 cm  TICON-3 7.752S 109.017E (gesla.noaa)
+  ticon-041ef0     ticon    30.. 188 cm  TICON-3 34.655N 129.478E (gesla.noaa)
+  ticon-71d7df     ticon    38.. 137 cm  TICON-3 21.320N 158.120W (gesla.meds)
+  ticon-27bb40     ticon    60.. 341 cm  TICON-3 9.478S 147.140E (gesla.uhslc)
+  ticon-73a14b     ticon    37.. 170 cm  TICON-3 10.650N 61.517W (gesla.meds)
+  ticon-a6ef88     ticon    56.. 429 cm  TICON-3 41.187N 8.704W (gesla.fmi)
+  ticon-eede5f     ticon    62.. 326 cm  TICON-3 33.450N 118.483W (gesla.bom)
+  ticon-4c1a6a     ticon    21.. 109 cm  TICON-3 14.678N 60.941W (gesla.fmi)
+  ticon-9c5cfc     ticon   170.. 570 cm  TICON-3 51.592N 3.555E (gesla.noaa)
+  ticon-293edc     ticon    50.. 373 cm  TICON-3 9.425N 84.172W (gesla.uhslc)
+  ticon-67b5b2     ticon    32.. 195 cm  TICON-3 38.650N 27.240W (gesla.cmems)
+  ticon-b63d75     ticon    26.. 120 cm  TICON-3 19.798N 70.702W (gesla.noaa)
+  ticon-de0584     ticon     2..   7 cm  TICON-3 20.868N 86.867W (gesla.smhi)
+  ticon-5b4329     ticon    60.. 416 cm  TICON-3 39.586N 9.074W (gesla.uhslc)
+  ticon-c8afda     ticon    26..  89 cm  TICON-3 11.235N 74.222W (gesla.noaa)
+  ticon-1af31e     ticon    97.. 303 cm  TICON-3 54.967N 8.666E (gesla.refmar)
+  ticon-f43039     ticon    75.. 465 cm  TICON-3 46.281N 124.046W (gesla.nhs)
+  ticon-0a453c     ticon    22.. 111 cm  TICON-3 20.153S 57.490E (gesla.noaa)
+  ticon-4bcc10     ticon    34.. 111 cm  TICON-3 57.117N 8.600E (gesla.refmar)
+  ticon-8f3726     ticon    47.. 162 cm  TICON-3 56.525N 8.115E (gesla.cmems)
+  ticon-440073     ticon    25.. 145 cm  TICON-3 28.936N 95.294W (gesla.noaa)
+  ticon-66c157     ticon   138.. 505 cm  TICON-3 44.211N 1.295W (gesla.noaa)
+  ticon-73effe     ticon    43.. 203 cm  TICON-3 15.753N 96.130W (gesla.noaa)
+  ticon-752b4c     ticon    36.. 186 cm  TICON-3 23.500S 45.117W (gesla.cmems)
+  ticon-930b55     ticon    44.. 232 cm  TICON-3 4.883N 1.750W (gesla.wsv)
+  ticon-7b330d     ticon    29.. 138 cm  TICON-3 17.940N 102.178W (gesla.jodc_jma)
+  ticon-a4a070     ticon   138.. 401 cm  TICON-3 52.205N 4.362E (gesla.cmems)
+  ticon-d6e282     ticon    19.. 123 cm  TICON-3 13.100N 59.617W (gesla.noaa)
+  ticon-406688     ticon    33.. 186 cm  TICON-3 38.533N 28.622W (gesla.noaa)
+  ticon-2b1454     ticon    50.. 321 cm  TICON-3 8.350S 34.950W (gesla.noaa)
+  ticon-e4bed3     ticon    86.. 610 cm  TICON-3 48.022N 4.538W (gesla.noaa)
+  ticon-f923c0     ticon    43.. 146 cm  TICON-3 20.790N 156.995W (gesla.meds)
+  ticon-cf2b1c     ticon    54.. 383 cm  TICON-3 4.817S 37.050W (gesla.cmems)
+  ticon-4c1497     ticon    47.. 320 cm  TICON-3 3.828S 32.403W (gesla.usgs)
+  ticon-10c275     ticon    58.. 275 cm  TICON-3 44.520N 64.000W (gesla.uhslc)
+  ticon-f1b139     ticon    45.. 260 cm  TICON-3 14.300N 91.917W (gesla.usgs)
+  ticon-c9798b     ticon    41.. 288 cm  TICON-3 28.047N 16.718W (gesla.ispra)
+  ticon-c17f38     ticon    34.. 159 cm  TICON-3 4.183N 73.517E (gesla.uhslc)
+removing tide/linz-sumner-head (no region uses it)
+done: 263 ports, 151 regions with ports, 1772/2441 spots, 6575 files 17.7 MB, 463 s
