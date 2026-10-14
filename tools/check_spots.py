@@ -50,6 +50,8 @@ FLIPPED = 135                   # a facing this far from its neighbours' and the
 WD = "https://query.wikidata.org/sparql"
 WD_KM = 6                       # Wikidata items looked at around a flagship spot
 WD_FAR_KM = 1.5                 # farther than this from the matching item: flagged
+OVERPASS_MIN = 25                # minutes of Overpass name searches per run (it is often busy)
+OVERPASS_UNTIL = [time.time() + OVERPASS_MIN * 60]
 UA = {"User-Agent": "surf-dawn-data/1.0 (https://github.com/scgm11/surf-dawn-data)",
       "Accept": "application/sparql-results+json"}
 
@@ -171,8 +173,9 @@ def check_flagship(code, s, cc):
     if not any(matches(i[0], names) for i in items):          # not in Wikidata: OpenStreetMap
         items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.nominatim(names, cc)
                  if geo.km((s[1], s[2]), (c["lat"], c["lon"])) <= WD_KM]
-    if not any(matches(i[0], names) for i in items):          # nor Nominatim: OSM features around it
-        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.named_near(s[1], s[2], names, WD_KM)]
+    if not any(matches(i[0], names) for i in items) and time.time() < OVERPASS_UNTIL[0]:
+        # nor Nominatim: OSM features around it (Overpass, when it answers: a time budget for the run)
+        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.named_near(s[1], s[2], names, WD_KM, tries=2)]
     best = None
     for label, lat, lon, qid in items:
         if matches(label, names):
@@ -262,6 +265,7 @@ def main():
         except (OSError, ValueError):
             pass
     else:
+        OVERPASS_UNTIL[0] = time.time() + OVERPASS_MIN * 60
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):

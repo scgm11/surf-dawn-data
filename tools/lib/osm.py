@@ -160,7 +160,7 @@ def nominatim(names, cc):
     return out
 
 
-def named_near(lat, lon, names, km):
+def named_near(lat, lon, names, km, tries=6):
     """OSM features named like one of the names (accents and case aside) within km of (lat, lon): beaches,
     bays, capes, places, surf spots, beach resorts, as candidates {lat, lon, name, kind, src}."""
     from .names import regex
@@ -172,7 +172,7 @@ def named_near(lat, lon, names, km):
          'nwr(around:{r},{la},{lo})["name"~"{rx}",i]["leisure"="beach_resort"];'
          ');out center tags;').format(r=int(km * 1000), la=lat, lo=lon, rx=rx)
     body = urllib.parse.urlencode({"data": q}).encode()
-    for attempt in range(6):
+    for attempt in range(tries):
         url = MIRRORS[attempt % len(MIRRORS)]
         try:
             req = urllib.request.Request(url, body, UA)
