@@ -9,8 +9,9 @@ validation/spots.json (docs/formatos.md):
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
 - §5.8 Flagship spots (`top` in the seeds): their position against Wikidata, a public source: the
-  nearest item within WD_KM whose name matches the spot's (tools/lib/names.py). Farther than
-  WD_FAR_KM is flagged; no item is "sin fuente" (to check by hand).
+  nearest item within WD_KM whose name matches the spot's (tools/lib/names.py); without one, against
+  OpenStreetMap (Nominatim, in the spot's country). Farther than WD_FAR_KM is flagged; with neither
+  it is "sin fuente" (to check by hand).
 
 Open-Meteo is asked once per wave grid cell (spots of a cell share their waves), several cells per
 request, paced well under the free limits. Usage: python3 tools/check_spots.py [--regions CODE ...]
@@ -28,7 +29,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from tools.lib import geo, openmeteo, seeds  # noqa: E402
+from tools.lib import geo, openmeteo, osm, seeds  # noqa: E402
 from tools.lib.names import matches, regex, variants  # noqa: E402
 
 ROOT = seeds.ROOT
@@ -158,11 +159,14 @@ def wikidata(lat, lon, names):
     return None
 
 
-def check_flagship(code, s):
+def check_flagship(code, s, cc):
     names = variants(s[0])
     items = wikidata(s[1], s[2], names)
     if items is None:
         return {"status": "error"}
+    if not any(matches(i[0], names) for i in items):          # not in Wikidata: OpenStreetMap
+        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.nominatim(names, cc)
+                 if geo.km((s[1], s[2]), (c["lat"], c["lon"])) <= WD_KM]
     best = None
     for label, lat, lon, qid in items:
         if matches(label, names):
@@ -233,7 +237,7 @@ def main():
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):
-                    c = check_flagship(z["id"], s)
+                    c = check_flagship(z["id"], s, z["c"])
                     c.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
                     result["flagship"].append(c)
                     print("  %s/%s: %s %s" % (z["id"], s[0], c["status"], c.get("km", "")))
@@ -262,8 +266,9 @@ def report(r, zs):
              DAYS, FORECAST, MIN_H, FACING_DEG, round(100 * NEVER), round(100 * NEIGHBOURS)),
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
-         "- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta %d km): "
-         "%d bien (a menos de %.1f km), %d lejos, %d sin ítem en Wikidata (revisar a mano), %d sin respuesta." % (
+         "- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta %d km; "
+         "si no tiene, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d sin fuente (revisar a mano), "
+         "%d sin respuesta." % (
              WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["sin fuente"], count["error"]),
          "- Open-Meteo: %d pedidos, ~%d llamadas de las 10.000 diarias gratuitas." % (
              r["open_meteo"]["requests"], r["open_meteo"]["calls"]), ""]
@@ -290,16 +295,19 @@ def report(r, zs):
                 "; ".join(f["why"])))
     else:
         L.append("Ninguno.")
-    L += ["", "## Emblemáticos lejos de su ítem de Wikidata", ""]
+    L += ["", "## Emblemáticos lejos de su ítem de Wikidata u OpenStreetMap", ""]
     far = [c for c in fl if c["status"] == "lejos"]
     if far:
         L += ["| Región | Pico | Distancia | Ítem |", "|---|---|---|---|"]
         for c in sorted(far, key=lambda c: -c["km"]):
-            L.append("| %s | %s | %.1f km | [%s](https://www.wikidata.org/wiki/%s) %s (%s, %s) |" % (
-                c["region"], c["spot"], c["km"], c["qid"], c["qid"], c["label"], c.get("wd_lat"), c.get("wd_lon")))
+            ref = c["qid"]
+            link = ("https://www.wikidata.org/wiki/%s" % ref if ref.startswith("Q")
+                    else "https://www.openstreetmap.org/%s" % ref.split(":", 1)[-1])
+            L.append("| %s | %s | %.1f km | [%s](%s) %s (%s, %s) |" % (
+                c["region"], c["spot"], c["km"], ref, link, c["label"], c.get("wd_lat"), c.get("wd_lon")))
     else:
         L.append("Ninguno.")
-    L += ["", "## Emblemáticos sin ítem en Wikidata (revisar a mano)", ""]
+    L += ["", "## Emblemáticos sin fuente en Wikidata ni OpenStreetMap (revisar a mano)", ""]
     nos = ["%s/%s" % (c["region"], c["spot"]) for c in fl if c["status"] == "sin fuente"]
     L.append(", ".join(nos) if nos else "Ninguno.")
     L += ["", "## Zonas", "", "| Región | Modelo | Altura media (mediana) | Olas de frente (mediana) |", "|---|---|---|---|"]
