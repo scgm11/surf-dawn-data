@@ -14,7 +14,7 @@
   },
   "AR-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.07,
+   "median_m": 1.08,
    "median_share": 0.97
   },
   "AU-NSW-MN": {
@@ -49,12 +49,12 @@
   },
   "AU-QLD-SC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.12,
+   "median_m": 1.13,
    "median_share": 1.0
   },
   "AU-SA-EYR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.43,
+   "median_m": 1.44,
    "median_share": 1.0
   },
   "AU-SA": {
@@ -90,7 +90,7 @@
   "AU-WA-MR": {
    "model": "ncep_gfswave025",
    "median_m": 3.09,
-   "median_share": 0.98
+   "median_share": 0.97
   },
   "AU-WA-NW": {
    "model": "ncep_gfswave025",
@@ -144,7 +144,7 @@
   },
   "BR-RJL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.07,
+   "median_m": 1.08,
    "median_share": 0.91
   },
   "BR-RS-SUL": {
@@ -174,7 +174,7 @@
   },
   "BR-SP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.82,
+   "median_m": 0.83,
    "median_share": 1.0
   },
   "BS-ALL": {
@@ -199,7 +199,7 @@
   },
   "CL-MAU": {
    "model": "ncep_gfswave025",
-   "median_m": 1.63,
+   "median_m": 1.64,
    "median_share": 0.95
   },
   "CL-NOR": {
@@ -389,7 +389,7 @@
   },
   "GB-WAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.47,
+   "median_m": 1.46,
    "median_share": 0.89
   },
   "GH-ALL": {
@@ -429,7 +429,7 @@
   },
   "ID-JAV-W": {
    "model": "ncep_gfswave016",
-   "median_m": 1.47,
+   "median_m": 1.64,
    "median_share": 0.0
   },
   "ID-KRU": {
@@ -480,7 +480,7 @@
   "IE-SW": {
    "model": "ecmwf_wam",
    "median_m": 1.57,
-   "median_share": 0.97
+   "median_share": 0.96
   },
   "IN-E": {
    "model": "ncep_gfswave016",
@@ -494,8 +494,8 @@
   },
   "IS-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 3.0,
-   "median_share": 0.81
+   "median_m": 2.99,
+   "median_share": 0.82
   },
   "IT-ALL": {
    "model": "ncep_gfswave016",
@@ -669,7 +669,7 @@
   },
   "NL-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 0.97,
+   "median_m": 0.96,
    "median_share": 0.95
   },
   "NO-N": {
@@ -680,22 +680,22 @@
   "NO-S": {
    "model": "ncep_gfswave025",
    "median_m": 1.85,
-   "median_share": 0.89
+   "median_share": 0.9
   },
   "NZ-AKL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.9,
+   "median_m": 1.89,
    "median_share": 1.0
   },
   "NZ-BOP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.74,
+   "median_m": 0.73,
    "median_share": 0.86
   },
   "NZ-GIS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.21,
-   "median_share": 0.65
+   "median_m": 1.22,
+   "median_share": 0.66
   },
   "NZ-KAI": {
    "model": "ncep_gfswave025",
@@ -730,7 +730,7 @@
   "NZ-WEL": {
    "model": "ncep_gfswave025",
    "median_m": 1.22,
-   "median_share": 0.61
+   "median_share": 0.62
   },
   "PA-BDT": {
    "model": "ncep_gfswave016",
@@ -764,13 +764,13 @@
   },
   "PF-ISL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.24,
-   "median_share": 0.24
+   "median_m": 2.25,
+   "median_share": 0.25
   },
   "PF-TAH": {
    "model": "ncep_gfswave025",
-   "median_m": 2.24,
-   "median_share": 0.81
+   "median_m": 2.23,
+   "median_share": 0.82
   },
   "PG-ALL": {
    "model": "ncep_gfswave016",
@@ -865,7 +865,7 @@
   "TO-ALL": {
    "model": "ncep_gfswave025",
    "median_m": 1.73,
-   "median_share": 0.42
+   "median_share": 0.43
   },
   "TT-ALL": {
    "model": "ncep_gfswave016",
@@ -935,7 +935,7 @@
   "US-GULF": {
    "model": "ecmwf_wam",
    "median_m": 0.55,
-   "median_share": 0.98
+   "median_share": 0.99
   },
   "US-HI-BIG": {
    "model": "ecmwf_wam",
@@ -974,7 +974,7 @@
   },
   "US-PNW": {
    "model": "ecmwf_wam",
-   "median_m": 1.47,
+   "median_m": 1.48,
    "median_share": 1.0
   },
   "US-SC-GA": {
@@ -989,7 +989,7 @@
   },
   "UY-MAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.39,
+   "median_m": 1.38,
    "median_share": 1.0
   },
   "UY-ROC": {
@@ -1014,7 +1014,7 @@
   },
   "WS-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.25,
+   "median_m": 2.24,
    "median_share": 1.0
   },
   "ZA-EC-JB": {
@@ -1073,18 +1073,6 @@
    "facing": 234,
    "swell": 110,
    "near": 119,
-   "flipped": false,
-   "top": false
-  },
-  {
-   "region": "AU-NSW-NC",
-   "spot": "OCEAN BEACH",
-   "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 79 %)"
-   ],
-   "facing": 250,
-   "swell": 136,
-   "near": 111,
    "flipped": false,
    "top": false
   },
@@ -1192,7 +1180,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
    "facing": 341,
-   "swell": 222,
+   "swell": 223,
    "near": 214,
    "flipped": false,
    "top": false
@@ -1204,7 +1192,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %)"
    ],
    "facing": 127,
-   "swell": 222,
+   "swell": 223,
    "near": 212,
    "flipped": false,
    "top": false
@@ -1213,7 +1201,7 @@
    "region": "AU-VIC-SC",
    "spot": "BARWON BLUFF",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %)"
+    "las olas casi nunca le entran de frente (3 % de las horas; la zona 99 %)"
    ],
    "facing": 65,
    "swell": 194,
@@ -1228,10 +1216,22 @@
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %)"
    ],
    "facing": 43,
-   "swell": 226,
+   "swell": 227,
    "near": 159,
    "flipped": false,
    "top": true
+  },
+  {
+   "region": "AU-VIC-W",
+   "spot": "WYE RIVER",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %)"
+   ],
+   "facing": 110,
+   "swell": 227,
+   "near": null,
+   "flipped": false,
+   "top": false
   },
   {
    "region": "AU-VIC-W",
@@ -1249,7 +1249,7 @@
    "region": "AU-WA-NW",
    "spot": "JAKES POINT",
    "why": [
-    "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %)"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %)"
    ],
    "facing": 320,
    "swell": 243,
@@ -1348,7 +1348,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
    ],
    "facing": 270,
-   "swell": 90,
+   "swell": 91,
    "near": 131,
    "flipped": true,
    "top": false
@@ -1829,19 +1829,7 @@
    ],
    "facing": 97,
    "swell": 327,
-   "near": 352,
-   "flipped": false,
-   "top": false
-  },
-  {
-   "region": "ES-PV",
-   "spot": "KARRASPIO",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %)"
-   ],
-   "facing": 196,
-   "swell": 315,
-   "near": 18,
+   "near": 355,
    "flipped": false,
    "top": false
   },
@@ -1853,7 +1841,7 @@
    ],
    "facing": 60,
    "swell": 324,
-   "near": null,
+   "near": 353,
    "flipped": false,
    "top": false
   },
@@ -1865,7 +1853,7 @@
    ],
    "facing": 60,
    "swell": 324,
-   "near": 345,
+   "near": 349,
    "flipped": false,
    "top": true
   },
@@ -1998,18 +1986,6 @@
    "facing": 16,
    "swell": 278,
    "near": null,
-   "flipped": false,
-   "top": false
-  },
-  {
-   "region": "GB-WAL",
-   "spot": "BROAD HAVEN SOUTH",
-   "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %)"
-   ],
-   "facing": 139,
-   "swell": 248,
-   "near": 225,
    "flipped": false,
    "top": false
   },
@@ -2201,7 +2177,7 @@
    ],
    "facing": 37,
    "swell": 283,
-   "near": 314,
+   "near": 315,
    "flipped": false,
    "top": true
   },
@@ -2221,11 +2197,11 @@
    "region": "IE-SW",
    "spot": "ROSSBEIGH",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %)"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 96 %)"
    ],
    "facing": 23,
-   "swell": 257,
-   "near": 238,
+   "swell": 256,
+   "near": 242,
    "flipped": false,
    "top": false
   },
@@ -2233,7 +2209,7 @@
    "region": "IS-ALL",
    "spot": "THORLAKSHOFN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %)"
    ],
    "facing": 61,
    "swell": 197,
@@ -2497,10 +2473,10 @@
    "region": "NZ-AKL",
    "spot": "PORT WAIKATO",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %)"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
    "facing": 358,
-   "swell": 243,
+   "swell": 242,
    "near": null,
    "flipped": false,
    "top": false
@@ -2557,7 +2533,7 @@
    "region": "NZ-WC",
    "spot": "TAURANGA BAY",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %)"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %)"
    ],
    "facing": 43,
    "swell": 268,
@@ -2703,7 +2679,7 @@
    "why": [
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %)"
    ],
-   "facing": 174,
+   "facing": 173,
    "swell": 297,
    "near": 279,
    "flipped": false,
@@ -2761,10 +2737,10 @@
    "region": "TO-ALL",
    "spot": "PASS LEFTS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %)"
    ],
    "facing": 5,
-   "swell": 128,
+   "swell": 130,
    "near": 271,
    "flipped": false,
    "top": false
@@ -2773,10 +2749,10 @@
    "region": "TO-ALL",
    "spot": "PASS RIGHTS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %)"
    ],
    "facing": 5,
-   "swell": 128,
+   "swell": 130,
    "near": 271,
    "flipped": false,
    "top": false
@@ -3208,7 +3184,7 @@
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 89 %)"
    ],
    "facing": 254,
-   "swell": 107,
+   "swell": 108,
    "near": 100,
    "flipped": true,
    "top": false
@@ -3217,7 +3193,7 @@
    "region": "US-NE",
    "spot": "MATUNUCK",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 74 %)"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %)"
    ],
    "facing": 353,
    "swell": 171,
@@ -3504,7 +3480,12 @@
    "lon": -57.5312
   },
   {
-   "status": "sin fuente",
+   "km": 0.13,
+   "qid": "osm:way/989793913",
+   "label": "escalera pública waikiki",
+   "wd_lat": -38.0807,
+   "wd_lon": -57.53876,
+   "status": "ok",
    "region": "AR-MDP",
    "spot": "WAIKIKI",
    "lat": -38.0796,
@@ -3801,7 +3782,12 @@
    "lon": 153.1901
   },
   {
-   "status": "sin fuente",
+   "km": 0.08,
+   "qid": "osm:node/765658680",
+   "label": "First Point",
+   "wd_lat": -26.38534,
+   "wd_lon": 153.0943,
+   "status": "ok",
    "region": "AU-QLD-SC",
    "spot": "FIRST POINT",
    "lat": -26.3846,
@@ -3856,7 +3842,12 @@
    "lon": 147.5238
   },
   {
-   "status": "sin fuente",
+   "km": 0.05,
+   "qid": "osm:node/3793632574",
+   "label": "Surfies Point",
+   "wd_lat": -38.51153,
+   "wd_lon": 145.28044,
+   "status": "ok",
    "region": "AU-VIC-PI",
    "spot": "SURFIES POINT",
    "lat": -38.5119,
@@ -3930,7 +3921,12 @@
    "lon": 143.9795
   },
   {
-   "status": "sin fuente",
+   "km": 0.46,
+   "qid": "osm:node/10572249309",
+   "label": "Tombstones",
+   "wd_lat": -23.88362,
+   "wd_lon": 113.48398,
+   "status": "ok",
    "region": "AU-WA-GAS",
    "spot": "TOMBSTONES",
    "lat": -23.8812,
@@ -4030,14 +4026,24 @@
    "lon": 115.4933
   },
   {
-   "status": "sin fuente",
+   "km": 0.13,
+   "qid": "osm:node/10724686050",
+   "label": "The Soup Bowl",
+   "wd_lat": 13.21457,
+   "wd_lon": -59.52318,
+   "status": "ok",
    "region": "BB-ALL",
    "spot": "SOUP BOWL",
    "lat": 13.214,
    "lon": -59.5221
   },
   {
-   "status": "sin fuente",
+   "km": 2.66,
+   "qid": "osm:node/5542983921",
+   "label": "Freights Bay",
+   "wd_lat": 13.05292,
+   "wd_lon": -59.53523,
+   "status": "lejos",
    "region": "BB-ALL",
    "spot": "FREIGHTS BAY",
    "lat": 13.0653,
@@ -4080,7 +4086,12 @@
    "lon": -34.9999
   },
   {
-   "status": "sin fuente",
+   "km": 0.38,
+   "qid": "osm:relation/5476220",
+   "label": "Praia do Cacimba do Padre",
+   "wd_lat": -3.84975,
+   "wd_lon": -32.43899,
+   "status": "ok",
    "region": "BR-NOR",
    "spot": "CACIMBA DO PADRE",
    "lat": -3.8483,
@@ -4123,7 +4134,12 @@
    "lon": -43.5073
   },
   {
-   "status": "sin fuente",
+   "km": 1.67,
+   "qid": "osm:node/651221993",
+   "label": "Itaúna",
+   "wd_lat": -22.93355,
+   "wd_lon": -42.47566,
+   "status": "lejos",
    "region": "BR-RJL",
    "spot": "ITAÚNA",
    "lat": -22.938,
@@ -4329,7 +4345,12 @@
    "lon": -72.0104
   },
   {
-   "status": "sin fuente",
+   "km": 0.67,
+   "qid": "osm:node/12663433215",
+   "label": "Infiernillo",
+   "wd_lat": -34.39318,
+   "wd_lon": -72.02159,
+   "status": "ok",
    "region": "CL-PIC",
    "spot": "INFIERNILLO",
    "lat": -34.398,
@@ -4348,7 +4369,12 @@
    "lon": -72.0404
   },
   {
-   "status": "sin fuente",
+   "km": 5.34,
+   "qid": "osm:relation/1335183",
+   "label": "Puerto Colombia",
+   "wd_lat": 10.99571,
+   "wd_lon": -74.9161,
+   "status": "lejos",
    "region": "CO-CAR",
    "spot": "PUERTO COLOMBIA",
    "lat": 11.0432,
@@ -4367,7 +4393,12 @@
    "lon": -77.425
   },
   {
-   "status": "sin fuente",
+   "km": 0.29,
+   "qid": "osm:way/395453155",
+   "label": "Salsa Brava",
+   "wd_lat": 9.65891,
+   "wd_lon": -82.75104,
+   "status": "ok",
    "region": "CR-CAR",
    "spot": "SALSA BRAVA",
    "lat": 9.6596,
@@ -4436,7 +4467,12 @@
    "lon": -83.1387
   },
   {
-   "status": "sin fuente",
+   "km": 0.35,
+   "qid": "osm:way/395891126",
+   "label": "Avenida Boca Barranca",
+   "wd_lat": 9.96269,
+   "wd_lon": -84.73707,
+   "status": "ok",
    "region": "CR-PAC",
    "spot": "BOCA BARRANCA",
    "lat": 9.9652,
@@ -4510,7 +4546,12 @@
    "lon": -81.0104
   },
   {
-   "status": "sin fuente",
+   "km": 0.2,
+   "qid": "osm:way/62331845",
+   "label": "Playa Punta Carola",
+   "wd_lat": -0.89031,
+   "wd_lon": -89.61213,
+   "status": "ok",
    "region": "EC-GAL",
    "spot": "CAROLA",
    "lat": -0.8896,
@@ -4529,7 +4570,12 @@
    "lon": -89.61
   },
   {
-   "status": "sin fuente",
+   "km": 0.4,
+   "qid": "osm:way/172577176",
+   "label": "La Loberia",
+   "wd_lat": -0.92665,
+   "wd_lon": -89.61195,
+   "status": "ok",
    "region": "EC-GAL",
    "spot": "LA LOBERÍA",
    "lat": -0.9244,
@@ -4604,10 +4650,10 @@
   },
   {
    "km": 0.19,
-   "qid": "Q28119689",
-   "label": "La Santa (Pueblo)",
-   "wd_lat": 29.1093,
-   "wd_lon": -13.6659,
+   "qid": "Q5387887",
+   "label": "La Santa (Canary Islands)",
+   "wd_lat": 29.10823,
+   "wd_lon": -13.66609,
    "status": "ok",
    "region": "ES-CN-E",
    "spot": "LA SANTA",
@@ -4873,7 +4919,12 @@
    "lon": -1.2571
   },
   {
-   "status": "sin fuente",
+   "km": 0.15,
+   "qid": "osm:node/12451463163",
+   "label": "Santocha",
+   "wd_lat": 43.65031,
+   "wd_lon": -1.44532,
+   "status": "ok",
    "region": "FR-HOS",
    "spot": "SANTOCHA",
    "lat": 43.6511,
@@ -4906,14 +4957,24 @@
    "lon": -1.44
   },
   {
-   "status": "sin fuente",
+   "km": 2.64,
+   "qid": "osm:node/9103164683",
+   "label": "Les Estagnots",
+   "wd_lat": 43.68584,
+   "wd_lon": -1.43465,
+   "status": "lejos",
    "region": "FR-HOS",
    "spot": "LES ESTAGNOTS",
    "lat": 43.7095,
    "lon": -1.4377
   },
   {
-   "status": "sin fuente",
+   "km": 1.39,
+   "qid": "osm:node/9103164682",
+   "label": "Le Penon",
+   "wd_lat": 43.70617,
+   "wd_lon": -1.42697,
+   "status": "ok",
    "region": "FR-HOS",
    "spot": "LE PENON",
    "lat": 43.7172,
@@ -4980,7 +5041,12 @@
    "lon": -1.5626
   },
   {
-   "status": "sin fuente",
+   "km": 0.6,
+   "qid": "osm:node/11952254203",
+   "label": "Les Cavaliers",
+   "wd_lat": 43.51967,
+   "wd_lon": -1.52327,
+   "status": "ok",
    "region": "FR-PBA",
    "spot": "LES CAVALIERS",
    "lat": 43.5175,
@@ -5083,7 +5149,12 @@
    "lon": -0.9682
   },
   {
-   "status": "sin fuente",
+   "km": 1.35,
+   "qid": "osm:way/200831667",
+   "label": "East Strand",
+   "wd_lat": 55.20652,
+   "wd_lon": -6.61332,
+   "status": "ok",
    "region": "GB-NIR",
    "spot": "EAST STRAND",
    "lat": 55.2071,
@@ -5174,7 +5245,12 @@
    "lon": 115.0997
   },
   {
-   "status": "sin fuente",
+   "km": 0.52,
+   "qid": "osm:relation/9849151",
+   "label": "Impossibles Beach",
+   "wd_lat": -8.8076,
+   "wd_lon": 115.10899,
+   "status": "ok",
    "region": "ID-BAL-BUK",
    "spot": "IMPOSSIBLES",
    "lat": -8.8103,
@@ -5291,7 +5367,12 @@
    "lon": 108.4975
   },
   {
-   "status": "sin fuente",
+   "km": 3.15,
+   "qid": "osm:way/292730630",
+   "label": "Desert Point Surf Break",
+   "wd_lat": -8.73467,
+   "wd_lon": 115.83631,
+   "status": "lejos",
    "region": "ID-LOM",
    "spot": "DESERT POINT",
    "lat": -8.7605,
@@ -5310,7 +5391,12 @@
    "lon": 116.3488
   },
   {
-   "status": "sin fuente",
+   "km": 2.63,
+   "qid": "osm:node/8377755317",
+   "label": "HT'S surf camp katiet",
+   "wd_lat": -2.37634,
+   "wd_lon": 99.85629,
+   "status": "lejos",
    "region": "ID-MEN",
    "spot": "HT'S",
    "lat": -2.3992,
@@ -5393,7 +5479,12 @@
    "lon": 122.8206
   },
   {
-   "status": "sin fuente",
+   "km": 2.29,
+   "qid": "osm:node/4395829390",
+   "label": "Lakey peak",
+   "wd_lat": -8.79645,
+   "wd_lon": 118.37855,
+   "status": "lejos",
    "region": "ID-SBW",
    "spot": "LAKEY PEAK",
    "lat": -8.817,
@@ -5414,7 +5505,12 @@
    "lon": 116.7425
   },
   {
-   "status": "sin fuente",
+   "km": 0.38,
+   "qid": "osm:node/5697262496",
+   "label": "The Peak",
+   "wd_lat": 54.4769,
+   "wd_lon": -8.28682,
+   "status": "ok",
    "region": "IE-NW",
    "spot": "THE PEAK",
    "lat": 54.4782,
@@ -5593,7 +5689,12 @@
    "lon": 81.8524
   },
   {
-   "status": "sin fuente",
+   "km": 0.45,
+   "qid": "osm:relation/18669419",
+   "label": "Peanut Farm Beach",
+   "wd_lat": 6.79638,
+   "wd_lon": 81.82099,
+   "status": "ok",
    "region": "LK-E",
    "spot": "PEANUT FARM",
    "lat": 6.7998,
@@ -5655,7 +5756,12 @@
    "lon": -9.2522
   },
   {
-   "status": "sin fuente",
+   "km": 4.65,
+   "qid": "osm:node/7151636186",
+   "label": "Boilers Café",
+   "wd_lat": 30.62494,
+   "wd_lon": -9.88,
+   "status": "lejos",
    "region": "MA-TAG",
    "spot": "BOILERS",
    "lat": 30.6278,
@@ -5669,14 +5775,24 @@
    "lon": -9.7482
   },
   {
-   "status": "sin fuente",
+   "km": 0.88,
+   "qid": "osm:node/10752367505",
+   "label": "Anchor Point",
+   "wd_lat": 30.54528,
+   "wd_lon": -9.72679,
+   "status": "ok",
    "region": "MA-TAG",
    "spot": "ANCHOR POINT",
    "lat": 30.5505,
    "lon": -9.7337
   },
   {
-   "status": "sin fuente",
+   "km": 0.57,
+   "qid": "osm:way/877334715",
+   "label": "Hash Point Surf Camp",
+   "wd_lat": 30.5449,
+   "wd_lon": -9.71098,
+   "status": "ok",
    "region": "MA-TAG",
    "spot": "HASH POINT",
    "lat": 30.5465,
@@ -5794,7 +5910,12 @@
    "lon": -116.8095
   },
   {
-   "status": "sin fuente",
+   "km": 0.64,
+   "qid": "osm:node/3570460729",
+   "label": "Scorpion Bay Cantina and Campground",
+   "wd_lat": 26.24367,
+   "wd_lon": -112.47727,
+   "status": "ok",
    "region": "MX-BCS-N",
    "spot": "SCORPION BAY",
    "lat": 26.2494,
@@ -5832,7 +5953,12 @@
    "lon": -105.442
   },
   {
-   "status": "sin fuente",
+   "km": 0.09,
+   "qid": "osm:way/359188611",
+   "label": "Minisuper El Anclote",
+   "wd_lat": 20.77175,
+   "wd_lon": -105.5182,
+   "status": "ok",
    "region": "MX-NAY",
    "spot": "EL ANCLOTE",
    "lat": 20.7713,
@@ -6218,7 +6344,12 @@
    "lon": 174.7846
   },
   {
-   "status": "sin fuente",
+   "km": 1.73,
+   "qid": "osm:way/172901710",
+   "label": "Stent Road",
+   "wd_lat": -39.23063,
+   "wd_lon": 173.79468,
+   "status": "lejos",
    "region": "NZ-TAR",
    "spot": "STENT ROAD",
    "lat": -39.2268,
@@ -6285,14 +6416,24 @@
    "lon": -77.0296
   },
   {
-   "status": "sin fuente",
+   "km": 0.77,
+   "qid": "osm:way/399820055",
+   "label": "Playa Señoritas",
+   "wd_lat": -12.32527,
+   "wd_lon": -76.83497,
+   "status": "ok",
    "region": "PE-LIM",
    "spot": "SEÑORITAS",
    "lat": -12.331,
    "lon": -76.831
   },
   {
-   "status": "sin fuente",
+   "km": 0.61,
+   "qid": "osm:node/4281342760",
+   "label": "Hotel La Planicie de Pico Alto",
+   "wd_lat": -12.33324,
+   "wd_lon": -76.8299,
+   "status": "ok",
    "region": "PE-LIM",
    "spot": "PICO ALTO",
    "lat": -12.3385,
@@ -6438,7 +6579,12 @@
    "lon": 120.3232
   },
   {
-   "status": "sin fuente",
+   "km": 0.23,
+   "qid": "osm:node/2806134897",
+   "label": "Sabang",
+   "wd_lat": 15.75993,
+   "wd_lon": 121.5685,
+   "status": "ok",
    "region": "PH-LUZ",
    "spot": "SABANG",
    "lat": 15.762,
@@ -6557,7 +6703,12 @@
    "lon": -25.5371
   },
   {
-   "status": "sin fuente",
+   "km": 0.46,
+   "qid": "osm:way/212896665",
+   "label": "Praia do Cabedelo",
+   "wd_lat": 40.13596,
+   "wd_lon": -8.86271,
+   "status": "ok",
    "region": "PT-CEN",
    "spot": "CABEDELO",
    "lat": 40.1319,
@@ -6612,7 +6763,12 @@
    "lon": -9.4231
   },
   {
-   "status": "sin fuente",
+   "km": 0.3,
+   "qid": "osm:way/876569604",
+   "label": "Pedra Branca",
+   "wd_lat": 38.97867,
+   "wd_lon": -9.42179,
+   "status": "ok",
    "region": "PT-ERI",
    "spot": "PEDRA BRANCA",
    "lat": 38.9763,
@@ -7265,7 +7421,12 @@
    "lon": -158.0516
   },
   {
-   "status": "sin fuente",
+   "km": 0.53,
+   "qid": "osm:node/7094739485",
+   "label": "Off the wall",
+   "wd_lat": 21.66336,
+   "wd_lon": -158.05308,
+   "status": "ok",
    "region": "US-HI-OAN",
    "spot": "OFF THE WALL",
    "lat": 21.6669,
@@ -7296,7 +7457,12 @@
    "lon": -158.0293
   },
   {
-   "status": "sin fuente",
+   "km": 1.19,
+   "qid": "osm:node/6527650939",
+   "label": "Ala Moana Bowls Surf Break",
+   "wd_lat": 21.28036,
+   "wd_lon": -157.84447,
+   "status": "ok",
    "region": "US-HI-OAS",
    "spot": "ALA MOANA BOWLS",
    "lat": 21.2894,
@@ -7492,7 +7658,12 @@
    "lon": 29.1536
   },
   {
-   "status": "sin fuente",
+   "km": 1.55,
+   "qid": "osm:way/24825445",
+   "label": "New Pier",
+   "wd_lat": -29.85289,
+   "wd_lon": 31.04078,
+   "status": "lejos",
    "region": "ZA-KZN-DBN",
    "spot": "NEW PIER",
    "lat": -29.8659,
@@ -7618,6 +7789,6 @@
  ],
  "open_meteo": {
   "requests": 30,
-  "calls": 1326
+  "calls": 1327
  }
 }

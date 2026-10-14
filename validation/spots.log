@@ -4,9 +4,6 @@
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 AR-BAN      16 spots  media 1.4 m  de frente 100 %
 AR-MDP      22 spots  media 1.5 m  de frente 100 %
 AR-SUR       6 spots  media 1.1 m  de frente 97 %
@@ -24,7 +21,7 @@ AU-VIC-PI   18 spots  media 1.4 m  de frente 99 %
 AU-VIC-SC   20 spots  media 1.4 m  de frente 99 %
 AU-VIC-W     9 spots  media 2.7 m  de frente 100 %
 AU-WA-GAS    3 spots  media 1.3 m  de frente 16 %
-AU-WA-MR    32 spots  media 3.1 m  de frente 98 %
+AU-WA-MR    32 spots  media 3.1 m  de frente 97 %
 AU-WA-NW     5 spots  media 2.0 m  de frente 100 %
 AU-WA-PER   20 spots  media 2.0 m  de frente 100 %
 BB-ALL       8 spots  media 1.1 m  de frente 59 %
@@ -92,7 +89,7 @@ ID-BAL-BUK  16 spots  media 1.8 m  de frente 0 %
 ID-BAL-E    12 spots  media 1.2 m  de frente 100 %
 ID-BAL-W    18 spots  media 1.2 m  de frente 100 %
 ID-JAV-E     7 spots  media 1.5 m  de frente 0 %
-ID-JAV-W     6 spots  media 1.5 m  de frente 0 %
+ID-JAV-W     7 spots  media 1.6 m  de frente 0 %
 ID-KRU       4 spots  media 1.9 m  de frente 0 %
 ID-LOM      14 spots  media 1.8 m  de frente 68 %
 ID-MEN      10 spots  media 1.2 m  de frente 0 %
@@ -102,10 +99,10 @@ ID-SBW       9 spots  media 1.5 m  de frente 100 %
 ID-SMB       2 spots  media 1.5 m  de frente 100 %
 IE-NW        9 spots  media 2.1 m  de frente 93 %
 IE-SE       10 spots  media 1.5 m  de frente 89 %
-IE-SW       12 spots  media 1.6 m  de frente 97 %
+IE-SW       12 spots  media 1.6 m  de frente 96 %
 IN-E         3 spots  media 0.6 m  de frente 100 %
 IN-W         3 spots  media 0.7 m  de frente 100 %
-IS-ALL       3 spots  media 3.0 m  de frente 81 %
+IS-ALL       3 spots  media 3.0 m  de frente 82 %
 IT-ALL       7 spots  media 0.4 m  de frente 82 %
 IT-SAR       4 spots  media 0.7 m  de frente 76 %
 JP-CHI       8 spots  media 2.0 m  de frente 99 %
@@ -142,25 +139,25 @@ NI-NW        4 spots  media 1.0 m  de frente 100 %
 NI-RIV       8 spots  media 1.1 m  de frente 100 %
 NL-ALL      11 spots  media 1.0 m  de frente 95 %
 NO-N         3 spots  media 1.9 m  de frente 66 %
-NO-S         3 spots  media 1.9 m  de frente 89 %
+NO-S         3 spots  media 1.9 m  de frente 90 %
 NZ-AKL       9 spots  media 1.9 m  de frente 100 %
 NZ-BOP      11 spots  media 0.7 m  de frente 86 %
-NZ-GIS      13 spots  media 1.2 m  de frente 65 %
+NZ-GIS      13 spots  media 1.2 m  de frente 66 %
 NZ-KAI       9 spots  media 1.0 m  de frente 87 %
 NZ-NTL      14 spots  media 1.1 m  de frente 2 %
 NZ-OTA      13 spots  media 1.3 m  de frente 72 %
 NZ-RAG       5 spots  media 1.5 m  de frente 2 %
 NZ-TAR       7 spots  media 1.4 m  de frente 70 %
 NZ-WC        4 spots  media 1.5 m  de frente 100 %
-NZ-WEL      13 spots  media 1.2 m  de frente 61 %
+NZ-WEL      13 spots  media 1.2 m  de frente 62 %
 PA-BDT       4 spots  media 0.8 m  de frente 100 %
 PA-PAC       7 spots  media 0.4 m  de frente 100 %
 PE-LIM      15 spots  media 1.6 m  de frente 100 %
 PE-LLB       7 spots  media 1.2 m  de frente 98 %
 PE-NOR      10 spots  media 1.0 m  de frente 60 %
 PE-SUR       5 spots  media 1.5 m  de frente 100 %
-PF-ISL       2 spots  media 2.2 m  de frente 24 %
-PF-TAH       8 spots  media 2.2 m  de frente 81 %
+PF-ISL       2 spots  media 2.2 m  de frente 25 %
+PF-TAH       8 spots  media 2.2 m  de frente 82 %
 PG-ALL       2 spots  media 0.9 m  de frente 70 %
 PH-EAS       2 spots  media 1.0 m  de frente 99 %
 PH-LUZ       5 spots  media 0.6 m  de frente 100 %
@@ -169,7 +166,8 @@ PR-N         8 spots  media 0.9 m  de frente 98 %
 PR-NW       15 spots  media 0.6 m  de frente 2 %
 PT-ALG      18 spots  media 1.5 m  de frente 100 %
 PT-AZO       7 spots  media 1.0 m  de frente 22 %
-PT-CEN      20 spots  media 1.5 m  de frente 100 %
+PT-CEN      20 spots  media 1.5 m  de frente 100 %  wikidata failed (HTTP Error 502: Bad Gateway), retrying
+
 PT-ERI      11 spots  media 1.6 m  de frente 100 %
 PT-LIS      15 spots  media 1.1 m  de frente 97 %
 PT-MAD       8 spots  media 0.8 m  de frente 20 %
@@ -179,7 +177,7 @@ RE-ALL       8 spots  media 1.3 m  de frente 65 %
 SN-ALL       5 spots  media 1.3 m  de frente 89 %
 SV-LIB       8 spots  media 1.2 m  de frente 100 %
 SV-ORI       4 spots  media 1.1 m  de frente 100 %
-TO-ALL       6 spots  media 1.7 m  de frente 42 %
+TO-ALL       6 spots  media 1.7 m  de frente 43 %
 TT-ALL       4 spots  media 0.8 m  de frente 100 %
 TW-E         4 spots  media 1.2 m  de frente 93 %
 TW-NE        6 spots  media 0.9 m  de frente 94 %
@@ -193,7 +191,7 @@ US-CA-SD    38 spots  media 0.8 m  de frente 100 %
 US-CA-SF    29 spots  media 1.3 m  de frente 100 %
 US-FL-PAN    6 spots  media 0.7 m  de frente 89 %
 US-FL       46 spots  media 0.7 m  de frente 100 %
-US-GULF     13 spots  media 0.6 m  de frente 98 %
+US-GULF     13 spots  media 0.6 m  de frente 99 %
 US-HI-BIG   15 spots  media 1.0 m  de frente 100 %
 US-HI-KAU   21 spots  media 1.4 m  de frente 100 %
 US-HI-MAU   21 spots  media 1.4 m  de frente 100 %
@@ -220,7 +218,7 @@ ZA-WC-CPT   20 spots  media 2.2 m  de frente 73 %
 ZA-WC-GR    11 spots  media 2.0 m  de frente 78 %
 ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   AR-MDP/BIOLOGÍA: ok 0.22
-  AR-MDP/WAIKIKI: sin fuente 
+  AR-MDP/WAIKIKI: ok 0.13
   AR-MDP/CHAPADMALAL: ok 0.23
   AR-MDP/MIRAMAR: ok 0.41
   AR-MDP/QUEQUÉN: ok 0.29
@@ -246,19 +244,19 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   AU-QLD-GC/DURANBAH: ok 0.69
   AU-QLD-GC/BURLEIGH HEADS: ok 0.46
   AU-QLD-SC/DOUBLE ISLAND PT: sin fuente 
-  AU-QLD-SC/FIRST POINT: sin fuente 
+  AU-QLD-SC/FIRST POINT: ok 0.08
   AU-SA-EYR/CACTUS: ok 0.03
   AU-SA/WAITPINGA: ok 0.78
   AU-TAS/SHIPSTERN BLUFF: ok 0.14
   AU-TAS/CLIFTON BEACH: ok 0.42
-  AU-VIC-PI/SURFIES POINT: sin fuente 
+  AU-VIC-PI/SURFIES POINT: ok 0.05
   AU-VIC-PI/WOOLAMAI: ok 0.2
   AU-VIC-PI/GUNNAMATTA: lejos 1.55
   AU-VIC-SC/TORQUAY POINT: ok 0.25
   AU-VIC-SC/WINKIPOP: sin fuente 
   AU-VIC-SC/BELLS BEACH: ok 0.07
   AU-VIC-SC/LORNE POINT: ok 0.34
-  AU-WA-GAS/TOMBSTONES: sin fuente 
+  AU-WA-GAS/TOMBSTONES: ok 0.46
   AU-WA-GAS/RED BLUFF: ok 1.17
   AU-WA-MR/MAIN BREAK: sin fuente 
   AU-WA-MR/THE BOX: sin fuente 
@@ -268,16 +266,16 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   AU-WA-NW/JAKES POINT: ok 0.1
   AU-WA-PER/TRIGG POINT: ok 0.38
   AU-WA-PER/STRICKLAND BAY: lejos 1.61
-  BB-ALL/SOUP BOWL: sin fuente 
-  BB-ALL/FREIGHTS BAY: sin fuente 
+  BB-ALL/SOUP BOWL: ok 0.13
+  BB-ALL/FREIGHTS BAY: lejos 2.66
   BR-BA/ITACARÉ: ok 0.98
   BR-NE-RN/PIPA: ok 0.13
   BR-NE-RN/BAÍA FORMOSA: ok 0.87
-  BR-NOR/CACIMBA DO PADRE: sin fuente 
+  BR-NOR/CACIMBA DO PADRE: ok 0.38
   BR-RJ/ARPOADOR: ok 0.13
   BR-RJ/BARRA DA TIJUCA: ok 0.94
   BR-RJ/PRAINHA: ok 0.37
-  BR-RJL/ITAÚNA: sin fuente 
+  BR-RJL/ITAÚNA: lejos 1.67
   BR-RJL/GERIBÁ: ok 0.58
   BR-SP/ITAMAMBUCA: ok 0.24
   BR-SP/MARESIAS: ok 0.23
@@ -295,27 +293,27 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   CL-NOR/EL GRINGO: sin fuente 
   CL-PIC/PUERTECILLO: ok 0.73
   CL-PIC/LA PUNTILLA: lejos 3.06
-  CL-PIC/INFIERNILLO: sin fuente 
+  CL-PIC/INFIERNILLO: ok 0.67
   CL-PIC/PUNTA DE LOBOS: ok 0.5
-  CO-CAR/PUERTO COLOMBIA: sin fuente 
+  CO-CAR/PUERTO COLOMBIA: lejos 5.34
   CO-PAC/EL VALLE: ok 0.5
-  CR-CAR/SALSA BRAVA: sin fuente 
+  CR-CAR/SALSA BRAVA: ok 0.29
   CR-GUA/WITCH'S ROCK: sin fuente 
   CR-GUA/TAMARINDO: ok 0.12
   CR-GUA/PLAYA NEGRA: ok 0.95
   CR-NIC/GUIONES: lejos 3.26
   CR-NIC/SANTA TERESA: ok 0.08
   CR-OSA/PAVONES: sin fuente 
-  CR-PAC/BOCA BARRANCA: sin fuente 
+  CR-PAC/BOCA BARRANCA: ok 0.35
   CR-PAC/PLAYA HERMOSA: lejos 2.17
   DK-ALL/KLITMOLLER: sin fuente 
   DO-ALL/ENCUENTRO: ok 0.16
   EC-COS/MOMPICHE: ok 0.09
   EC-COS/MONTAÑITA: ok 0.35
   EC-COS/LA CHOCOLATERA: ok 0.19
-  EC-GAL/CAROLA: sin fuente 
+  EC-GAL/CAROLA: ok 0.2
   EC-GAL/TONGO REEF: ok 0.3
-  EC-GAL/LA LOBERÍA: sin fuente 
+  EC-GAL/LA LOBERÍA: ok 0.4
   ES-AST/RODILES: ok 0.25
   ES-AST/SALINAS: ok 0.44
   ES-CAN/LOS LOCOS: ok 0.53
@@ -347,18 +345,18 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   FR-BRE/GUIDEL: ok 0.37
   FR-GIR/LACANAU CENTRALE: sin fuente 
   FR-GIR/BISCARROSSE: ok 0.49
-  FR-HOS/SANTOCHA: sin fuente 
+  FR-HOS/SANTOCHA: ok 0.15
   FR-HOS/LA GRAVIERE: ok 0.63
   FR-HOS/LA NORD: sin fuente 
   FR-HOS/LES CULS NULS: sin fuente 
-  FR-HOS/LES ESTAGNOTS: sin fuente 
-  FR-HOS/LE PENON: sin fuente 
+  FR-HOS/LES ESTAGNOTS: lejos 2.64
+  FR-HOS/LE PENON: ok 1.39
   FR-PBA/BELHARRA: lejos 1.91
   FR-PBA/LAFITENIA: ok 0.18
   FR-PBA/PARLEMENTIA: ok 0.4
   FR-PBA/COTE DES BASQUES: ok 0.03
   FR-PBA/GRANDE PLAGE: ok 0.3
-  FR-PBA/LES CAVALIERS: sin fuente 
+  FR-PBA/LES CAVALIERS: ok 0.6
   GB-CON/WATERGATE BAY: ok 0.52
   GB-CON/FISTRAL: ok 0.2
   GB-CON/SENNEN: ok 0.35
@@ -367,7 +365,7 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   GB-DEV/WOOLACOMBE: ok 0.23
   GB-NE/TYNEMOUTH: ok 0.15
   GB-NE/SALTBURN: ok 0.17
-  GB-NIR/EAST STRAND: sin fuente 
+  GB-NIR/EAST STRAND: ok 1.35
   GB-SCO/BRIMS NESS: lejos 2.15
   GB-SCO/THURSO EAST: ok 0.04
   GB-WAL/FRESHWATER WEST: ok 0.22
@@ -375,7 +373,7 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   GT-PAC/EL PAREDON: ok 0.18
   ID-BAL-BUK/ULUWATU: ok 0.1
   ID-BAL-BUK/PADANG PADANG: ok 0.17
-  ID-BAL-BUK/IMPOSSIBLES: sin fuente 
+  ID-BAL-BUK/IMPOSSIBLES: ok 0.52
   ID-BAL-BUK/BINGIN: ok 0.56
   ID-BAL-BUK/BALANGAN: ok 0.11
   ID-BAL-E/KERAMAS: ok 0.5
@@ -386,9 +384,9 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   ID-BAL-W/MEDEWI: ok 0.31
   ID-JAV-E/MONEY TREES: sin fuente 
   ID-JAV-W/BATU KARAS: ok 0.62
-  ID-LOM/DESERT POINT: sin fuente 
+  ID-LOM/DESERT POINT: lejos 3.15
   ID-LOM/GERUPUK: ok 1.14
-  ID-MEN/HT'S: sin fuente 
+  ID-MEN/HT'S: lejos 2.63
   ID-MEN/LANCE'S LEFT: lejos 2.22
   ID-MEN/MACARONIS: sin fuente 
   ID-MEN/KANDUI LEFT: sin fuente 
@@ -397,10 +395,10 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   ID-NIA/ASU: ok 1.36
   ID-NIA/BAWA: ok 0.85
   ID-ROT/T-LAND: sin fuente 
-  ID-SBW/LAKEY PEAK: sin fuente 
+  ID-SBW/LAKEY PEAK: lejos 2.29
   ID-SBW/SCAR REEF: sin fuente 
   ID-SBW/SUPERSUCK: sin fuente 
-  IE-NW/THE PEAK: sin fuente 
+  IE-NW/THE PEAK: ok 0.38
   IE-NW/MULLAGHMORE: ok 0.68
   IE-NW/STRANDHILL: ok 0.93
   IE-NW/EASKEY: sin fuente 
@@ -408,7 +406,10 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   IE-SW/LAHINCH: ok 0.34
   IE-SW/AILEEN'S: sin fuente 
   IE-SW/CRAB ISLAND: ok 0.6
-  IT-SAR/CAPO MANNU: ok 0.69
+  IT-SAR/CAPO MANNU: ok 0.69  wikidata failed (HTTP Error 502: Bad Gateway), retrying
+  wikidata failed (HTTP Error 429: Too Many Requests), retrying
+  wikidata failed (HTTP Error 429: Too Many Requests), retrying
+
   JP-CHI/TSURIGASAKI: lejos 3.25
   JP-CHI/ONJUKU: ok 1.48
   JP-IZU/SHIRAHAMA: ok 1.02
@@ -417,16 +418,16 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   JP-SHO/KUGENUMA: ok 0.35
   LK-E/ARUGAM BAY: ok 0.81
   LK-E/WHISKEY POINT: sin fuente 
-  LK-E/PEANUT FARM: sin fuente 
+  LK-E/PEANUT FARM: ok 0.45
   LK-S/HIKKADUWA: ok 0.13
   LK-S/MIDIGAMA: ok 0.75
   LK-S/WELIGAMA: ok 0.67
   MA-N/MEHDIA: ok 1.2
   MA-N/SAFI LE JARDIN: sin fuente 
-  MA-TAG/BOILERS: sin fuente 
+  MA-TAG/BOILERS: lejos 4.65
   MA-TAG/KILLER POINT: sin fuente 
-  MA-TAG/ANCHOR POINT: sin fuente 
-  MA-TAG/HASH POINT: sin fuente 
+  MA-TAG/ANCHOR POINT: ok 0.88
+  MA-TAG/HASH POINT: ok 0.57
   MA-TAG/PANORAMAS: sin fuente 
   MA-TAG/IMSOUANE: ok 0.33
   MV-NMA/PASTA POINT: sin fuente 
@@ -440,11 +441,11 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   MV-SOU/BEACONS: sin fuente 
   MX-BCN/SAN MIGUEL: ok 1.0
   MX-BCN/TODOS SANTOS: ok 0.18
-  MX-BCS-N/SCORPION BAY: sin fuente 
+  MX-BCS-N/SCORPION BAY: ok 0.64
   MX-BCS/LOS CERRITOS: ok 0.18
   MX-BCS/ZIPPERS: sin fuente 
   MX-NAY/SAYULITA: ok 0.06
-  MX-NAY/EL ANCLOTE: sin fuente 
+  MX-NAY/EL ANCLOTE: ok 0.09
   MX-OAX/CHACAHUA: ok 0.7
   MX-OAX/ZICATELA: ok 0.1
   MX-OAX/LA PUNTA: ok 0.34
@@ -482,14 +483,14 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   NZ-RAG/MANU BAY: ok 0.49
   NZ-RAG/WHALE BAY: ok 0.12
   NZ-RAG/INDICATORS: sin fuente 
-  NZ-TAR/STENT ROAD: sin fuente 
+  NZ-TAR/STENT ROAD: lejos 1.73
   NZ-TAR/WAIWHAKAIHO: ok 0.31
   NZ-WEL/LYALL BAY: ok 0.06
   PA-PAC/SANTA CATALINA: ok 1.5
   PA-PAC/PLAYA VENAO: ok 0.27
   PE-LIM/LA HERRADURA: ok 1.1
-  PE-LIM/SEÑORITAS: sin fuente 
-  PE-LIM/PICO ALTO: sin fuente 
+  PE-LIM/SEÑORITAS: ok 0.77
+  PE-LIM/PICO ALTO: ok 0.61
   PE-LIM/PUNTA ROCAS: ok 0.33
   PE-LLB/PACASMAYO: ok 1.16
   PE-LLB/CHICAMA: lejos 2.03
@@ -502,7 +503,7 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   PF-TAH/TAAPUNA: ok 0.37
   PF-TAH/HA'APITI: sin fuente 
   PH-LUZ/SAN JUAN: ok 0.22
-  PH-LUZ/SABANG: sin fuente 
+  PH-LUZ/SABANG: ok 0.23
   PH-SIA/CLOUD 9: ok 0.18
   PH-SIA/JACKING HORSE: sin fuente 
   PH-SIA/QUICKSILVER: sin fuente 
@@ -514,12 +515,12 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   PT-ALG/AMADO: ok 0.15
   PT-ALG/TONEL: ok 0.18
   PT-AZO/SANTA BÁRBARA: ok 1.46
-  PT-CEN/CABEDELO: sin fuente 
+  PT-CEN/CABEDELO: ok 0.46
   PT-CEN/PRAIA DO NORTE: ok 0.18
   PT-ERI/SÃO LOURENÇO: ok 0.33
   PT-ERI/COXOS: ok 0.28
   PT-ERI/RIBEIRA D'ILHAS: ok 0.55
-  PT-ERI/PEDRA BRANCA: sin fuente 
+  PT-ERI/PEDRA BRANCA: ok 0.3
   PT-ERI/FOZ DO LIZANDRO: ok 0.24
   PT-LIS/GUINCHO: ok 0.0
   PT-LIS/CARCAVELOS: ok 0.38
@@ -578,10 +579,10 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   US-HI-OAN/WAIMEA BAY: ok 0.35
   US-HI-OAN/PIPELINE: ok 0.17
   US-HI-OAN/BACKDOOR: sin fuente 
-  US-HI-OAN/OFF THE WALL: sin fuente 
+  US-HI-OAN/OFF THE WALL: ok 0.53
   US-HI-OAN/SUNSET: ok 0.39
   US-HI-OAN/VELZYLAND: lejos 1.69
-  US-HI-OAS/ALA MOANA BOWLS: sin fuente 
+  US-HI-OAS/ALA MOANA BOWLS: ok 1.19
   US-HI-OAS/QUEENS: ok 0.73
   US-HI-OAS/SANDY BEACH: ok 0.16
   US-HI-OAS/MAKAHA: ok 1.33
@@ -599,7 +600,7 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   ZA-EC-JB/SEAL POINT: ok 0.37
   ZA-EC-PE/NAHOON REEF: ok 0.32
   ZA-EC-WLD/COFFEE BAY: ok 0.27
-  ZA-KZN-DBN/NEW PIER: sin fuente 
+  ZA-KZN-DBN/NEW PIER: lejos 1.55
   ZA-KZN-DBN/CAVE ROCK: lejos 4.64
   ZA-KZN-N/BALLITO: ok 0.5
   ZA-WC-CPT/BIG BAY: lejos 3.82
@@ -611,4 +612,4 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 27 %
   ZA-WC-GR/INNER POOL: sin fuente 
   ZA-WC-GR/VICTORIA BAY: ok 0.64
   ZA-WC-WCO/ELANDS BAY: ok 0.83
-202 spots flagged; flagship: {'ok': 250, 'lejos': 26, 'sin fuente': 116, 'error': 0}; Open-Meteo 30 requests, ~1325 calls
+200 spots flagged; flagship: {'ok': 279, 'lejos': 36, 'sin fuente': 77, 'error': 0}; Open-Meteo 30 requests, ~1326 calls
