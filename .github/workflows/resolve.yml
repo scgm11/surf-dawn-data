@@ -1,0 +1,57 @@
+name: Semillas fuera de la costa
+# Busca por nombre en OpenStreetMap las semillas que build_zones.py no puede ubicar (a más de
+# 2,5 km de la costa) y las mueve al lugar con ese nombre que está sobre la costa
+# (tools/resolve_seeds.py). Deja seeds/resolve.log con cada cambio y lo que quedó sin resolver.
+on:
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: "Regiones (vacío: todas)"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: data-commit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  resolve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy global-land-mask==1.0.0
+      - name: Cachés de OSM y Open-Meteo
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            tools/.osm_cache
+            tools/.cache
+          key: zones-${{ github.run_id }}
+          restore-keys: zones-
+      - name: Resolver
+        run: |
+          set -o pipefail
+          python3 tools/resolve_seeds.py ${{ github.event.inputs.regions && format('--regions {0}', github.event.inputs.regions) || '' }} 2>&1 | tee /tmp/resolve.out
+          python3 tools/check_seeds.py --present
+      - name: Guardar cachés
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            tools/.osm_cache
+            tools/.cache
+          key: zones-${{ github.run_id }}
+      - name: Publicar
+        if: always()
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add seeds
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Semillas: posiciones de OSM para las que estaban fuera de la costa"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

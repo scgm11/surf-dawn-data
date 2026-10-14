@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install global-land-mask==1.0.0
+      - run: pip install numpy global-land-mask==1.0.0
       - name: Cachés de OSM y Open-Meteo (la costa y las celdas de tierra no cambian)
         uses: actions/cache/restore@v4
         with:
