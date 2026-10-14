@@ -14,6 +14,10 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SEEDS = os.path.join(HERE, "..", "seeds")
 COLS = ["name", "lat", "lon", "type", "conf", "src", "flags", "note"]
 NAME_CHARS = set("ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789ÁÉÍÓÚÑÜÃÕÂÊÔÇÀ '.-")
+# the letters of the apps' list fonts (the watch repo's tools/charsets.py ALL): continent,
+# country and region names are drawn with them, so a letter outside is not drawn at all
+TEXT_CHARS = set("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑÜÃÕÂÊÔÇÀabcdefghijklmnopqrstuvwxyzáéíóúñüãõâêôçà"
+                 " .,:;·-–/%°±+()'¿?¡!<>#")
 NAME_MAX = 18
 MAX_SPOTS = 60
 SPREAD_KM = 400                   # a spot this far from its region's median is in the wrong region
@@ -104,6 +108,12 @@ def main():
     for c in countries.values():
         if c["continent"] not in continents:
             errors.append("country %s: continent %r" % (c["code"], c["continent"]))
+    for table in (read("continents.csv"), list(countries.values()), regions):
+        for r in table:
+            for k in ("name_es", "name_en"):
+                if not r[k] or set(r[k]) - TEXT_CHARS:
+                    errors.append("%s: %s %r (letters of the apps' fonts: %s)" % (
+                        r["code"], k, r[k], "".join(sorted(set(r[k]) - TEXT_CHARS)) or "empty"))
     codes = [r["code"] for r in regions]
     for r in regions:
         if not re.fullmatch(r"[A-Z]{2}(-[A-Z0-9]{1,4}){1,2}", r["code"]):
