@@ -1,11 +1,6 @@
 # Picos: reporte del último build
 
-210 regiones, 2457 picos. Errores: 2. Avisos: 5.
-
-## Errores
-
-- AU-WA-MR: Overpass unavailable for region AU-WA-MR
-- VN-ALL: Overpass unavailable for region VN-ALL
+212 regiones, 2493 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
@@ -115,6 +110,7 @@
 | AU-TAS | 12 | 693 | ncep_gfswave025 | gfs_seamless | 2 | 605 m | 2 |
 | AU-SA | 14 | 787 | ecmwf_wam | gfs_seamless | 3 | 691 m | 0 |
 | AU-SA-EYR | 3 | 241 | ncep_gfswave025 | gfs_seamless | 0 | 466 m | 0 |
+| AU-WA-MR | 32 | 1805 | ncep_gfswave025 | gfs_seamless | 2 | 402 m | 29 |
 | AU-WA-PER | 20 | 1012 | ncep_gfswave025 | gfs_seamless | 3 | 449 m | 0 |
 | AU-WA-NW | 5 | 396 | ncep_gfswave025 | gfs_seamless | 1 | 206 m | 1 |
 | AU-WA-GAS | 3 | 230 | ncep_gfswave025 | gfs_seamless | 0 | 32 m | 0 |
@@ -167,6 +163,7 @@
 | TW-NE | 6 | 422 | ncep_gfswave016 | gfs_seamless | 2 | 604 m | 0 |
 | IN-W | 3 | 218 | ncep_gfswave016 | gfs_seamless | 0 | 617 m | 0 |
 | IN-E | 3 | 239 | ncep_gfswave016 | gfs_seamless | 0 | 474 m | 0 |
+| VN-ALL | 4 | 289 | ncep_gfswave016 | gfs_seamless | 1 | 720 m | 0 |
 | KR-ALL | 6 | 368 | ncep_gfswave016 | gfs_seamless | 1 | 105 m | 0 |
 | CN-HAI | 2 | 184 | ncep_gfswave016 | gfs_seamless | 0 | 48 m | 0 |
 | ZA-WC-CPT | 20 | 951 | ncep_gfswave025 | gfs_seamless | 1 | 446 m | 2 |
@@ -415,6 +412,11 @@
 | AU-TAS | CLIFTON BEACH | K | 543 m | 119° | — |
 | AU-SA | WAITPINGA | K | 200 m | 196° | — |
 | AU-SA-EYR | CACTUS | K | 658 m | 259° | — |
+| AU-WA-MR | MAIN BREAK | K | 214 m | 243° | -34.00, 114.75 |
+| AU-WA-MR | THE BOX | K | 313 m | 254° | -34.00, 114.75 |
+| AU-WA-MR | NORTH POINT | K | 437 m | 252° | -33.75, 114.75 |
+| AU-WA-MR | SUPERTUBES | V | 146 m | 291° | -33.50, 115.00 |
+| AU-WA-MR | YALLINGUP | K | 131 m | 299° | -33.50, 115.00 |
 | AU-WA-PER | TRIGG POINT | K | 63 m | 276° | — |
 | AU-WA-PER | STRICKLAND BAY | K | 1072 m | 175° | — |
 | AU-WA-NW | JAKES POINT | V | 120 m | 320° | — |
