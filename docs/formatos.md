@@ -163,6 +163,16 @@ cambio. `validation/buoys.csv` tiene las boyas de olas usadas (`id,name,lat,lon,
 llevarla a 10 m); `validation/stations.csv`, todas las estaciones leídas con sus horas
 (`id,name,lat,lon,kind,records,hours,wind_hours,first,last`, para diagnóstico).
 
+### `validation/spots.md` y `validation/spots.json` — controles por pico
+
+`tools/check_spots.py` (Action `checks.yml`, el día 5 de cada mes) revisa cada pico de `spots/`:
+la orientación contra las olas de las últimas dos semanas en su punto de olas (se marca el que casi
+nunca las recibe de frente mientras su zona sí: suele ser una orientación del lado equivocado de una
+punta o una laguna), la altura contra la mediana de su zona (sin olas, o más del doble) y, para los
+emblemáticos (`top`), la posición contra el ítem de Wikidata con su nombre más cercano. El JSON tiene
+`flags` (`region`, `spot`, `why`, `top`), `flagship` (`status`: `ok`, `lejos`, `sin fuente` o
+`error`; `km`, `qid`) y, por región, la mediana de la altura y de las horas con olas de frente.
+
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 
 `region,wave,wind,why`. Una región sin fila usa la regla por defecto: olas `ncep_gfswave016`

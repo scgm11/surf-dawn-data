@@ -22,65 +22,22 @@ import argparse
 import csv
 import json
 import os
-import re
 import sys
 import time
-import unicodedata
 import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.lib import geo, osm, seeds  # noqa: E402
+from tools.lib.names import fold, regex, variants  # noqa: E402
 
 ROOT = seeds.ROOT
 LOG = os.path.join(ROOT, "seeds", "resolve.log")
 SEARCH_KM = 60
 FAR_KM = 150
 FROZEN = {"UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
-PREFIXES = ["PRAIA DO ", "PRAIA DA ", "PRAIA DE ", "PRAIA ", "PLAYA DE ", "PLAYA DEL ", "PLAYA ", "BAHÍA DE ",
-            "BAHÍA ", "BAIA ", "PUNTA DE ", "PUNTA ", "PONTA DO ", "PONTA DA ", "PONTA ", "CABO ", "PLAGE DE ",
-            "PLAGE ", "PRAIA DOS ", "PRAIA DAS ", "BARRA DE ", "BARRA DO ", "BARRA ", "EL ", "LA ", "LOS ", "LAS ",
-            "THE "]
-SUFFIXES = [" BEACH", " POINT", " BAY", " REEF", " HEAD", " HEADS", " PIER", " RIGHT", " LEFT", " LEFTS",
-            " RIGHTS", " BREAK", " INLET", " COVE"]
 RANK = {"beach": 0, "surf": 0, "bay": 1, "cape": 1, "peninsula": 1, "headland": 1, "place": 2, "other": 3}
 NOMINATIM = "https://nominatim.openstreetmap.org/search"
-
-
-def fold(s):
-    s = unicodedata.normalize("NFKD", s)
-    return "".join(c for c in s if not unicodedata.combining(c)).lower()
-
-
-def variants(name):
-    out = [name]
-    n = name
-    for p in PREFIXES:
-        if n.startswith(p) and len(n) > len(p) + 2:
-            out.append(n[len(p):])
-            break
-    for s in SUFFIXES:
-        for v in list(out):
-            if v.endswith(s) and len(v) > len(s) + 2:
-                out.append(v[:-len(s)])
-    return list(dict.fromkeys(v.strip(" '.-") for v in out if len(v.strip()) >= 3))
-
-
-def regex(v):
-    """An Overpass regex for v that ignores accents (case is ignored by the query flag)."""
-    alts = {"a": "[aáàâãä]", "e": "[eéèêë]", "i": "[iíìîï]", "o": "[oóòôõö]", "u": "[uúùûü]",
-            "c": "[cç]", "n": "[nñ]", "y": "[yý]"}
-    out = []
-    for ch in fold(v):
-        if ch in alts:
-            out.append(alts[ch])
-        elif ch.isalnum():
-            out.append(ch)
-        elif ch in " -'.":
-            out.append(".?")
-        else:
-            out.append(".")
-    return "".join(out)
 
 
 def kind(tags):
