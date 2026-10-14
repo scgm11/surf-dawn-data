@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 20:18 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-14 21:45 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -22,6 +22,30 @@ Predicción horaria 2026 de las constantes de TICON-3 (pyTMD, cada juego de corr
 | 8518750 NEW YORK (The Battery), NY | gesla.uhslc, a 0.05 km | 36981 días | 222 cm | 3.7 | 3.7 | 3.7 | 3.9 | 3.7 |
 | 8724580 KEY WEST, FL | gesla.uhslc, a 0.30 km | 38697 días | 98 cm | 1.6 | 1.6 | 1.6 | 1.8 | 1.6 |
 | 1910000 SUVA HARBOR, Viti Levu Island | gesla.jodc_jma, a 0.03 km | 1095 días | 190 cm | 2.4 | 2.4 | 2.4 | 2.5 | 2.4 |
+
+## Validación GOT5.6 vs tablas oficiales
+
+El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la posición de estaciones con tabla oficial, contra esa tabla: RMS en cm de la diferencia horaria, cada serie sin su media, y cuánto del rango de la tabla da el modelo. En el mismo mareógrafo, el lugar más difícil para un modelo global (puertos, bahías, el Río de la Plata). Mediana del RMS: 7.3 cm.
+
+| Estación | Rango oficial | RMS GOT5.6 | Rango modelo / oficial |
+|---|---|---|---|
+| noaa-9410230 La Jolla (Scripps Institution Wharf), CA | 275 cm | 6.6 | 0.95 |
+| noaa-1612340 HONOLULU, HI | 95 cm | 5.5 | 1.05 |
+| noaa-9414290 SAN FRANCISCO (Golden Gate), CA | 278 cm | 6.6 | 1.02 |
+| noaa-8518750 NEW YORK (The Battery), NY | 222 cm | 19.6 | 0.85 |
+| noaa-8724580 KEY WEST, FL | 98 cm | 11.3 | 0.96 |
+| noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA | 522 cm | 137.1 | 0.84 |
+| jma-wn 稚内 (JMA WN) | 49 cm | 7.0 | 0.74 |
+| jma-ke 枝幸 (JMA KE) | 133 cm | 5.5 | 0.86 |
+| jma-a0 紋別 (JMA A0) | 161 cm | 4.8 | 0.97 |
+| linz-akaroa Akaroa | 230 cm | 8.4 | 1.01 |
+| linz-anakakata-bay Anakakata Bay | 179 cm | 5.4 | 1.04 |
+| linz-anawhata Anawhata | 300 cm | 7.3 | 1.05 |
+| imi-achill-island Achill Island (modelado) | 441 cm | 11.3 | 0.96 |
+| imi-aranmore Aranmore | 416 cm | 6.7 | 0.99 |
+| imbituba Porto de Imbituba (DHN) | 100 cm | 7.7 | 0.97 |
+| la-paloma La Paloma (SOHMA) | 74 cm | 10.4 | 1.03 |
+| punta-del-este Punta del Este (SOHMA) | 61 cm | 7.3 | 0.84 |
 
 ## Puertos
 

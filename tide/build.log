@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 45 s
+catalogs: 3902 stations in 52 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -441,4 +441,21 @@ GOT5.6: 162 points, 17520 hours each
   PT-MAD       got-043c05     6.. 264 cm  8 spots
   IS-ALL       got-8ae671     5.. 307 cm  1 spots
 GOT5.6: 162 model points
-done: 425 ports, 208 regions with ports, 2326/2437 spots, 10625 files 28.2 MB, 495 s
+validación GOT5.6 noaa-9410230 La Jolla (Scripps Institution Wharf), CA: RMS 6.6 cm, rango 275 cm, modelo/oficial 0.95
+validación GOT5.6 noaa-1612340 HONOLULU, HI: RMS 5.5 cm, rango 95 cm, modelo/oficial 1.05
+validación GOT5.6 noaa-9414290 SAN FRANCISCO (Golden Gate), CA: RMS 6.6 cm, rango 278 cm, modelo/oficial 1.02
+validación GOT5.6 noaa-8518750 NEW YORK (The Battery), NY: RMS 19.6 cm, rango 222 cm, modelo/oficial 0.85
+validación GOT5.6 noaa-8724580 KEY WEST, FL: RMS 11.3 cm, rango 98 cm, modelo/oficial 0.96
+validación GOT5.6 noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA: RMS 137.1 cm, rango 522 cm, modelo/oficial 0.84
+validación GOT5.6 jma-wn 稚内 (JMA WN): RMS 7.0 cm, rango 49 cm, modelo/oficial 0.74
+validación GOT5.6 jma-ke 枝幸 (JMA KE): RMS 5.5 cm, rango 133 cm, modelo/oficial 0.86
+validación GOT5.6 jma-a0 紋別 (JMA A0): RMS 4.8 cm, rango 161 cm, modelo/oficial 0.97
+validación GOT5.6 linz-akaroa Akaroa: RMS 8.4 cm, rango 230 cm, modelo/oficial 1.01
+validación GOT5.6 linz-anakakata-bay Anakakata Bay: RMS 5.4 cm, rango 179 cm, modelo/oficial 1.04
+validación GOT5.6 linz-anawhata Anawhata: RMS 7.3 cm, rango 300 cm, modelo/oficial 1.05
+validación GOT5.6 imi-achill-island Achill Island (modelado): RMS 11.3 cm, rango 441 cm, modelo/oficial 0.96
+validación GOT5.6 imi-aranmore Aranmore: RMS 6.7 cm, rango 416 cm, modelo/oficial 0.99
+validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.7 cm, rango 100 cm, modelo/oficial 0.97
+validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 10.4 cm, rango 74 cm, modelo/oficial 1.03
+validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
+done: 425 ports, 208 regions with ports, 2326/2437 spots, 10625 files 28.2 MB, 541 s
