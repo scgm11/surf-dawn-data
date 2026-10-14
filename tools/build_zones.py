@@ -18,6 +18,7 @@ Usage: python3 tools/build_zones.py [--regions CODE ...] [--offline] [--strict]
              the spots in error
 """
 import argparse
+import glob
 import hashlib
 import json
 import math
@@ -175,6 +176,27 @@ def _cached_coast(code, rows):
     return None
 
 
+def previous():
+    """{code: region} of the spots/ published before this run (the indexes and the region files),
+    in the shape build_region returns, so a region this run cannot build is not lost."""
+    out = {}
+    for path in sorted(glob.glob(os.path.join(OUT, "idx", "*.json"))):
+        try:
+            with open(path, encoding="utf-8") as f:
+                rows = json.load(f).get("r", [])
+        except (OSError, ValueError):
+            continue
+        for r in rows:
+            try:
+                with open(os.path.join(OUT, "r", r[0] + ".json"), encoding="utf-8") as f:
+                    text = f.read()
+            except OSError:
+                continue
+            out[r[0]] = {"code": r[0], "country": r[1], "v": r[9], "text": text, "bytes": r[8], "n": r[7],
+                         "lat": r[4], "lon": r[5], "km": r[6]}
+    return out
+
+
 def write(rel, text):
     path = os.path.join(OUT, rel)
     os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -195,7 +217,10 @@ def report_md(rep, built):
     lines += ["## Regiones", "", "| Región | Picos | Bytes | Olas | Viento | Puertos | Ajuste medio a la costa | Punto de olas |",
               "|---|---|---|---|---|---|---|---|"]
     for b in built:
-        r = rep["regions"][b["code"]]
+        r = rep["regions"].get(b["code"])
+        if r is None:                              # kept from the previous run
+            lines.append("| %s | %d | %d | (anterior) | | | | |" % (b["code"], b["n"], b["bytes"]))
+            continue
         sn = [s["snap"] for s in r["spots"] if s["snap"] is not None and not s["nosnap"]]
         lines.append("| %s | %d | %d | %s | %s | %d | %s | %d |" % (
             b["code"], b["n"], b["bytes"], r["models"][0], r["models"][1], r["ports"],
@@ -203,7 +228,7 @@ def report_md(rep, built):
     lines += ["", "## Emblemáticos (revisión a mano)", "",
               "| Región | Pico | Conf. | Ajuste a la costa | Orientación | Punto de olas |", "|---|---|---|---|---|---|"]
     for b in built:
-        for s in rep["regions"][b["code"]]["spots"]:
+        for s in rep["regions"].get(b["code"], {"spots": []})["spots"]:
             if s["top"]:
                 lines.append("| %s | %s | %s | %s | %d° | %s |" % (
                     b["code"], s["name"], s["conf"], "—" if s["snap"] is None else "%.0f m" % s["snap"], s["facing"],
@@ -221,6 +246,7 @@ def main():
     models, ports = rule.read(), read_ports()
     want = a.regions or list(regions)
     rep = {"errors": [], "warnings": [], "regions": {}, "offline_waves": 0}
+    old = previous()
     built = []
     for code in want:
         reg = regions.get(code)
@@ -233,7 +259,10 @@ def main():
             import traceback
             rep["errors"].append("%s: %s (%s)" % (code, type(e).__name__, traceback.format_exc().strip().splitlines()[-2].strip()[:160]))
             print("ERROR %s:\n%s" % (code, traceback.format_exc()), file=sys.stderr, flush=True)
-            continue
+            b = None
+        if not b and code in old and old[code]["country"] == reg["country"]:
+            b = old[code]                          # a region that could not be built (a server down) keeps
+            rep["warnings"].append("%s: kept the previous version" % code)   # what the apps already have
         if b:
             built.append(b)
             print("%-11s %2d spots %5d bytes  v%s" % (code, b["n"], b["bytes"], b["v"]), flush=True)
