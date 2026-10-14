@@ -29,7 +29,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install numpy==2.3.4 pyTMD==3.0.9 global-land-mask==1.0.0
+      - run: pip install numpy==2.3.4 pyTMD==3.0.9 h5py==3.12.1 global-land-mask==1.0.0
       - name: Caché (TICON-3 y descargas)
         uses: actions/cache/restore@v4
         with:
