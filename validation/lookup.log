@@ -1,65 +1,136 @@
 AU-NSW-SYD/OURS ['OURS']
 AU-VIC-SC/WINKIPOP ['WINKIPOP']
 AU-WA-MR/MAIN BREAK ['MAIN BREAK']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
 AU-WA-MR/THE BOX ['THE BOX', 'BOX']
 AU-WA-MR/NORTH POINT ['NORTH POINT']
 CL-NOR/EL GRINGO ['EL GRINGO', 'GRINGO']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 CR-GUA/WITCH'S ROCK ["WITCH'S ROCK", 'WITCHS']
 CR-OSA/PAVONES ['PAVONES']
 ES-CN-E/EL QUEMAO ['EL QUEMAO', 'QUEMAO']
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ES-CN-W/EL FRONTON ['EL FRONTON', 'FRONTON']
 ES-CN-W/LA IZQUIERDA ['LA IZQUIERDA', 'IZQUIERDA']
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 FJ-MAM/CLOUDBREAK ['CLOUDBREAK']
 FJ-MAM/RESTAURANTS ['RESTAURANTS']
 FJ-MAM/SWIMMING POOLS ['SWIMMING POOLS', 'SWIMMING POOL', 'SWIMMING']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ID-BAL-E/SHIPWRECKS ['SHIPWRECKS']
 ID-JAV-E/MONEY TREES ['MONEY TREES', 'MONEY TREE', 'MONEY', 'TREES']
 ID-MEN/MACARONIS ['MACARONIS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ID-MEN/KANDUI LEFT ['KANDUI LEFT', 'KANDUI']
 ID-MEN/RIFLES ['RIFLES']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ID-ROT/T-LAND ['T-LAND', 'LAND']
 ID-SBW/SUPERSUCK ['SUPERSUCK']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 IE-NW/EASKEY ['EASKEY']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 IE-SW/AILEEN'S ["AILEEN'S", 'AILEENS']
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 LK-E/WHISKEY POINT ['WHISKEY POINT', 'WHISKEY']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 MA-N/SAFI LE JARDIN ['SAFI LE JARDIN', 'SAFI', 'JARDIN']
 MA-TAG/KILLER POINT ['KILLER POINT', 'KILLER']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 MA-TAG/PANORAMAS ['PANORAMAS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 MV-NMA/PASTA POINT ['PASTA POINT', 'PASTA']
 MV-NMA/SULTANS ['SULTANS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 MV-NMA/HONKY'S ["HONKY'S", 'HONKYS']
 MV-NMA/COKES ['COKES']
 MV-NMA/CHICKENS ['CHICKENS']
 MV-NMA/JAILBREAKS ['JAILBREAKS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 MV-SOU/TIGER STRIPES ['TIGER STRIPES', 'TIGER STRIPE', 'TIGER', 'STRIPES']
 MV-SOU/BEACONS ['BEACONS']
 MX-BCS/ZIPPERS ['ZIPPERS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NA-ERO/SKELETON BAY ['SKELETON BAY', 'SKELETON']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-GIS/CENTRES ['CENTRES']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-GIS/STOCK ROUTE ['STOCK ROUTE', 'STOCK', 'ROUTE']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-GIS/PINES ['PINES']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-GIS/WHALES ['WHALES']
 NZ-GIS/THE ISLAND ['THE ISLAND']
 NZ-KAI/MEATWORKS ['MEATWORKS']
 NZ-NTL/SUPER TUBES ['SUPER TUBES', 'SUPER TUBE', 'SUPER', 'TUBES']
+  overpass overpass-api.de failed (The read operation timed out)
 NZ-NTL/MUKIES 2 ['MUKIES 2', 'MUKIES']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-NTL/MUKIES 1 ['MUKIES 1', 'MUKIES']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-NTL/PEAKS ['PEAKS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 NZ-RAG/INDICATORS ['INDICATORS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 PH-SIA/JACKING HORSE ['JACKING HORSE', 'JACKING', 'HORSE']
 PH-SIA/QUICKSILVER ['QUICKSILVER']
 PR-NW/WILDERNESS ['WILDERNESS']
 PR-NW/TRES PALMAS ['TRES PALMAS', 'TRES PALMA', 'TRES', 'PALMAS']
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 SV-ORI/LAS FLORES ['LAS FLORES', 'FLORES', 'LAS FLORE']
+  overpass overpass-api.de failed (Remote end closed connection without response)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 TW-E/JINZUN HARBOR ['JINZUN HARBOR', 'JINZUN']
+  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 US-CA-SB/C STREET ['C STREET']
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 US-HI-BIG/BANYANS ['BANYANS']
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 US-HI-KAU/PK'S ["PK'S"]
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 US-HI-OAN/BACKDOOR ['BACKDOOR']
-  https://query.wikidata.org/sparql failed (HTTP Error 502: Bad Gateway)
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 US-NE/RUGGLES ['RUGGLES']
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ZA-EC-JB/BRUCE'S BEAUTIES ["BRUCE'S BEAUTIES", "BRUCE'S BEAUTIE", 'BRUCES', 'BEAUTIES']
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ZA-WC-CPT/DUNGEONS ['DUNGEONS']
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ZA-WC-CPT/SUNSET REEF ['SUNSET REEF', 'SUNSET']
+  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 ZA-WC-GR/INNER POOL ['INNER POOL']
+  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
 63 spots looked up

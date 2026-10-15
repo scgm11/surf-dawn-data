@@ -1,6 +1,6 @@
 # Picos: búsqueda por nombre en fuentes públicas
 
-Generado 2026-10-15 04:45 UTC por `tools/lookup.py` (issue #7, §5.8), a 15 km de cada pico: lo que tienen Wikidata, Wikipedia, GeoNames y OpenStreetMap con su nombre o una de sus palabras. Sirve para revisar a mano los emblemáticos sin fuente o lejos de la suya (`validation/spots.md`): una posición mejor va a la semilla con su fuente en `src`.
+Generado 2026-10-15 05:24 UTC por `tools/lookup.py` (issue #7, §5.8), a 15 km de cada pico: lo que tienen Wikidata, Wikipedia, GeoNames y OpenStreetMap con su nombre o una de sus palabras. Sirve para revisar a mano los emblemáticos sin fuente o lejos de la suya (`validation/spots.md`): una posición mejor va a la semilla con su fuente en `src`.
 
 ## AU-NSW-SYD/OURS
 
@@ -25,7 +25,7 @@ Publicado en -34.0107, 151.2304 ([mapa](https://www.openstreetmap.org/?mlat=-34.
 | 13.4 | GeoNames | Kareela Golf Course | S.RECG | -34.01520, 151.08460 | [geonames:8216609](https://www.geonames.org/8216609) |
 | 13.4 | GeoNames | Salisbury Golf Course | S.RECG | -34.01520, 151.08460 | [geonames:8216630](https://www.geonames.org/8216630) |
 | 13.5 | Wikidata | Kareela Golf Course | golf course | -34.01500, 151.08444 | [Q97453646](https://www.wikidata.org/wiki/Q97453646) |
-| 14.5 | Wikidata | Central Grand Concourse | tram stop, terminus | -33.88222, 151.20639 | [Q5061381](https://www.wikidata.org/wiki/Q5061381) |
+| 14.5 | Wikidata | Central Grand Concourse | terminus, tram stop | -33.88222, 151.20639 | [Q5061381](https://www.wikidata.org/wiki/Q5061381) |
 
 ## AU-VIC-SC/WINKIPOP
 
@@ -103,7 +103,7 @@ Publicado en -17.8860, 177.1865 ([mapa](https://www.openstreetmap.org/?mlat=-17.
 
 | km | Fuente | Nombre | Qué es | Posición | Ítem |
 |---|---|---|---|---|---|
-| 24.1 | Nominatim | cloudbreak | other | -17.77185, 177.38022 | [osm:node/4400522827](https://www.openstreetmap.org/node/4400522827) |
+| 24.1 | Nominatim | cloudbreak | other | -17.77184, 177.38010 | [osm:node/4400522826](https://www.openstreetmap.org/node/4400522826) |
 
 ## FJ-MAM/RESTAURANTS
 
