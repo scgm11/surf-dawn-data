@@ -4,9 +4,7 @@ UA = {"User-Agent": "surf-dawn-validation/1.0 (+https://github.com/scgm11/surf-d
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 os.makedirs(OUT, exist_ok=True)
 SERVERS = ["https://erddap.emodnet-physics.eu/erddap/", "https://prod-erddap.emodnet-physics.eu/erddap/",
-           "https://erddap.ifremer.fr/erddap/", "https://erddap.puertos.es/erddap/", "https://erddap.marine.ie/erddap/",
-           "https://data.cefas.co.uk/erddap/", "https://erddap.observations.voiceoftheocean.org/erddap/",
-           "https://erddap.socib.es/erddap/", "https://erddap.hzg.de/erddap/"]
+           "https://erddap.ifremer.fr/erddap/", "https://erddap.socib.es/erddap/"]
 log = open(os.path.join(OUT, "log.txt"), "a")
 
 def get(url, timeout=120):
@@ -31,7 +29,10 @@ if __name__ == "__main__":
         with open(os.path.join(OUT, "%s-tabledap.txt" % tag), "w") as f:
             f.write("%d datasets\n" % (len(rows) - 1))
             for r in rows[1:]:
+                if len(r) < len(rows[0]):
+                    continue
                 title = r[idx.get("Title", 0)]
                 ds = r[idx.get("Dataset ID", 0)]
+                f.write("ALL %s | %s\n" % (ds, title[:110]))
                 if re.search(r"wave|VHM0|swell|buoy|boya|bou[ée]e|moor|CANDHIS|WaveNet|Puertos|SIMAR|REDEXT|Cefas", title + " " + ds, re.I):
                     f.write("%s | %s\n" % (ds, title[:150]))
