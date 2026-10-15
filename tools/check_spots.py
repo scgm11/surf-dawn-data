@@ -9,9 +9,9 @@ validation/spots.json (docs/formatos.md):
   facing computed on the wrong side of a headland or a lagoon, or a point the swell wraps into.
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
-- §5.8 Flagship spots (`top` in the seeds): their position against Wikidata, a public source: the
-  nearest item within WD_KM whose name matches the spot's (tools/lib/names.py); without one, against
-  OpenStreetMap (Nominatim, in the spot's country). Farther than WD_FAR_KM is flagged; with neither
+- §5.8 Flagship spots (`top` in the seeds): their position against public sources: the nearest item
+  within WD_KM whose name matches the spot's (tools/lib/names.py) in Wikidata or GeoNames; without
+  one, in OpenStreetMap (Nominatim in the spot's country, then Overpass around it). Farther than WD_FAR_KM is flagged; with neither
   it is "sin fuente" (to check by hand).
 
 Open-Meteo is asked once per wave grid cell (spots of a cell share their waves), several cells per
@@ -30,7 +30,7 @@ import urllib.parse
 import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from tools.lib import geo, openmeteo, osm, seeds  # noqa: E402
+from tools.lib import geo, geonames, openmeteo, osm, seeds  # noqa: E402
 from tools.lib.names import matches, regex, variants  # noqa: E402
 
 ROOT = seeds.ROOT
@@ -166,22 +166,26 @@ def wikidata(lat, lon, names):
 
 
 def check_flagship(code, s, cc):
+    """The nearest public item named like the spot: Wikidata and GeoNames, else OpenStreetMap
+    (Nominatim, then Overpass around it)."""
     names = variants(s[0])
     items = wikidata(s[1], s[2], names)
     if items is None:
         return {"status": "error"}
-    if not any(matches(i[0], names) for i in items):          # not in Wikidata: OpenStreetMap
-        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.nominatim(names, cc)
-                 if geo.km((s[1], s[2]), (c["lat"], c["lon"])) <= WD_KM]
-    if not any(matches(i[0], names) for i in items) and time.time() < OVERPASS_UNTIL[0]:
+    found = [i for i in items if matches(i[0], names)]
+    found += [(c["name"], c["lat"], c["lon"], c["src"]) for c in geonames.named_near(s[1], s[2], names, cc, WD_KM)]
+    if not found:                                             # OpenStreetMap: Nominatim in the country
+        found = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.nominatim(names, cc)
+                 if geo.km((s[1], s[2]), (c["lat"], c["lon"])) <= WD_KM and matches(c["name"], names)]
+    if not found and time.time() < OVERPASS_UNTIL[0]:
         # nor Nominatim: OSM features around it (Overpass, when it answers: a time budget for the run)
-        items = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.named_near(s[1], s[2], names, WD_KM, tries=2)]
+        found = [(c["name"], c["lat"], c["lon"], c["src"]) for c in osm.named_near(s[1], s[2], names, WD_KM, tries=2)
+                 if matches(c["name"], names)]
     best = None
-    for label, lat, lon, qid in items:
-        if matches(label, names):
-            d = geo.km((s[1], s[2]), (lat, lon))
-            if best is None or d < best["km"]:
-                best = {"km": round(d, 2), "qid": qid, "label": label, "wd_lat": round(lat, 5), "wd_lon": round(lon, 5)}
+    for label, lat, lon, ref in found:
+        d = geo.km((s[1], s[2]), (lat, lon))
+        if best is None or d < best["km"]:
+            best = {"km": round(d, 2), "qid": ref, "label": label, "wd_lat": round(lat, 5), "wd_lon": round(lon, 5)}
     if best is None:
         return {"status": "sin fuente"}
     best["status"] = "ok" if best["km"] <= WD_FAR_KM else "lejos"
@@ -321,8 +325,8 @@ def report(r, zs):
          "estarlo (en dos semanas no les tocaba su ventana de swell)." % (LONG_DAYS, r.get("season_cleared", 0)),
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
-         "- **Emblemáticos (§5.8):** la posición contra Wikidata (el ítem más cercano con su nombre, hasta %d km; "
-         "si no tiene, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d lejos pero revisados a mano (el "
+         "- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta %d km; "
+         "si no, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d lejos pero revisados a mano (el "
          "ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), %d sin fuente (revisar a mano), "
          "%d sin respuesta." % (
              WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["revisado"], count["sin fuente"], count["error"]),
@@ -351,19 +355,20 @@ def report(r, zs):
                 "; ".join(f["why"])))
     else:
         L.append("Ninguno.")
-    L += ["", "## Emblemáticos lejos de su ítem de Wikidata u OpenStreetMap", ""]
+    L += ["", "## Emblemáticos lejos de su ítem en Wikidata, GeoNames u OpenStreetMap", ""]
     far = [c for c in fl if c["status"] == "lejos"]
     if far:
         L += ["| Región | Pico | Distancia | Ítem |", "|---|---|---|---|"]
         for c in sorted(far, key=lambda c: -c["km"]):
             ref = c["qid"]
             link = ("https://www.wikidata.org/wiki/%s" % ref if ref.startswith("Q")
+                    else "https://www.geonames.org/%s" % ref.split(":", 1)[-1] if ref.startswith("geonames:")
                     else "https://www.openstreetmap.org/%s" % ref.split(":", 1)[-1])
             L.append("| %s | %s | %.1f km | [%s](%s) %s (%s, %s) |" % (
                 c["region"], c["spot"], c["km"], ref, link, c["label"], c.get("wd_lat"), c.get("wd_lon")))
     else:
         L.append("Ninguno.")
-    L += ["", "## Emblemáticos sin fuente en Wikidata ni OpenStreetMap (revisar a mano)", ""]
+    L += ["", "## Emblemáticos sin fuente en Wikidata, GeoNames ni OpenStreetMap (revisar a mano)", ""]
     nos = ["%s/%s" % (c["region"], c["spot"]) for c in fl if c["status"] == "sin fuente"]
     L.append(", ".join(nos) if nos else "Ninguno.")
     L += ["", "## Zonas", "", "| Región | Modelo | Altura media (mediana) | Olas de frente (mediana) |", "|---|---|---|---|"]

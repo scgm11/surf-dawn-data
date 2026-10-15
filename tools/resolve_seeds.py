@@ -8,7 +8,8 @@ For each such seed:
    distinctive part), matched without case or accents.
 2. Candidates: OSM features with that name within SEARCH_KM of the seed (Overpass: beaches,
    bays, capes, places, surf spots, beach resorts), plus Nominatim's search in the seed's
-   country (catches a seed with a wrong sign or a typo in a coordinate, up to FAR_KM away).
+   country (catches a seed with a wrong sign or a typo in a coordinate, up to FAR_KM away), plus
+   GeoNames' places of the country (beaches, reefs, points, bays, towns) within SEARCH_KM.
 3. A candidate counts only if it is within osm.SNAP_MAX_M / 2 of the coastline. The best one is
    a beach or surf spot before a bay or cape, before a place; then the nearest to the seed.
 4. The seed row gets the candidate's position (4 decimals), `src=osm:<type>/<id>` and the note
@@ -29,7 +30,11 @@ import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.lib import geo, osm, seeds  # noqa: E402
+from tools.lib import geonames  # noqa: E402
 from tools.lib.osm import named_near, nominatim  # noqa: E402
+
+GN_KIND = {"BCH": "beach", "BCHS": "beach", "RF": "surf", "RFC": "surf", "PT": "cape", "PTS": "cape", "CAPE": "cape",
+           "HDLD": "headland", "BAY": "bay", "BAYS": "bay", "COVE": "bay", "INLT": "bay"}
 from tools.lib.names import fold, variants  # noqa: E402
 
 ROOT = seeds.ROOT
@@ -45,11 +50,23 @@ def matches(cand, names):
     return any(fold(v) in f for v in names)
 
 
+def coastal(lat, lon, km=osm.SNAP_MAX_M / 2000.0):
+    """Land and sea both within km of (lat, lon) in global-land-mask's 1 km grid: a point on a coast."""
+    from global_land_mask import globe
+    import math
+    pts = [(lat, lon)] + [geo.unxy(lat, lon, r * 1000 * math.sin(math.radians(a)), r * 1000 * math.cos(math.radians(a)))
+                          for r in (km / 2, km, 2 * km) for a in range(0, 360, 30)]
+    land = [bool(globe.is_land(p[0], geo.wrap(p[1]))) for p in pts]
+    return any(land) and not all(land)
+
+
 def resolve(code, row, cc, use_overpass=True, far_km=FAR_KM):
     names = variants(row["name"])
     seed = (row["lat"], row["lon"])
     cands = [c for c in named_near(row["lat"], row["lon"], names, SEARCH_KM) if matches(c, names)] if use_overpass else []
     cands += [c for c in nominatim(names, cc) if matches(c, names) and geo.km(seed, (c["lat"], c["lon"])) <= far_km]
+    cands += [dict(c, kind=GN_KIND.get(c["kind"], "place" if c["kind"].startswith("PPL") else "other"))
+              for c in geonames.named_near(row["lat"], row["lon"], names, cc, min(far_km, SEARCH_KM))]
     seen, good = set(), []
     for c in cands:
         k = (round(c["lat"], 3), round(c["lon"], 3))
@@ -58,9 +75,9 @@ def resolve(code, row, cc, use_overpass=True, far_km=FAR_KM):
         seen.add(k)
         try:
             ways = osm.coastline("resolve-%s" % code, [(c["lat"], c["lon"])])
-        except RuntimeError:
-            continue
-        s = osm.snap(c["lat"], c["lon"], ways)
+            s = osm.snap(c["lat"], c["lon"], ways)
+        except RuntimeError:                       # Overpass down: the 1 km land mask says if it is on a coast
+            s = (0.0,) if coastal(c["lat"], c["lon"]) else None
         if s is None or s[0] > osm.SNAP_MAX_M / 2:
             continue
         full = fold(row["name"]) in fold(c["name"]) or fold(c["name"]) in fold(row["name"])

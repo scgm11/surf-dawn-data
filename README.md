@@ -74,7 +74,8 @@ La regla y la lectura de `models.csv` están en `tools/lib/models.py`. Detalle e
 
 ## Fuentes y créditos
 
-- Costas y nombres: © colaboradores de **OpenStreetMap** (ODbL), vía Overpass y Nominatim.
+- Costas y nombres: © colaboradores de **OpenStreetMap** (ODbL), vía Overpass y Nominatim; nombres y
+  posiciones de **Wikidata** (CC0) y **GeoNames** (CC BY 4.0) para revisar los picos.
 - Olas, viento, nivel del mar y puntos de olas: **Open-Meteo** (CC BY 4.0; uso no comercial
   gratis), con los modelos de NOAA, ECMWF, Météo-France, DWD, ECCC, JMA, UK Met Office y BoM.
 - Mareas: SOHMA (Uruguay), DHN vía Epagri/CIRAM (Brasil), NOAA CO-OPS (dominio público), JMA
