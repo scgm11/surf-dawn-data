@@ -18,7 +18,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: |
-          if grep -qv '^#' diag/datasets.txt; then python3 diag/probe.py; else python3 diag/discover.py; fi
+          python3 diag/probe_cmems.py
       - if: always()
         run: |
           git config user.name "surf-dawn-bot"
