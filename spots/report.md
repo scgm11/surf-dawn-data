@@ -189,7 +189,7 @@
 | MU-ALL | 3 | 261 | ncep_gfswave025 | gfs_seamless | 1 | 682 m | 0 |
 | CV-ALL | 3 | 277 | ncep_gfswave016 | gfs_seamless | 1 | 835 m | 0 |
 | FR-PBA | 24 | 1077 | ncep_gfswave016 | gfs_seamless | 2 | 353 m | 0 |
-| FR-HOS | 16 | 799 | ncep_gfswave016 | gfs_seamless | 2 | 752 m | 0 |
+| FR-HOS | 16 | 798 | ncep_gfswave016 | gfs_seamless | 2 | 752 m | 0 |
 | FR-GIR | 18 | 905 | ncep_gfswave016 | gfs_seamless | 3 | 617 m | 0 |
 | FR-VEN | 12 | 698 | ncep_gfswave016 | gfs_seamless | 3 | 488 m | 0 |
 | FR-BRE | 15 | 760 | ncep_gfswave016 | gfs_seamless | 3 | 666 m | 0 |
@@ -549,7 +549,7 @@
 | FR-HOS | SANTOCHA | K | 436 m | 270° | — |
 | FR-HOS | LA GRAVIERE | K | 496 m | 271° | — |
 | FR-HOS | LA NORD | K | 629 m | 273° | — |
-| FR-HOS | LES CULS NULS | K | 760 m | 276° | — |
+| FR-HOS | LES CULS NUS | K | 760 m | 276° | — |
 | FR-HOS | LES ESTAGNOTS | V | 528 m | 272° | — |
 | FR-HOS | LE PENON | K | 1194 m | 284° | — |
 | FR-GIR | LACANAU CENTRALE | K | 94 m | 272° | — |
