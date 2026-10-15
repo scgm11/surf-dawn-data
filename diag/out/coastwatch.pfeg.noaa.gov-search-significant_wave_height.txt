@@ -1,0 +1,4 @@
+NWW3_Global_Best | WaveWatch III (WW3) Global Wave Model | tabledap=
+LiquidR_HBG3_2015_mose | Liquid Robotics Wave Glider, Honey Badger (G3), 2015, MOSE | tabledap=https://co
+LiquidR_HBG3_2015_mose_v2 | Liquid Robotics Wave Glider, Honey Badger (G3), 2015, MOSE, version 2 | tabledap=https://co
+cwwcNDBCMet | NDBC Standard Meteorological Buoy Data, 1970-present | tabledap=https://co

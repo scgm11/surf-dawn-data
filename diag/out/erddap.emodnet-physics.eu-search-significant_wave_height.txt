@@ -1,0 +1,5 @@
+SPI_10_5281_zenodo_4541563 | SPI - Reconstructed sea state using ship motion data recorded during the Antarctic Circumnavigation Expedition (ACE). | tabledap=https://er
+MELOA_00wo31 | Wavy measurements from 00WO31 starting 2021-10-29T11:15:00 | tabledap=https://er
+MELOA_00wo47 | Wavy measurements from 00WO47 starting 2021-10-28T08:39:00 | tabledap=https://er
+MELOA_00wo52 | Wavy measurements from 00WO52 starting 2021-10-29T11:16:00 | tabledap=https://er
+EMODPACE_NMDIS_CCS | EMODPACE - CCS Stations | tabledap=https://er

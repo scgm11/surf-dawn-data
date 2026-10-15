@@ -1,0 +1,12 @@
+OK 2.6s 1538 bytes https://erddap.emodnet-physics.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=VHM0
+OK 1.7s 9110 bytes https://erddap.emodnet-physics.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=significant+wave+height
+FAIL 3.5s https://erddap.emodnet-physics.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=wave+buoy: HTTP Error 404: 
+FAIL 3.3s https://er1.s4oceanice.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=VHM0: HTTP Error 404: 
+FAIL 2.6s https://er1.s4oceanice.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=significant+wave+height: HTTP Error 404: 
+FAIL 2.9s https://er1.s4oceanice.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=wave+buoy: HTTP Error 404: 
+FAIL 3.0s https://erddap.emodnet.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=VHM0: HTTP Error 404: 
+FAIL 3.0s https://erddap.emodnet.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=significant+wave+height: HTTP Error 404: 
+FAIL 2.7s https://erddap.emodnet.eu/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=wave+buoy: HTTP Error 404: 
+FAIL 3.5s https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=VHM0: HTTP Error 404: 
+OK 1.4s 10229 bytes https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=significant+wave+height
+OK 1.6s 49106 bytes https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=wave+buoy
