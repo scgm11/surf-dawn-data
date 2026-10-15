@@ -1,8 +1,8 @@
-SIN RESOLVER BR-NE-CE/LAGOINHA (-3.3496, -39.1142; costa a ?): 0 candidatos por nombre, ninguno en la costa
-OK VN-ALL/BAI XEP (13.7270, 109.2250; costa a ?) -> 13.1906, 109.3020 (osm:node/4172081938, other 'Bãi Xép', a 60.2 km de la semilla, costa a 24 m)
-SIN RESOLVER FR-HOS/ONDRES (43.5785, -1.4862; costa a ?): 1 candidatos por nombre, ninguno en la costa
-SIN RESOLVER CL-MAU/CHANCO (-35.7450, -72.5704; costa a ?): 2 candidatos por nombre, ninguno en la costa
-SIN RESOLVER CL-PIC/CIRUELOS (-34.5159, -72.0413; costa a ?): 1 candidatos por nombre, ninguno en la costa
-SIN RESOLVER BR-NE-PE/ARUANA (-11.0300, -37.0838; costa a ?): 1 candidatos por nombre, ninguno en la costa
-SIN RESOLVER MV-SMA/GURAIDHOO (3.8960, 73.4750; costa a ?): 0 candidatos por nombre, ninguno en la costa
-1 semillas movidas, 6 sin resolver
+OK BR-NE-CE/LAGOINHA (-3.3496, -39.1142; costa a ?) -> -3.3483, -39.1372 (geonames:3396550, place 'Lagoinha', a 2.6 km de la semilla, costa a 294 m)
+OK VN-ALL/BAI XEP (13.7270, 109.2250; costa a ?) -> 13.6833, 109.2333 (geonames:1562058, place 'Xóm Bãi Xép', a 4.9 km de la semilla, costa a 79 m)
+OK FR-HOS/ONDRES (43.5785, -1.4862; costa a ?) -> 43.5792, -1.4875 (geonames:3232812, beach "Plage d'Ondres", a 0.1 km de la semilla, costa a 13 m)
+OK CL-MAU/CHANCO (-35.7450, -72.5704; costa a ?) -> -35.7521, -72.5792 (geonames:3895490, bay 'Bahía de Chanco', a 1.1 km de la semilla, costa a 1136 m)
+SIN RESOLVER CL-PIC/CIRUELOS (-34.5159, -72.0413; costa a ?): 2 candidatos por nombre, ninguno en la costa
+OK BR-NE-PE/ARUANA (-11.0300, -37.0838; costa a ?) -> -11.0175, -37.0686 (geonames:13111127, beach 'Praia de Aruana', a 2.2 km de la semilla, costa a 100 m)
+OK MV-SMA/GURAIDHOO (3.8960, 73.4750; costa a ?) -> 3.9005, 73.4662 (geonames:11103468, place 'Guraidhoo', a 1.1 km de la semilla, costa a 16 m)
+6 semillas movidas, 1 sin resolver
