@@ -15,6 +15,9 @@ SOURCES = {
            "(`IWBNetwork`, con viento)", "CC BY 4.0"),
     "ndbc": ("NOAA NDBC", "National Data Buoy Center, `realtime2` (boyas, C-MAN y estaciones costeras con viento; incluye "
              "socios: PNBOIA, Canadá, etc.)", "dominio público"),
+    "cmems": ("Copernicus Marine In Situ", "`INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030`, archivos diarios `latest`: boyas "
+              "de Europa (CANDHIS, Puertos del Estado, Cefas…), Marruecos, Canarias y del GTS; necesita cuenta (secretos "
+              "`COPERNICUSMARINE_SERVICE_USERNAME` y `_PASSWORD`)", "licencia de Copernicus Marine (libre, con crédito)"),
 }
 WIND_WHERE = {"gfs_seamless": "todas partes (hoy)", "ecmwf_ifs": "todas partes", "meteofrance_seamless": "Europa (ARPEGE Europa, AROME)",
               "ukmo_seamless": "Islas Británicas (UKV)", "cmc_gem_seamless": "Norteamérica (RDPS, HRDPS)",
