@@ -26,7 +26,7 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
 | `lat`, `lon` | Grados decimales, 4 decimales, sobre la rompiente o la playa (no tierra adentro). Puede ser aproximado: el script lo lleva a la costa más cercana, hasta 2,5 km |
 | `type` | `B` beach break, `P` point break, `R` reef; vacío si no se sabe |
 | `conf` | Confianza en la posición: `V` verificada contra una fuente pública, `K` conocimiento general (±0,02°), `L` dudosa |
-| `src` | Procedencia: `local`, `osm:<tipo>/<id>`, `wd:Q<id>`, `gov:<fuente>`, `web:<sitio>` (solo para chequear un dato suelto: nunca se copian listas de Surfline, surf-forecast, wannasurf ni breakfinder) |
+| `src` | Procedencia: `local`, `osm:<tipo>/<id>`, `wd:Q<id>`, `geonames:<id>`, `gov:<fuente>`, `web:<sitio>` (solo para chequear un dato suelto: nunca se copian listas de Surfline, surf-forecast, wannasurf ni breakfinder) |
 | `flags` | Separadas por espacio: `top` pico emblemático (revisión a mano obligatoria); `nosnap` no ajustar a la costa (arrecifes mar adentro, o picos ya validados); `checked` posición revisada a mano aunque el ítem de Wikidata u OSM con su nombre esté lejos (es el pueblo, un hotel u otra ola: `validation/spots.md`); `facing=NNN` orientación puesta a mano (grados hacia donde mira la playa, al mar); `wave=LAT;LON` punto de mar para pedir las olas |
 | `note` | Corta: `WSL CT`, `ola grande`, `isla`, por qué la posición es dudosa… |
 

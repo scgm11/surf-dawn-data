@@ -23,6 +23,7 @@ import glob
 import json
 import math
 import os
+import re
 import statistics
 import sys
 import time
@@ -165,9 +166,13 @@ def wikidata(lat, lon, names):
     return None
 
 
-def check_flagship(code, s, cc):
+SEED_SRC = re.compile(r"^(osm:\w+/\d+|wd:Q\d+|geonames:\d+)$")
+
+
+def check_flagship(code, s, cc, seed=None):
     """The nearest public item named like the spot: Wikidata and GeoNames, else OpenStreetMap
-    (Nominatim, then Overpass around it)."""
+    (Nominatim, then Overpass around it); else the item the seed's position was taken from by hand
+    (its `src`, when it names one: the item has another name, "LACANAU CENTRALE" is "Plage Centrale")."""
     names = variants(s[0])
     items = wikidata(s[1], s[2], names)
     if items is None:
@@ -186,6 +191,10 @@ def check_flagship(code, s, cc):
         d = geo.km((s[1], s[2]), (lat, lon))
         if best is None or d < best["km"]:
             best = {"km": round(d, 2), "qid": ref, "label": label, "wd_lat": round(lat, 5), "wd_lon": round(lon, 5)}
+    if best is None and seed and SEED_SRC.match(seed.get("src", "")):
+        d = geo.km((s[1], s[2]), (seed["lat"], seed["lon"]))
+        best = {"km": round(d, 2), "qid": seed["src"].replace("wd:", ""), "label": "fuente de la semilla",
+                "wd_lat": seed["lat"], "wd_lon": seed["lon"]}
     if best is None:
         return {"status": "sin fuente"}
     best["status"] = "ok" if best["km"] <= WD_FAR_KM else "lejos"
@@ -200,9 +209,10 @@ def main():
                     help="look again only for the flagship spots the last run found no source for")
     a = ap.parse_args()
     zs = zones(set(a.regions or []))
-    tops, checked = {}, set()
+    tops, checked, seed_rows = {}, set(), {}
     for z in zs:
         for r in seeds.spots(z["id"]):
+            seed_rows[(z["id"], r["name"])] = r
             tops[(z["id"], r["name"])] = bool(r["f"].get("top"))
             if r["f"].get("checked"):
                 checked.add((z["id"], r["name"]))
@@ -281,7 +291,7 @@ def main():
             for i, c in enumerate(result["flagship"]):
                 if c.get("status") in ("sin fuente", "error") and (c["region"], c["spot"]) in rows:
                     z, s = rows[(c["region"], c["spot"])]
-                    n = check_flagship(z["id"], s, z["c"])
+                    n = check_flagship(z["id"], s, z["c"], seed_rows.get((z["id"], s[0])))
                     if n["status"] == "lejos" and (z["id"], s[0]) in checked:
                         n["status"] = "revisado"
                     n.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
@@ -292,7 +302,7 @@ def main():
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):
-                    c = check_flagship(z["id"], s, z["c"])
+                    c = check_flagship(z["id"], s, z["c"], seed_rows.get((z["id"], s[0])))
                     if c["status"] == "lejos" and (z["id"], s[0]) in checked:
                         c["status"] = "revisado"            # the item is a town, a hotel, another wave... (seed flag)
                     c.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
@@ -326,10 +336,12 @@ def report(r, zs):
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
          "- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta %d km; "
-         "si no, OpenStreetMap): %d bien (a menos de %.1f km), %d lejos, %d lejos pero revisados a mano (el "
-         "ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), %d sin fuente (revisar a mano), "
-         "%d sin respuesta." % (
-             WD_KM, count["ok"], WD_FAR_KM, count["lejos"], count["revisado"], count["sin fuente"], count["error"]),
+         "si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la "
+         "semilla): %d bien (a menos de %.1f km; %d de ellos por la fuente de su semilla), %d lejos, %d lejos pero "
+         "revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), %d sin fuente "
+         "(revisar a mano; `validation/lookup.md` tiene lo que hay con su nombre alrededor), %d sin respuesta." % (
+             WD_KM, count["ok"], WD_FAR_KM, sum(1 for c in fl if c.get("label") == "fuente de la semilla"),
+             count["lejos"], count["revisado"], count["sin fuente"], count["error"]),
          "- Open-Meteo: %d pedidos, ~%d llamadas de las 10.000 diarias gratuitas." % (
              r["open_meteo"]["requests"], r["open_meteo"]["calls"]), ""]
     flipped = [f for f in r["flags"] if f.get("flipped")]
