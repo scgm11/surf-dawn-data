@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 81 s
+catalogs: 3902 stations in 38 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -384,9 +384,9 @@ GOT5.6: 163 points, 17520 hours each
   PH-SIA       got-1682f6     6.. 226 cm  8 spots
   PH-LUZ       got-f8b86d     5.. 138 cm  3 spots
   PH-LUZ       got-529ee2     6.. 211 cm  2 spots
-  PH-EAS       got-72b502     5.. 223 cm  1 spots
-  PH-EAS       got-9b0ee7     5.. 183 cm  1 spots
-  PH-EAS       got-d48a80     6.. 178 cm  1 spots
+  PH-EAS       got-47544d     5.. 223 cm  1 spots
+  PH-EAS       got-89910a     6.. 179 cm  1 spots
+  PH-EAS       got-67e4b2     6.. 181 cm  1 spots
   LK-E         got-94cadf     6..  35 cm  8 spots
   LK-S         got-964843     5..  79 cm  10 spots
   LK-S         got-d6cb2e     6..  72 cm  1 spots
@@ -460,4 +460,7 @@ validación GOT5.6 imi-aranmore Aranmore: RMS 6.7 cm, rango 416 cm, modelo/ofici
 validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.7 cm, rango 100 cm, modelo/oficial 0.97
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 10.4 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-done: 427 ports, 208 regions with ports, 2329/2440 spots, 10675 files 28.3 MB, 579 s
+removing tide/got-72b502 (no region uses it)
+removing tide/got-9b0ee7 (no region uses it)
+removing tide/got-d48a80 (no region uses it)
+done: 427 ports, 208 regions with ports, 2329/2440 spots, 10675 files 28.3 MB, 471 s

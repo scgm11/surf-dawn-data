@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-15 05:04 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-15 05:21 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -100,6 +100,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-3d80b7 | got5.6:10.240,-85.842 | GOT5.6 10.240N 85.842W (CR-GUA) | MSL+147 cm (modelo) | 6..293 | — | 1.4 |
 | got-439ad8 | got5.6:-22.115,14.268 | GOT5.6 22.115S 14.268E (NA-ERO) | MSL+97 cm (modelo) | 6..189 | — | 1.1 |
 | got-441786 | got5.6:43.443,-4.048 | GOT5.6 43.443N 4.048W (ES-CAN) | MSL+235 cm (modelo) | 6..464 | — | 2.6 |
+| got-47544d | got5.6:13.689,124.393 | GOT5.6 13.689N 124.393E (PH-EAS) | MSL+125 cm (modelo) | 5..223 | — | 1.4 |
 | got-47f025 | got5.6:-33.743,-53.370 | GOT5.6 33.743S 53.370W (BR-RS-SUL) | MSL+59 cm (modelo) | 5..119 | — | 1.1 |
 | got-48d2ad | got5.6:14.752,-17.509 | GOT5.6 14.752N 17.509W (SN-ALL) | MSL+81 cm (modelo) | 6..164 | — | 0.9 |
 | got-4b911c | got5.6:-34.055,24.925 | GOT5.6 34.055S 24.925E (ZA-EC-JB) | MSL+105 cm (modelo) | 6..212 | — | 1.4 |
@@ -116,6 +117,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-63d295 | got5.6:-33.023,27.919 | GOT5.6 33.023S 27.919E (ZA-EC-PE) | MSL+105 cm (modelo) | 6..210 | — | 1.4 |
 | got-642556 | got5.6:-29.976,-50.121 | GOT5.6 29.976S 50.121W (BR-RS) | MSL+48 cm (modelo) | 6..91 | — | 1.2 |
 | got-668790 | got5.6:-34.129,-71.998 | GOT5.6 34.129S 71.998W (CL-PIC) | MSL+84 cm (modelo) | 5..186 | — | 1.1 |
+| got-67e4b2 | got5.6:10.986,125.808 | GOT5.6 10.986N 125.808E (PH-EAS) | MSL+93 cm (modelo) | 6..181 | — | 1.1 |
 | got-68a040 | got5.6:-27.720,114.151 | GOT5.6 27.720S 114.151E (AU-WA-NW) | MSL+56 cm (modelo) | 5..111 | — | 1.1 |
 | got-6cb02d | got5.6:-37.995,-57.544 | GOT5.6 37.995S 57.544W (AR-MDP) | MSL+89 cm (modelo) | 6..187 | — | 1.6 |
 | got-6d1313 | got5.6:23.400,-110.211 | GOT5.6 23.400N 110.211W (MX-BCS) | MSL+116 cm (modelo) | 5..220 | — | 1.6 |
@@ -123,7 +125,6 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-707910 | got5.6:9.382,-82.235 | GOT5.6 9.382N 82.235W (PA-BDT) | MSL+33 cm (modelo) | 6..64 | — | 0.5 |
 | got-70a590 | got5.6:43.427,-4.893 | GOT5.6 43.427N 4.893W (ES-AST) | MSL+235 cm (modelo) | 5..464 | — | 2.7 |
 | got-713511 | got5.6:20.214,-87.429 | GOT5.6 20.214N 87.429W (MX-CAR) | MSL+22 cm (modelo) | 5..38 | — | 0.4 |
-| got-72b502 | got5.6:13.659,124.398 | GOT5.6 13.659N 124.398E (PH-EAS) | MSL+125 cm (modelo) | 5..223 | — | 1.4 |
 | got-770eaa | got5.6:-7.148,-34.796 | GOT5.6 7.148S 34.796W (BR-NE-RN) | MSL+143 cm (modelo) | 6..283 | — | 1.5 |
 | got-7829cd | got5.6:-8.931,116.741 | GOT5.6 8.931S 116.741E (ID-SBW) | MSL+155 cm (modelo) | 6..309 | — | 2.2 |
 | got-78d608 | got5.6:-38.780,143.400 | GOT5.6 38.780S 143.400E (AU-VIC-W) | MSL+94 cm (modelo) | 6..172 | — | 1.3 |
@@ -134,6 +135,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-7d5db3 | got5.6:-38.270,-57.840 | GOT5.6 38.270S 57.840W (AR-MDP) | MSL+96 cm (modelo) | 6..193 | — | 1.5 |
 | got-82a78a | got5.6:-8.816,118.376 | GOT5.6 8.816S 118.376E (ID-SBW) | MSL+176 cm (modelo) | 5..351 | — | 2.5 |
 | got-87528f | got5.6:25.420,-76.623 | GOT5.6 25.420N 76.623W (BS-ALL) | MSL+65 cm (modelo) | 5..138 | — | 0.6 |
+| got-89910a | got5.6:11.608,125.432 | GOT5.6 11.608N 125.432E (PH-EAS) | MSL+97 cm (modelo) | 6..179 | — | 1.0 |
 | got-8a708f | got5.6:-8.062,-79.123 | GOT5.6 8.062S 79.123W (PE-LLB) | MSL+83 cm (modelo) | 5..161 | — | 1.0 |
 | got-8ae671 | got5.6:63.405,-19.071 | GOT5.6 63.405N 19.071W (IS-ALL) | MSL+151 cm (modelo) | 5..307 | — | 1.8 |
 | got-8af89e | got5.6:-32.811,17.885 | GOT5.6 32.811S 17.885E (ZA-WC-WCO) | MSL+99 cm (modelo) | 5..202 | — | 1.3 |
@@ -146,7 +148,6 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-95d729 | got5.6:9.634,-82.712 | GOT5.6 9.634N 82.712W (CR-CAR) | MSL+37 cm (modelo) | 6..67 | — | 0.4 |
 | got-964843 | got5.6:5.998,80.269 | GOT5.6 5.998N 80.269E (LK-S) | MSL+41 cm (modelo) | 5..79 | — | 0.7 |
 | got-9803e3 | got5.6:-23.760,-45.870 | GOT5.6 23.760S 45.870W (BR-SP) | MSL+90 cm (modelo) | 6..165 | — | 2.4 |
-| got-9b0ee7 | got5.6:11.605,125.440 | GOT5.6 11.605N 125.440E (PH-EAS) | MSL+99 cm (modelo) | 5..183 | — | 1.1 |
 | got-9decc4 | got5.6:-39.774,-73.400 | GOT5.6 39.774S 73.400W (CL-SUR) | MSL+91 cm (modelo) | 6..200 | — | 1.2 |
 | got-a0b028 | got5.6:-28.125,32.558 | GOT5.6 28.125S 32.558E (ZA-KZN-N) | MSL+127 cm (modelo) | 6..253 | — | 1.8 |
 | got-a0b2f5 | got5.6:-30.240,-50.230 | GOT5.6 30.240S 50.230W (BR-RS) | MSL+45 cm (modelo) | 6..87 | — | 1.2 |
@@ -190,7 +191,6 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-d30559 | got5.6:-5.305,103.992 | GOT5.6 5.305S 103.992E (ID-KRU) | MSL+69 cm (modelo) | 6..150 | — | 1.0 |
 | got-d42e6d | got5.6:-36.580,-56.690 | GOT5.6 36.580S 56.690W (AR-BAN) | MSL+81 cm (modelo) | 5..164 | — | 1.4 |
 | got-d43a78 | got5.6:-20.330,-40.285 | GOT5.6 20.330S 40.285W (BR-ES) | MSL+103 cm (modelo) | 6..189 | — | 1.2 |
-| got-d48a80 | got5.6:10.990,125.800 | GOT5.6 10.990N 125.800E (PH-EAS) | MSL+91 cm (modelo) | 6..178 | — | 1.1 |
 | got-d5b42a | got5.6:-8.218,111.095 | GOT5.6 8.218S 111.095E (ID-JAV-E) | MSL+119 cm (modelo) | 5..244 | — | 1.7 |
 | got-d6cb2e | got5.6:5.968,80.685 | GOT5.6 5.968N 80.685E (LK-S) | MSL+38 cm (modelo) | 6..72 | — | 0.6 |
 | got-d76764 | got5.6:0.912,97.263 | GOT5.6 0.912N 97.263E (ID-NIA) | MSL+48 cm (modelo) | 6..105 | — | 0.8 |
@@ -1305,9 +1305,9 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### PH-EAS — Samar y Catanduanes (3 picos)
 
-- `got-72b502` GOT5.6 13.659N 124.398E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
-- `got-9b0ee7` GOT5.6 11.605N 125.440E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
-- `got-d48a80` GOT5.6 10.990N 125.800E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-47544d` GOT5.6 13.689N 124.393E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-89910a` GOT5.6 11.608N 125.432E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-67e4b2` GOT5.6 10.986N 125.808E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### LK-E — Arugam Bay (8 picos)
 
