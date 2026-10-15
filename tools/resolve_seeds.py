@@ -12,8 +12,8 @@ For each such seed:
    GeoNames' places of the country (beaches, reefs, points, bays, towns) within SEARCH_KM.
 3. A candidate counts only if it is within osm.SNAP_MAX_M / 2 of the coastline. The best one is
    a beach or surf spot before a bay or cape, before a place; then the nearest to the seed.
-4. The seed row gets the candidate's position (4 decimals), `src=osm:<type>/<id>` and the note
-   "posición OSM"; its confidence becomes K.
+4. The seed row gets the candidate's position (4 decimals), its source (`src=osm:<type>/<id>` or
+   `geonames:<id>`) and the note "posición OSM" or "posición GeoNames"; its confidence becomes K.
 
 Seeds with no candidate are listed for a fix by hand. Everything goes to seeds/resolve.log.
 
@@ -147,8 +147,8 @@ def main():
                     row[4] = "K" if row[4] == "L" else row[4]
                     row[5] = c["src"]
                     keep = [x for x in row[7].split("; ") if x and not re.search(
-                        r"GSHHS|sin fuente|aprox|dudosa|estimada|buscar por nombre", x)]
-                    row[7] = "; ".join(keep + ["posición OSM"])
+                        r"GSHHS|sin fuente|aprox|dudosa|estimada|buscar por nombre|^posición (OSM|GeoNames)$", x)]
+                    row[7] = "; ".join(keep + ["posición GeoNames" if c["src"].startswith("geonames:") else "posición OSM"])
         if not a.dry_run:
             with open(path, "w", newline="", encoding="utf-8") as f:
                 csv.writer(f, lineterminator="\n").writerows(table)

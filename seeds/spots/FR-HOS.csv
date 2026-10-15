@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-ONDRES,43.5792,-1.4875,B,K,geonames:3232812,,plage d'Ondres; posición OSM
+ONDRES,43.5792,-1.4875,B,K,geonames:3232812,,plage d'Ondres; posición GeoNames
 LABENNE,43.6040,-1.4540,B,K,local,,Labenne-Ocean
 L'ESTACADE,43.6430,-1.4500,B,K,local,,Capbreton; junto al espigon
 SANTOCHA,43.6500,-1.4520,B,K,local,top,Capbreton
