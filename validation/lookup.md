@@ -1,6 +1,6 @@
 # Picos: búsqueda por nombre en fuentes públicas
 
-Generado 2026-10-15 03:28 UTC por `tools/lookup.py` (issue #7, §5.8), a 15 km de cada pico: lo que tienen Wikidata, Wikipedia, GeoNames y OpenStreetMap con su nombre o una de sus palabras. Sirve para revisar a mano los emblemáticos sin fuente o lejos de la suya (`validation/spots.md`): una posición mejor va a la semilla con su fuente en `src`.
+Generado 2026-10-15 04:45 UTC por `tools/lookup.py` (issue #7, §5.8), a 15 km de cada pico: lo que tienen Wikidata, Wikipedia, GeoNames y OpenStreetMap con su nombre o una de sus palabras. Sirve para revisar a mano los emblemáticos sin fuente o lejos de la suya (`validation/spots.md`): una posición mejor va a la semilla con su fuente en `src`.
 
 ## AU-NSW-SYD/OURS
 
@@ -26,23 +26,6 @@ Publicado en -34.0107, 151.2304 ([mapa](https://www.openstreetmap.org/?mlat=-34.
 | 13.4 | GeoNames | Salisbury Golf Course | S.RECG | -34.01520, 151.08460 | [geonames:8216630](https://www.geonames.org/8216630) |
 | 13.5 | Wikidata | Kareela Golf Course | golf course | -34.01500, 151.08444 | [Q97453646](https://www.wikidata.org/wiki/Q97453646) |
 | 14.5 | Wikidata | Central Grand Concourse | tram stop, terminus | -33.88222, 151.20639 | [Q5061381](https://www.wikidata.org/wiki/Q5061381) |
-
-## AU-QLD-SC/DOUBLE ISLAND PT
-
-Publicado en -25.9302, 153.1901 ([mapa](https://www.openstreetmap.org/?mlat=-25.93020&mlon=153.19010#map=14/-25.93020/153.19010)). Semilla: -25.9324, 153.1886, confianza V, fuente `web:mondo.surf` (4WD; punto derecho). Se buscó: «DOUBLE ISLAND PT», «DOUBLE ISLAND», «DOUBLE».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.1 | GeoNames | Double Island Point | T.PT | -25.93043, 153.19131 | [geonames:2168506](https://www.geonames.org/2168506) |
-| 0.2 | Wikipedia | Double Island Point Light | artículo | -25.93175, 153.19067 | [en.wikipedia](https://en.wikipedia.org/wiki/Double_Island_Point_Light) |
-| 0.2 | GeoNames | Double Island Point Light | S.LTHSE | -25.93184, 153.19070 | [geonames:11288017](https://www.geonames.org/11288017) |
-| 0.2 | Wikidata | DOUBLE ISLAND POINT LIGHTHOUSE | weather station | -25.93190, 153.19060 | [Q123625946](https://www.wikidata.org/wiki/Q123625946) |
-| 0.2 | Wikidata | Double Island Point Light | lighthouse | -25.93212, 153.18896 | [Q5299823](https://www.wikidata.org/wiki/Q5299823) |
-| 0.4 | Wikidata | Double Island Point Conservation Park | conservation park of Australia, park | -25.93368, 153.18855 | [Q21928672](https://www.wikidata.org/wiki/Q21928672) |
-| 0.4 | GeoNames | Double Island Point Conservation Park | L.PRK | -25.93368, 153.18855 | [geonames:8152970](https://www.geonames.org/8152970) |
-| 0.5 | Nominatim | Double Island Point | cape | -25.92716, 153.18678 | [osm:node/8908414498](https://www.openstreetmap.org/node/8908414498) |
-| 0.8 | Wikipedia | Double Island Point | artículo | -25.93333, 153.18333 | [en.wikipedia](https://en.wikipedia.org/wiki/Double_Island_Point) |
-| 0.8 | Wikidata | Double Island Point | point | -25.93333, 153.18333 | [Q5299824](https://www.wikidata.org/wiki/Q5299824) |
 
 ## AU-VIC-SC/WINKIPOP
 
@@ -70,55 +53,11 @@ Publicado en -33.8583, 114.9843 ([mapa](https://www.openstreetmap.org/?mlat=-33.
 |---|---|---|---|---|---|
 | 33.7 | Nominatim | North Point | cape | -34.15941, 115.02082 | [osm:node/12303466714](https://www.openstreetmap.org/node/12303466714) |
 
-## BR-RJL/ITAÚNA
-
-Publicado en -22.9380, -42.4912 ([mapa](https://www.openstreetmap.org/?mlat=-22.93800&mlon=-42.49120#map=14/-22.93800/-42.49120)). Semilla: -22.9400, -42.4900, confianza K, fuente `local` (CT 2026). Se buscó: «ITAÚNA», «ITAUNA».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 1.7 | Nominatim | Itaúna | place | -22.93355, -42.47566 | [osm:node/651221993](https://www.openstreetmap.org/node/651221993) |
-| 1.7 | Nominatim | Itaúna | place | -22.93355, -42.47566 | [osm:node/651221993](https://www.openstreetmap.org/node/651221993) |
-| 57.5 | Nominatim | Itaúna | place | -22.79168, -43.02995 | [osm:node/2672713783](https://www.openstreetmap.org/node/2672713783) |
-| 57.5 | Nominatim | Itaúna | place | -22.79168, -43.02995 | [osm:node/2672713783](https://www.openstreetmap.org/node/2672713783) |
-
 ## CL-NOR/EL GRINGO
 
 Publicado en -18.4801, -70.3305 ([mapa](https://www.openstreetmap.org/?mlat=-18.48010&mlon=-70.33050#map=14/-18.48010/-70.33050)). Semilla: -18.4800, -70.3300, confianza K, fuente `local` (ola grande; Arica). Se buscó: «EL GRINGO», «GRINGO».
 
 Nada con ese nombre.
-
-## CO-CAR/PUERTO COLOMBIA
-
-Publicado en 11.0432, -74.9088 ([mapa](https://www.openstreetmap.org/?mlat=11.04320&mlon=-74.90880#map=14/11.04320/-74.90880)). Semilla: 11.0400, -74.9100, confianza K, fuente `local`. Se buscó: «PUERTO COLOMBIA», «PUERTO», «COLOMBIA».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 1.1 | Wikidata | Punta Sabanilla (punta sa Colombia, Departamento del Atlántico) | peninsula | 11.05000, -74.91667 | [Q23683623](https://www.wikidata.org/wiki/Q23683623) |
-| 1.4 | Wikidata | Punta Brava (udde i Colombia, Atlántico) | peninsula | 11.04472, -74.92167 | [Q23714252](https://www.wikidata.org/wiki/Q23714252) |
-| 3.9 | GeoNames | Puerto Colombia | A.ADM2 | 11.00854, -74.90887 | [geonames:3671506](https://www.geonames.org/3671506) |
-| 4.1 | Wikipedia | Puerto Colombia | artículo | 11.01667, -74.88333 | [en.wikipedia](https://en.wikipedia.org/wiki/Puerto_Colombia) |
-| 5.3 | Wikidata | Punta del Tigre (udde i Colombia) | peninsula | 11.06667, -74.86667 | [Q23682263](https://www.wikidata.org/wiki/Q23682263) |
-| 5.3 | Wikidata | Isla La Ceiba (pulo sa Colombia, Departamento del Atlántico) | island | 11.06667, -74.86667 | [Q23688310](https://www.wikidata.org/wiki/Q23688310) |
-| 5.3 | Nominatim | Puerto Colombia | other | 10.99571, -74.91610 | [osm:relation/1335183](https://www.openstreetmap.org/relation/1335183) |
-| 5.8 | Wikidata | Barranquilla Colombia Temple | temple | 11.01667, -74.86278 | [Q4863242](https://www.wikidata.org/wiki/Q4863242) |
-| 5.8 | Wikipedia | Barranquilla Colombia Temple | artículo | 11.01667, -74.86278 | [en.wikipedia](https://en.wikipedia.org/wiki/Barranquilla_Colombia_Temple) |
-| 6.7 | Wikidata | Arroyo Hondo (vattendrag i Colombia, Atlántico, lat 11,00, long -74,87) | watercourse | 11.00000, -74.86667 | [Q23689054](https://www.wikidata.org/wiki/Q23689054) |
-| 6.7 | Wikidata | Puerto Colombia Light | monument | 11.00147, -74.95278 | [Q123115582](https://www.wikidata.org/wiki/Q123115582) |
-| 6.7 | Wikipedia | Puerto Colombia Light | artículo | 11.00147, -74.95278 | [en.wikipedia](https://en.wikipedia.org/wiki/Puerto_Colombia_Light) |
-| 6.9 | Wikipedia | Universidad del Norte (Colombia) | artículo | 11.01806, -74.85111 | [en.wikipedia](https://en.wikipedia.org/wiki/Universidad_del_Norte_%28Colombia%29) |
-| 6.9 | Wikidata | Universidad del Norte, Colombia | open-access publisher, university | 11.01806, -74.85111 | [Q7894343](https://www.wikidata.org/wiki/Q7894343) |
-| 7.1 | GeoNames | Faro de Puerto Colombia (historical) | S.LTHSE | 10.99603, -74.95244 | [geonames:13192509](https://www.geonames.org/13192509) |
-| 7.2 | GeoNames | Puerto del mar Barranquilla | H.DCK | 11.09527, -74.87036 | [geonames:13512900](https://www.geonames.org/13512900) |
-| 7.4 | Wikidata | Puerto Colombia | municipality of Colombia | 10.99222, -74.95278 | [Q2186176](https://www.wikidata.org/wiki/Q2186176) |
-| 7.9 | Nominatim | Puerto Colombia | place | 10.98913, -74.95541 | [osm:node/536971730](https://www.openstreetmap.org/node/536971730) |
-| 7.9 | Wikidata | Puerto Colombia | human settlement | 10.98778, -74.95472 | [Q23684211](https://www.wikidata.org/wiki/Q23684211) |
-| 7.9 | GeoNames | Puerto Colombia | P.PPLA2 | 10.98778, -74.95472 | [geonames:3671497](https://www.geonames.org/3671497) |
-| 8.3 | Wikidata | Muelle de Puerto Colombia | cultural property | 10.98913, -74.96089 | [Q6025782](https://www.wikidata.org/wiki/Q6025782) |
-| 8.7 | Wikidata | Arroyo Grande (vattendrag i Colombia, Atlántico, lat 10,97, long -74,89) | watercourse | 10.96667, -74.89028 | [Q23690759](https://www.wikidata.org/wiki/Q23690759) |
-| 8.8 | Wikidata | Grand Lodge of Colombia | Grand Lodge | 11.01126, -74.83522 | [Q5594755](https://www.wikidata.org/wiki/Q5594755) |
-| 8.8 | Wikipedia | Grand Lodge of Colombia | artículo | 11.01126, -74.83522 | [en.wikipedia](https://en.wikipedia.org/wiki/Grand_Lodge_of_Colombia) |
-| 11.1 | Wikidata | Arroyo Hondo (periodiskt vattendrag i Colombia, Atlántico, lat 10,97, long -74,84) | watercourse | 10.96722, -74.84333 | [Q23714287](https://www.wikidata.org/wiki/Q23714287) |
-| | | … y 5 más | | | |
 
 ## CR-GUA/WITCH'S ROCK
 
@@ -164,7 +103,7 @@ Publicado en -17.8860, 177.1865 ([mapa](https://www.openstreetmap.org/?mlat=-17.
 
 | km | Fuente | Nombre | Qué es | Posición | Ítem |
 |---|---|---|---|---|---|
-| 24.1 | Nominatim | cloudbreak | other | -17.77184, 177.38010 | [osm:node/4400522826](https://www.openstreetmap.org/node/4400522826) |
+| 24.1 | Nominatim | cloudbreak | other | -17.77185, 177.38022 | [osm:node/4400522827](https://www.openstreetmap.org/node/4400522827) |
 
 ## FJ-MAM/RESTAURANTS
 
@@ -180,47 +119,6 @@ Publicado en -17.8570, 177.2006 ([mapa](https://www.openstreetmap.org/?mlat=-17.
 Publicado en -17.8450, 177.1837 ([mapa](https://www.openstreetmap.org/?mlat=-17.84500&mlon=177.18370#map=14/-17.84500/177.18370)). Semilla: -17.8530, 177.1890, confianza L, fuente `local` (derecha entre Namotu y Tavarua; posicion dudosa). Se buscó: «SWIMMING POOLS», «SWIMMING POOL», «SWIMMING».
 
 Nada con ese nombre.
-
-## FR-GIR/LACANAU CENTRALE
-
-Publicado en 45.0000, -1.2032 ([mapa](https://www.openstreetmap.org/?mlat=45.00000&mlon=-1.20320#map=14/45.00000/-1.20320)). Semilla: 45.0000, -1.2020, confianza K, fuente `local` (Lacanau-Ocean; exCT). Se buscó: «LACANAU CENTRALE», «LACANAU», «CENTRALE».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.2 | Nominatim | Plage Centrale | beach | 45.00158, -1.20266 | [osm:way/373825572](https://www.openstreetmap.org/way/373825572) |
-| 0.2 | GeoNames | Plage Centrale | T.BCH | 45.00183, -1.20275 | [geonames:11072965](https://www.geonames.org/11072965) |
-| 0.5 | Wikidata | église Notre-Dame-des-Flots de Lacanau-Océan | church building | 45.00327, -1.19870 | [Q41764435](https://www.wikidata.org/wiki/Q41764435) |
-| 0.6 | GeoNames | Bureau de Poste de Lacanau Ocean | S.PO | 45.00171, -1.19595 | [geonames:8291872](https://www.geonames.org/8291872) |
-| 0.6 | Wikidata | Maison de la Glisse de Lacanau | sports venue | 45.00548, -1.20125 | [Q120218217](https://www.wikidata.org/wiki/Q120218217) |
-| 0.7 | GeoNames | Lacanau-Océan | P.PPL | 45.00135, -1.19415 | [geonames:3010623](https://www.geonames.org/3010623) |
-| 0.8 | Wikidata | Gendarmerie - Poste provisoire de Lacanau-Océan | Gendarmerie barracks | 45.00212, -1.19336 | [Q78136786](https://www.wikidata.org/wiki/Q78136786) |
-| 0.9 | Wikidata | boulodrome de Lacanau | sports venue | 44.99305, -1.19632 | [Q120218264](https://www.wikidata.org/wiki/Q120218264) |
-| 1.0 | Wikidata | chemins de randonnée de Lacanau | sports venue | 44.99212, -1.19699 | [Q120218253](https://www.wikidata.org/wiki/Q120218253) |
-| 1.7 | Wikidata | Ucpa Lacanau | sports venue | 44.99795, -1.18221 | [Q120190539](https://www.wikidata.org/wiki/Q120190539) |
-| 2.4 | GeoNames | Pierre Et Vacances Village Club Lacanau | S.HTL | 44.99493, -1.17374 | [geonames:9178487](https://www.geonames.org/9178487) |
-| 2.4 | Wikidata | golf de Lacanau Ardilouse | golf course | 45.00063, -1.17228 | [Q120218586](https://www.wikidata.org/wiki/Q120218586) |
-| 2.5 | GeoNames | Best Western  Golf Hotel Lacanau | S.HTL | 45.00091, -1.17134 | [geonames:9173041](https://www.geonames.org/9173041) |
-| 2.6 | GeoNames | Golf International de Lacanau | S.RECG | 45.00106, -1.17063 | [geonames:7534995](https://www.geonames.org/7534995) |
-| 2.6 | GeoNames | Du Golf Lacanau Ocean | S.HTL | 45.00079, -1.17054 | [geonames:10117429](https://www.geonames.org/10117429) |
-| 4.1 | Wikidata | parcours d'orientation de Lacanau | sports venue | 44.96313, -1.20176 | [Q120218214](https://www.wikidata.org/wiki/Q120218214) |
-| 4.9 | GeoNames | Forêt Domaniale de Lacanau | V.FRST | 44.96232, -1.16992 | [geonames:3010624](https://www.geonames.org/3010624) |
-| 4.9 | Wikidata | Forêt Domaniale de Lacanau | forest | 44.96222, -1.17000 | [Q49329699](https://www.wikidata.org/wiki/Q49329699) |
-| 5.1 | Wikidata | Lacanau weather station | weather station | 45.00133, -1.13867 | [Q118246593](https://www.wikidata.org/wiki/Q118246593) |
-| 7.7 | GeoNames | Étang de Lacanau | H.LK | 44.96667, -1.11667 | [geonames:3010625](https://www.geonames.org/3010625) |
-| 7.8 | Wikipedia | Étang de Lacanau | artículo | 44.96667, -1.11667 | [en.wikipedia](https://en.wikipedia.org/wiki/%C3%89tang_de_Lacanau) |
-| 7.8 | Wikidata | Étang de Lacanau | artificial pond | 44.96667, -1.11667 | [Q288902](https://www.wikidata.org/wiki/Q288902) |
-| 8.4 | Wikidata | Lacanau Kite Center | sports venue | 44.98201, -1.09967 | [Q120219117](https://www.wikidata.org/wiki/Q120219117) |
-| 8.6 | Wikidata | club hippique Lacanau | sports venue | 44.99885, -1.09358 | [Q120219171](https://www.wikidata.org/wiki/Q120219171) |
-| 8.9 | Wikidata | halte nautique de Lacanau | sports venue | 44.97877, -1.09413 | [Q120219166](https://www.wikidata.org/wiki/Q120219166) |
-| | | … y 22 más | | | |
-
-## FR-HOS/LES CULS NULS
-
-Publicado en 43.6979, -1.4400 ([mapa](https://www.openstreetmap.org/?mlat=43.69790&mlon=-1.44000#map=14/43.69790/-1.44000)). Semilla: ?, confianza ?, fuente `?`. Se buscó: «LES CULS NULS», «CULS», «NULS».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 2.0 | Nominatim | Plage des Culs Nus | beach | 43.67986, -1.44082 | [osm:node/3053079147](https://www.openstreetmap.org/node/3053079147) |
 
 ## ID-BAL-E/SHIPWRECKS
 
@@ -285,15 +183,6 @@ Publicado en -10.8948, 122.8206 ([mapa](https://www.openstreetmap.org/?mlat=-10.
 | 14.6 | Wikidata | Manggaro Kecil Island | islet | -10.91453, 122.95264 | [Q115375439](https://www.wikidata.org/wiki/Q115375439) |
 | | | … y 3 más | | | |
 
-## ID-SBW/SCAR REEF
-
-Publicado en -8.9337, 116.7361 ([mapa](https://www.openstreetmap.org/?mlat=-8.93370&mlon=116.73610#map=14/-8.93370/116.73610)). Semilla: -8.9300, 116.7300, confianza L, fuente `local` (oeste de Sumbawa; posicion dudosa). Se buscó: «SCAR REEF», «SCAR».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 8.6 | Nominatim | Scar reef | other | -8.86063, 116.76271 | [osm:node/7217881385](https://www.openstreetmap.org/node/7217881385) |
-| 8.6 | Nominatim | Scar reef | other | -8.86063, 116.76271 | [osm:node/7217881385](https://www.openstreetmap.org/node/7217881385) |
-
 ## ID-SBW/SUPERSUCK
 
 Publicado en -8.9327, 116.7425 ([mapa](https://www.openstreetmap.org/?mlat=-8.93270&mlon=116.74250#map=14/-8.93270/116.74250)). Semilla: -8.9312, 116.7414, confianza K, fuente `web:mondo.surf` (izquierda tubular; 4 km al sur de Maluk). Se buscó: «SUPERSUCK».
@@ -313,14 +202,6 @@ Publicado en 54.2916, -8.9590 ([mapa](https://www.openstreetmap.org/?mlat=54.291
 Publicado en 52.9689, -9.4304 ([mapa](https://www.openstreetmap.org/?mlat=52.96890&mlon=-9.43040#map=14/52.96890/-9.43040)). Semilla: 52.9700, -9.4310, confianza K, fuente `local` (ola grande; Cliffs of Moher). Se buscó: «AILEEN'S», «AILEENS».
 
 Nada con ese nombre.
-
-## JP-KYU/KISAKIHAMA
-
-Publicado en 31.8132, 131.4574 ([mapa](https://www.openstreetmap.org/?mlat=31.81320&mlon=131.45740#map=14/31.81320/131.45740)). Semilla: 31.8200, 131.4700, confianza K, fuente `local` (Miyazaki). Se buscó: «KISAKIHAMA».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 2.7 | GeoNames | Kizaki | P.PPL | 31.83289, 131.43990 | [geonames:1859396](https://www.geonames.org/1859396) |
 
 ## LK-E/WHISKEY POINT
 
@@ -437,25 +318,6 @@ Publicado en -22.9374, 14.4173 ([mapa](https://www.openstreetmap.org/?mlat=-22.9
 
 Nada con ese nombre.
 
-## NZ-BOP/WHANGAMATA BAR
-
-Publicado en -37.2131, 175.8784 ([mapa](https://www.openstreetmap.org/?mlat=-37.21310&mlon=175.87840#map=14/-37.21310/175.87840)). Semilla: -37.2100, 175.8830, confianza K, fuente `local` (NZCPS; barra del estuario). Se buscó: «WHANGAMATA BAR», «WHANGAMATA».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.4 | Wikidata | Whangamata Domain Recreation Reserve | recreation reserve | -37.21000, 175.87600 | [Q125722759](https://www.wikidata.org/wiki/Q125722759) |
-| 0.5 | Wikidata | Whangamata | town | -37.21000, 175.87400 | [Q917136](https://www.wikidata.org/wiki/Q917136) |
-| 0.9 | Nominatim | Whangamatā | place | -37.20633, 175.87197 | [osm:node/60729253](https://www.openstreetmap.org/node/60729253) |
-| 1.1 | Wikidata | Whangamata Area School | combined school, public school, school | -37.21534, 175.86653 | [Q65963079](https://www.wikidata.org/wiki/Q65963079) |
-| 1.8 | GeoNames | Whangamata Harbour | H.HBR | -37.20000, 175.86667 | [geonames:2179326](https://www.geonames.org/2179326) |
-| 1.8 | GeoNames | Whangamata | P.PPL | -37.20000, 175.86667 | [geonames:2179328](https://www.geonames.org/2179328) |
-| 1.8 | Wikipedia | Whangamatā | artículo | -37.20000, 175.86667 | [en.wikipedia](https://en.wikipedia.org/wiki/Whangamat%C4%81) |
-| 2.6 | Wikidata | Whangamata Cemetery | cemetery | -37.22780, 175.85530 | [Q105674296](https://www.wikidata.org/wiki/Q105674296) |
-| 3.3 | Wikidata | Whangamata Harbour | bay | -37.18558, 175.86494 | [Q33622942](https://www.wikidata.org/wiki/Q33622942) |
-| 3.3 | Nominatim | Whangamatā Harbour | bay | -37.18592, 175.86261 | [osm:relation/9581470](https://www.openstreetmap.org/relation/9581470) |
-| 4.2 | GeoNames | Whangamata Harbour | H.BAY | -37.17820, 175.86021 | [geonames:6235261](https://www.geonames.org/6235261) |
-| 12.9 | GeoNames | Whangamata Track | R.TRL | -37.26820, 175.75021 | [geonames:6235452](https://www.geonames.org/6235452) |
-
 ## NZ-GIS/CENTRES
 
 Publicado en -38.6524, 178.1227 ([mapa](https://www.openstreetmap.org/?mlat=-38.65240&mlon=178.12270#map=14/-38.65240/178.12270)). Semilla: -38.6455, 178.1165, confianza L, fuente `local` (NZCPS; Makorori). Se buscó: «CENTRES».
@@ -477,6 +339,12 @@ Nada con ese nombre.
 ## NZ-GIS/WHALES
 
 Publicado en -38.6994, 178.0583 ([mapa](https://www.openstreetmap.org/?mlat=-38.69940&mlon=178.05830#map=14/-38.69940/178.05830)). Semilla: -38.6930, 178.0580, confianza L, fuente `local` (NZCPS; Wainui sur). Se buscó: «WHALES».
+
+Nada con ese nombre.
+
+## NZ-GIS/THE ISLAND
+
+Publicado en -38.7068, 178.0491 ([mapa](https://www.openstreetmap.org/?mlat=-38.70680&mlon=178.04910#map=14/-38.70680/178.04910)). Semilla: -38.7100, 178.0500, confianza V, fuente `web:surf-forecast.com` (NZCPS; Tuamotu Island; izquierda). Se buscó: «THE ISLAND».
 
 Nada con ese nombre.
 
@@ -515,25 +383,6 @@ Nada con ese nombre.
 Publicado en -37.8281, 174.7846 ([mapa](https://www.openstreetmap.org/?mlat=-37.82810&mlon=174.78460#map=14/-37.82810/174.78460)). Semilla: -37.8290, 174.7850, confianza K, fuente `local` (NZCPS; izquierda; swell grande). Se buscó: «INDICATORS».
 
 Nada con ese nombre.
-
-## PF-TAH/HA'APITI
-
-Publicado en -17.5481, -149.8877 ([mapa](https://www.openstreetmap.org/?mlat=-17.54810&mlon=-149.88770#map=14/-17.54810/-149.88770)). Semilla: -17.5620, -149.8960, confianza K, fuente `local` (Moorea; izquierda en el paso). Se buscó: «HA'APITI», «HAAPITI».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.7 | Wikidata | HAAPITI | priority neighborhood | -17.54980, -149.88180 | [Q130875700](https://www.wikidata.org/wiki/Q130875700) |
-| 2.0 | Wikidata | salle polyvalente Haapiti | sports venue | -17.55985, -149.87282 | [Q120476339](https://www.wikidata.org/wiki/Q120476339) |
-| 2.1 | GeoNames | District de Haapiti | A.ADMD | -17.53333, -149.90000 | [geonames:4034437](https://www.geonames.org/4034437) |
-| 2.1 | GeoNames | Passe Matauvau | H.STRT | -17.56667, -149.88333 | [geonames:4034224](https://www.geonames.org/4034224) |
-| 2.2 | Wikidata | Haapiti | associated commune | -17.56028, -149.87139 | [Q9284831](https://www.wikidata.org/wiki/Q9284831) |
-| 2.2 | GeoNames | Vallée de Haapiti | T.VAL | -17.55000, -149.86667 | [geonames:4034435](https://www.geonames.org/4034435) |
-| 2.2 | GeoNames | Port de Haapiti | H.BAY | -17.55000, -149.86667 | [geonames:4034436](https://www.geonames.org/4034436) |
-| 2.2 | Wikidata | Port de Haapiti | bay | -17.55000, -149.86667 | [Q31931202](https://www.wikidata.org/wiki/Q31931202) |
-| 2.2 | Wikidata | Vallée de Haapiti | valley | -17.55000, -149.86667 | [Q31932497](https://www.wikidata.org/wiki/Q31932497) |
-| 2.3 | Wikidata | Fare Oaoa Haapiti | guest house | -17.56168, -149.87123 | [Q140830832](https://www.wikidata.org/wiki/Q140830832) |
-| 2.6 | Wikidata | église de la Sainte-Famille de Haapiti | church building | -17.56440, -149.87010 | [Q60383793](https://www.wikidata.org/wiki/Q60383793) |
-| 2.6 | GeoNames | Haapiti | P.PPL | -17.56352, -149.86905 | [geonames:4034438](https://www.geonames.org/4034438) |
 
 ## PH-SIA/JACKING HORSE
 
@@ -578,42 +427,6 @@ Publicado en 22.8397, 121.1892 ([mapa](https://www.openstreetmap.org/?mlat=22.83
 
 Nada con ese nombre.
 
-## US-CA-OC/UPPER TRESTLES
-
-Publicado en 33.3864, -117.5959 ([mapa](https://www.openstreetmap.org/?mlat=33.38640&mlon=-117.59590#map=14/33.38640/-117.59590)). Semilla: 33.3860, -117.5965, confianza K, fuente `local`. Se buscó: «UPPER TRESTLES», «TRESTLES», «UPPER TRESTLE».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.2 | Wikidata | Trestles | coast, surf spot | 33.38500, -117.59500 | [Q2749208](https://www.wikidata.org/wiki/Q2749208) |
-| 0.2 | Wikipedia | Trestles (surfing) | artículo | 33.38500, -117.59500 | [en.wikipedia](https://en.wikipedia.org/wiki/Trestles_%28surfing%29) |
-| 0.2 | Wikidata | Trestles Bridge | railway bridge | 33.38659, -117.59385 | [Q7838853](https://www.wikidata.org/wiki/Q7838853) |
-| 0.2 | Wikipedia | Trestles Bridge | artículo | 33.38659, -117.59385 | [en.wikipedia](https://en.wikipedia.org/wiki/Trestles_Bridge) |
-| 0.2 | GeoNames | Trestles Beach | T.BCH | 33.38531, -117.59394 | [geonames:5403369](https://www.geonames.org/5403369) |
-| 0.4 | Nominatim | Trestles Wetlands Natural Preserve | other | 33.38746, -117.59148 | [osm:way/39422371](https://www.openstreetmap.org/way/39422371) |
-| 0.6 | GeoNames | Trestles Wetlands Natural Preserve | L.RES | 33.38713, -117.59003 | [geonames:8502711](https://www.geonames.org/8502711) |
-| 1.3 | GeoNames | Trestles Beach Parking Area | S.PKLT | 33.39758, -117.59302 | [geonames:12212692](https://www.geonames.org/12212692) |
-| 2.2 | Wikidata | House of Trestles | hostel | 33.40649, -117.59804 | [Q111115407](https://www.wikidata.org/wiki/Q111115407) |
-| 16.1 | Nominatim | Trestles | other | 33.51117, -117.68488 | [osm:way/13310915](https://www.openstreetmap.org/way/13310915) |
-| 41.3 | Nominatim | Trestles | other | 33.63470, -117.92683 | [osm:way/904947135](https://www.openstreetmap.org/way/904947135) |
-
-## US-CA-OC/LOWER TRESTLES
-
-Publicado en 33.3832, -117.5905 ([mapa](https://www.openstreetmap.org/?mlat=33.38320&mlon=-117.59050#map=14/33.38320/-117.59050)). Semilla: 33.3820, -117.5925, confianza K, fuente `local` (CT26). Se buscó: «LOWER TRESTLES», «TRESTLES», «LOWER TRESTLE».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.4 | GeoNames | Trestles Beach | T.BCH | 33.38531, -117.59394 | [geonames:5403369](https://www.geonames.org/5403369) |
-| 0.4 | GeoNames | Trestles Wetlands Natural Preserve | L.RES | 33.38713, -117.59003 | [geonames:8502711](https://www.geonames.org/8502711) |
-| 0.5 | Wikidata | Trestles | coast, surf spot | 33.38500, -117.59500 | [Q2749208](https://www.wikidata.org/wiki/Q2749208) |
-| 0.5 | Wikipedia | Trestles (surfing) | artículo | 33.38500, -117.59500 | [en.wikipedia](https://en.wikipedia.org/wiki/Trestles_%28surfing%29) |
-| 0.5 | Nominatim | Trestles Wetlands Natural Preserve | other | 33.38746, -117.59148 | [osm:way/39422371](https://www.openstreetmap.org/way/39422371) |
-| 0.5 | Wikidata | Trestles Bridge | railway bridge | 33.38659, -117.59385 | [Q7838853](https://www.wikidata.org/wiki/Q7838853) |
-| 0.5 | Wikipedia | Trestles Bridge | artículo | 33.38659, -117.59385 | [en.wikipedia](https://en.wikipedia.org/wiki/Trestles_Bridge) |
-| 1.6 | GeoNames | Trestles Beach Parking Area | S.PKLT | 33.39758, -117.59302 | [geonames:12212692](https://www.geonames.org/12212692) |
-| 2.7 | Wikidata | House of Trestles | hostel | 33.40649, -117.59804 | [Q111115407](https://www.wikidata.org/wiki/Q111115407) |
-| 16.7 | Nominatim | Trestles | other | 33.51117, -117.68488 | [osm:way/13310915](https://www.openstreetmap.org/way/13310915) |
-| 41.9 | Nominatim | Trestles | other | 33.63470, -117.92683 | [osm:way/904947135](https://www.openstreetmap.org/way/904947135) |
-
 ## US-CA-SB/C STREET
 
 Publicado en 34.2757, -119.2934 ([mapa](https://www.openstreetmap.org/?mlat=34.27570&mlon=-119.29340#map=14/34.27570/-119.29340)). Semilla: 34.2742, -119.2935, confianza K, fuente `local`. Se buscó: «C STREET».
@@ -632,25 +445,6 @@ Publicado en 21.8752, -159.4618 ([mapa](https://www.openstreetmap.org/?mlat=21.8
 
 Nada con ese nombre.
 
-## US-HI-MAU/HO'OKIPA
-
-Publicado en 20.9353, -156.3559 ([mapa](https://www.openstreetmap.org/?mlat=20.93530&mlon=-156.35590#map=14/20.93530/-156.35590)). Semilla: 20.9355, -156.3570, confianza K, fuente `local`. Se buscó: «HO'OKIPA», «HOOKIPA».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.1 | Nominatim | Hookipa Park Beach | beach | 20.93442, -156.35585 | [osm:way/456490970](https://www.openstreetmap.org/way/456490970) |
-| 0.2 | Nominatim | Hookipa Park | other | 20.93389, -156.35639 | [osm:node/3501948454](https://www.openstreetmap.org/node/3501948454) |
-| 0.3 | Nominatim | Hookipa Park | other | 20.93320, -156.35739 | [osm:way/682799548](https://www.openstreetmap.org/way/682799548) |
-| 0.3 | Wikipedia | Hoʻokipa | artículo | 20.93321, -156.35752 | [en.wikipedia](https://en.wikipedia.org/wiki/Ho%CA%BBokipa) |
-| 0.3 | Wikidata | Hoʻokipa | surf spot | 20.93320, -156.35800 | [Q1632226](https://www.wikidata.org/wiki/Q1632226) |
-| 0.4 | Wikidata | Hookipa Beach |  | 20.93306, -156.35914 | [Q49321221](https://www.wikidata.org/wiki/Q49321221) |
-| 0.4 | GeoNames | Hookipa Beach | T.BCH | 20.93306, -156.35914 | [geonames:7284724](https://www.geonames.org/7284724) |
-| 0.5 | Wikidata | Hookipa Beach Park | park | 20.93667, -156.36056 | [Q49502811](https://www.wikidata.org/wiki/Q49502811) |
-| 0.5 | GeoNames | Hookipa Beach Park | L.PRK | 20.93667, -156.36056 | [geonames:5856324](https://www.geonames.org/5856324) |
-| 13.6 | Nominatim | Ho'okipa | other | 20.88952, -156.47703 | [osm:relation/2593486](https://www.openstreetmap.org/relation/2593486) |
-| 27.8 | Nominatim | Hookipa Place | other | 20.69415, -156.42510 | [osm:way/44728442](https://www.openstreetmap.org/way/44728442) |
-| 28.5 | Nominatim | Hale Hookipa Way | other | 20.69141, -156.43957 | [osm:way/44759113](https://www.openstreetmap.org/way/44759113) |
-
 ## US-HI-OAN/BACKDOOR
 
 Publicado en 21.6653, -158.0516 ([mapa](https://www.openstreetmap.org/?mlat=21.66530&mlon=-158.05160#map=14/21.66530/-158.05160)). Semilla: 21.6658, -158.0522, confianza K, fuente `local` (derecha de Pipeline). Se buscó: «BACKDOOR».
@@ -663,34 +457,11 @@ Publicado en 41.4653, -71.3028 ([mapa](https://www.openstreetmap.org/?mlat=41.46
 
 Nada con ese nombre.
 
-## US-PNW/SHORT SANDS
-
-Publicado en 45.7625, -123.9703 ([mapa](https://www.openstreetmap.org/?mlat=45.76250&mlon=-123.97030#map=14/45.76250/-123.97030)). Semilla: 45.7640, -123.9680, confianza K, fuente `local` (Oswald West). Se buscó: «SHORT SANDS», «SHORT SAND», «SHORT», «SANDS».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 0.2 | GeoNames | Short Sand Beach | T.BCH | 45.76261, -123.96736 | [geonames:5751789](https://www.geonames.org/5751789) |
-| 0.2 | Wikidata | Short Sand Beach | beach | 45.76250, -123.96722 | [Q49324755](https://www.wikidata.org/wiki/Q49324755) |
-| 0.6 | GeoNames | Short Sand Creek | H.STM | 45.75955, -123.96458 | [geonames:5751790](https://www.geonames.org/5751790) |
-| 1.1 | GeoNames | Oswald West State Park | L.PRK | 45.76983, -123.95986 | [geonames:5744439](https://www.geonames.org/5744439) |
-| 9.7 | Nominatim | Short Sands Road | other | 45.80859, -123.86357 | [osm:way/5310443](https://www.openstreetmap.org/way/5310443) |
-
 ## ZA-EC-JB/BRUCE'S BEAUTIES
 
 Publicado en -34.2026, 24.8345 ([mapa](https://www.openstreetmap.org/?mlat=-34.20260&mlon=24.83450#map=14/-34.20260/24.83450)). Semilla: -34.2020, 24.8330, confianza L, fuente `local` (Cape St Francis; posicion dudosa). Se buscó: «BRUCE'S BEAUTIES», «BRUCE'S BEAUTIE», «BRUCES», «BEAUTIES».
 
 Nada con ese nombre.
-
-## ZA-KZN-DBN/CAVE ROCK
-
-Publicado en -29.9149, 31.0298 ([mapa](https://www.openstreetmap.org/?mlat=-29.91490&mlon=31.02980#map=14/-29.91490/31.02980)). Semilla: -29.9235, 31.0405, confianza K, fuente `local` (derecha tubular; Bluff). Se buscó: «CAVE ROCK», «CAVE».
-
-| km | Fuente | Nombre | Qué es | Posición | Ítem |
-|---|---|---|---|---|---|
-| 4.6 | Wikidata | Cave Rock | point | -29.87998, 31.05608 | [Q31511084](https://www.wikidata.org/wiki/Q31511084) |
-| 5.5 | GeoNames | Cave Rock | T.PROM | -29.87336, 31.06146 | [geonames:1013866](https://www.geonames.org/1013866) |
-| 11.4 | GeoNames | Cavendish | S.RSTN | -29.89691, 30.91333 | [geonames:1013868](https://www.geonames.org/1013868) |
-| 11.5 | Wikidata | Cavendish | railway station | -29.89675, 30.91200 | [Q124416196](https://www.wikidata.org/wiki/Q124416196) |
 
 ## ZA-WC-CPT/DUNGEONS
 
