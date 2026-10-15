@@ -110,7 +110,7 @@ NZ-OTA      13 spots   781 bytes  vf0b647
 NZ-WC        4 spots   345 bytes  v456df8
 FJ-MAM       6 spots   405 bytes  vdc979e
 FJ-SOU       2 spots   300 bytes  va03636
-PF-TAH       8 spots   507 bytes  v197113
+PF-TAH       8 spots   507 bytes  v8f354f
 PF-ISL       2 spots   249 bytes  v4eb3ff
 WS-ALL       6 spots   506 bytes  v9ba8b3
 TO-ALL       6 spots   378 bytes  vdcbc92
@@ -122,7 +122,7 @@ ID-BAL-E    12 spots   617 bytes  vb9d72f
 ID-JAV-E     7 spots   460 bytes  vbf2f44
 ID-JAV-W     7 spots   455 bytes  v902289
 ID-LOM      14 spots   721 bytes  v092346
-ID-SBW       9 spots   515 bytes  v0673f7
+ID-SBW       9 spots   516 bytes  v62538e
 ID-SMB       2 spots   218 bytes  v83c08b
 ID-ROT       4 spots   289 bytes  v99d464
 ID-MEN      10 spots   539 bytes  vd7c95e
@@ -156,7 +156,7 @@ ZA-WC-GR    11 spots   713 bytes  veae34e
 ZA-EC-JB    10 spots   663 bytes  v4acbc7
 ZA-EC-PE    17 spots   913 bytes  vb3283f
 ZA-EC-WLD    5 spots   412 bytes  v21b782
-ZA-KZN-DBN   8 spots   452 bytes  vace5f1
+ZA-KZN-DBN   8 spots   452 bytes  v5ccb9b
 ZA-KZN-N     6 spots   474 bytes  vfd9264
 ZA-KZN-S     9 spots   539 bytes  v407d13
 NA-ERO       3 spots   335 bytes  vbe1bfd
@@ -173,8 +173,9 @@ RE-ALL       8 spots   463 bytes  vf1b4bd
 MU-ALL       3 spots   261 bytes  v0c8dae
 CV-ALL       3 spots   277 bytes  vb954b7
 FR-PBA      24 spots  1077 bytes  vae6eab
-FR-HOS      16 spots   798 bytes  vafeab4
-FR-GIR      18 spots   905 bytes  v32bee8
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+FR-HOS      16 spots   801 bytes  vd4f50e
+FR-GIR      18 spots   907 bytes  vea5a00
 FR-VEN      12 spots   698 bytes  v4637b6
 FR-BRE      15 spots   760 bytes  vbed782
 ES-PV       26 spots  1099 bytes  v40b984
