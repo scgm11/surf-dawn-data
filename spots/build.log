@@ -13,25 +13,14 @@ BR-RJ       17 spots   779 bytes  vb3d071
 BR-RJL      20 spots  1031 bytes  v8dae9a
 BR-ES       19 spots  1020 bytes  v828b10
 BR-BA       21 spots  1011 bytes  v6331cc
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (Remote end closed connection without response), retrying
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-BR-NE-CE    13 spots   693 bytes  vfc19c2
+BR-NE-CE    13 spots   693 bytes  v5c5e8a
 BR-NE-RN    13 spots   731 bytes  vd895c6
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-BR-NE-PE    14 spots   769 bytes  vab5dbf
+BR-NE-PE    14 spots   769 bytes  v006a06
 BR-NOR       5 spots   366 bytes  vb99b41
 CL-NOR      11 spots   629 bytes  v006cbd
 CL-CEN      20 spots  1091 bytes  v299be8
 CL-PIC      12 spots   751 bytes  v4ae8e6
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-CL-MAU      14 spots   771 bytes  vaf354a
+CL-MAU      14 spots   771 bytes  v76f25e
 CL-SUR      11 spots   664 bytes  v6b90f5
 PE-NOR      10 spots   606 bytes  vac1c6c
 PE-LLB       7 spots   511 bytes  v665af5
@@ -145,10 +134,6 @@ PH-EAS       2 spots   279 bytes  vcdae46
 LK-E         8 spots   446 bytes  v69cbfd
 LK-S        11 spots   588 bytes  v93c3cf
 MV-NMA       6 spots   356 bytes  v75f10f
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
 MV-SMA       3 spots   268 bytes  v875238
 MV-SOU       2 spots   239 bytes  vf90716
 MV-CEN       1 spots   194 bytes  v64a003
@@ -162,8 +147,7 @@ TW-E         4 spots   348 bytes  vf78c31
 TW-NE        6 spots   422 bytes  vedab9f
 IN-W         3 spots   284 bytes  v840d55
 IN-E         3 spots   306 bytes  v1000d5
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-VN-ALL       5 spots   358 bytes  v70dbfa
+VN-ALL       5 spots   395 bytes  v97526d
 KR-ALL       6 spots   439 bytes  vc7143b
 CN-HAI       2 spots   257 bytes  v13014b
 ZA-WC-CPT   20 spots   951 bytes  va843f4
@@ -189,11 +173,6 @@ RE-ALL       8 spots   463 bytes  vf1b4bd
 MU-ALL       3 spots   261 bytes  v0c8dae
 CV-ALL       3 spots   277 bytes  vb954b7
 FR-PBA      24 spots  1077 bytes  vae6eab
-  overpass overpass-api.de failed (<urlopen error [Errno 101] Network is unreachable>), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 FR-HOS      16 spots   799 bytes  vab482a
 FR-GIR      18 spots   905 bytes  v32bee8
 FR-VEN      12 spots   698 bytes  v4637b6
