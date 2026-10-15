@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-15 03:47 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-15 05:04 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 426 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
+- Puertos nuevos: 427 (got 163, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 208 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
-- Picos con puerto: 2328 de 2439.
-- Archivos: 10650, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
+- Picos con puerto: 2329 de 2440.
+- Archivos: 10675, 28.3 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
@@ -190,6 +190,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-d30559 | got5.6:-5.305,103.992 | GOT5.6 5.305S 103.992E (ID-KRU) | MSL+69 cm (modelo) | 6..150 | — | 1.0 |
 | got-d42e6d | got5.6:-36.580,-56.690 | GOT5.6 36.580S 56.690W (AR-BAN) | MSL+81 cm (modelo) | 5..164 | — | 1.4 |
 | got-d43a78 | got5.6:-20.330,-40.285 | GOT5.6 20.330S 40.285W (BR-ES) | MSL+103 cm (modelo) | 6..189 | — | 1.2 |
+| got-d48a80 | got5.6:10.990,125.800 | GOT5.6 10.990N 125.800E (PH-EAS) | MSL+91 cm (modelo) | 6..178 | — | 1.1 |
 | got-d5b42a | got5.6:-8.218,111.095 | GOT5.6 8.218S 111.095E (ID-JAV-E) | MSL+119 cm (modelo) | 5..244 | — | 1.7 |
 | got-d6cb2e | got5.6:5.968,80.685 | GOT5.6 5.968N 80.685E (LK-S) | MSL+38 cm (modelo) | 6..72 | — | 0.6 |
 | got-d76764 | got5.6:0.912,97.263 | GOT5.6 0.912N 97.263E (ID-NIA) | MSL+48 cm (modelo) | 6..105 | — | 0.8 |
@@ -1302,10 +1303,11 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `got-f8b86d` GOT5.6 16.669N 120.320E (PH-LUZ) — modelo global GOT5.6: 3 picos a 0.0–0.8 km, radio 11 km
 - `got-529ee2` GOT5.6 15.765N 121.574E (PH-LUZ) — modelo global GOT5.6: 2 picos a 0.0–0.5 km, radio 11 km
 
-### PH-EAS — Samar y Catanduanes (2 picos)
+### PH-EAS — Samar y Catanduanes (3 picos)
 
 - `got-72b502` GOT5.6 13.659N 124.398E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - `got-9b0ee7` GOT5.6 11.605N 125.440E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+- `got-d48a80` GOT5.6 10.990N 125.800E (PH-EAS) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### LK-E — Arugam Bay (8 picos)
 
