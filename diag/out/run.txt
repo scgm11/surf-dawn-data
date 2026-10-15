@@ -1,0 +1,46 @@
+[    0s] 6 regions, window 2026-09-15 .. 2026-10-15
+[    1s] mi IWaveBNetwork30Min: columns {'hs': ('SignificantWaveHeight', 0.01), 'tp': 'PeakPeriod', 'tm': 'EnergyPeriod', 'dir': ('PeakDirection', 180.0)}; wind None
+[    5s]   last records: AMETS Berth A Wave Buoy 2026-05-27T21:30, AMETS Berth B Wave Buoy 2026-05-27T20:00, AMETS Berth C Wave Buoy 2015-04-17T16:00, Bantry Bay 2024-09-24T10:00, Brandon Bay 2025-01-24T02:30, Clew Bay 2024-03-11T13:16, Finnis Waver 2023-01-10T13:30, Lehanagh Pool 2025-10-12T16:00, Mace Head 2024-09-17T08:41, SmartBay Wave Buoy 2025-02-08T06:30, Westwave Wave Buoy 2019-03-27T13:00
+[    8s]   mi IWaveBNetwork30Min: no data in the window
+[    8s] mi IWBNetwork: columns {'hs': ('WaveHeight', 1.0), 'tp': 'Tp', 'tm': 'WavePeriod', 'dir': ('MeanWaveDirection', 0.0)}; wind {'spd': ('WindSpeed', 0.514444), 'dir': 'WindDirection', 'z': None, 'units': 'knots'}
+[   10s]   last records: Belmullet-AMETS 2011-08-10T16:00, FS1 2008-02-17T02:00, M1 2007-07-09T12:00, M2 2026-10-15T03:00, M3 2026-10-15T03:00, M4 2026-03-29T04:00, M4-Archive 2007-05-01T11:00, M5 2026-10-15T03:00, M6 2026-10-15T03:00
+[   11s] mi IWBNetwork: 2900 rows, 4 stations
+[   11s] mi: 4 stations with >= 72 hourly Hs, 4 with >= 72 hourly wind (11s)
+[   14s]   cmems (diag): 1 files
+[   15s] cmems: 34 wave platforms near the regions, 1003 daily files
+[   69s]   cmems (diag): 1003 files
+[   85s] cmems: 32 stations with >= 72 hourly Hs, 5 with >= 72 hourly wind (74s)
+[   85s] 36 wave stations after removing 0 duplicates
+[   85s] 9 wind stations after removing 0 duplicates (9 buoys, 0 ashore)
+[   87s] 27 buoy-region pairs left out: facing another sea or sheltered
+[   87s] 17 buoys within 150 km of 6 regions
+[   87s] open-meteo: 17 buoy points to fetch (0 cached)
+[   89s] open-meteo: 6 spread points to fetch (0 cached)
+[   90s] 4 wind station-region pairs left out: facing another sea or sheltered
+[   90s] 4 wind stations within 150 km of 5 regions
+[   90s] ndbc: anemometer height of 0 of 0 stations
+[   91s] open-meteo: 4 wind points to fetch (0 cached)
+[   94s] open-meteo forecast: 9 requests, 12 locations, 15 weighted calls
+[   94s] open-meteo marine: 3 requests, 23 locations, 82 weighted calls
+[   94s] open-meteo: 12 requests, 35 locations, 97 weighted calls (free limit 10000/day); cache {'downloads': 5, 'hits': 0, 'bytes': 268371}
+[   95s] FR-HOS      cmems:6200066,cmems:6200079,cmems:Donostia-buoy best ecmwf_wam         n 1839 rmse 0.217 bias -0.002 alta
+[   95s]             wind cmems:6200024,cmems:Bilbao-station best meteofrance_seamless n 1418 rmse 1.69  bias 0.166  (gfs_seamless rmse 1.858 bias 0.074) media
+[   95s] FR-GIR      cmems:6200064,cmems:6200066,cmems:6200024 best ecmwf_wam         n 1838 rmse 0.236 bias 0.058  alta
+[   95s]             wind cmems:6200024,cmems:Bilbao-station best meteofrance_seamless n 1418 rmse 1.69  bias 0.166  (gfs_seamless rmse 1.858 bias 0.074) media
+[   95s] ES-PV       cmems:Bilbao-coast-buoy,cmems:Bilbao-station,cmems:PasaiaII-coast-buoy best ecmwf_wam         n 2142 rmse 0.263 bias -0.069 alta
+[   95s]             wind cmems:Bilbao-station,cmems:6200024 best meteofrance_seamless n 1418 rmse 1.69  bias 0.166  (gfs_seamless rmse 1.858 bias 0.074) media
+[   95s] ES-CAN      cmems:Bilbao-coast-buoy,cmems:Bilbao-station,cmems:6200024 best ecmwf_wam         n 2167 rmse 0.266 bias -0.043 alta
+[   95s]             wind cmems:Bilbao-station,cmems:6200024 best meteofrance_seamless n 1418 rmse 1.69  bias 0.166  (gfs_seamless rmse 1.858 bias 0.074) media
+[   95s] PT-CEN      cmems:6200199,cmems:Leixoes-coast-buoy,cmems:6200084 best ecmwf_wam         n 2124 rmse 0.227 bias -0.016 alta
+[   95s]             wind cmems:6200199,cmems:6200084       best icon_seamless     n 1437 rmse 1.675 bias 0.149  (gfs_seamless rmse 2.389 bias 0.36) alta
+[   95s] GB-CON      cmems:6201001,cmems:6200107,cmems:6201024 best ecmwf_wam         n 2143 rmse 0.288 bias 0.093  media
+[   95s] check cmems ncep_gfswave016   {'n': 12253, 'tp_bias': 0.03, 'tm_bias': 3.5, 'dir_mae': 13.45, 'dir_bias': 2.19}
+[   95s] check cmems meteofrance_wave  {'n': 12253, 'tp_bias': -1.26, 'tm_bias': 2.26, 'dir_mae': 14.13, 'dir_bias': 4.3}
+[   95s] check cmems ecmwf_wam         {'n': 12253, 'tp_bias': 0.11, 'tm_bias': 2.08, 'dir_mae': 14.01, 'dir_bias': 3.77}
+[   95s] check cmems dwd_ewam          {'n': 12253, 'tp_bias': -1.42, 'tm_bias': 2.06, 'dir_mae': 13.56, 'dir_bias': 4.24}
+[   95s] check cmems ncep_gfswave025   {'n': 4291, 'tp_bias': 0.08, 'tm_bias': 4.15, 'dir_mae': 8.27, 'dir_bias': -2.45}
+[   95s] wind check cmems gfs_seamless         {'n': 7109, 'obs_spd': 3.81, 'bias_ms': 0.54, 'rmse': 1.98, 'dir_mae': 25.16, 'dir_bias': 7.68}
+[   95s] wind check cmems ecmwf_ifs            {'n': 7109, 'obs_spd': 3.81, 'bias_ms': 0.74, 'rmse': 1.9, 'dir_mae': 22.23, 'dir_bias': 5.96}
+[   95s] wind check cmems meteofrance_seamless {'n': 7109, 'obs_spd': 3.81, 'bias_ms': 0.73, 'rmse': 1.8, 'dir_mae': 17.12, 'dir_bias': 0.35}
+[   95s] wind check cmems icon_seamless        {'n': 7109, 'obs_spd': 3.81, 'bias_ms': -0.05, 'rmse': 1.92, 'dir_mae': 19.68, 'dir_bias': 0.6}
+[   95s] done: 6 regions, 6 with buoys, 5 with wind stations, 6 suggestions
