@@ -10,3 +10,9 @@ FAIL 2.7s https://erddap.emodnet.eu/erddap/search/index.csv?page=1&itemsPerPage=
 FAIL 3.5s https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=VHM0: HTTP Error 404: 
 OK 1.4s 10229 bytes https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=significant+wave+height
 OK 1.6s 49106 bytes https://coastwatch.pfeg.noaa.gov/erddap/search/index.csv?page=1&itemsPerPage=300&searchFor=wave+buoy
+OK 18.4s 1420991 bytes https://erddap.emodnet-physics.eu/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 0.9s 20384 bytes https://prod-erddap.emodnet-physics.eu/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 0.9s 29789 bytes https://erddap.ifremer.fr/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+FAIL 2.3s https://erddap.puertos.es/erddap/tabledap/index.csv?page=1&itemsPerPage=5000: <urlopen error [Errno -2] Name or service not known>
+OK 0.8s 141297 bytes https://erddap.marine.ie/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 0.3s 3786 bytes https://data.cefas.co.uk/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
