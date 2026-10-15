@@ -1,0 +1,20 @@
+name,lat,lon,type,conf,src,flags,note
+BOILERS,30.6400,-9.8300,R,L,local,top checked,posicion dudosa; ola pesada
+KILLER POINT,30.5750,-9.7480,P,L,local,top,posicion dudosa
+ANCHOR POINT,30.5640,-9.7240,P,K,local,top,derecha larga; 3 km al norte de Taghazout
+LA SOURCE,30.5575,-9.7185,P,L,local,,
+HASH POINT,30.5530,-9.7150,P,K,local,top,
+MYSTERIES,30.5480,-9.7115,P,L,local,,posicion dudosa
+PANORAMAS,30.5390,-9.7035,P,K,local,top,
+BANANA POINT,30.5300,-9.6955,P,L,local,,
+DEVIL'S ROCK,30.5235,-9.6880,R,L,local,,posicion dudosa
+TAMRAGHT,30.5130,-9.6810,B,L,local,,
+CROCODILE,30.5010,-9.6760,B,L,local,,Aourir; posicion dudosa
+IMOURAN,30.4940,-9.6720,B,L,local,,Aourir
+ANZA,30.4600,-9.6620,B,L,local,,
+AGADIR,30.4200,-9.6350,B,K,local,,
+IMSOUANE,30.8425,-9.8220,P,K,local,top,The Bay; derecha larga
+CATHEDRAL,30.8395,-9.8265,R,L,local,,Imsouane; posicion dudosa
+MADRABA,30.8470,-9.8180,B,L,local,,Imsouane; posicion dudosa
+SIDI KAOUKI,31.3590,-9.8090,B,K,local,,Essaouira
+ESSAOUIRA,31.5050,-9.7710,B,K,local,,

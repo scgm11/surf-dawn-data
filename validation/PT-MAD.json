@@ -1,0 +1,27 @@
+{
+ "region": "PT-MAD",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.118,
+  "hours": 744,
+  "point": [
+   32.643,
+   -16.955
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.79,
+   "ncep_gfswave025": 0.79,
+   "meteofrance_wave": 0.88,
+   "ecmwf_wam": 0.66
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

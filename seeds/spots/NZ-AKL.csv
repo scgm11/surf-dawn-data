@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+PIHA,-36.9530,174.4690,B,K,local,top,Lion Rock; playa principal
+NORTH PIHA,-36.9490,174.4655,B,K,local,,
+SOUTH PIHA,-36.9590,174.4675,B,K,local,,
+KAREKARE,-36.9890,174.4710,B,K,local,,
+WHATIPU,-37.0410,174.5010,B,L,local,facing=240,boca del Manukau; orientación a mano (la calculada miraba a otra costa)
+MURIWAI,-36.8100,174.4150,B,K,local,,
+BETHELLS,-36.8900,174.4400,B,K,local,facing=260,Te Henga; orientación a mano (la calculada miraba a otra costa)
+ANAWHATA,-36.9170,174.4490,B,L,local,,
+PORT WAIKATO,-37.3910,174.7270,B,L,local,,

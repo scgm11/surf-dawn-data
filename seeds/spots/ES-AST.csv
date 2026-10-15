@@ -1,0 +1,15 @@
+name,lat,lon,type,conf,src,flags,note
+SAN ANTOLIN,43.4270,-4.8930,B,L,local,,Naves-Llanes; posicion aproximada
+SANTA MARINA,43.4680,-5.0530,B,L,local,,Ribadesella; posicion aproximada
+VEGA,43.4760,-5.0200,B,L,local,,Ribadesella; posicion aproximada
+LA ESPASA,43.4744,-5.2107,B,V,web:hispanopedia,,Caravia-Colunga
+RODILES,43.5315,-5.3800,B,K,local,top,ria de Villaviciosa
+SAN LORENZO,43.5450,-5.6590,B,K,local,,Gijon
+XAGO,43.6110,-5.8150,B,L,local,,Gozon; posicion aproximada
+SALINAS,43.5800,-5.9660,B,K,local,top,Castrillon
+EL ESPARTAL,43.5760,-5.9470,B,L,local,,Salinas-Avilés; posicion aproximada
+LOS QUEBRANTOS,43.5620,-6.0610,B,L,local,,San Juan de la Arena; posicion aproximada
+AGUILAR,43.5580,-6.0960,B,L,local,,Muros de Nalon; posicion aproximada
+OTUR,43.5600,-6.4400,B,L,local,,Valdes; posicion aproximada
+FREJULFE,43.5640,-6.7030,B,L,local,,Navia; posicion aproximada
+PENARRONDA,43.5650,-6.9600,B,L,local,,Castropol; posicion aproximada

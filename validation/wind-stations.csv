@@ -1,0 +1,45 @@
+id,name,lat,lon,kind,z,factor,hours,regions
+ndbc:41029,"Capers Nearshore, SC (CAP2)",32.803,-79.624,buoy,3.0,1.144,716,US-SC-GA
+ndbc:41033,"Fripp Nearshore, SC (FRP2)",32.279,-80.406,buoy,3.0,1.144,718,US-SC-GA
+ndbc:41038,"Wrightsville Beach Nearshore, NC (ILM2)",34.141,-77.715,buoy,3.0,1.144,719,US-SE
+ndbc:41053,"San Juan, PR",18.474,-66.099,buoy,4.0,1.106,721,PR-NW PR-N
+ndbc:41066,CHR60,32.536,-79.656,buoy,3.0,1.144,719,US-SC-GA
+ndbc:41068,"Fort Pierce, FL (FTP)",27.593,-80.189,buoy,3.0,1.142,716,US-FL
+ndbc:41082,OOI Pioneer - Mid-Atlantic Bight Central Surface Mooring,35.95,-75.125,buoy,4.2,1.099,719,US-MID
+ndbc:42012,"ORANGE BEACH - 44 NM SE of Mobile, AL",30.061,-87.547,buoy,3.8,1.112,723,US-FL-PAN
+ndbc:42043,TGLO TABS Buoy B,28.982,-94.899,buoy,3.4,1.126,628,US-GULF
+ndbc:44007,"PORTLAND - 12 NM Southeast of Portland,ME",43.525,-70.14,buoy,3.8,1.112,723,US-NE
+ndbc:44009,"DELAWARE BAY 26 NM Southeast of Cape May, NJ",38.46,-74.692,buoy,3.8,1.112,289,US-MID
+ndbc:44029,Buoy A01 - Massachusetts Bay,42.523,-70.566,buoy,4.0,1.106,711,US-NE
+ndbc:44030,Buoy B01 - Western Maine Shelf,43.179,-70.426,buoy,4.0,1.106,721,US-NE
+ndbc:46011,"SANTA MARIA - 21NM NW of Point Arguello, CA",34.937,-120.999,buoy,3.8,1.112,723,US-CA-SB US-CA-CEN
+ndbc:46013,"BODEGA BAY - 48NM NW of San Francisco, CA",38.235,-123.317,buoy,3.8,1.112,723,US-CA-SF
+ndbc:46014,"PT ARENA - 19NM North of Point Arena, CA",39.225,-123.98,buoy,3.8,1.112,723,US-CA-NOR
+ndbc:46022,"EEL RIVER - 17NM WSW of Eureka, CA",40.716,-124.54,buoy,4.1,1.103,723,US-CA-NOR
+ndbc:46025,"Santa Monica Basin - 33NM WSW of Santa Monica, CA",33.765,-119.077,buoy,3.8,1.112,723,US-CA-OC US-CA-LA US-CA-SB
+ndbc:46026,"SAN FRANCISCO - 18NM West of San Francisco, CA",37.75,-122.838,buoy,4.1,1.103,723,US-CA-SF
+ndbc:46027,"ST GEORGES - 8 NM NW of Crescent City, CA",41.84,-124.382,buoy,3.8,1.112,723,US-CA-NOR
+ndbc:46028,"CAPE SAN MARTIN - 55NM West NW of Morro Bay, CA",35.763,-121.9,buoy,4.1,1.103,723,US-CA-SC
+ndbc:46042,"MONTEREY - 27NM WNW of Monterey, CA",36.787,-122.408,buoy,4.1,1.103,723,US-CA-SC US-CA-SF
+ndbc:46054,"WEST SANTA BARBARA  38 NM West of Santa Barbara, CA",34.274,-120.468,buoy,3.8,1.112,723,(US-CA-LA: otro mar o abrigada: ve 67 % de las direcciones abiertas de los picos) (US-CA-SB: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos)
+ndbc:46069,"SOUTH SANTA ROSA - 14 NM SW of Santa Rosa Island, CA",33.657,-120.227,buoy,4.1,1.103,723,US-CA-LA US-CA-SB
+ndbc:46086,"SAN CLEMENTE BASIN - 27NM SE Of San Clemente Is, CA",32.504,-118.029,buoy,3.2,1.134,723,MX-BCN US-CA-SD US-CA-OC
+ndbc:46087,"Neah Bay - 6 NM North of Cape Flattery, WA (Traffic Separation Lighted Buoy)",48.493,-124.727,buoy,3.8,1.112,723,US-PNW CA-BC-VI
+ndbc:46092,MBM1,36.751,-122.029,buoy,4.0,1.106,690,US-CA-CEN US-CA-SC
+ndbc:46097,OOI Newport Shelf,44.639,-124.304,buoy,4.5,1.092,223,US-PNW
+ndbc:46119,Cha'Ba La Push,47.967,-124.95,buoy,3.7,1.116,336,CA-BC-VI
+ndbc:51WH0,WHOTS - Woods Hole Ocean Time-series,22.0,-157.0,buoy,2.7,1.157,576,US-HI-OAN US-HI-OAS US-HI-MAU
+ndbc:ANPT2,"8775241 - Aransas, Aransas Pass, TX",27.837,-97.039,fixed,14.2,0.962,730,US-GULF
+ndbc:BURL1,"Southwest Pass, LA",28.906,-89.429,fixed,38.0,0.863,730,US-FL-PAN
+ndbc:DESW1,"Destruction Island, WA",47.675,-124.485,fixed,52.7,0.833,729,(US-PNW: otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos)
+ndbc:DUKN7," 8651370 - Duck Pier, NC ",36.184,-75.746,fixed,16.3,0.948,681,US-SE US-MID
+ndbc:KBQX,Brazos 538 (Transco),28.314,-95.62,fixed,24.7,0.905,703,"(US-GULF: sesgo de viento +62%, +65%, +58% en todos los modelos)"
+ndbc:KGVW,Galveston 209A (Arena Offshore),29.13,-94.55,fixed,,1.0,682,US-GULF
+ndbc:LAPW1,"9442396 - La Push, WA",47.913,-124.637,fixed,10.8,0.992,730,(US-PNW: otro mar o abrigada: ve 68 % de las direcciones abiertas de los picos) CA-BC-VI
+ndbc:LJAC1,"9410230 - La Jolla, CA",32.867,-117.257,fixed,17.5,0.94,730,MX-BCN US-CA-SD (US-CA-OC: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos) US-CA-LA
+ndbc:LKWF1,"8722670 - Lake Worth Pier, FL",26.613,-80.034,fixed,11.9,0.981,730,US-FL
+ndbc:MBNN7,"Masonboro Island, NC (MSNB_N)",34.171,-77.824,fixed,5.6,1.066,729,US-SE
+ndbc:NWPO3,"Newport, OR",44.613,-124.067,fixed,16.4,0.947,696,US-PNW
+ndbc:PCBF1,"8729210 - Panama City Beach, FL",30.213,-85.88,fixed,16.5,0.946,730,US-FL-PAN
+ndbc:PTGC1,"Point Arguello, CA",34.577,-120.648,fixed,39.3,0.86,730,(US-CA-SB: otro mar o abrigada: ve 52 % de las direcciones abiertas de los picos) US-CA-CEN
+ndbc:SIPF1,"Sebastian Inlet State Park North Jetty, FL",27.862,-80.445,fixed,11.1,0.989,729,US-FL

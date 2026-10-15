@@ -1,0 +1,19 @@
+name,lat,lon,type,conf,src,flags,note
+SOULAC,45.4950,-1.1700,B,L,local,,Soulac-sur-Mer
+MONTALIVET,45.3740,-1.1680,B,K,local,,
+HOURTIN,45.2290,-1.1660,B,K,local,,Hourtin-Plage
+CARCANS,45.1090,-1.1700,B,K,local,,Carcans-Plage
+LACANAU NORD,45.0090,-1.2010,B,K,local,,Lacanau-Ocean
+LACANAU CENTRALE,45.0018,-1.2028,B,V,geonames:11072965,top,Lacanau-Ocean; exCT; plage Centrale; posición GeoNames
+LACANAU SUD,44.9930,-1.2040,B,K,local,,Lacanau-Ocean
+LE PORGE,44.8870,-1.2240,B,K,local,,Le Porge-Ocean
+GRAND CROHOT,44.7380,-1.2530,B,K,local,,Cap Ferret oceano
+TRUC VERT,44.7140,-1.2560,B,K,local,,Cap Ferret
+L'HORIZON,44.6390,-1.2650,B,L,local,,Cap Ferret; posicion aproximada
+BISCARROSSE,44.4450,-1.2610,B,K,local,top,Biscarrosse-Plage
+MIMIZAN,44.2080,-1.2970,B,K,local,,Mimizan-Plage
+CONTIS,44.0890,-1.3220,B,K,local,,Contis-Plage
+SAINT-GIRONS,43.9650,-1.3800,B,L,local,,Saint-Girons-Plage; posicion aproximada
+MOLIETS,43.8570,-1.4050,B,K,local,,Moliets-Plage
+MESSANGES,43.8140,-1.4180,B,K,local,,Messanges
+VIEUX-BOUCAU,43.7880,-1.4260,B,K,local,,Vieux-Boucau; La Centrale

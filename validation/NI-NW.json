@@ -1,0 +1,27 @@
+{
+ "region": "NI-NW",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.18,
+  "hours": 744,
+  "point": [
+   12.61,
+   -87.3
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.05,
+   "ncep_gfswave025": 1.15,
+   "meteofrance_wave": 0.73,
+   "ecmwf_wam": 1.13
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "region": "NZ-OTA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.065,
+  "hours": 744,
+  "point": [
+   -46.368,
+   169.801
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.55,
+   "meteofrance_wave": 1.61,
+   "ecmwf_wam": 1.56
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

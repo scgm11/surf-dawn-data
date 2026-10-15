@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+BALLYCASTLE,55.2030,-6.2380,B,L,local,,posicion aproximada
+WHITEROCKS,55.2170,-6.6050,B,L,local,,Portrush; posicion aproximada
+EAST STRAND,55.2100,-6.6370,B,K,local,top,Portrush East Strand
+WEST STRAND,55.2060,-6.6610,B,L,local,,Portrush; posicion aproximada
+PORTSTEWART,55.1840,-6.7250,B,L,local,,Portstewart Strand; posicion aproximada
+CASTLEROCK,55.1690,-6.7930,B,L,local,,posicion aproximada
+BENONE,55.1790,-6.9200,B,L,local,,Benone Strand; posicion aproximada
+TYRELLA,54.2620,-5.7800,B,L,local,,Co. Down; posicion aproximada
+NEWCASTLE,54.2130,-5.8820,B,L,local,,Co. Down; Dundrum Bay; posicion aproximada

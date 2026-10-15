@@ -1,0 +1,11 @@
+name,lat,lon,type,conf,src,flags,note
+HT'S,-2.4000,99.8650,R,L,local,top checked,Hollow Trees; Lance's Right; WC; posicion dudosa
+LANCE'S LEFT,-2.3950,99.8700,R,L,local,top checked,izquierda; posicion dudosa
+BANKVAULTS,-2.4050,99.8600,R,L,local,,posicion aprox
+PITSTOPS,-2.4100,99.8550,R,L,local,,posicion aprox
+MACARONIS,-2.7900,99.9800,R,L,local,top,WC; izquierda; Pagai; posicion a verificar
+KANDUI LEFT,-1.9000,99.2900,R,L,local,top,WC; posicion a verificar
+KANDUI RIGHT,-1.9020,99.2920,R,L,local,,posicion a verificar
+RIFLES,-1.9000,99.3000,R,L,local,top,derecha; posicion dudosa
+BURGERWORLD,-1.9050,99.3050,R,L,local,,cluster Kandui; posicion aprox
+TELESCOPES,-1.9100,99.3100,R,L,local,,cluster Kandui; posicion aprox

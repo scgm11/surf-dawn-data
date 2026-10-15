@@ -1,0 +1,16 @@
+name,lat,lon,type,conf,src,flags,note
+HONOLI'I,19.7590,-155.0985,R,K,local,top,desembocadura Hilo
+RICHARDSONS,19.7300,-155.0145,R,L,local,,Hilo
+POHOIKI,19.4560,-154.8070,R,L,local,,Isaac Hale; costa cambio en 2018
+LAUPAHOEHOE,19.9940,-155.2360,R,L,local,,Laupahoehoe Point
+WAIPIO,20.1160,-155.5835,B,L,local,,valle
+POLOLU,20.2025,-155.7325,B,L,local,,valle
+HAPUNA,19.9930,-155.8240,B,K,local,,shorebreak
+OLD AIRPORT,19.6455,-156.0025,R,K,local,,Old Kona Airport; Kona
+HONOKOHAU,19.6680,-156.0280,R,L,local,,boca del puerto
+BANYANS,19.6130,-155.9830,R,K,local,top,Kona; Ali'i Drive
+LYMANS,19.6030,-155.9770,R,L,local,,Kona; Ali'i Drive
+MAGIC SANDS,19.5925,-155.9690,B,L,local,,La'aloa
+KAHALUU,19.5795,-155.9667,R,K,local,,Kahalu'u Bay
+KEAUHOU,19.5590,-155.9660,R,K,local,,Keauhou Bay
+HOOKENA,19.4150,-155.9090,B,L,local,,

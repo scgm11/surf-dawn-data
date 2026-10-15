@@ -1,0 +1,9 @@
+name,lat,lon,type,conf,src,flags,note
+UMDLOTI,-29.6510,31.1260,B,K,local,,
+UMHLANGA,-29.7250,31.0925,B,K,local,,
+NORTH BEACH,-29.8545,31.0495,B,K,local,,Durban centro
+BAY OF PLENTY,-29.8605,31.0490,B,K,local,,Durban centro
+NEW PIER,-29.8529,31.0408,B,V,osm:way/24825445,top,Durban centro; posición OSM
+CAVE ROCK,-29.8800,31.0561,R,V,wd:Q31511084,top,derecha tubular; Bluff; la punta Cave Rock; posición Wikidata
+BRIGHTON BEACH,-29.9480,31.0185,B,L,local,,Bluff sur
+ISIPINGO,-29.9930,30.9530,B,K,local,,

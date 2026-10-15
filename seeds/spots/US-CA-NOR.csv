@@ -1,0 +1,26 @@
+name,lat,lon,type,conf,src,flags,note
+DORAN BEACH,38.3150,-123.0510,B,L,local,,Sonoma
+SALMON CREEK,38.3500,-123.0630,B,K,local,,Sonoma
+PORTUGUESE BEACH,38.4170,-123.1110,B,L,local,,Sonoma
+GOAT ROCK,38.4430,-123.1260,B,K,local,,Sonoma
+GUALALA,38.7680,-123.5340,B,K,local,,
+ARENA COVE,38.9150,-123.7110,R,K,local,,Point Arena
+MANCHESTER,38.9650,-123.7125,B,L,local,,
+NAVARRO BEACH,39.1895,-123.7670,B,K,local,,
+ALBION,39.2260,-123.7700,R,L,local,,
+BIG RIVER BEACH,39.3050,-123.7970,B,K,local,,Mendocino
+MENDO HEADLANDS,39.3100,-123.8060,R,L,local,,
+CASPAR,39.3640,-123.8290,R,L,local,,
+NOYO,39.4260,-123.8130,B,K,local,,Fort Bragg
+GLASS BEACH,39.4520,-123.8135,B,K,local,,Fort Bragg
+VIRGIN CREEK,39.4670,-123.8090,B,L,local,,Fort Bragg
+WESTPORT,39.6350,-123.7910,B,L,local,facing=270,orientación a mano (la calculada miraba a la laguna o la bahía)
+SHELTER COVE,40.0240,-124.0720,B,K,local,,
+CENTERVILLE,40.5600,-124.3500,B,K,local,,
+SOUTH JETTY,40.7545,-124.2415,B,K,local,,Humboldt Bay
+NORTH JETTY,40.7770,-124.2420,B,K,local,,Humboldt Bay
+MAD RIVER,40.9580,-124.1450,B,L,local,,
+CLAM BEACH,40.9980,-124.1140,B,K,local,,
+MOONSTONE,41.0275,-124.1105,B,K,local,,Humboldt
+AGATE BEACH,41.1485,-124.1620,B,K,local,,Patrick's Point
+CRESCENT BEACH,41.7080,-124.1480,B,K,local,,Crescent City

@@ -1,0 +1,213 @@
+code,country,name_es,name_en
+UY-MAL,UY,Maldonado,Maldonado
+UY-ROC,UY,Rocha,Rocha
+AR-MDP,AR,Mar del Plata–Necochea,Mar del Plata–Necochea
+AR-BAN,AR,Pinamar y Villa Gesell,Pinamar and Villa Gesell
+AR-SUR,AR,Patagonia,Patagonia
+BR-RS,BR,Rio Grande do Sul,Rio Grande do Sul
+BR-RS-SUL,BR,Rio Grande do Sul sur,South Rio Grande do Sul
+BR-SC-FLN,BR,Florianópolis,Florianópolis
+BR-SC-SUL,BR,Praia do Rosa y Garopaba,Praia do Rosa and Garopaba
+BR-SC-NOR,BR,Santa Catarina norte y Paraná,North Santa Catarina and Paraná
+BR-SP,BR,São Paulo,São Paulo
+BR-RJ,BR,Río de Janeiro,Rio de Janeiro
+BR-RJL,BR,Saquarema y Región de los Lagos,Saquarema and Lakes Region
+BR-ES,BR,Espírito Santo,Espírito Santo
+BR-BA,BR,Bahía,Bahia
+BR-NE-CE,BR,Ceará,Ceará
+BR-NE-RN,BR,Rio Grande do Norte y Paraíba,Rio Grande do Norte and Paraíba
+BR-NE-PE,BR,Pernambuco Alagoas y Sergipe,Pernambuco Alagoas and Sergipe
+BR-NOR,BR,Fernando de Noronha,Fernando de Noronha
+CL-NOR,CL,Arica a Antofagasta,Arica to Antofagasta
+CL-CEN,CL,Valparaíso y Coquimbo,Valparaíso and Coquimbo
+CL-PIC,CL,Pichilemu,Pichilemu
+CL-MAU,CL,Maule y Biobío,Maule and Biobío
+CL-SUR,CL,Araucanía a Los Lagos,Araucanía to Los Lagos
+PE-NOR,PE,Tumbes y Piura,Tumbes and Piura
+PE-LLB,PE,La Libertad y Lambayeque,La Libertad and Lambayeque
+PE-LIM,PE,Lima,Lima
+PE-SUR,PE,Ica y Arequipa,Ica and Arequipa
+EC-COS,EC,Costa de Ecuador,Ecuador coast
+EC-GAL,EC,Galápagos,Galápagos
+CO-PAC,CO,Pacífico colombiano,Colombian Pacific
+CO-CAR,CO,Caribe colombiano,Colombian Caribbean
+VE-ALL,VE,Venezuela,Venezuela
+PA-PAC,PA,Pacífico de Panamá,Panama Pacific
+PA-BDT,PA,Bocas del Toro,Bocas del Toro
+CR-GUA,CR,Guanacaste norte,North Guanacaste
+CR-NIC,CR,Nicoya sur,South Nicoya
+CR-PAC,CR,Pacífico central,Central Pacific
+CR-OSA,CR,Osa y Golfo Dulce,Osa and Golfo Dulce
+CR-CAR,CR,Caribe de Costa Rica,Costa Rica Caribbean
+NI-RIV,NI,Rivas y Popoyo,Rivas and Popoyo
+NI-NW,NI,Chinandega y León,Chinandega and León
+SV-LIB,SV,La Libertad,La Libertad
+SV-ORI,SV,Oriente de El Salvador,Eastern El Salvador
+GT-PAC,GT,Pacífico de Guatemala,Guatemala Pacific
+MX-OAX,MX,Oaxaca,Oaxaca
+MX-PAC,MX,Colima Michoacán y Guerrero,Colima Michoacán and Guerrero
+MX-NAY,MX,Nayarit Jalisco y Sinaloa,Nayarit Jalisco and Sinaloa
+MX-BCS,MX,Baja California Sur,Baja California Sur
+MX-BCS-N,MX,Baja Sur Pacífico norte,North Baja Sur Pacific
+MX-BCN,MX,Baja California,Baja California
+MX-CAR,MX,Caribe mexicano,Mexican Caribbean
+PR-NW,PR,Rincón e Isabela,Rincón and Isabela
+PR-N,PR,San Juan y costa norte,San Juan and north coast
+BB-ALL,BB,Barbados,Barbados
+DO-ALL,DO,República Dominicana,Dominican Republic
+GP-ALL,GP,Guadalupe,Guadeloupe
+MQ-ALL,MQ,Martinica,Martinique
+BS-ALL,BS,Bahamas,Bahamas
+TT-ALL,TT,Trinidad y Tobago,Trinidad and Tobago
+US-CA-SD,US,San Diego,San Diego
+US-CA-OC,US,Orange County,Orange County
+US-CA-LA,US,Los Ángeles,Los Angeles
+US-CA-SB,US,Santa Bárbara y Ventura,Santa Barbara and Ventura
+US-CA-CEN,US,Big Sur y San Luis Obispo,Big Sur and San Luis Obispo
+US-CA-SC,US,Santa Cruz y Monterey,Santa Cruz and Monterey
+US-CA-SF,US,San Francisco y San Mateo,San Francisco and San Mateo
+US-CA-NOR,US,Humboldt y Mendocino,Humboldt and Mendocino
+US-PNW,US,Oregón y Washington,Oregon and Washington
+US-GULF,US,Texas,Texas
+US-FL,US,Florida,Florida
+US-FL-PAN,US,Golfo este (Luisiana a Florida),Eastern Gulf (Louisiana to Florida)
+US-SE,US,Carolina del Norte,North Carolina
+US-SC-GA,US,Carolina del Sur y Georgia,South Carolina and Georgia
+US-MID,US,Virginia Maryland y Delaware,Virginia Maryland and Delaware
+US-NE,US,Nueva Inglaterra Nueva York y Nueva Jersey,New England New York and New Jersey
+US-HI-OAN,US,North Shore de Oahu,Oahu North Shore
+US-HI-OAS,US,Oahu sur oeste y este,Oahu South West and East
+US-HI-MAU,US,Maui,Maui
+US-HI-KAU,US,Kauai,Kauai
+US-HI-BIG,US,Isla Grande de Hawái,Big Island of Hawaii
+CA-BC-VI,CA,Isla de Vancouver,Vancouver Island
+CA-NS,CA,Nueva Escocia,Nova Scotia
+AU-QLD-SC,AU,Sunshine Coast,Sunshine Coast
+AU-QLD-GC,AU,Gold Coast,Gold Coast
+AU-NSW-NR,AU,Northern Rivers,Northern Rivers
+AU-NSW-MN,AU,Mid North Coast,Mid North Coast
+AU-NSW-NC,AU,Newcastle y Central Coast,Newcastle and Central Coast
+AU-NSW-SYD,AU,Sídney,Sydney
+AU-NSW-SC,AU,Illawarra y South Coast,Illawarra and South Coast
+AU-VIC-SC,AU,Surf Coast,Surf Coast
+AU-VIC-PI,AU,Phillip Island y Mornington,Phillip Island and Mornington
+AU-VIC-W,AU,Oeste de Victoria,West Victoria
+AU-TAS,AU,Tasmania,Tasmania
+AU-SA,AU,Australia del Sur,South Australia
+AU-SA-EYR,AU,Península de Eyre,Eyre Peninsula
+AU-WA-MR,AU,Margaret River,Margaret River
+AU-WA-PER,AU,Perth y Rottnest,Perth and Rottnest
+AU-WA-NW,AU,Kalbarri y Geraldton,Kalbarri and Geraldton
+AU-WA-GAS,AU,Gascoyne,Gascoyne
+NZ-NTL,NZ,Northland,Northland
+NZ-AKL,NZ,Auckland oeste,West Auckland
+NZ-RAG,NZ,Raglan,Raglan
+NZ-TAR,NZ,Taranaki,Taranaki
+NZ-BOP,NZ,Coromandel y Bay of Plenty,Coromandel and Bay of Plenty
+NZ-GIS,NZ,Gisborne,Gisborne
+NZ-WEL,NZ,Wellington,Wellington
+NZ-KAI,NZ,Kaikoura y Canterbury,Kaikoura and Canterbury
+NZ-OTA,NZ,Otago y Southland,Otago and Southland
+NZ-WC,NZ,Costa Oeste,West Coast
+FJ-MAM,FJ,Mamanucas,Mamanuca Islands
+FJ-SOU,FJ,Coral Coast y Beqa,Coral Coast and Beqa
+PF-TAH,PF,Tahití y Moorea,Tahiti and Moorea
+PF-ISL,PF,Islas de Sotavento,Leeward Islands
+WS-ALL,WS,Samoa,Samoa
+TO-ALL,TO,Tonga,Tonga
+VU-ALL,VU,Vanuatu,Vanuatu
+PG-ALL,PG,Papúa Nueva Guinea,Papua New Guinea
+ID-BAL-BUK,ID,Bukit (Bali),Bukit (Bali)
+ID-BAL-W,ID,Kuta y Canggu (Bali),Kuta and Canggu (Bali)
+ID-BAL-E,ID,Keramas y Nusas (Bali),Keramas and Nusas (Bali)
+ID-JAV-E,ID,Java oriental,East Java
+ID-JAV-W,ID,Java occidental,West Java
+ID-LOM,ID,Lombok,Lombok
+ID-SBW,ID,Sumbawa,Sumbawa
+ID-SMB,ID,Sumba,Sumba
+ID-ROT,ID,Rote,Rote
+ID-MEN,ID,Mentawai,Mentawai
+ID-NIA,ID,Nias y Banyak,Nias and Banyak
+ID-KRU,ID,Krui y Lampung,Krui and Lampung
+PH-SIA,PH,Siargao,Siargao
+PH-LUZ,PH,La Union y Baler,La Union and Baler
+PH-EAS,PH,Samar y Catanduanes,Samar and Catanduanes
+LK-E,LK,Arugam Bay,Arugam Bay
+LK-S,LK,Sur y oeste de Sri Lanka,South and West Sri Lanka
+MV-NMA,MV,Malé Norte,North Malé
+MV-SMA,MV,Malé Sur,South Malé
+MV-SOU,MV,Atolones del sur,Southern atolls
+MV-CEN,MV,Atolones centrales,Central atolls
+JP-CHI,JP,Chiba,Chiba
+JP-SHO,JP,Shonan,Shonan
+JP-IZU,JP,Izu,Izu
+JP-IBA,JP,Ibaraki y Fukushima,Ibaraki and Fukushima
+JP-SHK,JP,Shikoku,Shikoku
+JP-KYU,JP,Miyazaki y Kyushu,Miyazaki and Kyushu
+TW-E,TW,Taitung y Hualien,Taitung and Hualien
+TW-NE,TW,Yilan y costa norte,Yilan and north coast
+IN-W,IN,India oeste,West India
+IN-E,IN,India este,East India
+VN-ALL,VN,Vietnam,Vietnam
+KR-ALL,KR,Corea del Sur,South Korea
+CN-HAI,CN,Hainan,Hainan
+ZA-WC-CPT,ZA,Península del Cabo,Cape Peninsula
+ZA-WC-WCO,ZA,Costa Oeste del Cabo,Cape West Coast
+ZA-WC-GR,ZA,Garden Route,Garden Route
+ZA-EC-JB,ZA,Jeffreys Bay y St Francis,Jeffreys Bay and St Francis
+ZA-EC-PE,ZA,Gqeberha y East London,Gqeberha and East London
+ZA-EC-WLD,ZA,Wild Coast,Wild Coast
+ZA-KZN-DBN,ZA,Durban,Durban
+ZA-KZN-N,ZA,KwaZulu-Natal norte,KwaZulu-Natal North
+ZA-KZN-S,ZA,KwaZulu-Natal sur,KwaZulu-Natal South
+NA-ERO,NA,Walvis Bay y Swakopmund,Walvis Bay and Swakopmund
+MA-TAG,MA,Taghazout y Agadir,Taghazout and Agadir
+MA-N,MA,Rabat a Safi,Rabat to Safi
+MA-S,MA,Mirleft y Sidi Ifni,Mirleft and Sidi Ifni
+SN-ALL,SN,Senegal,Senegal
+LR-ALL,LR,Liberia,Liberia
+GH-ALL,GH,Ghana,Ghana
+MZ-S,MZ,Ponta do Ouro,Ponta do Ouro
+MZ-INH,MZ,Inhambane y Tofo,Inhambane and Tofo
+MG-ALL,MG,Madagascar,Madagascar
+RE-ALL,RE,Reunión,Réunion
+MU-ALL,MU,Mauricio,Mauritius
+CV-ALL,CV,Cabo Verde,Cape Verde
+FR-PBA,FR,País Vasco francés,French Basque Country
+FR-HOS,FR,Hossegor y Capbreton,Hossegor and Capbreton
+FR-GIR,FR,Gironda y Landas norte,Gironde and North Landes
+FR-VEN,FR,Vendée y Charentes,Vendée and Charentes
+FR-BRE,FR,Bretaña,Brittany
+ES-PV,ES,País Vasco,Basque Country
+ES-CAN,ES,Cantabria,Cantabria
+ES-AST,ES,Asturias,Asturias
+ES-GAL,ES,Galicia,Galicia
+ES-AND,ES,Cádiz,Cádiz
+ES-CN-E,ES,Lanzarote y Fuerteventura,Lanzarote and Fuerteventura
+ES-CN-W,ES,Gran Canaria y Tenerife,Gran Canaria and Tenerife
+PT-NOR,PT,Porto y norte,Porto and north
+PT-CEN,PT,Figueira da Foz y Nazaré,Figueira da Foz and Nazaré
+PT-PEN,PT,Peniche,Peniche
+PT-ERI,PT,Ericeira,Ericeira
+PT-LIS,PT,Lisboa y Caparica,Lisbon and Caparica
+PT-ALG,PT,Alentejo y Algarve,Alentejo and Algarve
+PT-AZO,PT,Azores,Azores
+PT-MAD,PT,Madeira,Madeira
+GB-CON,GB,Cornualles,Cornwall
+GB-DEV,GB,Devon,Devon
+GB-SOU,GB,Dorset e Isla de Wight,Dorset and Isle of Wight
+GB-WAL,GB,Gales,Wales
+GB-SCO,GB,Escocia,Scotland
+GB-NE,GB,Noreste de Inglaterra,North East England
+GB-NIR,GB,Irlanda del Norte,Northern Ireland
+IE-NW,IE,Donegal Sligo y Mayo,Donegal Sligo and Mayo
+IE-SW,IE,Clare y Kerry,Clare and Kerry
+IE-SE,IE,Waterford y Cork,Waterford and Cork
+NO-S,NO,Noruega sur (Jaeren y Stad),South Norway (Jaeren and Stad)
+NO-N,NO,Lofoten,Lofoten
+DK-ALL,DK,Dinamarca,Denmark
+NL-ALL,NL,Países Bajos,Netherlands
+DE-ALL,DE,Alemania,Germany
+IT-ALL,IT,Italia peninsular y Sicilia,Mainland Italy and Sicily
+IT-SAR,IT,Cerdeña,Sardinia
+IS-ALL,IS,Islandia,Iceland

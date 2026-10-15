@@ -1,0 +1,26 @@
+{
+ "region": "IE-NW",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.292,
+  "hours": 744,
+  "point": [
+   54.219,
+   -9.1
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.91,
+   "ecmwf_wam": 1.06,
+   "dwd_ewam": 1.09
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

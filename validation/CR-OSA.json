@@ -1,0 +1,27 @@
+{
+ "region": "CR-OSA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.241,
+  "hours": 744,
+  "point": [
+   8.3929,
+   -83.1394
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.99,
+   "ncep_gfswave025": 0.65,
+   "meteofrance_wave": 1.19,
+   "ecmwf_wam": 0.74
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

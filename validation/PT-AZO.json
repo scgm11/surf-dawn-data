@@ -1,0 +1,27 @@
+{
+ "region": "PT-AZO",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.09,
+  "hours": 744,
+  "point": [
+   38.733,
+   -27.048
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.42,
+   "ncep_gfswave025": 1.57,
+   "meteofrance_wave": 1.38,
+   "ecmwf_wam": 1.66
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

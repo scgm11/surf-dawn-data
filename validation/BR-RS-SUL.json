@@ -1,0 +1,26 @@
+{
+ "region": "BR-RS-SUL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.09,
+  "hours": 744,
+  "point": [
+   -33.743,
+   -53.37
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.23,
+   "meteofrance_wave": 1.09,
+   "ecmwf_wam": 1.33
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

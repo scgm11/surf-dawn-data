@@ -1,0 +1,47 @@
+name,lat,lon,type,conf,src,flags,note
+FERNANDINA,30.6700,-81.4390,B,K,local,,Amelia Island
+HUGUENOT,30.4260,-81.4130,B,K,local,,Jacksonville
+THE POLES,30.3850,-81.4035,B,K,local,facing=90,Mayport; orientación a mano (la calculada miraba a otra costa)
+HANNA PARK,30.3735,-81.4020,B,K,local,,Jacksonville
+ATLANTIC BEACH,30.3340,-81.3980,B,K,local,,
+NEPTUNE BEACH,30.3130,-81.3955,B,K,local,,
+JAX BEACH PIER,30.2925,-81.3920,B,K,local,,
+PONTE VEDRA,30.2390,-81.3680,B,K,local,,
+MICKLER'S,30.2000,-81.3500,B,L,local,,
+VILANO,29.9380,-81.2850,B,L,local,,St Augustine
+ST AUGUSTINE PIER,29.8550,-81.2650,B,K,local,,
+FLAGLER PIER,29.4760,-81.1250,B,K,local,,Flagler Beach
+ORMOND PIER,29.2862,-81.0415,B,L,local,,
+DAYTONA PIER,29.2280,-81.0010,B,K,local,,
+SUNGLOW PIER,29.1610,-80.9780,B,L,local,,Daytona Beach Shores
+NEW SMYRNA INLET,29.0690,-80.9040,B,K,local,top checked,Ponce Inlet
+FLAGLER AVE,29.0275,-80.9140,B,L,local,,New Smyrna Beach
+APOLLO BEACH,28.9150,-80.8130,B,L,local,,Canaveral Seashore
+PLAYALINDA,28.6340,-80.6330,B,L,local,,Canaveral Seashore
+JETTY PARK,28.4075,-80.5890,B,K,local,,Port Canaveral
+CHERIE DOWN,28.3970,-80.5990,B,K,local,,Cape Canaveral
+SHEPARD PARK,28.3735,-80.6010,B,K,local,,Cocoa Beach
+COCOA BEACH PIER,28.3675,-80.6005,B,K,local,top,
+LORI WILSON,28.3560,-80.6030,B,K,local,,Cocoa Beach
+SATELLITE BEACH,28.1750,-80.5890,B,K,local,,
+INDIALANTIC,28.0900,-80.5655,B,K,local,,
+MELBOURNE BEACH,28.0690,-80.5600,B,K,local,,
+MONSTER HOLE,27.8600,-80.4440,B,L,local,,Sebastian Inlet
+SEBASTIAN INLET,27.8610,-80.4450,B,K,local,top,
+FIRST PEAK,27.8625,-80.4455,B,L,local,,Sebastian Inlet
+WABASSO,27.7510,-80.3780,B,K,local,,
+VERO BEACH,27.6460,-80.3510,B,K,local,,
+FORT PIERCE INLET,27.4680,-80.2940,B,L,local,,
+JENSEN BEACH,27.2490,-80.1950,B,L,local,,
+STUART BEACH,27.1950,-80.1640,B,L,local,,
+JUPITER INLET,26.9460,-80.0675,B,K,local,,
+JUNO PIER,26.8790,-80.0540,B,K,local,,
+LAKE WORTH PIER,26.6140,-80.0340,B,K,local,facing=90,orientación a mano (la calculada miraba a la laguna o la bahía)
+BOYNTON INLET,26.5430,-80.0465,B,L,local,,
+DELRAY BEACH,26.4600,-80.0590,B,K,local,,
+BOCA INLET,26.3380,-80.0690,B,L,local,,
+DEERFIELD PIER,26.3175,-80.0690,B,K,local,,
+POMPANO PIER,26.2300,-80.0840,B,L,local,,
+HOLLYWOOD,26.0140,-80.1150,B,L,local,,
+HAULOVER,25.9000,-80.1210,B,L,local,,
+SOUTH POINTE,25.7640,-80.1320,B,K,local,,Miami Beach

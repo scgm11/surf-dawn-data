@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+CERRITOS,23.2930,-106.4780,B,L,local,,Mazatlán norte; posición aproximada
+OLAS ALTAS,23.2010,-106.4340,,K,local,,Mazatlán
+CHACALA,21.1700,-105.2450,B,L,local,,Nayarit; posición aproximada
+LO DE MARCOS,20.9550,-105.3565,B,L,web:pvangels,,Nayarit; izquierda de arrecife al sur
+SAN PANCHO,20.9026,-105.4160,B,K,web:aroundus,,San Francisco; Nayarit
+SAYULITA,20.8685,-105.4415,R,K,local,top,Nayarit; olas suaves casi todo el año
+STINKY'S,20.7660,-105.5280,P,L,local,,Punta Mita; posición aproximada
+LA LANCHA,20.7690,-105.5260,P,K,local,,Punta Mita
+EL ANCLOTE,20.7740,-105.5190,P,K,local,top,Punta Mita; derecha

@@ -1,0 +1,28 @@
+{
+ "region": "MA-TAG",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.114,
+  "hours": 744,
+  "point": [
+   30.847,
+   -9.818
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.16,
+   "ncep_gfswave025": 1.36,
+   "meteofrance_wave": 1.52,
+   "ecmwf_wam": 1.44,
+   "dwd_ewam": 1.48
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

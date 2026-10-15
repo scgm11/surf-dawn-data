@@ -1,0 +1,65 @@
+name: Mareas del mundo
+# Arma tide/ para todas las regiones de seeds/regions.csv (tools/tide/build_tides.py): NOAA, JMA,
+# Marine Institute, LINZ y armónicos TICON-3. La salida queda siempre en tide/build.log, el
+# resumen en tide/report.md.
+on:
+  push:
+    branches: [main, zonas-mundo]
+    paths:
+      - "tools/tide/**"
+      - "tools/lib/tide.py"
+      - "seeds/regions.csv"
+      - "seeds/spots/**"
+      - ".github/workflows/tides.yml"
+  workflow_dispatch:
+  schedule:
+    - cron: "41 10 1,15 * *"     # los días 1 y 15 de cada mes, 10:41 UTC
+permissions:
+  contents: write
+  actions: write                 # para pedir el build de las zonas cuando cambian los puertos de las regiones
+concurrency:
+  group: data-commit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy==2.3.4 pyTMD==3.0.9 h5py==3.12.1 dask==2024.12.1 global-land-mask==1.0.0
+      - name: Caché (TICON-3 y descargas)
+        uses: actions/cache/restore@v4
+        with:
+          path: tools/.tide_cache
+          key: tides-${{ github.run_id }}
+          restore-keys: tides-
+      - name: Mareas
+        run: |
+          set -o pipefail
+          python3 tools/tide/build_tides.py 2>&1 | tee tide/build.log
+      - name: Guardar caché
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: tools/.tide_cache
+          key: tides-${{ github.run_id }}
+      - name: Publicar
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add tide
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Mareas: $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # un push con GITHUB_TOKEN no dispara otras Actions: si cambiaron los puertos de las
+          # regiones, las zonas se arman de nuevo (zones.yml lee tide/regions.json)
+          if git diff --name-only HEAD~1 HEAD | grep -q "^tide/regions.json$"; then
+            gh workflow run zones.yml --ref "${GITHUB_REF_NAME}" || echo "no se pudo pedir zones.yml"
+          fi

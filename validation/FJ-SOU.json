@@ -1,0 +1,26 @@
+{
+ "region": "FJ-SOU",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.069,
+  "hours": 744,
+  "point": [
+   -18.4763,
+   177.9256
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.58,
+   "meteofrance_wave": 1.84,
+   "ecmwf_wam": 1.81
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

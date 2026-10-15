@@ -1,0 +1,26 @@
+{
+ "region": "BR-SC-NOR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.224,
+  "hours": 744,
+  "point": [
+   -26.28,
+   -48.54
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.84,
+   "meteofrance_wave": 0.55,
+   "ecmwf_wam": 0.96
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+KUGENUMA,35.3125,139.4750,B,K,local,top,Shonan
+TSUJIDO,35.3130,139.4500,B,K,local,,
+CHIGASAKI,35.3115,139.4100,B,K,local,,
+HIRATSUKA,35.3060,139.3600,B,L,local,,posicion aprox
+OISO,35.3025,139.3220,B,L,local,,posicion aprox
+SHICHIRIGAHAMA,35.3050,139.5190,B,K,local,,
+YUIGAHAMA,35.3000,139.5320,B,K,local,,Kamakura
+ZUSHI,35.2880,139.5850,B,K,local,,
+ISSHIKI,35.2610,139.5780,B,L,local,,Hayama; posicion aprox

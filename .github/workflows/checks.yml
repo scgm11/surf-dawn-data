@@ -1,0 +1,58 @@
+name: Controles por pico
+# Revisa cada pico de spots/ (tools/check_spots.py, issue #7 §5.2, §5.4 y §5.8): orientación contra las
+# olas de las últimas dos semanas, altura contra la de su zona, y la posición de los emblemáticos
+# contra Wikidata. Publica validation/spots.md y validation/spots.json.
+on:
+  push:
+    branches: [main, zonas-mundo]
+    paths:
+      - "tools/check_spots.py"
+      - "tools/lib/names.py"
+      - ".github/workflows/checks.yml"
+  schedule:
+    - cron: "29 7 5 * *"          # el día 5 de cada mes, 07:29 UTC
+  workflow_dispatch:
+    inputs:
+      wikidata:
+        description: "Revisar los emblemáticos contra Wikidata (unos 25 min)"
+        type: boolean
+        required: false
+        default: true
+      unsourced:
+        description: "Sólo buscar de nuevo los emblemáticos que no tenían fuente"
+        type: boolean
+        required: false
+        default: false
+permissions:
+  contents: write
+concurrency:
+  group: data-commit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Controles
+        shell: bash
+        run: |
+          set -o pipefail
+          mkdir -p validation
+          args=()
+          [ "${{ github.event.inputs.wikidata }}" = "false" ] && args+=(--no-wikidata)
+          [ "${{ github.event.inputs.unsourced }}" = "true" ] && args+=(--unsourced)
+          python3 tools/check_spots.py "${args[@]}" 2>&1 | tee validation/spots.log
+      - name: Publicar
+        if: always()
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add validation
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Controles por pico $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

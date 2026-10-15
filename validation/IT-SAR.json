@@ -1,0 +1,28 @@
+{
+ "region": "IT-SAR",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.18,
+  "hours": 744,
+  "point": [
+   39.548,
+   8.454
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.52,
+   "ncep_gfswave025": 0.59,
+   "meteofrance_wave": 0.66,
+   "ecmwf_wam": 0.65,
+   "dwd_ewam": 0.57
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

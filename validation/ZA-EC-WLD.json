@@ -1,0 +1,26 @@
+{
+ "region": "ZA-EC-WLD",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.059,
+  "hours": 744,
+  "point": [
+   -31.98,
+   29.153
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.95,
+   "meteofrance_wave": 2.1,
+   "ecmwf_wam": 2.15
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

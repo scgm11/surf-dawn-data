@@ -1,0 +1,7 @@
+name,lat,lon,type,conf,src,flags,note
+TIFNIT,30.1980,-9.6393,,K,web:mondo.surf,,
+AGLOU,29.8108,-9.8382,B,K,web:wikipedia,,playa frente al pueblo
+MIRLEFT,29.5800,-10.0600,B,K,local,,
+AFTAS,29.5720,-10.0650,B,L,local,,Mirleft
+LEGZIRA,29.4300,-10.1300,B,L,local,,
+SIDI IFNI,29.3790,-10.1800,B,K,local,,

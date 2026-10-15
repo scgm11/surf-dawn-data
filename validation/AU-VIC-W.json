@@ -1,0 +1,133 @@
+{
+ "region": "AU-VIC-W",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:port-fairy",
+  "aodn:cape-bridgewater",
+  "aodn:apollo-bay"
+ ],
+ "excluded": [
+  {
+   "id": "aodn:dutton-way",
+   "km": 23.7,
+   "why": "otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:rosebud",
+   "km": 93.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:indented-head",
+   "km": 93.9,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:werribee",
+   "km": 106.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:central",
+   "km": 106.8,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:mt-eliza",
+   "km": 114.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:sandringham",
+   "km": 121.5,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1116,
+   "hs_bias": 0.108,
+   "hs_rmse": 0.606,
+   "hs_si": 0.253,
+   "tp_bias": 0.34,
+   "tp_mae": 1.03,
+   "dir_mae": 17.2,
+   "dir_bias": 13.0,
+   "tm_bias": 4.67,
+   "obs_hs": 2.2,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1116,
+   "hs_bias": 0.151,
+   "hs_rmse": 0.434,
+   "hs_si": 0.126,
+   "tp_bias": 0.11,
+   "tp_mae": 0.89,
+   "dir_mae": 21.2,
+   "dir_bias": 20.7,
+   "tm_bias": 2.44,
+   "obs_hs": 2.2,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1116,
+   "hs_bias": 0.118,
+   "hs_rmse": 0.461,
+   "hs_si": 0.173,
+   "tp_bias": -2.64,
+   "tp_mae": 2.69,
+   "dir_mae": 20.6,
+   "dir_bias": 19.4,
+   "tm_bias": 1.69,
+   "obs_hs": 2.2,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "baja",
+ "vs": "ecmwf_wam",
+ "margin": -0.284,
+ "per_buoy": {
+  "aodn:port-fairy": {
+   "n": 730,
+   "best": null,
+   "km": 2.6
+  },
+  "aodn:cape-bridgewater": {
+   "n": 193,
+   "best": "ecmwf_wam",
+   "km": 11.4
+  },
+  "aodn:apollo-bay": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 16.1
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.045,
+  "hours": 744,
+  "point": [
+   -38.614,
+   142.863
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 2.73,
+   "meteofrance_wave": 2.76,
+   "ecmwf_wam": 2.91
+  }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

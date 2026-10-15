@@ -1,0 +1,29 @@
+name,lat,lon,type,conf,src,flags,note
+CRACKINGTON HAVEN,50.7480,-4.6350,B,L,local,,posicion aproximada
+WIDEMOUTH,50.7960,-4.5570,B,K,local,,Bude
+SUMMERLEAZE,50.8330,-4.5550,B,K,local,,Bude
+CROOKLETS,50.8440,-4.5540,B,K,local,,Bude
+POLZEATH,50.5760,-4.9120,B,K,local,,
+HARLYN BAY,50.5470,-4.9930,B,L,local,,posicion aproximada
+CONSTANTINE BAY,50.5160,-5.0170,B,L,local,,posicion aproximada
+TREYARNON,50.4990,-5.0390,B,K,local,,Treyarnon Bay
+PORTHCOTHAN,50.4870,-5.0560,B,L,local,,posicion aproximada
+MAWGAN PORTH,50.4660,-5.0310,B,K,local,,
+WATERGATE BAY,50.4425,-5.0475,B,K,local,top,
+TOWAN,50.4175,-5.0820,B,K,local,facing=10,Newquay; orientación a mano (la calculada miraba a otra costa)
+FISTRAL,50.4170,-5.1000,B,K,local,top,Newquay
+THE CRIBBAR,50.4125,-5.1190,R,L,local,,Newquay; ola grande; posicion aproximada
+CRANTOCK,50.4020,-5.1040,B,K,local,,
+HOLYWELL BAY,50.3890,-5.1560,B,K,local,,
+PERRANPORTH,50.3470,-5.1590,B,K,local,,
+CHAPEL PORTH,50.3310,-5.2290,B,L,local,facing=300,posicion aproximada; orientación a mano (la calculada miraba a otra costa)
+TREVAUNANCE COVE,50.3150,-5.2060,B,L,local,,St Agnes; posicion aproximada
+PORTHTOWAN,50.2900,-5.2490,B,K,local,,
+PORTREATH,50.2650,-5.2890,B,K,local,,
+GWITHIAN,50.2310,-5.3800,B,K,local,,
+GODREVY,50.2330,-5.3980,B,L,local,facing=300,posicion aproximada; orientación a mano (la calculada miraba a otra costa)
+PORTHMEOR,50.2150,-5.4830,B,K,local,,St Ives
+GWENVER,50.0880,-5.7110,B,L,local,,posicion aproximada
+SENNEN,50.0775,-5.6985,B,K,local,top,Sennen Cove
+PRAA SANDS,50.1010,-5.3880,B,K,local,,
+PORTHLEVEN,50.0820,-5.3190,R,K,local,top,ola de arrecife; ola grande con swell fuerte

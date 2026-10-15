@@ -1,0 +1,14 @@
+name,lat,lon,type,conf,src,flags,note
+ATACAMES,0.8700,-79.8500,B,L,local,,Esmeraldas
+MOMPICHE,0.5072,-80.0215,P,K,osm:node/249596749,top,posición OSM
+CANOA,-0.4640,-80.4590,B,K,local,,Manabí
+MURCIÉLAGO,-0.9390,-80.7330,B,L,local,,Manta
+SAN LORENZO,-1.0540,-80.8850,P,L,local,,Manta
+AYAMPE,-1.6800,-80.8030,P,K,local,,
+OLÓN,-1.8000,-80.7480,B,K,local,,
+MONTAÑITA,-1.8300,-80.7510,P,V,web:wikipedia.org,top,pueblo chequeado; la punta está a unos 300 m
+BALLENITA,-2.2020,-80.8770,B,L,local,,
+PUNTA CARNERO,-2.2380,-80.9100,P,K,local,,Salinas
+LA CHOCOLATERA,-2.1900,-81.0100,R,K,local,top,Salinas
+ENGABAO,-2.5729,-80.4887,B,K,osm:node/372688302,,Playas; posición OSM
+PLAYAS,-2.6310,-80.3870,B,L,local,,General Villamil
