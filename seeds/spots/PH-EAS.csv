@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-PURARAN,13.6590,124.3980,R,L,local,,Catanduanes; derecha; posicion dudosa
-BORONGAN,11.6050,125.4400,B,L,local,,Samar oriental; posicion dudosa
-CALICOAN,10.9900,125.8000,R,L,local,,Guiuan; isla Calicoan; posicion dudosa
+PURARAN,13.6887,124.3928,R,K,osm:node/7025550989,,Catanduanes; derecha; posición OSM
+BORONGAN,11.6080,125.4322,B,K,osm:node/198514971,,Samar oriental; posición OSM
+CALICOAN,10.9855,125.8017,R,K,osm:way/61015159,,Guiuan; isla Calicoan; posición OSM
