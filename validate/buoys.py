@@ -15,11 +15,16 @@ Sources (no account needed):
   mi     Marine Institute Ireland ERDDAP IWaveBNetwork30Min (Hs in cm; PeakDirection is "to") and
          IWBNetwork (weather buoys M2-M6, with wind); columns chosen by CF standard name (wave_columns,
          wind_columns)
+
+With an account (repository secrets; skipped without them):
+  cmems  Copernicus Marine In Situ, the moorings of Europe (CANDHIS, Puertos del Estado, Cefas...),
+         Morocco, the Canaries and the GTS buoys elsewhere (validate/cmems.py)
 """
 import calendar
 import csv
 import io
 import math
+import os
 import re
 import statistics
 import sys
@@ -38,7 +43,7 @@ MI_BASE = "https://erddap.marine.ie/erddap/"
 MI_DATASETS = ("IWaveBNetwork30Min", "IWBNetwork")       # wave buoys; weather buoys M2-M6
 AODN_S3 = "aodn-cloud-optimised/wave_buoy_realtime_nonqc.parquet"
 NDBC_PAGE = "https://www.ndbc.noaa.gov/station_page.php?station="
-PRIORITY = {"cdip": 0, "aodn": 1, "mi": 2, "ndbc": 3}   # same buoy in two sources: keep the first
+PRIORITY = {"cdip": 0, "aodn": 1, "mi": 2, "ndbc": 3, "cmems": 4}   # same buoy in two sources: keep the first
 DAYS = 31                                                # observations asked for (the model window is 30 + today)
 WIND_EXP = 0.11             # power law U(10) = U(z) (10 / z)^p over the sea, near neutral (Hsu et al. 1994)
 Z_MIN, Z_MAX = 1.0, 100.0   # anemometer heights we trust (m above sea level)
@@ -578,8 +583,12 @@ def dedupe(stations, km_fn, within=3.0, same=1.0, hours=lambda s: len(s.hourly))
 MIN_HOURS = 72                                   # a station needs this many hours of waves (or of wind)
 
 
-def fetch_all(near, since, log, sources=("cdip", "aodn", "mi", "ndbc")):
-    """Every source's stations with MIN_HOURS of waves or of wind; a source that fails is logged and skipped."""
+SOURCES = ("cdip", "aodn", "mi", "ndbc", "cmems")
+
+
+def fetch_all(near, since, log, sources=SOURCES):
+    """Every source's stations with MIN_HOURS of waves or of wind; a source that fails is logged and
+    skipped (one that needs an account and has none is only reported)."""
     out, status = [], {}
     for src in sources:
         t = time.time()
@@ -590,6 +599,16 @@ def fetch_all(near, since, log, sources=("cdip", "aodn", "mi", "ndbc")):
                 st = fetch_cdip(since, log)
             elif src == "aodn":
                 st = fetch_aodn(since, log)
+            elif src == "cmems":
+                import cmems
+                have = [(s.lat, s.lon) for s in out]
+                try:
+                    st = cmems.fetch(near, since, log, Station, finish, os.path.join(cache.ROOT, cache.DAY),
+                                     have=lambda la, lo: any(abs(la - a) < 0.02 and abs(lo - b) < 0.03 for a, b in have))
+                except cmems.NoCredentials as e:
+                    status[src] = str(e)
+                    log("%s: %s" % (src, e))
+                    continue
             else:
                 st = fetch_mi(since, log)
             wave = sum(1 for s in st if len(s.hourly) >= MIN_HOURS)

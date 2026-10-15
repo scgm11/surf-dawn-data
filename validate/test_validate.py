@@ -6,6 +6,7 @@ import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import buoys  # noqa: E402
+import cmems  # noqa: E402
 import evaluate  # noqa: E402
 import models  # noqa: E402
 import regions  # noqa: E402
@@ -595,6 +596,74 @@ class Evaluate(unittest.TestCase):
         md = report.markdown([(body, info), (nob, ninfo)], ("a", "b"), {"cdip": "ok"}, {}, models.USED, [])
         self.assertIn("US-X", md)
         self.assertIn("Regiones sin boyas (1)", md)
+
+
+CMEMS_INDEX = """# Title : in-situ files catalog
+# product_id,file_name,geospatial_lat_min,geospatial_lat_max,geospatial_lon_min,geospatial_lon_max,time_coverage_start,time_coverage_end,institution,date_update,data_mode,parameters
+COP-GL-01,P/D/latest/20261010/GL_TS_MO_6200066_20261010.nc,43.53,43.54,-1.62,-1.61,2026-10-10T00:00:00Z,2026-10-10T23:30:00Z,Cerema,2026-10-11T00:00:00Z,R,DEPH VAVH VGHS VDIR VGTA
+COP-GL-01,P/D/latest/20260901/GL_TS_MO_6200066_20260901.nc,43.53,43.54,-1.62,-1.61,2026-09-01T00:00:00Z,2026-09-01T23:30:00Z,Cerema,2026-09-02T00:00:00Z,R,DEPH VAVH
+COP-GL-01,P/D/latest/20261010/GL_TS_MO_9999_20261010.nc,10.0,10.0,10.0,10.0,2026-10-10T00:00:00Z,2026-10-10T23:30:00Z,X,2026-10-11T00:00:00Z,R,DEPH VHM0
+COP-GL-01,P/D/latest/20261010/GL_TS_MO_6200001_20261010.nc,43.5,43.5,-1.6,-1.6,2026-10-10T00:00:00Z,2026-10-10T23:30:00Z,X,2026-10-11T00:00:00Z,R,DEPH TEMP PSAL
+COP-GL-01,P/D/latest/20261010/GL_PR_CT_58GS_20261010.nc,43.5,43.5,-1.6,-1.6,2026-10-10T00:00:00Z,2026-10-10T23:30:00Z,X,2026-10-11T00:00:00Z,R,VHM0
+"""
+
+
+class TestCmems(unittest.TestCase):
+    def test_index(self):
+        near = lambda lat, lon: abs(lat - 43.5) < 2 and abs(lon + 1.6) < 2      # noqa: E731
+        since = 1790000000                                                      # 2026-09-21
+        got = cmems.parse_index(CMEMS_INDEX, near, since)
+        self.assertEqual(got, {"6200066": ["P/D/latest/20261010/GL_TS_MO_6200066_20261010.nc"]})
+        self.assertEqual(cmems.parse_index(CMEMS_INDEX, near, since, have=lambda la, lo: True), {})
+
+    def test_read_file(self):
+        try:
+            import h5netcdf
+            import numpy as np
+        except ImportError:
+            self.skipTest("h5netcdf not installed")
+        import tempfile
+        path = os.path.join(tempfile.mkdtemp(), "GL_TS_MO_6200066_20261010.nc")
+        fill = 9.96921e36
+        days = (T0 - cmems.EPOCH_1950) / 86400.0
+        t = np.array([days, days + 600 / 86400.0, days + 1800 / 86400.0, days + 2400 / 86400.0])
+        with h5netcdf.File(path, "w") as f:
+            f.attrs["platform_code"] = "6200066"
+            f.attrs["platform_name"] = "Anglet"
+            f.dimensions = {"TIME": 4, "DEPTH": 1}
+            f.create_variable("TIME", ("TIME",), data=t)
+            f.create_variable("TIME_QC", ("TIME",), data=np.array([1, 1, 1, 4], dtype="i1"))
+            f.create_variable("LATITUDE", (), data=np.float32(43.532))
+            f.create_variable("LONGITUDE", (), data=np.float32(-1.615))
+            for name, vals, qc in (("VAVH", [0.9, fill, 1.0, fill], [1, -127, 1, -127]),
+                                   ("VGHS", [fill, 0.95, fill, 1.1], [-127, 1, -127, 1]),
+                                   ("VDIR", [fill, 313.0, fill, 316.0], [-127, 1, -127, 1]),
+                                   ("VGTA", [fill, 9.0, fill, 10.0], [-127, 4, -127, 1])):
+                v = f.create_variable(name, ("TIME", "DEPTH"), data=np.array(vals, dtype="f4").reshape(4, 1), fillvalue=np.float32(fill))
+                v.attrs["units"] = "m"
+                f.create_variable(name + "_QC", ("TIME", "DEPTH"), data=np.array(qc, dtype="i1").reshape(4, 1))
+        code, name, lat, lon, recs, wrecs = cmems.read_file(path)
+        self.assertEqual((code, name), ("6200066", "Anglet"))
+        self.assertAlmostEqual(lat, 43.532, places=3)
+        self.assertEqual(len(recs), 3)                                  # the last record has a bad TIME_QC
+        t0, hs, tp, dp, tm = recs[0]
+        self.assertAlmostEqual(t0, T0, delta=1)
+        self.assertAlmostEqual(hs, 0.9, places=4)
+        self.assertIsNone(tp)
+        self.assertEqual(dp, 313.0)                                     # from the stream ten minutes later
+        self.assertIsNone(tm)                                           # its only neighbour has a bad flag
+        self.assertAlmostEqual(recs[1][1], 0.95, places=4)
+        self.assertEqual(wrecs, [])
+
+    def test_no_credentials(self):
+        old = {k: os.environ.pop(k, None) for k in (cmems.ENV_USER, cmems.ENV_PASS)}
+        try:
+            with self.assertRaises(cmems.NoCredentials):
+                cmems.fetch(lambda a, b: True, 0, print, buoys.Station, buoys.finish, "/nonexistent")
+        finally:
+            for k, v in old.items():
+                if v is not None:
+                    os.environ[k] = v
 
 
 if __name__ == "__main__":

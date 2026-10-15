@@ -12,7 +12,7 @@ Validación; validate/README.md):
   validation/wind-stations.csv   the wind stations used, with their anemometer height
   validation/stations.csv        every station read from the sources, with its hours (diagnostics)
 
-Usage: python3 validate/run.py [--regions CODE ...] [--sources cdip aodn mi ndbc]
+Usage: python3 validate/run.py [--regions CODE ...] [--sources cdip aodn mi ndbc cmems]
 """
 import argparse
 import csv
@@ -131,7 +131,7 @@ def spread_points(rs, log, tries=4):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
-    ap.add_argument("--sources", nargs="*", default=["cdip", "aodn", "mi", "ndbc"])
+    ap.add_argument("--sources", nargs="*", default=list(buoys.SOURCES))
     a = ap.parse_args()
     cache.prune()
     now = time.time()

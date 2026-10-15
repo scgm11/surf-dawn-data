@@ -141,5 +141,11 @@ convenciones (también la de dirección: un sesgo cerca de ±180° delataría un
 | **Marine Institute** (Irlanda) | ERDDAP `IWaveBNetwork30Min` (SignificantWaveHeight en **cm**, PeakPeriod, PeakDirection *hacia donde van*, EnergyPeriod) e `IWBNetwork` (boyas meteorológicas M2–M6, también WindSpeed y WindDirection). Las columnas y unidades se eligen por nombre estándar CF | CC BY 4.0; crédito: *Marine Institute, Irish Wave Buoy Network / Irish Marine Data Buoy Observation Network* |
 | **Open-Meteo** Marine y Forecast | Series horarias de los modelos de olas y de viento | CC BY 4.0, uso no comercial gratis (10.000 llamadas/día); crédito a Open-Meteo y a NOAA, Météo-France, ECMWF, DWD, UK Met Office, ECCC, JMA y BoM |
 
-Fuentes que piden cuenta o clave y quedan para después: Copernicus Marine (In Situ TAC), CANDHIS
-(Francia), Channel Coastal Observatory (Inglaterra), Puertos del Estado (España), IH (Portugal).
+| **Copernicus Marine In Situ** (con cuenta) | `INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030`, archivos diarios `latest` de los últimos 30 días (`validate/cmems.py`): el índice `index_latest.txt` elige las boyas fondeadas con altura de ola (VHM0, VAVH o VGHS) cerca de las regiones que no da otra fuente, se bajan con el Copernicus Marine Toolbox y se leen con h5netcdf (flags QC 1 y 2; los archivos con dos mensajes intercalados se juntan). Cubre lo que falta: Francia (las boyas CANDHIS del Cerema), España (Puertos del Estado), Portugal, Reino Unido (Cefas), Marruecos, Canarias y las boyas del GTS | Licencia de Copernicus Marine (libre, con crédito: *E.U. Copernicus Marine Service Information*) |
+
+**Copernicus Marine necesita una cuenta gratuita** (marine.copernicus.eu): con los secretos del
+repositorio `COPERNICUSMARINE_SERVICE_USERNAME` y `COPERNICUSMARINE_SERVICE_PASSWORD` la Action instala
+el Toolbox y la fuente entra sola; sin ellos el reporte la lista como "sin credenciales" y sigue con
+las demás. Con Copernicus, CANDHIS y Puertos del Estado ya no hacen falta por separado (sus boyas
+llegan por ahí). Quedan sin usar el Channel Coastal Observatory (Inglaterra, pide registro y sus
+boyas están en Copernicus sólo en parte) y el IH (Portugal).
