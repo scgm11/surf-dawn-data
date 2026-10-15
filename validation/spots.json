@@ -879,7 +879,7 @@
   },
   "TW-NE": {
    "model": "ncep_gfswave016",
-   "median_m": 0.92,
+   "median_m": 0.91,
    "median_share": 0.94
   },
   "US-CA-CEN": {
@@ -929,7 +929,7 @@
   },
   "US-FL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.69,
+   "median_m": 0.7,
    "median_share": 1.0
   },
   "US-GULF": {
@@ -999,7 +999,7 @@
   },
   "VE-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.5,
+   "median_m": 0.51,
    "median_share": 1.0
   },
   "VN-ALL": {
@@ -1166,7 +1166,7 @@
    "near": 151,
    "flipped": false,
    "top": false,
-   "share_long": 0.01374113475177305
+   "share_long": 0.013297872340425532
   },
   {
    "region": "AU-VIC-SC",
@@ -1179,7 +1179,7 @@
    "near": 159,
    "flipped": false,
    "top": true,
-   "share_long": 0.0035460992907801418
+   "share_long": 0.0031028368794326243
   },
   {
    "region": "AU-WA-PER",
@@ -1270,7 +1270,7 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.03634751773049645
+   "share_long": 0.038120567375886524
   },
   {
    "region": "BR-NE-RN",
@@ -1543,7 +1543,7 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.023555555555555555
+   "share_long": 0.02311111111111111
   },
   {
    "region": "ES-CN-W",
@@ -1556,7 +1556,7 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.023555555555555555
+   "share_long": 0.02311111111111111
   },
   {
    "region": "ES-PV",
@@ -2049,7 +2049,7 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.022163120567375887
+   "share_long": 0.02171985815602837
   },
   {
    "region": "NZ-NTL",
@@ -2405,7 +2405,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 227,
-   "swell": 72,
+   "swell": 71,
    "near": 216,
    "flipped": false,
    "top": false,
@@ -2418,7 +2418,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 245,
-   "swell": 72,
+   "swell": 71,
    "near": null,
    "flipped": false,
    "top": false,

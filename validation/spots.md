@@ -1,6 +1,6 @@
 # Picos: controles por pico
 
-Generado 2026-10-14 22:51 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
+Generado 2026-10-15 00:08 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2494 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 33 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
@@ -128,8 +128,8 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | US-CA-SD | BIRD ROCK |  | 0° | 209° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | US-CA-SD | SOUTH MISSION |  | 349° | 209° | 264° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | US-FL | FERNANDINA |  | 251° | 92° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 % |
-| US-FL | JENSEN BEACH |  | 227° | 72° | 216° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-FL | STUART BEACH |  | 245° | 72° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-FL | JENSEN BEACH |  | 227° | 71° | 216° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-FL | STUART BEACH |  | 245° | 71° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
 | US-GULF | PADRE SEASHORE |  | 112° | 101° | — | 1.2 m de media, más del doble de la zona (0.6 m) |
 | US-HI-BIG | RICHARDSONS |  | 330° | 69° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 1 % |
 | US-HI-OAS | CONCESSIONS |  | 284° | 175° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 % |
