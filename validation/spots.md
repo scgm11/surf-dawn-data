@@ -1,12 +1,12 @@
 # Picos: controles por pico
 
-Generado 2026-10-15 03:00 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2496 picos.
+Generado 2026-10-15 04:44 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2496 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
-- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 41 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
+- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 40 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
-- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta 6 km; si no, OpenStreetMap): 293 bien (a menos de 1.5 km), 5 lejos, 23 lejos pero revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), 71 sin fuente (revisar a mano), 0 sin respuesta.
-- Open-Meteo: 35 pedidos, ~2168 llamadas de las 10.000 diarias gratuitas.
+- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta 6 km; si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la semilla): 307 bien (a menos de 1.5 km; 2 de ellos por la fuente de su semilla), 0 lejos, 22 lejos pero revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), 63 sin fuente (revisar a mano; `validation/lookup.md` tiene lo que hay con su nombre alrededor), 0 sin respuesta.
+- Open-Meteo: 35 pedidos, ~2170 llamadas de las 10.000 diarias gratuitas.
 
 ## Orientación probablemente del lado equivocado (3)
 
@@ -41,7 +41,7 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | BB-ALL | DRILL HALL |  | 259° | 34° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
 | BB-ALL | FREIGHTS BAY | sí | 255° | 98° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
 | BB-ALL | SURFERS POINT |  | 235° | 98° | 325° | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
-| BR-NE-CE | PARACURU |  | 334° | 74° | 44° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 4 % |
+| BR-NE-CE | PARACURU |  | 334° | 74° | 17° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 4 % |
 | BR-NE-RN | PIPA | sí | 6° | 94° | 59° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 % |
 | BR-SP | PAÚBA |  | 273° | 161° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 % |
 | BR-SP | CAMBURI |  | 261° | 159° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 3 % |
@@ -82,7 +82,7 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | ID-LOM | GERUPUK | sí | 117° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 3 % |
 | ID-LOM | DON DON |  | 0° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
 | ID-LOM | EKAS |  | 303° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| ID-SBW | SCAR REEF | sí | 322° | 209° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| ID-SBW | SCAR REEF | sí | 320° | 201° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | ID-SBW | SUPERSUCK | sí | 330° | 209° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | IE-NW | MULLAGHMORE | sí | 37° | 285° | 315° | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 % |
 | IS-ALL | THORLAKSHOFN |  | 61° | 201° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
@@ -154,17 +154,11 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 
 ## Emblemáticos lejos de su ítem en Wikidata, GeoNames u OpenStreetMap
 
-| Región | Pico | Distancia | Ítem |
-|---|---|---|---|
-| CO-CAR | PUERTO COLOMBIA | 5.3 km | [osm:relation/1335183](https://www.openstreetmap.org/relation/1335183) Puerto Colombia (10.99571, -74.9161) |
-| ZA-KZN-DBN | CAVE ROCK | 4.6 km | [Q31511084](https://www.wikidata.org/wiki/Q31511084) Cave Rock (-29.87998, 31.05608) |
-| JP-KYU | KISAKIHAMA | 2.7 km | [geonames:1859396](https://www.geonames.org/1859396) Kizaki (31.83289, 131.4399) |
-| NZ-BOP | WHANGAMATA BAR | 1.8 km | [geonames:2179328](https://www.geonames.org/2179328) Whangamata (-37.2, 175.86667) |
-| BR-RJL | ITAÚNA | 1.7 km | [osm:node/651221993](https://www.openstreetmap.org/node/651221993) Itaúna (-22.93355, -42.47566) |
+Ninguno.
 
 ## Emblemáticos sin fuente en Wikidata, GeoNames ni OpenStreetMap (revisar a mano)
 
-AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/THE BOX, AU-WA-MR/NORTH POINT, CL-NOR/EL GRINGO, CR-GUA/WITCH'S ROCK, CR-OSA/PAVONES, ES-CN-E/EL QUEMAO, ES-CN-W/EL FRONTON, ES-CN-W/LA IZQUIERDA, FJ-MAM/CLOUDBREAK, FJ-MAM/RESTAURANTS, FJ-MAM/SWIMMING POOLS, FR-GIR/LACANAU CENTRALE, FR-HOS/LES CULS NULS, ID-BAL-E/SHIPWRECKS, ID-JAV-E/MONEY TREES, ID-MEN/MACARONIS, ID-MEN/KANDUI LEFT, ID-MEN/RIFLES, ID-ROT/T-LAND, ID-SBW/SCAR REEF, ID-SBW/SUPERSUCK, IE-NW/EASKEY, IE-SW/AILEEN'S, LK-E/WHISKEY POINT, MA-N/SAFI LE JARDIN, MA-TAG/KILLER POINT, MA-TAG/PANORAMAS, MV-NMA/PASTA POINT, MV-NMA/SULTANS, MV-NMA/HONKY'S, MV-NMA/COKES, MV-NMA/CHICKENS, MV-NMA/JAILBREAKS, MV-SOU/TIGER STRIPES, MV-SOU/BEACONS, MX-BCS/ZIPPERS, NA-ERO/SKELETON BAY, NZ-GIS/CENTRES, NZ-GIS/STOCK ROUTE, NZ-GIS/PINES, NZ-GIS/WHALES, NZ-KAI/MEATWORKS, NZ-NTL/SUPER TUBES, NZ-NTL/MUKIES 2, NZ-NTL/MUKIES 1, NZ-NTL/PEAKS, NZ-RAG/INDICATORS, PF-TAH/HA'APITI, PH-SIA/JACKING HORSE, PH-SIA/QUICKSILVER, PR-NW/WILDERNESS, PR-NW/TRES PALMAS, SV-ORI/LAS FLORES, TW-E/JINZUN HARBOR, US-CA-OC/UPPER TRESTLES, US-CA-OC/LOWER TRESTLES, US-CA-SB/C STREET, US-HI-BIG/BANYANS, US-HI-KAU/PK'S, US-HI-MAU/HO'OKIPA, US-HI-OAN/BACKDOOR, US-NE/RUGGLES, US-PNW/SHORT SANDS, ZA-EC-JB/BRUCE'S BEAUTIES, ZA-WC-CPT/DUNGEONS, ZA-WC-CPT/SUNSET REEF, ZA-WC-GR/INNER POOL
+AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/THE BOX, AU-WA-MR/NORTH POINT, CL-NOR/EL GRINGO, CR-GUA/WITCH'S ROCK, CR-OSA/PAVONES, ES-CN-E/EL QUEMAO, ES-CN-W/EL FRONTON, ES-CN-W/LA IZQUIERDA, FJ-MAM/CLOUDBREAK, FJ-MAM/RESTAURANTS, FJ-MAM/SWIMMING POOLS, ID-BAL-E/SHIPWRECKS, ID-JAV-E/MONEY TREES, ID-MEN/MACARONIS, ID-MEN/KANDUI LEFT, ID-MEN/RIFLES, ID-ROT/T-LAND, ID-SBW/SUPERSUCK, IE-NW/EASKEY, IE-SW/AILEEN'S, LK-E/WHISKEY POINT, MA-N/SAFI LE JARDIN, MA-TAG/KILLER POINT, MA-TAG/PANORAMAS, MV-NMA/PASTA POINT, MV-NMA/SULTANS, MV-NMA/HONKY'S, MV-NMA/COKES, MV-NMA/CHICKENS, MV-NMA/JAILBREAKS, MV-SOU/TIGER STRIPES, MV-SOU/BEACONS, MX-BCS/ZIPPERS, NA-ERO/SKELETON BAY, NZ-GIS/CENTRES, NZ-GIS/STOCK ROUTE, NZ-GIS/PINES, NZ-GIS/WHALES, NZ-GIS/THE ISLAND, NZ-KAI/MEATWORKS, NZ-NTL/SUPER TUBES, NZ-NTL/MUKIES 2, NZ-NTL/MUKIES 1, NZ-NTL/PEAKS, NZ-RAG/INDICATORS, PH-SIA/JACKING HORSE, PH-SIA/QUICKSILVER, PR-NW/WILDERNESS, PR-NW/TRES PALMAS, SV-ORI/LAS FLORES, TW-E/JINZUN HARBOR, US-CA-SB/C STREET, US-HI-BIG/BANYANS, US-HI-KAU/PK'S, US-HI-OAN/BACKDOOR, US-NE/RUGGLES, ZA-EC-JB/BRUCE'S BEAUTIES, ZA-WC-CPT/DUNGEONS, ZA-WC-CPT/SUNSET REEF, ZA-WC-GR/INNER POOL
 
 ## Zonas
 
@@ -289,7 +283,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | MU-ALL | ncep_gfswave025 | 1.4 m | 83 % |
 | MV-CEN | ncep_gfswave016 | 0.8 m | 0 % |
 | MV-NMA | ncep_gfswave016 | 0.8 m | 0 % |
-| MV-SMA | ncep_gfswave016 | 0.7 m | 84 % |
+| MV-SMA | ncep_gfswave016 | 0.7 m | 3 % |
 | MV-SOU | ncep_gfswave016 | 1.0 m | 96 % |
 | MX-BCN | ecmwf_wam | 1.2 m | 95 % |
 | MX-BCS-N | ncep_gfswave016 | 1.2 m | 50 % |
@@ -370,7 +364,7 @@ AU-NSW-SYD/OURS, AU-QLD-SC/DOUBLE ISLAND PT, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN B
 | UY-MAL | ncep_gfswave025 | 1.4 m | 100 % |
 | UY-ROC | ncep_gfswave025 | 1.6 m | 95 % |
 | VE-ALL | ncep_gfswave016 | 0.5 m | 100 % |
-| VN-ALL | ncep_gfswave016 | 0.7 m | 97 % |
+| VN-ALL | ncep_gfswave016 | 0.7 m | 100 % |
 | VU-ALL | ncep_gfswave025 | 1.4 m | 45 % |
 | WS-ALL | ncep_gfswave025 | 2.2 m | 100 % |
 | ZA-EC-JB | ncep_gfswave025 | 2.4 m | 17 % |

@@ -3,7 +3,6 @@
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 AR-BAN      16 spots  media 1.4 m  de frente 100 %
 AR-MDP      22 spots  media 1.5 m  de frente 99 %
 AR-SUR       6 spots  media 1.0 m  de frente 96 %
@@ -123,7 +122,7 @@ MQ-ALL       3 spots  media 1.1 m  de frente 88 %
 MU-ALL       3 spots  media 1.4 m  de frente 83 %
 MV-CEN       1 spots  media 0.8 m  de frente 0 %
 MV-NMA       6 spots  media 0.8 m  de frente 0 %
-MV-SMA       3 spots  media 0.7 m  de frente 84 %
+MV-SMA       3 spots  media 0.7 m  de frente 3 %
 MV-SOU       2 spots  media 1.0 m  de frente 96 %
 MX-BCN       4 spots  media 1.2 m  de frente 95 %
 MX-BCS-N     2 spots  media 1.2 m  de frente 50 %
@@ -167,28 +166,17 @@ PR-NW       15 spots  media 0.6 m  de frente 1 %
 PT-ALG      18 spots  media 1.5 m  de frente 100 %
 PT-AZO       7 spots  media 1.0 m  de frente 26 %
 PT-CEN      20 spots  media 1.5 m  de frente 100 %  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  wikidata failed (HTTP Error 502: Bad Gateway), retrying
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
   overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
   overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
 
 PT-ERI      11 spots  media 1.6 m  de frente 100 %
 PT-LIS      15 spots  media 1.1 m  de frente 97 %
@@ -227,7 +215,7 @@ US-SE       22 spots  media 0.8 m  de frente 98 %
 UY-MAL      18 spots  media 1.4 m  de frente 100 %
 UY-ROC      19 spots  media 1.6 m  de frente 95 %
 VE-ALL       2 spots  media 0.5 m  de frente 100 %
-VN-ALL       5 spots  media 0.7 m  de frente 97 %
+VN-ALL       5 spots  media 0.7 m  de frente 100 %
 VU-ALL       5 spots  media 1.4 m  de frente 45 %
 WS-ALL       6 spots  media 2.2 m  de frente 100 %
 ZA-EC-JB    10 spots  media 2.4 m  de frente 17 %
@@ -239,82 +227,398 @@ ZA-KZN-S     9 spots  media 1.9 m  de frente 76 %
 ZA-WC-CPT   20 spots  media 2.2 m  de frente 76 %
 ZA-WC-GR    11 spots  media 1.9 m  de frente 85 %
 ZA-WC-WCO    6 spots  media 2.0 m  de frente 30 %
-41 facing flags cleared over 92 days
+40 facing flags cleared over 92 days
+  AR-MDP/BIOLOGÍA: ok 0.22
+  AR-MDP/WAIKIKI: ok 0.13
+  AR-MDP/CHAPADMALAL: ok 0.23
+  AR-MDP/MIRAMAR: ok 0.41
+  AR-MDP/QUEQUÉN: ok 0.29
+  AU-NSW-MN/SCOTTS HEAD: ok 0.23
+  AU-NSW-MN/CRESCENT HEAD: ok 0.66
+  AU-NSW-NC/BAR BEACH: ok 0.24
+  AU-NSW-NC/MEREWETHER: ok 0.43
+  AU-NSW-NR/THE PASS: ok 0.24
+  AU-NSW-NR/BROKEN HEAD: ok 0.2
+  AU-NSW-NR/LENNOX HEAD: ok 0.3
+  AU-NSW-NR/ANGOURIE POINT: ok 0.25
+  AU-NSW-SC/SANDON POINT: ok 0.79
+  AU-NSW-SYD/NORTH NARRABEEN: ok 1.43
+  AU-NSW-SYD/MANLY: ok 0.12
+  AU-NSW-SYD/BONDI: ok 0.08
+  AU-NSW-SYD/MAROUBRA: ok 0.25
   AU-NSW-SYD/OURS: sin fuente 
-  AU-QLD-SC/DOUBLE ISLAND PT: sin fuente 
+  AU-NSW-SYD/SHARK ISLAND: ok 0.03
+  AU-QLD-GC/SNAPPER ROCKS: ok 0.09
+  AU-QLD-GC/RAINBOW BAY: ok 0.16
+  AU-QLD-GC/GREENMOUNT: ok 0.09
+  AU-QLD-GC/KIRRA: ok 0.06
+  AU-QLD-GC/DURANBAH: ok 0.69
+  AU-QLD-GC/BURLEIGH HEADS: ok 0.46
+  AU-QLD-SC/DOUBLE ISLAND PT: ok 0.12
+  AU-QLD-SC/FIRST POINT: ok 0.08
+  AU-SA-EYR/CACTUS: ok 0.03
+  AU-SA/WAITPINGA: ok 0.78
+  AU-TAS/SHIPSTERN BLUFF: ok 0.14
+  AU-TAS/CLIFTON BEACH: ok 0.42
+  AU-VIC-PI/SURFIES POINT: ok 0.05
+  AU-VIC-PI/WOOLAMAI: ok 0.2
+  AU-VIC-PI/GUNNAMATTA: revisado 1.55
+  AU-VIC-SC/TORQUAY POINT: ok 0.25
   AU-VIC-SC/WINKIPOP: sin fuente 
+  AU-VIC-SC/BELLS BEACH: ok 0.07
+  AU-VIC-SC/LORNE POINT: ok 0.34
+  AU-WA-GAS/TOMBSTONES: ok 0.46
+  AU-WA-GAS/RED BLUFF: ok 1.17
   AU-WA-MR/MAIN BREAK: sin fuente 
   AU-WA-MR/THE BOX: sin fuente 
   AU-WA-MR/NORTH POINT: sin fuente 
+  AU-WA-MR/SUPERTUBES: ok 0.71
+  AU-WA-MR/YALLINGUP: ok 0.38
+  AU-WA-NW/JAKES POINT: ok 0.1
+  AU-WA-PER/TRIGG POINT: ok 0.38
+  AU-WA-PER/STRICKLAND BAY: ok 0.13
+  BB-ALL/SOUP BOWL: ok 0.13
+  BB-ALL/FREIGHTS BAY: ok 0.03
+  BR-BA/ITACARÉ: ok 0.98
+  BR-NE-RN/PIPA: ok 0.13
+  BR-NE-RN/BAÍA FORMOSA: ok 0.87
+  BR-NOR/CACIMBA DO PADRE: ok 0.38
+  BR-RJ/ARPOADOR: ok 0.13
+  BR-RJ/BARRA DA TIJUCA: ok 0.94
+  BR-RJ/PRAINHA: ok 0.23
+  BR-RJL/ITAÚNA: revisado 1.67
+  BR-RJL/GERIBÁ: ok 0.08
+  BR-SP/ITAMAMBUCA: ok 0.24
+  BR-SP/MARESIAS: ok 0.23
+  CA-BC-VI/CHESTERMAN: ok 0.49
+  CA-BC-VI/COX BAY: ok 0.53
+  CA-BC-VI/JORDAN RIVER: ok 0.31
+  CA-NS/LAWRENCETOWN: ok 0.1
+  CA-NS/MARTINIQUE BEACH: ok 1.14
+  CL-CEN/MAITENCILLO: ok 0.11
+  CL-CEN/REÑACA: ok 0.1
+  CL-MAU/PELLUHUE: ok 0.19
+  CL-MAU/BUCHUPUREO: ok 0.89
+  CL-MAU/COBQUECURA: ok 0.59
+  CL-MAU/LEBU: ok 1.17
   CL-NOR/EL GRINGO: sin fuente 
+  CL-PIC/PUERTECILLO: ok 0.73
+  CL-PIC/LA PUNTILLA: ok 0.58
+  CL-PIC/INFIERNILLO: ok 0.67
+  CL-PIC/PUNTA DE LOBOS: ok 0.5
+  CO-CAR/PUERTO COLOMBIA: revisado 5.34
+  CO-PAC/EL VALLE: ok 0.5
+  CR-CAR/SALSA BRAVA: ok 0.29
   CR-GUA/WITCH'S ROCK: sin fuente 
+  CR-GUA/TAMARINDO: ok 0.12
+  CR-GUA/PLAYA NEGRA: ok 0.78
+  CR-NIC/GUIONES: ok 1.42
+  CR-NIC/SANTA TERESA: ok 0.08
   CR-OSA/PAVONES: sin fuente 
+  CR-PAC/BOCA BARRANCA: ok 0.37
+  CR-PAC/PLAYA HERMOSA: revisado 1.96
   DK-ALL/KLITMOLLER: ok 1.24
+  DO-ALL/ENCUENTRO: ok 0.16
+  EC-COS/MOMPICHE: ok 0.09
+  EC-COS/MONTAÑITA: ok 0.35
+  EC-COS/LA CHOCOLATERA: ok 0.19
+  EC-GAL/CAROLA: ok 0.02
+  EC-GAL/TONGO REEF: ok 0.3
+  EC-GAL/LA LOBERÍA: ok 0.31
+  ES-AST/RODILES: ok 0.25
+  ES-AST/SALINAS: ok 0.44
+  ES-CAN/LOS LOCOS: ok 0.53
+  ES-CAN/LIENCRES: ok 1.32
+  ES-CAN/SOMO: ok 0.55
   ES-CN-E/EL QUEMAO: sin fuente 
+  ES-CN-E/LA SANTA: ok 0.19
+  ES-CN-E/FAMARA: ok 0.07
+  ES-CN-E/LOBOS: ok 0.44
+  ES-CN-E/EL COTILLO: ok 0.34
+  ES-CN-W/EL CONFITAL: ok 0.33
   ES-CN-W/EL FRONTON: sin fuente 
   ES-CN-W/LA IZQUIERDA: sin fuente 
+  ES-CN-W/ALMACIGA: ok 0.27
+  ES-GAL/PANTIN: ok 0.83
+  ES-GAL/RAZO: ok 1.37
+  ES-PV/ZURRIOLA: ok 0.28
+  ES-PV/ZARAUTZ: ok 0.08
+  ES-PV/MUNDAKA: ok 0.16
+  ES-PV/BAKIO: ok 0.41
+  ES-PV/MEÑAKOZ: ok 1.45
+  ES-PV/SOPELA: ok 0.65
   FJ-MAM/CLOUDBREAK: sin fuente 
   FJ-MAM/RESTAURANTS: sin fuente 
+  FJ-MAM/NAMOTU LEFT: ok 0.09
   FJ-MAM/SWIMMING POOLS: sin fuente 
-  FR-GIR/LACANAU CENTRALE: sin fuente 
-  FR-HOS/LA NORD: ok 0.99
-  FR-HOS/LES CULS NULS: sin fuente 
+  FJ-SOU/FRIGATE PASSAGE: revisado 4.06
+  FR-BRE/LA TORCHE: ok 0.3
+  FR-BRE/GUIDEL: ok 0.37
+  FR-GIR/LACANAU CENTRALE: ok 0.02
+  FR-GIR/BISCARROSSE: ok 0.49
+  FR-HOS/SANTOCHA: ok 0.15
+  FR-HOS/LA GRAVIERE: ok 0.09
+  FR-HOS/LA NORD: ok 0.13
+  FR-HOS/LES CULS NUS: ok 0.08
+  FR-HOS/LES ESTAGNOTS: ok 0.53
+  FR-HOS/LE PENON: ok 0.41
+  FR-PBA/BELHARRA: ok 0.0
+  FR-PBA/LAFITENIA: ok 0.18
+  FR-PBA/PARLEMENTIA: ok 0.4
+  FR-PBA/COTE DES BASQUES: ok 0.03
+  FR-PBA/GRANDE PLAGE: ok 0.3
+  FR-PBA/LES CAVALIERS: ok 0.6
+  GB-CON/WATERGATE BAY: ok 0.52
+  GB-CON/FISTRAL: ok 0.2
+  GB-CON/SENNEN: ok 0.17
+  GB-CON/PORTHLEVEN: ok 0.12
+  GB-DEV/CROYDE: ok 0.46
+  GB-DEV/WOOLACOMBE: ok 0.22
+  GB-NE/TYNEMOUTH: ok 0.15
+  GB-NE/SALTBURN: ok 0.1
+  GB-NIR/EAST STRAND: ok 1.35
+  GB-SCO/BRIMS NESS: ok 0.05
+  GB-SCO/THURSO EAST: ok 0.04
+  GB-WAL/FRESHWATER WEST: ok 0.22
+  GB-WAL/LLANGENNITH: ok 0.28
+  GT-PAC/EL PAREDON: ok 0.18
+  ID-BAL-BUK/ULUWATU: ok 0.1
+  ID-BAL-BUK/PADANG PADANG: ok 0.17
+  ID-BAL-BUK/IMPOSSIBLES: ok 0.52
+  ID-BAL-BUK/BINGIN: ok 0.56
+  ID-BAL-BUK/BALANGAN: ok 0.11
+  ID-BAL-E/KERAMAS: ok 0.5
+  ID-BAL-E/SANUR REEF: ok 0.25
   ID-BAL-E/SHIPWRECKS: sin fuente 
+  ID-BAL-W/KUTA BEACH: ok 0.06
+  ID-BAL-W/ECHO BEACH: ok 0.02
+  ID-BAL-W/MEDEWI: ok 0.31
   ID-JAV-E/MONEY TREES: sin fuente 
+  ID-JAV-W/BATU KARAS: ok 0.62
+  ID-LOM/DESERT POINT: ok 0.14
+  ID-LOM/GERUPUK: ok 0.85
+  ID-MEN/HT'S: revisado 2.63
+  ID-MEN/LANCE'S LEFT: revisado 2.22
   ID-MEN/MACARONIS: sin fuente 
   ID-MEN/KANDUI LEFT: sin fuente 
   ID-MEN/RIFLES: sin fuente 
+  ID-NIA/LAGUNDRI: revisado 2.82
+  ID-NIA/ASU: ok 1.33
+  ID-NIA/BAWA: ok 0.85
   ID-ROT/T-LAND: sin fuente 
-  ID-SBW/SCAR REEF: sin fuente 
+  ID-SBW/LAKEY PEAK: ok 0.8
+  ID-SBW/SCAR REEF: ok 0.0
   ID-SBW/SUPERSUCK: sin fuente 
+  IE-NW/THE PEAK: ok 0.38
+  IE-NW/MULLAGHMORE: ok 0.68
+  IE-NW/STRANDHILL: ok 0.3
   IE-NW/EASKEY: sin fuente 
+  IE-SE/TRAMORE: ok 0.17
+  IE-SW/LAHINCH: ok 0.34
   IE-SW/AILEEN'S: sin fuente 
-  JP-KYU/KISAKIHAMA: lejos 2.74
+  IE-SW/CRAB ISLAND: ok 0.6
+  IT-SAR/CAPO MANNU: ok 0.69  wikidata failed (HTTP Error 502: Bad Gateway), retrying
+
+  JP-CHI/TSURIGASAKI: ok 0.08
+  JP-CHI/ONJUKU: ok 1.03
+  JP-IZU/SHIRAHAMA: ok 1.02
+  JP-KYU/KISAKIHAMA: revisado 2.74
+  JP-SHK/KAIFU: revisado 1.68
+  JP-SHO/KUGENUMA: ok 0.35
+  LK-E/ARUGAM BAY: ok 0.81
   LK-E/WHISKEY POINT: sin fuente 
+  LK-E/PEANUT FARM: ok 0.45
+  LK-S/HIKKADUWA: ok 0.13
+  LK-S/MIDIGAMA: ok 0.58
+  LK-S/WELIGAMA: ok 0.67
+  MA-N/MEHDIA: ok 1.2
   MA-N/SAFI LE JARDIN: sin fuente 
+  MA-TAG/BOILERS: revisado 4.65
   MA-TAG/KILLER POINT: sin fuente 
+  MA-TAG/ANCHOR POINT: ok 0.88
+  MA-TAG/HASH POINT: ok 0.57
   MA-TAG/PANORAMAS: sin fuente 
+  MA-TAG/IMSOUANE: ok 0.31
   MV-NMA/PASTA POINT: sin fuente 
   MV-NMA/SULTANS: sin fuente 
   MV-NMA/HONKY'S: sin fuente 
   MV-NMA/COKES: sin fuente 
   MV-NMA/CHICKENS: sin fuente 
   MV-NMA/JAILBREAKS: sin fuente 
+  MV-SMA/KANDOOMA RIGHT: ok 0.52
   MV-SOU/TIGER STRIPES: sin fuente 
   MV-SOU/BEACONS: sin fuente 
+  MX-BCN/SAN MIGUEL: ok 1.0
+  MX-BCN/TODOS SANTOS: ok 0.18
+  MX-BCS-N/SCORPION BAY: ok 0.64
+  MX-BCS/LOS CERRITOS: ok 0.18
   MX-BCS/ZIPPERS: sin fuente 
+  MX-NAY/SAYULITA: ok 0.06
+  MX-NAY/EL ANCLOTE: ok 0.08
+  MX-OAX/CHACAHUA: ok 0.65
+  MX-OAX/ZICATELA: ok 0.1
+  MX-OAX/LA PUNTA: ok 0.34
+  MX-OAX/BARRA DE LA CRUZ: revisado 1.9
+  MX-PAC/TRONCONES: ok 1.07
+  MX-PAC/LA SALADITA: ok 0.41
+  MX-PAC/NEXPA: ok 0.68
+  MX-PAC/LA TICLA: ok 0.36
+  MX-PAC/PASCUALES: ok 0.22
   NA-ERO/SKELETON BAY: sin fuente 
-  NZ-BOP/WHANGAMATA BAR: lejos 1.79
+  NI-RIV/POPOYO: ok 0.77
+  NI-RIV/MADERAS: ok 0.27
+  NO-N/UNSTAD: ok 0.35
+  NZ-AKL/PIHA: ok 0.2
+  NZ-BOP/WHANGAMATA BAR: revisado 1.79
+  NZ-BOP/MOUNT MAUNGANUI: ok 0.72
   NZ-GIS/CENTRES: sin fuente 
+  NZ-GIS/MAKORORI POINT: ok 1.05
   NZ-GIS/STOCK ROUTE: sin fuente 
+  NZ-GIS/WAINUI: ok 0.22
   NZ-GIS/PINES: sin fuente 
   NZ-GIS/WHALES: sin fuente 
+  NZ-GIS/THE ISLAND: sin fuente 
+  NZ-KAI/MANGAMAUNU: ok 0.44
   NZ-KAI/MEATWORKS: sin fuente 
+  NZ-NTL/SHIPWRECK BAY: ok 0.05
   NZ-NTL/SUPER TUBES: sin fuente 
   NZ-NTL/MUKIES 2: sin fuente 
   NZ-NTL/MUKIES 1: sin fuente 
   NZ-NTL/PEAKS: sin fuente 
+  NZ-OTA/KARITANE: ok 0.54
+  NZ-OTA/WHAREAKEAKE: ok 0.45
   NZ-OTA/ARAMOANA SPIT: ok 1.17
+  NZ-OTA/PAPATOWAI: revisado 1.9
+  NZ-RAG/MANU BAY: ok 0.33
+  NZ-RAG/WHALE BAY: ok 0.12
   NZ-RAG/INDICATORS: sin fuente 
-  PF-TAH/HA'APITI: sin fuente 
+  NZ-TAR/STENT ROAD: revisado 1.73
+  NZ-TAR/WAIWHAKAIHO: ok 0.31
+  NZ-WEL/LYALL BAY: ok 0.06
+  PA-PAC/SANTA CATALINA: ok 1.05
+  PA-PAC/PLAYA VENAO: ok 0.27
+  PE-LIM/LA HERRADURA: ok 0.84
+  PE-LIM/SEÑORITAS: ok 0.77
+  PE-LIM/PICO ALTO: ok 0.61
+  PE-LIM/PUNTA ROCAS: ok 0.33
+  PE-LLB/PACASMAYO: ok 0.9
+  PE-LLB/CHICAMA: revisado 2.03
+  PE-LLB/HUANCHACO: ok 0.09
+  PE-NOR/MÁNCORA: ok 0.29
+  PE-NOR/CABO BLANCO: ok 0.01
+  PE-NOR/LOBITOS: ok 0.26
+  PF-TAH/TEAHUPO'O: ok 0.44
+  PF-TAH/PAPARA: revisado 1.52
+  PF-TAH/TAAPUNA: ok 0.37
+  PF-TAH/HA'APITI: ok 1.35
+  PH-LUZ/SAN JUAN: ok 0.22
+  PH-LUZ/SABANG: ok 0.23
+  PH-SIA/CLOUD 9: ok 0.18
   PH-SIA/JACKING HORSE: sin fuente 
   PH-SIA/QUICKSILVER: sin fuente 
+  PR-NW/JOBOS: ok 0.35
   PR-NW/WILDERNESS: sin fuente 
+  PR-NW/DOMES: ok 0.67
   PR-NW/TRES PALMAS: sin fuente 
+  PT-ALG/ARRIFANA: ok 0.11
+  PT-ALG/AMADO: ok 0.15
+  PT-ALG/TONEL: ok 0.18
+  PT-AZO/SANTA BÁRBARA: ok 0.88
+  PT-CEN/CABEDELO: ok 0.46
+  PT-CEN/PRAIA DO NORTE: ok 0.18
+  PT-ERI/SÃO LOURENÇO: ok 0.24
+  PT-ERI/COXOS: ok 0.28
+  PT-ERI/RIBEIRA D'ILHAS: ok 0.55
+  PT-ERI/PEDRA BRANCA: ok 0.3
+  PT-ERI/FOZ DO LIZANDRO: ok 0.24
+  PT-LIS/GUINCHO: ok 0.0
+  PT-LIS/CARCAVELOS: ok 0.38
+  PT-LIS/COSTA DA CAPARICA: ok 0.45
+  PT-MAD/JARDIM DO MAR: ok 0.22
+  PT-NOR/MATOSINHOS: ok 0.43
+  PT-NOR/ESPINHO: ok 0.4
+  PT-PEN/BALEAL: ok 0.13
+  PT-PEN/MOLHE LESTE: ok 0.22
+  PT-PEN/SUPERTUBOS: ok 0.55
+  PT-PEN/CONSOLAÇÃO: ok 0.4
+  SV-LIB/EL ZONTE: ok 0.1
+  SV-LIB/SUNZAL: ok 0.76
+  SV-LIB/EL TUNCO: ok 0.21
+  SV-LIB/PUNTA ROCA: revisado 2.91
   SV-ORI/LAS FLORES: sin fuente 
   TW-E/JINZUN HARBOR: sin fuente 
-  US-CA-OC/UPPER TRESTLES: sin fuente 
-  US-CA-OC/LOWER TRESTLES: sin fuente 
+  TW-NE/WAI'AO: ok 0.51
+  TW-NE/FULONG: ok 0.11
+  US-CA-CEN/PISMO PIER: ok 0.25
+  US-CA-CEN/MORRO ROCK: ok 0.07
+  US-CA-LA/ZUMA: ok 0.8
+  US-CA-LA/MALIBU: ok 0.04
+  US-CA-LA/EL PORTO: ok 0.15
+  US-CA-LA/LUNADA BAY: ok 0.17
+  US-CA-OC/HUNTINGTON PIER: ok 0.08
+  US-CA-OC/THE WEDGE: ok 0.19
+  US-CA-OC/SALT CREEK: ok 0.31
+  US-CA-OC/UPPER TRESTLES: ok 0.18
+  US-CA-OC/LOWER TRESTLES: ok 0.4
   US-CA-SB/C STREET: sin fuente 
+  US-CA-SB/RINCON: ok 0.09
+  US-CA-SB/JALAMA: ok 0.27
+  US-CA-SC/STEAMER LANE: ok 0.44
+  US-CA-SC/PLEASURE POINT: ok 0.3
+  US-CA-SC/GHOST TREE: ok 1.32
+  US-CA-SD/OCEANSIDE PIER: ok 0.31
+  US-CA-SD/SWAMI'S: ok 0.2
+  US-CA-SD/BLACK'S: ok 0.33
+  US-CA-SD/WINDANSEA: ok 0.17
+  US-CA-SF/FORT POINT: ok 0.04
+  US-CA-SF/OCEAN BEACH: ok 0.1
+  US-CA-SF/MAVERICKS: revisado 3.46
+  US-FL/NEW SMYRNA INLET: revisado 4.12
+  US-FL/COCOA BEACH PIER: ok 0.01
+  US-FL/SEBASTIAN INLET: ok 0.12
   US-HI-BIG/HONOLI'I: ok 0.26
   US-HI-BIG/BANYANS: sin fuente 
+  US-HI-KAU/HANALEI: ok 0.34
+  US-HI-KAU/TUNNELS: ok 0.07
   US-HI-KAU/PK'S: sin fuente 
-  US-HI-MAU/HO'OKIPA: sin fuente 
+  US-HI-MAU/JAWS: revisado 4.02
+  US-HI-MAU/HO'OKIPA: ok 0.32
+  US-HI-MAU/HONOLUA: ok 0.17
+  US-HI-OAN/HALEIWA: ok 0.59
+  US-HI-OAN/WAIMEA BAY: ok 0.08
+  US-HI-OAN/PIPELINE: ok 0.17
   US-HI-OAN/BACKDOOR: sin fuente 
+  US-HI-OAN/OFF THE WALL: ok 0.53
+  US-HI-OAN/SUNSET: ok 0.26
+  US-HI-OAN/VELZYLAND: revisado 1.69
+  US-HI-OAS/ALA MOANA BOWLS: ok 0.87
+  US-HI-OAS/QUEENS: ok 0.73
+  US-HI-OAS/SANDY BEACH: ok 0.16
+  US-HI-OAS/MAKAHA: ok 0.87
   US-NE/RUGGLES: sin fuente 
-  US-PNW/SHORT SANDS: sin fuente 
+  US-NE/DITCH PLAINS: ok 0.2
+  US-NE/ROCKAWAY: ok 0.26
+  US-NE/MANASQUAN INLET: ok 0.04
+  US-PNW/WESTPORT: ok 0.39
+  US-PNW/SHORT SANDS: ok 0.23
+  US-PNW/OTTER ROCK: ok 0.35
+  US-SE/HATTERAS LIGHT: ok 0.55
+  US-SE/WRIGHTSVILLE: ok 0.21
+  ZA-EC-JB/SUPERTUBES: ok 0.77
   ZA-EC-JB/BRUCE'S BEAUTIES: sin fuente 
+  ZA-EC-JB/SEAL POINT: ok 0.37
+  ZA-EC-PE/NAHOON REEF: ok 0.32
+  ZA-EC-WLD/COFFEE BAY: ok 0.27
+  ZA-KZN-DBN/NEW PIER: ok 0.06
+  ZA-KZN-DBN/CAVE ROCK: ok 0.2
+  ZA-KZN-N/BALLITO: ok 0.5
+  ZA-WC-CPT/BIG BAY: ok 0.23
+  ZA-WC-CPT/LLANDUDNO: ok 0.21
   ZA-WC-CPT/DUNGEONS: sin fuente 
   ZA-WC-CPT/SUNSET REEF: sin fuente 
+  ZA-WC-CPT/LONG BEACH: ok 0.25
+  ZA-WC-CPT/MUIZENBERG: ok 0.08
   ZA-WC-GR/INNER POOL: sin fuente 
-127 spots flagged; flagship: {'ok': 293, 'lejos': 5, 'sin fuente': 71, 'error': 0}; Open-Meteo 35 requests, ~2168 calls
+  ZA-WC-GR/VICTORIA BAY: ok 0.64
+  ZA-WC-WCO/ELANDS BAY: ok 0.83
+127 spots flagged; flagship: {'ok': 307, 'lejos': 0, 'sin fuente': 63, 'error': 0}; Open-Meteo 35 requests, ~2169 calls
