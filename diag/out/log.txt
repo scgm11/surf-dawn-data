@@ -75,3 +75,9 @@ OK 0.6s 465 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&pre
 OK 0.6s 316 bytes https://s3.waw3-1.cloudferro.com/mdl-native-12?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/&delimiter=/&max-keys=50
 OK 0.5s 316 bytes https://s3.waw3-1.cloudferro.com/mdl-native-13?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/&delimiter=/&max-keys=50
 OK 0.4s 316 bytes https://s3.waw3-1.cloudferro.com/mdl-native-14?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/&delimiter=/&max-keys=50
+OK 0.7s 2510 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/&delimiter=/&max-keys=200
+OK 0.6s 880 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/backup-changelog/&delimiter=/&max-keys=60
+OK 0.6s 538 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/changelog/&delimiter=/&max-keys=60
+OK 0.4s 3413 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/history/&delimiter=/&max-keys=60
+OK 0.7s 6147 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/latest/&delimiter=/&max-keys=60
+OK 0.4s 3413 bytes https://s3.waw3-1.cloudferro.com/mdl-native-01?list-type=2&prefix=native/INSITU_GLO_PHYBGCWAV_DISCRETE_MYNRT_013_030/cmems_obs-ins_glo_phybgcwav_mynrt_na_irr_202311/monthly/&delimiter=/&max-keys=60
