@@ -10,66 +10,66 @@
   "AR-MDP": {
    "model": "ncep_gfswave025",
    "median_m": 1.5,
-   "median_share": 1.0
+   "median_share": 0.99
   },
   "AR-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.07,
-   "median_share": 0.97
+   "median_m": 1.05,
+   "median_share": 0.96
   },
   "AU-NSW-MN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.49,
+   "median_m": 1.5,
    "median_share": 0.72
   },
   "AU-NSW-NC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.42,
-   "median_share": 0.79
+   "median_m": 1.43,
+   "median_share": 0.83
   },
   "AU-NSW-NR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.49,
+   "median_m": 1.52,
    "median_share": 0.82
   },
   "AU-NSW-SC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.52,
-   "median_share": 0.78
+   "median_m": 1.51,
+   "median_share": 0.8
   },
   "AU-NSW-SYD": {
    "model": "ncep_gfswave025",
    "median_m": 1.59,
-   "median_share": 0.73
+   "median_share": 0.74
   },
   "AU-QLD-GC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.1,
+   "median_m": 1.13,
    "median_share": 0.8
   },
   "AU-QLD-SC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.12,
+   "median_m": 1.15,
    "median_share": 1.0
   },
   "AU-SA-EYR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.43,
+   "median_m": 1.41,
    "median_share": 1.0
   },
   "AU-SA": {
    "model": "ecmwf_wam",
-   "median_m": 1.44,
+   "median_m": 1.41,
    "median_share": 0.98
   },
   "AU-TAS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.42,
-   "median_share": 0.53
+   "median_m": 1.41,
+   "median_share": 0.55
   },
   "AU-VIC-PI": {
    "model": "ncep_gfswave025",
-   "median_m": 1.4,
+   "median_m": 1.38,
    "median_share": 1.0
   },
   "AU-VIC-SC": {
@@ -79,17 +79,17 @@
   },
   "AU-VIC-W": {
    "model": "ncep_gfswave025",
-   "median_m": 2.69,
+   "median_m": 2.64,
    "median_share": 1.0
   },
   "AU-WA-GAS": {
    "model": "ncep_gfswave025",
    "median_m": 1.31,
-   "median_share": 0.16
+   "median_share": 0.14
   },
   "AU-WA-MR": {
    "model": "ncep_gfswave025",
-   "median_m": 3.09,
+   "median_m": 3.06,
    "median_share": 0.97
   },
   "AU-WA-NW": {
@@ -99,7 +99,7 @@
   },
   "AU-WA-PER": {
    "model": "ncep_gfswave025",
-   "median_m": 2.01,
+   "median_m": 1.99,
    "median_share": 1.0
   },
   "BB-ALL": {
@@ -109,17 +109,17 @@
   },
   "BR-BA": {
    "model": "ncep_gfswave025",
-   "median_m": 1.11,
+   "median_m": 1.13,
    "median_share": 1.0
   },
   "BR-ES": {
    "model": "ncep_gfswave025",
-   "median_m": 1.17,
+   "median_m": 1.15,
    "median_share": 1.0
   },
   "BR-NE-CE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.16,
+   "median_m": 1.15,
    "median_share": 1.0
   },
   "BR-NE-PE": {
@@ -134,18 +134,18 @@
   },
   "BR-NOR": {
    "model": "ncep_gfswave016",
-   "median_m": 1.39,
-   "median_share": 0.26
+   "median_m": 1.4,
+   "median_share": 0.22
   },
   "BR-RJ": {
    "model": "ncep_gfswave025",
-   "median_m": 0.83,
+   "median_m": 0.81,
    "median_share": 1.0
   },
   "BR-RJL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.08,
-   "median_share": 0.95
+   "median_m": 1.05,
+   "median_share": 0.96
   },
   "BR-RS-SUL": {
    "model": "ncep_gfswave025",
@@ -159,12 +159,12 @@
   },
   "BR-SC-FLN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.36,
+   "median_m": 1.37,
    "median_share": 0.99
   },
   "BR-SC-NOR": {
    "model": "ncep_gfswave025",
-   "median_m": 0.91,
+   "median_m": 0.9,
    "median_share": 1.0
   },
   "BR-SC-SUL": {
@@ -174,53 +174,53 @@
   },
   "BR-SP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.82,
+   "median_m": 0.81,
    "median_share": 1.0
   },
   "BS-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.82,
+   "median_m": 0.83,
    "median_share": 0.11
   },
   "CA-BC-VI": {
    "model": "ecmwf_wam",
-   "median_m": 1.24,
-   "median_share": 0.24
+   "median_m": 1.23,
+   "median_share": 0.3
   },
   "CA-NS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.07,
-   "median_share": 0.54
+   "median_m": 1.03,
+   "median_share": 0.51
   },
   "CL-CEN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.58,
-   "median_share": 0.13
+   "median_m": 1.62,
+   "median_share": 0.1
   },
   "CL-MAU": {
    "model": "ncep_gfswave025",
-   "median_m": 1.64,
-   "median_share": 0.95
+   "median_m": 1.66,
+   "median_share": 0.96
   },
   "CL-NOR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.47,
+   "median_m": 1.5,
    "median_share": 1.0
   },
   "CL-PIC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.81,
-   "median_share": 0.68
+   "median_m": 1.86,
+   "median_share": 0.7
   },
   "CL-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.73,
+   "median_m": 1.74,
    "median_share": 1.0
   },
   "CN-HAI": {
    "model": "ncep_gfswave016",
-   "median_m": 0.83,
-   "median_share": 0.53
+   "median_m": 0.88,
+   "median_share": 0.5
   },
   "CO-CAR": {
    "model": "ncep_gfswave016",
@@ -229,7 +229,7 @@
   },
   "CO-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.83,
+   "median_m": 0.84,
    "median_share": 1.0
   },
   "CR-CAR": {
@@ -244,73 +244,73 @@
   },
   "CR-NIC": {
    "model": "ncep_gfswave016",
-   "median_m": 1.08,
+   "median_m": 1.09,
    "median_share": 1.0
   },
   "CR-OSA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.07,
-   "median_share": 0.71
+   "median_m": 1.08,
+   "median_share": 0.7
   },
   "CR-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 1.01,
+   "median_m": 1.02,
    "median_share": 1.0
   },
   "CV-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.18,
-   "median_share": 0.04
+   "median_m": 1.19,
+   "median_share": 0.06
   },
   "DE-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.14,
-   "median_share": 0.85
+   "median_m": 1.17,
+   "median_share": 0.91
   },
   "DK-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.45,
-   "median_share": 0.81
+   "median_m": 1.47,
+   "median_share": 0.87
   },
   "DO-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.03,
+   "median_m": 1.01,
    "median_share": 1.0
   },
   "EC-COS": {
    "model": "ncep_gfswave016",
-   "median_m": 0.9,
+   "median_m": 0.91,
    "median_share": 1.0
   },
   "EC-GAL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.08,
+   "median_m": 1.09,
    "median_share": 0.49
   },
   "ES-AND": {
    "model": "ncep_gfswave016",
    "median_m": 0.58,
-   "median_share": 0.41
+   "median_share": 0.39
   },
   "ES-AST": {
    "model": "ncep_gfswave016",
-   "median_m": 1.4,
+   "median_m": 1.41,
    "median_share": 1.0
   },
   "ES-CAN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.31,
+   "median_m": 1.33,
    "median_share": 1.0
   },
   "ES-CN-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.33,
+   "median_m": 1.35,
    "median_share": 0.64
   },
   "ES-CN-W": {
    "model": "ncep_gfswave016",
-   "median_m": 1.15,
-   "median_share": 0.65
+   "median_m": 1.17,
+   "median_share": 0.67
   },
   "ES-GAL": {
    "model": "ncep_gfswave016",
@@ -319,37 +319,37 @@
   },
   "ES-PV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.18,
+   "median_m": 1.21,
    "median_share": 1.0
   },
   "FJ-MAM": {
    "model": "ncep_gfswave025",
-   "median_m": 0.47,
+   "median_m": 0.46,
    "median_share": 1.0
   },
   "FJ-SOU": {
    "model": "ncep_gfswave025",
-   "median_m": 1.34,
+   "median_m": 1.31,
    "median_share": 0.98
   },
   "FR-BRE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.23,
-   "median_share": 0.95
+   "median_m": 1.21,
+   "median_share": 0.97
   },
   "FR-GIR": {
    "model": "ncep_gfswave016",
-   "median_m": 1.41,
+   "median_m": 1.45,
    "median_share": 1.0
   },
   "FR-HOS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.42,
+   "median_m": 1.47,
    "median_share": 1.0
   },
   "FR-PBA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.42,
+   "median_m": 1.47,
    "median_share": 1.0
   },
   "FR-VEN": {
@@ -359,52 +359,52 @@
   },
   "GB-CON": {
    "model": "ncep_gfswave016",
-   "median_m": 1.66,
+   "median_m": 1.67,
    "median_share": 0.99
   },
   "GB-DEV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.37,
+   "median_m": 1.38,
    "median_share": 0.92
   },
   "GB-NE": {
    "model": "ncep_gfswave025",
-   "median_m": 0.79,
-   "median_share": 0.67
+   "median_m": 0.71,
+   "median_share": 0.66
   },
   "GB-NIR": {
    "model": "ecmwf_wam",
-   "median_m": 0.98,
-   "median_share": 0.82
+   "median_m": 1.03,
+   "median_share": 0.87
   },
   "GB-SCO": {
    "model": "ncep_gfswave025",
-   "median_m": 1.51,
-   "median_share": 0.4
+   "median_m": 1.38,
+   "median_share": 0.41
   },
   "GB-SOU": {
    "model": "ncep_gfswave016",
-   "median_m": 0.74,
+   "median_m": 0.73,
    "median_share": 0.89
   },
   "GB-WAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.46,
+   "median_m": 1.4,
    "median_share": 0.89
   },
   "GH-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.92,
+   "median_m": 0.91,
    "median_share": 1.0
   },
   "GP-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.05,
+   "median_m": 1.02,
    "median_share": 0.06
   },
   "GT-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 1.17,
+   "median_m": 1.18,
    "median_share": 1.0
   },
   "ID-BAL-BUK": {
@@ -424,183 +424,183 @@
   },
   "ID-JAV-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.51,
+   "median_m": 1.5,
    "median_share": 0.0
   },
   "ID-JAV-W": {
    "model": "ncep_gfswave016",
-   "median_m": 1.65,
-   "median_share": 0.0
+   "median_m": 1.64,
+   "median_share": 0.05
   },
   "ID-KRU": {
    "model": "ncep_gfswave016",
-   "median_m": 1.88,
+   "median_m": 1.86,
    "median_share": 0.0
   },
   "ID-LOM": {
    "model": "ncep_gfswave016",
    "median_m": 1.84,
-   "median_share": 0.76
+   "median_share": 0.75
   },
   "ID-MEN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.18,
+   "median_m": 1.17,
    "median_share": 0.0
   },
   "ID-NIA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.33,
-   "median_share": 0.06
+   "median_m": 1.31,
+   "median_share": 0.12
   },
   "ID-ROT": {
    "model": "ncep_gfswave016",
-   "median_m": 0.9,
+   "median_m": 0.89,
    "median_share": 1.0
   },
   "ID-SBW": {
    "model": "ncep_gfswave016",
-   "median_m": 1.47,
+   "median_m": 1.46,
    "median_share": 1.0
   },
   "ID-SMB": {
    "model": "ncep_gfswave016",
-   "median_m": 1.51,
+   "median_m": 1.49,
    "median_share": 1.0
   },
   "IE-NW": {
    "model": "ncep_gfswave025",
-   "median_m": 2.1,
-   "median_share": 0.95
+   "median_m": 2.16,
+   "median_share": 0.99
   },
   "IE-SE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.54,
-   "median_share": 0.89
+   "median_m": 1.4,
+   "median_share": 0.9
   },
   "IE-SW": {
    "model": "ecmwf_wam",
-   "median_m": 1.57,
-   "median_share": 0.98
+   "median_m": 1.54,
+   "median_share": 0.99
   },
   "IN-E": {
    "model": "ncep_gfswave016",
-   "median_m": 0.61,
+   "median_m": 0.63,
    "median_share": 1.0
   },
   "IN-W": {
    "model": "ncep_gfswave016",
-   "median_m": 0.72,
+   "median_m": 0.7,
    "median_share": 1.0
   },
   "IS-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.98,
-   "median_share": 0.82
+   "median_m": 2.96,
+   "median_share": 0.85
   },
   "IT-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 0.45,
-   "median_share": 0.8
+   "median_share": 0.76
   },
   "IT-SAR": {
    "model": "ncep_gfswave016",
    "median_m": 0.68,
-   "median_share": 0.76
+   "median_share": 0.78
   },
   "JP-CHI": {
    "model": "ncep_gfswave016",
-   "median_m": 2.0,
+   "median_m": 1.96,
    "median_share": 0.99
   },
   "JP-IBA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.67,
+   "median_m": 1.69,
    "median_share": 0.99
   },
   "JP-IZU": {
    "model": "ncep_gfswave016",
-   "median_m": 1.28,
-   "median_share": 0.9
+   "median_m": 1.23,
+   "median_share": 0.96
   },
   "JP-KYU": {
    "model": "ncep_gfswave016",
-   "median_m": 1.47,
+   "median_m": 1.44,
    "median_share": 0.5
   },
   "JP-SHK": {
    "model": "ncep_gfswave016",
-   "median_m": 1.52,
-   "median_share": 0.93
+   "median_m": 1.48,
+   "median_share": 0.97
   },
   "JP-SHO": {
    "model": "ncep_gfswave016",
-   "median_m": 0.83,
-   "median_share": 0.83
+   "median_m": 0.79,
+   "median_share": 0.8
   },
   "KR-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.68,
-   "median_share": 0.4
+   "median_m": 0.69,
+   "median_share": 0.39
   },
   "LK-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.1,
-   "median_share": 0.83
+   "median_m": 1.09,
+   "median_share": 0.84
   },
   "LK-S": {
    "model": "ncep_gfswave016",
-   "median_m": 1.12,
+   "median_m": 1.1,
    "median_share": 1.0
   },
   "LR-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.01,
+   "median_m": 1.0,
    "median_share": 0.0
   },
   "MA-N": {
    "model": "ncep_gfswave016",
-   "median_m": 1.17,
+   "median_m": 1.2,
    "median_share": 1.0
   },
   "MA-S": {
    "model": "ncep_gfswave016",
-   "median_m": 1.16,
+   "median_m": 1.18,
    "median_share": 1.0
   },
   "MA-TAG": {
    "model": "ncep_gfswave016",
-   "median_m": 0.82,
-   "median_share": 0.29
+   "median_m": 0.84,
+   "median_share": 0.32
   },
   "MG-ALL": {
    "model": "ncep_gfswave025",
    "median_m": 2.12,
-   "median_share": 0.68
+   "median_share": 0.73
   },
   "MQ-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.1,
+   "median_m": 1.08,
    "median_share": 0.88
   },
   "MU-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.43,
+   "median_m": 1.45,
    "median_share": 0.83
   },
   "MV-CEN": {
    "model": "ncep_gfswave016",
-   "median_m": 0.83,
+   "median_m": 0.82,
    "median_share": 0.0
   },
   "MV-NMA": {
    "model": "ncep_gfswave016",
-   "median_m": 0.83,
+   "median_m": 0.82,
    "median_share": 0.0
   },
   "MV-SMA": {
    "model": "ncep_gfswave016",
    "median_m": 0.73,
-   "median_share": 0.88
+   "median_share": 0.84
   },
   "MV-SOU": {
    "model": "ncep_gfswave016",
@@ -609,57 +609,57 @@
   },
   "MX-BCN": {
    "model": "ecmwf_wam",
-   "median_m": 1.19,
+   "median_m": 1.17,
    "median_share": 0.95
   },
   "MX-BCS-N": {
    "model": "ncep_gfswave016",
-   "median_m": 1.27,
+   "median_m": 1.25,
    "median_share": 0.5
   },
   "MX-BCS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.63,
+   "median_m": 1.59,
    "median_share": 1.0
   },
   "MX-CAR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
+   "median_m": 0.92,
    "median_share": 0.99
   },
   "MX-NAY": {
    "model": "ncep_gfswave016",
-   "median_m": 1.37,
+   "median_m": 1.36,
    "median_share": 0.52
   },
   "MX-OAX": {
    "model": "ncep_gfswave016",
-   "median_m": 1.61,
+   "median_m": 1.6,
    "median_share": 1.0
   },
   "MX-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 2.14,
+   "median_m": 2.03,
    "median_share": 1.0
   },
   "MZ-INH": {
    "model": "ncep_gfswave025",
-   "median_m": 1.07,
-   "median_share": 0.84
+   "median_m": 1.04,
+   "median_share": 0.88
   },
   "MZ-S": {
    "model": "ncep_gfswave025",
-   "median_m": 1.61,
-   "median_share": 0.84
+   "median_m": 1.59,
+   "median_share": 0.88
   },
   "NA-ERO": {
    "model": "ncep_gfswave025",
-   "median_m": 1.67,
+   "median_m": 1.72,
    "median_share": 1.0
   },
   "NI-NW": {
    "model": "ncep_gfswave016",
-   "median_m": 1.04,
+   "median_m": 1.03,
    "median_share": 1.0
   },
   "NI-RIV": {
@@ -669,58 +669,58 @@
   },
   "NL-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 0.96,
-   "median_share": 0.95
+   "median_m": 1.0,
+   "median_share": 1.0
   },
   "NO-N": {
    "model": "ncep_gfswave025",
-   "median_m": 1.88,
-   "median_share": 0.66
+   "median_m": 2.15,
+   "median_share": 0.65
   },
   "NO-S": {
    "model": "ncep_gfswave025",
-   "median_m": 1.85,
+   "median_m": 2.0,
    "median_share": 0.89
   },
   "NZ-AKL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.89,
+   "median_m": 1.97,
    "median_share": 1.0
   },
   "NZ-BOP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.74,
-   "median_share": 0.86
+   "median_m": 0.78,
+   "median_share": 0.82
   },
   "NZ-GIS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.22,
+   "median_m": 1.42,
    "median_share": 0.66
   },
   "NZ-KAI": {
    "model": "ncep_gfswave025",
-   "median_m": 1.05,
-   "median_share": 0.87
+   "median_m": 1.12,
+   "median_share": 0.9
   },
   "NZ-NTL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.08,
-   "median_share": 0.02
+   "median_m": 1.13,
+   "median_share": 0.04
   },
   "NZ-OTA": {
    "model": "ncep_gfswave025",
-   "median_m": 1.3,
-   "median_share": 0.72
+   "median_m": 1.32,
+   "median_share": 0.75
   },
   "NZ-RAG": {
    "model": "ncep_gfswave025",
-   "median_m": 1.49,
+   "median_m": 1.53,
    "median_share": 0.02
   },
   "NZ-TAR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.42,
-   "median_share": 0.7
+   "median_m": 1.45,
+   "median_share": 0.74
   },
   "NZ-WC": {
    "model": "ncep_gfswave025",
@@ -729,8 +729,8 @@
   },
   "NZ-WEL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.21,
-   "median_share": 0.62
+   "median_m": 1.38,
+   "median_share": 0.68
   },
   "PA-BDT": {
    "model": "ncep_gfswave016",
@@ -744,63 +744,63 @@
   },
   "PE-LIM": {
    "model": "ncep_gfswave025",
-   "median_m": 1.58,
+   "median_m": 1.63,
    "median_share": 1.0
   },
   "PE-LLB": {
    "model": "ncep_gfswave016",
-   "median_m": 1.19,
+   "median_m": 1.21,
    "median_share": 0.98
   },
   "PE-NOR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.98,
+   "median_m": 0.99,
    "median_share": 0.6
   },
   "PE-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.48,
+   "median_m": 1.5,
    "median_share": 1.0
   },
   "PF-ISL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.23,
-   "median_share": 0.25
+   "median_m": 2.24,
+   "median_share": 0.26
   },
   "PF-TAH": {
    "model": "ncep_gfswave025",
    "median_m": 2.23,
-   "median_share": 0.81
+   "median_share": 0.82
   },
   "PG-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.94,
-   "median_share": 0.7
+   "median_m": 0.93,
+   "median_share": 0.68
   },
   "PH-EAS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.05,
-   "median_share": 0.99
+   "median_m": 1.09,
+   "median_share": 1.0
   },
   "PH-LUZ": {
    "model": "ncep_gfswave016",
-   "median_m": 0.6,
+   "median_m": 0.62,
    "median_share": 1.0
   },
   "PH-SIA": {
    "model": "ncep_gfswave016",
-   "median_m": 0.98,
+   "median_m": 0.99,
    "median_share": 1.0
   },
   "PR-N": {
    "model": "ncep_gfswave016",
-   "median_m": 0.85,
+   "median_m": 0.83,
    "median_share": 1.0
   },
   "PR-NW": {
    "model": "ncep_gfswave016",
-   "median_m": 0.64,
-   "median_share": 0.02
+   "median_m": 0.62,
+   "median_share": 0.01
   },
   "PT-ALG": {
    "model": "ncep_gfswave016",
@@ -809,48 +809,48 @@
   },
   "PT-AZO": {
    "model": "ncep_gfswave016",
-   "median_m": 1.05,
-   "median_share": 0.22
+   "median_m": 1.04,
+   "median_share": 0.26
   },
   "PT-CEN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.52,
+   "median_m": 1.51,
    "median_share": 1.0
   },
   "PT-ERI": {
    "model": "ncep_gfswave016",
-   "median_m": 1.59,
+   "median_m": 1.57,
    "median_share": 1.0
   },
   "PT-LIS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.1,
+   "median_m": 1.08,
    "median_share": 0.97
   },
   "PT-MAD": {
    "model": "ncep_gfswave016",
-   "median_m": 0.84,
+   "median_m": 0.81,
    "median_share": 0.2
   },
   "PT-NOR": {
    "model": "ncep_gfswave016",
-   "median_m": 1.49,
+   "median_m": 1.45,
    "median_share": 1.0
   },
   "PT-PEN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.67,
+   "median_m": 1.66,
    "median_share": 0.96
   },
   "RE-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.31,
+   "median_m": 1.32,
    "median_share": 0.65
   },
   "SN-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 1.31,
-   "median_share": 0.89
+   "median_share": 0.96
   },
   "SV-LIB": {
    "model": "ncep_gfswave016",
@@ -859,57 +859,57 @@
   },
   "SV-ORI": {
    "model": "ncep_gfswave016",
-   "median_m": 1.07,
+   "median_m": 1.06,
    "median_share": 1.0
   },
   "TO-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.72,
-   "median_share": 0.43
+   "median_m": 1.7,
+   "median_share": 0.45
   },
   "TT-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.82,
+   "median_m": 0.81,
    "median_share": 1.0
   },
   "TW-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.15,
+   "median_m": 1.19,
    "median_share": 0.93
   },
   "TW-NE": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
+   "median_m": 0.95,
    "median_share": 0.94
   },
   "US-CA-CEN": {
    "model": "ecmwf_wam",
-   "median_m": 1.41,
+   "median_m": 1.36,
    "median_share": 1.0
   },
   "US-CA-LA": {
    "model": "ecmwf_wam",
-   "median_m": 0.93,
+   "median_m": 0.92,
    "median_share": 1.0
   },
   "US-CA-NOR": {
    "model": "ecmwf_wam",
-   "median_m": 1.77,
+   "median_m": 1.71,
    "median_share": 1.0
   },
   "US-CA-OC": {
    "model": "ecmwf_wam",
-   "median_m": 1.0,
+   "median_m": 0.99,
    "median_share": 1.0
   },
   "US-CA-SB": {
    "model": "ecmwf_wam",
-   "median_m": 0.81,
+   "median_m": 0.8,
    "median_share": 1.0
   },
   "US-CA-SC": {
    "model": "ecmwf_wam",
-   "median_m": 1.14,
+   "median_m": 1.1,
    "median_share": 1.0
   },
   "US-CA-SD": {
@@ -919,7 +919,7 @@
   },
   "US-CA-SF": {
    "model": "ecmwf_wam",
-   "median_m": 1.31,
+   "median_m": 1.26,
    "median_share": 1.0
   },
   "US-FL-PAN": {
@@ -935,67 +935,67 @@
   "US-GULF": {
    "model": "ecmwf_wam",
    "median_m": 0.55,
-   "median_share": 0.99
+   "median_share": 0.97
   },
   "US-HI-BIG": {
    "model": "ecmwf_wam",
-   "median_m": 1.04,
+   "median_m": 1.03,
    "median_share": 1.0
   },
   "US-HI-KAU": {
    "model": "ecmwf_wam",
-   "median_m": 1.38,
+   "median_m": 1.39,
    "median_share": 1.0
   },
   "US-HI-MAU": {
    "model": "ecmwf_wam",
-   "median_m": 1.4,
+   "median_m": 1.38,
    "median_share": 1.0
   },
   "US-HI-OAN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.12,
+   "median_m": 1.13,
    "median_share": 0.96
   },
   "US-HI-OAS": {
    "model": "ecmwf_wam",
-   "median_m": 1.18,
+   "median_m": 1.17,
    "median_share": 0.96
   },
   "US-MID": {
    "model": "ncep_gfswave025",
-   "median_m": 0.75,
-   "median_share": 0.89
+   "median_m": 0.77,
+   "median_share": 0.88
   },
   "US-NE": {
    "model": "ecmwf_wam",
-   "median_m": 0.64,
-   "median_share": 0.83
+   "median_m": 0.65,
+   "median_share": 0.82
   },
   "US-PNW": {
    "model": "ecmwf_wam",
-   "median_m": 1.48,
+   "median_m": 1.44,
    "median_share": 1.0
   },
   "US-SC-GA": {
    "model": "ncep_gfswave016",
    "median_m": 0.56,
-   "median_share": 0.98
+   "median_share": 0.97
   },
   "US-SE": {
    "model": "ncep_gfswave025",
-   "median_m": 0.82,
-   "median_share": 0.99
+   "median_m": 0.83,
+   "median_share": 0.98
   },
   "UY-MAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.38,
+   "median_m": 1.4,
    "median_share": 1.0
   },
   "UY-ROC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.61,
-   "median_share": 0.92
+   "median_m": 1.6,
+   "median_share": 0.95
   },
   "VE-ALL": {
    "model": "ncep_gfswave016",
@@ -1004,27 +1004,27 @@
   },
   "VN-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.46,
-   "median_share": 0.99
+   "median_m": 0.66,
+   "median_share": 0.97
   },
   "VU-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.43,
-   "median_share": 0.46
+   "median_m": 1.44,
+   "median_share": 0.45
   },
   "WS-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.24,
+   "median_m": 2.22,
    "median_share": 1.0
   },
   "ZA-EC-JB": {
    "model": "ncep_gfswave025",
-   "median_m": 2.45,
-   "median_share": 0.21
+   "median_m": 2.4,
+   "median_share": 0.17
   },
   "ZA-EC-PE": {
    "model": "ncep_gfswave025",
-   "median_m": 2.13,
+   "median_m": 2.1,
    "median_share": 0.74
   },
   "ZA-EC-WLD": {
@@ -1035,7 +1035,7 @@
   "ZA-KZN-DBN": {
    "model": "ncep_gfswave025",
    "median_m": 1.75,
-   "median_share": 0.85
+   "median_share": 0.81
   },
   "ZA-KZN-N": {
    "model": "ncep_gfswave025",
@@ -1045,22 +1045,22 @@
   "ZA-KZN-S": {
    "model": "ncep_gfswave025",
    "median_m": 1.87,
-   "median_share": 0.83
+   "median_share": 0.76
   },
   "ZA-WC-CPT": {
    "model": "ncep_gfswave025",
-   "median_m": 2.17,
-   "median_share": 0.73
+   "median_m": 2.24,
+   "median_share": 0.76
   },
   "ZA-WC-GR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.97,
-   "median_share": 0.78
+   "median_m": 1.92,
+   "median_share": 0.85
   },
   "ZA-WC-WCO": {
    "model": "ncep_gfswave025",
-   "median_m": 1.96,
-   "median_share": 0.27
+   "median_m": 2.02,
+   "median_share": 0.3
   }
  },
  "flags": [
@@ -1071,7 +1071,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 82 %) y en 92 días 1 %"
    ],
    "facing": 304,
-   "swell": 122,
+   "swell": 125,
    "near": 86,
    "flipped": true,
    "top": true,
@@ -1084,7 +1084,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 310,
-   "swell": 107,
+   "swell": 108,
    "near": 86,
    "flipped": true,
    "top": true,
@@ -1097,7 +1097,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 312,
-   "swell": 107,
+   "swell": 108,
    "near": 86,
    "flipped": false,
    "top": false,
@@ -1120,7 +1120,7 @@
    "region": "AU-TAS",
    "spot": "MARRAWAH",
    "why": [
-    "3.2 m de media, más del doble de la zona (1.4 m)"
+    "3.1 m de media, más del doble de la zona (1.4 m)"
    ],
    "facing": 314,
    "swell": 232,
@@ -1132,8 +1132,8 @@
    "region": "AU-TAS",
    "spot": "GREEN POINT",
    "why": [
-    "3.2 m de media, más del doble de la zona (1.4 m)",
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 53 %) y en 92 días 0 %"
+    "3.1 m de media, más del doble de la zona (1.4 m)",
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 55 %) y en 92 días 0 %"
    ],
    "facing": 61,
    "swell": 232,
@@ -1149,7 +1149,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 127,
-   "swell": 223,
+   "swell": 222,
    "near": 206,
    "flipped": false,
    "top": false,
@@ -1159,7 +1159,7 @@
    "region": "AU-VIC-SC",
    "spot": "BARWON BLUFF",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 99 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) y en 92 días 1 %"
    ],
    "facing": 65,
    "swell": 194,
@@ -1182,13 +1182,39 @@
    "share_long": 0.0031028368794326243
   },
   {
+   "region": "AU-VIC-W",
+   "spot": "WYE RIVER",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) y en 92 días 1 %"
+   ],
+   "facing": 110,
+   "swell": 226,
+   "near": null,
+   "flipped": false,
+   "top": false,
+   "share_long": 0.008421985815602837
+  },
+  {
+   "region": "AU-WA-PER",
+   "spot": "NORTH MOLE",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) y en 92 días 1 %"
+   ],
+   "facing": 348,
+   "swell": 256,
+   "near": 261,
+   "flipped": false,
+   "top": false,
+   "share_long": 0.01374113475177305
+  },
+  {
    "region": "AU-WA-PER",
    "spot": "STRICKLAND BAY",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 169,
-   "swell": 255,
+   "swell": 256,
    "near": 277,
    "flipped": false,
    "top": true,
@@ -1201,7 +1227,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 163,
-   "swell": 255,
+   "swell": 256,
    "near": 276,
    "flipped": false,
    "top": false,
@@ -1214,7 +1240,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 %"
    ],
    "facing": 262,
-   "swell": 33,
+   "swell": 34,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1227,7 +1253,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 %"
    ],
    "facing": 259,
-   "swell": 33,
+   "swell": 34,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1263,11 +1289,11 @@
    "region": "BR-NE-CE",
    "spot": "PARACURU",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) y en 92 días 4 %"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 4 %"
    ],
    "facing": 334,
    "swell": 74,
-   "near": null,
+   "near": 44,
    "flipped": false,
    "top": false,
    "share_long": 0.038120567375886524
@@ -1276,10 +1302,10 @@
    "region": "BR-NE-RN",
    "spot": "PIPA",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 6,
-   "swell": 93,
+   "swell": 94,
    "near": 59,
    "flipped": false,
    "top": true,
@@ -1292,7 +1318,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 %"
    ],
    "facing": 273,
-   "swell": 158,
+   "swell": 161,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1305,7 +1331,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 3 %"
    ],
    "facing": 261,
-   "swell": 157,
+   "swell": 159,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1318,7 +1344,59 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 322,
-   "swell": 139,
+   "swell": 140,
+   "near": null,
+   "flipped": false,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "CA-BC-VI",
+   "spot": "CHESTERMAN",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 %"
+   ],
+   "facing": 90,
+   "swell": 257,
+   "near": null,
+   "flipped": false,
+   "top": true,
+   "share_long": 0.0
+  },
+  {
+   "region": "CA-BC-VI",
+   "spot": "COX BAY",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 %"
+   ],
+   "facing": 3,
+   "swell": 257,
+   "near": null,
+   "flipped": false,
+   "top": true,
+   "share_long": 0.0
+  },
+  {
+   "region": "CA-BC-VI",
+   "spot": "SCHOONER COVE",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 %"
+   ],
+   "facing": 44,
+   "swell": 255,
+   "near": null,
+   "flipped": false,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "CA-BC-VI",
+   "spot": "WYA POINT",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 %"
+   ],
+   "facing": 90,
+   "swell": 259,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1328,10 +1406,10 @@
    "region": "CA-NS",
    "spot": "HIRTLE'S BEACH",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 54 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 51 %) y en 92 días 1 %"
    ],
    "facing": 19,
-   "swell": 161,
+   "swell": 165,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1354,7 +1432,7 @@
    "region": "CO-PAC",
    "spot": "HUINA",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 312,
    "swell": 231,
@@ -1406,7 +1484,7 @@
    "region": "CR-OSA",
    "spot": "RIO CLARO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 71 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 70 %) y en 92 días 2 %"
    ],
    "facing": 311,
    "swell": 218,
@@ -1419,14 +1497,14 @@
    "region": "EC-COS",
    "spot": "PUNTA CARNERO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 355,
-   "swell": 237,
+   "swell": 238,
    "near": 278,
    "flipped": false,
    "top": false,
-   "share_long": 0.0
+   "share_long": 0.0017730496453900709
   },
   {
    "region": "EC-GAL",
@@ -1445,7 +1523,7 @@
    "region": "ES-AND",
    "spot": "BOLONIA",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 41 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (3 % de las horas; la zona 39 %) y en 92 días 2 %"
    ],
    "facing": 191,
    "swell": 73,
@@ -1461,7 +1539,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %) y en 92 días 0 %"
    ],
    "facing": 128,
-   "swell": 344,
+   "swell": 343,
    "near": 321,
    "flipped": true,
    "top": false,
@@ -1474,7 +1552,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 64 %) y en 92 días 3 %"
    ],
    "facing": 88,
-   "swell": 343,
+   "swell": 342,
    "near": 275,
    "flipped": false,
    "top": false,
@@ -1497,7 +1575,7 @@
    "region": "ES-CN-W",
    "spot": "LAS CANTERAS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 %"
    ],
    "facing": 215,
    "swell": 356,
@@ -1510,7 +1588,7 @@
    "region": "ES-CN-W",
    "spot": "EL FRONTON",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 %"
    ],
    "facing": 221,
    "swell": 355,
@@ -1523,7 +1601,7 @@
    "region": "ES-CN-W",
    "spot": "SARDINA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 %"
    ],
    "facing": 215,
    "swell": 355,
@@ -1533,43 +1611,17 @@
    "share_long": 0.0
   },
   {
-   "region": "ES-CN-W",
-   "spot": "EL CAMISON",
-   "why": [
-    "las olas casi nunca le entran de frente (5 % de las horas; la zona 65 %) y en 92 días 2 %"
-   ],
-   "facing": 293,
-   "swell": 166,
-   "near": null,
-   "flipped": false,
-   "top": false,
-   "share_long": 0.02311111111111111
-  },
-  {
-   "region": "ES-CN-W",
-   "spot": "PUNTA BLANCA",
-   "why": [
-    "las olas casi nunca le entran de frente (5 % de las horas; la zona 65 %) y en 92 días 2 %"
-   ],
-   "facing": 293,
-   "swell": 166,
-   "near": null,
-   "flipped": false,
-   "top": false,
-   "share_long": 0.02311111111111111
-  },
-  {
    "region": "ES-PV",
    "spot": "HONDARRIBIA",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 5 %"
    ],
    "facing": 59,
-   "swell": 309,
+   "swell": 308,
    "near": 330,
    "flipped": false,
    "top": false,
-   "share_long": 0.04920212765957447
+   "share_long": 0.04875886524822695
   },
   {
    "region": "FJ-MAM",
@@ -1578,7 +1630,7 @@
     "1.0 m de media, más del doble de la zona (0.5 m)"
    ],
    "facing": 220,
-   "swell": 209,
+   "swell": 210,
    "near": 254,
    "flipped": false,
    "top": true
@@ -1587,10 +1639,10 @@
    "region": "FR-BRE",
    "spot": "LE POULDU",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %) y en 92 días 3 %"
    ],
    "facing": 132,
-   "swell": 255,
+   "swell": 257,
    "near": 221,
    "flipped": false,
    "top": false,
@@ -1600,10 +1652,10 @@
    "region": "FR-VEN",
    "spot": "LA TRANCHE",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 0 %"
    ],
    "facing": 151,
-   "swell": 267,
+   "swell": 268,
    "near": 211,
    "flipped": false,
    "top": false,
@@ -1704,7 +1756,7 @@
    "region": "ID-LOM",
    "spot": "MAWI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 0,
    "swell": 207,
@@ -1717,10 +1769,10 @@
    "region": "ID-LOM",
    "spot": "KUTA LOMBOK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 65,
-   "swell": 207,
+   "swell": 208,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1730,10 +1782,10 @@
    "region": "ID-LOM",
    "spot": "GERUPUK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 3 %"
    ],
    "facing": 117,
-   "swell": 207,
+   "swell": 208,
    "near": null,
    "flipped": false,
    "top": true,
@@ -1743,10 +1795,10 @@
    "region": "ID-LOM",
    "spot": "DON DON",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 0,
-   "swell": 207,
+   "swell": 208,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1756,10 +1808,10 @@
    "region": "ID-LOM",
    "spot": "EKAS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 303,
-   "swell": 208,
+   "swell": 209,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1772,7 +1824,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 322,
-   "swell": 208,
+   "swell": 209,
    "near": 234,
    "flipped": false,
    "top": true,
@@ -1785,7 +1837,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 330,
-   "swell": 208,
+   "swell": 209,
    "near": 234,
    "flipped": false,
    "top": true,
@@ -1795,23 +1847,23 @@
    "region": "IE-NW",
    "spot": "MULLAGHMORE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 95 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 %"
    ],
    "facing": 37,
-   "swell": 283,
+   "swell": 285,
    "near": 315,
    "flipped": false,
    "top": true,
-   "share_long": 0.0024236548715462916
+   "share_long": 0.002421307506053269
   },
   {
    "region": "IS-ALL",
    "spot": "THORLAKSHOFN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
    ],
    "facing": 61,
-   "swell": 197,
+   "swell": 201,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1834,10 +1886,10 @@
    "region": "LK-E",
    "spot": "ARUGAM BAY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 84 %) y en 92 días 0 %"
    ],
    "facing": 22,
-   "swell": 182,
+   "swell": 181,
    "near": 123,
    "flipped": false,
    "top": true,
@@ -1847,10 +1899,10 @@
    "region": "MA-TAG",
    "spot": "BOILERS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 185,
-   "swell": 320,
+   "swell": 319,
    "near": 230,
    "flipped": false,
    "top": true,
@@ -1860,10 +1912,10 @@
    "region": "MA-TAG",
    "spot": "KILLER POINT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 213,
-   "swell": 320,
+   "swell": 319,
    "near": 224,
    "flipped": false,
    "top": true,
@@ -1873,10 +1925,10 @@
    "region": "MA-TAG",
    "spot": "ANCHOR POINT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 199,
-   "swell": 320,
+   "swell": 319,
    "near": 225,
    "flipped": false,
    "top": true,
@@ -1886,10 +1938,10 @@
    "region": "MA-TAG",
    "spot": "LA SOURCE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 189,
-   "swell": 320,
+   "swell": 319,
    "near": 226,
    "flipped": false,
    "top": false,
@@ -1899,10 +1951,10 @@
    "region": "MA-TAG",
    "spot": "HASH POINT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 188,
-   "swell": 320,
+   "swell": 319,
    "near": 226,
    "flipped": false,
    "top": true,
@@ -1912,10 +1964,10 @@
    "region": "MA-TAG",
    "spot": "MYSTERIES",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 199,
-   "swell": 320,
+   "swell": 319,
    "near": 225,
    "flipped": false,
    "top": false,
@@ -1925,10 +1977,10 @@
    "region": "MA-TAG",
    "spot": "AGADIR",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 200,
-   "swell": 320,
+   "swell": 319,
    "near": 225,
    "flipped": false,
    "top": false,
@@ -1938,10 +1990,10 @@
    "region": "MA-TAG",
    "spot": "ESSAOUIRA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
    ],
    "facing": 153,
-   "swell": 322,
+   "swell": 321,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1951,10 +2003,10 @@
    "region": "MG-ALL",
    "spot": "ANAKAO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 2 %"
    ],
    "facing": 299,
-   "swell": 211,
+   "swell": 212,
    "near": null,
    "flipped": false,
    "top": false,
@@ -1967,7 +2019,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 %"
    ],
    "facing": 317,
-   "swell": 203,
+   "swell": 202,
    "near": 206,
    "flipped": false,
    "top": false,
@@ -1980,7 +2032,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) y en 92 días 0 %"
    ],
    "facing": 90,
-   "swell": 216,
+   "swell": 215,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2006,7 +2058,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 %"
    ],
    "facing": 123,
-   "swell": 219,
+   "swell": 217,
    "near": 187,
    "flipped": false,
    "top": false,
@@ -2016,10 +2068,10 @@
    "region": "MZ-INH",
    "spot": "BARRA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 84 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 88 %) y en 92 días 3 %"
    ],
    "facing": 14,
-   "swell": 107,
+   "swell": 106,
    "near": 104,
    "flipped": false,
    "top": false,
@@ -2032,7 +2084,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 321,
-   "swell": 218,
+   "swell": 217,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2042,35 +2094,23 @@
    "region": "NZ-AKL",
    "spot": "PORT WAIKATO",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 358,
    "swell": 243,
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.02171985815602837
-  },
-  {
-   "region": "NZ-NTL",
-   "spot": "BAYLYS BEACH",
-   "why": [
-    "2.2 m de media, más del doble de la zona (1.1 m)"
-   ],
-   "facing": 235,
-   "swell": 227,
-   "near": null,
-   "flipped": false,
-   "top": false
+   "share_long": 0.018617021276595744
   },
   {
    "region": "NZ-OTA",
    "spot": "KARITANE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 284,
-   "swell": 148,
+   "swell": 146,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2080,10 +2120,10 @@
    "region": "NZ-OTA",
    "spot": "WHAREAKEAKE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
    ],
    "facing": 311,
-   "swell": 148,
+   "swell": 146,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2093,14 +2133,14 @@
    "region": "NZ-OTA",
    "spot": "ARAMOANA SPIT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 3 %"
    ],
    "facing": 353,
-   "swell": 148,
+   "swell": 146,
    "near": null,
    "flipped": false,
    "top": true,
-   "share_long": 0.026595744680851064
+   "share_long": 0.025709219858156027
   },
   {
    "region": "NZ-WC",
@@ -2109,7 +2149,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 %"
    ],
    "facing": 43,
-   "swell": 268,
+   "swell": 269,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2159,7 +2199,7 @@
     "1.1 m de media, más del doble de la zona (0.4 m)"
    ],
    "facing": 183,
-   "swell": 212,
+   "swell": 213,
    "near": null,
    "flipped": false,
    "top": false
@@ -2230,13 +2270,26 @@
    "share_long": 0.031471631205673756
   },
   {
+   "region": "PT-AZO",
+   "spot": "ALMOXARIFE",
+   "why": [
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 26 %) y en 92 días 1 %"
+   ],
+   "facing": 78,
+   "swell": 274,
+   "near": null,
+   "flipped": false,
+   "top": false,
+   "share_long": 0.006648936170212766
+  },
+  {
    "region": "RE-ALL",
    "spot": "BOUCAN CANOT",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 %"
    ],
    "facing": 307,
-   "swell": 208,
+   "swell": 207,
    "near": 258,
    "flipped": false,
    "top": false,
@@ -2259,10 +2312,10 @@
    "region": "TO-ALL",
    "spot": "PASS LEFTS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 45 %) y en 92 días 0 %"
    ],
    "facing": 5,
-   "swell": 130,
+   "swell": 135,
    "near": 271,
    "flipped": false,
    "top": false,
@@ -2272,10 +2325,10 @@
    "region": "TO-ALL",
    "spot": "PASS RIGHTS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 43 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 45 %) y en 92 días 0 %"
    ],
    "facing": 5,
-   "swell": 130,
+   "swell": 135,
    "near": 271,
    "flipped": false,
    "top": false,
@@ -2301,7 +2354,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 130,
-   "swell": 255,
+   "swell": 252,
    "near": 201,
    "flipped": false,
    "top": true,
@@ -2314,7 +2367,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 130,
-   "swell": 255,
+   "swell": 252,
    "near": 198,
    "flipped": false,
    "top": true,
@@ -2327,7 +2380,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 130,
-   "swell": 255,
+   "swell": 252,
    "near": 198,
    "flipped": false,
    "top": false,
@@ -2353,7 +2406,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 5 %"
    ],
    "facing": 298,
-   "swell": 209,
+   "swell": 208,
    "near": 260,
    "flipped": false,
    "top": false,
@@ -2366,7 +2419,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 0,
-   "swell": 209,
+   "swell": 208,
    "near": 259,
    "flipped": false,
    "top": false,
@@ -2379,7 +2432,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 349,
-   "swell": 209,
+   "swell": 208,
    "near": 264,
    "flipped": false,
    "top": false,
@@ -2396,7 +2449,7 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.005479452054794521
+   "share_long": 0.00502283105022831
   },
   {
    "region": "US-FL",
@@ -2409,7 +2462,7 @@
    "near": 216,
    "flipped": false,
    "top": false,
-   "share_long": 0.016439909297052153
+   "share_long": 0.016338028169014085
   },
   {
    "region": "US-FL",
@@ -2422,16 +2475,16 @@
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.016439909297052153
+   "share_long": 0.016338028169014085
   },
   {
    "region": "US-GULF",
    "spot": "PADRE SEASHORE",
    "why": [
-    "1.2 m de media, más del doble de la zona (0.6 m)"
+    "1.1 m de media, más del doble de la zona (0.5 m)"
    ],
    "facing": 112,
-   "swell": 101,
+   "swell": 98,
    "near": null,
    "flipped": false,
    "top": false
@@ -2443,11 +2496,11 @@
     "las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 1 %"
    ],
    "facing": 330,
-   "swell": 69,
+   "swell": 68,
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.0070921985815602835
+   "share_long": 0.006648936170212766
   },
   {
    "region": "US-HI-OAS",
@@ -2456,7 +2509,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 %"
    ],
    "facing": 284,
-   "swell": 175,
+   "swell": 173,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2469,7 +2522,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 2 %"
    ],
    "facing": 268,
-   "swell": 175,
+   "swell": 173,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2482,7 +2535,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 2 %"
    ],
    "facing": 268,
-   "swell": 175,
+   "swell": 173,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2495,7 +2548,7 @@
     "las olas casi nunca le entran de frente (3 % de las horas; la zona 96 %) y en 92 días 3 %"
    ],
    "facing": 255,
-   "swell": 160,
+   "swell": 157,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2505,14 +2558,14 @@
    "region": "US-NE",
    "spot": "BEACH HAVEN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 0 %"
    ],
    "facing": 276,
-   "swell": 114,
+   "swell": 115,
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.002176278563656148
+   "share_long": 0.002177463255307567
   },
   {
    "region": "US-PNW",
@@ -2534,7 +2587,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
    ],
    "facing": 162,
-   "swell": 305,
+   "swell": 304,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2544,23 +2597,23 @@
    "region": "US-SE",
    "spot": "SURF CITY PIER",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 98 %) y en 92 días 2 %"
    ],
    "facing": 2,
-   "swell": 115,
+   "swell": 117,
    "near": null,
    "flipped": false,
    "top": false,
-   "share_long": 0.020390070921985817
+   "share_long": 0.01950354609929078
   },
   {
    "region": "ZA-WC-CPT",
    "spot": "LLANDUDNO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
    ],
    "facing": 335,
-   "swell": 234,
+   "swell": 235,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2570,10 +2623,10 @@
    "region": "ZA-WC-CPT",
    "spot": "DUNGEONS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 1 %"
    ],
    "facing": 101,
-   "swell": 234,
+   "swell": 235,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2581,22 +2634,9 @@
   },
   {
    "region": "ZA-WC-CPT",
-   "spot": "SUNSET REEF",
-   "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 73 %) y en 92 días 5 %"
-   ],
-   "facing": 320,
-   "swell": 233,
-   "near": null,
-   "flipped": false,
-   "top": true,
-   "share_long": 0.04831560283687943
-  },
-  {
-   "region": "ZA-WC-CPT",
    "spot": "LONG BEACH",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
    ],
    "facing": 343,
    "swell": 233,
@@ -2609,10 +2649,10 @@
    "region": "ZA-WC-CPT",
    "spot": "KOGEL BAY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
    ],
    "facing": 332,
-   "swell": 215,
+   "swell": 216,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2622,10 +2662,10 @@
    "region": "ZA-WC-CPT",
    "spot": "ROOI-ELS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
    ],
    "facing": 328,
-   "swell": 215,
+   "swell": 216,
    "near": null,
    "flipped": false,
    "top": false,
@@ -2635,12 +2675,12 @@
    "region": "ZA-WC-GR",
    "spot": "INNER POOL",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 78 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
    ],
    "facing": 331,
-   "swell": 192,
+   "swell": 199,
    "near": 141,
-   "flipped": true,
+   "flipped": false,
    "top": true,
    "share_long": 0.0
   },
@@ -2648,10 +2688,10 @@
    "region": "ZA-WC-WCO",
    "spot": "ELANDS BAY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 27 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 1 %"
    ],
    "facing": 339,
-   "swell": 245,
+   "swell": 246,
    "near": null,
    "flipped": false,
    "top": true,
@@ -2661,7 +2701,7 @@
    "region": "ZA-WC-WCO",
    "spot": "YZERFONTEIN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 27 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 %"
    ],
    "facing": 351,
    "swell": 237,
@@ -3696,7 +3736,12 @@
    "lon": -84.5869
   },
   {
-   "status": "sin fuente",
+   "km": 1.24,
+   "qid": "geonames:2618718",
+   "label": "Klitmøller",
+   "wd_lat": 57.04072,
+   "wd_lon": 8.49144,
+   "status": "ok",
    "region": "DK-ALL",
    "spot": "KLITMOLLER",
    "lat": 57.0419,
@@ -4148,7 +4193,12 @@
    "lon": -1.4418
   },
   {
-   "status": "sin fuente",
+   "km": 0.99,
+   "qid": "geonames:11072940",
+   "label": "Plage Nord",
+   "wd_lat": 43.68023,
+   "wd_lon": -1.44015,
+   "status": "ok",
    "region": "FR-HOS",
    "spot": "LA NORD",
    "lat": 43.6891,
@@ -4844,7 +4894,12 @@
    "lon": 138.9727
   },
   {
-   "status": "sin fuente",
+   "km": 2.74,
+   "qid": "geonames:1859396",
+   "label": "Kizaki",
+   "wd_lat": 31.83289,
+   "wd_lon": 131.4399,
+   "status": "lejos",
    "region": "JP-KYU",
    "spot": "KISAKIHAMA",
    "lat": 31.8132,
@@ -5333,7 +5388,12 @@
    "lon": 174.466
   },
   {
-   "status": "sin fuente",
+   "km": 1.79,
+   "qid": "geonames:2179328",
+   "label": "Whangamata",
+   "wd_lat": -37.2,
+   "wd_lon": 175.86667,
+   "status": "lejos",
    "region": "NZ-BOP",
    "spot": "WHANGAMATA BAR",
    "lat": -37.2131,
@@ -5499,7 +5559,12 @@
    "lon": 170.6737
   },
   {
-   "status": "sin fuente",
+   "km": 1.17,
+   "qid": "geonames:2193864",
+   "label": "Aramoana",
+   "wd_lat": -45.78333,
+   "wd_lon": 170.7,
+   "status": "ok",
    "region": "NZ-OTA",
    "spot": "ARAMOANA SPIT",
    "lat": -45.7761,
@@ -6507,7 +6572,12 @@
    "lon": -80.4464
   },
   {
-   "status": "sin fuente",
+   "km": 0.26,
+   "qid": "geonames:5856193",
+   "label": "Honolii Cove",
+   "wd_lat": 19.7562,
+   "wd_lon": -155.09142,
+   "status": "ok",
    "region": "US-HI-BIG",
    "spot": "HONOLI'I",
    "lat": 19.7584,
@@ -6992,9 +7062,9 @@
    "lon": 18.3266
   }
  ],
- "season_cleared": 33,
+ "season_cleared": 41,
  "open_meteo": {
   "requests": 35,
-  "calls": 2086
+  "calls": 2168
  }
 }
