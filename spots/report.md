@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-212 regiones, 2496 picos. Errores: 0. Avisos: 5.
+212 regiones, 2497 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
@@ -146,7 +146,7 @@
 | ID-KRU | 4 | 320 | ncep_gfswave016 | gfs_seamless | 1 | 341 m | 0 |
 | PH-SIA | 8 | 436 | ncep_gfswave016 | gfs_seamless | 1 | 715 m | 0 |
 | PH-LUZ | 5 | 393 | ncep_gfswave016 | gfs_seamless | 2 | 903 m | 0 |
-| PH-EAS | 2 | 279 | ncep_gfswave016 | gfs_seamless | 2 | 325 m | 0 |
+| PH-EAS | 3 | 346 | ncep_gfswave016 | gfs_seamless | 3 | 324 m | 0 |
 | LK-E | 8 | 446 | ncep_gfswave016 | gfs_seamless | 1 | 577 m | 0 |
 | LK-S | 11 | 588 | ncep_gfswave016 | gfs_seamless | 2 | 212 m | 0 |
 | MV-NMA | 6 | 356 | ncep_gfswave016 | gfs_seamless | 1 | 590 m | 0 |

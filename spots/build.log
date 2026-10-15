@@ -130,7 +130,7 @@ ID-NIA       3 spots   291 bytes  vbb113c
 ID-KRU       4 spots   320 bytes  v978681
 PH-SIA       8 spots   436 bytes  v07cd8b
 PH-LUZ       5 spots   393 bytes  ve3f288
-PH-EAS       2 spots   279 bytes  vcdae46
+PH-EAS       3 spots   346 bytes  vc3ec9a
 LK-E         8 spots   446 bytes  v69cbfd
 LK-S        11 spots   588 bytes  v93c3cf
 MV-NMA       6 spots   356 bytes  v75f10f
@@ -173,7 +173,6 @@ RE-ALL       8 spots   463 bytes  vf1b4bd
 MU-ALL       3 spots   261 bytes  v0c8dae
 CV-ALL       3 spots   277 bytes  vb954b7
 FR-PBA      24 spots  1077 bytes  vae6eab
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 FR-HOS      16 spots   801 bytes  vd4f50e
 FR-GIR      18 spots   907 bytes  vea5a00
 FR-VEN      12 spots   698 bytes  v4637b6
@@ -216,4 +215,4 @@ warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-212 regions, 2496 spots, 0 errors, 5 warnings
+212 regions, 2497 spots, 0 errors, 5 warnings
