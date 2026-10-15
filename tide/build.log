@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 45 s
+catalogs: 3902 stations in 76 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -459,5 +459,4 @@ validación GOT5.6 imi-aranmore Aranmore: RMS 6.7 cm, rango 416 cm, modelo/ofici
 validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.7 cm, rango 100 cm, modelo/oficial 0.97
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 10.4 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-removing tide/ticon-c1874d (no region uses it)
-done: 426 ports, 208 regions with ports, 2328/2439 spots, 10650 files 28.2 MB, 455 s
+done: 426 ports, 208 regions with ports, 2328/2439 spots, 10650 files 28.2 MB, 553 s
