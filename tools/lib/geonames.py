@@ -12,7 +12,7 @@ import urllib.request
 import zipfile
 
 from . import geo
-from .names import fold
+from .names import key
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.normpath(os.path.join(HERE, "..", ".cache", "geonames"))
@@ -44,6 +44,11 @@ def _download(cc):
     return None
 
 
+def path(cc):
+    """The country's dump (tools/.cache/geonames/<CC>.txt, downloaded the first time), or None."""
+    return _download(cc.upper())
+
+
 def rows(cc):
     """[(name, lat, lon, feature code, geonameid, folded names)] of a country's useful places."""
     cc = cc.upper()
@@ -56,7 +61,7 @@ def rows(cc):
             for r in csv.reader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
                 if len(r) < 9 or r[7] not in RANK:
                     continue
-                names = {fold(r[1]), fold(r[2])} | {fold(a) for a in r[3].split(",") if a}
+                names = {key(r[1]), key(r[2])} | {key(a) for a in r[3].split(",") if a}
                 out.append((r[1], float(r[4]), float(r[5]), r[7], r[0], names))
     _rows[cc] = out
     return out
@@ -65,7 +70,7 @@ def rows(cc):
 def named_near(lat, lon, variants, cc, km):
     """Places of country cc within km of (lat, lon) named like one of the variants (accents and case
     aside: a name containing the variant, or contained in it): candidates {lat, lon, name, kind, src}."""
-    want = [fold(v) for v in variants if len(v) >= 3]
+    want = [key(v) for v in variants if len(key(v)) >= 3]
     out = []
     for name, la, lo, code, gid, names in rows(cc):
         if abs(la - lat) > km / 100.0 or geo.km((lat, lon), (la, lo)) > km:

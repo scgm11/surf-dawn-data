@@ -171,9 +171,17 @@ llevarla a 10 m); `validation/stations.csv`, todas las estaciones leídas con su
 la orientación contra las olas de las últimas dos semanas en su punto de olas (se marca el que casi
 nunca las recibe de frente mientras su zona sí: suele ser una orientación del lado equivocado de una
 punta o una laguna), la altura contra la mediana de su zona (sin olas, o más del doble) y, para los
-emblemáticos (`top`), la posición contra el ítem de Wikidata con su nombre más cercano. El JSON tiene
-`flags` (`region`, `spot`, `why`, `top`), `flagship` (`status`: `ok`, `lejos`, `sin fuente` o
-`error`; `km`, `qid`) y, por región, la mediana de la altura y de las horas con olas de frente.
+emblemáticos (`top`), la posición contra el ítem más cercano con su nombre en Wikidata o GeoNames
+(si no hay, OpenStreetMap). El JSON tiene `flags` (`region`, `spot`, `why`, `top`), `flagship`
+(`status`: `ok`, `lejos`, `revisado`, `sin fuente` o `error`; `km`, `qid`, `wd_lat`, `wd_lon`) y, por
+región, la mediana de la altura y de las horas con olas de frente.
+
+### `validation/lookup.md` — búsqueda por nombre
+
+`tools/lookup.py` (Action `lookup.yml`, a mano) lista, para los emblemáticos sin fuente o lejos de la
+suya (o los picos que se le pidan), todo lo que Wikidata (con qué es cada ítem), Wikipedia, GeoNames
+(de cualquier tipo) y OpenStreetMap tienen con su nombre o una de sus palabras a 15 km. Es para la
+revisión a mano: no cambia semillas.
 
 ### `models.csv` — modelos elegidos (lo lee `build_zones.py`)
 

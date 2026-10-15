@@ -9,7 +9,7 @@ repo y los formatos están en [`docs/formatos.md`](docs/formatos.md).
 |---|---|---|
 | `spots/` | Los picos del mundo en zonas de hasta 60: una por región (`r/`), los índices por continente (`idx.json`, `idx/`) y las celdas de 10° que el reloj mira por posición (`g/`) | `tools/build_zones.py` (Action `zones.yml`) |
 | `tide/` | Mareas de los puertos de cada zona, mes a mes, con armónicos de respaldo | `tools/tide/` (Action `tides.yml`), `tools/sohma_tide.py` y `tools/ciram_tide.py` (Action `update.yml`) |
-| `validation/` | Los modelos de olas y viento de Open-Meteo contra boyas y estaciones, por región; y los controles de cada pico (`spots.md`) | `validate/` (Action `validation.yml`), `tools/check_spots.py` (Action `checks.yml`) |
+| `validation/` | Los modelos de olas y viento de Open-Meteo contra boyas y estaciones, por región; y los controles de cada pico (`spots.md`) | `validate/` (Action `validation.yml`), `tools/check_spots.py` (Action `checks.yml`), `tools/lookup.py` (Action `lookup.yml`) |
 | `models.csv` | Los modelos elegidos por región (el resto usa la regla por defecto) | a mano, desde `validation/models-suggested.csv` |
 | `seeds/` | Las tablas de las que sale todo: continentes, países, regiones y picos | a mano ([`seeds/README.md`](seeds/README.md)) |
 

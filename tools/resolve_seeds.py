@@ -35,7 +35,7 @@ from tools.lib.osm import named_near, nominatim  # noqa: E402
 
 GN_KIND = {"BCH": "beach", "BCHS": "beach", "RF": "surf", "RFC": "surf", "PT": "cape", "PTS": "cape", "CAPE": "cape",
            "HDLD": "headland", "BAY": "bay", "BAYS": "bay", "COVE": "bay", "INLT": "bay"}
-from tools.lib.names import fold, variants  # noqa: E402
+from tools.lib.names import key, variants  # noqa: E402
 
 ROOT = seeds.ROOT
 LOG = os.path.join(ROOT, "seeds", "resolve.log")
@@ -46,8 +46,8 @@ RANK = {"beach": 0, "surf": 0, "bay": 1, "cape": 1, "peninsula": 1, "headland": 
 
 
 def matches(cand, names):
-    f = fold(cand["name"])
-    return any(fold(v) in f for v in names)
+    f = key(cand["name"])
+    return any(key(v) in f for v in names)
 
 
 def coastal(lat, lon, km=osm.SNAP_MAX_M / 2000.0):
@@ -80,7 +80,7 @@ def resolve(code, row, cc, use_overpass=True, far_km=FAR_KM):
             s = (0.0,) if coastal(c["lat"], c["lon"]) else None
         if s is None or s[0] > osm.SNAP_MAX_M / 2:
             continue
-        full = fold(row["name"]) in fold(c["name"]) or fold(c["name"]) in fold(row["name"])
+        full = key(row["name"]) in key(c["name"]) or key(c["name"]) in key(row["name"])
         good.append((0 if full else 1, RANK.get(c["kind"], 3), geo.km(seed, (c["lat"], c["lon"])), s[0], c))
     good.sort(key=lambda g: (g[0], g[1], g[2]))
     return good, len(cands)
