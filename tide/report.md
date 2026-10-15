@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-15 03:28 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-15 03:47 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -116,7 +116,6 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-63d295 | got5.6:-33.023,27.919 | GOT5.6 33.023S 27.919E (ZA-EC-PE) | MSL+105 cm (modelo) | 6..210 | — | 1.4 |
 | got-642556 | got5.6:-29.976,-50.121 | GOT5.6 29.976S 50.121W (BR-RS) | MSL+48 cm (modelo) | 6..91 | — | 1.2 |
 | got-668790 | got5.6:-34.129,-71.998 | GOT5.6 34.129S 71.998W (CL-PIC) | MSL+84 cm (modelo) | 5..186 | — | 1.1 |
-| got-684e80 | got5.6:-8.973,116.729 | GOT5.6 8.973S 116.729E (ID-SBW) | MSL+157 cm (modelo) | 5..314 | — | 2.3 |
 | got-68a040 | got5.6:-27.720,114.151 | GOT5.6 27.720S 114.151E (AU-WA-NW) | MSL+56 cm (modelo) | 5..111 | — | 1.1 |
 | got-6cb02d | got5.6:-37.995,-57.544 | GOT5.6 37.995S 57.544W (AR-MDP) | MSL+89 cm (modelo) | 6..187 | — | 1.6 |
 | got-6d1313 | got5.6:23.400,-110.211 | GOT5.6 23.400N 110.211W (MX-BCS) | MSL+116 cm (modelo) | 5..220 | — | 1.6 |
@@ -126,6 +125,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-713511 | got5.6:20.214,-87.429 | GOT5.6 20.214N 87.429W (MX-CAR) | MSL+22 cm (modelo) | 5..38 | — | 0.4 |
 | got-72b502 | got5.6:13.659,124.398 | GOT5.6 13.659N 124.398E (PH-EAS) | MSL+125 cm (modelo) | 5..223 | — | 1.4 |
 | got-770eaa | got5.6:-7.148,-34.796 | GOT5.6 7.148S 34.796W (BR-NE-RN) | MSL+143 cm (modelo) | 6..283 | — | 1.5 |
+| got-7829cd | got5.6:-8.931,116.741 | GOT5.6 8.931S 116.741E (ID-SBW) | MSL+155 cm (modelo) | 6..309 | — | 2.2 |
 | got-78d608 | got5.6:-38.780,143.400 | GOT5.6 38.780S 143.400E (AU-VIC-W) | MSL+94 cm (modelo) | 6..172 | — | 1.3 |
 | got-798f17 | got5.6:-38.589,-58.740 | GOT5.6 38.589S 58.740W (AR-MDP) | MSL+103 cm (modelo) | 6..205 | — | 1.4 |
 | got-799775 | got5.6:-10.893,122.812 | GOT5.6 10.893S 122.812E (ID-ROT) | MSL+193 cm (modelo) | 5..380 | — | 2.7 |
@@ -1269,7 +1269,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 ### ID-SBW — Sumbawa (9 picos)
 
 - `got-82a78a` GOT5.6 8.816S 118.376E (ID-SBW) — modelo global GOT5.6: 5 picos a 0.0–2.2 km, radio 13 km
-- `got-684e80` GOT5.6 8.973S 116.729E (ID-SBW) — modelo global GOT5.6: 4 picos a 0.0–4.9 km, radio 15 km
+- `got-7829cd` GOT5.6 8.931S 116.741E (ID-SBW) — modelo global GOT5.6: 4 picos a 0.0–8.2 km, radio 19 km
 
 ### ID-SMB — Sumba (2 picos)
 
@@ -1531,10 +1531,10 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### FR-HOS — Hossegor y Capbreton (16 picos)
 
-- `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 8 picos a 33–37 km, radio 48 km
-- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 8 picos a 6.2–25 km, radio 35 km (niveles 2,4)
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): L'ESTACADE → ticon-920ef6, SANTOCHA → ticon-920ef6, LE PREVENT → ticon-920ef6, LA PISTE → ticon-920ef6, LA SUD → ticon-920ef6, LA CENTRALE → ticon-920ef6, LA GRAVIERE → ticon-920ef6, LES ESTAGNOTS → ticon-920ef6
-- Descartadas: `ticon-66c157` 53 km, cruza 13 km de tierra; `ticon-b486e0` 105 km, cruza 43 km de tierra
+- `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 11 picos a 33–40 km, radio 50 km
+- `ticon-920ef6` TICON-3 43.527N 1.515W (gesla.meds) — TICON-3, misma costa: 5 picos a 6.2–25 km, radio 35 km (niveles 2,4)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): L'ESTACADE → ticon-920ef6, SANTOCHA → ticon-920ef6, LE PREVENT → ticon-920ef6, LA PISTE → ticon-920ef6, LA SUD → ticon-920ef6, LA CENTRALE → ticon-920ef6, LA GRAVIERE → ticon-920ef6, LA NORD → ticon-920ef6, LES CULS NUS → ticon-920ef6, LES ESTAGNOTS → ticon-920ef6, LE PENON → ticon-920ef6
+- Descartadas: `ticon-66c157` 53 km, cruza 43 km de tierra; `ticon-b486e0` 105 km, cruza 43 km de tierra
 
 ### FR-GIR — Gironda y Landas norte (18 picos)
 
