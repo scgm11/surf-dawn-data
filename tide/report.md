@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-14 21:45 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-15 03:10 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 425 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 167); más los 3 de Uruguay y Brasil, sin cambios.
+- Puertos nuevos: 426 (got 162, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 3 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 208 de 208 (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
-- Picos con puerto: 2326 de 2437.
-- Archivos: 10625, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
+- Picos con puerto: 2328 de 2439.
+- Archivos: 10650, 28.2 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
@@ -346,6 +346,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | ticon-3eec34 | ticon3:-14.283,-170.683 | TICON-3 14.283S 170.683W (gesla.uhslc) | MSL+ΣA (MSL+81 cm) | 22..147 | — | 0.7 |
 | ticon-406688 | ticon3:38.533,-28.622 | TICON-3 38.533N 28.622W (gesla.noaa) | MSL+ΣA (MSL+105 cm) | 33..186 | — | 1.2 |
 | ticon-41bc98 | ticon3:-12.068,-77.167 | TICON-3 12.068S 77.167W (gesla.cmems) | MSL+ΣA (MSL+91 cm) | 36..155 | — | 0.7 |
+| ticon-42b1f5 | ticon3:13.775,109.255 | TICON-3 13.775N 109.255E (gesla.uhslc) | MSL+ΣA (MSL+150 cm) | 35..258 | — | 0.8 |
 | ticon-440073 | ticon3:28.936,-95.294 | TICON-3 28.936N 95.294W (gesla.noaa) | MSL+ΣA (MSL+93 cm) | 25..145 | — | 1.1 |
 | ticon-448fcc | ticon3:68.213,14.482 | TICON-3 68.213N 14.482E (gesla.uhslc) | MSL+ΣA (MSL+236 cm) | 66..413 | — | 1.7 |
 | ticon-44917a | ticon3:61.934,5.113 | TICON-3 61.934N 5.113E (gesla.uhslc) | MSL+ΣA (MSL+144 cm) | 37..244 | — | 1.1 |
@@ -431,7 +432,6 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | ticon-bfaae8 | ticon3:-32.056,115.740 | TICON-3 32.056S 115.740E (gesla.noaa) | MSL+ΣA (MSL+73 cm) | 26..127 | — | 0.5 |
 | ticon-c0a455 | ticon3:-33.825,151.258 | TICON-3 33.825S 151.258E (gesla.wsv) | MSL+ΣA (MSL+139 cm) | 51..248 | — | 1.0 |
 | ticon-c17f38 | ticon3:4.183,73.517 | TICON-3 4.183N 73.517E (gesla.uhslc) | MSL+ΣA (MSL+100 cm) | 34..159 | — | 1.9 |
-| ticon-c1874d | ticon3:-3.717,-38.483 | TICON-3 3.717S 38.483W (gesla.cmems) | MSL+ΣA (MSL+208 cm) | 55..371 | — | 2.0 |
 | ticon-c238b7 | ticon3:28.147,-15.408 | TICON-3 28.147N 15.408W (gesla.cmems) | MSL+ΣA (MSL+182 cm) | 47..326 | — | 1.8 |
 | ticon-c39d93 | ticon3:44.667,-63.583 | TICON-3 44.667N 63.583W (gesla.cmems) | MSL+ΣA (MSL+153 cm) | 43..256 | — | 1.2 |
 | ticon-c4827f | ticon3:64.151,-21.940 | TICON-3 64.151N 21.940W (gesla.noaa) | MSL+ΣA (MSL+307 cm) | 79..536 | — | 2.4 |
@@ -462,6 +462,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | ticon-e6afd5 | ticon3:-7.752,109.017 | TICON-3 7.752S 109.017E (gesla.noaa) | MSL+ΣA (MSL+179 cm) | 67..298 | — | 1.3 |
 | ticon-ea07a4 | ticon3:43.345,-124.322 | TICON-3 43.345N 124.322W (gesla.uhslc) | MSL+ΣA (MSL+260 cm) | 59..424 | — | 1.3 |
 | ticon-ec093c | ticon3:-35.109,138.467 | TICON-3 35.109S 138.467E (gesla.jodc_jma) | MSL+ΣA (MSL+210 cm) | 98..341 | — | 3.3 |
+| ticon-ee2dcc | ticon3:-3.717,-38.467 | TICON-3 3.717S 38.467W (gesla.cmems) | MSL+ΣA (MSL+207 cm) | 54..372 | — | 1.7 |
 | ticon-eede5f | ticon3:33.450,-118.483 | TICON-3 33.450N 118.483W (gesla.bom) | MSL+ΣA (MSL+197 cm) | 62..326 | — | 2.3 |
 | ticon-f1b139 | ticon3:14.300,-91.917 | TICON-3 14.300N 91.917W (gesla.usgs) | MSL+ΣA (MSL+148 cm) | 45..260 | — | 1.6 |
 | ticon-f43039 | ticon3:46.281,-124.046 | TICON-3 46.281N 124.046W (gesla.nhs) | MSL+ΣA (MSL+287 cm) | 75..465 | — | 1.5 |
@@ -559,13 +560,13 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BUSCA VIDA → got-b18ed4
 - Descartadas: `ticon-f5b09a` 61 km, cruza 51 km de tierra; `ticon-890b60` 80 km, cruza 25 km de tierra
 
-### BR-NE-CE — Ceará (12 picos)
+### BR-NE-CE — Ceará (13 picos)
 
-- `ticon-c1874d` TICON-3 3.717S 38.483W (gesla.cmems) — TICON-3, misma costa: 6 picos a 2.0–102 km, radio 113 km (niveles 2,4)
+- `ticon-ee2dcc` TICON-3 3.717S 38.467W (gesla.cmems) — TICON-3, misma costa: 7 picos a 0.3–104 km, radio 114 km (niveles 2,4)
 - `ticon-cf2b1c` TICON-3 4.817S 37.050W (gesla.cmems) — TICON-3, misma costa: 1 picos a 81–81 km, radio 92 km
 - `got-0a9164` GOT5.6 2.497S 44.248W (BR-NE-CE) — modelo global GOT5.6: 2 picos a 0.0–7.9 km, radio 18 km
 - Sin puerto (Open-Meteo): JERICOACOARA, PREÁ, MUNDAÚ (ticon-c1874d a 115 km: cruza 22 km de tierra)
-- Descartadas: `ticon-ee2dcc` 0.3 km, cruza 22 km de tierra; `ticon-c1874d` 115 km, cruza 22 km de tierra
+- Descartadas: `ticon-c1874d` 2.0 km, cruza 22 km de tierra; `ticon-ee2dcc` 117 km, cruza 22 km de tierra
 
 ### BR-NE-RN — Rio Grande do Norte y Paraíba (13 picos)
 
@@ -578,7 +579,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 - `ticon-2b1454` TICON-3 8.350S 34.950W (gesla.noaa) — TICON-3, misma costa: 9 picos a 1.6–26 km, radio 37 km (niveles 2,4)
 - `got-aa96f4` GOT5.6 9.667S 35.710W (BR-NE-PE) — modelo global GOT5.6: 3 picos a 0.0–18 km, radio 28 km
-- `got-1afd1e` GOT5.6 11.000S 37.040W (BR-NE-PE) — modelo global GOT5.6: 2 picos a 0.0–5.8 km, radio 16 km
+- `got-1afd1e` GOT5.6 11.000S 37.040W (BR-NE-PE) — modelo global GOT5.6: 2 picos a 0.0–3.7 km, radio 14 km
 - Descartadas: `ticon-ead2f2` 8.4 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### BR-NOR — Fernando de Noronha (5 picos)
@@ -606,7 +607,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 - `got-5888b8` GOT5.6 36.070S 72.800W (CL-MAU) — modelo global GOT5.6: 4 picos a 0.0–35 km, radio 45 km
 - `got-def45c` GOT5.6 34.923S 72.174W (CL-MAU) — modelo global GOT5.6: 3 picos a 0.0–20 km, radio 31 km
-- `got-04ac46` GOT5.6 35.344S 72.430W (CL-MAU) — modelo global GOT5.6: 2 picos a 0.0–46 km, radio 57 km
+- `got-04ac46` GOT5.6 35.344S 72.430W (CL-MAU) — modelo global GOT5.6: 2 picos a 0.0–47 km, radio 58 km
 - Sin puerto (Open-Meteo): DICHATO, COCHOLGÜE, PUNTA LAVAPIÉ, LEBU, TIRÚA
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): CHANCO → got-5888b8
 
@@ -1392,9 +1393,10 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `got-b495c3` GOT5.6 12.787N 80.255E (IN-E) — modelo global GOT5.6: 2 picos a 0.0–20 km, radio 31 km
 - `got-e5aa1d` GOT5.6 11.978N 79.833E (IN-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
-### VN-ALL — Vietnam (4 picos)
+### VN-ALL — Vietnam (5 picos)
 
 - `ticon-458133` TICON-3 10.340N 107.072E (gesla.meds) — TICON-3, misma costa: 2 picos a 3.6–20 km, radio 30 km
+- `ticon-42b1f5` TICON-3 13.775N 109.255E (gesla.uhslc) — TICON-3, misma costa: 1 picos a 10–10 km, radio 21 km
 - `got-c38d4b` GOT5.6 16.062N 108.249E (VN-ALL) — modelo global GOT5.6: 2 picos a 0.0–7.1 km, radio 18 km
 
 ### KR-ALL — Corea del Sur (6 picos)
