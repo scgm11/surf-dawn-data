@@ -1,1 +1,21 @@
 20 datasets
+ALL allDatasets | * The List of All Active Datasets in this ERDDAP *
+ALL OACP-Argo-NATL | 2000-2014 climatology of the Subtropical Mode Waters and Permanent Pycnocline properties in the North Atlantic
+ALL ArgoFloats | Argo Float Measurements
+ALL ArgoFloats-synthetic-BGC | Argo float synthetic vertical profiles : BGC data
+ALL ArgoFloats-reference | Argo Reference Measurements
+ALL PCM-Argo | Argo, Profile Classification Model, North-Atlantic, Temperature
+ALL ArgoFloats-index | ArgoFloats index
+ALL ArgoFloats-reference-CTD | CTD Reference Measurements
+ALL drifter_hourly_qc | Global Drifter Program - 1 Hour Interpolated QC Drifter Data
+ALL drifter_6hour_qc | Global Drifter Program - 6 Hour Interpolated QC Drifter Data
+ALL gosud | GOSUD - Global Ocean Surface Underway Data
+ALL ariane_trajectories_qualitative | Numerical lagrangian data issued from river sources in Indonesia (2016-2020) - Ariane trajectories qualitative
+ALL coast_status | Numerical lagrangian data issued from river sources in Indonesia (2016-2020) - Coast status
+ALL OceanGlidersGDACTrajectories | OceanGliders GDAC trajectories
+ALL SDC_BAL_AGG_V2 | SDC Baltic Sea Aggregation V2
+ALL SDC_BLS_AGG_V2 | SDC Black Sea Aggregation V2
+ALL SDC_GLO_AGG_V2 | SDC Global Ocean Aggregation V2
+ALL SDC_MED_AGG_V2 | SDC Mediterranean Sea Aggregation V2
+ALL SDC_NATL_AGG_V2 | SDC North Atlantic Aggregation V2
+ALL SDC_BLS_DATA_TS_V1 | SDC_BlackSea_Collection_TS_V1

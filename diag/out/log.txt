@@ -16,3 +16,7 @@ OK 0.9s 29789 bytes https://erddap.ifremer.fr/erddap/tabledap/index.csv?page=1&i
 FAIL 2.3s https://erddap.puertos.es/erddap/tabledap/index.csv?page=1&itemsPerPage=5000: <urlopen error [Errno -2] Name or service not known>
 OK 0.8s 141297 bytes https://erddap.marine.ie/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
 OK 0.3s 3786 bytes https://data.cefas.co.uk/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 4.6s 1420991 bytes https://erddap.emodnet-physics.eu/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 1.3s 20384 bytes https://prod-erddap.emodnet-physics.eu/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+OK 1.4s 29789 bytes https://erddap.ifremer.fr/erddap/tabledap/index.csv?page=1&itemsPerPage=5000
+FAIL 0.8s https://erddap.socib.es/erddap/tabledap/index.csv?page=1&itemsPerPage=5000: <urlopen error [Errno -2] Name or service not known>

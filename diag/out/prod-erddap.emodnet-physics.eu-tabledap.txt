@@ -1,1 +1,15 @@
 14 datasets
+ALL allDatasets | * The List of All Active Datasets in this ERDDAP *
+ALL ecoss_db_annotated_sounds_data | ECoSS - DB of annotated sounds - DATA
+ALL ecoss_db_annotated_sounds_metadata | ECoSS - DB of annotated sounds - METADATA
+ALL ecoss_db_enhanced4AI_sounds_data | ECoSS - DB of enhanced4AI sounds - DATA
+ALL ecoss_db_enhanced4AI_sounds_metadata | ECoSS - DB of enhanced4AI sounds - METADATA
+ALL ecoss_db_testing_sounds_data | ECoSS - DB of sounds for testing - DATA
+ALL ecoss_db_testing_sounds_metadata | ECoSS - DB of sounds for testing - METADATA
+ALL ecoss_db_training_sounds_data | ECoSS - DB of sounds for training - DATA
+ALL ecoss_db_training_sounds_metadata | ECoSS - DB of sounds for training - METADATA
+ALL EMODPACE_NMDIS_PSMSL_L2A_SLEV_TG_TS | EMODPACE - Monthly sea level observation from in situ stations - relative to local reference
+ALL GLODAPv2_2021 | Global Ocean Data Analysis Project (GLODAP) v2.2021
+ALL GLODAPv2_2023 | Global Ocean Data Analysis Project (GLODAP) v2.2023
+ALL GRDC_MEAN_MONTHLY_DISCHARGE | GRDC MEAN MONTHLY DISCHARGE (MQ)
+ALL PSMSL_rlr_monthly | PSMSL Revised Local Reference (RLR) monthly data
