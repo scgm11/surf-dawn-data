@@ -6,16 +6,16 @@ BOODJIDUP,-34.0100,114.9860,R,L,local,,
 GAS BAY,-33.9970,114.9860,R,L,local,,
 GRUNTERS,-33.9890,114.9840,R,L,local,,
 SOUTHSIDE,-33.9810,114.9830,R,L,local,,Surfers Point
-MAIN BREAK,-33.9780,114.9830,R,K,local,top,Surfers Point; CT26; WC
+MAIN BREAK,-33.9780,114.9830,R,V,web:mondo.surf,top checked,Surfers Point; CT26; WC
 BOATRAMP,-33.9760,114.9835,R,L,local,,Surfers Point
 THE RIVERMOUTH,-33.9695,114.9835,R,K,local,,
-THE BOX,-33.9660,114.9780,R,K,local,top,ola grande; Cape Mentelle
+THE BOX,-33.9660,114.9780,R,V,wd:Q5034947,top checked,ola grande; Cape Mentelle
 THE WOMB,-33.9140,114.9770,R,L,local,,Ellensbrook
 LEFT HANDERS,-33.8900,114.9810,R,L,local,,
 HUZZAWOUIE,-33.8770,114.9830,R,L,local,,Gracetown
 SOUTH POINT,-33.8735,114.9825,R,L,local,,Gracetown
 COW BOMBIE,-33.8620,114.9760,R,L,local,,ola grande; Gracetown
-NORTH POINT,-33.8600,114.9800,R,K,local,top,Gracetown
+NORTH POINT,-33.8600,114.9800,R,V,web:mondo.surf,top checked,Gracetown
 GUILLOTINE,-33.8180,114.9860,R,L,local,,
 GALLOWS,-33.7800,114.9870,R,L,local,,
 HONEYCOMBS,-33.7330,114.9870,R,L,local,,

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 OLLIE'S POINT,10.8501,-85.8007,P,V,web:mondo.surf,,Potrero Grande; derecha; acceso difícil
-WITCH'S ROCK,10.8000,-85.6950,B,K,local,top,Playa Naranjo; dos fuentes difieren ~3 km
+WITCH'S ROCK,10.7934,-85.6804,B,V,web:mondo.surf,top,Playa Naranjo; dos fuentes difieren ~3 km
 PLAYA GRANDE,10.3300,-85.8530,B,K,local,,Las Baulas
 EL ESTERO,10.3090,-85.8450,B,K,local,,boca del estero norte de Tamarindo
 TAMARINDO,10.3000,-85.8450,B,K,local,top,

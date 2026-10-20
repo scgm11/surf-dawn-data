@@ -1,3 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
-TIGER STRIPES,0.2831,73.4525,R,K,web:mondo.surf,top,Gadhdhoo (Huvadhoo); posicion de mondo.surf y edition.mv
-BEACONS,0.2108,73.1421,R,L,web:surfnerd,top,Fiyoaree (Huvadhoo); una sola fuente
+TIGER STRIPES,0.2831,73.4525,R,V,web:mondo.surf,top checked,Gadhdhoo (Huvadhoo); posicion de mondo.surf y edition.mv
+BEACONS,0.2108,73.1421,R,V,web:mondo.surf,top checked,Fiyoaree (Huvadhoo); mondo.surf y surfnerd coinciden

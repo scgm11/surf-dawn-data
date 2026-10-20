@@ -1,11 +1,11 @@
 name,lat,lon,type,conf,src,flags,note
 BOILERS,30.6400,-9.8300,R,L,local,top checked,posicion dudosa; ola pesada
-KILLER POINT,30.5750,-9.7480,P,L,local,top,posicion dudosa
+KILLER POINT,30.5501,-9.7400,P,V,web:mondo.surf,top,al norte de Anchor Point
 ANCHOR POINT,30.5640,-9.7240,P,K,local,top,derecha larga; 3 km al norte de Taghazout
 LA SOURCE,30.5575,-9.7185,P,L,local,,
 HASH POINT,30.5530,-9.7150,P,K,local,top,
 MYSTERIES,30.5480,-9.7115,P,L,local,,posicion dudosa
-PANORAMAS,30.5390,-9.7035,P,K,local,top,
+PANORAMAS,30.5423,-9.7078,P,V,web:mondo.surf,top,
 BANANA POINT,30.5300,-9.6955,P,L,local,,
 DEVIL'S ROCK,30.5235,-9.6880,R,L,local,,posicion dudosa
 TAMRAGHT,30.5130,-9.6810,B,L,local,,

@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-JINZUN HARBOR,22.8400,121.1900,B,L,local,top,QS; posicion dudosa
+JINZUN HARBOR,22.9542,121.2923,B,V,wd:Q19853878,top,QS; puerto de Jinzun
 DULAN,22.9000,121.2330,B,L,local,,posicion aprox
 DONGHE,22.9700,121.3050,B,L,local,,posicion dudosa
 QIXINGTAN,24.0275,121.6275,B,K,local,,Hualien

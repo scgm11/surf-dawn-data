@@ -5,9 +5,9 @@ LA CICER,28.1315,-15.4375,R,K,local,,Gran Canaria; extremo sur de Las Canteras
 MELENARA,28.0010,-15.3690,B,L,local,,Gran Canaria; Telde; posicion aproximada
 PLAYA DEL HOMBRE,28.0370,-15.3830,B,L,local,,Gran Canaria; Telde; posicion aproximada
 BOCABARRANCO,28.1600,-15.6700,B,L,local,,Gran Canaria; Galdar; posicion aproximada
-EL FRONTON,28.1590,-15.7040,R,L,local,top,Gran Canaria; ola grande; posicion dudosa
+EL FRONTON,28.1651,-15.6549,R,V,gov:hellocanaryislands,top,Gran Canaria; ola grande; Gáldar
 SARDINA,28.1520,-15.7000,B,L,local,,Gran Canaria; Sardina del Norte; posicion aproximada
-LA IZQUIERDA,28.0570,-16.7360,R,K,local,top,Tenerife; Las Americas
+LA IZQUIERDA,28.0570,-16.7360,R,V,gov:hellocanaryislands,top checked,Tenerife; Las Americas
 EL CAMISON,28.0600,-16.7370,R,L,local,,Tenerife; Las Americas; posicion aproximada
 PUNTA BLANCA,28.0620,-16.7430,R,L,local,,Tenerife; Las Americas; posicion aproximada
 EL MEDANO,28.0490,-16.5350,B,K,local,,Tenerife

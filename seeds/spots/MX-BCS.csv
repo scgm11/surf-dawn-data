@@ -2,6 +2,6 @@ name,lat,lon,type,conf,src,flags,note
 LOS CERRITOS,23.3280,-110.1770,B,K,local,top,Pescadero
 SAN PEDRITO,23.4000,-110.2110,P,L,local,,Todos Santos; posición aproximada
 PALMILLA,22.9970,-109.7120,P,K,local,,Los Cabos corredor; derecha
-ZIPPERS,23.0525,-109.6715,P,K,local,top,Costa Azul; derecha
+ZIPPERS,23.0293,-109.7141,P,V,web:mondo.surf,top,Costa Azul; derecha
 OLD MAN'S,23.0508,-109.6680,B,K,local,,Costa Azul; ola suave
 ACAPULQUITO,23.0500,-109.6530,B,K,local,,Costa Azul este
