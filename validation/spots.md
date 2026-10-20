@@ -1,12 +1,12 @@
 # Picos: controles por pico
 
-Generado 2026-10-15 04:44 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2496 picos.
+Generado 2026-10-20 02:25 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 212 regiones, 2497 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 75° de hacia donde mira (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
-- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 40 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
+- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 36 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
 - **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta 6 km; si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la semilla): 307 bien (a menos de 1.5 km; 2 de ellos por la fuente de su semilla), 0 lejos, 22 lejos pero revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), 63 sin fuente (revisar a mano; `validation/lookup.md` tiene lo que hay con su nombre alrededor), 0 sin respuesta.
-- Open-Meteo: 35 pedidos, ~2170 llamadas de las 10.000 diarias gratuitas.
+- Open-Meteo: 35 pedidos, ~2177 llamadas de las 10.000 diarias gratuitas.
 
 ## Orientación probablemente del lado equivocado (3)
 
@@ -14,62 +14,73 @@ Mira a más de 135° de sus vecinos (a 30 km) y de las olas, y dada vuelta coinc
 
 | Región | Pico | Mira a | Vecinos | Olas desde |
 |---|---|---|---|---|
-| AU-NSW-NR | THE PASS | 304° | 86° | 125° |
+| AU-NSW-NR | THE PASS | 304° | 86° | 131° |
 | AU-QLD-SC | FIRST POINT | 310° | 86° | 108° |
-| ES-CN-E | PUNTA MUJERES | 128° | 321° | 343° |
+| ES-CN-E | PUNTA MUJERES | 128° | 321° | 341° |
 
-## Picos marcados (127)
+## Picos marcados (142)
 
 Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y el semáforo del swell es conservador ahí); se revisan a mano.
 
 | Región | Pico | Emblemático | Mira a | Olas desde | Vecinos | Por qué |
 |---|---|---|---|---|---|---|
-| AU-NSW-NR | THE PASS | sí | 304° | 125° | 86° | las olas casi nunca le entran de frente (1 % de las horas; la zona 82 %) y en 92 días 1 % |
+| AU-NSW-NR | THE PASS | sí | 304° | 131° | 86° | las olas casi nunca le entran de frente (1 % de las horas; la zona 83 %) y en 92 días 1 % |
 | AU-QLD-SC | FIRST POINT | sí | 310° | 108° | 86° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
 | AU-QLD-SC | LITTLE COVE |  | 312° | 108° | 86° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| AU-SA-EYR | CAVES |  | 142° | 226° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| AU-TAS | MARRAWAH |  | 314° | 232° | — | 3.1 m de media, más del doble de la zona (1.4 m) |
-| AU-TAS | GREEN POINT |  | 61° | 232° | — | 3.1 m de media, más del doble de la zona (1.4 m); las olas casi nunca le entran de frente (0 % de las horas; la zona 55 %) y en 92 días 0 % |
-| AU-VIC-PI | FOREST CAVES |  | 127° | 222° | 206° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| AU-VIC-SC | BARWON BLUFF |  | 65° | 194° | 151° | las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) y en 92 días 1 % |
-| AU-VIC-SC | LORNE POINT | sí | 43° | 226° | 159° | las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) y en 92 días 0 % |
-| AU-VIC-W | WYE RIVER |  | 110° | 226° | — | las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) y en 92 días 1 % |
+| AU-SA-EYR | CAVES |  | 142° | 227° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| AU-TAS | MARRAWAH |  | 314° | 234° | — | 2.8 m de media, más del doble de la zona (1.3 m) |
+| AU-TAS | GREEN POINT |  | 61° | 234° | — | 2.8 m de media, más del doble de la zona (1.3 m); las olas casi nunca le entran de frente (0 % de las horas; la zona 44 %) y en 92 días 0 % |
+| AU-VIC-PI | FOREST CAVES |  | 127° | 223° | 206° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| AU-VIC-SC | BARWON BLUFF |  | 65° | 202° | 151° | las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 1 % |
+| AU-VIC-SC | JAN JUC |  | 118° | 221° | 155° | las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) y en 92 días 2 % |
+| AU-VIC-SC | WINKIPOP | sí | 126° | 221° | 154° | las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) y en 92 días 2 % |
+| AU-VIC-SC | BELLS BEACH | sí | 135° | 221° | 151° | las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) y en 92 días 2 % |
+| AU-VIC-SC | POINT ADDIS |  | 91° | 221° | 150° | las olas casi nunca le entran de frente (4 % de las horas; la zona 99 %) y en 92 días 2 % |
+| AU-VIC-SC | LORNE POINT | sí | 43° | 230° | 159° | las olas casi nunca le entran de frente (2 % de las horas; la zona 99 %) y en 92 días 0 % |
+| AU-VIC-W | WYE RIVER |  | 110° | 230° | — | las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) y en 92 días 1 % |
+| AU-VIC-W | KENNETT RIVER |  | 117° | 227° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) y en 92 días 1 % |
+| AU-WA-GAS | RED BLUFF | sí | 11° | 254° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 28 %) y en 92 días 0 % |
 | AU-WA-PER | NORTH MOLE |  | 348° | 256° | 261° | las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) y en 92 días 1 % |
 | AU-WA-PER | STRICKLAND BAY | sí | 169° | 256° | 277° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | AU-WA-PER | STARK BAY |  | 163° | 256° | 276° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| BB-ALL | SANDY LANE |  | 262° | 34° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
-| BB-ALL | DRILL HALL |  | 259° | 34° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
-| BB-ALL | FREIGHTS BAY | sí | 255° | 98° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
-| BB-ALL | SURFERS POINT |  | 235° | 98° | 325° | las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 % |
-| BR-NE-CE | PARACURU |  | 334° | 74° | 17° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 4 % |
-| BR-NE-RN | PIPA | sí | 6° | 94° | 59° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 % |
-| BR-SP | PAÚBA |  | 273° | 161° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 % |
+| BB-ALL | SANDY LANE |  | 262° | 30° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 37 %) y en 92 días 0 % |
+| BB-ALL | DRILL HALL |  | 259° | 30° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 37 %) y en 92 días 0 % |
+| BB-ALL | FREIGHTS BAY | sí | 255° | 96° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 37 %) y en 92 días 0 % |
+| BB-ALL | SURFERS POINT |  | 235° | 96° | 325° | las olas casi nunca le entran de frente (0 % de las horas; la zona 37 %) y en 92 días 0 % |
+| BR-NE-RN | PIPA | sí | 6° | 92° | 59° | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 3 % |
+| BR-SP | PAÚBA |  | 273° | 160° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 % |
 | BR-SP | CAMBURI |  | 261° | 159° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 3 % |
-| BR-SP | ILHA COMPRIDA |  | 322° | 140° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| BR-SP | ILHA COMPRIDA |  | 322° | 142° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | CA-BC-VI | CHESTERMAN | sí | 90° | 257° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
 | CA-BC-VI | COX BAY | sí | 3° | 257° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
-| CA-BC-VI | SCHOONER COVE |  | 44° | 255° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
+| CA-BC-VI | SCHOONER COVE |  | 44° | 254° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
 | CA-BC-VI | WYA POINT |  | 90° | 259° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
-| CA-NS | HIRTLE'S BEACH |  | 19° | 165° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 51 %) y en 92 días 1 % |
+| CA-NS | HIRTLE'S BEACH |  | 19° | 165° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 69 %) y en 92 días 1 % |
 | CL-NOR | LAS MACHAS |  | 324° | 221° | 279° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| CO-PAC | HUINA |  | 312° | 231° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| CR-CAR | PUNTA UVA |  | 321° | 55° | 15° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| CR-GUA | OLLIE'S POINT |  | 144° | 238° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| CR-GUA | PICO PEQUEÑO |  | 331° | 232° | 249° | las olas casi nunca le entran de frente (5 % de las horas; la zona 100 %) y en 92 días 2 % |
-| CR-OSA | RIO CLARO |  | 311° | 218° | 245° | las olas casi nunca le entran de frente (0 % de las horas; la zona 70 %) y en 92 días 2 % |
-| EC-COS | PUNTA CARNERO |  | 355° | 238° | 278° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 0 % |
-| EC-GAL | MANGLECITO |  | 322° | 212° | 262° | las olas casi nunca le entran de frente (0 % de las horas; la zona 49 %) y en 92 días 0 % |
-| ES-AND | BOLONIA |  | 191° | 73° | 227° | las olas casi nunca le entran de frente (3 % de las horas; la zona 39 %) y en 92 días 2 % |
-| ES-CN-E | PUNTA MUJERES |  | 128° | 343° | 321° | las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %) y en 92 días 0 % |
-| ES-CN-E | FLAG BEACH |  | 88° | 342° | 275° | las olas casi nunca le entran de frente (1 % de las horas; la zona 64 %) y en 92 días 3 % |
-| ES-CN-E | ROCKY POINT |  | 218° | 344° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 64 %) y en 92 días 0 % |
-| ES-CN-W | LAS CANTERAS |  | 215° | 356° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 % |
-| ES-CN-W | EL FRONTON | sí | 221° | 355° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 % |
-| ES-CN-W | SARDINA |  | 215° | 355° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 67 %) y en 92 días 0 % |
-| ES-PV | HONDARRIBIA |  | 59° | 308° | 330° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 5 % |
-| FJ-MAM | CLOUDBREAK | sí | 220° | 210° | 254° | 1.0 m de media, más del doble de la zona (0.5 m) |
-| FR-BRE | LE POULDU |  | 132° | 257° | 221° | las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %) y en 92 días 3 % |
-| FR-VEN | LA TRANCHE |  | 151° | 268° | 211° | las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 0 % |
+| CL-PIC | TOPOCALMA |  | 357° | 233° | 331° | las olas casi nunca le entran de frente (3 % de las horas; la zona 59 %) y en 92 días 3 % |
+| CL-PIC | LA PUNTILLA | sí | 6° | 236° | 305° | las olas casi nunca le entran de frente (5 % de las horas; la zona 59 %) y en 92 días 3 % |
+| CL-PIC | PUNTA DE LOBOS | sí | 358° | 236° | 299° | las olas casi nunca le entran de frente (5 % de las horas; la zona 59 %) y en 92 días 4 % |
+| CO-PAC | HUINA |  | 312° | 230° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| CR-CAR | PUNTA UVA |  | 321° | 54° | 15° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| CR-GUA | OLLIE'S POINT |  | 144° | 235° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| CR-GUA | TAMARINDO | sí | 312° | 228° | 250° | las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) y en 92 días 4 % |
+| CR-GUA | PICO PEQUEÑO |  | 331° | 228° | 249° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| CR-OSA | RIO CLARO |  | 311° | 215° | 245° | las olas casi nunca le entran de frente (0 % de las horas; la zona 58 %) y en 92 días 2 % |
+| EC-COS | PUNTA CARNERO |  | 355° | 237° | 278° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 0 % |
+| EC-GAL | MANGLECITO |  | 322° | 210° | 262° | las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) y en 92 días 0 % |
+| ES-AND | BOLONIA |  | 191° | 7° | 227° | las olas casi nunca le entran de frente (3 % de las horas; la zona 61 %) y en 92 días 2 % |
+| ES-AST | SAN LORENZO |  | 96° | 337° | 9° | las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) y en 92 días 5 % |
+| ES-CN-E | PUNTA MUJERES |  | 128° | 341° | 321° | las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %) y en 92 días 0 % |
+| ES-CN-E | FLAG BEACH |  | 88° | 340° | 275° | las olas casi nunca le entran de frente (1 % de las horas; la zona 59 %) y en 92 días 2 % |
+| ES-CN-E | ROCKY POINT |  | 218° | 341° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 59 %) y en 92 días 0 % |
+| ES-CN-W | LAS CANTERAS |  | 215° | 356° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 66 %) y en 92 días 0 % |
+| ES-CN-W | EL FRONTON | sí | 221° | 356° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 66 %) y en 92 días 0 % |
+| ES-CN-W | SARDINA |  | 215° | 356° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 66 %) y en 92 días 0 % |
+| ES-GAL | TRABA |  | 202° | 318° | 345° | las olas casi nunca le entran de frente (4 % de las horas; la zona 95 %) y en 92 días 4 % |
+| ES-PV | HONDARRIBIA |  | 59° | 307° | 330° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 4 % |
+| FJ-MAM | CLOUDBREAK | sí | 220° | 205° | 254° | 1.2 m de media, más del doble de la zona (0.5 m) |
+| FR-BRE | LE POULDU |  | 132° | 256° | 221° | las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %) y en 92 días 2 % |
+| FR-VEN | LA TRANCHE |  | 151° | 267° | 211° | las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 0 % |
 | ID-BAL-E | SANUR REEF | sí | 79° | 195° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 % |
 | ID-BAL-E | MERTASARI |  | 64° | 195° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | ID-BAL-E | SHIPWRECKS | sí | 327° | 197° | 120° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
@@ -77,80 +88,84 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | ID-BAL-E | PLAYGROUNDS |  | 289° | 197° | 115° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | ID-BAL-W | KUTA REEF |  | 295° | 195° | 238° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | ID-BAL-W | HALFWAY KUTA |  | 312° | 195° | 237° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| ID-LOM | MAWI |  | 0° | 207° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| ID-LOM | KUTA LOMBOK |  | 65° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| ID-LOM | GERUPUK | sí | 117° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 3 % |
-| ID-LOM | DON DON |  | 0° | 208° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| ID-LOM | EKAS |  | 303° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
+| ID-LOM | MAWI |  | 0° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 % |
+| ID-LOM | KUTA LOMBOK |  | 65° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 % |
+| ID-LOM | GERUPUK | sí | 117° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 3 % |
+| ID-LOM | DON DON |  | 0° | 209° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 % |
+| ID-LOM | EKAS |  | 303° | 210° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 0 % |
 | ID-SBW | SCAR REEF | sí | 320° | 201° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| ID-SBW | SUPERSUCK | sí | 330° | 209° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| IE-NW | MULLAGHMORE | sí | 37° | 285° | 315° | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 % |
-| IS-ALL | THORLAKSHOFN |  | 61° | 201° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
-| JP-KYU | AOSHIMA |  | 236° | 96° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) y en 92 días 1 % |
-| LK-E | ARUGAM BAY | sí | 22° | 181° | 123° | las olas casi nunca le entran de frente (0 % de las horas; la zona 84 %) y en 92 días 0 % |
-| MA-TAG | BOILERS | sí | 185° | 319° | 230° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | KILLER POINT | sí | 213° | 319° | 224° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | ANCHOR POINT | sí | 199° | 319° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | LA SOURCE |  | 189° | 319° | 226° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | HASH POINT | sí | 188° | 319° | 226° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | MYSTERIES |  | 199° | 319° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | AGADIR |  | 200° | 319° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MA-TAG | ESSAOUIRA |  | 153° | 321° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 % |
-| MG-ALL | ANAKAO |  | 299° | 212° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 73 %) y en 92 días 2 % |
-| MU-ALL | TAMARIN BAY |  | 317° | 202° | 206° | las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 % |
-| MX-BCS-N | SCORPION BAY | sí | 90° | 215° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) y en 92 días 0 % |
-| MX-NAY | SAYULITA | sí | 353° | 227° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 52 %) y en 92 días 0 % |
-| MX-OAX | MAZUNTE |  | 123° | 217° | 187° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 % |
-| MZ-INH | BARRA |  | 14° | 106° | 104° | las olas casi nunca le entran de frente (0 % de las horas; la zona 88 %) y en 92 días 3 % |
-| NA-ERO | SKELETON BAY | sí | 321° | 217° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| ID-SBW | SUPERSUCK | sí | 330° | 210° | 234° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| IE-NW | MULLAGHMORE | sí | 37° | 284° | 315° | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 % |
+| IS-ALL | THORLAKSHOFN |  | 61° | 211° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 92 %) y en 92 días 0 % |
+| JP-KYU | AOSHIMA |  | 236° | 103° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 1 % |
+| LK-E | ARUGAM BAY | sí | 22° | 183° | 123° | las olas casi nunca le entran de frente (0 % de las horas; la zona 90 %) y en 92 días 0 % |
+| MA-TAG | BOILERS | sí | 185° | 317° | 230° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | KILLER POINT | sí | 213° | 317° | 224° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | ANCHOR POINT | sí | 199° | 317° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | LA SOURCE |  | 189° | 317° | 226° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | HASH POINT | sí | 188° | 317° | 226° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | MYSTERIES |  | 199° | 317° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | AGADIR |  | 200° | 317° | 225° | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MA-TAG | ESSAOUIRA |  | 153° | 320° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 41 %) y en 92 días 0 % |
+| MG-ALL | ANAKAO |  | 299° | 217° | — | las olas casi nunca le entran de frente (2 % de las horas; la zona 67 %) y en 92 días 2 % |
+| MU-ALL | TAMARIN BAY |  | 317° | 205° | 206° | las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 % |
+| MX-BCS-N | SCORPION BAY | sí | 90° | 217° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 50 %) y en 92 días 0 % |
+| MX-NAY | SAYULITA | sí | 353° | 224° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 33 %) y en 92 días 0 % |
+| MX-OAX | MAZUNTE |  | 123° | 211° | 187° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 % |
+| NA-ERO | SKELETON BAY | sí | 321° | 216° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| NO-N | HAUKLAND |  | 173° | 288° | 249° | las olas casi nunca le entran de frente (2 % de las horas; la zona 56 %) y en 92 días 4 % |
 | NZ-AKL | PORT WAIKATO |  | 358° | 243° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 2 % |
-| NZ-OTA | KARITANE | sí | 284° | 146° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| NZ-OTA | WHAREAKEAKE | sí | 311° | 146° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 % |
-| NZ-OTA | ARAMOANA SPIT | sí | 353° | 146° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 3 % |
-| NZ-WC | TAURANGA BAY |  | 43° | 269° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 1 % |
-| PA-PAC | PLAYA ESTERO |  | 258° | 170° | 210° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| PA-PAC | PLAYA VENAO | sí | 235° | 210° | — | 0.9 m de media, más del doble de la zona (0.4 m) |
-| PA-PAC | GUANICO |  | 153° | 199° | 209° | 0.8 m de media, más del doble de la zona (0.4 m) |
-| PA-PAC | CAMBUTAL |  | 183° | 213° | — | 1.1 m de media, más del doble de la zona (0.4 m) |
-| PE-LIM | LA HERRADURA | sí | 336° | 217° | 232° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| PE-LIM | CERRO AZUL |  | 327° | 226° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| PE-LLB | PACASMAYO | sí | 316° | 225° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 0 % |
-| PE-LLB | CHICAMA | sí | 339° | 233° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 0 % |
-| PE-LLB | HUANCHACO | sí | 309° | 225° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 3 % |
-| PT-AZO | ALMOXARIFE |  | 78° | 274° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 26 %) y en 92 días 1 % |
-| RE-ALL | BOUCAN CANOT |  | 307° | 207° | 258° | las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 % |
-| RE-ALL | BARACHOIS |  | 317° | 119° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 65 %) y en 92 días 0 % |
-| TO-ALL | PASS LEFTS |  | 5° | 135° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 45 %) y en 92 días 0 % |
-| TO-ALL | PASS RIGHTS |  | 5° | 135° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 45 %) y en 92 días 0 % |
-| TT-ALL | MOUNT IRVINE |  | 280° | 82° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| US-CA-SC | STEAMER LANE | sí | 130° | 252° | 201° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-CA-SC | PLEASURE POINT | sí | 130° | 252° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-CA-SC | MORAN LAKE |  | 130° | 252° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-CA-SC | LOVER'S POINT |  | 56° | 296° | 288° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| US-CA-SD | LA JOLLA SHORES |  | 298° | 208° | 260° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 5 % |
-| US-CA-SD | BIRD ROCK |  | 0° | 208° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| US-CA-SD | SOUTH MISSION |  | 349° | 208° | 264° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| US-FL | FERNANDINA |  | 251° | 92° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 % |
-| US-FL | JENSEN BEACH |  | 227° | 71° | 216° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-FL | STUART BEACH |  | 245° | 71° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-GULF | PADRE SEASHORE |  | 112° | 98° | — | 1.1 m de media, más del doble de la zona (0.5 m) |
-| US-HI-BIG | RICHARDSONS |  | 330° | 68° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 100 %) y en 92 días 1 % |
-| US-HI-OAS | CONCESSIONS |  | 284° | 173° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 % |
-| US-HI-OAS | CANOES |  | 268° | 173° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 2 % |
-| US-HI-OAS | QUEENS | sí | 268° | 173° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 2 % |
-| US-HI-OAS | CHINA WALLS |  | 255° | 157° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 96 %) y en 92 días 3 % |
-| US-NE | BEACH HAVEN |  | 276° | 115° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 0 % |
-| US-PNW | HOBUCK |  | 88° | 273° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| US-PNW | PORT ORFORD |  | 162° | 304° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
-| US-SE | SURF CITY PIER |  | 2° | 117° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 98 %) y en 92 días 2 % |
-| ZA-WC-CPT | LLANDUDNO | sí | 335° | 235° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 % |
-| ZA-WC-CPT | DUNGEONS | sí | 101° | 235° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 1 % |
-| ZA-WC-CPT | LONG BEACH | sí | 343° | 233° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 % |
-| ZA-WC-CPT | KOGEL BAY |  | 332° | 216° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 % |
-| ZA-WC-CPT | ROOI-ELS |  | 328° | 216° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 % |
-| ZA-WC-GR | INNER POOL | sí | 331° | 199° | 141° | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
-| ZA-WC-WCO | ELANDS BAY | sí | 339° | 246° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 1 % |
-| ZA-WC-WCO | YZERFONTEIN |  | 351° | 237° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 0 % |
+| NZ-NTL | SHIPWRECK BAY | sí | 37° | 228° | 20° | 2.1 m de media, más del doble de la zona (1.0 m) |
+| NZ-NTL | SUPER TUBES | sí | 7° | 228° | 28° | 2.1 m de media, más del doble de la zona (1.0 m) |
+| NZ-NTL | MUKIES 2 | sí | 34° | 228° | 21° | 2.1 m de media, más del doble de la zona (1.0 m) |
+| NZ-NTL | MUKIES 1 | sí | 27° | 228° | 23° | 2.1 m de media, más del doble de la zona (1.0 m) |
+| NZ-NTL | PEAKS | sí | 14° | 228° | 26° | 2.1 m de media, más del doble de la zona (1.0 m) |
+| NZ-NTL | BAYLYS BEACH |  | 235° | 229° | — | 2.2 m de media, más del doble de la zona (1.0 m) |
+| NZ-OTA | KARITANE | sí | 284° | 149° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 0 % |
+| NZ-OTA | WHAREAKEAKE | sí | 311° | 149° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 0 % |
+| NZ-OTA | ARAMOANA SPIT | sí | 353° | 149° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 3 % |
+| NZ-WC | TAURANGA BAY |  | 43° | 268° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 1 % |
+| PA-PAC | PLAYA VENAO | sí | 235° | 210° | — | 1.0 m de media, más del doble de la zona (0.3 m) |
+| PA-PAC | GUANICO |  | 153° | 201° | 209° | 0.8 m de media, más del doble de la zona (0.3 m) |
+| PA-PAC | CAMBUTAL |  | 183° | 213° | — | 1.2 m de media, más del doble de la zona (0.3 m) |
+| PE-LIM | LA HERRADURA | sí | 336° | 220° | 232° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| PE-LIM | CERRO AZUL |  | 327° | 230° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| PE-LLB | PACASMAYO | sí | 316° | 225° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| PE-LLB | CHICAMA | sí | 339° | 232° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| PE-LLB | HUANCHACO | sí | 309° | 224° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 3 % |
+| PT-AZO | ALMOXARIFE |  | 78° | 286° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 30 %) y en 92 días 1 % |
+| RE-ALL | BOUCAN CANOT |  | 307° | 209° | 258° | las olas casi nunca le entran de frente (0 % de las horas; la zona 80 %) y en 92 días 0 % |
+| RE-ALL | BARACHOIS |  | 317° | 108° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 80 %) y en 92 días 0 % |
+| SV-ORI | LAS FLORES | sí | 121° | 204° | 172° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 4 % |
+| TO-ALL | PASS LEFTS |  | 5° | 167° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 51 %) y en 92 días 0 % |
+| TO-ALL | PASS RIGHTS |  | 5° | 167° | 271° | las olas casi nunca le entran de frente (0 % de las horas; la zona 51 %) y en 92 días 0 % |
+| TT-ALL | MOUNT IRVINE |  | 280° | 73° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 % |
+| US-CA-SC | STEAMER LANE | sí | 130° | 251° | 201° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-CA-SC | PLEASURE POINT | sí | 130° | 251° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-CA-SC | MORAN LAKE |  | 130° | 251° | 198° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-CA-SC | LOVER'S POINT |  | 56° | 295° | 288° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| US-CA-SD | LA JOLLA SHORES |  | 298° | 204° | 260° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| US-CA-SD | BIRD ROCK |  | 0° | 204° | 259° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| US-CA-SD | SOUTH MISSION |  | 349° | 204° | 264° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| US-FL | FERNANDINA |  | 251° | 82° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 1 % |
+| US-FL | FORT PIERCE INLET |  | 186° | 58° | — | las olas casi nunca le entran de frente (4 % de las horas; la zona 98 %) y en 92 días 5 % |
+| US-FL | JENSEN BEACH |  | 227° | 59° | 216° | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 2 % |
+| US-FL | STUART BEACH |  | 245° | 59° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 2 % |
+| US-HI-BIG | RICHARDSONS |  | 330° | 65° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 100 %) y en 92 días 0 % |
+| US-HI-OAS | CONCESSIONS |  | 284° | 160° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 78 %) y en 92 días 0 % |
+| US-HI-OAS | CANOES |  | 268° | 160° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 78 %) y en 92 días 2 % |
+| US-HI-OAS | QUEENS | sí | 268° | 160° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 78 %) y en 92 días 2 % |
+| US-HI-OAS | CHINA WALLS |  | 255° | 142° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 78 %) y en 92 días 3 % |
+| US-NE | BEACH HAVEN |  | 276° | 100° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 70 %) y en 92 días 0 % |
+| US-PNW | HOBUCK |  | 88° | 272° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
+| US-PNW | PORT ORFORD |  | 162° | 298° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 % |
+| ZA-WC-CPT | LLANDUDNO | sí | 335° | 233° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) y en 92 días 0 % |
+| ZA-WC-CPT | DUNGEONS | sí | 101° | 233° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) y en 92 días 1 % |
+| ZA-WC-CPT | SUNSET REEF | sí | 320° | 232° | — | las olas casi nunca le entran de frente (3 % de las horas; la zona 74 %) y en 92 días 4 % |
+| ZA-WC-CPT | LONG BEACH | sí | 343° | 232° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) y en 92 días 0 % |
+| ZA-WC-CPT | KOGEL BAY |  | 332° | 216° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) y en 92 días 0 % |
+| ZA-WC-CPT | ROOI-ELS |  | 328° | 216° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 74 %) y en 92 días 0 % |
+| ZA-WC-GR | INNER POOL | sí | 331° | 216° | 141° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 
 ## Emblemáticos lejos de su ítem en Wikidata, GeoNames u OpenStreetMap
 
@@ -165,214 +180,214 @@ AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/THE BOX, AU-W
 | Región | Modelo | Altura media (mediana) | Olas de frente (mediana) |
 |---|---|---|---|
 | AR-BAN | ncep_gfswave025 | 1.4 m | 100 % |
-| AR-MDP | ncep_gfswave025 | 1.5 m | 99 % |
-| AR-SUR | ncep_gfswave025 | 1.1 m | 96 % |
-| AU-NSW-MN | ncep_gfswave025 | 1.5 m | 72 % |
-| AU-NSW-NC | ncep_gfswave025 | 1.4 m | 83 % |
-| AU-NSW-NR | ncep_gfswave025 | 1.5 m | 82 % |
-| AU-NSW-SC | ncep_gfswave025 | 1.5 m | 80 % |
-| AU-NSW-SYD | ncep_gfswave025 | 1.6 m | 74 % |
-| AU-QLD-GC | ncep_gfswave025 | 1.1 m | 80 % |
-| AU-QLD-SC | ncep_gfswave025 | 1.1 m | 100 % |
-| AU-SA-EYR | ncep_gfswave025 | 1.4 m | 100 % |
-| AU-SA | ecmwf_wam | 1.4 m | 98 % |
-| AU-TAS | ncep_gfswave025 | 1.4 m | 55 % |
-| AU-VIC-PI | ncep_gfswave025 | 1.4 m | 100 % |
-| AU-VIC-SC | ncep_gfswave025 | 1.4 m | 99 % |
-| AU-VIC-W | ncep_gfswave025 | 2.6 m | 100 % |
-| AU-WA-GAS | ncep_gfswave025 | 1.3 m | 14 % |
+| AR-MDP | ncep_gfswave025 | 1.5 m | 100 % |
+| AR-SUR | ncep_gfswave025 | 1.1 m | 97 % |
+| AU-NSW-MN | ncep_gfswave025 | 1.5 m | 78 % |
+| AU-NSW-NC | ncep_gfswave025 | 1.4 m | 100 % |
+| AU-NSW-NR | ncep_gfswave025 | 1.7 m | 83 % |
+| AU-NSW-SC | ncep_gfswave025 | 1.5 m | 96 % |
+| AU-NSW-SYD | ncep_gfswave025 | 1.6 m | 79 % |
+| AU-QLD-GC | ncep_gfswave025 | 1.3 m | 80 % |
+| AU-QLD-SC | ncep_gfswave025 | 1.3 m | 100 % |
+| AU-SA-EYR | ncep_gfswave025 | 1.3 m | 100 % |
+| AU-SA | ecmwf_wam | 1.2 m | 93 % |
+| AU-TAS | ncep_gfswave025 | 1.3 m | 44 % |
+| AU-VIC-PI | ncep_gfswave025 | 1.2 m | 100 % |
+| AU-VIC-SC | ncep_gfswave025 | 1.1 m | 99 % |
+| AU-VIC-W | ncep_gfswave025 | 2.4 m | 100 % |
+| AU-WA-GAS | ncep_gfswave025 | 1.3 m | 28 % |
 | AU-WA-MR | ncep_gfswave025 | 3.1 m | 97 % |
-| AU-WA-NW | ncep_gfswave025 | 2.0 m | 100 % |
-| AU-WA-PER | ncep_gfswave025 | 2.0 m | 100 % |
-| BB-ALL | ncep_gfswave016 | 1.1 m | 35 % |
+| AU-WA-NW | ncep_gfswave025 | 1.9 m | 100 % |
+| AU-WA-PER | ncep_gfswave025 | 2.1 m | 100 % |
+| BB-ALL | ncep_gfswave016 | 1.0 m | 37 % |
 | BR-BA | ncep_gfswave025 | 1.1 m | 100 % |
-| BR-ES | ncep_gfswave025 | 1.1 m | 100 % |
+| BR-ES | ncep_gfswave025 | 1.1 m | 99 % |
 | BR-NE-CE | ncep_gfswave016 | 1.1 m | 100 % |
 | BR-NE-PE | ncep_gfswave016 | 1.1 m | 100 % |
 | BR-NE-RN | ncep_gfswave016 | 1.1 m | 100 % |
-| BR-NOR | ncep_gfswave016 | 1.4 m | 22 % |
-| BR-RJ | ncep_gfswave025 | 0.8 m | 100 % |
+| BR-NOR | ncep_gfswave016 | 1.4 m | 31 % |
+| BR-RJ | ncep_gfswave025 | 0.9 m | 100 % |
 | BR-RJL | ncep_gfswave025 | 1.1 m | 96 % |
-| BR-RS-SUL | ncep_gfswave025 | 1.3 m | 100 % |
-| BR-RS | ncep_gfswave025 | 1.4 m | 100 % |
-| BR-SC-FLN | ncep_gfswave025 | 1.4 m | 99 % |
+| BR-RS-SUL | ncep_gfswave025 | 1.4 m | 100 % |
+| BR-RS | ncep_gfswave025 | 1.5 m | 100 % |
+| BR-SC-FLN | ncep_gfswave025 | 1.5 m | 100 % |
 | BR-SC-NOR | ncep_gfswave025 | 0.9 m | 100 % |
-| BR-SC-SUL | ncep_gfswave025 | 1.4 m | 100 % |
-| BR-SP | ncep_gfswave025 | 0.8 m | 100 % |
-| BS-ALL | ncep_gfswave016 | 0.8 m | 11 % |
-| CA-BC-VI | ecmwf_wam | 1.2 m | 30 % |
-| CA-NS | ncep_gfswave016 | 1.0 m | 51 % |
+| BR-SC-SUL | ncep_gfswave025 | 1.5 m | 100 % |
+| BR-SP | ncep_gfswave025 | 0.9 m | 100 % |
+| BS-ALL | ncep_gfswave016 | 1.1 m | 0 % |
+| CA-BC-VI | ecmwf_wam | 1.4 m | 30 % |
+| CA-NS | ncep_gfswave016 | 1.1 m | 69 % |
 | CL-CEN | ncep_gfswave025 | 1.6 m | 10 % |
-| CL-MAU | ncep_gfswave025 | 1.7 m | 96 % |
-| CL-NOR | ncep_gfswave025 | 1.5 m | 100 % |
-| CL-PIC | ncep_gfswave025 | 1.9 m | 70 % |
-| CL-SUR | ncep_gfswave025 | 1.7 m | 100 % |
-| CN-HAI | ncep_gfswave016 | 0.9 m | 50 % |
+| CL-MAU | ncep_gfswave025 | 1.5 m | 90 % |
+| CL-NOR | ncep_gfswave025 | 1.6 m | 100 % |
+| CL-PIC | ncep_gfswave025 | 1.8 m | 59 % |
+| CL-SUR | ncep_gfswave025 | 1.4 m | 100 % |
+| CN-HAI | ncep_gfswave016 | 1.1 m | 50 % |
 | CO-CAR | ncep_gfswave016 | 0.8 m | 100 % |
-| CO-PAC | ncep_gfswave016 | 0.8 m | 100 % |
+| CO-PAC | ncep_gfswave016 | 0.9 m | 100 % |
 | CR-CAR | ncep_gfswave016 | 0.8 m | 100 % |
 | CR-GUA | ncep_gfswave016 | 1.2 m | 100 % |
 | CR-NIC | ncep_gfswave016 | 1.1 m | 100 % |
-| CR-OSA | ncep_gfswave016 | 1.1 m | 70 % |
+| CR-OSA | ncep_gfswave016 | 1.1 m | 58 % |
 | CR-PAC | ncep_gfswave016 | 1.0 m | 100 % |
-| CV-ALL | ncep_gfswave016 | 1.2 m | 6 % |
-| DE-ALL | ncep_gfswave025 | 1.2 m | 91 % |
-| DK-ALL | ncep_gfswave025 | 1.5 m | 87 % |
-| DO-ALL | ncep_gfswave016 | 1.0 m | 100 % |
-| EC-COS | ncep_gfswave016 | 0.9 m | 100 % |
-| EC-GAL | ncep_gfswave016 | 1.1 m | 49 % |
-| ES-AND | ncep_gfswave016 | 0.6 m | 39 % |
-| ES-AST | ncep_gfswave016 | 1.4 m | 100 % |
-| ES-CAN | ncep_gfswave016 | 1.3 m | 100 % |
-| ES-CN-E | ncep_gfswave016 | 1.4 m | 64 % |
-| ES-CN-W | ncep_gfswave016 | 1.2 m | 67 % |
-| ES-GAL | ncep_gfswave016 | 1.7 m | 96 % |
-| ES-PV | ncep_gfswave016 | 1.2 m | 100 % |
-| FJ-MAM | ncep_gfswave025 | 0.5 m | 100 % |
-| FJ-SOU | ncep_gfswave025 | 1.3 m | 98 % |
-| FR-BRE | ncep_gfswave016 | 1.2 m | 97 % |
-| FR-GIR | ncep_gfswave016 | 1.4 m | 100 % |
+| CV-ALL | ncep_gfswave016 | 1.1 m | 9 % |
+| DE-ALL | ncep_gfswave025 | 1.2 m | 76 % |
+| DK-ALL | ncep_gfswave025 | 1.4 m | 74 % |
+| DO-ALL | ncep_gfswave016 | 1.1 m | 100 % |
+| EC-COS | ncep_gfswave016 | 1.0 m | 100 % |
+| EC-GAL | ncep_gfswave016 | 1.1 m | 50 % |
+| ES-AND | ncep_gfswave016 | 0.5 m | 61 % |
+| ES-AST | ncep_gfswave016 | 1.5 m | 100 % |
+| ES-CAN | ncep_gfswave016 | 1.4 m | 100 % |
+| ES-CN-E | ncep_gfswave016 | 1.3 m | 59 % |
+| ES-CN-W | ncep_gfswave016 | 1.2 m | 66 % |
+| ES-GAL | ncep_gfswave016 | 1.7 m | 95 % |
+| ES-PV | ncep_gfswave016 | 1.3 m | 100 % |
+| FJ-MAM | ncep_gfswave025 | 0.5 m | 99 % |
+| FJ-SOU | ncep_gfswave025 | 1.4 m | 98 % |
+| FR-BRE | ncep_gfswave016 | 1.3 m | 97 % |
+| FR-GIR | ncep_gfswave016 | 1.5 m | 100 % |
 | FR-HOS | ncep_gfswave016 | 1.5 m | 100 % |
 | FR-PBA | ncep_gfswave016 | 1.5 m | 100 % |
-| FR-VEN | ncep_gfswave016 | 0.9 m | 99 % |
-| GB-CON | ncep_gfswave016 | 1.7 m | 99 % |
-| GB-DEV | ncep_gfswave016 | 1.4 m | 92 % |
-| GB-NE | ncep_gfswave025 | 0.7 m | 66 % |
-| GB-NIR | ecmwf_wam | 1.0 m | 87 % |
-| GB-SCO | ncep_gfswave025 | 1.4 m | 41 % |
-| GB-SOU | ncep_gfswave016 | 0.7 m | 89 % |
-| GB-WAL | ncep_gfswave025 | 1.4 m | 89 % |
+| FR-VEN | ncep_gfswave016 | 1.0 m | 99 % |
+| GB-CON | ncep_gfswave016 | 1.8 m | 98 % |
+| GB-DEV | ncep_gfswave016 | 1.4 m | 89 % |
+| GB-NE | ncep_gfswave025 | 1.0 m | 77 % |
+| GB-NIR | ecmwf_wam | 1.0 m | 84 % |
+| GB-SCO | ncep_gfswave025 | 1.5 m | 44 % |
+| GB-SOU | ncep_gfswave016 | 0.8 m | 77 % |
+| GB-WAL | ncep_gfswave025 | 1.3 m | 82 % |
 | GH-ALL | ncep_gfswave016 | 0.9 m | 100 % |
-| GP-ALL | ncep_gfswave016 | 1.0 m | 6 % |
+| GP-ALL | ncep_gfswave016 | 0.9 m | 5 % |
 | GT-PAC | ncep_gfswave016 | 1.2 m | 100 % |
 | ID-BAL-BUK | ncep_gfswave016 | 1.8 m | 0 % |
 | ID-BAL-E | ncep_gfswave016 | 1.2 m | 100 % |
 | ID-BAL-W | ncep_gfswave016 | 1.2 m | 100 % |
 | ID-JAV-E | ncep_gfswave016 | 1.5 m | 0 % |
-| ID-JAV-W | ncep_gfswave016 | 1.6 m | 5 % |
+| ID-JAV-W | ncep_gfswave016 | 1.6 m | 8 % |
 | ID-KRU | ncep_gfswave016 | 1.9 m | 0 % |
-| ID-LOM | ncep_gfswave016 | 1.8 m | 75 % |
+| ID-LOM | ncep_gfswave016 | 1.9 m | 73 % |
 | ID-MEN | ncep_gfswave016 | 1.2 m | 0 % |
-| ID-NIA | ncep_gfswave016 | 1.3 m | 12 % |
+| ID-NIA | ncep_gfswave016 | 1.4 m | 15 % |
 | ID-ROT | ncep_gfswave016 | 0.9 m | 100 % |
-| ID-SBW | ncep_gfswave016 | 1.5 m | 100 % |
+| ID-SBW | ncep_gfswave016 | 1.4 m | 100 % |
 | ID-SMB | ncep_gfswave016 | 1.5 m | 100 % |
-| IE-NW | ncep_gfswave025 | 2.2 m | 99 % |
-| IE-SE | ncep_gfswave016 | 1.4 m | 90 % |
+| IE-NW | ncep_gfswave025 | 2.1 m | 99 % |
+| IE-SE | ncep_gfswave016 | 1.3 m | 79 % |
 | IE-SW | ecmwf_wam | 1.5 m | 99 % |
-| IN-E | ncep_gfswave016 | 0.6 m | 100 % |
+| IN-E | ncep_gfswave016 | 0.7 m | 99 % |
 | IN-W | ncep_gfswave016 | 0.7 m | 100 % |
-| IS-ALL | ncep_gfswave025 | 3.0 m | 85 % |
-| IT-ALL | ncep_gfswave016 | 0.5 m | 76 % |
-| IT-SAR | ncep_gfswave016 | 0.7 m | 78 % |
-| JP-CHI | ncep_gfswave016 | 2.0 m | 99 % |
-| JP-IBA | ncep_gfswave016 | 1.7 m | 99 % |
-| JP-IZU | ncep_gfswave016 | 1.2 m | 96 % |
-| JP-KYU | ncep_gfswave016 | 1.4 m | 50 % |
-| JP-SHK | ncep_gfswave016 | 1.5 m | 97 % |
-| JP-SHO | ncep_gfswave016 | 0.8 m | 80 % |
-| KR-ALL | ncep_gfswave016 | 0.7 m | 39 % |
-| LK-E | ncep_gfswave016 | 1.1 m | 84 % |
+| IS-ALL | ncep_gfswave025 | 3.6 m | 92 % |
+| IT-ALL | ncep_gfswave016 | 0.6 m | 76 % |
+| IT-SAR | ncep_gfswave016 | 0.8 m | 90 % |
+| JP-CHI | ncep_gfswave016 | 1.8 m | 91 % |
+| JP-IBA | ncep_gfswave016 | 1.6 m | 100 % |
+| JP-IZU | ncep_gfswave016 | 1.1 m | 91 % |
+| JP-KYU | ncep_gfswave016 | 1.4 m | 46 % |
+| JP-SHK | ncep_gfswave016 | 1.5 m | 98 % |
+| JP-SHO | ncep_gfswave016 | 0.8 m | 89 % |
+| KR-ALL | ncep_gfswave016 | 0.7 m | 47 % |
+| LK-E | ncep_gfswave016 | 1.1 m | 90 % |
 | LK-S | ncep_gfswave016 | 1.1 m | 100 % |
 | LR-ALL | ncep_gfswave016 | 1.0 m | 0 % |
 | MA-N | ncep_gfswave016 | 1.2 m | 100 % |
-| MA-S | ncep_gfswave016 | 1.2 m | 100 % |
-| MA-TAG | ncep_gfswave016 | 0.8 m | 32 % |
-| MG-ALL | ncep_gfswave025 | 2.1 m | 73 % |
-| MQ-ALL | ncep_gfswave016 | 1.1 m | 88 % |
+| MA-S | ncep_gfswave016 | 1.1 m | 100 % |
+| MA-TAG | ncep_gfswave016 | 0.8 m | 41 % |
+| MG-ALL | ncep_gfswave025 | 2.0 m | 67 % |
+| MQ-ALL | ncep_gfswave016 | 1.0 m | 92 % |
 | MU-ALL | ncep_gfswave025 | 1.4 m | 83 % |
 | MV-CEN | ncep_gfswave016 | 0.8 m | 0 % |
 | MV-NMA | ncep_gfswave016 | 0.8 m | 0 % |
-| MV-SMA | ncep_gfswave016 | 0.7 m | 3 % |
+| MV-SMA | ncep_gfswave016 | 0.8 m | 20 % |
 | MV-SOU | ncep_gfswave016 | 1.0 m | 96 % |
-| MX-BCN | ecmwf_wam | 1.2 m | 95 % |
+| MX-BCN | ecmwf_wam | 1.2 m | 99 % |
 | MX-BCS-N | ncep_gfswave016 | 1.2 m | 50 % |
-| MX-BCS | ncep_gfswave016 | 1.6 m | 100 % |
-| MX-CAR | ncep_gfswave016 | 0.9 m | 99 % |
-| MX-NAY | ncep_gfswave016 | 1.4 m | 52 % |
+| MX-BCS | ncep_gfswave016 | 1.2 m | 100 % |
+| MX-CAR | ncep_gfswave016 | 0.8 m | 91 % |
+| MX-NAY | ncep_gfswave016 | 1.1 m | 33 % |
 | MX-OAX | ncep_gfswave016 | 1.6 m | 100 % |
 | MX-PAC | ncep_gfswave016 | 2.0 m | 100 % |
-| MZ-INH | ncep_gfswave025 | 1.0 m | 88 % |
-| MZ-S | ncep_gfswave025 | 1.6 m | 88 % |
-| NA-ERO | ncep_gfswave025 | 1.7 m | 100 % |
-| NI-NW | ncep_gfswave016 | 1.0 m | 100 % |
+| MZ-INH | ncep_gfswave025 | 0.9 m | 68 % |
+| MZ-S | ncep_gfswave025 | 1.6 m | 79 % |
+| NA-ERO | ncep_gfswave025 | 1.9 m | 100 % |
+| NI-NW | ncep_gfswave016 | 1.1 m | 100 % |
 | NI-RIV | ncep_gfswave016 | 1.1 m | 100 % |
-| NL-ALL | ncep_gfswave025 | 1.0 m | 100 % |
-| NO-N | ncep_gfswave025 | 2.1 m | 65 % |
-| NO-S | ncep_gfswave025 | 2.0 m | 89 % |
-| NZ-AKL | ncep_gfswave025 | 2.0 m | 100 % |
-| NZ-BOP | ncep_gfswave025 | 0.8 m | 82 % |
-| NZ-GIS | ncep_gfswave025 | 1.4 m | 66 % |
-| NZ-KAI | ncep_gfswave025 | 1.1 m | 90 % |
-| NZ-NTL | ncep_gfswave025 | 1.1 m | 4 % |
-| NZ-OTA | ncep_gfswave025 | 1.3 m | 75 % |
+| NL-ALL | ncep_gfswave025 | 1.2 m | 89 % |
+| NO-N | ncep_gfswave025 | 2.6 m | 56 % |
+| NO-S | ncep_gfswave025 | 1.9 m | 92 % |
+| NZ-AKL | ncep_gfswave025 | 1.9 m | 100 % |
+| NZ-BOP | ncep_gfswave025 | 0.7 m | 91 % |
+| NZ-GIS | ncep_gfswave025 | 1.5 m | 67 % |
+| NZ-KAI | ncep_gfswave025 | 1.1 m | 91 % |
+| NZ-NTL | ncep_gfswave025 | 1.0 m | 2 % |
+| NZ-OTA | ncep_gfswave025 | 1.4 m | 72 % |
 | NZ-RAG | ncep_gfswave025 | 1.5 m | 2 % |
-| NZ-TAR | ncep_gfswave025 | 1.4 m | 74 % |
-| NZ-WC | ncep_gfswave025 | 1.5 m | 100 % |
-| NZ-WEL | ncep_gfswave025 | 1.4 m | 68 % |
+| NZ-TAR | ncep_gfswave025 | 1.4 m | 69 % |
+| NZ-WC | ncep_gfswave025 | 1.4 m | 99 % |
+| NZ-WEL | ncep_gfswave025 | 1.4 m | 63 % |
 | PA-BDT | ncep_gfswave016 | 0.8 m | 100 % |
-| PA-PAC | ncep_gfswave016 | 0.4 m | 100 % |
-| PE-LIM | ncep_gfswave025 | 1.6 m | 100 % |
-| PE-LLB | ncep_gfswave016 | 1.2 m | 98 % |
-| PE-NOR | ncep_gfswave016 | 1.0 m | 60 % |
-| PE-SUR | ncep_gfswave025 | 1.5 m | 100 % |
-| PF-ISL | ncep_gfswave025 | 2.2 m | 26 % |
-| PF-TAH | ncep_gfswave025 | 2.2 m | 82 % |
+| PA-PAC | ncep_gfswave016 | 0.3 m | 100 % |
+| PE-LIM | ncep_gfswave025 | 1.7 m | 100 % |
+| PE-LLB | ncep_gfswave016 | 1.3 m | 100 % |
+| PE-NOR | ncep_gfswave016 | 1.0 m | 57 % |
+| PE-SUR | ncep_gfswave025 | 1.6 m | 100 % |
+| PF-ISL | ncep_gfswave025 | 2.0 m | 27 % |
+| PF-TAH | ncep_gfswave025 | 2.0 m | 85 % |
 | PG-ALL | ncep_gfswave016 | 0.9 m | 68 % |
-| PH-EAS | ncep_gfswave016 | 1.1 m | 100 % |
-| PH-LUZ | ncep_gfswave016 | 0.6 m | 100 % |
-| PH-SIA | ncep_gfswave016 | 1.0 m | 100 % |
-| PR-N | ncep_gfswave016 | 0.8 m | 100 % |
-| PR-NW | ncep_gfswave016 | 0.6 m | 1 % |
-| PT-ALG | ncep_gfswave016 | 1.6 m | 100 % |
-| PT-AZO | ncep_gfswave016 | 1.0 m | 26 % |
+| PH-EAS | ncep_gfswave016 | 1.3 m | 100 % |
+| PH-LUZ | ncep_gfswave016 | 0.8 m | 100 % |
+| PH-SIA | ncep_gfswave016 | 1.2 m | 100 % |
+| PR-N | ncep_gfswave016 | 0.9 m | 98 % |
+| PR-NW | ncep_gfswave016 | 0.7 m | 2 % |
+| PT-ALG | ncep_gfswave016 | 1.5 m | 100 % |
+| PT-AZO | ncep_gfswave016 | 1.0 m | 30 % |
 | PT-CEN | ncep_gfswave016 | 1.5 m | 100 % |
-| PT-ERI | ncep_gfswave016 | 1.6 m | 100 % |
+| PT-ERI | ncep_gfswave016 | 1.6 m | 99 % |
 | PT-LIS | ncep_gfswave016 | 1.1 m | 97 % |
 | PT-MAD | ncep_gfswave016 | 0.8 m | 20 % |
 | PT-NOR | ncep_gfswave016 | 1.4 m | 100 % |
-| PT-PEN | ncep_gfswave016 | 1.7 m | 96 % |
-| RE-ALL | ncep_gfswave025 | 1.3 m | 65 % |
-| SN-ALL | ncep_gfswave016 | 1.3 m | 96 % |
+| PT-PEN | ncep_gfswave016 | 1.6 m | 94 % |
+| RE-ALL | ncep_gfswave025 | 1.3 m | 80 % |
+| SN-ALL | ncep_gfswave016 | 1.2 m | 96 % |
 | SV-LIB | ncep_gfswave016 | 1.2 m | 100 % |
 | SV-ORI | ncep_gfswave016 | 1.1 m | 100 % |
-| TO-ALL | ncep_gfswave025 | 1.7 m | 45 % |
-| TT-ALL | ncep_gfswave016 | 0.8 m | 100 % |
-| TW-E | ncep_gfswave016 | 1.2 m | 93 % |
-| TW-NE | ncep_gfswave016 | 0.9 m | 94 % |
+| TO-ALL | ncep_gfswave025 | 1.7 m | 51 % |
+| TT-ALL | ncep_gfswave016 | 0.8 m | 99 % |
+| TW-E | ncep_gfswave016 | 1.4 m | 99 % |
+| TW-NE | ncep_gfswave016 | 1.1 m | 98 % |
 | US-CA-CEN | ecmwf_wam | 1.4 m | 100 % |
-| US-CA-LA | ecmwf_wam | 0.9 m | 100 % |
-| US-CA-NOR | ecmwf_wam | 1.7 m | 100 % |
-| US-CA-OC | ecmwf_wam | 1.0 m | 100 % |
+| US-CA-LA | ecmwf_wam | 1.0 m | 100 % |
+| US-CA-NOR | ecmwf_wam | 1.8 m | 100 % |
+| US-CA-OC | ecmwf_wam | 1.1 m | 100 % |
 | US-CA-SB | ecmwf_wam | 0.8 m | 100 % |
-| US-CA-SC | ecmwf_wam | 1.1 m | 100 % |
-| US-CA-SD | ncep_gfswave016 | 0.8 m | 100 % |
-| US-CA-SF | ecmwf_wam | 1.3 m | 100 % |
-| US-FL-PAN | ecmwf_wam | 0.7 m | 89 % |
-| US-FL | ncep_gfswave016 | 0.7 m | 100 % |
-| US-GULF | ecmwf_wam | 0.6 m | 97 % |
+| US-CA-SC | ecmwf_wam | 1.2 m | 100 % |
+| US-CA-SD | ncep_gfswave016 | 0.9 m | 100 % |
+| US-CA-SF | ecmwf_wam | 1.4 m | 100 % |
+| US-FL-PAN | ecmwf_wam | 0.7 m | 76 % |
+| US-FL | ncep_gfswave016 | 1.0 m | 98 % |
+| US-GULF | ecmwf_wam | 0.6 m | 94 % |
 | US-HI-BIG | ecmwf_wam | 1.0 m | 100 % |
-| US-HI-KAU | ecmwf_wam | 1.4 m | 100 % |
-| US-HI-MAU | ecmwf_wam | 1.4 m | 100 % |
-| US-HI-OAN | ncep_gfswave016 | 1.1 m | 96 % |
-| US-HI-OAS | ecmwf_wam | 1.2 m | 96 % |
-| US-MID | ncep_gfswave025 | 0.8 m | 88 % |
-| US-NE | ecmwf_wam | 0.7 m | 82 % |
-| US-PNW | ecmwf_wam | 1.4 m | 100 % |
-| US-SC-GA | ncep_gfswave016 | 0.6 m | 97 % |
-| US-SE | ncep_gfswave025 | 0.8 m | 98 % |
-| UY-MAL | ncep_gfswave025 | 1.4 m | 100 % |
-| UY-ROC | ncep_gfswave025 | 1.6 m | 95 % |
+| US-HI-KAU | ecmwf_wam | 1.6 m | 100 % |
+| US-HI-MAU | ecmwf_wam | 1.6 m | 83 % |
+| US-HI-OAN | ncep_gfswave016 | 1.3 m | 90 % |
+| US-HI-OAS | ecmwf_wam | 1.2 m | 78 % |
+| US-MID | ncep_gfswave025 | 1.1 m | 88 % |
+| US-NE | ecmwf_wam | 0.8 m | 70 % |
+| US-PNW | ecmwf_wam | 1.6 m | 100 % |
+| US-SC-GA | ncep_gfswave016 | 0.7 m | 93 % |
+| US-SE | ncep_gfswave025 | 1.3 m | 94 % |
+| UY-MAL | ncep_gfswave025 | 1.5 m | 100 % |
+| UY-ROC | ncep_gfswave025 | 1.8 m | 99 % |
 | VE-ALL | ncep_gfswave016 | 0.5 m | 100 % |
 | VN-ALL | ncep_gfswave016 | 0.7 m | 100 % |
-| VU-ALL | ncep_gfswave025 | 1.4 m | 45 % |
+| VU-ALL | ncep_gfswave025 | 1.6 m | 37 % |
 | WS-ALL | ncep_gfswave025 | 2.2 m | 100 % |
-| ZA-EC-JB | ncep_gfswave025 | 2.4 m | 17 % |
-| ZA-EC-PE | ncep_gfswave025 | 2.1 m | 74 % |
-| ZA-EC-WLD | ncep_gfswave025 | 1.8 m | 85 % |
-| ZA-KZN-DBN | ncep_gfswave025 | 1.8 m | 81 % |
+| ZA-EC-JB | ncep_gfswave025 | 2.6 m | 0 % |
+| ZA-EC-PE | ncep_gfswave025 | 2.3 m | 78 % |
+| ZA-EC-WLD | ncep_gfswave025 | 1.9 m | 95 % |
+| ZA-KZN-DBN | ncep_gfswave025 | 1.8 m | 67 % |
 | ZA-KZN-N | ncep_gfswave025 | 1.8 m | 98 % |
-| ZA-KZN-S | ncep_gfswave025 | 1.9 m | 76 % |
-| ZA-WC-CPT | ncep_gfswave025 | 2.2 m | 76 % |
-| ZA-WC-GR | ncep_gfswave025 | 1.9 m | 85 % |
-| ZA-WC-WCO | ncep_gfswave025 | 2.0 m | 30 % |
+| ZA-KZN-S | ncep_gfswave025 | 2.0 m | 63 % |
+| ZA-WC-CPT | ncep_gfswave025 | 2.4 m | 74 % |
+| ZA-WC-GR | ncep_gfswave025 | 2.0 m | 100 % |
+| ZA-WC-WCO | ncep_gfswave025 | 2.2 m | 23 % |

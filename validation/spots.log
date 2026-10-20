@@ -3,231 +3,231 @@
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 AR-BAN      16 spots  media 1.4 m  de frente 100 %
-AR-MDP      22 spots  media 1.5 m  de frente 99 %
-AR-SUR       6 spots  media 1.0 m  de frente 96 %
-AU-NSW-MN   33 spots  media 1.5 m  de frente 72 %
-AU-NSW-NC   30 spots  media 1.4 m  de frente 83 %
-AU-NSW-NR   26 spots  media 1.5 m  de frente 82 %
-AU-NSW-SC   31 spots  media 1.5 m  de frente 80 %
-AU-NSW-SYD  37 spots  media 1.6 m  de frente 74 %
-AU-QLD-GC   24 spots  media 1.1 m  de frente 80 %
-AU-QLD-SC   27 spots  media 1.2 m  de frente 100 %
-AU-SA-EYR    3 spots  media 1.4 m  de frente 100 %
-AU-SA       14 spots  media 1.4 m  de frente 98 %
-AU-TAS      12 spots  media 1.4 m  de frente 55 %
-AU-VIC-PI   18 spots  media 1.4 m  de frente 100 %
-AU-VIC-SC   20 spots  media 1.4 m  de frente 99 %
-AU-VIC-W     9 spots  media 2.6 m  de frente 100 %
-AU-WA-GAS    3 spots  media 1.3 m  de frente 14 %
+AR-MDP      22 spots  media 1.5 m  de frente 100 %
+AR-SUR       6 spots  media 1.0 m  de frente 97 %
+AU-NSW-MN   33 spots  media 1.5 m  de frente 78 %
+AU-NSW-NC   30 spots  media 1.4 m  de frente 100 %
+AU-NSW-NR   26 spots  media 1.7 m  de frente 83 %
+AU-NSW-SC   31 spots  media 1.5 m  de frente 96 %
+AU-NSW-SYD  37 spots  media 1.6 m  de frente 79 %
+AU-QLD-GC   24 spots  media 1.3 m  de frente 80 %
+AU-QLD-SC   27 spots  media 1.3 m  de frente 100 %
+AU-SA-EYR    3 spots  media 1.3 m  de frente 100 %
+AU-SA       14 spots  media 1.2 m  de frente 93 %
+AU-TAS      12 spots  media 1.3 m  de frente 44 %
+AU-VIC-PI   18 spots  media 1.2 m  de frente 100 %
+AU-VIC-SC   20 spots  media 1.2 m  de frente 99 %
+AU-VIC-W     9 spots  media 2.3 m  de frente 100 %
+AU-WA-GAS    3 spots  media 1.3 m  de frente 28 %
 AU-WA-MR    32 spots  media 3.1 m  de frente 97 %
 AU-WA-NW     5 spots  media 2.0 m  de frente 100 %
-AU-WA-PER   20 spots  media 2.0 m  de frente 100 %
-BB-ALL       8 spots  media 1.1 m  de frente 35 %
+AU-WA-PER   20 spots  media 2.1 m  de frente 100 %
+BB-ALL       8 spots  media 1.0 m  de frente 37 %
 BR-BA       21 spots  media 1.1 m  de frente 100 %
-BR-ES       19 spots  media 1.1 m  de frente 100 %
+BR-ES       19 spots  media 1.1 m  de frente 99 %
 BR-NE-CE    13 spots  media 1.1 m  de frente 100 %
 BR-NE-PE    14 spots  media 1.1 m  de frente 100 %
 BR-NE-RN    13 spots  media 1.1 m  de frente 100 %
-BR-NOR       5 spots  media 1.4 m  de frente 22 %
-BR-RJ       17 spots  media 0.8 m  de frente 100 %
+BR-NOR       5 spots  media 1.4 m  de frente 31 %
+BR-RJ       17 spots  media 0.9 m  de frente 100 %
 BR-RJL      20 spots  media 1.1 m  de frente 96 %
-BR-RS-SUL    2 spots  media 1.3 m  de frente 100 %
-BR-RS       18 spots  media 1.4 m  de frente 100 %
-BR-SC-FLN   14 spots  media 1.4 m  de frente 99 %
+BR-RS-SUL    2 spots  media 1.4 m  de frente 100 %
+BR-RS       18 spots  media 1.5 m  de frente 100 %
+BR-SC-FLN   14 spots  media 1.5 m  de frente 100 %
 BR-SC-NOR   20 spots  media 0.9 m  de frente 100 %
-BR-SC-SUL    6 spots  media 1.4 m  de frente 100 %
-BR-SP       29 spots  media 0.8 m  de frente 100 %
-BS-ALL       1 spots  media 0.8 m  de frente 11 %
-CA-BC-VI    14 spots  media 1.2 m  de frente 30 %
-CA-NS       11 spots  media 1.0 m  de frente 51 %
+BR-SC-SUL    6 spots  media 1.5 m  de frente 100 %
+BR-SP       29 spots  media 0.9 m  de frente 100 %
+BS-ALL       1 spots  media 1.1 m  de frente 0 %
+CA-BC-VI    14 spots  media 1.4 m  de frente 30 %
+CA-NS       11 spots  media 1.1 m  de frente 69 %
 CL-CEN      20 spots  media 1.6 m  de frente 10 %
-CL-MAU      14 spots  media 1.7 m  de frente 96 %
-CL-NOR      11 spots  media 1.5 m  de frente 100 %
-CL-PIC      12 spots  media 1.9 m  de frente 70 %
-CL-SUR      11 spots  media 1.7 m  de frente 100 %
-CN-HAI       2 spots  media 0.9 m  de frente 50 %
-CO-CAR       3 spots  media 0.8 m  de frente 100 %
-CO-PAC       6 spots  media 0.8 m  de frente 100 %
-CR-CAR       5 spots  media 0.7 m  de frente 100 %
+CL-MAU      14 spots  media 1.5 m  de frente 90 %
+CL-NOR      11 spots  media 1.6 m  de frente 100 %
+CL-PIC      12 spots  media 1.8 m  de frente 59 %
+CL-SUR      11 spots  media 1.4 m  de frente 100 %
+CN-HAI       2 spots  media 1.1 m  de frente 50 %
+CO-CAR       3 spots  media 0.9 m  de frente 100 %
+CO-PAC       6 spots  media 0.9 m  de frente 100 %
+CR-CAR       5 spots  media 0.8 m  de frente 100 %
 CR-GUA      12 spots  media 1.2 m  de frente 100 %
 CR-NIC      11 spots  media 1.1 m  de frente 100 %
-CR-OSA       4 spots  media 1.1 m  de frente 70 %
+CR-OSA       4 spots  media 1.1 m  de frente 58 %
 CR-PAC      10 spots  media 1.0 m  de frente 100 %
-CV-ALL       3 spots  media 1.2 m  de frente 6 %
-DE-ALL       4 spots  media 1.2 m  de frente 91 %
-DK-ALL       5 spots  media 1.5 m  de frente 87 %
-DO-ALL       2 spots  media 1.0 m  de frente 100 %
-EC-COS      13 spots  media 0.9 m  de frente 100 %
-EC-GAL       4 spots  media 1.1 m  de frente 49 %
-ES-AND      15 spots  media 0.6 m  de frente 39 %
-ES-AST      14 spots  media 1.4 m  de frente 100 %
-ES-CAN      14 spots  media 1.3 m  de frente 100 %
-ES-CN-E     11 spots  media 1.4 m  de frente 64 %
-ES-CN-W     17 spots  media 1.2 m  de frente 67 %
-ES-GAL      18 spots  media 1.7 m  de frente 96 %
-ES-PV       26 spots  media 1.2 m  de frente 100 %
-FJ-MAM       6 spots  media 0.5 m  de frente 100 %
-FJ-SOU       2 spots  media 1.3 m  de frente 98 %
-FR-BRE      15 spots  media 1.2 m  de frente 97 %
-FR-GIR      18 spots  media 1.4 m  de frente 100 %
+CV-ALL       3 spots  media 1.1 m  de frente 9 %
+DE-ALL       4 spots  media 1.2 m  de frente 76 %
+DK-ALL       5 spots  media 1.4 m  de frente 74 %
+DO-ALL       2 spots  media 1.1 m  de frente 100 %
+EC-COS      13 spots  media 1.0 m  de frente 100 %
+EC-GAL       4 spots  media 1.2 m  de frente 50 %
+ES-AND      15 spots  media 0.5 m  de frente 61 %
+ES-AST      14 spots  media 1.5 m  de frente 100 %
+ES-CAN      14 spots  media 1.4 m  de frente 100 %
+ES-CN-E     11 spots  media 1.3 m  de frente 59 %
+ES-CN-W     17 spots  media 1.2 m  de frente 66 %
+ES-GAL      18 spots  media 1.7 m  de frente 95 %
+ES-PV       26 spots  media 1.3 m  de frente 100 %
+FJ-MAM       6 spots  media 0.5 m  de frente 99 %
+FJ-SOU       2 spots  media 1.4 m  de frente 98 %
+FR-BRE      15 spots  media 1.3 m  de frente 97 %
+FR-GIR      18 spots  media 1.5 m  de frente 100 %
 FR-HOS      16 spots  media 1.5 m  de frente 100 %
 FR-PBA      24 spots  media 1.5 m  de frente 100 %
-FR-VEN      12 spots  media 0.9 m  de frente 99 %
-GB-CON      28 spots  media 1.7 m  de frente 99 %
-GB-DEV       9 spots  media 1.4 m  de frente 92 %
-GB-NE       25 spots  media 0.7 m  de frente 66 %
-GB-NIR       9 spots  media 1.0 m  de frente 87 %
-GB-SCO      21 spots  media 1.4 m  de frente 41 %
-GB-SOU       3 spots  media 0.7 m  de frente 89 %
-GB-WAL      21 spots  media 1.4 m  de frente 89 %
+FR-VEN      12 spots  media 1.0 m  de frente 99 %
+GB-CON      28 spots  media 1.8 m  de frente 98 %
+GB-DEV       9 spots  media 1.4 m  de frente 89 %
+GB-NE       25 spots  media 1.0 m  de frente 77 %
+GB-NIR       9 spots  media 1.0 m  de frente 84 %
+GB-SCO      21 spots  media 1.5 m  de frente 44 %
+GB-SOU       3 spots  media 0.8 m  de frente 77 %
+GB-WAL      21 spots  media 1.3 m  de frente 82 %
 GH-ALL       3 spots  media 0.9 m  de frente 100 %
-GP-ALL       3 spots  media 1.0 m  de frente 6 %
+GP-ALL       3 spots  media 0.9 m  de frente 5 %
 GT-PAC       4 spots  media 1.2 m  de frente 100 %
 ID-BAL-BUK  16 spots  media 1.8 m  de frente 0 %
 ID-BAL-E    12 spots  media 1.2 m  de frente 100 %
 ID-BAL-W    18 spots  media 1.2 m  de frente 100 %
 ID-JAV-E     7 spots  media 1.5 m  de frente 0 %
-ID-JAV-W     7 spots  media 1.6 m  de frente 5 %
+ID-JAV-W     7 spots  media 1.7 m  de frente 8 %
 ID-KRU       4 spots  media 1.9 m  de frente 0 %
-ID-LOM      14 spots  media 1.8 m  de frente 75 %
+ID-LOM      14 spots  media 1.8 m  de frente 73 %
 ID-MEN      10 spots  media 1.2 m  de frente 0 %
-ID-NIA       3 spots  media 1.3 m  de frente 12 %
-ID-ROT       4 spots  media 0.9 m  de frente 100 %
-ID-SBW       9 spots  media 1.5 m  de frente 100 %
+ID-NIA       3 spots  media 1.4 m  de frente 15 %
+ID-ROT       4 spots  media 1.0 m  de frente 100 %
+ID-SBW       9 spots  media 1.4 m  de frente 100 %
 ID-SMB       2 spots  media 1.5 m  de frente 100 %
-IE-NW        9 spots  media 2.2 m  de frente 99 %
-IE-SE       10 spots  media 1.4 m  de frente 90 %
+IE-NW        9 spots  media 2.1 m  de frente 99 %
+IE-SE       10 spots  media 1.3 m  de frente 79 %
 IE-SW       12 spots  media 1.5 m  de frente 99 %
-IN-E         3 spots  media 0.6 m  de frente 100 %
+IN-E         3 spots  media 0.7 m  de frente 99 %
 IN-W         3 spots  media 0.7 m  de frente 100 %
-IS-ALL       3 spots  media 3.0 m  de frente 85 %
-IT-ALL       7 spots  media 0.4 m  de frente 76 %
-IT-SAR       4 spots  media 0.7 m  de frente 78 %
-JP-CHI       8 spots  media 2.0 m  de frente 99 %
-JP-IBA       5 spots  media 1.7 m  de frente 99 %
-JP-IZU       4 spots  media 1.2 m  de frente 96 %
-JP-KYU       2 spots  media 1.4 m  de frente 50 %
-JP-SHK       3 spots  media 1.5 m  de frente 97 %
-JP-SHO       9 spots  media 0.8 m  de frente 80 %
-KR-ALL       6 spots  media 0.7 m  de frente 39 %
-LK-E         8 spots  media 1.1 m  de frente 84 %
+IS-ALL       3 spots  media 3.6 m  de frente 92 %
+IT-ALL       7 spots  media 0.6 m  de frente 76 %
+IT-SAR       4 spots  media 0.8 m  de frente 90 %
+JP-CHI       8 spots  media 1.8 m  de frente 91 %
+JP-IBA       5 spots  media 1.6 m  de frente 100 %
+JP-IZU       4 spots  media 1.1 m  de frente 91 %
+JP-KYU       2 spots  media 1.4 m  de frente 46 %
+JP-SHK       3 spots  media 1.5 m  de frente 98 %
+JP-SHO       9 spots  media 0.8 m  de frente 89 %
+KR-ALL       6 spots  media 0.7 m  de frente 47 %
+LK-E         8 spots  media 1.1 m  de frente 90 %
 LK-S        11 spots  media 1.1 m  de frente 100 %
 LR-ALL       3 spots  media 1.0 m  de frente 0 %
 MA-N         6 spots  media 1.2 m  de frente 100 %
-MA-S         6 spots  media 1.2 m  de frente 100 %
-MA-TAG      19 spots  media 0.8 m  de frente 32 %
-MG-ALL       3 spots  media 2.1 m  de frente 73 %
-MQ-ALL       3 spots  media 1.1 m  de frente 88 %
-MU-ALL       3 spots  media 1.4 m  de frente 83 %
+MA-S         6 spots  media 1.1 m  de frente 100 %
+MA-TAG      19 spots  media 0.8 m  de frente 41 %
+MG-ALL       3 spots  media 2.0 m  de frente 67 %
+MQ-ALL       3 spots  media 1.0 m  de frente 92 %
+MU-ALL       3 spots  media 1.3 m  de frente 83 %
 MV-CEN       1 spots  media 0.8 m  de frente 0 %
 MV-NMA       6 spots  media 0.8 m  de frente 0 %
-MV-SMA       3 spots  media 0.7 m  de frente 3 %
+MV-SMA       3 spots  media 0.8 m  de frente 20 %
 MV-SOU       2 spots  media 1.0 m  de frente 96 %
-MX-BCN       4 spots  media 1.2 m  de frente 95 %
+MX-BCN       4 spots  media 1.2 m  de frente 99 %
 MX-BCS-N     2 spots  media 1.2 m  de frente 50 %
-MX-BCS       6 spots  media 1.6 m  de frente 100 %
-MX-CAR       3 spots  media 0.9 m  de frente 99 %
-MX-NAY       9 spots  media 1.4 m  de frente 52 %
+MX-BCS       6 spots  media 1.3 m  de frente 100 %
+MX-CAR       3 spots  media 0.8 m  de frente 91 %
+MX-NAY       9 spots  media 1.1 m  de frente 33 %
 MX-OAX      13 spots  media 1.6 m  de frente 100 %
-MX-PAC      12 spots  media 2.0 m  de frente 100 %
-MZ-INH       3 spots  media 1.0 m  de frente 88 %
-MZ-S         3 spots  media 1.6 m  de frente 88 %
-NA-ERO       3 spots  media 1.7 m  de frente 100 %
-NI-NW        4 spots  media 1.0 m  de frente 100 %
+MX-PAC      12 spots  media 2.1 m  de frente 100 %
+MZ-INH       3 spots  media 1.0 m  de frente 68 %
+MZ-S         3 spots  media 1.6 m  de frente 79 %
+NA-ERO       3 spots  media 1.9 m  de frente 100 %
+NI-NW        4 spots  media 1.1 m  de frente 100 %
 NI-RIV       8 spots  media 1.1 m  de frente 100 %
-NL-ALL      11 spots  media 1.0 m  de frente 100 %
-NO-N         3 spots  media 2.1 m  de frente 65 %
-NO-S         3 spots  media 2.0 m  de frente 89 %
-NZ-AKL       9 spots  media 2.0 m  de frente 100 %
-NZ-BOP      11 spots  media 0.8 m  de frente 82 %
-NZ-GIS      13 spots  media 1.4 m  de frente 66 %
-NZ-KAI       9 spots  media 1.1 m  de frente 90 %
-NZ-NTL      14 spots  media 1.1 m  de frente 4 %
-NZ-OTA      13 spots  media 1.3 m  de frente 75 %
+NL-ALL      11 spots  media 1.2 m  de frente 89 %
+NO-N         3 spots  media 2.6 m  de frente 56 %
+NO-S         3 spots  media 1.9 m  de frente 92 %
+NZ-AKL       9 spots  media 1.9 m  de frente 100 %
+NZ-BOP      11 spots  media 0.7 m  de frente 91 %
+NZ-GIS      13 spots  media 1.5 m  de frente 67 %
+NZ-KAI       9 spots  media 1.1 m  de frente 91 %
+NZ-NTL      14 spots  media 1.0 m  de frente 2 %
+NZ-OTA      13 spots  media 1.4 m  de frente 72 %
 NZ-RAG       5 spots  media 1.5 m  de frente 2 %
-NZ-TAR       7 spots  media 1.4 m  de frente 74 %
-NZ-WC        4 spots  media 1.5 m  de frente 100 %
-NZ-WEL      13 spots  media 1.4 m  de frente 68 %
+NZ-TAR       7 spots  media 1.4 m  de frente 69 %
+NZ-WC        4 spots  media 1.4 m  de frente 99 %
+NZ-WEL      13 spots  media 1.4 m  de frente 63 %
 PA-BDT       4 spots  media 0.8 m  de frente 100 %
-PA-PAC       7 spots  media 0.4 m  de frente 100 %
-PE-LIM      15 spots  media 1.6 m  de frente 100 %
-PE-LLB       7 spots  media 1.2 m  de frente 98 %
-PE-NOR      10 spots  media 1.0 m  de frente 60 %
-PE-SUR       5 spots  media 1.5 m  de frente 100 %
-PF-ISL       2 spots  media 2.2 m  de frente 26 %
-PF-TAH       8 spots  media 2.2 m  de frente 82 %
+PA-PAC       7 spots  media 0.3 m  de frente 100 %
+PE-LIM      15 spots  media 1.7 m  de frente 100 %
+PE-LLB       7 spots  media 1.3 m  de frente 100 %
+PE-NOR      10 spots  media 1.0 m  de frente 57 %
+PE-SUR       5 spots  media 1.6 m  de frente 100 %
+PF-ISL       2 spots  media 2.0 m  de frente 27 %
+PF-TAH       8 spots  media 2.0 m  de frente 85 %
 PG-ALL       2 spots  media 0.9 m  de frente 68 %
-PH-EAS       2 spots  media 1.1 m  de frente 100 %
-PH-LUZ       5 spots  media 0.6 m  de frente 100 %
-PH-SIA       8 spots  media 1.0 m  de frente 100 %
-PR-N         8 spots  media 0.8 m  de frente 100 %
-PR-NW       15 spots  media 0.6 m  de frente 1 %
+PH-EAS       3 spots  media 1.3 m  de frente 100 %
+PH-LUZ       5 spots  media 0.8 m  de frente 100 %
+PH-SIA       8 spots  media 1.2 m  de frente 100 %
+PR-N         8 spots  media 0.9 m  de frente 98 %
+PR-NW       15 spots  media 0.7 m  de frente 2 %
 PT-ALG      18 spots  media 1.5 m  de frente 100 %
-PT-AZO       7 spots  media 1.0 m  de frente 26 %
+PT-AZO       7 spots  media 1.0 m  de frente 30 %
 PT-CEN      20 spots  media 1.5 m  de frente 100 %  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  wikidata failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (HTTP Error 500: Internal Server Error)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass-api.de failed (The read operation timed out)
+  overpass overpass.private.coffee failed (The read operation timed out)
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
+  overpass overpass-api.de failed (The read operation timed out)
   overpass overpass.private.coffee failed (The read operation timed out)
 
-PT-ERI      11 spots  media 1.6 m  de frente 100 %
+PT-ERI      11 spots  media 1.6 m  de frente 99 %
 PT-LIS      15 spots  media 1.1 m  de frente 97 %
 PT-MAD       8 spots  media 0.8 m  de frente 20 %
-PT-NOR      19 spots  media 1.5 m  de frente 100 %
-PT-PEN      12 spots  media 1.7 m  de frente 96 %
-RE-ALL       8 spots  media 1.3 m  de frente 65 %
-SN-ALL       5 spots  media 1.3 m  de frente 96 %
+PT-NOR      19 spots  media 1.4 m  de frente 100 %
+PT-PEN      12 spots  media 1.6 m  de frente 94 %
+RE-ALL       8 spots  media 1.3 m  de frente 80 %
+SN-ALL       5 spots  media 1.2 m  de frente 96 %
 SV-LIB       8 spots  media 1.2 m  de frente 100 %
 SV-ORI       4 spots  media 1.1 m  de frente 100 %
-TO-ALL       6 spots  media 1.7 m  de frente 45 %
-TT-ALL       4 spots  media 0.8 m  de frente 100 %
-TW-E         4 spots  media 1.2 m  de frente 93 %
-TW-NE        6 spots  media 1.0 m  de frente 94 %
+TO-ALL       6 spots  media 1.7 m  de frente 51 %
+TT-ALL       4 spots  media 0.7 m  de frente 99 %
+TW-E         4 spots  media 1.4 m  de frente 99 %
+TW-NE        6 spots  media 1.1 m  de frente 98 %
 US-CA-CEN   16 spots  media 1.4 m  de frente 100 %
-US-CA-LA    23 spots  media 0.9 m  de frente 100 %
-US-CA-NOR   25 spots  media 1.7 m  de frente 100 %
-US-CA-OC    32 spots  media 1.0 m  de frente 100 %
-US-CA-SB    27 spots  media 0.8 m  de frente 100 %
-US-CA-SC    30 spots  media 1.1 m  de frente 100 %
-US-CA-SD    38 spots  media 0.8 m  de frente 100 %
-US-CA-SF    29 spots  media 1.3 m  de frente 100 %
-US-FL-PAN    6 spots  media 0.7 m  de frente 89 %
-US-FL       46 spots  media 0.7 m  de frente 100 %
-US-GULF     13 spots  media 0.5 m  de frente 97 %
+US-CA-LA    23 spots  media 1.0 m  de frente 100 %
+US-CA-NOR   25 spots  media 1.8 m  de frente 100 %
+US-CA-OC    32 spots  media 1.1 m  de frente 100 %
+US-CA-SB    27 spots  media 0.9 m  de frente 100 %
+US-CA-SC    30 spots  media 1.2 m  de frente 100 %
+US-CA-SD    38 spots  media 0.9 m  de frente 100 %
+US-CA-SF    29 spots  media 1.4 m  de frente 100 %
+US-FL-PAN    6 spots  media 0.6 m  de frente 76 %
+US-FL       46 spots  media 1.0 m  de frente 98 %
+US-GULF     13 spots  media 0.6 m  de frente 94 %
 US-HI-BIG   15 spots  media 1.0 m  de frente 100 %
-US-HI-KAU   21 spots  media 1.4 m  de frente 100 %
-US-HI-MAU   21 spots  media 1.4 m  de frente 100 %
-US-HI-OAN   21 spots  media 1.1 m  de frente 96 %
-US-HI-OAS   25 spots  media 1.2 m  de frente 96 %
-US-MID      11 spots  media 0.8 m  de frente 88 %
-US-NE       60 spots  media 0.6 m  de frente 82 %
-US-PNW      33 spots  media 1.4 m  de frente 100 %
-US-SC-GA    10 spots  media 0.6 m  de frente 97 %
-US-SE       22 spots  media 0.8 m  de frente 98 %
-UY-MAL      18 spots  media 1.4 m  de frente 100 %
-UY-ROC      19 spots  media 1.6 m  de frente 95 %
+US-HI-KAU   21 spots  media 1.6 m  de frente 100 %
+US-HI-MAU   21 spots  media 1.6 m  de frente 83 %
+US-HI-OAN   21 spots  media 1.3 m  de frente 90 %
+US-HI-OAS   25 spots  media 1.2 m  de frente 78 %
+US-MID      11 spots  media 1.1 m  de frente 88 %
+US-NE       60 spots  media 0.8 m  de frente 70 %
+US-PNW      33 spots  media 1.6 m  de frente 100 %
+US-SC-GA    10 spots  media 0.7 m  de frente 93 %
+US-SE       22 spots  media 1.3 m  de frente 94 %
+UY-MAL      18 spots  media 1.5 m  de frente 100 %
+UY-ROC      19 spots  media 1.8 m  de frente 99 %
 VE-ALL       2 spots  media 0.5 m  de frente 100 %
 VN-ALL       5 spots  media 0.7 m  de frente 100 %
-VU-ALL       5 spots  media 1.4 m  de frente 45 %
+VU-ALL       5 spots  media 1.6 m  de frente 37 %
 WS-ALL       6 spots  media 2.2 m  de frente 100 %
-ZA-EC-JB    10 spots  media 2.4 m  de frente 17 %
-ZA-EC-PE    17 spots  media 2.1 m  de frente 74 %
-ZA-EC-WLD    5 spots  media 1.8 m  de frente 85 %
-ZA-KZN-DBN   8 spots  media 1.7 m  de frente 81 %
-ZA-KZN-N     6 spots  media 1.7 m  de frente 98 %
-ZA-KZN-S     9 spots  media 1.9 m  de frente 76 %
-ZA-WC-CPT   20 spots  media 2.2 m  de frente 76 %
-ZA-WC-GR    11 spots  media 1.9 m  de frente 85 %
-ZA-WC-WCO    6 spots  media 2.0 m  de frente 30 %
-40 facing flags cleared over 92 days
+ZA-EC-JB    10 spots  media 2.6 m  de frente 0 %
+ZA-EC-PE    17 spots  media 2.3 m  de frente 78 %
+ZA-EC-WLD    5 spots  media 1.9 m  de frente 95 %
+ZA-KZN-DBN   8 spots  media 1.8 m  de frente 67 %
+ZA-KZN-N     6 spots  media 1.8 m  de frente 98 %
+ZA-KZN-S     9 spots  media 2.0 m  de frente 63 %
+ZA-WC-CPT   20 spots  media 2.4 m  de frente 74 %
+ZA-WC-GR    11 spots  media 2.0 m  de frente 100 %
+ZA-WC-WCO    6 spots  media 2.2 m  de frente 23 %
+36 facing flags cleared over 92 days
   AR-MDP/BIOLOGÍA: ok 0.22
   AR-MDP/WAIKIKI: ok 0.13
   AR-MDP/CHAPADMALAL: ok 0.23
@@ -417,7 +417,7 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 30 %
   IE-SW/LAHINCH: ok 0.34
   IE-SW/AILEEN'S: sin fuente 
   IE-SW/CRAB ISLAND: ok 0.6
-  IT-SAR/CAPO MANNU: ok 0.69  wikidata failed (HTTP Error 502: Bad Gateway), retrying
+  IT-SAR/CAPO MANNU: ok 0.69  wikidata failed (HTTP Error 429: Too Many Requests), retrying
 
   JP-CHI/TSURIGASAKI: ok 0.08
   JP-CHI/ONJUKU: ok 1.03
@@ -621,4 +621,4 @@ ZA-WC-WCO    6 spots  media 2.0 m  de frente 30 %
   ZA-WC-GR/INNER POOL: sin fuente 
   ZA-WC-GR/VICTORIA BAY: ok 0.64
   ZA-WC-WCO/ELANDS BAY: ok 0.83
-127 spots flagged; flagship: {'ok': 307, 'lejos': 0, 'sin fuente': 63, 'error': 0}; Open-Meteo 35 requests, ~2169 calls
+142 spots flagged; flagship: {'ok': 307, 'lejos': 0, 'sin fuente': 63, 'error': 0}; Open-Meteo 35 requests, ~2177 calls
