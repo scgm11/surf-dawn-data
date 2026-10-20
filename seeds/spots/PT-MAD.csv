@@ -1,0 +1,9 @@
+name,lat,lon,type,conf,src,flags,note
+MACHICO,32.7200,-16.7680,B,L,local,,posicion aproximada
+PRAIA FORMOSA,32.6430,-16.9550,B,L,local,,Funchal; posicion aproximada
+LUGAR DE BAIXO,32.6740,-17.0980,P,L,local,,Ponta do Sol; posicion aproximada
+MADALENA DO MAR,32.6900,-17.1270,P,L,local,,Ponta do Sol; posicion aproximada
+JARDIM DO MAR,32.7410,-17.2100,P,K,local,top,ola grande
+PAUL DO MAR,32.7570,-17.2270,P,K,local,,punto de roca
+SEIXAL,32.8300,-17.1100,R,L,local,,costa norte; posicion aproximada
+RIBEIRA DA JANELA,32.8270,-17.1460,B,L,local,,Porto Moniz; posicion aproximada

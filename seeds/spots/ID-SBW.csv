@@ -1,0 +1,10 @@
+name,lat,lon,type,conf,src,flags,note
+LAKEY PEAK,-8.7965,118.3786,R,V,osm:node/4395829390,top,Hu'u; WC; posición OSM
+LAKEY PIPE,-8.8160,118.3760,R,L,local,,Hu'u; posicion aprox
+NUNGAS,-8.8140,118.3670,R,L,local,,Hu'u; posicion aprox
+PERISCOPES,-8.8130,118.3610,R,L,local,,Hu'u; posicion aprox
+COBBLESTONES,-8.8235,118.3790,R,K,web:surfnerd,,Hu'u; 2 km al sur de Lakey Peak
+SCAR REEF,-8.8606,116.7627,R,V,osm:node/7217881385,top,"Jelenga, oeste de Sumbawa; posición OSM"
+YO-YOS,-8.9730,116.7287,R,K,web:mondo.surf,,"Rantung, Sekongkang"
+SUPERSUCK,-8.9312,116.7414,R,K,web:mondo.surf,top,izquierda tubular; 4 km al sur de Maluk
+TROPICALS,-9.0017,116.7387,R,K,web:mondo.surf,,al sur de Sekongkang

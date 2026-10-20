@@ -1,0 +1,26 @@
+name,lat,lon,type,conf,src,flags,note
+KEWALOS,21.2880,-157.8610,R,K,local,,Kewalo Basin
+COCKROACHES,21.2870,-157.8555,R,L,local,,Ala Moana
+ALA MOANA BOWLS,21.2870,-157.8515,R,K,local,top,Bowls; izquierda
+CONCESSIONS,21.2865,-157.8480,R,L,local,,Ala Moana
+KAISERS,21.2800,-157.8400,R,K,local,,Hilton Hawaiian Village
+POPULARS,21.2703,-157.8305,R,K,local,,Waikiki
+CANOES,21.2665,-157.8250,R,K,local,,Waikiki
+QUEENS,21.2650,-157.8225,R,K,local,top,Waikiki
+PUBLICS,21.2630,-157.8195,R,L,local,,Waikiki
+THREES,21.2610,-157.8170,R,L,local,,Waikiki
+FOURS,21.2595,-157.8140,R,L,local,,Kaimana
+DIAMOND HEAD,21.2540,-157.8070,R,K,local,,Lighthouse
+KAHALA,21.2620,-157.7800,R,L,local,,
+PORTLOCK,21.2615,-157.7085,R,L,local,,Hawaii Kai; ola grande
+CHINA WALLS,21.2600,-157.7200,R,L,local,,Hawaii Kai; swell sur grande
+SANDY BEACH,21.2855,-157.6735,B,K,local,top,shorebreak potente
+MAKAPUU,21.3110,-157.6600,B,K,local,,
+WAIMANALO,21.3350,-157.7030,B,K,local,,
+BELLOWS,21.3620,-157.7110,B,K,local,,
+KAILUA,21.3995,-157.7260,B,K,local,,
+MAKAHA,21.4800,-158.2240,R,K,local,top,ola grande de invierno
+MAILI,21.4150,-158.1830,R,L,local,,
+NANAKULI,21.3920,-158.1470,B,K,local,,
+KAHE POINT,21.3578,-158.1310,R,K,local,,
+YOKOHAMA BAY,21.5540,-158.2500,B,K,local,,Keawaula

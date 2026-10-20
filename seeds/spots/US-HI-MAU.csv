@@ -1,0 +1,22 @@
+name,lat,lon,type,conf,src,flags,note
+JAWS,20.9470,-156.2985,R,K,local,top nosnap facing=10 checked,Pe'ahi; ola grande; mar adentro
+HO'OKIPA,20.9355,-156.3570,R,K,local,top,
+PAVILIONS,20.9350,-156.3590,R,L,local,,Ho'okipa oeste
+LANES,20.9362,-156.3540,R,L,local,,Ho'okipa este
+PAIA BAY,20.9170,-156.3650,B,L,local,,
+BALDWIN,20.9250,-156.3930,B,L,local,,Baldwin Beach
+STABLES,20.9290,-156.4090,R,L,local,,Spreckelsville
+SPRECKS,20.9290,-156.4190,R,L,local,,Spreckelsville
+HONOLUA,21.0125,-156.6390,P,K,local,top,Honolua Bay; derecha larga
+DT FLEMING,21.0105,-156.6600,B,L,local,,Fleming Beach
+MALA RAMP,20.8825,-156.6865,R,L,local,,Lahaina
+BREAKWALL,20.8712,-156.6808,R,K,local,,Lahaina Harbor
+PUAMANA,20.8550,-156.6710,R,L,local,,
+LAUNIUPOKO,20.8430,-156.6600,R,K,local,,
+OLOWALU,20.8090,-156.6190,R,L,local,,
+MAALAEA,20.7915,-156.5130,R,L,local,,Freight Trains; derecha rapida
+KALAMA PARK,20.7350,-156.4530,R,L,local,,Kihei
+COVE PARK,20.7250,-156.4490,R,L,local,,Kihei
+BIG BEACH,20.6300,-156.4490,B,K,local,,Makena; shorebreak
+HAMOA,20.7138,-155.9860,B,K,local,,Hana
+KOKI BEACH,20.7450,-155.9930,B,L,local,,Hana

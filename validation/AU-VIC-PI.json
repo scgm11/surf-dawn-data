@@ -1,0 +1,123 @@
+{
+ "region": "AU-VIC-PI",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [
+  "aodn:inverloch",
+  "aodn:apollo-bay",
+  "aodn:wilsons-prom"
+ ],
+ "excluded": [
+  {
+   "id": "aodn:rosebud",
+   "km": 12.9,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:indented-head",
+   "km": 23.8,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:central",
+   "km": 34.4,
+   "why": "otro mar o abrigada: ve 9 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:mt-eliza",
+   "km": 35.0,
+   "why": "otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:werribee",
+   "km": 41.0,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "aodn:sandringham",
+   "km": 48.0,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1050,
+   "hs_bias": -0.164,
+   "hs_rmse": 0.396,
+   "hs_si": 0.148,
+   "tp_bias": 0.52,
+   "tp_mae": 1.32,
+   "dir_mae": 11.8,
+   "dir_bias": 5.0,
+   "tm_bias": 4.8,
+   "obs_hs": 1.79,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1050,
+   "hs_bias": 0.209,
+   "hs_rmse": 0.437,
+   "hs_si": 0.125,
+   "tp_bias": 0.64,
+   "tp_mae": 1.15,
+   "dir_mae": 12.0,
+   "dir_bias": 9.0,
+   "tm_bias": 2.85,
+   "obs_hs": 1.79,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1050,
+   "hs_bias": 0.164,
+   "hs_rmse": 0.445,
+   "hs_si": 0.187,
+   "tp_bias": -2.1,
+   "tp_mae": 2.46,
+   "dir_mae": 13.4,
+   "dir_bias": 10.0,
+   "tm_bias": 2.17,
+   "obs_hs": 1.79,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "confidence": "baja",
+ "per_buoy": {
+  "aodn:inverloch": {
+   "n": 730,
+   "best": null,
+   "km": 44.5
+  },
+  "aodn:apollo-bay": {
+   "n": 193,
+   "best": "ncep_gfswave025",
+   "km": 96.9
+  },
+  "aodn:wilsons-prom": {
+   "n": 127,
+   "best": "ncep_gfswave025",
+   "km": 147.1
+  }
+ },
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.158,
+  "hours": 744,
+  "point": [
+   -38.489,
+   145.013
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.77,
+   "meteofrance_wave": 2.1,
+   "ecmwf_wam": 1.44
+  }
+ },
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

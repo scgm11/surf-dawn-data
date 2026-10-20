@@ -1,0 +1,14 @@
+name,lat,lon,type,conf,src,flags,note
+TATAPOURI,-38.6150,178.1490,P,L,local,,
+CORNERS,-38.6300,178.1290,B,L,local,,Makorori norte
+FARMHOUSE,-38.6345,178.1255,B,L,local,,Makorori
+CREEKS,-38.6385,178.1230,B,L,local,,Makorori
+RED BUS,-38.6420,178.1195,B,L,local,,Makorori
+CENTRES,-38.6455,178.1165,B,L,local,top,NZCPS; Makorori
+MAKORORI POINT,-38.6510,178.1070,P,K,local,top,NZCPS; derecha
+STOCK ROUTE,-38.6730,178.0770,B,L,local,top,NZCPS; Wainui
+WAINUI,-38.6790,178.0700,B,K,local,top,NZCPS; Wainui Beach
+PINES,-38.6830,178.0640,B,L,local,top,NZCPS; Wainui
+WHALES,-38.6930,178.0580,B,L,local,top,NZCPS; Wainui sur
+THE ISLAND,-38.7100,178.0500,R,V,web:surf-forecast.com,top,NZCPS; Tuamotu Island; izquierda
+WAIKANAE BEACH,-38.6680,178.0040,B,L,local,,ciudad de Gisborne

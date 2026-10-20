@@ -1,0 +1,27 @@
+{
+ "region": "ID-ROT",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.188,
+  "hours": 744,
+  "point": [
+   -10.86,
+   122.83
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.09,
+   "ncep_gfswave025": 0.8,
+   "meteofrance_wave": 1.22,
+   "ecmwf_wam": 0.88
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,0 +1,8 @@
+name,lat,lon,type,conf,src,flags,note
+MONDELLO,38.1990,13.3250,B,L,local,,Sicilia; posicion aproximada
+LEVANTO,44.1690,9.6070,B,K,local,,Liguria
+VARAZZE,44.3570,8.5790,B,L,local,,Liguria; posicion aproximada
+FORTE DEI MARMI,43.9620,10.1590,B,L,local,,Toscana; posicion aproximada
+MARINA DI PISA,43.6770,10.2700,B,L,local,,Toscana; posicion aproximada
+LADISPOLI,41.9460,12.0580,B,L,local,,Lacio; posicion aproximada
+OSTIA,41.7270,12.2800,B,K,local,,Roma

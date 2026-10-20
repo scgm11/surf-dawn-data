@@ -1,0 +1,27 @@
+{
+ "region": "PH-SIA",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.062,
+  "hours": 744,
+  "point": [
+   9.818,
+   126.17
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 0.95,
+   "ncep_gfswave025": 0.96,
+   "meteofrance_wave": 0.92,
+   "ecmwf_wam": 0.94
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

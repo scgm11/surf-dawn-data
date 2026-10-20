@@ -1,0 +1,28 @@
+{
+ "region": "ES-GAL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.114,
+  "hours": 744,
+  "point": [
+   43.291,
+   -8.695
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.49,
+   "ncep_gfswave025": 1.87,
+   "meteofrance_wave": 1.55,
+   "ecmwf_wam": 1.63,
+   "dwd_ewam": 1.85
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

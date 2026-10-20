@@ -1,0 +1,8 @@
+name,lat,lon,type,conf,src,flags,note
+BATU KARAS,-7.7450,108.4985,P,K,local,top,derecha de punta
+PANGANDARAN,-7.7040,108.6420,B,L,local,,playa oeste
+CIMAJA,-7.0470,106.5190,P,L,local,,derecha de punta; Pelabuhan Ratu
+KARANG HAWU,-7.0630,106.5080,R,L,local,,Pelabuhan Ratu; posicion aprox
+OMBAK TUJUH,-7.3500,106.4120,R,L,local,,Ujung Genteng; posicion aprox
+SAWARNA,-6.9790,106.3130,B,L,local,,Banten; posicion aprox
+MADASARI,-7.7853,108.4908,B,K,osm:way/703258203,,"Masawah, Cimerak; posición OSM"

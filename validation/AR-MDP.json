@@ -1,0 +1,26 @@
+{
+ "region": "AR-MDP",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.07,
+  "hours": 744,
+  "point": [
+   -38.58,
+   -58.7
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.56,
+   "meteofrance_wave": 1.43,
+   "ecmwf_wam": 1.58
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

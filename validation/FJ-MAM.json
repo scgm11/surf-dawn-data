@@ -1,0 +1,26 @@
+{
+ "region": "FJ-MAM",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.356,
+  "hours": 744,
+  "point": [
+   -17.861,
+   177.191
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.66,
+   "meteofrance_wave": 1.68,
+   "ecmwf_wam": 1.53
+  }
+ },
+ "confidence": "baja",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

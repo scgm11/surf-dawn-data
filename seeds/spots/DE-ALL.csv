@@ -1,0 +1,5 @@
+name,lat,lon,type,conf,src,flags,note
+HORNUM,54.7620,8.2740,B,L,local,,Sylt; posicion aproximada
+WESTERLAND,54.9070,8.2900,B,K,local,,Sylt
+WENNINGSTEDT,54.9400,8.2960,B,L,local,,Sylt; posicion aproximada
+KAMPEN,54.9480,8.3000,B,L,local,,Sylt; posicion aproximada

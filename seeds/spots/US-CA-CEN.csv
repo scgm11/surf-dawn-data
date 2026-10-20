@@ -1,0 +1,17 @@
+name,lat,lon,type,conf,src,flags,note
+OCEANO,35.1000,-120.6425,B,K,local,,
+GROVER BEACH,35.1190,-120.6480,B,K,local,,
+PISMO PIER,35.1385,-120.6435,B,K,local,top,
+SHELL BEACH,35.1550,-120.6780,B,K,local,,
+PIRATE'S COVE,35.1660,-120.7170,B,K,local,,
+AVILA BEACH,35.1790,-120.7310,B,K,local,,
+PORT SAN LUIS,35.1690,-120.7570,R,K,local,facing=200,orientación a mano (la calculada miraba a la laguna o la bahía)
+HAZARD CANYON,35.2560,-120.8790,R,L,local,,Montana de Oro
+SPOONER'S COVE,35.2765,-120.8830,B,K,local,,Montana de Oro
+SANDSPIT,35.3200,-120.8620,B,L,local,facing=270,Morro Bay; orientación a mano (la calculada miraba a otra costa)
+MORRO ROCK,35.3715,-120.8650,B,K,local,top,
+MORRO STRAND,35.3860,-120.8700,B,K,local,,
+CAYUCOS PIER,35.4465,-120.9095,B,K,local,,
+MOONSTONE,35.5710,-121.1280,B,L,local,,Cambria
+ANDREW MOLERA,36.2900,-121.9000,B,K,local,,Big Sur
+GARRAPATA,36.4350,-121.9230,B,K,local,,Big Sur

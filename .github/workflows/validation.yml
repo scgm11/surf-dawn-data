@@ -1,0 +1,74 @@
+name: Validación de modelos de olas y viento
+# Compara los modelos de olas y de viento de Open-Meteo con boyas y estaciones costeras (NDBC, CDIP,
+# AODN, Marine Institute y, con los secretos de una cuenta, Copernicus Marine In Situ) de los últimos
+# 30 días y publica validation/ (docs/formatos.md, sección Validación).
+on:
+  push:
+    branches: [main]
+    paths:
+      - "validate/**"
+      - ".github/workflows/validation.yml"
+  schedule:
+    - cron: "17 6 3 * *"          # el día 3 de cada mes, 06:17 UTC
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: "Regiones (vacío: todas). Con regiones la corrida es de prueba y no publica"
+        required: false
+        default: ""
+permissions:
+  contents: write
+concurrency:
+  group: data-commit-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r validate/requirements.txt
+      - name: Copernicus Marine Toolbox (sólo con cuenta)
+        env:
+          COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
+        run: |
+          if [ -n "$COPERNICUSMARINE_SERVICE_USERNAME" ]; then pip install copernicusmarine==2.5.0; else echo "sin secretos de Copernicus Marine: la fuente cmems se salta"; fi
+      - name: Pruebas
+        run: python3 -m unittest discover validate
+      - name: Caché de descargas (boyas y Open-Meteo del día)
+        uses: actions/cache/restore@v4
+        with:
+          path: validate/.cache
+          key: validation-${{ github.run_id }}
+          restore-keys: validation-
+      - name: Validar
+        shell: bash
+        env:
+          COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
+          COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.COPERNICUSMARINE_SERVICE_PASSWORD }}
+          REGIONS: ${{ github.event.inputs.regions }}
+        run: |
+          set -o pipefail
+          mkdir -p validation
+          args=()
+          [ -n "$REGIONS" ] && read -ra R <<< "$REGIONS" && args+=(--regions "${R[@]}")
+          python3 validate/run.py "${args[@]}" 2>&1 | tee validation/build.log
+      - name: Guardar caché
+        if: always()
+        uses: actions/cache/save@v4
+        with:
+          path: validate/.cache
+          key: validation-${{ github.run_id }}
+      - name: Publicar
+        if: always() && github.event.inputs.regions == ''
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add validation
+          git diff --cached --quiet && echo "sin cambios" && exit 0
+          git commit -m "Validación: modelos de olas y viento contra boyas $(date -u +%Y-%m-%d)"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"

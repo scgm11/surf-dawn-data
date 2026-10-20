@@ -1,0 +1,20 @@
+name,lat,lon,type,conf,src,flags,note
+MOLEDO,41.8420,-8.8780,B,L,local,,Caminha; posicion aproximada
+ANCORA,41.8080,-8.8670,B,K,local,,Vila Praia de Ancora
+AFIFE,41.7640,-8.8730,B,L,local,,Viana do Castelo; posicion aproximada
+PRAIA NORTE,41.7050,-8.8500,B,L,local,,Viana do Castelo; posicion aproximada
+CABEDELO,41.6780,-8.8600,B,L,local,facing=273,Viana do Castelo; posicion aproximada; orientación a mano (la calculada miraba a la laguna o la bahía)
+ESPOSENDE,41.5370,-8.7900,B,L,local,,posicion aproximada
+APULIA,41.4650,-8.7880,B,L,local,,Esposende; posicion aproximada
+AGUCADOURA,41.4420,-8.7890,B,L,local,,Povoa de Varzim; posicion aproximada
+POVOA DE VARZIM,41.3690,-8.7700,B,K,local,,
+ANGEIRAS,41.2430,-8.7480,B,L,local,,Matosinhos; posicion aproximada
+LEÇA,41.2010,-8.7230,B,K,local,,Leça da Palmeira
+MATOSINHOS,41.1830,-8.7000,B,K,local,top,
+CARNEIRO,41.1430,-8.6810,B,L,local,,Foz do Douro; posicion aproximada
+MOLHE,41.1480,-8.6880,B,L,local,,Foz do Douro; junto al espigon; posicion aproximada
+MADALENA,41.0990,-8.6660,B,K,local,,Vila Nova de Gaia
+VALADARES,41.0900,-8.6610,B,L,local,,Vila Nova de Gaia; posicion aproximada
+MIRAMAR,41.0680,-8.6580,B,K,local,,Vila Nova de Gaia
+AGUDA,41.0540,-8.6590,B,K,local,,Arcozelo
+ESPINHO,41.0095,-8.6510,B,K,local,top,

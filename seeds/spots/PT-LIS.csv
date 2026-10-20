@@ -1,0 +1,16 @@
+name,lat,lon,type,conf,src,flags,note
+MAÇÃS,38.8360,-9.4680,B,K,local,,Sintra; Praia das Maçãs
+ADRAGA,38.8250,-9.4810,B,L,local,,Sintra; posicion aproximada
+MAGOITO,38.8030,-9.4600,B,L,local,,Sintra; posicion aproximada
+PRAIA GRANDE,38.8050,-9.4740,B,K,local,,Sintra
+GUINCHO,38.7340,-9.4760,B,K,local,top,Cascais
+PAREDE,38.6850,-9.3630,B,L,local,,Cascais; posicion aproximada
+CARCAVELOS,38.6800,-9.3380,B,K,local,top,Cascais
+COVA DO VAPOR,38.6670,-9.2330,B,K,local,,Costa da Caparica
+SÃO JOÃO,38.6560,-9.2420,B,L,local,,Costa da Caparica; posicion aproximada
+COSTA DA CAPARICA,38.6420,-9.2370,B,K,local,top,
+RAINHA,38.6330,-9.2350,B,L,local,,Costa da Caparica; posicion aproximada
+CDS,38.6230,-9.2290,B,L,local,,Costa da Caparica; posicion aproximada
+MATA,38.5900,-9.2150,B,L,local,,Costa da Caparica; posicion aproximada
+FONTE DA TELHA,38.5560,-9.1960,B,L,local,,Costa da Caparica; posicion aproximada
+MECO,38.4907,-9.1886,B,V,gov:visitportugal,,Sesimbra

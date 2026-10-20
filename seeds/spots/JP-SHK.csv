@@ -1,0 +1,4 @@
+name,lat,lon,type,conf,src,flags,note
+KAIFU,33.5800,134.3600,P,L,local,top checked,Tokushima; posicion dudosa
+SHISHIKUI,33.5540,134.3340,B,L,local,,Tokushima; posicion aprox
+HIWASA,33.7270,134.5300,B,L,local,,Tokushima; posicion aprox

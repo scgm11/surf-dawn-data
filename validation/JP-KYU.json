@@ -1,0 +1,27 @@
+{
+ "region": "JP-KYU",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.118,
+  "hours": 744,
+  "point": [
+   31.82,
+   131.47
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.38,
+   "ncep_gfswave025": 1.5,
+   "meteofrance_wave": 1.78,
+   "ecmwf_wam": 1.48
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

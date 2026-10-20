@@ -1,0 +1,11 @@
+name,lat,lon,type,conf,src,flags,note
+KITCHEN WINDOWS,-34.0551,24.9248,P,L,local,,J-Bay; seccion interpolada
+MAGNA TUBES,-34.0491,24.9274,P,L,local,,J-Bay; seccion interpolada
+BONEYARDS,-34.0441,24.9296,P,K,local,,J-Bay
+SUPERTUBES,-34.0390,24.9318,P,K,local,top,WSL exCT; J-Bay
+IMPOSSIBLES,-34.0356,24.9333,P,K,local,,J-Bay
+TUBES,-34.0322,24.9348,P,L,local,,J-Bay; seccion interpolada
+THE POINT,-34.0289,24.9362,P,L,local,,J-Bay; seccion interpolada
+ALBATROSS,-34.0246,24.9381,P,L,local,,J-Bay; seccion interpolada
+BRUCE'S BEAUTIES,-34.2020,24.8330,P,L,local,top,Cape St Francis; posicion dudosa
+SEAL POINT,-34.2095,24.8385,R,K,local,top,Cape St Francis; faro

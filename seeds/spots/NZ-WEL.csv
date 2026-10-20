@@ -1,0 +1,14 @@
+name,lat,lon,type,conf,src,flags,note
+LYALL BAY,-41.3305,174.7960,B,K,local,top,
+HOUGHTON BAY,-41.3375,174.7770,R,L,local,,
+ISLAND BAY,-41.3470,174.7700,B,L,local,,
+OWHIRO BAY,-41.3470,174.7520,B,L,local,,
+MAKARA BEACH,-41.2200,174.7130,B,L,local,,
+TITAHI BAY,-41.1010,174.8250,B,K,local,,Porirua
+PAEKAKARIKI,-40.9790,174.9500,B,K,local,,Kapiti
+RAUMATI,-40.9330,174.9740,B,L,local,,Kapiti
+WAIKANAE,-40.8730,175.0000,B,L,local,,Kapiti
+OTAKI,-40.7700,175.1100,B,L,local,,Kapiti; desembocadura
+CASTLEPOINT,-40.9120,176.2260,R,K,local,,Wairarapa
+RIVERSDALE,-41.0872,176.0740,B,K,web:newzealand.com,,Wairarapa
+CAPE PALLISER,-41.6140,175.2890,R,L,local,,Wairarapa sur

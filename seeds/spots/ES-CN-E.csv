@@ -1,0 +1,12 @@
+name,lat,lon,type,conf,src,flags,note
+EL QUEMAO,29.1105,-13.6535,R,K,local,top,Lanzarote; ola de clase mundial
+LA SANTA,29.1070,-13.6660,R,K,local,top,Lanzarote
+FAMARA,29.1180,-13.5580,B,K,local,top,Lanzarote; Caleta de Famara
+PUNTA MUJERES,29.1580,-13.4560,R,L,local,,Lanzarote; posicion aproximada
+LOBOS,28.7500,-13.8330,P,K,local,top,Fuerteventura
+FLAG BEACH,28.7140,-13.8350,B,L,local,,Corralejo; posicion aproximada
+MAJANICHO,28.7420,-13.9030,R,L,local,,Fuerteventura norte; posicion aproximada
+EL COTILLO,28.6850,-14.0150,B,K,local,top,Fuerteventura
+ROCKY POINT,28.6910,-14.0200,R,L,local,,El Cotillo; posicion aproximada
+ESQUINZO,28.6270,-14.0500,B,L,local,,Fuerteventura; posicion aproximada
+LA PARED,28.2180,-14.2160,B,K,local,,Fuerteventura sur

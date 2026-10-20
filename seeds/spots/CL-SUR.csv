@@ -1,0 +1,12 @@
+name,lat,lon,type,conf,src,flags,note
+PUERTO SAAVEDRA,-38.7800,-73.4000,B,L,local,,Boca Budi
+TOLTÉN,-39.2100,-73.2300,B,L,local,,
+QUEULE,-39.3900,-73.2150,B,L,local,,
+MEHUÍN,-39.4300,-73.2100,B,K,local,,
+CURIÑANCO,-39.7740,-73.4000,B,L,local,,Valdivia
+NIEBLA,-39.8700,-73.4000,B,L,local,,Valdivia
+PUCATRIHUE,-40.5400,-73.7150,B,L,local,,Osorno
+BAHÍA MANSA,-40.5750,-73.7360,B,K,local,,Osorno
+MAICOLPUÉ,-40.5920,-73.7350,B,L,local,,Osorno
+MAR BRAVA,-41.8780,-74.0500,B,L,local,,Ancud; Chiloé
+CUCAO,-42.6380,-74.1092,B,K,osm:node/214210924,,Chiloé; posición OSM

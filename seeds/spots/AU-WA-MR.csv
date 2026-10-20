@@ -1,0 +1,33 @@
+name,lat,lon,type,conf,src,flags,note
+BORANUP,-34.1691,115.0303,B,V,web:komoot,,
+CONTOS,-34.0900,114.9850,B,L,local,,
+REDGATE,-34.0400,114.9840,B,K,local,,
+BOODJIDUP,-34.0100,114.9860,R,L,local,,
+GAS BAY,-33.9970,114.9860,R,L,local,,
+GRUNTERS,-33.9890,114.9840,R,L,local,,
+SOUTHSIDE,-33.9810,114.9830,R,L,local,,Surfers Point
+MAIN BREAK,-33.9780,114.9830,R,K,local,top,Surfers Point; CT26; WC
+BOATRAMP,-33.9760,114.9835,R,L,local,,Surfers Point
+THE RIVERMOUTH,-33.9695,114.9835,R,K,local,,
+THE BOX,-33.9660,114.9780,R,K,local,top,ola grande; Cape Mentelle
+THE WOMB,-33.9140,114.9770,R,L,local,,Ellensbrook
+LEFT HANDERS,-33.8900,114.9810,R,L,local,,
+HUZZAWOUIE,-33.8770,114.9830,R,L,local,,Gracetown
+SOUTH POINT,-33.8735,114.9825,R,L,local,,Gracetown
+COW BOMBIE,-33.8620,114.9760,R,L,local,,ola grande; Gracetown
+NORTH POINT,-33.8600,114.9800,R,K,local,top,Gracetown
+GUILLOTINE,-33.8180,114.9860,R,L,local,,
+GALLOWS,-33.7800,114.9870,R,L,local,,
+HONEYCOMBS,-33.7330,114.9870,R,L,local,,
+MOSES ROCK,-33.7190,114.9880,R,K,local,,
+WILDCAT,-33.7110,114.9885,R,L,local,,
+THE WINDOW,-33.7085,114.9890,R,L,local,,
+CAPE CLAIRAULT,-33.7005,114.9890,R,L,local,,
+PEA BREAK,-33.6940,114.9915,R,L,local,,Injidup
+INJIDUP POINT,-33.6920,114.9925,R,L,local,,
+SUPERTUBES,-33.6530,115.0186,R,V,web:mondo.surf,top,Smiths Beach
+SMITHS,-33.6480,115.0165,R,L,local,,Smiths Beach
+YALLINGUP,-33.6420,115.0200,R,K,local,top,
+RABBIT HILL,-33.6380,115.0170,R,L,local,,Yallingup
+THREE BEARS,-33.5829,115.0121,R,V,web:exploroz,,entre Sugarloaf Rock y Yallingup
+WINDMILLS,-33.5442,115.0081,R,K,web:mondo.surf,,"1,7 km al norte de Sugarloaf Rock"

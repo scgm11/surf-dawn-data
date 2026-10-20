@@ -1,0 +1,26 @@
+{
+ "region": "PF-ISL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.269,
+  "hours": 744,
+  "point": [
+   -16.755,
+   -151.412
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.91,
+   "meteofrance_wave": 1.72,
+   "ecmwf_wam": 0.95
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

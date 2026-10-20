@@ -1,0 +1,9 @@
+name,lat,lon,type,conf,src,flags,note
+GUASACATE,11.4790,-86.1380,B,L,local,,Popoyo norte; posición aproximada
+COLORADO,11.4700,-86.1330,R,K,local,,Popoyo
+POPOYO,11.4620,-86.1260,R,K,local,top,ola de arrecife frente a la playa
+SANTANA,11.4430,-86.1060,P,K,local,,Rancho Santana; derecha
+MADERAS,11.3000,-85.9100,B,K,local,top,San Juan del Sur norte
+MARSELLA,11.2870,-85.9120,B,L,local,,San Juan del Sur norte; posición aproximada
+HERMOSA,11.2420,-85.8830,B,L,local,,San Juan del Sur sur; posición aproximada
+YANKEE,11.2330,-85.8780,B,L,local,,San Juan del Sur sur; posición aproximada

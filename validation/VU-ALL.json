@@ -1,0 +1,25 @@
+{
+ "region": "VU-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.086,
+  "hours": 744,
+  "point": [
+   -19.532,
+   169.268
+  ],
+  "mean_hs": {
+   "meteofrance_wave": 1.69,
+   "ecmwf_wam": 1.44
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

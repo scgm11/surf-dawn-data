@@ -1,0 +1,30 @@
+name,lat,lon,type,conf,src,flags,note
+FORT POINT,37.8105,-122.4772,P,K,local,top,
+BAKER BEACH,37.7935,-122.4835,B,K,local,,
+KELLY'S COVE,37.7720,-122.5140,B,K,local,,Ocean Beach
+OCEAN BEACH,37.7600,-122.5135,B,K,local,top,
+NORIEGA,37.7540,-122.5100,B,K,local,,Ocean Beach
+SLOAT,37.7355,-122.5080,B,K,local,,Ocean Beach
+FORT FUNSTON,37.7170,-122.5050,B,K,local,,
+MUSSEL ROCK,37.6700,-122.4975,B,K,local,,Daly City
+PACIFICA PIER,37.6335,-122.4975,B,K,local,,
+SHARP PARK,37.6180,-122.4965,B,K,local,,Pacifica
+ROCKAWAY,37.6040,-122.4985,B,K,local,,Pacifica
+LINDA MAR,37.5965,-122.5085,B,K,local,facing=280,Pacifica; orientación a mano (la calculada miraba a otra costa)
+PEDRO POINT,37.5935,-122.5185,P,K,local,,Pacifica
+MONTARA,37.5380,-122.5120,B,K,local,,
+MIRADA SURF,37.5110,-122.4880,P,L,local,,Half Moon Bay
+SURFER'S BEACH,37.5000,-122.4800,B,L,local,facing=230,Pillar Point Harbor; orientación a mano (la calculada miraba a la laguna o la bahía)
+MAVERICKS,37.4915,-122.5083,R,V,web:wikipedia.org,top nosnap facing=240 checked,ola grande
+MIRAMAR,37.4700,-122.4560,B,L,local,,Half Moon Bay
+POPLAR BEACH,37.4730,-122.4600,B,L,local,,Half Moon Bay
+FRANCIS BEACH,37.4605,-122.4425,B,L,local,,Half Moon Bay
+VENICE BEACH,37.4425,-122.4350,B,L,local,,Half Moon Bay
+DUNES BEACH,37.4300,-122.4300,B,L,local,,Half Moon Bay
+SAN GREGORIO,37.3250,-122.4025,B,L,local,,
+POMPONIO,37.2920,-122.4000,B,L,local,,
+RODEO BEACH,37.8300,-122.5360,B,K,local,,Marin
+MUIR BEACH,37.8600,-122.5780,B,K,local,facing=230,Marin; orientación a mano (la calculada miraba a otra costa)
+STINSON BEACH,37.9000,-122.6450,B,K,local,,Marin
+BOLINAS,37.9050,-122.6820,P,K,local,,Marin
+LIMANTOUR,38.0380,-122.8830,B,L,local,,Point Reyes

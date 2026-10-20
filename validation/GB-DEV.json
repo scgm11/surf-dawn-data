@@ -1,0 +1,27 @@
+{
+ "region": "GB-DEV",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave016",
+ "fixed": false,
+ "spread": {
+  "hs": 0.17,
+  "hours": 744,
+  "point": [
+   51.039,
+   -4.242
+  ],
+  "mean_hs": {
+   "ncep_gfswave016": 1.22,
+   "meteofrance_wave": 1.1,
+   "ecmwf_wam": 0.81,
+   "dwd_ewam": 1.18
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

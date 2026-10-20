@@ -1,0 +1,26 @@
+{
+ "region": "AU-QLD-GC",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.158,
+  "hours": 744,
+  "point": [
+   -27.95,
+   153.4295
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.99,
+   "meteofrance_wave": 0.88,
+   "ecmwf_wam": 1.25
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

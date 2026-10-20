@@ -1,0 +1,17 @@
+name,lat,lon,type,conf,src,flags,note
+ONDRES,43.5792,-1.4875,B,K,geonames:3232812,,plage d'Ondres; posición GeoNames
+LABENNE,43.6040,-1.4540,B,K,local,,Labenne-Ocean
+L'ESTACADE,43.6430,-1.4500,B,K,local,,Capbreton; junto al espigon
+SANTOCHA,43.6500,-1.4520,B,K,local,top,Capbreton
+LE PREVENT,43.6550,-1.4515,B,K,local,,Capbreton
+LA PISTE,43.6600,-1.4510,B,K,local,,Capbreton-Hossegor
+LA SUD,43.6680,-1.4490,B,K,local,,Hossegor
+LA CENTRALE,43.6730,-1.4485,B,K,local,,Hossegor plage centrale
+LA GRAVIERE,43.6744,-1.4410,B,V,wd:Q49322634,top,WC exCT; tubo de banco; posición Wikidata
+LA NORD,43.6802,-1.4402,B,V,geonames:11072940,top,Hossegor; plage Nord; posición GeoNames
+LES CULS NUS,43.6799,-1.4408,B,V,osm:node/3053079147,top,Hossegor; plage des Culs Nus; posición OSM
+LES ESTAGNOTS,43.6858,-1.4347,B,V,osm:node/9103164683,top,Seignosse; exCT; posición OSM
+LE PENON,43.7062,-1.4270,B,V,osm:node/9103164682,top,Seignosse; posición OSM
+LES BOURDAINES,43.7280,-1.4500,B,L,local,,Seignosse; posicion aproximada
+LES CASERNES,43.7360,-1.4505,B,L,local,,Seignosse; posicion aproximada
+LES OCEANIDES,43.7440,-1.4510,B,L,local,,Seignosse; posicion aproximada

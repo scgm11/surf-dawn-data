@@ -1,0 +1,26 @@
+{
+ "region": "TO-ALL",
+ "from": "2026-09-13",
+ "to": "2026-10-13",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": false,
+ "spread": {
+  "hs": 0.19,
+  "hours": 744,
+  "point": [
+   -21.1097,
+   -175.344
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 1.63,
+   "meteofrance_wave": 2.0,
+   "ecmwf_wam": 1.35
+  }
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}
