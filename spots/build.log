@@ -4,73 +4,39 @@ AR-MDP      22 spots  1097 bytes  v761136
 AR-BAN      16 spots   856 bytes  v08c58b
 AR-SUR       6 spots   466 bytes  v028587
 BR-RS       18 spots  1036 bytes  vdbb84c
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 BR-RS-SUL    2 spots   266 bytes  vb3d1eb
 BR-SC-FLN   14 spots   862 bytes  v1b65d5
 BR-SC-SUL    6 spots   436 bytes  vef75ae
 BR-SC-NOR   20 spots  1086 bytes  v13dae1
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 BR-SP       29 spots  1325 bytes  vdc211f
 BR-RJ       17 spots   779 bytes  vb3d071
 BR-RJL      20 spots  1031 bytes  v8dae9a
 BR-ES       19 spots  1020 bytes  v828b10
-  open-meteo: ncep_gfswave016 at -16.4384,-39.0625: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.5916,-39.0881: No data is available for this location
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo: ncep_gfswave016 at -15.1667,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.5000,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.6667,-39.0000: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.3333,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.6667,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.8333,-39.0000: No data is available for this location
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo: ncep_gfswave016 at -15.1667,-38.6667: No data is available for this location
-  open-meteo: ncep_gfswave016 at -15.3333,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.1667,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.5000,-38.6667: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.3333,-38.6667: No data is available for this location
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-  open-meteo: ncep_gfswave016 at -16.8333,-38.8333: No data is available for this location
-  open-meteo: ncep_gfswave016 at -16.6667,-38.6667: No data is available for this location
 BR-BA       21 spots  1011 bytes  v6331cc
 BR-NE-CE    13 spots   693 bytes  v5c5e8a
 BR-NE-RN    13 spots   731 bytes  vd895c6
 BR-NE-PE    14 spots   769 bytes  v006a06
 BR-NOR       5 spots   366 bytes  vb99b41
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
 CL-NOR      11 spots   629 bytes  v006cbd
 CL-CEN      20 spots  1091 bytes  v299be8
 CL-PIC      12 spots   751 bytes  v4ae8e6
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 CL-MAU      14 spots   771 bytes  v76f25e
 CL-SUR      11 spots   664 bytes  v6b90f5
 PE-NOR      10 spots   606 bytes  vac1c6c
 PE-LLB       7 spots   511 bytes  v665af5
 PE-LIM      15 spots   934 bytes  vf1eb64
 PE-SUR       5 spots   393 bytes  vd5c48f
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 EC-COS      13 spots   708 bytes  v5c400b
 EC-GAL       4 spots   302 bytes  vfb7bc4
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 CO-PAC       6 spots   444 bytes  v91399b
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 CO-CAR       3 spots   352 bytes  v8552cc
 VE-ALL       2 spots   250 bytes  vba22a0
 PA-PAC       7 spots   496 bytes  vd350c6
 PA-BDT       4 spots   293 bytes  vad0c3b
-CR-GUA      12 spots   661 bytes  v37eb80
-CR-NIC      11 spots   574 bytes  v1bd104
   overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
   overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+CR-GUA      12 spots   660 bytes  v1bdede
+CR-NIC      11 spots   574 bytes  v1bd104
 CR-PAC      10 spots   573 bytes  vd15e45
 CR-OSA       4 spots   309 bytes  va876b0
 CR-CAR       5 spots   386 bytes  vd156ff
@@ -79,16 +45,12 @@ NI-NW        4 spots   358 bytes  v8e3688
 SV-LIB       8 spots   445 bytes  v272924
 SV-ORI       4 spots   329 bytes  vc5090f
 GT-PAC       4 spots   361 bytes  v0a0a32
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
 MX-OAX      13 spots   725 bytes  vadaa4f
 MX-PAC      12 spots   736 bytes  v9b243e
 MX-NAY       9 spots   605 bytes  va78979
   overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-MX-BCS       6 spots   437 bytes  vf0f07e
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass overpass.private.coffee failed (HTTP Error 502: Bad Gateway), retrying
+MX-BCS       6 spots   437 bytes  vbdf635
 MX-BCS-N     2 spots   300 bytes  v435d73
 MX-BCN       4 spots   362 bytes  ve5eb28
 MX-CAR       3 spots   315 bytes  v4d6c67
@@ -97,8 +59,6 @@ PR-N         8 spots   567 bytes  v3924d3
 BB-ALL       8 spots   445 bytes  vd55fc2
 DO-ALL       2 spots   245 bytes  v9822a6
 GP-ALL       3 spots   266 bytes  v5db007
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 MQ-ALL       3 spots   266 bytes  v6057ef
 BS-ALL       1 spots   188 bytes  va95ae7
 TT-ALL       4 spots   363 bytes  v54af67
@@ -117,18 +77,12 @@ US-FL-PAN    6 spots   521 bytes  v933935
 US-SE       22 spots  1181 bytes  v4e95cf
 US-SC-GA    10 spots   662 bytes  vde82cc
 US-MID      11 spots   731 bytes  v24b23d
-US-NE       60 spots  2608 bytes  v0c3949
+US-NE       60 spots  2608 bytes  ve8fbf9
 US-HI-OAN   21 spots   979 bytes  v42b876
 US-HI-OAS   25 spots  1178 bytes  v0924f3
 US-HI-MAU   21 spots   983 bytes  v78a053
-US-HI-KAU   21 spots   929 bytes  v670043
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-US-HI-BIG   15 spots   802 bytes  v9e998b
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+US-HI-KAU   21 spots   929 bytes  v16298d
+US-HI-BIG   15 spots   801 bytes  vff3104
 CA-BC-VI    14 spots   777 bytes  v888737
 CA-NS       11 spots   677 bytes  v4cad32
 AU-QLD-SC   27 spots  1284 bytes  vd960a8
@@ -138,8 +92,6 @@ AU-NSW-MN   33 spots  1644 bytes  vb576c4
 AU-NSW-NC   30 spots  1521 bytes  v9e4e32
 AU-NSW-SYD  37 spots  1598 bytes  v4dfa10
 AU-NSW-SC   31 spots  1449 bytes  v81e2b5
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 AU-VIC-SC   20 spots  1004 bytes  vd89991
 AU-VIC-PI   18 spots   974 bytes  v96ada6
 AU-VIC-W     9 spots   634 bytes  v86d7b2
@@ -152,10 +104,11 @@ AU-WA-NW     5 spots   432 bytes  va7c94c
 AU-WA-GAS    3 spots   305 bytes  vd20d41
 NZ-NTL      14 spots   778 bytes  v7b1595
 NZ-AKL       9 spots   547 bytes  v26b8ea
-NZ-RAG       5 spots   338 bytes  vf6f1e5
+NZ-RAG       5 spots   337 bytes  v4a76ab
 NZ-TAR       7 spots   459 bytes  v44428e
 NZ-BOP      11 spots   723 bytes  vc81f8f
-NZ-GIS      13 spots   765 bytes  vfac001
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+NZ-GIS      13 spots   767 bytes  v999aa7
 NZ-WEL      13 spots   757 bytes  vc037cb
 NZ-KAI       9 spots   671 bytes  vb05401
 NZ-OTA      13 spots   781 bytes  vf0b647
@@ -164,71 +117,186 @@ FJ-MAM       6 spots   405 bytes  vdc979e
 FJ-SOU       2 spots   300 bytes  va03636
 PF-TAH       8 spots   507 bytes  v8f354f
 PF-ISL       2 spots   249 bytes  v4eb3ff
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 WS-ALL       6 spots   506 bytes  v9ba8b3
 TO-ALL       6 spots   378 bytes  vdcbc92
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
 VU-ALL       5 spots   399 bytes  v438d4d
 PG-ALL       2 spots   279 bytes  vb465b6
 ID-BAL-BUK  16 spots   756 bytes  v8c0121
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 ID-BAL-W    18 spots   821 bytes  v2acc20
-ID-BAL-E    12 spots   617 bytes  vb9d72f
-ID-JAV-E     7 spots   460 bytes  vbf2f44
+ID-BAL-E    12 spots   617 bytes  v54a06f
+ID-JAV-E     7 spots   460 bytes  v704ec4
 ID-JAV-W     7 spots   455 bytes  v902289
 ID-LOM      14 spots   721 bytes  v092346
 ID-SBW       9 spots   516 bytes  v62538e
 ID-SMB       2 spots   218 bytes  v83c08b
 ID-ROT       4 spots   289 bytes  v99d464
-ID-MEN      10 spots   539 bytes  vd7c95e
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+ID-MEN      10 spots   538 bytes  vb90e9d
 ID-NIA       3 spots   291 bytes  vbb113c
 ID-KRU       4 spots   320 bytes  v978681
-PH-SIA       8 spots   436 bytes  v07cd8b
+PH-SIA       8 spots   435 bytes  v16235e
 PH-LUZ       5 spots   393 bytes  ve3f288
 PH-EAS       3 spots   353 bytes  vf4ef10
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
-LK-E         8 spots   446 bytes  v69cbfd
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+LK-E         8 spots   445 bytes  v7219c4
 LK-S        11 spots   588 bytes  v93c3cf
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
-MV-NMA       6 spots   356 bytes  v75f10f
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+MV-NMA       6 spots   357 bytes  v92c2f0
 MV-SMA       3 spots   268 bytes  v875238
 MV-SOU       2 spots   239 bytes  vf90716
 MV-CEN       1 spots   194 bytes  v64a003
 JP-CHI       8 spots   458 bytes  va63f62
 JP-SHO       9 spots   465 bytes  v25b55c
 JP-IZU       4 spots   308 bytes  v660a3c
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 502: Bad Gateway), retrying
 JP-IBA       5 spots   397 bytes  vbd4290
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (The read operation timed out), retrying
 JP-SHK       3 spots   246 bytes  v40e522
 JP-KYU       2 spots   236 bytes  vdd44d4
-TW-E         4 spots   348 bytes  vf78c31
+TW-E         4 spots   348 bytes  v279734
 TW-NE        6 spots   422 bytes  vedab9f
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
 IN-W         3 spots   284 bytes  v840d55
 IN-E         3 spots   306 bytes  v1000d5
 VN-ALL       5 spots   395 bytes  v97526d
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
 KR-ALL       6 spots   439 bytes  vc7143b
 CN-HAI       2 spots   257 bytes  v13014b
 ZA-WC-CPT   20 spots   951 bytes  va843f4
 ZA-WC-WCO    6 spots   507 bytes  v7a5933
 ZA-WC-GR    11 spots   713 bytes  veae34e
+ZA-EC-JB    10 spots   663 bytes  v4acbc7
+ZA-EC-PE    17 spots   913 bytes  vb3283f
+ZA-EC-WLD    5 spots   412 bytes  v21b782
+ZA-KZN-DBN   8 spots   452 bytes  v5ccb9b
+ZA-KZN-N     6 spots   474 bytes  vfd9264
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+ZA-KZN-S     9 spots   539 bytes  v407d13
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+NA-ERO       3 spots   335 bytes  vbe1bfd
+MA-TAG      19 spots   886 bytes  vf75dcd
+MA-N         6 spots   439 bytes  v89e26c
+MA-S         6 spots   409 bytes  v5b96ff
+SN-ALL       5 spots   326 bytes  v7f3fc8
+LR-ALL       3 spots   269 bytes  v291a47
+GH-ALL       3 spots   274 bytes  vdbd4e3
+MZ-S         3 spots   279 bytes  v1b4972
+MZ-INH       3 spots   279 bytes  vd637dc
   overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
   overpass overpass.private.coffee failed (The read operation timed out), retrying
   overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+MG-ALL       3 spots   292 bytes  veb0191
+RE-ALL       8 spots   463 bytes  vf1b4bd
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+MU-ALL       3 spots   261 bytes  v0c8dae
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+CV-ALL       3 spots   277 bytes  vb954b7
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+FR-PBA      24 spots  1077 bytes  vae6eab
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+FR-HOS      16 spots   801 bytes  vd4f50e
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+FR-GIR      18 spots   907 bytes  vea5a00
+FR-VEN      12 spots   698 bytes  v4637b6
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+FR-BRE      15 spots   760 bytes  vbed782
+ES-PV       26 spots  1099 bytes  v40b984
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+ES-CAN      14 spots   645 bytes  ved1bf8
+ES-AST      14 spots   703 bytes  vb8efa9
+ES-GAL      18 spots   832 bytes  v97926a
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+ES-AND      15 spots   752 bytes  v626de8
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+ES-CN-E     11 spots   653 bytes  v5b7802
+ES-CN-W     17 spots   902 bytes  vd9bb0f
+PT-NOR      19 spots   856 bytes  v2cd7d1
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 502: Bad Gateway), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+PT-CEN      20 spots   981 bytes  v70d749
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+PT-PEN      12 spots   599 bytes  v54e8ed
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+PT-ERI      11 spots   559 bytes  v58a955
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 502: Bad Gateway), retrying
+PT-LIS      15 spots   696 bytes  v385f37
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+PT-ALG      18 spots   879 bytes  v545cde
+PT-AZO       7 spots   485 bytes  v24419b
+PT-MAD       8 spots   465 bytes  v8ede7a
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+GB-CON      28 spots  1248 bytes  va0e660
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+GB-DEV       9 spots   540 bytes  v9b5a90
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (The read operation timed out), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway), retrying
+  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout), retrying
+  overpass maps.mail.ru failed (HTTP Error 504: Gateway Time-out), retrying
+GB-SOU       3 spots   328 bytes  v68a672
+  open-meteo: ncep_gfswave016 at 53.2233,-4.5182: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8304,-4.7368: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8045,-4.5437: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.7967,-4.4698: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.1667,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.6667,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.0000,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-5.0000: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+GB-WAL      21 spots  1070 bytes  v143808
