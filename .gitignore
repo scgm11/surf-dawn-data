@@ -3,3 +3,4 @@ __pycache__/
 tools/.osm_cache/
 tools/.cache/
 tools/.tide_cache/
+tools/.osm_src/

@@ -43,6 +43,11 @@ jobs:
             tools/.cache
           key: zones-${{ github.run_id }}
           restore-keys: zones-
+      - name: Archivo de costas de osmdata (lo guarda «Picos por zonas»)
+        uses: actions/cache/restore@v4
+        with:
+          path: tools/.osm_src/coastlines-split-4326.zip
+          key: osm-coastlines-v1
       - name: Resolver
         shell: bash
         env:

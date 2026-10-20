@@ -12,10 +12,12 @@ ports (tide/regions.json, written by tools/tide/).
 The regions of Uruguay and Santa Catarina are frozen: their seeds carry the validated
 positions, facings and wave points of 2026-10, and nothing is recomputed for them.
 
-Usage: python3 tools/build_zones.py [--regions CODE ...] [--offline] [--strict]
+Usage: python3 tools/build_zones.py [--regions CODE ...] [--offline] [--strict] [--missing-tiles]
   --offline  no downloads: only what is cached (spots that would need the network are reported)
   --strict   exit 1 on any error (CI); otherwise a region with errors is still written without
              the spots in error
+  --missing-tiles  only print how many coastline tiles are not cached yet (CI fetches the
+             coastline file only then)
 """
 import argparse
 import glob
@@ -71,18 +73,22 @@ def cells(lat, lon, km):
     return out
 
 
+def coast_rows(code, rows):
+    """The seeds that need the coastline (to snap or to face)."""
+    return [r for r in rows if code not in FROZEN and (not r["f"].get("nosnap") or "facing" not in r["f"])]
+
+
 def build_region(code, reg, country, models, ports, offline, rep):
     rows = seeds.spots(code)
     if not rows:
         return None
     frozen = code in FROZEN
     errs, warns = rep["errors"], rep["warnings"]
-    need_coast = [r for r in rows if not frozen and (not r["f"].get("nosnap") or "facing" not in r["f"])]
+    need_coast = coast_rows(code, rows)
     ways = None
     if need_coast:
-        cache_only = offline
         try:
-            ways = osm.coastline(code, [(r["lat"], r["lon"]) for r in need_coast]) if not cache_only else _cached_coast(code, need_coast)
+            ways = osm.coastline(code, [(r["lat"], r["lon"]) for r in need_coast], offline=offline)
         except RuntimeError as e:
             errs.append("%s: %s" % (code, e))
             return None
@@ -164,18 +170,6 @@ def build_region(code, reg, country, models, ports, offline, rep):
             "lat": round(clat, 3), "lon": round(clon, 3), "km": radius}
 
 
-def _cached_coast(code, rows):
-    """The coastline from the cache only (offline runs), or None."""
-    pts = [(r["lat"], r["lon"]) for r in rows]
-    boxes = osm._boxes(pts)
-    key = hashlib.sha1(json.dumps([[round(v, 3) for v in b] for b in boxes]).encode()).hexdigest()[:10]
-    path = os.path.join(osm.CACHE, "coast-%s-%s.json" % (code, key))
-    if os.path.exists(path):
-        with open(path) as f:
-            return json.load(f)
-    return None
-
-
 def previous():
     """{code: region} of the spots/ published before this run (the indexes and the region files),
     in the shape build_region returns, so a region this run cannot build is not lost."""
@@ -241,8 +235,13 @@ def main():
     ap.add_argument("--regions", nargs="*")
     ap.add_argument("--offline", action="store_true")
     ap.add_argument("--strict", action="store_true")
+    ap.add_argument("--missing-tiles", action="store_true")
     a = ap.parse_args()
     conts, countries, regions = seeds.continents(), seeds.countries(), seeds.regions()
+    if a.missing_tiles:
+        pts = [(r["lat"], r["lon"]) for code in (a.regions or regions) for r in coast_rows(code, seeds.spots(code))]
+        print(len(osm.missing_tiles(pts)))
+        return
     models, ports = rule.read(), read_ports()
     want = a.regions or list(regions)
     rep = {"errors": [], "warnings": [], "regions": {}, "offline_waves": 0}

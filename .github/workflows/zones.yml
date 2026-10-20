@@ -36,6 +36,19 @@ jobs:
             tools/.cache
           key: zones-${{ github.run_id }}
           restore-keys: zones-
+      - name: "Archivo de costas de osmdata (~1 GB, se baja una vez: solo si falta algún mosaico)"
+        id: coast
+        run: |
+          python3 tools/build_zones.py --missing-tiles | tee /tmp/missing
+          echo "missing=$(tail -1 /tmp/missing)" >> "$GITHUB_OUTPUT"
+          rm -f tools/.osm_cache/coast-*.json   # la caché vieja por región (antes de los mosaicos)
+      - name: Restaurar el archivo de costas
+        id: src
+        if: steps.coast.outputs.missing != '0'
+        uses: actions/cache/restore@v4
+        with:
+          path: tools/.osm_src/coastlines-split-4326.zip
+          key: osm-coastlines-v1
       - name: Semillas
         run: python3 tools/check_seeds.py --present
       - name: Zonas
@@ -50,6 +63,12 @@ jobs:
             tools/.osm_cache
             tools/.cache
           key: zones-${{ github.run_id }}
+      - name: Guardar el archivo de costas
+        if: always() && steps.coast.outputs.missing != '0' && steps.src.outputs.cache-hit != 'true' && hashFiles('tools/.osm_src/coastlines-split-4326.zip') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: tools/.osm_src/coastlines-split-4326.zip
+          key: osm-coastlines-v1
       - name: "Publicar (también con errores: las regiones buenas, el reporte y el log)"
         if: always()
         run: |

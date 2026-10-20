@@ -26,7 +26,10 @@ las posiciones, orientaciones y puntos de olas validados en 2026-10.
 **Agregar o corregir un pico:** una fila en la tabla de su región y un PR
 ([`seeds/README.md`](seeds/README.md) tiene las columnas y las reglas). `tools/check_seeds.py`
 valida las tablas (nombres que el reloj puede dibujar, a lo sumo 60 por región, posiciones en su
-región); la Action `zones.yml` arma `spots/` y deja el detalle en `spots/build.log`. Una semilla a
+región); la Action `zones.yml` arma `spots/` y deja el detalle en `spots/build.log`. La costa sale
+del archivo de líneas de costa de OSM de osmdata.openstreetmap.de (se baja una vez, ~1 GB) cortado en
+mosaicos fijos de 0,5° que quedan en caché: mover un pico no obliga a bajar nada salvo que caiga en un
+mosaico nuevo; Overpass queda de respaldo si osmdata no está. Una semilla a
 más de 2,5 km de la costa no entra: `tools/resolve_seeds.py` (Action `resolve.yml`) la busca por
 nombre en OpenStreetMap y la mueve al lugar con ese nombre sobre la costa; un pico mar adentro
 (un reef) lleva `nosnap` y su `facing=`.
@@ -74,7 +77,7 @@ La regla y la lectura de `models.csv` están en `tools/lib/models.py`. Detalle e
 
 ## Fuentes y créditos
 
-- Costas y nombres: © colaboradores de **OpenStreetMap** (ODbL), vía Overpass y Nominatim; nombres y
+- Costas y nombres: © colaboradores de **OpenStreetMap** (ODbL), vía osmdata.openstreetmap.de, Overpass y Nominatim; nombres y
   posiciones de **Wikidata** (CC0) y **GeoNames** (CC BY 4.0) para revisar los picos.
 - Olas, viento, nivel del mar y puntos de olas: **Open-Meteo** (CC BY 4.0; uso no comercial
   gratis), con los modelos de NOAA, ECMWF, Météo-France, DWD, ECCC, JMA, UK Met Office y BoM.
