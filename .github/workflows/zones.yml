@@ -77,5 +77,7 @@ jobs:
           git add spots
           git diff --cached --quiet && echo "sin cambios" && exit 0
           git commit -m "Picos: zonas $(date -u +%Y-%m-%d)"
-          git pull --rebase origin "${GITHUB_REF_NAME}"
+          # si otro run publicó mientras tanto, en un choque queda el spots/ de este run
+          # (en un rebase, «theirs» es el commit que se está aplicando: el de este run)
+          git pull --rebase -X theirs origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
