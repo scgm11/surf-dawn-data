@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-INNER POOL,-34.1810,22.1500,R,K,local,top,Mossel Bay
+INNER POOL,-34.1833,22.1590,R,V,osm:way/276490395,top,Mossel Bay; The Point; frente a la piscina de marea
 SANTOS,-34.1740,22.1380,B,L,local,,Mossel Bay
 HARTENBOS,-34.1110,22.1100,B,L,local,,
 DANA BAY,-34.2200,22.0750,B,L,local,,

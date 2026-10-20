@@ -1,15 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
-BOILERS,30.6400,-9.8300,R,L,local,top checked,posicion dudosa; ola pesada
-KILLER POINT,30.5501,-9.7400,P,V,web:mondo.surf,top,al norte de Anchor Point
-ANCHOR POINT,30.5640,-9.7240,P,K,local,top,derecha larga; 3 km al norte de Taghazout
-LA SOURCE,30.5575,-9.7185,P,L,local,,
-HASH POINT,30.5530,-9.7150,P,K,local,top,
-MYSTERIES,30.5480,-9.7115,P,L,local,,posicion dudosa
-PANORAMAS,30.5423,-9.7078,P,V,web:mondo.surf,top,
-BANANA POINT,30.5300,-9.6955,P,L,local,,
-DEVIL'S ROCK,30.5235,-9.6880,R,L,local,,posicion dudosa
+BOILERS,30.6240,-9.8815,R,V,osm:node/6447811161,top,antes del faro de Cap Ghir; caldera hundida
+KILLER POINT,30.5501,-9.7400,P,V,osm:node/6447811170,top,al norte de Anchor Point
+ANCHOR POINT,30.5452,-9.7267,P,V,osm:node/6447811159,top,derecha larga; cabo al oeste del pueblo
+LA SOURCE,30.5496,-9.7328,P,K,osm:node/2080862374,,entre Killer y Mysteries; frente a Résidence La Source
+HASH POINT,30.5446,-9.7118,P,V,web:mondo.surf,top,frente al pueblo; el nodo OSM con ese nombre está en Anchor
+MYSTERIES,30.5476,-9.7290,P,K,web:thesurfatlas,,entre Anchor y Killer
+PANORAMAS,30.5423,-9.7078,P,V,osm:node/6447811173,top,
+BANANA POINT,30.5007,-9.6840,P,V,osm:node/6447811160,,Aourir; Banana Beach
+DEVIL'S ROCK,30.5040,-9.6858,R,V,osm:node/6447811166,,Tamraght
 TAMRAGHT,30.5130,-9.6810,B,L,local,,
-CROCODILE,30.5010,-9.6760,B,L,local,,Aourir; posicion dudosa
+CROCODILE,30.5109,-9.6880,B,V,osm:node/6447811163,,Tamraght; Cro Cro
 IMOURAN,30.4940,-9.6720,B,L,local,,Aourir
 ANZA,30.4600,-9.6620,B,L,local,,
 AGADIR,30.4200,-9.6350,B,K,local,,

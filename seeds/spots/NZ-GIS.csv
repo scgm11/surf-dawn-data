@@ -1,14 +1,14 @@
 name,lat,lon,type,conf,src,flags,note
-TATAPOURI,-38.6150,178.1490,P,L,local,,
-CORNERS,-38.6300,178.1290,B,L,local,,Makorori norte
-FARMHOUSE,-38.6345,178.1255,B,L,local,,Makorori
-CREEKS,-38.6385,178.1230,B,L,local,,Makorori
-RED BUS,-38.6420,178.1195,B,L,local,,Makorori
-CENTRES,-38.6455,178.1165,B,L,local,top,NZCPS; Makorori
-MAKORORI POINT,-38.6510,178.1070,P,K,local,top,NZCPS; derecha
+TATAPOURI,-38.6520,178.1471,P,V,osm:node/1954387753,,Tatapōuri Point
+CORNERS,-38.6506,178.1275,B,K,web:blitzsurf,,Makorori norte; frente al caserío
+FARMHOUSE,-38.6522,178.1236,B,L,web:blitzsurf,,Makorori; entre Creeks y Corners; posicion dudosa
+CREEKS,-38.6549,178.1180,B,L,web:blitzsurf,,Makorori; carpark chico al norte del principal; posicion dudosa
+RED BUS,-38.6580,178.1112,B,V,osm:node/5426085626,,Makorori; frente al carpark principal
+CENTRES,-38.6612,178.1069,B,K,web:blitzsurf,top,NZCPS; Makorori; entre la Point y Red Bus
+MAKORORI POINT,-38.6661,178.1044,P,V,osm:node/11662418911,top,NZCPS; derecha
 STOCK ROUTE,-38.6889,178.0718,B,V,osm:way/147216984,top,NZCPS; Wainui; fin de Oneroa Rd
 WAINUI,-38.6790,178.0700,B,K,local,top,NZCPS; Wainui Beach
 PINES,-38.6783,178.0811,B,V,osm:way/608459927,top,NZCPS; Wainui; junto al surf club
-WHALES,-38.6930,178.0580,B,L,local,top,NZCPS; Wainui sur
+WHALES,-38.6715,178.0905,B,K,gov:gdc,top,NZCPS; Wainui norte; tumba de cachalotes
 THE ISLAND,-38.7100,178.0500,R,V,web:mondo.surf,top checked,NZCPS; Tuamotu Island; izquierda
 WAIKANAE BEACH,-38.6680,178.0040,B,L,local,,ciudad de Gisborne
