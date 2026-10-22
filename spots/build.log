@@ -1,3 +1,4 @@
+UY-CAN      14 spots   789 bytes  vd18bee
 UY-MAL      18 spots   837 bytes  vea20bd
 UY-ROC      19 spots   888 bytes  vadebc0
 AR-MDP      22 spots  1097 bytes  v3ade69
@@ -215,4 +216,4 @@ warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-212 regions, 2497 spots, 0 errors, 5 warnings
+213 regions, 2511 spots, 0 errors, 5 warnings

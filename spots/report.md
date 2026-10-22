@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-212 regiones, 2497 picos. Errores: 0. Avisos: 5.
+213 regiones, 2511 picos. Errores: 0. Avisos: 5.
 
 ## Avisos
 
@@ -14,6 +14,7 @@
 
 | Región | Picos | Bytes | Olas | Viento | Puertos | Ajuste medio a la costa | Punto de olas |
 |---|---|---|---|---|---|---|---|
+| UY-CAN | 14 | 789 | ncep_gfswave025 | gfs_seamless | 2 | — | 0 |
 | UY-MAL | 18 | 837 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | UY-ROC | 19 | 888 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | AR-MDP | 22 | 1097 | ncep_gfswave025 | gfs_seamless | 3 | 422 m | 0 |
