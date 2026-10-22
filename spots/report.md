@@ -136,13 +136,13 @@
 | ID-BAL-BUK | 16 | 756 | ncep_gfswave016 | gfs_seamless | 1 | 172 m | 0 |
 | ID-BAL-W | 18 | 821 | ncep_gfswave016 | gfs_seamless | 1 | 249 m | 0 |
 | ID-BAL-E | 12 | 618 | ncep_gfswave016 | gfs_seamless | 1 | 841 m | 0 |
-| ID-JAV-E | 7 | 460 | ncep_gfswave016 | gfs_seamless | 2 | 541 m | 0 |
+| ID-JAV-E | 7 | 463 | ncep_gfswave016 | gfs_seamless | 2 | 541 m | 0 |
 | ID-JAV-W | 7 | 455 | ncep_gfswave016 | gfs_seamless | 2 | 1165 m | 0 |
 | ID-LOM | 14 | 720 | ncep_gfswave016 | gfs_seamless | 3 | 464 m | 0 |
 | ID-SBW | 9 | 516 | ncep_gfswave016 | gfs_seamless | 2 | 577 m | 0 |
 | ID-SMB | 2 | 218 | ncep_gfswave016 | gfs_seamless | 1 | 993 m | 0 |
 | ID-ROT | 4 | 289 | ncep_gfswave016 | gfs_seamless | 1 | 545 m | 0 |
-| ID-MEN | 10 | 538 | ncep_gfswave016 | gfs_seamless | 2 | 429 m | 0 |
+| ID-MEN | 10 | 542 | ncep_gfswave016 | gfs_seamless | 2 | 429 m | 0 |
 | ID-NIA | 3 | 291 | ncep_gfswave016 | gfs_seamless | 2 | 194 m | 0 |
 | ID-KRU | 4 | 320 | ncep_gfswave016 | gfs_seamless | 1 | 341 m | 0 |
 | PH-SIA | 8 | 435 | ncep_gfswave016 | gfs_seamless | 1 | 510 m | 0 |
@@ -160,7 +160,7 @@
 | JP-IBA | 5 | 397 | ncep_gfswave016 | gfs_seamless | 3 | 946 m | 0 |
 | JP-SHK | 3 | 246 | ncep_gfswave016 | gfs_seamless | 1 | 494 m | 0 |
 | JP-KYU | 2 | 236 | ncep_gfswave016 | gfs_seamless | 1 | 852 m | 0 |
-| TW-E | 4 | 348 | ncep_gfswave016 | gfs_seamless | 2 | 739 m | 0 |
+| TW-E | 4 | 352 | ncep_gfswave016 | gfs_seamless | 2 | 739 m | 0 |
 | TW-NE | 6 | 422 | ncep_gfswave016 | gfs_seamless | 2 | 604 m | 0 |
 | IN-W | 3 | 284 | ncep_gfswave016 | gfs_seamless | 2 | 617 m | 0 |
 | IN-E | 3 | 306 | ncep_gfswave016 | gfs_seamless | 2 | 474 m | 0 |
@@ -177,7 +177,7 @@
 | ZA-KZN-N | 6 | 474 | ncep_gfswave025 | gfs_seamless | 3 | 450 m | 1 |
 | ZA-KZN-S | 9 | 539 | ncep_gfswave025 | gfs_seamless | 2 | 293 m | 0 |
 | NA-ERO | 3 | 335 | ncep_gfswave025 | gfs_seamless | 2 | 284 m | 0 |
-| MA-TAG | 19 | 885 | ncep_gfswave016 | gfs_seamless | 2 | 211 m | 0 |
+| MA-TAG | 19 | 888 | ncep_gfswave016 | gfs_seamless | 2 | 211 m | 0 |
 | MA-N | 6 | 439 | ncep_gfswave016 | gfs_seamless | 3 | 495 m | 0 |
 | MA-S | 6 | 409 | ncep_gfswave016 | gfs_seamless | 2 | 461 m | 0 |
 | SN-ALL | 5 | 326 | ncep_gfswave016 | gfs_seamless | 1 | 278 m | 0 |

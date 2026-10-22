@@ -34,7 +34,7 @@ CO-CAR       3 spots   352 bytes  v7cd0b0
 VE-ALL       2 spots   250 bytes  vba22a0
 PA-PAC       7 spots   496 bytes  v4233c5
 PA-BDT       4 spots   293 bytes  vad0c3b
-CR-GUA      12 spots   660 bytes  v05d680
+CR-GUA      12 spots   660 bytes  v818ab5
 CR-NIC      11 spots   574 bytes  v9d0107
 CR-PAC      10 spots   573 bytes  vc1b09a
 CR-OSA       4 spots   309 bytes  vaa435e
@@ -104,7 +104,7 @@ NZ-AKL       9 spots   547 bytes  v862af9
 NZ-RAG       5 spots   337 bytes  v171b48
 NZ-TAR       7 spots   459 bytes  v724f27
 NZ-BOP      11 spots   723 bytes  va792ed
-NZ-GIS      13 spots   795 bytes  v952591
+NZ-GIS      13 spots   795 bytes  ve3c5a8
 NZ-WEL      13 spots   757 bytes  v6ac2ca
 NZ-KAI       9 spots   671 bytes  vf92a90
 NZ-OTA      13 spots   779 bytes  v3906e9
@@ -120,13 +120,13 @@ PG-ALL       2 spots   279 bytes  vb465b6
 ID-BAL-BUK  16 spots   756 bytes  vf771a3
 ID-BAL-W    18 spots   821 bytes  v78352b
 ID-BAL-E    12 spots   618 bytes  vbd17dc
-ID-JAV-E     7 spots   460 bytes  v704ec4
+ID-JAV-E     7 spots   463 bytes  v96b935
 ID-JAV-W     7 spots   455 bytes  v902289
 ID-LOM      14 spots   720 bytes  v18a239
 ID-SBW       9 spots   516 bytes  v62538e
 ID-SMB       2 spots   218 bytes  v83c08b
 ID-ROT       4 spots   289 bytes  v99d464
-ID-MEN      10 spots   538 bytes  va1b46d
+ID-MEN      10 spots   542 bytes  va121e2
 ID-NIA       3 spots   291 bytes  vbb113c
 ID-KRU       4 spots   320 bytes  v978681
 PH-SIA       8 spots   435 bytes  v2145fc
@@ -144,7 +144,7 @@ JP-IZU       4 spots   308 bytes  v77f315
 JP-IBA       5 spots   397 bytes  v9b4a12
 JP-SHK       3 spots   246 bytes  v866566
 JP-KYU       2 spots   236 bytes  vdd44d4
-TW-E         4 spots   348 bytes  v192cdb
+TW-E         4 spots   352 bytes  v91124f
 TW-NE        6 spots   422 bytes  v43735a
 IN-W         3 spots   284 bytes  va5a05e
 IN-E         3 spots   306 bytes  v1000d5
@@ -161,7 +161,7 @@ ZA-KZN-DBN   8 spots   452 bytes  v5ccb9b
 ZA-KZN-N     6 spots   474 bytes  ve818f9
 ZA-KZN-S     9 spots   539 bytes  v0ee778
 NA-ERO       3 spots   335 bytes  v2ed8d4
-MA-TAG      19 spots   885 bytes  vb9345d
+MA-TAG      19 spots   888 bytes  v892574
 MA-N         6 spots   439 bytes  va14133
 MA-S         6 spots   409 bytes  v5b96ff
 SN-ALL       5 spots   326 bytes  vd389a2
