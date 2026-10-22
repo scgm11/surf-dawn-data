@@ -12,7 +12,7 @@ repo y los formatos están en [`docs/formatos.md`](docs/formatos.md).
 | `validation/` | Los modelos de olas y viento de Open-Meteo contra boyas y estaciones, por región; y los controles de cada pico (`spots.md`) | `validate/` (Action `validation.yml`), `tools/check_spots.py` (Action `checks.yml`), `tools/lookup.py` (Action `lookup.yml`) |
 | `models.csv` | Los modelos elegidos por región (el resto usa la regla por defecto) | a mano, desde `validation/models-suggested.csv` |
 | `seeds/` | Las tablas de las que sale todo: continentes, países, regiones y picos | a mano ([`seeds/README.md`](seeds/README.md)) |
-| `manual/` | El manual de las apps en PDF, el link público de la tienda Connect IQ ([`manual/Surf-Dawn-manual.pdf`](https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual.pdf)) | copiado de `docs/Surf-Dawn-manual.pdf` del repo de las apps en cada versión de la tienda |
+| `manual/` | El manual de las apps en PDF, el link público de la tienda Connect IQ: en español ([`manual/Surf-Dawn-manual.pdf`](https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual.pdf)) y en inglés ([`manual/Surf-Dawn-manual-en.pdf`](https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual-en.pdf)) | copiado de `docs/Surf-Dawn-manual.pdf` del repo de las apps en cada versión de la tienda |
 
 ## Picos — `spots/`
 
