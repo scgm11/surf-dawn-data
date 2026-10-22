@@ -21,7 +21,8 @@ pico sale de una fila de `seeds/spots/<REGIÓN>.csv`; `build_zones.py` lo ajusta
 OpenStreetMap, calcula hacia dónde mira la playa y el punto de mar donde pedir las olas (Open-Meteo),
 y le pone a la región sus modelos (`models.csv` o la regla) y sus puertos de marea
 (`tide/regions.json`). Las regiones de Uruguay y Santa Catarina están congeladas: sus semillas traen
-las posiciones, orientaciones y puntos de olas validados en 2026-10.
+las posiciones, orientaciones y puntos de olas validados en 2026-10 (Canelones y Montevideo, `UY-CAN`:
+calculados por `build_zones.py` el 2026-10-22 y congelados igual).
 
 **Agregar o corregir un pico:** una fila en la tabla de su región y un PR
 ([`seeds/README.md`](seeds/README.md) tiene las columnas y las reglas). `tools/check_seeds.py`
@@ -46,8 +47,8 @@ su hora local (`utc_offset`), y `harmonics.json` con 30 períodos ajustados para
 más cercano que cubra el pico; si no hay ninguno, el nivel del mar de Open-Meteo). El último build
 está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regiones.
 
-- **Uruguay:** las Tablas de Mareas del **SOHMA** (Armada Nacional) para Punta del Este y La Paloma
-  (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15).
+- **Uruguay:** las Tablas de Mareas del **SOHMA** (Armada Nacional) para Montevideo, Punta del Este y
+  La Paloma (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15).
 - **Santa Catarina:** la tábua de la **DHN** (Marinha do Brasil) para Imbituba, del PDF que publica la
   Epagri/CIRAM (`tools/ciram_tide.py`).
 - **El resto** (`tools/tide/build_tides.py`): predicciones oficiales de **NOAA** (EE. UU. y sus

@@ -23,6 +23,7 @@ import urllib.request
 PORTS = {
     "punta-del-este": {"name": "Puerto de Punta del Este", "names": ["PUNTADELESTE"]},
     "la-paloma": {"name": "Puerto de La Paloma", "names": ["LAPALOMA"]},
+    "montevideo": {"name": "Puerto de Montevideo", "names": ["MONTEVIDEO"]},
 }
 MONTHS = {"ENERO": 1, "FEBRERO": 2, "MARZO": 3, "ABRIL": 4, "MAYO": 5, "JUNIO": 6, "JULIO": 7, "AGOSTO": 8,
           "SETIEMBRE": 9, "SEPTIEMBRE": 9, "OCTUBRE": 10, "NOVIEMBRE": 11, "DICIEMBRE": 12}
@@ -60,14 +61,18 @@ def find_pdf(year, port):
 
 
 def position(text):
-    """(lat, lon) en grados decimales desde el encabezado "Latitud 34° 57.7' S / Longitud 54° 57.1' W"."""
-    la = re.search(r"Latitud\s+(\d+)\s*°\s*([\d.]+)'\s*([NS])", text)
-    lo = re.search(r"Longitud\s+(\d+)\s*°\s*([\d.]+)'\s*([EW])", text)
+    """(lat, lon) en grados decimales desde el encabezado "Latitud 34° 57.7' S / Longitud 54° 57.1' W"
+    (Montevideo trae segundos: "Latitud 34° 54' 12" S")."""
+    dms = r"\s+(\d+)\s*°\s*([\d.]+)'\s*(?:([\d.]+)\s*[\"”″]\s*)?"
+    la = re.search(r"Latitud" + dms + r"([NS])", text)
+    lo = re.search(r"Longitud" + dms + r"([EW])", text)
     if not la or not lo:
         return None, None
-    lat = (int(la.group(1)) + float(la.group(2)) / 60) * (-1 if la.group(3) == "S" else 1)
-    lon = (int(lo.group(1)) + float(lo.group(2)) / 60) * (-1 if lo.group(3) == "W" else 1)
-    return round(lat, 4), round(lon, 4)
+
+    def deg(m):
+        return (int(m.group(1)) + float(m.group(2)) / 60 + float(m.group(3) or 0) / 3600) * (-1 if m.group(4) in "SW" else 1)
+
+    return round(deg(la), 4), round(deg(lo), 4)
 
 
 def parse(text, year):

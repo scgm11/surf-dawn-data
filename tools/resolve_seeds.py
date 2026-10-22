@@ -41,7 +41,7 @@ ROOT = seeds.ROOT
 LOG = os.path.join(ROOT, "seeds", "resolve.log")
 SEARCH_KM = 60
 FAR_KM = 150
-FROZEN = {"UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
+FROZEN = {"UY-CAN", "UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
 RANK = {"beach": 0, "surf": 0, "bay": 1, "cape": 1, "peninsula": 1, "headland": 1, "place": 2, "other": 3}
 
 

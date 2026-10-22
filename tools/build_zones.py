@@ -10,7 +10,8 @@ Each region gets its Open-Meteo models (models.csv, else the default rule) and i
 ports (tide/regions.json, written by tools/tide/).
 
 The regions of Uruguay and Santa Catarina are frozen: their seeds carry the validated
-positions, facings and wave points of 2026-10, and nothing is recomputed for them.
+positions, facings and wave points of 2026-10 (UY-CAN: computed here on 2026-10-22, then
+frozen the same way), and nothing is recomputed for them.
 
 Usage: python3 tools/build_zones.py [--regions CODE ...] [--offline] [--strict] [--missing-tiles]
   --offline  no downloads: only what is cached (spots that would need the network are reported)
@@ -37,7 +38,7 @@ OUT = os.path.join(ROOT, "spots")
 MAX_BYTES = 6144                     # per file: the face's background process has 64 KB
 NEAR_KM = 25                         # Spots.RADIUS_KM on the watch: a region's circle reaches this far past its spots
 CELL = 10                            # degrees of a lookup cell (spots/g/)
-FROZEN = {"UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
+FROZEN = {"UY-CAN", "UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
 
 
 def read_ports():

@@ -1,0 +1,15 @@
+name,lat,lon,type,conf,src,flags,note
+PLAYA HONDA,-34.8958,-56.0920,B,V,osm:relation/2554677,nosnap facing=167,Malvín
+LA PANTALLA,-34.9003,-56.0812,B,K,osm:node/11174419920,nosnap facing=189,Playa Brava de Punta Gorda (sin playa en OSM)
+EL PINAR,-34.8123,-55.9074,B,K,osm:node/1987912393,nosnap facing=148,playa sin nombre en OSM
+SALINAS,-34.7865,-55.8362,B,V,osm:relation/2578274,nosnap facing=155,
+ATLÁNTIDA,-34.7806,-55.7568,B,V,osm:relation/6930570,nosnap facing=173,Playa Brava (no la Mansa)
+LAS TOSCAS,-34.7752,-55.7357,B,V,osm:relation/2527758,nosnap facing=156,
+PARQUE DEL PLATA,-34.7680,-55.7154,B,V,osm:relation/2527668,nosnap facing=166,
+LA FLORESTA,-34.7626,-55.6923,B,V,osm:relation/2527660,nosnap facing=170,
+COSTA AZUL,-34.7672,-55.6634,B,V,osm:relation/2527659,nosnap facing=211,
+BIARRITZ,-34.7956,-55.5184,B,V,osm:relation/2469856,nosnap facing=166,
+CUCHILLA ALTA,-34.7952,-55.5001,B,V,osm:relation/2469857,nosnap facing=210,
+SANTA ANA,-34.7951,-55.4672,B,V,osm:relation/2469859,nosnap facing=174,
+B. ARGENTINO,-34.7927,-55.4451,B,V,osm:relation/2524670,nosnap facing=169,Balneario Argentino
+JAUREGUIBERRY,-34.7909,-55.4046,B,V,osm:relation/2524672,nosnap facing=191,desembocadura del Solís Grande

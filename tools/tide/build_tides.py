@@ -22,9 +22,9 @@
    yet (JMA's last 9 hours of next year, Marine Institute's next year) come from a harmonic
    analysis of the published ones (tools/tide/harmonic.py), and the month's src says so.
 3. harmonics.json: the watch's 30-period fit of the current year (t0 = Jan 1, 00:00 UTC).
-4. ports.json, regions.json, report.md. The ports of Uruguay and Brazil (punta-del-este,
-   la-paloma, imbituba: tools/sohma_tide.py, tools/ciram_tide.py) and the regions UY-MAL, UY-ROC,
-   BR-SC-FLN and BR-SC-SUL are left exactly as they are.
+4. ports.json, regions.json, report.md. The ports of Uruguay and Brazil (montevideo,
+   punta-del-este, la-paloma, imbituba: tools/sohma_tide.py, tools/ciram_tide.py) and the regions
+   UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN and BR-SC-SUL are left exactly as they are.
 
 Validation: TICON-3 predictions against NOAA's own at NOAA stations that are also TICON gauges,
 for each set of nodal corrections; the best set is the one used.
@@ -68,13 +68,16 @@ TIER_W = {1: 10.0, 2: 8.0, 3: 6.0, 4: 5.0, 5: 4.0}
 TIER_TXT = {1: "oficial, misma costa", 2: "TICON-3, misma costa", 3: "oficial, cruzando tierra",
             4: "TICON-3, cruzando tierra", 5: "TICON-3, registro corto", 6: "modelo global GOT5.6"}
 GOT_KM = 50.0                      # tier 6: spots this close share the model's point
-FROZEN = ["UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"]
+FROZEN = ["UY-CAN", "UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"]
 LEGACY = [
     {"key": "imbituba", "name": "Porto de Imbituba (DHN)", "lat": -28.2297, "lon": -48.6525, "utc_offset": -3,
      "src": "dhn:Imbituba (Epagri/CIRAM)", "datum": "nível de redução da DHN",
      "license": "sin licencia abierta declarada", "credit": "DHN/Marinha do Brasil, vía Epagri/CIRAM"},
     {"key": "la-paloma", "name": "La Paloma (SOHMA)", "lat": -34.6533, "lon": -54.1417, "utc_offset": -3,
      "src": "sohma:La Paloma", "datum": "cero del puerto (SOHMA)",
+     "license": "sin licencia abierta declarada", "credit": "SOHMA, Armada Nacional (Uruguay)"},
+    {"key": "montevideo", "name": "Montevideo (SOHMA)", "lat": -34.9033, "lon": -56.2564, "utc_offset": -3,
+     "src": "sohma:Montevideo", "datum": "cero del puerto (SOHMA)",
      "license": "sin licencia abierta declarada", "credit": "SOHMA, Armada Nacional (Uruguay)"},
     {"key": "punta-del-este", "name": "Punta del Este (SOHMA)", "lat": -34.9617, "lon": -54.9517, "utc_offset": -3,
      "src": "sohma:Punta del Este", "datum": "cero del puerto (SOHMA)",
@@ -635,10 +638,10 @@ def report_md(rep, regions, sel, st, used, years):
         kinds[u["kind"]] = kinds.get(u["kind"], 0) + 1
     with_p = [c for c in sel if sel[c]["ports"]]
     L += ["## Resumen", "",
-          "- Puertos nuevos: %d (%s); más los 3 de Uruguay y Brasil, sin cambios." % (
-              len(used), ", ".join("%s %d" % (k, v) for k, v in sorted(kinds.items()))),
-          "- Regiones con puerto: %d de %d (más UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: %d." % (
-              len(with_p), len(sel), len(sel) - len(with_p)),
+          "- Puertos nuevos: %d (%s); más los %d de Uruguay y Brasil, sin cambios." % (
+              len(used), ", ".join("%s %d" % (k, v) for k, v in sorted(kinds.items())), len(LEGACY)),
+          "- Regiones con puerto: %d de %d (más %s y %s, congeladas); sin puerto: %d." % (
+              len(with_p), len(sel), ", ".join(FROZEN[:-1]), FROZEN[-1], len(sel) - len(with_p)),
           "- Picos con puerto: %d de %d." % (rep["spots_with"], rep["spots_total"]),
           "- Archivos: %d, %.1f MB (cada mes ≤ %d bytes; el mayor: %d)." % (
               rep["files"], rep["bytes"] / 1e6, MAX_BYTES, rep.get("max_month", 0)),

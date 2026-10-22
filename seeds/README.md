@@ -36,5 +36,7 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
 - Arrecifes a más de 2,5 km de la costa (Cloudbreak, Belharra, Mavericks…): `nosnap` y
   `facing=` a mano, con la posición sobre el arrecife.
 - La orientación es hacia dónde **mira** la playa (al mar), no de dónde viene el swell.
-- Los picos de Uruguay y Santa Catarina (`UY-*`, `BR-SC-FLN`, `BR-SC-SUL`) están congelados con
-  `nosnap`, `facing=` y `wave=` de la lista validada de 2026-10: no se recalculan.
+- Los picos de Uruguay y Santa Catarina (`UY-CAN`, `UY-MAL`, `UY-ROC`, `BR-SC-FLN`, `BR-SC-SUL`)
+  están congelados con `nosnap`, `facing=` y `wave=` de la lista validada de 2026-10 (`UY-CAN`: los
+  que calculó `build_zones.py` el 2026-10-22): no se recalculan. Una región nueva que se congela va
+  también en `FROZEN` de `tools/build_zones.py`, `tools/resolve_seeds.py` y `tools/tide/build_tides.py`.
