@@ -5,7 +5,9 @@ region, the continent indexes and the 10° cells the watch looks up by position.
 For every spot: the position snapped to the OpenStreetMap coastline and the direction its
 beach faces (tools/lib/osm.py, the rule tools/make_spots.py used), unless the seed says
 `nosnap` / `facing=`; the wave point when the region's wave model has land in the spot's
-cell (tools/lib/openmeteo.py, what tools/wave_points.py did); the break type from the seed.
+cell (tools/lib/openmeteo.py, what tools/wave_points.py did); the break type from the seed;
+how open it is to the sea in each direction ("x", tools/lib/shelter.py: land that blocks the
+wind's chop or the swell), for every region, the frozen ones too.
 Each region gets its Open-Meteo models (models.csv, else the default rule) and its tide
 ports (tide/regions.json, written by tools/tide/).
 
@@ -30,7 +32,7 @@ import shutil
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from tools.lib import geo, osm, seeds  # noqa: E402
+from tools.lib import geo, osm, seeds, shelter  # noqa: E402
 from tools.lib import models as rule  # noqa: E402
 
 ROOT = seeds.ROOT
@@ -150,6 +152,18 @@ def build_region(code, reg, country, models, ports, offline, rep):
                     s["wave"] = wp
         elif todo:
             rep["offline_waves"] += len(todo)
+    x = None
+    try:
+        wx = osm.coastline(code, [(s["lat"], s["lon"]) for s in spots], offline=offline, box=shelter.BOX_DEG)
+    except RuntimeError as e:
+        wx = None
+        warns.append("%s: %s (no shelter)" % (code, e))
+    if wx is None:
+        warns.append("%s: no coastline around the spots: no shelter (x)" % code)
+    else:
+        x = [shelter.code(wx, s["lat"], s["lon"], s["facing"]) for s in spots]
+        for s, c in zip(spots, x):
+            s["x"] = c
     radius = int(math.ceil(max(geo.km((clat, clon), (s["lat"], s["lon"])) for s in spots))) + NEAR_KM
     srows = []
     for s in spots:
@@ -159,9 +173,11 @@ def build_region(code, reg, country, models, ports, offline, rep):
         srows.append(row)
     body = {"id": code, "c": country, "n": [reg["name_es"], reg["name_en"]], "m": m,
             "p": ports.get(code, []), "s": srows}
+    if x is not None:
+        body["x"] = x                              # apart from "s": the watches before it take rows of 5 or 7
     v = version(body)
     out = {"id": code, "v": v}
-    out.update({k: body[k] for k in ("c", "n", "m", "p", "s")})
+    out.update({k: body[k] for k in ("c", "n", "m", "p", "s", "x") if k in body})
     text = dump(out)
     size = len(text.encode("utf-8"))
     if size > MAX_BYTES:
@@ -241,7 +257,8 @@ def main():
     conts, countries, regions = seeds.continents(), seeds.countries(), seeds.regions()
     if a.missing_tiles:
         pts = [(r["lat"], r["lon"]) for code in (a.regions or regions) for r in coast_rows(code, seeds.spots(code))]
-        print(len(osm.missing_tiles(pts)))
+        near = [(r["lat"], r["lon"]) for code in (a.regions or regions) for r in seeds.spots(code)]
+        print(len(set(osm.missing_tiles(pts)) | set(osm.missing_tiles(near, shelter.BOX_DEG))))
         return
     models, ports = rule.read(), read_ports()
     want = a.regions or list(regions)

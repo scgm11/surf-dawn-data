@@ -43,12 +43,12 @@ E7 = 1e7                  # tiles keep OSM's 7 decimals as integers (exact, so p
 NT = int(round(360 / TILE))
 
 
-def tiles_for(points):
-    """The (row, col) tiles within BOX_DEG of the points (col wraps at ±180°)."""
+def tiles_for(points, box=BOX_DEG):
+    """The (row, col) tiles within box degrees of the points (col wraps at ±180°)."""
     out = set()
     for lat, lon in points:
-        for i in range(math.floor((lat - BOX_DEG) / TILE), math.floor((lat + BOX_DEG) / TILE) + 1):
-            for j in range(math.floor((lon - BOX_DEG) / TILE), math.floor((lon + BOX_DEG) / TILE) + 1):
+        for i in range(math.floor((lat - box) / TILE), math.floor((lat + box) / TILE) + 1):
+            for j in range(math.floor((lon - box) / TILE), math.floor((lon + box) / TILE) + 1):
                 out.add((i, (j + NT // 2) % NT - NT // 2))
     return sorted(out)
 
@@ -66,9 +66,9 @@ def _read_tile(t):
         return None
 
 
-def missing_tiles(points):
+def missing_tiles(points, box=BOX_DEG):
     """The tiles around the points that are not cached yet."""
-    return [t for t in tiles_for(points) if not os.path.exists(_tile_path(t))]
+    return [t for t in tiles_for(points, box) if not os.path.exists(_tile_path(t))]
 
 
 def _cut(lines, wanted):
@@ -220,11 +220,11 @@ def _stitch(pieces):
     return lines
 
 
-def coastline(name, points, offline=False):
-    """Coastline lines near the points ([{"g": [[lat, lon], ...]}, ...]) from the cached tiles, the
-    missing ones cut from osmdata's file (Overpass if that is not to be had); offline: None if a
-    tile is missing."""
-    want = tiles_for(points)
+def coastline(name, points, offline=False, box=BOX_DEG):
+    """Coastline lines within box degrees of the points ([{"g": [[lat, lon], ...]}, ...]) from the
+    cached tiles, the missing ones cut from osmdata's file (Overpass if that is not to be had);
+    offline: None if a tile is missing."""
+    want = tiles_for(points, box)
     have = {t: _read_tile(t) for t in want}
     missing = [t for t in want if have[t] is None]
     if missing:

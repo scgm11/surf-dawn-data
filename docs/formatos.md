@@ -43,7 +43,8 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
  "m":["ncep_gfswave025","gfs_seamless"],
  "p":[["mdp",-38.04,-57.53,80,0]],
  "s":[["BIOLOGÍA",-38.03,-57.53,105,1],
-      ["PLAYA GRANDE",-38.02,-57.53,110,1,-38.0,-57.25]]}
+      ["PLAYA GRANDE",-38.02,-57.53,110,1,-38.0,-57.25]],
+ "x":[129140163,129127395]}
 ```
 
 - `v`: versión (hash corto del contenido). Cambia si cambia cualquier cosa de la región.
@@ -54,6 +55,14 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
 - `s`: picos `[NOMBRE, lat, lon, orientación, tipo, (lat ola, lon ola)]`. Tipo: 0 sin dato,
   1 beach, 2 point, 3 reef. Orientación: grados hacia donde mira la playa (al mar). El punto de
   olas va solo si la celda del modelo de la región es tierra en la posición del pico.
+- `x` (opcional): qué tan abierto al mar está cada pico, un número por pico en el orden de `s`
+  (`tools/lib/shelter.py`). Guarda un nivel por cada uno de 18 sectores de 20° (el sector `i`
+  centrado en `i × 20°`, la dirección **desde** la que viene el viento o el swell) en base 3:
+  `nivel(i) = (x ÷ 3^i) mod 3`, con 0 = tierra a menos de 2 km, 1 = tierra a menos de 25 km,
+  2 = mar abierto (la mediana de 5 rayos por sector, sobre la costa de OpenStreetMap). El reloj
+  lo usa en el puntaje: viento que cruza tierra cerca levanta poco picado, y swell con tierra en
+  el camino llega cortado. Va aparte de `s` porque los relojes anteriores rechazan filas que no
+  tengan 5 o 7 valores.
 - El id de un pico en el reloj es `<REGIÓN>/<NOMBRE>`.
 
 ## Mareas: `tide/`
