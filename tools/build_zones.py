@@ -7,7 +7,8 @@ beach faces (tools/lib/osm.py, the rule tools/make_spots.py used), unless the se
 `nosnap` / `facing=`; the wave point when the region's wave model has land in the spot's
 cell (tools/lib/openmeteo.py, what tools/wave_points.py did); the break type from the seed;
 how open it is to the sea in each direction ("x", tools/lib/shelter.py: land that blocks the
-wind's chop or the swell), for every region, the frozen ones too.
+wind's chop or the swell), for every region, the frozen ones too; a spot with no direction open
+to the sea (snapped to a river, a ria or a harbour) moves to the most open coast near its seed.
 Each region gets its Open-Meteo models (models.csv, else the default rule) and its tide
 ports (tide/regions.json, written by tools/tide/).
 
@@ -123,10 +124,39 @@ def build_region(code, reg, country, models, ports, offline, rep):
             continue
         spots.append({"name": r["name"], "lat": round(lat, 4), "lon": round(lon, 4), "facing": int(facing) % 360,
                       "kind": r["kind"], "wave": f.get("wave"), "top": bool(f.get("top")), "snap": snapped,
-                      "conf": r["conf"], "nosnap": bool(f.get("nosnap")), "seed": (r["lat"], r["lon"])})
+                      "conf": r["conf"], "nosnap": bool(f.get("nosnap")), "fixed": "facing" in f, "seed": (r["lat"], r["lon"])})
     if not spots:
         errs.append("%s: no spot left" % code)
         return None
+    x = None
+    try:
+        wx = osm.coastline(code, [(s["lat"], s["lon"]) for s in spots], offline=offline, box=shelter.BOX_DEG)
+    except RuntimeError as e:
+        wx = None
+        warns.append("%s: %s (no shelter)" % (code, e))
+    if wx is None:
+        warns.append("%s: no coastline around the spots: no shelter (x)" % code)
+    else:
+        x = []
+        for s in spots:
+            c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
+            if 2 not in shelter.decode(c) and not frozen and not s["nosnap"] and not s["fixed"]:
+                # no sector open to the sea: snapped to a river, a ria or a harbour, its facing across
+                # the water; moved to the most open coastline near its seed (wave point and all after)
+                m = shelter.relocate(wx, s["seed"][0], s["seed"][1])
+                if m is not None:
+                    warns.append("%s/%s: no direction open to the sea, moved %.0f m from the seed (facing %d -> %d)" % (
+                        code, s["name"], m[3], s["facing"], m[2]))
+                    s["lat"], s["lon"], s["facing"] = m[0], m[1], m[2]
+                    c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
+            if 2 not in shelter.decode(c):
+                # still none (a facing or position set by hand, or no open coast near): the watch
+                # scores it as before
+                warns.append("%s/%s: no direction open to the sea from facing %d: check the facing (no shelter)" % (
+                    code, s["name"], s["facing"]))
+                c = None
+            s["x"] = c
+            x.append(c)
     clat, clon = geo.center([(s["lat"], s["lon"]) for s in spots])
     m = rule.for_region(code, country, clat, models)
     if not frozen:
@@ -152,26 +182,6 @@ def build_region(code, reg, country, models, ports, offline, rep):
                     s["wave"] = wp
         elif todo:
             rep["offline_waves"] += len(todo)
-    x = None
-    try:
-        wx = osm.coastline(code, [(s["lat"], s["lon"]) for s in spots], offline=offline, box=shelter.BOX_DEG)
-    except RuntimeError as e:
-        wx = None
-        warns.append("%s: %s (no shelter)" % (code, e))
-    if wx is None:
-        warns.append("%s: no coastline around the spots: no shelter (x)" % code)
-    else:
-        x = []
-        for s in spots:
-            c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
-            if 2 not in shelter.decode(c):
-                # no sector open to the sea: almost always a wrong facing (the rays start on land);
-                # null, the watch scores it as before
-                warns.append("%s/%s: no direction open to the sea from facing %d: check the facing (no shelter)" % (
-                    code, s["name"], s["facing"]))
-                c = None
-            s["x"] = c
-            x.append(c)
     radius = int(math.ceil(max(geo.km((clat, clon), (s["lat"], s["lon"])) for s in spots))) + NEAR_KM
     srows = []
     for s in spots:
