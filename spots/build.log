@@ -1,304 +1,184 @@
-UY-CAN      14 spots   906 bytes  va66a75
-UY-MAL      18 spots   975 bytes  v520b39
-UY-ROC      19 spots  1017 bytes  v92c66a
-AR-MDP      22 spots  1261 bytes  v96ad89
-AR-BAN      16 spots   972 bytes  v1317b7
-AR-SUR       6 spots   515 bytes  v905216
-BR-RS       18 spots  1168 bytes  vb03e22
+UY-CAN      14 spots   905 bytes  ve699b4
+UY-MAL      18 spots   969 bytes  vd1f145
+UY-ROC      19 spots  1017 bytes  v79f19b
+AR-MDP      22 spots  1263 bytes  v08c747
+AR-BAN      16 spots   972 bytes  v4a2597
+AR-SUR       6 spots   515 bytes  v76143f
+BR-RS       18 spots  1168 bytes  vfa9ebe
 BR-RS-SUL    2 spots   286 bytes  v6109c9
-BR-SC-FLN   14 spots   952 bytes  v577bbe
-BR-SC-SUL    6 spots   480 bytes  v84ab14
-BR-SC-NOR   20 spots  1236 bytes  v8547d7
-BR-SP       29 spots  1534 bytes  v2ff877
+BR-SC-FLN   14 spots   952 bytes  vf3cd3d
+BR-SC-SUL    6 spots   480 bytes  v26ec2f
+BR-SC-NOR   20 spots  1236 bytes  v5b9ebe
+BR-SP       29 spots  1536 bytes  vb8f5af
 BR-RJ       17 spots   913 bytes  v98eb00
-BR-RJL      20 spots  1185 bytes  v20ad7f
-BR-ES       19 spots  1139 bytes  vc504d1
+BR-RJL      20 spots  1184 bytes  vc18864
+BR-ES       19 spots  1147 bytes  v4673b1
 BR-BA       21 spots  1158 bytes  vdfc395
-BR-NE-CE    13 spots   825 bytes  v62a44c
-BR-NE-RN    13 spots   853 bytes  v60337a
-BR-NE-PE    14 spots   868 bytes  v09f1d6
-BR-NOR       5 spots   421 bytes  v3415e7
-CL-NOR      11 spots   743 bytes  vb51cf6
-CL-CEN      20 spots  1287 bytes  vf41b77
-CL-PIC      12 spots   877 bytes  v8cc40a
-CL-MAU      14 spots   907 bytes  v6d5d81
-CL-SUR      11 spots   777 bytes  vea687e
-PE-NOR      10 spots   712 bytes  v532b4c
-PE-LLB       7 spots   585 bytes  ve8422f
-PE-LIM      15 spots  1069 bytes  v89bf76
-PE-SUR       5 spots   442 bytes  v88f771
-EC-COS      13 spots   840 bytes  vef3c20
+BR-NE-CE    13 spots   825 bytes  vd18359
+BR-NE-RN    13 spots   853 bytes  ve0170d
+BR-NE-PE    14 spots   868 bytes  vcad6c3
+BR-NOR       5 spots   421 bytes  v4ea595
+CL-NOR      11 spots   742 bytes  vbc6d99
+CL-CEN      20 spots  1287 bytes  v41212f
+CL-PIC      12 spots   877 bytes  v0bdae2
+CL-MAU      14 spots   917 bytes  vdc2ebd
+CL-SUR      11 spots   777 bytes  v5e6c6b
+PE-NOR      10 spots   712 bytes  v7d05fa
+PE-LLB       7 spots   585 bytes  vf413e1
+PE-LIM      15 spots  1074 bytes  vf3d8fc
+PE-SUR       5 spots   442 bytes  v850d54
+EC-COS      13 spots   840 bytes  v5759f3
 EC-GAL       4 spots   347 bytes  v21618a
-CO-PAC       6 spots   507 bytes  v866d2e
-CO-CAR       3 spots   388 bytes  v39ec39
+CO-PAC       6 spots   506 bytes  v046191
+CO-CAR       3 spots   388 bytes  vede2c2
 VE-ALL       2 spots   276 bytes  v0b7dda
-PA-PAC       7 spots   557 bytes  v751239
-PA-BDT       4 spots   326 bytes  vab31ac
+PA-PAC       7 spots   557 bytes  v4b0e2f
+PA-BDT       4 spots   326 bytes  vd47602
 CR-GUA      12 spots   781 bytes  v75de7b
 CR-NIC      11 spots   677 bytes  v6b0cc4
-CR-PAC      10 spots   666 bytes  v2f5535
+CR-PAC      10 spots   665 bytes  v125e28
 CR-OSA       4 spots   353 bytes  v718fb6
 CR-CAR       5 spots   442 bytes  vb9bee3
 NI-RIV       8 spots   521 bytes  vc1f6bb
 NI-NW        4 spots   400 bytes  v667375
-SV-LIB       8 spots   514 bytes  vf7d950
-SV-ORI       4 spots   367 bytes  vf7beb3
+SV-LIB       8 spots   514 bytes  v20e459
+SV-ORI       4 spots   367 bytes  v7b8ea3
 GT-PAC       4 spots   401 bytes  v54a50b
-MX-OAX      13 spots   837 bytes  v608007
-MX-PAC      12 spots   849 bytes  veff625
+MX-OAX      13 spots   837 bytes  v8e504c
+MX-PAC      12 spots   848 bytes  v822b9d
 MX-NAY       9 spots   691 bytes  ve01556
-MX-BCS       6 spots   490 bytes  v36bf72
+MX-BCS       6 spots   489 bytes  v12f5f0
 MX-BCS-N     2 spots   321 bytes  vfc5001
 MX-BCN       4 spots   406 bytes  v68ce0a
-MX-CAR       3 spots   340 bytes  vbe965d
+MX-CAR       3 spots   340 bytes  v5dd350
 PR-NW       15 spots   947 bytes  vc7b031
 PR-N         8 spots   647 bytes  v4ca137
-BB-ALL       8 spots   528 bytes  v183489
+BB-ALL       8 spots   527 bytes  v869443
 DO-ALL       2 spots   271 bytes  ve13a87
 GP-ALL       3 spots   301 bytes  vff00ed
 MQ-ALL       3 spots   297 bytes  vcc9d57
-BS-ALL       1 spots   202 bytes  v9bbfdc
-TT-ALL       4 spots   399 bytes  v523816
+BS-ALL       1 spots   202 bytes  v064c88
+TT-ALL       4 spots   399 bytes  v942823
 US-CA-SD    38 spots  2110 bytes  v709c41
-US-CA-OC    32 spots  1807 bytes  v6028b2
-US-CA-LA    23 spots  1338 bytes  v7b93bd
-US-CA-SB    27 spots  1523 bytes  v24f293
-US-CA-CEN   16 spots  1055 bytes  vd3577d
-US-CA-SC    30 spots  1681 bytes  vdc22f8
-US-CA-SF    29 spots  1660 bytes  v54730b
-US-CA-NOR   25 spots  1477 bytes  vbc8500
-US-PNW      33 spots  1848 bytes  va16735
-US-GULF     13 spots   830 bytes  v91f7c7
-US-FL       46 spots  2359 bytes  v914fed
-US-FL-PAN    6 spots   572 bytes  v64b7e1
-US-SE       22 spots  1350 bytes  vb80056
-US-SC-GA    10 spots   742 bytes  ve1fa3a
-US-MID      11 spots   805 bytes  ved9583
-US-NE       60 spots  3035 bytes  v4330e6
-US-HI-OAN   21 spots  1195 bytes  ved6bcd
-US-HI-OAS   25 spots  1403 bytes  v72a053
-US-HI-MAU   21 spots  1184 bytes  vb9b14a
-US-HI-KAU   21 spots  1123 bytes  vec6273
+US-CA-OC    32 spots  1813 bytes  v96faaa
+US-CA-LA    23 spots  1341 bytes  v1e4271
+US-CA-SB    27 spots  1523 bytes  vf011ab
+US-CA-CEN   16 spots  1050 bytes  v99837b
+US-CA-SC    30 spots  1676 bytes  vb02750
+US-CA-SF    29 spots  1667 bytes  ved21bb
+US-CA-NOR   25 spots  1481 bytes  v513e1c
+US-PNW      33 spots  1858 bytes  v0acd37
+US-GULF     13 spots   830 bytes  vf76737
+US-FL       46 spots  2362 bytes  vc4ea09
+US-FL-PAN    6 spots   573 bytes  v35617d
+US-SE       22 spots  1358 bytes  ve99a44
+US-SC-GA    10 spots   740 bytes  v669a7c
+US-MID      11 spots   807 bytes  v6670f4
+US-NE       60 spots  3046 bytes  v0fa900
+US-HI-OAN   21 spots  1195 bytes  v011755
+US-HI-OAS   25 spots  1403 bytes  v801acc
+US-HI-MAU   21 spots  1184 bytes  v34aa4e
+US-HI-KAU   21 spots  1123 bytes  v2defb5
 US-HI-BIG   15 spots   940 bytes  vb29346
-CA-BC-VI    14 spots   899 bytes  v4e3a5d
-CA-NS       11 spots   758 bytes  vc72be4
+CA-BC-VI    14 spots   901 bytes  v439fe3
+CA-NS       11 spots   763 bytes  vf571f5
 AU-QLD-SC   27 spots  1480 bytes  v192abf
 AU-QLD-GC   24 spots  1279 bytes  vc50967
 AU-NSW-NR   26 spots  1534 bytes  v9aa784
-AU-NSW-MN   33 spots  1869 bytes  v0489b8
-AU-NSW-NC   30 spots  1722 bytes  vade004
-AU-NSW-SYD  37 spots  1832 bytes  v26dfe2
+AU-NSW-MN   33 spots  1869 bytes  vad55ce
+AU-NSW-NC   30 spots  1726 bytes  v8eece5
+AU-NSW-SYD  37 spots  1835 bytes  v89469e
 AU-NSW-SC   31 spots  1641 bytes  vafadba
 AU-VIC-SC   20 spots  1150 bytes  v42fd07
 AU-VIC-PI   18 spots  1132 bytes  vdf852b
 AU-VIC-W     9 spots   715 bytes  v3ad0f0
-AU-TAS      12 spots   816 bytes  v4ed012
-AU-SA       14 spots   918 bytes  v6905d9
+AU-TAS      12 spots   816 bytes  v1c339d
+AU-SA       14 spots   918 bytes  v0bdcae
 AU-SA-EYR    3 spots   307 bytes  vf4f08e
 AU-WA-MR    32 spots  2169 bytes  vab3b4b
-AU-WA-PER   20 spots  1205 bytes  v3c0b33
-AU-WA-NW     5 spots   481 bytes  v50662c
-AU-WA-GAS    3 spots   341 bytes  vf9b9ea
-NZ-NTL      14 spots   906 bytes  v4bd2e0
-NZ-AKL       9 spots   636 bytes  vb47c14
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+AU-WA-PER   20 spots  1211 bytes  ve68fa6
+AU-WA-NW     5 spots   481 bytes  v1d02bb
+AU-WA-GAS    3 spots   341 bytes  vca057a
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+NZ-NTL      14 spots   910 bytes  v67cbd0
+NZ-AKL       9 spots   636 bytes  va38f36
 NZ-RAG       5 spots   393 bytes  vd4c51b
-NZ-TAR       7 spots   534 bytes  v215b93
-NZ-BOP      11 spots   803 bytes  vc04e1f
+NZ-TAR       7 spots   534 bytes  v544bea
+NZ-BOP      11 spots   811 bytes  v3455d5
 NZ-GIS      13 spots   893 bytes  v023d4c
 NZ-WEL      13 spots   872 bytes  v21f6d2
 NZ-KAI       9 spots   738 bytes  v43a968
-NZ-OTA      13 spots   872 bytes  va78274
+NZ-OTA      13 spots   872 bytes  v868d25
 NZ-WC        4 spots   391 bytes  v8b89f1
 FJ-MAM       6 spots   471 bytes  vb86fb9
 FJ-SOU       2 spots   324 bytes  v898d76
-PF-TAH       8 spots   583 bytes  vca7e1f
+PF-TAH       8 spots   588 bytes  vb3abeb
 PF-ISL       2 spots   275 bytes  v5ebf44
 WS-ALL       6 spots   560 bytes  veb7fd7
 TO-ALL       6 spots   444 bytes  vad34b3
 VU-ALL       5 spots   448 bytes  v752ba0
 PG-ALL       2 spots   300 bytes  vbe66bc
-ID-BAL-BUK  16 spots   911 bytes  v130947
-ID-BAL-W    18 spots   992 bytes  v3a2ea2
-ID-BAL-E    12 spots   714 bytes  v27c68c
-ID-JAV-E     7 spots   535 bytes  v17a227
-ID-JAV-W     7 spots   518 bytes  v9ce7a6
-ID-LOM      14 spots   837 bytes  vaa2c1d
-ID-SBW       9 spots   606 bytes  vc16fde
+ID-BAL-BUK  16 spots   911 bytes  vb7fec3
+ID-BAL-W    18 spots   991 bytes  v3c1a7c
+ID-BAL-E    12 spots   716 bytes  vd9e212
+ID-JAV-E     7 spots   535 bytes  v21e486
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+ID-JAV-W     7 spots   522 bytes  v6fbe7a
+ID-LOM      14 spots   842 bytes  ve5be81
+ID-SBW       9 spots   606 bytes  v166abe
 ID-SMB       2 spots   241 bytes  vdadcaa
-ID-ROT       4 spots   334 bytes  va4471f
-ID-MEN      10 spots   633 bytes  v9e7d61
-ID-NIA       3 spots   324 bytes  v46275d
-ID-KRU       4 spots   366 bytes  v8f77c3
-PH-SIA       8 spots   513 bytes  v0e19af
+ID-ROT       4 spots   334 bytes  vfb28b1
+ID-MEN      10 spots   633 bytes  v84b1ea
+ID-NIA       3 spots   324 bytes  v0402b8
+ID-KRU       4 spots   366 bytes  v96b664
+PH-SIA       8 spots   513 bytes  v471ad1
 PH-LUZ       5 spots   449 bytes  v8babb9
 PH-EAS       3 spots   377 bytes  ve2d2c5
-LK-E         8 spots   502 bytes  v6df2ad
-LK-S        11 spots   688 bytes  v9f6717
+LK-E         8 spots   501 bytes  ve401dd
+LK-S        11 spots   687 bytes  v62f552
 MV-NMA       6 spots   423 bytes  vef8c0a
-MV-SMA       3 spots   293 bytes  v4f0e9f
-MV-SOU       2 spots   264 bytes  v0fcd3d
+MV-SMA       3 spots   297 bytes  v14a8eb
+MV-SOU       2 spots   264 bytes  vb22650
 MV-CEN       1 spots   210 bytes  v4d23cc
-JP-CHI       8 spots   514 bytes  v281c79
-JP-SHO       9 spots   544 bytes  v3c7359
-JP-IZU       4 spots   343 bytes  v8f322c
-JP-IBA       5 spots   432 bytes  vf6779a
-JP-SHK       3 spots   275 bytes  v74ec3e
+JP-CHI       8 spots   514 bytes  v4937a4
+JP-SHO       9 spots   544 bytes  v799c4b
+JP-IZU       4 spots   343 bytes  v7689cf
+JP-IBA       5 spots   443 bytes  v71db20
+JP-SHK       3 spots   275 bytes  v700ff7
 JP-KYU       2 spots   256 bytes  v39e4ca
-TW-E         4 spots   387 bytes  v7b19fb
+TW-E         4 spots   389 bytes  ve4925f
 TW-NE        6 spots   467 bytes  v55532b
 IN-W         3 spots   319 bytes  vae6a73
-IN-E         3 spots   331 bytes  v594b73
-VN-ALL       5 spots   438 bytes  v848634
+IN-E         3 spots   331 bytes  vd70831
+VN-ALL       5 spots   438 bytes  v2bcc73
 KR-ALL       6 spots   491 bytes  v95a7b9
 CN-HAI       2 spots   275 bytes  ve22555
-ZA-WC-CPT   20 spots  1136 bytes  vd6ead2
+ZA-WC-CPT   20 spots  1136 bytes  v9a4bad
 ZA-WC-WCO    6 spots   573 bytes  v092c3d
-ZA-WC-GR    11 spots   808 bytes  v0904d0
+ZA-WC-GR    11 spots   808 bytes  v78d3a3
 ZA-EC-JB    10 spots   730 bytes  ve38f21
-ZA-EC-PE    17 spots  1043 bytes  vb5db58
+ZA-EC-PE    17 spots  1044 bytes  vf565f2
 ZA-EC-WLD    5 spots   453 bytes  va72637
-ZA-KZN-DBN   8 spots   513 bytes  v839a8f
-ZA-KZN-N     6 spots   522 bytes  vb92945
-ZA-KZN-S     9 spots   606 bytes  v851a39
-NA-ERO       3 spots   371 bytes  v10577f
-MA-TAG      19 spots  1065 bytes  v6bf128
+ZA-KZN-DBN   8 spots   513 bytes  v9f855d
+ZA-KZN-N     6 spots   521 bytes  vb788d4
+ZA-KZN-S     9 spots   606 bytes  v3f276c
+NA-ERO       3 spots   370 bytes  v770024
+MA-TAG      19 spots  1070 bytes  v5c8eae
 MA-N         6 spots   504 bytes  v2ab503
 MA-S         6 spots   474 bytes  v095572
 SN-ALL       5 spots   379 bytes  vf5f04c
 LR-ALL       3 spots   305 bytes  v130329
 GH-ALL       3 spots   299 bytes  va97f9c
-MZ-S         3 spots   307 bytes  vb85c22
+MZ-S         3 spots   307 bytes  v39da60
 MZ-INH       3 spots   308 bytes  v2df2b5
 MG-ALL       3 spots   321 bytes  vb8cf98
-RE-ALL       8 spots   547 bytes  v371a7c
+RE-ALL       8 spots   547 bytes  v23b035
 MU-ALL       3 spots   295 bytes  v5e5285
-CV-ALL       3 spots   310 bytes  v0c19f6
+CV-ALL       3 spots   310 bytes  v60c681
 FR-PBA      24 spots  1322 bytes  vbf759c
 FR-HOS      16 spots   967 bytes  v5853a7
 FR-GIR      18 spots  1093 bytes  v11082e
 FR-VEN      12 spots   807 bytes  ve6a1fc
-FR-BRE      15 spots   896 bytes  vb78fb9
-ES-PV       26 spots  1320 bytes  v828fb8
-ES-CAN      14 spots   784 bytes  v648773
-ES-AST      14 spots   836 bytes  v4e63e2
-ES-GAL      18 spots  1002 bytes  ve18a44
-ES-AND      15 spots   880 bytes  va43ded
-ES-CN-E     11 spots   766 bytes  vf19737
-ES-CN-W     17 spots  1066 bytes  vb7ee9c
-PT-NOR      19 spots  1048 bytes  vf78b2f
-PT-CEN      20 spots  1184 bytes  v9c1a58
-PT-PEN      12 spots   717 bytes  v087ae2
-PT-ERI      11 spots   675 bytes  v10c97f
-PT-LIS      15 spots   840 bytes  v588b3c
-PT-ALG      18 spots  1058 bytes  vd8d50f
-PT-AZO       7 spots   550 bytes  v7ce3ee
-PT-MAD       8 spots   543 bytes  vad0b0f
-GB-CON      28 spots  1516 bytes  ve16410
-GB-DEV       9 spots   630 bytes  v2f770e
-GB-SOU       3 spots   359 bytes  ve18adc
-GB-WAL      21 spots  1260 bytes  vfb5ed0
-GB-SCO      21 spots  1228 bytes  v8c8e57
-GB-NE       25 spots  1291 bytes  va2df88
-GB-NIR       9 spots   642 bytes  v986b86
-IE-NW        9 spots   717 bytes  v4d1f48
-IE-SW       12 spots   765 bytes  v58866a
-IE-SE       10 spots   689 bytes  v4e30dc
-NO-S         3 spots   367 bytes  v15728e
-NO-N         3 spots   330 bytes  v323a87
-DK-ALL       5 spots   411 bytes  v37f983
-NL-ALL      11 spots   755 bytes  v38d79b
-DE-ALL       4 spots   332 bytes  v2e0c86
-IT-ALL       7 spots   571 bytes  v3163af
-IT-SAR       4 spots   334 bytes  v7760fc
-IS-ALL       3 spots   326 bytes  v5b19e7
-warning: AR-MDP/PLAYA GRANDE: no direction open to the sea from facing 129: check the facing (no shelter)
-warning: BR-SC-NOR/ILHA DO MEL: no direction open to the sea from facing 110: check the facing (no shelter)
-warning: BR-SP/ILHA COMPRIDA: no direction open to the sea from facing 322: check the facing (no shelter)
-warning: BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea from facing 160: check the facing (no shelter)
-warning: BR-RJL/PRAIA GRANDE: no direction open to the sea from facing 150: check the facing (no shelter)
-warning: BR-RJL/TUCUNS: no direction open to the sea from facing 140: check the facing (no shelter)
-warning: BR-ES/PRAIA DA COSTA: no direction open to the sea from facing 8: check the facing (no shelter)
-warning: BR-ES/MEAÍPE: no direction open to the sea from facing 120: check the facing (no shelter)
-warning: BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
-warning: CL-MAU/COCHOLGÜE: no direction open to the sea from facing 242: check the facing (no shelter)
-warning: CL-MAU/TIRÚA: no direction open to the sea from facing 323: check the facing (no shelter)
-warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
-warning: PE-LIM/LA HERRADURA: no direction open to the sea from facing 341: check the facing (no shelter)
-warning: US-CA-OC/DANA COVE: no direction open to the sea from facing 309: check the facing (no shelter)
-warning: US-CA-LA/CABRILLO BEACH: no direction open to the sea from facing 115: check the facing (no shelter)
-warning: US-CA-CEN/SANDSPIT: no direction open to the sea from facing 270: check the facing (no shelter)
-warning: US-CA-SF/MIRADA SURF: no direction open to the sea from facing 177: check the facing (no shelter)
-warning: US-CA-SF/SURFER'S BEACH: no direction open to the sea from facing 230: check the facing (no shelter)
-warning: US-CA-SF/LIMANTOUR: no direction open to the sea from facing 200: check the facing (no shelter)
-warning: US-CA-NOR/DORAN BEACH: no direction open to the sea from facing 325: check the facing (no shelter)
-warning: US-PNW/SEAL ROCK: no direction open to the sea from facing 267: check the facing (no shelter)
-warning: US-PNW/SUNSET BAY: no direction open to the sea from facing 298: check the facing (no shelter)
-warning: US-FL/FERNANDINA: no direction open to the sea from facing 310: check the facing (no shelter)
-warning: US-FL/FORT PIERCE INLET: no direction open to the sea from facing 186: check the facing (no shelter)
-warning: US-FL/JENSEN BEACH: no direction open to the sea from facing 203: check the facing (no shelter)
-warning: US-FL/BOYNTON INLET: no direction open to the sea from facing 29: check the facing (no shelter)
-warning: US-FL-PAN/DAUPHIN ISLAND: no direction open to the sea from facing 229: check the facing (no shelter)
-warning: US-SE/FORT MACON: no direction open to the sea from facing 31: check the facing (no shelter)
-warning: US-SE/SURF CITY PIER: no direction open to the sea from facing 300: check the facing (no shelter)
-warning: US-SE/WRIGHTSVILLE: no direction open to the sea from facing 118: check the facing (no shelter)
-warning: US-MID/ASSATEAGUE: no direction open to the sea from facing 359: check the facing (no shelter)
-warning: US-MID/INDIAN RIVER INLET: no direction open to the sea from facing 196: check the facing (no shelter)
-warning: US-MID/DEWEY BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
-warning: US-NE/POPHAM BEACH: no direction open to the sea from facing 135: check the facing (no shelter)
-warning: US-NE/NANTASKET: no direction open to the sea from facing 165: check the facing (no shelter)
-warning: US-NE/MATUNUCK: no direction open to the sea from facing 175: check the facing (no shelter)
-warning: US-NE/FLYING POINT: no direction open to the sea from facing 233: check the facing (no shelter)
-warning: US-NE/ROBERT MOSES: no direction open to the sea from facing 178: check the facing (no shelter)
-warning: US-NE/SANDY HOOK: no direction open to the sea from facing 17: check the facing (no shelter)
-warning: US-NE/SEA BRIGHT: no direction open to the sea from facing 95: check the facing (no shelter)
-warning: US-NE/MANASQUAN INLET: no direction open to the sea from facing 357: check the facing (no shelter)
-warning: US-NE/ISLAND BEACH: no direction open to the sea from facing 256: check the facing (no shelter)
-warning: US-NE/BEACH HAVEN: no direction open to the sea from facing 276: check the facing (no shelter)
-warning: CA-BC-VI/MACKENZIE BEACH: no direction open to the sea from facing 222: check the facing (no shelter)
-warning: CA-BC-VI/SCHOONER COVE: no direction open to the sea from facing 44: check the facing (no shelter)
-warning: CA-NS/EAST LAWRENCETOWN: no direction open to the sea from facing 111: check the facing (no shelter)
-warning: CA-NS/MARTINIQUE BEACH: no direction open to the sea from facing 78: check the facing (no shelter)
-warning: AU-NSW-MN/MOONEE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
-warning: AU-NSW-NC/BIRUBI POINT: no direction open to the sea from facing 157: check the facing (no shelter)
-warning: AU-NSW-SYD/WHALE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
-warning: AU-NSW-SYD/WANDA: no direction open to the sea from facing 4: check the facing (no shelter)
-warning: AU-VIC-PI/SUMMERLAND: no direction open to the sea from facing 210: check the facing (no shelter)
-warning: AU-TAS/MARION BAY: no direction open to the sea from facing 265: check the facing (no shelter)
-warning: AU-TAS/SPRING BEACH: no direction open to the sea from facing 46: check the facing (no shelter)
-warning: AU-WA-PER/TWO ROCKS: no direction open to the sea from facing 254: check the facing (no shelter)
-warning: NZ-NTL/MANGAWHAI HEADS: no direction open to the sea from facing 291: check the facing (no shelter)
-warning: NZ-AKL/PORT WAIKATO: no direction open to the sea from facing 358: check the facing (no shelter)
-warning: NZ-BOP/MOUNT MAUNGANUI: no direction open to the sea from facing 241: check the facing (no shelter)
-warning: NZ-BOP/MAKETU: no direction open to the sea from facing 321: check the facing (no shelter)
-warning: NZ-OTA/WARRINGTON: no direction open to the sea from facing 163: check the facing (no shelter)
-warning: PF-TAH/TIAHURA: no direction open to the sea from facing 151: check the facing (no shelter)
-warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
-warning: PG-ALL/TAURAMA POINT: no direction open to the sea from facing 111: check the facing (no shelter)
-warning: ID-BAL-E/SERANGAN: no direction open to the sea from facing 147: check the facing (no shelter)
-warning: ID-JAV-W/SAWARNA: no direction open to the sea from facing 248: check the facing (no shelter)
-warning: ID-LOM/EKAS: no direction open to the sea from facing 311: check the facing (no shelter)
-warning: MV-SMA/COCOA CORNER: no direction open to the sea from facing 270: check the facing (no shelter)
-warning: JP-IZU/SHIRAHAMA: no direction open to the sea from facing 93: check the facing (no shelter)
-warning: JP-IBA/HASAKI: no direction open to the sea from facing 2: check the facing (no shelter)
-warning: JP-IBA/KASHIMA: no direction open to the sea from facing 25: check the facing (no shelter)
-warning: TW-E/JINZUN HARBOR: no direction open to the sea from facing 163: check the facing (no shelter)
-warning: ZA-EC-PE/KINGS BEACH: no direction open to the sea from facing 39: check the facing (no shelter)
-warning: MA-TAG/ESSAOUIRA: no direction open to the sea from facing 209: check the facing (no shelter)
-warning: FR-VEN/LA GRANDE COTE: no direction open to the sea from facing 250: check the facing (no shelter)
-warning: FR-BRE/DOSSEN: no direction open to the sea from facing 8: check the facing (no shelter)
-warning: ES-PV/EA: no direction open to the sea from facing 20: check the facing (no shelter)
-warning: ES-PV/PLENTZIA: no direction open to the sea from facing 323: check the facing (no shelter)
-warning: ES-PV/BARRIKA: no direction open to the sea from facing 52: check the facing (no shelter)
-warning: ES-GAL/PATOS: no direction open to the sea from facing 359: check the facing (no shelter)
-warning: ES-AND/LA VICTORIA: no direction open to the sea from facing 69: check the facing (no shelter)
-warning: ES-AND/CORTADURA: no direction open to the sea from facing 121: check the facing (no shelter)
-warning: ES-AND/CAMPOSOTO: no direction open to the sea from facing 169: check the facing (no shelter)
-warning: PT-LIS/COVA DO VAPOR: no direction open to the sea from facing 11: check the facing (no shelter)
-warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
-warning: GB-SCO/BELHAVEN BAY: no direction open to the sea from facing 312: check the facing (no shelter)
-warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
-warning: IE-SW/ROSSBEIGH: no direction open to the sea from facing 270: check the facing (no shelter)
-warning: IE-SE/INCHYDONEY: no direction open to the sea from facing 51: check the facing (no shelter)
-warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-warning: IS-ALL/THORLAKSHOFN: no direction open to the sea from facing 61: check the facing (no shelter)
-213 regions, 2511 spots, 0 errors, 90 warnings
+FR-BRE      15 spots   904 bytes  vc2c9a0
+ES-PV       26 spots  1336 bytes  v663d3c
