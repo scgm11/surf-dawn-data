@@ -59,7 +59,9 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
   (`tools/lib/shelter.py`). Guarda un nivel por cada uno de 18 sectores de 20° (el sector `i`
   centrado en `i × 20°`, la dirección **desde** la que viene el viento o el swell) en base 3:
   `nivel(i) = (x ÷ 3^i) mod 3`, con 0 = tierra a menos de 2 km, 1 = tierra a menos de 25 km,
-  2 = mar abierto (la mediana de 5 rayos por sector, sobre la costa de OpenStreetMap). El reloj
+  2 = mar abierto (la mediana de 5 rayos por sector, sobre la costa de OpenStreetMap). `null`
+  cuando ningún sector da al mar abierto: casi siempre una orientación equivocada (el reporte
+  del build lo avisa), y el reloj puntúa ese pico como antes. El reloj
   lo usa en el puntaje: viento que cruza tierra cerca levanta poco picado, y swell con tierra en
   el camino llega cortado. Va aparte de `s` porque los relojes anteriores rechazan filas que no
   tengan 5 o 7 valores.

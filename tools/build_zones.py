@@ -161,9 +161,17 @@ def build_region(code, reg, country, models, ports, offline, rep):
     if wx is None:
         warns.append("%s: no coastline around the spots: no shelter (x)" % code)
     else:
-        x = [shelter.code(wx, s["lat"], s["lon"], s["facing"]) for s in spots]
-        for s, c in zip(spots, x):
+        x = []
+        for s in spots:
+            c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
+            if 2 not in shelter.decode(c):
+                # no sector open to the sea: almost always a wrong facing (the rays start on land);
+                # null, the watch scores it as before
+                warns.append("%s/%s: no direction open to the sea from facing %d: check the facing (no shelter)" % (
+                    code, s["name"], s["facing"]))
+                c = None
             s["x"] = c
+            x.append(c)
     radius = int(math.ceil(max(geo.km((clat, clon), (s["lat"], s["lon"])) for s in spots))) + NEAR_KM
     srows = []
     for s in spots:
