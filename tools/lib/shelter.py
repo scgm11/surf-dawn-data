@@ -25,6 +25,8 @@ SMOOTH_M = 350               # coastline length (each side) averaged for a facin
 MIN_OPEN = 3                 # sectors open to the sea a new place needs (60°)...
 MASK_FROM_M = 4000           # an open ray is checked against the land mask from here (its 1 km cells)...
 MASK_STEP_M = 2000           # ...every this much: a hole in the coastline file is not open sea
+COARSE_STEP_M = 200          # the coarse pass (a ray per sector) tries a point every this much...
+REFINE = 8                   # ...and the full one (RAYS per sector) its best few
 SECTOR_M = 500               # ...and the most open wins, a sector more worth this much further from the seed
 
 
@@ -57,31 +59,43 @@ def fetch(ways, lat, lon, facing, bearings):
 
 
 def _fetch(a, b, x, y, facing, bearings, lat0, lon0):
-    """fetch() from the point (x, y) of the segments' frame (metres around lat0, lon0)."""
-    is_land = _mask()
+    """fetch() from the point (x, y) of the segments' frame (metres around lat0, lon0), every
+    bearing at once (a rays x segments matrix, the segments within OPEN_M of the point)."""
     f = np.radians(facing)
     p = np.array([x + OUT_M * np.sin(f), y + OUT_M * np.cos(f)])
-    e = b - a
-    ap = a - p
-    out = []
-    for deg in bearings:
-        r = np.radians(deg)
-        d = np.array([np.sin(r), np.cos(r)])
-        den = d[0] * e[:, 1] - d[1] * e[:, 0]
-        ok = np.abs(den) > 1e-9
+    near = ((np.minimum(np.abs(a[:, 0] - p[0]), np.abs(b[:, 0] - p[0])) < OPEN_M)
+            & (np.minimum(np.abs(a[:, 1] - p[1]), np.abs(b[:, 1] - p[1])) < OPEN_M))
+    a, b = a[near], b[near]
+    r = np.radians(np.asarray(bearings, dtype=float))
+    dx, dy = np.sin(r)[:, None], np.cos(r)[:, None]
+    m = np.full(len(r), float(OPEN_M))
+    if len(a):
+        e = b - a
+        ap = a - p
+        den = dx * e[None, :, 1] - dy * e[None, :, 0]
         with np.errstate(divide="ignore", invalid="ignore"):
-            t = (ap[:, 0] * e[:, 1] - ap[:, 1] * e[:, 0]) / den
-            u = (ap[:, 0] * d[1] - ap[:, 1] * d[0]) / den
-        hit = ok & (t > 0) & (u >= 0) & (u <= 1)
-        m = float(min(OPEN_M, t[hit].min())) if hit.any() else float(OPEN_M)
-        if is_land is not None and m >= OPEN_M:
-            for k in range(MASK_FROM_M, OPEN_M + 1, MASK_STEP_M):
-                la, lo = geo.unxy(lat0, lon0, p[0] + k * d[0], p[1] + k * d[1])
-                if is_land(la, geo.wrap(lo)):
-                    m = float(k)
-                    break
-        out.append(m)
-    return out
+            t = (ap[:, 0] * e[:, 1] - ap[:, 1] * e[:, 0])[None, :] / den
+            u = (ap[None, :, 0] * dy - ap[None, :, 1] * dx) / den
+        t = np.where((np.abs(den) > 1e-9) & (t > 0) & (u >= 0) & (u <= 1), t, np.inf)
+        m = np.minimum(m, t.min(axis=1))
+    is_land = _mask()
+    open_ = np.nonzero(m >= OPEN_M)[0]
+    if is_land is not None and len(open_):
+        ks = np.arange(MASK_FROM_M, OPEN_M + 1, MASK_STEP_M, dtype=float)
+        px = p[0] + ks[None, :] * dx[open_]
+        py = p[1] + ks[None, :] * dy[open_]
+        la = lat0 + py / 110540.0
+        lo = (lon0 + px / (111320.0 * np.cos(np.radians(lat0))) + 540.0) % 360.0 - 180.0
+        la = np.clip(la, -89.9, 89.9)
+        try:
+            land = np.asarray(is_land(la, lo), dtype=bool).reshape(la.shape)
+        except Exception:                          # noqa: BLE001 - a version that takes one point at a time
+            land = np.array([[bool(is_land(float(u), float(v))) for u, v in zip(ra, ro)] for ra, ro in zip(la, lo)])
+        for j, i in enumerate(open_):
+            hit = np.nonzero(land[j])[0]
+            if len(hit):
+                m[i] = ks[hit[0]]
+    return [float(v) for v in m]
 
 
 def _bearings():
@@ -124,9 +138,10 @@ def relocate(ways, lat, lon):
                 d = math.hypot(px, py)
                 if d <= MOVE_M:
                     cands.append((d, px, py, pts, k))
+    coarse = [i * 360.0 / SECTORS for i in range(SECTORS)]
     bear = _bearings()
-    best = None
-    for d, px, py, pts, k in cands:
+    scored = []
+    for d, px, py, pts, k in cands[::max(1, COARSE_STEP_M // STEP_M)]:
         sx = sy = 0.0
         for m in range(max(0, k - 40), min(len(pts) - 1, k + 41)):
             (ax, ay), (bx, by) = pts[m], pts[m + 1]
@@ -135,6 +150,10 @@ def relocate(ways, lat, lon):
         if not sx and not sy:
             continue
         facing = int(round((math.degrees(math.atan2(sx, sy)) + 90) % 360))
+        n = sum(1 for v in _fetch(a, b, px, py, facing, coarse, lat, lon) if v >= OPEN_M)
+        scored.append((n - d / SECTOR_M, d, px, py, facing))
+    best = None
+    for _, d, px, py, facing in sorted(scored, key=lambda c: -c[0])[:REFINE]:
         n = _levels(_fetch(a, b, px, py, facing, bear, lat, lon)).count(2)
         if n >= MIN_OPEN and (best is None or n - d / SECTOR_M > best[0]):
             best = (n - d / SECTOR_M, px, py, facing, d)
