@@ -5,9 +5,9 @@
 ## Avisos
 
 - AR-MDP/PLAYA GRANDE: no direction open to the sea, moved 1372 m from the seed (facing 129 -> 139)
-- BR-SC-NOR/ILHA DO MEL: no direction open to the sea from facing 110: check the facing (no shelter)
+- BR-SC-NOR/ILHA DO MEL: no direction open to the sea, moved 1019 m from the seed (facing 110 -> 110)
 - BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1976 m from the seed (facing 322 -> 269)
-- BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea from facing 160: check the facing (no shelter)
+- BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea, moved 1384 m from the seed (facing 160 -> 160)
 - BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from the seed (facing 150 -> 183)
 - BR-RJL/TUCUNS: no direction open to the sea from facing 140: check the facing (no shelter)
 - BR-ES/PRAIA DA COSTA: no direction open to the sea, moved 1412 m from the seed (facing 8 -> 103)
@@ -19,9 +19,9 @@
 - PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 - US-CA-OC/DANA COVE: no direction open to the sea, moved 210 m from the seed (facing 309 -> 154)
 - US-CA-LA/CABRILLO BEACH: no direction open to the sea, moved 950 m from the seed (facing 115 -> 164)
-- US-CA-CEN/SANDSPIT: no direction open to the sea from facing 270: check the facing (no shelter)
+- US-CA-CEN/SANDSPIT: no direction open to the sea, moved 671 m from the seed (facing 270 -> 270)
 - US-CA-SF/MIRADA SURF: no direction open to the sea, moved 1476 m from the seed (facing 177 -> 222)
-- US-CA-SF/SURFER'S BEACH: no direction open to the sea from facing 230: check the facing (no shelter)
+- US-CA-SF/SURFER'S BEACH: no direction open to the sea, moved 1660 m from the seed (facing 230 -> 230)
 - US-CA-SF/LIMANTOUR: no direction open to the sea, moved 1380 m from the seed (facing 200 -> 195)
 - US-CA-NOR/DORAN BEACH: no direction open to the sea, moved 1539 m from the seed (facing 325 -> 246)
 - US-PNW/SEAL ROCK: no direction open to the sea, moved 285 m from the seed (facing 267 -> 268)
@@ -33,17 +33,17 @@
 - US-FL-PAN/DAUPHIN ISLAND: no direction open to the sea, moved 1487 m from the seed (facing 229 -> 99)
 - US-SE/FORT MACON: no direction open to the sea, moved 528 m from the seed (facing 31 -> 184)
 - US-SE/SURF CITY PIER: no direction open to the sea, moved 612 m from the seed (facing 300 -> 144)
-- US-SE/WRIGHTSVILLE: no direction open to the sea from facing 118: check the facing (no shelter)
+- US-SE/WRIGHTSVILLE: no direction open to the sea, moved 193 m from the seed (facing 118 -> 118)
 - US-MID/ASSATEAGUE: no direction open to the sea, moved 1334 m from the seed (facing 359 -> 112)
 - US-MID/INDIAN RIVER INLET: no direction open to the sea, moved 361 m from the seed (facing 196 -> 105)
-- US-MID/DEWEY BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
+- US-MID/DEWEY BEACH: no direction open to the sea, moved 386 m from the seed (facing 100 -> 100)
 - US-NE/POPHAM BEACH: no direction open to the sea, moved 1844 m from the seed (facing 135 -> 153)
 - US-NE/NANTASKET: no direction open to the sea, moved 594 m from the seed (facing 165 -> 50)
-- US-NE/MATUNUCK: no direction open to the sea from facing 175: check the facing (no shelter)
+- US-NE/MATUNUCK: no direction open to the sea, moved 382 m from the seed (facing 175 -> 175)
 - US-NE/FLYING POINT: no direction open to the sea from facing 233: check the facing (no shelter)
-- US-NE/ROBERT MOSES: no direction open to the sea from facing 178: check the facing (no shelter)
+- US-NE/ROBERT MOSES: no direction open to the sea, moved 226 m from the seed (facing 178 -> 178)
 - US-NE/SANDY HOOK: no direction open to the sea, moved 1535 m from the seed (facing 17 -> 79)
-- US-NE/SEA BRIGHT: no direction open to the sea from facing 95: check the facing (no shelter)
+- US-NE/SEA BRIGHT: no direction open to the sea, moved 373 m from the seed (facing 95 -> 95)
 - US-NE/MANASQUAN INLET: no direction open to the sea, moved 226 m from the seed (facing 357 -> 137)
 - US-NE/ISLAND BEACH: no direction open to the sea, moved 508 m from the seed (facing 256 -> 98)
 - US-NE/BEACH HAVEN: no direction open to the sea, moved 411 m from the seed (facing 276 -> 124)
@@ -51,11 +51,11 @@
 - CA-BC-VI/SCHOONER COVE: no direction open to the sea from facing 44: check the facing (no shelter)
 - CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1903 m from the seed (facing 111 -> 217)
 - CA-NS/MARTINIQUE BEACH: no direction open to the sea, moved 980 m from the seed (facing 78 -> 166)
-- AU-NSW-MN/MOONEE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
+- AU-NSW-MN/MOONEE BEACH: no direction open to the sea, moved 735 m from the seed (facing 100 -> 100)
 - AU-NSW-NC/BIRUBI POINT: no direction open to the sea, moved 1899 m from the seed (facing 157 -> 140)
-- AU-NSW-SYD/WHALE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
+- AU-NSW-SYD/WHALE BEACH: no direction open to the sea, moved 687 m from the seed (facing 100 -> 100)
 - AU-NSW-SYD/WANDA: no direction open to the sea, moved 1673 m from the seed (facing 4 -> 113)
-- AU-VIC-PI/SUMMERLAND: no direction open to the sea from facing 210: check the facing (no shelter)
+- AU-VIC-PI/SUMMERLAND: no direction open to the sea, moved 851 m from the seed (facing 210 -> 210)
 - AU-TAS/MARION BAY: no direction open to the sea, moved 1143 m from the seed (facing 265 -> 269)
 - AU-TAS/SPRING BEACH: no direction open to the sea from facing 46: check the facing (no shelter)
 - AU-WA-PER/TWO ROCKS: no direction open to the sea, moved 469 m from the seed (facing 254 -> 235)
@@ -77,7 +77,7 @@
 - TW-E/JINZUN HARBOR: no direction open to the sea, moved 105 m from the seed (facing 163 -> 149)
 - ZA-EC-PE/KINGS BEACH: no direction open to the sea, moved 1202 m from the seed (facing 39 -> 95)
 - MA-TAG/ESSAOUIRA: no direction open to the sea, moved 777 m from the seed (facing 209 -> 274)
-- FR-VEN/LA GRANDE COTE: no direction open to the sea from facing 250: check the facing (no shelter)
+- FR-VEN/LA GRANDE COTE: no direction open to the sea, moved 1911 m from the seed (facing 250 -> 250)
 - FR-BRE/DOSSEN: no direction open to the sea, moved 1934 m from the seed (facing 8 -> 224)
 - ES-PV/EA: no direction open to the sea, moved 1021 m from the seed (facing 20 -> 10)
 - ES-PV/PLENTZIA: no direction open to the sea, moved 19 m from the seed (facing 323 -> 96)
@@ -90,7 +90,7 @@
 - GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
 - GB-SCO/BELHAVEN BAY: no direction open to the sea, moved 1297 m from the seed (facing 312 -> 40)
 - IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
-- IE-SW/ROSSBEIGH: no direction open to the sea from facing 270: check the facing (no shelter)
+- IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the seed (facing 270 -> 270)
 - IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 - NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 - IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
@@ -109,7 +109,7 @@
 | BR-RS-SUL | 2 | 286 | ncep_gfswave025 | gfs_seamless | 1 | 229 m | 0 |
 | BR-SC-FLN | 14 | 952 | ncep_gfswave025 | gfs_seamless | 1 | — | 11 |
 | BR-SC-SUL | 6 | 480 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
-| BR-SC-NOR | 20 | 1236 | ncep_gfswave025 | gfs_seamless | 3 | 582 m | 4 |
+| BR-SC-NOR | 20 | 1239 | ncep_gfswave025 | gfs_seamless | 3 | 582 m | 4 |
 | BR-SP | 29 | 1539 | ncep_gfswave025 | gfs_seamless | 3 | 673 m | 0 |
 | BR-RJ | 17 | 913 | ncep_gfswave025 | gfs_seamless | 1 | 156 m | 0 |
 | BR-RJL | 20 | 1188 | ncep_gfswave025 | gfs_seamless | 3 | 594 m | 0 |
@@ -164,18 +164,18 @@
 | US-CA-OC | 32 | 1813 | ecmwf_wam | gfs_seamless | 3 | 223 m | 0 |
 | US-CA-LA | 23 | 1342 | ecmwf_wam | gfs_seamless | 3 | 194 m | 0 |
 | US-CA-SB | 27 | 1523 | ecmwf_wam | gfs_seamless | 3 | 264 m | 0 |
-| US-CA-CEN | 16 | 1055 | ecmwf_wam | gfs_seamless | 3 | 557 m | 0 |
+| US-CA-CEN | 16 | 1060 | ecmwf_wam | gfs_seamless | 3 | 557 m | 0 |
 | US-CA-SC | 30 | 1681 | ecmwf_wam | gfs_seamless | 2 | 241 m | 0 |
-| US-CA-SF | 29 | 1669 | ecmwf_wam | gfs_seamless | 3 | 289 m | 0 |
+| US-CA-SF | 29 | 1679 | ecmwf_wam | gfs_seamless | 3 | 289 m | 0 |
 | US-CA-NOR | 25 | 1481 | ecmwf_wam | gfs_seamless | 3 | 328 m | 0 |
 | US-PNW | 33 | 1859 | ecmwf_wam | gfs_seamless | 3 | 363 m | 0 |
 | US-GULF | 13 | 830 | ecmwf_wam | gfs_seamless | 3 | 328 m | 0 |
 | US-FL | 46 | 2367 | ncep_gfswave016 | gfs_seamless | 3 | 366 m | 0 |
 | US-FL-PAN | 6 | 573 | ecmwf_wam | gfs_seamless | 3 | 352 m | 0 |
-| US-SE | 22 | 1358 | ncep_gfswave025 | ecmwf_ifs | 3 | 275 m | 6 |
+| US-SE | 22 | 1359 | ncep_gfswave025 | ecmwf_ifs | 3 | 275 m | 6 |
 | US-SC-GA | 10 | 742 | ncep_gfswave016 | ecmwf_ifs | 3 | 505 m | 0 |
-| US-MID | 11 | 807 | ncep_gfswave025 | gfs_seamless | 3 | 361 m | 2 |
-| US-NE | 60 | 3047 | ecmwf_wam | gfs_seamless | 3 | 313 m | 0 |
+| US-MID | 11 | 808 | ncep_gfswave025 | gfs_seamless | 3 | 361 m | 2 |
+| US-NE | 60 | 3056 | ecmwf_wam | gfs_seamless | 3 | 313 m | 0 |
 | US-HI-OAN | 21 | 1195 | ncep_gfswave016 | gfs_seamless | 1 | 165 m | 0 |
 | US-HI-OAS | 25 | 1403 | ecmwf_wam | gfs_seamless | 3 | 289 m | 0 |
 | US-HI-MAU | 21 | 1184 | ecmwf_wam | gfs_seamless | 3 | 516 m | 0 |
@@ -186,12 +186,12 @@
 | AU-QLD-SC | 27 | 1480 | ncep_gfswave025 | gfs_seamless | 3 | 302 m | 0 |
 | AU-QLD-GC | 24 | 1279 | ncep_gfswave025 | gfs_seamless | 1 | 292 m | 0 |
 | AU-NSW-NR | 26 | 1534 | ncep_gfswave025 | gfs_seamless | 3 | 383 m | 4 |
-| AU-NSW-MN | 33 | 1869 | ncep_gfswave025 | gfs_seamless | 3 | 647 m | 7 |
+| AU-NSW-MN | 33 | 1872 | ncep_gfswave025 | gfs_seamless | 3 | 647 m | 7 |
 | AU-NSW-NC | 30 | 1726 | ncep_gfswave025 | gfs_seamless | 3 | 570 m | 4 |
-| AU-NSW-SYD | 37 | 1835 | ncep_gfswave025 | gfs_seamless | 3 | 327 m | 0 |
+| AU-NSW-SYD | 37 | 1836 | ncep_gfswave025 | gfs_seamless | 3 | 327 m | 0 |
 | AU-NSW-SC | 31 | 1641 | ncep_gfswave025 | gfs_seamless | 3 | 277 m | 0 |
 | AU-VIC-SC | 20 | 1150 | ncep_gfswave025 | gfs_seamless | 1 | 622 m | 4 |
-| AU-VIC-PI | 18 | 1132 | ncep_gfswave025 | gfs_seamless | 2 | 705 m | 0 |
+| AU-VIC-PI | 18 | 1135 | ncep_gfswave025 | gfs_seamless | 2 | 705 m | 0 |
 | AU-VIC-W | 9 | 715 | ncep_gfswave025 | gfs_seamless | 3 | 431 m | 2 |
 | AU-TAS | 12 | 820 | ncep_gfswave025 | gfs_seamless | 3 | 605 m | 2 |
 | AU-SA | 14 | 918 | ecmwf_wam | gfs_seamless | 3 | 691 m | 0 |
@@ -277,7 +277,7 @@
 | FR-PBA | 24 | 1322 | ncep_gfswave016 | gfs_seamless | 2 | 353 m | 0 |
 | FR-HOS | 16 | 967 | ncep_gfswave016 | gfs_seamless | 2 | 631 m | 0 |
 | FR-GIR | 18 | 1093 | ncep_gfswave016 | gfs_seamless | 3 | 613 m | 0 |
-| FR-VEN | 12 | 807 | ncep_gfswave016 | gfs_seamless | 3 | 488 m | 0 |
+| FR-VEN | 12 | 811 | ncep_gfswave016 | gfs_seamless | 3 | 488 m | 0 |
 | FR-BRE | 15 | 904 | ncep_gfswave016 | gfs_seamless | 3 | 666 m | 0 |
 | ES-PV | 26 | 1331 | ncep_gfswave016 | gfs_seamless | 3 | 258 m | 0 |
 | ES-CAN | 14 | 784 | ncep_gfswave016 | gfs_seamless | 2 | 616 m | 0 |
@@ -302,7 +302,7 @@
 | GB-NE | 25 | 1291 | ncep_gfswave025 | gfs_seamless | 1 | 404 m | 3 |
 | GB-NIR | 9 | 642 | ecmwf_wam | gfs_seamless | 3 | 433 m | 0 |
 | IE-NW | 9 | 717 | ncep_gfswave025 | gfs_seamless | 3 | 543 m | 4 |
-| IE-SW | 12 | 765 | ecmwf_wam | gfs_seamless | 3 | 199 m | 0 |
+| IE-SW | 12 | 768 | ecmwf_wam | gfs_seamless | 3 | 199 m | 0 |
 | IE-SE | 10 | 690 | ncep_gfswave016 | gfs_seamless | 3 | 696 m | 0 |
 | NO-S | 3 | 367 | ncep_gfswave025 | gfs_seamless | 2 | 406 m | 1 |
 | NO-N | 3 | 330 | ncep_gfswave025 | gfs_seamless | 2 | 177 m | 1 |
