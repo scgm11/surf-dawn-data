@@ -1,114 +1,110 @@
-UY-CAN      14 spots   905 bytes  ve699b4
-UY-MAL      18 spots   969 bytes  vd1f145
-UY-ROC      19 spots  1017 bytes  v79f19b
-AR-MDP      22 spots  1263 bytes  v688071
-AR-BAN      16 spots   972 bytes  v4a2597
-AR-SUR       6 spots   515 bytes  v76143f
-BR-RS       18 spots  1168 bytes  vfa9ebe
+UY-CAN      14 spots   906 bytes  va66a75
+UY-MAL      18 spots   975 bytes  v520b39
+UY-ROC      19 spots  1017 bytes  v92c66a
+AR-MDP      22 spots  1263 bytes  va3c55e
+AR-BAN      16 spots   972 bytes  v1317b7
+AR-SUR       6 spots   515 bytes  v905216
+BR-RS       18 spots  1168 bytes  vb03e22
 BR-RS-SUL    2 spots   286 bytes  v6109c9
-BR-SC-FLN   14 spots   952 bytes  vf3cd3d
-BR-SC-SUL    6 spots   480 bytes  v26ec2f
-BR-SC-NOR   20 spots  1236 bytes  v5b9ebe
-BR-SP       29 spots  1536 bytes  vb8f5af
+BR-SC-FLN   14 spots   952 bytes  v577bbe
+BR-SC-SUL    6 spots   480 bytes  v84ab14
+BR-SC-NOR   20 spots  1236 bytes  v8547d7
+BR-SP       29 spots  1539 bytes  vb4813b
 BR-RJ       17 spots   913 bytes  v98eb00
-BR-RJL      20 spots  1183 bytes  vc57ced
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-BR-ES       19 spots  1147 bytes  v52303b
+BR-RJL      20 spots  1188 bytes  va93839
+BR-ES       19 spots  1142 bytes  v79e07e
 BR-BA       21 spots  1158 bytes  vdfc395
-BR-NE-CE    13 spots   825 bytes  vd18359
-BR-NE-RN    13 spots   853 bytes  ve0170d
-BR-NE-PE    14 spots   868 bytes  vcad6c3
-BR-NOR       5 spots   421 bytes  v4ea595
-CL-NOR      11 spots   742 bytes  vbc6d99
-CL-CEN      20 spots  1287 bytes  v41212f
-CL-PIC      12 spots   877 bytes  v0bdae2
-CL-MAU      14 spots   917 bytes  vf0586b
-CL-SUR      11 spots   777 bytes  v5e6c6b
-PE-NOR      10 spots   712 bytes  v7d05fa
-PE-LLB       7 spots   585 bytes  vf413e1
-PE-LIM      15 spots  1074 bytes  vf3d8fc
-PE-SUR       5 spots   442 bytes  v850d54
-EC-COS      13 spots   840 bytes  v5759f3
+BR-NE-CE    13 spots   825 bytes  v62a44c
+BR-NE-RN    13 spots   853 bytes  v60337a
+BR-NE-PE    14 spots   868 bytes  v09f1d6
+BR-NOR       5 spots   421 bytes  v3415e7
+CL-NOR      11 spots   743 bytes  vb51cf6
+CL-CEN      20 spots  1287 bytes  vf41b77
+CL-PIC      12 spots   877 bytes  v8cc40a
+CL-MAU      14 spots   917 bytes  v1f311d
+CL-SUR      11 spots   777 bytes  vea687e
+PE-NOR      10 spots   712 bytes  v532b4c
+PE-LLB       7 spots   585 bytes  ve8422f
+PE-LIM      15 spots  1075 bytes  vd0eb20
+PE-SUR       5 spots   442 bytes  v88f771
+EC-COS      13 spots   840 bytes  vef3c20
 EC-GAL       4 spots   347 bytes  v21618a
-CO-PAC       6 spots   506 bytes  v046191
-CO-CAR       3 spots   388 bytes  vede2c2
+CO-PAC       6 spots   507 bytes  v866d2e
+CO-CAR       3 spots   388 bytes  v39ec39
 VE-ALL       2 spots   276 bytes  v0b7dda
-PA-PAC       7 spots   557 bytes  v4b0e2f
-PA-BDT       4 spots   326 bytes  vd47602
+PA-PAC       7 spots   557 bytes  v751239
+PA-BDT       4 spots   326 bytes  vab31ac
 CR-GUA      12 spots   781 bytes  v75de7b
 CR-NIC      11 spots   677 bytes  v6b0cc4
-CR-PAC      10 spots   665 bytes  v125e28
+CR-PAC      10 spots   666 bytes  v2f5535
 CR-OSA       4 spots   353 bytes  v718fb6
 CR-CAR       5 spots   442 bytes  vb9bee3
 NI-RIV       8 spots   521 bytes  vc1f6bb
 NI-NW        4 spots   400 bytes  v667375
-SV-LIB       8 spots   514 bytes  v20e459
-SV-ORI       4 spots   367 bytes  v7b8ea3
+SV-LIB       8 spots   514 bytes  vf7d950
+SV-ORI       4 spots   367 bytes  vf7beb3
 GT-PAC       4 spots   401 bytes  v54a50b
-MX-OAX      13 spots   837 bytes  v8e504c
-MX-PAC      12 spots   848 bytes  v822b9d
+MX-OAX      13 spots   837 bytes  v608007
+MX-PAC      12 spots   849 bytes  veff625
 MX-NAY       9 spots   691 bytes  ve01556
-MX-BCS       6 spots   489 bytes  v12f5f0
+MX-BCS       6 spots   490 bytes  v36bf72
 MX-BCS-N     2 spots   321 bytes  vfc5001
 MX-BCN       4 spots   406 bytes  v68ce0a
-MX-CAR       3 spots   340 bytes  v5dd350
+MX-CAR       3 spots   340 bytes  vbe965d
 PR-NW       15 spots   947 bytes  vc7b031
 PR-N         8 spots   647 bytes  v4ca137
-BB-ALL       8 spots   527 bytes  v869443
+BB-ALL       8 spots   528 bytes  v183489
 DO-ALL       2 spots   271 bytes  ve13a87
 GP-ALL       3 spots   301 bytes  vff00ed
 MQ-ALL       3 spots   297 bytes  vcc9d57
-BS-ALL       1 spots   202 bytes  v064c88
-TT-ALL       4 spots   399 bytes  v942823
+BS-ALL       1 spots   202 bytes  v9bbfdc
+TT-ALL       4 spots   399 bytes  v523816
 US-CA-SD    38 spots  2110 bytes  v709c41
-US-CA-OC    32 spots  1813 bytes  vc3c270
-US-CA-LA    23 spots  1341 bytes  v1e4271
-US-CA-SB    27 spots  1523 bytes  vf011ab
-US-CA-CEN   16 spots  1050 bytes  v99837b
-US-CA-SC    30 spots  1676 bytes  vb02750
-US-CA-SF    29 spots  1668 bytes  vcbeeef
+US-CA-OC    32 spots  1813 bytes  ved5131
+US-CA-LA    23 spots  1342 bytes  v91d408
+US-CA-SB    27 spots  1523 bytes  v24f293
+US-CA-CEN   16 spots  1055 bytes  vd3577d
+US-CA-SC    30 spots  1681 bytes  vdc22f8
+US-CA-SF    29 spots  1669 bytes  v93f799
 US-CA-NOR   25 spots  1481 bytes  v513e1c
 US-PNW      33 spots  1859 bytes  ved440e
-US-GULF     13 spots   830 bytes  vf76737
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-US-FL       46 spots  2364 bytes  v2d3b45
-US-FL-PAN    6 spots   573 bytes  v35617d
-US-SE       22 spots  1358 bytes  v6299b4
-US-SC-GA    10 spots   740 bytes  v669a7c
-US-MID      11 spots   807 bytes  v6670f4
-US-NE       60 spots  3046 bytes  v364384
-US-HI-OAN   21 spots  1195 bytes  v011755
-US-HI-OAS   25 spots  1403 bytes  v801acc
-US-HI-MAU   21 spots  1184 bytes  v34aa4e
-US-HI-KAU   21 spots  1123 bytes  v2defb5
+US-GULF     13 spots   830 bytes  v91f7c7
+US-FL       46 spots  2367 bytes  v019c27
+US-FL-PAN    6 spots   573 bytes  v2d2a6e
+US-SE       22 spots  1358 bytes  va7505f
+US-SC-GA    10 spots   742 bytes  ve1fa3a
+US-MID      11 spots   807 bytes  vf5e6a1
+US-NE       60 spots  3047 bytes  vb52128
+US-HI-OAN   21 spots  1195 bytes  ved6bcd
+US-HI-OAS   25 spots  1403 bytes  v72a053
+US-HI-MAU   21 spots  1184 bytes  vb9b14a
+US-HI-KAU   21 spots  1123 bytes  vec6273
 US-HI-BIG   15 spots   940 bytes  vb29346
-CA-BC-VI    14 spots   898 bytes  v5b47f7
-CA-NS       11 spots   763 bytes  va9fe9f
+CA-BC-VI    14 spots   902 bytes  v86753a
+CA-NS       11 spots   763 bytes  v35407d
 AU-QLD-SC   27 spots  1480 bytes  v192abf
 AU-QLD-GC   24 spots  1279 bytes  vc50967
 AU-NSW-NR   26 spots  1534 bytes  v9aa784
-AU-NSW-MN   33 spots  1869 bytes  vad55ce
-AU-NSW-NC   30 spots  1724 bytes  v8f2340
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+AU-NSW-MN   33 spots  1869 bytes  v0489b8
+AU-NSW-NC   30 spots  1726 bytes  v37024b
 AU-NSW-SYD  37 spots  1835 bytes  va6d2dd
 AU-NSW-SC   31 spots  1641 bytes  vafadba
 AU-VIC-SC   20 spots  1150 bytes  v42fd07
 AU-VIC-PI   18 spots  1132 bytes  vdf852b
 AU-VIC-W     9 spots   715 bytes  v3ad0f0
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-AU-TAS      12 spots   815 bytes  v094949
-AU-SA       14 spots   918 bytes  v0bdcae
+AU-TAS      12 spots   820 bytes  v52d229
+AU-SA       14 spots   918 bytes  v6905d9
 AU-SA-EYR    3 spots   307 bytes  vf4f08e
 AU-WA-MR    32 spots  2169 bytes  vab3b4b
 AU-WA-PER   20 spots  1211 bytes  ve68fa6
-AU-WA-NW     5 spots   481 bytes  v1d02bb
-AU-WA-GAS    3 spots   341 bytes  vca057a
+AU-WA-NW     5 spots   481 bytes  v50662c
+AU-WA-GAS    3 spots   341 bytes  vf9b9ea
 NZ-NTL      14 spots   910 bytes  v67cbd0
-NZ-AKL       9 spots   636 bytes  v1be8ac
+NZ-AKL       9 spots   641 bytes  ve386a9
 NZ-RAG       5 spots   393 bytes  vd4c51b
-NZ-TAR       7 spots   534 bytes  v544bea
+NZ-TAR       7 spots   534 bytes  v215b93
   open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-NZ-BOP      11 spots   811 bytes  v2cab58
+NZ-BOP      11 spots   812 bytes  ve461aa
 NZ-GIS      13 spots   893 bytes  v023d4c
 NZ-WEL      13 spots   872 bytes  v21f6d2
 NZ-KAI       9 spots   738 bytes  v43a968
@@ -116,139 +112,130 @@ NZ-OTA      13 spots   871 bytes  v9f79a9
 NZ-WC        4 spots   391 bytes  v8b89f1
 FJ-MAM       6 spots   471 bytes  vb86fb9
 FJ-SOU       2 spots   324 bytes  v898d76
-PF-TAH       8 spots   588 bytes  vb3abeb
+PF-TAH       8 spots   588 bytes  vd0e16e
 PF-ISL       2 spots   275 bytes  v5ebf44
 WS-ALL       6 spots   560 bytes  veb7fd7
 TO-ALL       6 spots   444 bytes  vad34b3
 VU-ALL       5 spots   448 bytes  v752ba0
 PG-ALL       2 spots   300 bytes  vbe66bc
-ID-BAL-BUK  16 spots   911 bytes  vb7fec3
-ID-BAL-W    18 spots   991 bytes  v53373a
-ID-BAL-E    12 spots   716 bytes  ved2867
-ID-JAV-E     7 spots   535 bytes  v21e486
-ID-JAV-W     7 spots   522 bytes  v11b434
-ID-LOM      14 spots   842 bytes  ve5be81
-ID-SBW       9 spots   606 bytes  v166abe
+ID-BAL-BUK  16 spots   911 bytes  v130947
+ID-BAL-W    18 spots   992 bytes  v3a2ea2
+ID-BAL-E    12 spots   716 bytes  v1b096e
+ID-JAV-E     7 spots   535 bytes  v17a227
+ID-JAV-W     7 spots   521 bytes  vb38992
+  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
+ID-LOM      14 spots   842 bytes  v1c9429
+ID-SBW       9 spots   606 bytes  vc16fde
 ID-SMB       2 spots   241 bytes  vdadcaa
-ID-ROT       4 spots   334 bytes  vfb28b1
-ID-MEN      10 spots   633 bytes  v84b1ea
-ID-NIA       3 spots   324 bytes  v0402b8
-ID-KRU       4 spots   366 bytes  v96b664
-PH-SIA       8 spots   513 bytes  v471ad1
+ID-ROT       4 spots   334 bytes  va4471f
+ID-MEN      10 spots   633 bytes  v9e7d61
+ID-NIA       3 spots   324 bytes  v46275d
+ID-KRU       4 spots   366 bytes  v8f77c3
+PH-SIA       8 spots   513 bytes  v0e19af
 PH-LUZ       5 spots   449 bytes  v8babb9
 PH-EAS       3 spots   377 bytes  ve2d2c5
-LK-E         8 spots   501 bytes  ve401dd
-LK-S        11 spots   687 bytes  v62f552
+LK-E         8 spots   502 bytes  v6df2ad
+LK-S        11 spots   688 bytes  v9f6717
 MV-NMA       6 spots   423 bytes  vef8c0a
-MV-SMA       3 spots   298 bytes  v32580a
-MV-SOU       2 spots   264 bytes  vb22650
+MV-SMA       3 spots   296 bytes  v39fff7
+MV-SOU       2 spots   264 bytes  v0fcd3d
 MV-CEN       1 spots   210 bytes  v4d23cc
-JP-CHI       8 spots   514 bytes  v4937a4
-JP-SHO       9 spots   544 bytes  v799c4b
-JP-IZU       4 spots   343 bytes  v7689cf
+JP-CHI       8 spots   514 bytes  v281c79
+JP-SHO       9 spots   544 bytes  v3c7359
+JP-IZU       4 spots   343 bytes  v686c2d
 JP-IBA       5 spots   443 bytes  v71db20
-JP-SHK       3 spots   275 bytes  v700ff7
+JP-SHK       3 spots   275 bytes  v74ec3e
 JP-KYU       2 spots   256 bytes  v39e4ca
-TW-E         4 spots   389 bytes  ve4925f
+TW-E         4 spots   389 bytes  v97b39c
 TW-NE        6 spots   467 bytes  v55532b
 IN-W         3 spots   319 bytes  vae6a73
-IN-E         3 spots   331 bytes  vd70831
-VN-ALL       5 spots   438 bytes  v2bcc73
+IN-E         3 spots   331 bytes  v594b73
+VN-ALL       5 spots   438 bytes  v848634
 KR-ALL       6 spots   491 bytes  v95a7b9
 CN-HAI       2 spots   275 bytes  ve22555
-ZA-WC-CPT   20 spots  1136 bytes  v9a4bad
+ZA-WC-CPT   20 spots  1136 bytes  vd6ead2
 ZA-WC-WCO    6 spots   573 bytes  v092c3d
-ZA-WC-GR    11 spots   808 bytes  v78d3a3
+ZA-WC-GR    11 spots   808 bytes  v0904d0
 ZA-EC-JB    10 spots   730 bytes  ve38f21
-ZA-EC-PE    17 spots  1044 bytes  v85620f
+ZA-EC-PE    17 spots  1048 bytes  v3629f1
 ZA-EC-WLD    5 spots   453 bytes  va72637
-ZA-KZN-DBN   8 spots   513 bytes  v9f855d
-ZA-KZN-N     6 spots   521 bytes  vb788d4
-ZA-KZN-S     9 spots   606 bytes  v3f276c
-NA-ERO       3 spots   370 bytes  v770024
-MA-TAG      19 spots  1070 bytes  v4257be
+ZA-KZN-DBN   8 spots   513 bytes  v839a8f
+ZA-KZN-N     6 spots   522 bytes  vb92945
+ZA-KZN-S     9 spots   606 bytes  v851a39
+NA-ERO       3 spots   371 bytes  v10577f
+MA-TAG      19 spots  1070 bytes  v45afd2
 MA-N         6 spots   504 bytes  v2ab503
 MA-S         6 spots   474 bytes  v095572
 SN-ALL       5 spots   379 bytes  vf5f04c
 LR-ALL       3 spots   305 bytes  v130329
 GH-ALL       3 spots   299 bytes  va97f9c
-MZ-S         3 spots   307 bytes  v39da60
+MZ-S         3 spots   307 bytes  vb85c22
 MZ-INH       3 spots   308 bytes  v2df2b5
 MG-ALL       3 spots   321 bytes  vb8cf98
-RE-ALL       8 spots   547 bytes  v23b035
+RE-ALL       8 spots   547 bytes  v371a7c
 MU-ALL       3 spots   295 bytes  v5e5285
-CV-ALL       3 spots   310 bytes  v60c681
+CV-ALL       3 spots   310 bytes  v0c19f6
 FR-PBA      24 spots  1322 bytes  vbf759c
 FR-HOS      16 spots   967 bytes  v5853a7
 FR-GIR      18 spots  1093 bytes  v11082e
 FR-VEN      12 spots   807 bytes  ve6a1fc
 FR-BRE      15 spots   904 bytes  vc2c9a0
-ES-PV       26 spots  1335 bytes  vd79ede
-ES-CAN      14 spots   788 bytes  v39d284
-ES-AST      14 spots   836 bytes  v1bcf00
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-ES-GAL      18 spots  1010 bytes  v14c416
+ES-PV       26 spots  1331 bytes  vf46487
+ES-CAN      14 spots   784 bytes  v648773
+ES-AST      14 spots   836 bytes  v4e63e2
+ES-GAL      18 spots  1001 bytes  vb9d716
 ES-AND      15 spots   895 bytes  vb41089
-ES-CN-E     11 spots   765 bytes  v16c55a
-ES-CN-W     17 spots  1066 bytes  vd26102
+ES-CN-E     11 spots   766 bytes  vf19737
+ES-CN-W     17 spots  1066 bytes  vb7ee9c
 PT-NOR      19 spots  1048 bytes  vf78b2f
 PT-CEN      20 spots  1184 bytes  v9c1a58
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
-PT-PEN      12 spots   722 bytes  v0a875a
+PT-PEN      12 spots   717 bytes  v087ae2
 PT-ERI      11 spots   675 bytes  v10c97f
 PT-LIS      15 spots   845 bytes  vd8b570
-PT-ALG      18 spots  1057 bytes  v5bf775
+PT-ALG      18 spots  1058 bytes  vd8d50f
 PT-AZO       7 spots   550 bytes  v7ce3ee
-PT-MAD       8 spots   543 bytes  v0a9b33
-GB-CON      28 spots  1533 bytes  ve6e480
+PT-MAD       8 spots   543 bytes  vad0b0f
+GB-CON      28 spots  1516 bytes  ve16410
 GB-DEV       9 spots   630 bytes  v2f770e
 GB-SOU       3 spots   359 bytes  ve18adc
 GB-WAL      21 spots  1260 bytes  vfb5ed0
-GB-SCO      21 spots  1228 bytes  v44d3c6
+GB-SCO      21 spots  1232 bytes  vd4d909
 GB-NE       25 spots  1291 bytes  va2df88
-GB-NIR       9 spots   642 bytes  vb05ae9
-IE-NW        9 spots   717 bytes  ve3c82d
+GB-NIR       9 spots   642 bytes  v986b86
+IE-NW        9 spots   717 bytes  v4d1f48
 IE-SW       12 spots   765 bytes  v58866a
-  open-meteo failed (<urlopen error _ssl.c:993: The handshake operation timed out>), retrying
 IE-SE       10 spots   690 bytes  ved9b0f
 NO-S         3 spots   367 bytes  v15728e
 NO-N         3 spots   330 bytes  v323a87
 DK-ALL       5 spots   411 bytes  v37f983
 NL-ALL      11 spots   755 bytes  v38d79b
-DE-ALL       4 spots   332 bytes  v5ff1a8
+DE-ALL       4 spots   332 bytes  v2e0c86
 IT-ALL       7 spots   571 bytes  v3163af
 IT-SAR       4 spots   334 bytes  v7760fc
-IS-ALL       3 spots   329 bytes  v82a4b6
+IS-ALL       3 spots   330 bytes  v27e103
 warning: AR-MDP/PLAYA GRANDE: no direction open to the sea, moved 1372 m from the seed (facing 129 -> 139)
 warning: BR-SC-NOR/ILHA DO MEL: no direction open to the sea from facing 110: check the facing (no shelter)
-warning: BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1927 m from the seed (facing 322 -> 149)
+warning: BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1976 m from the seed (facing 322 -> 269)
 warning: BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea from facing 160: check the facing (no shelter)
 warning: BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from the seed (facing 150 -> 183)
 warning: BR-RJL/TUCUNS: no direction open to the sea from facing 140: check the facing (no shelter)
-warning: BR-RJL/TARTARUGA: no direction open to the sea from facing 120: check the facing (no shelter)
 warning: BR-ES/PRAIA DA COSTA: no direction open to the sea, moved 1412 m from the seed (facing 8 -> 103)
-warning: BR-ES/SETIBA: no direction open to the sea, moved 1871 m from the seed (facing 164 -> 179)
 warning: BR-ES/MEAÍPE: no direction open to the sea from facing 120: check the facing (no shelter)
 warning: BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
-warning: CL-CEN/PICHIDANGUI: no direction open to the sea, moved 710 m from the seed (facing 32 -> 313)
-warning: CL-MAU/COCHOLGÜE: no direction open to the sea, moved 1962 m from the seed (facing 242 -> 315)
-warning: CL-MAU/TIRÚA: no direction open to the sea, moved 234 m from the seed (facing 323 -> 324)
-warning: PE-LIM/LA HERRADURA: no direction open to the sea, moved 586 m from the seed (facing 341 -> 242)
+warning: CL-MAU/COCHOLGÜE: no direction open to the sea, moved 339 m from the seed (facing 242 -> 250)
+warning: CL-MAU/TIRÚA: no direction open to the sea, moved 693 m from the seed (facing 323 -> 305)
+warning: PE-LIM/LA HERRADURA: no direction open to the sea, moved 952 m from the seed (facing 341 -> 290)
 warning: PE-LIM: ncep_gfswave016 has no waves near 1 spots: ncep_gfswave025
 warning: US-CA-OC/DANA COVE: no direction open to the sea, moved 210 m from the seed (facing 309 -> 154)
 warning: US-CA-LA/CABRILLO BEACH: no direction open to the sea, moved 950 m from the seed (facing 115 -> 164)
-warning: US-CA-CEN/PORT SAN LUIS: no direction open to the sea from facing 200: check the facing (no shelter)
 warning: US-CA-CEN/SANDSPIT: no direction open to the sea from facing 270: check the facing (no shelter)
-warning: US-CA-SC/COWELL'S: no direction open to the sea from facing 180: check the facing (no shelter)
-warning: US-CA-SF/LINDA MAR: no direction open to the sea from facing 280: check the facing (no shelter)
 warning: US-CA-SF/MIRADA SURF: no direction open to the sea, moved 1476 m from the seed (facing 177 -> 222)
 warning: US-CA-SF/SURFER'S BEACH: no direction open to the sea from facing 230: check the facing (no shelter)
-warning: US-CA-SF/LIMANTOUR: no direction open to the sea, moved 1644 m from the seed (facing 200 -> 199)
+warning: US-CA-SF/LIMANTOUR: no direction open to the sea, moved 1380 m from the seed (facing 200 -> 195)
 warning: US-CA-NOR/DORAN BEACH: no direction open to the sea, moved 1539 m from the seed (facing 325 -> 246)
 warning: US-PNW/SEAL ROCK: no direction open to the sea, moved 285 m from the seed (facing 267 -> 268)
 warning: US-PNW/SUNSET BAY: no direction open to the sea, moved 1125 m from the seed (facing 298 -> 287)
 warning: US-FL/FERNANDINA: no direction open to the sea, moved 876 m from the seed (facing 310 -> 97)
-warning: US-FL/THE POLES: no direction open to the sea from facing 90: check the facing (no shelter)
 warning: US-FL/FORT PIERCE INLET: no direction open to the sea, moved 341 m from the seed (facing 186 -> 93)
 warning: US-FL/JENSEN BEACH: no direction open to the sea, moved 208 m from the seed (facing 203 -> 66)
 warning: US-FL/BOYNTON INLET: no direction open to the sea, moved 329 m from the seed (facing 29 -> 69)
@@ -260,7 +247,7 @@ warning: US-MID/ASSATEAGUE: no direction open to the sea, moved 1334 m from the 
 warning: US-MID/INDIAN RIVER INLET: no direction open to the sea, moved 361 m from the seed (facing 196 -> 105)
 warning: US-MID/DEWEY BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
 warning: US-NE/POPHAM BEACH: no direction open to the sea, moved 1844 m from the seed (facing 135 -> 153)
-warning: US-NE/NANTASKET: no direction open to the sea, moved 705 m from the seed (facing 165 -> 51)
+warning: US-NE/NANTASKET: no direction open to the sea, moved 594 m from the seed (facing 165 -> 50)
 warning: US-NE/MATUNUCK: no direction open to the sea from facing 175: check the facing (no shelter)
 warning: US-NE/FLYING POINT: no direction open to the sea from facing 233: check the facing (no shelter)
 warning: US-NE/ROBERT MOSES: no direction open to the sea from facing 178: check the facing (no shelter)
@@ -269,64 +256,51 @@ warning: US-NE/SEA BRIGHT: no direction open to the sea from facing 95: check th
 warning: US-NE/MANASQUAN INLET: no direction open to the sea, moved 226 m from the seed (facing 357 -> 137)
 warning: US-NE/ISLAND BEACH: no direction open to the sea, moved 508 m from the seed (facing 256 -> 98)
 warning: US-NE/BEACH HAVEN: no direction open to the sea, moved 411 m from the seed (facing 276 -> 124)
-warning: CA-BC-VI/MACKENZIE BEACH: no direction open to the sea from facing 222: check the facing (no shelter)
+warning: CA-BC-VI/MACKENZIE BEACH: no direction open to the sea, moved 500 m from the seed (facing 222 -> 180)
 warning: CA-BC-VI/SCHOONER COVE: no direction open to the sea from facing 44: check the facing (no shelter)
-warning: CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1907 m from the seed (facing 111 -> 217)
+warning: CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1903 m from the seed (facing 111 -> 217)
 warning: CA-NS/MARTINIQUE BEACH: no direction open to the sea, moved 980 m from the seed (facing 78 -> 166)
 warning: AU-NSW-MN/MOONEE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
-warning: AU-NSW-NC/BIRUBI POINT: no direction open to the sea, moved 1084 m from the seed (facing 157 -> 163)
+warning: AU-NSW-NC/BIRUBI POINT: no direction open to the sea, moved 1899 m from the seed (facing 157 -> 140)
 warning: AU-NSW-SYD/WHALE BEACH: no direction open to the sea from facing 100: check the facing (no shelter)
 warning: AU-NSW-SYD/WANDA: no direction open to the sea, moved 1673 m from the seed (facing 4 -> 113)
 warning: AU-VIC-PI/SUMMERLAND: no direction open to the sea from facing 210: check the facing (no shelter)
-warning: AU-TAS/MARION BAY: no direction open to the sea, moved 322 m from the seed (facing 265 -> 78)
+warning: AU-TAS/MARION BAY: no direction open to the sea, moved 1143 m from the seed (facing 265 -> 269)
 warning: AU-TAS/SPRING BEACH: no direction open to the sea from facing 46: check the facing (no shelter)
 warning: AU-WA-PER/TWO ROCKS: no direction open to the sea, moved 469 m from the seed (facing 254 -> 235)
-warning: AU-WA-NW/POINT MOORE: no direction open to the sea from facing 215: check the facing (no shelter)
 warning: NZ-NTL/MANGAWHAI HEADS: no direction open to the sea, moved 718 m from the seed (facing 291 -> 56)
-warning: NZ-AKL/WHATIPU: no direction open to the sea from facing 240: check the facing (no shelter)
 warning: NZ-AKL/PORT WAIKATO: no direction open to the sea, moved 1666 m from the seed (facing 358 -> 252)
-warning: NZ-BOP/MOUNT MAUNGANUI: no direction open to the sea, moved 1448 m from the seed (facing 241 -> 90)
+warning: NZ-BOP/MOUNT MAUNGANUI: no direction open to the sea, moved 935 m from the seed (facing 241 -> 300)
 warning: NZ-BOP/MAKETU: no direction open to the sea, moved 518 m from the seed (facing 321 -> 52)
 warning: NZ-OTA/WARRINGTON: no direction open to the sea, moved 1607 m from the seed (facing 163 -> 86)
-warning: PF-TAH/TIAHURA: no direction open to the sea, moved 742 m from the seed (facing 151 -> 327)
+warning: PF-TAH/TIAHURA: no direction open to the sea, moved 734 m from the seed (facing 151 -> 328)
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
 warning: PG-ALL/TAURAMA POINT: no direction open to the sea from facing 111: check the facing (no shelter)
-warning: ID-BAL-W/PULUKAN: no direction open to the sea, moved 1027 m from the seed (facing 190 -> 196)
 warning: ID-BAL-E/SERANGAN: no direction open to the sea, moved 1054 m from the seed (facing 147 -> 143)
-warning: ID-JAV-W/SAWARNA: no direction open to the sea, moved 1810 m from the seed (facing 248 -> 217)
-warning: ID-LOM/EKAS: no direction open to the sea, moved 980 m from the seed (facing 311 -> 183)
-warning: MV-SMA/COCOA CORNER: no direction open to the sea, moved 1845 m from the seed (facing 270 -> 270)
+warning: ID-JAV-W/SAWARNA: no direction open to the sea, moved 1754 m from the seed (facing 248 -> 171)
+warning: ID-LOM/EKAS: no direction open to the sea, moved 1418 m from the seed (facing 311 -> 195)
+warning: MV-SMA/COCOA CORNER: no direction open to the sea, moved 1956 m from the seed (facing 270 -> 73)
 warning: JP-IZU/SHIRAHAMA: no direction open to the sea, moved 1287 m from the seed (facing 93 -> 79)
 warning: JP-IBA/HASAKI: no direction open to the sea, moved 1739 m from the seed (facing 2 -> 95)
 warning: JP-IBA/KASHIMA: no direction open to the sea, moved 1945 m from the seed (facing 25 -> 13)
-warning: TW-E/JINZUN HARBOR: no direction open to the sea, moved 282 m from the seed (facing 163 -> 170)
-warning: ZA-EC-PE/KINGS BEACH: no direction open to the sea, moved 722 m from the seed (facing 39 -> 86)
+warning: TW-E/JINZUN HARBOR: no direction open to the sea, moved 105 m from the seed (facing 163 -> 149)
+warning: ZA-EC-PE/KINGS BEACH: no direction open to the sea, moved 1202 m from the seed (facing 39 -> 95)
 warning: MA-TAG/ESSAOUIRA: no direction open to the sea, moved 777 m from the seed (facing 209 -> 274)
 warning: FR-VEN/LA GRANDE COTE: no direction open to the sea from facing 250: check the facing (no shelter)
 warning: FR-BRE/DOSSEN: no direction open to the sea, moved 1934 m from the seed (facing 8 -> 224)
-warning: ES-PV/SANTIAGO: no direction open to the sea, moved 283 m from the seed (facing 306 -> 6)
 warning: ES-PV/EA: no direction open to the sea, moved 1021 m from the seed (facing 20 -> 10)
-warning: ES-PV/PLENTZIA: no direction open to the sea, moved 1234 m from the seed (facing 323 -> 12)
+warning: ES-PV/PLENTZIA: no direction open to the sea, moved 19 m from the seed (facing 323 -> 96)
 warning: ES-PV/BARRIKA: no direction open to the sea, moved 928 m from the seed (facing 52 -> 280)
-warning: ES-CAN/OYAMBRE: no direction open to the sea, moved 35 m from the seed (facing 0 -> 52)
-warning: ES-CAN/GALIZANO: no direction open to the sea, moved 1313 m from the seed (facing 276 -> 326)
-warning: ES-CAN/JOYEL: no direction open to the sea from facing 345: check the facing (no shelter)
-warning: ES-GAL/MAR DE FORA: no direction open to the sea, moved 156 m from the seed (facing 0 -> 256)
-warning: ES-GAL/PATOS: no direction open to the sea from facing 359: check the facing (no shelter)
+warning: ES-GAL/PATOS: no direction open to the sea, moved 934 m from the seed (facing 359 -> 360)
 warning: ES-AND/LA VICTORIA: no direction open to the sea, moved 656 m from the seed (facing 69 -> 245)
 warning: ES-AND/CORTADURA: no direction open to the sea, moved 1360 m from the seed (facing 121 -> 250)
 warning: ES-AND/CAMPOSOTO: no direction open to the sea, moved 1987 m from the seed (facing 169 -> 250)
-warning: PT-PEN/LAGIDE: no direction open to the sea, moved 187 m from the seed (facing 303 -> 247)
 warning: PT-LIS/COVA DO VAPOR: no direction open to the sea, moved 1966 m from the seed (facing 11 -> 228)
-warning: GB-CON/TREYARNON: no direction open to the sea, moved 224 m from the seed (facing 251 -> 300)
-warning: GB-CON/MAWGAN PORTH: no direction open to the sea, moved 269 m from the seed (facing 313 -> 316)
-warning: GB-CON/CRANTOCK: no direction open to the sea, moved 1780 m from the seed (facing 20 -> 351)
 warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
-warning: GB-SCO/CRUDEN BAY: no direction open to the sea, moved 356 m from the seed (facing 129 -> 132)
 warning: GB-SCO/BELHAVEN BAY: no direction open to the sea, moved 1297 m from the seed (facing 312 -> 40)
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: IE-SW/ROSSBEIGH: no direction open to the sea from facing 270: check the facing (no shelter)
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
-warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1524 m from the seed (facing 61 -> 178)
-213 regions, 2511 spots, 0 errors, 110 warnings
+warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
+213 regions, 2511 spots, 0 errors, 90 warnings
