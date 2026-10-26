@@ -25,6 +25,7 @@ SMOOTH_M = 350               # coastline length (each side) averaged for a facin
 MIN_OPEN = 3                 # sectors open to the sea a new place needs (60°)...
 COARSE_STEP_M = 200          # the coarse pass (a ray per sector) tries a point every this much...
 REFINE = 8                   # ...and the full one (RAYS per sector) its best few
+GIVEN_DEG = 60               # a hand-set facing moves only along coast facing within this of it
 SECTOR_M = 500               # ...and the most open wins, a sector more worth this much further from the seed
 
 
@@ -112,13 +113,14 @@ def _levels(f):
     return out
 
 
-def relocate(ways, lat, lon):
+def relocate(ways, lat, lon, given=None):
     """For a spot whose rays all meet land (snapped to a river, a ria or a harbour, its facing across
     the water): (lat, lon, facing, metres) of the coastline point nearest to its seed (lat, lon),
     within MOVE_M, with at least MIN_OPEN sectors open to the sea, facing the way osm.snap works it
     out (the coastline averaged SMOOTH_M each side, water on the right); None if there is none.
     Of those, the most open, one sector more worth SECTOR_M further: the nearest open point is
-    often a river mouth or a harbour entrance with a sliver of sea."""
+    often a river mouth or a harbour entrance with a sliver of sea. given: a facing set by hand
+    (the seed's facing=), kept, and only coast facing within GIVEN_DEG of it is tried."""
     a, b = _segments(ways, lat, lon, OPEN_M + MOVE_M + 5000)
     cands = []
     for g in _arrays(ways):
@@ -146,6 +148,10 @@ def relocate(ways, lat, lon):
         if not sx and not sy:
             continue
         facing = int(round((math.degrees(math.atan2(sx, sy)) + 90) % 360))
+        if given is not None:
+            if abs((facing - given + 180) % 360 - 180) > GIVEN_DEG:
+                continue
+            facing = given
         n = sum(1 for v in _fetch(a, b, px, py, facing, coarse) if v >= OPEN_M)
         scored.append((n - d / SECTOR_M, d, px, py, facing))
     best = None

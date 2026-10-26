@@ -140,17 +140,18 @@ def build_region(code, reg, country, models, ports, offline, rep):
         x = []
         for s in spots:
             c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
-            if 2 not in shelter.decode(c) and not frozen and not s["nosnap"] and not s["fixed"]:
-                # no sector open to the sea: snapped to a river, a ria or a harbour, its facing across
-                # the water; moved to the most open coastline near its seed (wave point and all after)
-                m = shelter.relocate(wx, s["seed"][0], s["seed"][1])
+            if 2 not in shelter.decode(c) and not frozen and not s["nosnap"]:
+                # no sector open to the sea: snapped to a river, a ria, a harbour or the back of a
+                # barrier island, its facing across the water; moved to the most open coastline near
+                # its seed (wave point and all after), keeping a facing set by hand
+                m = shelter.relocate(wx, s["seed"][0], s["seed"][1], s["facing"] if s["fixed"] else None)
                 if m is not None:
                     warns.append("%s/%s: no direction open to the sea, moved %.0f m from the seed (facing %d -> %d)" % (
                         code, s["name"], m[3], s["facing"], m[2]))
                     s["lat"], s["lon"], s["facing"] = m[0], m[1], m[2]
                     c = shelter.code(wx, s["lat"], s["lon"], s["facing"])
             if 2 not in shelter.decode(c):
-                # still none (a facing or position set by hand, or no open coast near): the watch
+                # still none (a position set by hand, or no open coast near): the watch
                 # scores it as before
                 warns.append("%s/%s: no direction open to the sea from facing %d: check the facing (no shelter)" % (
                     code, s["name"], s["facing"]))

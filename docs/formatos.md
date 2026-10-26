@@ -62,7 +62,8 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
   2 = mar abierto (la mediana de 5 rayos por sector, sobre la costa de OpenStreetMap). Un pico
   sin ningún sector abierto suele haber quedado pegado a un río, una ría o un puerto, con la
   orientación cruzando el agua: el build lo mueve al punto de costa más abierto a menos de 2 km
-  de su semilla (salvo `nosnap` o `facing=` en la semilla) y lo avisa en el reporte. `null` si aun así no hay mar abierto: el reloj puntúa ese pico como antes. El reloj
+  de su semilla (salvo `nosnap`; con `facing=` conserva esa orientación y solo se mueve por costa
+  que mire a menos de 60° de ella) y lo avisa en el reporte. `null` si aun así no hay mar abierto: el reloj puntúa ese pico como antes. El reloj
   lo usa en el puntaje: viento que cruza tierra cerca levanta poco picado, y swell con tierra en
   el camino llega cortado. Va aparte de `s` porque los relojes anteriores rechazan filas que no
   tengan 5 o 7 valores.
