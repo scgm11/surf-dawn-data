@@ -23,44 +23,57 @@ MOVE_M = 2000                # how far from its seed a spot with no sector open 
 STEP_M = 100                 # coastline points tried every this much
 SMOOTH_M = 350               # coastline length (each side) averaged for a facing (osm.SMOOTH_M)
 MIN_OPEN = 3                 # sectors open to the sea a new place needs (60°)...
-MASK_FROM_M = 4000           # an open ray is checked against the land mask from here (its 1 km cells)...
-MASK_STEP_M = 2000           # ...every this much: a hole in the coastline file is not open sea
 COARSE_STEP_M = 200          # the coarse pass (a ray per sector) tries a point every this much...
 REFINE = 8                   # ...and the full one (RAYS per sector) its best few
 SECTOR_M = 500               # ...and the most open wins, a sector more worth this much further from the seed
 
 
+_ARR = {}
+
+
+def _arrays(ways):
+    """The ways as [lat, lon] arrays, once per ways list (a region's coastline: hundreds of
+    thousands of points in Chesapeake or Long Island, too many to walk in Python per spot)."""
+    k = id(ways)
+    if k not in _ARR:
+        _ARR.clear()
+        _ARR[k] = (ways, [np.asarray(w["g"], dtype=float).reshape(-1, 2) for w in ways])
+    return _ARR[k][1]
+
+
+def _xy(g, lat, lon):
+    """Points [lat, lon] in metres around (lat, lon) (geo.local_xy, wrapped)."""
+    x = ((g[:, 1] - lon + 540.0) % 360.0 - 180.0) * 111320.0 * np.cos(np.radians(lat))
+    return np.column_stack([x, (g[:, 0] - lat) * 110540.0])
+
+
 def _segments(ways, lat, lon, reach=OPEN_M + 5000):
     """[a, b] arrays (metres around the spot) of the coastline segments within reach."""
-    xy = geo.local_xy(lat, lon)
     a, b = [], []
-    for w in ways:
-        pts = [xy(p[0], p[1]) for p in w["g"]]
-        for p, q in zip(pts, pts[1:]):
-            if min(abs(p[0]), abs(q[0])) < reach and min(abs(p[1]), abs(q[1])) < reach:
-                a.append(p)
-                b.append(q)
-    return np.array(a, dtype=float).reshape(-1, 2), np.array(b, dtype=float).reshape(-1, 2)
-
-
-def _mask():
-    """global_land_mask's is_land (the build installs it, as for the wave points), or None."""
-    try:
-        from global_land_mask import globe
-        return globe.is_land
-    except ImportError:
-        return None
+    for g in _arrays(ways):
+        if len(g) < 2:
+            continue
+        p = _xy(g, lat, lon)
+        q, r = p[:-1], p[1:]
+        keep = ((np.minimum(np.abs(q[:, 0]), np.abs(r[:, 0])) < reach)
+                & (np.minimum(np.abs(q[:, 1]), np.abs(r[:, 1])) < reach))
+        if keep.any():
+            a.append(q[keep])
+            b.append(r[keep])
+    if not a:
+        return np.zeros((0, 2)), np.zeros((0, 2))
+    return np.concatenate(a), np.concatenate(b)
 
 
 def fetch(ways, lat, lon, facing, bearings):
     """Metres of water from the spot toward each bearing (up to OPEN_M)."""
     a, b = _segments(ways, lat, lon)
-    return _fetch(a, b, 0.0, 0.0, facing, bearings, lat, lon)
+    return _fetch(a, b, 0.0, 0.0, facing, bearings)
 
 
-def _fetch(a, b, x, y, facing, bearings, lat0, lon0):
-    """fetch() from the point (x, y) of the segments' frame (metres around lat0, lon0), every
-    bearing at once (a rays x segments matrix, the segments within OPEN_M of the point)."""
+def _fetch(a, b, x, y, facing, bearings):
+    """fetch() from the point (x, y) of the segments' frame, every bearing at once (a rays x
+    segments matrix, the segments within OPEN_M of the point)."""
     f = np.radians(facing)
     p = np.array([x + OUT_M * np.sin(f), y + OUT_M * np.cos(f)])
     near = ((np.minimum(np.abs(a[:, 0] - p[0]), np.abs(b[:, 0] - p[0])) < OPEN_M)
@@ -78,23 +91,6 @@ def _fetch(a, b, x, y, facing, bearings, lat0, lon0):
             u = (ap[None, :, 0] * dy - ap[None, :, 1] * dx) / den
         t = np.where((np.abs(den) > 1e-9) & (t > 0) & (u >= 0) & (u <= 1), t, np.inf)
         m = np.minimum(m, t.min(axis=1))
-    is_land = _mask()
-    open_ = np.nonzero(m >= OPEN_M)[0]
-    if is_land is not None and len(open_):
-        ks = np.arange(MASK_FROM_M, OPEN_M + 1, MASK_STEP_M, dtype=float)
-        px = p[0] + ks[None, :] * dx[open_]
-        py = p[1] + ks[None, :] * dy[open_]
-        la = lat0 + py / 110540.0
-        lo = (lon0 + px / (111320.0 * np.cos(np.radians(lat0))) + 540.0) % 360.0 - 180.0
-        la = np.clip(la, -89.9, 89.9)
-        try:
-            land = np.asarray(is_land(la, lo), dtype=bool).reshape(la.shape)
-        except Exception:                          # noqa: BLE001 - a version that takes one point at a time
-            land = np.array([[bool(is_land(float(u), float(v))) for u, v in zip(ra, ro)] for ra, ro in zip(la, lo)])
-        for j, i in enumerate(open_):
-            hit = np.nonzero(land[j])[0]
-            if len(hit):
-                m[i] = ks[hit[0]]
     return [float(v) for v in m]
 
 
@@ -123,44 +119,44 @@ def relocate(ways, lat, lon):
     out (the coastline averaged SMOOTH_M each side, water on the right); None if there is none.
     Of those, the most open, one sector more worth SECTOR_M further: the nearest open point is
     often a river mouth or a harbour entrance with a sliver of sea."""
-    xy = geo.local_xy(lat, lon)
     a, b = _segments(ways, lat, lon, OPEN_M + MOVE_M + 5000)
     cands = []
-    for w in ways:
-        pts = [xy(p[0], p[1]) for p in w["g"]]
-        for k in range(len(pts) - 1):
+    for g in _arrays(ways):
+        if len(g) < 2:
+            continue
+        pts = _xy(g, lat, lon)
+        dd = np.hypot(pts[:, 0], pts[:, 1])
+        for k in np.nonzero(np.minimum(dd[:-1], dd[1:]) <= MOVE_M + STEP_M * 5)[0]:
             (ax, ay), (bx, by) = pts[k], pts[k + 1]
-            if min(math.hypot(ax, ay), math.hypot(bx, by)) > MOVE_M + STEP_M * 5:
-                continue
             n = max(1, int(math.hypot(bx - ax, by - ay) // STEP_M))
             for j in range(n):
                 px, py = ax + (bx - ax) * j / n, ay + (by - ay) * j / n
                 d = math.hypot(px, py)
                 if d <= MOVE_M:
-                    cands.append((d, px, py, pts, k))
+                    cands.append((d, px, py, pts, int(k)))
     coarse = [i * 360.0 / SECTORS for i in range(SECTORS)]
     bear = _bearings()
     scored = []
     for d, px, py, pts, k in cands[::max(1, COARSE_STEP_M // STEP_M)]:
         sx = sy = 0.0
-        for m in range(max(0, k - 40), min(len(pts) - 1, k + 41)):
-            (ax, ay), (bx, by) = pts[m], pts[m + 1]
-            if math.hypot((ax + bx) / 2 - px, (ay + by) / 2 - py) <= SMOOTH_M:
-                sx, sy = sx + bx - ax, sy + by - ay
+        lo, hi = max(0, k - 40), min(len(pts) - 1, k + 41)
+        q, r = pts[lo:hi], pts[lo + 1:hi + 1]
+        close = np.hypot((q[:, 0] + r[:, 0]) / 2 - px, (q[:, 1] + r[:, 1]) / 2 - py) <= SMOOTH_M
+        sx, sy = float((r[close, 0] - q[close, 0]).sum()), float((r[close, 1] - q[close, 1]).sum())
         if not sx and not sy:
             continue
         facing = int(round((math.degrees(math.atan2(sx, sy)) + 90) % 360))
-        n = sum(1 for v in _fetch(a, b, px, py, facing, coarse, lat, lon) if v >= OPEN_M)
+        n = sum(1 for v in _fetch(a, b, px, py, facing, coarse) if v >= OPEN_M)
         scored.append((n - d / SECTOR_M, d, px, py, facing))
     best = None
     for _, d, px, py, facing in sorted(scored, key=lambda c: -c[0])[:REFINE]:
-        n = _levels(_fetch(a, b, px, py, facing, bear, lat, lon)).count(2)
+        n = _levels(_fetch(a, b, px, py, facing, bear)).count(2)
         if n >= MIN_OPEN and (best is None or n - d / SECTOR_M > best[0]):
             best = (n - d / SECTOR_M, px, py, facing, d)
     if best is None:
         return None
-    nlat, nlon = geo.unxy(lat, lon, best[1], best[2])
-    return round(nlat, 4), round(nlon, 4), best[3], best[4]
+    nlat, nlon = geo.unxy(lat, lon, float(best[1]), float(best[2]))
+    return round(float(nlat), 4), round(float(nlon), 4), best[3], float(best[4])
 
 
 def code(ways, lat, lon, facing):
