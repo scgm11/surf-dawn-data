@@ -192,11 +192,13 @@ def build_region(code, reg, country, models, ports, offline, rep):
         srows.append(row)
     body = {"id": code, "c": country, "n": [reg["name_es"], reg["name_en"]], "m": m,
             "p": ports.get(code, []), "s": srows}
+    if reg["name_pt"] != reg["name_es"]:
+        body["np"] = reg["name_pt"]                # apart from "n": the watches before it take two names
     if x is not None:
         body["x"] = x                              # apart from "s": the watches before it take rows of 5 or 7
     v = version(body)
     out = {"id": code, "v": v}
-    out.update({k: body[k] for k in ("c", "n", "m", "p", "s", "x") if k in body})
+    out.update({k: body[k] for k in ("c", "n", "np", "m", "p", "s", "x") if k in body})
     text = dump(out)
     size = len(text.encode("utf-8"))
     if size > MAX_BYTES:
@@ -266,6 +268,12 @@ def report_md(rep, built):
     return "\n".join(lines) + "\n"
 
 
+def pt_names(rows):
+    """{code: name in Portuguese} of the seed rows whose Portuguese is not their Spanish: an
+    index's names in Portuguese, apart from its rows (the watches before it check their size)."""
+    return {r["code"]: r["name_pt"] for r in rows if r["name_pt"] != r["name_es"]}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
@@ -317,10 +325,12 @@ def main():
             cs = list(dict.fromkeys(b["country"] for b in bs))
             idx = {"c": [[c, countries[c]["name_es"], countries[c]["name_en"]] for c in cs],
                    "r": [[b["code"], b["country"], regions[b["code"]]["name_es"], regions[b["code"]]["name_en"],
-                          b["lat"], b["lon"], b["km"], b["n"], b["bytes"], b["v"]] for b in bs]}
+                          b["lat"], b["lon"], b["km"], b["n"], b["bytes"], b["v"]] for b in bs],
+                   "pt": pt_names([countries[c] for c in cs] + [regions[b["code"]] for b in bs])}
             write("idx/%s.json" % cc, dump(idx))
         order = sorted(bycont, key=lambda c: int(conts[c]["order"]))
-        write("idx.json", dump({"v": 1, "c": [[c, conts[c]["name_es"], conts[c]["name_en"], len(bycont[c])] for c in order]}))
+        write("idx.json", dump({"v": 1, "c": [[c, conts[c]["name_es"], conts[c]["name_en"], len(bycont[c])] for c in order],
+                                "pt": pt_names([conts[c] for c in order])}))
         grid = {}
         for b in built:
             for k in cells(b["lat"], b["lon"], b["km"]):

@@ -110,7 +110,7 @@ def main():
             errors.append("country %s: continent %r" % (c["code"], c["continent"]))
     for table in (read("continents.csv"), list(countries.values()), regions):
         for r in table:
-            for k in ("name_es", "name_en"):
+            for k in ("name_es", "name_en", "name_pt"):
                 if not r[k] or set(r[k]) - TEXT_CHARS:
                     errors.append("%s: %s %r (letters of the apps' fonts: %s)" % (
                         r["code"], k, r[k], "".join(sorted(set(r[k]) - TEXT_CHARS)) or "empty"))

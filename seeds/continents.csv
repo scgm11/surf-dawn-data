@@ -1,6 +1,6 @@
-code,name_es,name_en,order
-AM,América,Americas,1
-OC,Oceanía,Oceania,2
-AS,Asia e Índico,Asia and Indian Ocean,3
-AF,África,Africa,4
-EU,Europa,Europe,5
+code,name_es,name_en,name_pt,order
+AM,América,Americas,Américas,1
+OC,Oceanía,Oceania,Oceania,2
+AS,Asia e Índico,Asia and Indian Ocean,Ásia e Índico,3
+AF,África,Africa,África,4
+EU,Europa,Europe,Europa,5

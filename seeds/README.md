@@ -6,10 +6,10 @@ mar donde pedir las olas, y escribe `spots/` (lo que bajan las apps).
 
 ## Tablas
 
-- `continents.csv`: `code,name_es,name_en,order`.
-- `countries.csv`: `code,continent,name_es,name_en`. Código ISO 3166-1 alfa-2 (ojo: Namibia es `NA`;
+- `continents.csv`: `code,name_es,name_en,name_pt,order`.
+- `countries.csv`: `code,continent,name_es,name_en,name_pt`. Código ISO 3166-1 alfa-2 (ojo: Namibia es `NA`;
   se lee con el módulo `csv`, nunca con pandas, que lo toma como vacío).
-- `regions.csv`: `code,country,name_es,name_en`. El código de región es `<PAÍS>-<ZONA>`, solo
+- `regions.csv`: `code,country,name_es,name_en,name_pt`. El código de región es `<PAÍS>-<ZONA>`, solo
   mayúsculas, dígitos y guiones (`AR-MDP`, `US-HI-OAN`, `BB-ALL`). Una región es de un solo país.
 - `spots/<REGIÓN>.csv`: los picos de cada región, de 20 a 60 (un país chico puede tener menos).
 

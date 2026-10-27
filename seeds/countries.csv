@@ -1,64 +1,64 @@
-code,continent,name_es,name_en
-UY,AM,Uruguay,Uruguay
-AR,AM,Argentina,Argentina
-BR,AM,Brasil,Brazil
-CL,AM,Chile,Chile
-PE,AM,Perú,Peru
-EC,AM,Ecuador,Ecuador
-CO,AM,Colombia,Colombia
-PA,AM,Panamá,Panama
-CR,AM,Costa Rica,Costa Rica
-NI,AM,Nicaragua,Nicaragua
-SV,AM,El Salvador,El Salvador
-GT,AM,Guatemala,Guatemala
-MX,AM,México,Mexico
-US,AM,Estados Unidos,United States
-CA,AM,Canadá,Canada
-PR,AM,Puerto Rico,Puerto Rico
-BB,AM,Barbados,Barbados
-DO,AM,República Dominicana,Dominican Republic
-GP,AM,Guadalupe,Guadeloupe
-MQ,AM,Martinica,Martinique
-BS,AM,Bahamas,Bahamas
-TT,AM,Trinidad y Tobago,Trinidad and Tobago
-VE,AM,Venezuela,Venezuela
-AU,OC,Australia,Australia
-NZ,OC,Nueva Zelanda,New Zealand
-FJ,OC,Fiyi,Fiji
-PF,OC,Polinesia Francesa,French Polynesia
-WS,OC,Samoa,Samoa
-TO,OC,Tonga,Tonga
-VU,OC,Vanuatu,Vanuatu
-PG,OC,Papúa Nueva Guinea,Papua New Guinea
-ID,AS,Indonesia,Indonesia
-PH,AS,Filipinas,Philippines
-LK,AS,Sri Lanka,Sri Lanka
-MV,AS,Maldivas,Maldives
-JP,AS,Japón,Japan
-TW,AS,Taiwán,Taiwan
-IN,AS,India,India
-VN,AS,Vietnam,Vietnam
-KR,AS,Corea del Sur,South Korea
-CN,AS,China,China
-ZA,AF,Sudáfrica,South Africa
-NA,AF,Namibia,Namibia
-MA,AF,Marruecos,Morocco
-SN,AF,Senegal,Senegal
-LR,AF,Liberia,Liberia
-GH,AF,Ghana,Ghana
-MZ,AF,Mozambique,Mozambique
-MG,AF,Madagascar,Madagascar
-RE,AF,Reunión,Réunion
-MU,AF,Mauricio,Mauritius
-CV,AF,Cabo Verde,Cape Verde
-FR,EU,Francia,France
-ES,EU,España,Spain
-PT,EU,Portugal,Portugal
-GB,EU,Reino Unido,United Kingdom
-IE,EU,Irlanda,Ireland
-NO,EU,Noruega,Norway
-DK,EU,Dinamarca,Denmark
-NL,EU,Países Bajos,Netherlands
-DE,EU,Alemania,Germany
-IT,EU,Italia,Italy
-IS,EU,Islandia,Iceland
+code,continent,name_es,name_en,name_pt
+UY,AM,Uruguay,Uruguay,Uruguai
+AR,AM,Argentina,Argentina,Argentina
+BR,AM,Brasil,Brazil,Brasil
+CL,AM,Chile,Chile,Chile
+PE,AM,Perú,Peru,Peru
+EC,AM,Ecuador,Ecuador,Equador
+CO,AM,Colombia,Colombia,Colômbia
+PA,AM,Panamá,Panama,Panamá
+CR,AM,Costa Rica,Costa Rica,Costa Rica
+NI,AM,Nicaragua,Nicaragua,Nicarágua
+SV,AM,El Salvador,El Salvador,El Salvador
+GT,AM,Guatemala,Guatemala,Guatemala
+MX,AM,México,Mexico,México
+US,AM,Estados Unidos,United States,Estados Unidos
+CA,AM,Canadá,Canada,Canadá
+PR,AM,Puerto Rico,Puerto Rico,Porto Rico
+BB,AM,Barbados,Barbados,Barbados
+DO,AM,República Dominicana,Dominican Republic,República Dominicana
+GP,AM,Guadalupe,Guadeloupe,Guadalupe
+MQ,AM,Martinica,Martinique,Martinica
+BS,AM,Bahamas,Bahamas,Bahamas
+TT,AM,Trinidad y Tobago,Trinidad and Tobago,Trinidad e Tobago
+VE,AM,Venezuela,Venezuela,Venezuela
+AU,OC,Australia,Australia,Austrália
+NZ,OC,Nueva Zelanda,New Zealand,Nova Zelândia
+FJ,OC,Fiyi,Fiji,Fiji
+PF,OC,Polinesia Francesa,French Polynesia,Polinésia Francesa
+WS,OC,Samoa,Samoa,Samoa
+TO,OC,Tonga,Tonga,Tonga
+VU,OC,Vanuatu,Vanuatu,Vanuatu
+PG,OC,Papúa Nueva Guinea,Papua New Guinea,Papua-Nova Guiné
+ID,AS,Indonesia,Indonesia,Indonésia
+PH,AS,Filipinas,Philippines,Filipinas
+LK,AS,Sri Lanka,Sri Lanka,Sri Lanka
+MV,AS,Maldivas,Maldives,Maldivas
+JP,AS,Japón,Japan,Japão
+TW,AS,Taiwán,Taiwan,Taiwan
+IN,AS,India,India,Índia
+VN,AS,Vietnam,Vietnam,Vietnã
+KR,AS,Corea del Sur,South Korea,Coreia do Sul
+CN,AS,China,China,China
+ZA,AF,Sudáfrica,South Africa,África do Sul
+NA,AF,Namibia,Namibia,Namíbia
+MA,AF,Marruecos,Morocco,Marrocos
+SN,AF,Senegal,Senegal,Senegal
+LR,AF,Liberia,Liberia,Libéria
+GH,AF,Ghana,Ghana,Gana
+MZ,AF,Mozambique,Mozambique,Moçambique
+MG,AF,Madagascar,Madagascar,Madagascar
+RE,AF,Reunión,Réunion,Reunião
+MU,AF,Mauricio,Mauritius,Maurício
+CV,AF,Cabo Verde,Cape Verde,Cabo Verde
+FR,EU,Francia,France,França
+ES,EU,España,Spain,Espanha
+PT,EU,Portugal,Portugal,Portugal
+GB,EU,Reino Unido,United Kingdom,Reino Unido
+IE,EU,Irlanda,Ireland,Irlanda
+NO,EU,Noruega,Norway,Noruega
+DK,EU,Dinamarca,Denmark,Dinamarca
+NL,EU,Países Bajos,Netherlands,Países Baixos
+DE,EU,Alemania,Germany,Alemanha
+IT,EU,Italia,Italy,Itália
+IS,EU,Islandia,Iceland,Islândia

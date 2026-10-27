@@ -22,19 +22,24 @@ existe (404): el reloj lo toma como "sin picos acá".
 ### `spots/idx.json` — continentes (apps)
 
 ```json
-{"v":1,"c":[["AM","América","Americas",76],["OC","Oceanía","Oceania",33]]}
+{"v":1,"c":[["AM","América","Americas",76],["OC","Oceanía","Oceania",33]],
+ "pt":{"AM":"Américas","OC":"Oceania"}}
 ```
 
-Fila: `[código, nombre es, nombre en, regiones]`.
+Fila: `[código, nombre es, nombre en, regiones]`. `pt`: el nombre en portugués de los que no se
+escriben igual que en español (el reloj en portugués usa el español para los demás). Va aparte de
+las filas porque los relojes de antes de él revisan cuántos datos tiene cada una.
 
 ### `spots/idx/<CONTINENTE>.json` — países y regiones de un continente (apps)
 
 ```json
 {"c":[["AR","Argentina","Argentina"],["BR","Brasil","Brazil"]],
- "r":[["AR-MDP","AR","Mar del Plata–Necochea","Mar del Plata–Necochea",-38.21,-57.71,95,24,2950,"3f2a9c"]]}
+ "r":[["AR-MDP","AR","Mar del Plata–Necochea","Mar del Plata–Necochea",-38.21,-57.71,95,24,2950,"3f2a9c"]],
+ "pt":{"BR-RJ":"Rio de Janeiro"}}
 ```
 
 Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, picos, bytes, versión]`.
+`pt`: países y regiones en portugués, como en `idx.json`.
 
 ### `spots/r/<REGIÓN>.json` — una región (esfera y apps)
 
@@ -48,6 +53,8 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
 ```
 
 - `v`: versión (hash corto del contenido). Cambia si cambia cualquier cosa de la región.
+- `np` (opcional): el nombre en portugués, si no es el mismo que en español (`n` es `[es, en]`: los
+  relojes de antes de él toman dos nombres).
 - `m`: `[modelo de olas, modelo de viento]` de Open-Meteo para esa región.
 - `p`: puertos de marea que la cubren: `[clave, lat, lon, radio km, desfase UTC en segundos]`. La
   clave arma la URL de los meses (`tide/<clave>/AAAA-MM.json`) y de los armónicos. Un pico fuera
