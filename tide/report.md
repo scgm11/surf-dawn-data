@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-22 15:20 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-27 11:41 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
