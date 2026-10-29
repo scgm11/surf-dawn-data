@@ -55,6 +55,8 @@ jobs:
         run: |
           set -o pipefail
           python3 tools/build_zones.py --strict 2>&1 | tee spots/build.log
+      - name: Celdas para los campos de datos
+        run: python3 tools/build_cells.py
       - name: "Guardar cachés (también si el build se corta: la próxima corrida sigue desde ahí)"
         if: always()
         uses: actions/cache/save@v4

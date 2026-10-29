@@ -41,6 +41,25 @@ las filas porque los relojes de antes de él revisan cuántos datos tiene cada u
 Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, picos, bytes, versión]`.
 `pt`: países y regiones en portugués, como en `idx.json`.
 
+### `spots/c/<I>_<J>.json` — los picos de una celda de 0,2° (campos de datos)
+
+```json
+{"z":[["UY-ROC","ncep_gfswave025","gfs_seamless"]],
+ "p":[["la-paloma",-34.6533,-54.1417,135,-10800]],
+ "s":[["EL FARO",-34.667,-54.1608,206,0,0],["PLAYA X",-34.7,-54.2,180,0,-1,-34.75,-54.2]]}
+```
+
+`I = piso(lat × 5)`, `J = piso(lon × 5)`. Lo que necesitan los campos de datos Marea y Olas y viento
+para elegir el pico más cercano y bajar sus datos, sin la región entera: el servicio de fondo de un
+campo tiene 32 KB en los relojes anteriores a Connect IQ 4 (fēnix 6 Pro) y ahí una respuesta de más
+de 1 KB no entra (una región llega a 3 KB). Los picos a menos de 10 km de la celda (como mucho 24:
+primero los de adentro, después los más cercanos al centro), cada uno
+`[NOMBRE, lat, lon, orientación, índice en z, índice en p o -1, (lat ola, lon ola)]`; `z` son sus
+regiones (`[región, modelo de olas, modelo de viento]`) y `p` sus puertos de marea, elegidos acá
+como en el reloj (`TideTable.portFor`: el más cercano cuyo radio lo cubre). Una celda sin picos cerca
+no tiene archivo (404). Los arma `tools/build_cells.py` desde las regiones después de cada corrida
+de las zonas.
+
 ### `spots/r/<REGIÓN>.json` — una región (esfera y apps)
 
 ```json
