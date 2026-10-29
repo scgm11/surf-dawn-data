@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-10-27 11:41 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-10-29 15:23 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
 - Puertos nuevos: 427 (got 163, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 4 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 208 de 208 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
 - Picos con puerto: 2329 de 2440.
-- Archivos: 10675, 28.3 MB (cada mes ≤ 6144 bytes; el mayor: 3343).
+- Archivos: 10675, 28.3 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
