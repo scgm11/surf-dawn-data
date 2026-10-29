@@ -102,6 +102,20 @@ Ajuste de un año de alturas horarias con los 30 períodos de `TideTable.PERIODS
 en cm, con `t0` en segundos Unix. El reloj calcula
 `h(t) = mean + Σ cos[k]·cos(2π·τ/P[k]) + sin[k]·sin(2π·τ/P[k])`, con `τ = (t − t0)/3600`.
 
+### `tide/<clave>/d/AAAA-MM-DD.json` — un tramo, para el campo Marea
+
+```json
+{"t0":1793199600,"h":[40,47,50,48,43]}
+```
+
+156 alturas horarias en cm (las mismas de los meses) desde `t0` (segundos Unix): las 12:00 del día
+anterior al día del nombre, en el reloj del puerto, hasta 6 días después. Hay un tramo cada 4 días
+(1, 5, 9… 29) del mes en curso y el siguiente; los arma `tools/tide/chunks.py` en cada corrida de
+las mareas (días 1 y 15) y borra los demás. El campo pide el tramo del día de ahora (unos 500
+bytes): un mes entero ocupa unos 11 KB en la memoria del reloj y el servicio de fondo de un campo
+tiene 32 KB en el fēnix 6 Pro. Al final de los datos del año el tramo sale más corto (nunca con
+menos de 60 horas).
+
 ### `tide/ports.json` — todos los puertos
 
 ```json

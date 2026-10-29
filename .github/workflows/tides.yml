@@ -40,6 +40,8 @@ jobs:
         run: |
           set -o pipefail
           python3 tools/tide/build_tides.py 2>&1 | tee tide/build.log
+      - name: Tramos para el campo Marea
+        run: python3 tools/tide/chunks.py
       - name: Guardar caché
         if: always()
         uses: actions/cache/save@v4
