@@ -9,7 +9,7 @@ BR-RS-SUL    2 spots   334 bytes  v54fd46
 BR-SC-FLN   14 spots   968 bytes  v6e9894
 BR-SC-SUL    6 spots   528 bytes  vcf3c33
 BR-SC-NOR   20 spots  1296 bytes  v78381d
-BR-SP       29 spots  1555 bytes  vc75c8b
+BR-SP       29 spots  1557 bytes  v359e47
 BR-RJ       17 spots   950 bytes  vb1eef2
 BR-RJL      20 spots  1241 bytes  v753eb4
 BR-ES       19 spots  1159 bytes  v10ca0c
@@ -181,7 +181,7 @@ FR-BRE      15 spots   936 bytes  v64c283
 ES-PV       26 spots  1366 bytes  v6720fb
 ES-CAN      14 spots   819 bytes  v651d89
 ES-AST      14 spots   869 bytes  v3608a7
-ES-GAL      18 spots  1032 bytes  vd8d6d3
+ES-GAL      18 spots  1027 bytes  vc939a4
 ES-AND      15 spots   925 bytes  v5baf2b
 ES-CN-E     11 spots   874 bytes  v18fc33
 ES-CN-W     17 spots  1112 bytes  v1a339b
@@ -204,7 +204,7 @@ IE-NW        9 spots   812 bytes  v4a362a
 IE-SW       12 spots   803 bytes  v13d68b
 IE-SE       10 spots   730 bytes  v021063
 NO-S         3 spots   418 bytes  vd98124
-NO-N         3 spots   346 bytes  v19de1e
+NO-N         3 spots   346 bytes  v186cb0
 DK-ALL       5 spots   427 bytes  v1d4752
 NL-ALL      11 spots   792 bytes  v70fb61
 DE-ALL       4 spots   364 bytes  v610bcc
@@ -292,6 +292,7 @@ warning: FR-BRE/DOSSEN: no direction open to the sea, moved 1934 m from the seed
 warning: ES-PV/EA: no direction open to the sea, moved 1021 m from the seed (facing 20 -> 10)
 warning: ES-PV/PLENTZIA: no direction open to the sea, moved 19 m from the seed (facing 323 -> 96)
 warning: ES-PV/BARRIKA: no direction open to the sea, moved 928 m from the seed (facing 52 -> 280)
+warning: ES-GAL/LAXE: no direction open to the sea from facing 60: check the facing (no shelter)
 warning: ES-GAL/PATOS: no direction open to the sea, moved 934 m from the seed (facing 359 -> 360)
 warning: ES-AND/LA VICTORIA: no direction open to the sea, moved 656 m from the seed (facing 69 -> 245)
 warning: ES-AND/CORTADURA: no direction open to the sea, moved 1360 m from the seed (facing 121 -> 250)
@@ -304,4 +305,4 @@ warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the se
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-213 regions, 2511 spots, 0 errors, 93 warnings
+213 regions, 2511 spots, 0 errors, 94 warnings

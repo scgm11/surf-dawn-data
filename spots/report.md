@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-213 regiones, 2511 picos. Errores: 0. Avisos: 93.
+213 regiones, 2511 picos. Errores: 0. Avisos: 94.
 
 ## Avisos
 
@@ -85,6 +85,7 @@
 - ES-PV/EA: no direction open to the sea, moved 1021 m from the seed (facing 20 -> 10)
 - ES-PV/PLENTZIA: no direction open to the sea, moved 19 m from the seed (facing 323 -> 96)
 - ES-PV/BARRIKA: no direction open to the sea, moved 928 m from the seed (facing 52 -> 280)
+- ES-GAL/LAXE: no direction open to the sea from facing 60: check the facing (no shelter)
 - ES-GAL/PATOS: no direction open to the sea, moved 934 m from the seed (facing 359 -> 360)
 - ES-AND/LA VICTORIA: no direction open to the sea, moved 656 m from the seed (facing 69 -> 245)
 - ES-AND/CORTADURA: no direction open to the sea, moved 1360 m from the seed (facing 121 -> 250)
@@ -113,7 +114,7 @@
 | BR-SC-FLN | 14 | 968 | ncep_gfswave025 | gfs_seamless | 1 | — | 11 |
 | BR-SC-SUL | 6 | 528 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | BR-SC-NOR | 20 | 1296 | ncep_gfswave025 | gfs_seamless | 3 | 582 m | 4 |
-| BR-SP | 29 | 1555 | ncep_gfswave025 | gfs_seamless | 3 | 673 m | 0 |
+| BR-SP | 29 | 1557 | ncep_gfswave025 | gfs_seamless | 3 | 668 m | 0 |
 | BR-RJ | 17 | 950 | ncep_gfswave025 | gfs_seamless | 1 | 156 m | 0 |
 | BR-RJL | 20 | 1241 | ncep_gfswave025 | gfs_seamless | 3 | 594 m | 0 |
 | BR-ES | 19 | 1159 | ncep_gfswave025 | gfs_seamless | 3 | 640 m | 5 |
@@ -285,7 +286,7 @@
 | ES-PV | 26 | 1366 | ncep_gfswave016 | gfs_seamless | 3 | 258 m | 0 |
 | ES-CAN | 14 | 819 | ncep_gfswave016 | gfs_seamless | 2 | 616 m | 0 |
 | ES-AST | 14 | 869 | ncep_gfswave016 | gfs_seamless | 3 | 563 m | 0 |
-| ES-GAL | 18 | 1032 | ncep_gfswave016 | gfs_seamless | 3 | 510 m | 0 |
+| ES-GAL | 18 | 1027 | ncep_gfswave016 | gfs_seamless | 3 | 528 m | 0 |
 | ES-AND | 15 | 925 | ncep_gfswave016 | gfs_seamless | 3 | 480 m | 0 |
 | ES-CN-E | 11 | 874 | ncep_gfswave016 | gfs_seamless | 3 | 498 m | 0 |
 | ES-CN-W | 17 | 1112 | ncep_gfswave016 | gfs_seamless | 3 | 447 m | 0 |
@@ -308,7 +309,7 @@
 | IE-SW | 12 | 803 | ecmwf_wam | gfs_seamless | 3 | 199 m | 0 |
 | IE-SE | 10 | 730 | ncep_gfswave016 | gfs_seamless | 3 | 696 m | 0 |
 | NO-S | 3 | 418 | ncep_gfswave025 | gfs_seamless | 2 | 406 m | 1 |
-| NO-N | 3 | 346 | ncep_gfswave025 | gfs_seamless | 2 | 177 m | 1 |
+| NO-N | 3 | 346 | ncep_gfswave025 | gfs_seamless | 2 | 71 m | 1 |
 | DK-ALL | 5 | 427 | ncep_gfswave025 | gfs_seamless | 2 | 301 m | 0 |
 | NL-ALL | 11 | 792 | ncep_gfswave025 | gfs_seamless | 3 | 425 m | 2 |
 | DE-ALL | 4 | 364 | ncep_gfswave025 | gfs_seamless | 1 | 779 m | 0 |
