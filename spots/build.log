@@ -181,7 +181,7 @@ FR-BRE      15 spots   936 bytes  v64c283
 ES-PV       26 spots  1366 bytes  v6720fb
 ES-CAN      14 spots   819 bytes  v651d89
 ES-AST      14 spots   869 bytes  v3608a7
-ES-GAL      18 spots  1027 bytes  vc939a4
+ES-GAL      18 spots  1027 bytes  v8da8be
 ES-AND      15 spots   925 bytes  v5baf2b
 ES-CN-E     11 spots   874 bytes  v18fc33
 ES-CN-W     17 spots  1112 bytes  v1a339b
@@ -204,7 +204,7 @@ IE-NW        9 spots   812 bytes  v4a362a
 IE-SW       12 spots   803 bytes  v13d68b
 IE-SE       10 spots   730 bytes  v021063
 NO-S         3 spots   418 bytes  vd98124
-NO-N         3 spots   346 bytes  v186cb0
+NO-N         3 spots   346 bytes  vca4f2a
 DK-ALL       5 spots   427 bytes  v1d4752
 NL-ALL      11 spots   792 bytes  v70fb61
 DE-ALL       4 spots   364 bytes  v610bcc
