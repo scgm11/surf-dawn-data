@@ -5,9 +5,9 @@ SABA,-8.5900,115.3600,B,L,local,,posicion aprox
 MASCETI,-8.6160,115.3000,B,L,local,,posicion aprox
 LEBIH,-8.6250,115.2850,B,L,local,,posicion aprox
 PADANG GALAK,-8.6330,115.2740,B,L,local,,
-SANUR REEF,-8.6900,115.2760,R,K,local,top,arrecife a ~1 km de la costa
-MERTASARI,-8.7230,115.2570,R,L,local,,posicion aprox
+SANUR REEF,-8.6900,115.2760,R,K,local,top swell=195,arrecife a ~1 km de la costa
+MERTASARI,-8.7230,115.2570,R,L,local,swell=195,posicion aprox
 SERANGAN,-8.7270,115.2400,R,L,local,,isla Serangan
-SHIPWRECKS,-8.6657,115.4432,R,V,web:mondo.surf,top,Lembongan; derecha
-LACERATIONS,-8.6700,115.4310,R,L,local,,Lembongan; posicion aprox
-PLAYGROUNDS,-8.6640,115.4350,R,L,local,,Lembongan; izquierda
+SHIPWRECKS,-8.6657,115.4432,R,V,web:mondo.surf,top swell=200,Lembongan; derecha
+LACERATIONS,-8.6700,115.4310,R,L,local,swell=200,Lembongan; posicion aprox
+PLAYGROUNDS,-8.6640,115.4350,R,L,local,swell=200,Lembongan; izquierda

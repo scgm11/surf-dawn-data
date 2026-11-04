@@ -74,7 +74,7 @@ def check_region(code, errors, warnings, present=False):
         for fl in d["flags"].split():
             if fl in ("top", "nosnap", "checked"):
                 continue
-            m = re.fullmatch(r"facing=(\d{1,3})", fl)
+            m = re.fullmatch(r"(?:facing|swell)=(\d{1,3})", fl)
             if m and int(m.group(1)) < 360:
                 continue
             m = re.fullmatch(r"wave=(-?\d+(?:\.\d+)?);(-?\d+(?:\.\d+)?)", fl)

@@ -1,2 +1,2 @@
 name,lat,lon,type,conf,src,flags,note
-MULI,2.9190,73.5700,R,L,local,,Meemu; posicion dudosa; revisar
+MULI,2.9190,73.5700,R,L,local,swell=160,Meemu; posicion dudosa; revisar

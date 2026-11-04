@@ -1,9 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
-SHIPWRECK BAY,-35.1774,173.1196,P,V,wd:Q49391921,top,Ahipara (Te Kohanga); NZCPS; izquierda larga; posición de Wikidata
-SUPER TUBES,-35.1651,173.0825,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
-MUKIES 2,-35.1683,173.0900,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
-MUKIES 1,-35.1705,173.0960,P,V,web:surfnerd.com,top,Ahipara; NZCPS; izquierda
-PEAKS,-35.1701,173.1111,P,V,web:mondo.surf,top,Ahipara; NZCPS; izquierda larga
+SHIPWRECK BAY,-35.1774,173.1196,P,V,wd:Q49391921,top swell=225,Ahipara (Te Kohanga); NZCPS; izquierda larga; posición de Wikidata
+SUPER TUBES,-35.1651,173.0825,P,V,web:surfnerd.com,top swell=225,Ahipara; NZCPS; izquierda
+MUKIES 2,-35.1683,173.0900,P,V,web:surfnerd.com,top swell=225,Ahipara; NZCPS; izquierda
+MUKIES 1,-35.1705,173.0960,P,V,web:surfnerd.com,top swell=225,Ahipara; NZCPS; izquierda
+PEAKS,-35.1701,173.1111,P,V,web:mondo.surf,top swell=225,Ahipara; NZCPS; izquierda larga
 TAUPO BAY,-34.9450,173.7850,B,L,local,,
 MATAURI BAY,-35.0120,173.9250,B,L,local,,
 MATAPOURI,-35.5645,174.5073,B,V,web:tripideas.nz,,

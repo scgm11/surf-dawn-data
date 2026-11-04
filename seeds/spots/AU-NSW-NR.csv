@@ -8,8 +8,8 @@ BRUNSWICK HEADS,-28.5400,153.5535,B,K,local,,boca del rio
 BELONGIL,-28.6300,153.5850,B,L,local,,
 MAIN BEACH BYRON,-28.6420,153.6110,B,L,local,,
 CLARKES BEACH,-28.6395,153.6190,B,K,local,,Byron Bay
-THE PASS,-28.6385,153.6255,P,K,local,top,Byron Bay; punto derecho largo
-WATEGOS,-28.6368,153.6325,P,K,local,,Cape Byron
+THE PASS,-28.6385,153.6255,P,K,local,top swell=130,Byron Bay; punto derecho largo
+WATEGOS,-28.6368,153.6325,P,K,local,swell=130,Cape Byron
 TALLOW BEACH,-28.6700,153.6275,B,K,local,,
 SUFFOLK PARK,-28.6990,153.6215,B,L,local,,
 BROKEN HEAD,-28.7095,153.6185,P,K,local,top,

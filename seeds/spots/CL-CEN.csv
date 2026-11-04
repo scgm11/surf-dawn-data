@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 TOTORALILLO,-30.0920,-71.3600,B,L,local,,Coquimbo; lejos del resto
-PICHIDANGUI,-32.1370,-71.5290,P,K,local,,
-LOS MOLLES,-32.2400,-71.5090,P,K,local,,
+PICHIDANGUI,-32.1370,-71.5290,P,K,local,swell=245,
+LOS MOLLES,-32.2400,-71.5090,P,K,local,swell=245,
 PICHICUY,-32.3430,-71.4580,B,L,local,,
 PAPUDO,-32.5090,-71.4500,B,K,local,,
 CACHAGUA,-32.5810,-71.4620,B,K,local,,

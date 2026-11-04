@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-CHACAHUA,15.9650,-97.6760,P,K,local,top,Lagunas de Chacahua; derecha larga
+CHACAHUA,15.9650,-97.6760,P,K,local,top swell=210,Lagunas de Chacahua; derecha larga
 BACOCHO,15.8700,-97.0940,B,K,local,,Puerto Escondido oeste
 CARRIZALILLO,15.8520,-97.0740,B,K,local,,cala de Puerto Escondido
 PLAYA PRINCIPAL,15.8610,-97.0630,B,K,local,,Puerto Escondido

@@ -25,12 +25,13 @@ def regions():
 
 
 def flags(s):
-    """'top nosnap facing=120 wave=-27.5;-48.25' -> {'top': True, 'nosnap': True, 'facing': 120, 'wave': (-27.5, -48.25)}"""
+    """'top nosnap facing=120 swell=200 wave=-27.5;-48.25' -> {'top': True, 'nosnap': True, 'facing': 120,
+    'swell': 200, 'wave': (-27.5, -48.25)}"""
     out = {}
     for tok in s.split():
         if "=" in tok:
             k, v = tok.split("=", 1)
-            out[k] = int(v) if k == "facing" else tuple(float(x) for x in v.split(";"))
+            out[k] = int(v) if k in ("facing", "swell") else tuple(float(x) for x in v.split(";"))
         else:
             out[tok] = True
     return out

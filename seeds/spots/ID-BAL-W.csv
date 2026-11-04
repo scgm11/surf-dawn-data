@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 KUTA BEACH,-8.7197,115.1675,B,K,local,top,playa clasica
-KUTA REEF,-8.7380,115.1640,R,L,local,,arrecife frente al aeropuerto
-HALFWAY KUTA,-8.7300,115.1690,R,L,local,,posicion aprox
+KUTA REEF,-8.7380,115.1640,R,L,local,swell=195,arrecife frente al aeropuerto
+HALFWAY KUTA,-8.7300,115.1690,R,L,local,swell=195,posicion aprox
 LEGIAN,-8.7040,115.1620,B,K,local,,
 DOUBLE SIX,-8.6945,115.1580,B,K,local,,
 SEMINYAK,-8.6860,115.1520,B,K,local,,

@@ -59,7 +59,8 @@ primero los de adentro, después los más cercanos al centro), cada uno
 regiones (`[región, modelo de olas, modelo de viento]`) y `p` sus puertos de marea, elegidos acá
 como en el reloj (`TideTable.portFor`: el más cercano cuyo radio lo cubre); `w`, uno por fila de `z`, la escala
 de las olas de cada región (su `w`, o `null`), aparte de `z` porque los campos anteriores solo aceptan filas
-de 3 ahí. Una celda sin picos cerca
+de 3 ahí; `sw`, uno por fila de `s`, la ventana de swell de cada pico (el `sw` de su región, o `null`),
+aparte de `s` por lo mismo y solo en las celdas que tienen alguna. Una celda sin picos cerca
 no tiene archivo (404). Los arma `tools/build_cells.py` desde las regiones después de cada corrida
 de las zonas.
 
@@ -106,6 +107,12 @@ de las zonas.
   `seeds/scale.csv` (un año pesa 26 llamadas de la API gratis: se corre a mano, no en cada build) y
   `tools/build_zones.py` lo copia acá. Los niveles de la energía del mar van con ella. Las apps
   anteriores no la leen; sin `w`, la del mundo.
+- `sw` (opcional): la ventana de swell de los reefs y las puntas donde el swell entra dando la vuelta
+  (el Bukit, G-Land, Raglan, Rincón…), un valor por pico en el orden de `s`: grados **desde** donde
+  viene el swell que lo hace andar, o `null` donde no hay (la semilla `swell=`). Con ventana, el
+  reloj mide el swell contra ella y no contra la orientación, sin el corte de `x` (la ventana ya
+  cuenta con la punta que el swell rodea); el viento sigue con la orientación y `x`. Solo en las
+  regiones que tienen alguna, y aparte de `s` como `x`.
 - El id de un pico en el reloj es `<REGIÓN>/<NOMBRE>`.
 
 ## Mareas: `tide/`

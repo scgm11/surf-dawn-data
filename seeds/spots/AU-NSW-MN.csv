@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 CORINDI BEACH,-29.9990,153.2400,B,L,local,,
 ARRAWARRA,-30.0690,153.2050,P,L,local,,Arrawarra Headland
-WOOLGOOLGA,-30.1060,153.2040,P,K,local,,
+WOOLGOOLGA,-30.1060,153.2040,P,K,local,swell=105,
 EMERALD BEACH,-30.1870,153.1910,B,L,local,,
 SAPPHIRE BEACH,-30.2150,153.1820,B,L,local,,
 MOONEE BEACH,-30.2400,153.1730,B,L,local,facing=100,orientación a mano (la calculada miraba a otra costa)

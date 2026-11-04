@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
-EL GRINGO,-18.4800,-70.3300,R,V,web:mondo.surf,top checked,ola grande; Arica
-EL BUEY,-18.4850,-70.3310,R,L,local,,Arica
+EL GRINGO,-18.4800,-70.3300,R,V,web:mondo.surf,top checked swell=230,ola grande; Arica
+EL BUEY,-18.4850,-70.3310,R,L,local,swell=230,Arica
 LA ISLA,-18.4830,-70.3295,R,L,local,,Isla Alacrán; Arica
 LAS MACHAS,-18.4620,-70.3180,B,L,local,,Arica
 CHINCHORRO,-18.4500,-70.2900,B,K,local,,Arica
-CORAZONES,-18.5320,-70.3260,R,L,local,,Arica sur
+CORAZONES,-18.5320,-70.3260,R,L,local,swell=230,Arica sur
 PUNTA GRUESA,-20.1900,-70.1500,P,L,local,,Iquique norte
 CAVANCHA,-20.2370,-70.1400,B,K,local,,Iquique
 PLAYA BRAVA,-20.2600,-70.1360,B,L,local,,Iquique

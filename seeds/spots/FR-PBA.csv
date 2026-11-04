@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 HENDAYE,43.3800,-1.7760,B,K,local,,plage de Hendaye
 BELHARRA,43.4036,-1.7178,R,V,wd:Q2894399,top nosnap facing=315,ola grande; ~2 km mar adentro; posición de Wikidata
-SOCOA,43.3965,-1.6845,R,K,local,,junto al fuerte
+SOCOA,43.3965,-1.6845,R,K,local,swell=300,junto al fuerte
 SAINTE BARBE,43.4030,-1.6500,B,K,local,,St-Jean-de-Luz
 ERROMARDIE,43.4090,-1.6440,B,K,local,,
 LAFITENIA,43.4150,-1.6300,P,K,local,top,

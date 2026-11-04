@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HONOLI'I,19.7590,-155.0985,R,K,local,top,desembocadura Hilo
-RICHARDSONS,19.7300,-155.0145,R,L,local,,Hilo
+RICHARDSONS,19.7300,-155.0145,R,L,local,swell=35,Hilo
 POHOIKI,19.4560,-154.8070,R,L,local,,Isaac Hale; costa cambio en 2018
 LAUPAHOEHOE,19.9940,-155.2360,R,L,local,,Laupahoehoe Point
 WAIPIO,20.1160,-155.5835,B,L,local,,valle

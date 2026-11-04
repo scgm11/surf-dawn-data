@@ -2,6 +2,6 @@ name,lat,lon,type,conf,src,flags,note
 PASTA POINT,4.3154,73.5918,R,V,web:mondo.surf,top,WC; derecha; Dhonveli
 SULTANS,4.3128,73.5856,R,V,web:mondo.surf,top,WC; derecha
 HONKY'S,4.3126,73.5837,R,V,web:mondo.surf,top,izquierda
-COKES,4.3712,73.6562,R,V,web:mondo.surf,top,derecha; Thulusdhoo
+COKES,4.3712,73.6562,R,V,web:mondo.surf,top facing=120,derecha; Thulusdhoo
 CHICKENS,4.3727,73.6632,R,V,web:mondo.surf,top,izquierda
 JAILBREAKS,4.3073,73.5776,R,V,web:mondo.surf,top,derecha; Himmafushi

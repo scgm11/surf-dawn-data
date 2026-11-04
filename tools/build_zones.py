@@ -140,7 +140,8 @@ def build_region(code, reg, country, models, ports, offline, rep):
             continue
         spots.append({"name": r["name"], "lat": round(lat, 4), "lon": round(lon, 4), "facing": int(facing) % 360,
                       "kind": r["kind"], "wave": f.get("wave"), "top": bool(f.get("top")), "snap": snapped,
-                      "conf": r["conf"], "nosnap": bool(f.get("nosnap")), "fixed": "facing" in f, "seed": (r["lat"], r["lon"])})
+                      "conf": r["conf"], "nosnap": bool(f.get("nosnap")), "fixed": "facing" in f, "seed": (r["lat"], r["lon"]),
+                      "swell": f.get("swell")})
     if not spots:
         errs.append("%s: no spot left" % code)
         return None
@@ -214,9 +215,11 @@ def build_region(code, reg, country, models, ports, offline, rep):
         body["x"] = x                              # apart from "s": the watches before it take rows of 5 or 7
     if code in SCALES:
         body["w"] = SCALES[code]                   # where its waves' score tops out (tools/build_scale.py)
+    if any(s["swell"] is not None for s in spots):
+        body["sw"] = [s["swell"] for s in spots]   # the swell windows (seed swell=), apart from "s" as "x"
     v = version(body)
     out = {"id": code, "v": v}
-    out.update({k: body[k] for k in ("c", "n", "np", "m", "p", "s", "x", "w") if k in body})
+    out.update({k: body[k] for k in ("c", "n", "np", "m", "p", "s", "x", "w", "sw") if k in body})
     text = dump(out)
     size = len(text.encode("utf-8"))
     if size > MAX_BYTES:

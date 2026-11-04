@@ -27,7 +27,7 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
 | `type` | `B` beach break, `P` point break, `R` reef; vacío si no se sabe |
 | `conf` | Confianza en la posición: `V` verificada contra una fuente pública, `K` conocimiento general (±0,02°), `L` dudosa |
 | `src` | Procedencia: `local`, `osm:<tipo>/<id>`, `wd:Q<id>`, `geonames:<id>`, `gov:<fuente>`, `web:<sitio>` (solo para chequear un dato suelto: nunca se copian listas de Surfline, surf-forecast, wannasurf ni breakfinder) |
-| `flags` | Separadas por espacio: `top` pico emblemático (revisión a mano obligatoria); `nosnap` no ajustar a la costa (arrecifes mar adentro, o picos ya validados); `checked` posición revisada a mano aunque el ítem de Wikidata u OSM con su nombre esté lejos (es el pueblo, un hotel u otra ola: `validation/spots.md`); `facing=NNN` orientación puesta a mano (grados hacia donde mira la playa, al mar); `wave=LAT;LON` punto de mar para pedir las olas |
+| `flags` | Separadas por espacio: `top` pico emblemático (revisión a mano obligatoria); `nosnap` no ajustar a la costa (arrecifes mar adentro, o picos ya validados); `checked` posición revisada a mano aunque el ítem de Wikidata u OSM con su nombre esté lejos (es el pueblo, un hotel u otra ola: `validation/spots.md`); `facing=NNN` orientación puesta a mano (grados hacia donde mira la playa, al mar); `swell=NNN` ventana de swell de un reef o una punta donde el swell entra dando la vuelta (grados **desde** donde viene el swell que lo hace andar: las apps miden el swell contra ella y el viento contra la orientación); `wave=LAT;LON` punto de mar para pedir las olas |
 | `note` | Corta: `WSL CT`, `ola grande`, `isla`, por qué la posición es dudosa… |
 
 ## Reglas
@@ -35,7 +35,11 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
 - Una fila por pico real que la gente surfea; nada de piscinas de olas.
 - Arrecifes a más de 2,5 km de la costa (Cloudbreak, Belharra, Mavericks…): `nosnap` y
   `facing=` a mano, con la posición sobre el arrecife.
-- La orientación es hacia dónde **mira** la playa (al mar), no de dónde viene el swell.
+- La orientación es hacia dónde **mira** la playa (al mar), no de dónde viene el swell: es la que decide
+  el viento de tierra. En un reef o una punta que casi nunca recibe el swell de frente porque le entra
+  dando la vuelta (el Bukit mira al NO y anda con el swell del SSO), la orientación se deja y se le
+  pone `swell=` con la dirección del swell que lo hace andar: la del modelo de su zona en un año de
+  olas, comparada con las guías (revisión del 2026-11-04, `validation/spots.md` marca los que faltan).
 - Los picos de Uruguay y Santa Catarina (`UY-CAN`, `UY-MAL`, `UY-ROC`, `BR-SC-FLN`, `BR-SC-SUL`)
   están congelados con `nosnap`, `facing=` y `wave=` de la lista validada de 2026-10 (`UY-CAN`: los
   que calculó `build_zones.py` el 2026-10-22): no se recalculan. Una región nueva que se congela va

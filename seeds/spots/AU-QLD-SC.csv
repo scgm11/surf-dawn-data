@@ -1,9 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
 DOUBLE ISLAND PT,-25.9324,153.1886,P,V,web:mondo.surf,top,4WD; punto derecho
-FIRST POINT,-26.3845,153.0939,P,V,web:mondo.surf,top,Noosa
-LITTLE COVE,-26.3851,153.0985,P,K,local,,Noosa NP
-TEA TREE BAY,-26.3838,153.1050,P,K,local,,Noosa NP
-GRANITE BAY,-26.3815,153.1105,P,K,local,,Noosa NP
+FIRST POINT,-26.3845,153.0939,P,V,web:mondo.surf,top swell=110,Noosa
+LITTLE COVE,-26.3851,153.0985,P,K,local,swell=110,Noosa NP
+TEA TREE BAY,-26.3838,153.1050,P,K,local,swell=110,Noosa NP
+GRANITE BAY,-26.3815,153.1105,P,K,local,swell=110,Noosa NP
 ALEXANDRIA BAY,-26.3950,153.1225,B,K,local,,Noosa NP este
 SUNSHINE BEACH,-26.4090,153.1160,B,K,local,,
 SUNRISE BEACH,-26.4235,153.1130,B,K,local,,

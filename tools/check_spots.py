@@ -12,7 +12,8 @@ validation/spots.json (docs/formatos.md):
   never gets them head-on is looked at again the same way, and a zone with ZONE_MIN of them or more
   still flagged goes in the report as a whole: a coast whose facing came out on the wrong side, or
   reefs and points the swell wraps into (the Bukit, G-Land, Jeffreys Bay: there the coast's facing
-  is right for the wind, and what is missing is the swell window).
+  is right for the wind, and what is missing is the swell window). A spot with a swell window (the
+  zone's "sw", seed swell=) is measured against it, as the apps judge its swell.
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
 - §5.8 Flagship spots (`top` in the seeds): their position against public sources: the nearest item
@@ -70,6 +71,12 @@ UA = {"User-Agent": "surf-dawn-data/1.0 (https://github.com/scgm11/surf-dawn-dat
 def ang(a, b):
     d = abs(a - b) % 360
     return 360 - d if d > 180 else d
+
+
+def toward(z, i):
+    """What spot i's swell is judged against: its swell window (the zone's "sw"), else its facing."""
+    sw = z.get("sw")
+    return sw[i] if sw and len(sw) == len(z["s"]) and isinstance(sw[i], int) else z["s"][i][3]
 
 
 def zones(only):
@@ -263,9 +270,9 @@ def main():
         rows = []
         for i, s in enumerate(z["s"]):
             lat, lon = (s[5], s[6]) if len(s) == 7 else (s[1], s[2])
-            st = spot_stats(waves.get(cell(model, lat, lon), ([], [])), s[3])
+            st = spot_stats(waves.get(cell(model, lat, lon), ([], [])), toward(z, i))
             st["name"] = s[0]
-            st["facing"] = s[3]
+            st["facing"] = toward(z, i)
             st["type"] = s[4]
             st["near"] = neighbours_facing(z, i)
             rows.append(st)
@@ -303,12 +310,12 @@ def main():
     if facing_flags:
         long = fetch_waves(zs, used, LONG_DAYS, set(facing_flags))
         for z in zs:
-            for s in z["s"]:
+            for i, s in enumerate(z["s"]):
                 f = facing_flags.get((z["id"], s[0]))
                 if f is None:
                     continue
                 lat, lon = (s[5], s[6]) if len(s) == 7 else (s[1], s[2])
-                st = spot_stats(long.get(cell(z["m"][0], lat, lon), ([], [])), s[3])
+                st = spot_stats(long.get(cell(z["m"][0], lat, lon), ([], [])), toward(z, i))
                 f["share_long"] = st["share"]
                 if st["share"] is not None and st["share"] >= NEVER:
                     f["why"] = [w for w in f["why"] if "de frente" not in w]
@@ -375,7 +382,7 @@ def report(r, zs):
              time.strftime("%Y-%m-%d %H:%M", time.gmtime()), len(zs), n), "",
          "- **Orientación (§5.2):** olas de los últimos %d días y los próximos %d en el punto de olas de cada pico "
          "(el modelo de su zona). Se marca un pico al que las olas de al menos %.1f m casi nunca le llegan a menos "
-         "de %d° de hacia donde mira (menos del %d %% de las horas) mientras a su zona sí (al menos %d %%)." % (
+         "de %d° de hacia donde mira, o de su ventana de swell si la tiene (menos del %d %% de las horas) mientras a su zona sí (al menos %d %%)." % (
              DAYS, FORECAST, MIN_H, FACING_DEG, round(100 * NEVER), round(100 * NEIGHBOURS)),
          "- **Zona entera:** en una zona donde la mayoría tampoco las recibe de frente (menos del %d %%) los vecinos "
          "no dicen nada: ahí se marca el pico con mar (olas de al menos %.1f m en el %d %% de las horas o más) que casi "

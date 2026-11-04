@@ -14,7 +14,7 @@ THE WOMB,-33.9140,114.9770,R,L,local,,Ellensbrook
 LEFT HANDERS,-33.8900,114.9810,R,L,local,,
 HUZZAWOUIE,-33.8770,114.9830,R,L,local,,Gracetown
 SOUTH POINT,-33.8735,114.9825,R,L,local,,Gracetown
-COW BOMBIE,-33.8620,114.9760,R,L,local,,ola grande; Gracetown
+COW BOMBIE,-33.8620,114.9760,R,L,local,swell=235,ola grande; Gracetown
 NORTH POINT,-33.8600,114.9800,R,V,web:mondo.surf,top checked,Gracetown
 GUILLOTINE,-33.8180,114.9860,R,L,local,,
 GALLOWS,-33.7800,114.9870,R,L,local,,
@@ -22,7 +22,7 @@ HONEYCOMBS,-33.7330,114.9870,R,L,local,,
 MOSES ROCK,-33.7190,114.9880,R,K,local,,
 WILDCAT,-33.7110,114.9885,R,L,local,,
 THE WINDOW,-33.7085,114.9890,R,L,local,,
-CAPE CLAIRAULT,-33.7005,114.9890,R,L,local,,
+CAPE CLAIRAULT,-33.7005,114.9890,R,L,local,swell=250,
 PEA BREAK,-33.6940,114.9915,R,L,local,,Injidup
 INJIDUP POINT,-33.6920,114.9925,R,L,local,,
 SUPERTUBES,-33.6530,115.0186,R,V,web:mondo.surf,top,Smiths Beach

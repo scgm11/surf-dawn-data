@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 KARITANE,-45.6388,170.6650,P,V,web:surfnerd.com,top,NZCPS; derecha en desembocadura
-WHAREAKEAKE,-45.7613,170.6722,P,V,web:mondo.surf,top,NZCPS; Murdering Bay; derecha; tipo dudoso
+WHAREAKEAKE,-45.7613,170.6722,P,V,web:mondo.surf,top swell=125,NZCPS; Murdering Bay; derecha; tipo dudoso
 ARAMOANA SPIT,-45.7757,170.7111,B,V,web:mondo.surf,top,NZCPS; The Spit; boca de Otago Harbour
 WARRINGTON,-45.7110,170.5810,B,L,local,,
 ST CLAIR,-45.9150,170.4900,B,K,local,,Dunedin
