@@ -6,7 +6,13 @@ validation/spots.json (docs/formatos.md):
   Open-Meteo Marine). A spot whose waves almost never come from within FACING_DEG of the way its
   beach faces (under NEVER of the hours) while its zone's spots do (at least NEIGHBOURS) is looked at
   again over LONG_DAYS (a season can hide a swell window); still so, it is flagged: that is usually a
-  facing computed on the wrong side of a headland or a lagoon, or a point the swell wraps into.
+  facing computed on the wrong side of a headland or a lagoon, or a point the swell wraps into. In a
+  zone whose spots mostly do not get them either (its median under NEIGHBOURS) the neighbours say
+  nothing: there a spot with sea (waves of MIN_H or more in SEA of the hours or more) that almost
+  never gets them head-on is looked at again the same way, and a zone with ZONE_MIN of them or more
+  still flagged goes in the report as a whole: a coast whose facing came out on the wrong side, or
+  reefs and points the swell wraps into (the Bukit, G-Land, Jeffreys Bay: there the coast's facing
+  is right for the wind, and what is missing is the swell window).
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
 - §5.8 Flagship spots (`top` in the seeds): their position against public sources: the nearest item
@@ -39,9 +45,13 @@ OUT = os.path.join(ROOT, "validation")
 DAYS = 14                       # past days of waves (plus FORECAST days ahead)
 LONG_DAYS = 92                  # the spots flagged for their facing, looked at again over this many
 FORECAST = 2
-FACING_DEG = 75                 # waves within this of the beach's facing reach it (issue #7 §5.2)
+FACING_DEG = 55                 # waves within this of the beach's facing reach it: where Score.hit is 0.75
+                                # (issue #7 §5.2 said 75: over a year it caught 107 of the 189 reefs and points
+                                # that almost never got their waves within 55, this 157 of them)
 NEVER = 0.05                    # "almost never": under this share of the hours with waves
 NEIGHBOURS = 0.25               # ... while the zone's median spot gets them at least this often
+SEA = 0.25                      # a spot of a zone under NEIGHBOURS: flagged only with waves this share of the hours
+ZONE_MIN = 3                    # ... and the zone, as a whole, with this many of them still flagged after LONG_DAYS
 MIN_H = 0.3                     # m: hours with less are not counted for the direction
 DOUBLE = 2.0                    # more than this times the zone's median mean height (§5.4)
 BATCH = 40                      # locations per Open-Meteo request
@@ -116,11 +126,13 @@ def spot_stats(series, facing):
     vals = [h for h in hs if isinstance(h, (int, float))]
     mean = sum(vals) / len(vals) if vals else None
     hours = [(h, d) for h, d in zip(hs, ds) if isinstance(h, (int, float)) and isinstance(d, (int, float)) and h >= MIN_H]
+    sea = len(hours) / len(vals) if vals else None
     share = sum(1 for _, d in hours if ang(d, facing) < FACING_DEG) / len(hours) if hours else None
     x = sum(h * math.sin(math.radians(d)) for h, d in hours)
     y = sum(h * math.cos(math.radians(d)) for h, d in hours)
     swell = round(math.degrees(math.atan2(x, y)) % 360) if hours else None   # where the waves come from, mostly
-    return {"mean": mean, "max": max(vals) if vals else None, "share": share, "hours": len(hours), "swell": swell}
+    return {"mean": mean, "max": max(vals) if vals else None, "share": share, "hours": len(hours), "sea": sea,
+            "swell": swell}
 
 
 def neighbours_facing(z, i, km=NEAR_KM):
@@ -134,6 +146,33 @@ def neighbours_facing(z, i, km=NEAR_KM):
     if math.hypot(x, y) < 0.5 * len(fs):
         return None                                  # they face every way (an island, a cape): no reference
     return round(math.degrees(math.atan2(x, y)) % 360)
+
+
+def circ_mean(ds):
+    x = sum(math.sin(math.radians(d)) for d in ds)
+    y = sum(math.cos(math.radians(d)) for d in ds)
+    return round(math.degrees(math.atan2(x, y))) % 360
+
+
+def whole_zones(flags, zs):
+    """The zones with ZONE_MIN or more spots still flagged for a facing their whole zone does not get
+    either: [{region, flagged, spots, points (of them, points and reefs), facing, swell}]."""
+    size = {z["id"]: len(z["s"]) for z in zs}
+    by = {}
+    for f in flags:
+        if f.get("whole"):
+            by.setdefault(f["region"], []).append(f)
+    out = []
+    for code, fs in sorted(by.items()):
+        if len(fs) < ZONE_MIN:
+            continue
+        out.append({"region": code, "flagged": len(fs), "spots": size[code],
+                    "points": sum(1 for f in fs if f["type"] in (2, 3)),
+                    "facing": circ_mean([f["facing"] for f in fs]),
+                    "swell": circ_mean([f["swell"] for f in fs if f["swell"] is not None]) if any(
+                        f["swell"] is not None for f in fs) else None,
+                    "names": [f["spot"] for f in fs]})
+    return out
 
 
 def wikidata(lat, lon, names):
@@ -227,6 +266,7 @@ def main():
             st = spot_stats(waves.get(cell(model, lat, lon), ([], [])), s[3])
             st["name"] = s[0]
             st["facing"] = s[3]
+            st["type"] = s[4]
             st["near"] = neighbours_facing(z, i)
             rows.append(st)
         means = [r["mean"] for r in rows if r["mean"]]
@@ -241,17 +281,21 @@ def main():
                 why.append("sin olas en %d días" % (DAYS + FORECAST))
             elif med and r["mean"] > DOUBLE * med:
                 why.append("%.1f m de media, más del doble de la zona (%.1f m)" % (r["mean"], med))
-            flipped = False
+            flipped = whole = False
             if r["share"] is not None and r["share"] < NEVER and med_share is not None and med_share >= NEIGHBOURS:
                 why.append("las olas casi nunca le entran de frente (%d %% de las horas; la zona %d %%)"
                            % (round(100 * r["share"]), round(100 * med_share)))
                 f, n, w = r["facing"], r["near"], r["swell"]
                 flipped = (n is not None and w is not None and ang(f, n) >= FLIPPED and ang(f, w) >= FLIPPED
                            and ang((f + 180) % 360, n) <= 180 - FLIPPED)
+            elif r["share"] is not None and r["share"] < NEVER and r["sea"] >= SEA:
+                why.append("las olas casi nunca le entran de frente (%d %% de las horas) y a su zona tampoco (%d %%)"
+                           % (round(100 * r["share"]), round(100 * med_share)))
+                whole = True
             if why:
                 result["flags"].append({"region": z["id"], "spot": r["name"], "why": why, "facing": r["facing"],
-                                        "swell": r["swell"], "near": r["near"], "flipped": flipped,
-                                        "top": tops.get((z["id"], r["name"]), False)})
+                                        "swell": r["swell"], "near": r["near"], "flipped": flipped, "whole": whole,
+                                        "type": r["type"], "top": tops.get((z["id"], r["name"]), False)})
         print("%-11s %2d spots  media %s m  de frente %s" % (z["id"], len(rows), med and "%.1f" % med,
                                                               med_share is not None and "%d %%" % round(100 * med_share)))
     # the facing flags, again over a season
@@ -268,7 +312,7 @@ def main():
                 f["share_long"] = st["share"]
                 if st["share"] is not None and st["share"] >= NEVER:
                     f["why"] = [w for w in f["why"] if "de frente" not in w]
-                    f["flipped"] = False
+                    f["flipped"] = f["whole"] = False
                 else:
                     f["why"] = [w + (" y en %d días %d %%" % (LONG_DAYS, round(100 * st["share"])) if "de frente" in w
                                      and st["share"] is not None else "") for w in f["why"]]
@@ -276,6 +320,8 @@ def main():
         result["flags"] = [f for f in result["flags"] if f["why"]]
         result["season_cleared"] = cleared
         print("%d facing flags cleared over %d days" % (cleared, LONG_DAYS))
+    result["zones"] = whole_zones(result["flags"], zs)
+    print("%d zones that almost never get their waves head-on" % len(result["zones"]))
     if a.no_wikidata or a.unsourced:               # the last run's, as they were
         try:
             with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
@@ -331,6 +377,9 @@ def report(r, zs):
          "(el modelo de su zona). Se marca un pico al que las olas de al menos %.1f m casi nunca le llegan a menos "
          "de %d° de hacia donde mira (menos del %d %% de las horas) mientras a su zona sí (al menos %d %%)." % (
              DAYS, FORECAST, MIN_H, FACING_DEG, round(100 * NEVER), round(100 * NEIGHBOURS)),
+         "- **Zona entera:** en una zona donde la mayoría tampoco las recibe de frente (menos del %d %%) los vecinos "
+         "no dicen nada: ahí se marca el pico con mar (olas de al menos %.1f m en el %d %% de las horas o más) que casi "
+         "nunca las recibe de frente." % (round(100 * NEIGHBOURS), MIN_H, round(100 * SEA)),
          "- **Temporada:** los marcados por la orientación se miran de nuevo con %d días de olas; %d dejaron de "
          "estarlo (en dos semanas no les tocaba su ventana de swell)." % (LONG_DAYS, r.get("season_cleared", 0)),
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
@@ -355,6 +404,21 @@ def report(r, zs):
             L.append("| %s | %s | %d° | %d° | %d° |" % (f["region"], f["spot"], f["facing"], f["near"], f["swell"]))
     else:
         L.append("Ninguno.")
+    zones = r.get("zones", [])
+    L += ["", "## Zonas enteras que casi nunca reciben las olas de frente (%d)" % len(zones), "",
+          "Zonas con %d picos o más que, en %d días, casi nunca recibieron las olas de frente aunque había mar, y a las "
+          "que la comparación con los vecinos no ve porque están todos igual. O la orientación de toda la costa se "
+          "calculó del lado equivocado, o son reefs y puntas a los que el swell entra dando la vuelta: ahí la "
+          "orientación de la costa está bien para el viento y lo que falta es la ventana de swell del pico." % (
+              ZONE_MIN, LONG_DAYS), ""]
+    if zones:
+        L += ["| Región | Marcados | Puntas y reefs | Miran a | Olas desde | Picos |", "|---|---|---|---|---|---|"]
+        for z in zones:
+            L.append("| %s | %d de %d | %d | %d° | %s | %s |" % (
+                z["region"], z["flagged"], z["spots"], z["points"], z["facing"],
+                "—" if z["swell"] is None else "%d°" % z["swell"], ", ".join(z["names"])))
+    else:
+        L.append("Ninguna.")
     L += ["", "## Picos marcados (%d)" % len(r["flags"]), "",
           "Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y "
           "el semáforo del swell es conservador ahí); se revisan a mano.", ""]
