@@ -23,7 +23,7 @@ PORTREATH,50.2650,-5.2890,B,K,local,,
 GWITHIAN,50.2310,-5.3800,B,K,local,,
 GODREVY,50.2330,-5.3980,B,L,local,facing=300,posicion aproximada; orientación a mano (la calculada miraba a otra costa)
 PORTHMEOR,50.2150,-5.4830,B,K,local,,St Ives
-GWENVER,50.0880,-5.7110,B,L,local,,posicion aproximada
+GWENVER,50.0880,-5.7110,B,L,local,facing=305,posicion aproximada
 SENNEN,50.0775,-5.6985,B,K,local,top,Sennen Cove
 PRAA SANDS,50.1010,-5.3880,B,K,local,,
 PORTHLEVEN,50.0820,-5.3190,R,K,local,top,ola de arrecife; ola grande con swell fuerte

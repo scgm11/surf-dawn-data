@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-HANALEI,22.2205,-159.5020,R,K,local,top,Hanalei Bay; swell de invierno
+HANALEI,22.2205,-159.5020,R,K,local,top swell=340,Hanalei Bay; swell de invierno
 PINETREES,22.2100,-159.5085,R,L,local,,Hanalei Bay
 LUMAHAI,22.2185,-159.5400,B,L,local,,
 WAINIHA,22.2255,-159.5740,R,L,local,,
@@ -11,7 +11,7 @@ ANINI,22.2290,-159.4440,R,L,local,,
 ANAHOLA,22.1450,-159.2985,B,K,local,,
 KEALIA,22.0985,-159.3005,B,K,local,,
 WAILUA,22.0400,-159.3320,B,L,local,,desembocadura
-KALAPAKI,21.9570,-159.3490,B,K,local,,Nawiliwili
+KALAPAKI,21.9570,-159.3490,B,K,local,facing=140,Nawiliwili
 SHIPWRECKS,21.8765,-159.4455,B,K,local,,Keoneloa Bay
 POIPU BEACH,21.8715,-159.4535,B,K,local,,
 PK'S,21.8808,-159.4756,R,V,web:mondo.surf,top,Poipu

@@ -4,7 +4,7 @@ SANTA MARINA,43.4680,-5.0530,B,L,local,,Ribadesella; posicion aproximada
 VEGA,43.4760,-5.0200,B,L,local,,Ribadesella; posicion aproximada
 LA ESPASA,43.4744,-5.2107,B,V,web:hispanopedia,,Caravia-Colunga
 RODILES,43.5315,-5.3800,B,K,local,top,ria de Villaviciosa
-SAN LORENZO,43.5450,-5.6590,B,K,local,,Gijon
+SAN LORENZO,43.5450,-5.6590,B,K,local,facing=30,Gijon
 XAGO,43.6110,-5.8150,B,L,local,,Gozon; posicion aproximada
 SALINAS,43.5800,-5.9660,B,K,local,top,Castrillon
 EL ESPARTAL,43.5760,-5.9470,B,L,local,,Salinas-Avilés; posicion aproximada

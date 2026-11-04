@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-ARUGAM BAY,6.8445,81.8385,P,K,local,top,WC; derecha de punta
+ARUGAM BAY,6.8445,81.8385,P,K,local,top swell=185,WC; derecha de punta
 BABY POINT,6.8350,81.8350,P,L,local,,principiantes; posicion aprox
 ELEPHANT ROCK,6.8620,81.8460,R,L,local,,posicion aprox
 POTTUVIL POINT,6.8880,81.8510,P,L,local,,posicion aprox

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 EL CONFITAL,28.1655,-15.4480,R,K,local,top,Gran Canaria; La Isleta
-LAS CANTERAS,28.1430,-15.4420,B,K,local,,Gran Canaria; Las Palmas
+LAS CANTERAS,28.1430,-15.4420,B,K,local,facing=310,Gran Canaria; Las Palmas
 LA CICER,28.1315,-15.4375,R,K,local,,Gran Canaria; extremo sur de Las Canteras
 MELENARA,28.0010,-15.3690,B,L,local,,Gran Canaria; Telde; posicion aproximada
 PLAYA DEL HOMBRE,28.0370,-15.3830,B,L,local,,Gran Canaria; Telde; posicion aproximada

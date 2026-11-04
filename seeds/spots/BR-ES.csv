@@ -8,7 +8,7 @@ JACARAÍPE,-20.1750,-40.1930,B,K,local,,Serra
 CAMBURI,-20.2760,-40.2740,B,K,local,,Vitória
 PRAIA DA COSTA,-20.3300,-40.2850,B,K,local,,Vila Velha
 ITAPUÃ,-20.3520,-40.2870,B,K,local,,Vila Velha
-ITAPARICA,-20.3770,-40.2970,B,K,local,,Vila Velha
+ITAPARICA,-20.3770,-40.2970,B,K,local,facing=100,Vila Velha
 INTERLAGOS,-20.4180,-40.3350,B,L,local,,Vila Velha
 BARRA DO JUCU,-20.4285,-40.3252,B,K,osm:relation/1864814,,posición OSM
 PONTA DA FRUTA,-20.5210,-40.3720,B,K,local,,

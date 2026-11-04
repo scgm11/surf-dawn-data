@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 ATACAMES,0.8700,-79.8500,B,L,local,,Esmeraldas
-MOMPICHE,0.5072,-80.0215,P,K,osm:node/249596749,top,posición OSM
+MOMPICHE,0.5072,-80.0215,P,K,osm:node/249596749,top swell=285,posición OSM
 CANOA,-0.4640,-80.4590,B,K,local,,Manabí
 MURCIÉLAGO,-0.9390,-80.7330,B,L,local,,Manta
 SAN LORENZO,-1.0540,-80.8850,P,L,local,,Manta

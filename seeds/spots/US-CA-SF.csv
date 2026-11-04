@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-FORT POINT,37.8105,-122.4772,P,K,local,top,
+FORT POINT,37.8105,-122.4772,P,K,local,top swell=270,
 BAKER BEACH,37.7935,-122.4835,B,K,local,,
 KELLY'S COVE,37.7720,-122.5140,B,K,local,,Ocean Beach
 OCEAN BEACH,37.7600,-122.5135,B,K,local,top,

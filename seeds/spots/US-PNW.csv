@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-HOBUCK,48.2990,-124.6730,B,L,local,,Neah Bay
+HOBUCK,48.2990,-124.6730,B,L,local,facing=300,Neah Bay
 RIALTO,47.9215,-124.6400,B,K,local,,La Push
 SECOND BEACH,47.8770,-124.6385,B,K,local,,La Push
 WESTPORT JETTY,46.9100,-124.1400,B,L,local,facing=265,orientación a mano (la calculada miraba a otra costa)
