@@ -1,12 +1,11 @@
 # Picos: reporte del último build
 
-213 regiones, 2511 picos. Errores: 0. Avisos: 95.
+213 regiones, 2511 picos. Errores: 0. Avisos: 93.
 
 ## Avisos
 
 - AR-MDP/PLAYA GRANDE: no direction open to the sea, moved 1372 m from the seed (facing 129 -> 139)
 - BR-SC-NOR/ILHA DO MEL: no direction open to the sea, moved 1019 m from the seed (facing 110 -> 110)
-- BR-SP/SUNUNGA: no direction open to the sea, moved 546 m from the seed (facing 180 -> 180)
 - BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1976 m from the seed (facing 322 -> 269)
 - BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea, moved 1384 m from the seed (facing 160 -> 160)
 - BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from the seed (facing 150 -> 183)
@@ -73,7 +72,7 @@
 - ID-JAV-W/SAWARNA: no direction open to the sea, moved 1754 m from the seed (facing 248 -> 171)
 - ID-LOM/EKAS: no direction open to the sea, moved 1418 m from the seed (facing 311 -> 195)
 - MV-SMA/COCOA CORNER: no direction open to the sea, moved 1956 m from the seed (facing 270 -> 73)
-- JP-SHO/ZUSHI: no direction open to the sea, moved 1845 m from the seed (facing 260 -> 260)
+- JP-SHO/ZUSHI: no direction open to the sea, moved 1262 m from the seed (facing 225 -> 225)
 - JP-IZU/SHIRAHAMA: no direction open to the sea, moved 1287 m from the seed (facing 93 -> 79)
 - JP-IBA/HASAKI: no direction open to the sea, moved 1739 m from the seed (facing 2 -> 95)
 - JP-IBA/KASHIMA: no direction open to the sea, moved 1945 m from the seed (facing 25 -> 13)
@@ -96,7 +95,6 @@
 - IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 - IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the seed (facing 270 -> 270)
 - IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
-- NO-N/HAUKLAND: no direction open to the sea, moved 1411 m from the seed (facing 260 -> 260)
 - NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 - IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
 
@@ -115,7 +113,7 @@
 | BR-SC-FLN | 14 | 968 | ncep_gfswave025 | gfs_seamless | 1 | — | 11 |
 | BR-SC-SUL | 6 | 528 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | BR-SC-NOR | 20 | 1296 | ncep_gfswave025 | gfs_seamless | 3 | 582 m | 4 |
-| BR-SP | 29 | 1560 | ncep_gfswave025 | gfs_seamless | 3 | 673 m | 0 |
+| BR-SP | 29 | 1555 | ncep_gfswave025 | gfs_seamless | 3 | 673 m | 0 |
 | BR-RJ | 17 | 950 | ncep_gfswave025 | gfs_seamless | 1 | 156 m | 0 |
 | BR-RJL | 20 | 1241 | ncep_gfswave025 | gfs_seamless | 3 | 594 m | 0 |
 | BR-ES | 19 | 1159 | ncep_gfswave025 | gfs_seamless | 3 | 640 m | 5 |
@@ -228,7 +226,7 @@
 | ID-BAL-E | 12 | 824 | ncep_gfswave016 | gfs_seamless | 1 | 841 m | 0 |
 | ID-JAV-E | 7 | 587 | ncep_gfswave016 | gfs_seamless | 2 | 541 m | 0 |
 | ID-JAV-W | 7 | 598 | ncep_gfswave016 | gfs_seamless | 2 | 1165 m | 0 |
-| ID-LOM | 14 | 938 | ncep_gfswave016 | gfs_seamless | 3 | 464 m | 0 |
+| ID-LOM | 14 | 939 | ncep_gfswave016 | gfs_seamless | 3 | 464 m | 0 |
 | ID-SBW | 9 | 670 | ncep_gfswave016 | gfs_seamless | 2 | 577 m | 0 |
 | ID-SMB | 2 | 257 | ncep_gfswave016 | gfs_seamless | 1 | 993 m | 0 |
 | ID-ROT | 4 | 350 | ncep_gfswave016 | gfs_seamless | 1 | 545 m | 0 |
@@ -245,7 +243,7 @@
 | MV-SOU | 2 | 301 | ncep_gfswave016 | gfs_seamless | 1 | 258 m | 0 |
 | MV-CEN | 1 | 260 | ncep_gfswave016 | gfs_seamless | 1 | 1063 m | 0 |
 | JP-CHI | 8 | 530 | ncep_gfswave016 | gfs_seamless | 2 | 716 m | 0 |
-| JP-SHO | 9 | 561 | ncep_gfswave016 | gfs_seamless | 1 | 421 m | 0 |
+| JP-SHO | 9 | 560 | ncep_gfswave016 | gfs_seamless | 1 | 421 m | 0 |
 | JP-IZU | 4 | 359 | ncep_gfswave016 | gfs_seamless | 2 | 1012 m | 0 |
 | JP-IBA | 5 | 486 | ncep_gfswave016 | gfs_seamless | 3 | 946 m | 0 |
 | JP-SHK | 3 | 291 | ncep_gfswave016 | gfs_seamless | 1 | 494 m | 0 |
@@ -310,7 +308,7 @@
 | IE-SW | 12 | 803 | ecmwf_wam | gfs_seamless | 3 | 199 m | 0 |
 | IE-SE | 10 | 730 | ncep_gfswave016 | gfs_seamless | 3 | 696 m | 0 |
 | NO-S | 3 | 418 | ncep_gfswave025 | gfs_seamless | 2 | 406 m | 1 |
-| NO-N | 3 | 348 | ncep_gfswave025 | gfs_seamless | 2 | 177 m | 1 |
+| NO-N | 3 | 346 | ncep_gfswave025 | gfs_seamless | 2 | 177 m | 1 |
 | DK-ALL | 5 | 427 | ncep_gfswave025 | gfs_seamless | 2 | 301 m | 0 |
 | NL-ALL | 11 | 792 | ncep_gfswave025 | gfs_seamless | 3 | 425 m | 2 |
 | DE-ALL | 4 | 364 | ncep_gfswave025 | gfs_seamless | 1 | 779 m | 0 |

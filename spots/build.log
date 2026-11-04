@@ -9,7 +9,7 @@ BR-RS-SUL    2 spots   334 bytes  v54fd46
 BR-SC-FLN   14 spots   968 bytes  v6e9894
 BR-SC-SUL    6 spots   528 bytes  vcf3c33
 BR-SC-NOR   20 spots  1296 bytes  v78381d
-BR-SP       29 spots  1560 bytes  v10659e
+BR-SP       29 spots  1555 bytes  vc75c8b
 BR-RJ       17 spots   950 bytes  vb1eef2
 BR-RJL      20 spots  1241 bytes  v753eb4
 BR-ES       19 spots  1159 bytes  v10ca0c
@@ -122,7 +122,7 @@ ID-BAL-W    18 spots  1131 bytes  v2e5246
 ID-BAL-E    12 spots   824 bytes  v5d353f
 ID-JAV-E     7 spots   587 bytes  vf44cca
 ID-JAV-W     7 spots   598 bytes  vc50fea
-ID-LOM      14 spots   938 bytes  vd8f2a8
+ID-LOM      14 spots   939 bytes  v9be8b5
 ID-SBW       9 spots   670 bytes  vca4caf
 ID-SMB       2 spots   257 bytes  v6416f5
 ID-ROT       4 spots   350 bytes  vee783f
@@ -139,7 +139,7 @@ MV-SMA       3 spots   349 bytes  v9685a2
 MV-SOU       2 spots   301 bytes  va2d1ca
 MV-CEN       1 spots   260 bytes  v8319d8
 JP-CHI       8 spots   530 bytes  v8c996a
-JP-SHO       9 spots   561 bytes  vdc8db7
+JP-SHO       9 spots   560 bytes  v97f24b
 JP-IZU       4 spots   359 bytes  v53dae3
 JP-IBA       5 spots   486 bytes  vd39523
 JP-SHK       3 spots   291 bytes  v0c051f
@@ -204,7 +204,7 @@ IE-NW        9 spots   812 bytes  v4a362a
 IE-SW       12 spots   803 bytes  v13d68b
 IE-SE       10 spots   730 bytes  v021063
 NO-S         3 spots   418 bytes  vd98124
-NO-N         3 spots   348 bytes  v908e85
+NO-N         3 spots   346 bytes  v19de1e
 DK-ALL       5 spots   427 bytes  v1d4752
 NL-ALL      11 spots   792 bytes  v70fb61
 DE-ALL       4 spots   364 bytes  v610bcc
@@ -213,7 +213,6 @@ IT-SAR       4 spots   392 bytes  v74a190
 IS-ALL       3 spots   362 bytes  vd80443
 warning: AR-MDP/PLAYA GRANDE: no direction open to the sea, moved 1372 m from the seed (facing 129 -> 139)
 warning: BR-SC-NOR/ILHA DO MEL: no direction open to the sea, moved 1019 m from the seed (facing 110 -> 110)
-warning: BR-SP/SUNUNGA: no direction open to the sea, moved 546 m from the seed (facing 180 -> 180)
 warning: BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1976 m from the seed (facing 322 -> 269)
 warning: BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea, moved 1384 m from the seed (facing 160 -> 160)
 warning: BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from the seed (facing 150 -> 183)
@@ -280,7 +279,7 @@ warning: ID-BAL-E/SERANGAN: no direction open to the sea, moved 1054 m from the 
 warning: ID-JAV-W/SAWARNA: no direction open to the sea, moved 1754 m from the seed (facing 248 -> 171)
 warning: ID-LOM/EKAS: no direction open to the sea, moved 1418 m from the seed (facing 311 -> 195)
 warning: MV-SMA/COCOA CORNER: no direction open to the sea, moved 1956 m from the seed (facing 270 -> 73)
-warning: JP-SHO/ZUSHI: no direction open to the sea, moved 1845 m from the seed (facing 260 -> 260)
+warning: JP-SHO/ZUSHI: no direction open to the sea, moved 1262 m from the seed (facing 225 -> 225)
 warning: JP-IZU/SHIRAHAMA: no direction open to the sea, moved 1287 m from the seed (facing 93 -> 79)
 warning: JP-IBA/HASAKI: no direction open to the sea, moved 1739 m from the seed (facing 2 -> 95)
 warning: JP-IBA/KASHIMA: no direction open to the sea, moved 1945 m from the seed (facing 25 -> 13)
@@ -303,7 +302,6 @@ warning: GB-SCO/BELHAVEN BAY: no direction open to the sea, moved 1297 m from th
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the seed (facing 270 -> 270)
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
-warning: NO-N/HAUKLAND: no direction open to the sea, moved 1411 m from the seed (facing 260 -> 260)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-213 regions, 2511 spots, 0 errors, 95 warnings
+213 regions, 2511 spots, 0 errors, 93 warnings
