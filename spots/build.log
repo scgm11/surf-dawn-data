@@ -9,25 +9,25 @@ BR-RS-SUL    2 spots   334 bytes  v54fd46
 BR-SC-FLN   14 spots   968 bytes  v6e9894
 BR-SC-SUL    6 spots   528 bytes  vcf3c33
 BR-SC-NOR   20 spots  1296 bytes  v78381d
-BR-SP       29 spots  1555 bytes  vc75c8b
+BR-SP       29 spots  1560 bytes  v10659e
 BR-RJ       17 spots   950 bytes  vb1eef2
 BR-RJL      20 spots  1241 bytes  v753eb4
-BR-ES       19 spots  1158 bytes  vc7caf6
+BR-ES       19 spots  1159 bytes  v10ca0c
 BR-BA       21 spots  1187 bytes  vff7689
 BR-NE-CE    13 spots   841 bytes  vde6a2d
 BR-NE-RN    13 spots   906 bytes  ve31abd
 BR-NE-PE    14 spots   920 bytes  vdca32b
 BR-NOR       5 spots   436 bytes  v07244c
 CL-NOR      11 spots   818 bytes  v10657f
-CL-CEN      20 spots  1438 bytes  v7fc402
+CL-CEN      20 spots  1439 bytes  v04ae8e
 CL-PIC      12 spots   957 bytes  vdc7dd9
 CL-MAU      14 spots  1032 bytes  vd2572a
 CL-SUR      11 spots   793 bytes  vc77333
-PE-NOR      10 spots   749 bytes  ve7ea89
+PE-NOR      10 spots   803 bytes  v3553f7
 PE-LLB       7 spots   672 bytes  vdddd70
 PE-LIM      15 spots  1171 bytes  v84125f
 PE-SUR       5 spots   480 bytes  v4cea2c
-EC-COS      13 spots   951 bytes  v9507ff
+EC-COS      13 spots   950 bytes  v961531
 EC-GAL       4 spots   387 bytes  v56aff8
 CO-PAC       6 spots   523 bytes  v9aecaa
 CO-CAR       3 spots   403 bytes  vda3c7e
@@ -35,13 +35,13 @@ VE-ALL       2 spots   276 bytes  v0b7dda
 PA-PAC       7 spots   601 bytes  v53a662
 PA-BDT       4 spots   367 bytes  v200f77
 CR-GUA      12 spots   863 bytes  v293cc2
-CR-NIC      11 spots   711 bytes  vad370c
+CR-NIC      11 spots   711 bytes  v139e01
 CR-PAC      10 spots   681 bytes  ve49502
 CR-OSA       4 spots   420 bytes  v8ee1b5
 CR-CAR       5 spots   486 bytes  v6cc429
 NI-RIV       8 spots   559 bytes  vbc877f
 NI-NW        4 spots   442 bytes  v12fc5c
-SV-LIB       8 spots   514 bytes  vf7d950
+SV-LIB       8 spots   560 bytes  vb4af7e
 SV-ORI       4 spots   421 bytes  vfb2d06
 GT-PAC       4 spots   447 bytes  vc87438
 MX-OAX      13 spots   924 bytes  v0c76a1
@@ -53,21 +53,21 @@ MX-BCN       4 spots   420 bytes  vdf410a
 MX-CAR       3 spots   355 bytes  va000f5
 PR-NW       15 spots  1023 bytes  v31d48e
 PR-N         8 spots   677 bytes  vd4688c
-BB-ALL       8 spots   589 bytes  ve0d25b
+BB-ALL       8 spots   586 bytes  v3a7a72
 DO-ALL       2 spots   287 bytes  ve961d6
 GP-ALL       3 spots   317 bytes  v580315
 MQ-ALL       3 spots   313 bytes  va18308
 BS-ALL       1 spots   218 bytes  vcfcf81
-TT-ALL       4 spots   424 bytes  vfdb7c3
+TT-ALL       4 spots   450 bytes  v671f0c
 US-CA-SD    38 spots  2129 bytes  v7f7045
 US-CA-OC    32 spots  1813 bytes  ved5131
 US-CA-LA    23 spots  1480 bytes  v0a9fe7
 US-CA-SB    27 spots  1695 bytes  v037485
-US-CA-CEN   16 spots  1093 bytes  vc5315e
+US-CA-CEN   16 spots  1095 bytes  vfdc1f5
 US-CA-SC    30 spots  1878 bytes  veb9b6d
-US-CA-SF    29 spots  1863 bytes  vf72015
-US-CA-NOR   25 spots  1509 bytes  v942fc1
-US-PNW      33 spots  1886 bytes  v46c5e3
+US-CA-SF    29 spots  1862 bytes  v307b6b
+US-CA-NOR   25 spots  1509 bytes  v424425
+US-PNW      33 spots  1887 bytes  v3bc7d2
 US-GULF     13 spots   844 bytes  v7bf41a
 US-FL       46 spots  2399 bytes  vacb692
 US-FL-PAN    6 spots   616 bytes  v3a7df4
@@ -76,11 +76,11 @@ US-SC-GA    10 spots   776 bytes  v4fbce1
 US-MID      11 spots   845 bytes  v344e50
 US-NE       60 spots  3103 bytes  v48dfc7
 US-HI-OAN   21 spots  1211 bytes  v06ece6
-US-HI-OAS   25 spots  1449 bytes  v3427b8
-US-HI-MAU   21 spots  1184 bytes  vb9b14a
-US-HI-KAU   21 spots  1139 bytes  vd1fa99
+US-HI-OAS   25 spots  1576 bytes  v3e3383
+US-HI-MAU   21 spots  1295 bytes  vb66769
+US-HI-KAU   21 spots  1250 bytes  vf7c42d
 US-HI-BIG   15 spots  1049 bytes  vf2c259
-CA-BC-VI    14 spots  1017 bytes  v5c33c0
+CA-BC-VI    14 spots  1022 bytes  v6902b6
 CA-NS       11 spots   800 bytes  vf848b3
 AU-QLD-SC   27 spots  1634 bytes  va7f255
 AU-QLD-GC   24 spots  1418 bytes  v661eb0
@@ -92,7 +92,7 @@ AU-NSW-SC   31 spots  1688 bytes  v2b64cc
 AU-VIC-SC   20 spots  1267 bytes  v4deb9d
 AU-VIC-PI   18 spots  1186 bytes  v736e84
 AU-VIC-W     9 spots   731 bytes  v85d7b0
-AU-TAS      12 spots   853 bytes  v5531ec
+AU-TAS      12 spots   854 bytes  v9232a2
 AU-SA       14 spots   961 bytes  ve6a527
 AU-SA-EYR    3 spots   344 bytes  ve918f3
 AU-WA-MR    32 spots  2350 bytes  v7f90ec
@@ -111,10 +111,10 @@ NZ-OTA      13 spots   983 bytes  v7cf101
 NZ-WC        4 spots   406 bytes  v1ca2d3
 FJ-MAM       6 spots   487 bytes  v81eaf9
 FJ-SOU       2 spots   366 bytes  vefc3fd
-PF-TAH       8 spots   672 bytes  v5d5799
+PF-TAH       8 spots   671 bytes  vf14354
 PF-ISL       2 spots   333 bytes  v057cec
 WS-ALL       6 spots   560 bytes  veb7fd7
-TO-ALL       6 spots   444 bytes  vad34b3
+TO-ALL       6 spots   479 bytes  va2bbf7
 VU-ALL       5 spots   448 bytes  v752ba0
 PG-ALL       2 spots   341 bytes  vebb728
 ID-BAL-BUK  16 spots  1001 bytes  v3f678e
@@ -122,7 +122,7 @@ ID-BAL-W    18 spots  1131 bytes  v2e5246
 ID-BAL-E    12 spots   824 bytes  v5d353f
 ID-JAV-E     7 spots   587 bytes  vf44cca
 ID-JAV-W     7 spots   598 bytes  vc50fea
-ID-LOM      14 spots   938 bytes  v537f63
+ID-LOM      14 spots   938 bytes  vd8f2a8
 ID-SBW       9 spots   670 bytes  vca4caf
 ID-SMB       2 spots   257 bytes  v6416f5
 ID-ROT       4 spots   350 bytes  vee783f
@@ -132,18 +132,18 @@ ID-KRU       4 spots   428 bytes  vc8a931
 PH-SIA       8 spots   558 bytes  ve79439
 PH-LUZ       5 spots   473 bytes  vf4a5a7
 PH-EAS       3 spots   420 bytes  v0aa934
-LK-E         8 spots   518 bytes  v6afc54
+LK-E         8 spots   564 bytes  v2b74c8
 LK-S        11 spots   736 bytes  vde88f5
 MV-NMA       6 spots   441 bytes  vb13d23
-MV-SMA       3 spots   350 bytes  v8455f9
+MV-SMA       3 spots   349 bytes  v9685a2
 MV-SOU       2 spots   301 bytes  va2d1ca
 MV-CEN       1 spots   260 bytes  v8319d8
 JP-CHI       8 spots   530 bytes  v8c996a
-JP-SHO       9 spots   560 bytes  vd6c32d
+JP-SHO       9 spots   561 bytes  vdc8db7
 JP-IZU       4 spots   359 bytes  v53dae3
 JP-IBA       5 spots   486 bytes  vd39523
 JP-SHK       3 spots   291 bytes  v0c051f
-JP-KYU       2 spots   297 bytes  v6bb93c
+JP-KYU       2 spots   291 bytes  v1974ce
 TW-E         4 spots   414 bytes  vf64bac
 TW-NE        6 spots   494 bytes  vd5b381
 IN-W         3 spots   355 bytes  v9a0e6d
@@ -166,7 +166,7 @@ MA-N         6 spots   556 bytes  vc88ada
 MA-S         6 spots   517 bytes  v9d5a1d
 SN-ALL       5 spots   380 bytes  vde7337
 LR-ALL       3 spots   357 bytes  v822ac8
-GH-ALL       3 spots   327 bytes  v85bcd3
+GH-ALL       3 spots   328 bytes  v3029d8
 MZ-S         3 spots   323 bytes  vfa82ab
 MZ-INH       3 spots   369 bytes  vd35242
 MG-ALL       3 spots   358 bytes  v0bc50a
@@ -179,12 +179,12 @@ FR-GIR      18 spots  1139 bytes  va5e1c9
 FR-VEN      12 spots   854 bytes  v82d18f
 FR-BRE      15 spots   936 bytes  v64c283
 ES-PV       26 spots  1366 bytes  v6720fb
-ES-CAN      14 spots   818 bytes  v61dc98
-ES-AST      14 spots   869 bytes  v8a7bda
+ES-CAN      14 spots   819 bytes  v651d89
+ES-AST      14 spots   869 bytes  v3608a7
 ES-GAL      18 spots  1032 bytes  vd8d6d3
 ES-AND      15 spots   925 bytes  v5baf2b
 ES-CN-E     11 spots   874 bytes  v18fc33
-ES-CN-W     17 spots  1112 bytes  v4c920c
+ES-CN-W     17 spots  1112 bytes  v1a339b
 PT-NOR      19 spots  1069 bytes  v70aab8
 PT-CEN      20 spots  1233 bytes  v7389b0
 PT-PEN      12 spots   733 bytes  vc350ed
@@ -193,7 +193,7 @@ PT-LIS      15 spots   870 bytes  v6e3a87
 PT-ALG      18 spots  1084 bytes  v1c02d3
 PT-AZO       7 spots   565 bytes  v82eee3
 PT-MAD       8 spots   586 bytes  v490c29
-GB-CON      28 spots  1549 bytes  vfda87f
+GB-CON      28 spots  1550 bytes  v1716a8
 GB-DEV       9 spots   645 bytes  vfb1994
 GB-SOU       3 spots   405 bytes  v66ebd9
 GB-WAL      21 spots  1298 bytes  ve168a2
@@ -204,7 +204,7 @@ IE-NW        9 spots   812 bytes  v4a362a
 IE-SW       12 spots   803 bytes  v13d68b
 IE-SE       10 spots   730 bytes  v021063
 NO-S         3 spots   418 bytes  vd98124
-NO-N         3 spots   346 bytes  v19de1e
+NO-N         3 spots   348 bytes  v908e85
 DK-ALL       5 spots   427 bytes  v1d4752
 NL-ALL      11 spots   792 bytes  v70fb61
 DE-ALL       4 spots   364 bytes  v610bcc
@@ -213,6 +213,7 @@ IT-SAR       4 spots   392 bytes  v74a190
 IS-ALL       3 spots   362 bytes  vd80443
 warning: AR-MDP/PLAYA GRANDE: no direction open to the sea, moved 1372 m from the seed (facing 129 -> 139)
 warning: BR-SC-NOR/ILHA DO MEL: no direction open to the sea, moved 1019 m from the seed (facing 110 -> 110)
+warning: BR-SP/SUNUNGA: no direction open to the sea, moved 546 m from the seed (facing 180 -> 180)
 warning: BR-SP/ILHA COMPRIDA: no direction open to the sea, moved 1976 m from the seed (facing 322 -> 269)
 warning: BR-RJL/PRAINHAS DO PONTAL: no direction open to the sea, moved 1384 m from the seed (facing 160 -> 160)
 warning: BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from the seed (facing 150 -> 183)
@@ -255,6 +256,7 @@ warning: US-NE/MANASQUAN INLET: no direction open to the sea, moved 226 m from t
 warning: US-NE/ISLAND BEACH: no direction open to the sea, moved 508 m from the seed (facing 256 -> 98)
 warning: US-NE/BEACH HAVEN: no direction open to the sea, moved 411 m from the seed (facing 276 -> 124)
 warning: CA-BC-VI/MACKENZIE BEACH: no direction open to the sea, moved 500 m from the seed (facing 222 -> 180)
+warning: CA-BC-VI/COX BAY: no direction open to the sea, moved 990 m from the seed (facing 260 -> 260)
 warning: CA-BC-VI/SCHOONER COVE: no direction open to the sea from facing 44: check the facing (no shelter)
 warning: CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1903 m from the seed (facing 111 -> 217)
 warning: CA-NS/MARTINIQUE BEACH: no direction open to the sea, moved 980 m from the seed (facing 78 -> 166)
@@ -278,6 +280,7 @@ warning: ID-BAL-E/SERANGAN: no direction open to the sea, moved 1054 m from the 
 warning: ID-JAV-W/SAWARNA: no direction open to the sea, moved 1754 m from the seed (facing 248 -> 171)
 warning: ID-LOM/EKAS: no direction open to the sea, moved 1418 m from the seed (facing 311 -> 195)
 warning: MV-SMA/COCOA CORNER: no direction open to the sea, moved 1956 m from the seed (facing 270 -> 73)
+warning: JP-SHO/ZUSHI: no direction open to the sea, moved 1845 m from the seed (facing 260 -> 260)
 warning: JP-IZU/SHIRAHAMA: no direction open to the sea, moved 1287 m from the seed (facing 93 -> 79)
 warning: JP-IBA/HASAKI: no direction open to the sea, moved 1739 m from the seed (facing 2 -> 95)
 warning: JP-IBA/KASHIMA: no direction open to the sea, moved 1945 m from the seed (facing 25 -> 13)
@@ -300,6 +303,7 @@ warning: GB-SCO/BELHAVEN BAY: no direction open to the sea, moved 1297 m from th
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the seed (facing 270 -> 270)
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
+warning: NO-N/HAUKLAND: no direction open to the sea, moved 1411 m from the seed (facing 260 -> 260)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-213 regions, 2511 spots, 0 errors, 91 warnings
+213 regions, 2511 spots, 0 errors, 95 warnings
