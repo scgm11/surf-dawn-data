@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-04 15:02 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-04 15:31 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -34,7 +34,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | noaa-9414290 SAN FRANCISCO (Golden Gate), CA | 278 cm | 6.6 | 1.02 |
 | noaa-8518750 NEW YORK (The Battery), NY | 222 cm | 19.6 | 0.85 |
 | noaa-8724580 KEY WEST, FL | 98 cm | 11.3 | 0.96 |
-| noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA | — | — | https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&ap |
+| noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA | 522 cm | 137.1 | 0.84 |
 | jma-wn 稚内 (JMA WN) | 49 cm | 7.0 | 0.74 |
 | jma-ke 枝幸 (JMA KE) | 133 cm | 5.5 | 0.86 |
 | jma-a0 紋別 (JMA A0) | 161 cm | 4.8 | 0.97 |
@@ -525,7 +525,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### BR-SP — São Paulo (29 picos)
 
-- `ticon-752b4c` TICON-3 23.500S 45.117W (gesla.cmems) — TICON-3, misma costa: 16 picos a 1.3–55 km, radio 66 km (niveles 2,4)
+- `ticon-752b4c` TICON-3 23.500S 45.117W (gesla.cmems) — TICON-3, misma costa: 16 picos a 1.7–55 km, radio 66 km (niveles 2,4)
 - `ticon-757122` TICON-3 25.017S 47.925W (gesla.meds) — TICON-3, cruzando tierra: 1 picos a 49–49 km, radio 60 km
 - `got-9803e3` GOT5.6 23.760S 45.870W (BR-SP) — modelo global GOT5.6: 6 picos a 0.0–26 km, radio 36 km
 - Sin puerto (Open-Meteo): TOMBO, ASTÚRIAS, PITANGUEIRAS, ENSEADA, PRAIA GRANDE SP, ITANHAÉM
@@ -1586,7 +1586,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### ES-GAL — Galicia (18 picos)
 
-- `ticon-67d63b` TICON-3 43.367N 8.400W (gesla.usgs) — TICON-3, misma costa: 6 picos a 0.5–51 km, radio 61 km (niveles 2,4)
+- `ticon-67d63b` TICON-3 43.367N 8.400W (gesla.usgs) — TICON-3, misma costa: 6 picos a 0.5–51 km, radio 62 km (niveles 2,4)
 - `ticon-91c7f2` TICON-3 42.238N 8.730W (gesla.noaa) — TICON-3, misma costa: 6 picos a 14–102 km, radio 112 km (niveles 2,4)
 - `ticon-283bad` TICON-3 43.463N 8.326W (gesla.meds) — TICON-3, misma costa: 6 picos a 5.0–35 km, radio 46 km (niveles 2,4)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BARRAÑAN → ticon-67d63b, BALDAIO → ticon-67d63b, RAZO → ticon-67d63b
@@ -1747,7 +1747,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 ### NO-N — Lofoten (3 picos)
 
 - `ticon-448fcc` TICON-3 68.213N 14.482E (gesla.uhslc) — TICON-3, misma costa: 2 picos a 38–54 km, radio 65 km (niveles 2,4)
-- `ticon-90ea2b` TICON-3 67.292N 14.400E (gesla.usgs) — TICON-3, misma costa: 1 picos a 108–108 km, radio 118 km
+- `ticon-90ea2b` TICON-3 67.292N 14.400E (gesla.usgs) — TICON-3, misma costa: 1 picos a 107–107 km, radio 118 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): HAUKLAND → ticon-448fcc
 - Descartadas: `ticon-90ea2b` 114 km, cruza 18 km de tierra
 
