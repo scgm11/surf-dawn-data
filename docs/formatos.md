@@ -46,7 +46,8 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
 ```json
 {"z":[["UY-ROC","ncep_gfswave025","gfs_seamless"]],
  "p":[["la-paloma",-34.6533,-54.1417,135,-10800]],
- "s":[["EL FARO",-34.667,-54.1608,206,0,0],["PLAYA X",-34.7,-54.2,180,0,-1,-34.75,-54.2]]}
+ "s":[["EL FARO",-34.667,-54.1608,206,0,0],["PLAYA X",-34.7,-54.2,180,0,-1,-34.75,-54.2]],
+ "w":[[1.8,13.0]]}
 ```
 
 `I = piso(lat × 5)`, `J = piso(lon × 5)`. Lo que necesitan los campos de datos Marea y Olas y viento
@@ -56,7 +57,9 @@ de 1 KB no entra (una región llega a 3 KB). Los picos a menos de 10 km de la ce
 primero los de adentro, después los más cercanos al centro), cada uno
 `[NOMBRE, lat, lon, orientación, índice en z, índice en p o -1, (lat ola, lon ola)]`; `z` son sus
 regiones (`[región, modelo de olas, modelo de viento]`) y `p` sus puertos de marea, elegidos acá
-como en el reloj (`TideTable.portFor`: el más cercano cuyo radio lo cubre). Una celda sin picos cerca
+como en el reloj (`TideTable.portFor`: el más cercano cuyo radio lo cubre); `w`, uno por fila de `z`, la escala
+de las olas de cada región (su `w`, o `null`), aparte de `z` porque los campos anteriores solo aceptan filas
+de 3 ahí. Una celda sin picos cerca
 no tiene archivo (404). Los arma `tools/build_cells.py` desde las regiones después de cada corrida
 de las zonas.
 
@@ -68,7 +71,8 @@ de las zonas.
  "p":[["mdp",-38.04,-57.53,80,0]],
  "s":[["BIOLOGÍA",-38.03,-57.53,105,1],
       ["PLAYA GRANDE",-38.02,-57.53,110,1,-38.0,-57.25]],
- "x":[129140163,129127395]}
+ "x":[129140163,129127395],
+ "w":[1.48,13.0]}
 ```
 
 - `v`: versión (hash corto del contenido). Cambia si cambia cualquier cosa de la región.
@@ -93,6 +97,15 @@ de las zonas.
   lo usa en el puntaje: viento que cruza tierra cerca levanta poco picado, y swell con tierra en
   el camino llega cortado. Va aparte de `s` porque los relojes anteriores rechazan filas que no
   tengan 5 o 7 valores.
+- `w` (opcional): la escala de las olas de la región, `[altura m, período s]` donde el puntaje de
+  las olas de las apps llega a todo (`Score.wave` en surf-dawn: con la del mundo, 1,8 m y 13 s).
+  El 88 % de la altura que se pasa el 10 % de las horas con luz (07–18 h) de un año y 1,7 s más que
+  el período que se pasa el 10 % de las horas, en el punto de olas del pico del medio de la región
+  y en su modelo de olas (GFS Wave 0,25° donde es ECMWF WAM, que no tiene historia en Open-Meteo):
+  así la de Rocha (UY-ROC) es la del mundo. Lo calcula `tools/build_scale.py` en
+  `seeds/scale.csv` (un año pesa 26 llamadas de la API gratis: se corre a mano, no en cada build) y
+  `tools/build_zones.py` lo copia acá. Los niveles de la energía del mar van con ella. Las apps
+  anteriores no la leen; sin `w`, la del mundo.
 - El id de un pico en el reloj es `<REGIÓN>/<NOMBRE>`.
 
 ## Mareas: `tide/`

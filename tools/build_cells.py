@@ -14,7 +14,11 @@ near have no file (404: no spots around there).
 
     {"z": [[region, wave model, wind model]],
      "p": [[port key, lat, lon, radius km, UTC offset s]],
-     "s": [[NAME, lat, lon, facing, z index, p index or -1, (wave lat, wave lon)]]}
+     "s": [[NAME, lat, lon, facing, z index, p index or -1, (wave lat, wave lon)]],
+     "w": [[height top m, period top s] or null]}
+
+"w", one per row of "z", is each region's wave scale (its "w", tools/build_scale.py), apart from
+"z": the fields before it take rows of 3 there.
 
     python3 tools/build_cells.py
 """
@@ -76,7 +80,7 @@ def main():
     for path in sorted(glob.glob(os.path.join(SPOTS, "r", "*.json"))):
         z = json.load(open(path, encoding="utf-8"))
         for r in z["s"]:
-            spots.append({"z": z["id"], "m": z["m"], "ports": z["p"], "name": r[0], "lat": r[1], "lon": r[2],
+            spots.append({"z": z["id"], "m": z["m"], "sc": z.get("w"), "ports": z["p"], "name": r[0], "lat": r[1], "lon": r[2],
                           "f": r[3], "w": r[5:7] if len(r) >= 7 and r[5] is not None else None,
                           "p": port_for(z["p"], r[1], r[2])})
     cells = {}
@@ -91,6 +95,7 @@ def main():
         ss = sorted(ss, key=lambda s: rank(c, s))[:MAX_SPOTS]
         zs = list(dict.fromkeys(s["z"] for s in ss))
         ms = {s["z"]: s["m"] for s in ss}
+        scs = {s["z"]: s["sc"] for s in ss}
         ports = list(dict.fromkeys(tuple(s["ports"][s["p"]]) for s in ss if s["p"] >= 0))
         rows = []
         for s in ss:
@@ -98,6 +103,8 @@ def main():
             row = [s["name"], round(s["lat"], 4), round(s["lon"], 4), s["f"], zs.index(s["z"]), pi]
             rows.append(row + list(s["w"]) if s["w"] else row)
         doc = {"z": [[z, ms[z][0], ms[z][1]] for z in zs], "p": [list(p) for p in ports], "s": rows}
+        if any(scs[z] for z in zs):
+            doc["w"] = [scs[z] for z in zs]
         text = json.dumps(doc, separators=(",", ":"), ensure_ascii=False)
         open(os.path.join(out, "%d_%d.json" % c), "w", encoding="utf-8").write(text)
         sizes.append(len(text.encode("utf-8")))

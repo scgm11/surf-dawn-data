@@ -7,7 +7,8 @@ beach faces (tools/lib/osm.py, the rule tools/make_spots.py used), unless the se
 `nosnap` / `facing=`; the wave point when the region's wave model has land in the spot's
 cell (tools/lib/openmeteo.py, what tools/wave_points.py did); the break type from the seed;
 how open it is to the sea in each direction ("x", tools/lib/shelter.py: land that blocks the
-wind's chop or the swell), for every region, the frozen ones too; a spot with no direction open
+wind's chop or the swell), for every region, the frozen ones too; the region's wave scale ("w",
+seeds/scale.csv, written by tools/build_scale.py); a spot with no direction open
 to the sea (snapped to a river, a ria or a harbour) moves to the most open coast near its seed.
 Each region gets its Open-Meteo models (models.csv, else the default rule) and its tide
 ports (tide/regions.json, written by tools/tide/).
@@ -42,6 +43,21 @@ MAX_BYTES = 6144                     # per file: the face's background process h
 NEAR_KM = 25                         # Spots.RADIUS_KM on the watch: a region's circle reaches this far past its spots
 CELL = 10                            # degrees of a lookup cell (spots/g/)
 FROZEN = {"UY-CAN", "UY-MAL", "UY-ROC", "BR-SC-FLN", "BR-SC-SUL"}
+
+
+def read_scales():
+    """{region: [height top m, period top s]} of seeds/scale.csv (tools/build_scale.py)."""
+    path = os.path.join(ROOT, "seeds", "scale.csv")
+    if not os.path.exists(path):
+        return {}
+    with open(path, encoding="utf-8") as f:
+        rows = [l.strip().split(",") for l in f if l.strip()]
+    head = rows[0]
+    h, p = head.index("height"), head.index("period")
+    return {r[0]: [float(r[h]), float(r[p])] for r in rows[1:]}
+
+
+SCALES = read_scales()
 
 
 def read_ports():
@@ -196,9 +212,11 @@ def build_region(code, reg, country, models, ports, offline, rep):
         body["np"] = reg["name_pt"]                # apart from "n": the watches before it take two names
     if x is not None:
         body["x"] = x                              # apart from "s": the watches before it take rows of 5 or 7
+    if code in SCALES:
+        body["w"] = SCALES[code]                   # where its waves' score tops out (tools/build_scale.py)
     v = version(body)
     out = {"id": code, "v": v}
-    out.update({k: body[k] for k in ("c", "n", "np", "m", "p", "s", "x") if k in body})
+    out.update({k: body[k] for k in ("c", "n", "np", "m", "p", "s", "x", "w") if k in body})
     text = dump(out)
     size = len(text.encode("utf-8"))
     if size > MAX_BYTES:
