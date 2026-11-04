@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-04 14:31 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-04 15:02 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -34,7 +34,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | noaa-9414290 SAN FRANCISCO (Golden Gate), CA | 278 cm | 6.6 | 1.02 |
 | noaa-8518750 NEW YORK (The Battery), NY | 222 cm | 19.6 | 0.85 |
 | noaa-8724580 KEY WEST, FL | 98 cm | 11.3 | 0.96 |
-| noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA | 522 cm | 137.1 | 0.84 |
+| noaa-9447130 SEATTLE (Madison St.), Elliott Bay, WA | — | — | https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?product=predictions&ap |
 | jma-wn 稚内 (JMA WN) | 49 cm | 7.0 | 0.74 |
 | jma-ke 枝幸 (JMA KE) | 133 cm | 5.5 | 0.86 |
 | jma-a0 紋別 (JMA A0) | 161 cm | 4.8 | 0.97 |
