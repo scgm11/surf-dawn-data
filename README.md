@@ -52,6 +52,10 @@ está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regi
   La Paloma (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15).
 - **Santa Catarina:** la tábua de la **DHN** (Marinha do Brasil) para Imbituba, del PDF que publica la
   Epagri/CIRAM (`tools/ciram_tide.py`).
+- **El año que viene de esos cuatro**, hasta que salga su tabla oficial: un análisis armónico de este
+  año (con correcciones nodales) lo predice, en meses marcados `"ext": true` (`tools/tide/extend_official.py`,
+  en `tides.yml`; error del análisis de 2,6 a 4,3 cm). Sin eso, el último tramo de diciembre salía corto
+  y en enero el reloj quedaba con sus 30 armónicos. La tabla oficial los reemplaza cuando se corre.
 - **El resto** (`tools/tide/build_tides.py`): predicciones oficiales de **NOAA** (EE. UU. y sus
   territorios), **JMA** (Japón), **Marine Institute** (Irlanda) y **LINZ** (Nueva Zelanda); donde no
   hay, las constantes armónicas de **TICON-3** (mareógrafos GESLA-3) con correcciones nodales de pyTMD.

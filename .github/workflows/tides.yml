@@ -40,6 +40,8 @@ jobs:
         run: |
           set -o pipefail
           python3 tools/tide/build_tides.py 2>&1 | tee tide/build.log
+      - name: El año que viene de las tablas oficiales (SOHMA, DHN), hasta que salgan
+        run: python3 tools/tide/extend_official.py
       - name: Tramos para el campo Marea
         run: python3 tools/tide/chunks.py
       - name: Guardar caché
