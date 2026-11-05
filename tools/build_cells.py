@@ -6,7 +6,8 @@ A data field's background service has 32 KB on the watches before Connect IQ 4 (
 Pro, first MARQ...), and there an answer of much more than 1 KB does not fit once read: a
 region (spots/r/) goes up to 3 KB (US-NE, 60 spots). A cell file has what a field needs to
 find the spot nearest to it and fetch its data: the spots within MARGIN_KM of the cell (at
-most MAX_SPOTS, inside the cell first, then the nearest to its centre), each with its
+most MAX_SPOTS, inside the cell first, then the nearest to its centre, and fewer while the file
+is over MAX_BYTES), each with its
 region's models and the tide port that stands for it, chosen here as the watch does
 (TideTable.portFor: the nearest port whose radius covers the spot). Written from the
 regions after tools/build_zones.py (.github/workflows/zones.yml); the cells with no spot
@@ -39,6 +40,11 @@ SPOTS = os.path.join(ROOT, "spots")
 PER_DEG = 5                                   # cells per degree: 0.2°
 MARGIN_KM = 10
 MAX_SPOTS = 24
+# Measured 4/11/2026 in the simulator (surf-dawn tools/e2e_fields.py, fēnix 6 Pro, Marea): Bali's
+# cell (-44_576, 24 spots of 3 regions, 1351 bytes) came as -403, too big to read in the 32 KB
+# service, and the field said there were no spots near; Gold Coast's (1289 bytes) was read with
+# 3.7 KB left. The densest cells drop their last spots (the farthest outside the cell) to this.
+MAX_BYTES = 1100
 
 
 def km(lat1, lon1, lat2, lon2):
@@ -94,28 +100,38 @@ def main():
     shutil.rmtree(out, ignore_errors=True)
     os.makedirs(out)
     sizes = []
+    cut = 0
     for c, ss in sorted(cells.items()):
         ss = sorted(ss, key=lambda s: rank(c, s))[:MAX_SPOTS]
-        zs = list(dict.fromkeys(s["z"] for s in ss))
-        ms = {s["z"]: s["m"] for s in ss}
-        scs = {s["z"]: s["sc"] for s in ss}
-        ports = list(dict.fromkeys(tuple(s["ports"][s["p"]]) for s in ss if s["p"] >= 0))
-        rows = []
-        for s in ss:
-            pi = ports.index(tuple(s["ports"][s["p"]])) if s["p"] >= 0 else -1
-            row = [s["name"], round(s["lat"], 4), round(s["lon"], 4), s["f"], zs.index(s["z"]), pi]
-            rows.append(row + list(s["w"]) if s["w"] else row)
-        doc = {"z": [[z, ms[z][0], ms[z][1]] for z in zs], "p": [list(p) for p in ports], "s": rows}
-        if any(scs[z] for z in zs):
-            doc["w"] = [scs[z] for z in zs]
-        if any(s["sw"] is not None for s in ss):
-            doc["sw"] = [s["sw"] for s in ss]
-        text = json.dumps(doc, separators=(",", ":"), ensure_ascii=False)
+        text = cell_text(ss)
+        while len(text.encode("utf-8")) > MAX_BYTES and len(ss) > 1:
+            ss = ss[:-1]
+            text = cell_text(ss)
+            cut += 1
         open(os.path.join(out, "%d_%d.json" % c), "w", encoding="utf-8").write(text)
         sizes.append(len(text.encode("utf-8")))
     sizes.sort()
-    print("celdas: %d archivos de %d picos; mediana %d bytes, máximo %d" % (
-        len(sizes), len(spots), sizes[len(sizes) // 2], sizes[-1]))
+    print("celdas: %d archivos de %d picos; mediana %d bytes, máximo %d; %d picos de menos en las celdas de más de %d bytes" % (
+        len(sizes), len(spots), sizes[len(sizes) // 2], sizes[-1], cut, MAX_BYTES))
+
+
+def cell_text(ss):
+    """The cell file of spots ss (ranked), as JSON."""
+    zs = list(dict.fromkeys(s["z"] for s in ss))
+    ms = {s["z"]: s["m"] for s in ss}
+    scs = {s["z"]: s["sc"] for s in ss}
+    ports = list(dict.fromkeys(tuple(s["ports"][s["p"]]) for s in ss if s["p"] >= 0))
+    rows = []
+    for s in ss:
+        pi = ports.index(tuple(s["ports"][s["p"]])) if s["p"] >= 0 else -1
+        row = [s["name"], round(s["lat"], 4), round(s["lon"], 4), s["f"], zs.index(s["z"]), pi]
+        rows.append(row + list(s["w"]) if s["w"] else row)
+    doc = {"z": [[z, ms[z][0], ms[z][1]] for z in zs], "p": [list(p) for p in ports], "s": rows}
+    if any(scs[z] for z in zs):
+        doc["w"] = [scs[z] for z in zs]
+    if any(s["sw"] is not None for s in ss):
+        doc["sw"] = [s["sw"] for s in ss]
+    return json.dumps(doc, separators=(",", ":"), ensure_ascii=False)
 
 
 if __name__ == "__main__":

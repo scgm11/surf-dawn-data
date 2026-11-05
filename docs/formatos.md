@@ -54,7 +54,8 @@ Fila de región: `[código, país, nombre es, nombre en, lat, lon, radio km, pic
 para elegir el pico más cercano y bajar sus datos, sin la región entera: el servicio de fondo de un
 campo tiene 32 KB en los relojes anteriores a Connect IQ 4 (fēnix 6 Pro) y ahí una respuesta de más
 de 1 KB no entra (una región llega a 3 KB). Los picos a menos de 10 km de la celda (como mucho 24:
-primero los de adentro, después los más cercanos al centro), cada uno
+primero los de adentro, después los más cercanos al centro; menos si el archivo pasa de 1100 bytes,
+porque la celda de Bali, de 1351, no entraba en el fēnix 6 Pro), cada uno
 `[NOMBRE, lat, lon, orientación, índice en z, índice en p o -1, (lat ola, lon ola)]`; `z` son sus
 regiones (`[región, modelo de olas, modelo de viento]`) y `p` sus puertos de marea, elegidos acá
 como en el reloj (`TideTable.portFor`: el más cercano cuyo radio lo cubre); `w`, uno por fila de `z`, la escala
