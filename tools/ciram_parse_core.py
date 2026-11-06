@@ -1,4 +1,4 @@
-import re, subprocess, sys, html, json
+import datetime as dt, re, subprocess, sys, html, json
 from collections import defaultdict
 
 def words(pdf):
@@ -11,6 +11,27 @@ def words(pdf):
         pages.append(ws)
     return pages
 
+MAX_GAP_H = 16        # between two extremes in a row: a diurnal stretch of the table reaches 14.6 h
+
+
+def problems(year, data):
+    """What is wrong with a parsed table, as readable lines: an extreme read after a later one of its
+    day (it landed on the wrong day) or two extremes in a row too far apart (some were lost)."""
+    out = []
+    for key in sorted(data):
+        rows = [r[0] * 60 + r[1] for r in data[key]]
+        if rows != sorted(rows):
+            out.append("%02d/%02d: extremos fuera de orden: %s" % (key[1], key[0], " ".join("%02d:%02d" % (r[0], r[1]) for r in data[key])))
+    last = None
+    for key in sorted(data):
+        for hh, mm, _, _ in sorted(data[key]):
+            t = dt.datetime(year, key[0], key[1], hh, mm)
+            if last is not None and (t - last).total_seconds() > MAX_GAP_H * 3600:
+                out.append("%s a %s: %.1f h sin extremos" % (last.strftime("%d/%m %H:%M"), t.strftime("%d/%m %H:%M"), (t - last).total_seconds() / 3600))
+            last = t
+    return out
+
+
 def parse(pdf, verbose=False):
     year = None
     data = defaultdict(list)          # (month, day) -> [(hh, mm, height_m, is_high)]
@@ -20,7 +41,9 @@ def parse(pdf, verbose=False):
         m = re.search(r"(\d{4})", txt[:200])
         if m and year is None:
             year = int(m.group(1))
-        # column anchors: x of the time tokens (two day-columns per month, three months per page)
+        # column anchors: x of the time tokens (up to five columns per month, three months per page).
+        # A column can hold very few: the fifth of January 2026 has only the last two extremes of the
+        # 31st, and asking for ten left them glued to the column before it, on the 24th.
         xs = sorted(w[0] for w in ws if re.fullmatch(r"\d{1,2}:\d{2}", w[3]))
         groups = []
         for x in xs:
@@ -28,7 +51,7 @@ def parse(pdf, verbose=False):
                 groups.append([x])
             else:
                 groups[-1].append(x)
-        anchors = sorted(min(g) for g in groups if len(g) >= 10)
+        anchors = sorted(min(g) for g in groups)
         if verbose:
             print("  page anchors:", ["%.0f" % a for a in anchors])
         cols = defaultdict(list)

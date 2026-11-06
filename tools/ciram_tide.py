@@ -4,9 +4,13 @@
 
 O PDF anual trae hora y altura (m, sobre el nivel de reducción de la DHN) de
 cada pleamar/bajamar; se convierte a alturas horarias en cm interpolando con
-medios cosenos entre extremos consecutivos (la esfera vuelve a encontrar los
-extremos con una parábola, con ±5 min de error). Los extremos originales van
-en "x" para control. Hora local UTC-3 (Santa Catarina no tiene horario de verano).
+medios cosenos entre extremos consecutivos (las apps vuelven a encontrar los
+extremos con una parábola: mediana de 6 min de error, p95 de 24 min, contra "x"
+en 2026). Los extremos originales van en "x" para control. Hora local UTC-3
+(Santa Catarina no tiene horario de verano).
+
+Salidas: 0 bien; 3 la tabla no se pudo leer entera (faltan días, extremos fuera
+de orden o más de 16 h sin extremos): no se escribe nada.
 
 Uso: python3 tools/ciram_tide.py [--port imbituba] [--pdf archivo.pdf]
 """
@@ -21,7 +25,7 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")))
-from ciram_parse_core import parse  # noqa: E402
+from ciram_parse_core import parse, problems  # noqa: E402
 from tools.lib import tide as T  # noqa: E402
 
 PORTS = {
@@ -60,6 +64,10 @@ def main():
     days = 366 if calendar.isleap(year) else 365
     if len(data) != days:
         print("%s %d: tabla incompleta, %d días de %d" % (a.port, year, len(data), days), file=sys.stderr)
+        return 3
+    bad = problems(year, data)
+    if bad:
+        print("%s %d: tabla mal leída:\n  %s" % (a.port, year, "\n  ".join(bad)), file=sys.stderr)
         return 3
     h, ext = hourly(year, data)
     base = {"port": a.port, "name": info["name"], "lat": info["lat"], "lon": info["lon"], "utc_offset": -3, "unit": "cm",
