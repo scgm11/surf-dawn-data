@@ -49,12 +49,15 @@ más cercano que cubra el pico; si no hay ninguno, el nivel del mar de Open-Mete
 está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regiones.
 
 - **Uruguay:** las Tablas de Mareas del **SOHMA** (Armada Nacional) para Montevideo, Punta del Este y
-  La Paloma (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15).
+  La Paloma (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15, y a diario de
+  diciembre a febrero). Cada PDF trae al final la página de enero del año siguiente, que no se importa:
+  la de enero de 2027 viene 3 h adelantada. Antes de escribir, cada mes se compara con un ajuste
+  armónico de los otros 11.
 - **Santa Catarina:** la tábua de la **DHN** (Marinha do Brasil) para Imbituba, del PDF que publica la
   Epagri/CIRAM (`tools/ciram_tide.py`).
 - **El año que viene de esos cuatro**, hasta que salga su tabla oficial: un análisis armónico de este
   año (con correcciones nodales) lo predice, en meses marcados `"ext": true` (`tools/tide/extend_official.py`,
-  en `tides.yml`; error del análisis de 2,6 a 4,3 cm). Sin eso, el último tramo de diciembre salía corto
+  en `tides.yml`; error del análisis de 1,1 a 4,3 cm). Sin eso, el último tramo de diciembre salía corto
   y en enero el reloj quedaba con sus 30 armónicos. La tabla oficial los reemplaza cuando se corre.
 - **El resto** (`tools/tide/build_tides.py`): predicciones oficiales de **NOAA** (EE. UU. y sus
   territorios), **JMA** (Japón), **Marine Institute** (Irlanda) y **LINZ** (Nueva Zelanda); donde no

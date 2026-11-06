@@ -6,8 +6,9 @@ nodal corrections) predicts the next, in month files like the official ones, mar
 tables come out late in the year, and without the next one the field Marea's last piece of
 December came out short (84 h, so it was asked for again every 15 min from the 30th) and January
 had only the watch's 30 harmonics without nodal corrections. The official tables of the next year
-replace these months when they are run (those scripts); the other sources (build_tides.py) already
-bring the next year. tools/tide/chunks.py runs after this (.github/workflows/tides.yml).
+replace these months when they are run (those scripts); until then these are written again on each
+run, so a fix to this year's table reaches them. The other sources (build_tides.py) already bring
+the next year. tools/tide/chunks.py runs after this (.github/workflows/tides.yml).
 
     python3 tools/tide/extend_official.py [--year 2026]
 """
@@ -44,8 +45,10 @@ def extend(key, year):
     have = idx.get("months", [])
     mine = ["%04d-%02d" % (year, m) for m in range(1, 13)]
     nxt = ["%04d-%02d" % (year + 1, m) for m in range(1, 13)]
-    if not all(k in have for k in mine) or nxt[0] in have:
+    if not all(k in have for k in mine):
         return None
+    if nxt[0] in have and not json.load(open(os.path.join(d, nxt[0] + ".json"), encoding="utf-8")).get("ext"):
+        return None                          # the next year's official table is out
     first = json.load(open(os.path.join(d, mine[-1] + ".json"), encoding="utf-8"))
     if first.get("ext"):
         return None                          # only from an official year, not from one extended
