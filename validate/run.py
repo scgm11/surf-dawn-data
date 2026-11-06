@@ -100,11 +100,13 @@ def wind_check(results):
 
 
 def spread_points(rs, log, tries=4):
-    """For each region, the wave heights of every model at one spot for the inter-model spread: the
+    """For each region, the wave heights of every model for the inter-model spread, where the apps ask
+    for a spot's waves (its wave point if it has one: at the spot, a region's own model can be land): the
     spot nearest the centre, or the next ones while the region's own model has no sea there.
-    Sets region.mid to the spot used. Returns {code: (times, {model: cols})}."""
+    Sets region.mid to the point used and region.mid_cell to the cell the API answered from.
+    Returns {code: (times, {model: cols})}."""
     out, todo = {}, list(rs)
-    order = {r.code: sorted(r.spots, key=lambda s: geo.km((r.lat, r.lon), s))[:tries] for r in rs}
+    order = {r.code: r.spread_order(tries) for r in rs}
     for k in range(tries):
         if not todo:
             break
@@ -119,7 +121,7 @@ def spread_points(rs, log, tries=4):
             if sp is None:
                 continue
             if r.code not in out or len(sp[1]) > len(out[r.code][1]):
-                out[r.code], r.mid = sp, pts[r.code]
+                out[r.code], r.mid, r.mid_cell = sp, pts[r.code], models.CELLS.get(p)
             if r.current[0] not in sp[1]:
                 left.append(r)
         todo = left

@@ -1,7 +1,9 @@
 """Offline tests of the parsers, the matching and the scores: python3 -m unittest discover validate"""
+import json
 import math
 import os
 import sys
+import tempfile
 import unittest
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -581,6 +583,42 @@ class Evaluate(unittest.TestCase):
         body, info = evaluate.region_result(r, [], {}, ("a", "b"), wind=([(st, 3.0, None)], [], {evaluate.station_key(st): ser}))
         self.assertEqual(body["wind"]["best"], "ecmwf_ifs")
         self.assertEqual(report.suggestions([(body, info)]), [])          # fixed: informational only
+
+    def test_spread_at_the_wave_point(self):
+        """The spread is measured where the apps ask: at the spot the region's own model is land."""
+        import run
+        spot, near, wp = (-27.63, -48.45), (-27.60, -48.43), (-27.75, -48.25)
+        r = regions.Region("BR-SC-FLN", "BR", "x", [spot, near, (-27.40, -48.40)], ["ncep_gfswave025", "gfs_seamless"])
+        r.asked = [(spot, wp), (near, wp), ((-27.40, -48.40), (-27.50, -48.25))]
+        self.assertEqual(r.spread_order(4), [wp, (-27.50, -48.25)])         # the same point once
+        cols = {"ncep_gfswave025": {"wave_height": [1.0]}, "ecmwf_wam": {"wave_height": [1.4]}}
+        asked = []
+
+        def series(points, log, kind, variables):
+            asked.extend(points)
+            models.CELLS[wp] = [-27.75, -48.25]
+            return {wp: ([1], cols)}
+        real, models.series = models.series, series
+        try:
+            got = run.spread_points([r], lambda *_: None)
+        finally:
+            models.series = real
+        self.assertEqual(asked, [wp])
+        self.assertEqual(r.mid, wp)
+        self.assertEqual(r.mid_cell, [-27.75, -48.25])
+        self.assertIn("ncep_gfswave025", got["BR-SC-FLN"][1])
+        body, _ = evaluate.region_result(r, [], {}, ("a", "b"), got["BR-SC-FLN"])
+        self.assertEqual(body["spread"]["point"], [-27.75, -48.25])
+        self.assertEqual(body["spread"]["cell"], [-27.75, -48.25])
+        self.assertIn("ncep_gfswave025", body["spread"]["mean_hs"])
+
+    def test_built_asked(self):
+        with tempfile.TemporaryDirectory() as d:
+            os.makedirs(os.path.join(d, "spots", "r"))
+            with open(os.path.join(d, "spots", "r", "XX-A.json"), "w") as f:
+                json.dump({"s": [["A", 1.0, 2.0, 90, 1], ["B", 3.0, 4.0, 90, 1, 3.25, 4.25]]}, f)
+            self.assertEqual(regions.built_asked("XX-A", d), [((1.0, 2.0), (1.0, 2.0)), ((3.0, 4.0), (3.25, 4.25))])
+            self.assertIsNone(regions.built_asked("XX-B", d))
 
     def test_no_buoys(self):
         body, info = evaluate.region_result(self.r, [], {}, ("a", "b"),

@@ -21,7 +21,7 @@ def station_key(st):
 def region_result(region, matched, series, window, spread_pt=None, blocked=(), wind=None):
     """matched: [(Station, km, shared)] nearest first (more than MAX_BUOYS: the unrepresentative ones are
     skipped and the next ones used); series: {(lat, lon): (times, {model: cols})} at the buoys;
-    window: (from, to) dates; spread_pt: (times, {model: cols}) at the region's middle spot;
+    window: (from, to) dates; spread_pt: (times, {model: cols}) where the apps ask for the waves of its middle spot;
     blocked: [(Station, km, shared)] near but facing another sea (regions.match), only recorded;
     wind: (matched, blocked, series) of the wind stations, or None (no "wind" block).
     Returns (body, info) where info has what the report needs beyond the JSON."""
@@ -121,6 +121,8 @@ def region_result(region, matched, series, window, spread_pt=None, blocked=(), w
         sp, hours, means = score.spread(times, {m: c for m, c in cols.items()})
         body["spread"] = {"hs": sp, "hours": hours, "point": [round(region.mid[0], 4), round(region.mid[1], 4)],
                           "mean_hs": means}
+        if region.mid_cell:
+            body["spread"]["cell"] = region.mid_cell
     if not body["buoys"]:
         body["confidence"] = score.spread_confidence(body.get("spread", {}).get("hs"))
     if wind is not None:

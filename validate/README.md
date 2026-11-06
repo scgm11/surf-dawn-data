@@ -66,9 +66,9 @@ Las descargas del día quedan en `validate/.cache/<fecha>/` (no se versiona; la 
    peor es el modelo de hoy (≥ 10 % / ≥ 5 % de `hs_rmse`), que la mayoría de las boyas coincida y,
    para `alta`, una boya a ≤ 100 km. Sólo se cambia el de hoy con confianza alta o media; las regiones
    sin boyas siguen con la regla por defecto (`ncep_gfswave016` en su dominio, si no `ncep_gfswave025`).
-7. **Sin boyas**: la dispersión de Hs entre modelos en el pico más cercano al centro de la región
-   donde el modelo de hoy tiene mar (desvío / media, promedio de las horas); más de 0,30 es
-   confianza `baja`.
+7. **Sin boyas**: la dispersión de Hs entre modelos donde las apps piden las olas del pico más cercano
+   al centro de la región (su punto de olas, de la zona armada en `spots/r/`, o el pico) y el modelo de
+   hoy tiene mar (desvío / media, promedio de las horas); más de 0,30 es confianza `baja`.
 8. **Viento** (ver abajo): bloque `wind` y `best.wind` de cada región.
 9. **Salidas**: `validation/<REGIÓN>.json`, `report.md`, `models-suggested.csv` (sólo regiones cuyo
    mejor modelo de olas o de viento, con confianza alta o media, no es el de hoy; la otra columna

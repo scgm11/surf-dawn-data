@@ -1,5 +1,6 @@
 """The regions to validate, from the seed tables: spots, centre, default models and whether the
 region is fixed by issue #7 (tools/lib/models.py, the rule tools/build_zones.py uses)."""
+import json
 import math
 import os
 import sys
@@ -37,8 +38,21 @@ class Region:
         self.fixed = is_fixed(code, country)
         self.default = default_models(code, country, self.lat)
         self.current = list(models_row) if models_row else list(self.default)   # what the watch uses today
-        # the spot nearest the centre: a coastal point for the inter-model spread
+        # for the inter-model spread: the spot nearest the centre (run.py: the point the apps ask at for it)
         self.mid = min(spots, key=lambda s: geo.km((self.lat, self.lon), s))
+        self.mid_cell = None                                   # the cell the API answered from there
+        self.asked = [(s, s) for s in spots]                   # [(spot, where the apps ask for its waves)]
+
+    def spread_order(self, tries):
+        """Where the apps ask for the waves of the spots nearest the centre (the spot's wave point if it
+        has one, else the spot itself), up to `tries` different points."""
+        out = []
+        for _, p in sorted(self.asked, key=lambda a: geo.km((self.lat, self.lon), a[0])):
+            if p not in out:
+                out.append(p)
+            if len(out) == tries:
+                break
+        return out
 
     def km_to(self, lat, lon):
         """Distance from (lat, lon) to the region's nearest spot."""
@@ -47,13 +61,26 @@ class Region:
         return min(geo.km(s, (lat, lon)) for s in self.spots)
 
 
+def built_asked(code, root=ROOT):
+    """[(spot, where the apps ask for its waves)] of a built zone (spots/r/, tools/build_zones.py: its
+    wave point, columns 6 and 7, else the spot), None if the zone has not been built."""
+    try:
+        with open(os.path.join(root, "spots", "r", code + ".json"), encoding="utf-8") as f:
+            rows = json.load(f)["s"]
+    except (OSError, ValueError, KeyError):
+        return None
+    return [((s[1], s[2]), (s[5], s[6]) if len(s) >= 7 else (s[1], s[2])) for s in rows] or None
+
+
 def load(models_csv=None):
     rows = rule.read(models_csv)
     out = []
     for code, r in seeds.regions().items():
         sp = [(s["lat"], s["lon"]) for s in seeds.spots(code)]
         if sp:
-            out.append(Region(code, r["country"], r["name_es"], sp, rows.get(code)))
+            reg = Region(code, r["country"], r["name_es"], sp, rows.get(code))
+            reg.asked = built_asked(code) or reg.asked
+            out.append(reg)
     return out
 
 

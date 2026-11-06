@@ -98,6 +98,7 @@ class Pacer:
 
 
 PACER = Pacer()
+CELLS = {}                      # {(lat, lon): [lat, lon] of the cell the API answered from, wave series only}
 
 
 def _name(kind, lat, lon, models, variables):
@@ -150,8 +151,10 @@ def _series(todo, out, variables, log, kind, api, extra=None):
             blocks = _fetch(part, ms, variables, log, api, extra)
             for p, b in zip(part, blocks):
                 times, cols = openmeteo.split_models(b, ms, variables) if b else ([], {})
-                cache.save_json("om", _name(kind, p[0], p[1], ms, variables), {"t": times, "m": cols})
+                cell = [b.get("latitude"), b.get("longitude")] if b else None
+                cache.save_json("om", _name(kind, p[0], p[1], ms, variables), {"t": times, "m": cols, "cell": cell})
                 out[p] = (times, cols)
+                CELLS[p] = cell
 
 
 def series(points, log, kind="buoy", variables=VARS):
@@ -164,6 +167,7 @@ def series(points, log, kind="buoy", variables=VARS):
         hit = cache.load_json("om", _name(kind, p[0], p[1], ms, variables))
         if hit is not None:
             out[p] = (hit["t"], hit["m"])
+            CELLS[p] = hit.get("cell")
         else:
             todo.setdefault(tuple(ms), []).append(p)
     n = sum(len(v) for v in todo.values())

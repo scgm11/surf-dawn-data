@@ -16,6 +16,9 @@ validation/spots.json (docs/formatos.md):
   zone's "sw", seed swell=) is measured against it, as the apps judge its swell.
 - §5.4 Neighbours: a spot whose waves are 0 m (or missing) all along, or more than twice its
   zone's median, is flagged.
+- Cells: the grid cell the API answers from when asked as the apps ask (no cell_selection), which is
+  not always the one asked for (tools/lib/openmeteo.py). A wave point the API moves, a wave point
+  behind the beach, and a spot the API moves to a cell behind it or more than CELL_KM away are listed.
 - §5.8 Flagship spots (`top` in the seeds): their position against public sources: the nearest item
   within WD_KM whose name matches the spot's (tools/lib/names.py) in Wikidata or GeoNames; without
   one, in OpenStreetMap (Nominatim in the spot's country, then Overpass around it). Farther than WD_FAR_KM is flagged; with neither
@@ -57,6 +60,7 @@ MIN_H = 0.3                     # m: hours with less are not counted for the dir
 DOUBLE = 2.0                    # more than this times the zone's median mean height (§5.4)
 BATCH = 40                      # locations per Open-Meteo request
 NEAR_KM = 30                    # neighbours whose facing a spot's is compared with
+CELL_KM = 35                    # a spot the API answers from a cell it moved it to, farther than this
 FLIPPED = 135                   # a facing this far from its neighbours' and the waves', and close to them
                                 # turned around, was most likely computed on the wrong side of the coast
 WD = "https://query.wikidata.org/sparql"
@@ -125,6 +129,45 @@ def fetch_waves(zs, used, days=DAYS, only=None):
                 h = (b.get("hourly") or {}) if isinstance(b, dict) else {}
                 out[k] = (h.get("wave_height") or [], h.get("wave_direction") or [])
             time.sleep(1.5)
+    return out
+
+
+def cell_problem(model, spot, wave, cell, looks):
+    """Why the cell the API answers from is not a good one for this spot, None if it is. spot: (lat, lon);
+    wave: its wave point or None; cell: the answer; looks: its swell window or facing."""
+    if cell is None:
+        return "sin respuesta de la API"
+    km, off = geo.km(spot, cell), openmeteo.off_front(spot, cell, looks)
+    if wave is not None:
+        if openmeteo.moved(model, wave, cell):
+            return "la API corre el punto de olas a %.2f, %.2f (%.0f km del pico)" % (cell[0], cell[1], km)
+        if off > openmeteo.FRONT_DEG:
+            return "punto de olas detrás de la playa (a %d° de hacia donde mira, %.0f km)" % (round(off), km)
+        return None
+    if not openmeteo.moved(model, spot, cell):
+        return None                  # its own cell: the bearing to the centre of the cell it is in says nothing
+    if off > openmeteo.FRONT_DEG:
+        return "la API lo contesta desde una celda detrás de la playa (a %d° de hacia donde mira, %.0f km)" % (round(off), km)
+    if km > CELL_KM:
+        return "la API lo contesta desde una celda a %.0f km" % km
+    return None
+
+
+def check_cells(zs, used):
+    """[{region, spot, cell, km, off, wave, why}] of the spots whose cell is not a good one."""
+    out = []
+    for z in zs:
+        model = z["m"][0]
+        asked = [(s[5], s[6]) if len(s) >= 7 else (s[1], s[2]) for s in z["s"]]
+        new = len({(round(p[0], 4), round(p[1], 4)) for p in asked})
+        where = openmeteo.cells(model, asked)
+        used["calls"] += new
+        for i, (s, cell) in enumerate(zip(z["s"], where)):
+            spot, wave = (s[1], s[2]), ((s[5], s[6]) if len(s) >= 7 else None)
+            why = cell_problem(model, spot, wave, cell, toward(z, i))
+            if why:
+                out.append({"region": z["id"], "spot": s[0], "cell": cell, "wave": wave, "why": why,
+                            "km": None if cell is None else round(geo.km(spot, cell), 1)})
     return out
 
 
@@ -329,6 +372,8 @@ def main():
         print("%d facing flags cleared over %d days" % (cleared, LONG_DAYS))
     result["zones"] = whole_zones(result["flags"], zs)
     print("%d zones that almost never get their waves head-on" % len(result["zones"]))
+    result["cells"] = check_cells(zs, used)
+    print("%d spots whose cell is not a good one" % len(result["cells"]))
     if a.no_wikidata or a.unsourced:               # the last run's, as they were
         try:
             with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
@@ -391,6 +436,7 @@ def report(r, zs):
          "estarlo (en dos semanas no les tocaba su ventana de swell)." % (LONG_DAYS, r.get("season_cleared", 0)),
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
+         "- **Celdas:** la celda de la que contesta la API a cada pico, abajo las que no son buenas.",
          "- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta %d km; "
          "si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la "
          "semilla): %d bien (a menos de %.1f km; %d de ellos por la fuente de su semilla), %d lejos, %d lejos pero "
@@ -424,6 +470,21 @@ def report(r, zs):
             L.append("| %s | %d de %d | %d | %d° | %s | %s |" % (
                 z["region"], z["flagged"], z["spots"], z["points"], z["facing"],
                 "—" if z["swell"] is None else "%d°" % z["swell"], ", ".join(z["names"])))
+    else:
+        L.append("Ninguna.")
+    cl = r.get("cells", [])
+    L += ["", "## Celdas de olas para mirar (%d)" % len(cl), "",
+          "La celda desde la que contesta la API cuando se le pregunta como las apps (sin `cell_selection`). Se marca "
+          "el punto de olas que la API corre o que queda detrás de la playa (a más de %d° de hacia donde mira, o de su "
+          "ventana de swell), y el pico que la API corre a una celda detrás de la playa o a más de %d km. A veces es "
+          "con razón: su celda es tierra y la siguiente queda de costado. Se corrige con `wave=` en la semilla, "
+          "después de mirar la celda." % (openmeteo.FRONT_DEG, CELL_KM), ""]
+    if cl:
+        L += ["| Región | Pico | Punto de olas | Celda | Por qué |", "|---|---|---|---|---|"]
+        for c in cl:
+            L.append("| %s | %s | %s | %s | %s |" % (
+                c["region"], c["spot"], "—" if c["wave"] is None else "%.2f, %.2f" % tuple(c["wave"]),
+                "—" if c["cell"] is None else "%.2f, %.2f" % tuple(c["cell"]), c["why"]))
     else:
         L.append("Ninguna.")
     L += ["", "## Picos marcados (%d)" % len(r["flags"]), "",

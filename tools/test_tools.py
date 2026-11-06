@@ -11,6 +11,7 @@ sys.path.insert(0, os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import build_scale  # noqa: E402
 import check_seeds  # noqa: E402
+import check_spots  # noqa: E402
 import ciram_parse_core as ciram  # noqa: E402
 from tools.lib import openmeteo as om  # noqa: E402
 
@@ -89,6 +90,24 @@ class WavePoints(unittest.TestCase):
         self.assertTrue(om.moved("ncep_gfswave025", (1.0, 1.0), (0.75, 1.0)))
         self.assertFalse(om.moved("ncep_gfswave025", (1.1, 1.0), (1.0, 1.0)))    # the cell it is in
         self.assertFalse(om.moved("ncep_gfswave025", (0.0, 179.95), (0.0, -180.0)))   # across ±180°
+
+
+class CellControl(unittest.TestCase):
+    M = "ncep_gfswave025"
+
+    def test_wave_point(self):
+        spot, wave = (-27.63, -48.45), (-27.75, -48.5)
+        self.assertIn("corre", check_spots.cell_problem(self.M, spot, wave, (-28.0, -48.5), 152))
+        self.assertIsNone(check_spots.cell_problem(self.M, spot, (-27.75, -48.25), (-27.75, -48.25), 152))
+        self.assertIn("detrás", check_spots.cell_problem(self.M, (-27.4, -48.41), (-27.25, -48.5), (-27.25, -48.5), 84))
+
+    def test_own_position(self):
+        spot = (-34.04, -53.54)
+        self.assertIsNone(check_spots.cell_problem(self.M, spot, None, (-34.0, -53.5), 94))     # the cell it is in
+        self.assertIn("detrás", check_spots.cell_problem(self.M, spot, None, (-34.25, -53.5), 56))
+        self.assertIn("km", check_spots.cell_problem(self.M, (-34.0, -53.5), None, (-34.5, -53.5), 180))
+        self.assertIsNone(check_spots.cell_problem(self.M, spot, None, (-34.25, -53.5), 170))
+        self.assertIn("sin respuesta", check_spots.cell_problem(self.M, spot, None, None, 94))
 
 
 def word(x, y, text):
