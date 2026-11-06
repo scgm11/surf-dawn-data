@@ -1,30 +1,58 @@
 UY-CAN      14 spots   953 bytes  vba63f2
 UY-MAL      18 spots   991 bytes  vad17ed
-UY-ROC      19 spots  1032 bytes  v414338
+UY-ROC      19 spots  1097 bytes  vd3b8d8
 AR-MDP      22 spots  1279 bytes  v80cf38
 AR-BAN      16 spots  1018 bytes  v284e43
 AR-SUR       6 spots   549 bytes  vec40c2
 BR-RS       18 spots  1183 bytes  v59bca8
 BR-RS-SUL    2 spots   334 bytes  v54fd46
-BR-SC-FLN   14 spots   968 bytes  v6e9894
+BR-SC-FLN   14 spots  1002 bytes  v5f6154
 BR-SC-SUL    6 spots   528 bytes  vcf3c33
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 BR-SC-NOR   20 spots  1296 bytes  v78381d
 BR-SP       29 spots  1557 bytes  v359e47
 BR-RJ       17 spots   950 bytes  vb1eef2
 BR-RJL      20 spots  1241 bytes  v753eb4
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 BR-ES       19 spots  1159 bytes  v10ca0c
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -15.1667,-38.8333: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -15.1667,-38.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at -15.3333,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.5000,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.3333,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.1667,-38.8333: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -16.5000,-38.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.3333,-38.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-38.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.8333,-38.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at -16.6667,-39.0000: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at -16.8333,-39.0000: No data is available for this location
 BR-BA       21 spots  1187 bytes  vff7689
 BR-NE-CE    13 spots   841 bytes  vde6a2d
 BR-NE-RN    13 spots   906 bytes  ve31abd
 BR-NE-PE    14 spots   920 bytes  vdca32b
 BR-NOR       5 spots   436 bytes  v07244c
 CL-NOR      11 spots   818 bytes  v10657f
-CL-CEN      20 spots  1439 bytes  v04ae8e
-CL-PIC      12 spots   957 bytes  vdc7dd9
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+CL-CEN      20 spots  1437 bytes  v87c969
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+CL-PIC      12 spots   956 bytes  vdcd8f5
 CL-MAU      14 spots  1032 bytes  vd2572a
 CL-SUR      11 spots   793 bytes  vc77333
 PE-NOR      10 spots   803 bytes  v3553f7
 PE-LLB       7 spots   672 bytes  vdddd70
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 PE-LIM      15 spots  1171 bytes  v84125f
 PE-SUR       5 spots   480 bytes  v4cea2c
 EC-COS      13 spots   950 bytes  v961531
@@ -49,7 +77,7 @@ MX-PAC      12 spots   901 bytes  v995a59
 MX-NAY       9 spots   789 bytes  v5f0a71
 MX-BCS       6 spots   542 bytes  v349bfc
 MX-BCS-N     2 spots   353 bytes  vfe6a5e
-MX-BCN       4 spots   420 bytes  vdf410a
+MX-BCN       4 spots   422 bytes  v84902b
 MX-CAR       3 spots   355 bytes  va000f5
 PR-NW       15 spots  1039 bytes  va33923
 PR-N         8 spots   693 bytes  v00671c
@@ -60,17 +88,18 @@ MQ-ALL       3 spots   313 bytes  va18308
 BS-ALL       1 spots   218 bytes  vcfcf81
 TT-ALL       4 spots   466 bytes  v7a403a
 US-CA-SD    38 spots  2129 bytes  v7f7045
-US-CA-OC    32 spots  1827 bytes  v1001d5
+US-CA-OC    32 spots  1828 bytes  v9d3652
 US-CA-LA    23 spots  1496 bytes  v1b24cd
 US-CA-SB    27 spots  1711 bytes  vd17986
 US-CA-CEN   16 spots  1111 bytes  vdd037b
 US-CA-SC    30 spots  1878 bytes  veb9b6d
 US-CA-SF    29 spots  1878 bytes  vc9e479
-US-CA-NOR   25 spots  1523 bytes  vb6ee64
+US-CA-NOR   25 spots  1525 bytes  v71badc
 US-PNW      33 spots  1903 bytes  vc8b5ed
 US-GULF     13 spots   844 bytes  v7bf41a
 US-FL       46 spots  2399 bytes  vacb692
 US-FL-PAN    6 spots   631 bytes  v54c1f9
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 US-SE       22 spots  1400 bytes  v294ef5
 US-SC-GA    10 spots   792 bytes  ve59994
 US-MID      11 spots   861 bytes  v34cc94
@@ -80,23 +109,29 @@ US-HI-OAS   25 spots  1576 bytes  v3e3383
 US-HI-MAU   21 spots  1311 bytes  v22080f
 US-HI-KAU   21 spots  1250 bytes  vf7c42d
 US-HI-BIG   15 spots  1065 bytes  va576cc
-CA-BC-VI    14 spots  1022 bytes  v6902b6
+CA-BC-VI    14 spots  1024 bytes  vdca3e0
 CA-NS       11 spots   800 bytes  vf848b3
 AU-QLD-SC   27 spots  1634 bytes  va7f255
 AU-QLD-GC   24 spots  1418 bytes  v661eb0
-AU-NSW-NR   26 spots  1685 bytes  v54398c
-AU-NSW-MN   33 spots  2059 bytes  vbbfbb9
+AU-NSW-NR   26 spots  1686 bytes  v32b2e9
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+AU-NSW-MN   33 spots  2060 bytes  v019c45
 AU-NSW-NC   30 spots  1775 bytes  v8b60a0
 AU-NSW-SYD  37 spots  1866 bytes  vdecb4a
 AU-NSW-SC   31 spots  1688 bytes  v2b64cc
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AU-VIC-SC   20 spots  1267 bytes  v4deb9d
 AU-VIC-PI   18 spots  1186 bytes  v736e84
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AU-VIC-W     9 spots   731 bytes  v85d7b0
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AU-TAS      12 spots   854 bytes  v9232a2
-AU-SA       14 spots   961 bytes  ve6a527
+AU-SA       14 spots   963 bytes  vb04aa5
 AU-SA-EYR    3 spots   344 bytes  ve918f3
-AU-WA-MR    32 spots  2350 bytes  v7f90ec
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+AU-WA-MR    32 spots  2356 bytes  v95fe3f
 AU-WA-PER   20 spots  1355 bytes  v6551c2
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AU-WA-NW     5 spots   556 bytes  v533ce5
 AU-WA-GAS    3 spots   377 bytes  vc93085
 NZ-NTL      14 spots   998 bytes  vdff5c1
@@ -104,15 +139,21 @@ NZ-AKL       9 spots   657 bytes  v552b02
 NZ-RAG       5 spots   438 bytes  v3324ad
 NZ-TAR       7 spots   550 bytes  v75d853
 NZ-BOP      11 spots   862 bytes  v7ab8d5
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 NZ-GIS      13 spots   909 bytes  vf1f2e0
 NZ-WEL      13 spots   888 bytes  v2dc04d
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 NZ-KAI       9 spots   782 bytes  ved7a46
 NZ-OTA      13 spots   983 bytes  v7cf101
 NZ-WC        4 spots   406 bytes  v1ca2d3
 FJ-MAM       6 spots   487 bytes  v81eaf9
 FJ-SOU       2 spots   366 bytes  vefc3fd
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 PF-TAH       8 spots   671 bytes  vf14354
 PF-ISL       2 spots   333 bytes  v057cec
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 WS-ALL       6 spots   576 bytes  vfde283
 TO-ALL       6 spots   495 bytes  v09203d
 VU-ALL       5 spots   464 bytes  v9a3140
@@ -153,7 +194,9 @@ KR-ALL       6 spots   528 bytes  v967749
 CN-HAI       2 spots   291 bytes  v958002
 ZA-WC-CPT   20 spots  1282 bytes  vb862b9
 ZA-WC-WCO    6 spots   652 bytes  v9d3b7c
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 ZA-WC-GR    11 spots   885 bytes  v32e479
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 ZA-EC-JB    10 spots   829 bytes  ve3b4b8
 ZA-EC-PE    17 spots  1094 bytes  vf11518
 ZA-EC-WLD    5 spots   469 bytes  vf30974
@@ -168,6 +211,7 @@ SN-ALL       5 spots   396 bytes  vfb364a
 LR-ALL       3 spots   357 bytes  v822ac8
 GH-ALL       3 spots   328 bytes  v3029d8
 MZ-S         3 spots   323 bytes  vfa82ab
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 MZ-INH       3 spots   369 bytes  vd35242
 MG-ALL       3 spots   358 bytes  v0bc50a
 RE-ALL       8 spots   624 bytes  v719972
@@ -196,16 +240,67 @@ PT-MAD       8 spots   602 bytes  v7b6908
 GB-CON      28 spots  1550 bytes  v1716a8
 GB-DEV       9 spots   645 bytes  vfb1994
 GB-SOU       3 spots   405 bytes  v66ebd9
+  open-meteo: ncep_gfswave016 at 53.1667,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,-5.1667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.1667,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,-4.8333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.5000,-4.6667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.8333,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,-5.1667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-5.1667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,-5.1667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.8333: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.6667,-4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,-4.3333: No data is available for this location
 GB-WAL      21 spots  1298 bytes  ve168a2
-GB-SCO      21 spots  1264 bytes  vd2d4b1
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+GB-SCO      21 spots  1263 bytes  v2c7199
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 GB-NE       25 spots  1337 bytes  vb4bb57
 GB-NIR       9 spots   682 bytes  v114359
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 IE-NW        9 spots   812 bytes  v4a362a
-IE-SW       12 spots   803 bytes  v13d68b
+IE-SW       12 spots   805 bytes  vcb7dca
 IE-SE       10 spots   730 bytes  v021063
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 NO-S         3 spots   418 bytes  vd98124
-NO-N         3 spots   346 bytes  vca4f2a
+NO-N         3 spots   346 bytes  vf49418
 DK-ALL       5 spots   427 bytes  v1d4752
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.6667,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.6667,4.1667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 52.8333,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 52.8333,4.1667: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.1667,4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.6667: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.5000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.3333: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo: ncep_gfswave016 at 53.1667,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.0000,4.3333: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.1667,5.0000: No data is available for this location
+  open-meteo: ncep_gfswave016 at 53.3333,4.8333: No data is available for this location
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 NL-ALL      11 spots   792 bytes  v70fb61
 DE-ALL       4 spots   364 bytes  v610bcc
 IT-ALL       7 spots   622 bytes  vd324c7
@@ -219,7 +314,7 @@ warning: BR-RJL/PRAIA GRANDE: no direction open to the sea, moved 1679 m from th
 warning: BR-RJL/TUCUNS: no direction open to the sea from facing 140: check the facing (no shelter)
 warning: BR-ES/PRAIA DA COSTA: no direction open to the sea, moved 1412 m from the seed (facing 8 -> 103)
 warning: BR-ES/MEAÍPE: no direction open to the sea from facing 120: check the facing (no shelter)
-warning: BR-BA: ncep_gfswave016 has no waves near 15 spots: ncep_gfswave025
+warning: BR-BA: ncep_gfswave016 has no waves near 16 spots: ncep_gfswave025
 warning: CL-MAU/COCHOLGÜE: no direction open to the sea, moved 339 m from the seed (facing 242 -> 250)
 warning: CL-MAU/TIRÚA: no direction open to the sea, moved 693 m from the seed (facing 323 -> 305)
 warning: PE-LIM/LA HERRADURA: no direction open to the sea, moved 952 m from the seed (facing 341 -> 290)
@@ -298,11 +393,12 @@ warning: ES-AND/LA VICTORIA: no direction open to the sea, moved 656 m from the 
 warning: ES-AND/CORTADURA: no direction open to the sea, moved 1360 m from the seed (facing 121 -> 250)
 warning: ES-AND/CAMPOSOTO: no direction open to the sea, moved 1987 m from the seed (facing 169 -> 250)
 warning: PT-LIS/COVA DO VAPOR: no direction open to the sea, moved 1966 m from the seed (facing 11 -> 228)
-warning: GB-WAL: ncep_gfswave016 has no waves near 4 spots: ncep_gfswave025
+warning: GB-WAL: ncep_gfswave016 has no waves near 5 spots: ncep_gfswave025
+warning: GB-SCO/BAY OF SKAILL: no direction open to the sea, moved 462 m from the seed (facing 275 -> 275)
 warning: GB-SCO/BELHAVEN BAY: no direction open to the sea, moved 1297 m from the seed (facing 312 -> 40)
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the seed (facing 270 -> 270)
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-213 regions, 2511 spots, 0 errors, 94 warnings
+213 regions, 2511 spots, 0 errors, 95 warnings
