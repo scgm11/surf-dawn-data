@@ -1,5 +1,6 @@
 """Checks the seed tables (seeds/README.md): columns, names, positions, types and flags,
-and that every region has its file and every file its region. Offline; exits 1 on errors.
+that every region has its file and every file its region, and that the wave scales were
+measured at sea (seeds/scale.csv). Offline; exits 1 on errors.
 
 Usage: python3 tools/check_seeds.py [--present] [REGION ...]   (no regions: every region;
        --present: a region without its file yet is a warning, not an error)
@@ -21,6 +22,7 @@ TEXT_CHARS = set("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZÁÉÍÓÚÑÜÃÕÂÊÔÇ
 NAME_MAX = 18
 MAX_SPOTS = 60
 SPREAD_KM = 400                   # a spot this far from its region's median is in the wrong region
+SCALE_MIN_HS, SCALE_MIN_T, SCALE_MIN_HOURS = 0.3, 4.0, 4000     # tools/build_scale.py
 
 
 def read(name):
@@ -100,6 +102,17 @@ def check_region(code, errors, warnings, present=False):
     return len(rows)
 
 
+def check_scale(errors):
+    """seeds/scale.csv (tools/build_scale.py): a row measured in a land cell is not a scale."""
+    path = os.path.join(SEEDS, "scale.csv")
+    if not os.path.exists(path):
+        return
+    for r in read("scale.csv"):
+        if float(r["hs90"]) < SCALE_MIN_HS or float(r["t90"]) < SCALE_MIN_T or int(r["hours"]) < SCALE_MIN_HOURS:
+            errors.append("scale.csv %s: hs90 %s, t90 %s, %s hours: measured in a land cell? (tools/build_scale.py)" % (
+                r["region"], r["hs90"], r["t90"], r["hours"]))
+
+
 def main():
     regions = read("regions.csv")
     countries = {c["code"]: c for c in read("countries.csv")}
@@ -136,6 +149,7 @@ def main():
             errors.append("%s is not in regions.csv" % code)
             continue
         total += check_region(code, errors, warnings, present)
+    check_scale(errors)
     for w in warnings:
         print("warning:", w)
     for e in errors:

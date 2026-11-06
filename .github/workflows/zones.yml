@@ -49,6 +49,8 @@ jobs:
         with:
           path: tools/.osm_src/coastlines-split-4326.zip
           key: osm-coastlines-v1
+      - name: Pruebas
+        run: python3 -m unittest discover -s tools -p "test_*.py"
       - name: Semillas
         run: python3 tools/check_seeds.py --present
       - name: Zonas

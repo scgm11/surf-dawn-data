@@ -18,7 +18,7 @@ LENNOX HEAD,-28.8000,153.6020,P,K,local,top,WC; punto derecho
 LIGHTHOUSE BEACH,-28.8545,153.5880,B,L,local,,Ballina
 SHELLY BEACH,-28.8625,153.5895,B,L,local,,Ballina
 NORTH WALL,-28.8725,153.5915,B,L,local,,Ballina; espigon del Richmond
-EVANS HEAD,-29.1170,153.4435,B,K,local,,
+EVANS HEAD,-29.1170,153.4435,B,K,local,facing=105,
 AIRFORCE BEACH,-29.1360,153.4380,B,L,local,,Evans Head sur
 ANGOURIE POINT,-29.4815,153.3635,P,K,local,top,
 SPOOKIES,-29.4860,153.3650,P,L,local,,Angourie

@@ -182,14 +182,15 @@ def build_region(code, reg, country, models, ports, offline, rep):
         if todo and not offline:
             from tools.lib import openmeteo
             pts = [(s["lat"], s["lon"]) for s in todo]
+            towards = [s["swell"] if s["swell"] is not None else s["facing"] for s in todo]
             try:
-                wps = openmeteo.wave_points(m[0], pts)
+                wps = openmeteo.wave_points(m[0], pts, towards)
                 if "none" in wps and code not in models and m[0] != rule.GLOBAL_WAVE:
                     # the 0.16° grids are regional (15°S–52.5°N, not every coast): a region the
                     # rule gave one that has no sea near some spot goes with the global grid
                     warns.append("%s: %s has no waves near %d spots: %s" % (code, m[0], wps.count("none"), rule.GLOBAL_WAVE))
                     m = [rule.GLOBAL_WAVE, m[1]]
-                    wps = openmeteo.wave_points(m[0], pts)
+                    wps = openmeteo.wave_points(m[0], pts, towards)
             except RuntimeError as e:
                 errs.append("%s: %s" % (code, e))
                 return None

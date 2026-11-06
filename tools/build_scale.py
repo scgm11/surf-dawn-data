@@ -12,9 +12,11 @@ hours of a year go over (p90), its period top 1.7 s over its p90 period, so that
 (the 30 cm and 5 s floors in the same proportion), and the levels of the sea's energy too.
 
 A year of hourly waves (07-18 h at the region's time) at one point per region, its middle spot's wave
-point, in its wave model; the ECMWF WAM models have no history in Open-Meteo, so those regions go with
-GFS Wave 0.25°. A year weighs 26 calls of the free API (10,000 a day, 5,000 an hour): the answers are
-cached in tools/.cache/scale/ and the requests paced.
+point, in its wave model; the ECMWF WAM models have no history in Open-Meteo for that year, so those
+regions go with GFS Wave 0.25°. They have no wave points of their own: where GFS has land at the middle
+spot (0.0 m all year, not null) it goes to the sea cell in front of it that build_zones would choose.
+A year weighs 26 calls of the free API (10,000 a day, 5,000 an hour): the answers are cached in
+tools/.cache/scale/ and the requests paced.
 
     python3 tools/build_scale.py [REGION ...]      all the regions in spots/r/ (or these), into seeds/scale.csv
 """
@@ -27,6 +29,9 @@ import urllib.error
 import urllib.request
 
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
+sys.path.insert(0, ROOT)
+from tools.lib import openmeteo  # noqa: E402
+
 REGIONS = os.path.join(ROOT, "spots", "r")
 CACHE = os.path.join(ROOT, "tools", ".cache", "scale")
 OUT = os.path.join(ROOT, "seeds", "scale.csv")
@@ -36,6 +41,8 @@ HOURS = range(7, 19)                             # daylight at any latitude wher
 HEIGHT = 0.88                                    # of the p90 height: Rocha's 2.04 m gives 1.8 m
 PERIOD = 1.7                                     # s over the p90 period: Rocha's 11.3 s gives 13 s
 PACE = 18                                        # s between requests: 26 calls each, 5,000 an hour
+GFS = "ncep_gfswave025"                          # the global grid: the one with a year of history everywhere
+MIN_HS, MIN_T, MIN_HOURS = 0.3, 4.0, 4000        # less is not the sea: a land cell gives 0.0 m, 0.0 s (null before 5/2025)
 
 
 def pct(a, p):
@@ -47,8 +54,17 @@ def point(z):
     """The middle spot's wave point (its own position when it has none) and the wave model to ask."""
     s = z["s"][len(z["s"]) // 2]
     lat, lon = (s[5], s[6]) if len(s) >= 7 else (s[1], s[2])
-    model = z["m"][0] if "ecmwf" not in z["m"][0] else "ncep_gfswave025"
+    model = z["m"][0] if "ecmwf" not in z["m"][0] else GFS
     return lat, lon, model
+
+
+def sea_point(z, model):
+    """The sea cell in front of the middle spot, for a spot whose own cell is land in this model."""
+    i = len(z["s"]) // 2
+    s = z["s"][i]
+    window = (z.get("sw") or [None] * len(z["s"]))[i]
+    wp = openmeteo.wave_points(model, [(s[1], s[2])], [window if window is not None else s[3]])[0]
+    return wp if wp not in (None, "none") else None
 
 
 def fetch(code, lat, lon, model):
@@ -76,14 +92,17 @@ def fetch(code, lat, lon, model):
 
 
 def scale(d):
-    """(height top, period top, p90 height, p90 period, hours) of a year's answer, None without waves."""
+    """(height top, period top, p90 height, p90 period, hours) of a year's answer, None without waves
+    (a land cell answers 0.0 m and 0.0 s: the floors below would make that a scale, and a broken one)."""
     h = d.get("hourly", {})
     rows = [(a, b) for t, a, b in zip(h.get("time", []), h.get("wave_height", []), h.get("wave_period", []))
             if a is not None and b is not None and int(t[11:13]) in HOURS]
-    if len(rows) < 1000:
+    if len(rows) < MIN_HOURS:
         return None
     hs = pct([a for a, _ in rows], 90)
     tp = pct([b for _, b in rows], 90)
+    if hs < MIN_HS or tp < MIN_T:
+        return None
     top = min(5.0, max(0.6, round(HEIGHT * hs, 2)))
     per = min(20.0, max(8.0, round(tp + PERIOD, 1)))
     return top, per, hs, tp, len(rows)
@@ -101,11 +120,17 @@ def main():
         lat, lon, model = point(z)
         try:
             d = fetch(code, lat, lon, model)
-            if scale(d) is None and model != "ncep_gfswave025":
-                model = "ncep_gfswave025"            # a regional model without history there
+            if scale(d) is None and model != GFS:
+                model = GFS                          # a regional model without history there
                 os.remove(os.path.join(CACHE, "%s.json" % code))
                 d = fetch(code, lat, lon, model)
-        except (urllib.error.URLError, OSError, ValueError) as e:
+            if scale(d) is None:
+                sea = sea_point(z, model)            # the spot's own cell is land in this model
+                if sea is not None:
+                    lat, lon = sea
+                    os.remove(os.path.join(CACHE, "%s.json" % code))
+                    d = fetch(code, lat, lon, model)
+        except (urllib.error.URLError, OSError, ValueError, RuntimeError) as e:
             print("%s: %s" % (code, e), file=sys.stderr)
             continue
         s = scale(d)

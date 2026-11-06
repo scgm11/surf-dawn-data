@@ -103,7 +103,8 @@ de las zonas.
   las olas de las apps llega a todo (`Score.wave` en surf-dawn: con la del mundo, 1,8 m y 13 s).
   El 88 % de la altura que se pasa el 10 % de las horas con luz (07–18 h) de un año y 1,7 s más que
   el período que se pasa el 10 % de las horas, en el punto de olas del pico del medio de la región
-  y en su modelo de olas (GFS Wave 0,25° donde es ECMWF WAM, que no tiene historia en Open-Meteo):
+  y en su modelo de olas (GFS Wave 0,25° donde es ECMWF WAM, que no tiene historia de ese año en
+  Open-Meteo; si GFS tiene tierra en ese pico, en la celda de mar delante de él):
   así la de Rocha (UY-ROC) es la del mundo. Lo calcula `tools/build_scale.py` en
   `seeds/scale.csv` (un año pesa 26 llamadas de la API gratis: se corre a mano, no en cada build) y
   `tools/build_zones.py` lo copia acá. Los niveles de la energía del mar van con ella. Las apps
@@ -210,8 +211,9 @@ Lo escribe `validate/run.py` (ver `validate/README.md`), que agrega estos campos
   con |sesgo| > 0,5, o Open-Meteo no tiene ahí (o tiene pocas horas de) el modelo de hoy. Un modelo
   con menos del 80 % de las horas del mejor cubierto en una boya no se compara en esa región.
 - `current`: el modelo de olas que usa hoy la región; `fixed`: `true` en las regiones fijas del issue #7.
-- `spread`: dispersión de Hs entre modelos en un pico (`point`: el más cercano al centro donde el
-  modelo de hoy tiene mar, probando hasta 4): `hs` (desvío / media,
+- `spread`: dispersión de Hs entre modelos donde las apps piden las olas de un pico (`point`: su punto
+  de olas si tiene, si no el pico; el del pico más cercano al centro donde el modelo de hoy tiene mar,
+  probando hasta 4 puntos; `cell`: la celda de la que contestó la API): `hs` (desvío / media,
   promedio de `hours` horas) y `mean_hs` por modelo. En una región sin boyas (`"buoys": []`) es lo
   único que hay, y `confidence` es `baja` si `hs` > 0,30.
 - `wind`: el viento a 10 m de los modelos de Open-Meteo contra hasta 3 estaciones (boyas y estaciones
@@ -246,7 +248,11 @@ la orientación contra las olas de las últimas dos semanas en su punto de olas 
 nunca las recibe de frente mientras su zona sí: suele ser una orientación del lado equivocado de una
 punta o una laguna), la altura contra la mediana de su zona (sin olas, o más del doble) y, para los
 emblemáticos (`top`), la posición contra el ítem más cercano con su nombre en Wikidata o GeoNames
-(si no hay, OpenStreetMap). El JSON tiene `flags` (`region`, `spot`, `why`, `top`), `flagship`
+(si no hay, OpenStreetMap). También pregunta a la API desde qué celda contesta a cada pico, como las
+apps (sin `cell_selection`, que puede correr el punto): marca el punto de olas corrido o detrás de la
+playa (a más de 75° de hacia donde mira, o de su ventana de swell) y el pico que la API corre a una
+celda detrás de la playa o a más de 35 km. El JSON tiene `flags` (`region`, `spot`, `why`, `top`),
+`cells` (`region`, `spot`, `wave`, `cell`, `km`, `why`), `flagship`
 (`status`: `ok`, `lejos`, `revisado`, `sin fuente` o `error`; `km`, `qid`, `wd_lat`, `wd_lon`) y, por
 región, la mediana de la altura y de las horas con olas de frente.
 

@@ -19,11 +19,12 @@ repo y los formatos están en [`docs/formatos.md`](docs/formatos.md).
 Unas 210 regiones y más de 2.400 picos: las Américas completas, Hawái, Nueva Zelanda, Australia,
 Maldivas, Sudáfrica y los picos más conocidos del resto del mundo (`seeds/emblematicos.md`). Cada
 pico sale de una fila de `seeds/spots/<REGIÓN>.csv`; `build_zones.py` lo ajusta a la costa de
-OpenStreetMap, calcula hacia dónde mira la playa y el punto de mar donde pedir las olas (Open-Meteo),
-y le pone a la región sus modelos (`models.csv` o la regla) y sus puertos de marea
+OpenStreetMap, calcula hacia dónde mira la playa y el punto de mar donde pedir las olas (Open-Meteo: la
+celda de mar más cercana delante de la playa que la API no corra a otra), y le pone a la región sus modelos (`models.csv` o la regla) y sus puertos de marea
 (`tide/regions.json`). Las regiones de Uruguay y Santa Catarina están congeladas: sus semillas traen
 las posiciones, orientaciones y puntos de olas validados en 2026-10 (Canelones y Montevideo, `UY-CAN`:
-calculados por `build_zones.py` el 2026-10-22 y congelados igual).
+calculados por `build_zones.py` el 2026-10-22 y congelados igual), con los puntos de Florianópolis y
+Punta del Diablo revisados a mano en 2026-11.
 
 **Agregar o corregir un pico:** una fila en la tabla de su región y un PR
 ([`seeds/README.md`](seeds/README.md) tiene las columnas y las reglas). `tools/check_seeds.py`
@@ -57,7 +58,7 @@ está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regi
   Epagri/CIRAM (`tools/ciram_tide.py`).
 - **El año que viene de esos cuatro**, hasta que salga su tabla oficial: un análisis armónico de este
   año (con correcciones nodales) lo predice, en meses marcados `"ext": true` (`tools/tide/extend_official.py`,
-  en `tides.yml`; error del análisis de 1,1 a 4,3 cm). Sin eso, el último tramo de diciembre salía corto
+  en `tides.yml`; error del análisis de 1,1 a 3,8 cm). Sin eso, el último tramo de diciembre salía corto
   y en enero el reloj quedaba con sus 30 armónicos. La tabla oficial los reemplaza cuando se corre.
 - **El resto** (`tools/tide/build_tides.py`): predicciones oficiales de **NOAA** (EE. UU. y sus
   territorios), **JMA** (Japón), **Marine Institute** (Irlanda) y **LINZ** (Nueva Zelanda); donde no
