@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-05 01:51 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-06 19:54 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -44,8 +44,8 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | imi-achill-island Achill Island (modelado) | 441 cm | 11.3 | 0.96 |
 | imi-aranmore Aranmore | 416 cm | 6.7 | 0.99 |
 | imbituba Porto de Imbituba (DHN) | 100 cm | 7.7 | 0.97 |
-| la-paloma La Paloma (SOHMA) | 74 cm | 10.4 | 1.03 |
-| montevideo Montevideo (SOHMA) | 95 cm | 8.4 | 0.87 |
+| la-paloma La Paloma (SOHMA) | 74 cm | 9.9 | 1.03 |
+| montevideo Montevideo (SOHMA) | 97 cm | 7.7 | 0.86 |
 | punta-del-este Punta del Este (SOHMA) | 61 cm | 7.3 | 0.84 |
 
 ## Puertos
