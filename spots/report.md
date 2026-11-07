@@ -137,7 +137,7 @@
 | EC-GAL | 4 | 387 | ncep_gfswave016 | gfs_seamless | 1 | 545 m | 0 |
 | CO-PAC | 6 | 523 | ncep_gfswave016 | gfs_seamless | 3 | 849 m | 0 |
 | CO-CAR | 3 | 403 | ncep_gfswave016 | gfs_seamless | 3 | 786 m | 0 |
-| VE-ALL | 2 | 308 | ncep_gfswave016 | gfs_seamless | 2 | 248 m | 1 |
+| VE-ALL | 2 | 291 | ncep_gfswave016 | gfs_seamless | 2 | 248 m | 0 |
 | PA-PAC | 7 | 601 | ncep_gfswave016 | gfs_seamless | 3 | 392 m | 0 |
 | PA-BDT | 4 | 367 | ncep_gfswave016 | gfs_seamless | 1 | 122 m | 0 |
 | CR-GUA | 12 | 891 | ncep_gfswave016 | gfs_seamless | 2 | 236 m | 2 |
