@@ -11,7 +11,7 @@ KIDDS BEACH,-33.1400,27.7040,B,K,local,,East London oeste
 ORIENT BEACH,-33.0235,27.9190,B,K,local,,East London
 EASTERN BEACH,-33.0120,27.9300,B,K,local,,East London
 NAHOON BEACH,-32.9965,27.9435,B,K,local,,East London
-NAHOON REEF,-32.9930,27.9525,R,K,local,top,East London; derecha
+NAHOON REEF,-32.9930,27.9525,R,K,local,facing=125 top,East London; derecha; orientación a mano (la calculada mira al recodo de la punta)
 BONZA BAY,-32.9740,27.9560,B,L,local,,East London
 GONUBIE,-32.9390,28.0160,,L,local,,East London norte
 CINTSA,-32.8340,28.1230,B,K,local,,

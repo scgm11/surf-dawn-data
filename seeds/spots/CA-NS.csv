@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 HARTLEN POINT,44.5990,-63.4640,P,L,local,,Halifax
 COW BAY,44.6140,-63.4290,B,K,local,,
-COLE HARBOUR,44.6340,-63.4170,B,L,local,,
+COLE HARBOUR,44.6501,-63.4173,B,K,osm:way/159247000,,Rainbow Haven; boca de Cole Harbour
 CONRAD'S BEACH,44.6340,-63.3740,B,K,local,,
 LAWRENCETOWN,44.6445,-63.3440,P,K,local,top,
 EAST LAWRENCETOWN,44.6540,-63.3000,B,L,local,,

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 PIE DE LA CUESTA,16.9120,-99.9990,B,L,local,,Acapulco; posición aproximada
-REVOLCADERO,16.7980,-99.8360,B,L,local,,Acapulco Diamante; posición aproximada
+REVOLCADERO,16.7730,-99.8010,B,V,osm:relation/12204231,,Acapulco Diamante
 BARRA DE POTOSI,17.5150,-101.4800,B,K,local,,Petatlán
 TRONCONES,17.7870,-101.7380,P,K,local,top,derecha
 LA SALADITA,17.8330,-101.7700,P,K,local,top,derecha larga de arena y roca
