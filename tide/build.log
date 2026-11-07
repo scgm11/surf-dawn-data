@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 38 s
+catalogs: 3902 stations in 42 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -355,7 +355,7 @@ GOT5.6: 163 points, 17520 hours each
   CA-NS        got-e49ea1     5.. 219 cm  1 spots
   AU-QLD-SC    got-7a487c     5.. 224 cm  21 spots
   AU-QLD-SC    got-3334f6     6.. 228 cm  1 spots
-  AU-NSW-MN    got-03f20d     5.. 210 cm  6 spots
+  AU-NSW-MN    got-1f6754     5.. 210 cm  6 spots
   AU-VIC-W     got-78d608     6.. 172 cm  2 spots
   AU-TAS       got-23237f     6.. 168 cm  2 spots
   AU-SA-EYR    got-a905b1     5.. 178 cm  3 spots
@@ -433,7 +433,7 @@ GOT5.6: 163 points, 17520 hours each
   GH-ALL       got-ef40bc     5.. 189 cm  1 spots
   MZ-S         got-0f94d8     6.. 269 cm  3 spots
   MZ-INH       got-e51b06     6.. 330 cm  3 spots
-  MG-ALL       got-56aa18     6..  64 cm  2 spots
+  MG-ALL       got-0c4434     6..  64 cm  2 spots
   MG-ALL       got-ab6d4c     5.. 314 cm  1 spots
   ES-CAN       got-441786     6.. 464 cm  7 spots
   ES-AST       got-0bc1cc     5.. 447 cm  2 spots
@@ -461,4 +461,6 @@ validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.4 cm, rango 100 cm, m
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 9.9 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 montevideo Montevideo (SOHMA): RMS 7.7 cm, rango 97 cm, modelo/oficial 0.86
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-done: 427 ports, 209 regions with ports, 2329/2440 spots, 10675 files 28.3 MB, 414 s
+removing tide/got-03f20d (no region uses it)
+removing tide/got-56aa18 (no region uses it)
+done: 427 ports, 209 regions with ports, 2329/2440 spots, 10675 files 28.3 MB, 420 s
