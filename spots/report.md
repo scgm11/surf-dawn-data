@@ -104,7 +104,7 @@
 | Región | Picos | Bytes | Olas | Viento | Puertos | Ajuste medio a la costa | Punto de olas |
 |---|---|---|---|---|---|---|---|
 | UY-CAN | 14 | 953 | ncep_gfswave025 | gfs_seamless | 2 | — | 0 |
-| UY-MAL | 18 | 991 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
+| UY-MAL | 18 | 1095 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | UY-ROC | 19 | 1097 | ncep_gfswave025 | gfs_seamless | 1 | — | 5 |
 | AR-MDP | 22 | 1279 | ncep_gfswave025 | gfs_seamless | 3 | 422 m | 0 |
 | AR-BAN | 16 | 1018 | ncep_gfswave025 | gfs_seamless | 2 | 552 m | 0 |

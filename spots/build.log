@@ -1,5 +1,5 @@
 UY-CAN      14 spots   953 bytes  vba63f2
-UY-MAL      18 spots   991 bytes  vad17ed
+UY-MAL      18 spots  1095 bytes  va61665
 UY-ROC      19 spots  1097 bytes  vd3b8d8
 AR-MDP      22 spots  1279 bytes  v80cf38
 AR-BAN      16 spots  1018 bytes  v284e43
@@ -46,7 +46,6 @@ SV-LIB       8 spots   575 bytes  va779f6
 SV-ORI       4 spots   437 bytes  v19fc50
 GT-PAC       4 spots   447 bytes  vc87438
 MX-OAX      13 spots   924 bytes  v0c76a1
-  osmdata: 879699 coastline pieces
 MX-PAC      12 spots   902 bytes  v7dd3d3
 MX-NAY       9 spots   789 bytes  v5f0a71
 MX-BCS       6 spots   542 bytes  v349bfc
@@ -141,7 +140,6 @@ MV-SMA       3 spots   349 bytes  v9685a2
 MV-SOU       2 spots   301 bytes  va2d1ca
 MV-CEN       1 spots   260 bytes  v8319d8
 JP-CHI       8 spots   529 bytes  v4e2b3b
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 JP-SHO       9 spots   560 bytes  vceed14
 JP-IZU       4 spots   359 bytes  v53dae3
 JP-IBA       5 spots   486 bytes  vd39523
