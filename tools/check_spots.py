@@ -290,6 +290,29 @@ def check_flagship(code, s, cc, seed=None):
     return best
 
 
+def last_flagship(checked):
+    """The last run's flagship spots, as they were (what is checked by hand, from the seeds of today)."""
+    try:
+        with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
+            flagship = json.load(f).get("flagship", [])
+    except (OSError, ValueError):
+        return []
+    for c in flagship:
+        if c.get("status") in ("lejos", "revisado"):
+            c["status"] = "revisado" if (c["region"], c["spot"]) in checked else "lejos"
+    return flagship
+
+
+def save(result, zs, used):
+    """Writes validation/spots.json and validation/spots.md."""
+    result["open_meteo"] = {"requests": used["requests"], "calls": round(used["calls"])}
+    os.makedirs(OUT, exist_ok=True)
+    with open(os.path.join(OUT, "spots.json"), "w", encoding="utf-8") as f:
+        json.dump(result, f, ensure_ascii=False, indent=1)
+    with open(os.path.join(OUT, "spots.md"), "w", encoding="utf-8") as f:
+        f.write(report(result, zs))
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
@@ -374,29 +397,26 @@ def main():
     print("%d zones that almost never get their waves head-on" % len(result["zones"]))
     result["cells"] = check_cells(zs, used)
     print("%d spots whose cell is not a good one" % len(result["cells"]))
-    if a.no_wikidata or a.unsourced:               # the last run's, as they were
-        try:
-            with open(os.path.join(OUT, "spots.json"), encoding="utf-8") as f:
-                result["flagship"] = json.load(f).get("flagship", [])
-        except (OSError, ValueError):
-            pass
-        for c in result["flagship"]:
-            if c.get("status") in ("lejos", "revisado"):
-                c["status"] = "revisado" if (c["region"], c["spot"]) in checked else "lejos"
-        if a.unsourced:
-            OVERPASS_UNTIL[0] = time.time() + 2 * OVERPASS_MIN * 60
-            rows = {(z["id"], s[0]): (z, s) for z in zs for s in z["s"]}
-            for i, c in enumerate(result["flagship"]):
-                if c.get("status") in ("sin fuente", "error") and (c["region"], c["spot"]) in rows:
-                    z, s = rows[(c["region"], c["spot"])]
-                    n = check_flagship(z["id"], s, z["c"], seed_rows.get((z["id"], s[0])))
-                    if n["status"] == "lejos" and (z["id"], s[0]) in checked:
-                        n["status"] = "revisado"
-                    n.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
-                    result["flagship"][i] = n
-                    print("  %s/%s: %s %s" % (z["id"], s[0], n["status"], n.get("km", "")))
-    else:
+    # The flagship search can take an hour. All of the above is saved first, with the last run's flagship
+    # spots, so that a run cut off on the way does not lose it (the workflow publishes what there is).
+    result["flagship"], result["flagship_old"] = last_flagship(checked), True
+    save(result, zs, used)
+    if a.unsourced:
+        OVERPASS_UNTIL[0] = time.time() + 2 * OVERPASS_MIN * 60
+        rows = {(z["id"], s[0]): (z, s) for z in zs for s in z["s"]}
+        for i, c in enumerate(result["flagship"]):
+            if c.get("status") in ("sin fuente", "error") and (c["region"], c["spot"]) in rows:
+                z, s = rows[(c["region"], c["spot"])]
+                n = check_flagship(z["id"], s, z["c"], seed_rows.get((z["id"], s[0])))
+                if n["status"] == "lejos" and (z["id"], s[0]) in checked:
+                    n["status"] = "revisado"
+                n.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
+                result["flagship"][i] = n
+                print("  %s/%s: %s %s" % (z["id"], s[0], n["status"], n.get("km", "")))
+        del result["flagship_old"]
+    elif not a.no_wikidata:
         OVERPASS_UNTIL[0] = time.time() + OVERPASS_MIN * 60
+        found = []
         for z in zs:
             for s in z["s"]:
                 if tops.get((z["id"], s[0])):
@@ -404,14 +424,11 @@ def main():
                     if c["status"] == "lejos" and (z["id"], s[0]) in checked:
                         c["status"] = "revisado"            # the item is a town, a hotel, another wave... (seed flag)
                     c.update({"region": z["id"], "spot": s[0], "lat": s[1], "lon": s[2]})
-                    result["flagship"].append(c)
+                    found.append(c)
                     print("  %s/%s: %s %s" % (z["id"], s[0], c["status"], c.get("km", "")))
-    result["open_meteo"] = {"requests": used["requests"], "calls": round(used["calls"])}
-    os.makedirs(OUT, exist_ok=True)
-    with open(os.path.join(OUT, "spots.json"), "w", encoding="utf-8") as f:
-        json.dump(result, f, ensure_ascii=False, indent=1)
-    with open(os.path.join(OUT, "spots.md"), "w", encoding="utf-8") as f:
-        f.write(report(result, zs))
+        result["flagship"] = found
+        del result["flagship_old"]
+    save(result, zs, used)
     print("%d spots flagged; flagship: %s; Open-Meteo %d requests, ~%d calls" % (
         len(result["flags"]), {k: sum(1 for c in result["flagship"] if c["status"] == k)
                                 for k in ("ok", "lejos", "sin fuente", "error")},
@@ -437,11 +454,12 @@ def report(r, zs):
          "- **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media "
          "de su zona.",
          "- **Celdas:** la celda de la que contesta la API a cada pico, abajo las que no son buenas.",
-         "- **Emblemáticos (§5.8):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta %d km; "
+         "- **Emblemáticos (§5.8%s):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta %d km; "
          "si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la "
          "semilla): %d bien (a menos de %.1f km; %d de ellos por la fuente de su semilla), %d lejos, %d lejos pero "
          "revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), %d sin fuente "
          "(revisar a mano; `validation/lookup.md` tiene lo que hay con su nombre alrededor), %d sin respuesta." % (
+             ", de la corrida anterior" if r.get("flagship_old") else "",
              WD_KM, count["ok"], WD_FAR_KM, sum(1 for c in fl if c.get("label") == "fuente de la semilla"),
              count["lejos"], count["revisado"], count["sin fuente"], count["error"]),
          "- Open-Meteo: %d pedidos, ~%d llamadas de las 10.000 diarias gratuitas." % (

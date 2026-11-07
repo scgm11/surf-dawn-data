@@ -256,6 +256,10 @@ celda detrás de la playa o a más de 35 km. El JSON tiene `flags` (`region`, `s
 (`status`: `ok`, `lejos`, `revisado`, `sin fuente` o `error`; `km`, `qid`, `wd_lat`, `wd_lon`) y, por
 región, la mediana de la altura y de las horas con olas de frente.
 
+Buscar los emblemáticos lleva casi una hora, así que lo demás se escribe antes. Si la corrida se corta
+en esa búsqueda, o corre con `--no-wikidata`, quedan los emblemáticos de la corrida anterior y
+`flagship_old` es `true`.
+
 ### `validation/lookup.md` — búsqueda por nombre
 
 `tools/lookup.py` (Action `lookup.yml`, a mano) lista, para los emblemáticos sin fuente o lejos de la

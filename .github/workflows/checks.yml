@@ -14,7 +14,7 @@ on:
   workflow_dispatch:
     inputs:
       wikidata:
-        description: "Revisar los emblemáticos contra Wikidata (unos 25 min)"
+        description: "Revisar los emblemáticos contra Wikidata (casi 1 h)"
         type: boolean
         required: false
         default: true
@@ -31,7 +31,7 @@ concurrency:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -45,7 +45,7 @@ jobs:
           args=()
           [ "${{ github.event.inputs.wikidata }}" = "false" ] && args+=(--no-wikidata)
           [ "${{ github.event.inputs.unsourced }}" = "true" ] && args+=(--unsourced)
-          python3 tools/check_spots.py "${args[@]}" 2>&1 | tee validation/spots.log
+          python3 -u tools/check_spots.py "${args[@]}" 2>&1 | tee validation/spots.log
       - name: Publicar
         if: always()
         run: |

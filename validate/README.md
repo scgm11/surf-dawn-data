@@ -16,6 +16,9 @@ Lo corre la Action `.github/workflows/validation.yml`: el día 3 de cada mes, a 
 corta o se cae antes de terminar, publica solo el log, y `validation/spots.json`, que es de
 `tools/check_spots.py`, no lo toca.
 
+Bajar Copernicus lleva casi dos horas, así que el límite de la corrida es de 240 min. Lo bajado se
+guarda también si se corta, por día UTC: otra corrida ese mismo día tarda minutos.
+
 A mano, con red:
 
 ```sh

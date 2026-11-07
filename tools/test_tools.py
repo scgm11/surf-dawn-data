@@ -1,5 +1,8 @@
 """Offline tests of the wave points, the wave scale and the Imbituba parser:
 python3 -m unittest discover -s tools -p "test_*.py" """
+import contextlib
+import io
+import json
 import os
 import sys
 import tempfile
@@ -108,6 +111,62 @@ class CellControl(unittest.TestCase):
         self.assertIn("km", check_spots.cell_problem(self.M, (-34.0, -53.5), None, (-34.5, -53.5), 180))
         self.assertIsNone(check_spots.cell_problem(self.M, spot, None, (-34.25, -53.5), 170))
         self.assertIn("sin respuesta", check_spots.cell_problem(self.M, spot, None, None, 94))
+
+
+class FlagshipCutOff(unittest.TestCase):
+    """A run cut off while it looks for the flagship spots keeps the rest, with the last run's."""
+    ZONE = {"id": "UY-X", "m": ["ncep_gfswave025"], "c": "UY", "s": [["A", -34.0, -53.5, 94, "beach"]]}
+    CELLS = [{"region": "UY-X", "spot": "A", "cell": [-34.25, -53.5], "wave": None, "km": 28.0, "why": "detrás"}]
+    OLD = {"region": "UY-X", "spot": "A", "lat": -34.0, "lon": -53.5, "status": "ok", "km": 0.1}
+
+    def run_main(self, out, argv, flagship):
+        with open(os.path.join(out, "spots.json"), "w", encoding="utf-8") as f:
+            json.dump({"flagship": [self.OLD]}, f)
+        with mock.patch.object(check_spots, "OUT", out), \
+                mock.patch.object(check_spots, "zones", return_value=[self.ZONE]), \
+                mock.patch.object(check_spots.seeds, "spots", return_value=[{"name": "A", "f": {"top": 1}}]), \
+                mock.patch.object(check_spots, "fetch_waves", return_value={}), \
+                mock.patch.object(check_spots, "check_cells", return_value=self.CELLS), \
+                mock.patch.object(check_spots, "check_flagship", side_effect=flagship) as called, \
+                mock.patch.object(sys, "argv", ["check_spots.py"] + argv), \
+                contextlib.redirect_stdout(io.StringIO()):
+            try:
+                check_spots.main()
+            except KeyboardInterrupt:
+                pass
+        return called
+
+    def read(self, out):
+        with open(os.path.join(out, "spots.json"), encoding="utf-8") as f:
+            data = json.load(f)
+        with open(os.path.join(out, "spots.md"), encoding="utf-8") as f:
+            return data, f.read()
+
+    def test_cut_off_keeps_the_rest(self):
+        with tempfile.TemporaryDirectory() as out:
+            self.run_main(out, [], KeyboardInterrupt)
+            data, md = self.read(out)
+        self.assertEqual(data["cells"], self.CELLS)
+        self.assertEqual(data["flagship"], [self.OLD])
+        self.assertTrue(data["flagship_old"])
+        self.assertIn("Celdas de olas para mirar (1)", md)
+        self.assertIn("de la corrida anterior", md)
+
+    def test_whole_run_replaces_them(self):
+        with tempfile.TemporaryDirectory() as out:
+            self.run_main(out, [], [{"status": "ok", "km": 0.2}])
+            data, md = self.read(out)
+        self.assertEqual(data["flagship"][0]["km"], 0.2)
+        self.assertNotIn("flagship_old", data)
+        self.assertNotIn("de la corrida anterior", md)
+
+    def test_no_wikidata_says_so(self):
+        with tempfile.TemporaryDirectory() as out:
+            called = self.run_main(out, ["--no-wikidata"], [])
+            data, md = self.read(out)
+        called.assert_not_called()
+        self.assertEqual(data["flagship"], [self.OLD])
+        self.assertIn("de la corrida anterior", md)
 
 
 def word(x, y, text):
