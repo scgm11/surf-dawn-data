@@ -1,127 +1,132 @@
-[    0s] 213 regions, window 2026-10-04 .. 2026-11-03
-[    7s] cdip: 140628 rows, 80 stations
-[    7s] cdip: 80 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (7s)
-[   10s] aodn: columns TIME WMDS WPDI WPDS WPFM WPPE WSSH SSWMD LATITUDE filename LONGITUDE timeSeries water_depth WAVE_quality_control WHTH WMXH WPMH wmo_id site_name timestamp polygon; wind none
-[   26s] aodn: 80125 rows since 2026-10-01
-[   26s]   aodn TIME timestamp[ns] 
-[   26s]   aodn WSSH double 
-[   26s]   aodn WPPE double 
-[   26s]   aodn WPDI double 
-[   26s]   aodn WPFM double 
-[   26s]   aodn aodn:crowdy: 290 records, 146 hours, 10-04 00 .. 10-10 01
-[   26s]   aodn aodn:semaphore: 578 records, 290 hours, 10-04 00 .. 10-16 01
-[   26s]   aodn aodn:weeroona-bay: 100 records, 100 hours, 10-30 02 .. 11-03 05
-[   26s]   aodn aodn:west-beach: 447 records, 447 hours, 10-04 01 .. 10-22 15
-[   27s] aodn: 47 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (20s)
-[   27s] mi IWaveBNetwork30Min: columns {'hs': ('SignificantWaveHeight', 0.01), 'tp': 'PeakPeriod', 'tm': 'EnergyPeriod', 'dir': ('PeakDirection', 180.0)}; wind None
-[   31s]   last records: AMETS Berth A Wave Buoy 2026-05-27T21:30, AMETS Berth B Wave Buoy 2026-05-27T20:00, AMETS Berth C Wave Buoy 2015-04-17T16:00, Bantry Bay 2024-09-24T10:00, Brandon Bay 2025-01-24T02:30, Clew Bay 2024-03-11T13:16, Finnis Waver 2023-01-10T13:30, Lehanagh Pool 2025-10-12T16:00, Mace Head 2024-09-17T08:41, SmartBay Wave Buoy 2025-02-08T06:30, Westwave Wave Buoy 2019-03-27T13:00
-[   34s]   mi IWaveBNetwork30Min: no data in the window
-[   35s] mi IWBNetwork: columns {'hs': ('WaveHeight', 1.0), 'tp': 'Tp', 'tm': 'WavePeriod', 'dir': ('MeanWaveDirection', 0.0)}; wind {'spd': ('WindSpeed', 0.514444), 'dir': 'WindDirection', 'z': None, 'units': 'knots'}
-[   38s]   last records: Belmullet-AMETS 2011-08-10T16:00, FS1 2008-02-17T02:00, M1 2007-07-09T12:00, M2 2026-11-03T06:00, M3 2026-11-03T06:00, M4 2026-03-29T04:00, M4-Archive 2007-05-01T11:00, M5 2026-11-03T06:00, M6 2026-11-03T06:00
-[   39s] mi IWBNetwork: 2912 rows, 4 stations
-[   39s] mi: 4 stations with >= 72 hourly Hs, 4 with >= 72 hourly wind (13s)
-[   40s] ndbc: 1352 active stations, 478 with recent files near the regions (329 not buoys)
-[  298s] ndbc: 124 stations with >= 72 hourly Hs, 289 with >= 72 hourly wind (259s)
-INFO - 2026-11-03T06:37:02Z - Selected dataset version: "202311"
-INFO - 2026-11-03T06:37:02Z - Selected dataset part: "latest"
-INFO - 2026-11-03T06:37:03Z - Total size of the download: 41.23 MB.
-[  314s]   cmems: 1 files downloaded
-[  318s] cmems: 258 wave platforms near the regions, 7376 daily files
-INFO - 2026-11-03T06:37:21Z - Selected dataset version: "202311"
-INFO - 2026-11-03T06:37:21Z - Selected dataset part: "latest"
-INFO - 2026-11-03T07:45:24Z - Total size of the download: 567.59 MB.
-[ 6837s]   cmems: 7376 files downloaded
-[ 7033s] cmems: 243 stations with >= 72 hourly Hs, 61 with >= 72 hourly wind (6735s)
-[ 7033s]   same buoy: ndbc:41112 = cdip:132 (kept cdip:132)
-[ 7033s]   same buoy: ndbc:41113 = cdip:143 (kept cdip:143)
-[ 7033s]   same buoy: ndbc:41114 = cdip:134 (kept cdip:134)
-[ 7033s]   same buoy: ndbc:41120 = cdip:250 (kept cdip:250)
-[ 7033s]   same buoy: ndbc:44087 = cdip:240 (kept cdip:240)
-[ 7033s]   same buoy: ndbc:44095 = cdip:192 (kept cdip:192)
-[ 7033s]   same buoy: ndbc:44099 = cdip:147 (kept cdip:147)
-[ 7033s]   same buoy: ndbc:46211 = cdip:036 (kept cdip:036)
-[ 7033s]   same buoy: ndbc:46214 = cdip:029 (kept cdip:029)
-[ 7033s]   same buoy: ndbc:46215 = cdip:076 (kept cdip:076)
-[ 7033s]   same buoy: ndbc:46219 = cdip:067 (kept cdip:067)
-[ 7033s]   same buoy: ndbc:46221 = cdip:028 (kept cdip:028)
-[ 7033s]   same buoy: ndbc:46222 = cdip:092 (kept cdip:092)
-[ 7033s]   same buoy: ndbc:46224 = cdip:045 (kept cdip:045)
-[ 7033s]   same buoy: ndbc:46225 = cdip:100 (kept cdip:100)
-[ 7033s]   same buoy: ndbc:46232 = cdip:191 (kept cdip:191)
-[ 7033s]   same buoy: ndbc:46248 = cdip:179 (kept cdip:179)
-[ 7033s]   same buoy: ndbc:46253 = cdip:213 (kept cdip:213)
-[ 7033s]   same buoy: ndbc:46256 = cdip:215 (kept cdip:215)
-[ 7033s]   same buoy: ndbc:46258 = cdip:220 (kept cdip:220)
-[ 7033s]   same buoy: ndbc:46285 = cdip:284 (kept cdip:284)
-[ 7033s]   same buoy: ndbc:46286 = cdip:285 (kept cdip:285)
-[ 7033s]   same buoy: ndbc:51201 = cdip:106 (kept cdip:106)
-[ 7033s]   same buoy: ndbc:51206 = cdip:188 (kept cdip:188)
-[ 7033s]   same buoy: ndbc:41117 = cdip:194 (kept cdip:194)
-[ 7033s]   same buoy: ndbc:46229 = cdip:139 (kept cdip:139)
-[ 7033s]   same buoy: ndbc:51202 = cdip:098 (kept cdip:098)
-[ 7033s]   same buoy: ndbc:51209 = cdip:189 (kept cdip:189)
-[ 7033s]   same buoy: ndbc:42092 = cdip:252 (kept cdip:252)
-[ 7033s]   same buoy: ndbc:44085 = cdip:260 (kept cdip:260)
-[ 7033s]   same buoy: ndbc:44097 = cdip:154 (kept cdip:154)
-[ 7033s]   same buoy: ndbc:44098 = cdip:160 (kept cdip:160)
-[ 7033s]   same buoy: ndbc:46237 = cdip:142 (kept cdip:142)
-[ 7033s]   same buoy: ndbc:46254 = cdip:201 (kept cdip:201)
-[ 7033s]   same buoy: ndbc:46266 = cdip:153 (kept cdip:153)
-[ 7033s]   same buoy: ndbc:46274 = cdip:262 (kept cdip:262)
-[ 7033s]   same buoy: ndbc:51212 = cdip:238 (kept cdip:238)
-[ 7033s]   same buoy: ndbc:41110 = cdip:150 (kept cdip:150)
-[ 7033s]   same buoy: ndbc:42354 = cdip:279 (kept cdip:279)
-[ 7033s]   same buoy: ndbc:44086 = cdip:243 (kept cdip:243)
-[ 7033s]   same buoy: ndbc:44088 = cdip:171 (kept cdip:171)
-[ 7033s]   same buoy: ndbc:44091 = cdip:209 (kept cdip:209)
-[ 7033s]   same buoy: ndbc:44100 = cdip:430 (kept cdip:430)
-[ 7033s]   same buoy: ndbc:46213 = cdip:094 (kept cdip:094)
-[ 7033s]   same buoy: ndbc:46236 = cdip:156 (kept cdip:156)
-[ 7033s]   same buoy: ndbc:46278 = cdip:270 (kept cdip:270)
-[ 7033s]   same buoy: ndbc:51211 = cdip:233 (kept cdip:233)
-[ 7033s]   same buoy: ndbc:41121 = cdip:249 (kept cdip:249)
-[ 7033s]   same buoy: ndbc:41122 = cdip:265 (kept cdip:265)
-[ 7033s]   same buoy: ndbc:46218 = cdip:071 (kept cdip:071)
-[ 7033s]   same buoy: ndbc:46243 = cdip:162 (kept cdip:162)
-[ 7033s]   same buoy: ndbc:46267 = cdip:248 (kept cdip:248)
-[ 7033s]   same buoy: ndbc:46277 = cdip:271 (kept cdip:271)
-[ 7033s]   same buoy: ndbc:44056 = cdip:433 (kept cdip:433)
-[ 7033s]   same buoy: ndbc:LJPC1 = cdip:201 (kept cdip:201)
-[ 7033s]   same buoy: ndbc:44014 = cdip:171 (kept cdip:171)
-[ 7033s]   same buoy: ndbc:46268 = cdip:103 (kept cdip:103)
-[ 7033s]   same buoy: ndbc:44090 = cdip:221 (kept cdip:221)
-[ 7033s]   same buoy: ndbc:46259 = cdip:222 (kept cdip:222)
-[ 7033s]   same buoy: ndbc:41159 = cdip:217 (kept cdip:217)
-[ 7033s]   same buoy: ndbc:44084 = cdip:263 (kept cdip:263)
-[ 7033s]   same buoy: ndbc:46275 = cdip:264 (kept cdip:264)
-[ 7033s]   same buoy: ndbc:46244 = cdip:168 (kept cdip:168)
-[ 7033s]   same buoy: ndbc:46251 = cdip:203 (kept cdip:203)
-[ 7033s]   same buoy: ndbc:41115 = cdip:181 (kept cdip:181)
-[ 7033s]   same buoy: cmems:Europlatform3 = cmems:Europlatform2 (kept cmems:Europlatform2)
-[ 7033s]   same buoy: cmems:IJmuidenMunitiestort2 = cmems:IJmuidenMunitiestort (kept cmems:IJmuidenMunitiestort)
-[ 7033s]   same buoy: cmems:K13a3 = cmems:K13a (kept cmems:K13a)
-[ 7033s]   same buoy: cmems:LichteilandGoeree2 = cmems:LichteilandGoeree1 (kept cmems:LichteilandGoeree1)
-[ 7033s]   same buoy: cmems:Schouwenbank2 = cmems:Schouwenbank (kept cmems:Schouwenbank)
-[ 7033s]   same buoy: cmems:K13a2 = cmems:K13a (kept cmems:K13a)
-[ 7033s]   same buoy: cmems:MaeslantkeringZeezijdeZuidMeetpaal = cmems:MaeslantkeringZeezijdeNoordMeetpaal (kept cmems:MaeslantkeringZeezijdeNoordMeetpaal)
-[ 7033s]   same buoy: cmems:4400258 = cmems:44258 (kept cmems:44258)
-[ 7033s]   same buoy: cmems:4600207 = cmems:46207 (kept cmems:46207)
-[ 7033s]   same buoy: cmems:46304 = cmems:4600304 (kept cmems:4600304)
-[ 7033s]   same buoy: cmems:46131 = cmems:4600131 (kept cmems:4600131)
-[ 7033s] 422 wave stations after removing 76 duplicates
-[ 7033s]   same wind station: ndbc:CPNW1 = ndbc:CPMW1 (kept ndbc:CPMW1)
-[ 7033s]   same wind station: ndbc:FSKM2 = ndbc:44080 (kept ndbc:44080)
-[ 7033s]   same wind station: ndbc:LJAC1 = ndbc:LJPC1 (kept ndbc:LJPC1)
-[ 7033s]   same wind station: ndbc:PTCR1 = ndbc:NAXR1 (kept ndbc:NAXR1)
-[ 7033s]   same wind station: ndbc:UPBC1 = ndbc:MZXC1 (kept ndbc:MZXC1)
-[ 7033s]   same wind station: ndbc:DPHA1 = ndbc:DILA1 (kept ndbc:DILA1)
-[ 7033s]   same wind station: cmems:46304 = cmems:4600304 (kept cmems:4600304)
-[ 7033s]   same wind station: cmems:4400258 = cmems:44258 (kept cmems:44258)
-[ 7033s]   same wind station: cmems:4600207 = cmems:46207 (kept cmems:46207)
-[ 7033s]   same wind station: cmems:46131 = cmems:4600131 (kept cmems:4600131)
-[ 7033s]   same wind station: cmems:4600303 = cmems:46303 (kept cmems:46303)
-[ 7033s] 343 wind stations after removing 11 duplicates (126 buoys, 217 ashore)
-[ 7037s] 216 buoy-region pairs left out: facing another sea or sheltered
-[ 7037s] 199 buoys within 150 km of 78 regions
-[ 7037s] open-meteo: 199 buoy points to fetch (0 cached)
-[ 7166s] open-meteo: 213 spread points to fetch (0 cached)
+[    0s] 213 regions, window 2026-10-08 .. 2026-11-07
+[    5s] cdip: 196989 rows, 82 stations
+[    5s] cdip: 81 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (5s)
+[    8s] aodn: columns TIME WMDS WPDI WPDS WPFM WPPE WSSH SSWMD LATITUDE filename LONGITUDE timeSeries water_depth WAVE_quality_control WHTH WMXH WPMH wmo_id site_name timestamp polygon; wind none
+[   22s] aodn: 89054 rows since 2026-10-01
+[   22s]   aodn TIME timestamp[ns] 
+[   22s]   aodn WSSH double 
+[   22s]   aodn WPPE double 
+[   22s]   aodn WPDI double 
+[   22s]   aodn WPFM double 
+[   22s]   aodn aodn:black-point: 1323 records, 584 hours, 10-08 00 .. 11-06 23
+[   22s]   aodn aodn:cable-beach: 1059 records, 530 hours, 10-08 00 .. 10-30 03
+[   22s]   aodn aodn:crowdy: 98 records, 50 hours, 10-08 00 .. 10-10 01
+[   22s]   aodn aodn:semaphore: 386 records, 194 hours, 10-08 00 .. 10-16 01
+[   22s]   aodn aodn:weeroona-bay: 190 records, 190 hours, 10-30 02 .. 11-06 23
+[   22s]   aodn aodn:west-beach: 351 records, 351 hours, 10-08 01 .. 10-22 15
+[   22s] aodn: 46 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (17s)
+[   23s] mi IWaveBNetwork30Min: columns {'hs': ('SignificantWaveHeight', 0.01), 'tp': 'PeakPeriod', 'tm': 'EnergyPeriod', 'dir': ('PeakDirection', 180.0)}; wind None
+[   27s]   last records: AMETS Berth A Wave Buoy 2026-05-27T21:30, AMETS Berth B Wave Buoy 2026-05-27T20:00, AMETS Berth C Wave Buoy 2015-04-17T16:00, Bantry Bay 2024-09-24T10:00, Brandon Bay 2025-01-24T02:30, Clew Bay 2024-03-11T13:16, Finnis Waver 2023-01-10T13:30, Lehanagh Pool 2025-10-12T16:00, Mace Head 2024-09-17T08:41, SmartBay Wave Buoy 2025-02-08T06:30, Westwave Wave Buoy 2019-03-27T13:00
+[   30s]   mi IWaveBNetwork30Min: no data in the window
+[   31s] mi IWBNetwork: columns {'hs': ('WaveHeight', 1.0), 'tp': 'Tp', 'tm': 'WavePeriod', 'dir': ('MeanWaveDirection', 0.0)}; wind {'spd': ('WindSpeed', 0.514444), 'dir': 'WindDirection', 'z': None, 'units': 'knots'}
+[   34s]   last records: Belmullet-AMETS 2011-08-10T16:00, FS1 2008-02-17T02:00, M1 2007-07-09T12:00, M2 2026-11-07T00:00, M3 2026-11-07T00:00, M4 2026-03-29T04:00, M4-Archive 2007-05-01T11:00, M5 2026-11-07T00:00, M6 2026-11-07T00:00
+[   35s] mi IWBNetwork: 2888 rows, 4 stations
+[   35s] mi: 4 stations with >= 72 hourly Hs, 4 with >= 72 hourly wind (13s)
+[   35s] ndbc: 1357 active stations, 482 with recent files near the regions (333 not buoys)
+[  306s] ndbc: 126 stations with >= 72 hourly Hs, 291 with >= 72 hourly wind (271s)
+INFO - 2026-11-07T00:39:03Z - Selected dataset version: "202311"
+INFO - 2026-11-07T00:39:03Z - Selected dataset part: "latest"
+INFO - 2026-11-07T00:39:04Z - Total size of the download: 40.83 MB.
+[  324s]   cmems: 1 files downloaded
+[  326s] cmems: 260 wave platforms near the regions, 7178 daily files
+INFO - 2026-11-07T00:39:22Z - Selected dataset version: "202311"
+INFO - 2026-11-07T00:39:22Z - Selected dataset part: "latest"
+INFO - 2026-11-07T01:52:27Z - Total size of the download: 553.66 MB.
+[ 6769s]   cmems: 7178 files downloaded
+[ 6844s] cmems: 243 stations with >= 72 hourly Hs, 59 with >= 72 hourly wind (6538s)
+[ 6844s]   same buoy: ndbc:41112 = cdip:132 (kept cdip:132)
+[ 6844s]   same buoy: ndbc:44087 = cdip:240 (kept cdip:240)
+[ 6844s]   same buoy: ndbc:44095 = cdip:192 (kept cdip:192)
+[ 6844s]   same buoy: ndbc:44099 = cdip:147 (kept cdip:147)
+[ 6844s]   same buoy: ndbc:46211 = cdip:036 (kept cdip:036)
+[ 6844s]   same buoy: ndbc:46214 = cdip:029 (kept cdip:029)
+[ 6844s]   same buoy: ndbc:46215 = cdip:076 (kept cdip:076)
+[ 6844s]   same buoy: ndbc:46219 = cdip:067 (kept cdip:067)
+[ 6844s]   same buoy: ndbc:46221 = cdip:028 (kept cdip:028)
+[ 6844s]   same buoy: ndbc:46222 = cdip:092 (kept cdip:092)
+[ 6844s]   same buoy: ndbc:46224 = cdip:045 (kept cdip:045)
+[ 6844s]   same buoy: ndbc:46225 = cdip:100 (kept cdip:100)
+[ 6844s]   same buoy: ndbc:46229 = cdip:139 (kept cdip:139)
+[ 6844s]   same buoy: ndbc:46232 = cdip:191 (kept cdip:191)
+[ 6844s]   same buoy: ndbc:46248 = cdip:179 (kept cdip:179)
+[ 6844s]   same buoy: ndbc:46253 = cdip:213 (kept cdip:213)
+[ 6844s]   same buoy: ndbc:46256 = cdip:215 (kept cdip:215)
+[ 6844s]   same buoy: ndbc:46258 = cdip:220 (kept cdip:220)
+[ 6844s]   same buoy: ndbc:46285 = cdip:284 (kept cdip:284)
+[ 6844s]   same buoy: ndbc:46286 = cdip:285 (kept cdip:285)
+[ 6844s]   same buoy: ndbc:51201 = cdip:106 (kept cdip:106)
+[ 6844s]   same buoy: ndbc:51202 = cdip:098 (kept cdip:098)
+[ 6844s]   same buoy: ndbc:51206 = cdip:188 (kept cdip:188)
+[ 6844s]   same buoy: ndbc:41113 = cdip:143 (kept cdip:143)
+[ 6844s]   same buoy: ndbc:41114 = cdip:134 (kept cdip:134)
+[ 6844s]   same buoy: ndbc:41117 = cdip:194 (kept cdip:194)
+[ 6844s]   same buoy: ndbc:41120 = cdip:250 (kept cdip:250)
+[ 6844s]   same buoy: ndbc:46244 = cdip:168 (kept cdip:168)
+[ 6844s]   same buoy: ndbc:46266 = cdip:153 (kept cdip:153)
+[ 6844s]   same buoy: ndbc:51209 = cdip:189 (kept cdip:189)
+[ 6844s]   same buoy: ndbc:42092 = cdip:252 (kept cdip:252)
+[ 6844s]   same buoy: ndbc:44085 = cdip:260 (kept cdip:260)
+[ 6844s]   same buoy: ndbc:44097 = cdip:154 (kept cdip:154)
+[ 6844s]   same buoy: ndbc:44098 = cdip:160 (kept cdip:160)
+[ 6844s]   same buoy: ndbc:46237 = cdip:142 (kept cdip:142)
+[ 6844s]   same buoy: ndbc:46254 = cdip:201 (kept cdip:201)
+[ 6844s]   same buoy: ndbc:46274 = cdip:262 (kept cdip:262)
+[ 6844s]   same buoy: ndbc:51212 = cdip:238 (kept cdip:238)
+[ 6844s]   same buoy: ndbc:41110 = cdip:150 (kept cdip:150)
+[ 6844s]   same buoy: ndbc:41122 = cdip:265 (kept cdip:265)
+[ 6844s]   same buoy: ndbc:42354 = cdip:279 (kept cdip:279)
+[ 6844s]   same buoy: ndbc:44086 = cdip:243 (kept cdip:243)
+[ 6844s]   same buoy: ndbc:44088 = cdip:171 (kept cdip:171)
+[ 6844s]   same buoy: ndbc:44091 = cdip:209 (kept cdip:209)
+[ 6844s]   same buoy: ndbc:44100 = cdip:430 (kept cdip:430)
+[ 6844s]   same buoy: ndbc:46213 = cdip:094 (kept cdip:094)
+[ 6844s]   same buoy: ndbc:46236 = cdip:156 (kept cdip:156)
+[ 6844s]   same buoy: ndbc:46278 = cdip:270 (kept cdip:270)
+[ 6844s]   same buoy: ndbc:51211 = cdip:233 (kept cdip:233)
+[ 6844s]   same buoy: ndbc:41121 = cdip:249 (kept cdip:249)
+[ 6844s]   same buoy: ndbc:46218 = cdip:071 (kept cdip:071)
+[ 6844s]   same buoy: ndbc:46243 = cdip:162 (kept cdip:162)
+[ 6844s]   same buoy: ndbc:46267 = cdip:248 (kept cdip:248)
+[ 6844s]   same buoy: ndbc:46277 = cdip:271 (kept cdip:271)
+[ 6844s]   same buoy: ndbc:44056 = cdip:433 (kept cdip:433)
+[ 6844s]   same buoy: ndbc:LJPC1 = cdip:201 (kept cdip:201)
+[ 6844s]   same buoy: ndbc:51214 = cdip:273 (kept cdip:273)
+[ 6844s]   same buoy: ndbc:44014 = cdip:171 (kept cdip:171)
+[ 6844s]   same buoy: ndbc:46268 = cdip:103 (kept cdip:103)
+[ 6844s]   same buoy: ndbc:44090 = cdip:221 (kept cdip:221)
+[ 6844s]   same buoy: ndbc:41159 = cdip:217 (kept cdip:217)
+[ 6844s]   same buoy: ndbc:46275 = cdip:264 (kept cdip:264)
+[ 6844s]   same buoy: ndbc:44084 = cdip:263 (kept cdip:263)
+[ 6844s]   same buoy: ndbc:46259 = cdip:222 (kept cdip:222)
+[ 6844s]   same buoy: ndbc:41115 = cdip:181 (kept cdip:181)
+[ 6844s]   same buoy: ndbc:46251 = cdip:203 (kept cdip:203)
+[ 6844s]   same buoy: ndbc:42034 = ndbc:42033 (kept ndbc:42033)
+[ 6844s]   same buoy: cmems:Europlatform3 = cmems:Europlatform2 (kept cmems:Europlatform2)
+[ 6844s]   same buoy: cmems:IJmuidenMunitiestort2 = cmems:IJmuidenMunitiestort (kept cmems:IJmuidenMunitiestort)
+[ 6844s]   same buoy: cmems:K13a3 = cmems:K13a (kept cmems:K13a)
+[ 6844s]   same buoy: cmems:LichteilandGoeree2 = cmems:LichteilandGoeree1 (kept cmems:LichteilandGoeree1)
+[ 6844s]   same buoy: cmems:Schouwenbank2 = cmems:Schouwenbank (kept cmems:Schouwenbank)
+[ 6844s]   same buoy: cmems:MaeslantkeringZeezijdeZuidMeetpaal = cmems:MaeslantkeringZeezijdeNoordMeetpaal (kept cmems:MaeslantkeringZeezijdeNoordMeetpaal)
+[ 6844s]   same buoy: cmems:K13a2 = cmems:K13a (kept cmems:K13a)
+[ 6844s]   same buoy: cmems:44258 = cmems:4400258 (kept cmems:4400258)
+[ 6844s]   same buoy: cmems:46207 = cmems:4600207 (kept cmems:4600207)
+[ 6844s]   same buoy: cmems:46304 = cmems:4600304 (kept cmems:4600304)
+[ 6844s]   same buoy: cmems:46131 = cmems:4600131 (kept cmems:4600131)
+[ 6844s] 422 wave stations after removing 78 duplicates
+[ 6844s]   same wind station: ndbc:CPNW1 = ndbc:CPMW1 (kept ndbc:CPMW1)
+[ 6844s]   same wind station: ndbc:FSKM2 = ndbc:44080 (kept ndbc:44080)
+[ 6844s]   same wind station: ndbc:LJAC1 = ndbc:LJPC1 (kept ndbc:LJPC1)
+[ 6844s]   same wind station: ndbc:UPBC1 = ndbc:MZXC1 (kept ndbc:MZXC1)
+[ 6844s]   same wind station: ndbc:PTCR1 = ndbc:NAXR1 (kept ndbc:NAXR1)
+[ 6844s]   same wind station: ndbc:DPHA1 = ndbc:DILA1 (kept ndbc:DILA1)
+[ 6844s]   same wind station: ndbc:42033 = ndbc:42034 (kept ndbc:42034)
+[ 6844s]   same wind station: cmems:44258 = cmems:4400258 (kept cmems:4400258)
+[ 6844s]   same wind station: cmems:46207 = cmems:4600207 (kept cmems:4600207)
+[ 6844s]   same wind station: cmems:46304 = cmems:4600304 (kept cmems:4600304)
+[ 6844s]   same wind station: cmems:46131 = cmems:4600131 (kept cmems:4600131)
+[ 6844s] 343 wind stations after removing 11 duplicates (124 buoys, 219 ashore)
+[ 6847s] 213 buoy-region pairs left out: facing another sea or sheltered
+[ 6847s] 200 buoys within 150 km of 78 regions
+[ 6847s] open-meteo: 200 buoy points to fetch (0 cached)
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
