@@ -1,10 +1,5 @@
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AR-BAN      16 spots  media 0.9 m  de frente 89 %
 AR-MDP      22 spots  media 0.9 m  de frente 62 %
 AR-SUR       6 spots  media 0.7 m  de frente 60 %
@@ -218,15 +213,60 @@ PT-CEN      20 spots  media 1.5 m  de frente 98 %  open-meteo failed (<urlopen e
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  overpass overpass-api.de failed (The read operation timed out)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass-api.de failed (The read operation timed out)
-  overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (The read operation timed out)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass-api.de failed (HTTP Error 502: Bad Gateway)
-  overpass overpass.private.coffee failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass-api.de failed (The read operation timed out)
-  overpass overpass.private.coffee failed (The read operation timed out)
-  overpass overpass-api.de failed (HTTP Error 504: Gateway Timeout)
-  overpass overpass.private.coffee failed (The read operation timed out)
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+
+PT-ERI      11 spots  media 1.6 m  de frente 89 %
+PT-LIS      15 spots  media 1.2 m  de frente 85 %
+PT-MAD       8 spots  media 1.2 m  de frente 75 %
+PT-NOR      19 spots  media 1.5 m  de frente 91 %
+PT-PEN      12 spots  media 1.6 m  de frente 89 %
+RE-ALL       8 spots  media 1.2 m  de frente 75 %
+SN-ALL       5 spots  media 1.4 m  de frente 99 %
+SV-LIB       8 spots  media 1.1 m  de frente 100 %
+SV-ORI       4 spots  media 1.1 m  de frente 100 %
+TO-ALL       6 spots  media 1.5 m  de frente 58 %
+TT-ALL       4 spots  media 0.8 m  de frente 100 %
+TW-E         4 spots  media 1.3 m  de frente 53 %
+TW-NE        6 spots  media 1.3 m  de frente 82 %
+US-CA-CEN   16 spots  media 1.6 m  de frente 94 %
+US-CA-LA    23 spots  media 0.9 m  de frente 100 %
+US-CA-NOR   25 spots  media 2.0 m  de frente 100 %
+US-CA-OC    32 spots  media 1.0 m  de frente 100 %
+US-CA-SB    27 spots  media 0.8 m  de frente 96 %
+US-CA-SC    30 spots  media 1.3 m  de frente 87 %
+US-CA-SD    38 spots  media 0.8 m  de frente 94 %
+US-CA-SF    29 spots  media 1.5 m  de frente 100 %
+US-FL-PAN    6 spots  media 0.6 m  de frente 54 %
+US-FL       46 spots  media 1.7 m  de frente 100 %
+US-GULF     13 spots  media 0.5 m  de frente 92 %
+US-HI-BIG   15 spots  media 1.0 m  de frente 73 %
+US-HI-KAU   21 spots  media 2.0 m  de frente 86 %
+US-HI-MAU   21 spots  media 1.7 m  de frente 58 %
+US-HI-OAN   21 spots  media 1.7 m  de frente 91 %
+US-HI-OAS   25 spots  media 1.1 m  de frente 60 %
+US-MID      11 spots  media 0.7 m  de frente 98 %
+US-NE       60 spots  media 0.6 m  de frente 73 %
+US-PNW      33 spots  media 2.1 m  de frente 100 %
+US-SC-GA    10 spots  media 0.9 m  de frente 93 %
+US-SE       22 spots  media 1.3 m  de frente 98 %
+UY-CAN      14 spots  media 0.7 m  de frente 57 %
+UY-MAL      18 spots  media 1.0 m  de frente 76 %
+UY-ROC      19 spots  media 1.1 m  de frente 52 %
+VE-ALL       2 spots  media 0.5 m  de frente 92 %
+VN-ALL       5 spots  media 0.6 m  de frente 100 %
+VU-ALL       5 spots  media 1.2 m  de frente 21 %
+WS-ALL       6 spots  media 1.8 m  de frente 78 %
+ZA-EC-JB    10 spots  media 1.9 m  de frente 98 %
+ZA-EC-PE    17 spots  media 2.1 m  de frente 19 %
+ZA-EC-WLD    5 spots  media 1.7 m  de frente 42 %
+ZA-KZN-DBN   8 spots  media 1.7 m  de frente 62 %
+ZA-KZN-N     6 spots  media 1.7 m  de frente 69 %
+ZA-KZN-S     9 spots  media 1.8 m  de frente 51 %
+ZA-WC-CPT   20 spots  media 1.8 m  de frente 82 %
+ZA-WC-GR    11 spots  media 1.7 m  de frente 94 %
+ZA-WC-WCO    6 spots  media 1.6 m  de frente 0 %
+39 facing flags cleared over 92 days
+1 zones that almost never get their waves head-on
+52 spots whose cell is not a good one
+126 spots flagged; flagship: {'ok': 319, 'lejos': 0, 'sin fuente': 52, 'error': 0}; Open-Meteo 35 requests, ~4680 calls
