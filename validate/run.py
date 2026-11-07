@@ -47,6 +47,14 @@ def write(name, text):
         f.write(text)
 
 
+def clear_regions(out=OUT):
+    """Delete the regions' JSON of the last run (a region that is gone leaves no file behind).
+    spots.json stays: it is tools/check_spots.py's."""
+    for p in glob.glob(os.path.join(out, "*.json")):
+        if os.path.basename(p) != "spots.json":
+            os.remove(p)
+
+
 def direction_check(results):
     """Mean signed model - buoy direction and period differences per source (convention check)."""
     acc = {}
@@ -192,8 +200,7 @@ def main():
     log("open-meteo: %d requests, %d locations, %.0f weighted calls (free limit 10000/day); cache %s"
         % (models.USED["requests"], models.USED["locations"], models.USED["weight"], cache.STATS))
 
-    for p in glob.glob(os.path.join(OUT, "*.json")):
-        os.remove(p)
+    clear_regions()
     results = []
     for r in rs:
         sp = at_spots.get(r.code)

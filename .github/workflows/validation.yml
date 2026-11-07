@@ -67,8 +67,12 @@ jobs:
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add validation
+          # run.py escribe "done:" cuando terminó de escribir todo, también si falló una fuente.
+          # Si se cortó o se cayó, lo demás quedó a medias: se publica solo el log.
+          if grep -q '\] done: ' validation/build.log; then git add validation; else git add validation/build.log; fi
           git diff --cached --quiet && echo "sin cambios" && exit 0
           git commit -m "Validación: modelos de olas y viento contra boyas $(date -u +%Y-%m-%d)"
+          git checkout -- validation
+          git clean -fdq validation
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"

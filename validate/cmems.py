@@ -118,13 +118,19 @@ def _fill_near(t, col, within=1200.0):
     return out
 
 
+def _text(value):
+    """A text attribute of a file. h5py leaves the bytes that are not UTF-8 as surrogates, which can
+    not be written to a file: they are read as Latin-1, the encoding of those names."""
+    return re.sub("[\udc80-\udcff]", lambda m: chr(ord(m.group()) - 0xdc00), str(value))
+
+
 def read_file(path):
     """A daily file -> (platform code, name, lat, lon, [(t, hs, tp, dp, tm)], [(t, wspd, wdir)])."""
     import h5netcdf
     import numpy as np
     with h5netcdf.File(path, "r") as f:
-        code = str(f.attrs.get("platform_code", "")) or os.path.basename(path).split("_")[3]
-        name = str(f.attrs.get("platform_name", "") or code)
+        code = _text(f.attrs.get("platform_code", "")) or os.path.basename(path).split("_")[3]
+        name = _text(f.attrs.get("platform_name", "") or code)
         t = np.asarray(f.variables["TIME"][...], dtype=float) * 86400.0 + EPOCH_1950
         n = t.size
         tq = np.asarray(f.variables["TIME_QC"][...]).astype(int) if "TIME_QC" in f.variables else np.ones(n, int)

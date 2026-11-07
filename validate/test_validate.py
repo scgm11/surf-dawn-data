@@ -13,6 +13,7 @@ import evaluate  # noqa: E402
 import models  # noqa: E402
 import regions  # noqa: E402
 import report  # noqa: E402
+import run  # noqa: E402
 import score  # noqa: E402
 from tools.lib import geo, openmeteo  # noqa: E402
 
@@ -693,6 +694,33 @@ class TestCmems(unittest.TestCase):
         self.assertAlmostEqual(recs[1][1], 0.95, places=4)
         self.assertEqual(wrecs, [])
 
+    def test_name_not_utf8(self):
+        self.assertEqual(cmems._text("Thorl\udce1ks \udcf0\udcfe"), "Thorláks ðþ")
+        self.assertEqual(cmems._text("Anglet ñ"), "Anglet ñ")          # what is already text stays
+        self.assertEqual(cmems._text(6200066), "6200066")
+
+    def test_read_file_name_not_utf8(self):
+        try:
+            import h5netcdf
+            import h5py
+            import numpy as np
+        except ImportError:
+            self.skipTest("h5netcdf not installed")
+        import tempfile
+        path = os.path.join(tempfile.mkdtemp(), "GL_TS_MO_X_20261010.nc")
+        days = (T0 - cmems.EPOCH_1950) / 86400.0
+        with h5netcdf.File(path, "w") as f:
+            f.dimensions = {"TIME": 1}
+            f.create_variable("TIME", ("TIME",), data=np.array([days]))
+            f.create_variable("LATITUDE", (), data=np.float32(64.0))
+            f.create_variable("LONGITUDE", (), data=np.float32(-21.0))
+            f.create_variable("VAVH", ("TIME",), data=np.array([1.0], dtype="f4"))
+        with h5py.File(path, "a") as f:                                 # the bytes as they come, in Latin-1
+            f.attrs["platform_name"] = np.bytes_("Grindavíkurdufl".encode("latin-1"))
+        name = cmems.read_file(path)[1]
+        self.assertEqual(name, "Grindavíkurdufl")
+        name.encode("utf-8")                                            # what brought down run.py's write()
+
     def test_no_credentials(self):
         old = {k: os.environ.pop(k, None) for k in (cmems.ENV_USER, cmems.ENV_PASS)}
         try:
@@ -702,6 +730,26 @@ class TestCmems(unittest.TestCase):
             for k, v in old.items():
                 if v is not None:
                     os.environ[k] = v
+
+
+class Outputs(unittest.TestCase):
+    def test_clear_regions_keeps_spots(self):
+        with tempfile.TemporaryDirectory() as d:
+            for n in ("UY-ROC.json", "GONE.json", "spots.json", "spots.md", "report.md"):
+                with open(os.path.join(d, n), "w") as f:
+                    f.write("x")
+            run.clear_regions(d)
+            self.assertEqual(sorted(os.listdir(d)), ["report.md", "spots.json", "spots.md"])
+
+    def test_write_takes_a_station_name(self):
+        with tempfile.TemporaryDirectory() as d:
+            old, run.OUT = run.OUT, d
+            try:
+                run.write("buoys.csv", cmems._text("Thorl\udce1ks"))
+            finally:
+                run.OUT = old
+            with open(os.path.join(d, "buoys.csv"), encoding="utf-8") as f:
+                self.assertEqual(f.read(), "Thorláks")
 
 
 if __name__ == "__main__":

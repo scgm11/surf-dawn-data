@@ -11,8 +11,10 @@ por PR, después de mirar más de un mes.
 ## Cómo corre
 
 Lo corre la Action `.github/workflows/validation.yml`: el día 3 de cada mes, a mano
-(*workflow_dispatch*) y con cada push a `validacion-mundo` que toque `validate/`. Publica siempre
-`validation/` (también si falla una fuente), con el log en `validation/build.log`.
+(*workflow_dispatch*) y con cada push a `validacion-mundo` que toque `validate/`. Publica
+`validation/` (también si falla una fuente), con el log en `validation/build.log`. Si la corrida se
+corta o se cae antes de terminar, publica solo el log, y `validation/spots.json`, que es de
+`tools/check_spots.py`, no lo toca.
 
 A mano, con red:
 
