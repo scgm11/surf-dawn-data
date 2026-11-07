@@ -1004,8 +1004,13 @@
   },
   "VE-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.45,
-   "median_share": 0.92
+   "median_m": 0.86,
+   "median_share": 1.0
+  },
+  "VE-MAR": {
+   "model": "ncep_gfswave016",
+   "median_m": 0.4,
+   "median_share": 0.84
   },
   "VN-ALL": {
    "model": "ncep_gfswave016",
@@ -7728,17 +7733,6 @@
    "wave": null,
    "why": "la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 24 km)",
    "km": 23.8
-  },
-  {
-   "region": "VE-ALL",
-   "spot": "CUYAGUA",
-   "cell": [
-    10.5,
-    -67.8333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 113° de hacia donde mira, 16 km)",
-   "km": 15.6
   },
   {
    "region": "ZA-EC-PE",

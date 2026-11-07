@@ -1,6 +1,6 @@
 # Picos: controles por pico
 
-Generado 2026-11-07 14:11 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 213 regiones, 2511 picos.
+Generado 2026-11-07 16:16 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 214 regiones, 2511 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 55° de hacia donde mira, o de su ventana de swell si la tiene (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Zona entera:** en una zona donde la mayoría tampoco las recibe de frente (menos del 25 %) los vecinos no dicen nada: ahí se marca el pico con mar (olas de al menos 0.3 m en el 25 % de las horas o más) que casi nunca las recibe de frente.
@@ -26,7 +26,7 @@ Zonas con 3 picos o más que, en 92 días, casi nunca recibieron las olas de fre
 |---|---|---|---|---|---|
 | ZA-WC-WCO | 4 de 6 | 0 | 325° | 233° | MELKBOS, LAMBERTS BAY, JACOBSBAAI, YZERFONTEIN |
 
-## Celdas de olas para mirar (36)
+## Celdas de olas para mirar (35)
 
 La celda desde la que contesta la API cuando se le pregunta como las apps (sin `cell_selection`). Se marca el punto de olas que la API corre o que queda detrás de la playa (a más de 75° de hacia donde mira, o de su ventana de swell), y el pico que la API corre a una celda detrás de la playa o a más de 35 km. A veces es con razón: su celda es tierra y la siguiente queda de costado. Se corrige con `wave=` en la semilla, después de mirar la celda.
 
@@ -64,7 +64,6 @@ La celda desde la que contesta la API cuando se le pregunta como las apps (sin `
 | PT-PEN | CANTINHO | — | 39.50, -9.33 | la API lo contesta desde una celda detrás de la playa (a 105° de hacia donde mira, 14 km) |
 | US-PNW | BEVERLY BEACH | — | 44.82, -124.08 | la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 9 km) |
 | US-SE | MYRTLE BEACH | — | 33.50, -79.00 | la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 24 km) |
-| VE-ALL | CUYAGUA | — | 10.50, -67.83 | la API lo contesta desde una celda detrás de la playa (a 113° de hacia donde mira, 16 km) |
 | ZA-EC-PE | CANNON ROCKS | — | -33.75, 26.75 | la API lo contesta desde una celda detrás de la playa (a 85° de hacia donde mira, 20 km) |
 | ZA-EC-PE | NAHOON REEF | — | -33.25, 28.00 | la API lo contesta desde una celda detrás de la playa (a 108° de hacia donde mira, 29 km) |
 | ZA-KZN-S | SCOTTBURGH | — | -30.50, 30.75 | la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 24 km) |
@@ -411,7 +410,8 @@ AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/NORTH POINT, 
 | UY-CAN | ncep_gfswave025 | 0.7 m | 57 % |
 | UY-MAL | ncep_gfswave025 | 1.0 m | 76 % |
 | UY-ROC | ncep_gfswave025 | 1.1 m | 52 % |
-| VE-ALL | ncep_gfswave016 | 0.5 m | 92 % |
+| VE-ALL | ncep_gfswave016 | 0.9 m | 100 % |
+| VE-MAR | ncep_gfswave016 | 0.4 m | 84 % |
 | VN-ALL | ncep_gfswave016 | 0.6 m | 100 % |
 | VU-ALL | ncep_gfswave025 | 1.1 m | 21 % |
 | WS-ALL | ncep_gfswave025 | 1.8 m | 78 % |
