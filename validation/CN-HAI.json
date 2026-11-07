@@ -1,23 +1,27 @@
 {
  "region": "CN-HAI",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.131,
+  "hs": 0.191,
   "hours": 744,
   "point": [
-   18.648,
-   110.518
+   18.2717,
+   109.7231
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.92,
-   "ncep_gfswave025": 0.85,
-   "meteofrance_wave": 0.71,
-   "ecmwf_wam": 0.97
-  }
+   "ncep_gfswave016": 1.03,
+   "ncep_gfswave025": 1.04,
+   "meteofrance_wave": 0.65,
+   "ecmwf_wam": 1.11
+  },
+  "cell": [
+   18.166668,
+   109.66669
+  ]
  },
  "confidence": "media",
  "wind": {

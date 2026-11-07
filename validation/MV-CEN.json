@@ -1,23 +1,27 @@
 {
  "region": "MV-CEN",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.203,
+  "hs": 0.151,
   "hours": 744,
   "point": [
-   2.919,
-   73.57
+   2.9144,
+   73.5784
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.78,
-   "ncep_gfswave025": 0.78,
-   "meteofrance_wave": 0.74,
-   "ecmwf_wam": 1.15
-  }
+   "ncep_gfswave016": 0.87,
+   "ncep_gfswave025": 0.74,
+   "meteofrance_wave": 0.97,
+   "ecmwf_wam": 1.09
+  },
+  "cell": [
+   2.833334,
+   73.5
+  ]
  },
  "confidence": "media",
  "wind": {

@@ -1,23 +1,27 @@
 {
  "region": "BR-NE-PE",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.05,
+  "hs": 0.053,
   "hours": 744,
   "point": [
-   -9.773,
-   -35.833
+   -9.7688,
+   -35.8381
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.01,
-   "ncep_gfswave025": 1.1,
-   "meteofrance_wave": 1.14,
-   "ecmwf_wam": 1.09
-  }
+   "ncep_gfswave016": 0.97,
+   "ncep_gfswave025": 1.03,
+   "meteofrance_wave": 1.06,
+   "ecmwf_wam": 0.99
+  },
+  "cell": [
+   -9.833333,
+   -35.83333
+  ]
  },
  "confidence": "media",
  "wind": {

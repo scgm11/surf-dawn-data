@@ -1,23 +1,27 @@
 {
  "region": "JP-IZU",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.175,
+  "hs": 0.189,
   "hours": 744,
   "point": [
-   34.674,
-   138.97
+   34.6815,
+   138.9807
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.19,
-   "ncep_gfswave025": 1.6,
-   "meteofrance_wave": 1.62,
-   "ecmwf_wam": 1.83
-  }
+   "ncep_gfswave016": 1.09,
+   "ncep_gfswave025": 1.57,
+   "meteofrance_wave": 1.7,
+   "ecmwf_wam": 1.74
+  },
+  "cell": [
+   34.666668,
+   139.0
+  ]
  },
  "confidence": "media",
  "wind": {

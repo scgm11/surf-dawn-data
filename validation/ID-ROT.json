@@ -1,23 +1,27 @@
 {
  "region": "ID-ROT",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.188,
+  "hs": 0.144,
   "hours": 744,
   "point": [
-   -10.86,
-   122.83
+   -10.8948,
+   122.8206
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.09,
-   "ncep_gfswave025": 0.8,
-   "meteofrance_wave": 1.22,
-   "ecmwf_wam": 0.88
-  }
+   "ncep_gfswave016": 0.94,
+   "ncep_gfswave025": 0.97,
+   "meteofrance_wave": 1.25,
+   "ecmwf_wam": 0.92
+  },
+  "cell": [
+   -11.0,
+   122.83334
+  ]
  },
  "confidence": "media",
  "wind": {

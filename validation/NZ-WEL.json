@@ -1,22 +1,26 @@
 {
  "region": "NZ-WEL",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.092,
+  "hs": 0.113,
   "hours": 744,
   "point": [
-   -41.614,
-   175.289
+   -40.9809,
+   174.9542
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.81,
-   "meteofrance_wave": 2.02,
-   "ecmwf_wam": 1.94
-  }
+   "ncep_gfswave025": 1.29,
+   "meteofrance_wave": 1.18,
+   "ecmwf_wam": 1.07
+  },
+  "cell": [
+   -41.0,
+   174.75
+  ]
  },
  "confidence": "media",
  "wind": {

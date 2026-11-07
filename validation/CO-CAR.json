@@ -1,22 +1,26 @@
 {
  "region": "CO-CAR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.068,
+  "hs": 0.132,
   "hours": 744,
   "point": [
-   11.22,
-   -73.82
+   11.2709,
+   -73.8409
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.1,
-   "meteofrance_wave": 0.99,
-   "ecmwf_wam": 0.97
-  }
+   "ncep_gfswave016": 0.85,
+   "meteofrance_wave": 1.0,
+   "ecmwf_wam": 0.78
+  },
+  "cell": [
+   11.333334,
+   -73.83333
+  ]
  },
  "confidence": "media",
  "wind": {

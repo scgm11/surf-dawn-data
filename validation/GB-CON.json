@@ -1,25 +1,180 @@
 {
  "region": "GB-CON",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6201001",
+  "cmems:6200107",
+  "cmems:6201024"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:6201044",
+   "km": 2.3,
+   "why": "otro mar o abrigada: ve 21 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:PortIsaacTG",
+   "km": 5.8,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201000",
+   "km": 8.3,
+   "why": "otro mar o abrigada: ve 5 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201025",
+   "km": 44.2,
+   "why": "otro mar o abrigada: ve 7 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201053",
+   "km": 48.2,
+   "why": "otro mar o abrigada: ve 67 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6200292",
+   "km": 78.5,
+   "why": "otro mar o abrigada: ve 45 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201003",
+   "km": 83.6,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201027",
+   "km": 83.8,
+   "why": "otro mar o abrigada: ve 4 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201002",
+   "km": 87.0,
+   "why": "otro mar o abrigada: ve 4 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201004",
+   "km": 87.0,
+   "why": "otro mar o abrigada: ve 20 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201026",
+   "km": 121.3,
+   "why": "otro mar o abrigada: ve 19 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201005",
+   "km": 127.6,
+   "why": "otro mar o abrigada: ve 10 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6201006",
+   "km": 144.9,
+   "why": "otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 2154,
+   "hs_bias": 0.097,
+   "hs_rmse": 0.435,
+   "hs_si": 0.205,
+   "tp_bias": -0.82,
+   "tp_mae": 1.33,
+   "dir_mae": 24.6,
+   "dir_bias": 0.8,
+   "tm_bias": 1.68,
+   "obs_hs": 1.92,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 2154,
+   "hs_bias": 0.059,
+   "hs_rmse": 0.47,
+   "hs_si": 0.238,
+   "tp_bias": -0.49,
+   "tp_mae": 1.19,
+   "dir_mae": 13.6,
+   "dir_bias": -3.7,
+   "tm_bias": 4.1,
+   "obs_hs": 1.92,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 2154,
+   "hs_bias": 0.05,
+   "hs_rmse": 0.485,
+   "hs_si": 0.248,
+   "tp_bias": -2.77,
+   "tp_mae": 2.92,
+   "dir_mae": 25.2,
+   "dir_bias": -0.6,
+   "tm_bias": 1.78,
+   "obs_hs": 1.92,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "dwd_ewam": {
+   "n": 2154,
+   "hs_bias": -0.017,
+   "hs_rmse": 0.699,
+   "hs_si": 0.365,
+   "tp_bias": -2.33,
+   "tp_mae": 2.52,
+   "dir_mae": 15.9,
+   "dir_bias": 7.5,
+   "tm_bias": 2.06,
+   "obs_hs": 1.92,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
+ "confidence": "media",
+ "vs": "ncep_gfswave016",
+ "margin": 0.08,
+ "per_buoy": {
+  "cmems:6201001": {
+   "n": 719,
+   "best": "ecmwf_wam",
+   "km": 1.3
+  },
+  "cmems:6200107": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 27.8
+  },
+  "cmems:6201024": {
+   "n": 715,
+   "best": "ecmwf_wam",
+   "km": 30.7
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.077,
+  "hs": 0.086,
   "hours": 744,
   "point": [
-   50.417,
-   -5.1
+   50.4169,
+   -5.0996
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.53,
-   "meteofrance_wave": 1.63,
-   "ecmwf_wam": 1.43,
-   "dwd_ewam": 1.51
-  }
+   "ncep_gfswave016": 1.91,
+   "meteofrance_wave": 1.97,
+   "ecmwf_wam": 1.73,
+   "dwd_ewam": 1.9
+  },
+  "cell": [
+   50.5,
+   -5.1666565
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

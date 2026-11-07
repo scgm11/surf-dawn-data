@@ -1,7 +1,7 @@
 {
  "region": "US-NE",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
   "ndbc:44007",
   "ndbc:44029",
@@ -14,9 +14,14 @@
    "why": "otro mar o abrigada: ve 68 % de las direcciones abiertas de los picos"
   },
   {
+   "id": "cmems:44020",
+   "km": 20.6,
+   "why": "otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos"
+  },
+  {
    "id": "ndbc:44020",
    "km": 25.2,
-   "why": "otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos"
+   "why": "otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos"
   },
   {
    "id": "cdip:221",
@@ -46,58 +51,58 @@
  ],
  "wave": {
   "ecmwf_wam": {
-   "n": 1609,
-   "hs_bias": 0.005,
-   "hs_rmse": 0.184,
-   "hs_si": 0.182,
-   "tp_bias": 0.34,
-   "tp_mae": 1.15,
-   "dir_mae": 20.3,
-   "dir_bias": -2.1,
-   "tm_bias": 1.67,
-   "obs_hs": 1.01,
+   "n": 1608,
+   "hs_bias": -0.038,
+   "hs_rmse": 0.201,
+   "hs_si": 0.219,
+   "tp_bias": 0.39,
+   "tp_mae": 1.28,
+   "dir_mae": 24.5,
+   "dir_bias": -2.6,
+   "tm_bias": 1.48,
+   "obs_hs": 0.9,
    "tp_type": "peak",
    "eligible": true
   },
   "ncep_gfswave016": {
-   "n": 1609,
-   "hs_bias": -0.025,
-   "hs_rmse": 0.206,
-   "hs_si": 0.203,
-   "tp_bias": 0.74,
-   "tp_mae": 1.45,
-   "dir_mae": 23.7,
-   "dir_bias": 0.7,
-   "tm_bias": 2.63,
-   "obs_hs": 1.01,
+   "n": 1608,
+   "hs_bias": -0.07,
+   "hs_rmse": 0.248,
+   "hs_si": 0.265,
+   "tp_bias": 0.75,
+   "tp_mae": 1.56,
+   "dir_mae": 25.9,
+   "dir_bias": 0.3,
+   "tm_bias": 2.71,
+   "obs_hs": 0.9,
    "tp_type": "primary",
    "eligible": true
   },
   "ncep_gfswave025": {
-   "n": 1609,
-   "hs_bias": -0.025,
-   "hs_rmse": 0.206,
-   "hs_si": 0.203,
-   "tp_bias": 0.74,
-   "tp_mae": 1.45,
-   "dir_mae": 23.7,
-   "dir_bias": 0.7,
-   "tm_bias": 2.63,
-   "obs_hs": 1.01,
+   "n": 1608,
+   "hs_bias": -0.07,
+   "hs_rmse": 0.248,
+   "hs_si": 0.265,
+   "tp_bias": 0.76,
+   "tp_mae": 1.55,
+   "dir_mae": 25.7,
+   "dir_bias": -0.1,
+   "tm_bias": 2.76,
+   "obs_hs": 0.9,
    "tp_type": "primary",
    "eligible": true
   },
   "meteofrance_wave": {
-   "n": 1609,
-   "hs_bias": -0.025,
-   "hs_rmse": 0.198,
-   "hs_si": 0.194,
-   "tp_bias": 0.3,
-   "tp_mae": 1.65,
-   "dir_mae": 26.1,
-   "dir_bias": -6.8,
-   "tm_bias": 2.51,
-   "obs_hs": 1.01,
+   "n": 1608,
+   "hs_bias": -0.069,
+   "hs_rmse": 0.22,
+   "hs_si": 0.234,
+   "tp_bias": 0.6,
+   "tp_mae": 1.81,
+   "dir_mae": 26.8,
+   "dir_bias": -6.7,
+   "tm_bias": 2.86,
+   "obs_hs": 0.9,
    "tp_type": "mean",
    "eligible": false
   }
@@ -108,104 +113,108 @@
  },
  "confidence": "alta",
  "vs": "ncep_gfswave016",
- "margin": 0.12,
+ "margin": 0.234,
  "per_buoy": {
   "ndbc:44007": {
-   "n": 723,
+   "n": 700,
    "best": "ecmwf_wam",
    "km": 6.9
   },
   "ndbc:44029": {
-   "n": 555,
+   "n": 553,
    "best": "ecmwf_wam",
    "km": 9.7
   },
   "ndbc:44030": {
-   "n": 331,
+   "n": 355,
    "best": "ecmwf_wam",
    "km": 13.7
   }
  },
- "current": "ncep_gfswave016",
+ "current": "ecmwf_wam",
  "fixed": false,
  "spread": {
-  "hs": 0.298,
+  "hs": 0.312,
   "hours": 744,
   "point": [
-   41.319,
-   -71.798
+   41.3234,
+   -71.7997
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.41,
-   "ncep_gfswave025": 0.75,
-   "meteofrance_wave": 0.85,
-   "ecmwf_wam": 0.8
-  }
+   "ncep_gfswave016": 0.3,
+   "ncep_gfswave025": 0.61,
+   "meteofrance_wave": 0.72,
+   "ecmwf_wam": 0.68
+  },
+  "cell": [
+   41.333336,
+   -71.666664
+  ]
  },
  "wind": {
   "stations": [
    "ndbc:44007",
    "ndbc:44029",
-   "ndbc:44030"
+   "ndbc:IOSN3"
   ],
   "current": "gfs_seamless",
   "models": {
    "gfs_seamless": {
-    "n": 2155,
-    "spd_bias": -0.082,
-    "spd_bias_ms": -0.55,
-    "spd_rmse": 1.421,
-    "dir_mae": 12.5,
-    "dir_bias": 4.5,
-    "dir_n": 1881,
-    "obs_spd": 6.62
+    "n": 1664,
+    "spd_bias": -0.108,
+    "spd_bias_ms": -0.74,
+    "spd_rmse": 1.584,
+    "dir_mae": 10.7,
+    "dir_bias": 1.4,
+    "dir_n": 1503,
+    "obs_spd": 6.79
    },
    "cmc_gem_seamless": {
-    "n": 2155,
-    "spd_bias": -0.058,
-    "spd_bias_ms": -0.38,
-    "spd_rmse": 1.487,
-    "dir_mae": 14.1,
-    "dir_bias": 7.6,
-    "dir_n": 1881,
-    "obs_spd": 6.62
+    "n": 1664,
+    "spd_bias": -0.093,
+    "spd_bias_ms": -0.63,
+    "spd_rmse": 1.638,
+    "dir_mae": 12.1,
+    "dir_bias": 3.0,
+    "dir_n": 1503,
+    "obs_spd": 6.79
    },
    "ecmwf_ifs": {
-    "n": 2155,
-    "spd_bias": -0.036,
-    "spd_bias_ms": -0.24,
-    "spd_rmse": 1.594,
-    "dir_mae": 14.4,
-    "dir_bias": 6.9,
-    "dir_n": 1881,
-    "obs_spd": 6.62
+    "n": 1664,
+    "spd_bias": -0.091,
+    "spd_bias_ms": -0.62,
+    "spd_rmse": 1.728,
+    "dir_mae": 13.4,
+    "dir_bias": 3.5,
+    "dir_n": 1503,
+    "obs_spd": 6.79
    }
   },
   "best": "gfs_seamless",
   "confidence": "baja",
   "vs": "cmc_gem_seamless",
-  "margin": 0.046,
+  "margin": 0.034,
   "per_station": {
    "ndbc:44007": {
-    "n": 723,
+    "n": 713,
     "best": "gfs_seamless",
     "km": 6.9,
     "kind": "buoy",
     "z": 3.8
    },
    "ndbc:44029": {
-    "n": 711,
+    "n": 710,
     "best": "cmc_gem_seamless",
     "km": 9.7,
     "kind": "buoy",
     "z": 4.0
    },
-   "ndbc:44030": {
-    "n": 721,
+   "ndbc:IOSN3": {
+    "n": 241,
     "best": "gfs_seamless",
-    "km": 13.7,
-    "kind": "buoy",
-    "z": 4.0
+    "km": 11.1,
+    "kind": "fixed",
+    "z": 31.7
    }
   },
   "excluded": [
@@ -217,11 +226,6 @@
    {
     "id": "ndbc:NTKM3",
     "km": 3.7,
-    "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
-   },
-   {
-    "id": "ndbc:CMAN4",
-    "km": 5.5,
     "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
    },
    {
@@ -280,8 +284,8 @@
     "why": "otro mar o abrigada: ve 16 % de las direcciones abiertas de los picos"
    },
    {
-    "id": "ndbc:PTCR1",
-    "km": 17.0,
+    "id": "ndbc:NAXR1",
+    "km": 16.8,
     "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
    },
    {
@@ -300,6 +304,11 @@
     "why": "otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos"
    },
    {
+    "id": "cmems:44020",
+    "km": 20.6,
+    "why": "otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos"
+   },
+   {
     "id": "ndbc:LWSD1",
     "km": 24.0,
     "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
@@ -312,7 +321,7 @@
    {
     "id": "ndbc:44020",
     "km": 25.2,
-    "why": "otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos"
+    "why": "otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos"
    },
    {
     "id": "ndbc:KPTN6",
@@ -455,8 +464,8 @@
     "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
    },
    {
-    "id": "ndbc:FSKM2",
-    "km": 142.6,
+    "id": "ndbc:44080",
+    "km": 142.7,
     "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
    },
    {

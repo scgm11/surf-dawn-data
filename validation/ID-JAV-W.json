@@ -1,22 +1,26 @@
 {
  "region": "ID-JAV-W",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.247,
+  "hs": 0.299,
   "hours": 744,
   "point": [
-   -7.047,
-   106.519
+   -7.0648,
+   106.5308
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.33,
-   "meteofrance_wave": 0.92,
-   "ecmwf_wam": 0.76
-  }
+   "ncep_gfswave016": 1.26,
+   "meteofrance_wave": 0.83,
+   "ecmwf_wam": 0.61
+  },
+  "cell": [
+   -7.0,
+   106.33334
+  ]
  },
  "confidence": "media",
  "wind": {

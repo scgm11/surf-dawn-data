@@ -1,23 +1,27 @@
 {
  "region": "PE-LLB",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.06,
+  "hs": 0.075,
   "hours": 744,
   "point": [
-   -7.41,
-   -79.58
+   -7.4092,
+   -79.5803
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.17,
-   "ncep_gfswave025": 1.26,
-   "meteofrance_wave": 1.15,
-   "ecmwf_wam": 1.29
-  }
+   "ncep_gfswave016": 1.33,
+   "ncep_gfswave025": 1.44,
+   "meteofrance_wave": 1.41,
+   "ecmwf_wam": 1.59
+  },
+  "cell": [
+   -7.333333,
+   -79.666664
+  ]
  },
  "confidence": "media",
  "wind": {

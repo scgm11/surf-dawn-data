@@ -1,99 +1,191 @@
 {
  "region": "GB-NIR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
-  "mi:m2"
+  "mi:m2",
+  "cmems:6200047"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:IL3-SouthHunter",
+   "km": 47.4,
+   "why": "otro mar o abrigada: ve 47 % de las direcciones abiertas de los picos"
+  }
  ],
  "wave": {
   "ecmwf_wam": {
-   "n": 723,
-   "hs_bias": -0.063,
-   "hs_rmse": 0.195,
-   "hs_si": 0.154,
-   "tp_bias": -0.41,
-   "tp_mae": 0.69,
-   "dir_mae": 18.9,
-   "dir_bias": -1.1,
-   "tm_bias": 0.17,
-   "obs_hs": 1.17,
+   "n": 1442,
+   "hs_bias": -0.069,
+   "hs_rmse": 0.431,
+   "hs_si": 0.162,
+   "tp_bias": -0.22,
+   "tp_mae": 0.68,
+   "dir_mae": 30.0,
+   "dir_bias": -14.4,
+   "tm_bias": 1.41,
+   "obs_hs": 2.44,
    "tp_type": "peak",
    "eligible": true
   },
   "ncep_gfswave025": {
-   "n": 723,
-   "hs_bias": -0.105,
-   "hs_rmse": 0.26,
-   "hs_si": 0.196,
-   "tp_bias": -0.49,
-   "tp_mae": 0.72,
-   "dir_mae": 19.0,
-   "dir_bias": -1.7,
-   "tm_bias": 0.77,
-   "obs_hs": 1.17,
+   "n": 1442,
+   "hs_bias": -0.157,
+   "hs_rmse": 0.642,
+   "hs_si": 0.21,
+   "tp_bias": -0.37,
+   "tp_mae": 0.83,
+   "dir_mae": 27.2,
+   "dir_bias": -9.8,
+   "tm_bias": 2.49,
+   "obs_hs": 2.44,
    "tp_type": "primary",
    "eligible": true
   },
-  "dwd_ewam": {
-   "n": 723,
-   "hs_bias": 0.011,
-   "hs_rmse": 0.218,
-   "hs_si": 0.186,
-   "tp_bias": -0.75,
-   "tp_mae": 0.93,
-   "dir_mae": 18.1,
-   "dir_bias": -0.4,
-   "tm_bias": 0.51,
-   "obs_hs": 1.17,
+  "meteofrance_wave": {
+   "n": 1442,
+   "hs_bias": -0.076,
+   "hs_rmse": 0.457,
+   "hs_si": 0.171,
+   "tp_bias": -1.18,
+   "tp_mae": 1.38,
+   "dir_mae": 29.6,
+   "dir_bias": -14.4,
+   "tm_bias": 1.68,
+   "obs_hs": 2.44,
    "tp_type": "mean",
    "eligible": false
   },
-  "meteofrance_wave": {
-   "n": 723,
-   "hs_bias": -0.082,
-   "hs_rmse": 0.227,
-   "hs_si": 0.175,
-   "tp_bias": -0.8,
-   "tp_mae": 0.97,
-   "dir_mae": 22.5,
-   "dir_bias": -1.9,
-   "tm_bias": 0.46,
-   "obs_hs": 1.17,
+  "dwd_ewam": {
+   "n": 1442,
+   "hs_bias": -0.038,
+   "hs_rmse": 0.552,
+   "hs_si": 0.223,
+   "tp_bias": -1.45,
+   "tp_mae": 1.62,
+   "dir_mae": 32.2,
+   "dir_bias": -17.2,
+   "tm_bias": 1.41,
+   "obs_hs": 2.44,
    "tp_type": "mean",
    "eligible": false
   }
  },
  "best": {
-  "wave": "ecmwf_wam"
+  "wave": "ecmwf_wam",
+  "wind": "icon_seamless"
  },
  "confidence": "alta",
  "vs": "ncep_gfswave025",
- "margin": 0.333,
+ "margin": 0.49,
  "per_buoy": {
   "mi:m2": {
-   "n": 723,
+   "n": 721,
    "best": "ecmwf_wam",
    "km": 86.4
+  },
+  "cmems:6200047": {
+   "n": 721,
+   "best": "ecmwf_wam",
+   "km": 98.2
   }
  },
- "current": "ncep_gfswave025",
+ "current": "ecmwf_wam",
  "fixed": false,
  "spread": {
-  "hs": 0.299,
+  "hs": 0.289,
   "hours": 744,
   "point": [
-   55.203,
-   -6.238
+   55.2038,
+   -6.2373
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.13,
-   "meteofrance_wave": 1.83,
-   "ecmwf_wam": 0.91,
-   "dwd_ewam": 1.54
-  }
+   "ncep_gfswave025": 1.17,
+   "meteofrance_wave": 1.87,
+   "ecmwf_wam": 0.96,
+   "dwd_ewam": 1.66
+  },
+  "cell": [
+   55.25,
+   -6.0
+  ]
  },
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "mi:m2"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "icon_seamless": {
+    "n": 721,
+    "spd_bias": 0.0,
+    "spd_bias_ms": 0.0,
+    "spd_rmse": 1.048,
+    "dir_mae": 8.7,
+    "dir_bias": 3.4,
+    "dir_n": 705,
+    "obs_spd": 9.72
+   },
+   "ecmwf_ifs": {
+    "n": 721,
+    "spd_bias": -0.049,
+    "spd_bias_ms": -0.48,
+    "spd_rmse": 1.087,
+    "dir_mae": 7.2,
+    "dir_bias": 2.0,
+    "dir_n": 705,
+    "obs_spd": 9.72
+   },
+   "ukmo_seamless": {
+    "n": 721,
+    "spd_bias": -0.061,
+    "spd_bias_ms": -0.59,
+    "spd_rmse": 1.225,
+    "dir_mae": 7.3,
+    "dir_bias": 3.2,
+    "dir_n": 705,
+    "obs_spd": 9.72
+   },
+   "gfs_seamless": {
+    "n": 721,
+    "spd_bias": 0.038,
+    "spd_bias_ms": 0.37,
+    "spd_rmse": 1.264,
+    "dir_mae": 8.6,
+    "dir_bias": 4.4,
+    "dir_n": 705,
+    "obs_spd": 9.72
+   },
+   "meteofrance_seamless": {
+    "n": 721,
+    "spd_bias": 0.053,
+    "spd_bias_ms": 0.52,
+    "spd_rmse": 1.517,
+    "dir_mae": 9.2,
+    "dir_bias": 5.2,
+    "dir_n": 705,
+    "obs_spd": 9.72
+   }
+  },
+  "best": "icon_seamless",
+  "confidence": "alta",
+  "vs": "gfs_seamless",
+  "margin": 0.206,
+  "per_station": {
+   "mi:m2": {
+    "n": 721,
+    "best": "icon_seamless",
+    "km": 86.4,
+    "kind": "buoy",
+    "z": null
+   }
+  },
+  "excluded": [
+   {
+    "id": "cmems:IL3-SouthHunter",
+    "km": 47.4,
+    "why": "otro mar o abrigada: ve 47 % de las direcciones abiertas de los picos"
+   }
+  ]
  }
 }

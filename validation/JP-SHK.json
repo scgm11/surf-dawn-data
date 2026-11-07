@@ -1,23 +1,27 @@
 {
  "region": "JP-SHK",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.091,
+  "hs": 0.087,
   "hours": 744,
   "point": [
-   33.58,
+   33.5794,
    134.36
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.42,
-   "ncep_gfswave025": 1.52,
-   "meteofrance_wave": 1.53,
-   "ecmwf_wam": 1.37
-  }
+   "ncep_gfswave016": 1.35,
+   "ncep_gfswave025": 1.49,
+   "meteofrance_wave": 1.57,
+   "ecmwf_wam": 1.42
+  },
+  "cell": [
+   33.5,
+   134.33334
+  ]
  },
  "confidence": "media",
  "wind": {

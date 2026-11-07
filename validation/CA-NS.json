@@ -1,26 +1,151 @@
 {
  "region": "CA-NS",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:4400258"
+ ],
+ "wave": {
+  "ncep_gfswave016": {
+   "n": 713,
+   "hs_bias": 0.048,
+   "hs_rmse": 0.2,
+   "hs_si": 0.172,
+   "tp_bias": 0.01,
+   "tp_mae": 1.0,
+   "dir_mae": 22.8,
+   "dir_bias": -9.4,
+   "tm_bias": 2.52,
+   "obs_hs": 1.12,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 713,
+   "hs_bias": -0.127,
+   "hs_rmse": 0.251,
+   "hs_si": 0.186,
+   "tp_bias": 0.44,
+   "tp_mae": 1.3,
+   "dir_mae": 34.4,
+   "dir_bias": -23.9,
+   "tm_bias": 2.96,
+   "obs_hs": 1.12,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 713,
+   "hs_bias": 0.125,
+   "hs_rmse": 0.271,
+   "hs_si": 0.208,
+   "tp_bias": -0.39,
+   "tp_mae": 0.9,
+   "dir_mae": 27.6,
+   "dir_bias": -11.4,
+   "tm_bias": 1.27,
+   "obs_hs": 1.12,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 713,
+   "hs_bias": -0.033,
+   "hs_rmse": 0.272,
+   "hs_si": 0.241,
+   "tp_bias": -0.4,
+   "tp_mae": 1.38,
+   "dir_mae": 28.8,
+   "dir_bias": -20.5,
+   "tm_bias": 2.12,
+   "obs_hs": 1.12,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave016",
+  "wind": "gfs_seamless"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave025",
+ "margin": 0.255,
+ "per_buoy": {
+  "cmems:4400258": {
+   "n": 713,
+   "best": "ncep_gfswave016",
+   "km": 11.8
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.084,
+  "hs": 0.088,
   "hours": 744,
   "point": [
-   44.444,
-   -63.628
+   44.2484,
+   -64.3297
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.29,
-   "meteofrance_wave": 1.1,
-   "ecmwf_wam": 1.13
-  }
+   "ncep_gfswave016": 1.01,
+   "ncep_gfswave025": 1.07,
+   "meteofrance_wave": 0.96,
+   "ecmwf_wam": 0.9
+  },
+  "cell": [
+   44.166668,
+   -64.33333
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:4400258"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "gfs_seamless": {
+    "n": 713,
+    "spd_bias": 0.039,
+    "spd_bias_ms": 0.28,
+    "spd_rmse": 1.221,
+    "dir_mae": 8.3,
+    "dir_bias": 1.8,
+    "dir_n": 670,
+    "obs_spd": 7.27
+   },
+   "cmc_gem_seamless": {
+    "n": 713,
+    "spd_bias": 0.069,
+    "spd_bias_ms": 0.5,
+    "spd_rmse": 1.401,
+    "dir_mae": 9.2,
+    "dir_bias": 1.4,
+    "dir_n": 670,
+    "obs_spd": 7.27
+   },
+   "ecmwf_ifs": {
+    "n": 713,
+    "spd_bias": 0.135,
+    "spd_bias_ms": 0.98,
+    "spd_rmse": 1.615,
+    "dir_mae": 8.8,
+    "dir_bias": 0.4,
+    "dir_n": 670,
+    "obs_spd": 7.27
+   }
+  },
+  "best": "gfs_seamless",
+  "confidence": "alta",
+  "vs": "cmc_gem_seamless",
+  "margin": 0.147,
+  "per_station": {
+   "cmems:4400258": {
+    "n": 713,
+    "best": "gfs_seamless",
+    "km": 11.8,
+    "kind": "buoy",
+    "z": null
+   }
+  }
  }
 }

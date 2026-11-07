@@ -1,85 +1,169 @@
 id,name,lat,lon,hours,regions
-aodn:apollo-bay,APOLLO-BAY,-38.754,143.7235,193,AU-VIC-SC AU-VIC-PI AU-VIC-W
-aodn:augusta-offshore,AUGUSTA-OFFSHORE,-34.5495,115.1642,194,AU-WA-MR
-aodn:bengello,BENGELLO,-35.8797,150.1611,194,AU-NSW-SC
-aodn:bob,BOB,-38.6429,142.3113,193,AU-VIC-SC
-aodn:brighton,BRIGHTON,-35.0275,138.4508,193,AU-SA
-aodn:bunbury,BUNBURY,-33.3348,115.4018,193,AU-WA-MR (AU-WA-PER: otro mar o abrigada: ve 49 % de las direcciones abiertas de los picos)
-aodn:cape-bridgewater,CAPE-BRIDGEWATER,-38.3617,141.2742,193,AU-VIC-W
-aodn:ceduna,CEDUNA,-32.3496,133.6483,194,AU-SA-EYR
-aodn:collaroy-narrabeen,COLLAROY-NARRABEEN,-33.7267,151.306,193,AU-NSW-NC AU-NSW-SYD AU-NSW-SC
-aodn:coral-bay-0-2,CORAL-BAY-0-2,-23.1549,113.737,194,AU-WA-GAS
-aodn:crowdy,CROWDY,-31.8494,152.7557,214,AU-NSW-MN AU-NSW-NC
-aodn:dongara-inshore,DONGARA-INSHORE,-29.181,114.862,730,AU-WA-NW
-aodn:dongara-offshore,DONGARA-OFFSHORE,-29.1972,114.8313,729,AU-WA-NW
-aodn:hillarys,HILLARYS,-31.852,115.6469,193,AU-WA-PER
-aodn:inverloch,INVERLOCH,-38.7618,145.7749,730,AU-VIC-SC AU-VIC-PI
-aodn:jurien-bay-inshore,JURIEN-BAY-INSHORE,-30.3146,114.9613,730,AU-WA-PER
-aodn:jurien-bay-offshore,JURIEN-BAY-OFFSHORE,-30.3145,114.9228,730,AU-WA-PER
-aodn:port-fairy,PORT-FAIRY,-38.3818,142.2874,730,(AU-VIC-SC: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) AU-VIC-W
-aodn:quinns-dog-beach,QUINNS-DOG-BEACH,-31.66,115.6646,210,"(AU-WA-PER: sesgo de Hs +59%, +101%, +130% en todos los modelos)"
-aodn:storm-bay,STORM-BAY,-43.2109,147.4554,193,AU-TAS
-aodn:victor-harbouroffshore,VICTOR-HARBOUROFFSHORE,-35.6082,138.6359,730,AU-SA
-aodn:west-beach,WEST-BEACH,-34.9533,138.4898,724,AU-SA
-aodn:wilsons-prom,WILSONS-PROM,-39.5438,146.4649,127,AU-VIC-PI
-aodn:wooli,WOOLI,-29.857,153.314,194,AU-NSW-NR AU-NSW-MN
-cdip:028,"SANTA MONICA BAY, CA BUOY - 028p1",33.8599,-118.6411,723,US-CA-LA US-CA-SB
-cdip:036,"GRAYS HARBOR, WA BUOY - 036p1",46.8568,-124.2433,723,US-PNW
-cdip:071,"HARVEST, CA BUOY - 071p1",34.4515,-120.78,723,US-CA-SB
-cdip:076,"DIABLO CANYON, CA BUOY - 076p1",35.2038,-120.8593,723,(US-CA-SB: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) US-CA-CEN
-cdip:103,"TOPANGA NEARSHORE, CA BUOY - 103p1",34.0222,-118.5783,722,(US-CA-SD: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos) US-CA-LA (US-CA-SB: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos)
-cdip:106,"WAIMEA BAY, HI BUOY - 106p1",21.67,-158.1177,723,US-HI-OAN (US-HI-OAS: otro mar o abrigada: ve 31 % de las direcciones abiertas de los picos) (US-HI-KAU: otro mar o abrigada: ve 33 % de las direcciones abiertas de los picos)
-cdip:132,"FERNANDINA BEACH, FL BUOY - 132p1",30.7091,-81.2921,723,US-SC-GA
-cdip:134,"FORT PIERCE, FL BUOY - 134p1",27.5638,-80.2154,515,US-FL
-cdip:142,"SAN FRANCISCO BAR, CA BUOY - 142p1",37.7881,-122.6325,246,US-CA-SF
-cdip:143,"CAPE CANAVERAL NEARSHORE, FL BUOY - 143p1",28.3999,-80.5333,723,US-FL
-cdip:147,"CAPE HENRY, VA BUOY - 147p1",36.9142,-75.7203,723,US-MID
-cdip:150,"MASONBORO INLET, ILM2, NC BUOY - 150p1",34.1438,-77.7153,723,US-SE
-cdip:153,"DEL MAR NEARSHORE, CA BUOY - 153p1",32.9565,-117.2796,723,US-CA-SD (US-CA-OC: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos)
-cdip:156,"MONTEREY CANYON OUTER, CA BUOY - 156p1",36.7592,-121.9503,723,US-CA-SC
-cdip:157,"POINT SUR, CA BUOY - 157p1",36.3416,-122.1096,722,US-CA-CEN US-CA-SC
-cdip:162,"CLATSOP SPIT, OR BUOY - 162p1",46.2151,-124.1286,723,US-PNW
-cdip:168,"HUMBOLDT BAY NORTH SPIT, CA BUOY - 168p1",40.8926,-124.3567,580,US-CA-NOR
-cdip:187,"PAUWELA, MAUI, HI BUOY - 187p1",21.0185,-156.4215,723,(US-HI-OAS: otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos) US-HI-MAU US-HI-BIG
-cdip:188,"HILO, HAWAII, HI BUOY - 188p1",19.779,-154.97,723,US-HI-MAU (US-HI-BIG: otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos)
-cdip:189,"AUNUU, AMERICAN SAMOA BUOY - 189p1",-14.2724,-170.501,723,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
-cdip:191,"POINT LOMA SOUTH, CA BUOY - 191p1",32.5169,-117.4252,610,MX-BCN
-cdip:201,"SCRIPPS NEARSHORE, CA BUOY - 201p1",32.8678,-117.2667,723,MX-BCN US-CA-SD (US-CA-OC: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos)
-cdip:220,"MISSION BAY WEST, CA BUOY - 220p1",32.7494,-117.4985,723,MX-BCN
-cdip:233,"PEARL HARBOR ENTRANCE, HI BUOY - 233p1",21.2974,-157.9589,723,(US-HI-OAN: otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos) US-HI-OAS US-HI-MAU
-cdip:238,"BARBERS POINT, KALAELOA, HI BUOY - 238p1",21.3231,-158.1495,723,(US-HI-OAN: otro mar o abrigada: ve 56 % de las direcciones abiertas de los picos) US-HI-OAS US-HI-KAU
-cdip:249,"ARECIBO, PUERTO RICO BUOY - 249p1",18.4908,-66.7005,723,PR-NW PR-N
-cdip:252,"ARANSAS PASS CHANNEL ENTRANCE S, TX BUOY - 252p1",27.6403,-97.0115,723,US-GULF
-cdip:256,"SOUTHWEST PASS ENTRANCE W, LA BUOY - 256p1",28.988,-89.6488,723,US-FL-PAN
-cdip:262,"LEUCADIA NEARSHORE, CA BUOY - 262p1",33.0621,-117.3141,722,US-CA-SD
-cdip:263,"BETHANY BEACH, DE BUOY - 263p1",38.5368,-75.044,707,US-MID
-cdip:264,"RED BEACH NEARSHORE, CA BUOY - 264p1",33.2908,-117.5015,722,US-CA-OC
-cdip:265,"HOLLYWOOD BEACH, FL BUOY - 265p1",26.001,-80.096,723,US-FL
-cdip:270,"TILLAMOOK BAY SOUTH JETTY, OR BUOY - 270p1",45.5608,-123.9905,723,US-PNW
-cdip:271,"GREEN BEACH OFFSHORE, CA BUOY - 271p1",33.3364,-117.6586,723,US-CA-OC
-cdip:273,"KING-POLOA, AMERICAN SAMOA BUOY - 273p1",-14.2965,-170.8747,723,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
-cdip:284,"CAPISTRANO BEACH NEARSHORE, CA BUOY - 284p1",33.4452,-117.6801,723,US-CA-OC
-cdip:430,"DUCK FRF 26M, NC BUOY - 430p1",36.2572,-75.5933,723,US-MID
-cdip:433,"DUCK FRF 17M, NC BUOY - 433p1",36.1997,-75.7143,723,US-SE
-mi:m2,M2,53.4836,-5.4302,723,(GB-WAL: otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos) GB-NIR
-mi:m3,M3,51.216,-10.5483,723,IE-SW IE-SE
-mi:m5,M5,51.6904,-6.7043,723,GB-WAL IE-SE
-ndbc:41053,"San Juan, PR",18.474,-66.099,688,PR-NW PR-N
-ndbc:41067,FRP2WAVE,32.276,-80.406,715,US-SC-GA
-ndbc:41076,CHR60WAVE,32.536,-79.659,719,US-SC-GA
-ndbc:42012,"ORANGE BEACH - 44 NM SE of Mobile, AL",30.061,-87.547,723,US-FL-PAN
-ndbc:42035,"GALVESTON,TX -  22 NM East of Galveston, TX",29.235,-94.41,723,US-GULF
-ndbc:42357,DISL Sofar Spotter,30.092,-88.212,407,US-FL-PAN
-ndbc:44007,"PORTLAND - 12 NM Southeast of Portland,ME",43.525,-70.14,723,US-NE
-ndbc:44029,Buoy A01 - Massachusetts Bay,42.523,-70.566,555,US-NE
-ndbc:44030,Buoy B01 - Western Maine Shelf,43.179,-70.426,331,US-NE
-ndbc:46011,"SANTA MARIA - 21NM NW of Point Arguello, CA",34.937,-120.999,723,US-CA-CEN
-ndbc:46013,"BODEGA BAY - 48NM NW of San Francisco, CA",38.235,-123.317,723,US-CA-SF
-ndbc:46014,"PT ARENA - 19NM North of Point Arena, CA",39.225,-123.98,723,US-CA-NOR
-ndbc:46022,"EEL RIVER - 17NM WSW of Eureka, CA",40.716,-124.54,723,US-CA-NOR
-ndbc:46025,"Santa Monica Basin - 33NM WSW of Santa Monica, CA",33.765,-119.077,723,US-CA-LA US-CA-SB
-ndbc:46026,"SAN FRANCISCO - 18NM West of San Francisco, CA",37.75,-122.838,723,US-CA-SF
-ndbc:46041,"CAPE ELIZABETH - 45NM NW of Aberdeen, WA",47.351,-124.741,723,CA-BC-VI
-ndbc:46042,"MONTEREY - 27NM WNW of Monterey, CA",36.787,-122.408,723,US-CA-SC
-ndbc:46087,"Neah Bay - 6 NM North of Cape Flattery, WA (Traffic Separation Lighted Buoy)",48.493,-124.727,596,CA-BC-VI
-ndbc:SSBN7,Sunset Beach Nearshore Waves (SUN2WAVE),33.838,-78.484,448,US-SE
+aodn:apollo-bay,APOLLO-BAY,-38.7541,143.7233,730,AU-VIC-SC AU-VIC-PI AU-VIC-W
+aodn:bengello,BENGELLO,-35.8796,150.1611,731,AU-NSW-SC
+aodn:bob,BOB,-38.6428,142.3105,729,AU-VIC-SC
+aodn:bunbury,BUNBURY,-33.3344,115.402,728,AU-WA-MR (AU-WA-PER: otro mar o abrigada: ve 53 % de las direcciones abiertas de los picos)
+aodn:cape-bridgewater,CAPE-BRIDGEWATER,-38.3615,141.2739,728,AU-VIC-W
+aodn:ceduna,CEDUNA,-32.3496,133.6482,731,AU-SA-EYR
+aodn:collaroy-narrabeen,COLLAROY-NARRABEEN,-33.7264,151.3065,730,AU-NSW-NC AU-NSW-SYD
+aodn:coral-bay-0-2,CORAL-BAY-0-2,-23.1549,113.737,731,AU-WA-GAS
+aodn:dongara-inshore,DONGARA-INSHORE,-29.181,114.862,727,AU-WA-NW
+aodn:dongara-offshore,DONGARA-OFFSHORE,-29.1972,114.8313,725,AU-WA-NW
+aodn:hillarys,HILLARYS,-31.8515,115.647,729,AU-WA-PER
+aodn:inverloch,INVERLOCH,-38.7619,145.7751,725,AU-VIC-SC AU-VIC-PI
+aodn:jurien-bay-inshore,JURIEN-BAY-INSHORE,-30.3147,114.9613,730,AU-WA-PER
+aodn:jurien-bay-offshore,JURIEN-BAY-OFFSHORE,-30.3145,114.9228,729,AU-WA-PER
+aodn:port-fairy,PORT-FAIRY,-38.3818,142.2876,727,(AU-VIC-SC: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) AU-VIC-W
+aodn:quinns-dog-beach,QUINNS-DOG-BEACH,-31.66,115.6645,727,"(AU-WA-PER: sesgo de Hs +57%, +86%, +110% en todos los modelos)"
+aodn:storm-bay,STORM-BAY,-43.2109,147.4554,697,AU-TAS
+aodn:wilsons-prom,WILSONS-PROM,-39.5438,146.4639,729,AU-VIC-PI
+aodn:wooli,WOOLI,-29.857,153.314,731,AU-NSW-MN
+cdip:028,"SANTA MONICA BAY, CA BUOY - 028p1",33.8599,-118.6411,721,US-CA-LA US-CA-SB
+cdip:036,"GRAYS HARBOR, WA BUOY - 036p1",46.8568,-124.2433,721,US-PNW
+cdip:071,"HARVEST, CA BUOY - 071p1",34.4515,-120.78,712,US-CA-SB
+cdip:076,"DIABLO CANYON, CA BUOY - 076p1",35.2038,-120.8593,721,(US-CA-SB: otro mar o abrigada: ve 58 % de las direcciones abiertas de los picos) US-CA-CEN
+cdip:103,"TOPANGA NEARSHORE, CA BUOY - 103p1",34.0222,-118.5783,717,(US-CA-SD: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos) US-CA-LA (US-CA-SB: otro mar o abrigada: ve 66 % de las direcciones abiertas de los picos)
+cdip:106,"WAIMEA BAY, HI BUOY - 106p1",21.67,-158.1177,721,US-HI-OAN (US-HI-OAS: otro mar o abrigada: ve 31 % de las direcciones abiertas de los picos) (US-HI-KAU: otro mar o abrigada: ve 33 % de las direcciones abiertas de los picos)
+cdip:134,"FORT PIERCE, FL BUOY - 134p1",27.5638,-80.2154,721,US-FL
+cdip:142,"SAN FRANCISCO BAR, CA BUOY - 142p1",37.7881,-122.6325,720,US-CA-SF
+cdip:143,"CAPE CANAVERAL NEARSHORE, FL BUOY - 143p1",28.4,-80.5333,721,US-FL
+cdip:147,"CAPE HENRY, VA BUOY - 147p1",36.9142,-75.7203,721,US-MID
+cdip:150,"MASONBORO INLET, ILM2, NC BUOY - 150p1",34.1438,-77.7153,720,US-SE
+cdip:153,"DEL MAR NEARSHORE, CA BUOY - 153p1",32.9565,-117.2796,720,US-CA-SD (US-CA-OC: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos)
+cdip:156,"MONTEREY CANYON OUTER, CA BUOY - 156p1",36.7592,-121.9503,720,US-CA-SC
+cdip:157,157,36.341,-122.1022,410,US-CA-CEN US-CA-SC
+cdip:162,"CLATSOP SPIT, OR BUOY - 162p1",46.2151,-124.1284,719,US-PNW
+cdip:168,"HUMBOLDT BAY NORTH SPIT, CA BUOY - 168p1",40.896,-124.357,721,US-CA-NOR
+cdip:181,"RINCON, PUERTO RICO BUOY - 181p1",18.3765,-67.2798,585,PR-NW PR-N
+cdip:187,187,21.0185,-156.4215,140,(US-HI-OAS: otro mar o abrigada: ve 27 % de las direcciones abiertas de los picos) US-HI-MAU US-HI-BIG
+cdip:188,"HILO, HAWAII, HI BUOY - 188p1",19.779,-154.97,721,US-HI-MAU (US-HI-BIG: otro mar o abrigada: ve 43 % de las direcciones abiertas de los picos)
+cdip:189,"AUNUU, AMERICAN SAMOA BUOY - 189p1",-14.2724,-170.501,721,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
+cdip:191,"POINT LOMA SOUTH, CA BUOY - 191p1",32.5169,-117.4252,721,MX-BCN
+cdip:201,"SCRIPPS NEARSHORE, CA BUOY - 201p1",32.868,-117.2666,721,MX-BCN US-CA-SD (US-CA-OC: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos)
+cdip:220,"MISSION BAY WEST, CA BUOY - 220p1",32.7494,-117.4985,721,MX-BCN
+cdip:233,"PEARL HARBOR ENTRANCE, HI BUOY - 233p1",21.2974,-157.9589,720,(US-HI-OAN: otro mar o abrigada: ve 8 % de las direcciones abiertas de los picos) US-HI-OAS US-HI-MAU
+cdip:238,"BARBERS POINT, KALAELOA, HI BUOY - 238p1",21.3231,-158.1495,719,(US-HI-OAN: otro mar o abrigada: ve 56 % de las direcciones abiertas de los picos) US-HI-OAS (US-HI-KAU: otro mar o abrigada: ve 49 % de las direcciones abiertas de los picos)
+cdip:249,"ARECIBO, PUERTO RICO BUOY - 249p1",18.4908,-66.7005,719,PR-NW PR-N
+cdip:252,"ARANSAS PASS CHANNEL ENTRANCE S, TX BUOY - 252p1",27.6403,-97.0115,719,US-GULF
+cdip:256,256,28.988,-89.6493,545,US-FL-PAN
+cdip:262,"LEUCADIA NEARSHORE, CA BUOY - 262p1",33.0621,-117.3141,719,US-CA-SD
+cdip:263,"BETHANY BEACH, DE BUOY - 263p1",38.5368,-75.044,645,US-MID
+cdip:264,"RED BEACH NEARSHORE, CA BUOY - 264p1",33.2908,-117.5015,678,US-CA-OC
+cdip:265,"HOLLYWOOD BEACH, FL BUOY - 265p1",26.001,-80.096,720,US-FL
+cdip:270,"TILLAMOOK BAY SOUTH JETTY, OR BUOY - 270p1",45.5608,-123.9905,719,US-PNW
+cdip:271,"GREEN BEACH OFFSHORE, CA BUOY - 271p1",33.3364,-117.6586,721,US-CA-OC
+cdip:273,"KING-POLOA, AMERICAN SAMOA BUOY - 273p1",-14.2965,-170.8747,714,(WS-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
+cdip:284,"CAPISTRANO BEACH NEARSHORE, CA BUOY - 284p1",33.4452,-117.6801,721,US-CA-OC
+cdip:430,"DUCK FRF 26M, NC BUOY - 430p1",36.2572,-75.5933,719,US-MID
+cdip:433,"DUCK FRF 17M, NC BUOY - 433p1",36.1997,-75.7143,720,US-SE
+cmems:1300130,Gran Canaria buoy,28.2,-15.8,720,ES-CN-W
+cmems:2200107,Marado,33.0833,126.0333,703,KR-ALL
+cmems:2200187,Seogwipo,33.1281,127.0228,627,KR-ALL
+cmems:2200310,Goseong,38.3172,128.6392,703,KR-ALL
+cmems:4100098,Basse Pointe,14.8903,-61.1144,677,MQ-ALL
+cmems:4100099,Sainte Lucie,14.1761,-60.9344,677,MQ-ALL
+cmems:4100134,La grande vigie,16.5167,-61.4167,206,GP-ALL
+cmems:4400258,Halifax Harbour,44.502,-63.403,713,CA-NS
+cmems:4600207,4600207,50.874,-129.916,713,CA-BC-VI
+cmems:46011,Santa Maria,35.0,-120.992,689,(US-CA-SB: otro mar o abrigada: ve 64 % de las direcciones abiertas de los picos) US-CA-CEN
+cmems:46012,Half Moon bay,37.356,-122.881,708,US-CA-SF
+cmems:46132,South Brooks,49.771,-127.8822,691,"(CA-BC-VI: sesgo de Hs +56%, +61%, +64%, +66% en todos los modelos)"
+cmems:46204,West Sea Otter,51.4039,-128.6851,700,"(CA-BC-VI: sesgo de Hs +56%, +59%, +76%, +70% en todos los modelos)"
+cmems:46206,La Perouse Bank,48.835,-125.998,698,"(CA-BC-VI: sesgo de Hs +60%, +63%, +64%, +70% en todos los modelos)"
+cmems:55014,Batemans Bay,-35.75,150.32,393,AU-NSW-SC
+cmems:55017,Byron Bay,-28.87,153.68,389,AU-NSW-NR
+cmems:55018,Coffs Harbour,-30.35,153.28,399,AU-NSW-MN
+cmems:55019,Crowdy Head,-31.82,152.85,419,AU-NSW-MN
+cmems:55022,Port Kembla,-34.47,151.03,295,AU-NSW-NC AU-NSW-SYD AU-NSW-SC
+cmems:55024,Sydney,-33.75,151.4,462,AU-NSW-NC AU-NSW-SYD
+cmems:55027,North Moreton Bay,-26.9,153.28,569,AU-QLD-SC
+cmems:55030,Mooloolaba,-26.57,153.18,570,AU-QLD-SC
+cmems:55036,Gold Coast,-27.97,153.45,543,AU-QLD-GC
+cmems:55037,Tweed Heads,-28.18,153.58,568,AU-QLD-GC AU-NSW-NR
+cmems:55040,Cape Du Couedic,-36.07,136.62,217,AU-SA
+cmems:55045,Caloundra,-26.85,153.15,507,AU-QLD-SC
+cmems:55050,Palm Beach,-28.1,153.48,560,AU-QLD-GC
+cmems:55057,Tweed Offshore,-28.22,153.68,567,AU-NSW-NR
+cmems:6100214,Meteo mooring,40.8666,12.9494,715,IT-ALL
+cmems:6100216,Meteo mooring,42.2449,11.5531,715,IT-ALL
+cmems:6100219,Meteo mooring,43.9293,9.828,386,IT-ALL
+cmems:6200024,Bilbao-Vizcaya buoy,43.64,-3.04,720,FR-GIR ES-CAN
+cmems:6200025,Cabo de PeÃ±as buoy,43.75,-6.18,720,ES-AST
+cmems:6200045,Firth of Forth WaveNet Site ,56.188,-2.5038,721,GB-SCO
+cmems:6200047,Blackstones WaveNet Site ,56.0622,-7.0568,721,GB-SCO GB-NIR
+cmems:6200064,Cap-Ferret,44.6503,-1.4478,686,FR-GIR
+cmems:6200066,Anglet,43.53,-1.614,532,FR-PBA FR-HOS FR-GIR (ES-CAN: otro mar o abrigada: ve 67 % de las direcciones abiertas de los picos)
+cmems:6200067,Ile d'Yeu Nord,46.8332,-2.295,610,FR-VEN
+cmems:6200069,Pierres-Noires,48.2903,-4.9683,666,FR-BRE
+cmems:6200074,Belle-Ile,47.285,-3.285,686,FR-BRE
+cmems:6200078,SEM-REV - Plateau du Four,47.239,-2.787,436,FR-VEN FR-BRE
+cmems:6200079,Saint-Jean-de-Luz,43.403,-1.6766,685,FR-PBA FR-HOS (FR-GIR: otro mar o abrigada: ve 62 % de las direcciones abiertas de los picos) (ES-CAN: otro mar o abrigada: ve 62 % de las direcciones abiertas de los picos)
+cmems:6200082,Estaca de Bares buoy,44.12,-7.68,720,ES-AST
+cmems:6200083,Villano-Sisargas buoy,43.5,-9.21,720,ES-GAL
+cmems:6200084,Cabo Silleiro buoy,42.12,-9.43,720,ES-GAL PT-NOR PT-CEN
+cmems:6200085,Golfo de Cadiz buoy,36.49,-6.96,720,ES-AND
+cmems:6200103,ChannelLightship,49.9,-2.9,720,GB-DEV
+cmems:6200107,SevenstonesLightship,50.103,-6.1,720,GB-CON
+cmems:6200199,Monican02,39.56,-9.21,687,PT-CEN PT-PEN PT-ERI PT-LIS
+cmems:6200251,Noirmoutier,46.9167,-2.7222,685,FR-VEN
+cmems:6200290,Poole Bay WaveNet Site ,50.6333,-1.7193,721,GB-SOU
+cmems:6201001,Perranporth wave buoy,50.353,-5.1747,719,GB-CON GB-DEV (GB-WAL: otro mar o abrigada: ve 19 % de las direcciones abiertas de los picos)
+cmems:6201006,Chesil wave buoy,50.6025,-2.523,720,(GB-CON: otro mar o abrigada: ve 39 % de las direcciones abiertas de los picos) (GB-DEV: otro mar o abrigada: ve 54 % de las direcciones abiertas de los picos) GB-WAL
+cmems:6201008,Boscombe wave buoy,50.7113,-1.8398,720,GB-SOU (GB-WAL: otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos)
+cmems:6201009,Milford wave buoy,50.7118,-1.6155,709,GB-SOU
+cmems:6201024,Bideford Bay wave buoy,51.058,-4.277,715,GB-CON (GB-DEV: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos) (GB-WAL: otro mar o abrigada: ve 37 % de las direcciones abiertas de los picos)
+cmems:6201028,Cleveleys wave buoy,53.8955,-3.1962,719,(GB-WAL: sin serie de ncep_gfswave016 en Open-Meteo)
+cmems:6201029,Morecambe Bay wave buoy,53.9882,-3.066,720,(GB-WAL: sin serie de ncep_gfswave016 en Open-Meteo) (GB-NE: otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos)
+cmems:6201045,Scarborough wave buoy,54.294,-0.3185,609,GB-NE
+cmems:6201046,Whitby wave buoy,54.5048,-0.608,714,GB-NE
+cmems:6201047,Newbiggin wave buoy,55.1852,-1.4784,714,GB-NE
+cmems:6201067,Butendiek,55.0167,7.7833,720,DE-ALL
+cmems:6201070,Langosteira II coastal buoy,43.35,-8.5615,720,ES-GAL
+cmems:6201562,South Pembrokeshire WaveNet Site ,51.4562,-5.2303,718,GB-DEV GB-WAL
+cmems:6202400,Graciosa,39.0868,-27.9622,697,PT-AZO
+cmems:6202602,Sylt,54.9189,8.0893,702,DE-ALL
+cmems:6204816,SEPA Arbroath wave rider,56.5403,-2.5139,721,GB-SCO
+cmems:Bilbao-coast-buoy,Bilbao II coastal buoy,43.397,-3.13,719,(FR-HOS: otro mar o abrigada: ve 57 % de las direcciones abiertas de los picos) (FR-GIR: otro mar o abrigada: ve 53 % de las direcciones abiertas de los picos) ES-PV ES-CAN
+cmems:Bilbao-station,Bilbao station,43.3788,-3.0825,655,(FR-HOS: otro mar o abrigada: ve 57 % de las direcciones abiertas de los picos) (FR-GIR: otro mar o abrigada: ve 53 % de las direcciones abiertas de los picos) ES-PV ES-CAN
+cmems:Deurlo,Deurlo,51.5042,3.2421,704,NL-ALL
+cmems:DomburgerRassen,DomburgerRassen,51.62,3.399,114,NL-ALL
+cmems:Donostia-buoy,Donostia buoy,43.5628,-2.0244,720,FR-HOS (FR-GIR: otro mar o abrigada: ve 68 % de las direcciones abiertas de los picos)
+cmems:Fanoebugt,Fanoebugt Datawell DWR-MkII/MkIII buoy,55.346,8.23,697,DK-ALL DE-ALL
+cmems:Faro-coast-buoy,Faro coastal buoy,36.9047,-7.8983,315,(ES-AND: otro mar o abrigada: ve 49 % de las direcciones abiertas de los picos) PT-ALG
+cmems:Fjaltring,Fjaltring Datawell DWR4/ACM - MkII/MkIII buoy,56.475,8.048,720,DK-ALL
+cmems:Gijon-coast-buoy,Gijon coastal buoy,43.615,-5.664,689,ES-AST
+cmems:Grindavikurdufl,Grindavikurdufl,63.8133,-22.46,614,IS-ALL
+cmems:IL4-Splaugh,Splaugh,52.2393,-6.2786,719,(GB-WAL: otro mar o abrigada: ve 35 % de las direcciones abiertas de los picos) IE-SE
+cmems:Landeyjahafnardufl,Landeyjahafnardufl,63.5089,-20.1151,668,(IS-ALL: pocas horas de ncep_gfswave025 en Open-Meteo)
+cmems:LangosteiraTG,Langosteira tide gauge,43.3447,-8.5278,704,"(ES-AST: sesgo de Hs +529%, +643%, +478%, +461%, +650% en todos los modelos) (ES-GAL: sesgo de Hs +529%, +643%, +478%, +461%, +650% en todos los modelos)"
+cmems:Leixoes-coast-buoy,Leixoes coastal buoy,41.3167,-8.9833,680,PT-NOR PT-CEN
+cmems:Nymindegab,Nymindegab Datawell DWR-MkII/MkIII buoy,55.81,7.941,720,DK-ALL
+cmems:Oosterschelde11,Oosterschelde11,51.6438,3.4812,721,(NL-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
+cmems:PasaiaII-coast-buoy,Pasaia II coastal buoy,43.3628,-1.8889,720,FR-PBA (FR-HOS: otro mar o abrigada: ve 65 % de las direcciones abiertas de los picos) (FR-GIR: otro mar o abrigada: ve 56 % de las direcciones abiertas de los picos) ES-PV
+cmems:Roompotsluis,Roompotsluis,51.6205,3.6824,236,(NL-ALL: sin serie de ncep_gfswave016 en Open-Meteo)
+cmems:Sines-coast-buoy,Sines coastal buoy,37.9211,-8.9289,678,PT-PEN PT-ERI PT-LIS PT-ALG
+cmems:Surtseyjardufl,Surtseyjardufl,63.2864,-20.3446,670,IS-ALL
+cmems:SwanagePierTG,Swanage Pier tide gauge,50.6093,-1.9492,384,"(GB-DEV: otro mar o abrigada: ve 62 % de las direcciones abiertas de los picos) (GB-SOU: sesgo de Hs +260%, +131%, +225%, +202% en todos los modelos) (GB-WAL: otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos)"
+cmems:Thorlakshafnardufl,Thorlakshafnardufl,63.8383,-21.2883,637,IS-ALL
+cmems:WielingenNoord,WielingenNoord,51.4334,3.4155,721,NL-ALL
+mi:m2,M2,53.4836,-5.4302,721,(GB-WAL: otro mar o abrigada: ve 40 % de las direcciones abiertas de los picos) GB-NIR
+mi:m3,M3,51.216,-10.5483,721,IE-SW IE-SE
+mi:m5,M5,51.6904,-6.7043,721,GB-WAL IE-SE
+ndbc:41053,"San Juan, PR",18.474,-66.099,718,PR-NW PR-N
+ndbc:41065,Capers Nearshore Waves (CAP2WAVE),32.802,-79.619,559,US-SC-GA
+ndbc:41067,FRP2WAVE,32.276,-80.406,667,US-SC-GA
+ndbc:41076,CHR60WAVE,32.536,-79.659,720,US-SC-GA
+ndbc:42012,"ORANGE BEACH - 44 NM SE of Mobile, AL",30.061,-87.547,698,US-FL-PAN
+ndbc:42033,UTMSI_BUOY_2 - Environmental List 1415 (SPOT-33112C),27.84,-97.0,78,US-GULF
+ndbc:42035,"GALVESTON,TX -  22 NM East of Galveston, TX",29.235,-94.41,699,US-GULF
+ndbc:42357,DISL Sofar Spotter,30.092,-88.212,693,US-FL-PAN
+ndbc:44007,"PORTLAND - 12 NM Southeast of Portland,ME",43.525,-70.14,700,US-NE
+ndbc:44029,Buoy A01 - Massachusetts Bay,42.523,-70.566,553,US-NE
+ndbc:44030,Buoy B01 - Western Maine Shelf,43.179,-70.426,355,US-NE
+ndbc:46014,"PT ARENA - 19NM North of Point Arena, CA",39.225,-123.98,700,US-CA-NOR
+ndbc:46022,"EEL RIVER - 17NM WSW of Eureka, CA",40.716,-124.54,699,US-CA-NOR
+ndbc:46025,"Santa Monica Basin - 33NM WSW of Santa Monica, CA",33.765,-119.077,700,US-CA-LA US-CA-SB
+ndbc:46026,"SAN FRANCISCO - 18NM West of San Francisco, CA",37.75,-122.838,704,US-CA-SF
+ndbc:46042,"MONTEREY - 27NM WNW of Monterey, CA",36.787,-122.408,700,US-CA-SC
+ndbc:46087,"Neah Bay - 6 NM North of Cape Flattery, WA (Traffic Separation Lighted Buoy)",48.493,-124.727,540,CA-BC-VI
+ndbc:SSBN7,Sunset Beach Nearshore Waves (SUN2WAVE),33.838,-78.484,578,US-SE

@@ -1,22 +1,26 @@
 {
  "region": "SV-LIB",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.041,
+  "hs": 0.042,
   "hours": 744,
   "point": [
-   13.49,
-   -89.443
+   13.4945,
+   -89.4409
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.15,
-   "meteofrance_wave": 1.2,
-   "ecmwf_wam": 1.15
-  }
+   "ncep_gfswave016": 1.19,
+   "meteofrance_wave": 1.28,
+   "ecmwf_wam": 1.28
+  },
+  "cell": [
+   13.333334,
+   -89.5
+  ]
  },
  "confidence": "media",
  "wind": {

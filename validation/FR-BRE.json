@@ -1,25 +1,127 @@
 {
  "region": "FR-BRE",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6200069",
+  "cmems:6200074",
+  "cmems:6200078"
+ ],
+ "wave": {
+  "ncep_gfswave016": {
+   "n": 1788,
+   "hs_bias": -0.028,
+   "hs_rmse": 0.374,
+   "hs_si": 0.223,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.67,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 1788,
+   "hs_bias": -0.078,
+   "hs_rmse": 0.378,
+   "hs_si": 0.213,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.67,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1788,
+   "hs_bias": 0.142,
+   "hs_rmse": 0.388,
+   "hs_si": 0.185,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.67,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "dwd_ewam": {
+   "n": 1788,
+   "hs_bias": 0.129,
+   "hs_rmse": 0.394,
+   "hs_si": 0.198,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.67,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "meteofrance_wave": {
+   "n": 1788,
+   "hs_bias": 0.204,
+   "hs_rmse": 0.452,
+   "hs_si": 0.179,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.67,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave016"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave025",
+ "margin": 0.011,
+ "per_buoy": {
+  "cmems:6200069": {
+   "n": 666,
+   "best": "ncep_gfswave025",
+   "km": 16.8
+  },
+  "cmems:6200074": {
+   "n": 686,
+   "best": "ecmwf_wam",
+   "km": 32.3
+  },
+  "cmems:6200078": {
+   "n": 436,
+   "best": "ncep_gfswave025",
+   "km": 43.9
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.126,
+  "hs": 0.107,
   "hours": 744,
   "point": [
-   47.765,
-   -3.523
+   47.7658,
+   -3.5377
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.85,
-   "meteofrance_wave": 1.08,
-   "ecmwf_wam": 0.91,
-   "dwd_ewam": 0.84
-  }
+   "ncep_gfswave016": 1.27,
+   "meteofrance_wave": 1.54,
+   "ecmwf_wam": 1.36,
+   "dwd_ewam": 1.32
+  },
+  "cell": [
+   47.666668,
+   -3.5
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

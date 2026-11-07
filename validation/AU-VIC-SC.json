@@ -1,7 +1,7 @@
 {
  "region": "AU-VIC-SC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
   "aodn:apollo-bay",
   "aodn:inverloch",
@@ -9,13 +9,18 @@
  ],
  "excluded": [
   {
+   "id": "aodn:weeroona-bay",
+   "km": 9.3,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
    "id": "aodn:indented-head",
    "km": 22.3,
    "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
   },
   {
    "id": "aodn:rosebud",
-   "km": 23.0,
+   "km": 23.1,
    "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
   },
   {
@@ -25,7 +30,7 @@
   },
   {
    "id": "aodn:werribee",
-   "km": 38.5,
+   "km": 38.4,
    "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
   },
   {
@@ -46,44 +51,44 @@
  ],
  "wave": {
   "ncep_gfswave025": {
-   "n": 1116,
-   "hs_bias": -0.142,
-   "hs_rmse": 0.408,
-   "hs_si": 0.145,
-   "tp_bias": 0.54,
-   "tp_mae": 1.32,
-   "dir_mae": 12.0,
-   "dir_bias": 4.9,
-   "tm_bias": 4.93,
-   "obs_hs": 2.01,
+   "n": 2184,
+   "hs_bias": -0.072,
+   "hs_rmse": 0.302,
+   "hs_si": 0.146,
+   "tp_bias": 0.52,
+   "tp_mae": 1.18,
+   "dir_mae": 17.3,
+   "dir_bias": 9.0,
+   "tm_bias": 4.9,
+   "obs_hs": 1.85,
    "tp_type": "primary",
    "eligible": true
   },
   "ecmwf_wam": {
-   "n": 1116,
-   "hs_bias": 0.164,
-   "hs_rmse": 0.423,
-   "hs_si": 0.132,
-   "tp_bias": 0.45,
-   "tp_mae": 1.08,
-   "dir_mae": 13.3,
-   "dir_bias": 11.1,
-   "tm_bias": 2.76,
-   "obs_hs": 2.01,
+   "n": 2184,
+   "hs_bias": 0.148,
+   "hs_rmse": 0.349,
+   "hs_si": 0.117,
+   "tp_bias": 0.23,
+   "tp_mae": 1.05,
+   "dir_mae": 16.3,
+   "dir_bias": 13.2,
+   "tm_bias": 2.84,
+   "obs_hs": 1.85,
    "tp_type": "peak",
    "eligible": true
   },
   "meteofrance_wave": {
-   "n": 1116,
-   "hs_bias": 0.115,
-   "hs_rmse": 0.439,
-   "hs_si": 0.186,
-   "tp_bias": -2.32,
-   "tp_mae": 2.53,
-   "dir_mae": 14.4,
-   "dir_bias": 11.6,
-   "tm_bias": 2.07,
-   "obs_hs": 2.01,
+   "n": 2184,
+   "hs_bias": 0.142,
+   "hs_rmse": 0.48,
+   "hs_si": 0.217,
+   "tp_bias": -2.03,
+   "tp_mae": 2.27,
+   "dir_mae": 17.8,
+   "dir_bias": 12.7,
+   "tm_bias": 2.36,
+   "obs_hs": 1.85,
    "tp_type": "mean",
    "eligible": false
   }
@@ -93,38 +98,42 @@
  },
  "confidence": "baja",
  "vs": "ecmwf_wam",
- "margin": 0.037,
+ "margin": 0.156,
  "per_buoy": {
   "aodn:apollo-bay": {
-   "n": 193,
+   "n": 730,
    "best": "ncep_gfswave025",
    "km": 32.3
   },
   "aodn:inverloch": {
-   "n": 730,
+   "n": 725,
    "best": null,
-   "km": 113.7
+   "km": 113.8
   },
   "aodn:bob": {
-   "n": 193,
+   "n": 729,
    "best": "ecmwf_wam",
-   "km": 145.4
+   "km": 145.5
   }
  },
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.075,
+  "hs": 0.071,
   "hours": 744,
   "point": [
-   -38.3715,
-   144.277
+   -38.3889,
+   144.2515
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.32,
-   "meteofrance_wave": 1.37,
-   "ecmwf_wam": 1.53
-  }
+   "ncep_gfswave025": 1.13,
+   "meteofrance_wave": 1.12,
+   "ecmwf_wam": 1.24
+  },
+  "cell": [
+   -38.5,
+   144.25
+  ]
  },
  "wind": {
   "stations": [],

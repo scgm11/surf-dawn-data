@@ -1,22 +1,26 @@
 {
  "region": "CL-MAU",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.095,
+  "hs": 0.1,
   "hours": 744,
   "point": [
-   -36.537,
-   -72.938
+   -36.5367,
+   -72.9352
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.35,
-   "meteofrance_wave": 1.11,
-   "ecmwf_wam": 1.22
-  }
+   "ncep_gfswave025": 1.19,
+   "meteofrance_wave": 0.97,
+   "ecmwf_wam": 1.08
+  },
+  "cell": [
+   -36.5,
+   -73.0
+  ]
  },
  "confidence": "media",
  "wind": {

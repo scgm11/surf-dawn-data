@@ -1,22 +1,26 @@
 {
  "region": "ZA-WC-CPT",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.243,
+  "hs": 0.3,
   "hours": 744,
   "point": [
-   -34.109,
-   18.47
+   -34.1088,
+   18.4699
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.88,
-   "meteofrance_wave": 1.67,
-   "ecmwf_wam": 1.03
-  }
+   "ncep_gfswave025": 1.84,
+   "meteofrance_wave": 1.62,
+   "ecmwf_wam": 0.84
+  },
+  "cell": [
+   -34.25,
+   18.5
+  ]
  },
  "confidence": "media",
  "wind": {

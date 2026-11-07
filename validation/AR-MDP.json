@@ -1,22 +1,26 @@
 {
  "region": "AR-MDP",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": true,
  "spread": {
-  "hs": 0.07,
+  "hs": 0.065,
   "hours": 744,
   "point": [
-   -38.58,
-   -58.7
+   -38.5811,
+   -58.7017
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.56,
-   "meteofrance_wave": 1.43,
-   "ecmwf_wam": 1.58
-  }
+   "ncep_gfswave025": 1.25,
+   "meteofrance_wave": 1.15,
+   "ecmwf_wam": 1.28
+  },
+  "cell": [
+   -38.75,
+   -58.75
+  ]
  },
  "confidence": "media",
  "wind": {

@@ -1,23 +1,27 @@
 {
  "region": "CR-PAC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.077,
+  "hs": 0.124,
   "hours": 744,
   "point": [
-   9.484,
-   -84.29
+   9.4837,
+   -84.2901
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.09,
-   "ncep_gfswave025": 0.97,
-   "meteofrance_wave": 1.19,
-   "ecmwf_wam": 1.08
-  }
+   "ncep_gfswave016": 1.12,
+   "ncep_gfswave025": 1.01,
+   "meteofrance_wave": 1.37,
+   "ecmwf_wam": 1.28
+  },
+  "cell": [
+   9.333334,
+   -84.33333
+  ]
  },
  "confidence": "media",
  "wind": {

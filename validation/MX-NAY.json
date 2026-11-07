@@ -1,22 +1,26 @@
 {
  "region": "MX-NAY",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.205,
+  "hs": 0.202,
   "hours": 744,
   "point": [
-   21.17,
-   -105.245
+   21.1681,
+   -105.2324
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.62,
-   "meteofrance_wave": 0.89,
-   "ecmwf_wam": 1.04
-  }
+   "ncep_gfswave016": 0.51,
+   "meteofrance_wave": 0.76,
+   "ecmwf_wam": 0.78
+  },
+  "cell": [
+   21.166668,
+   -105.33333
+  ]
  },
  "confidence": "media",
  "wind": {

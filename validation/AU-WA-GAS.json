@@ -1,57 +1,57 @@
 {
  "region": "AU-WA-GAS",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
   "aodn:coral-bay-0-2"
  ],
  "excluded": [
   {
    "id": "aodn:shark-bay-0-2",
-   "km": 129.1,
+   "km": 129.2,
    "why": "otro mar o abrigada: ve 44 % de las direcciones abiertas de los picos"
   }
  ],
  "wave": {
   "ecmwf_wam": {
-   "n": 194,
-   "hs_bias": 0.019,
-   "hs_rmse": 0.181,
-   "hs_si": 0.095,
-   "tp_bias": -0.02,
-   "tp_mae": 0.78,
-   "dir_mae": 27.5,
-   "dir_bias": -26.9,
-   "tm_bias": 3.31,
-   "obs_hs": 1.85,
+   "n": 731,
+   "hs_bias": 0.005,
+   "hs_rmse": 0.228,
+   "hs_si": 0.132,
+   "tp_bias": 0.13,
+   "tp_mae": 1.65,
+   "dir_mae": 24.2,
+   "dir_bias": -22.1,
+   "tm_bias": 3.01,
+   "obs_hs": 1.73,
    "tp_type": "peak",
    "eligible": true
   },
   "ncep_gfswave025": {
-   "n": 194,
-   "hs_bias": -0.222,
-   "hs_rmse": 0.472,
-   "hs_si": 0.124,
-   "tp_bias": 0.17,
-   "tp_mae": 0.96,
-   "dir_mae": 12.0,
-   "dir_bias": -11.4,
-   "tm_bias": 5.81,
-   "obs_hs": 1.85,
+   "n": 731,
+   "hs_bias": -0.227,
+   "hs_rmse": 0.456,
+   "hs_si": 0.134,
+   "tp_bias": 0.43,
+   "tp_mae": 1.85,
+   "dir_mae": 11.0,
+   "dir_bias": -5.0,
+   "tm_bias": 6.17,
+   "obs_hs": 1.73,
    "tp_type": "primary",
    "eligible": true
   },
   "meteofrance_wave": {
-   "n": 194,
-   "hs_bias": 0.036,
-   "hs_rmse": 0.197,
-   "hs_si": 0.1,
-   "tp_bias": -2.96,
-   "tp_mae": 2.96,
-   "dir_mae": 25.3,
-   "dir_bias": -24.7,
-   "tm_bias": 2.67,
-   "obs_hs": 1.85,
+   "n": 731,
+   "hs_bias": 0.07,
+   "hs_rmse": 0.277,
+   "hs_si": 0.144,
+   "tp_bias": -3.27,
+   "tp_mae": 3.52,
+   "dir_mae": 23.0,
+   "dir_bias": -20.8,
+   "tm_bias": 2.47,
+   "obs_hs": 1.73,
    "tp_type": "mean",
    "eligible": false
   }
@@ -59,12 +59,12 @@
  "best": {
   "wave": "ecmwf_wam"
  },
- "confidence": "baja",
+ "confidence": "alta",
  "vs": "ncep_gfswave025",
- "margin": 1.608,
+ "margin": 1.0,
  "per_buoy": {
   "aodn:coral-bay-0-2": {
-   "n": 194,
+   "n": 731,
    "best": "ecmwf_wam",
    "km": 84.7
   }
@@ -72,17 +72,21 @@
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.078,
+  "hs": 0.084,
   "hours": 744,
   "point": [
-   -24.0309,
+   -24.0311,
    113.4394
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.77,
-   "meteofrance_wave": 2.01,
-   "ecmwf_wam": 1.72
-  }
+   "ncep_gfswave025": 1.8,
+   "meteofrance_wave": 1.99,
+   "ecmwf_wam": 1.65
+  },
+  "cell": [
+   -24.0,
+   113.25
+  ]
  },
  "wind": {
   "stations": [],

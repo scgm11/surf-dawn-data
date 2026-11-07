@@ -1,22 +1,26 @@
 {
  "region": "ID-SMB",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.072,
+  "hs": 0.048,
   "hours": 744,
   "point": [
-   -9.738,
-   119.314
+   -9.7464,
+   119.305
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.64,
-   "meteofrance_wave": 1.47,
-   "ecmwf_wam": 1.69
-  }
+   "ncep_gfswave016": 1.42,
+   "meteofrance_wave": 1.38,
+   "ecmwf_wam": 1.51
+  },
+  "cell": [
+   -9.833333,
+   119.33334
+  ]
  },
  "confidence": "media",
  "wind": {

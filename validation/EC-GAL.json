@@ -1,23 +1,27 @@
 {
  "region": "EC-GAL",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.176,
+  "hs": 0.113,
   "hours": 744,
   "point": [
-   -0.9,
-   -89.61
+   -0.901,
+   -89.6214
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.04,
-   "ncep_gfswave025": 1.23,
-   "meteofrance_wave": 1.33,
-   "ecmwf_wam": 0.83
-  }
+   "ncep_gfswave016": 1.16,
+   "ncep_gfswave025": 1.33,
+   "meteofrance_wave": 1.53,
+   "ecmwf_wam": 1.49
+  },
+  "cell": [
+   -0.833333,
+   -89.666664
+  ]
  },
  "confidence": "media",
  "wind": {

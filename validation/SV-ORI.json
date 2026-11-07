@@ -1,23 +1,27 @@
 {
  "region": "SV-ORI",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.091,
+  "hs": 0.109,
   "hours": 744,
   "point": [
-   13.1676,
-   -88.1188
+   13.1681,
+   -88.119
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.06,
-   "ncep_gfswave025": 1.02,
-   "meteofrance_wave": 0.91,
-   "ecmwf_wam": 1.14
-  }
+   "ncep_gfswave016": 1.1,
+   "ncep_gfswave025": 1.06,
+   "meteofrance_wave": 1.03,
+   "ecmwf_wam": 1.33
+  },
+  "cell": [
+   13.0,
+   -88.166664
+  ]
  },
  "confidence": "media",
  "wind": {

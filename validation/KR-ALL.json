@@ -1,27 +1,203 @@
 {
  "region": "KR-ALL",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:2200310",
+  "cmems:2200107",
+  "cmems:2200187"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:2200104",
+   "km": 49.7,
+   "why": "otro mar o abrigada: ve 35 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:2200184",
+   "km": 56.3,
+   "why": "otro mar o abrigada: ve 64 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 2033,
+   "hs_bias": -0.035,
+   "hs_rmse": 0.229,
+   "hs_si": 0.178,
+   "tp_bias": -0.58,
+   "tp_mae": 1.18,
+   "dir_mae": 27.8,
+   "dir_bias": -5.1,
+   "tm_bias": 0.6,
+   "obs_hs": 1.26,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 2033,
+   "hs_bias": -0.163,
+   "hs_rmse": 0.308,
+   "hs_si": 0.182,
+   "tp_bias": -0.9,
+   "tp_mae": 1.49,
+   "dir_mae": 30.5,
+   "dir_bias": -6.7,
+   "tm_bias": 1.1,
+   "obs_hs": 1.26,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 2033,
+   "hs_bias": -0.164,
+   "hs_rmse": 0.31,
+   "hs_si": 0.183,
+   "tp_bias": -0.97,
+   "tp_mae": 1.49,
+   "dir_mae": 30.8,
+   "dir_bias": -6.6,
+   "tm_bias": 1.04,
+   "obs_hs": 1.26,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 2033,
+   "hs_bias": -0.049,
+   "hs_rmse": 0.25,
+   "hs_si": 0.193,
+   "tp_bias": -0.83,
+   "tp_mae": 1.48,
+   "dir_mae": 30.3,
+   "dir_bias": -7.0,
+   "tm_bias": 1.17,
+   "obs_hs": 1.26,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam",
+  "wind": "jma_seamless"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.345,
+ "per_buoy": {
+  "cmems:2200310": {
+   "n": 703,
+   "best": null,
+   "km": 33.2
+  },
+  "cmems:2200107": {
+   "n": 703,
+   "best": "ecmwf_wam",
+   "km": 39.5
+  },
+  "cmems:2200187": {
+   "n": 627,
+   "best": "ecmwf_wam",
+   "km": 56.6
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.137,
+  "hs": 0.17,
   "hours": 744,
   "point": [
-   35.159,
-   129.162
+   35.1583,
+   129.1622
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.87,
-   "ncep_gfswave025": 0.9,
-   "meteofrance_wave": 0.69,
-   "ecmwf_wam": 0.91
-  }
+   "ncep_gfswave016": 0.75,
+   "ncep_gfswave025": 0.77,
+   "meteofrance_wave": 0.61,
+   "ecmwf_wam": 0.86
+  },
+  "cell": [
+   35.0,
+   129.16669
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:2200310",
+   "cmems:2200107",
+   "cmems:2200187"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "jma_seamless": {
+    "n": 2038,
+    "spd_bias": 0.042,
+    "spd_bias_ms": 0.3,
+    "spd_rmse": 1.844,
+    "dir_mae": 18.6,
+    "dir_bias": 1.0,
+    "dir_n": 1714,
+    "obs_spd": 7.1
+   },
+   "ecmwf_ifs": {
+    "n": 2038,
+    "spd_bias": -0.075,
+    "spd_bias_ms": -0.53,
+    "spd_rmse": 1.964,
+    "dir_mae": 21.0,
+    "dir_bias": -0.3,
+    "dir_n": 1714,
+    "obs_spd": 7.1
+   },
+   "gfs_seamless": {
+    "n": 2038,
+    "spd_bias": 0.012,
+    "spd_bias_ms": 0.08,
+    "spd_rmse": 2.017,
+    "dir_mae": 19.0,
+    "dir_bias": 0.2,
+    "dir_n": 1714,
+    "obs_spd": 7.1
+   }
+  },
+  "best": "jma_seamless",
+  "confidence": "media",
+  "vs": "gfs_seamless",
+  "margin": 0.094,
+  "per_station": {
+   "cmems:2200310": {
+    "n": 703,
+    "best": "gfs_seamless",
+    "km": 33.2,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:2200107": {
+    "n": 703,
+    "best": "jma_seamless",
+    "km": 39.5,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:2200187": {
+    "n": 632,
+    "best": "jma_seamless",
+    "km": 56.6,
+    "kind": "buoy",
+    "z": null
+   }
+  },
+  "excluded": [
+   {
+    "id": "cmems:2200104",
+    "km": 49.7,
+    "why": "otro mar o abrigada: ve 35 % de las direcciones abiertas de los picos"
+   },
+   {
+    "id": "cmems:2200184",
+    "km": 56.3,
+    "why": "otro mar o abrigada: ve 64 % de las direcciones abiertas de los picos"
+   }
+  ]
  }
 }

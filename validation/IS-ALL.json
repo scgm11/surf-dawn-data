@@ -1,24 +1,110 @@
 {
  "region": "IS-ALL",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:Thorlakshafnardufl",
+  "cmems:Grindavikurdufl",
+  "cmems:Surtseyjardufl"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:Gardskagadufl",
+   "km": 27.6,
+   "why": "otro mar o abrigada: ve 61 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:Landeyjahafnardufl",
+   "km": 53.2,
+   "why": "pocas horas de ncep_gfswave025 en Open-Meteo"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1921,
+   "hs_bias": 0.007,
+   "hs_rmse": 0.526,
+   "hs_si": 0.172,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": 3.63,
+   "obs_hs": 3.06,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1921,
+   "hs_bias": -0.085,
+   "hs_rmse": 0.612,
+   "hs_si": 0.181,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": 1.76,
+   "obs_hs": 3.06,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1921,
+   "hs_bias": 0.057,
+   "hs_rmse": 0.457,
+   "hs_si": 0.138,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": 2.11,
+   "obs_hs": 3.06,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "alta",
+ "vs": "ecmwf_wam",
+ "margin": 0.163,
+ "per_buoy": {
+  "cmems:Thorlakshafnardufl": {
+   "n": 637,
+   "best": "ncep_gfswave025",
+   "km": 4.8
+  },
+  "cmems:Grindavikurdufl": {
+   "n": 614,
+   "best": "ecmwf_wam",
+   "km": 12.0
+  },
+  "cmems:Surtseyjardufl": {
+   "n": 670,
+   "best": "ncep_gfswave025",
+   "km": 64.9
+  }
+ },
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.127,
+  "hs": 0.129,
   "hours": 744,
   "point": [
-   63.854,
-   -21.38
+   63.8454,
+   -21.3703
   ],
   "mean_hs": {
-   "ncep_gfswave025": 2.59,
-   "meteofrance_wave": 2.65,
-   "ecmwf_wam": 2.02
-  }
+   "ncep_gfswave025": 2.84,
+   "meteofrance_wave": 2.95,
+   "ecmwf_wam": 2.25
+  },
+  "cell": [
+   63.75,
+   -21.25
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

@@ -1,21 +1,26 @@
 {
  "region": "BR-SC-FLN",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": true,
  "spread": {
-  "hs": 0.268,
+  "hs": 0.054,
   "hours": 744,
   "point": [
-   -27.5947,
-   -48.4277
+   -27.75,
+   -48.25
   ],
   "mean_hs": {
-   "meteofrance_wave": 0.85,
-   "ecmwf_wam": 1.46
-  }
+   "ncep_gfswave025": 1.47,
+   "meteofrance_wave": 1.49,
+   "ecmwf_wam": 1.61
+  },
+  "cell": [
+   -27.75,
+   -48.25
+  ]
  },
  "confidence": "media",
  "wind": {

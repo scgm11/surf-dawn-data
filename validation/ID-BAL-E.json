@@ -1,23 +1,27 @@
 {
  "region": "ID-BAL-E",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.144,
+  "hs": 0.124,
   "hours": 744,
   "point": [
-   -8.607,
-   115.325
+   -8.6213,
+   115.3059
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.09,
-   "ncep_gfswave025": 1.48,
-   "meteofrance_wave": 1.06,
-   "ecmwf_wam": 1.25
-  }
+   "ncep_gfswave016": 1.15,
+   "ncep_gfswave025": 1.5,
+   "meteofrance_wave": 1.16,
+   "ecmwf_wam": 1.37
+  },
+  "cell": [
+   -8.666666,
+   115.33334
+  ]
  },
  "confidence": "media",
  "wind": {

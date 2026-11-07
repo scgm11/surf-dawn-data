@@ -1,25 +1,96 @@
 {
  "region": "PT-AZO",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6202400"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 697,
+   "hs_bias": 0.297,
+   "hs_rmse": 0.6,
+   "hs_si": 0.211,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": 88.5,
+   "dir_bias": 59.0,
+   "tm_bias": 2.29,
+   "obs_hs": 1.65,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 697,
+   "hs_bias": 0.233,
+   "hs_rmse": 0.693,
+   "hs_si": 0.35,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": 91.2,
+   "dir_bias": 128.3,
+   "tm_bias": 3.44,
+   "obs_hs": 1.65,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 697,
+   "hs_bias": 0.357,
+   "hs_rmse": 0.813,
+   "hs_si": 0.34,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": 91.3,
+   "dir_bias": 173.8,
+   "tm_bias": 3.54,
+   "obs_hs": 1.65,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 697,
+   "hs_bias": 0.303,
+   "hs_rmse": 0.679,
+   "hs_si": 0.279,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": 87.8,
+   "dir_bias": 42.4,
+   "tm_bias": 2.41,
+   "obs_hs": 1.65,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "confidence": "baja",
+ "per_buoy": {
+  "cmems:6202400": {
+   "n": 697,
+   "best": null,
+   "km": 82.0
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.09,
+  "hs": 0.104,
   "hours": 744,
   "point": [
-   38.733,
-   -27.048
+   38.7334,
+   -27.0484
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.42,
-   "ncep_gfswave025": 1.57,
-   "meteofrance_wave": 1.38,
-   "ecmwf_wam": 1.66
-  }
+   "ncep_gfswave016": 1.51,
+   "ncep_gfswave025": 1.73,
+   "meteofrance_wave": 1.6,
+   "ecmwf_wam": 1.84
+  },
+  "cell": [
+   38.666668,
+   -27.0
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

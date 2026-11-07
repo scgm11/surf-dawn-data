@@ -1,25 +1,114 @@
 {
  "region": "MQ-ALL",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:4100098",
+  "cmems:4100099"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:4100097",
+   "km": 28.7,
+   "why": "otro mar o abrigada: ve 9 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1354,
+   "hs_bias": -0.097,
+   "hs_rmse": 0.175,
+   "hs_si": 0.123,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.11,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1354,
+   "hs_bias": -0.088,
+   "hs_rmse": 0.205,
+   "hs_si": 0.162,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.11,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 1354,
+   "hs_bias": -0.155,
+   "hs_rmse": 0.206,
+   "hs_si": 0.101,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.11,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1354,
+   "hs_bias": -0.076,
+   "hs_rmse": 0.149,
+   "hs_si": 0.111,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.11,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "baja",
+ "vs": "ncep_gfswave016",
+ "margin": 0.177,
+ "per_buoy": {
+  "cmems:4100098": {
+   "n": 677,
+   "best": "ncep_gfswave025",
+   "km": 1.4
+  },
+  "cmems:4100099": {
+   "n": 677,
+   "best": "ecmwf_wam",
+   "km": 42.9
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.03,
+  "hs": 0.039,
   "hours": 744,
   "point": [
-   14.765,
-   -60.9
+   14.7672,
+   -60.902
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.21,
-   "ncep_gfswave025": 1.22,
-   "meteofrance_wave": 1.21,
-   "ecmwf_wam": 1.2
-  }
+   "ncep_gfswave016": 1.17,
+   "ncep_gfswave025": 1.16,
+   "meteofrance_wave": 1.1,
+   "ecmwf_wam": 1.17
+  },
+  "cell": [
+   14.833334,
+   -60.83333
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

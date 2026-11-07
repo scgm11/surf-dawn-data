@@ -1,22 +1,26 @@
 {
  "region": "ID-SBW",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.097,
+  "hs": 0.119,
   "hours": 744,
   "point": [
-   -8.905,
-   116.83
+   -8.8606,
+   116.7627
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.18,
-   "meteofrance_wave": 1.41,
-   "ecmwf_wam": 1.17
-  }
+   "ncep_gfswave016": 1.21,
+   "meteofrance_wave": 1.48,
+   "ecmwf_wam": 1.18
+  },
+  "cell": [
+   -8.833333,
+   116.66669
+  ]
  },
  "confidence": "media",
  "wind": {

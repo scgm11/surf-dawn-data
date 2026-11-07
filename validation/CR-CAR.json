@@ -1,23 +1,27 @@
 {
  "region": "CR-CAR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.089,
+  "hs": 0.074,
   "hours": 744,
   "point": [
-   9.656,
-   -82.749
+   9.6596,
+   -82.7485
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.84,
-   "ncep_gfswave025": 0.84,
-   "meteofrance_wave": 0.98,
-   "ecmwf_wam": 0.96
-  }
+   "ncep_gfswave016": 0.73,
+   "ncep_gfswave025": 0.72,
+   "meteofrance_wave": 0.81,
+   "ecmwf_wam": 0.76
+  },
+  "cell": [
+   9.666668,
+   -82.666664
+  ]
  },
  "confidence": "media",
  "wind": {

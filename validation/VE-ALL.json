@@ -1,23 +1,27 @@
 {
  "region": "VE-ALL",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.453,
+  "hs": 0.455,
   "hours": 744,
   "point": [
-   11.13,
-   -63.85
+   11.1316,
+   -63.8483
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.39,
-   "ncep_gfswave025": 0.64,
-   "meteofrance_wave": 0.78,
-   "ecmwf_wam": 0.2
-  }
+   "ncep_gfswave016": 0.42,
+   "ncep_gfswave025": 0.68,
+   "meteofrance_wave": 0.85,
+   "ecmwf_wam": 0.22
+  },
+  "cell": [
+   11.166668,
+   -63.83333
+  ]
  },
  "confidence": "baja",
  "wind": {

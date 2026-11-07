@@ -1,21 +1,26 @@
 {
  "region": "ZA-WC-GR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.093,
+  "hs": 0.056,
   "hours": 744,
   "point": [
-   -34.033,
-   22.811
+   -34.25,
+   22.75
   ],
   "mean_hs": {
-   "meteofrance_wave": 2.01,
-   "ecmwf_wam": 1.69
-  }
+   "ncep_gfswave025": 1.94,
+   "meteofrance_wave": 2.14,
+   "ecmwf_wam": 2.12
+  },
+  "cell": [
+   -34.25,
+   22.75
+  ]
  },
  "confidence": "media",
  "wind": {

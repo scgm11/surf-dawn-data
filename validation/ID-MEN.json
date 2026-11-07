@@ -1,23 +1,27 @@
 {
  "region": "ID-MEN",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.09,
+  "hs": 0.101,
   "hours": 744,
   "point": [
-   -2.41,
-   99.855
+   -2.4028,
+   99.8555
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.38,
-   "ncep_gfswave025": 1.69,
-   "meteofrance_wave": 1.66,
-   "ecmwf_wam": 1.72
-  }
+   "ncep_gfswave016": 1.26,
+   "ncep_gfswave025": 1.55,
+   "meteofrance_wave": 1.56,
+   "ecmwf_wam": 1.62
+  },
+  "cell": [
+   -2.333333,
+   99.83334
+  ]
  },
  "confidence": "media",
  "wind": {

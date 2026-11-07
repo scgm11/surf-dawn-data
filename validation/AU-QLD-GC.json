@@ -1,24 +1,98 @@
 {
  "region": "AU-QLD-GC",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:55050",
+  "cmems:55036",
+  "cmems:55037"
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1671,
+   "hs_bias": 0.103,
+   "hs_rmse": 0.245,
+   "hs_si": 0.235,
+   "tp_bias": -0.13,
+   "tp_mae": 1.47,
+   "dir_mae": 26.8,
+   "dir_bias": 12.7,
+   "tm_bias": 3.54,
+   "obs_hs": 0.96,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1671,
+   "hs_bias": 0.295,
+   "hs_rmse": 0.347,
+   "hs_si": 0.213,
+   "tp_bias": -0.07,
+   "tp_mae": 1.41,
+   "dir_mae": 26.7,
+   "dir_bias": 6.3,
+   "tm_bias": 2.24,
+   "obs_hs": 0.96,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 1671,
+   "hs_bias": 0.21,
+   "hs_rmse": 0.253,
+   "hs_si": 0.162,
+   "tp_bias": -0.97,
+   "tp_mae": 1.75,
+   "dir_mae": 26.2,
+   "dir_bias": 6.4,
+   "tm_bias": 2.29,
+   "obs_hs": 0.96,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "alta",
+ "vs": "ecmwf_wam",
+ "margin": 0.416,
+ "per_buoy": {
+  "cmems:55050": {
+   "n": 560,
+   "best": "ncep_gfswave025",
+   "km": 1.2
+  },
+  "cmems:55036": {
+   "n": 543,
+   "best": "ncep_gfswave025",
+   "km": 2.1
+  },
+  "cmems:55037": {
+   "n": 568,
+   "best": "ecmwf_wam",
+   "km": 2.6
+  }
+ },
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.158,
+  "hs": 0.155,
   "hours": 744,
   "point": [
    -27.95,
    153.4295
   ],
   "mean_hs": {
-   "ncep_gfswave025": 0.99,
-   "meteofrance_wave": 0.88,
-   "ecmwf_wam": 1.25
-  }
+   "ncep_gfswave025": 0.98,
+   "meteofrance_wave": 0.82,
+   "ecmwf_wam": 1.15
+  },
+  "cell": [
+   -28.0,
+   153.5
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

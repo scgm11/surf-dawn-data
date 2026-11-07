@@ -1,23 +1,27 @@
 {
  "region": "JP-CHI",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.096,
+  "hs": 0.108,
   "hours": 744,
   "point": [
-   35.353,
-   140.386
+   35.3541,
+   140.392
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.77,
-   "ncep_gfswave025": 1.97,
-   "meteofrance_wave": 1.56,
-   "ecmwf_wam": 1.61
-  }
+   "ncep_gfswave016": 1.62,
+   "ncep_gfswave025": 1.8,
+   "meteofrance_wave": 1.44,
+   "ecmwf_wam": 1.43
+  },
+  "cell": [
+   35.333336,
+   140.5
+  ]
  },
  "confidence": "media",
  "wind": {

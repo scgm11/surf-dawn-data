@@ -1,23 +1,27 @@
 {
  "region": "CR-OSA",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.241,
+  "hs": 0.228,
   "hours": 744,
   "point": [
-   8.3929,
-   -83.1394
+   8.3925,
+   -83.1387
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.99,
-   "ncep_gfswave025": 0.65,
-   "meteofrance_wave": 1.19,
-   "ecmwf_wam": 0.74
-  }
+   "ncep_gfswave016": 1.13,
+   "ncep_gfswave025": 0.77,
+   "meteofrance_wave": 1.39,
+   "ecmwf_wam": 0.91
+  },
+  "cell": [
+   8.333334,
+   -83.166664
+  ]
  },
  "confidence": "media",
  "wind": {

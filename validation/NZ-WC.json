@@ -1,22 +1,26 @@
 {
  "region": "NZ-WC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.076,
+  "hs": 0.069,
   "hours": 744,
   "point": [
-   -42.45,
-   171.198
+   -42.4489,
+   171.1914
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.9,
-   "meteofrance_wave": 2.0,
-   "ecmwf_wam": 2.17
-  }
+   "ncep_gfswave025": 1.71,
+   "meteofrance_wave": 1.76,
+   "ecmwf_wam": 1.9
+  },
+  "cell": [
+   -42.5,
+   171.0
+  ]
  },
  "confidence": "media",
  "wind": {

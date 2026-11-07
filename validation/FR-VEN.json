@@ -1,26 +1,135 @@
 {
  "region": "FR-VEN",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6200067",
+  "cmems:6200251",
+  "cmems:6200078"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:6200253",
+   "km": 2.4,
+   "why": "otro mar o abrigada: ve 63 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ncep_gfswave025": {
+   "n": 1731,
+   "hs_bias": -0.018,
+   "hs_rmse": 0.24,
+   "hs_si": 0.186,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.29,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 1731,
+   "hs_bias": 0.025,
+   "hs_rmse": 0.283,
+   "hs_si": 0.218,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.29,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ecmwf_wam": {
+   "n": 1731,
+   "hs_bias": 0.328,
+   "hs_rmse": 0.507,
+   "hs_si": 0.216,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.29,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "dwd_ewam": {
+   "n": 1731,
+   "hs_bias": 0.261,
+   "hs_rmse": 0.431,
+   "hs_si": 0.209,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.29,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "meteofrance_wave": {
+   "n": 1731,
+   "hs_bias": 0.34,
+   "hs_rmse": 0.519,
+   "hs_si": 0.216,
+   "tp_bias": null,
+   "tp_mae": null,
+   "dir_mae": null,
+   "dir_bias": null,
+   "tm_bias": null,
+   "obs_hs": 1.29,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.179,
+ "per_buoy": {
+  "cmems:6200067": {
+   "n": 610,
+   "best": "ncep_gfswave025",
+   "km": 10.9
+  },
+  "cmems:6200251": {
+   "n": 685,
+   "best": "ncep_gfswave025",
+   "km": 44.3
+  },
+  "cmems:6200078": {
+   "n": 436,
+   "best": "ncep_gfswave025",
+   "km": 65.8
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.161,
+  "hs": 0.156,
   "hours": 744,
   "point": [
-   46.34,
-   -1.435
+   46.3409,
+   -1.4362
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.83,
-   "ncep_gfswave025": 0.9,
-   "meteofrance_wave": 1.02,
-   "ecmwf_wam": 0.67,
-   "dwd_ewam": 0.74
-  }
+   "ncep_gfswave016": 1.18,
+   "ncep_gfswave025": 1.28,
+   "meteofrance_wave": 1.4,
+   "ecmwf_wam": 0.94,
+   "dwd_ewam": 1.03
+  },
+  "cell": [
+   46.333336,
+   -1.5
+  ]
  },
- "confidence": "media",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

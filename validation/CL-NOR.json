@@ -1,22 +1,26 @@
 {
  "region": "CL-NOR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.128,
+  "hs": 0.113,
   "hours": 744,
   "point": [
-   -20.19,
-   -70.15
+   -20.1879,
+   -70.1384
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.1,
-   "meteofrance_wave": 1.32,
-   "ecmwf_wam": 1.0
-  }
+   "ncep_gfswave025": 1.3,
+   "meteofrance_wave": 1.58,
+   "ecmwf_wam": 1.24
+  },
+  "cell": [
+   -20.25,
+   -70.25
+  ]
  },
  "confidence": "media",
  "wind": {

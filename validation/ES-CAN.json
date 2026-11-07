@@ -1,28 +1,220 @@
 {
  "region": "ES-CAN",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:Bilbao-coast-buoy",
+  "cmems:Bilbao-station",
+  "cmems:6200024"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:Pasaia-station",
+   "km": 124.9,
+   "why": "otro mar o abrigada: ve 68 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6200079",
+   "km": 144.5,
+   "why": "otro mar o abrigada: ve 62 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6200066",
+   "km": 149.5,
+   "why": "otro mar o abrigada: ve 67 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 2094,
+   "hs_bias": -0.071,
+   "hs_rmse": 0.375,
+   "hs_si": 0.182,
+   "tp_bias": 0.45,
+   "tp_mae": 0.98,
+   "dir_mae": 9.1,
+   "dir_bias": -0.3,
+   "tm_bias": 3.09,
+   "obs_hs": 1.92,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 2094,
+   "hs_bias": -0.199,
+   "hs_rmse": 0.557,
+   "hs_si": 0.21,
+   "tp_bias": 0.57,
+   "tp_mae": 1.33,
+   "dir_mae": 8.7,
+   "dir_bias": -2.9,
+   "tm_bias": 4.65,
+   "obs_hs": 1.92,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 2094,
+   "hs_bias": -0.226,
+   "hs_rmse": 0.6,
+   "hs_si": 0.215,
+   "tp_bias": 0.61,
+   "tp_mae": 1.36,
+   "dir_mae": 9.1,
+   "dir_bias": -3.8,
+   "tm_bias": 4.69,
+   "obs_hs": 1.92,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 2094,
+   "hs_bias": -0.15,
+   "hs_rmse": 0.483,
+   "hs_si": 0.201,
+   "tp_bias": -0.72,
+   "tp_mae": 1.35,
+   "dir_mae": 8.1,
+   "dir_bias": 0.6,
+   "tm_bias": 3.35,
+   "obs_hs": 1.92,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "dwd_ewam": {
+   "n": 2094,
+   "hs_bias": -0.104,
+   "hs_rmse": 0.492,
+   "hs_si": 0.234,
+   "tp_bias": -0.76,
+   "tp_mae": 1.47,
+   "dir_mae": 8.3,
+   "dir_bias": -0.6,
+   "tm_bias": 3.32,
+   "obs_hs": 1.92,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam",
+  "wind": "meteofrance_seamless"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.6,
+ "per_buoy": {
+  "cmems:Bilbao-coast-buoy": {
+   "n": 719,
+   "best": "ecmwf_wam",
+   "km": 27.8
+  },
+  "cmems:Bilbao-station": {
+   "n": 655,
+   "best": null,
+   "km": 32.0
+  },
+  "cmems:6200024": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 39.8
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.09,
+  "hs": 0.257,
   "hours": 744,
   "point": [
-   43.464,
-   -3.944
+   43.4583,
+   -3.9551
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.44,
-   "ncep_gfswave025": 1.44,
-   "meteofrance_wave": 1.61,
-   "ecmwf_wam": 1.44,
-   "dwd_ewam": 1.71
-  }
+   "ncep_gfswave016": 1.7,
+   "ncep_gfswave025": 1.7,
+   "meteofrance_wave": 1.86,
+   "ecmwf_wam": 1.69,
+   "dwd_ewam": 0.65
+  },
+  "cell": [
+   43.5,
+   -4.0
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:Bilbao-station",
+   "cmems:6200024"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "meteofrance_seamless": {
+    "n": 1331,
+    "spd_bias": 0.173,
+    "spd_bias_ms": 0.69,
+    "spd_rmse": 1.611,
+    "dir_mae": 16.9,
+    "dir_bias": 1.2,
+    "dir_n": 774,
+    "obs_spd": 3.96
+   },
+   "ecmwf_ifs": {
+    "n": 1331,
+    "spd_bias": 0.157,
+    "spd_bias_ms": 0.62,
+    "spd_rmse": 1.716,
+    "dir_mae": 19.8,
+    "dir_bias": 2.7,
+    "dir_n": 774,
+    "obs_spd": 3.96
+   },
+   "gfs_seamless": {
+    "n": 1331,
+    "spd_bias": 0.117,
+    "spd_bias_ms": 0.46,
+    "spd_rmse": 1.797,
+    "dir_mae": 22.5,
+    "dir_bias": 4.6,
+    "dir_n": 774,
+    "obs_spd": 3.96
+   },
+   "icon_seamless": {
+    "n": 1331,
+    "spd_bias": -0.04,
+    "spd_bias_ms": -0.16,
+    "spd_rmse": 1.865,
+    "dir_mae": 18.2,
+    "dir_bias": -0.0,
+    "dir_n": 774,
+    "obs_spd": 3.96
+   }
+  },
+  "best": "meteofrance_seamless",
+  "confidence": "alta",
+  "vs": "gfs_seamless",
+  "margin": 0.115,
+  "per_station": {
+   "cmems:Bilbao-station": {
+    "n": 655,
+    "best": "meteofrance_seamless",
+    "km": 32.0,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:6200024": {
+    "n": 676,
+    "best": "icon_seamless",
+    "km": 39.8,
+    "kind": "buoy",
+    "z": null
+   }
+  },
+  "excluded": [
+   {
+    "id": "cmems:Pasaia-station",
+    "km": 124.9,
+    "why": "otro mar o abrigada: ve 68 % de las direcciones abiertas de los picos"
+   }
+  ]
  }
 }

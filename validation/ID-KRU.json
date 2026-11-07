@@ -1,22 +1,26 @@
 {
  "region": "ID-KRU",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.037,
+  "hs": 0.052,
   "hours": 744,
   "point": [
-   -5.233,
-   103.902
+   -5.3081,
+   103.9935
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.86,
-   "meteofrance_wave": 1.96,
-   "ecmwf_wam": 1.89
-  }
+   "ncep_gfswave016": 1.74,
+   "meteofrance_wave": 1.88,
+   "ecmwf_wam": 1.71
+  },
+  "cell": [
+   -5.333333,
+   104.0
+  ]
  },
  "confidence": "media",
  "wind": {

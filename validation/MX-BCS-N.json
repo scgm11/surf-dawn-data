@@ -1,23 +1,27 @@
 {
  "region": "MX-BCS-N",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.094,
+  "hs": 0.12,
   "hours": 744,
   "point": [
-   26.704,
-   -113.578
+   26.7054,
+   -113.577
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.26,
-   "ncep_gfswave025": 1.26,
-   "meteofrance_wave": 1.52,
-   "ecmwf_wam": 1.36
-  }
+   "ncep_gfswave016": 1.07,
+   "ncep_gfswave025": 1.07,
+   "meteofrance_wave": 1.37,
+   "ecmwf_wam": 1.25
+  },
+  "cell": [
+   26.666668,
+   -113.5
+  ]
  },
  "confidence": "media",
  "wind": {

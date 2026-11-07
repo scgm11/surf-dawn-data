@@ -1,22 +1,26 @@
 {
  "region": "NZ-KAI",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.1,
+  "hs": 0.074,
   "hours": 744,
   "point": [
-   -43.042,
-   172.919
+   -43.0456,
+   173.0842
   ],
   "mean_hs": {
-   "ncep_gfswave025": 0.77,
-   "meteofrance_wave": 0.78,
-   "ecmwf_wam": 0.86
-  }
+   "ncep_gfswave025": 0.99,
+   "meteofrance_wave": 0.99,
+   "ecmwf_wam": 0.98
+  },
+  "cell": [
+   -43.0,
+   173.25
+  ]
  },
  "confidence": "media",
  "wind": {

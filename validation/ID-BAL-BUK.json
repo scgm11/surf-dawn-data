@@ -1,23 +1,27 @@
 {
  "region": "ID-BAL-BUK",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.101,
+  "hs": 0.115,
   "hours": 744,
   "point": [
-   -8.84,
-   115.155
+   -8.8479,
+   115.1546
   ],
   "mean_hs": {
    "ncep_gfswave016": 1.69,
-   "ncep_gfswave025": 1.48,
-   "meteofrance_wave": 1.91,
-   "ecmwf_wam": 1.83
-  }
+   "ncep_gfswave025": 1.5,
+   "meteofrance_wave": 2.0,
+   "ecmwf_wam": 1.87
+  },
+  "cell": [
+   -8.833333,
+   115.16669
+  ]
  },
  "confidence": "media",
  "wind": {

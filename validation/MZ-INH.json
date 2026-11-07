@@ -1,22 +1,26 @@
 {
  "region": "MZ-INH",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.176,
+  "hs": 0.18,
   "hours": 744,
   "point": [
-   -23.858,
-   35.549
+   -23.8584,
+   35.5517
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.03,
-   "meteofrance_wave": 1.33,
-   "ecmwf_wam": 1.58
-  }
+   "ncep_gfswave025": 0.96,
+   "meteofrance_wave": 1.07,
+   "ecmwf_wam": 1.43
+  },
+  "cell": [
+   -23.75,
+   35.5
+  ]
  },
  "confidence": "media",
  "wind": {

@@ -1,0 +1,30 @@
+{
+ "region": "UY-CAN",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [],
+ "current": "ncep_gfswave025",
+ "fixed": true,
+ "spread": {
+  "hs": 0.139,
+  "hours": 744,
+  "point": [
+   -34.7806,
+   -55.7568
+  ],
+  "mean_hs": {
+   "ncep_gfswave025": 0.93,
+   "meteofrance_wave": 0.76,
+   "ecmwf_wam": 0.73
+  },
+  "cell": [
+   -35.0,
+   -55.75
+  ]
+ },
+ "confidence": "media",
+ "wind": {
+  "stations": [],
+  "current": "gfs_seamless"
+ }
+}

@@ -1,22 +1,26 @@
 {
  "region": "UY-ROC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": true,
  "spread": {
-  "hs": 0.129,
+  "hs": 0.116,
   "hours": 744,
   "point": [
    -34.27,
    -53.7737
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.56,
-   "meteofrance_wave": 1.16,
-   "ecmwf_wam": 1.49
-  }
+   "ncep_gfswave025": 1.52,
+   "meteofrance_wave": 1.17,
+   "ecmwf_wam": 1.48
+  },
+  "cell": [
+   -34.5,
+   -53.75
+  ]
  },
  "confidence": "media",
  "wind": {

@@ -1,7 +1,7 @@
 {
  "region": "NI-RIV",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
@@ -9,15 +9,19 @@
   "hs": 0.066,
   "hours": 744,
   "point": [
-   11.3,
-   -85.91
+   11.2955,
+   -85.9127
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.0,
-   "ncep_gfswave025": 1.02,
-   "meteofrance_wave": 1.03,
-   "ecmwf_wam": 0.97
-  }
+   "ncep_gfswave016": 1.01,
+   "ncep_gfswave025": 1.04,
+   "meteofrance_wave": 1.14,
+   "ecmwf_wam": 1.11
+  },
+  "cell": [
+   11.333334,
+   -86.0
+  ]
  },
  "confidence": "media",
  "wind": {

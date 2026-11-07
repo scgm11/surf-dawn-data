@@ -1,23 +1,27 @@
 {
  "region": "MV-SMA",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.088,
+  "hs": 0.091,
   "hours": 744,
   "point": [
-   3.878,
-   73.477
+   3.9003,
+   73.4696
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.85,
-   "ncep_gfswave025": 0.86,
-   "meteofrance_wave": 0.74,
-   "ecmwf_wam": 0.88
-  }
+   "ncep_gfswave016": 0.83,
+   "ncep_gfswave025": 0.84,
+   "meteofrance_wave": 0.73,
+   "ecmwf_wam": 0.89
+  },
+  "cell": [
+   3.833334,
+   73.5
+  ]
  },
  "confidence": "media",
  "wind": {

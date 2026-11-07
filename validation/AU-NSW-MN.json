@@ -1,69 +1,75 @@
 {
  "region": "AU-NSW-MN",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
-  "aodn:crowdy",
+  "cmems:55018",
+  "cmems:55019",
   "aodn:wooli"
  ],
  "wave": {
-  "ncep_gfswave025": {
-   "n": 408,
-   "hs_bias": -0.094,
-   "hs_rmse": 0.299,
-   "hs_si": 0.162,
-   "tp_bias": -1.2,
-   "tp_mae": 1.72,
-   "dir_mae": 25.5,
-   "dir_bias": -14.1,
-   "tm_bias": 2.48,
-   "obs_hs": 1.59,
-   "tp_type": "primary",
-   "eligible": true
-  },
   "ecmwf_wam": {
-   "n": 408,
-   "hs_bias": -0.038,
-   "hs_rmse": 0.325,
-   "hs_si": 0.201,
-   "tp_bias": -0.83,
-   "tp_mae": 1.3,
-   "dir_mae": 20.3,
-   "dir_bias": 0.3,
-   "tm_bias": 1.59,
-   "obs_hs": 1.59,
+   "n": 1549,
+   "hs_bias": 0.102,
+   "hs_rmse": 0.275,
+   "hs_si": 0.16,
+   "tp_bias": -0.29,
+   "tp_mae": 1.19,
+   "dir_mae": 20.1,
+   "dir_bias": 0.8,
+   "tm_bias": 1.44,
+   "obs_hs": 1.45,
    "tp_type": "peak",
    "eligible": true
   },
+  "ncep_gfswave025": {
+   "n": 1549,
+   "hs_bias": -0.074,
+   "hs_rmse": 0.342,
+   "hs_si": 0.225,
+   "tp_bias": -0.58,
+   "tp_mae": 1.27,
+   "dir_mae": 25.2,
+   "dir_bias": -1.1,
+   "tm_bias": 2.24,
+   "obs_hs": 1.45,
+   "tp_type": "primary",
+   "eligible": true
+  },
   "meteofrance_wave": {
-   "n": 408,
-   "hs_bias": -0.143,
-   "hs_rmse": 0.421,
-   "hs_si": 0.222,
-   "tp_bias": -2.34,
-   "tp_mae": 2.75,
-   "dir_mae": 20.5,
-   "dir_bias": -7.7,
-   "tm_bias": 1.34,
-   "obs_hs": 1.59,
+   "n": 1549,
+   "hs_bias": -0.117,
+   "hs_rmse": 0.36,
+   "hs_si": 0.22,
+   "tp_bias": -1.44,
+   "tp_mae": 1.82,
+   "dir_mae": 19.6,
+   "dir_bias": -0.1,
+   "tm_bias": 1.39,
+   "obs_hs": 1.45,
    "tp_type": "mean",
    "eligible": false
   }
  },
  "best": {
-  "wave": "ncep_gfswave025"
+  "wave": "ecmwf_wam"
  },
- "confidence": "baja",
- "vs": "ecmwf_wam",
- "margin": 0.087,
+ "confidence": "alta",
+ "vs": "ncep_gfswave025",
+ "margin": 0.244,
  "per_buoy": {
-  "aodn:crowdy": {
-   "n": 214,
+  "cmems:55018": {
+   "n": 399,
    "best": "ncep_gfswave025",
-   "km": 4.5
+   "km": 13.9
+  },
+  "cmems:55019": {
+   "n": 419,
+   "best": null,
+   "km": 13.9
   },
   "aodn:wooli": {
-   "n": 194,
+   "n": 731,
    "best": "ecmwf_wam",
    "km": 17.3
   }
@@ -71,17 +77,21 @@
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.158,
+  "hs": 0.126,
   "hours": 744,
   "point": [
-   -31.19,
-   152.9835
+   -31.1905,
+   152.983
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.2,
-   "meteofrance_wave": 1.72,
-   "ecmwf_wam": 1.41
-  }
+   "ncep_gfswave025": 1.14,
+   "meteofrance_wave": 1.52,
+   "ecmwf_wam": 1.29
+  },
+  "cell": [
+   -31.25,
+   153.0
+  ]
  },
  "wind": {
   "stations": [],

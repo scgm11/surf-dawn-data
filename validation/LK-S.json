@@ -1,7 +1,7 @@
 {
  "region": "LK-S",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
@@ -9,15 +9,19 @@
   "hs": 0.05,
   "hours": 744,
   "point": [
-   5.967,
-   80.375
+   5.9667,
+   80.3749
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.63,
-   "ncep_gfswave025": 1.65,
-   "meteofrance_wave": 1.74,
-   "ecmwf_wam": 1.59
-  }
+   "ncep_gfswave016": 1.39,
+   "ncep_gfswave025": 1.39,
+   "meteofrance_wave": 1.49,
+   "ecmwf_wam": 1.44
+  },
+  "cell": [
+   5.833334,
+   80.33334
+  ]
  },
  "confidence": "media",
  "wind": {

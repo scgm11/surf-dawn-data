@@ -1,28 +1,210 @@
 {
  "region": "ES-GAL",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6201070",
+  "cmems:6200083",
+  "cmems:6200084"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:LangosteiraTG",
+   "km": 4.8,
+   "why": "sesgo de Hs +529%, +643%, +478%, +461%, +650% en todos los modelos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 2160,
+   "hs_bias": -0.051,
+   "hs_rmse": 0.316,
+   "hs_si": 0.12,
+   "tp_bias": -0.09,
+   "tp_mae": 0.75,
+   "dir_mae": 11.2,
+   "dir_bias": -1.5,
+   "tm_bias": 2.53,
+   "obs_hs": 2.42,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 2160,
+   "hs_bias": -0.05,
+   "hs_rmse": 0.422,
+   "hs_si": 0.167,
+   "tp_bias": 0.08,
+   "tp_mae": 1.18,
+   "dir_mae": 16.7,
+   "dir_bias": -10.1,
+   "tm_bias": 4.21,
+   "obs_hs": 2.42,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 2160,
+   "hs_bias": -0.1,
+   "hs_rmse": 0.491,
+   "hs_si": 0.177,
+   "tp_bias": 0.12,
+   "tp_mae": 1.12,
+   "dir_mae": 13.9,
+   "dir_bias": -6.7,
+   "tm_bias": 4.25,
+   "obs_hs": 2.42,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "dwd_ewam": {
+   "n": 2160,
+   "hs_bias": -0.003,
+   "hs_rmse": 0.426,
+   "hs_si": 0.176,
+   "tp_bias": -1.47,
+   "tp_mae": 1.76,
+   "dir_mae": 14.6,
+   "dir_bias": -6.2,
+   "tm_bias": 2.66,
+   "obs_hs": 2.42,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "meteofrance_wave": {
+   "n": 2160,
+   "hs_bias": -0.073,
+   "hs_rmse": 0.444,
+   "hs_si": 0.168,
+   "tp_bias": -1.41,
+   "tp_mae": 1.66,
+   "dir_mae": 10.5,
+   "dir_bias": 0.1,
+   "tm_bias": 2.72,
+   "obs_hs": 2.42,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam",
+  "wind": "ecmwf_ifs"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.554,
+ "per_buoy": {
+  "cmems:6201070": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 3.2
+  },
+  "cmems:6200083": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 33.2
+  },
+  "cmems:6200084": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 49.8
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.114,
+  "hs": 0.107,
   "hours": 744,
   "point": [
-   43.291,
-   -8.695
+   43.2191,
+   -9.0022
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.49,
-   "ncep_gfswave025": 1.87,
-   "meteofrance_wave": 1.55,
-   "ecmwf_wam": 1.63,
-   "dwd_ewam": 1.85
-  }
+   "ncep_gfswave016": 2.27,
+   "meteofrance_wave": 2.48,
+   "ecmwf_wam": 2.24,
+   "dwd_ewam": 1.9
+  },
+  "cell": [
+   43.333336,
+   -9.0
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:6201070",
+   "cmems:6200083",
+   "cmems:6200084"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "ecmwf_ifs": {
+    "n": 2124,
+    "spd_bias": 0.13,
+    "spd_bias_ms": 0.69,
+    "spd_rmse": 1.627,
+    "dir_mae": 14.3,
+    "dir_bias": -2.6,
+    "dir_n": 1479,
+    "obs_spd": 5.34
+   },
+   "icon_seamless": {
+    "n": 2124,
+    "spd_bias": 0.163,
+    "spd_bias_ms": 0.87,
+    "spd_rmse": 1.81,
+    "dir_mae": 14.3,
+    "dir_bias": -4.3,
+    "dir_n": 1479,
+    "obs_spd": 5.34
+   },
+   "meteofrance_seamless": {
+    "n": 2124,
+    "spd_bias": 0.197,
+    "spd_bias_ms": 1.05,
+    "spd_rmse": 2.098,
+    "dir_mae": 14.3,
+    "dir_bias": -3.0,
+    "dir_n": 1479,
+    "obs_spd": 5.34
+   },
+   "gfs_seamless": {
+    "n": 2124,
+    "spd_bias": 0.252,
+    "spd_bias_ms": 1.35,
+    "spd_rmse": 2.117,
+    "dir_mae": 15.4,
+    "dir_bias": -1.4,
+    "dir_n": 1479,
+    "obs_spd": 5.34
+   }
+  },
+  "best": "ecmwf_ifs",
+  "confidence": "alta",
+  "vs": "gfs_seamless",
+  "margin": 0.301,
+  "per_station": {
+   "cmems:6201070": {
+    "n": 720,
+    "best": "icon_seamless",
+    "km": 3.2,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:6200083": {
+    "n": 700,
+    "best": null,
+    "km": 33.2,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:6200084": {
+    "n": 704,
+    "best": "ecmwf_ifs",
+    "km": 49.8,
+    "kind": "buoy",
+    "z": null
+   }
+  }
  }
 }

@@ -1,23 +1,26 @@
 {
  "region": "PA-PAC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.066,
+  "hs": 0.173,
   "hours": 744,
   "point": [
-   7.429,
-   -80.187
+   7.3092,
+   -80.3849
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.85,
-   "ncep_gfswave025": 0.92,
-   "meteofrance_wave": 0.91,
-   "ecmwf_wam": 0.88
-  }
+   "ncep_gfswave016": 0.81,
+   "meteofrance_wave": 1.24,
+   "ecmwf_wam": 1.11
+  },
+  "cell": [
+   7.333334,
+   -80.33333
+  ]
  },
  "confidence": "media",
  "wind": {

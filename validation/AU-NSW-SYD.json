@@ -1,76 +1,97 @@
 {
  "region": "AU-NSW-SYD",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
-  "aodn:collaroy-narrabeen"
+  "aodn:collaroy-narrabeen",
+  "cmems:55024",
+  "cmems:55022"
  ],
  "wave": {
   "ecmwf_wam": {
-   "n": 193,
-   "hs_bias": 0.796,
-   "hs_rmse": 0.901,
-   "hs_si": 0.703,
-   "tp_bias": -0.42,
-   "tp_mae": 1.45,
-   "dir_mae": 53.3,
-   "dir_bias": 53.6,
-   "tm_bias": 2.41,
-   "obs_hs": 0.85,
+   "n": 1487,
+   "hs_bias": 0.074,
+   "hs_rmse": 0.465,
+   "hs_si": 0.332,
+   "tp_bias": -0.86,
+   "tp_mae": 1.32,
+   "dir_mae": 27.8,
+   "dir_bias": 6.9,
+   "tm_bias": 1.3,
+   "obs_hs": 1.37,
    "tp_type": "peak",
    "eligible": true
   },
   "ncep_gfswave025": {
-   "n": 193,
-   "hs_bias": 0.976,
-   "hs_rmse": 1.168,
-   "hs_si": 0.969,
-   "tp_bias": -1.59,
-   "tp_mae": 2.01,
-   "dir_mae": 57.8,
-   "dir_bias": 54.2,
-   "tm_bias": 2.66,
-   "obs_hs": 0.85,
+   "n": 1487,
+   "hs_bias": 0.108,
+   "hs_rmse": 0.502,
+   "hs_si": 0.351,
+   "tp_bias": -1.15,
+   "tp_mae": 1.48,
+   "dir_mae": 36.5,
+   "dir_bias": 16.6,
+   "tm_bias": 1.99,
+   "obs_hs": 1.37,
    "tp_type": "primary",
    "eligible": true
   },
   "meteofrance_wave": {
-   "n": 193,
-   "hs_bias": 0.194,
-   "hs_rmse": 0.375,
-   "hs_si": 0.397,
-   "tp_bias": -1.68,
-   "tp_mae": 2.57,
-   "dir_mae": 44.0,
-   "dir_bias": 44.0,
-   "tm_bias": 2.57,
-   "obs_hs": 0.85,
+   "n": 1487,
+   "hs_bias": -0.147,
+   "hs_rmse": 0.42,
+   "hs_si": 0.27,
+   "tp_bias": -1.6,
+   "tp_mae": 1.92,
+   "dir_mae": 23.1,
+   "dir_bias": 6.9,
+   "tm_bias": 1.55,
+   "obs_hs": 1.37,
    "tp_type": "mean",
    "eligible": false
   }
  },
+ "best": {
+  "wave": "ecmwf_wam"
+ },
  "confidence": "baja",
+ "vs": "ncep_gfswave025",
+ "margin": 0.08,
  "per_buoy": {
   "aodn:collaroy-narrabeen": {
-   "n": 193,
+   "n": 730,
    "best": null,
-   "km": 0.7
+   "km": 0.8
+  },
+  "cmems:55024": {
+   "n": 462,
+   "best": "ncep_gfswave025",
+   "km": 7.6
+  },
+  "cmems:55022": {
+   "n": 295,
+   "best": null,
+   "km": 29.5
   }
  },
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.117,
+  "hs": 0.113,
   "hours": 744,
   "point": [
-   -33.9205,
-   151.26
+   -33.9202,
+   151.2602
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.47,
-   "meteofrance_wave": 1.35,
-   "ecmwf_wam": 1.12
-  }
+   "ncep_gfswave025": 1.38,
+   "meteofrance_wave": 1.27,
+   "ecmwf_wam": 1.07
+  },
+  "cell": [
+   -34.0,
+   151.25
+  ]
  },
  "wind": {
   "stations": [],

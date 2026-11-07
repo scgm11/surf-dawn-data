@@ -1,23 +1,34 @@
 {
  "region": "PT-MAD",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
+ "excluded": [
+  {
+   "id": "cmems:1301001",
+   "km": 4.3,
+   "why": "otro mar o abrigada: ve 42 % de las direcciones abiertas de los picos"
+  }
+ ],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.118,
+  "hs": 0.094,
   "hours": 744,
   "point": [
-   32.643,
-   -16.955
+   32.642,
+   -16.9555
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.79,
-   "ncep_gfswave025": 0.79,
-   "meteofrance_wave": 0.88,
-   "ecmwf_wam": 0.66
-  }
+   "ncep_gfswave016": 0.97,
+   "ncep_gfswave025": 0.97,
+   "meteofrance_wave": 1.03,
+   "ecmwf_wam": 0.85
+  },
+  "cell": [
+   32.5,
+   -17.0
+  ]
  },
  "confidence": "media",
  "wind": {

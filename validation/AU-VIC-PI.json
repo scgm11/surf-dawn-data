@@ -1,13 +1,18 @@
 {
  "region": "AU-VIC-PI",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
   "aodn:inverloch",
   "aodn:apollo-bay",
   "aodn:wilsons-prom"
  ],
  "excluded": [
+  {
+   "id": "aodn:weeroona-bay",
+   "km": 3.4,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
   {
    "id": "aodn:rosebud",
    "km": 12.9,
@@ -41,80 +46,89 @@
  ],
  "wave": {
   "ncep_gfswave025": {
-   "n": 1050,
-   "hs_bias": -0.164,
-   "hs_rmse": 0.396,
-   "hs_si": 0.148,
-   "tp_bias": 0.52,
-   "tp_mae": 1.32,
-   "dir_mae": 11.8,
-   "dir_bias": 5.0,
-   "tm_bias": 4.8,
-   "obs_hs": 1.79,
+   "n": 2184,
+   "hs_bias": -0.106,
+   "hs_rmse": 0.296,
+   "hs_si": 0.163,
+   "tp_bias": 0.49,
+   "tp_mae": 1.42,
+   "dir_mae": 20.0,
+   "dir_bias": 10.6,
+   "tm_bias": 4.75,
+   "obs_hs": 1.53,
    "tp_type": "primary",
    "eligible": true
   },
   "ecmwf_wam": {
-   "n": 1050,
-   "hs_bias": 0.209,
-   "hs_rmse": 0.437,
-   "hs_si": 0.125,
-   "tp_bias": 0.64,
-   "tp_mae": 1.15,
-   "dir_mae": 12.0,
-   "dir_bias": 9.0,
-   "tm_bias": 2.85,
-   "obs_hs": 1.79,
+   "n": 2184,
+   "hs_bias": 0.199,
+   "hs_rmse": 0.359,
+   "hs_si": 0.124,
+   "tp_bias": 0.45,
+   "tp_mae": 1.18,
+   "dir_mae": 18.5,
+   "dir_bias": 11.5,
+   "tm_bias": 2.86,
+   "obs_hs": 1.53,
    "tp_type": "peak",
    "eligible": true
   },
   "meteofrance_wave": {
-   "n": 1050,
-   "hs_bias": 0.164,
-   "hs_rmse": 0.445,
-   "hs_si": 0.187,
-   "tp_bias": -2.1,
-   "tp_mae": 2.46,
-   "dir_mae": 13.4,
-   "dir_bias": 10.0,
-   "tm_bias": 2.17,
-   "obs_hs": 1.79,
+   "n": 2184,
+   "hs_bias": 0.227,
+   "hs_rmse": 0.479,
+   "hs_si": 0.217,
+   "tp_bias": -1.74,
+   "tp_mae": 2.2,
+   "dir_mae": 21.9,
+   "dir_bias": 12.9,
+   "tm_bias": 2.52,
+   "obs_hs": 1.53,
    "tp_type": "mean",
    "eligible": false
   }
  },
- "confidence": "baja",
+ "best": {
+  "wave": "ncep_gfswave025"
+ },
+ "confidence": "alta",
+ "vs": "ecmwf_wam",
+ "margin": 0.213,
  "per_buoy": {
   "aodn:inverloch": {
-   "n": 730,
+   "n": 725,
    "best": null,
    "km": 44.5
   },
   "aodn:apollo-bay": {
-   "n": 193,
+   "n": 730,
    "best": "ncep_gfswave025",
    "km": 96.9
   },
   "aodn:wilsons-prom": {
-   "n": 127,
-   "best": "ncep_gfswave025",
+   "n": 729,
+   "best": "ecmwf_wam",
    "km": 147.1
   }
  },
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.158,
+  "hs": 0.167,
   "hours": 744,
   "point": [
-   -38.489,
-   145.013
+   -38.4834,
+   145.0172
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.77,
-   "meteofrance_wave": 2.1,
-   "ecmwf_wam": 1.44
-  }
+   "ncep_gfswave025": 1.56,
+   "meteofrance_wave": 1.84,
+   "ecmwf_wam": 1.23
+  },
+  "cell": [
+   -38.5,
+   145.0
+  ]
  },
  "wind": {
   "stations": [],

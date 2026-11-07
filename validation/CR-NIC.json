@@ -1,23 +1,27 @@
 {
  "region": "CR-NIC",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.065,
+  "hs": 0.109,
   "hours": 744,
   "point": [
-   9.8622,
+   9.862,
    -85.4442
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.02,
-   "ncep_gfswave025": 1.06,
-   "meteofrance_wave": 1.11,
-   "ecmwf_wam": 1.19
-  }
+   "ncep_gfswave016": 1.05,
+   "ncep_gfswave025": 1.09,
+   "meteofrance_wave": 1.26,
+   "ecmwf_wam": 1.36
+  },
+  "cell": [
+   9.833334,
+   -85.5
+  ]
  },
  "confidence": "media",
  "wind": {

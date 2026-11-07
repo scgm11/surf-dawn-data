@@ -1,28 +1,210 @@
 {
  "region": "ES-AND",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6200085"
+ ],
+ "excluded": [
+  {
+   "id": "cmems:Tarifa-coast-buoy",
+   "km": 3.5,
+   "why": "otro mar o abrigada: ve 33 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:6101404",
+   "km": 19.0,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:Ceuta-coast-buoy",
+   "km": 29.2,
+   "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:Malaga-coast-buoy",
+   "km": 131.3,
+   "why": "otro mar o abrigada: ve 22 % de las direcciones abiertas de los picos"
+  },
+  {
+   "id": "cmems:Faro-coast-buoy",
+   "km": 132.5,
+   "why": "otro mar o abrigada: ve 49 % de las direcciones abiertas de los picos"
+  }
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 720,
+   "hs_bias": -0.12,
+   "hs_rmse": 0.141,
+   "hs_si": 0.153,
+   "tp_bias": 0.12,
+   "tp_mae": 1.89,
+   "dir_mae": 29.8,
+   "dir_bias": 7.3,
+   "tm_bias": 1.89,
+   "obs_hs": 0.73,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 720,
+   "hs_bias": 0.108,
+   "hs_rmse": 0.189,
+   "hs_si": 0.237,
+   "tp_bias": 2.76,
+   "tp_mae": 3.35,
+   "dir_mae": 43.1,
+   "dir_bias": 18.0,
+   "tm_bias": 6.26,
+   "obs_hs": 0.73,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 720,
+   "hs_bias": 0.107,
+   "hs_rmse": 0.189,
+   "hs_si": 0.237,
+   "tp_bias": 2.78,
+   "tp_mae": 3.35,
+   "dir_mae": 43.1,
+   "dir_bias": 17.9,
+   "tm_bias": 6.28,
+   "obs_hs": 0.73,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "meteofrance_wave": {
+   "n": 720,
+   "hs_bias": 0.115,
+   "hs_rmse": 0.178,
+   "hs_si": 0.216,
+   "tp_bias": 0.4,
+   "tp_mae": 2.23,
+   "dir_mae": 35.6,
+   "dir_bias": 15.5,
+   "tm_bias": 3.9,
+   "obs_hs": 0.73,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "dwd_ewam": {
+   "n": 720,
+   "hs_bias": 0.151,
+   "hs_rmse": 0.208,
+   "hs_si": 0.244,
+   "tp_bias": -0.97,
+   "tp_mae": 2.41,
+   "dir_mae": 29.6,
+   "dir_bias": 12.1,
+   "tm_bias": 2.53,
+   "obs_hs": 0.73,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam",
+  "wind": "meteofrance_seamless"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.34,
+ "per_buoy": {
+  "cmems:6200085": {
+   "n": 720,
+   "best": "ecmwf_wam",
+   "km": 55.0
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.237,
+  "hs": 0.187,
   "hours": 744,
   "point": [
-   36.278,
-   -6.095
+   36.2774,
+   -6.0969
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.62,
-   "ncep_gfswave025": 0.8,
-   "meteofrance_wave": 0.68,
-   "ecmwf_wam": 0.5,
+   "ncep_gfswave016": 0.52,
+   "ncep_gfswave025": 0.66,
+   "meteofrance_wave": 0.6,
+   "ecmwf_wam": 0.47,
    "dwd_ewam": 0.44
-  }
+  },
+  "cell": [
+   36.333336,
+   -6.1666565
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:6200085"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "meteofrance_seamless": {
+    "n": 690,
+    "spd_bias": 0.192,
+    "spd_bias_ms": 0.7,
+    "spd_rmse": 1.52,
+    "dir_mae": 14.0,
+    "dir_bias": -7.4,
+    "dir_n": 422,
+    "obs_spd": 3.66
+   },
+   "icon_seamless": {
+    "n": 690,
+    "spd_bias": 0.237,
+    "spd_bias_ms": 0.87,
+    "spd_rmse": 1.401,
+    "dir_mae": 11.9,
+    "dir_bias": -5.3,
+    "dir_n": 422,
+    "obs_spd": 3.66
+   },
+   "ecmwf_ifs": {
+    "n": 690,
+    "spd_bias": 0.287,
+    "spd_bias_ms": 1.05,
+    "spd_rmse": 1.515,
+    "dir_mae": 10.7,
+    "dir_bias": -4.6,
+    "dir_n": 422,
+    "obs_spd": 3.66
+   },
+   "gfs_seamless": {
+    "n": 690,
+    "spd_bias": 0.36,
+    "spd_bias_ms": 1.32,
+    "spd_rmse": 2.03,
+    "dir_mae": 12.5,
+    "dir_bias": -2.5,
+    "dir_n": 422,
+    "obs_spd": 3.66
+   }
+  },
+  "best": "meteofrance_seamless",
+  "confidence": "alta",
+  "vs": "gfs_seamless",
+  "margin": 0.336,
+  "per_station": {
+   "cmems:6200085": {
+    "n": 690,
+    "best": "meteofrance_seamless",
+    "km": 55.0,
+    "kind": "buoy",
+    "z": null
+   }
+  },
+  "excluded": [
+   {
+    "id": "cmems:6101404",
+    "km": 19.0,
+    "why": "otro mar o abrigada: ve 0 % de las direcciones abiertas de los picos"
+   }
+  ]
  }
 }

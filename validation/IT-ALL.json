@@ -1,28 +1,204 @@
 {
  "region": "IT-ALL",
- "from": "2026-09-13",
- "to": "2026-10-13",
- "buoys": [],
+ "from": "2026-10-08",
+ "to": "2026-11-07",
+ "buoys": [
+  "cmems:6100219",
+  "cmems:6100216",
+  "cmems:6100214"
+ ],
+ "wave": {
+  "ecmwf_wam": {
+   "n": 1816,
+   "hs_bias": -0.049,
+   "hs_rmse": 0.188,
+   "hs_si": 0.223,
+   "tp_bias": -0.14,
+   "tp_mae": 0.65,
+   "dir_mae": 25.5,
+   "dir_bias": -1.2,
+   "tm_bias": 0.5,
+   "obs_hs": 0.82,
+   "tp_type": "peak",
+   "eligible": true
+  },
+  "ncep_gfswave016": {
+   "n": 1816,
+   "hs_bias": -0.129,
+   "hs_rmse": 0.288,
+   "hs_si": 0.325,
+   "tp_bias": -0.11,
+   "tp_mae": 0.75,
+   "dir_mae": 32.4,
+   "dir_bias": 3.3,
+   "tm_bias": 1.16,
+   "obs_hs": 0.82,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "ncep_gfswave025": {
+   "n": 1816,
+   "hs_bias": -0.159,
+   "hs_rmse": 0.259,
+   "hs_si": 0.27,
+   "tp_bias": -0.13,
+   "tp_mae": 0.7,
+   "dir_mae": 32.6,
+   "dir_bias": 3.3,
+   "tm_bias": 1.13,
+   "obs_hs": 0.82,
+   "tp_type": "primary",
+   "eligible": true
+  },
+  "dwd_ewam": {
+   "n": 1816,
+   "hs_bias": -0.135,
+   "hs_rmse": 0.232,
+   "hs_si": 0.247,
+   "tp_bias": -0.48,
+   "tp_mae": 0.8,
+   "dir_mae": 32.1,
+   "dir_bias": 2.0,
+   "tm_bias": 0.79,
+   "obs_hs": 0.82,
+   "tp_type": "mean",
+   "eligible": false
+  },
+  "meteofrance_wave": {
+   "n": 1816,
+   "hs_bias": -0.049,
+   "hs_rmse": 0.225,
+   "hs_si": 0.268,
+   "tp_bias": -0.3,
+   "tp_mae": 0.84,
+   "dir_mae": 34.6,
+   "dir_bias": 1.9,
+   "tm_bias": 0.97,
+   "obs_hs": 0.82,
+   "tp_type": "mean",
+   "eligible": false
+  }
+ },
+ "best": {
+  "wave": "ecmwf_wam",
+  "wind": "meteofrance_seamless"
+ },
+ "confidence": "alta",
+ "vs": "ncep_gfswave016",
+ "margin": 0.532,
+ "per_buoy": {
+  "cmems:6100219": {
+   "n": 386,
+   "best": "ecmwf_wam",
+   "km": 26.7
+  },
+  "cmems:6100216": {
+   "n": 715,
+   "best": "ecmwf_wam",
+   "km": 53.3
+  },
+  "cmems:6100214": {
+   "n": 715,
+   "best": "ecmwf_wam",
+   "km": 110.8
+  }
+ },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
   "hs": 0.196,
   "hours": 744,
   "point": [
-   41.946,
-   12.058
+   41.9526,
+   12.0607
   ],
   "mean_hs": {
-   "ncep_gfswave016": 0.45,
-   "ncep_gfswave025": 0.46,
-   "meteofrance_wave": 0.4,
-   "ecmwf_wam": 0.39,
-   "dwd_ewam": 0.35
-  }
+   "ncep_gfswave016": 0.73,
+   "ncep_gfswave025": 0.78,
+   "meteofrance_wave": 0.64,
+   "ecmwf_wam": 0.63,
+   "dwd_ewam": 0.57
+  },
+  "cell": [
+   41.833336,
+   12.0
+  ]
  },
- "confidence": "media",
  "wind": {
-  "stations": [],
-  "current": "gfs_seamless"
+  "stations": [
+   "cmems:6100219",
+   "cmems:6100216",
+   "cmems:6100214"
+  ],
+  "current": "gfs_seamless",
+  "models": {
+   "meteofrance_seamless": {
+    "n": 1815,
+    "spd_bias": -0.057,
+    "spd_bias_ms": -0.33,
+    "spd_rmse": 1.755,
+    "dir_mae": 61.9,
+    "dir_bias": 20.8,
+    "dir_n": 1521,
+    "obs_spd": 5.89
+   },
+   "ecmwf_ifs": {
+    "n": 1815,
+    "spd_bias": -0.055,
+    "spd_bias_ms": -0.32,
+    "spd_rmse": 1.854,
+    "dir_mae": 63.3,
+    "dir_bias": 20.1,
+    "dir_n": 1521,
+    "obs_spd": 5.89
+   },
+   "gfs_seamless": {
+    "n": 1815,
+    "spd_bias": -0.122,
+    "spd_bias_ms": -0.72,
+    "spd_rmse": 2.235,
+    "dir_mae": 62.7,
+    "dir_bias": 16.2,
+    "dir_n": 1521,
+    "obs_spd": 5.89
+   },
+   "icon_seamless": {
+    "n": 1815,
+    "spd_bias": -0.202,
+    "spd_bias_ms": -1.19,
+    "spd_rmse": 2.075,
+    "dir_mae": 61.8,
+    "dir_bias": 19.2,
+    "dir_n": 1521,
+    "obs_spd": 5.89
+   }
+  },
+  "best": "meteofrance_seamless",
+  "confidence": "alta",
+  "vs": "gfs_seamless",
+  "margin": 0.274,
+  "per_station": {
+   "cmems:6100219": {
+    "n": 386,
+    "best": "icon_seamless",
+    "km": 26.7,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:6100216": {
+    "n": 715,
+    "best": "meteofrance_seamless",
+    "km": 53.3,
+    "kind": "buoy",
+    "z": null
+   },
+   "cmems:6100214": {
+    "n": 714,
+    "best": "meteofrance_seamless",
+    "km": 110.8,
+    "kind": "buoy",
+    "z": null
+   }
+  }
  }
 }

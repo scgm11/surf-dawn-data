@@ -1,22 +1,26 @@
 {
  "region": "NO-N",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": false,
  "spread": {
-  "hs": 0.056,
+  "hs": 0.055,
   "hours": 744,
   "point": [
-   68.202,
-   13.515
+   68.1978,
+   13.5283
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.82,
-   "meteofrance_wave": 1.73,
-   "ecmwf_wam": 1.76
-  }
+   "ncep_gfswave025": 2.39,
+   "meteofrance_wave": 2.31,
+   "ecmwf_wam": 2.37
+  },
+  "cell": [
+   68.25,
+   13.5
+  ]
  },
  "confidence": "media",
  "wind": {

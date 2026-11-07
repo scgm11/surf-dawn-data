@@ -1,22 +1,26 @@
 {
  "region": "AR-SUR",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
  "current": "ncep_gfswave025",
  "fixed": true,
  "spread": {
-  "hs": 0.064,
+  "hs": 0.068,
   "hours": 744,
   "point": [
-   -43.32,
-   -65.035
+   -43.3165,
+   -65.0421
   ],
   "mean_hs": {
-   "ncep_gfswave025": 1.2,
-   "meteofrance_wave": 1.14,
-   "ecmwf_wam": 1.13
-  }
+   "ncep_gfswave025": 1.02,
+   "meteofrance_wave": 0.95,
+   "ecmwf_wam": 0.94
+  },
+  "cell": [
+   -43.5,
+   -65.0
+  ]
  },
  "confidence": "media",
  "wind": {

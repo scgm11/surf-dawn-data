@@ -1,132 +1,429 @@
 [    0s] 213 regions, window 2026-10-08 .. 2026-11-07
-[    5s] cdip: 196989 rows, 82 stations
-[    5s] cdip: 81 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (5s)
-[    8s] aodn: columns TIME WMDS WPDI WPDS WPFM WPPE WSSH SSWMD LATITUDE filename LONGITUDE timeSeries water_depth WAVE_quality_control WHTH WMXH WPMH wmo_id site_name timestamp polygon; wind none
-[   22s] aodn: 89054 rows since 2026-10-01
+[    2s] cdip: 196989 rows, 82 stations
+[    2s] cdip: 81 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (2s)
+[    5s] aodn: columns TIME WMDS WPDI WPDS WPFM WPPE WSSH SSWMD LATITUDE filename LONGITUDE timeSeries water_depth WAVE_quality_control WHTH WMXH WPMH wmo_id site_name timestamp polygon; wind none
+[   22s] aodn: 90170 rows since 2026-10-01
 [   22s]   aodn TIME timestamp[ns] 
 [   22s]   aodn WSSH double 
 [   22s]   aodn WPPE double 
 [   22s]   aodn WPDI double 
 [   22s]   aodn WPFM double 
-[   22s]   aodn aodn:black-point: 1323 records, 584 hours, 10-08 00 .. 11-06 23
+[   22s]   aodn aodn:black-point: 1344 records, 595 hours, 10-08 00 .. 11-07 10
 [   22s]   aodn aodn:cable-beach: 1059 records, 530 hours, 10-08 00 .. 10-30 03
 [   22s]   aodn aodn:crowdy: 98 records, 50 hours, 10-08 00 .. 10-10 01
 [   22s]   aodn aodn:semaphore: 386 records, 194 hours, 10-08 00 .. 10-16 01
-[   22s]   aodn aodn:weeroona-bay: 190 records, 190 hours, 10-30 02 .. 11-06 23
+[   22s]   aodn aodn:weeroona-bay: 201 records, 201 hours, 10-30 02 .. 11-07 10
 [   22s]   aodn aodn:west-beach: 351 records, 351 hours, 10-08 01 .. 10-22 15
-[   22s] aodn: 46 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (17s)
-[   23s] mi IWaveBNetwork30Min: columns {'hs': ('SignificantWaveHeight', 0.01), 'tp': 'PeakPeriod', 'tm': 'EnergyPeriod', 'dir': ('PeakDirection', 180.0)}; wind None
-[   27s]   last records: AMETS Berth A Wave Buoy 2026-05-27T21:30, AMETS Berth B Wave Buoy 2026-05-27T20:00, AMETS Berth C Wave Buoy 2015-04-17T16:00, Bantry Bay 2024-09-24T10:00, Brandon Bay 2025-01-24T02:30, Clew Bay 2024-03-11T13:16, Finnis Waver 2023-01-10T13:30, Lehanagh Pool 2025-10-12T16:00, Mace Head 2024-09-17T08:41, SmartBay Wave Buoy 2025-02-08T06:30, Westwave Wave Buoy 2019-03-27T13:00
-[   30s]   mi IWaveBNetwork30Min: no data in the window
-[   31s] mi IWBNetwork: columns {'hs': ('WaveHeight', 1.0), 'tp': 'Tp', 'tm': 'WavePeriod', 'dir': ('MeanWaveDirection', 0.0)}; wind {'spd': ('WindSpeed', 0.514444), 'dir': 'WindDirection', 'z': None, 'units': 'knots'}
-[   34s]   last records: Belmullet-AMETS 2011-08-10T16:00, FS1 2008-02-17T02:00, M1 2007-07-09T12:00, M2 2026-11-07T00:00, M3 2026-11-07T00:00, M4 2026-03-29T04:00, M4-Archive 2007-05-01T11:00, M5 2026-11-07T00:00, M6 2026-11-07T00:00
-[   35s] mi IWBNetwork: 2888 rows, 4 stations
-[   35s] mi: 4 stations with >= 72 hourly Hs, 4 with >= 72 hourly wind (13s)
-[   35s] ndbc: 1357 active stations, 482 with recent files near the regions (333 not buoys)
-[  306s] ndbc: 126 stations with >= 72 hourly Hs, 291 with >= 72 hourly wind (271s)
-INFO - 2026-11-07T00:39:03Z - Selected dataset version: "202311"
-INFO - 2026-11-07T00:39:03Z - Selected dataset part: "latest"
-INFO - 2026-11-07T00:39:04Z - Total size of the download: 40.83 MB.
-[  324s]   cmems: 1 files downloaded
-[  326s] cmems: 260 wave platforms near the regions, 7178 daily files
-INFO - 2026-11-07T00:39:22Z - Selected dataset version: "202311"
-INFO - 2026-11-07T00:39:22Z - Selected dataset part: "latest"
-INFO - 2026-11-07T01:52:27Z - Total size of the download: 553.66 MB.
-[ 6769s]   cmems: 7178 files downloaded
-[ 6844s] cmems: 243 stations with >= 72 hourly Hs, 59 with >= 72 hourly wind (6538s)
-[ 6844s]   same buoy: ndbc:41112 = cdip:132 (kept cdip:132)
-[ 6844s]   same buoy: ndbc:44087 = cdip:240 (kept cdip:240)
-[ 6844s]   same buoy: ndbc:44095 = cdip:192 (kept cdip:192)
-[ 6844s]   same buoy: ndbc:44099 = cdip:147 (kept cdip:147)
-[ 6844s]   same buoy: ndbc:46211 = cdip:036 (kept cdip:036)
-[ 6844s]   same buoy: ndbc:46214 = cdip:029 (kept cdip:029)
-[ 6844s]   same buoy: ndbc:46215 = cdip:076 (kept cdip:076)
-[ 6844s]   same buoy: ndbc:46219 = cdip:067 (kept cdip:067)
-[ 6844s]   same buoy: ndbc:46221 = cdip:028 (kept cdip:028)
-[ 6844s]   same buoy: ndbc:46222 = cdip:092 (kept cdip:092)
-[ 6844s]   same buoy: ndbc:46224 = cdip:045 (kept cdip:045)
-[ 6844s]   same buoy: ndbc:46225 = cdip:100 (kept cdip:100)
-[ 6844s]   same buoy: ndbc:46229 = cdip:139 (kept cdip:139)
-[ 6844s]   same buoy: ndbc:46232 = cdip:191 (kept cdip:191)
-[ 6844s]   same buoy: ndbc:46248 = cdip:179 (kept cdip:179)
-[ 6844s]   same buoy: ndbc:46253 = cdip:213 (kept cdip:213)
-[ 6844s]   same buoy: ndbc:46256 = cdip:215 (kept cdip:215)
-[ 6844s]   same buoy: ndbc:46258 = cdip:220 (kept cdip:220)
-[ 6844s]   same buoy: ndbc:46285 = cdip:284 (kept cdip:284)
-[ 6844s]   same buoy: ndbc:46286 = cdip:285 (kept cdip:285)
-[ 6844s]   same buoy: ndbc:51201 = cdip:106 (kept cdip:106)
-[ 6844s]   same buoy: ndbc:51202 = cdip:098 (kept cdip:098)
-[ 6844s]   same buoy: ndbc:51206 = cdip:188 (kept cdip:188)
-[ 6844s]   same buoy: ndbc:41113 = cdip:143 (kept cdip:143)
-[ 6844s]   same buoy: ndbc:41114 = cdip:134 (kept cdip:134)
-[ 6844s]   same buoy: ndbc:41117 = cdip:194 (kept cdip:194)
-[ 6844s]   same buoy: ndbc:41120 = cdip:250 (kept cdip:250)
-[ 6844s]   same buoy: ndbc:46244 = cdip:168 (kept cdip:168)
-[ 6844s]   same buoy: ndbc:46266 = cdip:153 (kept cdip:153)
-[ 6844s]   same buoy: ndbc:51209 = cdip:189 (kept cdip:189)
-[ 6844s]   same buoy: ndbc:42092 = cdip:252 (kept cdip:252)
-[ 6844s]   same buoy: ndbc:44085 = cdip:260 (kept cdip:260)
-[ 6844s]   same buoy: ndbc:44097 = cdip:154 (kept cdip:154)
-[ 6844s]   same buoy: ndbc:44098 = cdip:160 (kept cdip:160)
-[ 6844s]   same buoy: ndbc:46237 = cdip:142 (kept cdip:142)
-[ 6844s]   same buoy: ndbc:46254 = cdip:201 (kept cdip:201)
-[ 6844s]   same buoy: ndbc:46274 = cdip:262 (kept cdip:262)
-[ 6844s]   same buoy: ndbc:51212 = cdip:238 (kept cdip:238)
-[ 6844s]   same buoy: ndbc:41110 = cdip:150 (kept cdip:150)
-[ 6844s]   same buoy: ndbc:41122 = cdip:265 (kept cdip:265)
-[ 6844s]   same buoy: ndbc:42354 = cdip:279 (kept cdip:279)
-[ 6844s]   same buoy: ndbc:44086 = cdip:243 (kept cdip:243)
-[ 6844s]   same buoy: ndbc:44088 = cdip:171 (kept cdip:171)
-[ 6844s]   same buoy: ndbc:44091 = cdip:209 (kept cdip:209)
-[ 6844s]   same buoy: ndbc:44100 = cdip:430 (kept cdip:430)
-[ 6844s]   same buoy: ndbc:46213 = cdip:094 (kept cdip:094)
-[ 6844s]   same buoy: ndbc:46236 = cdip:156 (kept cdip:156)
-[ 6844s]   same buoy: ndbc:46278 = cdip:270 (kept cdip:270)
-[ 6844s]   same buoy: ndbc:51211 = cdip:233 (kept cdip:233)
-[ 6844s]   same buoy: ndbc:41121 = cdip:249 (kept cdip:249)
-[ 6844s]   same buoy: ndbc:46218 = cdip:071 (kept cdip:071)
-[ 6844s]   same buoy: ndbc:46243 = cdip:162 (kept cdip:162)
-[ 6844s]   same buoy: ndbc:46267 = cdip:248 (kept cdip:248)
-[ 6844s]   same buoy: ndbc:46277 = cdip:271 (kept cdip:271)
-[ 6844s]   same buoy: ndbc:44056 = cdip:433 (kept cdip:433)
-[ 6844s]   same buoy: ndbc:LJPC1 = cdip:201 (kept cdip:201)
-[ 6844s]   same buoy: ndbc:51214 = cdip:273 (kept cdip:273)
-[ 6844s]   same buoy: ndbc:44014 = cdip:171 (kept cdip:171)
-[ 6844s]   same buoy: ndbc:46268 = cdip:103 (kept cdip:103)
-[ 6844s]   same buoy: ndbc:44090 = cdip:221 (kept cdip:221)
-[ 6844s]   same buoy: ndbc:41159 = cdip:217 (kept cdip:217)
-[ 6844s]   same buoy: ndbc:46275 = cdip:264 (kept cdip:264)
-[ 6844s]   same buoy: ndbc:44084 = cdip:263 (kept cdip:263)
-[ 6844s]   same buoy: ndbc:46259 = cdip:222 (kept cdip:222)
-[ 6844s]   same buoy: ndbc:41115 = cdip:181 (kept cdip:181)
-[ 6844s]   same buoy: ndbc:46251 = cdip:203 (kept cdip:203)
-[ 6844s]   same buoy: ndbc:42034 = ndbc:42033 (kept ndbc:42033)
-[ 6844s]   same buoy: cmems:Europlatform3 = cmems:Europlatform2 (kept cmems:Europlatform2)
-[ 6844s]   same buoy: cmems:IJmuidenMunitiestort2 = cmems:IJmuidenMunitiestort (kept cmems:IJmuidenMunitiestort)
-[ 6844s]   same buoy: cmems:K13a3 = cmems:K13a (kept cmems:K13a)
-[ 6844s]   same buoy: cmems:LichteilandGoeree2 = cmems:LichteilandGoeree1 (kept cmems:LichteilandGoeree1)
-[ 6844s]   same buoy: cmems:Schouwenbank2 = cmems:Schouwenbank (kept cmems:Schouwenbank)
-[ 6844s]   same buoy: cmems:MaeslantkeringZeezijdeZuidMeetpaal = cmems:MaeslantkeringZeezijdeNoordMeetpaal (kept cmems:MaeslantkeringZeezijdeNoordMeetpaal)
-[ 6844s]   same buoy: cmems:K13a2 = cmems:K13a (kept cmems:K13a)
-[ 6844s]   same buoy: cmems:44258 = cmems:4400258 (kept cmems:4400258)
-[ 6844s]   same buoy: cmems:46207 = cmems:4600207 (kept cmems:4600207)
-[ 6844s]   same buoy: cmems:46304 = cmems:4600304 (kept cmems:4600304)
-[ 6844s]   same buoy: cmems:46131 = cmems:4600131 (kept cmems:4600131)
-[ 6844s] 422 wave stations after removing 78 duplicates
-[ 6844s]   same wind station: ndbc:CPNW1 = ndbc:CPMW1 (kept ndbc:CPMW1)
-[ 6844s]   same wind station: ndbc:FSKM2 = ndbc:44080 (kept ndbc:44080)
-[ 6844s]   same wind station: ndbc:LJAC1 = ndbc:LJPC1 (kept ndbc:LJPC1)
-[ 6844s]   same wind station: ndbc:UPBC1 = ndbc:MZXC1 (kept ndbc:MZXC1)
-[ 6844s]   same wind station: ndbc:PTCR1 = ndbc:NAXR1 (kept ndbc:NAXR1)
-[ 6844s]   same wind station: ndbc:DPHA1 = ndbc:DILA1 (kept ndbc:DILA1)
-[ 6844s]   same wind station: ndbc:42033 = ndbc:42034 (kept ndbc:42034)
-[ 6844s]   same wind station: cmems:44258 = cmems:4400258 (kept cmems:4400258)
-[ 6844s]   same wind station: cmems:46207 = cmems:4600207 (kept cmems:4600207)
-[ 6844s]   same wind station: cmems:46304 = cmems:4600304 (kept cmems:4600304)
-[ 6844s]   same wind station: cmems:46131 = cmems:4600131 (kept cmems:4600131)
-[ 6844s] 343 wind stations after removing 11 duplicates (124 buoys, 219 ashore)
-[ 6847s] 213 buoy-region pairs left out: facing another sea or sheltered
-[ 6847s] 200 buoys within 150 km of 78 regions
-[ 6847s] open-meteo: 200 buoy points to fetch (0 cached)
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+[   22s] aodn: 46 stations with >= 72 hourly Hs, 0 with >= 72 hourly wind (20s)
+[   22s] mi IWaveBNetwork30Min: columns {'hs': ('SignificantWaveHeight', 0.01), 'tp': 'PeakPeriod', 'tm': 'EnergyPeriod', 'dir': ('PeakDirection', 180.0)}; wind None
+[   22s]   last records: AMETS Berth A Wave Buoy 2026-05-27T21:30, AMETS Berth B Wave Buoy 2026-05-27T20:00, AMETS Berth C Wave Buoy 2015-04-17T16:00, Bantry Bay 2024-09-24T10:00, Brandon Bay 2025-01-24T02:30, Clew Bay 2024-03-11T13:16, Finnis Waver 2023-01-10T13:30, Lehanagh Pool 2025-10-12T16:00, Mace Head 2024-09-17T08:41, SmartBay Wave Buoy 2025-02-08T06:30, Westwave Wave Buoy 2019-03-27T13:00
+[   26s]   mi IWaveBNetwork30Min: no data in the window
+[   26s] mi IWBNetwork: columns {'hs': ('WaveHeight', 1.0), 'tp': 'Tp', 'tm': 'WavePeriod', 'dir': ('MeanWaveDirection', 0.0)}; wind {'spd': ('WindSpeed', 0.514444), 'dir': 'WindDirection', 'z': None, 'units': 'knots'}
+[   26s]   last records: Belmullet-AMETS 2011-08-10T16:00, FS1 2008-02-17T02:00, M1 2007-07-09T12:00, M2 2026-11-07T00:00, M3 2026-11-07T00:00, M4 2026-03-29T04:00, M4-Archive 2007-05-01T11:00, M5 2026-11-07T00:00, M6 2026-11-07T00:00
+[   26s] mi IWBNetwork: 2888 rows, 4 stations
+[   26s] mi: 4 stations with >= 72 hourly Hs, 4 with >= 72 hourly wind (3s)
+[   26s] ndbc: 1357 active stations, 482 with recent files near the regions (333 not buoys)
+[   64s] ndbc: 126 stations with >= 72 hourly Hs, 291 with >= 72 hourly wind (39s)
+[   68s] cmems: 260 wave platforms near the regions, 7179 daily files
+INFO - 2026-11-07T11:23:15Z - Selected dataset version: "202311"
+INFO - 2026-11-07T11:23:15Z - Selected dataset part: "latest"
+INFO - 2026-11-07T11:23:16Z - Total size of the download: 89.87 KB.
+[   82s]   cmems: 1 files downloaded
+[  195s] cmems: 243 stations with >= 72 hourly Hs, 59 with >= 72 hourly wind (131s)
+[  195s]   same buoy: ndbc:41112 = cdip:132 (kept cdip:132)
+[  195s]   same buoy: ndbc:44087 = cdip:240 (kept cdip:240)
+[  195s]   same buoy: ndbc:44095 = cdip:192 (kept cdip:192)
+[  195s]   same buoy: ndbc:44099 = cdip:147 (kept cdip:147)
+[  195s]   same buoy: ndbc:46211 = cdip:036 (kept cdip:036)
+[  195s]   same buoy: ndbc:46214 = cdip:029 (kept cdip:029)
+[  195s]   same buoy: ndbc:46215 = cdip:076 (kept cdip:076)
+[  195s]   same buoy: ndbc:46219 = cdip:067 (kept cdip:067)
+[  195s]   same buoy: ndbc:46221 = cdip:028 (kept cdip:028)
+[  195s]   same buoy: ndbc:46222 = cdip:092 (kept cdip:092)
+[  195s]   same buoy: ndbc:46224 = cdip:045 (kept cdip:045)
+[  195s]   same buoy: ndbc:46225 = cdip:100 (kept cdip:100)
+[  195s]   same buoy: ndbc:46229 = cdip:139 (kept cdip:139)
+[  195s]   same buoy: ndbc:46232 = cdip:191 (kept cdip:191)
+[  195s]   same buoy: ndbc:46248 = cdip:179 (kept cdip:179)
+[  195s]   same buoy: ndbc:46253 = cdip:213 (kept cdip:213)
+[  195s]   same buoy: ndbc:46256 = cdip:215 (kept cdip:215)
+[  195s]   same buoy: ndbc:46258 = cdip:220 (kept cdip:220)
+[  195s]   same buoy: ndbc:46285 = cdip:284 (kept cdip:284)
+[  195s]   same buoy: ndbc:46286 = cdip:285 (kept cdip:285)
+[  195s]   same buoy: ndbc:51201 = cdip:106 (kept cdip:106)
+[  195s]   same buoy: ndbc:51202 = cdip:098 (kept cdip:098)
+[  195s]   same buoy: ndbc:51206 = cdip:188 (kept cdip:188)
+[  195s]   same buoy: ndbc:41113 = cdip:143 (kept cdip:143)
+[  195s]   same buoy: ndbc:41114 = cdip:134 (kept cdip:134)
+[  195s]   same buoy: ndbc:41117 = cdip:194 (kept cdip:194)
+[  195s]   same buoy: ndbc:41120 = cdip:250 (kept cdip:250)
+[  195s]   same buoy: ndbc:46244 = cdip:168 (kept cdip:168)
+[  195s]   same buoy: ndbc:46266 = cdip:153 (kept cdip:153)
+[  195s]   same buoy: ndbc:51209 = cdip:189 (kept cdip:189)
+[  195s]   same buoy: ndbc:42092 = cdip:252 (kept cdip:252)
+[  195s]   same buoy: ndbc:44085 = cdip:260 (kept cdip:260)
+[  195s]   same buoy: ndbc:44097 = cdip:154 (kept cdip:154)
+[  195s]   same buoy: ndbc:44098 = cdip:160 (kept cdip:160)
+[  195s]   same buoy: ndbc:46237 = cdip:142 (kept cdip:142)
+[  195s]   same buoy: ndbc:46254 = cdip:201 (kept cdip:201)
+[  195s]   same buoy: ndbc:46274 = cdip:262 (kept cdip:262)
+[  195s]   same buoy: ndbc:51212 = cdip:238 (kept cdip:238)
+[  195s]   same buoy: ndbc:41110 = cdip:150 (kept cdip:150)
+[  195s]   same buoy: ndbc:41122 = cdip:265 (kept cdip:265)
+[  195s]   same buoy: ndbc:42354 = cdip:279 (kept cdip:279)
+[  195s]   same buoy: ndbc:44086 = cdip:243 (kept cdip:243)
+[  195s]   same buoy: ndbc:44088 = cdip:171 (kept cdip:171)
+[  195s]   same buoy: ndbc:44091 = cdip:209 (kept cdip:209)
+[  195s]   same buoy: ndbc:44100 = cdip:430 (kept cdip:430)
+[  195s]   same buoy: ndbc:46213 = cdip:094 (kept cdip:094)
+[  195s]   same buoy: ndbc:46236 = cdip:156 (kept cdip:156)
+[  195s]   same buoy: ndbc:46278 = cdip:270 (kept cdip:270)
+[  195s]   same buoy: ndbc:51211 = cdip:233 (kept cdip:233)
+[  195s]   same buoy: ndbc:41121 = cdip:249 (kept cdip:249)
+[  195s]   same buoy: ndbc:46218 = cdip:071 (kept cdip:071)
+[  195s]   same buoy: ndbc:46243 = cdip:162 (kept cdip:162)
+[  195s]   same buoy: ndbc:46267 = cdip:248 (kept cdip:248)
+[  195s]   same buoy: ndbc:46277 = cdip:271 (kept cdip:271)
+[  195s]   same buoy: ndbc:44056 = cdip:433 (kept cdip:433)
+[  195s]   same buoy: ndbc:LJPC1 = cdip:201 (kept cdip:201)
+[  195s]   same buoy: ndbc:51214 = cdip:273 (kept cdip:273)
+[  195s]   same buoy: ndbc:44014 = cdip:171 (kept cdip:171)
+[  195s]   same buoy: ndbc:46268 = cdip:103 (kept cdip:103)
+[  195s]   same buoy: ndbc:44090 = cdip:221 (kept cdip:221)
+[  195s]   same buoy: ndbc:41159 = cdip:217 (kept cdip:217)
+[  195s]   same buoy: ndbc:46275 = cdip:264 (kept cdip:264)
+[  195s]   same buoy: ndbc:44084 = cdip:263 (kept cdip:263)
+[  195s]   same buoy: ndbc:46259 = cdip:222 (kept cdip:222)
+[  195s]   same buoy: ndbc:41115 = cdip:181 (kept cdip:181)
+[  195s]   same buoy: ndbc:46251 = cdip:203 (kept cdip:203)
+[  195s]   same buoy: ndbc:42034 = ndbc:42033 (kept ndbc:42033)
+[  195s]   same buoy: cmems:Europlatform3 = cmems:Europlatform2 (kept cmems:Europlatform2)
+[  195s]   same buoy: cmems:IJmuidenMunitiestort2 = cmems:IJmuidenMunitiestort (kept cmems:IJmuidenMunitiestort)
+[  195s]   same buoy: cmems:K13a3 = cmems:K13a (kept cmems:K13a)
+[  195s]   same buoy: cmems:LichteilandGoeree2 = cmems:LichteilandGoeree1 (kept cmems:LichteilandGoeree1)
+[  195s]   same buoy: cmems:Schouwenbank2 = cmems:Schouwenbank (kept cmems:Schouwenbank)
+[  195s]   same buoy: cmems:MaeslantkeringZeezijdeZuidMeetpaal = cmems:MaeslantkeringZeezijdeNoordMeetpaal (kept cmems:MaeslantkeringZeezijdeNoordMeetpaal)
+[  195s]   same buoy: cmems:K13a2 = cmems:K13a (kept cmems:K13a)
+[  195s]   same buoy: cmems:44258 = cmems:4400258 (kept cmems:4400258)
+[  195s]   same buoy: cmems:46207 = cmems:4600207 (kept cmems:4600207)
+[  195s]   same buoy: cmems:46304 = cmems:4600304 (kept cmems:4600304)
+[  195s]   same buoy: cmems:46131 = cmems:4600131 (kept cmems:4600131)
+[  195s] 422 wave stations after removing 78 duplicates
+[  195s]   same wind station: ndbc:CPNW1 = ndbc:CPMW1 (kept ndbc:CPMW1)
+[  195s]   same wind station: ndbc:FSKM2 = ndbc:44080 (kept ndbc:44080)
+[  195s]   same wind station: ndbc:LJAC1 = ndbc:LJPC1 (kept ndbc:LJPC1)
+[  195s]   same wind station: ndbc:UPBC1 = ndbc:MZXC1 (kept ndbc:MZXC1)
+[  195s]   same wind station: ndbc:PTCR1 = ndbc:NAXR1 (kept ndbc:NAXR1)
+[  195s]   same wind station: ndbc:DPHA1 = ndbc:DILA1 (kept ndbc:DILA1)
+[  195s]   same wind station: ndbc:42033 = ndbc:42034 (kept ndbc:42034)
+[  195s]   same wind station: cmems:44258 = cmems:4400258 (kept cmems:4400258)
+[  195s]   same wind station: cmems:46207 = cmems:4600207 (kept cmems:4600207)
+[  195s]   same wind station: cmems:46304 = cmems:4600304 (kept cmems:4600304)
+[  195s]   same wind station: cmems:46131 = cmems:4600131 (kept cmems:4600131)
+[  195s] 343 wind stations after removing 11 duplicates (124 buoys, 219 ashore)
+[  198s] 213 buoy-region pairs left out: facing another sea or sheltered
+[  198s] 200 buoys within 150 km of 78 regions
+[  199s] spread: 2 regions without their own model at 4 spots: BR-BA NL-ALL
+[  199s] 374 wind station-region pairs left out: facing another sea or sheltered
+[  199s] 107 wind stations within 150 km of 48 regions
+[  199s] ndbc: anemometer height of 59 of 64 stations
+[  199s] open-meteo: 0 requests, 0 locations, 0 weighted calls (free limit 10000/day); cache {'downloads': 0, 'hits': 1091, 'bytes': 0}
+[  199s] UY-CAN      (no buoys; spread 0.139)               best -                 n      rmse       bias        media
+[  199s] UY-MAL      (no buoys; spread 0.123)               best -                 n      rmse       bias        media
+[  199s] UY-ROC      (no buoys; spread 0.116)               best -                 n      rmse       bias        media
+[  199s] AR-MDP      (no buoys; spread 0.065)               best -                 n      rmse       bias        media
+[  199s] AR-BAN      (no buoys; spread 0.102)               best -                 n      rmse       bias        media
+[  199s] AR-SUR      (no buoys; spread 0.068)               best -                 n      rmse       bias        media
+[  199s] BR-RS       (no buoys; spread 0.069)               best -                 n      rmse       bias        media
+[  199s] BR-RS-SUL   (no buoys; spread 0.084)               best -                 n      rmse       bias        media
+[  199s] BR-SC-FLN   (no buoys; spread 0.054)               best -                 n      rmse       bias        media
+[  199s] BR-SC-SUL   (no buoys; spread 0.063)               best -                 n      rmse       bias        media
+[  199s] BR-SC-NOR   (no buoys; spread 0.222)               best -                 n      rmse       bias        media
+[  199s] BR-SP       (no buoys; spread 0.167)               best -                 n      rmse       bias        media
+[  199s] BR-RJ       (no buoys; spread 0.21)                best -                 n      rmse       bias        media
+[  199s] BR-RJL      (no buoys; spread 0.109)               best -                 n      rmse       bias        media
+[  199s] BR-ES       (no buoys; spread 0.076)               best -                 n      rmse       bias        media
+[  199s] BR-BA       (no buoys; spread 0.083)               best -                 n      rmse       bias        media
+[  199s] BR-NE-CE    (no buoys; spread 0.094)               best -                 n      rmse       bias        media
+[  199s] BR-NE-RN    (no buoys; spread 0.105)               best -                 n      rmse       bias        media
+[  199s] BR-NE-PE    (no buoys; spread 0.053)               best -                 n      rmse       bias        media
+[  199s] BR-NOR      (no buoys; spread 0.1)                 best -                 n      rmse       bias        media
+[  199s] CL-NOR      (no buoys; spread 0.113)               best -                 n      rmse       bias        media
+[  199s] CL-CEN      (no buoys; spread 0.072)               best -                 n      rmse       bias        media
+[  199s] CL-PIC      (no buoys; spread 0.062)               best -                 n      rmse       bias        media
+[  199s] CL-MAU      (no buoys; spread 0.1)                 best -                 n      rmse       bias        media
+[  199s] CL-SUR      (no buoys; spread 0.076)               best -                 n      rmse       bias        media
+[  199s] PE-NOR      (no buoys; spread 0.174)               best -                 n      rmse       bias        media
+[  199s] PE-LLB      (no buoys; spread 0.075)               best -                 n      rmse       bias        media
+[  199s] PE-LIM      (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  199s] PE-SUR      (no buoys; spread 0.033)               best -                 n      rmse       bias        media
+[  200s] EC-COS      (no buoys; spread 0.37)                best -                 n      rmse       bias        baja
+[  200s] EC-GAL      (no buoys; spread 0.113)               best -                 n      rmse       bias        media
+[  200s] CO-PAC      (no buoys; spread 0.148)               best -                 n      rmse       bias        media
+[  200s] CO-CAR      (no buoys; spread 0.132)               best -                 n      rmse       bias        media
+[  200s] VE-ALL      (no buoys; spread 0.455)               best -                 n      rmse       bias        baja
+[  200s] PA-PAC      (no buoys; spread 0.173)               best -                 n      rmse       bias        media
+[  200s] PA-BDT      (no buoys; spread 0.154)               best -                 n      rmse       bias        media
+[  200s] CR-GUA      (no buoys; spread 0.066)               best -                 n      rmse       bias        media
+[  200s] CR-NIC      (no buoys; spread 0.109)               best -                 n      rmse       bias        media
+[  200s] CR-PAC      (no buoys; spread 0.124)               best -                 n      rmse       bias        media
+[  200s] CR-OSA      (no buoys; spread 0.228)               best -                 n      rmse       bias        media
+[  200s] CR-CAR      (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  200s] NI-RIV      (no buoys; spread 0.066)               best -                 n      rmse       bias        media
+[  200s] NI-NW       (no buoys; spread 0.175)               best -                 n      rmse       bias        media
+[  200s] SV-LIB      (no buoys; spread 0.042)               best -                 n      rmse       bias        media
+[  200s] SV-ORI      (no buoys; spread 0.109)               best -                 n      rmse       bias        media
+[  200s] GT-PAC      (no buoys; spread 0.06)                best -                 n      rmse       bias        media
+[  200s] MX-OAX      (no buoys; spread 0.058)               best -                 n      rmse       bias        media
+[  200s] MX-PAC      (no buoys; spread 0.055)               best -                 n      rmse       bias        media
+[  200s] MX-NAY      (no buoys; spread 0.202)               best -                 n      rmse       bias        media
+[  200s] MX-BCS      (no buoys; spread 0.078)               best -                 n      rmse       bias        media
+[  200s] MX-BCS-N    (no buoys; spread 0.12)                best -                 n      rmse       bias        media
+[  200s] MX-BCN      cdip:191,cdip:201,cdip:220             best ncep_gfswave016   n 2163 rmse 0.296 bias -0.118 baja
+[  200s]             wind ndbc:LJPC1,ndbc:46086             best gfs_seamless      n 1433 rmse 1.365 bias -0.016 (gfs_seamless rmse 1.365 bias -0.016) baja
+[  200s] MX-CAR      (no buoys; spread 0.179)               best -                 n      rmse       bias        media
+[  200s] PR-NW       cdip:181,cdip:249,ndbc:41053           best ecmwf_wam         n 2022 rmse 0.165 bias 0.029  baja
+[  200s]             wind ndbc:41053                        best cmc_gem_seamless  n  721 rmse 1.677 bias 0.071  (cmc_gem_seamless rmse 1.677 bias 0.071) media
+[  200s] PR-N        ndbc:41053,cdip:249,cdip:181           best ecmwf_wam         n 2022 rmse 0.165 bias 0.029  baja
+[  200s]             wind ndbc:41053                        best cmc_gem_seamless  n  721 rmse 1.677 bias 0.071  (cmc_gem_seamless rmse 1.677 bias 0.071) media
+[  200s] BB-ALL      (no buoys; spread 0.096)               best -                 n      rmse       bias        media
+[  200s] DO-ALL      (no buoys; spread 0.089)               best -                 n      rmse       bias        media
+[  200s] GP-ALL      cmems:4100134                          best ecmwf_wam         n  206 rmse 0.085 bias -0.009 baja
+[  200s] MQ-ALL      cmems:4100098,cmems:4100099            best ncep_gfswave025   n 1354 rmse 0.175 bias -0.097 baja
+[  200s] BS-ALL      (no buoys; spread 0.223)               best -                 n      rmse       bias        media
+[  200s] TT-ALL      (no buoys; spread 0.154)               best -                 n      rmse       bias        media
+[  200s] US-CA-SD    cdip:262,cdip:153,cdip:201             best ncep_gfswave016   n 2160 rmse 0.215 bias -0.026 baja
+[  200s]             wind ndbc:LJPC1,ndbc:46086             best gfs_seamless      n 1433 rmse 1.365 bias -0.016 (gfs_seamless rmse 1.365 bias -0.016) baja
+[  200s] US-CA-OC    cdip:284,cdip:271,cdip:264             best ecmwf_wam         n 2120 rmse 0.157 bias 0.039  alta
+[  200s]             wind ndbc:46025,ndbc:46086             best gfs_seamless      n 1431 rmse 1.211 bias -0.127 (gfs_seamless rmse 1.211 bias -0.127) alta
+[  200s] US-CA-LA    cdip:103,cdip:028,ndbc:46025           best ecmwf_wam         n 2138 rmse 0.155 bias 0.088  alta
+[  200s]             wind ndbc:46025,ndbc:46069,ndbc:LJPC1  best gfs_seamless      n 2140 rmse 1.279 bias -0.027 (gfs_seamless rmse 1.279 bias -0.027) alta
+[  200s] US-CA-SB    cdip:071,ndbc:46025,cdip:028           best ecmwf_wam         n 2133 rmse 0.206 bias 0.073  alta
+[  200s]             wind ndbc:46025,ndbc:46011,ndbc:46069  best gfs_seamless      n 2140 rmse 1.169 bias -0.084 (gfs_seamless rmse 1.169 bias -0.084) alta
+[  200s] US-CA-CEN   cdip:076,cdip:157,cmems:46011          best ecmwf_wam         n 1820 rmse 0.346 bias 0.016  alta
+[  200s]             wind cmems:46011,ndbc:46011,ndbc:46092 best gfs_seamless      n 2100 rmse 1.319 bias -0.043 (gfs_seamless rmse 1.319 bias -0.043) alta
+[  200s] US-CA-SC    cdip:156,cdip:157,ndbc:46042           best ecmwf_wam         n 1830 rmse 0.332 bias -0.03  alta
+[  200s]             wind ndbc:46092,ndbc:46042,cmems:46012 best gfs_seamless      n 2099 rmse 1.362 bias -0.079 (gfs_seamless rmse 1.362 bias -0.079) media
+[  200s] US-CA-SF    cdip:142,ndbc:46026,cmems:46012        best ncep_gfswave025   n 2132 rmse 0.38  bias -0.021 baja
+[  200s]             wind ndbc:46026,cmems:46012,ndbc:46013 best gfs_seamless      n 2133 rmse 1.189 bias -0.071 (gfs_seamless rmse 1.189 bias -0.071) media
+[  201s] US-CA-NOR   cdip:168,ndbc:46014,ndbc:46022         best ecmwf_wam         n 2120 rmse 0.233 bias -0.022 alta
+[  201s]             wind ndbc:46014,ndbc:46022,cmems:46022 best gfs_seamless      n 2125 rmse 1.107 bias -0.045 (gfs_seamless rmse 1.107 bias -0.045) alta
+[  201s] US-PNW      cdip:270,cdip:036,cdip:162             best ecmwf_wam         n 2159 rmse 0.282 bias 0.003  alta
+[  201s]             wind ndbc:NWPO3,ndbc:46097,ndbc:46087  best gfs_seamless      n 2113 rmse 1.286 bias -0.085 (gfs_seamless rmse 1.286 bias -0.085) alta
+[  201s] US-GULF     ndbc:42033,cdip:252,ndbc:42035         best ecmwf_wam         n 1496 rmse 0.154 bias -0.078 alta
+[  201s]             wind ndbc:ANPT2,ndbc:42034,ndbc:42043  best gfs_seamless      n 1390 rmse 1.225 bias -0.055 (gfs_seamless rmse 1.225 bias -0.055) alta
+[  201s] US-FL       cdip:265,cdip:143,cdip:134             best -                 n      rmse       bias        baja
+[  201s]             wind ndbc:SIPF1,ndbc:LKWF1,ndbc:41068  best gfs_seamless      n 2099 rmse 1.851 bias 0.001  (gfs_seamless rmse 1.851 bias 0.001) media
+[  201s] US-FL-PAN   ndbc:42357,ndbc:42012,cdip:256         best ncep_gfswave016   n 1936 rmse 0.215 bias -0.092 baja
+[  201s]             wind ndbc:PCBF1,ndbc:42012,ndbc:BURL1  best gfs_seamless      n 2145 rmse 1.336 bias -0.048 (gfs_seamless rmse 1.336 bias -0.048) alta
+[  201s] US-SE       cdip:433,cdip:150,ndbc:SSBN7           best ncep_gfswave016   n 2018 rmse 0.185 bias -0.06  alta
+[  201s]             wind ndbc:MBNN7,ndbc:DUKN7,ndbc:41038  best ecmwf_ifs         n 2121 rmse 1.607 bias 0.054  (ecmwf_ifs rmse 1.607 bias 0.054) baja
+[  201s] US-SC-GA    ndbc:41067,ndbc:41065,ndbc:41076       best ecmwf_wam         n 1946 rmse 0.239 bias -0.011 baja
+[  201s]             wind ndbc:41033,ndbc:41029,ndbc:41066  best cmc_gem_seamless  n 2146 rmse 1.722 bias -0.106 (ecmwf_ifs rmse 1.793 bias -0.109) baja
+[  201s] US-MID      cdip:263,cdip:147,cdip:430             best ncep_gfswave025   n 2085 rmse 0.233 bias -0.073 baja
+[  201s]             wind ndbc:44009,ndbc:DUKN7,ndbc:41082  best cmc_gem_seamless  n 2147 rmse 1.224 bias -0.022 (gfs_seamless rmse 1.348 bias -0.065) alta
+[  201s] US-NE       ndbc:44007,ndbc:44029,ndbc:44030       best ecmwf_wam         n 1608 rmse 0.201 bias -0.038 alta
+[  201s]             wind ndbc:44007,ndbc:44029,ndbc:IOSN3  best gfs_seamless      n 1664 rmse 1.584 bias -0.108 (gfs_seamless rmse 1.584 bias -0.108) baja
+[  201s] US-HI-OAN   cdip:106                               best ecmwf_wam         n  721 rmse 0.215 bias 0.065  alta
+[  201s]             wind ndbc:51WH0                        best cmc_gem_seamless  n  565 rmse 1.429 bias -0.008 (gfs_seamless rmse 1.49 bias 0.003) baja
+[  201s] US-HI-OAS   cdip:238,cdip:233                      best ecmwf_wam         n 1439 rmse 0.252 bias -0.014 alta
+[  201s]             wind ndbc:51WH0                        best cmc_gem_seamless  n  565 rmse 1.429 bias -0.008 (gfs_seamless rmse 1.49 bias 0.003) baja
+[  201s] US-HI-MAU   cdip:187,cdip:233,cdip:188             best ecmwf_wam         n 1581 rmse 0.188 bias 0.032  alta
+[  201s]             wind ndbc:51WH0                        best cmc_gem_seamless  n  565 rmse 1.429 bias -0.008 (gfs_seamless rmse 1.49 bias 0.003) baja
+[  201s] US-HI-KAU   (no buoys; spread 0.067)               best -                 n      rmse       bias        media
+[  201s] US-HI-BIG   cdip:187                               best ecmwf_wam         n  140 rmse 0.154 bias 0.03   baja
+[  201s] CA-BC-VI    ndbc:46087,cmems:4600207               best ecmwf_wam         n 1253 rmse 0.305 bias -0.003 baja
+[  201s]             wind cmems:46206,ndbc:46087,ndbc:LAPW1 best gfs_seamless      n 2122 rmse 1.588 bias 0.028  (gfs_seamless rmse 1.588 bias 0.028) alta
+[  201s] CA-NS       cmems:4400258                          best ncep_gfswave016   n  713 rmse 0.2   bias 0.048  alta
+[  201s]             wind cmems:4400258                     best gfs_seamless      n  713 rmse 1.221 bias 0.039  (gfs_seamless rmse 1.221 bias 0.039) alta
+[  201s] AU-QLD-SC   cmems:55045,cmems:55030,cmems:55027    best ecmwf_wam         n 1646 rmse 0.176 bias 0.123  alta
+[  201s] AU-QLD-GC   cmems:55050,cmems:55036,cmems:55037    best ncep_gfswave025   n 1671 rmse 0.245 bias 0.103  alta
+[  201s] AU-NSW-NR   cmems:55037,cmems:55017,cmems:55057    best ecmwf_wam         n 1524 rmse 0.24  bias 0.07   alta
+[  201s] AU-NSW-MN   cmems:55018,cmems:55019,aodn:wooli     best ecmwf_wam         n 1549 rmse 0.275 bias 0.102  alta
+[  201s] AU-NSW-NC   aodn:collaroy-narrabeen,cmems:55024,cmems:55022 best ecmwf_wam         n 1487 rmse 0.465 bias 0.074  baja
+[  201s] AU-NSW-SYD  aodn:collaroy-narrabeen,cmems:55024,cmems:55022 best ecmwf_wam         n 1487 rmse 0.465 bias 0.074  baja
+[  201s] AU-NSW-SC   aodn:bengello,cmems:55014,cmems:55022  best ncep_gfswave025   n 1419 rmse 0.303 bias 0.043  alta
+[  201s] AU-VIC-SC   aodn:apollo-bay,aodn:inverloch,aodn:bob best ncep_gfswave025   n 2184 rmse 0.302 bias -0.072 baja
+[  201s] AU-VIC-PI   aodn:inverloch,aodn:apollo-bay,aodn:wilsons-prom best ncep_gfswave025   n 2184 rmse 0.296 bias -0.106 alta
+[  202s] AU-VIC-W    aodn:port-fairy,aodn:cape-bridgewater,aodn:apollo-bay best ecmwf_wam         n 2185 rmse 0.327 bias 0.13   alta
+[  202s] AU-TAS      aodn:storm-bay                         best ecmwf_wam         n  697 rmse 0.223 bias -0.097 alta
+[  202s] AU-SA       cmems:55040                            best ecmwf_wam         n  217 rmse 0.227 bias 0.013  baja
+[  202s] AU-SA-EYR   aodn:ceduna                            best ecmwf_wam         n  731 rmse 0.19  bias -0.077 alta
+[  202s] AU-WA-MR    aodn:bunbury                           best ncep_gfswave025   n  728 rmse 0.158 bias -0.01  alta
+[  202s] AU-WA-PER   aodn:hillarys,aodn:jurien-bay-inshore,aodn:jurien-bay-offshore best ncep_gfswave025   n 2188 rmse 0.32  bias -0.065 alta
+[  202s] AU-WA-NW    aodn:dongara-inshore,aodn:dongara-offshore best -                 n      rmse       bias        baja
+[  202s] AU-WA-GAS   aodn:coral-bay-0-2                     best ecmwf_wam         n  731 rmse 0.228 bias 0.005  alta
+[  202s] NZ-NTL      (no buoys; spread 0.063)               best -                 n      rmse       bias        media
+[  202s] NZ-AKL      (no buoys; spread 0.119)               best -                 n      rmse       bias        media
+[  202s] NZ-RAG      (no buoys; spread 0.08)                best -                 n      rmse       bias        media
+[  202s] NZ-TAR      (no buoys; spread 0.04)                best -                 n      rmse       bias        media
+[  202s] NZ-BOP      (no buoys; spread 0.206)               best -                 n      rmse       bias        media
+[  202s] NZ-GIS      (no buoys; spread 0.14)                best -                 n      rmse       bias        media
+[  202s] NZ-WEL      (no buoys; spread 0.113)               best -                 n      rmse       bias        media
+[  202s] NZ-KAI      (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  202s] NZ-OTA      (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  202s] NZ-WC       (no buoys; spread 0.069)               best -                 n      rmse       bias        media
+[  202s] FJ-MAM      (no buoys; spread 0.374)               best -                 n      rmse       bias        baja
+[  202s] FJ-SOU      (no buoys; spread 0.091)               best -                 n      rmse       bias        media
+[  202s] PF-TAH      (no buoys; spread 0.211)               best -                 n      rmse       bias        media
+[  202s] PF-ISL      (no buoys; spread 0.286)               best -                 n      rmse       bias        media
+[  202s]   WS-ALL: no buoy left of ['cdip:273', 'cdip:189']; coverage None
+[  202s] WS-ALL      (no buoys; spread 0.094)               best -                 n      rmse       bias        media
+[  202s] TO-ALL      (no buoys; spread 0.215)               best -                 n      rmse       bias        media
+[  202s] VU-ALL      (no buoys; spread 0.106)               best -                 n      rmse       bias        media
+[  202s] PG-ALL      (no buoys; spread 0.089)               best -                 n      rmse       bias        media
+[  202s] ID-BAL-BUK  (no buoys; spread 0.115)               best -                 n      rmse       bias        media
+[  202s] ID-BAL-W    (no buoys; spread 0.071)               best -                 n      rmse       bias        media
+[  202s] ID-BAL-E    (no buoys; spread 0.124)               best -                 n      rmse       bias        media
+[  202s] ID-JAV-E    (no buoys; spread 0.073)               best -                 n      rmse       bias        media
+[  202s] ID-JAV-W    (no buoys; spread 0.299)               best -                 n      rmse       bias        media
+[  202s] ID-LOM      (no buoys; spread 0.071)               best -                 n      rmse       bias        media
+[  202s] ID-SBW      (no buoys; spread 0.119)               best -                 n      rmse       bias        media
+[  202s] ID-SMB      (no buoys; spread 0.048)               best -                 n      rmse       bias        media
+[  202s] ID-ROT      (no buoys; spread 0.144)               best -                 n      rmse       bias        media
+[  202s] ID-MEN      (no buoys; spread 0.101)               best -                 n      rmse       bias        media
+[  202s] ID-NIA      (no buoys; spread 0.111)               best -                 n      rmse       bias        media
+[  202s] ID-KRU      (no buoys; spread 0.052)               best -                 n      rmse       bias        media
+[  202s] PH-SIA      (no buoys; spread 0.18)                best -                 n      rmse       bias        media
+[  202s] PH-LUZ      (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  202s] PH-EAS      (no buoys; spread 0.081)               best -                 n      rmse       bias        media
+[  202s] LK-E        (no buoys; spread 0.132)               best -                 n      rmse       bias        media
+[  202s] LK-S        (no buoys; spread 0.05)                best -                 n      rmse       bias        media
+[  202s] MV-NMA      (no buoys; spread 0.173)               best -                 n      rmse       bias        media
+[  202s] MV-SMA      (no buoys; spread 0.091)               best -                 n      rmse       bias        media
+[  202s] MV-SOU      (no buoys; spread 0.147)               best -                 n      rmse       bias        media
+[  202s] MV-CEN      (no buoys; spread 0.151)               best -                 n      rmse       bias        media
+[  202s] JP-CHI      (no buoys; spread 0.108)               best -                 n      rmse       bias        media
+[  203s] JP-SHO      (no buoys; spread 0.114)               best -                 n      rmse       bias        media
+[  203s] JP-IZU      (no buoys; spread 0.189)               best -                 n      rmse       bias        media
+[  203s] JP-IBA      (no buoys; spread 0.071)               best -                 n      rmse       bias        media
+[  203s] JP-SHK      (no buoys; spread 0.087)               best -                 n      rmse       bias        media
+[  203s] JP-KYU      (no buoys; spread 0.109)               best -                 n      rmse       bias        media
+[  203s] TW-E        (no buoys; spread 0.159)               best -                 n      rmse       bias        media
+[  203s] TW-NE       (no buoys; spread 0.068)               best -                 n      rmse       bias        media
+[  203s] IN-W        (no buoys; spread 0.116)               best -                 n      rmse       bias        media
+[  203s] IN-E        (no buoys; spread 0.118)               best -                 n      rmse       bias        media
+[  203s] VN-ALL      (no buoys; spread 0.19)                best -                 n      rmse       bias        media
+[  203s] KR-ALL      cmems:2200310,cmems:2200107,cmems:2200187 best ecmwf_wam         n 2033 rmse 0.229 bias -0.035 alta
+[  203s]             wind cmems:2200310,cmems:2200107,cmems:2200187 best jma_seamless      n 2038 rmse 1.844 bias 0.042  (gfs_seamless rmse 2.017 bias 0.012) media
+[  203s] CN-HAI      (no buoys; spread 0.191)               best -                 n      rmse       bias        media
+[  203s] ZA-WC-CPT   (no buoys; spread 0.3)                 best -                 n      rmse       bias        media
+[  203s] ZA-WC-WCO   (no buoys; spread 0.046)               best -                 n      rmse       bias        media
+[  203s] ZA-WC-GR    (no buoys; spread 0.056)               best -                 n      rmse       bias        media
+[  203s] ZA-EC-JB    (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  203s] ZA-EC-PE    (no buoys; spread 0.074)               best -                 n      rmse       bias        media
+[  203s] ZA-EC-WLD   (no buoys; spread 0.053)               best -                 n      rmse       bias        media
+[  203s] ZA-KZN-DBN  (no buoys; spread 0.061)               best -                 n      rmse       bias        media
+[  203s] ZA-KZN-N    (no buoys; spread 0.08)                best -                 n      rmse       bias        media
+[  203s] ZA-KZN-S    (no buoys; spread 0.063)               best -                 n      rmse       bias        media
+[  203s] NA-ERO      (no buoys; spread 0.048)               best -                 n      rmse       bias        media
+[  203s] MA-TAG      (no buoys; spread 0.118)               best -                 n      rmse       bias        media
+[  203s] MA-N        (no buoys; spread 0.082)               best -                 n      rmse       bias        media
+[  203s] MA-S        (no buoys; spread 0.099)               best -                 n      rmse       bias        media
+[  203s] SN-ALL      (no buoys; spread 0.072)               best -                 n      rmse       bias        media
+[  203s] LR-ALL      (no buoys; spread 0.041)               best -                 n      rmse       bias        media
+[  203s] GH-ALL      (no buoys; spread 0.1)                 best -                 n      rmse       bias        media
+[  203s] MZ-S        (no buoys; spread 0.083)               best -                 n      rmse       bias        media
+[  203s] MZ-INH      (no buoys; spread 0.18)                best -                 n      rmse       bias        media
+[  203s] MG-ALL      (no buoys; spread 0.048)               best -                 n      rmse       bias        media
+[  203s] RE-ALL      (no buoys; spread 0.126)               best -                 n      rmse       bias        media
+[  203s] MU-ALL      (no buoys; spread 0.128)               best -                 n      rmse       bias        media
+[  203s] CV-ALL      (no buoys; spread 0.132)               best -                 n      rmse       bias        media
+[  203s] FR-PBA      cmems:6200079,cmems:6200066,cmems:PasaiaII-coast-buoy best ecmwf_wam         n 1937 rmse 0.256 bias -0.016 alta
+[  203s]             wind cmems:Bilbao-station,cmems:6200024 best meteofrance_seamless n 1331 rmse 1.611 bias 0.173  (gfs_seamless rmse 1.797 bias 0.117) media
+[  203s] FR-HOS      cmems:6200066,cmems:6200079,cmems:Donostia-buoy best ecmwf_wam         n 1937 rmse 0.275 bias -0.003 alta
+[  203s]             wind cmems:6200024,cmems:Bilbao-station best meteofrance_seamless n 1331 rmse 1.611 bias 0.173  (gfs_seamless rmse 1.797 bias 0.117) media
+[  203s] FR-GIR      cmems:6200064,cmems:6200066,cmems:6200024 best ecmwf_wam         n 1938 rmse 0.253 bias 0.037  alta
+[  203s]             wind cmems:6200024,cmems:Bilbao-station best meteofrance_seamless n 1331 rmse 1.611 bias 0.173  (gfs_seamless rmse 1.797 bias 0.117) media
+[  203s] FR-VEN      cmems:6200067,cmems:6200251,cmems:6200078 best ncep_gfswave025   n 1731 rmse 0.24  bias -0.018 alta
+[  203s] FR-BRE      cmems:6200069,cmems:6200074,cmems:6200078 best ncep_gfswave016   n 1788 rmse 0.374 bias -0.028 baja
+[  203s] ES-PV       cmems:Bilbao-coast-buoy,cmems:Bilbao-station,cmems:PasaiaII-coast-buoy best ecmwf_wam         n 2094 rmse 0.376 bias -0.086 alta
+[  203s]             wind cmems:Bilbao-station,cmems:6200024 best meteofrance_seamless n 1331 rmse 1.611 bias 0.173  (gfs_seamless rmse 1.797 bias 0.117) alta
+[  203s] ES-CAN      cmems:Bilbao-coast-buoy,cmems:Bilbao-station,cmems:6200024 best ecmwf_wam         n 2094 rmse 0.375 bias -0.071 alta
+[  203s]             wind cmems:Bilbao-station,cmems:6200024 best meteofrance_seamless n 1331 rmse 1.611 bias 0.173  (gfs_seamless rmse 1.797 bias 0.117) alta
+[  203s] ES-AST      cmems:Gijon-coast-buoy,cmems:6200025,cmems:6200082 best ecmwf_wam         n 2129 rmse 0.282 bias -0.037 alta
+[  203s]             wind cmems:6200025,cmems:6200082,cmems:6201070 best meteofrance_seamless n 2142 rmse 1.72  bias 0.074  (gfs_seamless rmse 2.059 bias 0.267) alta
+[  204s] ES-GAL      cmems:6201070,cmems:6200083,cmems:6200084 best ecmwf_wam         n 2160 rmse 0.316 bias -0.051 alta
+[  204s]             wind cmems:6201070,cmems:6200083,cmems:6200084 best ecmwf_ifs         n 2124 rmse 1.627 bias 0.13   (gfs_seamless rmse 2.117 bias 0.252) alta
+[  204s] ES-AND      cmems:6200085                          best ecmwf_wam         n  720 rmse 0.141 bias -0.12  alta
+[  204s]             wind cmems:6200085                     best meteofrance_seamless n  690 rmse 1.52  bias 0.192  (gfs_seamless rmse 2.03 bias 0.36) alta
+[  204s] ES-CN-E     (no buoys; spread 0.319)               best -                 n      rmse       bias        baja
+[  204s] ES-CN-W     cmems:1300130                          best ecmwf_wam         n  720 rmse 0.126 bias 0.035  alta
+[  204s]             wind cmems:1300130                     best meteofrance_seamless n  720 rmse 1.425 bias 0.071  (gfs_seamless rmse 1.788 bias 0.15) alta
+[  204s] PT-NOR      cmems:Leixoes-coast-buoy,cmems:6200084 best ecmwf_wam         n 1400 rmse 0.238 bias -0.025 alta
+[  204s]             wind cmems:6200084                     best ecmwf_ifs         n  704 rmse 1.435 bias 0.144  (gfs_seamless rmse 1.641 bias 0.147) alta
+[  204s] PT-CEN      cmems:6200199,cmems:Leixoes-coast-buoy,cmems:6200084 best ecmwf_wam         n 2087 rmse 0.237 bias -0.028 alta
+[  204s]             wind cmems:6200199,cmems:6200084       best ecmwf_ifs         n 1391 rmse 1.372 bias 0.116  (gfs_seamless rmse 1.708 bias 0.174) alta
+[  204s] PT-PEN      cmems:6200199,cmems:Sines-coast-buoy   best ecmwf_wam         n 1365 rmse 0.224 bias -0.057 alta
+[  204s]             wind cmems:6200199                     best ecmwf_ifs         n  687 rmse 1.303 bias 0.075  (gfs_seamless rmse 1.775 bias 0.214) alta
+[  204s] PT-ERI      cmems:6200199,cmems:Sines-coast-buoy   best ecmwf_wam         n 1365 rmse 0.224 bias -0.057 alta
+[  204s]             wind cmems:6200199                     best ecmwf_ifs         n  687 rmse 1.303 bias 0.075  (gfs_seamless rmse 1.775 bias 0.214) alta
+[  204s] PT-LIS      cmems:Sines-coast-buoy,cmems:6200199   best ecmwf_wam         n 1365 rmse 0.224 bias -0.057 alta
+[  204s]             wind cmems:6200199                     best ecmwf_ifs         n  687 rmse 1.303 bias 0.075  (gfs_seamless rmse 1.775 bias 0.214) alta
+[  204s] PT-ALG      cmems:Sines-coast-buoy,cmems:Faro-coast-buoy best ecmwf_wam         n  993 rmse 0.192 bias -0.093 alta
+[  204s] PT-AZO      cmems:6202400                          best -                 n      rmse       bias        baja
+[  204s] PT-MAD      (no buoys; spread 0.094)               best -                 n      rmse       bias        media
+[  204s] GB-CON      cmems:6201001,cmems:6200107,cmems:6201024 best ecmwf_wam         n 2154 rmse 0.435 bias 0.097  media
+[  204s] GB-DEV      cmems:6201562,cmems:6200103,cmems:6201001 best ecmwf_wam         n 2157 rmse 0.363 bias -0.003 alta
+[  204s]             wind cmems:6200103                     best meteofrance_seamless n  720 rmse 0.988 bias -0.004 (gfs_seamless rmse 1.298 bias -0.019) alta
+[  204s] GB-SOU      cmems:6201008,cmems:6200290,cmems:6201009 best ecmwf_wam         n 2150 rmse 0.336 bias 0.108  media
+[  204s]             wind cmems:6200103,cmems:6200305       best meteofrance_seamless n 1440 rmse 1.405 bias -0.026 (gfs_seamless rmse 1.454 bias -0.041) baja
+[  204s] GB-WAL      cmems:6201562,mi:m5,cmems:6201006      best ecmwf_wam         n 2159 rmse 0.273 bias -0.046 alta
+[  204s]             wind mi:m5                             best ukmo_seamless     n  721 rmse 1.435 bias 0.082  (gfs_seamless rmse 2.146 bias 0.165) alta
+[  204s] GB-SCO      cmems:6200045,cmems:6204816,cmems:6200047 best ecmwf_wam         n 2163 rmse 0.242 bias -0.005 alta
+[  204s] GB-NE       cmems:6201047,cmems:6201046,cmems:6201045 best ecmwf_wam         n 2037 rmse 0.249 bias 0.007  alta
+[  204s]             wind cmems:6200165,cmems:6200149       best ukmo_seamless     n 1432 rmse 1.708 bias 0.046  (gfs_seamless rmse 2.092 bias 0.119) alta
+[  204s] GB-NIR      mi:m2,cmems:6200047                    best ecmwf_wam         n 1442 rmse 0.431 bias -0.069 alta
+[  204s]             wind mi:m2                             best icon_seamless     n  721 rmse 1.048 bias 0.0    (gfs_seamless rmse 1.264 bias 0.038) alta
+[  204s] IE-NW       (no buoys; spread 0.081)               best -                 n      rmse       bias        media
+[  204s] IE-SW       mi:m3                                  best ecmwf_wam         n  721 rmse 0.304 bias -0.021 media
+[  204s]             wind mi:m3                             best icon_seamless     n  721 rmse 1.142 bias 0.021  (gfs_seamless rmse 1.373 bias 0.034) media
+[  204s] IE-SE       mi:m3,cmems:IL4-Splaugh,mi:m5          best ecmwf_wam         n 2161 rmse 0.324 bias -0.076 alta
+[  204s]             wind mi:m3,cmems:IL4-Splaugh,mi:m5     best ukmo_seamless     n 2161 rmse 1.413 bias -0.008 (gfs_seamless rmse 1.81 bias 0.083) alta
+[  204s] NO-S        (no buoys; spread 0.194)               best -                 n      rmse       bias        media
+[  204s] NO-N        (no buoys; spread 0.055)               best -                 n      rmse       bias        media
+[  204s] DK-ALL      cmems:Fjaltring,cmems:Nymindegab,cmems:Fanoebugt best ecmwf_wam         n 2137 rmse 0.219 bias 0.027  alta
+[  204s] NL-ALL      cmems:DomburgerRassen,cmems:WielingenNoord,cmems:Deurlo best ecmwf_wam         n 1539 rmse 0.164 bias 0.009  alta
+[  204s]             wind cmems:6200170,cmems:6200145       best gfs_seamless      n 1393 rmse 1.413 bias -0.032 (gfs_seamless rmse 1.413 bias -0.032) media
+[  204s] DE-ALL      cmems:6202602,cmems:6201067,cmems:Fanoebugt best ecmwf_wam         n 2119 rmse 0.278 bias 0.125  alta
+[  205s] IT-ALL      cmems:6100219,cmems:6100216,cmems:6100214 best ecmwf_wam         n 1816 rmse 0.188 bias -0.049 alta
+[  205s]             wind cmems:6100219,cmems:6100216,cmems:6100214 best meteofrance_seamless n 1815 rmse 1.755 bias -0.057 (gfs_seamless rmse 2.235 bias -0.122) alta
+[  205s] IT-SAR      (no buoys; spread 0.14)                best -                 n      rmse       bias        media
+[  205s] IS-ALL      cmems:Thorlakshafnardufl,cmems:Grindavikurdufl,cmems:Surtseyjardufl best ncep_gfswave025   n 1921 rmse 0.526 bias 0.007  alta
+[  205s] check aodn  ncep_gfswave025   {'n': 16002, 'tp_bias': -0.21, 'tm_bias': 4.31, 'dir_mae': 22.36, 'dir_bias': 5.58}
+[  205s] check aodn  meteofrance_wave  {'n': 16002, 'tp_bias': -2.23, 'tm_bias': 2.28, 'dir_mae': 20.16, 'dir_bias': 2.71}
+[  205s] check aodn  ecmwf_wam         {'n': 16002, 'tp_bias': -0.06, 'tm_bias': 2.59, 'dir_mae': 20.77, 'dir_bias': 4.92}
+[  205s] check cdip  ncep_gfswave016   {'n': 28615, 'tp_bias': 0.38, 'tm_bias': 4.99, 'dir_mae': 21.88, 'dir_bias': -8.32}
+[  205s] check cdip  meteofrance_wave  {'n': 26007, 'tp_bias': -1.77, 'tm_bias': 3.0, 'dir_mae': 20.69, 'dir_bias': 0.09}
+[  205s] check cdip  ecmwf_wam         {'n': 28615, 'tp_bias': -0.05, 'tm_bias': 2.69, 'dir_mae': 18.79, 'dir_bias': 2.18}
+[  205s] check cdip  ncep_gfswave025   {'n': 18432, 'tp_bias': 0.1, 'tm_bias': 3.9, 'dir_mae': 18.85, 'dir_bias': -0.74}
+[  205s] check cmems ncep_gfswave016   {'n': 46909, 'tp_bias': 0.17, 'tm_bias': 3.79, 'dir_mae': 19.34, 'dir_bias': 1.76}
+[  205s] check cmems ncep_gfswave025   {'n': 53875, 'tp_bias': -0.15, 'tm_bias': 3.31, 'dir_mae': 21.45, 'dir_bias': 0.66}
+[  205s] check cmems meteofrance_wave  {'n': 66085, 'tp_bias': -1.39, 'tm_bias': 2.16, 'dir_mae': 21.14, 'dir_bias': 0.25}
+[  205s] check cmems ecmwf_wam         {'n': 66085, 'tp_bias': -0.5, 'tm_bias': 1.79, 'dir_mae': 20.69, 'dir_bias': 0.01}
+[  205s] check cmems dwd_ewam          {'n': 47534, 'tp_bias': -1.61, 'tm_bias': 2.16, 'dir_mae': 17.02, 'dir_bias': -0.6}
+[  205s] check mi    ncep_gfswave016   {'n': 2163, 'tp_bias': 0.16, 'tm_bias': 3.9, 'dir_mae': 31.7, 'dir_bias': -1.77}
+[  205s] check mi    ncep_gfswave025   {'n': 3605, 'tp_bias': -0.18, 'tm_bias': 3.18, 'dir_mae': 34.22, 'dir_bias': -4.72}
+[  205s] check mi    meteofrance_wave  {'n': 3605, 'tp_bias': -1.62, 'tm_bias': 1.73, 'dir_mae': 19.14, 'dir_bias': -7.02}
+[  205s] check mi    ecmwf_wam         {'n': 3605, 'tp_bias': -0.66, 'tm_bias': 1.37, 'dir_mae': 17.6, 'dir_bias': -5.26}
+[  205s] check mi    dwd_ewam          {'n': 1442, 'tp_bias': -1.14, 'tm_bias': 1.05, 'dir_mae': 29.15, 'dir_bias': -9.0}
+[  205s] check ndbc  ncep_gfswave016   {'n': 12479, 'tp_bias': 0.17, 'tm_bias': 4.39, 'dir_mae': 19.59, 'dir_bias': -6.47}
+[  205s] check ndbc  ncep_gfswave025   {'n': 11779, 'tp_bias': 0.09, 'tm_bias': 4.03, 'dir_mae': 19.37, 'dir_bias': -7.81}
+[  205s] check ndbc  ecmwf_wam         {'n': 12479, 'tp_bias': -0.44, 'tm_bias': 2.07, 'dir_mae': 23.21, 'dir_bias': -4.68}
+[  205s] check ndbc  meteofrance_wave  {'n': 11043, 'tp_bias': -1.47, 'tm_bias': 2.44, 'dir_mae': 25.55, 'dir_bias': -5.67}
+[  205s] wind check cmems gfs_seamless         {'n': 30280, 'obs_spd': 5.91, 'bias_ms': 0.45, 'rmse': 1.78, 'dir_mae': 20.81, 'dir_bias': 9.02}
+[  205s] wind check cmems ecmwf_ifs            {'n': 30280, 'obs_spd': 5.91, 'bias_ms': 0.29, 'rmse': 1.65, 'dir_mae': 20.39, 'dir_bias': 7.58}
+[  205s] wind check cmems cmc_gem_seamless     {'n': 4236, 'obs_spd': 5.67, 'bias_ms': 0.25, 'rmse': 1.44, 'dir_mae': 17.8, 'dir_bias': 6.43}
+[  205s] wind check cmems jma_seamless         {'n': 2038, 'obs_spd': 7.1, 'bias_ms': 0.3, 'rmse': 1.84, 'dir_mae': 18.62, 'dir_bias': 0.87}
+[  205s] wind check cmems meteofrance_seamless {'n': 24006, 'obs_spd': 5.85, 'bias_ms': 0.43, 'rmse': 1.72, 'dir_mae': 20.13, 'dir_bias': 8.58}
+[  205s] wind check cmems icon_seamless        {'n': 23286, 'obs_spd': 5.86, 'bias_ms': -0.0, 'rmse': 1.75, 'dir_mae': 20.82, 'dir_bias': 8.21}
+[  205s] wind check cmems ukmo_seamless        {'n': 4311, 'obs_spd': 9.66, 'bias_ms': -0.45, 'rmse': 1.63, 'dir_mae': 8.45, 'dir_bias': 2.8}
+[  205s] wind check mi    gfs_seamless         {'n': 3605, 'obs_spd': 9.22, 'bias_ms': 0.77, 'rmse': 1.71, 'dir_mae': 9.3, 'dir_bias': 2.41}
+[  205s] wind check mi    ecmwf_ifs            {'n': 3605, 'obs_spd': 9.22, 'bias_ms': 0.48, 'rmse': 1.42, 'dir_mae': 8.66, 'dir_bias': 0.84}
+[  205s] wind check mi    meteofrance_seamless {'n': 3605, 'obs_spd': 9.22, 'bias_ms': 1.04, 'rmse': 1.97, 'dir_mae': 9.99, 'dir_bias': 2.13}
+[  205s] wind check mi    ukmo_seamless        {'n': 3605, 'obs_spd': 9.22, 'bias_ms': 0.04, 'rmse': 1.29, 'dir_mae': 8.92, 'dir_bias': 1.81}
+[  205s] wind check mi    icon_seamless        {'n': 3605, 'obs_spd': 9.22, 'bias_ms': 0.65, 'rmse': 1.54, 'dir_mae': 9.09, 'dir_bias': 1.05}
+[  205s] wind check ndbc  gfs_seamless         {'n': 34595, 'obs_spd': 5.85, 'bias_ms': -0.25, 'rmse': 1.5, 'dir_mae': 12.89, 'dir_bias': -0.17}
+[  205s] wind check ndbc  ecmwf_ifs            {'n': 34595, 'obs_spd': 5.85, 'bias_ms': -0.29, 'rmse': 1.73, 'dir_mae': 15.28, 'dir_bias': 1.12}
+[  205s] wind check ndbc  cmc_gem_seamless     {'n': 34595, 'obs_spd': 5.85, 'bias_ms': -0.32, 'rmse': 1.7, 'dir_mae': 16.24, 'dir_bias': 2.58}
+[  205s] done: 213 regions, 77 with buoys, 48 with wind stations, 40 suggestions

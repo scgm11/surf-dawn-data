@@ -1,25 +1,36 @@
 {
  "region": "ES-CN-E",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [],
+ "excluded": [
+  {
+   "id": "cmems:LasPalmas-coast-buoy",
+   "km": 116.6,
+   "why": "otro mar o abrigada: ve 14 % de las direcciones abiertas de los picos"
+  }
+ ],
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.299,
+  "hs": 0.319,
   "hours": 744,
   "point": [
-   28.714,
-   -13.835
+   28.7129,
+   -13.8364
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.2,
-   "ncep_gfswave025": 0.81,
-   "meteofrance_wave": 1.33,
-   "ecmwf_wam": 0.62
-  }
+   "ncep_gfswave016": 1.23,
+   "ncep_gfswave025": 0.83,
+   "meteofrance_wave": 1.38,
+   "ecmwf_wam": 0.6
+  },
+  "cell": [
+   28.833336,
+   -13.833328
+  ]
  },
- "confidence": "media",
+ "confidence": "baja",
  "wind": {
   "stations": [],
   "current": "gfs_seamless"

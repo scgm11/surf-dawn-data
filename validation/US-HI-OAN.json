@@ -1,7 +1,7 @@
 {
  "region": "US-HI-OAN",
- "from": "2026-09-13",
- "to": "2026-10-13",
+ "from": "2026-10-08",
+ "to": "2026-11-07",
  "buoys": [
   "cdip:106"
  ],
@@ -23,77 +23,81 @@
   }
  ],
  "wave": {
-  "ncep_gfswave016": {
-   "n": 723,
-   "hs_bias": -0.142,
-   "hs_rmse": 0.236,
-   "hs_si": 0.106,
-   "tp_bias": 0.64,
-   "tp_mae": 1.51,
-   "dir_mae": 23.7,
-   "dir_bias": -0.9,
-   "tm_bias": 3.98,
-   "obs_hs": 1.34,
-   "tp_type": "primary",
-   "eligible": true
-  },
   "ecmwf_wam": {
-   "n": 723,
-   "hs_bias": 0.174,
-   "hs_rmse": 0.279,
-   "hs_si": 0.114,
-   "tp_bias": -0.2,
-   "tp_mae": 0.98,
-   "dir_mae": 28.1,
-   "dir_bias": 26.5,
-   "tm_bias": 1.87,
-   "obs_hs": 1.34,
+   "n": 721,
+   "hs_bias": 0.065,
+   "hs_rmse": 0.215,
+   "hs_si": 0.103,
+   "tp_bias": -0.47,
+   "tp_mae": 1.06,
+   "dir_mae": 29.1,
+   "dir_bias": 28.6,
+   "tm_bias": 2.1,
+   "obs_hs": 1.77,
    "tp_type": "peak",
    "eligible": true
   },
+  "ncep_gfswave016": {
+   "n": 721,
+   "hs_bias": -0.181,
+   "hs_rmse": 0.383,
+   "hs_si": 0.119,
+   "tp_bias": 0.34,
+   "tp_mae": 1.17,
+   "dir_mae": 14.2,
+   "dir_bias": -3.1,
+   "tm_bias": 4.84,
+   "obs_hs": 1.77,
+   "tp_type": "primary",
+   "eligible": true
+  },
   "meteofrance_wave": {
-   "n": 723,
-   "hs_bias": 0.176,
-   "hs_rmse": 0.29,
-   "hs_si": 0.127,
-   "tp_bias": -0.75,
-   "tp_mae": 1.43,
-   "dir_mae": 38.3,
-   "dir_bias": 28.7,
-   "tm_bias": 2.59,
-   "obs_hs": 1.34,
+   "n": 721,
+   "hs_bias": 0.045,
+   "hs_rmse": 0.207,
+   "hs_si": 0.108,
+   "tp_bias": -1.81,
+   "tp_mae": 2.09,
+   "dir_mae": 32.0,
+   "dir_bias": 29.6,
+   "tm_bias": 2.7,
+   "obs_hs": 1.77,
    "tp_type": "mean",
    "eligible": false
   }
  },
  "best": {
-  "wave": "ncep_gfswave016",
-  "wind": "ecmwf_ifs"
+  "wave": "ecmwf_wam",
+  "wind": "cmc_gem_seamless"
  },
  "confidence": "alta",
- "vs": "ecmwf_wam",
- "margin": 0.182,
+ "vs": "ncep_gfswave016",
+ "margin": 0.781,
  "per_buoy": {
   "cdip:106": {
-   "n": 723,
-   "best": "ncep_gfswave016",
+   "n": 721,
+   "best": "ecmwf_wam",
    "km": 5.9
   }
  },
  "current": "ncep_gfswave016",
  "fixed": false,
  "spread": {
-  "hs": 0.1,
+  "hs": 0.075,
   "hours": 744,
   "point": [
-   21.6085,
-   -158.104
+   21.6074,
+   -158.1016
   ],
   "mean_hs": {
-   "ncep_gfswave016": 1.15,
-   "meteofrance_wave": 1.41,
-   "ecmwf_wam": 1.21
-  }
+   "ncep_gfswave016": 1.46,
+   "meteofrance_wave": 1.7,
+   "ecmwf_wam": 1.62
+  },
+  "cell": [
+   21.666668,
+   -158.16667
+  ]
  },
  "wind": {
   "stations": [
@@ -101,45 +105,45 @@
   ],
   "current": "gfs_seamless",
   "models": {
-   "ecmwf_ifs": {
-    "n": 576,
-    "spd_bias": -0.024,
-    "spd_bias_ms": -0.2,
-    "spd_rmse": 1.339,
-    "dir_mae": 11.1,
-    "dir_bias": -8.1,
-    "dir_n": 569,
-    "obs_spd": 8.31
+   "cmc_gem_seamless": {
+    "n": 565,
+    "spd_bias": -0.008,
+    "spd_bias_ms": -0.06,
+    "spd_rmse": 1.429,
+    "dir_mae": 13.1,
+    "dir_bias": 0.4,
+    "dir_n": 536,
+    "obs_spd": 7.48
    },
    "gfs_seamless": {
-    "n": 576,
-    "spd_bias": 0.009,
-    "spd_bias_ms": 0.08,
-    "spd_rmse": 1.395,
-    "dir_mae": 11.7,
-    "dir_bias": -8.7,
-    "dir_n": 569,
-    "obs_spd": 8.31
+    "n": 565,
+    "spd_bias": 0.003,
+    "spd_bias_ms": 0.02,
+    "spd_rmse": 1.49,
+    "dir_mae": 12.9,
+    "dir_bias": 0.6,
+    "dir_n": 536,
+    "obs_spd": 7.48
    },
-   "cmc_gem_seamless": {
-    "n": 576,
-    "spd_bias": 0.026,
-    "spd_bias_ms": 0.21,
-    "spd_rmse": 1.428,
-    "dir_mae": 10.7,
-    "dir_bias": -7.6,
-    "dir_n": 569,
-    "obs_spd": 8.31
+   "ecmwf_ifs": {
+    "n": 565,
+    "spd_bias": -0.07,
+    "spd_bias_ms": -0.52,
+    "spd_rmse": 1.645,
+    "dir_mae": 14.0,
+    "dir_bias": 0.9,
+    "dir_n": 536,
+    "obs_spd": 7.48
    }
   },
-  "best": "ecmwf_ifs",
+  "best": "cmc_gem_seamless",
   "confidence": "baja",
   "vs": "gfs_seamless",
-  "margin": 0.042,
+  "margin": 0.043,
   "per_station": {
    "ndbc:51WH0": {
-    "n": 576,
-    "best": "ecmwf_ifs",
+    "n": 565,
+    "best": "cmc_gem_seamless",
     "km": 111.8,
     "kind": "buoy",
     "z": 2.7
