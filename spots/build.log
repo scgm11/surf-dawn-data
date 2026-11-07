@@ -31,7 +31,8 @@ EC-COS      13 spots   950 bytes  v961531
 EC-GAL       4 spots   387 bytes  v56aff8
 CO-PAC       6 spots   523 bytes  v9aecaa
 CO-CAR       3 spots   403 bytes  vda3c7e
-VE-ALL       2 spots   291 bytes  v145aac
+VE-ALL       1 spots   238 bytes  vf04015
+VE-MAR       1 spots   257 bytes  v374537
 PA-PAC       7 spots   601 bytes  v53a662
 PA-BDT       4 spots   367 bytes  v200f77
 CR-GUA      12 spots   891 bytes  v979ac7
@@ -306,4 +307,4 @@ warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the se
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-213 regions, 2511 spots, 0 errors, 95 warnings
+214 regions, 2511 spots, 0 errors, 95 warnings
