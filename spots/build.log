@@ -9,7 +9,7 @@ BR-RS-SUL    2 spots   334 bytes  v54fd46
 BR-SC-FLN   14 spots  1002 bytes  v5f6154
 BR-SC-SUL    6 spots   528 bytes  vcf3c33
 BR-SC-NOR   20 spots  1296 bytes  v78381d
-BR-SP       29 spots  1557 bytes  v359e47
+BR-SP       29 spots  1556 bytes  v087063
 BR-RJ       17 spots   950 bytes  vb1eef2
 BR-RJL      20 spots  1241 bytes  v753eb4
 BR-ES       19 spots  1159 bytes  v10ca0c
@@ -46,7 +46,8 @@ SV-LIB       8 spots   575 bytes  va779f6
 SV-ORI       4 spots   437 bytes  v19fc50
 GT-PAC       4 spots   447 bytes  vc87438
 MX-OAX      13 spots   924 bytes  v0c76a1
-MX-PAC      12 spots   901 bytes  v995a59
+  osmdata: 879699 coastline pieces
+MX-PAC      12 spots   902 bytes  v7dd3d3
 MX-NAY       9 spots   789 bytes  v5f0a71
 MX-BCS       6 spots   542 bytes  v349bfc
 MX-BCS-N     2 spots   353 bytes  vfe6a5e
@@ -64,7 +65,7 @@ US-CA-SD    38 spots  2129 bytes  v7f7045
 US-CA-OC    32 spots  1828 bytes  v9d3652
 US-CA-LA    23 spots  1496 bytes  v1b24cd
 US-CA-SB    27 spots  1711 bytes  vd17986
-US-CA-CEN   16 spots  1128 bytes  v0d3a02
+US-CA-CEN   16 spots  1126 bytes  va60007
 US-CA-SC    30 spots  1878 bytes  veb9b6d
 US-CA-SF    29 spots  1896 bytes  vffc70c
 US-CA-NOR   25 spots  1525 bytes  v71badc
@@ -82,11 +83,11 @@ US-HI-MAU   21 spots  1311 bytes  v22080f
 US-HI-KAU   21 spots  1267 bytes  vcefdc0
 US-HI-BIG   15 spots  1065 bytes  va576cc
 CA-BC-VI    14 spots  1024 bytes  vdca3e0
-CA-NS       11 spots   800 bytes  vf848b3
+CA-NS       11 spots   801 bytes  v471f66
 AU-QLD-SC   27 spots  1634 bytes  va7f255
 AU-QLD-GC   24 spots  1418 bytes  v661eb0
 AU-NSW-NR   26 spots  1686 bytes  v32b2e9
-AU-NSW-MN   33 spots  2073 bytes  v8e8573
+AU-NSW-MN   33 spots  2072 bytes  v5dbe2b
 AU-NSW-NC   30 spots  1775 bytes  v8b60a0
 AU-NSW-SYD  37 spots  1879 bytes  va41709
 AU-NSW-SC   31 spots  1688 bytes  v2b64cc
@@ -100,7 +101,7 @@ AU-WA-MR    32 spots  2356 bytes  v95fe3f
 AU-WA-PER   20 spots  1355 bytes  v6551c2
 AU-WA-NW     5 spots   556 bytes  v533ce5
 AU-WA-GAS    3 spots   377 bytes  vc93085
-NZ-NTL      14 spots   998 bytes  vdff5c1
+NZ-NTL      14 spots  1000 bytes  v6ef6a5
 NZ-AKL       9 spots   657 bytes  v552b02
 NZ-RAG       5 spots   438 bytes  v3324ad
 NZ-TAR       7 spots   550 bytes  v75d853
@@ -117,7 +118,7 @@ PF-ISL       2 spots   333 bytes  v057cec
 WS-ALL       6 spots   576 bytes  vfde283
 TO-ALL       6 spots   495 bytes  v09203d
 VU-ALL       5 spots   477 bytes  v658c75
-PG-ALL       2 spots   341 bytes  vebb728
+PG-ALL       2 spots   344 bytes  vf18950
 ID-BAL-BUK  16 spots  1001 bytes  v3f678e
 ID-BAL-W    18 spots  1131 bytes  v2e5246
 ID-BAL-E    12 spots   824 bytes  v5d353f
@@ -139,8 +140,9 @@ MV-NMA       6 spots   441 bytes  vb13d23
 MV-SMA       3 spots   349 bytes  v9685a2
 MV-SOU       2 spots   301 bytes  va2d1ca
 MV-CEN       1 spots   260 bytes  v8319d8
-JP-CHI       8 spots   530 bytes  v8c996a
-JP-SHO       9 spots   560 bytes  v97f24b
+JP-CHI       8 spots   529 bytes  v4e2b3b
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+JP-SHO       9 spots   560 bytes  vceed14
 JP-IZU       4 spots   359 bytes  v53dae3
 JP-IBA       5 spots   486 bytes  vd39523
 JP-SHK       3 spots   291 bytes  v0c051f
@@ -156,7 +158,7 @@ ZA-WC-CPT   20 spots  1282 bytes  vb862b9
 ZA-WC-WCO    6 spots   652 bytes  v9d3b7c
 ZA-WC-GR    11 spots   885 bytes  v32e479
 ZA-EC-JB    10 spots   829 bytes  ve3b4b8
-ZA-EC-PE    17 spots  1094 bytes  vf11518
+ZA-EC-PE    17 spots  1094 bytes  vc5a8a6
 ZA-EC-WLD    5 spots   469 bytes  vf30974
 ZA-KZN-DBN   8 spots   529 bytes  v30543b
 ZA-KZN-N     6 spots   538 bytes  v0274ff
@@ -170,7 +172,7 @@ LR-ALL       3 spots   357 bytes  v822ac8
 GH-ALL       3 spots   328 bytes  v3029d8
 MZ-S         3 spots   323 bytes  vfa82ab
 MZ-INH       3 spots   369 bytes  vd35242
-MG-ALL       3 spots   358 bytes  v0bc50a
+MG-ALL       3 spots   362 bytes  ve3fd62
 RE-ALL       8 spots   624 bytes  v719972
 MU-ALL       3 spots   349 bytes  vcffd6d
 CV-ALL       3 spots   347 bytes  v6fb39f
@@ -186,7 +188,7 @@ ES-GAL      18 spots  1027 bytes  v8da8be
 ES-AND      15 spots   925 bytes  v5baf2b
 ES-CN-E     11 spots   891 bytes  va9586d
 ES-CN-W     17 spots  1112 bytes  v1a339b
-PT-NOR      19 spots  1101 bytes  v235c88
+PT-NOR      19 spots  1101 bytes  v6843a0
 PT-CEN      20 spots  1233 bytes  v7389b0
 PT-PEN      12 spots   733 bytes  vc350ed
 PT-ERI      11 spots   691 bytes  v5739eb
@@ -203,7 +205,7 @@ GB-NE       25 spots  1337 bytes  vb4bb57
 GB-NIR       9 spots   682 bytes  v114359
 IE-NW        9 spots   812 bytes  v4a362a
 IE-SW       12 spots   822 bytes  v69bdf1
-IE-SE       10 spots   730 bytes  v021063
+IE-SE       10 spots   736 bytes  v9df532
 NO-S         3 spots   418 bytes  vd98124
 NO-N         3 spots   346 bytes  vf49418
 DK-ALL       5 spots   427 bytes  v1d4752
@@ -275,7 +277,6 @@ warning: NZ-BOP/MAKETU: no direction open to the sea, moved 518 m from the seed 
 warning: NZ-OTA/WARRINGTON: no direction open to the sea, moved 1607 m from the seed (facing 163 -> 86)
 warning: PF-TAH/TIAHURA: no direction open to the sea, moved 734 m from the seed (facing 151 -> 328)
 warning: WS-ALL: ncep_gfswave016 has no waves near 6 spots: ncep_gfswave025
-warning: PG-ALL/TAURAMA POINT: no direction open to the sea from facing 111: check the facing (no shelter)
 warning: ID-BAL-E/SERANGAN: no direction open to the sea, moved 1054 m from the seed (facing 147 -> 143)
 warning: ID-JAV-W/SAWARNA: no direction open to the sea, moved 1754 m from the seed (facing 248 -> 171)
 warning: ID-LOM/EKAS: no direction open to the sea, moved 1418 m from the seed (facing 311 -> 195)
@@ -307,4 +308,4 @@ warning: IE-SW/ROSSBEIGH: no direction open to the sea, moved 1494 m from the se
 warning: IE-SE/INCHYDONEY: no direction open to the sea, moved 1806 m from the seed (facing 51 -> 48)
 warning: NL-ALL: ncep_gfswave016 has no waves near 10 spots: ncep_gfswave025
 warning: IS-ALL/THORLAKSHOFN: no direction open to the sea, moved 1065 m from the seed (facing 61 -> 154)
-214 regions, 2511 spots, 0 errors, 95 warnings
+214 regions, 2511 spots, 0 errors, 94 warnings
