@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 KEKERENGU,-42.0027,174.0129,P,V,web:mondo.surf,,
-MANGAMAUNU,-42.3047,173.7521,P,V,web:mondo.surf,top,NZCPS; izquierda larga
+MANGAMAUNU,-42.3047,173.7521,P,V,web:mondo.surf,top wave=-42.25;174.0,NZCPS; izquierda larga
 MEATWORKS,-42.3208,173.7518,P,V,web:mondo.surf,top,NZCPS
 SOUTH BAY,-42.4260,173.7030,B,L,local,,Kaikoura
 MOTUNAU,-43.0460,173.0790,B,K,gov:hurunui.govt.nz,,

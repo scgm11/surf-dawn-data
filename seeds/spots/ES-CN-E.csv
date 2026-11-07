@@ -6,7 +6,7 @@ PUNTA MUJERES,29.1580,-13.4560,R,L,local,swell=345,Lanzarote; posicion aproximad
 LOBOS,28.7500,-13.8330,P,K,local,top swell=330,Fuerteventura
 FLAG BEACH,28.7140,-13.8350,B,L,local,,Corralejo; posicion aproximada
 MAJANICHO,28.7420,-13.9030,R,L,local,,Fuerteventura norte; posicion aproximada
-EL COTILLO,28.6850,-14.0150,B,K,local,top,Fuerteventura
+EL COTILLO,28.6850,-14.0150,B,K,local,top wave=28.6667;-14.1667,Fuerteventura
 ROCKY POINT,28.6910,-14.0200,R,L,local,swell=325,El Cotillo; posicion aproximada
 ESQUINZO,28.6270,-14.0500,B,L,local,,Fuerteventura; posicion aproximada
 LA PARED,28.2180,-14.2160,B,K,local,,Fuerteventura sur
