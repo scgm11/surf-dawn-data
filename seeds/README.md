@@ -44,7 +44,9 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
   están congelados con `nosnap`, `facing=` y `wave=` de la lista validada de 2026-10 (`UY-CAN`: los
   que calculó `build_zones.py` el 2026-10-22): no se recalculan; los puntos de Florianópolis y Punta del
   Diablo se revisaron a mano el 2026-11-06 (la API corre `-27.75;-48.5` a `-28;-48.5` y no hay coordenada
-  que llegue a `-34;-53.5`). Un `wave=` se pone a una celda de la que la API contesta (sección «Celdas de olas»
+  que llegue a `-34;-53.5`). La Brava de Punta del Este, de La Virgen a Parada 30, lee `-35;-54.75` desde el
+  2026-11-07: su celda más cercana (`-35;-55`) queda del otro lado de la Punta y partía la playa en dos entre
+  Parada 30 y La Boca. Un `wave=` se pone a una celda de la que la API contesta (sección «Celdas de olas»
   de `validation/spots.md`). Una región nueva que se congela va
   también en `FROZEN` de `tools/build_zones.py`, `tools/resolve_seeds.py` y `tools/tide/build_tides.py`.
 - Un código de región no se borra ni se cambia (`docs/formatos.md`, «Cuando cambia una región»). Al partir
