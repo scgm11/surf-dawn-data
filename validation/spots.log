@@ -1,17 +1,24 @@
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
   open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AR-BAN      16 spots  media 0.9 m  de frente 89 %
 AR-MDP      22 spots  media 0.9 m  de frente 62 %
 AR-SUR       6 spots  media 0.7 m  de frente 60 %
-AU-NSW-MN   33 spots  media 1.4 m  de frente 48 %
+AU-NSW-MN   33 spots  media 1.4 m  de frente 49 %
 AU-NSW-NC   30 spots  media 1.4 m  de frente 69 %
 AU-NSW-NR   26 spots  media 1.4 m  de frente 45 %
 AU-NSW-SC   31 spots  media 1.5 m  de frente 51 %
-AU-NSW-SYD  37 spots  media 1.7 m  de frente 46 %
+AU-NSW-SYD  37 spots  media 1.6 m  de frente 46 %
 AU-QLD-GC   24 spots  media 0.9 m  de frente 77 %
 AU-QLD-SC   27 spots  media 0.9 m  de frente 86 %
 AU-SA-EYR    3 spots  media 1.3 m  de frente 100 %
-AU-SA       14 spots  media 1.3 m  de frente 83 %
+AU-SA       14 spots  media 1.3 m  de frente 84 %
 AU-TAS      12 spots  media 1.2 m  de frente 39 %
 AU-VIC-PI   18 spots  media 1.3 m  de frente 100 %
 AU-VIC-SC   20 spots  media 1.2 m  de frente 91 %
@@ -23,10 +30,10 @@ AU-WA-PER   20 spots  media 1.6 m  de frente 99 %
 BB-ALL       8 spots  media 1.1 m  de frente 59 %
 BR-BA       21 spots  media 1.2 m  de frente 90 %
 BR-ES       19 spots  media 1.1 m  de frente 92 %
-BR-NE-CE    13 spots  media 1.0 m  de frente 94 %
+BR-NE-CE    13 spots  media 1.0 m  de frente 95 %
 BR-NE-PE    14 spots  media 1.0 m  de frente 100 %
 BR-NE-RN    13 spots  media 0.9 m  de frente 100 %
-BR-NOR       5 spots  media 1.2 m  de frente 50 %
+BR-NOR       5 spots  media 1.2 m  de frente 51 %
 BR-RJ       17 spots  media 0.8 m  de frente 100 %
 BR-RJL      20 spots  media 1.1 m  de frente 75 %
 BR-RS-SUL    2 spots  media 0.9 m  de frente 99 %
@@ -34,16 +41,16 @@ BR-RS       18 spots  media 1.2 m  de frente 97 %
 BR-SC-FLN   14 spots  media 1.4 m  de frente 75 %
 BR-SC-NOR   20 spots  media 0.9 m  de frente 99 %
 BR-SC-SUL    6 spots  media 1.3 m  de frente 85 %
-BR-SP       29 spots  media 0.8 m  de frente 86 %
+BR-SP       29 spots  media 0.8 m  de frente 85 %
 BS-ALL       1 spots  media 1.7 m  de frente 0 %
 CA-BC-VI    14 spots  media 2.0 m  de frente 68 %
-CA-NS       11 spots  media 0.9 m  de frente 51 %
+CA-NS       11 spots  media 0.9 m  de frente 50 %
 CL-CEN      20 spots  media 1.8 m  de frente 54 %
 CL-MAU      14 spots  media 1.5 m  de frente 99 %
 CL-NOR      11 spots  media 1.7 m  de frente 100 %
 CL-PIC      12 spots  media 2.0 m  de frente 98 %
 CL-SUR      11 spots  media 1.7 m  de frente 100 %
-CN-HAI       2 spots  media 1.0 m  de frente 13 %
+CN-HAI       2 spots  media 1.0 m  de frente 12 %
 CO-CAR       3 spots  media 0.6 m  de frente 95 %
 CO-PAC       6 spots  media 0.8 m  de frente 100 %
 CR-CAR       5 spots  media 0.6 m  de frente 100 %
@@ -53,33 +60,33 @@ CR-OSA       4 spots  media 1.1 m  de frente 95 %
 CR-PAC      10 spots  media 1.0 m  de frente 100 %
 CV-ALL       3 spots  media 1.2 m  de frente 89 %
 DE-ALL       4 spots  media 1.0 m  de frente 79 %
-DK-ALL       5 spots  media 1.4 m  de frente 82 %
+DK-ALL       5 spots  media 1.3 m  de frente 82 %
 DO-ALL       2 spots  media 1.2 m  de frente 100 %
 EC-COS      13 spots  media 0.8 m  de frente 100 %
 EC-GAL       4 spots  media 1.1 m  de frente 100 %
 ES-AND      15 spots  media 0.5 m  de frente 91 %
-ES-AST      14 spots  media 1.4 m  de frente 85 %
+ES-AST      14 spots  media 1.4 m  de frente 87 %
 ES-CAN      14 spots  media 1.3 m  de frente 95 %
 ES-CN-E     11 spots  media 1.2 m  de frente 96 %
 ES-CN-W     17 spots  media 1.0 m  de frente 62 %
 ES-GAL      18 spots  media 1.7 m  de frente 70 %
-ES-PV       26 spots  media 1.2 m  de frente 90 %
+ES-PV       26 spots  media 1.2 m  de frente 91 %
 FJ-MAM       6 spots  media 0.4 m  de frente 100 %
 FJ-SOU       2 spots  media 1.2 m  de frente 89 %
 FR-BRE      15 spots  media 1.3 m  de frente 95 %
 FR-GIR      18 spots  media 1.5 m  de frente 96 %
 FR-HOS      16 spots  media 1.4 m  de frente 97 %
 FR-PBA      24 spots  media 1.4 m  de frente 100 %
-FR-VEN      12 spots  media 1.1 m  de frente 89 %
+FR-VEN      12 spots  media 1.1 m  de frente 90 %
 GB-CON      28 spots  media 1.7 m  de frente 92 %
 GB-DEV       9 spots  media 1.4 m  de frente 92 %
 GB-NE       25 spots  media 0.9 m  de frente 47 %
 GB-NIR       9 spots  media 1.0 m  de frente 60 %
-GB-SCO      21 spots  media 1.3 m  de frente 34 %
+GB-SCO      21 spots  media 1.3 m  de frente 35 %
 GB-SOU       3 spots  media 0.9 m  de frente 67 %
 GB-WAL      21 spots  media 1.4 m  de frente 86 %
 GH-ALL       3 spots  media 0.8 m  de frente 100 %
-GP-ALL       3 spots  media 1.1 m  de frente 0 %
+GP-ALL       3 spots  media 1.1 m  de frente 3 %
 GT-PAC       4 spots  media 1.1 m  de frente 100 %
 ID-BAL-BUK  16 spots  media 1.5 m  de frente 100 %
 ID-BAL-E    12 spots  media 1.0 m  de frente 74 %
@@ -97,16 +104,16 @@ IE-NW        9 spots  media 1.8 m  de frente 100 %
 IE-SE       10 spots  media 1.6 m  de frente 58 %
 IE-SW       12 spots  media 1.4 m  de frente 90 %
 IN-E         3 spots  media 0.9 m  de frente 94 %
-IN-W         3 spots  media 0.8 m  de frente 91 %
-IS-ALL       3 spots  media 2.7 m  de frente 90 %
+IN-W         3 spots  media 0.8 m  de frente 92 %
+IS-ALL       3 spots  media 2.7 m  de frente 88 %
 IT-ALL       7 spots  media 0.4 m  de frente 53 %
 IT-SAR       4 spots  media 0.8 m  de frente 97 %
 JP-CHI       8 spots  media 1.6 m  de frente 75 %
-JP-IBA       5 spots  media 1.3 m  de frente 82 %
+JP-IBA       5 spots  media 1.3 m  de frente 83 %
 JP-IZU       4 spots  media 1.1 m  de frente 40 %
 JP-KYU       2 spots  media 1.2 m  de frente 74 %
-JP-SHK       3 spots  media 1.3 m  de frente 97 %
-JP-SHO       9 spots  media 0.9 m  de frente 71 %
+JP-SHK       3 spots  media 1.3 m  de frente 96 %
+JP-SHO       9 spots  media 0.9 m  de frente 72 %
 KR-ALL       6 spots  media 1.0 m  de frente 24 %
 LK-E         8 spots  media 1.4 m  de frente 58 %
 LK-S        11 spots  media 1.2 m  de frente 100 %
@@ -115,7 +122,7 @@ MA-N         6 spots  media 1.2 m  de frente 98 %
 MA-S         6 spots  media 1.1 m  de frente 100 %
 MA-TAG      19 spots  media 0.8 m  de frente 100 %
 MG-ALL       3 spots  media 1.8 m  de frente 46 %
-MQ-ALL       3 spots  media 1.1 m  de frente 70 %
+MQ-ALL       3 spots  media 1.1 m  de frente 69 %
 MU-ALL       3 spots  media 1.2 m  de frente 95 %
 MV-CEN       1 spots  media 0.9 m  de frente 100 %
 MV-NMA       6 spots  media 0.9 m  de frente 97 %
@@ -124,24 +131,24 @@ MV-SOU       2 spots  media 1.0 m  de frente 55 %
 MX-BCN       4 spots  media 1.2 m  de frente 93 %
 MX-BCS-N     2 spots  media 0.9 m  de frente 95 %
 MX-BCS       6 spots  media 0.9 m  de frente 98 %
-MX-CAR       3 spots  media 0.5 m  de frente 39 %
+MX-CAR       3 spots  media 0.5 m  de frente 40 %
 MX-NAY       9 spots  media 0.7 m  de frente 99 %
 MX-OAX      13 spots  media 1.2 m  de frente 100 %
 MX-PAC      12 spots  media 1.4 m  de frente 94 %
-MZ-INH       3 spots  media 1.0 m  de frente 95 %
+MZ-INH       3 spots  media 1.0 m  de frente 96 %
 MZ-S         3 spots  media 1.5 m  de frente 40 %
 NA-ERO       3 spots  media 1.6 m  de frente 100 %
 NI-NW        4 spots  media 1.1 m  de frente 100 %
 NI-RIV       8 spots  media 1.1 m  de frente 100 %
-NL-ALL      11 spots  media 1.0 m  de frente 63 %
+NL-ALL      11 spots  media 1.0 m  de frente 61 %
 NO-N         3 spots  media 2.4 m  de frente 60 %
-NO-S         3 spots  media 1.5 m  de frente 85 %
+NO-S         3 spots  media 1.5 m  de frente 84 %
 NZ-AKL       9 spots  media 2.0 m  de frente 100 %
 NZ-BOP      11 spots  media 0.7 m  de frente 76 %
 NZ-GIS      13 spots  media 1.1 m  de frente 57 %
 NZ-KAI       9 spots  media 0.9 m  de frente 60 %
 NZ-NTL      14 spots  media 1.1 m  de frente 91 %
-NZ-OTA      13 spots  media 1.3 m  de frente 31 %
+NZ-OTA      13 spots  media 1.3 m  de frente 30 %
 NZ-RAG       5 spots  media 1.7 m  de frente 100 %
 NZ-TAR       7 spots  media 1.7 m  de frente 32 %
 NZ-WC        4 spots  media 1.9 m  de frente 69 %
@@ -160,65 +167,12 @@ PH-LUZ       5 spots  media 0.7 m  de frente 100 %
 PH-SIA       8 spots  media 1.1 m  de frente 95 %
 PR-N         8 spots  media 1.1 m  de frente 99 %
 PR-NW       15 spots  media 1.0 m  de frente 100 %
-PT-ALG      18 spots  media 1.5 m  de frente 99 %
-PT-AZO       7 spots  media 1.5 m  de frente 15 %
-PT-CEN      20 spots  media 1.5 m  de frente 98 %  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-
+PT-ALG      18 spots  media 1.5 m  de frente 98 %
+PT-AZO       7 spots  media 1.8 m  de frente 28 %
+PT-CEN      20 spots  media 1.5 m  de frente 98 %
 PT-ERI      11 spots  media 1.6 m  de frente 89 %
 PT-LIS      15 spots  media 1.2 m  de frente 85 %
-PT-MAD       8 spots  media 1.2 m  de frente 75 %
+PT-MAD       8 spots  media 1.2 m  de frente 74 %
 PT-NOR      19 spots  media 1.5 m  de frente 91 %
 PT-PEN      12 spots  media 1.6 m  de frente 89 %
 RE-ALL       8 spots  media 1.2 m  de frente 75 %
@@ -233,23 +187,23 @@ US-CA-CEN   16 spots  media 1.6 m  de frente 94 %
 US-CA-LA    23 spots  media 0.9 m  de frente 100 %
 US-CA-NOR   25 spots  media 2.0 m  de frente 100 %
 US-CA-OC    32 spots  media 1.0 m  de frente 100 %
-US-CA-SB    27 spots  media 0.8 m  de frente 96 %
+US-CA-SB    27 spots  media 0.8 m  de frente 92 %
 US-CA-SC    30 spots  media 1.3 m  de frente 87 %
 US-CA-SD    38 spots  media 0.8 m  de frente 94 %
 US-CA-SF    29 spots  media 1.5 m  de frente 100 %
 US-FL-PAN    6 spots  media 0.6 m  de frente 54 %
 US-FL       46 spots  media 1.7 m  de frente 100 %
-US-GULF     13 spots  media 0.5 m  de frente 92 %
+US-GULF     13 spots  media 0.5 m  de frente 93 %
 US-HI-BIG   15 spots  media 1.0 m  de frente 73 %
 US-HI-KAU   21 spots  media 2.0 m  de frente 86 %
-US-HI-MAU   21 spots  media 1.7 m  de frente 58 %
+US-HI-MAU   21 spots  media 1.7 m  de frente 57 %
 US-HI-OAN   21 spots  media 1.7 m  de frente 91 %
 US-HI-OAS   25 spots  media 1.1 m  de frente 60 %
 US-MID      11 spots  media 0.7 m  de frente 98 %
 US-NE       60 spots  media 0.6 m  de frente 73 %
 US-PNW      33 spots  media 2.1 m  de frente 100 %
 US-SC-GA    10 spots  media 0.9 m  de frente 93 %
-US-SE       22 spots  media 1.3 m  de frente 98 %
+US-SE       22 spots  media 1.3 m  de frente 100 %
 UY-CAN      14 spots  media 0.7 m  de frente 57 %
 UY-MAL      18 spots  media 1.0 m  de frente 76 %
 UY-ROC      19 spots  media 1.1 m  de frente 52 %
@@ -260,13 +214,70 @@ WS-ALL       6 spots  media 1.8 m  de frente 78 %
 ZA-EC-JB    10 spots  media 1.9 m  de frente 98 %
 ZA-EC-PE    17 spots  media 2.1 m  de frente 19 %
 ZA-EC-WLD    5 spots  media 1.7 m  de frente 42 %
-ZA-KZN-DBN   8 spots  media 1.7 m  de frente 62 %
-ZA-KZN-N     6 spots  media 1.7 m  de frente 69 %
+ZA-KZN-DBN   8 spots  media 1.7 m  de frente 63 %
+ZA-KZN-N     6 spots  media 1.7 m  de frente 70 %
 ZA-KZN-S     9 spots  media 1.8 m  de frente 51 %
 ZA-WC-CPT   20 spots  media 1.8 m  de frente 82 %
 ZA-WC-GR    11 spots  media 1.7 m  de frente 94 %
 ZA-WC-WCO    6 spots  media 1.6 m  de frente 0 %
-39 facing flags cleared over 92 days
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+40 facing flags cleared over 92 days
 1 zones that almost never get their waves head-on
-52 spots whose cell is not a good one
-126 spots flagged; flagship: {'ok': 319, 'lejos': 0, 'sin fuente': 52, 'error': 0}; Open-Meteo 35 requests, ~4680 calls
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+36 spots whose cell is not a good one
+123 spots flagged; flagship: {'ok': 319, 'lejos': 0, 'sin fuente': 52, 'error': 0}; Open-Meteo 36 requests, ~4676 calls
