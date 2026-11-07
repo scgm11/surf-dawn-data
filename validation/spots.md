@@ -1,14 +1,14 @@
 # Picos: controles por pico
 
-Generado 2026-11-07 16:16 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 214 regiones, 2511 picos.
+Generado 2026-11-07 18:11 UTC por `tools/check_spots.py` (issue #7, §5.2, §5.4 y §5.8). 214 regiones, 2511 picos.
 
 - **Orientación (§5.2):** olas de los últimos 14 días y los próximos 2 en el punto de olas de cada pico (el modelo de su zona). Se marca un pico al que las olas de al menos 0.3 m casi nunca le llegan a menos de 55° de hacia donde mira, o de su ventana de swell si la tiene (menos del 5 % de las horas) mientras a su zona sí (al menos 25 %).
 - **Zona entera:** en una zona donde la mayoría tampoco las recibe de frente (menos del 25 %) los vecinos no dicen nada: ahí se marca el pico con mar (olas de al menos 0.3 m en el 25 % de las horas o más) que casi nunca las recibe de frente.
-- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 40 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
+- **Temporada:** los marcados por la orientación se miran de nuevo con 92 días de olas; 38 dejaron de estarlo (en dos semanas no les tocaba su ventana de swell).
 - **Vecinos (§5.4):** se marca un pico sin olas todo ese tiempo, o con más del doble de la altura media de su zona.
 - **Celdas:** la celda de la que contesta la API a cada pico, abajo las que no son buenas.
 - **Emblemáticos (§5.8, de la corrida anterior):** la posición contra fuentes públicas (el ítem más cercano con su nombre en Wikidata o GeoNames, hasta 6 km; si no, OpenStreetMap; si no, el ítem de otro nombre del que se tomó a mano la posición, en el `src` de la semilla): 319 bien (a menos de 1.5 km; 12 de ellos por la fuente de su semilla), 0 lejos, 21 lejos pero revisados a mano (el ítem es el pueblo, un hotel u otra ola: `checked` en la semilla), 52 sin fuente (revisar a mano; `validation/lookup.md` tiene lo que hay con su nombre alrededor), 0 sin respuesta.
-- Open-Meteo: 36 pedidos, ~4676 llamadas de las 10.000 diarias gratuitas.
+- Open-Meteo: 36 pedidos, ~4656 llamadas de las 10.000 diarias gratuitas.
 
 ## Orientación probablemente del lado equivocado (1)
 
@@ -26,17 +26,13 @@ Zonas con 3 picos o más que, en 92 días, casi nunca recibieron las olas de fre
 |---|---|---|---|---|---|
 | ZA-WC-WCO | 4 de 6 | 0 | 325° | 233° | MELKBOS, LAMBERTS BAY, JACOBSBAAI, YZERFONTEIN |
 
-## Celdas de olas para mirar (35)
+## Celdas de olas para mirar (22)
 
 La celda desde la que contesta la API cuando se le pregunta como las apps (sin `cell_selection`). Se marca el punto de olas que la API corre o que queda detrás de la playa (a más de 75° de hacia donde mira, o de su ventana de swell), y el pico que la API corre a una celda detrás de la playa o a más de 35 km. A veces es con razón: su celda es tierra y la siguiente queda de costado. Se corrige con `wave=` en la semilla, después de mirar la celda.
 
 | Región | Pico | Punto de olas | Celda | Por qué |
 |---|---|---|---|---|
-| AU-NSW-MN | FORSTER MAIN | — | -32.25, 152.75 | la API lo contesta desde una celda detrás de la playa (a 100° de hacia donde mira, 23 km) |
 | BR-NE-CE | LAGOINHA | — | -3.33, -39.00 | la API lo contesta desde una celda detrás de la playa (a 88° de hacia donde mira, 15 km) |
-| BR-SP | PAÚBA | — | -24.00, -45.50 | la API lo contesta desde una celda detrás de la playa (a 98° de hacia donde mira, 23 km) |
-| BR-SP | BARRA DO SAHY | — | -24.00, -45.75 | la API lo contesta desde una celda detrás de la playa (a 135° de hacia donde mira, 23 km) |
-| CA-NS | COLE HARBOUR | — | 44.50, -63.33 | la API lo contesta desde una celda detrás de la playa (a 85° de hacia donde mira, 16 km) |
 | ES-GAL | ORZAN | — | 43.50, -8.33 | la API lo contesta desde una celda detrás de la playa (a 79° de hacia donde mira, 15 km) |
 | GB-CON | TREVAUNANCE COVE | — | 50.33, -5.33 | la API lo contesta desde una celda detrás de la playa (a 76° de hacia donde mira, 9 km) |
 | GB-NIR | BALLYCASTLE | — | 55.22, -6.31 | la API lo contesta desde una celda detrás de la playa (a 104° de hacia donde mira, 5 km) |
@@ -47,28 +43,19 @@ La celda desde la que contesta la API cuando se le pregunta como las apps (sin `
 | ID-ROT | SUCKY MAMAS | — | -11.00, 122.83 | la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 18 km) |
 | IE-NW | TULLAN STRAND | — | 54.50, -8.50 | la API lo contesta desde una celda detrás de la playa (a 77° de hacia donde mira, 13 km) |
 | IE-NW | ENNISCRONE | 54.50, -9.00 | 54.50, -9.00 | punto de olas detrás de la playa (a 109° de hacia donde mira, 32 km) |
-| IE-SE | GARRETTSTOWN | — | 51.50, -8.50 | la API lo contesta desde una celda detrás de la playa (a 122° de hacia donde mira, 15 km) |
 | IN-E | SERENITY BEACH | — | 11.83, 79.83 | la API lo contesta desde una celda detrás de la playa (a 77° de hacia donde mira, 16 km) |
-| JP-CHI | ONJUKU | — | 35.17, 140.50 | la API lo contesta desde una celda detrás de la playa (a 109° de hacia donde mira, 12 km) |
-| JP-SHO | OISO | — | 35.17, 139.33 | la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 15 km) |
 | LK-E | ARUGAM BAY | — | 6.83, 82.00 | la API lo contesta desde una celda detrás de la playa (a 92° de hacia donde mira, 18 km) |
-| MG-ALL | LIBANONA | — | -25.25, 47.00 | la API lo contesta desde una celda detrás de la playa (a 79° de hacia donde mira, 24 km) |
 | MX-OAX | SAN AGUSTINILLO | — | 15.67, -96.67 | la API lo contesta desde una celda detrás de la playa (a 82° de hacia donde mira, 13 km) |
 | MX-OAX | ZIPOLITE | — | 15.67, -96.67 | la API lo contesta desde una celda detrás de la playa (a 86° de hacia donde mira, 16 km) |
-| MX-PAC | REVOLCADERO | — | 16.67, -99.83 | la API lo contesta desde una celda detrás de la playa (a 110° de hacia donde mira, 15 km) |
-| NZ-NTL | OCEAN BEACH | — | -35.75, 174.75 | la API lo contesta desde una celda detrás de la playa (a 138° de hacia donde mira, 22 km) |
 | NZ-WEL | MAKARA BEACH | — | -41.25, 174.50 | la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 18 km) |
-| PG-ALL | TAURAMA POINT | — | -9.67, 147.17 | la API lo contesta desde una celda detrás de la playa (a 91° de hacia donde mira, 22 km) |
-| PT-NOR | MATOSINHOS | — | 41.17, -8.83 | la API lo contesta desde una celda detrás de la playa (a 82° de hacia donde mira, 11 km) |
 | PT-PEN | BALEAL | — | 39.50, -9.33 | la API lo contesta desde una celda detrás de la playa (a 77° de hacia donde mira, 14 km) |
 | PT-PEN | CANTINHO | — | 39.50, -9.33 | la API lo contesta desde una celda detrás de la playa (a 105° de hacia donde mira, 14 km) |
 | US-PNW | BEVERLY BEACH | — | 44.82, -124.08 | la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 9 km) |
 | US-SE | MYRTLE BEACH | — | 33.50, -79.00 | la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 24 km) |
 | ZA-EC-PE | CANNON ROCKS | — | -33.75, 26.75 | la API lo contesta desde una celda detrás de la playa (a 85° de hacia donde mira, 20 km) |
-| ZA-EC-PE | NAHOON REEF | — | -33.25, 28.00 | la API lo contesta desde una celda detrás de la playa (a 108° de hacia donde mira, 29 km) |
 | ZA-KZN-S | SCOTTBURGH | — | -30.50, 30.75 | la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 24 km) |
 
-## Picos marcados (123)
+## Picos marcados (122)
 
 Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientación de la playa está bien y el semáforo del swell es conservador ahí); se revisan a mano.
 
@@ -89,8 +76,7 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | BR-NE-PE | GAIBU |  | 31° | 108° | 105° | las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 0 % |
 | BR-SP | FAZENDA |  | 260° | 146° | 125° | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
 | BR-SP | MARANDUBA |  | 234° | 137° | 141° | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
-| BR-SP | PAÚBA |  | 264° | 154° | 171° | las olas casi nunca le entran de frente (1 % de las horas; la zona 85 %) y en 92 días 1 % |
-| BR-SP | CAMBURI |  | 261° | 154° | 171° | las olas casi nunca le entran de frente (2 % de las horas; la zona 85 %) y en 92 días 1 % |
+| BR-SP | CAMBURI |  | 261° | 154° | 188° | las olas casi nunca le entran de frente (2 % de las horas; la zona 85 %) y en 92 días 1 % |
 | BR-SP | ILHA COMPRIDA |  | 269° | 142° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 % |
 | BS-ALL | SURFERS BEACH |  | 168° | 44° | — | las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (0 %) y en 92 días 0 % |
 | CA-BC-VI | SCHOONER COVE |  | 44° | 236° | 204° | las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) y en 92 días 0 % |
@@ -162,7 +148,7 @@ Muchos son puntas y arrecifes donde la ola entra dando la vuelta (la orientació
 | MX-NAY | LO DE MARCOS |  | 311° | 231° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 3 % |
 | MX-NAY | SAN PANCHO |  | 297° | 219° | — | las olas casi nunca le entran de frente (1 % de las horas; la zona 99 %) y en 92 días 4 % |
 | MX-OAX | MAZUNTE |  | 123° | 211° | 187° | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
-| MX-PAC | MIRAMAR |  | 314° | 197° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 94 %) y en 92 días 1 % |
+| MX-PAC | MIRAMAR |  | 314° | 197° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 1 % |
 | NA-ERO | SKELETON BAY | sí | 321° | 212° | — | las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 % |
 | NZ-BOP | ONEMANA |  | 164° | 30° | 55° | las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 3 % |
 | NZ-NTL | MATAURI BAY |  | 224° | 30° | — | las olas casi nunca le entran de frente (2 % de las horas; la zona 91 %) y en 92 días 1 % |
@@ -311,12 +297,12 @@ AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/NORTH POINT, 
 | IS-ALL | ncep_gfswave025 | 2.7 m | 88 % |
 | IT-ALL | ncep_gfswave016 | 0.4 m | 53 % |
 | IT-SAR | ncep_gfswave016 | 0.8 m | 97 % |
-| JP-CHI | ncep_gfswave016 | 1.6 m | 75 % |
+| JP-CHI | ncep_gfswave016 | 1.6 m | 76 % |
 | JP-IBA | ncep_gfswave016 | 1.3 m | 83 % |
 | JP-IZU | ncep_gfswave016 | 1.1 m | 40 % |
 | JP-KYU | ncep_gfswave016 | 1.2 m | 74 % |
 | JP-SHK | ncep_gfswave016 | 1.3 m | 96 % |
-| JP-SHO | ncep_gfswave016 | 0.9 m | 72 % |
+| JP-SHO | ncep_gfswave016 | 0.9 m | 80 % |
 | KR-ALL | ncep_gfswave016 | 1.0 m | 24 % |
 | LK-E | ncep_gfswave016 | 1.4 m | 58 % |
 | LK-S | ncep_gfswave016 | 1.2 m | 100 % |
@@ -337,7 +323,7 @@ AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/NORTH POINT, 
 | MX-CAR | ncep_gfswave016 | 0.5 m | 40 % |
 | MX-NAY | ncep_gfswave016 | 0.7 m | 99 % |
 | MX-OAX | ncep_gfswave016 | 1.2 m | 100 % |
-| MX-PAC | ncep_gfswave016 | 1.4 m | 94 % |
+| MX-PAC | ncep_gfswave016 | 1.4 m | 97 % |
 | MZ-INH | ncep_gfswave025 | 0.9 m | 96 % |
 | MZ-S | ncep_gfswave025 | 1.5 m | 40 % |
 | NA-ERO | ncep_gfswave025 | 1.6 m | 100 % |
@@ -364,7 +350,7 @@ AU-NSW-SYD/OURS, AU-VIC-SC/WINKIPOP, AU-WA-MR/MAIN BREAK, AU-WA-MR/NORTH POINT, 
 | PE-SUR | ncep_gfswave025 | 1.7 m | 100 % |
 | PF-ISL | ncep_gfswave025 | 1.9 m | 56 % |
 | PF-TAH | ncep_gfswave025 | 2.0 m | 94 % |
-| PG-ALL | ncep_gfswave016 | 0.8 m | 63 % |
+| PG-ALL | ncep_gfswave016 | 0.8 m | 30 % |
 | PH-EAS | ncep_gfswave016 | 1.2 m | 93 % |
 | PH-LUZ | ncep_gfswave016 | 0.7 m | 100 % |
 | PH-SIA | ncep_gfswave016 | 1.1 m | 95 % |

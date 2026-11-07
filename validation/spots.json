@@ -510,7 +510,7 @@
   "JP-CHI": {
    "model": "ncep_gfswave016",
    "median_m": 1.61,
-   "median_share": 0.75
+   "median_share": 0.76
   },
   "JP-IBA": {
    "model": "ncep_gfswave016",
@@ -535,7 +535,7 @@
   "JP-SHO": {
    "model": "ncep_gfswave016",
    "median_m": 0.92,
-   "median_share": 0.72
+   "median_share": 0.8
   },
   "KR-ALL": {
    "model": "ncep_gfswave016",
@@ -640,7 +640,7 @@
   "MX-PAC": {
    "model": "ncep_gfswave016",
    "median_m": 1.36,
-   "median_share": 0.94
+   "median_share": 0.97
   },
   "MZ-INH": {
    "model": "ncep_gfswave025",
@@ -775,7 +775,7 @@
   "PG-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 0.85,
-   "median_share": 0.63
+   "median_share": 0.3
   },
   "PH-EAS": {
    "model": "ncep_gfswave016",
@@ -1301,28 +1301,13 @@
   },
   {
    "region": "BR-SP",
-   "spot": "PAÚBA",
-   "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 85 %) y en 92 días 1 %"
-   ],
-   "facing": 264,
-   "swell": 154,
-   "near": 171,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.00576241134751773
-  },
-  {
-   "region": "BR-SP",
    "spot": "CAMBURI",
    "why": [
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 85 %) y en 92 días 1 %"
    ],
    "facing": 261,
    "swell": 154,
-   "near": 171,
+   "near": 188,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -2397,7 +2382,7 @@
    "region": "MX-PAC",
    "spot": "MIRAMAR",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 94 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 1 %"
    ],
    "facing": 314,
    "swell": 197,
@@ -7361,7 +7346,7 @@
    "lon": 18.3266
   }
  ],
- "season_cleared": 40,
+ "season_cleared": 38,
  "zones": [
   {
    "region": "ZA-WC-WCO",
@@ -7380,17 +7365,6 @@
  ],
  "cells": [
   {
-   "region": "AU-NSW-MN",
-   "spot": "FORSTER MAIN",
-   "cell": [
-    -32.25,
-    152.75
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 100° de hacia donde mira, 23 km)",
-   "km": 22.7
-  },
-  {
    "region": "BR-NE-CE",
    "spot": "LAGOINHA",
    "cell": [
@@ -7400,39 +7374,6 @@
    "wave": null,
    "why": "la API lo contesta desde una celda detrás de la playa (a 88° de hacia donde mira, 15 km)",
    "km": 15.3
-  },
-  {
-   "region": "BR-SP",
-   "spot": "PAÚBA",
-   "cell": [
-    -24.0,
-    -45.5
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 98° de hacia donde mira, 23 km)",
-   "km": 23.2
-  },
-  {
-   "region": "BR-SP",
-   "spot": "BARRA DO SAHY",
-   "cell": [
-    -24.0,
-    -45.75
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 135° de hacia donde mira, 23 km)",
-   "km": 23.3
-  },
-  {
-   "region": "CA-NS",
-   "spot": "COLE HARBOUR",
-   "cell": [
-    44.5,
-    -63.3333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 85° de hacia donde mira, 16 km)",
-   "km": 16.3
   },
   {
    "region": "ES-GAL",
@@ -7548,17 +7489,6 @@
    "km": 31.8
   },
   {
-   "region": "IE-SE",
-   "spot": "GARRETTSTOWN",
-   "cell": [
-    51.5,
-    -8.5
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 122° de hacia donde mira, 15 km)",
-   "km": 15.0
-  },
-  {
    "region": "IN-E",
    "spot": "SERENITY BEACH",
    "cell": [
@@ -7570,28 +7500,6 @@
    "km": 15.9
   },
   {
-   "region": "JP-CHI",
-   "spot": "ONJUKU",
-   "cell": [
-    35.1667,
-    140.5
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 109° de hacia donde mira, 12 km)",
-   "km": 12.3
-  },
-  {
-   "region": "JP-SHO",
-   "spot": "OISO",
-   "cell": [
-    35.1667,
-    139.3333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 15 km)",
-   "km": 15.4
-  },
-  {
    "region": "LK-E",
    "spot": "ARUGAM BAY",
    "cell": [
@@ -7601,17 +7509,6 @@
    "wave": null,
    "why": "la API lo contesta desde una celda detrás de la playa (a 92° de hacia donde mira, 18 km)",
    "km": 17.9
-  },
-  {
-   "region": "MG-ALL",
-   "spot": "LIBANONA",
-   "cell": [
-    -25.25,
-    47.0
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 79° de hacia donde mira, 24 km)",
-   "km": 24.5
   },
   {
    "region": "MX-OAX",
@@ -7636,28 +7533,6 @@
    "km": 15.8
   },
   {
-   "region": "MX-PAC",
-   "spot": "REVOLCADERO",
-   "cell": [
-    16.6667,
-    -99.8333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 110° de hacia donde mira, 15 km)",
-   "km": 14.6
-  },
-  {
-   "region": "NZ-NTL",
-   "spot": "OCEAN BEACH",
-   "cell": [
-    -35.75,
-    174.75
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 138° de hacia donde mira, 22 km)",
-   "km": 22.0
-  },
-  {
    "region": "NZ-WEL",
    "spot": "MAKARA BEACH",
    "cell": [
@@ -7667,28 +7542,6 @@
    "wave": null,
    "why": "la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 18 km)",
    "km": 18.1
-  },
-  {
-   "region": "PG-ALL",
-   "spot": "TAURAMA POINT",
-   "cell": [
-    -9.6667,
-    147.1667
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 91° de hacia donde mira, 22 km)",
-   "km": 21.7
-  },
-  {
-   "region": "PT-NOR",
-   "spot": "MATOSINHOS",
-   "cell": [
-    41.1667,
-    -8.8333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 82° de hacia donde mira, 11 km)",
-   "km": 11.4
   },
   {
    "region": "PT-PEN",
@@ -7746,17 +7599,6 @@
    "km": 19.6
   },
   {
-   "region": "ZA-EC-PE",
-   "spot": "NAHOON REEF",
-   "cell": [
-    -33.25,
-    28.0
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 108° de hacia donde mira, 29 km)",
-   "km": 28.8
-  },
-  {
    "region": "ZA-KZN-S",
    "spot": "SCOTTBURGH",
    "cell": [
@@ -7771,6 +7613,6 @@
  "flagship_old": true,
  "open_meteo": {
   "requests": 36,
-  "calls": 4676
+  "calls": 4656
  }
 }
