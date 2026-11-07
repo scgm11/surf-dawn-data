@@ -117,6 +117,20 @@ de las zonas.
   regiones que tienen alguna, y aparte de `s` como `x`.
 - El id de un pico en el reloj es `<REGIÓN>/<NOMBRE>`.
 
+### Cuando cambia una región
+
+Las apps guardan por código la zona, el pico elegido a mano, los tipos de ola y las sesiones, y solo
+vuelven a bajar una zona que `spots/g/` lista y que cubre la posición (`Zones.wanted` en surf-dawn).
+
+- **Un código nuevo** no pide nada en las apps: aparece en `spots/g/` e `idx/` y se baja como cualquier otro.
+  Las zonas de un solo pico ya existen (`MV-CEN`, `BS-ALL`).
+- **Un código que deja de existir** queda como estaba en el reloj que lo tenía: nada lo actualiza ni lo
+  borra, y su `r/` da 404 si hay que bajarlo. En un empate de distancia `Zones.locate` elige la zona de
+  centro más lejano, que suele ser la vieja. Por eso un código no se borra (`seeds/README.md`).
+- **Un pico que sale de su zona**: al bajar la versión nueva, el id viejo deja de encontrarse
+  (`Zones.find`) y las apps vuelven al pico más cercano, al último mostrado o al de fábrica. La copia vieja
+  de la zona sigue valiendo hasta que el reloj pasa cerca de ella.
+
 ## Mareas: `tide/`
 
 ### `tide/<clave>/AAAA-MM.json` — un mes (formato de siempre)

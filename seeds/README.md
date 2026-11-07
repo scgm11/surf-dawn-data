@@ -47,3 +47,7 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
   que llegue a `-34;-53.5`). Un `wave=` se pone a una celda de la que la API contesta (sección «Celdas de olas»
   de `validation/spots.md`). Una región nueva que se congela va
   también en `FROZEN` de `tools/build_zones.py`, `tools/resolve_seeds.py` y `tools/tide/build_tides.py`.
+- Un código de región no se borra ni se cambia (`docs/formatos.md`, «Cuando cambia una región»). Al partir
+  una región, el código viejo se queda con los picos que cambian de celda o de escala, y los que quedan
+  iguales van al código nuevo. Las apps muestran el nombre, no el código, así que puede quedar raro:
+  desde el 2026-11-07, `VE-ALL` es la costa central de Venezuela y Margarita es `VE-MAR`.
