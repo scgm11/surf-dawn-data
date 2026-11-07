@@ -1,11 +1,11 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-07 12:28 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-07 14:31 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
 - Puertos nuevos: 427 (got 163, imi 10, jma 9, linz 20, noaa 57, ticon 168); más los 4 de Uruguay y Brasil, sin cambios.
-- Regiones con puerto: 208 de 208 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
+- Regiones con puerto: 209 de 209 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
 - Picos con puerto: 2329 de 2440.
 - Archivos: 10675, 28.3 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
@@ -181,7 +181,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-c73835 | got5.6:10.500,-67.690 | GOT5.6 10.500N 67.690W (VE-ALL) | MSL+29 cm (modelo) | 5..60 | — | 0.4 |
 | got-c939f5 | got5.6:-30.891,30.354 | GOT5.6 30.891S 30.354E (ZA-KZN-S) | MSL+110 cm (modelo) | 5..220 | — | 1.5 |
 | got-c94e22 | got5.6:-26.630,-48.678 | GOT5.6 26.630S 48.678W (BR-SC-NOR) | MSL+75 cm (modelo) | 6..150 | — | 2.8 |
-| got-c96e4a | got5.6:11.130,-63.850 | GOT5.6 11.130N 63.850W (VE-ALL) | MSL+37 cm (modelo) | 6..71 | — | 0.4 |
+| got-c96e4a | got5.6:11.130,-63.850 | GOT5.6 11.130N 63.850W (VE-MAR) | MSL+37 cm (modelo) | 6..71 | — | 0.4 |
 | got-ca232b | got5.6:33.790,-7.175 | GOT5.6 33.790N 7.175W (MA-N) | MSL+178 cm (modelo) | 6..359 | — | 2.0 |
 | got-cb31f0 | got5.6:6.100,-77.420 | GOT5.6 6.100N 77.420W (CO-PAC) | MSL+204 cm (modelo) | 5..406 | — | 2.1 |
 | got-cb786a | got5.6:29.430,-10.130 | GOT5.6 29.430N 10.130W (MA-S) | MSL+173 cm (modelo) | 6..350 | — | 1.9 |
@@ -670,10 +670,13 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `got-d2f680` GOT5.6 11.243N 73.568W (CO-CAR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-c8afda` 71 km, cruza 69 km de tierra; `ticon-6f989c` 100 km, cruza 97 km de tierra
 
-### VE-ALL — Venezuela (2 picos)
+### VE-ALL — Costa central (1 picos)
 
 - `got-c73835` GOT5.6 10.500N 67.690W (VE-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
-- `got-c96e4a` GOT5.6 11.130N 63.850W (VE-ALL) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
+
+### VE-MAR — Isla de Margarita (1 picos)
+
+- `got-c96e4a` GOT5.6 11.130N 63.850W (VE-MAR) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### PA-PAC — Pacífico de Panamá (7 picos)
 
