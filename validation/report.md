@@ -1,6 +1,6 @@
 # Validación de los modelos de olas y viento
 
-Ventana: **2026-10-08 a 2026-11-07** (UTC), hora a hora. Generado el 2026-11-07 11:25 UTC por `validate/run.py` (ver `validate/README.md`).
+Ventana: **2026-10-08 a 2026-11-07** (UTC), hora a hora. Generado el 2026-11-07 11:30 UTC por `validate/run.py` (ver `validate/README.md`).
 
 **Olas.** Cada región se compara con hasta 3 boyas a menos de 150 km de alguno de sus picos (la más cercana primero). Todos los modelos se miden sobre las mismas horas. Se elige sólo entre los modelos que dan **período pico** (el reloj muestra el período y puntúa las horas con él): ECMWF WAM, GFS-Wave 0,16°, GFS-Wave 0,25° (GFS-Wave 0,16° sólo entre 15°S y 52,5°N). MFWAM y DWD EWAM sólo dan período medio en Open-Meteo: se miden para informar y no se eligen. El mejor es el de menor `hs_rmse` con |sesgo| ≤ 15 % (empates de 0.01 m: menor error de período pico `tp_mae`, después menor error de dirección). La confianza mira las horas (≥ 480 alta, ≥ 240 media), cuánto peor es el modelo de hoy (≥ 10 % alta, ≥ 5 % media), que la mayoría de las boyas coincida y que la boya más cercana esté a ≤ 100 km (alta). Sólo se sugiere cambiar con confianza alta o media; las regiones sin boyas siguen con la regla por defecto (GFS-Wave 0,16° en su dominio, si no 0,25°).
 
