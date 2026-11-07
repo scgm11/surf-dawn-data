@@ -119,9 +119,14 @@ def _fill_near(t, col, within=1200.0):
 
 
 def _text(value):
-    """A text attribute of a file. h5py leaves the bytes that are not UTF-8 as surrogates, which can
-    not be written to a file: they are read as Latin-1, the encoding of those names."""
-    return re.sub("[\udc80-\udcff]", lambda m: chr(ord(m.group()) - 0xdc00), str(value))
+    """A text attribute of a file. h5py can leave the bytes that are not ASCII as surrogates, even
+    good UTF-8 ("Cabo de Peñas"), and those can not be written to a file: the bytes are read again
+    as UTF-8 or, if they are not, as Latin-1."""
+    raw = str(value).encode("utf-8", "surrogateescape")
+    try:
+        return raw.decode("utf-8")
+    except UnicodeDecodeError:
+        return raw.decode("latin-1")
 
 
 def read_file(path):

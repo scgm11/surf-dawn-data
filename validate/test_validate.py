@@ -695,7 +695,8 @@ class TestCmems(unittest.TestCase):
         self.assertEqual(wrecs, [])
 
     def test_name_not_utf8(self):
-        self.assertEqual(cmems._text("Thorl\udce1ks \udcf0\udcfe"), "Thorláks ðþ")
+        self.assertEqual(cmems._text("Cabo de Pe\udcc3\udcb1as buoy"), "Cabo de Peñas buoy")
+        self.assertEqual(cmems._text("Thorl\udce1ks \udcf0\udcfe"), "Thorláks ðþ")      # not UTF-8: Latin-1
         self.assertEqual(cmems._text("Anglet ñ"), "Anglet ñ")          # what is already text stays
         self.assertEqual(cmems._text(6200066), "6200066")
 
@@ -715,11 +716,12 @@ class TestCmems(unittest.TestCase):
             f.create_variable("LATITUDE", (), data=np.float32(64.0))
             f.create_variable("LONGITUDE", (), data=np.float32(-21.0))
             f.create_variable("VAVH", ("TIME",), data=np.array([1.0], dtype="f4"))
-        with h5py.File(path, "a") as f:                                 # the bytes as they come, in Latin-1
-            f.attrs["platform_name"] = np.bytes_("Grindavíkurdufl".encode("latin-1"))
-        name = cmems.read_file(path)[1]
-        self.assertEqual(name, "Grindavíkurdufl")
-        name.encode("utf-8")                                            # what brought down run.py's write()
+        for encoding in ("utf-8", "latin-1"):
+            with h5py.File(path, "a") as f:                             # the bytes as they come
+                f.attrs["platform_name"] = np.bytes_("Grindavíkurdufl".encode(encoding))
+            name = cmems.read_file(path)[1]
+            self.assertEqual(name, "Grindavíkurdufl")
+            name.encode("utf-8")                                        # what brought down run.py's write()
 
     def test_no_credentials(self):
         old = {k: os.environ.pop(k, None) for k in (cmems.ENV_USER, cmems.ENV_PASS)}
