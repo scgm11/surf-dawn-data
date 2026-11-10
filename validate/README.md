@@ -11,13 +11,17 @@ por PR, después de mirar más de un mes.
 ## Cómo corre
 
 Lo corre la Action `.github/workflows/validation.yml`: el día 3 de cada mes, a mano
-(*workflow_dispatch*) y con cada push a `validacion-mundo` que toque `validate/`. Publica
-`validation/` (también si falla una fuente), con el log en `validation/build.log`. Si la corrida se
-corta o se cae antes de terminar, publica solo el log, y `validation/spots.json`, que es de
-`tools/check_spots.py`, no lo toca.
+(*workflow_dispatch*) y con cada push a `main` que toque `validate/`. Publica
+`validation/` (también si falla una fuente), con el log en `validation/build.log`.
+`validation/spots.json`, que es de `tools/check_spots.py`, no lo toca.
 
-Bajar Copernicus lleva casi dos horas, así que el límite de la corrida es de 240 min. Lo bajado se
-guarda también si se corta, por día UTC: otra corrida ese mismo día tarda minutos.
+Bajar Copernicus lleva casi dos horas, así que el límite de la corrida es de 240 min; `run.py` se
+corta antes, a los 222 min del comienzo, para que quede tiempo de guardar la caché y publicar. Si se
+corta o se cae antes de escribir `done:` en el log, la corrida **falla** (en rojo, con el aviso de
+GitHub; cortada por GitHub quedaría "cancelada", en gris y sin aviso) y publica solo el log: los
+`<REGIÓN>.json` quedan los de antes y `validation/report.md` lo dice arriba, con su ventana
+(`run.py --unfinished`), hasta la próxima corrida entera. Lo bajado se guarda también si se corta,
+por día UTC: otra corrida ese mismo día tarda minutos.
 
 A mano, con red:
 

@@ -13,6 +13,8 @@ Validación; validate/README.md):
   validation/stations.csv        every station read from the sources, with its hours (diagnostics)
 
 Usage: python3 validate/run.py [--regions CODE ...] [--sources cdip aodn mi ndbc cmems]
+       python3 validate/run.py --unfinished YYYY-MM-DD [--run-url URL]
+         (the workflow, after a run cut off or crashed: only marks validation/report.md as not updated)
 """
 import argparse
 import csv
@@ -53,6 +55,36 @@ def clear_regions(out=OUT):
     for p in glob.glob(os.path.join(out, "*.json")):
         if os.path.basename(p) != "spots.json":
             os.remove(p)
+
+
+def windows(out=OUT):
+    """{(from, to): number of region JSONs} in validation/: how old what is published is."""
+    n = {}
+    for p in glob.glob(os.path.join(out, "*.json")):
+        if os.path.basename(p) == "spots.json":
+            continue
+        try:
+            with open(p, encoding="utf-8") as f:
+                b = json.load(f)
+            k = (b.get("from") or "?", b.get("to") or "?")
+        except (OSError, ValueError, AttributeError):
+            k = ("?", "?")
+        n[k] = n.get(k, 0) + 1
+    return n
+
+
+def mark_unfinished(day, run_url=None, out=OUT):
+    """After a run that did not finish (the workflow found no "done:" in build.log and put the
+    published validation/ back): report.md says so on top, with the age of what stays."""
+    p = os.path.join(out, "report.md")
+    try:
+        with open(p, encoding="utf-8") as f:
+            md = f.read()
+    except OSError:
+        md = "# Validación de los modelos de olas y viento\n"
+    text = report.unfinished(md, day, windows(out), run_url)
+    with open(p, "w", encoding="utf-8", newline="") as f:
+        f.write(text)
 
 
 def direction_check(results):
@@ -142,7 +174,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--regions", nargs="*")
     ap.add_argument("--sources", nargs="*", default=list(buoys.SOURCES))
+    ap.add_argument("--unfinished", metavar="DAY")
+    ap.add_argument("--run-url")
     a = ap.parse_args()
+    if a.unfinished:
+        mark_unfinished(a.unfinished, a.run_url)
+        return
     cache.prune()
     now = time.time()
     day0 = int(now // 86400) * 86400 - models.PAST_DAYS * 86400          # the model window starts at 00 UTC

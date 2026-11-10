@@ -37,6 +37,29 @@ def L_(m):
     return LABEL.get(m, m)
 
 
+UNFINISHED = "> **Sin actualizar.**"
+
+
+def unfinished(md, day, windows, run_url=None):
+    """report.md after a run that did not finish (cut off or crashed before run.py wrote "done:",
+    so only the log is published): the last report with a notice under its title that says the
+    run of `day` did not finish and which windows the region JSONs still have ({(from, to): count}).
+    The notice of an earlier such run is replaced."""
+    lines = (md or "").split("\n")
+    for i, x in enumerate(lines):
+        if x.startswith(UNFINISHED):
+            del lines[i:i + (2 if i + 1 < len(lines) and lines[i + 1] == "" else 1)]
+            break
+    wins = sorted(windows.items(), reverse=True)
+    have = ("de la ventana " + ", ".join("%s a %s (%d regiones)" % (a, b, n) for (a, b), n in wins)) if wins \
+        else "no hay ninguno"
+    note = ("%s La corrida del %s no terminó (se cortó o se cayó antes de escribir todo; el log está en `build.log`%s), "
+            "así que no se publicó: este informe y los `<REGIÓN>.json` son los de antes, %s."
+            % (UNFINISHED, day, ", corrida %s" % run_url if run_url else "", have))
+    at = 2 if len(lines) > 1 and lines[0].startswith("# ") and lines[1] == "" else 0
+    return "\n".join(lines[:at] + [note, ""] + lines[at:])
+
+
 def suggestions(results):
     """[region, wave, wind, why] for the regions whose confident ('alta' or 'media') best wave or wind
     model is not the one they use today; the other column keeps today's model. Never the fixed

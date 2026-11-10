@@ -753,6 +753,40 @@ class Outputs(unittest.TestCase):
             with open(os.path.join(d, "buoys.csv"), encoding="utf-8") as f:
                 self.assertEqual(f.read(), "Thorláks")
 
+    def test_unfinished_run_marks_the_report(self):
+        md = "# Validación de los modelos de olas y viento\n\nVentana: **2026-10-08 a 2026-11-07** (UTC).\n"
+        once = report.unfinished(md, "2026-12-03", {("2026-10-08", "2026-11-07"): 213}, "https://x/runs/1")
+        lines = once.split("\n")
+        self.assertEqual(lines[:2], ["# Validación de los modelos de olas y viento", ""])
+        self.assertTrue(lines[2].startswith(report.UNFINISHED))
+        self.assertIn("2026-12-03 no terminó", lines[2])
+        self.assertIn("2026-10-08 a 2026-11-07 (213 regiones)", lines[2])
+        self.assertIn("https://x/runs/1", lines[2])
+        self.assertEqual(once.replace(lines[2] + "\n\n", ""), md)          # the rest is the report as it was
+        twice = report.unfinished(once, "2027-01-03", {("2026-10-08", "2026-11-07"): 213})
+        self.assertEqual(twice.count(report.UNFINISHED), 1)                # a second cut run replaces the notice
+        self.assertIn("2027-01-03", twice)
+        self.assertNotIn("2026-12-03", twice)
+        self.assertEqual(twice.replace(twice.split("\n")[2] + "\n\n", ""), md)
+        self.assertIn("no hay ninguno", report.unfinished("", "2026-12-03", {}))
+
+    def test_mark_unfinished_reads_the_windows(self):
+        with tempfile.TemporaryDirectory() as d:
+            for n, w in (("UY-ROC.json", ("2026-10-08", "2026-11-07")), ("AR-MDP.json", ("2026-10-08", "2026-11-07")),
+                         ("VE-MAR.json", ("2026-11-03", "2026-12-03"))):
+                with open(os.path.join(d, n), "w") as f:
+                    json.dump({"region": n[:-5], "from": w[0], "to": w[1]}, f)
+            with open(os.path.join(d, "spots.json"), "w") as f:
+                json.dump({"days": 14}, f)
+            with open(os.path.join(d, "report.md"), "w") as f:
+                f.write("# Validación\n\nVentana: **2026-10-08 a 2026-11-07**\n")
+            self.assertEqual(run.windows(d), {("2026-10-08", "2026-11-07"): 2, ("2026-11-03", "2026-12-03"): 1})
+            run.mark_unfinished("2026-12-03", out=d)
+            with open(os.path.join(d, "report.md"), encoding="utf-8") as f:
+                md = f.read()
+            self.assertIn("2026-11-03 a 2026-12-03 (1 regiones), 2026-10-08 a 2026-11-07 (2 regiones)", md)
+            self.assertTrue(md.endswith("\n\nVentana: **2026-10-08 a 2026-11-07**\n"))
+
 
 if __name__ == "__main__":
     unittest.main()

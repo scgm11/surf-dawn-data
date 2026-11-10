@@ -26,6 +26,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 240
     steps:
+      - name: Hora de inicio
+        run: echo "T0=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -50,12 +52,25 @@ jobs:
           COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
           COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.COPERNICUSMARINE_SERVICE_PASSWORD }}
           REGIONS: ${{ github.event.inputs.regions }}
+          # run.py se corta a estos minutos del comienzo, antes que los 240 del trabajo: un trabajo cortado
+          # por GitHub queda "cancelado" (gris, sin aviso) y este paso falla (rojo, con aviso por correo);
+          # en los minutos que quedan se guarda la caché y se publica el log.
+          CUT_MIN: "222"
         run: |
-          set -o pipefail
           mkdir -p validation
           args=()
           [ -n "$REGIONS" ] && read -ra R <<< "$REGIONS" && args+=(--regions "${R[@]}")
-          python3 validate/run.py "${args[@]}" 2>&1 | tee validation/build.log
+          left=$(( T0 + CUT_MIN * 60 - $(date +%s) ))
+          [ "$left" -gt 60 ] || left=60                  # timeout 0 would mean no limit
+          set +e
+          timeout --kill-after=60 "$left" python3 validate/run.py "${args[@]}" 2>&1 | tee validation/build.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          if [ "$rc" -eq 124 ] || [ "$rc" -eq 137 ]; then
+            echo "[corte] run.py no terminó en $CUT_MIN min desde el comienzo de la corrida" | tee -a validation/build.log
+            echo "::error::La validación no terminó en $CUT_MIN min: se publica solo el log"
+          fi
+          exit "$rc"
       - name: Guardar caché
         if: always()
         uses: actions/cache/save@v4
@@ -67,12 +82,35 @@ jobs:
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"
+          day=$(date -u +%Y-%m-%d)
+          if [ ! -f validation/build.log ]; then echo "::error::La corrida no llegó a validar"; exit 1; fi
           # run.py escribe "done:" cuando terminó de escribir todo, también si falló una fuente.
-          # Si se cortó o se cayó, lo demás quedó a medias: se publica solo el log.
-          if grep -q '\] done: ' validation/build.log; then git add validation; else git add validation/build.log; fi
-          git diff --cached --quiet && echo "sin cambios" && exit 0
-          git commit -m "Validación: modelos de olas y viento contra boyas $(date -u +%Y-%m-%d)"
-          git checkout -- validation
-          git clean -fdq validation
-          git pull --rebase origin "${GITHUB_REF_NAME}"
-          git push origin "HEAD:${GITHUB_REF_NAME}"
+          # Si se cortó o se cayó, lo demás quedó a medias: se publica solo el log, report.md dice arriba
+          # que no se actualizó y de qué ventana son los JSON que quedan, y la corrida falla.
+          unfinished=
+          if grep -q '\] done: ' validation/build.log; then
+            git add validation
+            msg="Validación: modelos de olas y viento contra boyas $day"
+          else
+            unfinished=1
+            cp validation/build.log "$RUNNER_TEMP/build.log"
+            git checkout -- validation
+            git clean -fdq validation
+            cp "$RUNNER_TEMP/build.log" validation/build.log
+            python3 validate/run.py --unfinished "$day" --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+            git add validation/build.log validation/report.md
+            msg="Validación: la corrida del $day no terminó; quedan los datos de antes"
+          fi
+          if git diff --cached --quiet; then
+            echo "sin cambios"
+          else
+            git commit -m "$msg"
+            git checkout -- validation
+            git clean -fdq validation
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+          if [ -n "$unfinished" ]; then
+            echo "::error::La validación del $day no terminó: validation/ sigue con los datos de antes (ver build.log)"
+            exit 1
+          fi
