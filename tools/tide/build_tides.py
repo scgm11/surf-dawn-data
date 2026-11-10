@@ -24,7 +24,9 @@
 3. harmonics.json: the watch's 30-period fit of the current year (t0 = Jan 1, 00:00 UTC).
 4. ports.json, regions.json, report.md. The ports of Uruguay and Brazil (montevideo,
    punta-del-este, la-paloma, imbituba: tools/sohma_tide.py, tools/ciram_tide.py) and the regions
-   UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN and BR-SC-SUL are left exactly as they are.
+   UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN and BR-SC-SUL are left exactly as they are (set by hand: UY-CAN
+   takes Montevideo only up to La Pantalla, 26 km; from El Pinar to Jaureguiberry neither Montevideo's
+   table nor Punta del Este's is that coast's tide, and the watch uses Open-Meteo's sea level there).
 
 Validation: TICON-3 predictions against NOAA's own at NOAA stations that are also TICON gauges,
 for each set of nodal corrections; the best set is the one used.

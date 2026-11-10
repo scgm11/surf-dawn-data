@@ -53,7 +53,10 @@ está en [`tide/report.md`](tide/report.md): unos 266 puertos para unas 155 regi
   La Paloma (`tools/sohma_tide.py`; la Action `update.yml` las busca los días 1 y 15, y a diario de
   diciembre a febrero). Cada PDF trae al final la página de enero del año siguiente, que no se importa:
   la de enero de 2027 viene 3 h adelantada. Antes de escribir, cada mes se compara con un ajuste
-  armónico de los otros 11.
+  armónico de los otros 11. En Canelones la tabla de Montevideo llega hasta La Pantalla (26 km): de El
+  Pinar a Jaureguiberry la marea es chica y casi diurna, y no se parece ni a la de Montevideo ni a la de
+  Punta del Este (dos tablas sin relación entre sí), así que esos picos usan el nivel del mar de
+  Open-Meteo, que además trae el viento. GOT5.6 no sirve ahí: no reproduce la tabla de Punta del Este.
 - **Santa Catarina:** la tábua de la **DHN** (Marinha do Brasil) para Imbituba, del PDF que publica la
   Epagri/CIRAM (`tools/ciram_tide.py`).
 - **El año que viene de esos cuatro**, hasta que salga su tabla oficial: un análisis armónico de este
