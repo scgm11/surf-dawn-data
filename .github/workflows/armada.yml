@@ -1,0 +1,39 @@
+name: Mareógrafos de la Armada
+# Guarda las últimas 48 h de los mareógrafos de la Armada (meteo.armada.mil.uy: La Paloma, Punta Lobos y,
+# en desarrollo, Colonia, Piriápolis y Punta del Este) en validation/armada/<estación>.csv, una vez por
+# día (tools/armada.py). La página no muestra más de 48 h; juntas, son la serie observada de Uruguay
+# para validar la marea de las apps (issue scgm11/surf-dawn#72, R2 y R10).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 13 * * *"        # todos los días, 13:23 UTC (10:23 en Uruguay)
+permissions:
+  contents: write
+# Un grupo propio: en el de las que publican (data-commit-main) una corrida nueva cancela la pendiente, y
+# esta, diaria, cancelaría una de Picos o Mareas que espera. Publica con pull --rebase y reintenta.
+concurrency:
+  group: armada
+  cancel-in-progress: false
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bajar las 48 h
+        run: python3 tools/armada.py
+      - name: Publicar
+        run: |
+          git config user.name "surf-dawn-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add validation/armada
+          if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
+          git commit -m "Mareógrafos de la Armada: $(date -u +%Y-%m-%d) [skip ci]"
+          for i in 1 2 3 4 5; do
+            git pull --rebase origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && exit 0
+            sleep $((i * 20))
+          done
+          exit 1

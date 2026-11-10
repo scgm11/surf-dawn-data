@@ -12,6 +12,7 @@ from unittest import mock
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
 sys.path.insert(0, HERE)
+import armada  # noqa: E402
 import build_scale  # noqa: E402
 import check_seeds  # noqa: E402
 import check_spots  # noqa: E402
@@ -198,6 +199,34 @@ class Imbituba(unittest.TestCase):
         self.assertEqual(ciram.problems(2026, diurnal), [])
         order = {(1, 24): [(4, 59, 0.6, True), (13, 31, 0.5, True), (12, 16, 0.4, False)]}
         self.assertIn("fuera de orden", ciram.problems(2026, order)[0])
+
+
+class Armada(unittest.TestCase):
+    """tools/armada.py: las series de la página (horas de Uruguay a UTC, sin los vacíos) y el CSV que
+    suma solo lo nuevo."""
+
+    PAGE = ('g = new Dygraph(document.getElementById("graphM"), [[new Date("2026/11/10 08:40:02"), 0.951],'
+            ' [new Date("2026/11/10 08:45:02"), null], [new Date("2026/11/10 08:50:02"), 0.934]], {labels: []});'
+            ' h = new Dygraph(document.getElementById("graphT"), [[new Date("2026/11/10 08:40:02"), 18.4]], {});')
+
+    def test_parse(self):
+        s = armada.parse(self.PAGE)
+        self.assertEqual(sorted(s), ["graphM", "graphT"])
+        self.assertEqual(len(s["graphM"]), 2)                       # sin el null
+        t = min(s["graphM"])
+        self.assertEqual(t, 1794310802)                             # 08:40:02 en Uruguay = 11:40:02 UTC
+        self.assertEqual(s["graphT"][t], 18.4)
+
+    def test_merge(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "x.csv")
+            s = armada.parse(self.PAGE)
+            self.assertEqual(armada.merge(p, s), 2)
+            self.assertEqual(armada.merge(p, s), 0)                 # las 48 h se solapan: nada repetido
+            rows = open(p).read().splitlines()
+            self.assertEqual(rows[0], "utc,nivel_m,agua_c")
+            self.assertEqual(rows[1], "2026-11-10T11:40:02Z,0.951,18.4")
+            self.assertEqual(rows[2], "2026-11-10T11:50:02Z,0.934,")
 
 
 if __name__ == "__main__":
