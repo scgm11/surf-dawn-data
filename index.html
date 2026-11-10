@@ -141,6 +141,10 @@
   .shot.pair .side { position: absolute; right: 0; bottom: 0; width: 44%; }
   .spots { position: relative; }
   .spots.phone { max-width: 320px; margin: 0 auto; }
+  /* the shadow round the watch is transparent: on one column it spills into the card's padding */
+  .spots.round { width: min(112%, 470px); left: 50%; transform: translateX(-50%); margin: -4% 0; }
+  @media (min-width: 940px) { .spots.round { width: 100%; max-width: 470px; margin: 0; } }
+  @media (max-width: 560px) { .dot { width: 20px; height: 20px; margin: -10px 0 0 -10px; font-size: .7rem; } }
   .dot { position: absolute; width: 26px; height: 26px; margin: -13px 0 0 -13px; border-radius: 50%; background: var(--teal); color: #052226; border: 2px solid #fff;
     display: grid; place-items: center; font: 600 .82rem/1 var(--head); box-shadow: 0 4px 14px rgba(0, 0, 0, .45); cursor: default; z-index: 2; transition: transform .2s; }
   .dot::after { content: ""; position: absolute; inset: -7px; border-radius: 50%; border: 2px solid var(--teal); opacity: 0; animation: ping 2.6s ease-out infinite; }
@@ -422,6 +426,26 @@
   </article>
 
   <article class="feature">
+    <div class="shot">
+      <div class="spots round" data-k="f5"><img src="web/g-inicio.webp" width="753" height="751" alt="" loading="lazy">
+        <span class="dot" style="left:26.8%;top:40.9%">1</span><span class="dot" style="left:73.2%;top:40.9%">2</span><span class="dot" style="left:49.9%;top:20.6%">3</span><span class="dot" style="left:49.9%;top:59.2%">4</span><span class="dot" style="left:24.8%;top:26.7%">5</span><span class="dot" style="left:42%;top:52%">6</span></div>
+    </div>
+    <div>
+      <span class="kind" data-t="kHome">Sesión · antes de entrar</span>
+      <h3 data-t="hHome">Cómo está el mar, ahora.</h3>
+      <p class="pitch" data-t="pHome">Abrís Sesión en la playa y ves tu pico en este momento, y si el reloj está listo para grabar.</p>
+      <ol class="keys" data-k="f5">
+        <li data-t="f5a">Las olas: de la ola media a las series, y si le entran bien a tu playa</li>
+        <li data-t="f5b">El viento: terral, cruzado o del mar</li>
+        <li data-t="f5c">La marea de ahora y la próxima pleamar o bajamar</li>
+        <li data-t="f5d">El agua, y qué traje ponerte</li>
+        <li data-t="f5e">La tabla que llevás</li>
+        <li data-t="f5f">El GPS: cuando está en verde, START y al agua</li>
+      </ol>
+    </div>
+  </article>
+
+  <article class="feature flip">
     <div class="shot pair">
       <div class="main spots" data-k="f3"><img src="web/g-sesion.webp" width="753" height="751" alt="" loading="lazy">
         <span class="dot" style="left:50%;top:32%">1</span><span class="dot" style="left:56%;top:49%">2</span><span class="dot" style="left:81%;top:42%">3</span><span class="dot" style="left:50%;top:64%">4</span><span class="dot" style="left:25%;top:47%">5</span></div>
@@ -430,7 +454,7 @@
     <div>
       <span class="kind">App</span>
       <h3 data-t="nSess">Sesión</h3>
-      <p class="pitch" data-t="pSess">Antes de entrar, qué traje ponerte. En el agua, graba tu sesión, cuenta tus olas sola y te lleva de vuelta al take-off. Vos solo surfeás.</p>
+      <p class="pitch" data-t="pSess">Graba tu sesión, cuenta tus olas sola y te lleva de vuelta al take-off. Vos solo surfeás.</p>
       <ol class="keys" data-k="f3">
         <li data-t="f3a">Tus olas, contadas solas</li>
         <li data-t="f3b">Izquierdas y derechas</li>
@@ -671,7 +695,10 @@ const T = {
     f1a: "Waves: height, period and where the swell comes from", f1b: "Wind, in the color of what it does to your beach", f1c: "The day's tide, with high and low", f1d: "Water and air", f1e: "The nearest spot, picked by itself",
     nFcst: "Forecast", pFcst: "Your surf day hour by hour, without checking three apps on your phone. And in the morning, the best spot nearby.",
     f2a: "The spot and the day, and Today with the nearby spots best to worst", f2b: "Each hour's waves, in green, yellow or red", f2c: "Each hour's wind, with its direction", f2d: "The day's tide", f2e: "Water and air",
-    nSess: "Session", pSess: "Before you paddle out, which wetsuit to wear. In the water, it records your session, counts your waves by itself and takes you back to the take-off. You just surf.", f3f: "The compass takes you to the take-off: the zone where you caught the most waves, and the way in",
+    nSess: "Session", pSess: "Records your session, counts your waves by itself and takes you back to the take-off. You just surf.",
+    kHome: "Session · before you paddle out", hHome: "How the sea is, right now.", pHome: "Open Session on the beach and see your spot right now, and whether the watch is ready to record.",
+    f5a: "The waves: from the average wave to the sets, and whether they reach your beach well", f5b: "The wind: offshore, cross-shore or onshore", f5c: "The tide now and the next high or low",
+    f5d: "The water, and which wetsuit to wear", f5e: "The board you're taking", f5f: "The GPS: once it's green, START and paddle out", f3f: "The compass takes you to the take-off: the zone where you caught the most waves, and the way in",
     f3a: "Your waves, counted by themselves", f3b: "Lefts and rights", f3c: "How long you surfed, paddled and waited, on the bezel too", f3d: "The last wave: how long, how fast and how many meters", f3e: "Your heart rate",
     nWave: "Waves and Wind", dWave: "Offshore or onshore? See it in the water: the waves and wind right now inside your activity. In Garmin's Surf activity it also counts your waves.",
     nTide: "Tide", dTide: "How long until low tide, without leaving your surf, SUP or swim session.",
@@ -746,7 +773,10 @@ const T = {
     f1a: "Ondas: altura, período e de onde vem o swell", f1b: "Vento, na cor do que ele faz na sua praia", f1c: "A maré do dia, com a preamar e a baixa-mar", f1d: "A água e o ar", f1e: "O pico mais próximo, escolhido sozinho",
     nFcst: "Previsão", pFcst: "O seu dia de surf hora a hora, sem olhar três apps no celular. E de manhã, o melhor pico por perto.",
     f2a: "O pico e o dia, e o Hoje com os picos por perto do melhor ao pior", f2b: "As ondas de cada hora, em verde, amarelo ou vermelho", f2c: "O vento de cada hora, com a direção", f2d: "A maré do dia", f2e: "A água e o ar",
-    nSess: "Sessão", pSess: "Antes de entrar, qual roupa usar. Na água, grava a sua sessão, conta as suas ondas sozinho e te leva de volta ao take-off. Você só surfa.", f3f: "A bússola te leva ao take-off: a zona onde você pegou mais ondas, e a entrada",
+    nSess: "Sessão", pSess: "Grava a sua sessão, conta as suas ondas sozinho e te leva de volta ao take-off. Você só surfa.",
+    kHome: "Sessão · antes de entrar", hHome: "Como está o mar, agora.", pHome: "Abra o Sessão na praia e veja o seu pico neste momento, e se o relógio está pronto para gravar.",
+    f5a: "As ondas: da onda média às séries, e se entram bem na sua praia", f5b: "O vento: terral, lateral ou maral", f5c: "A maré de agora e a próxima preamar ou baixa-mar",
+    f5d: "A água, e qual roupa usar", f5e: "A prancha que você leva", f5f: "O GPS: quando fica verde, START e para a água", f3f: "A bússola te leva ao take-off: a zona onde você pegou mais ondas, e a entrada",
     f3a: "Suas ondas, contadas sozinhas", f3b: "Esquerdas e direitas", f3c: "Quanto você surfou, remou e esperou, também no bisel", f3d: "A última onda: quanto durou, a que velocidade e quantos metros", f3e: "Seu pulso",
     nWave: "Ondas e vento", dWave: "Terral ou maral? Veja na água: as ondas e o vento de agora dentro da sua atividade. No Surf da Garmin, também conta as suas ondas.",
     nTide: "Maré", dTide: "Quanto falta para a baixa-mar, sem sair da sua sessão de surf, SUP ou natação.",
