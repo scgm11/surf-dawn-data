@@ -171,6 +171,31 @@
   .tile p { color: var(--label); font-size: .9rem; margin-top: 2px; }
   .watches { display: flex; justify-content: center; gap: 4%; margin-top: 34px; }
   .watches img { width: 30%; max-width: 170px; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .45)); }
+  a.tile { display: block; color: var(--text); transition: border-color .2s, background .2s; }
+  a.tile:hover { border-color: var(--teal); background: rgba(61, 214, 208, .07); }
+
+  /* train: pre-surf, post-surf and apnea, in the app's colors (teal, lilac, orange) */
+  .drills { display: grid; gap: 16px; margin-top: 34px; }
+  @media (min-width: 900px) { .drills { grid-template-columns: repeat(3, 1fr); gap: 18px; } }
+  .drill { --c: var(--teal); --cbg: rgba(61, 214, 208, .08); --cline: rgba(61, 214, 208, .28);
+    border-radius: var(--r); padding: 22px 22px 24px; background: linear-gradient(180deg, var(--card2), var(--card)); border: 1px solid var(--hair); display: flex; flex-direction: column; }
+  .drill.post { --c: var(--lilac); --cbg: rgba(179, 157, 255, .08); --cline: rgba(179, 157, 255, .3); }
+  .drill.apnea { --c: var(--orange); --cbg: rgba(255, 146, 64, .08); --cline: rgba(255, 146, 64, .3); }
+  .drill .pic { height: 210px; display: grid; place-items: center; margin-bottom: 16px; }
+  .drill .pic img { max-height: 210px; width: auto; filter: drop-shadow(0 16px 26px rgba(0, 0, 0, .45)); }
+  .drill .when { font: 600 .8rem var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+  .drill h3 { margin-top: 4px; }
+  .drill > p { color: var(--label); font-size: .97rem; margin-top: 8px; }
+  .why { margin-top: auto; padding-top: 18px; }
+  .why div { border-radius: 14px; padding: 12px 14px; background: var(--cbg); border: 1px solid var(--cline); }
+  .why b { display: block; font: 600 .76rem var(--head); letter-spacing: .14em; text-transform: uppercase; color: var(--c); }
+  .why p { font-size: .97rem; margin-top: 2px; }
+  .safe { display: flex; gap: 14px; align-items: flex-start; margin-top: 16px; padding: 16px 20px; border-radius: 18px;
+    background: rgba(255, 146, 64, .1); border: 1px solid rgba(255, 146, 64, .3); }
+  .safe svg { flex: none; width: 24px; height: 24px; color: var(--orange); margin-top: 1px; }
+  .safe p { color: var(--label); font-size: .97rem; }
+  .safe b { color: var(--orange); font-family: var(--head); font-size: 1.05rem; }
+  @media (min-width: 900px) { .tiles.four { grid-template-columns: repeat(4, 1fr); margin-top: 16px; } }
 
   /* how it fits */
   .eco { display: grid; gap: 14px; margin-top: 36px; }
@@ -254,7 +279,7 @@
 
 <nav class="bar" id="bar"><div class="wrap">
   <a class="brand" href="#"><img src="web/icono.png" width="32" height="32" alt="">Surf Dawn</a>
-  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#garmin">Garmin</a><a href="#apple">iPhone y Apple Watch</a><a href="#preguntas" data-t="lFaq">Preguntas</a></div>
+  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#garmin">Garmin</a><a href="#apple" data-t="nApple">iPhone y Apple Watch</a><a href="#entrenar" data-t="t4">Entrenar</a><a href="#preguntas" data-t="lFaq">Preguntas</a></div>
   <div class="langs" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="pt">PT</button></div>
   <a class="btn small nav-cta" href="#instalar" data-t="install">Instalar gratis</a>
 </div></nav>
@@ -465,7 +490,7 @@
         <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7l6-3 6 3 6-3v13l-6 3-6-3-6 3z"/><path d="M9 4v13M15 7v13"/></svg><b data-t="t1">La semana y el mapa</b><p data-t="t1p">Cada pico, siete días, y otros para descubrir</p></div>
         <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><circle cx="9" cy="10" r="1.5"/><path d="M21 15l-5-5-9 9"/></svg><b data-t="t2">Las fotos de ese día</b><p data-t="t2p">Las de tu carrete, junto a sus olas</p></div>
         <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></svg><b data-t="t3">Tus números</b><p data-t="t3p">Y cuándo surfeás mejor</p></div>
-        <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h3l3-7 4 14 3-7h5"/></svg><b data-t="t4">Entrenar</b><p data-t="t4p">Rutinas antes y después del agua, y apnea</p></div>
+        <a class="tile" href="#entrenar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h3l3-7 4 14 3-7h5"/></svg><b data-t="t4">Entrenar</b><p data-t="t4p">Rutinas antes y después del agua, y apnea</p></a>
       </div>
     </div>
   </article>
@@ -484,6 +509,43 @@
     </div>
   </article>
   <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
+</section>
+
+<section id="entrenar" aria-labelledby="e-h">
+  <span class="eyebrow" data-t="eE">Entrenar · en casa</span>
+  <h2 id="e-h" data-t="eH">El surf también se entrena en seco.</h2>
+  <p class="lead" data-t="eLead">Tres rutinas cortas: una antes de salir, una al volver y la apnea. El reloj o el iPhone te llevan ejercicio por ejercicio, con una figura que hace cada movimiento.</p>
+  <div class="drills">
+    <article class="drill">
+      <div class="pic"><img src="web/g-pre.webp" width="753" height="751" alt="" loading="lazy"></div>
+      <span class="when" data-t="e1w">Antes de salir · 5 min</span>
+      <h3 data-t="e1h">Pre-surf</h3>
+      <p data-t="e1p">Siete ejercicios de movimiento, no estiramientos largos: Cat Camel, Bird Dog, estocada con giro, círculos de brazos, talones, sentadilla en tu postura y pop-up.</p>
+      <div class="why"><div><b data-t="why">Para qué</b><p data-t="e1y">Entrar caliente, con la cadera, la espalda alta y los hombros despiertos y el pop-up ensayado: la primera ola no te agarra frío.</p></div></div>
+    </article>
+    <article class="drill post">
+      <div class="pic"><img data-img="web/aw-post-{l}.webp" src="web/aw-post-es.webp" width="360" height="409" alt="" loading="lazy"></div>
+      <span class="when" data-t="e2w">Al volver del agua · 10 min</span>
+      <h3 data-t="e2h">Post-surf</h3>
+      <p data-t="e2p">Once ejercicios, casi todos estiramientos suaves y sin rebotar: pecho, dorsales, espalda alta, cadera, piernas y cuello. Termina con un minuto de respiración lenta: inhalar 4 segundos, exhalar 6.</p>
+      <div class="why"><div><b data-t="why">Para qué</b><p data-t="e2y">Devolver lo que acorta la remada (pecho, dorsales y cadera) y bajar las pulsaciones. Cuida la espalda: la lumbar no se estira, se mueve suave.</p></div></div>
+    </article>
+    <article class="drill apnea">
+      <div class="pic"><img src="web/g-apnea.webp" width="753" height="751" alt="" loading="lazy"></div>
+      <span class="when" data-t="e3w">Siempre en seco</span>
+      <h3 data-t="e3h">Apnea</h3>
+      <p data-t="e3p">El test mide tu récord y tu parte fácil: lo que aguantás hasta la primera contracción del diafragma. La Tabla CO2 encadena retenciones cortas con descansos cada vez más cortos; la O2, retenciones que crecen hasta cerca de tu récord.</p>
+      <div class="why"><div><b data-t="why">Para qué</b><p data-t="e3y">Acostumbrarte a las ganas de respirar, para aguantar tranquilo una revolcada larga (CO2) o quedarte abajo de una serie (O2). Test a test, la parte fácil crece.</p></div></div>
+    </article>
+  </div>
+  <div class="safe"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l10 18H2z"/><path d="M12 10v4M12 17.5v.01"/></svg>
+    <p><b data-t="safeH">La apnea, nunca en el agua ni manejando.</b> <span data-t="safeP">Una retención larga puede terminar en un desmayo sin aviso. Sentado o acostado, mejor con alguien cerca, y sin hiperventilar antes: no da más aire y hace más probable el desmayo.</span></p></div>
+  <div class="tiles four">
+    <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5L6 9H3v6h3l5 4z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13"/></svg><b data-t="tv1">Con voz</b><p data-t="tv1p">En el iPhone, cada ejercicio explicado: cómo se hace y para qué sirve en el agua</p></div>
+    <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 16v-5a6 6 0 0 1 12 0v5l2 2H4z"/><path d="M10 20a2 2 0 0 0 4 0"/></svg><b data-t="tv2">Mañana toca</b><p data-t="tv2p">El iPhone te recuerda el Pre-surf 20 minutos antes de la mejor hora del mejor pico</p></div>
+    <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg><b data-t="tv3">A tu medida</b><p data-t="tv3p">Las tablas salen de tu récord y se ajustan a cómo te fue en la última</p></div>
+    <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 11a8 8 0 0 0-14.9-3M4 4v4h4"/><path d="M4 13a8 8 0 0 0 14.9 3M20 20v-4h-4"/></svg><b data-t="tv4">En todos tus relojes</b><p data-t="tv4p">En Sesión de Garmin, en el Apple Watch y en el iPhone; queda en Garmin Connect o en Salud</p></div>
+  </div>
 </section>
 
 <section id="ecosistema" aria-labelledby="eco-h">
@@ -533,7 +595,7 @@
       </div>
     </div>
     <div class="store">
-      <h3>iPhone y Apple Watch</h3>
+      <h3 data-t="nApple">iPhone y Apple Watch</h3>
       <p data-t="iA">Una sola app, con la del Apple Watch adentro.</p>
       <div class="actions"><span class="soon" data-t="aSoon">Muy pronto en el App Store</span></div>
       <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
@@ -563,13 +625,14 @@
     <div class="actions">
       <a class="btn" id="pdf" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="mBtn">El manual en PDF</span></a>
       <a class="btn ghost" id="sup" href="support.html#es"><span data-t="sup">Soporte</span></a>
+      <a class="btn ghost" href="https://www.instagram.com/surfdawn.app/" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M16.5 7.5v.01"/></svg>@surfdawn.app</a>
     </div>
     <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
   </div></div>
 </section>
 
 <footer>
-  <span data-t="om">Pronósticos de Open-Meteo</span> · <a id="sup2" href="support.html#es" data-t="sup">Soporte</a> · <a id="priv" href="privacy.html#es" data-t="privL">Privacidad</a>
+  <span data-t="om">Pronósticos de Open-Meteo</span> · <a id="sup2" href="support.html#es" data-t="sup">Soporte</a> · <a id="priv" href="privacy.html#es" data-t="privL">Privacidad</a> · <a href="https://www.instagram.com/surfdawn.app/" rel="noopener">Instagram</a>
 </footer>
 
 <script>
@@ -612,7 +675,24 @@ const T = {
     t1: "The week and the map", t1p: "Each spot, seven days, and others to discover", t2: "That day's photos", t2p: "From your camera roll, next to their waves",
     t3: "Your numbers", t3p: "And when you surf best", t4: "Train", t4p: "Routines before and after the water, and apnea",
     pWatchH: "All on your wrist.", pWatch: "Forecast, Today and the morning alert, with complications and the Smart Stack. Session counts your waves and saves it to Health. And Train, without your phone.",
-    aSoon: "Coming soon to the App Store", aReq: "iPhone with iOS 17 or later; Apple Watch with watchOS 10 or later.",
+    aSoon: "Coming soon to the App Store", aReq: "iPhone with iOS 17 or later; Apple Watch with watchOS 10 or later.", nApple: "iPhone and Apple Watch",
+    eE: "Train · at home", eH: "Surfing is trained on dry land too.",
+    eLead: "Three short routines: one before you head out, one when you're back and apnea. Your watch or iPhone takes you through each exercise, with a figure doing every move.",
+    e1w: "Before you head out · 5 min", e1h: "Pre-surf", why: "What for",
+    e1p: "Seven movement exercises, not long stretches: Cat Camel, Bird Dog, lunge with twist, arm circles, heel raises, a squat in your stance and the pop-up.",
+    e1y: "Go in warm, with your hips, upper back and shoulders awake and the pop-up rehearsed: the first wave doesn't catch you cold.",
+    e2w: "Back from the water · 10 min", e2h: "Post-surf",
+    e2p: "Eleven exercises, mostly gentle stretches without bouncing: chest, lats, upper back, hips, legs and neck. It ends with a minute of slow breathing: in for 4 seconds, out for 6.",
+    e2y: "Give back what paddling tightens (chest, lats and hips) and bring your heart rate down. It looks after your back: the lower back isn't stretched, it's moved gently.",
+    e3w: "Always on dry land", e3h: "Apnea",
+    e3p: "The test measures your best and your easy part: how long you hold until the diaphragm's first contraction. The CO2 table strings short holds with ever shorter rests; the O2 table, holds that grow to near your best.",
+    e3y: "Get used to the urge to breathe, so you stay calm in a long hold-down (CO2) or under a set (O2). Test after test, the easy part grows.",
+    safeH: "Apnea: never in the water or while driving.",
+    safeP: "A long hold can end in a blackout without warning. Sitting or lying down, better with someone near, and no hyperventilating first: it gives you no more air and makes a blackout more likely.",
+    tv1: "With voice", tv1p: "On the iPhone, every exercise explained: how it's done and what it's for in the water",
+    tv2: "Tomorrow", tv2p: "The iPhone reminds you of the Pre-surf 20 minutes before the best hour at the best spot",
+    tv3: "Made to measure", tv3p: "The tables come from your best and adjust to how the last one went",
+    tv4: "On all your watches", tv4p: "In Session on Garmin, on the Apple Watch and on the iPhone; it's saved to Garmin Connect or Health",
     ecoE: "How it fits together", ecoH: "Each watch works on its own. With the iPhone, it all comes together.",
     nodeG: "The watch face, Forecast, Session and the data fields", nodeI: "Your spots' week and all your sessions, from any watch", nodeA: "Forecast, Session and Train in one app",
     linkG: "Sessions and Train go to the iPhone; your boards, your surfing and your history, to the watch.", linkA: "Sessions and Train go to the iPhone; your level, your boards and the background, to the watch.",
@@ -667,7 +747,24 @@ const T = {
     t1: "A semana e o mapa", t1p: "Cada pico, sete dias, e outros para descobrir", t2: "As fotos daquele dia", t2p: "Do seu rolo da câmera, junto das ondas",
     t3: "Seus números", t3p: "E quando você surfa melhor", t4: "Treinar", t4p: "Rotinas antes e depois da água, e apneia",
     pWatchH: "Tudo no pulso.", pWatch: "Previsão, Hoje e o aviso da manhã, com complicações e o Smart Stack. O Sessão conta as suas ondas e salva no app Saúde. E o Treinar, sem o celular.",
-    aSoon: "Em breve na App Store", aReq: "iPhone com iOS 17 ou mais recente; Apple Watch com watchOS 10 ou mais recente.",
+    aSoon: "Em breve na App Store", aReq: "iPhone com iOS 17 ou mais recente; Apple Watch com watchOS 10 ou mais recente.", nApple: "iPhone e Apple Watch",
+    eE: "Treinar · em casa", eH: "O surf também se treina em terra.",
+    eLead: "Três rotinas curtas: uma antes de sair, uma na volta e a apneia. O relógio ou o iPhone te guiam exercício por exercício, com uma figura que faz cada movimento.",
+    e1w: "Antes de sair · 5 min", e1h: "Pré-surf", why: "Para quê",
+    e1p: "Sete exercícios de movimento, não alongamentos longos: Cat Camel, Bird Dog, avanço com giro, círculos de braços, elevação de calcanhar, agachamento na sua base e pop-up.",
+    e1y: "Entrar aquecido, com o quadril, a parte alta das costas e os ombros despertos e o pop-up ensaiado: a primeira onda não te pega frio.",
+    e2w: "Na volta da água · 10 min", e2h: "Pós-surf",
+    e2p: "Onze exercícios, quase todos alongamentos suaves e sem balançar: peito, dorsais, parte alta das costas, quadril, pernas e pescoço. Termina com um minuto de respiração lenta: inspirar 4 segundos, expirar 6.",
+    e2y: "Devolver o que a remada encurta (peito, dorsais e quadril) e baixar o pulso. Cuida das costas: a lombar não se alonga, se move suave.",
+    e3w: "Sempre em terra", e3h: "Apneia",
+    e3p: "O teste mede seu recorde e sua parte fácil: quanto você segura até a primeira contração do diafragma. A Tabela CO2 encadeia retenções curtas com descansos cada vez mais curtos; a O2, retenções que crescem até perto do seu recorde.",
+    e3y: "Acostumar-se à vontade de respirar, para segurar com calma um caldo longo (CO2) ou ficar embaixo de uma série (O2). Teste a teste, a parte fácil cresce.",
+    safeH: "A apneia, nunca na água nem dirigindo.",
+    safeP: "Uma retenção longa pode terminar num desmaio sem aviso. Sentado ou deitado, melhor com alguém perto, e sem hiperventilar antes: não dá mais ar e deixa o desmaio mais provável.",
+    tv1: "Com voz", tv1p: "No iPhone, cada exercício explicado: como se faz e para que serve na água",
+    tv2: "Amanhã", tv2p: "O iPhone te lembra do Pré-surf 20 minutos antes da melhor hora do melhor pico",
+    tv3: "Na sua medida", tv3p: "As tabelas saem do seu recorde e se ajustam a como foi a última",
+    tv4: "Em todos os seus relógios", tv4p: "No Sessão do Garmin, no Apple Watch e no iPhone; fica no Garmin Connect ou no app Saúde",
     ecoE: "Como tudo se encaixa", ecoH: "Cada relógio funciona sozinho. Com o iPhone, tudo se junta.",
     nodeG: "O mostrador, a Previsão, o Sessão e os campos de dados", nodeI: "A semana dos seus picos e todas as suas sessões, de qualquer relógio", nodeA: "Previsão, Sessão e Treinar num só app",
     linkG: "As sessões e o Treinar vão para o iPhone; suas pranchas, seu surf e seu histórico, para o relógio.", linkA: "As sessões e o Treinar vão para o iPhone; seu nível, suas pranchas e o fundo, para o relógio.",
