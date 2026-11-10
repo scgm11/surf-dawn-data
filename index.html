@@ -126,6 +126,10 @@
   .legend i { flex: none; width: 34px; height: 34px; border-radius: 10px; margin-top: 2px; }
   .legend b { font-family: var(--head); font-size: 1.15rem; display: block; }
   .legend p { color: var(--label); font-size: .97rem; }
+  .scale { display: flex; gap: 12px; align-items: flex-start; margin-top: 24px; padding: 14px 16px; border-radius: 16px;
+    background: rgba(61, 214, 208, .07); border: 1px solid rgba(61, 214, 208, .25); color: var(--label); font-size: .97rem; }
+  .scale svg { flex: none; width: 22px; height: 22px; color: var(--teal); margin-top: 2px; }
+  .scale b { color: var(--text); font-family: var(--head); }
 
   /* apps with numbered spots */
   .feature { display: grid; gap: 30px; align-items: center; margin-top: 48px; padding: 30px 24px; border-radius: 32px;
@@ -365,6 +369,7 @@
         <div><i style="background:var(--yellow)"></i><div><b data-t="lg2">Amarillo: más o menos</b><p data-t="lg2p">Se puede surfear, pero algo no acompaña.</p></div></div>
         <div><i style="background:var(--red)"></i><div><b data-t="lg3">Rojo: no da</b><p data-t="lg3p">Muy chico, muy picado o el viento del mar.</p></div></div>
       </div>
+      <p class="scale"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17L17 3l4 4L7 21z"/><path d="M7 13l2 2M10 10l2 2M13 7l2 2"/></svg><span data-h="scale"><b>Cada zona, su escala.</b> Lo grande depende de dónde surfeás: 2 m es un día enorme en Uruguay y uno normal en Nazaré. Por eso el verde de tu pico sale de un año de olas en tu zona.</span></p>
     </div>
   </div>
 </section>
@@ -425,7 +430,7 @@
     <div>
       <span class="kind">App</span>
       <h3 data-t="nSess">Sesión</h3>
-      <p class="pitch" data-t="pSess">Graba tu sesión, cuenta tus olas sola y te lleva de vuelta al take-off. Vos solo surfeás.</p>
+      <p class="pitch" data-t="pSess">Antes de entrar, qué traje ponerte. En el agua, graba tu sesión, cuenta tus olas sola y te lleva de vuelta al take-off. Vos solo surfeás.</p>
       <ol class="keys" data-k="f3">
         <li data-t="f3a">Tus olas, contadas solas</li>
         <li data-t="f3b">Izquierdas y derechas</li>
@@ -571,6 +576,8 @@
   <div class="faq" style="text-align:left">
     <details><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Todas las apps son gratis, sin publicidad y sin cuentas, en memoria de Gonzalo Moratorio. Si te sirve, pronto vas a poder invitar un café desde la app de iPhone.</p></details>
     <details><summary data-t="q2">¿Qué reloj necesito?</summary><p data-t="a2">Un Garmin redondo de 5 botones (fēnix, epix, Forerunner y otros) para la esfera, Pronóstico y Sesión; Anillos y los campos de datos andan en casi 100 relojes Garmin. O un Apple Watch con watchOS 10 y un iPhone con iOS 17.</p></details>
+    <details><summary data-t="q7">¿Me sirve con Android?</summary><p data-t="a7">Con un Garmin, sí: las apps del reloj andan con Android o con iPhone, porque hablan con la app Garmin Connect del teléfono. La app de iPhone y la del Apple Watch, en cambio, son solo de Apple.</p></details>
+    <details><summary data-t="q8">¿Tengo que cambiar mi esfera?</summary><p data-t="a8">No. Pronóstico y Sesión se abren desde cualquier esfera, y el glance de Pronóstico te deja a la vista el mejor pico del día. Además, Pronóstico pone tres complicaciones de tu pico (las mejores horas, las olas y el viento de ahora) y Sesión dos (tu última sesión y tu mejor ventana) en Face It y en las esferas de Connect IQ que las aceptan; las esferas de Garmin no muestran complicaciones de otras apps.</p></details>
     <details><summary data-t="q3">¿Anda en mi playa?</summary><p data-t="a3">Hay más de 2.500 picos en 63 países, y la app elige sola el más cercano. Si falta el tuyo, avisanos desde Soporte y lo sumamos.</p></details>
     <details><summary data-t="q4">¿De dónde salen los datos?</summary><p data-t="a4">Las olas, el viento y el tiempo vienen de Open-Meteo, con los modelos de olas que mejor andan en cada zona; las mareas, de las tablas de cada puerto.</p></details>
     <details><summary data-t="q5">¿Necesito el teléfono en el agua?</summary><p data-t="a5">No. El reloj baja el pronóstico antes, y en el agua anda solo: Sesión graba con el GPS del reloj.</p></details>
@@ -657,13 +664,14 @@ const T = {
     lg1: "Green: it's on", lg1p: "Waves with size and period, and the wind on your side.",
     lg2: "Yellow: so-so", lg2p: "Surfable, but something isn't helping.",
     lg3: "Red: not worth it", lg3p: "Too small, too choppy or the wind onshore.",
+    scale: "<b>Each zone, its own scale.</b> What counts as big depends on where you surf: 2 m is a huge day in Uruguay and an ordinary one in Nazaré. So your spot's green comes from a year of waves in your zone.",
     gH: "Six apps that complement each other.", gLead: "Install the ones you want: each works on its own, and together they're with you from the first glance at your watch until you're out of the water.",
     kFace: "Watch face", kField: "Data field", store: "Install on Connect IQ", soon: "Coming soon",
     pFace: "Know if there are waves before you see the sea. Analog or digital, with four backgrounds.",
     f1a: "Waves: height, period and where the swell comes from", f1b: "Wind, in the color of what it does to your beach", f1c: "The day's tide, with high and low", f1d: "Water and air", f1e: "The nearest spot, picked by itself",
     nFcst: "Forecast", pFcst: "Your surf day hour by hour, without checking three apps on your phone. And in the morning, the best spot nearby.",
     f2a: "The spot and the day, and Today with the nearby spots best to worst", f2b: "Each hour's waves, in green, yellow or red", f2c: "Each hour's wind, with its direction", f2d: "The day's tide", f2e: "Water and air",
-    nSess: "Session", pSess: "Records your session, counts your waves by itself and takes you back to the take-off. You just surf.", f3f: "The compass takes you to the take-off: the zone where you caught the most waves, and the way in",
+    nSess: "Session", pSess: "Before you paddle out, which wetsuit to wear. In the water, it records your session, counts your waves by itself and takes you back to the take-off. You just surf.", f3f: "The compass takes you to the take-off: the zone where you caught the most waves, and the way in",
     f3a: "Your waves, counted by themselves", f3b: "Lefts and rights", f3c: "How long you surfed, paddled and waited, on the bezel too", f3d: "The last wave: how long, how fast and how many meters", f3e: "Your heart rate",
     nWave: "Waves and Wind", dWave: "Offshore or onshore? See it in the water: the waves and wind right now inside your activity. In Garmin's Surf activity it also counts your waves.",
     nTide: "Tide", dTide: "How long until low tide, without leaving your surf, SUP or swim session.",
@@ -699,6 +707,8 @@ const T = {
     qE: "Questions", qH: "What you're wondering.",
     q1: "How much does it cost?", a1: "Nothing. All the apps are free, with no ads and no accounts, in memory of Gonzalo Moratorio. If it helps you, soon you'll be able to buy a coffee from the iPhone app.", memE: "In memory of", memWhy: "Surf Dawn is free in his memory.",
     q2: "Which watch do I need?", a2: "A round 5-button Garmin (fēnix, epix, Forerunner and more) for the watch face, Forecast and Session; Rings and the data fields run on almost 100 Garmin watches. Or an Apple Watch with watchOS 10 and an iPhone with iOS 17.",
+    q7: "Does it work with Android?", a7: "With a Garmin, yes: the watch apps work with Android or with an iPhone, because they talk to the Garmin Connect app on your phone. The iPhone app and the Apple Watch one, on the other hand, are Apple only.",
+    q8: "Do I have to change my watch face?", a8: "No. Forecast and Session open from any watch face, and Forecast's glance keeps the day's best spot in view. Forecast also puts three complications for your spot (the best hours, and the waves and wind right now) and Session two (your last session and your best window) on Face It and on the Connect IQ watch faces that take them; Garmin's own faces don't show other apps' complications.",
     q3: "Does it work at my beach?", a3: "There are more than 2,500 spots in 63 countries, and the app picks the nearest by itself. If yours is missing, tell us through Support and we'll add it.",
     q4: "Where does the data come from?", a4: "Waves, wind and weather come from Open-Meteo, with the wave models that work best in each area; tides, from each port's tables.",
     q5: "Do I need my phone in the water?", a5: "No. The watch downloads the forecast beforehand and works on its own in the water: Session records with the watch's GPS.",
@@ -729,13 +739,14 @@ const T = {
     lg1: "Verde: dá", lg1p: "Ondas com tamanho e período, e o vento a favor.",
     lg2: "Amarelo: mais ou menos", lg2p: "Dá para surfar, mas algo não ajuda.",
     lg3: "Vermelho: não dá", lg3p: "Muito pequeno, muito mexido ou vento maral.",
+    scale: "<b>Cada zona, a sua escala.</b> O que é grande depende de onde você surfa: 2 m é um dia enorme no Uruguai e um normal em Nazaré. Por isso o verde do seu pico sai de um ano de ondas na sua região.",
     gH: "Seis apps que se complementam.", gLead: "Instale os que quiser: cada um funciona sozinho, e juntos te acompanham desde a primeira olhada no relógio até sair da água.",
     kFace: "Mostrador", kField: "Campo de dados", store: "Instalar na Connect IQ", soon: "Em breve",
     pFace: "Saiba se tem onda antes de ver o mar. Analógico ou digital, com quatro fundos.",
     f1a: "Ondas: altura, período e de onde vem o swell", f1b: "Vento, na cor do que ele faz na sua praia", f1c: "A maré do dia, com a preamar e a baixa-mar", f1d: "A água e o ar", f1e: "O pico mais próximo, escolhido sozinho",
     nFcst: "Previsão", pFcst: "O seu dia de surf hora a hora, sem olhar três apps no celular. E de manhã, o melhor pico por perto.",
     f2a: "O pico e o dia, e o Hoje com os picos por perto do melhor ao pior", f2b: "As ondas de cada hora, em verde, amarelo ou vermelho", f2c: "O vento de cada hora, com a direção", f2d: "A maré do dia", f2e: "A água e o ar",
-    nSess: "Sessão", pSess: "Grava a sua sessão, conta as suas ondas sozinho e te leva de volta ao take-off. Você só surfa.", f3f: "A bússola te leva ao take-off: a zona onde você pegou mais ondas, e a entrada",
+    nSess: "Sessão", pSess: "Antes de entrar, qual roupa usar. Na água, grava a sua sessão, conta as suas ondas sozinho e te leva de volta ao take-off. Você só surfa.", f3f: "A bússola te leva ao take-off: a zona onde você pegou mais ondas, e a entrada",
     f3a: "Suas ondas, contadas sozinhas", f3b: "Esquerdas e direitas", f3c: "Quanto você surfou, remou e esperou, também no bisel", f3d: "A última onda: quanto durou, a que velocidade e quantos metros", f3e: "Seu pulso",
     nWave: "Ondas e vento", dWave: "Terral ou maral? Veja na água: as ondas e o vento de agora dentro da sua atividade. No Surf da Garmin, também conta as suas ondas.",
     nTide: "Maré", dTide: "Quanto falta para a baixa-mar, sem sair da sua sessão de surf, SUP ou natação.",
@@ -771,6 +782,8 @@ const T = {
     qE: "Perguntas", qH: "O que você está se perguntando.",
     q1: "Quanto custa?", a1: "Nada. Todos os apps são grátis, sem anúncios e sem conta, em memória de Gonzalo Moratorio. Se ele te ajuda, em breve você vai poder pagar um café pelo app do iPhone.", memE: "Em memória de", memWhy: "O Surf Dawn é grátis em memória dele.",
     q2: "Que relógio eu preciso?", a2: "Um Garmin redondo de 5 botões (fēnix, epix, Forerunner e outros) para o mostrador, a Previsão e o Sessão; os Anéis e os campos de dados funcionam em quase 100 relógios Garmin. Ou um Apple Watch com watchOS 10 e um iPhone com iOS 17.",
+    q7: "Funciona com Android?", a7: "Com um Garmin, sim: os apps do relógio funcionam com Android ou com iPhone, porque conversam com o app Garmin Connect do celular. Já o app do iPhone e o do Apple Watch são só da Apple.",
+    q8: "Preciso trocar o meu mostrador?", a8: "Não. A Previsão e o Sessão abrem de qualquer mostrador, e o glance da Previsão deixa à vista o melhor pico do dia. Além disso, a Previsão põe três complicações do seu pico (as melhores horas, as ondas e o vento de agora) e o Sessão duas (a sua última sessão e a sua melhor janela) no Face It e nos mostradores da Connect IQ que as aceitam; os mostradores da Garmin não mostram complicações de outros apps.",
     q3: "Funciona na minha praia?", a3: "São mais de 2.500 picos em 63 países, e o app escolhe sozinho o mais próximo. Se faltar o seu, avise pelo Suporte que a gente adiciona.",
     q4: "De onde vêm os dados?", a4: "As ondas, o vento e o tempo vêm do Open-Meteo, com os modelos de ondas que funcionam melhor em cada região; as marés, das tábuas de cada porto.",
     q5: "Preciso do celular na água?", a5: "Não. O relógio baixa a previsão antes, e na água funciona sozinho: o Sessão grava com o GPS do relógio.",
