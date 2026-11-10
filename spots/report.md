@@ -103,7 +103,7 @@
 
 | Región | Picos | Bytes | Olas | Viento | Puertos | Ajuste medio a la costa | Punto de olas |
 |---|---|---|---|---|---|---|---|
-| UY-CAN | 14 | 953 | ncep_gfswave025 | gfs_seamless | 2 | — | 0 |
+| UY-CAN | 14 | 906 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | UY-MAL | 18 | 1095 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | UY-ROC | 19 | 1097 | ncep_gfswave025 | gfs_seamless | 1 | — | 5 |
 | AR-MDP | 22 | 1279 | ncep_gfswave025 | gfs_seamless | 3 | 422 m | 0 |
@@ -111,7 +111,7 @@
 | AR-SUR | 6 | 549 | ncep_gfswave025 | gfs_seamless | 3 | 886 m | 0 |
 | BR-RS | 18 | 1183 | ncep_gfswave025 | gfs_seamless | 3 | 422 m | 7 |
 | BR-RS-SUL | 2 | 334 | ncep_gfswave025 | gfs_seamless | 1 | 229 m | 0 |
-| BR-SC-FLN | 14 | 1002 | ncep_gfswave025 | gfs_seamless | 1 | — | 13 |
+| BR-SC-FLN | 14 | 1014 | ncep_gfswave025 | gfs_seamless | 1 | — | 14 |
 | BR-SC-SUL | 6 | 528 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | BR-SC-NOR | 20 | 1296 | ncep_gfswave025 | gfs_seamless | 3 | 582 m | 4 |
 | BR-SP | 29 | 1556 | ncep_gfswave025 | gfs_seamless | 3 | 599 m | 0 |
