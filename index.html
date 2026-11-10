@@ -207,6 +207,20 @@
   .app-link span { color: var(--label); font-size: .85rem; }
   .app-link .go { margin-left: auto; color: var(--teal); font-weight: 600; font-family: var(--head); }
 
+
+  /* in memory */
+  .memoria { margin-top: 110px; text-align: center; }
+  .memoria .card { max-width: 640px; margin: 0 auto; padding: 44px 28px 40px; border-radius: 32px; border: 1px solid var(--hair);
+    background: radial-gradient(90% 90% at 50% 0%, #17404A 0%, var(--card) 70%); }
+  .portrait { width: 132px; height: 132px; margin: 0 auto 22px; border-radius: 50%; overflow: hidden; display: grid; place-items: center;
+    background: linear-gradient(160deg, #1E4A55, #0B232A); box-shadow: 0 0 0 4px rgba(61, 214, 208, .35), 0 18px 40px rgba(0, 0, 0, .45);
+    font: 600 2.6rem var(--head); color: var(--teal); letter-spacing: .02em; }
+  .portrait img { width: 100%; height: 100%; object-fit: cover; }
+  .memoria .eyebrow { margin-bottom: 6px; }
+  .memoria h2 { margin-bottom: 4px; }
+  .memoria .years { font: 500 1.15rem var(--head); color: var(--label); letter-spacing: .12em; }
+  .memoria p.why { color: var(--text); font-size: 1.15rem; margin-top: 18px; text-wrap: balance; }
+
   /* the closing band */
   .band { position: relative; margin-top: 104px; overflow: hidden; background: #0B2530 url("web/foto-banda.jpg") 22% 60% / cover no-repeat; }
   .band::before { content: ""; position: absolute; inset: 0;
@@ -465,7 +479,7 @@
   <span class="eyebrow" data-t="qE">Preguntas</span>
   <h2 id="q-h" data-t="qH">Lo que te estás preguntando.</h2>
   <div class="faq" style="text-align:left">
-    <details><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Todas las apps son gratis, sin publicidad y sin cuentas. Si te sirve, pronto vas a poder invitar un café desde la app de iPhone.</p></details>
+    <details><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Todas las apps son gratis, sin publicidad y sin cuentas, en memoria de Gonzalo Moratorio. Si te sirve, pronto vas a poder invitar un café desde la app de iPhone.</p></details>
     <details><summary data-t="q2">¿Qué reloj necesito?</summary><p data-t="a2">Un Garmin redondo de 5 botones (fēnix, epix, Forerunner y otros) para la esfera, Pronóstico y Sesión; Anillos y los campos de datos andan en casi 100 relojes Garmin. O un Apple Watch con watchOS 10 y un iPhone con iOS 17.</p></details>
     <details><summary data-t="q3">¿Anda en mi playa?</summary><p data-t="a3">Hay más de 2.500 picos en 63 países, y la app elige sola el más cercano. Si falta el tuyo, avisanos desde Soporte y lo sumamos.</p></details>
     <details><summary data-t="q4">¿De dónde salen los datos?</summary><p data-t="a4">Las olas, el viento y el tiempo vienen de Open-Meteo, con los modelos de olas que mejor andan en cada zona; las mareas, de las tablas de cada puerto.</p></details>
@@ -500,6 +514,20 @@
 </section>
 
 </main>
+
+<div class="wrap">
+<section class="memoria" aria-labelledby="m-h">
+  <div class="card">
+    <!-- the photo goes here when there is one we may use: <img src="web/gonzalo.jpg" alt="Gonzalo Moratorio"> instead of the initials -->
+    <div class="portrait" aria-hidden="true">GM</div>
+    <span class="eyebrow" data-t="memE">En memoria de</span>
+    <h2 id="m-h">Gonzalo Moratorio</h2>
+    <span class="years">1982 – 2026</span>
+    <p class="why" data-t="memWhy">Surf Dawn es gratis en su memoria.</p>
+  </div>
+</section>
+
+</div>
 
 <section class="band" aria-labelledby="b-h">
   <div class="wrap"><div class="copy">
@@ -561,7 +589,7 @@ const T = {
     nodeG: "The watch face, Forecast, Session and the data fields", nodeI: "Your spots' week and all your sessions, from any watch", nodeA: "Forecast, Session and Train in one app",
     linkG: "Sessions and Train go to the iPhone; your boards, your surfing and your history, to the watch.", linkA: "Sessions and Train go to the iPhone; your level, your boards and the background, to the watch.",
     qE: "Questions", qH: "What you're wondering.",
-    q1: "How much does it cost?", a1: "Nothing. All the apps are free, with no ads and no accounts. If it helps you, soon you'll be able to buy a coffee from the iPhone app.",
+    q1: "How much does it cost?", a1: "Nothing. All the apps are free, with no ads and no accounts, in memory of Gonzalo Moratorio. If it helps you, soon you'll be able to buy a coffee from the iPhone app.", memE: "In memory of", memWhy: "Surf Dawn is free in his memory.",
     q2: "Which watch do I need?", a2: "A round 5-button Garmin (fēnix, epix, Forerunner and more) for the watch face, Forecast and Session; Rings and the data fields run on almost 100 Garmin watches. Or an Apple Watch with watchOS 10 and an iPhone with iOS 17.",
     q3: "Does it work at my beach?", a3: "There are more than 2,500 spots in 63 countries, and the app picks the nearest by itself. If yours is missing, tell us through Support and we'll add it.",
     q4: "Where does the data come from?", a4: "Waves, wind and weather come from Open-Meteo, with the wave models that work best in each area; tides, from each port's tables.",
@@ -615,7 +643,7 @@ const T = {
     nodeG: "O mostrador, a Previsão, o Sessão e os campos de dados", nodeI: "A semana dos seus picos e todas as suas sessões, de qualquer relógio", nodeA: "Previsão, Sessão e Treinar num só app",
     linkG: "As sessões e o Treinar vão para o iPhone; suas pranchas, seu surf e seu histórico, para o relógio.", linkA: "As sessões e o Treinar vão para o iPhone; seu nível, suas pranchas e o fundo, para o relógio.",
     qE: "Perguntas", qH: "O que você está se perguntando.",
-    q1: "Quanto custa?", a1: "Nada. Todos os apps são grátis, sem anúncios e sem conta. Se ele te ajuda, em breve você vai poder pagar um café pelo app do iPhone.",
+    q1: "Quanto custa?", a1: "Nada. Todos os apps são grátis, sem anúncios e sem conta, em memória de Gonzalo Moratorio. Se ele te ajuda, em breve você vai poder pagar um café pelo app do iPhone.", memE: "Em memória de", memWhy: "O Surf Dawn é grátis em memória dele.",
     q2: "Que relógio eu preciso?", a2: "Um Garmin redondo de 5 botões (fēnix, epix, Forerunner e outros) para o mostrador, a Previsão e o Sessão; os Anéis e os campos de dados funcionam em quase 100 relógios Garmin. Ou um Apple Watch com watchOS 10 e um iPhone com iOS 17.",
     q3: "Funciona na minha praia?", a3: "São mais de 2.500 picos em 63 países, e o app escolhe sozinho o mais próximo. Se faltar o seu, avise pelo Suporte que a gente adiciona.",
     q4: "De onde vêm os dados?", a4: "As ondas, o vento e o tempo vêm do Open-Meteo, com os modelos de ondas que funcionam melhor em cada região; as marés, das tábuas de cada porto.",
