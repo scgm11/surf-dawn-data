@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Surf Dawn</title>
+<meta name="description" content="Las mejores horas para surfear, en tu reloj y tu iPhone. Apps gratis para Garmin, Apple Watch e iPhone.">
+<meta name="theme-color" content="#0A1F25">
+<meta property="og:title" content="Surf Dawn">
+<meta property="og:description" content="Las mejores horas para surfear, en tu reloj y tu iPhone. Gratis, sin publicidad y sin cuentas.">
+<meta property="og:image" content="https://scgm11.github.io/surf-dawn-data/web/icono.png">
+<link rel="icon" href="web/icono.png">
+<link rel="apple-touch-icon" href="web/apple-touch-icon.png">
+<style>
+  :root {
+    color-scheme: dark;
+    --bg: #0A1F25; --bg2: #051116; --card: #122B33; --card2: #19343C; --hair: #243C44;
+    --text: #F2F5F7; --label: #9AABB2; --dim: #58707A;
+    --teal: #3DD6D0; --yellow: #FFD60A; --orange: #FF9240; --green: #4CD964; --red: #FF5448;
+    --r: 20px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; color: var(--text); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif;
+    background: radial-gradient(1200px 520px at 50% -120px, rgba(61, 214, 208, .16), transparent 70%), linear-gradient(180deg, var(--bg), var(--bg2) 900px) fixed;
+    background-color: var(--bg2);
+  }
+  a { color: var(--teal); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+  section { padding: 40px 0 8px; }
+  h2 { font-size: 1.65rem; line-height: 1.2; margin: 0 0 6px; letter-spacing: -.01em; }
+  h3 { font-size: 1.12rem; margin: 0; }
+  p { margin: 0; }
+  .lead { color: var(--label); font-size: 1.04rem; max-width: 46rem; }
+
+  /* language */
+  .langs { position: absolute; top: 14px; right: 16px; display: flex; gap: 4px; background: rgba(18, 43, 51, .8); border: 1px solid var(--hair); border-radius: 999px; padding: 3px; }
+  .langs button { font: 600 .78rem/1 inherit; letter-spacing: .04em; color: var(--label); background: none; border: 0; border-radius: 999px; padding: 7px 10px; cursor: pointer; }
+  .langs button[aria-pressed="true"] { background: var(--card2); color: var(--text); }
+
+  /* hero */
+  header { position: relative; text-align: center; padding: 64px 0 8px; }
+  .logo { width: 88px; height: 88px; border-radius: 22px; box-shadow: 0 10px 40px rgba(61, 214, 208, .18); }
+  h1 { font-size: 2.6rem; line-height: 1.1; margin: 18px 0 8px; letter-spacing: -.02em; }
+  .tag { font-size: 1.3rem; font-weight: 600; margin: 0 auto 10px; max-width: 36rem; text-wrap: balance; }
+  .hero-lead { color: var(--label); max-width: 34rem; margin: 0 auto; }
+  .chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 24px; }
+  .chip { display: inline-flex; align-items: center; gap: 8px; padding: 11px 18px; border-radius: 999px; border: 1px solid var(--hair); background: var(--card); color: var(--text); font-weight: 600; }
+  .chip:hover { text-decoration: none; border-color: var(--teal); }
+  .chip svg { width: 18px; height: 18px; color: var(--teal); }
+
+  /* how it fits */
+  .eco { margin-top: 18px; display: flex; flex-direction: column; align-items: stretch; gap: 0; }
+  .node { background: var(--card); border: 1px solid var(--hair); border-radius: var(--r); padding: 18px; display: flex; gap: 14px; align-items: center; }
+  .node svg { flex: none; width: 46px; height: 46px; color: var(--teal); }
+  .node.hub { border-color: rgba(61, 214, 208, .55); background: linear-gradient(180deg, #17363F, var(--card)); }
+  .node p { color: var(--label); font-size: .94rem; }
+  .link { display: flex; align-items: center; gap: 12px; padding: 10px 6px 10px 26px; color: var(--label); font-size: .88rem; }
+  .link .arrows { flex: none; width: 22px; height: 34px; color: var(--teal); }
+  .shared { margin-top: 16px; display: flex; gap: 12px; align-items: flex-start; color: var(--label); font-size: .95rem; }
+  .dots { flex: none; display: flex; gap: 4px; margin-top: 7px; }
+  .dots i { width: 10px; height: 10px; border-radius: 50%; display: block; }
+  @media (min-width: 820px) {
+    .eco { flex-direction: row; align-items: stretch; }
+    .node { flex: 1 1 0; flex-direction: column; text-align: center; padding: 22px 16px; justify-content: center; }
+    .link { flex: 0 0 150px; flex-direction: column; justify-content: center; text-align: center; padding: 0 8px; gap: 6px; }
+    .link .arrows { transform: rotate(90deg); }
+  }
+
+  /* app cards */
+  .grid { display: grid; gap: 14px; margin-top: 20px; grid-template-columns: 1fr; }
+  @media (min-width: 720px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .app { background: var(--card); border: 1px solid var(--hair); border-radius: var(--r); padding: 16px; display: flex; gap: 16px; align-items: flex-start; }
+  .face { flex: none; width: 112px; height: 112px; border-radius: 50%; background: #000; box-shadow: 0 0 0 5px #0B171B, 0 0 0 6px #33474E, 0 8px 24px rgba(0, 0, 0, .45); overflow: hidden; margin: 6px; }
+  .face img { width: 100%; height: 100%; display: block; }
+  .app .body { min-width: 0; }
+  .kind { display: inline-block; font: 700 .68rem/1 inherit; letter-spacing: .08em; text-transform: uppercase; color: var(--teal); margin-bottom: 6px; }
+  .app p { color: var(--label); font-size: .94rem; margin-top: 4px; }
+  .btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 10px; padding: 8px 14px; border-radius: 999px; background: rgba(61, 214, 208, .12); color: var(--teal); font-weight: 600; font-size: .9rem; }
+  .btn:hover { text-decoration: none; background: rgba(61, 214, 208, .2); }
+  .soon { display: inline-block; margin-top: 10px; padding: 7px 13px; border-radius: 999px; background: rgba(255, 146, 64, .14); color: var(--orange); font-weight: 600; font-size: .86rem; }
+  .note { color: var(--dim); font-size: .88rem; margin-top: 14px; }
+
+  /* apple */
+  .badge { display: inline-block; vertical-align: middle; margin-left: 8px; padding: 5px 11px; border-radius: 999px; background: rgba(255, 146, 64, .14); color: var(--orange); font-size: .8rem; font-weight: 600; letter-spacing: 0; }
+  .device { background: var(--card); border: 1px solid var(--hair); border-radius: var(--r); padding: 18px; display: flex; flex-direction: column; justify-content: center; }
+  .device p { color: var(--label); font-size: .94rem; margin-top: 6px; }
+  .shots { display: flex; gap: 12px; justify-content: center; margin-bottom: 16px; }
+  .phone { width: 46%; max-width: 168px; border-radius: 22px; border: 3px solid #26363C; display: block; }
+  .watch { width: 31%; max-width: 132px; align-self: center; border-radius: 26px; border: 5px solid #1E2629; display: block; background: #000; }
+  .hero-lead, .lead, .device p, .app p { text-wrap: pretty; }
+
+  /* manual + support */
+  .duo { display: grid; gap: 14px; grid-template-columns: 1fr; margin-top: 4px; }
+  @media (min-width: 720px) { .duo { grid-template-columns: 1fr 1fr; } }
+  .box { background: var(--card); border: 1px solid var(--hair); border-radius: var(--r); padding: 20px; }
+  .box h2 { font-size: 1.3rem; }
+  .box p { color: var(--label); margin-top: 6px; }
+
+  footer { color: var(--dim); font-size: .88rem; text-align: center; padding: 40px 0 48px; }
+  footer a { color: var(--label); }
+  :focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="langs" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="pt">PT</button>
+  </div>
+  <img class="logo" src="web/icono.png" width="88" height="88" alt="">
+  <h1>Surf Dawn</h1>
+  <p class="tag" data-t="tag">Las mejores horas para surfear, en tu reloj y tu iPhone.</p>
+  <p class="hero-lead" data-t="lead">El pronóstico de tu pico hora por hora, con las mejores horas ya calculadas, y después cada ola de tu sesión. Gratis, sin publicidad y sin cuentas.</p>
+  <nav class="chips">
+    <a class="chip" href="#garmin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="6.5"/><path d="M9 5.5 10 2h4l1 3.5M9 18.5 10 22h4l1-3.5"/></svg><span data-t="chipG">Tengo un Garmin</span></a>
+    <a class="chip" href="#apple"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10.5 18.5h3"/></svg><span data-t="chipA">Tengo iPhone o Apple Watch</span></a>
+  </nav>
+</header>
+
+<section id="ecosistema" aria-labelledby="eco-h">
+  <h2 id="eco-h" data-t="ecoH">Cómo encaja todo</h2>
+  <p class="lead" data-t="ecoLead">Cada reloj anda solo. Con la app de iPhone, todo se junta: tus sesiones, tus tablas y tus números.</p>
+  <div class="eco">
+    <div class="node">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="24" cy="24" r="13"/><path d="M18 11.5 20 4h8l2 7.5M18 36.5 20 44h8l2-7.5M37 20h2.5M37 28h2.5M8.5 20H11M8.5 28H11"/><path d="M24 17v7l4 3"/></svg>
+      <div><h3>Garmin</h3><p data-t="nodeG">La esfera, Pronóstico, Sesión y los campos de datos</p></div>
+    </div>
+    <div class="link"><svg class="arrows" viewBox="0 0 22 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 3v28M3 7l4-4 4 4M15 31V3M11 27l4 4 4-4"/></svg><span data-t="linkG">Las sesiones y Entrenar van al iPhone; tus tablas, tu surf y tu historial, al reloj.</span></div>
+    <div class="node hub">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="13" y="4" width="22" height="40" rx="5"/><path d="M21 38.5h6"/><path d="M17.5 26c2.5 0 3.5-3 6-3s3.5 3 6.5 3" stroke-linecap="round"/></svg>
+      <div><h3>iPhone</h3><p data-t="nodeI">La semana de tus picos y todas tus sesiones, de cualquier reloj</p></div>
+    </div>
+    <div class="link"><svg class="arrows" viewBox="0 0 22 34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M7 3v28M3 7l4-4 4 4M15 31V3M11 27l4 4 4-4"/></svg><span data-t="linkA">Las sesiones y Entrenar van al iPhone; tu nivel, tus tablas y el fondo, al reloj.</span></div>
+    <div class="node">
+      <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><rect x="12" y="11" width="24" height="26" rx="7"/><path d="M17 11 18.5 4h11L31 11M17 37l1.5 7h11L31 37M36 21h2.5"/><path d="M24 18v6l3.5 2.5"/></svg>
+      <div><h3>Apple Watch</h3><p data-t="nodeA">Pronóstico, Sesión y Entrenar en una sola app</p></div>
+    </div>
+  </div>
+  <div class="shared">
+    <span class="dots" aria-hidden="true"><i style="background:var(--green)"></i><i style="background:var(--yellow)"></i><i style="background:var(--red)"></i></span>
+    <p data-t="shared">Los mismos picos, el mismo cálculo de las mejores horas y los mismos colores en todos: verde da, amarillo más o menos, rojo no da.</p>
+  </div>
+</section>
+
+<section id="garmin" aria-labelledby="g-h">
+  <h2 id="g-h">Garmin</h2>
+  <p class="lead" data-t="gLead">Cinco apps gratis en la tienda Connect IQ, y Sesión muy pronto. Instalá las que quieras: cada una anda sola, y juntas se completan.</p>
+  <div class="grid">
+    <article class="app">
+      <div class="face"><img src="web/esfera.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind" data-t="kFace">Esfera</span><h3>Surf Dawn</h3>
+        <p data-t="dFace">El mar de tu pico de un vistazo, todo el día en la muñeca: olas, viento y marea, el agua y el aire, el sol y la batería.</p>
+        <a class="btn" href="https://apps.garmin.com/apps/ae5d2deb-d3cd-4cac-9164-cecf6d3ec100" data-t="store">Ver en Connect IQ</a></div>
+    </article>
+    <article class="app">
+      <div class="face"><img src="web/pronostico.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind">App</span><h3 data-t="nFcst">Pronóstico</h3>
+        <p data-t="dFcst">Tu día hora por hora con las mejores horas marcadas, Hoy con los picos cerca ordenados de mejor a peor, y un aviso a la mañana con el mejor pico del día.</p>
+        <a class="btn" href="https://apps.garmin.com/apps/c9fd5f6e-ca6c-4877-958d-df0752cb5e93" data-t="store">Ver en Connect IQ</a></div>
+    </article>
+    <article class="app">
+      <div class="face"><img src="web/sesion.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind">App</span><h3 data-t="nSess">Sesión</h3>
+        <p data-t="dSess">Graba tu sesión, cuenta tus olas y te lleva de vuelta al pico. Al salir, el resumen con tus olas, y todo queda en Garmin Connect.</p>
+        <span class="soon" data-t="soon">Muy pronto</span></div>
+    </article>
+    <article class="app">
+      <div class="face"><img src="web/olas.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind" data-t="kField">Campo de datos</span><h3 data-t="nWave">Olas y viento</h3>
+        <p data-t="dWave">Las olas y el viento de ahora dentro de tu actividad, con la rosa del pico. En el Surf de Garmin, también cuenta tus olas.</p>
+        <a class="btn" href="https://apps.garmin.com/apps/c8c2fe35-ea79-4926-a1c2-a024f8f74a43" data-t="store">Ver en Connect IQ</a></div>
+    </article>
+    <article class="app">
+      <div class="face"><img src="web/marea.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind" data-t="kField">Campo de datos</span><h3 data-t="nTide">Marea</h3>
+        <p data-t="dTide">La marea dentro de tu actividad de surf, SUP o natación: la altura de ahora y cuánto falta para la próxima pleamar o bajamar.</p>
+        <a class="btn" href="https://apps.garmin.com/apps/710f0388-ccae-49c7-ad62-d489eb7998ba" data-t="store">Ver en Connect IQ</a></div>
+    </article>
+    <article class="app">
+      <div class="face"><img src="web/anillos.jpg" width="180" height="180" alt="" loading="lazy"></div>
+      <div class="body"><span class="kind" data-t="kFace">Esfera</span><h3 data-t="nRing">Anillos</h3>
+        <p data-t="dRing">Para los días sin olas: Body Battery, pasos y minutos de intensidad en tres anillos, con el clima, el estrés y el pulso.</p>
+        <a class="btn" href="https://apps.garmin.com/apps/a5e60be2-4901-4233-ac8c-84651fac4cfa" data-t="store">Ver en Connect IQ</a></div>
+    </article>
+  </div>
+  <p class="note" data-t="gCompat">La esfera, Pronóstico y Sesión andan en 50 Garmin redondos de 5 botones (fēnix, epix, Forerunner y otros). Anillos y los campos de datos, en casi 100 relojes.</p>
+</section>
+
+<section id="apple" aria-labelledby="a-h">
+  <h2 id="a-h"><span data-t="aH">iPhone y Apple Watch</span><span class="badge" data-t="aSoon">Muy pronto en el App Store</span></h2>
+  <p class="lead" data-t="aLead">Una sola app: la de iPhone trae adentro la del Apple Watch.</p>
+  <div class="grid">
+    <article class="device">
+      <div class="shots">
+        <img class="phone" data-img="web/iphone-pronostico-{l}.jpg" src="web/iphone-pronostico-es.jpg" width="230" height="500" alt="" loading="lazy">
+        <img class="phone" data-img="web/iphone-sesion-{l}.jpg" src="web/iphone-sesion-es.jpg" width="230" height="500" alt="" loading="lazy">
+      </div>
+      <h3>iPhone</h3>
+      <p data-t="dPhone">La semana de cada pico, con el mapa para buscar otros. Tus sesiones con sus olas sobre el satélite y las fotos de ese día, tus números y cuándo surfeás mejor. Entrenar: rutinas antes y después del agua, y apnea. Recibe las sesiones del Apple Watch y de Sesión en un Garmin.</p>
+    </article>
+    <article class="device">
+      <div class="shots">
+        <img class="watch" src="web/aw-pronostico.jpg" width="150" height="183" alt="" loading="lazy">
+        <img class="watch" src="web/aw-sesion.jpg" width="150" height="183" alt="" loading="lazy">
+        <img class="watch" src="web/aw-widgets.jpg" width="150" height="183" alt="" loading="lazy">
+      </div>
+      <h3>Apple Watch</h3>
+      <p data-t="dWatch">Pronóstico, Hoy y el aviso de la mañana, con complicaciones y el Smart Stack. Sesión cuenta tus olas y la guarda en Salud. Y Entrenar, en la muñeca.</p>
+    </article>
+  </div>
+  <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
+</section>
+
+<section aria-label="Manual">
+  <div class="duo">
+    <div class="box">
+      <h2>Manual</h2>
+      <p data-t="mP">Cómo se usa cada app, en Garmin, el Apple Watch y el iPhone.</p>
+      <a class="btn" id="pdf" href="manual/Surf-Dawn-manual.pdf" data-t="mBtn">Bajar el PDF</a>
+    </div>
+    <div class="box">
+      <h2 data-t="sH">Apoyá Surf Dawn</h2>
+      <p data-t="sP">Surf Dawn es gratis y sin publicidad. Si te sirve para agarrar mejores olas, dejá una reseña en la tienda y pasáselo a quien surfea con vos. Pronto, desde la app de iPhone, vas a poder invitarle un café al que la hace.</p>
+      <p><span data-t="help">¿Algo anda mal o falta un pico?</span> <a id="sup" href="support.html#es" data-t="sup">Soporte</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span data-t="made">Hecho en Uruguay</span> · <span data-t="om">Pronósticos de Open-Meteo</span> ·
+  <a id="sup2" href="support.html#es" data-t="sup">Soporte</a> · <a id="priv" href="privacy.html#es" data-t="priv">Privacidad</a>
+</footer>
+
+</div>
+<script>
+const T = {
+  en: {
+    tag: "The best hours to surf, on your watch and your iPhone.",
+    lead: "Your spot's forecast hour by hour, with the best hours already worked out, and then every wave of your session. Free, no ads, no accounts.",
+    chipG: "I have a Garmin", chipA: "I have an iPhone or Apple Watch",
+    ecoH: "How it fits together",
+    ecoLead: "Each watch works on its own. With the iPhone app it all comes together: your sessions, your boards and your numbers.",
+    nodeG: "The watch face, Forecast, Session and the data fields",
+    nodeI: "Your spots' week and all your sessions, from any watch",
+    nodeA: "Forecast, Session and Train in one app",
+    linkG: "Sessions and Train go to the iPhone; your boards, your surfing and your history, to the watch.",
+    linkA: "Sessions and Train go to the iPhone; your level, your boards and the background, to the watch.",
+    shared: "The same spots, the same best-hours math and the same colors everywhere: green is on, yellow so-so, red not worth it.",
+    gLead: "Five free apps on the Connect IQ Store, and Session coming soon. Install the ones you want: each works on its own, and together they add up.",
+    kFace: "Watch face", kField: "Data field", store: "View on Connect IQ", soon: "Coming soon",
+    dFace: "Your spot's sea at a glance, on your wrist all day: waves, wind and tide, water and air, sun and battery.",
+    nFcst: "Forecast",
+    dFcst: "Your day hour by hour with the best hours marked, Today with the nearby spots ranked best to worst, and a morning alert with the day's best spot.",
+    nSess: "Session",
+    dSess: "Records your session, counts your waves and takes you back to the peak. When you're out, a summary with your waves, and it's all saved to Garmin Connect.",
+    nWave: "Waves and Wind",
+    dWave: "The waves and wind right now inside your activity, with the spot's rose. In Garmin's Surf activity it also counts your waves.",
+    nTide: "Tide",
+    dTide: "The tide inside your surf, SUP or swim activity: the height now and how long until the next high or low tide.",
+    nRing: "Rings",
+    dRing: "For the flat days: Body Battery, steps and intensity minutes in three rings, with the weather, stress and heart rate.",
+    gCompat: "The watch face, Forecast and Session run on 50 round 5-button Garmins (fēnix, epix, Forerunner and more). Rings and the data fields, on almost 100 watches.",
+    aH: "iPhone and Apple Watch", aSoon: "Coming soon to the App Store",
+    aLead: "One app: the iPhone app carries the Apple Watch one inside.",
+    dPhone: "Each spot's week, with the map to find others. Your sessions with their waves on the satellite and that day's photos, your numbers and when you surf best. Train: routines before and after the water, and apnea. It gets the sessions from the Apple Watch and from Session on a Garmin.",
+    dWatch: "Forecast, Today and the morning alert, with complications and the Smart Stack. Session counts your waves and saves it to Health. And Train, on your wrist.",
+    aReq: "iPhone with iOS 17 or later; Apple Watch with watchOS 10 or later.",
+    mP: "How to use each app, on Garmin, Apple Watch and iPhone.", mBtn: "Download the PDF",
+    sH: "Support Surf Dawn",
+    sP: "Surf Dawn is free and has no ads. If it helps you catch better waves, leave a review on the store and pass it on to whoever surfs with you. Soon you'll be able to buy the maker a coffee from the iPhone app.",
+    help: "Something wrong, or a spot missing?", sup: "Support", made: "Made in Uruguay", om: "Forecasts from Open-Meteo", priv: "Privacy",
+    _pdf: "manual/Surf-Dawn-manual-en.pdf", _hash: "#en",
+    _desc: "The best hours to surf, on your watch and your iPhone. Free apps for Garmin, Apple Watch and iPhone."
+  },
+  pt: {
+    tag: "As melhores horas para surfar, no seu relógio e no seu iPhone.",
+    lead: "A previsão do seu pico hora a hora, com as melhores horas já calculadas, e depois cada onda da sua sessão. Grátis, sem anúncios e sem conta.",
+    chipG: "Tenho um Garmin", chipA: "Tenho iPhone ou Apple Watch",
+    ecoH: "Como tudo se encaixa",
+    ecoLead: "Cada relógio funciona sozinho. Com o app do iPhone, tudo se junta: suas sessões, suas pranchas e seus números.",
+    nodeG: "O mostrador, a Previsão, o Sessão e os campos de dados",
+    nodeI: "A semana dos seus picos e todas as suas sessões, de qualquer relógio",
+    nodeA: "Previsão, Sessão e Treinar num só app",
+    linkG: "As sessões e o Treinar vão para o iPhone; suas pranchas, seu surf e seu histórico, para o relógio.",
+    linkA: "As sessões e o Treinar vão para o iPhone; seu nível, suas pranchas e o fundo, para o relógio.",
+    shared: "Os mesmos picos, o mesmo cálculo das melhores horas e as mesmas cores em todos: verde dá, amarelo mais ou menos, vermelho não dá.",
+    gLead: "Cinco apps grátis na loja Connect IQ, e o Sessão em breve. Instale os que quiser: cada um funciona sozinho, e juntos se completam.",
+    kFace: "Mostrador", kField: "Campo de dados", store: "Ver na Connect IQ", soon: "Em breve",
+    dFace: "O mar do seu pico num relance, o dia todo no pulso: ondas, vento e maré, água e ar, sol e bateria.",
+    nFcst: "Previsão",
+    dFcst: "O seu dia hora a hora com as melhores horas marcadas, Hoje com os picos por perto do melhor ao pior, e um aviso de manhã com o melhor pico do dia.",
+    nSess: "Sessão",
+    dSess: "Grava a sua sessão, conta as suas ondas e leva você de volta ao pico. Ao sair, o resumo com as suas ondas, e tudo fica no Garmin Connect.",
+    nWave: "Ondas e vento",
+    dWave: "As ondas e o vento de agora dentro da sua atividade, com a rosa do pico. No Surf da Garmin, também conta as suas ondas.",
+    nTide: "Maré",
+    dTide: "A maré dentro da sua atividade de surf, SUP ou natação: a altura agora e quanto falta para a próxima preamar ou baixa-mar.",
+    nRing: "Anéis",
+    dRing: "Para os dias sem onda: Body Battery, passos e minutos de intensidade em três anéis, com o clima, o estresse e o pulso.",
+    gCompat: "O mostrador, a Previsão e o Sessão funcionam em 50 Garmin redondos de 5 botões (fēnix, epix, Forerunner e outros). Os Anéis e os campos de dados, em quase 100 relógios.",
+    aH: "iPhone e Apple Watch", aSoon: "Em breve na App Store",
+    aLead: "Um só app: o do iPhone traz dentro o do Apple Watch.",
+    dPhone: "A semana de cada pico, com o mapa para buscar outros. Suas sessões com as ondas sobre o satélite e as fotos daquele dia, seus números e quando você surfa melhor. Treinar: rotinas antes e depois da água, e apneia. Recebe as sessões do Apple Watch e do Sessão num Garmin.",
+    dWatch: "Previsão, Hoje e o aviso da manhã, com complicações e o Smart Stack. O Sessão conta as suas ondas e salva no app Saúde. E o Treinar, no pulso.",
+    aReq: "iPhone com iOS 17 ou mais recente; Apple Watch com watchOS 10 ou mais recente.",
+    mP: "Como usar cada app, no Garmin, no Apple Watch e no iPhone.", mBtn: "Baixar o PDF",
+    sH: "Apoie o Surf Dawn",
+    sP: "O Surf Dawn é grátis e sem anúncios. Se ele te ajuda a pegar ondas melhores, deixe uma avaliação na loja e passe para quem surfa com você. Em breve, pelo app do iPhone, você vai poder pagar um café para quem faz.",
+    help: "Algo errado ou falta um pico?", sup: "Suporte", made: "Feito no Uruguai", om: "Previsões do Open-Meteo", priv: "Privacidade",
+    _pdf: "manual/Surf-Dawn-manual-pt.pdf", _hash: "#pt",
+    _desc: "As melhores horas para surfar, no seu relógio e no seu iPhone. Apps grátis para Garmin, Apple Watch e iPhone."
+  }
+};
+const ES = {};
+document.querySelectorAll("[data-t]").forEach(e => { ES[e.dataset.t] = e.textContent; });
+ES._pdf = "manual/Surf-Dawn-manual.pdf"; ES._hash = "#es";
+ES._desc = document.querySelector('meta[name="description"]').content;
+T.es = ES;
+
+function setLang(l) {
+  const d = T[l] || T.es;
+  document.documentElement.lang = l;
+  document.querySelectorAll("[data-t]").forEach(e => { if (d[e.dataset.t]) e.textContent = d[e.dataset.t]; });
+  document.querySelectorAll("[data-img]").forEach(e => { e.src = e.dataset.img.replace("{l}", l); });
+  document.getElementById("pdf").href = d._pdf;
+  ["sup", "sup2"].forEach(id => { document.getElementById(id).href = "support.html" + d._hash; });
+  document.getElementById("priv").href = "privacy.html" + d._hash;
+  document.querySelector('meta[name="description"]').content = d._desc;
+  document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === l));
+  try { localStorage.setItem("lang", l); } catch (e) {}
+}
+document.querySelectorAll(".langs button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+let lang = new URLSearchParams(location.search).get("lang");
+if (!lang) { try { lang = localStorage.getItem("lang"); } catch (e) {} }
+if (!lang) {
+  const n = (navigator.languages && navigator.languages[0] || navigator.language || "es").slice(0, 2).toLowerCase();
+  lang = n === "pt" ? "pt" : n === "es" ? "es" : "en";
+}
+setLang(T[lang] ? lang : "es");
+</script>
+</body>
+</html>
