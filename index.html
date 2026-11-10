@@ -24,7 +24,7 @@
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
-  body { margin: 0; color: var(--text); background: var(--bg);
+  body { margin: 0; overflow-x: clip; color: var(--text); background: var(--bg);
     font: 16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", system-ui, "Segoe UI", Roboto, sans-serif; }
   img { display: block; max-width: 100%; height: auto; }
   a { color: var(--teal); text-decoration: none; }
@@ -50,8 +50,8 @@
   .langs { display: flex; gap: 2px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .12); border-radius: 999px; padding: 3px; }
   .langs button { font: 600 .78rem/1 var(--head); letter-spacing: .06em; color: var(--label); background: none; border: 0; border-radius: 999px; padding: 7px 10px; cursor: pointer; }
   .langs button[aria-pressed="true"] { background: rgba(255, 255, 255, .16); color: var(--text); }
-  .nav-cta { display: none; }
-  @media (min-width: 560px) { .nav-cta { display: inline-flex; } }
+  .btn.nav-cta { display: none; }
+  @media (min-width: 560px) { .btn.nav-cta { display: inline-flex; } }
 
   /* buttons */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 22px; border-radius: 999px; font-weight: 600; font-size: 1.04rem;
@@ -208,6 +208,18 @@
   .app-link .go { margin-left: auto; color: var(--teal); font-weight: 600; font-family: var(--head); }
 
 
+
+  /* photo bands between the sections */
+  .photoband { position: relative; margin: 96px calc(50% - 50vw) 0; min-height: clamp(340px, 58vh, 560px); display: grid; place-items: center;
+    background: #0B2530 center / cover no-repeat; overflow: hidden; }
+  .photoband::before { content: ""; position: absolute; inset: 0;
+    background: linear-gradient(180deg, var(--bg) 0%, rgba(6, 19, 23, .25) 22%, rgba(6, 19, 23, .25) 70%, var(--bg) 100%), rgba(6, 19, 23, .28); }
+  .photoband p { position: relative; z-index: 1; max-width: 18ch; margin: 0 20px; text-align: center; font: 600 clamp(2.1rem, 5.6vw, 3.8rem)/1.02 var(--head);
+    letter-spacing: -.02em; text-wrap: balance; text-shadow: 0 4px 30px rgba(0, 0, 0, .55); }
+  .photoband p em { font-style: normal; color: var(--teal); }
+  .photoband .pin { position: absolute; z-index: 1; left: max(20px, calc(50vw - 550px)); bottom: 40px; margin: 0; }
+  @media (hover: hover) and (min-width: 940px) { .photoband { background-attachment: fixed; } }
+
   /* in memory */
   .memoria { margin-top: 110px; text-align: center; }
   .memoria .card { max-width: 640px; margin: 0 auto; padding: 44px 28px 40px; border-radius: 32px; border: 1px solid var(--hair);
@@ -293,7 +305,7 @@
     <article class="step"><span class="time"><b>3</b>06:10</span><div class="pic"><img src="web/g-pronostico.webp" width="753" height="751" alt="" loading="lazy"></div>
       <h3 data-t="s3h">Elegís la hora</h3><p data-t="s3p">El día hora por hora, en verde, amarillo o rojo, con las mejores horas marcadas.</p></article>
     <article class="step"><span class="time"><b>4</b>07:00</span><div class="pic"><img src="web/g-sesion.webp" width="753" height="751" alt="" loading="lazy"></div>
-      <h3 data-t="s4h">En el agua, nada que tocar</h3><p data-t="s4p">Sesión cuenta tus olas sola, y si la corriente te aleja del pico, te avisa.</p></article>
+      <h3 data-t="s4h">En el agua, nada que tocar</h3><p data-t="s4p">Sesión cuenta tus olas sola. Si la corriente te aleja, te avisa, y la brújula te lleva de vuelta al take-off.</p></article>
     <article class="step"><span class="time"><b>5</b>09:00</span><div class="pic"><img src="web/g-resumen.webp" width="753" height="751" alt="" loading="lazy"></div>
       <h3 data-t="s5h">Salís con tus números</h3><p data-t="s5p">Cuántas olas, la mejor, la velocidad máxima. Todo queda en Garmin Connect.</p></article>
     <article class="step"><span class="time"><b>6</b><span data-t="s6t">En casa</span></span><div class="pic"><img data-img="web/iphone-sesion-{l}.webp" src="web/iphone-sesion-es.webp" width="440" height="930" alt="" loading="lazy"></div>
@@ -301,6 +313,11 @@
   </div>
   <p class="swipe" data-t="swipe">Deslizá para ver el día →</p>
 </section>
+
+<div class="photoband" style="background-image:url('web/foto-tubo.jpg')">
+  <p data-h="pb1">Hecho por surfistas, <em>en Uruguay.</em></p>
+  <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
+</div>
 
 <section id="semaforo" aria-labelledby="sem-h">
   <div class="light">
@@ -378,18 +395,19 @@
     <div class="shot pair">
       <div class="main spots" data-k="f3"><img src="web/g-sesion.webp" width="753" height="751" alt="" loading="lazy">
         <span class="dot" style="left:50%;top:32%">1</span><span class="dot" style="left:56%;top:49%">2</span><span class="dot" style="left:81%;top:42%">3</span><span class="dot" style="left:50%;top:64%">4</span><span class="dot" style="left:25%;top:47%">5</span></div>
-      <img class="side" src="web/g-sesion-olas.webp" width="753" height="751" alt="" loading="lazy">
+      <div class="side spots" data-k="f3"><img src="web/g-takeoff.webp" width="753" height="751" alt="" loading="lazy"><span class="dot" style="left:70%;top:38%">6</span></div>
     </div>
     <div>
       <span class="kind">App</span>
       <h3 data-t="nSess">Sesión</h3>
-      <p class="pitch" data-t="pSess">Graba tu sesión y cuenta tus olas sola. Vos solo surfeás.</p>
+      <p class="pitch" data-t="pSess">Graba tu sesión, cuenta tus olas sola y te lleva de vuelta al take-off. Vos solo surfeás.</p>
       <ol class="keys" data-k="f3">
         <li data-t="f3a">Tus olas, contadas solas</li>
         <li data-t="f3b">Izquierdas y derechas</li>
         <li data-t="f3c">Cuánto surfeaste, remaste y esperaste, también en el bisel</li>
         <li data-t="f3d">La última ola: cuánto duró, a qué velocidad y cuántos metros</li>
-        <li data-t="f3e">Tu pulso, y la brújula de vuelta al pico</li>
+        <li data-t="f3e">Tu pulso</li>
+        <li data-t="f3f">La brújula te lleva al take-off: la zona donde agarraste más olas, y la entrada</li>
       </ol>
       <div class="actions"><span class="soon" data-t="soon">Muy pronto</span></div>
     </div>
@@ -417,6 +435,11 @@
   </div>
   <p class="note" data-t="gCompat">La esfera, Pronóstico y Sesión andan en 50 Garmin redondos de 5 botones (fēnix, epix, Forerunner y otros). Anillos y los campos de datos, en casi 100 relojes.</p>
 </section>
+
+<div class="photoband" style="background-image:url('web/foto-verde.jpg')">
+  <p data-h="pb2">Tu próxima buena sesión <em>ya está en el pronóstico.</em></p>
+  <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
+</div>
 
 <section id="apple" aria-labelledby="a-h">
   <span class="eyebrow">iPhone · Apple Watch</span>
@@ -475,6 +498,11 @@
   </div>
 </section>
 
+<div class="photoband" style="background-image:url('web/foto-azul.jpg')">
+  <p data-h="pb3">Menos teléfono. <em>Más olas.</em></p>
+  <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
+</div>
+
 <section id="preguntas" aria-labelledby="q-h" class="center">
   <span class="eyebrow" data-t="qE">Preguntas</span>
   <h2 id="q-h" data-t="qH">Lo que te estás preguntando.</h2>
@@ -518,8 +546,7 @@
 <div class="wrap">
 <section class="memoria" aria-labelledby="m-h">
   <div class="card">
-    <!-- the photo goes here when there is one we may use: <img src="web/gonzalo.jpg" alt="Gonzalo Moratorio"> instead of the initials -->
-    <div class="portrait" aria-hidden="true">GM</div>
+    <div class="portrait"><img src="web/gonzalo.jpg" width="320" height="320" alt="Gonzalo Moratorio" loading="lazy"></div>
     <span class="eyebrow" data-t="memE">En memoria de</span>
     <h2 id="m-h">Gonzalo Moratorio</h2>
     <span class="years">1982 – 2026</span>
@@ -549,6 +576,7 @@
 const T = {
   en: {
     lDay: "How it works", lFaq: "Questions", install: "Install for free", how: "See how it works",
+    pb1: 'Made by surfers, <em>in Uruguay.</em>', pb2: 'Your next good session <em>is already in the forecast.</em>', pb3: 'Less phone. <em>More waves.</em>',
     h1: 'The best waves of the day, <em>on your wrist.</em>',
     lead: "Surf Dawn works out the best hours at your spot from the waves, the wind and the tide, tells you in the morning where to go, and in the water counts every wave you catch.",
     tr1: "Free", tr2: "No ads", tr3: "No accounts", tr4: "Garmin, Apple Watch and iPhone", credit: "Uruguay · photo @vistaleste",
@@ -557,7 +585,7 @@ const T = {
     s1h: "The best spot wakes you up", s1p: "Before you get up, your watch tells you where and when to paddle out today.",
     s2h: "A glance at your wrist", s2p: "Your spot's waves, wind and tide on the watch face, without opening your phone.",
     s3h: "Pick your hour", s3p: "The day hour by hour, in green, yellow or red, with the best hours marked.",
-    s4h: "In the water, nothing to touch", s4p: "Session counts your waves by itself, and if the current drifts you off the peak, it tells you.",
+    s4h: "In the water, nothing to touch", s4p: "Session counts your waves by itself. If the current drifts you away, it tells you, and the compass takes you back to the take-off.",
     s5h: "Out with your numbers", s5p: "How many waves, the best one, top speed. It all goes to Garmin Connect.",
     s6t: "At home", s6h: "Your waves, on the map", s6p: "On the iPhone, every wave on the satellite, where you paddled and that day's photos.",
     swipe: "Swipe through the day →", today: "Today",
@@ -572,8 +600,8 @@ const T = {
     f1a: "Waves: height, period and where the swell comes from", f1b: "Wind, in the color of what it does to your beach", f1c: "The day's tide, with high and low", f1d: "Water and air", f1e: "The nearest spot, picked by itself",
     nFcst: "Forecast", pFcst: "Your surf day hour by hour, without checking three apps on your phone. And in the morning, the best spot nearby.",
     f2a: "The spot and the day, and Today with the nearby spots best to worst", f2b: "Each hour's waves, in green, yellow or red", f2c: "Each hour's wind, with its direction", f2d: "The day's tide", f2e: "Water and air",
-    nSess: "Session", pSess: "Records your session and counts your waves by itself. You just surf.",
-    f3a: "Your waves, counted by themselves", f3b: "Lefts and rights", f3c: "How long you surfed, paddled and waited, on the bezel too", f3d: "The last wave: how long, how fast and how many meters", f3e: "Your heart rate, and the compass back to the peak",
+    nSess: "Session", pSess: "Records your session, counts your waves by itself and takes you back to the take-off. You just surf.", f3f: "The compass takes you to the take-off: the zone where you caught the most waves, and the way in",
+    f3a: "Your waves, counted by themselves", f3b: "Lefts and rights", f3c: "How long you surfed, paddled and waited, on the bezel too", f3d: "The last wave: how long, how fast and how many meters", f3e: "Your heart rate",
     nWave: "Waves and Wind", dWave: "Offshore or onshore? See it in the water: the waves and wind right now inside your activity. In Garmin's Surf activity it also counts your waves.",
     nTide: "Tide", dTide: "How long until low tide, without leaving your surf, SUP or swim session.",
     nRing: "Rings", dRing: "For the flat days: Body Battery, steps and intensity minutes in three rings.",
@@ -603,6 +631,7 @@ const T = {
   },
   pt: {
     lDay: "Como funciona", lFaq: "Perguntas", install: "Instalar grátis", how: "Ver como funciona",
+    pb1: 'Feito por surfistas, <em>no Uruguai.</em>', pb2: 'A sua próxima boa sessão <em>já está na previsão.</em>', pb3: 'Menos celular. <em>Mais ondas.</em>',
     h1: 'As melhores ondas do dia, <em>no seu pulso.</em>',
     lead: "O Surf Dawn calcula as melhores horas do seu pico com as ondas, o vento e a maré, avisa de manhã para onde ir, e na água conta cada onda que você pega.",
     tr1: "Grátis", tr2: "Sem anúncios", tr3: "Sem conta", tr4: "Garmin, Apple Watch e iPhone", credit: "Uruguai · foto @vistaleste",
@@ -611,7 +640,7 @@ const T = {
     s1h: "O melhor pico te acorda", s1p: "Antes de levantar, o relógio diz onde e a que horas vale a pena entrar hoje.",
     s2h: "Uma olhada no pulso", s2p: "As ondas, o vento e a maré do seu pico no mostrador, sem abrir o celular.",
     s3h: "Você escolhe a hora", s3p: "O dia hora a hora, em verde, amarelo ou vermelho, com as melhores horas marcadas.",
-    s4h: "Na água, nada para tocar", s4p: "O Sessão conta as suas ondas sozinho, e se a corrente te afasta do pico, ele avisa.",
+    s4h: "Na água, nada para tocar", s4p: "O Sessão conta as suas ondas sozinho. Se a corrente te afasta, ele avisa, e a bússola te leva de volta ao take-off.",
     s5h: "Você sai com os seus números", s5p: "Quantas ondas, a melhor, a velocidade máxima. Tudo fica no Garmin Connect.",
     s6t: "Em casa", s6h: "Suas ondas, no mapa", s6p: "No iPhone, cada onda sobre o satélite, onde você remou e as fotos daquele dia.",
     swipe: "Deslize para ver o dia →", today: "Hoje",
@@ -626,8 +655,8 @@ const T = {
     f1a: "Ondas: altura, período e de onde vem o swell", f1b: "Vento, na cor do que ele faz na sua praia", f1c: "A maré do dia, com a preamar e a baixa-mar", f1d: "A água e o ar", f1e: "O pico mais próximo, escolhido sozinho",
     nFcst: "Previsão", pFcst: "O seu dia de surf hora a hora, sem olhar três apps no celular. E de manhã, o melhor pico por perto.",
     f2a: "O pico e o dia, e o Hoje com os picos por perto do melhor ao pior", f2b: "As ondas de cada hora, em verde, amarelo ou vermelho", f2c: "O vento de cada hora, com a direção", f2d: "A maré do dia", f2e: "A água e o ar",
-    nSess: "Sessão", pSess: "Grava a sua sessão e conta as suas ondas sozinho. Você só surfa.",
-    f3a: "Suas ondas, contadas sozinhas", f3b: "Esquerdas e direitas", f3c: "Quanto você surfou, remou e esperou, também no bisel", f3d: "A última onda: quanto durou, a que velocidade e quantos metros", f3e: "Seu pulso, e a bússola de volta ao pico",
+    nSess: "Sessão", pSess: "Grava a sua sessão, conta as suas ondas sozinho e te leva de volta ao take-off. Você só surfa.", f3f: "A bússola te leva ao take-off: a zona onde você pegou mais ondas, e a entrada",
+    f3a: "Suas ondas, contadas sozinhas", f3b: "Esquerdas e direitas", f3c: "Quanto você surfou, remou e esperou, também no bisel", f3d: "A última onda: quanto durou, a que velocidade e quantos metros", f3e: "Seu pulso",
     nWave: "Ondas e vento", dWave: "Terral ou maral? Veja na água: as ondas e o vento de agora dentro da sua atividade. No Surf da Garmin, também conta as suas ondas.",
     nTide: "Maré", dTide: "Quanto falta para a baixa-mar, sem sair da sua sessão de surf, SUP ou natação.",
     nRing: "Anéis", dRing: "Para os dias sem onda: Body Battery, passos e minutos de intensidade em três anéis.",
