@@ -162,13 +162,15 @@
     background: rgba(255, 146, 64, .14); color: var(--orange); border: 1px solid rgba(255, 146, 64, .32); }
   .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; align-items: center; }
   .trio { display: grid; gap: 16px; margin-top: 18px; }
-  @media (min-width: 760px) { .trio { grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 760px) { .trio { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 1040px) { .trio { grid-template-columns: repeat(4, 1fr); } }
   .mini { border-radius: var(--r); padding: 26px 22px; background: linear-gradient(180deg, var(--card2), var(--card)); border: 1px solid var(--hair); display: flex; flex-direction: column; }
   .mini img { width: 70%; max-width: 220px; margin: 0 auto 18px; }
   .mini .kind { color: var(--teal); font: 600 .78rem var(--head); letter-spacing: .16em; text-transform: uppercase; }
   .mini h3 { font-size: 1.4rem; margin-top: 4px; }
   .mini p { color: var(--label); font-size: .97rem; margin-top: 8px; flex: 1; }
   .mini .btn { align-self: flex-start; margin-top: 18px; }
+  .mini .soon { align-self: flex-start; margin-top: 18px; padding: 9px 16px; font-size: .92rem; }
   .note { color: var(--dim); font-size: .9rem; margin-top: 20px; }
 
   /* Apple */
@@ -380,7 +382,7 @@
 
 <section id="garmin" aria-labelledby="g-h">
   <span class="eyebrow">Garmin · Connect IQ</span>
-  <h2 id="g-h" data-t="gH">Seis apps que se complementan.</h2>
+  <h2 id="g-h" data-t="gH">Siete apps que se complementan.</h2>
   <p class="lead" data-t="gLead">Instalá las que quieras: cada una anda sola, y juntas te acompañan desde que mirás el reloj hasta que salís del agua.</p>
 
   <article class="feature">
@@ -479,6 +481,12 @@
       <span class="kind" data-t="kField">Campo de datos</span><h3 data-t="nTide">Marea</h3>
       <p data-t="dTide">Cuánto falta para la bajamar, sin salir de tu sesión de surf, SUP o natación.</p>
       <a class="btn ghost small" href="https://apps.garmin.com/apps/710f0388-ccae-49c7-ad62-d489eb7998ba"><span data-t="store">Instalar en Connect IQ</span></a>
+    </article>
+    <article class="mini">
+      <img src="web/g-agua.webp" width="673" height="671" alt="" loading="lazy">
+      <span class="kind" data-t="kField">Campo de datos</span><h3 data-t="nWater">Agua</h3>
+      <p data-t="dWater">¿Traje de 3/2 o de 4/3? La temperatura del agua que mide tu reloj, dentro de tu sesión de surf, SUP o natación, y guardada en tu actividad.</p>
+      <span class="soon" data-t="soon">Muy pronto</span>
     </article>
     <article class="mini">
       <img src="web/g-anillos.webp" width="673" height="671" alt="" loading="lazy">
@@ -621,6 +629,7 @@
         <a class="app-link" href="https://apps.garmin.com/apps/c9fd5f6e-ca6c-4877-958d-df0752cb5e93"><img src="web/g-pronostico.webp" alt=""><div><b data-t="nFcst">Pronóstico</b><span>App</span></div><span class="go">→</span></a>
         <a class="app-link" href="https://apps.garmin.com/apps/c8c2fe35-ea79-4926-a1c2-a024f8f74a43"><img src="web/g-olas.webp" alt=""><div><b data-t="nWave">Olas y viento</b><span data-t="kField">Campo de datos</span></div><span class="go">→</span></a>
         <a class="app-link" href="https://apps.garmin.com/apps/710f0388-ccae-49c7-ad62-d489eb7998ba"><img src="web/g-marea.webp" alt=""><div><b data-t="nTide">Marea</b><span data-t="kField">Campo de datos</span></div><span class="go">→</span></a>
+        <div class="app-link" style="opacity:.75"><img src="web/g-agua.webp" alt=""><div><b data-t="nWater">Agua</b><span data-t="soon">Muy pronto</span></div></div>
         <a class="app-link" href="https://apps.garmin.com/apps/a5e60be2-4901-4233-ac8c-84651fac4cfa"><img src="web/g-anillos.webp" alt=""><div><b data-t="nRing">Anillos</b><span data-t="kFace">Esfera</span></div><span class="go">→</span></a>
         <div class="app-link" style="opacity:.75"><img src="web/g-sesion.webp" alt=""><div><b data-t="nSess">Sesión</b><span data-t="soon">Muy pronto</span></div></div>
       </div>
@@ -689,7 +698,7 @@ const T = {
     lg2: "Yellow: so-so", lg2p: "Surfable, but something isn't helping.",
     lg3: "Red: not worth it", lg3p: "Too small, too choppy or the wind onshore.",
     scale: "<b>Each zone, its own scale.</b> What counts as big depends on where you surf: 2 m is a huge day in Uruguay and an ordinary one in Nazaré. So your spot's green comes from a year of waves in your zone.",
-    gH: "Six apps that complement each other.", gLead: "Install the ones you want: each works on its own, and together they're with you from the first glance at your watch until you're out of the water.",
+    gH: "Seven apps that complement each other.", gLead: "Install the ones you want: each works on its own, and together they're with you from the first glance at your watch until you're out of the water.",
     kFace: "Watch face", kField: "Data field", store: "Install on Connect IQ", soon: "Coming soon",
     pFace: "Know if there are waves before you see the sea. Analog or digital, with four backgrounds.",
     f1a: "Waves: height, period and where the swell comes from", f1b: "Wind, in the color of what it does to your beach", f1c: "The day's tide, with high and low", f1d: "Water and air", f1e: "The nearest spot, picked by itself",
@@ -702,6 +711,7 @@ const T = {
     f3a: "Your waves, counted by themselves", f3b: "Lefts and rights", f3c: "How long you surfed, paddled and waited, on the bezel too", f3d: "The last wave: how long, how fast and how many meters", f3e: "Your heart rate",
     nWave: "Waves and Wind", dWave: "Offshore or onshore? See it in the water: the waves and wind right now inside your activity. In Garmin's Surf activity it also counts your waves.",
     nTide: "Tide", dTide: "How long until low tide, without leaving your surf, SUP or swim session.",
+    nWater: "Water Temp", dWater: "3/2 or 4/3 wetsuit? The water temperature your watch measures, inside your surf, SUP or swim session, and saved in your activity.",
     nRing: "Rings", dRing: "For the flat days: Body Battery, steps and intensity minutes in three rings.",
     gCompat: "The watch face, Forecast and Session run on 50 round 5-button Garmins (fēnix, epix, Forerunner and more). Rings and the data fields, on almost 100 watches.",
     aH: "All your sessions, in one place.", aLead: "The iPhone app brings together your sessions from the Apple Watch and your Garmin, and carries the Apple Watch app inside.",
@@ -767,7 +777,7 @@ const T = {
     lg2: "Amarelo: mais ou menos", lg2p: "Dá para surfar, mas algo não ajuda.",
     lg3: "Vermelho: não dá", lg3p: "Muito pequeno, muito mexido ou vento maral.",
     scale: "<b>Cada zona, a sua escala.</b> O que é grande depende de onde você surfa: 2 m é um dia enorme no Uruguai e um normal em Nazaré. Por isso o verde do seu pico sai de um ano de ondas na sua região.",
-    gH: "Seis apps que se complementam.", gLead: "Instale os que quiser: cada um funciona sozinho, e juntos te acompanham desde a primeira olhada no relógio até sair da água.",
+    gH: "Sete apps que se complementam.", gLead: "Instale os que quiser: cada um funciona sozinho, e juntos te acompanham desde a primeira olhada no relógio até sair da água.",
     kFace: "Mostrador", kField: "Campo de dados", store: "Instalar na Connect IQ", soon: "Em breve",
     pFace: "Saiba se tem onda antes de ver o mar. Analógico ou digital, com quatro fundos.",
     f1a: "Ondas: altura, período e de onde vem o swell", f1b: "Vento, na cor do que ele faz na sua praia", f1c: "A maré do dia, com a preamar e a baixa-mar", f1d: "A água e o ar", f1e: "O pico mais próximo, escolhido sozinho",
@@ -780,6 +790,7 @@ const T = {
     f3a: "Suas ondas, contadas sozinhas", f3b: "Esquerdas e direitas", f3c: "Quanto você surfou, remou e esperou, também no bisel", f3d: "A última onda: quanto durou, a que velocidade e quantos metros", f3e: "Seu pulso",
     nWave: "Ondas e vento", dWave: "Terral ou maral? Veja na água: as ondas e o vento de agora dentro da sua atividade. No Surf da Garmin, também conta as suas ondas.",
     nTide: "Maré", dTide: "Quanto falta para a baixa-mar, sem sair da sua sessão de surf, SUP ou natação.",
+    nWater: "Água", dWater: "Roupa de 3/2 ou de 4/3? A temperatura da água que o seu relógio mede, dentro da sua sessão de surf, SUP ou natação, e guardada na sua atividade.",
     nRing: "Anéis", dRing: "Para os dias sem onda: Body Battery, passos e minutos de intensidade em três anéis.",
     gCompat: "O mostrador, a Previsão e o Sessão funcionam em 50 Garmin redondos de 5 botões (fēnix, epix, Forerunner e outros). Os Anéis e os campos de dados, em quase 100 relógios.",
     aH: "Todas as suas sessões, num só lugar.", aLead: "O app do iPhone junta as suas sessões do Apple Watch e do seu Garmin, e traz dentro o app do Apple Watch.",
