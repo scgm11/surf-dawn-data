@@ -29,7 +29,7 @@
   img { display: block; max-width: 100%; height: auto; }
   a { color: var(--teal); text-decoration: none; }
   h1, h2, h3, .kind, .btn, .eyebrow, .stat b, .step .time, nav, .faq summary { font-family: var(--head); }
-  h2 { font-size: clamp(2rem, 4.6vw, 3rem); line-height: 1.04; font-weight: 600; margin: 0 0 14px; letter-spacing: -.015em; text-wrap: balance; }
+  h2 { font-size: clamp(2.1rem, 5vw, 3.4rem); line-height: 1.04; font-weight: 600; margin: 0 0 14px; letter-spacing: -.015em; text-wrap: balance; }
   h3 { font-size: 1.45rem; line-height: 1.15; font-weight: 600; margin: 0; }
   p { margin: 0; }
   .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
@@ -57,7 +57,8 @@
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 22px; border-radius: 999px; font-weight: 600; font-size: 1.04rem;
     background: var(--teal); color: #052226; border: 0; cursor: pointer; transition: transform .15s, filter .15s; white-space: nowrap; }
   .btn:hover { filter: brightness(1.08); transform: translateY(-1px); }
-  .btn.ghost { background: rgba(255, 255, 255, .1); color: var(--text); border: 1px solid rgba(255, 255, 255, .22); }
+  .btn { box-shadow: 0 10px 28px -10px rgba(61, 214, 208, .7); }
+  .btn.ghost { background: rgba(255, 255, 255, .1); color: var(--text); border: 1px solid rgba(255, 255, 255, .22); box-shadow: none; }
   .btn.small { padding: 9px 16px; font-size: .94rem; }
   .btn svg { width: 19px; height: 19px; flex: none; }
 
@@ -67,7 +68,7 @@
     background: linear-gradient(90deg, rgba(6, 19, 23, .95) 0%, rgba(6, 19, 23, .8) 40%, rgba(6, 19, 23, .25) 72%, rgba(6, 19, 23, .45) 100%),
                 linear-gradient(180deg, rgba(6, 19, 23, .5) 0%, rgba(6, 19, 23, 0) 26%, rgba(6, 19, 23, 0) 60%, var(--bg) 100%); }
   .hero .wrap { position: relative; z-index: 1; display: grid; gap: 34px; padding-top: 112px; padding-bottom: 36px; }
-  .hero h1 { font-size: clamp(2.7rem, 7.2vw, 4.9rem); line-height: .96; font-weight: 600; margin: 0 0 20px; letter-spacing: -.025em; text-wrap: balance; }
+  .hero h1 { font-size: clamp(3rem, 7.2vw, 5.2rem); line-height: .96; font-weight: 600; margin: 0 0 20px; letter-spacing: -.025em; text-wrap: balance; }
   .hero h1 em { font-style: normal; color: var(--teal); }
   .hero .lead { color: rgba(242, 245, 247, .85); font-size: 1.16rem; max-width: 34rem; }
   .ctas { display: flex; flex-wrap: wrap; gap: 12px; margin: 30px 0 22px; }
@@ -77,6 +78,7 @@
   .pin { display: inline-flex; align-items: center; gap: 6px; color: rgba(242, 245, 247, .62); font-size: .8rem; margin-top: 26px; }
   .pin svg { width: 14px; height: 14px; }
   .stage { position: relative; width: 100%; max-width: 540px; aspect-ratio: 1 / .88; margin: 0 auto; }
+  .stage::before { content: ""; position: absolute; inset: 4% 0 0; border-radius: 50%; background: radial-gradient(closest-side, rgba(61, 214, 208, .3), rgba(61, 214, 208, 0)); }
   .stage img { position: absolute; filter: drop-shadow(0 26px 44px rgba(0, 0, 0, .5)); }
   .stage .s-phone { left: 30%; top: 0; width: 40%; z-index: 2; animation: float 7s ease-in-out infinite; }
   .stage .s-garmin { left: 0; top: 33%; width: 45%; z-index: 3; animation: float 7s ease-in-out -2.3s infinite; }
@@ -88,9 +90,9 @@
   /* numbers */
   .stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; margin-top: 8px; border-radius: 22px; overflow: hidden; background: var(--hair); border: 1px solid var(--hair); }
   .stat { background: var(--card); padding: 22px 18px; text-align: center; }
-  .stat b { display: block; font-size: clamp(2rem, 4.4vw, 2.8rem); line-height: 1; font-weight: 600; color: var(--text); }
+  .stat b { display: block; font-variant-numeric: tabular-nums; font-size: clamp(2.2rem, 4.8vw, 3.2rem); line-height: 1; font-weight: 600; color: var(--text); }
   .stat b i { font-style: normal; color: var(--teal); }
-  .stat span { display: block; color: var(--label); font-size: .92rem; margin-top: 8px; }
+  .stat > span { display: block; color: var(--label); font-size: .92rem; margin-top: 8px; }
   @media (min-width: 760px) { .stats { grid-template-columns: repeat(4, 1fr); } }
 
   /* a day of surf */
@@ -117,7 +119,12 @@
   .hours .head { display: flex; justify-content: space-between; align-items: baseline; font-family: var(--head); font-weight: 600; }
   .hours .head span { color: var(--label); font-weight: 500; font-size: .95rem; }
   .cells { position: relative; display: grid; grid-template-columns: repeat(15, 1fr); gap: 5px; margin: 34px 0 8px; }
-  .cells i { height: 54px; border-radius: 7px; display: block; }
+  .cells i { height: 68px; border-radius: 7px; display: block; }
+  .hours.wait .cells i { transform: scaleY(.12); opacity: .3; }
+  .hours.wait .best { opacity: 0; transform: scale(.9); }
+  .hours .cells i { transform-origin: 50% 100%; transition: transform .55s cubic-bezier(.2, .8, .2, 1) calc(var(--i, 0) * 45ms), opacity .4s calc(var(--i, 0) * 45ms); }
+  .hours .best { transition: opacity .45s .85s, transform .45s .85s; }
+  h2 .g { color: var(--green); } h2 .r { color: var(--red); } h2 .ln { display: inline-block; }  /* a line breaks between the two sentences, not inside one */
   .cells .best { position: absolute; top: -12px; bottom: -12px; border: 2px solid var(--text); border-radius: 11px; }
   .cells .best::before { content: attr(data-l); position: absolute; top: -26px; left: 50%; transform: translateX(-50%); white-space: nowrap; font: 600 .8rem var(--head); color: var(--text); background: var(--teal); color: #052226; padding: 3px 9px; border-radius: 999px; }
   .ticks-h { display: grid; grid-template-columns: repeat(15, 1fr); gap: 5px; color: var(--dim); font: 500 .78rem var(--head); text-align: center; }
@@ -165,7 +172,7 @@
   @media (min-width: 760px) { .trio { grid-template-columns: repeat(2, 1fr); } }
   @media (min-width: 1040px) { .trio { grid-template-columns: repeat(4, 1fr); } }
   .mini { border-radius: var(--r); padding: 26px 22px; background: linear-gradient(180deg, var(--card2), var(--card)); border: 1px solid var(--hair); display: flex; flex-direction: column; }
-  .mini img { width: 70%; max-width: 220px; margin: 0 auto 18px; }
+  .mini img { width: 86%; max-width: 240px; margin: -6px auto 12px; }
   .mini .kind { color: var(--teal); font: 600 .78rem var(--head); letter-spacing: .16em; text-transform: uppercase; }
   .mini h3 { font-size: 1.4rem; margin-top: 4px; }
   .mini p { color: var(--label); font-size: .97rem; margin-top: 8px; flex: 1; }
@@ -254,6 +261,7 @@
   .store { border-radius: 26px; padding: 28px 26px; background: radial-gradient(120% 120% at 20% 0%, #17404A, var(--card) 60%); border: 1px solid var(--hair); }
   .store h3 { font-size: 1.6rem; }
   .store p { color: var(--label); margin-top: 6px; }
+  .store p.note { color: var(--dim); margin-top: 18px; }
   .apps { display: grid; gap: 10px; margin-top: 20px; }
   @media (min-width: 560px) { .apps { grid-template-columns: 1fr 1fr; } }
   .app-link { display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 10px; border-radius: 16px; background: rgba(255, 255, 255, .05); border: 1px solid var(--hair); color: var(--text); transition: border-color .2s, background .2s; }
@@ -269,10 +277,10 @@
   .store .listing span { color: var(--label); font-size: .9rem; }
   .store.apple .badge { align-self: flex-start; margin-top: 20px; }
   .store.apple .note { margin: 14px 0 26px; }
-  .peek { position: relative; flex: none; height: 230px; margin: auto -26px -28px; }
+  .peek { position: relative; flex: 1 0 164px; margin: 0 -26px -28px; }
   .peek img { position: absolute; left: 50%; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .45)); }
   .peek .ph { width: 200px; top: 0; transform: translateX(-72%); }
-  .peek .wt { width: 150px; bottom: 22px; transform: translateX(8%); }
+  .peek .wt { width: 132px; top: 22px; transform: translateX(22%); }
 
 
 
@@ -281,7 +289,7 @@
     background: #0B2530 center / cover no-repeat; overflow: hidden; }
   .photoband::before { content: ""; position: absolute; inset: 0;
     background: linear-gradient(180deg, var(--bg) 0%, rgba(6, 19, 23, .25) 22%, rgba(6, 19, 23, .25) 70%, var(--bg) 100%), rgba(6, 19, 23, .28); }
-  .photoband p { position: relative; z-index: 1; max-width: 18ch; margin: 0 20px; text-align: center; font: 600 clamp(2.1rem, 5.6vw, 3.8rem)/1.02 var(--head);
+  .photoband p { position: relative; z-index: 1; max-width: 18ch; margin: 0 20px; text-align: center; font: 600 clamp(2.3rem, 6.4vw, 4.6rem)/1 var(--head);
     letter-spacing: -.02em; text-wrap: balance; text-shadow: 0 4px 30px rgba(0, 0, 0, .55); }
   .photoband p em { font-style: normal; color: var(--teal); }
   .photoband .pin { position: absolute; z-index: 1; left: max(20px, calc(50vw - 550px)); bottom: 40px; margin: 0; }
@@ -312,6 +320,20 @@
                                 linear-gradient(90deg, rgba(6, 19, 23, .05) 0%, rgba(6, 19, 23, .2) 38%, rgba(6, 19, 23, .84) 62%, rgba(6, 19, 23, .92) 100%); }
     .band .copy { margin-left: auto; }
   }
+  /* depth: a soft light behind each section, a line of light on top of each card, and cards that answer the mouse */
+  main > section { position: relative; }
+  main > section::before { content: ""; position: absolute; z-index: -1; top: -30px; right: calc(50% - 50vw); width: min(680px, 100vw); height: 680px; border-radius: 50%; pointer-events: none;
+    background: radial-gradient(closest-side, rgba(61, 214, 208, .1), rgba(61, 214, 208, 0)); }
+  main > section:nth-of-type(even)::before { right: auto; left: calc(50% - 50vw); background: radial-gradient(closest-side, rgba(64, 132, 255, .1), rgba(64, 132, 255, 0)); }
+  .step, .hours, .feature, .mini, .drill, .node, .store, .stats, .memoria .card { box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07); }
+  @media (hover: hover) {
+    .step, .mini, .drill, .node, .faq details { transition: transform .25s, border-color .25s, box-shadow .25s; }
+    .step:hover, .mini:hover, .drill:hover, .node:hover { transform: translateY(-4px); border-color: rgba(61, 214, 208, .4); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .07), 0 20px 44px rgba(0, 0, 0, .38); }
+    .faq details:hover { border-color: rgba(61, 214, 208, .4); }
+  }
+  /* things rise into place as they come into view: the script puts .rv on them and takes it off once they are in */
+  .rv { opacity: 0; transform: translateY(28px); }
+  .rv.in { opacity: 1; transform: none; transition: opacity .7s cubic-bezier(.2, .7, .2, 1) var(--d, 0s), transform .7s cubic-bezier(.2, .7, .2, 1) var(--d, 0s); }
   footer { color: var(--dim); font-size: .9rem; text-align: center; padding: 26px 0 50px; }
   footer a { color: var(--label); }
   :focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
@@ -354,9 +376,9 @@
 <main class="wrap">
 
 <div class="stats">
-  <div class="stat"><b>2.500<i>+</i></b><span data-t="st1">picos, y elige solo el más cercano</span></div>
-  <div class="stat"><b>63</b><span data-t="st2">países con su pronóstico</span></div>
-  <div class="stat"><b>50<i>+</i></b><span data-t="st3">relojes Garmin, y el Apple Watch</span></div>
+  <div class="stat"><b><span data-n="2500">2.500</span><i>+</i></b><span data-t="st1">picos, y elige solo el más cercano</span></div>
+  <div class="stat"><b><span data-n="63">63</span></b><span data-t="st2">países con su pronóstico</span></div>
+  <div class="stat"><b><span data-n="50">50</span><i>+</i></b><span data-t="st3">relojes Garmin, y el Apple Watch</span></div>
   <div class="stat"><b>0</b><span data-t="st4">publicidad, cuentas y costo</span></div>
 </div>
 
@@ -400,7 +422,7 @@
     </div>
     <div>
       <span class="eyebrow" data-t="semE">Lo hacemos simple</span>
-      <h2 id="sem-h" data-t="semH">Verde, entrás. Rojo, no.</h2>
+      <h2 id="sem-h" data-h="semH"><span class="ln"><span class="g">Verde</span>, entrás.</span> <span class="ln"><span class="r">Rojo</span>, no.</span></h2>
       <p class="lead" data-t="semLead">Para cada hora, Surf Dawn junta el tamaño y el período de las olas, el viento y cómo le entra el swell a tu playa. A vos te queda una sola cosa para mirar: el color.</p>
       <div class="legend" style="margin-top:22px">
         <div><i style="background:var(--green)"></i><div><b data-t="lg1">Verde: da</b><p data-t="lg1p">Olas con tamaño y período, y el viento a favor.</p></div></div>
@@ -665,6 +687,7 @@
         <a class="app-link" href="https://apps.garmin.com/apps/a5e60be2-4901-4233-ac8c-84651fac4cfa"><img src="web/g-anillos.webp" alt=""><div><b data-t="nRing">Anillos</b><span data-t="kFace">Esfera</span></div><span class="go">→</span></a>
         <div class="app-link" style="opacity:.75"><img src="web/g-sesion.webp" alt=""><div><b data-t="nSess">Sesión</b><span data-t="soon">Muy pronto</span></div></div>
       </div>
+      <p class="note" data-t="gCompat">La esfera, Pronóstico y Sesión andan en 50 Garmin redondos de 5 botones (fēnix, epix, Forerunner y otros). Anillos y los campos de datos, en casi 100 relojes.</p>
     </div>
     <div class="store apple">
       <h3 data-t="nApple">iPhone y Apple Watch</h3>
@@ -730,7 +753,7 @@ const T = {
     s5h: "Out with your numbers", s5p: "How many waves, the best one, top speed. It all goes to Garmin Connect.",
     s6t: "At home", s6h: "Your waves, on the map", s6p: "On the iPhone, every wave on the satellite, where you paddled and that day's photos.",
     swipe: "Swipe through the day →", today: "Today",
-    semE: "We keep it simple", semH: "Green, paddle out. Red, don't.",
+    semE: "We keep it simple", semH: "<span class=\"ln\"><span class=\"g\">Green</span>, paddle out.</span> <span class=\"ln\"><span class=\"r\">Red</span>, don't.</span>",
     semLead: "For every hour, Surf Dawn puts together the size and period of the waves, the wind and how the swell reaches your beach. You're left with one thing to look at: the color.",
     lg1: "Green: it's on", lg1p: "Waves with size and period, and the wind on your side.",
     lg2: "Yellow: so-so", lg2p: "Surfable, but something isn't helping.",
@@ -809,7 +832,7 @@ const T = {
     s5h: "Você sai com os seus números", s5p: "Quantas ondas, a melhor, a velocidade máxima. Tudo fica no Garmin Connect.",
     s6t: "Em casa", s6h: "Suas ondas, no mapa", s6p: "No iPhone, cada onda sobre o satélite, onde você remou e as fotos daquele dia.",
     swipe: "Deslize para ver o dia →", today: "Hoje",
-    semE: "A gente simplifica", semH: "Verde, você entra. Vermelho, não.",
+    semE: "A gente simplifica", semH: "<span class=\"ln\"><span class=\"g\">Verde</span>, você entra.</span> <span class=\"ln\"><span class=\"r\">Vermelho</span>, não.</span>",
     semLead: "Para cada hora, o Surf Dawn junta o tamanho e o período das ondas, o vento e como o swell entra na sua praia. Para você sobra uma coisa só para olhar: a cor.",
     lg1: "Verde: dá", lg1p: "Ondas com tamanho e período, e o vento a favor.",
     lg2: "Amarelo: mais ou menos", lg2p: "Dá para surfar, mas algo não ajuda.",
@@ -880,6 +903,11 @@ document.querySelectorAll("[data-h]").forEach(e => { ES[e.dataset.h] = e.innerHT
 Object.assign(ES, { _pdf: "manual/Surf-Dawn-manual.pdf", _hash: "#es", _desc: document.querySelector('meta[name="description"]').content });
 T.es = ES;
 
+// the numbers count up, written as each language writes them (2.500 or 2,500)
+const nums = [...document.querySelectorAll("[data-n]")];
+let counted = 1;
+function drawNums() { nums.forEach(e => { e.textContent = Math.round(e.dataset.n * counted).toLocaleString(document.documentElement.lang === "en" ? "en-US" : "de-DE"); }); }
+
 function setLang(l) {
   const d = T[l] || T.es;
   document.documentElement.lang = l;
@@ -891,6 +919,7 @@ function setLang(l) {
   ["priv", "priv2"].forEach(id => { document.getElementById(id).href = "privacy.html" + d._hash; });
   document.querySelector('meta[name="description"]').content = d._desc;
   document.querySelectorAll(".langs button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === l));
+  drawNums();
   try { localStorage.setItem("lang", l); } catch (e) {}
 }
 document.querySelectorAll(".langs button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
@@ -910,6 +939,32 @@ document.querySelectorAll(".keys").forEach(list => {
   items.forEach((li, i) => { li.addEventListener("mouseenter", () => on(i, true)); li.addEventListener("mouseleave", () => on(i, false)); });
   dots.forEach((d, i) => { d.addEventListener("mouseenter", () => on(i, true)); d.addEventListener("mouseleave", () => on(i, false)); });
 });
+// sections and cards rise into place as they come into view, the hours of the traffic light grow, the numbers count up
+const still = matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window);
+if (!still) {
+  const hours = document.querySelector(".hours");
+  hours.querySelectorAll(".cells i").forEach((c, i) => c.style.setProperty("--i", i));
+  hours.classList.add("wait");
+  const stats = document.querySelector(".stats");
+  counted = 0; drawNums();
+  const count = () => { const t0 = performance.now(); const tick = t => { const k = Math.min(1, (t - t0) / 1400); counted = 1 - Math.pow(1 - k, 3); drawNums(); if (k < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); };
+  const rise = document.querySelectorAll("main > section > .eyebrow, main > section > h2, main > section > .lead, .stats, .step, .hours, .light > div:last-child, .feature, .mini, .drill, .safe, .tiles.four .tile, .node, .flow, .faq details, .store, .memoria .card, .photoband p, .band .copy");
+  rise.forEach(e => e.classList.add("rv"));
+  const io = new IntersectionObserver(seen => {
+    let i = 0;
+    seen.forEach(s => {
+      if (!s.isIntersecting) return;
+      const e = s.target, d = Math.min(i++, 5) * 80;
+      io.unobserve(e);
+      e.style.setProperty("--d", d + "ms");
+      e.classList.add("in");
+      setTimeout(() => { e.classList.remove("rv", "in"); e.style.removeProperty("--d"); }, d + 800);
+      if (e === hours) setTimeout(() => hours.classList.remove("wait"), d + 250);
+      if (e === stats) setTimeout(count, d + 150);
+    });
+  }, { rootMargin: "0px 0px -6% 0px", threshold: .06 });
+  rise.forEach(e => io.observe(e));
+}
 // the bar on top turns solid once the photo is behind
 const bar = document.getElementById("bar");
 const solid = () => bar.classList.toggle("solid", window.scrollY > 40);
