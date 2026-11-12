@@ -227,6 +227,27 @@
   .faq details[open] summary::after { transform: rotate(45deg); }
   .faq details p { color: var(--label); padding: 0 0 20px; margin-top: -4px; }
 
+  /* the stores' badges: Apple's own (web/app-store-*.svg, from Apple's marketing tools), and one like it for Connect IQ */
+  .badge { display: inline-flex; line-height: 0; border-radius: 9px; transition: transform .2s, filter .2s; }
+  .badge:hover { filter: brightness(1.3); transform: translateY(-1px); }
+  .badge img { height: 54px; width: auto; }
+  .badge.ciq { height: 54px; align-items: center; gap: 10px; padding: 0 18px 0 12px; background: #000; border: 1px solid #A6A6A6; color: #fff; line-height: 1; }
+  .badge.ciq svg { width: 30px; height: 30px; flex: none; }
+  .badge.ciq small { display: block; font-size: .72rem; }
+  .badge.ciq b { display: block; font: 600 1.45rem/1.05 var(--head); }
+  .sr { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .actions.links { margin-top: 14px; gap: 10px; }
+  @media (max-width: 479px) {  /* a phone: the two badges in one row, and Instagram as its icon */
+    .band .actions { gap: 10px; }
+    .band .badge img, .band .badge.ciq { height: 48px; }
+    .band .badge.ciq { gap: 8px; padding: 0 12px 0 9px; }
+    .band .badge.ciq svg { width: 26px; height: 26px; }
+    .band .badge.ciq small { font-size: .66rem; }
+    .band .badge.ciq b { font-size: 1.25rem; }
+    .actions.links .ig span { display: none; }
+    .actions.links .ig { padding: 9px 12px; align-self: stretch; }
+  }
+
   /* install */
   .install { display: grid; gap: 16px; margin-top: 30px; }
   @media (min-width: 860px) { .install { grid-template-columns: 1.4fr 1fr; } }
@@ -241,6 +262,17 @@
   .app-link b { display: block; font-family: var(--head); font-size: 1.04rem; line-height: 1.2; }
   .app-link span { color: var(--label); font-size: .85rem; }
   .app-link .go { margin-left: auto; color: var(--teal); font-weight: 600; font-family: var(--head); }
+  .store.apple { display: flex; flex-direction: column; overflow: hidden; }
+  .listing { display: flex; align-items: center; gap: 14px; margin-top: 22px; }
+  .listing img { width: 64px; height: 64px; border-radius: 22.5%; box-shadow: 0 0 0 1px var(--hair); }
+  .listing b { display: block; font: 600 1.2rem var(--head); }
+  .store .listing span { color: var(--label); font-size: .9rem; }
+  .store.apple .badge { align-self: flex-start; margin-top: 20px; }
+  .store.apple .note { margin: 14px 0 26px; }
+  .peek { position: relative; flex: none; height: 230px; margin: auto -26px -28px; }
+  .peek img { position: absolute; left: 50%; filter: drop-shadow(0 18px 30px rgba(0, 0, 0, .45)); }
+  .peek .ph { width: 200px; top: 0; transform: translateX(-72%); }
+  .peek .wt { width: 150px; bottom: 22px; transform: translateX(8%); }
 
 
 
@@ -542,7 +574,7 @@
       <span class="kind">Apple Watch</span>
       <h3 data-t="pWatchH">Todo en la muñeca.</h3>
       <p class="pitch" data-t="pWatch">Pronóstico, Hoy y el aviso de la mañana, con complicaciones y el Smart Stack. Sesión cuenta tus olas y la guarda en Salud. Y Entrenar, sin el teléfono.</p>
-      <div class="actions"><a class="btn" href="https://apps.apple.com/app/id6829862130"><span data-t="aStore">Descargar en el App Store</span></a></div>
+      <div class="actions"><a class="badge" href="https://apps.apple.com/app/id6829862130"><img data-img="web/app-store-{l}.svg" src="web/app-store-es.svg" width="162" height="54" alt=""><span class="sr" data-t="aStore">Descárgalo en el App Store</span></a></div>
     </div>
   </article>
   <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
@@ -634,11 +666,13 @@
         <div class="app-link" style="opacity:.75"><img src="web/g-sesion.webp" alt=""><div><b data-t="nSess">Sesión</b><span data-t="soon">Muy pronto</span></div></div>
       </div>
     </div>
-    <div class="store">
+    <div class="store apple">
       <h3 data-t="nApple">iPhone y Apple Watch</h3>
       <p data-t="iA">Una sola app, con la del Apple Watch adentro.</p>
-      <div class="actions"><a class="btn" href="https://apps.apple.com/app/id6829862130"><span data-t="aStore">Descargar en el App Store</span></a></div>
+      <div class="listing"><img src="web/icono.png" width="64" height="64" alt=""><div><b>Surf Dawn</b><span data-t="aFree">Gratis · Sin publicidad ni cuentas</span></div></div>
+      <a class="badge" href="https://apps.apple.com/app/id6829862130"><img data-img="web/app-store-{l}.svg" src="web/app-store-es.svg" width="162" height="54" alt=""><span class="sr" data-t="aStore">Descárgalo en el App Store</span></a>
       <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
+      <div class="peek" aria-hidden="true"><img class="ph" data-img="web/iphone-pronostico-{l}.webp" src="web/iphone-pronostico-es.webp" width="440" height="930" alt="" loading="lazy"><img class="wt" data-img="web/aw-pronostico-{l}.webp" src="web/aw-pronostico-es.webp" width="360" height="409" alt="" loading="lazy"></div>
     </div>
   </div>
 </section>
@@ -663,9 +697,13 @@
     <h2 id="b-h" data-t="bH">Gratis. Sin publicidad. Sin cuentas.</h2>
     <p class="lead" data-t="bLead">Hecho en Uruguay por surfistas. Si te sirve para agarrar mejores olas, dejá una reseña en la tienda y pasáselo a quien surfea con vos.</p>
     <div class="actions">
-      <a class="btn" id="pdf" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="mBtn">El manual en PDF</span></a>
-      <a class="btn ghost" id="sup" href="support.html#es"><span data-t="sup">Soporte</span></a>
-      <a class="btn ghost" href="https://www.instagram.com/surfdawn.app/" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M16.5 7.5v.01"/></svg>@surfdawn.app</a>
+      <a class="badge" href="https://apps.apple.com/app/id6829862130"><img data-img="web/app-store-{l}.svg" src="web/app-store-es.svg" width="162" height="54" alt=""><span class="sr" data-t="aStore">Descárgalo en el App Store</span></a>
+      <a class="badge ciq" href="#instalar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6.2V3h6v3.2M9 17.8V21h6v-3.2"/><circle cx="12" cy="12" r="6"/><path d="M12 9.5V12l1.6 1.2"/></svg><span><small data-t="ciqTop">Para tu Garmin, en</small><b>Connect IQ</b></span></a>
+    </div>
+    <div class="actions links">
+      <a class="btn ghost small" id="pdf" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="mBtn">El manual en PDF</span></a>
+      <a class="btn ghost small" id="sup" href="support.html#es"><span data-t="sup">Soporte</span></a>
+      <a class="btn ghost small ig" href="https://www.instagram.com/surfdawn.app/" rel="noopener" aria-label="Instagram @surfdawn.app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M16.5 7.5v.01"/></svg><span>@surfdawn.app</span></a>
     </div>
     <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
   </div></div>
@@ -720,7 +758,7 @@ const T = {
     t1: "The week and the map", t1p: "Each spot, seven days, and others to discover", t2: "That day's photos", t2p: "From your camera roll, next to their waves",
     t3: "Your numbers", t3p: "And when you surf best", t4: "Train", t4p: "Routines before and after the water, and apnea",
     pWatchH: "All on your wrist.", pWatch: "Forecast, Today and the morning alert, with complications and the Smart Stack. Session counts your waves and saves it to Health. And Train, without your phone.",
-    aStore: "Download on the App Store", aReq: "iPhone with iOS 17 or later; Apple Watch with watchOS 10 or later.", nApple: "iPhone and Apple Watch",
+    aStore: "Download on the App Store", aFree: "Free · No ads, no account", ciqTop: "For your Garmin, on", aReq: "iPhone with iOS 17 or later; Apple Watch with watchOS 10 or later.", nApple: "iPhone and Apple Watch",
     eE: "Train · at home", eH: "Surfing is trained on dry land too.",
     eLead: "Three short routines: one before you head out, one when you're back and apnea. Your watch or iPhone takes you through each exercise, with a figure doing every move.",
     e1w: "Before you head out · 5 min", e1h: "Pre-surf", why: "What for",
@@ -799,7 +837,7 @@ const T = {
     t1: "A semana e o mapa", t1p: "Cada pico, sete dias, e outros para descobrir", t2: "As fotos daquele dia", t2p: "Do seu rolo da câmera, junto das ondas",
     t3: "Seus números", t3p: "E quando você surfa melhor", t4: "Treinar", t4p: "Rotinas antes e depois da água, e apneia",
     pWatchH: "Tudo no pulso.", pWatch: "Previsão, Hoje e o aviso da manhã, com complicações e o Smart Stack. O Sessão conta as suas ondas e salva no app Saúde. E o Treinar, sem o celular.",
-    aStore: "Baixar na App Store", aReq: "iPhone com iOS 17 ou mais recente; Apple Watch com watchOS 10 ou mais recente.", nApple: "iPhone e Apple Watch",
+    aStore: "Baixar na App Store", aFree: "Grátis · Sem anúncios nem conta", ciqTop: "Para o seu Garmin, na", aReq: "iPhone com iOS 17 ou mais recente; Apple Watch com watchOS 10 ou mais recente.", nApple: "iPhone e Apple Watch",
     eE: "Treinar · em casa", eH: "O surf também se treina em terra.",
     eLead: "Três rotinas curtas: uma antes de sair, uma na volta e a apneia. O relógio ou o iPhone te guiam exercício por exercício, com uma figura que faz cada movimento.",
     e1w: "Antes de sair · 5 min", e1h: "Pré-surf", why: "Para quê",
