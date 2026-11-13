@@ -16,6 +16,7 @@ import armada  # noqa: E402
 import build_scale  # noqa: E402
 import check_seeds  # noqa: E402
 import check_spots  # noqa: E402
+import era5_normals as era5  # noqa: E402
 import ciram_parse_core as ciram  # noqa: E402
 from tools.lib import openmeteo as om  # noqa: E402
 
@@ -227,6 +228,54 @@ class Armada(unittest.TestCase):
             self.assertEqual(rows[0], "utc,nivel_m,agua_c")
             self.assertEqual(rows[1], "2026-11-10T11:40:02Z,0.951,18.4")
             self.assertEqual(rows[2], "2026-11-10T11:50:02Z,0.934,")
+
+
+class Era5Normals(unittest.TestCase):
+    """The requests of tools/era5_normals.py are the ones `swift run normals` asks (surf-dawn: Normals)."""
+    TODAY = __import__("datetime").date(2026, 11, 13)
+
+    def zone(self):
+        with open(os.path.join(os.path.dirname(HERE), "spots", "r", "UY-MAL.json"), encoding="utf-8") as f:
+            return json.load(f)
+
+    def test_the_reference_spot_is_the_one_whose_wave_point_most_share(self):
+        z = {"s": [["A", 1, 2, 90, 1], ["B", 1, 3, 90, 1, 5, 6], ["C", 1, 4, 90, 1, 5, 6], ["D", 1, 2, 90, 1]]}
+        self.assertEqual(era5.reference(z), 0)      # A and D share (1, 2), B and C (5, 6): a tie, the first
+        z["s"].append(["E", 1, 5, 90, 1, 5, 6])
+        self.assertEqual(era5.reference(z), 1)      # now (5, 6) has three
+        self.assertEqual(era5.reference({"s": [["A", 1, 2, 90, 1]]}), 0)
+
+    def test_maldonado_asks_at_the_bravas_point(self):
+        pl = era5.plan(self.zone(), self.TODAY)
+        self.assertEqual(pl["spot"], "LA VIRGEN")   # the first of the Brava's eight, not PUNTA DEL CHILENO in the bay
+        wind, marine = dict(pl["wind"][1]), dict(pl["marine"][1])
+        self.assertEqual((wind["latitude"], wind["longitude"]), ("-34.9653", "-54.9422"))
+        self.assertEqual((marine["latitude"], marine["longitude"]), ("-35.0000", "-54.7500"))
+        self.assertEqual(wind["models"], "era5")
+        self.assertEqual(marine["models"], "era5_ocean")
+        self.assertEqual(marine["hourly"], "wave_height,wave_peak_period,wave_direction")
+        self.assertEqual((marine["start_date"], marine["end_date"]), ("2016-01-01", "2024-11-17"))
+        self.assertEqual(dict(pl["factor_era5"][1])["start_date"], "2026-08-13")
+        self.assertEqual(dict(pl["factor_model"][1])["models"], "ncep_gfswave025")
+
+    def test_a_region_weighs_some_480_calls(self):
+        self.assertAlmostEqual(era5.cost(self.zone(), self.TODAY), 476.4, delta=1)
+
+    def test_the_waves_come_in_the_winds_time_zone(self):
+        asked = []
+
+        def get(url, params):
+            asked.append(dict(params))
+            return {"timezone": "America/Montevideo", "hourly": {"wave_peak_period": [8.0, None]}}
+
+        with mock.patch.object(era5, "get", get):
+            b = era5.fetch(self.zone(), self.TODAY)
+        self.assertEqual(asked[1]["timezone"], "America/Montevideo")
+        self.assertEqual(era5.entry(b)["hours"], 1)
+        self.assertTrue(era5.current(era5.entry(b), era5.plan(self.zone(), self.TODAY)))
+        moved = self.zone()
+        moved["s"] = moved["s"][9:]                 # LA BOCA first, its own wave point
+        self.assertFalse(era5.current(era5.entry(b), era5.plan(moved, self.TODAY)))
 
 
 if __name__ == "__main__":

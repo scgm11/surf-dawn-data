@@ -1,0 +1,43 @@
+name: ERA5 para lo normal
+# Baja las olas y el viento de ERA5 (2016-2024) en el pico de referencia de cada región para "lo normal"
+# de Cómo viene en el iPhone (tools/era5_normals.py): unas 480 llamadas de Open-Meteo por región, hasta
+# 9.000 por corrida, desde la IP del runner y no desde la del usuario. Las respuestas quedan en el release
+# "era5" (una por región, con index.json) y no en el repo: no comitea nada, así que no usa la cola
+# data-commit. Lo normal lo calcula después la app (surf-dawn: watchos/tools/normals.sh) y queda en
+# normals/normals.json. Una vez bajadas todas, cada corrida termina en segundos salvo que una región nueva
+# o un pico de referencia que se movió pidan bajar otra vez.
+on:
+  schedule:
+    - cron: "41 4 * * *"          # todos los días, 04:41 UTC
+  workflow_dispatch:
+    inputs:
+      regions:
+        description: "Solo estas regiones (separadas por espacios; vacío: las que falten)"
+        type: string
+        required: false
+        default: ""
+      budget:
+        description: "Llamadas de Open-Meteo como máximo"
+        type: string
+        required: false
+        default: "9000"
+permissions:
+  contents: write
+concurrency:
+  group: era5
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regiones que faltan
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REGIONS: ${{ inputs.regions }}
+          BUDGET: ${{ inputs.budget || '9000' }}
+        run: python3 tools/era5_normals.py --upload --budget "$BUDGET" $REGIONS

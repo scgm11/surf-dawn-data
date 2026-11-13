@@ -11,6 +11,7 @@ repo y los formatos están en [`docs/formatos.md`](docs/formatos.md).
 | `tide/` | Mareas de los puertos de cada zona, mes a mes, con armónicos de respaldo | `tools/tide/` (Action `tides.yml`), `tools/sohma_tide.py` y `tools/ciram_tide.py` (Action `update.yml`) |
 | `validation/` | Los modelos de olas y viento de Open-Meteo contra boyas y estaciones, por región; los controles de cada pico (`spots.md`); y los mareógrafos de la Armada de Uruguay guardados día a día (`armada/`, nivel cada 5 min en UTC: la página muestra solo 48 h) | `validate/` (Action `validation.yml`), `tools/check_spots.py` (Action `checks.yml`), `tools/lookup.py` (Action `lookup.yml`), `tools/armada.py` (Action `armada.yml`) |
 | `models.csv` | Los modelos elegidos por región (el resto usa la regla por defecto) | a mano, desde `validation/models-suggested.csv` |
+| `normals/` | Lo normal de cada región para Cómo viene en el iPhone: cuántos días de cada mes dan olas (`normals.json`) | la app, con las respuestas de ERA5 que baja `tools/era5_normals.py` (Action `era5.yml`, release `era5`) |
 | `seeds/` | Las tablas de las que sale todo: continentes, países, regiones y picos | a mano ([`seeds/README.md`](seeds/README.md)) |
 | `manual/` | El manual de las apps en PDF, el link público de la tienda Connect IQ: en español ([`manual/Surf-Dawn-manual.pdf`](https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual.pdf)) y en inglés ([`manual/Surf-Dawn-manual-en.pdf`](https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual-en.pdf)) | copiado de `docs/Surf-Dawn-manual.pdf` del repo de las apps en cada versión de la tienda |
 
@@ -88,12 +89,30 @@ La regla y la lectura de `models.csv` están en `tools/lib/models.py`. Detalle e
 [`validate/README.md`](validate/README.md) y el último resultado en
 [`validation/report.md`](validation/report.md).
 
+## Lo normal — `normals/`
+
+Cómo viene, en la app de iPhone, compara los días buenos de los próximos 16 con lo normal de la región
+en esas fechas: de cada mes, cuántos días de 30 dieron olas (3 estrellas o más en algún pico) de 2016 a
+2024, el año del medio y la mitad de los años alrededor. Sale del mismo ranking que Pronóstico, corrido
+sobre cada día de **ERA5** (el viento, 0,25°) y **ERA5-Ocean** (las olas, 0,5°, con período pico hasta el
+17/11/2024) en el pico de referencia de la región (el del punto de olas que comparten más picos), con
+las alturas llevadas a las del modelo de la región (la relación de los dos en los últimos 92 días).
+
+Son unas 480 llamadas de Open-Meteo por región, así que no se piden desde el teléfono ni desde la
+conexión de quien las calcula: `tools/era5_normals.py` (Action `era5.yml`, todos los días, hasta 9.000
+llamadas) baja las respuestas de las regiones que faltan y las deja en el release
+[`era5`](https://github.com/scgm11/surf-dawn-data/releases/tag/era5), una por región con `index.json`.
+Una región se vuelve a bajar solo si cambia su pico de referencia. El cálculo lo hace la app con su
+propio código (repo de las apps: `watchos/tools/normals.sh`), que comprueba que cada respuesta sea del
+pedido que ella haría, y lo publica en `normals/normals.json`, que el iPhone baja una vez por semana.
+
 ## Fuentes y créditos
 
 - Costas y nombres: © colaboradores de **OpenStreetMap** (ODbL), vía osmdata.openstreetmap.de, Overpass y Nominatim; nombres y
   posiciones de **Wikidata** (CC0) y **GeoNames** (CC BY 4.0) para revisar los picos.
 - Olas, viento, nivel del mar y puntos de olas: **Open-Meteo** (CC BY 4.0; uso no comercial
   gratis), con los modelos de NOAA, ECMWF, Météo-France, DWD, ECCC, JMA, UK Met Office y BoM.
+- Lo normal: el reanálisis **ERA5** y **ERA5-Ocean** de Copernicus (ECMWF), vía Open-Meteo.
 - Mareas: SOHMA (Uruguay), DHN vía Epagri/CIRAM (Brasil), NOAA CO-OPS (dominio público), JMA
   (Public Data License 1.0), Marine Institute (CC BY 4.0), LINZ (CC BY 4.0, Crown copyright) y
   TICON-3 (CC BY 4.0, Hart-Davis et al. 2022) y el modelo GOT5.6 (NASA GSFC, dominio público), con pyTMD.

@@ -291,3 +291,34 @@ decidido en el issue #7). La regla y la lectura de este archivo están una sola 
 `validation/<REGIÓN>.json`; las de la validación del 2026-10-13 (confianza alta o media) ya están. En `wave` sólo van modelos
 que dan período pico (el reloj lo muestra y puntúa las horas con él): `ecmwf_wam`, `ncep_gfswave016`
 (en su dominio) o `ncep_gfswave025`; MFWAM y DWD EWAM no, sólo dan período medio.
+
+## Lo normal: `normals/`
+
+### `normals/normals.json` — lo normal de cada región (app de iPhone, Cómo viene)
+
+```json
+{
+"UY-MAL": {"k":0.87,"m":[[7.7,8.7,11.6],[8.6,12.9,15], ...],"y":"2016-2024"},
+...
+}
+```
+
+Por región: `m`, los 12 meses de enero a diciembre, cada uno con los días que dan olas en 30 (algún
+pico con 3 estrellas o más en el ranking de Pronóstico): el cuartil de abajo, la mediana y el de arriba
+de los años `y`; `k`, el factor por el que van las alturas de ERA5-Ocean (el modelo de olas de la región
+sobre ERA5-Ocean en los últimos 92 días, entre 0,7 y 1,6). Una línea por región, en orden. Lo escribe la
+app (repo de las apps: `swift run normals --answers`, con `watchos/tools/normals.sh`) y el iPhone lo baja
+una vez por semana (unos 50 KB); una región que no está, o que no es válida (12 meses de tres números
+crecientes entre 0 y 31), queda sin "lo normal". Los relojes no lo leen.
+
+### Release `era5` — las respuestas de las que sale
+
+`<REGIÓN>.json.gz`: las cuatro respuestas de Open-Meteo de una región tal como llegan (`wind`, ERA5
+en el pico de referencia: viento en km/h, salida y puesta del sol, del 1/1/2016 al 17/11/2024 en su
+hora; `marine`, ERA5-Ocean en su punto de olas, los mismos días en la hora del viento;
+`factor_model` y `factor_era5`, la altura del modelo de la región y la de ERA5-Ocean en los últimos 92
+días, en GMT), con `asked` (la consulta de cada pedido, que la app compara con la suya), `spot`, `at`,
+`wave`, `model` y `fetched`. `index.json`: por región, dónde se pidió, cuándo y cuántas horas con
+período pico trajo (`hours` de `of`), o `error` si no se pudo (sin olas en el punto: no se vuelve a pedir
+hasta que se mueva el pico de referencia). Lo arma `tools/era5_normals.py` (Action `era5.yml`).
+
