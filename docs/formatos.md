@@ -356,3 +356,15 @@ por filas desde el sur, cada valor un entero de 8 bits con signo por `k` m/s. La
 empieza en `offset + (fila × cols + columna) × size`, con `fila = ⌊(lat + 90) / deg⌋` y `columna =
 ⌊(lon + 180) / deg⌋`: el iPhone baja solo esos bytes (un pedido con Range) y una vez por ciclo. Quedan
 el ciclo nuevo y el anterior, para que una app que leyó el `mapa.json` de antes encuentre su archivo.
+
+### Release `viento-historia` — el viento de cada día que pasó
+
+`<DÍA>.bin` (`2026-11-12.bin`), una foto por día del viento a 10 m de GFS para el "Hace un año" del mapa:
+cada lugar a su mediodía (la hora UTC cada 3 más cerca del mediodía en la longitud del medio de la
+baldosa: 15 UTC en Uruguay; 24 es las 00 UTC del día siguiente). Empieza con `SDV1`, la versión (1),
+`n` (41), `k` en centésimas (30) y cuántas baldosas (2 bytes, little-endian); después, por baldosa, su
+nivel (0: 10° a 0,25°; 1: 40° a 1°), su fila, su columna y su hora (un byte cada uno), y las baldosas en
+ese orden, 2 × `n` × `n` bytes cada una (`u` y después `v`, como en `viento-<CICLO>.bin` pero de una sola
+hora). Van las baldosas de 10° que tienen algún pico (`spots/r/`) y todas las de 40°: unos 490 KB por día.
+Quedan los últimos 400 días; `mapa.json` dice cuáles hay en `history` (`first`, `last`, `count`). Cada corrida
+de `viento.yml` agrega los que falten hasta ayer (ayer recién cuando NOAA publicó las 00 UTC de hoy).

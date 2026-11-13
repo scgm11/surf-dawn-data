@@ -1,6 +1,7 @@
 """Offline tests of the wave points, the wave scale and the Imbituba parser:
 python3 -m unittest discover -s tools -p "test_*.py" """
 import contextlib
+import datetime
 import io
 import json
 import os
@@ -328,6 +329,33 @@ class WindTest(unittest.TestCase):
         c = np.frombuffer(parts[648 + 4 * 9 + 8], np.int8).reshape(hours, 2, wind.N, wind.N)
         self.assertEqual(c[0, 0, 40, 0], 720 % 127)              # over the pole, the pole
         self.assertEqual(c[0, 1, 0, 40], 1440 % 127)             # the east edge is 180
+
+    def test_noon(self):
+        self.assertEqual(wind.noon(-55), 15)                     # Uruguay: 15 UTC is 12:00 there
+        self.assertEqual(wind.noon(0), 12)
+        self.assertEqual(wind.noon(150), 3)                      # Sydney: 03 UTC, 13:00 there
+        self.assertEqual(wind.noon(-175), 24)                    # 00 UTC of the next day
+        self.assertEqual(wind.noon(175), 0)
+
+    def test_day(self):
+        layout = wind.day_layout([(5, 12), (6, 33)])
+        self.assertEqual(len(layout), 2 + 5 * 9)
+        self.assertEqual(layout[0], (0, 5, 12, 15))
+        self.assertEqual(layout[2], (1, 0, 0, 24))               # the coarse ones after, from the south-west
+        head = wind.header(layout)
+        self.assertEqual(head[:4], b"SDV1")
+        self.assertEqual(int.from_bytes(head[7:9], "little"), len(layout))
+        self.assertEqual(len(head), 9 + 4 * len(layout))
+        self.assertEqual(tuple(head[9:13]), (0, 5, 12, 15))
+        lat = np.arange(721, dtype=np.int32)[:, None]
+        lon = np.arange(1441, dtype=np.int32)[None, :]
+        u = np.broadcast_to((lat % 127).astype(np.int8), (721, 1441))
+        v = np.broadcast_to((lon % 127).astype(np.int8), (721, 1441))
+        t = np.frombuffer(wind.one_tile(u, v, 0, 5, 12), np.int8).reshape(2, wind.N, wind.N)
+        self.assertEqual(t[0, 0, 0], 200 % 127)
+        self.assertEqual(t[1, 0, 40], 520 % 127)
+        self.assertEqual(wind.gfs_time(datetime.datetime(2026, 11, 12, 15)), ("2026111212", 3))
+        self.assertEqual(wind.gfs_time(datetime.datetime(2026, 11, 13, 0)), ("2026111300", 0))
 
 
 if __name__ == "__main__":
