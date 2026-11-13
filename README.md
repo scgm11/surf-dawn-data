@@ -101,7 +101,7 @@ con eso, el agua y el aire de esas fechas: la máxima y la mínima de ERA5 (llev
 región, como las alturas) y la temperatura del mar del pronóstico, que tiene historia desde 2023.
 
 Son unas 570 llamadas de Open-Meteo por región, así que no se piden desde el teléfono ni desde la
-conexión de quien las calcula: `tools/era5_normals.py` (Action `era5.yml`, todos los días, hasta 9.000
+conexión de quien las calcula: `tools/era5_normals.py` (Action `era5.yml`, todos los días a las 00:17 UTC, hasta 9.000
 llamadas) baja las respuestas de las regiones que faltan y las deja en el release
 [`era5`](https://github.com/scgm11/surf-dawn-data/releases/tag/era5), una por región con `index.json`.
 Una región se vuelve a bajar solo si cambia su pico de referencia. El cálculo lo hace la app con su

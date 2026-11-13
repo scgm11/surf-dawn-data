@@ -8,7 +8,7 @@ name: ERA5 para lo normal
 # o un pico de referencia que se movió pidan bajar otra vez.
 on:
   schedule:
-    - cron: "41 4 * * *"          # todos los días, 04:41 UTC
+    - cron: "17 0 * * *"          # todos los días, 00:17 UTC (21:17 de Uruguay): al empezar el día UTC, el de la cuota
   workflow_dispatch:
     inputs:
       regions:
