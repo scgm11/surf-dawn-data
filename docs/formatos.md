@@ -328,3 +328,31 @@ con `v` (2 desde que tienen el agua y el aire: una región de la versión 1 se v
 período pico trajo (`hours` de `of`), o `error` si no se pudo (sin olas en el punto: no se vuelve a pedir
 hasta que se mueva el pico de referencia). Lo arma `tools/era5_normals.py` (Action `era5.yml`).
 
+
+## Mapa del tiempo: release `viento`
+
+### `mapa.json` — dónde está todo (app de iPhone)
+
+```json
+{"v":1,
+ "wind":{"file":"viento-2026111312.bin","run":"2026-11-13T12:00:00Z","hours":[0,3,6,...,120],"k":0.3,"n":41,
+         "size":137842,"levels":[{"deg":10,"rows":18,"cols":36,"offset":0},{"deg":40,"rows":5,"cols":9,"offset":89321616}]},
+ "waves":{"layer":"GLOBAL_ANALYSISFORECAST_WAV_001_027/cmems_mod_glo_wav_anfc_0.083deg_PT3H-i_202411","last":"2026-11-23T00:00:00Z"}}
+```
+
+`wind`: el viento a 10 m de GFS (NOAA, dominio público), el mismo modelo que el viento de los picos. El
+ciclo `run`, las horas desde él (`hours`, cada 3 hasta 120) y el archivo del release que tiene las
+baldosas. `waves`: la capa del WMTS de Copernicus Marine con las olas (su nombre lleva la versión del
+producto, que cambia más o menos una vez por año: la app no la deja fija) y su última hora. Se pisa
+cada 6 horas (Action `viento.yml`, `tools/wind.py`).
+
+### `viento-<CICLO>.bin` — las baldosas
+
+Dos niveles, uno detrás del otro desde `offset`: baldosas de 10° con un punto cada 0,25° (las costas) y
+de 40° con un punto cada 1° (el océano). Cada una tiene `n` × `n` puntos desde su esquina suroeste
+(latitud `-90 + fila × deg`, longitud `-180 + columna × deg`, los dos bordes incluidos; arriba de 90°
+repite el polo) y ocupa `size` bytes: hora por hora, `u` y después `v` (hacia el este y hacia el norte),
+por filas desde el sur, cada valor un entero de 8 bits con signo por `k` m/s. La baldosa de (lat, lon)
+empieza en `offset + (fila × cols + columna) × size`, con `fila = ⌊(lat + 90) / deg⌋` y `columna =
+⌊(lon + 180) / deg⌋`: el iPhone baja solo esos bytes (un pedido con Range) y una vez por ciclo. Quedan
+el ciclo nuevo y el anterior, para que una app que leyó el `mapa.json` de antes encuentre su archivo.

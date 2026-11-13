@@ -1,0 +1,29 @@
+name: Viento del mapa del tiempo
+# El viento de GFS (NOAA) a 10 m para el mapa del tiempo de la app de iPhone, y la capa de olas de
+# Copernicus Marine vigente (tools/wind.py): toma el ciclo más nuevo completo en AWS, solo el viento de
+# cada hora (rangos del .idx, ~80 MB), y deja viento-<CICLO>.bin (baldosas, ~95 MB) y mapa.json en el
+# release "viento". No comitea nada, así que no usa la cola data-commit. Un ciclo ya publicado solo revisa
+# la capa de olas (su nombre lleva la versión, que Copernicus cambia más o menos una vez por año).
+on:
+  schedule:
+    - cron: "7 5,11,17,23 * * *"     # 5 h después de cada ciclo de GFS (00, 06, 12 y 18 UTC)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: viento
+  cancel-in-progress: false
+jobs:
+  wind:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install numpy==2.3.4 eccodes==2.50.1
+      - name: Viento
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/wind.py --upload

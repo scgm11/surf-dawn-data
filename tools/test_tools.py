@@ -7,6 +7,8 @@ import os
 import sys
 import tempfile
 import unittest
+
+import numpy as np
 from unittest import mock
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -17,6 +19,7 @@ import build_scale  # noqa: E402
 import check_seeds  # noqa: E402
 import check_spots  # noqa: E402
 import era5_normals as era5  # noqa: E402
+import wind  # noqa: E402
 import ciram_parse_core as ciram  # noqa: E402
 from tools.lib import openmeteo as om  # noqa: E402
 
@@ -286,6 +289,37 @@ class Era5Normals(unittest.TestCase):
         moved = self.zone()
         moved["s"] = moved["s"][9:]                 # LA BOCA first, its own wave point
         self.assertFalse(era5.current(era5.entry(b), era5.plan(moved, self.TODAY)))
+
+
+class WindTest(unittest.TestCase):
+    """tools/wind.py: the tiles of the weather map, as the phone finds them."""
+
+    LEVELS = [{"deg": 10, "rows": 18, "cols": 36, "offset": 0}, {"deg": 40, "rows": 5, "cols": 9, "offset": 648 * 137842}]
+
+    def test_offsets(self):
+        size = len(wind.HOURS) * 2 * wind.N * wind.N
+        self.assertEqual(wind.tile_offset(self.LEVELS, -90, -180), (0, size))
+        # La Boca: row 5 (-40 to -30), column 12 (-60 to -50)
+        self.assertEqual(wind.tile_offset(self.LEVELS, -34.92, -54.87)[0], (5 * 36 + 12) * size)
+        self.assertEqual(wind.tile_offset(self.LEVELS, 90, 180)[0], (17 * 36 + 35) * size)
+        self.assertEqual(wind.tile_offset(self.LEVELS, -34.92, -54.87, 1)[0], 648 * 137842 + (1 * 9 + 3) * size)
+
+    def test_tiles(self):
+        hours = len(wind.HOURS)
+        lat = np.arange(721, dtype=np.int32)[None, :, None]
+        lon = np.arange(1441, dtype=np.int32)[None, None, :]
+        # u holds the latitude's index mod 127, v the longitude's: each point says where it came from
+        u = np.broadcast_to((lat % 127).astype(np.int8), (hours, 721, 1441))
+        v = np.broadcast_to((lon % 127).astype(np.int8), (hours, 721, 1441))
+        parts = wind.tiles(u, v)
+        self.assertEqual(len(parts), 18 * 36 + 5 * 9)
+        t = np.frombuffer(parts[5 * 36 + 12], np.int8).reshape(hours, 2, wind.N, wind.N)
+        self.assertEqual(t[0, 0, 0, 0], (5 * 40) % 127)          # south-west corner: lat -40 is index 200
+        self.assertEqual(t[0, 1, 0, 0], (12 * 40) % 127)         # lon -60 is index 480
+        self.assertEqual(t[3, 0, 40, 0], (6 * 40) % 127)         # the north edge is the next tile's south
+        c = np.frombuffer(parts[648 + 4 * 9 + 8], np.int8).reshape(hours, 2, wind.N, wind.N)
+        self.assertEqual(c[0, 0, 40, 0], 720 % 127)              # over the pole, the pole
+        self.assertEqual(c[0, 1, 0, 40], 1440 % 127)             # the east edge is 180
 
 
 if __name__ == "__main__":
