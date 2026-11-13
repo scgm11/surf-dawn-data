@@ -261,6 +261,14 @@ class Era5Normals(unittest.TestCase):
         self.assertEqual(dict(pl["factor_era5"][1])["start_date"], "2026-08-13")
         self.assertEqual(dict(pl["factor_model"][1])["models"], "ncep_gfswave025")
 
+    def test_the_americas_first_from_uruguays_neighbours(self):
+        rank = era5.priority()
+        order = sorted(rank, key=rank.get)
+        self.assertEqual([c.split("-")[0] for c in order[:6]], ["UY"] * 3 + ["AR"] * 3)   # the index's: Uruguay, Argentina
+        self.assertLess(rank["BR-SC-FLN"], rank["US-HI-OAN"])
+        self.assertLess(rank["US-HI-OAN"], rank["PT-PEN"])                       # the Americas, then Europe
+        self.assertLess(rank["PT-PEN"], rank["AU-NSW-SYD"])                      # then Oceania
+
     def test_a_region_weighs_some_570_calls(self):
         # the waves and the wind with the air's max and min (no more calls: 6 variables), the factor, the water's 3 years
         # (78) and the air's offset (13)

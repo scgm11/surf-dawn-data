@@ -62,6 +62,7 @@ PACE = 440                                       # s a region at least: ~570 cal
 RELEASE = "era5"
 VERSION = 2                                      # 2: with the water and the air (13/11/2026); a region asked before, again
 FACTORY = ("UY-CAN", "UY-MAL", "UY-ROC")         # the apps bring theirs (Normals' normals.json): last
+CONTINENTS = ("AM", "EU", "OC", "AS", "AF")      # the order the regions are asked in: the Americas first (13/11/2026)
 MIN_SHARE = 0.5                                  # of the hours with a peak period, or the point has no sea
 
 
@@ -263,6 +264,23 @@ def write_index(index):
     return path
 
 
+def priority():
+    """{region: rank}, the order they are asked in: the continents in CONTINENTS' order and, in each, the apps'
+    index's (spots/idx/<CONTINENT>.json: the Americas start at Uruguay's neighbours), so the regions where the app is
+    used get their normal in the first runs. A region the index lacks goes after them."""
+    rank = {}
+    for i, c in enumerate(CONTINENTS):
+        try:
+            with open(os.path.join(ROOT, "spots", "idx", c + ".json"), encoding="utf-8") as f:
+                d = json.load(f)
+        except (OSError, ValueError):
+            continue
+        countries = {row[0]: j for j, row in enumerate(d.get("c", []))}
+        for k, row in enumerate(d.get("r", [])):
+            rank.setdefault(row[0], (i, countries.get(row[1], len(countries)), k))
+    return rank
+
+
 def local_index():
     try:
         with open(os.path.join(CACHE, "index.json")) as f:
@@ -279,7 +297,8 @@ def main():
     a = ap.parse_args()
     today = datetime.datetime.now(datetime.timezone.utc).date()
     codes = a.regions or sorted(f[:-5] for f in os.listdir(REGIONS) if f.endswith(".json"))
-    codes.sort(key=lambda c: (c in FACTORY, c))
+    rank = priority()
+    codes.sort(key=lambda c: (c in FACTORY, rank.get(c, (len(CONTINENTS),)), c))
     index = release_index() if a.upload else local_index()
     zones = {}
     for c in codes:
