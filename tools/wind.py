@@ -263,10 +263,10 @@ def history(days, upload):
 
 
 def assets(release):
-    """Every asset of a release, all pages ({"name": ...} each)."""
-    rid = gh("api", "repos/{owner}/{repo}/releases/tags/%s" % release, "--jq", ".id", check=False).stdout.strip()
+    """Every asset of a release, all pages ({"name": ...} each); an error if the release can't be read."""
+    rid = gh("api", "repos/{owner}/{repo}/releases/tags/%s" % release, "--jq", ".id").stdout.strip()
     if not rid:
-        return []
+        raise RuntimeError("no se pudo leer el release %s" % release)
     out = gh("api", "--paginate", "repos/{owner}/{repo}/releases/%s/assets?per_page=100" % rid, "--jq", ".[] | {name: .name}").stdout
     return [json.loads(line) for line in out.splitlines() if line.strip()]
 
@@ -334,16 +334,27 @@ def main():
         if a.upload:
             gh("release", "upload", RELEASE, path, "--clobber")
     index["waves"] = waves
-    days = history(a.history, a.upload)
-    if days:
-        index["history"] = {"release": HISTORY, "first": days[0], "last": days[-1], "count": len(days)}
     ipath = os.path.join(CACHE, "mapa.json")
-    json.dump(index, open(ipath, "w"), separators=(",", ":"))
+
+    sent = [old]                                             # the mapa.json in the release
+
+    def publish():
+        json.dump(index, open(ipath, "w"), separators=(",", ":"))
+        if a.upload and index != sent[0]:
+            gh("release", "upload", RELEASE, ipath, "--clobber")  # after its file: the phone never reads an index without it
+            sent[0] = json.loads(json.dumps(index))
+            print("mapa.json subido")
+
+    publish()                                                # the new cycle first: the history can't hold it back
+    try:
+        days = history(a.history, a.upload)
+        if days:
+            index["history"] = {"release": HISTORY, "first": days[0], "last": days[-1], "count": len(days)}
+    except Exception as e:                                   # the days stay as they were; the next run tries again
+        print("la historia falló:", e)
+    publish()
     if not a.upload:
         return
-    if index != old:
-        gh("release", "upload", RELEASE, ipath, "--clobber")  # after its file: the phone never reads an index without it
-        print("mapa.json subido")
     if path is None:
         return
     keep = {name, old["wind"]["file"] if old and "wind" in old else name, "mapa.json"}   # the cycle before, for an index read before
