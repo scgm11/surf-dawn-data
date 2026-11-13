@@ -1,6 +1,6 @@
 name: ERA5 para lo normal
-# Baja las olas y el viento de ERA5 (2016-2024) en el pico de referencia de cada región para "lo normal"
-# de Cómo viene en el iPhone (tools/era5_normals.py): unas 480 llamadas de Open-Meteo por región, hasta
+# Baja las olas, el viento y el aire de ERA5 (2016-2024) y el agua (2023-2025) en el pico de referencia de cada región para "lo normal"
+# de Cómo viene en el iPhone (tools/era5_normals.py): unas 570 llamadas de Open-Meteo por región, hasta
 # 9.000 por corrida, desde la IP del runner y no desde la del usuario. Las respuestas quedan en el release
 # "era5" (una por región, con index.json) y no en el repo: no comitea nada, así que no usa la cola
 # data-commit. Lo normal lo calcula después la app (surf-dawn: watchos/tools/normals.sh) y queda en

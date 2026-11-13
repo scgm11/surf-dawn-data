@@ -306,18 +306,24 @@ que dan período pico (el reloj lo muestra y puntúa las horas con él): `ecmwf_
 Por región: `m`, los 12 meses de enero a diciembre, cada uno con los días que dan olas en 30 (algún
 pico con 3 estrellas o más en el ranking de Pronóstico): el cuartil de abajo, la mediana y el de arriba
 de los años `y`; `k`, el factor por el que van las alturas de ERA5-Ocean (el modelo de olas de la región
-sobre ERA5-Ocean en los últimos 92 días, entre 0,7 y 1,6). Una línea por región, en orden. Lo escribe la
+sobre ERA5-Ocean en los últimos 92 días, entre 0,7 y 1,6). El agua y el aire en el pico de referencia, cada uno
+con 12 meses de [cuartil de abajo, mediana, cuartil de arriba] de la media de cada año, en °C: `tx` la máxima
+del aire y `tn` la mínima (ERA5 de los años `y`, llevado al modelo de viento de la región por lo que dio de más
+o de menos en los últimos 92 días), `tw` el agua (la temperatura del mar del pronóstico de Open-Meteo, que
+tiene historia recién desde 2023: sus años en `yw`). Pueden faltar. Una línea por región, en orden. Lo escribe la
 app (repo de las apps: `swift run normals --answers`, con `watchos/tools/normals.sh`) y el iPhone lo baja
 una vez por semana (unos 50 KB); una región que no está, o que no es válida (12 meses de tres números
 crecientes entre 0 y 31), queda sin "lo normal". Los relojes no lo leen.
 
 ### Release `era5` — las respuestas de las que sale
 
-`<REGIÓN>.json.gz`: las cuatro respuestas de Open-Meteo de una región tal como llegan (`wind`, ERA5
-en el pico de referencia: viento en km/h, salida y puesta del sol, del 1/1/2016 al 17/11/2024 en su
-hora; `marine`, ERA5-Ocean en su punto de olas, los mismos días en la hora del viento;
-`factor_model` y `factor_era5`, la altura del modelo de la región y la de ERA5-Ocean en los últimos 92
-días, en GMT), con `asked` (la consulta de cada pedido, que la app compara con la suya), `spot`, `at`,
+`<REGIÓN>.json.gz`: las siete respuestas de Open-Meteo de una región tal como llegan (`wind`, ERA5
+en el pico de referencia: viento en km/h, salida y puesta del sol y la máxima y la mínima del aire, del
+1/1/2016 al 17/11/2024 en su hora; `marine`, ERA5-Ocean en su punto de olas, los mismos días en la hora
+del viento; `factor_model` y `factor_era5`, la altura del modelo de la región y la de ERA5-Ocean en los
+últimos 92 días, en GMT; `water`, la temperatura del mar en el pico de 2023 a 2025; `air_model` y
+`air_era5`, la máxima y la mínima del modelo de viento de la región y las de ERA5 en los últimos 92 días),
+con `v` (2 desde que tienen el agua y el aire: una región de la versión 1 se vuelve a pedir) y `asked` (la consulta de cada pedido, que la app compara con la suya), `spot`, `at`,
 `wave`, `model` y `fetched`. `index.json`: por región, dónde se pidió, cuándo y cuántas horas con
 período pico trajo (`hours` de `of`), o `error` si no se pudo (sin olas en el punto: no se vuelve a pedir
 hasta que se mueva el pico de referencia). Lo arma `tools/era5_normals.py` (Action `era5.yml`).

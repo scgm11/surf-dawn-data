@@ -96,9 +96,11 @@ en esas fechas: de cada mes, cuántos días de 30 dieron olas (3 estrellas o má
 2024, el año del medio y la mitad de los años alrededor. Sale del mismo ranking que Pronóstico, corrido
 sobre cada día de **ERA5** (el viento, 0,25°) y **ERA5-Ocean** (las olas, 0,5°, con período pico hasta el
 17/11/2024) en el pico de referencia de la región (el del punto de olas que comparten más picos), con
-las alturas llevadas a las del modelo de la región (la relación de los dos en los últimos 92 días).
+las alturas llevadas a las del modelo de la región (la relación de los dos en los últimos 92 días). Junto
+con eso, el agua y el aire de esas fechas: la máxima y la mínima de ERA5 (llevadas al modelo de viento de la
+región, como las alturas) y la temperatura del mar del pronóstico, que tiene historia desde 2023.
 
-Son unas 480 llamadas de Open-Meteo por región, así que no se piden desde el teléfono ni desde la
+Son unas 570 llamadas de Open-Meteo por región, así que no se piden desde el teléfono ni desde la
 conexión de quien las calcula: `tools/era5_normals.py` (Action `era5.yml`, todos los días, hasta 9.000
 llamadas) baja las respuestas de las regiones que faltan y las deja en el release
 [`era5`](https://github.com/scgm11/surf-dawn-data/releases/tag/era5), una por región con `index.json`.

@@ -7,17 +7,21 @@ The normal of a region is worked out in the apps' repo, with the apps' own ranki
 how many days in 30 gave waves at some spot of the region from 2016 to 2024. That takes nine years of
 hourly waves and wind at one point, some 480 calls of Open-Meteo's free API (10,000 a day) a region:
 too many to ask from the user's connection, which the phone shares. This tool only asks, on GitHub's
-runners, the same four requests the Swift tool would, at the region's reference spot (the one whose wave
+runners, the same seven requests the Swift tool would, at the region's reference spot (the one whose wave
 point most of its spots share, Normals.reference; ties the first):
 
-- ERA5's wind (archive API, 0.25°) at the spot: wind_speed_10m and wind_direction_10m in km/h, sunrise
-  and sunset, from START to END (the end of ERA5-Ocean's peak period, Normals.lastDay), timezone=auto;
+- ERA5's wind (archive API, 0.25°) at the spot: wind_speed_10m and wind_direction_10m in km/h, sunrise,
+  sunset and the air's daily max and min, from START to END (the end of ERA5-Ocean's peak period,
+  Normals.lastDay), timezone=auto;
 - ERA5-Ocean's waves (marine API, 0.5°) at its wave point: wave_height, wave_peak_period and
   wave_direction (Normals.keys), the same days, in the wind's time zone;
 - the region's wave model's last 92 days and ERA5-Ocean's at the same point (wave_height, GMT): ERA5's
-  heights are taken times the model's mean over them (Normals.factor).
+  heights are taken times the model's mean over them (Normals.factor);
+- the water at the spot (the marine API's sea_surface_temperature, the one the forecast gives: it has no
+  history before 2023), its whole years from WATER_START to WATER_END, in the wind's time zone;
+- the air's daily max and min of the region's wind model over the last 92 days and ERA5's (Normals.offset).
 
-Each region's four answers go into one gzip (tools/.cache/era5/<REGION>.json.gz) and, with --upload, to
+Each region's answers go into one gzip (tools/.cache/era5/<REGION>.json.gz) and, with --upload, to
 the release "era5" of this repo, with index.json: each region's reference spot, so that a region whose
 reference spot moved is asked again and the rest never. BUDGET calls a run, a region every PACE s at
 least (5,000 an hour, 600 a minute), the rest in the next runs (Action era5.yml, daily); a 429 for the
@@ -49,11 +53,14 @@ MARINE = openmeteo.MARINE
 START, END = "2016-01-01", "2024-11-17"          # ERA5-Ocean's peak period ends there (Normals.lastDay)
 WAVES = "wave_height,wave_peak_period,wave_direction"   # Normals.keys: the total sea, as ECMWF WAM's
 WIND = "wind_speed_10m,wind_direction_10m"
+AIR = "temperature_2m_max,temperature_2m_min"   # Normals.airKeys
+WATER_START, WATER_END = "2023-01-01", "2025-12-31"   # Normals.waterStart, waterEnd
+FORECAST = "https://api.open-meteo.com/v1/forecast"
 FACTOR_DAYS = 92                                 # the model's past days against ERA5's (Normals.factor)
 BUDGET = 9000                                    # calls a run: the free API's 10,000 a day, a margin left
-PACE = 380                                       # s a region at least: ~480 calls each, under 5,000 an hour
+PACE = 440                                       # s a region at least: ~570 calls each, under 5,000 an hour
 RELEASE = "era5"
-VERSION = 1
+VERSION = 2                                      # 2: with the water and the air (13/11/2026); a region asked before, again
 FACTORY = ("UY-CAN", "UY-MAL", "UY-ROC")         # the apps bring theirs (Normals' normals.json): last
 MIN_SHARE = 0.5                                  # of the hours with a peak period, or the point has no sea
 
@@ -91,7 +98,7 @@ def plan(z, today):
     """The region's four requests as the Swift tool asks them (OpenMeteo.url: latitude, longitude,
     timeformat, timezone=auto unless one is given, cell_selection=sea on the marine API, then the
     request's own): {name: (url, [(key, value)])}. The waves' time zone is the wind's answer's, filled
-    in by fetch(). Plus the reference spot, to know later whether it moved."""
+    in by fetch(), and so are the air's. Plus the reference spot, to know later whether it moved."""
     s = z["s"][reference(z)]
     at = (coord(s[1]), coord(s[2]))
     wp = wave_point(s)
@@ -101,7 +108,7 @@ def plan(z, today):
     return {
         "spot": s[0], "at": [s[1], s[2]], "wave": list(wp), "model": z["m"][0],
         "wind": (ARCHIVE, [("latitude", at[0]), ("longitude", at[1])] + head + [
-            ("timezone", "auto"), ("hourly", WIND), ("daily", "sunrise,sunset"), ("models", "era5"),
+            ("timezone", "auto"), ("hourly", WIND), ("daily", "sunrise,sunset," + AIR), ("models", "era5"),
             ("wind_speed_unit", "kmh"), ("start_date", START), ("end_date", END)]),
         "marine": (MARINE, [("latitude", wave[0]), ("longitude", wave[1])] + sea + [
             ("hourly", WAVES), ("models", "era5_ocean"), ("start_date", START), ("end_date", END),
@@ -112,6 +119,13 @@ def plan(z, today):
         "factor_era5": (MARINE, [("latitude", wave[0]), ("longitude", wave[1])] + sea + [
             ("hourly", "wave_height"), ("models", "era5_ocean"), ("start_date", day(FACTOR_DAYS, today)),
             ("end_date", day(1, today)), ("timezone", "GMT")]),
+        "water": (MARINE, [("latitude", at[0]), ("longitude", at[1])] + sea + [
+            ("hourly", "sea_surface_temperature"), ("start_date", WATER_START), ("end_date", WATER_END), ("timezone", None)]),
+        "air_model": (FORECAST, [("latitude", at[0]), ("longitude", at[1])] + head + [("cell_selection", "nearest"),
+            ("daily", AIR), ("models", z["m"][1]), ("past_days", str(FACTOR_DAYS)), ("forecast_days", "1"), ("timezone", None)]),
+        "air_era5": (ARCHIVE, [("latitude", at[0]), ("longitude", at[1])] + head + [
+            ("daily", AIR), ("models", "era5"), ("start_date", day(FACTOR_DAYS, today)), ("end_date", day(1, today)),
+            ("timezone", None)]),
     }
 
 
@@ -129,7 +143,7 @@ def weight(params):
 
 def cost(z, today):
     pl = plan(z, today)
-    return sum(weight(pl[k][1]) for k in ("wind", "marine", "factor_model", "factor_era5"))
+    return sum(weight(pl[k][1]) for k in ("wind", "marine", "factor_model", "factor_era5", "water", "air_model", "air_era5"))
 
 
 def get(url, params, tries=6):
@@ -188,8 +202,10 @@ def fetch(z, today):
     ask("wind", pl["wind"][1])
     tz = out["wind"].get("timezone") or "auto"
     ask("marine", [(k, tz if k == "timezone" else v) for k, v in pl["marine"][1]])
-    for k in ("factor_model", "factor_era5"):    # a model without the point: the heights as ERA5's (k = 1)
-        ask(k, pl[k][1], fail=lambda e: {"error": True, "reason": str(e)})
+    for k in ("factor_model", "factor_era5", "water", "air_model", "air_era5"):
+        # a model without the point: the heights as ERA5's (k = 1); no water or air there: Cómo viene without them
+        ask(k, [(p, tz if p == "timezone" and v is None else v) for p, v in pl[k][1]],
+            fail=lambda e: {"error": True, "reason": str(e)})
     return out
 
 
@@ -197,12 +213,14 @@ def entry(b):
     """A bundle's line of index.json: what it was asked at, so a region whose reference spot moved is
     asked again."""
     n, total = sea_hours(b["marine"])
-    return {"spot": b["spot"], "at": b["at"], "wave": b["wave"], "model": b["model"], "fetched": b["fetched"],
+    return {"v": VERSION, "spot": b["spot"], "at": b["at"], "wave": b["wave"], "model": b["model"], "fetched": b["fetched"],
             "hours": n, "of": total}
 
 
 def current(e, pl):
-    return e is not None and e.get("spot") == pl["spot"] and e.get("at") == pl["at"] and e.get("wave") == pl["wave"]
+    """Asked already, at the same reference spot and with this version's requests (an error stays as it is)."""
+    return e is not None and e.get("spot") == pl["spot"] and e.get("at") == pl["at"] and e.get("wave") == pl["wave"] \
+        and (e.get("v") == VERSION or "error" in e)
 
 
 def gh(*args, check=True):
@@ -294,7 +312,7 @@ def main():
         except ValueError as err:                # the API refuses the request: so it will tomorrow
             pl = plan(zones[c], today)
             e = {k: pl[k] for k in ("spot", "at", "wave", "model")}
-            e.update(fetched=today.isoformat(), hours=0, of=0, error=str(err)[:120])
+            e.update(v=VERSION, fetched=today.isoformat(), hours=0, of=0, error=str(err)[:120])
         except RuntimeError as err:              # Open-Meteo down: the next run asks again
             print("%s: %s" % (c, err), file=sys.stderr, flush=True)
             continue
