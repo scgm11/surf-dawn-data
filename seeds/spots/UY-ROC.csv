@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 ANACONDA,-34.6606,-54.192,B,V,local,nosnap facing=176,v1 (spots.json 2026-10)
-SOLARI,-34.6618,-54.1819,B,V,local,nosnap facing=190,v1 (spots.json 2026-10)
+ZANJA HONDA,-34.6618,-54.1819,B,V,local,nosnap facing=190,v1 (spots.json 2026-10); SOLARI hasta 2026-11-16: la ola de Playa Solari se llama Zanja Honda
 LOS BOTES,-34.6625,-54.1761,R,V,local,nosnap facing=195,v1 (spots.json 2026-10)
 LA BALCONADA,-34.6649,-54.1653,B,V,local,nosnap facing=193,v1 (spots.json 2026-10)
 EL FARO,-34.667,-54.1608,R,V,local,nosnap facing=206,v1 (spots.json 2026-10)
