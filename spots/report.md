@@ -119,7 +119,7 @@
 | BR-RJL | 20 | 1241 | ncep_gfswave025 | gfs_seamless | 3 | 594 m | 0 |
 | BR-ES | 19 | 1159 | ncep_gfswave025 | gfs_seamless | 3 | 640 m | 5 |
 | BR-BA | 21 | 1187 | ncep_gfswave025 | gfs_seamless | 3 | 755 m | 0 |
-| BR-NE-CE | 13 | 841 | ncep_gfswave016 | gfs_seamless | 3 | 861 m | 0 |
+| BR-NE-CE | 13 | 869 | ncep_gfswave016 | gfs_seamless | 3 | 861 m | 2 |
 | BR-NE-RN | 13 | 906 | ncep_gfswave016 | gfs_seamless | 3 | 478 m | 0 |
 | BR-NE-PE | 14 | 934 | ncep_gfswave016 | gfs_seamless | 3 | 466 m | 1 |
 | BR-NOR | 5 | 436 | ncep_gfswave016 | gfs_seamless | 1 | 483 m | 0 |
@@ -143,7 +143,7 @@
 | CR-GUA | 12 | 891 | ncep_gfswave016 | gfs_seamless | 2 | 236 m | 2 |
 | CR-NIC | 11 | 711 | ncep_gfswave016 | gfs_seamless | 2 | 839 m | 0 |
 | CR-PAC | 10 | 681 | ncep_gfswave016 | gfs_seamless | 2 | 385 m | 0 |
-| CR-OSA | 4 | 420 | ncep_gfswave016 | gfs_seamless | 1 | 614 m | 0 |
+| CR-OSA | 4 | 452 | ncep_gfswave016 | gfs_seamless | 1 | 614 m | 2 |
 | CR-CAR | 5 | 486 | ncep_gfswave016 | gfs_seamless | 2 | 507 m | 0 |
 | NI-RIV | 8 | 559 | ncep_gfswave016 | gfs_seamless | 1 | 572 m | 0 |
 | NI-NW | 4 | 442 | ncep_gfswave016 | gfs_seamless | 2 | 975 m | 0 |
@@ -376,7 +376,7 @@
 | CR-NIC | SANTA TERESA | K | 306 m | 218° | — |
 | CR-PAC | BOCA BARRANCA | K | 1118 m | 239° | — |
 | CR-PAC | PLAYA HERMOSA | K | 438 m | 213° | — |
-| CR-OSA | PAVONES | V | 89 m | 294° | — |
+| CR-OSA | PAVONES | V | 89 m | 294° | 8.33, -83.33 |
 | CR-CAR | SALSA BRAVA | K | 402 m | 4° | — |
 | NI-RIV | POPOYO | K | 824 m | 208° | — |
 | NI-RIV | MADERAS | K | 572 m | 223° | — |
