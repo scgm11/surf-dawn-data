@@ -10,12 +10,20 @@ por día; las 48 h se solapan, así que un día que falla no deja hueco.
 Las horas de la página son las de Uruguay (UTC-3, sin cambio de hora: el "Huso +3" del SOHMA);
 contra la tabla, la correlación es máxima sin corrimiento (10/11/2026, La Paloma y Punta Lobos).
 
-    python3 tools/armada.py                 baja las 48 h de cada estación y las suma a los CSV
-    python3 tools/armada.py --html DIR      lo mismo, de páginas ya bajadas (DIR/Est<N>.html)
+Además guarda, una vez por día, el nivel del mar que pronostica Open-Meteo (sea_level_height_msl, el
+día anterior y los 7 que vienen) en los puertos de la tabla que tienen mareógrafo vivo:
+validation/armada/openmeteo/<puerto>.csv (emitido, utc, nivel_m). El pasado de Open-Meteo ya viene
+corregido; esto es lo que habría visto la app días antes, para probar R2 como pronóstico
+(tools/marea_meteo.py --dia N).
+
+    python3 tools/armada.py                 baja las 48 h de cada estación y el pronóstico de Open-Meteo
+    python3 tools/armada.py --html DIR      las 48 h de páginas ya bajadas (DIR/Est<N>.html), sin Open-Meteo
 """
 import argparse
 import csv
 import datetime as dt
+import glob
+import json
 import os
 import re
 import sys
@@ -31,6 +39,13 @@ UY = dt.timezone(dt.timedelta(hours=-3))
 # Las estaciones mareográficas (Est<N>: su nombre de archivo); Colonia, Piriápolis y Punta del Este
 # figuran "en desarrollo" en la página.
 STATIONS = {4: "la-paloma", 5: "punta-lobos", 8: "colonia", 9: "piriapolis", 10: "punta-del-este"}
+
+# Los puertos de la tabla (tide/<puerto>) con un mareógrafo que manda datos nuevos: La Paloma se mide en
+# La Paloma y Montevideo en Punta Lobos. Colonia, Piriápolis y Punta del Este repiten datos viejos
+# desde que se guardan (13/11/2026); si vuelven, se suman acá y en marea_meteo.PAIRS.
+FORECAST_PORTS = ("la-paloma", "montevideo")
+MARINE = "https://marine-api.open-meteo.com/v1/marine"
+FORECAST_DAYS = 7                                       # lo que muestra el iPhone
 
 SERIES = re.compile(r'getElementById\("(graph[A-Z])"\)\s*,\s*\[(.*?)\]\s*,\s*\{', re.S)
 POINT = re.compile(r'new Date\("([^"]+)"\)\)?\s*,\s*([-\d.eE+]+|null|NaN)')
@@ -92,6 +107,55 @@ def merge(path, series):
     return added
 
 
+def port_point(port):
+    """(lat, lon) del puerto, del último mes de su tabla (tide/<puerto>/AAAA-MM.json)."""
+    last = sorted(glob.glob(os.path.join(ROOT, "tide", port, "[0-9][0-9][0-9][0-9]-[0-9][0-9].json")))[-1]
+    with open(last) as f:
+        d = json.load(f)
+    return d["lat"], d["lon"]
+
+
+def fetch_forecast(ports):
+    """{puerto: {epoch UTC: nivel en m}}: el nivel que da hoy Open-Meteo, del día anterior a los
+    FORECAST_DAYS que vienen, en un solo pedido para todos los puertos."""
+    pts = [port_point(p) for p in ports]
+    q = urllib.parse.urlencode({
+        "latitude": ",".join("%.4f" % la for la, _ in pts), "longitude": ",".join("%.4f" % lo for _, lo in pts),
+        "hourly": "sea_level_height_msl", "past_days": 1, "forecast_days": FORECAST_DAYS,
+        "timezone": "GMT", "timeformat": "unixtime"}, safe=",")
+    req = urllib.request.Request(MARINE + "?" + q, headers={"User-Agent": "surf-dawn-data (validación de mareas)"})
+    with urllib.request.urlopen(req, timeout=60) as r:
+        res = json.load(r)
+    res = res if isinstance(res, list) else [res]
+    out = {}
+    for port, block in zip(ports, res):
+        h = block.get("hourly") or {}
+        out[port] = {int(t): v for t, v in zip(h.get("time") or [], h.get("sea_level_height_msl") or [])
+                     if v is not None}
+    return out
+
+
+def merge_forecast(path, issued, series):
+    """Suma al CSV (emitido, utc, nivel_m) el pronóstico emitido el día `issued` (AAAA-MM-DD, UTC),
+    una sola vez por día: si ese día ya estaba, no suma nada. Devuelve cuántas filas sumó."""
+    rows = []
+    if os.path.exists(path):
+        with open(path, newline="") as f:
+            rows = list(csv.DictReader(f))
+    if not series or any(r["emitido"] == issued for r in rows):
+        return 0
+    for t in sorted(series):
+        rows.append({"emitido": issued,
+                     "utc": dt.datetime.fromtimestamp(t, dt.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
+                     "nivel_m": "%.3f" % series[t]})
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, "w", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=["emitido", "utc", "nivel_m"], lineterminator="\n")
+        w.writeheader()
+        w.writerows(rows)
+    return len(series)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("--html", help="páginas ya bajadas, DIR/Est<N>.html")
@@ -112,6 +176,15 @@ def main():
             ok += 1
         except Exception as e:                          # una estación caída no frena a las otras
             print("Est%d %s: %s" % (n, name, e))
+    if not a.html:
+        try:                                            # Open-Meteo caído no frena los mareógrafos
+            issued = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
+            for port, series in fetch_forecast(FORECAST_PORTS).items():
+                added = merge_forecast(os.path.join(OUT, "openmeteo", port + ".csv"), issued, series)
+                print("Open-Meteo %s: %d horas del pronóstico del %s%s" % (
+                    port, len(series), issued, "" if added else " (ya estaba)"))
+        except Exception as e:
+            print("Open-Meteo: %s" % e)
     if ok == 0:
         print("ninguna estación respondió")
         sys.exit(1)

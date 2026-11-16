@@ -16,6 +16,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
 sys.path.insert(0, HERE)
 import armada  # noqa: E402
+import marea_meteo  # noqa: E402
 import build_scale  # noqa: E402
 import check_seeds  # noqa: E402
 import check_spots  # noqa: E402
@@ -232,6 +233,41 @@ class Armada(unittest.TestCase):
             self.assertEqual(rows[0], "utc,nivel_m,agua_c")
             self.assertEqual(rows[1], "2026-11-10T11:40:02Z,0.951,18.4")
             self.assertEqual(rows[2], "2026-11-10T11:50:02Z,0.934,")
+
+    def test_merge_forecast(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = os.path.join(d, "openmeteo", "la-paloma.csv")
+            s = {1794268800: 0.12, 1794272400: -0.034}              # 10/11 00:00 y 01:00 UTC
+            self.assertEqual(armada.merge_forecast(p, "2026-11-10", s), 2)
+            self.assertEqual(armada.merge_forecast(p, "2026-11-10", {1794276000: 0.2}), 0)    # una vez por día
+            self.assertEqual(armada.merge_forecast(p, "2026-11-11", s), 2)
+            rows = open(p).read().splitlines()
+            self.assertEqual(rows[0], "emitido,utc,nivel_m")
+            self.assertEqual(rows[1], "2026-11-10,2026-11-10T00:00Z,0.120")
+            self.assertEqual(rows[2], "2026-11-10,2026-11-10T01:00Z,-0.034")
+            self.assertEqual(len(rows), 5)
+
+
+class MareaMeteo(unittest.TestCase):
+    """tools/marea_meteo.py: las horas del mareógrafo y el promedio de 25 h que saca la marea."""
+
+    T0 = datetime.datetime(2026, 11, 10, 12, tzinfo=datetime.timezone.utc)
+
+    def test_hourly(self):
+        m = datetime.timedelta(minutes=1)
+        raw = [(self.T0 - 5 * m, 1.0), (self.T0, 1.2), (self.T0 + 5 * m, 1.1),   # la mediana de las tres
+               (self.T0 + 30 * m, 9.0),                                          # lejos de toda hora
+               (self.T0 + 60 * m, 2.0)]                                          # una sola: no vale
+        self.assertEqual(marea_meteo.hourly(raw), {self.T0: 1.1})
+
+    def test_lowpass(self):
+        h = datetime.timedelta(hours=1)
+        # una marea de 12,42 h sobre un nivel de 0,3 m: el promedio de 25 h queda cerca de 0,3
+        s = {self.T0 + k * h: 0.3 + 0.5 * __import__("math").sin(2 * 3.14159 * k / 12.42) for k in range(30)}
+        low = marea_meteo.lowpass(s)
+        self.assertEqual(sorted(low), [self.T0 + k * h for k in range(12, 18)])  # solo con las 25 horas
+        for v in low.values():
+            self.assertAlmostEqual(v, 0.3, delta=0.03)
 
 
 class Era5Normals(unittest.TestCase):

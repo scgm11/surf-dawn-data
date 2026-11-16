@@ -2,7 +2,9 @@ name: Mareógrafos de la Armada
 # Guarda las últimas 48 h de los mareógrafos de la Armada (meteo.armada.mil.uy: La Paloma, Punta Lobos y,
 # en desarrollo, Colonia, Piriápolis y Punta del Este) en validation/armada/<estación>.csv, una vez por
 # día (tools/armada.py). La página no muestra más de 48 h; juntas, son la serie observada de Uruguay
-# para validar la marea de las apps (issue scgm11/surf-dawn#72, R2 y R10).
+# para validar la marea de las apps (issue scgm11/surf-dawn#72, R2 y R10). Desde el 16/11/2026 guarda
+# también el nivel que pronostica Open-Meteo en La Paloma y Montevideo (validation/armada/openmeteo),
+# para probar R2 con lo que vería la app días antes (tools/marea_meteo.py --dia N).
 on:
   workflow_dispatch:
   schedule:
