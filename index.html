@@ -262,9 +262,14 @@
   .store h3 { font-size: 1.6rem; }
   .store p { color: var(--label); margin-top: 6px; }
   .store p.note { color: var(--dim); margin-top: 18px; }
-  .note.android { text-align: center; margin-top: 28px; font-size: 1rem; }
-  .note.android b { color: var(--text); }
-  .note.android a, details p a { color: var(--teal); }
+  details p a { color: var(--teal); }
+  .beta { display: inline-block; vertical-align: middle; margin-left: 8px; padding: 2px 9px; border: 1px solid var(--teal); border-radius: 999px; color: var(--teal);
+    font: 600 .7rem var(--head); letter-spacing: .12em; text-transform: uppercase; }
+  .spots.cut img { -webkit-mask-image: linear-gradient(#000 80%, transparent); mask-image: linear-gradient(#000 80%, transparent); }
+  .store.android { display: grid; gap: 18px; align-items: center; }
+  .store.android .btn { justify-self: start; }
+  .store.android .note { margin-top: 8px; }
+  @media (min-width: 860px) { .store.android { grid-column: 1 / -1; grid-template-columns: 1fr auto; } }
   .apps { display: grid; gap: 10px; margin-top: 20px; }
   @media (min-width: 560px) { .apps { grid-template-columns: 1fr 1fr; } }
   .app-link { display: flex; align-items: center; gap: 12px; padding: 10px 14px 10px 10px; border-radius: 16px; background: rgba(255, 255, 255, .05); border: 1px solid var(--hair); color: var(--text); transition: border-color .2s, background .2s; }
@@ -346,7 +351,7 @@
 
 <nav class="bar" id="bar"><div class="wrap">
   <a class="brand" href="#"><img src="web/icono.png" width="32" height="32" alt="">Surf Dawn</a>
-  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#garmin">Garmin</a><a href="#apple" data-t="nApple">iPhone y Apple Watch</a><a href="#entrenar" data-t="t4">Entrenar</a><a href="#preguntas" data-t="lFaq">Preguntas</a></div>
+  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#garmin">Garmin</a><a href="#apple" data-t="nApple">iPhone y Apple Watch</a><a href="#android">Android</a><a href="#entrenar" data-t="t4">Entrenar</a><a href="#preguntas" data-t="lFaq">Preguntas</a></div>
   <div class="langs" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="pt">PT</button></div>
   <a class="btn small nav-cta" href="#instalar" data-t="install">Instalar gratis</a>
 </div></nav>
@@ -364,7 +369,7 @@
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-t="tr1">Gratis</span></span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-t="tr2">Sin publicidad</span></span>
         <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-t="tr3">Sin cuentas</span></span>
-        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-t="tr4">Garmin, Apple Watch e iPhone</span></span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span data-t="tr4">Garmin, Apple Watch, iPhone y Android (beta)</span></span>
       </div>
       <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg><span data-t="credit">Uruguay · foto @vistaleste</span></span>
     </div>
@@ -605,6 +610,37 @@
   <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
 </section>
 
+<section id="android" aria-labelledby="and-h">
+  <span class="eyebrow">Android · Wear OS <span class="beta">Beta</span></span>
+  <h2 id="and-h" data-t="andH">También en Android.</h2>
+  <p class="lead" data-t="andLead">La misma app en tu teléfono Android y en tu reloj con Wear OS. Está en prueba antes de salir en Google Play, y ya la podés usar.</p>
+
+  <article class="feature">
+    <div class="shot"><div class="spots phone cut"><img data-img="web/android-sesion-{l}.webp" src="web/android-sesion-es.webp" width="440" height="741" alt="" loading="lazy"></div></div>
+    <div>
+      <span class="kind">Android</span>
+      <h3 data-t="andPhoneH">Tu semana y tus sesiones.</h3>
+      <p class="pitch" data-t="andPhone">El pronóstico de la semana de tus picos, tus sesiones ola por ola sobre el satélite, Entrenar y tus números. Junta las sesiones del reloj con Wear OS y las de tu Garmin.</p>
+      <div class="actions" data-h="andCta"><a class="btn" href="testers.html#es">Sumate a la beta</a></div>
+    </div>
+  </article>
+
+  <article class="feature flip">
+    <div class="shot"><div class="watches">
+      <img data-img="web/wear-pronostico-{l}.webp" src="web/wear-pronostico-es.webp" width="360" height="360" alt="" loading="lazy">
+      <img data-img="web/wear-sesion-{l}.webp" src="web/wear-sesion-es.webp" width="360" height="360" alt="" loading="lazy">
+      <img data-img="web/wear-hoy-{l}.webp" src="web/wear-hoy-es.webp" width="360" height="360" alt="" loading="lazy">
+    </div></div>
+    <div>
+      <span class="kind">Wear OS</span>
+      <h3 data-t="andWatchH">En tu reloj redondo.</h3>
+      <p class="pitch" data-t="andWatch">Pronóstico, Hoy y el aviso de la mañana, con Tiles y complicaciones. Sesión cuenta tus olas, y Entrenar va sin el teléfono.</p>
+      <div class="actions" data-h="andCta"><a class="btn" href="testers.html#es">Sumate a la beta</a></div>
+    </div>
+  </article>
+  <p class="note" data-t="andReq">Android 9 o más; reloj con Wear OS 4 o más. En prueba cerrada en Google Play: gratis, como todo Surf Dawn.</p>
+</section>
+
 <section id="entrenar" aria-labelledby="e-h">
   <span class="eyebrow" data-t="eE">Entrenar · en casa</span>
   <h2 id="e-h" data-t="eH">El surf también se entrena en seco.</h2>
@@ -700,8 +736,15 @@
       <p class="note" data-t="aReq">iPhone con iOS 17 o más; Apple Watch con watchOS 10 o más.</p>
       <div class="peek" aria-hidden="true"><img class="ph" data-img="web/iphone-pronostico-{l}.webp" src="web/iphone-pronostico-es.webp" width="440" height="930" alt="" loading="lazy"><img class="wt" data-img="web/aw-pronostico-{l}.webp" src="web/aw-pronostico-es.webp" width="360" height="409" alt="" loading="lazy"></div>
     </div>
+    <div class="store android">
+      <div>
+        <h3><span data-t="nAndroid">Android y Wear OS</span><span class="beta">Beta</span></h3>
+        <p data-t="iAnd">En prueba antes de salir en Google Play. Te sumás en dos pasos y la instalás desde Google Play.</p>
+        <p class="note" data-t="andReqS">Android 9 o más; reloj con Wear OS 4 o más.</p>
+      </div>
+      <div data-h="andCta"><a class="btn" href="testers.html#es">Sumate a la beta</a></div>
+    </div>
   </div>
-  <p class="note android" data-h="andNote"><b>Android y Wear OS:</b> en prueba, antes de salir en Google Play. <a href="testers.html#es">Sumate a los primeros →</a></p>
 </section>
 
 </main>
@@ -744,11 +787,11 @@
 const T = {
   en: {
     lDay: "How it works", lFaq: "Questions", install: "Install for free", how: "See how it works",
-    andNote: '<b>Android and Wear OS:</b> in testing, before they reach Google Play. <a href="testers.html#en">Be one of the first →</a>',
+    andH: "On Android too.", andLead: "The same app on your Android phone and on your Wear OS watch. It's in testing before it reaches Google Play, and you can already use it.", andPhoneH: "Your week and your sessions.", andPhone: "The week's forecast for your spots, your sessions wave by wave over the satellite view, Train and your numbers. It gathers the sessions from your Wear OS watch and from your Garmin.", andCta: '<a class="btn" href="testers.html#en">Join the beta</a>', andWatchH: "On your round watch.", andWatch: "Forecast, Today and the morning alert, with Tiles and complications. Session counts your waves, and Train works without the phone.", andReq: "Android 9 or later; a watch with Wear OS 4 or later. In closed testing on Google Play: free, like all of Surf Dawn.", nAndroid: "Android and Wear OS", iAnd: "In testing before it reaches Google Play. You join in two steps and install it from Google Play.", andReqS: "Android 9 or later; a watch with Wear OS 4 or later.",
     pb1: 'Made by surfers, <em>in Uruguay.</em>', pb2: 'Your next good session <em>is already in the forecast.</em>', pb3: 'Less phone. <em>More waves.</em>',
     h1: 'The best waves of the day, <em>on your wrist.</em>',
     lead: "Surf Dawn works out the best hours at your spot from the waves, the wind and the tide, tells you in the morning where to go, and in the water counts every wave you catch.",
-    tr1: "Free", tr2: "No ads", tr3: "No accounts", tr4: "Garmin, Apple Watch and iPhone", credit: "Uruguay · photo @vistaleste",
+    tr1: "Free", tr2: "No ads", tr3: "No accounts", tr4: "Garmin, Apple Watch, iPhone and Android (beta)", credit: "Uruguay · photo @vistaleste",
     st1: "spots, and it picks the nearest", st2: "countries with their forecast", st3: "Garmin watches, and the Apple Watch", st4: "ads, accounts and cost",
     dE: "How it works", dH: "A surf day with Surf Dawn.", dLead: "From the morning alert to your waves on the map: each app does its part, and together they won't let you miss a good session.",
     s1h: "The best spot wakes you up", s1p: "Before you get up, your watch tells you where and when to paddle out today.",
@@ -824,11 +867,11 @@ const T = {
   },
   pt: {
     lDay: "Como funciona", lFaq: "Perguntas", install: "Instalar grátis", how: "Ver como funciona",
-    andNote: '<b>Android e Wear OS:</b> em teste, antes de chegar ao Google Play. <a href="testers.html#pt">Seja um dos primeiros →</a>',
+    andH: "No Android também.", andLead: "O mesmo app no seu telefone Android e no seu relógio com Wear OS. Está em teste antes de chegar ao Google Play, e você já pode usar.", andPhoneH: "A sua semana e as suas sessões.", andPhone: "A previsão da semana dos seus picos, as suas sessões onda por onda sobre o satélite, Treinar e os seus números. Reúne as sessões do relógio com Wear OS e as do seu Garmin.", andCta: '<a class="btn" href="testers.html#pt">Entrar na beta</a>', andWatchH: "No seu relógio redondo.", andWatch: "Previsão, Hoje e o aviso da manhã, com Tiles e complicações. Sessão conta as suas ondas, e Treinar funciona sem o telefone.", andReq: "Android 9 ou mais; relógio com Wear OS 4 ou mais. Em teste fechado no Google Play: grátis, como todo o Surf Dawn.", nAndroid: "Android e Wear OS", iAnd: "Em teste antes de chegar ao Google Play. Você entra em dois passos e instala pelo Google Play.", andReqS: "Android 9 ou mais; relógio com Wear OS 4 ou mais.",
     pb1: 'Feito por surfistas, <em>no Uruguai.</em>', pb2: 'A sua próxima boa sessão <em>já está na previsão.</em>', pb3: 'Menos celular. <em>Mais ondas.</em>',
     h1: 'As melhores ondas do dia, <em>no seu pulso.</em>',
     lead: "O Surf Dawn calcula as melhores horas do seu pico com as ondas, o vento e a maré, avisa de manhã para onde ir, e na água conta cada onda que você pega.",
-    tr1: "Grátis", tr2: "Sem anúncios", tr3: "Sem conta", tr4: "Garmin, Apple Watch e iPhone", credit: "Uruguai · foto @vistaleste",
+    tr1: "Grátis", tr2: "Sem anúncios", tr3: "Sem conta", tr4: "Garmin, Apple Watch, iPhone e Android (beta)", credit: "Uruguai · foto @vistaleste",
     st1: "picos, e ele escolhe o mais próximo", st2: "países com a sua previsão", st3: "relógios Garmin, e o Apple Watch", st4: "anúncios, contas e custo",
     dE: "Como funciona", dH: "Um dia de surf com o Surf Dawn.", dLead: "Do aviso da manhã às suas ondas no mapa: cada app faz uma parte, e juntos não deixam você perder uma boa sessão.",
     s1h: "O melhor pico te acorda", s1p: "Antes de levantar, o relógio diz onde e a que horas vale a pena entrar hoje.",
