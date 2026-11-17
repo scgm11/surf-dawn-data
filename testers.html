@@ -9,21 +9,27 @@
 <link rel="apple-touch-icon" href="web/apple-touch-icon.png">
 <meta property="og:title" content="Surf Dawn · Android testers">
 <meta property="og:description" content="Be one of the first: try Surf Dawn on Android and Wear OS.">
-<meta property="og:image" content="https://scgm11.github.io/surf-dawn-data/web/icono.png">
+<meta property="og:image" content="https://scgm11.github.io/surf-dawn-data/web/foto-testers.jpg">
 <style>
   :root { --bg: #061317; --card: #0B2530; --line: #17404A; --ink: #F2F5F7; --dim: #9fb4bb; --teal: #3ED6CF; --on-teal: #052226; }
   * { box-sizing: border-box; }
   body { margin: 0; font: 17px/1.5 -apple-system, system-ui, "Segoe UI", Roboto, sans-serif; color: var(--ink); background: var(--bg); }
+  body::before { content: ""; position: absolute; inset: 0 0 auto 0; height: min(96vw, 540px); z-index: -1;
+    background: linear-gradient(180deg, rgba(6, 19, 23, .5) 0%, rgba(6, 19, 23, .1) 30%, rgba(6, 19, 23, .72) 66%, #061317 94%, #061317 100%),
+                var(--card) url("web/foto-testers.jpg") center 42% / cover no-repeat; }
+  body { position: relative; }
   main { max-width: 34rem; margin: 0 auto; padding: 28px 16px 48px; }
+  .pin { display: flex; align-items: center; gap: 6px; color: rgba(242, 245, 247, .7); font-size: .78rem; margin: 0 0 22px; }
+  .pin svg { width: 14px; height: 14px; flex: none; }
   header { display: flex; align-items: center; gap: 10px; }
   header img { width: 36px; height: 36px; border-radius: 9px; }
   header b { letter-spacing: .18em; font-size: .8rem; }
   nav { margin-left: auto; display: flex; gap: 4px; }
   nav button { font: inherit; font-size: .8rem; color: var(--dim); background: none; border: 1px solid transparent; border-radius: 999px; padding: 4px 10px; cursor: pointer; }
   nav button[aria-pressed="true"] { color: var(--ink); border-color: var(--line); background: var(--card); }
-  h1 { font-size: clamp(2.2rem, 11vw, 3.4rem); line-height: 1; margin: 34px 0 12px; text-transform: uppercase; letter-spacing: -.01em; }
+  h1 { font-size: clamp(2.2rem, 11vw, 3.4rem); line-height: 1; margin: clamp(120px, 38vw, 230px) 0 10px; text-shadow: 0 2px 18px rgba(6, 19, 23, .6); text-transform: uppercase; letter-spacing: -.01em; }
   h1 span { color: var(--teal); display: block; }
-  .lead { color: var(--dim); margin: 0 0 26px; }
+  .lead { color: rgba(242, 245, 247, .82); margin: 0 0 26px; }
   ol { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
   li { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 18px; }
   li h2 { font-size: 1.1rem; margin: 0 0 4px; display: flex; gap: 10px; align-items: center; }
@@ -52,7 +58,8 @@
 
   <div data-l="en">
     <h1>Be one of <span>the first.</span></h1>
-    <p class="lead">Try Surf Dawn on Android and Wear OS before it reaches Google Play: the forecast hour by hour, your sessions wave by wave, and Train. Free. Two steps, both with the Google account you use on the Play Store.</p>
+    <p class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg>Uruguay · photo @vistaleste</p>
+    <p class="lead">Try Surf Dawn on Android and Wear OS before it reaches Google Play: the forecast hour by hour, your sessions wave by wave, and Train. Free. You don't need a Wear OS watch: the phone app works on its own, and with a Garmin too (Surf Dawn Session sends it every session you save). Two steps, both with the Google account you use on the Play Store.</p>
     <ol>
       <li>
         <h2><i>1</i>Join the testers group</h2>
@@ -74,7 +81,8 @@
 
   <div data-l="es">
     <h1>Sé de los <span>primeros.</span></h1>
-    <p class="lead">Probá Surf Dawn en Android y Wear OS antes de que llegue a Google Play: el pronóstico hora por hora, tus sesiones ola por ola y Entrenar. Gratis. Son dos pasos, los dos con la cuenta de Google que usás en Play Store.</p>
+    <p class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg>Uruguay · foto @vistaleste</p>
+    <p class="lead">Probá Surf Dawn en Android y Wear OS antes de que llegue a Google Play: el pronóstico hora por hora, tus sesiones ola por ola y Entrenar. Gratis. No hace falta un reloj con Wear OS: la app del teléfono sirve sola, y también con un Garmin (Surf Dawn Sesión le manda cada sesión que guardás). Son dos pasos, los dos con la cuenta de Google que usás en Play Store.</p>
     <ol>
       <li>
         <h2><i>1</i>Unite al grupo de testers</h2>
@@ -96,7 +104,8 @@
 
   <div data-l="pt">
     <h1>Seja um dos <span>primeiros.</span></h1>
-    <p class="lead">Teste o Surf Dawn no Android e no Wear OS antes de chegar ao Google Play: a previsão hora a hora, as suas sessões onda por onda e Treinar. Grátis. São dois passos, os dois com a conta do Google que você usa na Play Store.</p>
+    <p class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"/><path d="M17.66 16.66l-4.24 4.24a2 2 0 0 1 -2.83 0l-4.25 -4.24a8 8 0 1 1 11.32 0z"/></svg>Uruguai · foto @vistaleste</p>
+    <p class="lead">Teste o Surf Dawn no Android e no Wear OS antes de chegar ao Google Play: a previsão hora a hora, as suas sessões onda por onda e Treinar. Grátis. Não precisa de um relógio com Wear OS: o app do telefone funciona sozinho, e também com um Garmin (o Surf Dawn Sessão manda cada sessão que você salva). São dois passos, os dois com a conta do Google que você usa na Play Store.</p>
     <ol>
       <li>
         <h2><i>1</i>Entre no grupo de testers</h2>
