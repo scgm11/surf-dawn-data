@@ -5,7 +5,10 @@ LOS BOTES,-34.6625,-54.1761,R,V,local,nosnap facing=195,v1 (spots.json 2026-10)
 LA BALCONADA,-34.6649,-54.1653,B,V,local,nosnap facing=193,v1 (spots.json 2026-10)
 EL FARO,-34.667,-54.1608,R,V,local,nosnap facing=206,v1 (spots.json 2026-10)
 LA AGUADA,-34.6445,-54.1539,B,V,local,nosnap facing=79,v1 (spots.json 2026-10)
+ARACHANIA,-34.6191,-54.1466,B,V,osm:relation/2602871,nosnap facing=117,
 LA PEDRERA,-34.5961,-54.1244,P,V,local,nosnap facing=141,v1 (spots.json 2026-10)
+EL DESPLAYADO,-34.5891,-54.1209,P,K,web:guiadesurfuruguay,nosnap facing=101,La Pedrera; derecha (LA PEDRERA es la Playa del Barco)
+PUNTA RUBIA,-34.5809,-54.1153,B,K,osm:relation/2603943,nosnap facing=127,
 CABO POLONIO,-34.4036,-53.7949,P,V,local,nosnap facing=172,v1 (spots.json 2026-10)
 LA CALAVERA,-34.3966,-53.7817,B,V,local,nosnap facing=78,v1 (spots.json 2026-10)
 VALIZAS,-34.3356,-53.7898,B,V,local,nosnap facing=78,v1 (spots.json 2026-10)
@@ -16,5 +19,7 @@ LOS PESCADORES,-34.0446,-53.5376,B,V,local,nosnap facing=56 wave=-34.0;-53.25,v1
 EL RIVERO,-34.0398,-53.5394,B,V,local,nosnap facing=94 wave=-34.0;-53.25,v1 (spots.json 2026-10)
 PLAYA GRANDE,-34.0167,-53.5405,B,V,local,nosnap facing=111 wave=-34.0;-53.25,v1 (spots.json 2026-10)
 PLAYA DEL BARCO,-33.9931,-53.5343,B,V,local,nosnap facing=105 wave=-34.0;-53.25,v1 (spots.json 2026-10)
+CERRO CHATO,-33.9857,-53.5295,,K,osm:node/11592496812,nosnap facing=88 wave=-34.0;-53.25,Santa Teresa
 LA MOZA,-33.9738,-53.5306,P,V,local,nosnap facing=91 wave=-34.0;-53.25,v1 (spots.json 2026-10)
+CERRO VERDE,-33.9455,-53.5060,B,K,osm:node/4973448719,nosnap facing=95 wave=-34.0;-53.25,La Coronilla; área protegida
 BARRA DEL CHUY,-33.7517,-53.3797,B,V,local,nosnap facing=135,v1 (spots.json 2026-10)

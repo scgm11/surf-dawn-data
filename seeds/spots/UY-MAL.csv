@@ -1,4 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
+PLAYA VERDE,-34.8341,-55.3126,B,V,osm:relation/17163908,nosnap facing=246,Piriápolis
+PLAYA GRANDE,-34.8550,-55.2992,B,V,osm:relation/2457885,nosnap facing=199,Piriápolis
+SAN FRANCISCO,-34.8887,-55.2758,B,V,local,nosnap facing=181,Piriápolis; punta oeste junto a Punta Fría (pin del usuario 2026-11-17)
+EL PEWE,-34.8908,-55.2671,B,V,local,nosnap facing=199,medio de San Francisco; tapado del viento E (pin del usuario 2026-11-17)
+LA FAROLETA,-34.9020,-55.2615,P,K,web:guiadesurfuruguay,nosnap facing=255 swell=158,izquierda en la punta de Punta Colorada; lado oeste
+EL CUADRADO,-34.9011,-55.2526,B,V,local,nosnap facing=162,playa de Punta Colorada (pin del usuario 2026-11-17)
+PUNTA COLORADA,-34.9008,-55.2477,B,V,osm:relation/2503563,nosnap facing=176,playa al este de la punta
+EL RINCÓN,-34.9014,-55.2406,B,V,local,nosnap facing=215,punta este de la playa de Punta Colorada contra Punta Negra (pin del usuario 2026-11-17)
+PUNTA NEGRA,-34.8930,-55.2141,B,V,osm:relation/2503564,nosnap facing=160,Corralitos en la guía de surf
+OCEAN PARK,-34.8787,-55.1115,B,V,osm:relation/2511685,nosnap facing=174,
+TÍO TOM,-34.8780,-55.0823,B,K,osm:way/676669377,nosnap facing=183,Chihuahua
 PUNTA DEL CHILENO,-34.9126,-55.015,B,V,local,nosnap facing=147,v1 (spots.json 2026-10)
 LA VIRGEN,-34.9653,-54.9422,P,V,local,nosnap facing=139 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 EL EMIR,-34.9629,-54.94,B,V,local,nosnap facing=118 wave=-35.0;-54.75,v1 (spots.json 2026-10)
@@ -14,6 +25,7 @@ LA POSTA,-34.9167,-54.8586,B,V,local,nosnap facing=181,v1 (spots.json 2026-10)
 LA BOYA,-34.9167,-54.8493,P,V,local,nosnap facing=137,v1 (spots.json 2026-10)
 MONTOYA,-34.9136,-54.8439,B,V,local,nosnap facing=144,v1 (spots.json 2026-10)
 MANANTIALES,-34.9082,-54.8319,B,V,local,nosnap facing=167,v1 (spots.json 2026-10)
+TERRAZAS,-34.9079,-54.8222,B,K,osm:way/257089318,nosnap facing=173,Manantiales
 BIKINI,-34.9072,-54.8199,R,V,local,nosnap facing=164,v1 (spots.json 2026-10)
 EL PEPE,-34.8443,-54.6786,B,V,local,nosnap facing=162,v1 (spots.json 2026-10)
 JOSÉ IGNACIO,-34.8316,-54.6257,B,V,local,nosnap facing=132,v1 (spots.json 2026-10)
