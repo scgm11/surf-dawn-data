@@ -11,6 +11,7 @@ PUNTA NEGRA,-34.8930,-55.2141,B,V,osm:relation/2503564,nosnap facing=160,Corrali
 OCEAN PARK,-34.8787,-55.1115,B,V,osm:relation/2511685,nosnap facing=174,
 TÍO TOM,-34.8780,-55.0823,B,K,osm:way/676669377,nosnap facing=183,Chihuahua
 PUNTA DEL CHILENO,-34.9126,-55.015,B,V,local,nosnap facing=147,v1 (spots.json 2026-10)
+MAILHOS,-34.9585,-54.9455,B,K,osm:way/516420469,nosnap facing=304 swell=180,Punta del Este; muelle de Mailhos en la Mansa; abierto solo al O: anda con el swell del S que da la vuelta
 LA VIRGEN,-34.9653,-54.9422,P,V,local,nosnap facing=139 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 EL EMIR,-34.9629,-54.94,B,V,local,nosnap facing=118 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 LOS DEDOS,-34.958,-54.9358,B,V,local,nosnap facing=135 wave=-35.0;-54.75,v1 (spots.json 2026-10)

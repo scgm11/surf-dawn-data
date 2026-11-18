@@ -1,4 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
+LAGUNA DE ROCHA,-34.6810,-54.2669,B,L,osm:relation/2603659,nosnap facing=153,playa de la barra de la Laguna de Rocha; posición aproximada
+LA SERENA,-34.6621,-54.2041,B,K,osm:relation/19009852,nosnap facing=168,La Paloma; frente a La Serena
+CORUMBÁ,-34.6609,-54.1964,B,K,osm:node/11575255863,nosnap facing=173,La Paloma; frente a la Posada del Corumbá; 400 m al oeste de ANACONDA
 ANACONDA,-34.6606,-54.192,B,V,local,nosnap facing=176,v1 (spots.json 2026-10)
 ZANJA HONDA,-34.6618,-54.1819,B,V,local,nosnap facing=190,v1 (spots.json 2026-10); SOLARI hasta 2026-11-16: la ola de Playa Solari se llama Zanja Honda
 LOS BOTES,-34.6625,-54.1761,R,V,local,nosnap facing=195,v1 (spots.json 2026-10)
@@ -18,6 +21,7 @@ LA VIUDA,-34.0562,-53.5484,B,V,local,nosnap facing=132,v1 (spots.json 2026-10)
 LOS PESCADORES,-34.0446,-53.5376,B,V,local,nosnap facing=56 wave=-34.0;-53.25,v1 (spots.json 2026-10)
 EL RIVERO,-34.0398,-53.5394,B,V,local,nosnap facing=94 wave=-34.0;-53.25,v1 (spots.json 2026-10)
 PLAYA GRANDE,-34.0167,-53.5405,B,V,local,nosnap facing=111 wave=-34.0;-53.25,v1 (spots.json 2026-10)
+PESQUEROS,-34.0041,-53.5311,B,K,osm:node/11592496813,nosnap facing=110 wave=-34.0;-53.25,Santa Teresa; al sur de Punta del Barco; izquierdas con E y NE
 PLAYA DEL BARCO,-33.9931,-53.5343,B,V,local,nosnap facing=105 wave=-34.0;-53.25,v1 (spots.json 2026-10)
 CERRO CHATO,-33.9857,-53.5295,,K,osm:node/11592496812,nosnap facing=88 wave=-34.0;-53.25,Santa Teresa
 LA MOZA,-33.9738,-53.5306,P,V,local,nosnap facing=91 wave=-34.0;-53.25,v1 (spots.json 2026-10)
