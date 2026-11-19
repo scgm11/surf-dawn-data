@@ -2,8 +2,8 @@ name,lat,lon,type,conf,src,flags,note
 BOCA BARRANCA,9.9582,-84.7412,P,V,local,nosnap top checked facing=220,Puntarenas; izquierda larga en boca de río; satélite 2026-11
 JACO,9.5986,-84.6216,B,V,web:mondo.surf,,
 PLAYA HERMOSA,9.5590,-84.5890,B,K,local,top checked,Jacó sur; tubular
-ESTERILLOS OESTE,9.5247,-84.5026,B,V,web:mondo.surf,,
-ESTERILLOS ESTE,9.5140,-84.4400,B,L,local,,posición aproximada
+ESTERILLOS OESTE,9.5247,-84.5026,B,V,web:mondo.surf,wave=9.5;-84.5,
+ESTERILLOS ESTE,9.5140,-84.4400,B,L,local,wave=9.5;-84.5,posición aproximada
 PALO SECO,9.4840,-84.2900,B,L,local,,Parrita; posición aproximada
 ESPADILLA,9.3900,-84.1450,B,K,local,,Manuel Antonio
 MATAPALO,9.3410,-84.0090,B,L,local,,Quepos; posición aproximada

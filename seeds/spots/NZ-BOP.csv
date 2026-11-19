@@ -5,8 +5,8 @@ WHANGAMATA BEACH,-37.2140,175.8798,B,V,local,nosnap checked facing=90,satélite 
 WHANGAMATA BAR,-37.2026,175.8787,B,V,local,nosnap top checked,NZCPS; barra del estuario; satélite 2026-11
 WHIRITOA,-37.2818,175.9025,B,K,web:beachsearcher,,
 WAIHI BEACH,-37.4020,175.9460,B,K,local,,
-MOUNT MAUNGANUI,-37.6304,176.1800,B,V,local,nosnap top checked,Main Beach; satélite 2026-11
-OMANU,-37.6590,176.2130,B,L,local,,
-PAPAMOA,-37.7050,176.2800,B,L,local,,
+MOUNT MAUNGANUI,-37.6304,176.1800,B,V,local,nosnap top checked wave=-37.5;176.25,Main Beach; satélite 2026-11
+OMANU,-37.6590,176.2130,B,L,local,wave=-37.5;176.25,
+PAPAMOA,-37.7050,176.2800,B,L,local,wave=-37.5;176.25,
 MAKETU,-37.7590,176.4490,B,L,local,,
 OHOPE,-37.9780,177.0500,B,L,local,,
