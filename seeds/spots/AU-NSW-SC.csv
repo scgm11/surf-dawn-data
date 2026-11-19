@@ -9,15 +9,15 @@ BELLAMBI,-34.3653,150.9233,B,V,local,nosnap checked,satélite 2026-11
 CORRIMAL,-34.3790,150.9150,B,L,local,,
 TOWRADGI,-34.3890,150.9100,B,K,local,,
 FAIRY MEADOW,-34.3980,150.9070,B,L,local,,
-NORTH BEACH,-34.4065,150.9100,B,K,local,,Wollongong
-CITY BEACH,-34.4205,150.9095,B,L,local,,Wollongong
+NORTH BEACH,-34.4143,150.9020,B,V,local,nosnap checked,Wollongong; satélite 2026-11
+CITY BEACH,-34.4340,150.9024,B,V,local,nosnap checked,Wollongong; satélite 2026-11
 WINDANG,-34.5330,150.8760,B,K,local,,boca del Lake Illawarra
 WARILLA,-34.5555,150.8735,B,L,local,,
-BARRACK POINT,-34.5780,150.8770,P,L,local,,
+BARRACK POINT,-34.5634,150.8739,P,V,local,nosnap checked,satélite 2026-11
 BASS POINT,-34.6030,150.8950,R,L,local,,
-MYSTICS,-34.6120,150.8855,R,L,local,,Killalea
-MINNAMURRA,-34.6310,150.8570,B,L,local,,
-BOMBO,-34.6490,150.8575,B,L,local,,Kiama
+MYSTICS,-34.6149,150.8559,R,V,local,nosnap checked,Killalea; satélite 2026-11
+MINNAMURRA,-34.6261,150.8606,B,V,local,nosnap checked,satélite 2026-11
+BOMBO,-34.6545,150.8571,B,V,local,nosnap checked,Kiama; satélite 2026-11
 KIAMA SURF BEACH,-34.6785,150.8565,B,L,local,,
 WERRI BEACH,-34.7410,150.8310,B,K,local,,Gerringong
 SEVEN MILE BEACH,-34.8100,150.7800,B,K,local,,Gerroa
@@ -27,6 +27,6 @@ MOLLYMOOK,-35.3392,150.4746,B,V,local,nosnap checked,satélite 2026-11
 BROULEE,-35.8594,150.1759,B,V,local,nosnap checked,Surfers Beach; satélite 2026-11
 NAROOMA BAR BEACH,-36.2083,150.1327,B,V,local,nosnap checked,satélite 2026-11
 TATHRA,-36.7230,149.9801,B,V,local,nosnap checked,satélite 2026-11
-PAMBULA BEACH,-36.9420,149.9360,B,L,local,,
+PAMBULA BEACH,-36.9410,149.9098,B,V,local,nosnap checked,satélite 2026-11
 COLEDALE,-34.2915,150.9500,B,L,local,,
 SURF BEACH,-35.7587,150.2117,B,V,local,nosnap checked,Batemans Bay; satélite 2026-11

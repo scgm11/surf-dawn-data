@@ -3,7 +3,7 @@ TWO ROCKS,-31.4960,115.5880,B,L,local,,
 YANCHEP,-31.5480,115.6300,B,L,local,,
 QUINNS ROCKS,-31.6700,115.6790,B,L,local,,
 MINDARIE,-31.6951,115.7019,R,V,local,nosnap facing=260 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-BURNS BEACH,-31.7130,115.7120,B,L,local,,
+BURNS BEACH,-31.7304,115.7187,B,V,local,nosnap checked,satélite 2026-11
 OCEAN REEF,-31.7620,115.7220,R,L,local,,
 MULLALOO,-31.7856,115.7331,B,V,local,nosnap checked,satélite 2026-11
 MARMION,-31.8350,115.7450,R,L,local,,
@@ -12,10 +12,10 @@ TRIGG BEACH,-31.8783,115.7514,B,V,local,nosnap checked,satélite 2026-11
 SCARBOROUGH,-31.8940,115.7580,B,K,local,,
 FLOREAT,-31.9180,115.7530,B,L,local,,
 CITY BEACH,-31.9360,115.7550,B,K,local,,
-SWANBOURNE,-31.9620,115.7520,B,L,local,,
+SWANBOURNE,-31.9788,115.7539,B,V,local,nosnap checked,satélite 2026-11
 COTTESLOE,-31.9963,115.7510,B,V,local,nosnap checked,satélite 2026-11
 LEIGHTON,-32.0273,115.7486,B,V,local,nosnap checked,satélite 2026-11
 NORTH MOLE,-32.0430,115.7390,R,L,local,swell=255,Fremantle
 STRICKLAND BAY,-32.0172,115.4764,R,V,wd:Q21896354,top swell=255,Rottnest; posición de Wikidata
 SALMON BAY,-32.0270,115.5120,R,L,local,,Rottnest
-STARK BAY,-32.0300,115.5020,R,L,local,swell=255,Rottnest
+STARK BAY,-32.0069,115.4847,R,V,local,nosnap swell=255 checked,Rottnest; satélite 2026-11

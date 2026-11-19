@@ -4,18 +4,18 @@ OCEAN GROVE,-38.2770,144.5200,B,L,local,,
 BARWON BLUFF,-38.2906,144.5002,P,V,local,nosnap swell=225 checked,Barwon Heads; satélite 2026-11
 13TH BEACH,-38.2862,144.4655,B,V,local,nosnap checked,satélite 2026-11
 BREAMLEA,-38.3200,144.4010,B,L,local,,
-POINT IMPOSSIBLE,-38.3330,144.3680,B,L,local,,
+POINT IMPOSSIBLE,-38.3079,144.3759,B,V,local,nosnap checked,satélite 2026-11
 TORQUAY POINT,-38.3452,144.3189,P,V,local,nosnap top swell=220 checked,Point Danger; satélite 2026-11
 TORQUAY BACK BEACH,-38.3428,144.3194,B,V,local,nosnap checked,satélite 2026-11
-JAN JUC,-38.3565,144.3035,B,K,local,,
+JAN JUC,-38.3463,144.3097,B,V,local,nosnap checked,satélite 2026-11
 WINKIPOP,-38.3675,144.2875,R,V,web:mondo.surf,top checked swell=220,punto derecho
 BELLS BEACH,-38.3690,144.2810,R,K,local,top swell=220,CT26; WC
-RINCON,-38.3715,144.2770,R,K,local,swell=220,Bells
+RINCON,-38.3709,144.2815,R,V,local,nosnap swell=220 checked,Bells; satélite 2026-11
 POINT ADDIS,-38.3920,144.2536,B,V,local,nosnap checked,satélite 2026-11
-URQUHART BLUFF,-38.4010,144.2190,R,L,local,,
+URQUHART BLUFF,-38.4375,144.1319,R,V,local,nosnap checked,satélite 2026-11
 ANGLESEA,-38.4110,144.1890,B,K,local,,
 AIREYS INLET,-38.4640,144.1010,B,L,local,,
 SPLIT POINT,-38.4690,144.1020,P,L,local,,Aireys Inlet
-FAIRHAVEN,-38.4820,144.0600,B,L,local,,
+FAIRHAVEN,-38.4687,144.0842,B,V,local,nosnap checked,satélite 2026-11
 LORNE POINT,-38.5469,143.9855,P,V,local,nosnap top swell=230 checked,satélite 2026-11
-COLLENDINA,-38.2800,144.5090,B,L,local,,Ocean Grove
+COLLENDINA,-38.2725,144.5457,B,V,local,nosnap checked,Ocean Grove; satélite 2026-11

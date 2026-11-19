@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-TAURANGA BAY,-41.7500,171.4680,,L,local,,Cape Foulwind
+TAURANGA BAY,-41.7699,171.4590,,V,local,nosnap checked,Cape Foulwind; satélite 2026-11
 CARTERS BEACH,-41.7340,171.5700,B,L,local,,Westport
-COBDEN,-42.4500,171.1980,B,L,local,,Greymouth
+COBDEN,-42.4387,171.1955,B,K,local,nosnap checked,Greymouth; satélite 2026-11
 HOKITIKA,-42.7140,170.9520,B,L,local,,

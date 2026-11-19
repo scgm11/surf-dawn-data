@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
-MOTELS,-21.1110,-175.3440,R,L,local,,Ha'atafu; izquierda; posicion dudosa
-KAMIKAZE'S,-21.1097,-175.3440,R,L,local,,Ha'atafu; 150 m al norte de Motels
+MOTELS,-21.0693,-175.3374,R,V,local,nosnap checked,Ha'atafu; izquierda; posicion dudosa; satélite 2026-11
+KAMIKAZE'S,-21.0683,-175.3365,R,V,local,nosnap checked,Ha'atafu; 150 m al norte de Motels; satélite 2026-11
 FISHTRAPS,-21.1130,-175.3450,R,L,local,,Ha'atafu; izquierda larga; posicion dudosa
 LIGHTHOUSE,-21.1160,-175.3450,R,L,local,,Ha'atafu; posicion dudosa
-PASS LEFTS,-21.1040,-175.2990,R,L,local,swell=225,Kanokupolu; posicion dudosa
+PASS LEFTS,-21.0734,-175.3406,R,V,local,nosnap swell=225 checked,Kanokupolu; posicion dudosa; satélite 2026-11
 PASS RIGHTS,-21.0727,-175.3399,R,V,local,nosnap swell=225 checked,Kanokupolu; posicion dudosa; satélite 2026-11

@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 COCONUTS,-14.0149,-171.7864,R,V,local,nosnap checked,Upolu sur; frente a Sinalei; derecha; en bote; satélite 2026-11
-WACKAS,-14.0148,-171.8118,R,L,web:surfnerd,,arrecife exterior frente a Tafitoala
+WACKAS,-14.0172,-171.8079,R,V,web:surfnerd,nosnap checked,arrecife exterior frente a Tafitoala; satélite 2026-11
 BOULDERS,-14.0400,-171.7600,R,L,local,,Upolu sur; swell sur grande; en bote; posicion dudosa
-DEVIL'S ISLAND,-14.0250,-171.7180,R,L,local,,Nuusafee; izquierda; posicion dudosa
+DEVIL'S ISLAND,-14.0510,-171.6907,R,V,local,nosnap checked,Nuusafee; izquierda; posicion dudosa; satélite 2026-11
 TAFATAFA,-14.0280,-171.7050,R,L,local,,Upolu sur; derecha; posicion dudosa
 TIAVEA,-13.9697,-171.4686,R,L,web:surfnerd,,"bahia de Tiavea, noreste de Upolu"

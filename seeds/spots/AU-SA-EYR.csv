@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
 CACTUS,-32.0863,132.9796,R,V,local,nosnap top checked,Penong; WC; izquierda; satélite 2026-11
 CASTLES,-32.0840,132.9830,R,L,local,,Cactus Beach
-CAVES,-32.0830,132.9940,R,L,local,swell=225,Cactus Beach
+CAVES,-32.0818,132.9792,R,V,local,nosnap swell=225 checked,Cactus Beach; satélite 2026-11
