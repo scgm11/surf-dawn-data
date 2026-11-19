@@ -189,25 +189,37 @@ def check_cells(zs, used, waves=None):
     last DAYS days. waves: what fetch_waves() brought for the run, if it did."""
     waves = dict(waves or {})
     seen = []
+    asked = {z["id"]: [(s[5], s[6]) if len(s) >= 7 else (s[1], s[2]) for s in z["s"]] for z in zs}
+    every = {}
+    for z in zs:
+        every.setdefault(z["m"][0], []).extend(asked[z["id"]])
+    for model, pts in every.items():
+        openmeteo.cells(model, pts)              # all the zones at once (BATCH points a request), into the cache
     for z in zs:
         model = z["m"][0]
-        asked = [(s[5], s[6]) if len(s) >= 7 else (s[1], s[2]) for s in z["s"]]
-        new = len({(round(p[0], 4), round(p[1], 4)) for p in asked})
-        where = openmeteo.cells(model, asked)
+        new = len({(round(p[0], 4), round(p[1], 4)) for p in asked[z["id"]]})
+        where = openmeteo.cells(model, asked[z["id"]])
         used["calls"] += new
         for i, (s, c) in enumerate(zip(z["s"], where)):
             spot, wave, looks = (s[1], s[2]), ((s[5], s[6]) if len(s) >= 7 else None), toward(z, i)
             why = cell_problem(model, spot, wave, c, looks)
             if why or own_behind(model, spot, wave, c, looks):
                 seen.append((z["id"], s[0], model, spot, wave, c, looks, why))
-    fronts, want = [], {}
+    fronts, want = [None] * len(seen), {}
     try:
-        for _, _, model, spot, wave, c, looks, why in seen:
-            f = openmeteo.front_point(model, spot, looks)
+        by_model = {}
+        for k, item in enumerate(seen):
+            by_model.setdefault(item[2], []).append(k)
+        for model, ks in by_model.items():         # all of a model's spots together: a few requests
+            fs = openmeteo.front_points(model, [(seen[k][3], seen[k][6]) for k in ks])
             # none that near (a coarse grid, islands in front): its own cell's waves are compared with the
             # nearest one within FRONT_KM, but that is too far to propose
-            g = f or (None if why else openmeteo.front_point(model, spot, looks, max_km=openmeteo.FRONT_KM))
-            fronts.append((f, g))
+            far = [k for k, f in zip(ks, fs) if f is None and seen[k][7] is None]
+            gs = dict(zip(far, openmeteo.front_points(model, [(seen[k][3], seen[k][6]) for k in far],
+                                                      max_km=openmeteo.FRONT_KM)))
+            for k, f in zip(ks, fs):
+                fronts[k] = (f, f or gs.get(k))
+        for (_, _, model, spot, wave, c, looks, why), (f, g) in zip(seen, fronts):
             for p in ([wave or spot] if c else []) + ([g] if g else []):
                 if cell(model, *p) not in waves:
                     want.setdefault(cell(model, *p), p)
