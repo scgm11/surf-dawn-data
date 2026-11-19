@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-MIZATA,13.5030,-89.5850,B,L,local,,costa oeste; posición aproximada
-SAN BLAS,13.4960,-89.4730,B,L,local,,Chiltiupán; posición aproximada
+MIZATA,13.5106,-89.5953,B,V,local,nosnap checked,costa oeste; posición aproximada; satélite 2026-11
+SAN BLAS,13.4846,-89.3555,B,V,local,nosnap checked,Chiltiupán; posición aproximada; satélite 2026-11
 EL ZONTE,13.4900,-89.4430,P,K,local,top,derecha sobre roca
 BOCANA,13.4914,-89.3813,R,V,local,nosnap checked,desembocadura del río en Sunzal; posición aproximada; satélite 2026-11
 SUNZAL,13.4919,-89.3904,P,V,local,nosnap top checked,derecha larga; satélite 2026-11

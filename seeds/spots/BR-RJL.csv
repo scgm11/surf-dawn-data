@@ -3,19 +3,19 @@ ITAIPUAÇU,-22.9560,-42.9700,B,K,local,,Maricá
 BARRA DE MARICÁ,-22.9610,-42.8200,B,L,local,,
 PONTA NEGRA,-22.9574,-42.6980,B,V,local,nosnap checked,Maricá; satélite 2026-11
 JACONÉ,-22.9460,-42.6650,B,K,local,,
-VILATUR,-22.9420,-42.6050,B,L,local,,Saquarema
+VILATUR,-22.9349,-42.4114,B,V,local,nosnap checked,Saquarema; satélite 2026-11
 BARRA NOVA,-22.9380,-42.5600,B,L,local,,Saquarema
-PRAIA DA VILA,-22.9390,-42.5150,B,K,local,,Saquarema
+PRAIA DA VILA,-22.9354,-42.4969,B,V,local,nosnap checked,Saquarema; satélite 2026-11
 ITAÚNA,-22.9400,-42.4900,B,K,local,top checked,CT 2026
 PRAIA SECA,-22.9420,-42.3590,B,L,local,,Araruama
 MASSAMBABA,-22.9440,-42.2200,B,L,local,,
-PRAINHAS DO PONTAL,-22.9600,-42.0150,B,L,local,facing=160,Arraial do Cabo; orientación a mano (la calculada miraba a la laguna o la bahía)
+PRAINHAS DO PONTAL,-22.9893,-42.0130,B,V,local,nosnap checked facing=80,Arraial do Cabo; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 PRAIA GRANDE,-22.9735,-42.0324,B,V,local,nosnap checked,Arraial do Cabo; satélite 2026-11
-PRAIA DO FORNO,-22.9740,-42.0010,B,L,local,,Arraial do Cabo
-FORTE,-22.8800,-41.9980,B,K,local,,Praia do Forte Cabo Frio
-PERÓ,-22.8440,-41.9360,B,K,local,,Cabo Frio
+PRAIA DO FORNO,-22.9663,-42.0156,B,V,local,nosnap checked,Arraial do Cabo; satélite 2026-11
+FORTE,-22.8858,-42.0156,B,V,local,nosnap checked,Praia do Forte Cabo Frio; satélite 2026-11
+PERÓ,-22.8600,-41.9859,B,V,local,nosnap checked,Cabo Frio; satélite 2026-11
 GERIBÁ,-22.7800,-41.9100,B,K,local,top,Búzios
 FERRADURA,-22.7698,-41.8882,B,V,local,nosnap checked,Búzios; satélite 2026-11
-TUCUNS,-22.7520,-41.9120,B,L,local,facing=140,Búzios; orientación a mano (la calculada miraba a la bahía)
-TARTARUGA,-22.5280,-41.9380,B,L,local,facing=120,Rio das Ostras; orientación a mano (la calculada miraba a otra costa)
+TUCUNS,-22.7998,-41.9297,B,V,local,nosnap facing=140 checked,Búzios; orientación a mano (la calculada miraba a la bahía); satélite 2026-11
+TARTARUGA,-22.5317,-41.9551,B,V,local,nosnap facing=120 checked,Rio das Ostras; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 COSTAZUL,-22.5238,-41.9203,B,V,local,nosnap checked,Rio das Ostras; satélite 2026-11

@@ -1,30 +1,30 @@
 name,lat,lon,type,conf,src,flags,note
-FAZENDA,-23.3680,-44.8300,B,L,local,,Picinguaba
+FAZENDA,-23.3611,-44.8513,B,V,local,nosnap checked,Picinguaba; satélite 2026-11
 PRUMIRIM,-23.3799,-44.9598,B,V,local,nosnap checked,satélite 2026-11
 FÉLIX,-23.3870,-44.9679,B,V,local,nosnap checked,satélite 2026-11
 ITAMAMBUCA,-23.4000,-45.0050,B,K,local,top,
-VERMELHA DO NORTE,-23.4050,-45.0170,B,L,local,,
+VERMELHA DO NORTE,-23.4168,-45.0363,B,V,local,nosnap checked,satélite 2026-11
 PRAIA GRANDE,-23.4670,-45.0630,B,K,local,,Ubatuba
 TENÓRIO,-23.4655,-45.0561,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 TONINHAS,-23.4812,-45.0717,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 SUNUNGA,-23.5094,-45.1324,B,V,osm:relation/7785033,,Ubatuba
-MARANDUBA,-23.5150,-45.1200,B,K,local,,Ubatuba
-LÁZARO,-23.5160,-45.1330,B,L,local,,Ubatuba
+MARANDUBA,-23.5403,-45.2287,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
+LÁZARO,-23.5018,-45.1369,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 TOQUE-TOQUE,-23.8162,-45.5322,B,K,osm:node/368180038,,Toque-Toque Pequeno; posición OSM
 PAÚBA,-23.8028,-45.5527,B,V,osm:relation/9678518,,
 MARESIAS,-23.7900,-45.5600,B,K,local,top,
-BOIÇUCANGA,-23.8000,-45.6200,B,L,local,,
-CAMBURI,-23.8010,-45.6350,B,L,local,,
+BOIÇUCANGA,-23.7839,-45.6314,B,V,local,nosnap checked,satélite 2026-11
+CAMBURI,-23.7775,-45.6494,B,V,local,nosnap checked,satélite 2026-11
 BARRA DO SAHY,-23.7746,-45.6973,B,V,osm:relation/4812925,,
-JUQUEHY,-23.8200,-45.7010,B,K,local,,
+JUQUEHY,-23.7676,-45.7455,B,V,local,nosnap checked,satélite 2026-11
 BONETE,-23.9176,-45.3450,B,V,local,nosnap checked,Ilhabela; satélite 2026-11
-CASTELHANOS,-23.8210,-45.2600,B,K,local,,Ilhabela
+CASTELHANOS,-23.8554,-45.2884,B,V,local,nosnap checked,Ilhabela; satélite 2026-11
 BORACÉIA,-23.7600,-45.8700,B,K,local,,
 ITAGUARÉ,-23.7850,-45.9830,B,K,local,,Bertioga
 TOMBO,-24.0136,-46.2716,B,V,local,nosnap checked,Guarujá; satélite 2026-11
 ASTÚRIAS,-24.0058,-46.2673,B,V,local,nosnap checked,Guarujá; satélite 2026-11
 PITANGUEIRAS,-23.9930,-46.2570,B,L,local,,Guarujá
 ENSEADA,-23.9750,-46.2310,B,L,local,,Guarujá
-PRAIA GRANDE SP,-24.0350,-46.4880,B,L,local,,Guilhermina
-ITANHAÉM,-24.2000,-46.8000,B,L,local,,
-ILHA COMPRIDA,-24.7300,-47.5500,B,L,local,,
+PRAIA GRANDE SP,-24.0162,-46.4216,B,V,local,nosnap checked,Guilhermina; satélite 2026-11
+ITANHAÉM,-24.1920,-46.7933,B,V,local,nosnap checked,satélite 2026-11
+ILHA COMPRIDA,-24.7500,-47.5488,B,V,local,nosnap checked,satélite 2026-11
