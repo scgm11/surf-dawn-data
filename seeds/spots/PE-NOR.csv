@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 ZORRITOS,-3.6770,-80.6700,P,L,local,swell=285,Tumbes
 PUNTA SAL,-3.9710,-80.9890,P,L,local,,Tumbes
-MÁNCORA,-4.1010,-81.0500,P,K,local,top,
+MÁNCORA,-4.1059,-81.0595,P,V,local,nosnap top checked,satélite 2026-11
 LAS POCITAS,-4.1200,-81.0780,R,L,local,,Máncora-Vichayito
 VICHAYITO,-4.1320,-81.1000,B,L,local,,
 LOS ÓRGANOS,-4.1710,-81.1260,P,K,local,,

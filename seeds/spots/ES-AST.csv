@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 SAN ANTOLIN,43.4270,-4.8930,B,L,local,,Naves-Llanes; posicion aproximada
-SANTA MARINA,43.4680,-5.0530,B,L,local,,Ribadesella; posicion aproximada
+SANTA MARINA,43.4658,-5.0672,B,V,local,nosnap checked,Ribadesella; posicion aproximada; satélite 2026-11
 VEGA,43.4760,-5.0200,B,L,local,,Ribadesella; posicion aproximada
 LA ESPASA,43.4744,-5.2107,B,V,web:hispanopedia,,Caravia-Colunga
 RODILES,43.5315,-5.3800,B,K,local,top,ria de Villaviciosa
