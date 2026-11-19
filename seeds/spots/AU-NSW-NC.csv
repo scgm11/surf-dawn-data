@@ -1,20 +1,20 @@
 name,lat,lon,type,conf,src,flags,note
-BIRUBI BEACH,-32.7855,152.0960,B,L,local,,Anna Bay; Port Stephens
-BIRUBI POINT,-32.7810,152.0990,P,L,local,,Anna Bay
+BIRUBI BEACH,-32.7840,152.0741,B,V,local,nosnap checked,Anna Bay; Port Stephens; satélite 2026-11
+BIRUBI POINT,-32.7843,152.0760,P,V,local,nosnap checked,Anna Bay; satélite 2026-11
 STOCKTON,-32.9020,151.8010,B,L,local,,
 NOBBYS,-32.9215,151.7945,B,K,local,,
 NEWCASTLE BEACH,-32.9275,151.7810,B,K,local,,
 BAR BEACH,-32.9425,151.7705,B,K,local,top,
 MEREWETHER,-32.9500,151.7565,B,V,local,nosnap top checked,CS; satélite 2026-11
 DIXON PARK,-32.9453,151.7617,B,V,local,nosnap checked,satélite 2026-11
-BURWOOD BEACH,-32.9755,151.7415,B,L,local,,
-DUDLEY BEACH,-32.9930,151.7360,B,L,local,,
+BURWOOD BEACH,-32.9582,151.7437,B,V,local,nosnap checked,satélite 2026-11
+DUDLEY BEACH,-32.9734,151.7302,B,V,local,nosnap checked,satélite 2026-11
 REDHEAD,-33.0147,151.7202,B,V,local,nosnap checked,satélite 2026-11
 BLACKSMITHS,-33.0680,151.6530,B,L,local,,
 SWANSEA HEADS,-33.0866,151.6652,P,V,local,nosnap checked,boca del Lake Macquarie; satélite 2026-11
 CAVES BEACH,-33.1055,151.6570,B,L,local,,
 CATHERINE HILL BAY,-33.1580,151.6150,B,K,local,,
-FRAZER BEACH,-33.2030,151.5990,B,L,local,,Munmorah
+FRAZER BEACH,-33.1882,151.6230,B,V,local,nosnap checked,Munmorah; satélite 2026-11
 SOLDIERS BEACH,-33.2910,151.5650,B,V,local,nosnap checked,satélite 2026-11
 NORAH HEAD,-33.2785,151.5705,P,V,local,nosnap checked,satélite 2026-11
 THE ENTRANCE,-33.3430,151.5010,B,K,local,,

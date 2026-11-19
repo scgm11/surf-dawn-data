@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
 WYE RIVER,-38.6370,143.8860,B,L,local,,Great Ocean Road
 KENNETT RIVER,-38.6680,143.8639,B,V,local,nosnap checked,Great Ocean Road; satélite 2026-11
-JOHANNA BEACH,-38.7800,143.4000,B,L,local,,Otway NP
+JOHANNA BEACH,-38.7633,143.3797,B,V,local,nosnap checked,Otway NP; satélite 2026-11
 PRINCETOWN,-38.7072,143.1585,B,V,local,nosnap checked,boca del Gellibrand; satélite 2026-11
 PETERBOROUGH,-38.6140,142.8630,B,L,local,,
-LOGANS BEACH,-38.4080,142.4600,B,L,local,,Warrnambool
+LOGANS BEACH,-38.4044,142.5200,B,V,local,nosnap checked,Warrnambool; satélite 2026-11
 KILLARNEY BEACH,-38.3583,142.3053,B,V,local,nosnap checked,satélite 2026-11
-PORT FAIRY EAST,-38.3930,142.2610,B,L,local,facing=140,East Beach; orientación a mano (la calculada miraba a otra costa)
-BRIDGEWATER BAY,-38.3880,141.4000,B,L,local,,Cape Bridgewater
+PORT FAIRY EAST,-38.3800,142.2438,B,V,local,nosnap facing=140 checked,East Beach; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+BRIDGEWATER BAY,-38.3698,141.4070,B,V,local,nosnap checked,Cape Bridgewater; satélite 2026-11

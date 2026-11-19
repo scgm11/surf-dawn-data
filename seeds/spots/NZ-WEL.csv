@@ -1,14 +1,14 @@
 name,lat,lon,type,conf,src,flags,note
 LYALL BAY,-41.3305,174.7960,B,K,local,top,
-HOUGHTON BAY,-41.3375,174.7770,R,L,local,,
+HOUGHTON BAY,-41.3422,174.7850,R,V,local,nosnap checked,satélite 2026-11
 ISLAND BAY,-41.3470,174.7700,B,L,local,,
 OWHIRO BAY,-41.3470,174.7520,B,L,local,,
 MAKARA BEACH,-41.2200,174.7130,B,L,local,,
 TITAHI BAY,-41.1060,174.8351,B,V,local,nosnap wave=-41.0;174.75 checked,Porirua; satélite 2026-11
 PAEKAKARIKI,-40.9790,174.9500,B,K,local,wave=-41.0;174.75,Kapiti
 RAUMATI,-40.9330,174.9740,B,L,local,,Kapiti
-WAIKANAE,-40.8730,175.0000,B,L,local,,Kapiti
-OTAKI,-40.7700,175.1100,B,L,local,,Kapiti; desembocadura
+WAIKANAE,-40.8647,175.0167,B,V,local,nosnap checked,Kapiti; satélite 2026-11
+OTAKI,-40.7549,175.1041,B,V,local,nosnap checked,Kapiti; desembocadura; satélite 2026-11
 CASTLEPOINT,-40.9120,176.2260,R,K,local,,Wairarapa
 RIVERSDALE,-41.0872,176.0740,B,K,web:newzealand.com,,Wairarapa
 CAPE PALLISER,-41.6140,175.2890,R,L,local,,Wairarapa sur

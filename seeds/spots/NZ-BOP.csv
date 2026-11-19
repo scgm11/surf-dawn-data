@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HOT WATER BEACH,-36.8880,175.8190,B,K,local,,Coromandel
-ONEMANA,-37.1760,175.8960,B,L,local,,
+ONEMANA,-37.1517,175.8806,B,V,local,nosnap checked,satélite 2026-11
 WHANGAMATA BEACH,-37.2140,175.8798,B,V,local,nosnap checked facing=90,satélite 2026-11
 WHANGAMATA BAR,-37.2026,175.8787,B,V,local,nosnap top checked,NZCPS; barra del estuario; satélite 2026-11
 WHIRITOA,-37.2818,175.9025,B,K,web:beachsearcher,,

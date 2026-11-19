@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 STENT ROAD,-39.2192,173.7773,R,V,web:mondo.surf,nosnap top checked,NZCPS; Backdoor y Farmhouse Stent cerca; satélite 2026-11
 WAIWHAKAIHO,-39.0372,174.1025,R,K,local,top,NZCPS; desembocadura; The Groyne
-EAST END,-39.0500,174.0630,B,L,local,,New Plymouth
-FITZROY BEACH,-39.0430,174.0600,B,L,local,,New Plymouth
+EAST END,-39.0484,174.0925,B,V,local,nosnap checked,New Plymouth; satélite 2026-11
+FITZROY BEACH,-39.0456,174.0971,B,V,local,nosnap checked,New Plymouth; satélite 2026-11
 OAKURA,-39.1130,173.9490,B,K,local,,
 OPUNAKE,-39.4582,173.8552,B,V,local,nosnap checked,satélite 2026-11
 MOKAU,-38.7008,174.6118,B,V,web:mondo.surf,,desembocadura
