@@ -172,7 +172,7 @@ class CellsWithFront(unittest.TestCase):
         means = {check_spots.cell(self.M, 27.5807, -97.2203): 0.24, check_spots.cell(self.M, *front): 0.94}
         used = {"calls": 0, "requests": 0}
         with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
-                mock.patch.object(om, "front_point", lambda m, spot, looks: front), \
+                mock.patch.object(om, "front_points", lambda m, items, max_km=om.FIX_KM: [front] * len(items)), \
                 mock.patch.object(check_spots, "fetch_points",
                                   lambda want, used, days=14: {k: ([means.get(k, 1.0)] * 48, []) for k in want}):
             out = check_spots.check_cells([self.ZONE], used)
@@ -182,8 +182,8 @@ class CellsWithFront(unittest.TestCase):
 
         # with no cell in front within FIX_KM, the nearest one farther judges it, and none is proposed
         with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
-                mock.patch.object(om, "front_point", lambda m, spot, looks, max_km=om.FIX_KM:
-                                  front if max_km > om.FIX_KM else None), \
+                mock.patch.object(om, "front_points", lambda m, items, max_km=om.FIX_KM:
+                                  [front if max_km > om.FIX_KM else None] * len(items)), \
                 mock.patch.object(check_spots, "fetch_points",
                                   lambda want, used, days=14: {k: ([means.get(k, 1.0)] * 48, []) for k in want}):
             out = check_spots.check_cells([self.ZONE], used)
@@ -195,8 +195,27 @@ class CellsWithFront(unittest.TestCase):
         def refused(*a, **k):
             raise RuntimeError("Open-Meteo unavailable")
         with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
-                mock.patch.object(om, "front_point", refused), contextlib.redirect_stderr(io.StringIO()):
+                mock.patch.object(om, "front_points", refused), contextlib.redirect_stderr(io.StringIO()):
             self.assertEqual(check_spots.check_cells([self.ZONE], used), [])
+
+
+class FrontPoints(unittest.TestCase):
+    """front_points asks for every spot's candidates in one go (one by one, in Actions on 2026-11-19,
+    they took three hours of SSL timeouts)."""
+
+    def test_one_request_a_look(self):
+        asked = []
+
+        def fetch(model, points):                  # every cell answers from itself; south of -34.1, land
+            asked.append(len(points))
+            return [(1.0 if p[0] > -34.1 else None, p) for p in points]
+        spots = [((-34.0, -54.0), 180), ((-33.0, -53.0), 90), ((-30.1, -50.1), 45)]
+        with tempfile.TemporaryDirectory() as d, mock.patch.object(om, "CACHE", d), \
+                mock.patch.object(om, "_fetch", fetch), mock.patch.object(om, "_is_sea", lambda a, b: True), \
+                mock.patch.object(om, "time", mock.Mock()):
+            got = om.front_points("ncep_gfswave025", spots, max_km=om.FRONT_KM)
+        self.assertEqual(asked, [12, 4])           # the 4 nearest of each, then a wider look for the first only
+        self.assertEqual(got, [None, (-33.0, -52.75), (-30.0, -50.0)])
 
 
 class FlagshipCutOff(unittest.TestCase):

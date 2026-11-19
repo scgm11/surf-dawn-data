@@ -250,11 +250,23 @@ def front_point(model, spot, toward, max_km=FIX_KM):
     """The nearest cell in front of a spot (within FRONT_DEG of `toward`, its swell window or its
     facing, and max_km) with waves that the API answers from itself, None if there is none: the
     `wave=` for a spot the API answers from a cell behind its beach (tools/check_spots.py)."""
-    for rings, keep in ((4, 4), (8, 8)):
-        good = _usable(model, candidates(model, *spot, rings=rings, keep=keep, toward=toward, max_km=max_km))
-        if good:
-            return good[0]
-    return None
+    return front_points(model, [(spot, toward)], max_km)[0]
+
+
+def front_points(model, items, max_km=FIX_KM):
+    """front_point of each of these [(spot, toward)], asking for all their candidates together: a
+    few requests instead of one or two per spot (in Actions about one request in four waits out a
+    60 s SSL handshake, and one by one they took three hours, 2026-11-19)."""
+    out, todo = [None] * len(items), list(range(len(items)))
+    for rings, keep in ((4, 4), (8, 8)):                # a wider look only for those with none near
+        cs = {i: candidates(model, *items[i][0], rings=rings, keep=keep, toward=items[i][1], max_km=max_km)
+              for i in todo}
+        heights(model, [c for i in todo for c in cs[i]])   # into the cache that _usable reads
+        for i in todo:
+            good = _usable(model, cs[i])
+            out[i] = good[0] if good else None
+        todo = [i for i in todo if out[i] is None]
+    return out
 
 
 def wave_points(model, spots, towards=None):
