@@ -11,7 +11,7 @@ PUNTA NEGRA,-34.8930,-55.2141,B,V,osm:relation/2503564,nosnap facing=160,Corrali
 OCEAN PARK,-34.8787,-55.1115,B,V,osm:relation/2511685,nosnap facing=174,
 TÍO TOM,-34.8783,-55.0791,B,V,local,nosnap facing=183,Chihuahua; la orilla frente al parador Tío Tom. Satélite 2026-11-18: estaba 290 m al O
 PUNTA DEL CHILENO,-34.9126,-55.015,B,V,local,nosnap facing=147,v1 (spots.json 2026-10)
-MAILHOS,-34.9585,-54.9455,B,K,osm:way/516420469,nosnap facing=304 swell=180,Punta del Este; muelle de Mailhos en la Mansa; abierto solo al O: anda con el swell del S que da la vuelta (Lineup lo da al SO)
+MAILHOS,-34.9585,-54.9455,B,K,osm:way/516420469,nosnap facing=304 swell=225,Punta del Este; muelle de Mailhos en la Mansa; abierto solo al O: anda con el swell del SO que da la vuelta (Lineup; el usuario 2026-11-19: con el del SE no entra)
 LA VIRGEN,-34.9648,-54.9402,P,V,local,nosnap facing=139 wave=-35.0;-54.75,las piedras frente a la imagen de la Virgen de la Candelaria. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 190 m al SO en la rambla
 EL EMIR,-34.9629,-54.94,B,V,local,nosnap facing=118 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 LOS DEDOS,-34.958,-54.9358,B,V,local,nosnap facing=135 wave=-35.0;-54.75,v1 (spots.json 2026-10)
