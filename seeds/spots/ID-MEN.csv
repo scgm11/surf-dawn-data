@@ -1,11 +1,11 @@
 name,lat,lon,type,conf,src,flags,note
-HT'S,-2.4000,99.8650,R,L,local,top checked swell=195,Hollow Trees; Lance's Right; WC; posicion dudosa
-LANCE'S LEFT,-2.3950,99.8700,R,L,local,top checked swell=195,izquierda; posicion dudosa
-BANKVAULTS,-2.4050,99.8600,R,L,local,,posicion aprox
-PITSTOPS,-2.4100,99.8550,R,L,local,,posicion aprox
+HT'S,-2.3763,99.8596,R,V,local,nosnap top checked swell=195,Hollow Trees; Lance's Right; WC; posicion dudosa; satélite 2026-11
+LANCE'S LEFT,-2.3845,99.8379,R,V,local,nosnap top checked swell=195,izquierda; posicion dudosa; satélite 2026-11
+BANKVAULTS,-1.8515,99.2440,R,V,local,nosnap checked,"Masokut, Playgrounds; satélite 2026-11"
+PITSTOPS,-1.8316,99.2527,R,V,local,nosnap checked,"Masokut, Playgrounds; satélite 2026-11"
 MACARONIS,-2.7891,99.9903,R,V,web:mondo.surf,nosnap top checked,WC; izquierda; Pagai; satélite 2026-11
 KANDUI LEFT,-1.8990,99.2932,R,V,web:mondo.surf,nosnap top checked swell=190 facing=285,WC; Karangmajat; satélite 2026-11
 RIFLES,-1.9202,99.3193,R,V,web:mondo.surf,nosnap top swell=205 checked,derecha; Karangmajat; satélite 2026-11
 BURGERWORLD,-1.9050,99.3050,R,L,local,swell=190,cluster Kandui; posicion aprox
-TELESCOPES,-1.9100,99.3100,R,L,local,swell=190,cluster Kandui; posicion aprox
+TELESCOPES,-2.0670,99.5428,R,V,local,nosnap swell=190 checked,noroeste de Sipora; satélite 2026-11
 THUNDERS,-3.0540,100.1725,R,V,local,nosnap swell=200 checked,"Sibigau, Pagai Selatan; frente al Southern Mentawai Outpost; satélite 2026-11"

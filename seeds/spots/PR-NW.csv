@@ -1,10 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
-TUNELES,18.5153,-67.1011,B,K,web:puertoricodaytrips,wave=18.6667;-67.1667,"Shacks, Isabela"
 GAS CHAMBERS,18.4603,-67.1655,R,V,local,nosnap checked,Isabela; izquierda pesada; posición aproximada; satélite 2026-11
-SHACKS,18.5120,-67.0950,R,L,local,wave=18.6667;-67.1667,Isabela; posición aproximada
+SHACKS,18.5165,-67.1012,R,V,local,nosnap wave=18.6667;-67.1667 checked,Isabela; posición aproximada; satélite 2026-11
 JOBOS,18.5148,-67.0767,R,V,local,nosnap top checked,Isabela; arrecife; satélite 2026-11
 WILDERNESS,18.4870,-67.1610,R,V,osm:way/433148435,top checked,Aguadilla; frente a las ruinas del faro de Punta Borinquen
-CRASH BOAT,18.4600,-67.1650,B,K,local,,Aguadilla
+CRASH BOAT,18.4578,-67.1640,B,V,local,nosnap checked,Aguadilla; satélite 2026-11
 TABLE TOPS,18.4930,-67.1595,R,L,local,,Aguadilla; Punta Borinquen; posición aproximada
 INDICATORS,18.3612,-67.2711,R,V,local,nosnap swell=340 checked,Rincón norte; ola grande; satélite 2026-11
 DOMES,18.3653,-67.2702,R,V,local,nosnap top swell=340 checked,Rincón; frente a la cúpula del reactor; satélite 2026-11

@@ -13,5 +13,5 @@ MORRO ROCK,35.3715,-120.8650,B,K,local,top facing=290 wave=35.3954;-120.8835,
 MORRO STRAND,35.3860,-120.8700,B,K,local,wave=35.3954;-120.8835,
 CAYUCOS PIER,35.4465,-120.9095,B,K,local,wave=35.3954;-120.8835,
 MOONSTONE,35.5710,-121.1280,B,L,local,,Cambria
-ANDREW MOLERA,36.2803,-121.8568,B,K,osm:relation/7037787,facing=220 wave=36.1687;-122.026,Big Sur; boca del rio; orientación a mano (la calculada mira a la boca)
+ANDREW MOLERA,36.2808,-121.8593,B,V,osm:relation/7037787,nosnap facing=220 wave=36.1687;-122.026 checked,Big Sur; boca del rio; orientación a mano (la calculada mira a la boca); satélite 2026-11
 GARRAPATA,36.4350,-121.9230,B,K,local,,Big Sur

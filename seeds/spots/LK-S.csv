@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
 HIKKADUWA,6.1350,80.0970,R,K,local,top,arrecife frente a la playa
-DALAWELLA,5.9983,80.2685,R,K,web:mondo.surf,,arrecife frente a Wijaya Beach
-KABALANA,5.9670,80.3750,B,L,local,,Ahangama
-LAZY LEFT,5.9640,80.3860,R,L,local,,Midigama
-LAZY RIGHT,5.9640,80.3880,R,L,local,,Midigama
-COCONUTS,5.9620,80.3920,R,L,local,,Midigama; posicion aprox
-RAMS,5.9610,80.3950,R,L,local,,Midigama; posicion aprox
-MIDIGAMA,5.9600,80.3930,R,K,local,top,zona de arrecifes
+DALAWELLA,5.9992,80.2638,R,V,web:mondo.surf,nosnap checked,arrecife frente a Wijaya Beach; satélite 2026-11
+KABALANA,5.9770,80.3512,B,V,local,nosnap checked,Ahangama; satélite 2026-11
+LAZY LEFT,5.9627,80.3910,R,V,local,nosnap checked,Midigama; satélite 2026-11
+LAZY RIGHT,5.9637,80.3881,R,V,local,nosnap checked,Midigama; satélite 2026-11
+COCONUTS,5.9595,80.4022,R,V,local,nosnap checked,Midigama; posicion aprox; satélite 2026-11
+RAMS,5.9619,80.3940,R,V,local,nosnap checked,Midigama; posicion aprox; satélite 2026-11
+MIDIGAMA,5.9648,80.3906,R,V,local,nosnap top checked,zona de arrecifes; satélite 2026-11
 WELIGAMA,5.9714,80.4310,B,V,local,nosnap top facing=180 checked,bahia; principiantes; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-MIRISSA,5.9460,80.4600,R,L,local,,posicion aprox
+MIRISSA,5.9434,80.4551,R,V,local,nosnap checked,posicion aprox; satélite 2026-11
 HIRIKETIYA,5.9680,80.6850,P,L,local,,Dikwella; posicion aprox

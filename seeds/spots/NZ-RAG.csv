@@ -2,5 +2,5 @@ name,lat,lon,type,conf,src,flags,note
 MANU BAY,-37.8200,174.8120,P,K,local,top swell=250,NZCPS; WSL CT; izquierda larga
 WHALE BAY,-37.8240,174.8000,P,K,local,top swell=250,NZCPS; izquierda
 INDICATORS,-37.8229,174.7929,P,V,web:mondo.surf,top swell=250,NZCPS; izquierda; swell grande
-NGARUNUI,-37.8090,174.8230,B,K,local,,Raglan Ocean Beach
-RUAPUKE,-37.9005,174.7687,B,K,web:beachsearcher,,extremo norte de la playa
+NGARUNUI,-37.8185,174.8284,B,V,local,nosnap checked,Raglan Ocean Beach; satélite 2026-11
+RUAPUKE,-37.8916,174.7651,B,V,web:beachsearcher,nosnap checked,extremo norte de la playa; satélite 2026-11

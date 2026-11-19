@@ -12,14 +12,13 @@ BIDART,43.4370,-1.5960,B,K,local,,plage du Centre
 UHABIA,43.4440,-1.5910,B,K,local,,Bidart
 ILBARRITZ,43.4620,-1.5790,B,K,local,,
 COTE DES BASQUES,43.4780,-1.5710,B,K,local,top,Biarritz; longboard
-MILADY,43.4700,-1.5660,B,K,local,,Biarritz
+MILADY,43.4649,-1.5749,B,V,local,nosnap checked,Biarritz; satélite 2026-11
 GRANDE PLAGE,43.4850,-1.5592,B,V,local,nosnap top facing=300 checked,Biarritz; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-MIRAMAR,43.4905,-1.5585,B,K,local,facing=300,Biarritz; orientación a mano (la calculada miraba a otra costa)
-CHAMBRE D'AMOUR,43.5005,-1.5560,B,K,local,,Anglet
-LES CORSAIRES,43.5030,-1.5540,B,K,local,,Anglet
-LA MADRAGUE,43.5055,-1.5520,B,K,local,,Anglet
-SABLES D'OR,43.5080,-1.5495,B,K,local,,Anglet
-VVF,43.5105,-1.5470,B,K,local,,Anglet
-MARINELLA,43.5135,-1.5440,B,K,local,,Anglet
+MIRAMAR,43.4884,-1.5555,B,V,local,nosnap facing=300 checked,Biarritz; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+LES CORSAIRES,43.5074,-1.5385,B,V,local,nosnap checked,Anglet; satélite 2026-11
+LA MADRAGUE,43.5118,-1.5353,B,V,local,nosnap checked,Anglet; satélite 2026-11
+SABLES D'OR,43.5021,-1.5430,B,V,local,nosnap checked,Anglet; satélite 2026-11
+VVF,43.4960,-1.5460,B,V,local,nosnap checked,Anglet; satélite 2026-11
+MARINELLA,43.5059,-1.5391,B,V,local,nosnap checked,Anglet; satélite 2026-11
 LES CAVALIERS,43.5206,-1.5275,B,V,local,nosnap top checked,Anglet; satélite 2026-11
-LA BARRE,43.5260,-1.5320,B,K,local,,Anglet; junto a la escollera del Adour
+LA BARRE,43.5253,-1.5251,B,V,local,nosnap checked,Anglet; junto a la escollera del Adour; satélite 2026-11

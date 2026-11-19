@@ -6,7 +6,7 @@ BUMBANG,-8.8950,116.1050,R,L,local,,posicion dudosa
 MAWI,-8.9110,116.2175,R,L,local,facing=190,derecha
 MAWUN,-8.9060,116.2450,B,L,local,,
 KUTA LOMBOK,-8.8970,116.2710,B,L,local,facing=140,
-SEGER,-8.8950,116.2830,B,L,local,,posicion aprox
+SEGER,-8.9091,116.2957,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
 TANJUNG AAN,-8.9110,116.3090,B,L,local,,
 GERUPUK,-8.9136,116.3654,R,V,local,nosnap top swell=210 checked,bahia; seccion interior; satélite 2026-11
 OUTSIDE GERUPUK,-8.9390,116.3450,R,L,local,,seccion exterior de la bahia

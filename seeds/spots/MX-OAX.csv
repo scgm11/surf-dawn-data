@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 CHACAHUA,15.9650,-97.6760,P,K,local,top swell=210,Lagunas de Chacahua; derecha larga
 BACOCHO,15.8700,-97.0940,B,K,local,,Puerto Escondido oeste
-CARRIZALILLO,15.8520,-97.0740,B,K,local,,cala de Puerto Escondido
+CARRIZALILLO,15.8593,-97.0785,B,V,local,nosnap checked,cala de Puerto Escondido; satélite 2026-11
 PLAYA PRINCIPAL,15.8610,-97.0630,B,K,local,,Puerto Escondido
 MARINERO,15.8570,-97.0590,B,K,local,,Puerto Escondido
 ZICATELA,15.8490,-97.0590,B,K,local,top,ola grande; la Pipeline mexicana; clase mundial

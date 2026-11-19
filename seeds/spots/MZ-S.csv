@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-PONTA DO OURO,-26.8460,32.8950,P,K,local,,
+PONTA DO OURO,-26.8439,32.8953,P,V,local,nosnap checked,satélite 2026-11
 PONTA MALONGANE,-26.8830,32.9060,P,L,local,,
 PONTA MAMOLI,-26.7083,32.9060,P,K,web:kitejungle,,

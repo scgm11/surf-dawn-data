@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
-WAIKIKI,-12.1200,-77.0450,R,L,local,,Costa Verde Miraflores
-MAKAHA,-12.1260,-77.0400,R,L,local,,Costa Verde Miraflores
+WAIKIKI,-12.1283,-77.0371,R,V,local,nosnap checked,Costa Verde Miraflores; satélite 2026-11
+MAKAHA,-12.1293,-77.0364,R,V,local,nosnap checked,Costa Verde Miraflores; satélite 2026-11
 REDONDO,-12.1330,-77.0350,R,L,local,,Costa Verde
-LOS YUYOS,-12.1480,-77.0290,R,L,local,,Barranco
+LOS YUYOS,-12.1531,-77.0254,R,V,local,nosnap checked,Barranco; satélite 2026-11
 LA HERRADURA,-12.1806,-77.0383,P,V,local,nosnap top swell=215 checked facing=265,Chorrillos; satélite 2026-11
 AGUA DULCE,-12.1613,-77.0273,B,V,local,nosnap checked,Chorrillos; satélite 2026-11
 SEÑORITAS,-12.3291,-76.8355,P,V,local,nosnap top checked,Punta Hermosa; satélite 2026-11
@@ -12,5 +12,5 @@ PICO ALTO,-12.3372,-76.8373,R,V,local,nosnap top checked,ola grande; Punta Hermo
 PUNTA ROCAS,-12.3530,-76.8176,R,V,local,nosnap top checked,satélite 2026-11
 PUNTA NEGRA,-12.3700,-76.7920,P,K,local,,
 SAN BARTOLO,-12.3880,-76.7830,P,K,local,,
-SANTA MARÍA,-12.4100,-76.7650,B,L,local,,
+SANTA MARÍA,-12.4022,-76.7770,B,V,local,nosnap checked,satélite 2026-11
 CERRO AZUL,-13.0300,-76.4830,P,K,local,swell=230,Cañete

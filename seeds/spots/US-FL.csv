@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 FERNANDINA,30.6700,-81.4390,B,K,local,,Amelia Island
 HUGUENOT,30.4260,-81.4130,B,K,local,,Jacksonville
-THE POLES,30.3850,-81.4035,B,K,local,facing=90,Mayport; orientación a mano (la calculada miraba a otra costa)
+THE POLES,30.3815,-81.3964,B,V,local,nosnap facing=90 checked,Mayport; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 HANNA PARK,30.3735,-81.4020,B,K,local,,Jacksonville
 ATLANTIC BEACH,30.3340,-81.3980,B,K,local,,
 NEPTUNE BEACH,30.3130,-81.3955,B,K,local,,
@@ -19,10 +19,10 @@ FLAGLER AVE,29.0275,-80.9140,B,L,local,,New Smyrna Beach
 APOLLO BEACH,28.9150,-80.8130,B,L,local,,Canaveral Seashore
 PLAYALINDA,28.6340,-80.6330,B,L,local,,Canaveral Seashore
 JETTY PARK,28.4075,-80.5890,B,K,local,,Port Canaveral
-CHERIE DOWN,28.3970,-80.5990,B,K,local,,Cape Canaveral
-SHEPARD PARK,28.3735,-80.6010,B,K,local,,Cocoa Beach
+CHERIE DOWN,28.3920,-80.5953,B,V,local,nosnap checked,Cape Canaveral; satélite 2026-11
+SHEPARD PARK,28.3579,-80.6036,B,V,local,nosnap checked,Cocoa Beach; satélite 2026-11
 COCOA BEACH PIER,28.3675,-80.6005,B,K,local,top,
-LORI WILSON,28.3560,-80.6030,B,K,local,,Cocoa Beach
+LORI WILSON,28.3368,-80.6060,B,V,local,nosnap checked,Cocoa Beach; satélite 2026-11
 SATELLITE BEACH,28.1750,-80.5890,B,K,local,,
 INDIALANTIC,28.0900,-80.5655,B,K,local,,
 MELBOURNE BEACH,28.0690,-80.5600,B,K,local,,

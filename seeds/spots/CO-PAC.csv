@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 HUINA,6.2700,-77.4100,B,L,local,,Bahía Solano
-EL VALLE,6.1000,-77.4200,B,L,local,top,Chocó; posición dudosa
-ALMEJAL,6.0700,-77.4000,B,L,local,,Chocó
+EL VALLE,6.0991,-77.4288,B,V,local,nosnap top checked,Chocó; posición dudosa; satélite 2026-11
+ALMEJAL,6.1123,-77.4367,B,V,local,nosnap checked,Chocó; satélite 2026-11
 NUQUÍ,5.7130,-77.2640,B,L,local,,
 LADRILLEROS,3.9520,-77.3700,B,K,local,,Bahía Málaga
 JUANCHACO,3.9780,-77.3640,B,K,local,,
