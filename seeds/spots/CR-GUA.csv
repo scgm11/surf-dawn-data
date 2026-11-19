@@ -3,7 +3,7 @@ OLLIE'S POINT,10.8501,-85.8007,P,V,web:mondo.surf,facing=230,Potrero Grande; der
 WITCH'S ROCK,10.7934,-85.6804,B,V,web:mondo.surf,top,Playa Naranjo; dos fuentes difieren ~3 km
 PLAYA GRANDE,10.3300,-85.8530,B,K,local,,Las Baulas
 EL ESTERO,10.3090,-85.8450,B,K,local,wave=10.3333;-86.0,boca del estero norte de Tamarindo
-TAMARINDO,10.3000,-85.8450,B,K,local,top wave=10.3333;-86.0,
+TAMARINDO,10.3037,-85.8405,B,V,local,nosnap top wave=10.3333;-86.0 checked,satélite 2026-11
 PICO PEQUEÑO,10.3005,-85.8431,R,V,local,nosnap swell=225 checked,roca frente al hotel; posición aproximada; satélite 2026-11
 LANGOSTA,10.2853,-85.8511,B,V,local,nosnap checked,satélite 2026-11
 PARGOS,10.2400,-85.8420,B,L,local,,posición aproximada

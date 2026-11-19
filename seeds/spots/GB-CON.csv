@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 CRACKINGTON HAVEN,50.7423,-4.6371,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
 WIDEMOUTH,50.7960,-4.5570,B,K,local,,Bude
-SUMMERLEAZE,50.8330,-4.5550,B,K,local,,Bude
+SUMMERLEAZE,50.8316,-4.5529,B,V,local,nosnap checked,Bude; satélite 2026-11
 CROOKLETS,50.8358,-4.5548,B,V,local,nosnap checked,Bude; satélite 2026-11
 POLZEATH,50.5760,-4.9120,B,K,local,,
 HARLYN BAY,50.5420,-4.9957,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
