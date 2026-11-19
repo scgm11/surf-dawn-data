@@ -9,24 +9,24 @@ PUNTA COLORADA,-34.9008,-55.2477,B,V,osm:relation/2503563,nosnap facing=176,play
 EL RINCÓN,-34.9014,-55.2406,B,V,local,nosnap facing=215,punta este de la playa de Punta Colorada contra Punta Negra (pin del usuario 2026-11-17)
 PUNTA NEGRA,-34.8930,-55.2141,B,V,osm:relation/2503564,nosnap facing=160,Corralitos en la guía de surf
 OCEAN PARK,-34.8787,-55.1115,B,V,osm:relation/2511685,nosnap facing=174,
-TÍO TOM,-34.8780,-55.0823,B,K,osm:way/676669377,nosnap facing=183,Chihuahua
+TÍO TOM,-34.8783,-55.0791,B,V,local,nosnap facing=183,Chihuahua; la orilla frente al parador Tío Tom. Satélite 2026-11-18: estaba 290 m al O
 PUNTA DEL CHILENO,-34.9126,-55.015,B,V,local,nosnap facing=147,v1 (spots.json 2026-10)
 MAILHOS,-34.9585,-54.9455,B,K,osm:way/516420469,nosnap facing=304 swell=180,Punta del Este; muelle de Mailhos en la Mansa; abierto solo al O: anda con el swell del S que da la vuelta (Lineup lo da al SO)
-LA VIRGEN,-34.9653,-54.9422,P,V,local,nosnap facing=139 wave=-35.0;-54.75,v1 (spots.json 2026-10)
+LA VIRGEN,-34.9648,-54.9402,P,V,local,nosnap facing=139 wave=-35.0;-54.75,las piedras frente a la imagen de la Virgen de la Candelaria. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 190 m al SO en la rambla
 EL EMIR,-34.9629,-54.94,B,V,local,nosnap facing=118 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 LOS DEDOS,-34.958,-54.9358,B,V,local,nosnap facing=135 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 LA OLLA,-34.954,-54.929,P,V,local,nosnap facing=137 wave=-35.0;-54.75,v1 (spots.json 2026-10)
-ZORBA,-34.9528,-54.928,B,V,local,nosnap facing=133 wave=-35.0;-54.75,v1 (spots.json 2026-10)
+ZORBA,-34.9496,-54.9244,B,V,local,nosnap facing=133 wave=-35.0;-54.75,la Brava entre las Paradas 7 y 8. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 480 m al SO en la Parada 6
 LA PLAGE,-34.9436,-54.9142,B,V,local,nosnap facing=148 wave=-35.0;-54.75,frente al parador La Plage (Parada 12 de la Brava; medido en el satélite 2026-11-18: la v1 de 2026-10 lo ponía en la orilla 150 m al SO)
 PARADA 20,-34.9355,-54.9003,B,V,local,nosnap facing=145 wave=-35.0;-54.75,v1 (spots.json 2026-10)
-PARADA 30,-34.9243,-54.8777,B,V,local,nosnap facing=158 wave=-35.0;-54.75,v1 (spots.json 2026-10)
+PARADA 30,-34.9246,-54.8801,B,V,local,nosnap facing=158 wave=-35.0;-54.75,la arena frente al parador de la Parada 30. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 220 m al E
 LA BOCA,-34.9195,-54.8664,B,V,local,nosnap facing=145,v1 (spots.json 2026-10)
-LA MARTINEZ,-34.9175,-54.8625,B,V,local,nosnap facing=150,v1 (spots.json 2026-10)
+LA MARTINEZ,-34.9168,-54.8625,B,V,local,nosnap facing=150,La Barra; la playita entre la boca y La Posta del otro lado de la salida (el usuario). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 80 m mar adentro
 LA POSTA,-34.9167,-54.8586,B,V,local,nosnap facing=181,v1 (spots.json 2026-10)
 LA BOYA,-34.9167,-54.8493,P,V,local,nosnap facing=137,v1 (spots.json 2026-10)
 MONTOYA,-34.9136,-54.8439,B,V,local,nosnap facing=144,v1 (spots.json 2026-10)
-MANANTIALES,-34.9082,-54.8319,B,V,local,nosnap facing=167,v1 (spots.json 2026-10)
+MANANTIALES,-34.9091,-54.8260,B,V,local,nosnap facing=167,frente a las piedras donde rompe. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 550 m al O en la arena seca
 TERRAZAS,-34.9079,-54.8222,B,K,osm:way/257089318,nosnap facing=173,Manantiales
-BIKINI,-34.9072,-54.8199,R,V,local,nosnap facing=164,v1 (spots.json 2026-10)
-EL PEPE,-34.8443,-54.6786,B,V,local,nosnap facing=162,v1 (spots.json 2026-10)
+BIKINI,-34.9095,-54.8360,R,V,local,nosnap facing=164,Playa Bikini entre Montoya y Manantiales. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 1500 m al E pasando las Terrazas
+EL PEPE,-34.8430,-54.6724,B,V,local,nosnap facing=162,Satélite 2026-11-18: la v1 de 2026-10 lo ponía 580 m al O junto a la boca de la Laguna José Ignacio
 JOSÉ IGNACIO,-34.8316,-54.6257,B,V,local,nosnap facing=132,v1 (spots.json 2026-10)

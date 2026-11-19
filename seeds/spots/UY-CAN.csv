@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-TROUVILLE,-34.9188,-56.1452,B,K,osm:relation/7130762,nosnap facing=78,Pocitos; al este de Punta Trouville (Lineup lo da al E)
+TROUVILLE,-34.9176,-56.1483,B,V,local,nosnap facing=78,Pocitos; Playa Trouville frente a la rambla: mira al E (Lineup). Satélite 2026-11-18: estaba 310 m al SE en las piedras de Punta Trouville
 POCITOS,-34.9147,-56.1475,B,V,osm:relation/7130760,nosnap facing=118,
 BUCEO,-34.9002,-56.1217,B,V,osm:way/37351175,nosnap facing=126,Playa del Buceo
 PLAYA MALVÍN,-34.8989,-56.0998,B,V,osm:relation/2554678,nosnap facing=179,Malvín Nuevo
@@ -12,12 +12,12 @@ ARROYO PANDO,-34.7958,-55.8650,B,K,web:guiadesurfuruguay,nosnap facing=181,desem
 SALINAS,-34.7865,-55.8362,B,V,osm:relation/2578274,nosnap facing=155,
 ATLÁNTIDA,-34.7806,-55.7568,B,V,osm:relation/6930570,nosnap facing=173,Playa Brava (no la Mansa)
 LAS TOSCAS,-34.7752,-55.7357,B,V,osm:relation/2527758,nosnap facing=156,
-PARQUE DEL PLATA,-34.7680,-55.7154,B,V,osm:relation/2527668,nosnap facing=166,
+PARQUE DEL PLATA,-34.7672,-55.7100,B,V,local,nosnap facing=166,la rompiente del lado del Solís Chico (Lineup: Solís Chico). Satélite 2026-11-18: estaba 500 m al O en el centro de la playa de OSM
 LA FLORESTA,-34.7626,-55.6923,B,V,osm:relation/2527660,nosnap facing=170,
 COSTA AZUL,-34.7672,-55.6634,B,V,osm:relation/2527659,nosnap facing=211,
 CORRALITOS,-34.7963,-55.5294,B,K,web:guiadesurfuruguay,nosnap facing=185,Santa Lucía del Este; ensenada al S
 BIARRITZ,-34.7956,-55.5184,B,V,osm:relation/2469856,nosnap facing=166,
-CUCHILLA ALTA,-34.7952,-55.5001,B,V,osm:relation/2469857,nosnap facing=210,
+CUCHILLA ALTA,-34.7971,-55.4986,B,V,local,nosnap facing=210,donde la playa dobla contra la punta del Club Náutico (Lineup: Los Perros). Satélite 2026-11-18: estaba 250 m al NO en el centro de la playa de OSM
 SANTA ANA,-34.7951,-55.4672,B,V,osm:relation/2469859,nosnap facing=174,
 B. ARGENTINO,-34.7927,-55.4451,B,V,osm:relation/2524670,nosnap facing=169,Balneario Argentino
 JAUREGUIBERRY,-34.7909,-55.4046,B,V,osm:relation/2524672,nosnap facing=191,desembocadura del Solís Grande
