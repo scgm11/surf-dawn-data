@@ -2,7 +2,7 @@ UY-CAN      16 spots  1000 bytes  v7cd185
 UY-MAL      31 spots  1870 bytes  vdafbfc
 UY-ROC      28 spots  1560 bytes  v14584d
 AR-MDP      22 spots  1264 bytes  vad388d
-AR-BAN      16 spots  1018 bytes  v284e43
+AR-BAN      16 spots  1116 bytes  v4a4639
 AR-SUR       6 spots   549 bytes  vec40c2
 BR-RS       18 spots  1184 bytes  v18c1fa
 BR-RS-SUL    2 spots   334 bytes  v54fd46
@@ -19,12 +19,10 @@ BR-NE-RN    12 spots   866 bytes  v7d8a18
 BR-NE-PE    14 spots   937 bytes  v3dfa99
 BR-NOR       5 spots   436 bytes  vac0eca
 CL-NOR      11 spots   820 bytes  vdc90f6
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 CL-CEN      20 spots  1427 bytes  v174666
 CL-PIC      11 spots   891 bytes  vb13831
 CL-MAU      14 spots  1033 bytes  v503c95
 CL-SUR      11 spots   794 bytes  vce48e1
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 PE-NOR      10 spots   799 bytes  vef6cdb
 PE-LLB       7 spots   679 bytes  v0e852d
 PE-LIM      15 spots  1179 bytes  v28a55f
@@ -35,11 +33,11 @@ CO-PAC       6 spots   523 bytes  v9aecaa
 CO-CAR       3 spots   403 bytes  vda3c7e
 VE-ALL       1 spots   238 bytes  vf04015
 VE-MAR       1 spots   274 bytes  v6c1a18
-PA-PAC       7 spots   599 bytes  va59eae
+PA-PAC       7 spots   638 bytes  ve52886
 PA-BDT       4 spots   367 bytes  v200f77
 CR-GUA      12 spots   891 bytes  va0f720
 CR-NIC      10 spots   668 bytes  v51ae03
-CR-PAC      10 spots   682 bytes  vdf0ec2
+CR-PAC      10 spots   702 bytes  v31064a
 CR-OSA       4 spots   451 bytes  vb27316
 CR-CAR       5 spots   488 bytes  vcbba74
 NI-RIV       8 spots   564 bytes  v6163d8
@@ -55,14 +53,13 @@ MX-BCS-N     2 spots   353 bytes  vfe6a5e
 MX-BCN       4 spots   423 bytes  v14b279
 MX-CAR       3 spots   355 bytes  va000f5
 PR-NW       15 spots  1049 bytes  v0c8909
-PR-N         8 spots   693 bytes  v00671c
+PR-N         8 spots   735 bytes  vaaf94d
 BB-ALL       8 spots   588 bytes  v85eb47
 DO-ALL       2 spots   285 bytes  v0ea15c
 GP-ALL       3 spots   317 bytes  v580315
 MQ-ALL       3 spots   313 bytes  va18308
 BS-ALL       1 spots   237 bytes  vd0d2d6
 TT-ALL       4 spots   466 bytes  v7a403a
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 US-CA-SD    38 spots  2128 bytes  v88ab54
 US-CA-OC    32 spots  1828 bytes  v9d3652
 US-CA-LA    23 spots  1496 bytes  v1b24cd
@@ -72,9 +69,9 @@ US-CA-SC    30 spots  1867 bytes  vad5ff0
 US-CA-SF    29 spots  1981 bytes  vd9c4f3
 US-CA-NOR   25 spots  1525 bytes  v71badc
 US-PNW      33 spots  1903 bytes  vc8b5ed
-US-GULF     13 spots   844 bytes  v7bf41a
+US-GULF     13 spots   976 bytes  v006f8c
 US-FL       46 spots  2399 bytes  vacb692
-US-FL-PAN    6 spots   631 bytes  v54c1f9
+US-FL-PAN    6 spots   712 bytes  v8210b4
 US-SE       22 spots  1400 bytes  v294ef5
 US-SC-GA    10 spots   792 bytes  ve59994
 US-MID      11 spots   861 bytes  v34cc94
@@ -91,7 +88,6 @@ AU-QLD-GC   24 spots  1463 bytes  v7c4edd
 AU-NSW-NR   26 spots  1703 bytes  v947a87
 AU-NSW-MN   33 spots  2060 bytes  ve06251
 AU-NSW-NC   30 spots  1770 bytes  vdc3762
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 AU-NSW-SYD  37 spots  1870 bytes  v9335d9
 AU-NSW-SC   31 spots  1686 bytes  v49dce6
 AU-VIC-SC   20 spots  1272 bytes  v532faf
@@ -108,9 +104,9 @@ NZ-NTL      14 spots  1000 bytes  v6ef6a5
 NZ-AKL       9 spots   658 bytes  vdb7db9
 NZ-RAG       5 spots   438 bytes  v3324ad
 NZ-TAR       7 spots   550 bytes  vf9120f
-NZ-BOP      11 spots   856 bytes  v2c2b92
+NZ-BOP      11 spots   895 bytes  v4cb9e6
 NZ-GIS      13 spots   909 bytes  vf1f2e0
-NZ-WEL      13 spots   888 bytes  v2dc04d
+NZ-WEL      13 spots   914 bytes  ve18eaf
 NZ-KAI       9 spots   795 bytes  vfa00de
 NZ-OTA      13 spots   982 bytes  v99abef
 NZ-WC        4 spots   406 bytes  v1ca2d3
@@ -129,7 +125,7 @@ ID-JAV-E     7 spots   587 bytes  vf44cca
 ID-JAV-W     7 spots   604 bytes  vecaa45
 ID-LOM      14 spots   940 bytes  v18095f
 ID-SBW       9 spots   675 bytes  v3a76f7
-ID-SMB       2 spots   257 bytes  v6416f5
+ID-SMB       2 spots   274 bytes  vdf4116
 ID-ROT       4 spots   350 bytes  v90391e
 ID-MEN      10 spots   725 bytes  v8ac492
 ID-NIA       3 spots   380 bytes  vb9df19
@@ -144,13 +140,13 @@ MV-SMA       3 spots   351 bytes  ve3a5e2
 MV-SOU       2 spots   301 bytes  vd67d25
 MV-CEN       1 spots   260 bytes  v8319d8
 JP-CHI       8 spots   529 bytes  v4e2b3b
-JP-SHO       9 spots   560 bytes  vceed14
+JP-SHO       9 spots   602 bytes  vb04176
 JP-IZU       4 spots   359 bytes  v57f6d5
 JP-IBA       5 spots   486 bytes  vd39523
 JP-SHK       3 spots   291 bytes  v0c051f
 JP-KYU       2 spots   330 bytes  v5db1a2
 TW-E         4 spots   430 bytes  v850ec0
-TW-NE        4 spots   424 bytes  v627dbf
+TW-NE        4 spots   452 bytes  vfdbd1e
 IN-W         3 spots   355 bytes  v9a0e6d
 IN-E         3 spots   367 bytes  v879406
 VN-ALL       5 spots   469 bytes  vab403b
@@ -192,28 +188,27 @@ ES-CN-E     11 spots   892 bytes  v90b379
 ES-CN-W     17 spots  1111 bytes  ve8b4da
 PT-NOR      19 spots  1100 bytes  v6c26ac
 PT-CEN      20 spots  1231 bytes  v34db95
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-PT-PEN      12 spots   737 bytes  vccf987
+PT-PEN      12 spots   802 bytes  v53eab3
 PT-ERI      11 spots   692 bytes  vbed722
 PT-LIS      15 spots   886 bytes  vf4b6c7
 PT-ALG      18 spots  1100 bytes  v616790
 PT-AZO       7 spots   609 bytes  v377f80
-PT-MAD       8 spots   616 bytes  v84c102
-GB-CON      28 spots  1550 bytes  vc3654a
+PT-MAD       8 spots   650 bytes  v611260
+GB-CON      28 spots  1680 bytes  vf6c627
 GB-DEV       9 spots   646 bytes  v80442d
 GB-SOU       3 spots   405 bytes  v66ebd9
 GB-WAL      21 spots  1298 bytes  v8e72de
 GB-SCO      21 spots  1263 bytes  v123fc1
 GB-NE       25 spots  1341 bytes  ve69cad
-GB-NIR       9 spots   682 bytes  v114359
+GB-NIR       9 spots   714 bytes  vc92d99
 IE-NW        9 spots   813 bytes  vcacf01
-IE-SW       12 spots   822 bytes  v69bdf1
+IE-SW       12 spots   854 bytes  v1baa1d
 IE-SE       10 spots   736 bytes  v9df532
 NO-S         3 spots   418 bytes  vd98124
 NO-N         3 spots   346 bytes  vf49418
 DK-ALL       5 spots   426 bytes  v869df8
 NL-ALL      11 spots   792 bytes  v70fb61
-DE-ALL       4 spots   364 bytes  v610bcc
+DE-ALL       4 spots   390 bytes  v3596b8
 IT-ALL       7 spots   622 bytes  v75c6a5
 IT-SAR       4 spots   392 bytes  v74a190
 IS-ALL       3 spots   362 bytes  vd80443

@@ -98,7 +98,7 @@
 | UY-MAL | 31 | 1870 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | UY-ROC | 28 | 1560 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | AR-MDP | 22 | 1264 | ncep_gfswave025 | gfs_seamless | 3 | 509 m | 0 |
-| AR-BAN | 16 | 1018 | ncep_gfswave025 | gfs_seamless | 2 | 552 m | 0 |
+| AR-BAN | 16 | 1116 | ncep_gfswave025 | gfs_seamless | 2 | 552 m | 7 |
 | AR-SUR | 6 | 549 | ncep_gfswave025 | gfs_seamless | 3 | 886 m | 0 |
 | BR-RS | 18 | 1184 | ncep_gfswave025 | gfs_seamless | 3 | 440 m | 7 |
 | BR-RS-SUL | 2 | 334 | ncep_gfswave025 | gfs_seamless | 1 | 229 m | 0 |
@@ -129,11 +129,11 @@
 | CO-CAR | 3 | 403 | ncep_gfswave016 | gfs_seamless | 3 | 786 m | 0 |
 | VE-ALL | 1 | 238 | ncep_gfswave016 | gfs_seamless | 1 | 247 m | 1 |
 | VE-MAR | 1 | 274 | ncep_gfswave016 | gfs_seamless | 1 | 249 m | 1 |
-| PA-PAC | 7 | 599 | ncep_gfswave016 | gfs_seamless | 3 | 451 m | 0 |
+| PA-PAC | 7 | 638 | ncep_gfswave016 | gfs_seamless | 3 | 451 m | 3 |
 | PA-BDT | 4 | 367 | ncep_gfswave016 | gfs_seamless | 1 | 122 m | 0 |
 | CR-GUA | 12 | 891 | ncep_gfswave016 | gfs_seamless | 2 | 241 m | 2 |
 | CR-NIC | 10 | 668 | ncep_gfswave016 | gfs_seamless | 2 | 769 m | 0 |
-| CR-PAC | 10 | 682 | ncep_gfswave016 | gfs_seamless | 2 | 308 m | 0 |
+| CR-PAC | 10 | 702 | ncep_gfswave016 | gfs_seamless | 2 | 308 m | 2 |
 | CR-OSA | 4 | 451 | ncep_gfswave016 | gfs_seamless | 1 | 510 m | 2 |
 | CR-CAR | 5 | 488 | ncep_gfswave016 | gfs_seamless | 2 | 420 m | 0 |
 | NI-RIV | 8 | 564 | ncep_gfswave016 | gfs_seamless | 1 | 530 m | 0 |
@@ -149,7 +149,7 @@
 | MX-BCN | 4 | 423 | ecmwf_wam | gfs_seamless | 2 | 120 m | 0 |
 | MX-CAR | 3 | 355 | ncep_gfswave016 | gfs_seamless | 2 | 361 m | 0 |
 | PR-NW | 15 | 1049 | ncep_gfswave016 | cmc_gem_seamless | 3 | 205 m | 0 |
-| PR-N | 8 | 693 | ncep_gfswave016 | cmc_gem_seamless | 3 | 388 m | 0 |
+| PR-N | 8 | 735 | ncep_gfswave016 | cmc_gem_seamless | 3 | 388 m | 3 |
 | BB-ALL | 8 | 588 | ncep_gfswave016 | gfs_seamless | 1 | 457 m | 0 |
 | DO-ALL | 2 | 285 | ncep_gfswave016 | gfs_seamless | 1 | 51 m | 0 |
 | GP-ALL | 3 | 317 | ncep_gfswave016 | gfs_seamless | 1 | 881 m | 0 |
@@ -165,9 +165,9 @@
 | US-CA-SF | 29 | 1981 | ecmwf_wam | gfs_seamless | 3 | 289 m | 6 |
 | US-CA-NOR | 25 | 1525 | ecmwf_wam | gfs_seamless | 3 | 328 m | 0 |
 | US-PNW | 33 | 1903 | ecmwf_wam | gfs_seamless | 3 | 363 m | 0 |
-| US-GULF | 13 | 844 | ecmwf_wam | gfs_seamless | 3 | 328 m | 0 |
+| US-GULF | 13 | 976 | ecmwf_wam | gfs_seamless | 3 | 328 m | 8 |
 | US-FL | 46 | 2399 | ncep_gfswave016 | gfs_seamless | 3 | 366 m | 0 |
-| US-FL-PAN | 6 | 631 | ecmwf_wam | gfs_seamless | 3 | 352 m | 0 |
+| US-FL-PAN | 6 | 712 | ecmwf_wam | gfs_seamless | 3 | 352 m | 5 |
 | US-SE | 22 | 1400 | ncep_gfswave025 | ecmwf_ifs | 3 | 275 m | 6 |
 | US-SC-GA | 10 | 792 | ncep_gfswave016 | ecmwf_ifs | 3 | 505 m | 0 |
 | US-MID | 11 | 861 | ncep_gfswave025 | gfs_seamless | 3 | 361 m | 2 |
@@ -200,9 +200,9 @@
 | NZ-AKL | 9 | 658 | ncep_gfswave025 | gfs_seamless | 2 | 153 m | 0 |
 | NZ-RAG | 5 | 438 | ncep_gfswave025 | gfs_seamless | 1 | 214 m | 0 |
 | NZ-TAR | 7 | 550 | ncep_gfswave025 | gfs_seamless | 2 | 452 m | 0 |
-| NZ-BOP | 11 | 856 | ncep_gfswave025 | gfs_seamless | 3 | 531 m | 1 |
+| NZ-BOP | 11 | 895 | ncep_gfswave025 | gfs_seamless | 3 | 531 m | 4 |
 | NZ-GIS | 13 | 909 | ncep_gfswave025 | gfs_seamless | 1 | 138 m | 11 |
-| NZ-WEL | 13 | 888 | ncep_gfswave025 | gfs_seamless | 3 | 304 m | 0 |
+| NZ-WEL | 13 | 914 | ncep_gfswave025 | gfs_seamless | 3 | 304 m | 2 |
 | NZ-KAI | 9 | 795 | ncep_gfswave025 | gfs_seamless | 3 | 326 m | 6 |
 | NZ-OTA | 13 | 982 | ncep_gfswave025 | gfs_seamless | 3 | 410 m | 1 |
 | NZ-WC | 4 | 406 | ncep_gfswave025 | gfs_seamless | 2 | 491 m | 0 |
@@ -221,7 +221,7 @@
 | ID-JAV-W | 7 | 604 | ncep_gfswave016 | gfs_seamless | 2 | 1341 m | 0 |
 | ID-LOM | 14 | 940 | ncep_gfswave016 | gfs_seamless | 3 | 557 m | 0 |
 | ID-SBW | 9 | 675 | ncep_gfswave016 | gfs_seamless | 2 | 268 m | 0 |
-| ID-SMB | 2 | 257 | ncep_gfswave016 | gfs_seamless | 1 | 993 m | 0 |
+| ID-SMB | 2 | 274 | ncep_gfswave016 | gfs_seamless | 1 | 993 m | 1 |
 | ID-ROT | 4 | 350 | ncep_gfswave016 | gfs_seamless | 1 | 402 m | 0 |
 | ID-MEN | 10 | 725 | ncep_gfswave016 | gfs_seamless | 3 | 422 m | 0 |
 | ID-NIA | 3 | 380 | ncep_gfswave016 | gfs_seamless | 2 | 194 m | 0 |
@@ -236,13 +236,13 @@
 | MV-SOU | 2 | 301 | ncep_gfswave016 | gfs_seamless | 1 | 183 m | 0 |
 | MV-CEN | 1 | 260 | ncep_gfswave016 | gfs_seamless | 1 | 1063 m | 0 |
 | JP-CHI | 8 | 529 | ncep_gfswave016 | gfs_seamless | 2 | 715 m | 0 |
-| JP-SHO | 9 | 560 | ncep_gfswave016 | gfs_seamless | 1 | 391 m | 0 |
+| JP-SHO | 9 | 602 | ncep_gfswave016 | gfs_seamless | 1 | 391 m | 3 |
 | JP-IZU | 4 | 359 | ncep_gfswave016 | gfs_seamless | 2 | 1265 m | 0 |
 | JP-IBA | 5 | 486 | ncep_gfswave016 | gfs_seamless | 3 | 946 m | 0 |
 | JP-SHK | 3 | 291 | ncep_gfswave016 | gfs_seamless | 1 | 494 m | 0 |
 | JP-KYU | 2 | 330 | ncep_gfswave016 | gfs_seamless | 2 | 296 m | 0 |
 | TW-E | 4 | 430 | ncep_gfswave016 | gfs_seamless | 2 | 739 m | 0 |
-| TW-NE | 4 | 424 | ncep_gfswave016 | gfs_seamless | 2 | 338 m | 0 |
+| TW-NE | 4 | 452 | ncep_gfswave016 | gfs_seamless | 2 | 338 m | 2 |
 | IN-W | 3 | 355 | ncep_gfswave016 | gfs_seamless | 2 | 617 m | 0 |
 | IN-E | 3 | 367 | ncep_gfswave016 | gfs_seamless | 2 | 474 m | 0 |
 | VN-ALL | 5 | 469 | ncep_gfswave016 | gfs_seamless | 3 | 591 m | 0 |
@@ -284,27 +284,27 @@
 | ES-CN-W | 17 | 1111 | ncep_gfswave016 | gfs_seamless | 3 | 563 m | 0 |
 | PT-NOR | 19 | 1100 | ncep_gfswave016 | gfs_seamless | 2 | 464 m | 1 |
 | PT-CEN | 20 | 1231 | ncep_gfswave016 | gfs_seamless | 3 | 535 m | 0 |
-| PT-PEN | 12 | 737 | ncep_gfswave016 | gfs_seamless | 1 | 550 m | 0 |
+| PT-PEN | 12 | 802 | ncep_gfswave016 | gfs_seamless | 1 | 550 m | 5 |
 | PT-ERI | 11 | 692 | ncep_gfswave016 | gfs_seamless | 1 | 204 m | 0 |
 | PT-LIS | 15 | 886 | ncep_gfswave016 | gfs_seamless | 1 | 534 m | 0 |
 | PT-ALG | 18 | 1100 | ncep_gfswave016 | gfs_seamless | 3 | 600 m | 0 |
 | PT-AZO | 7 | 609 | ncep_gfswave016 | gfs_seamless | 3 | 645 m | 2 |
-| PT-MAD | 8 | 616 | ncep_gfswave016 | gfs_seamless | 1 | 464 m | 1 |
-| GB-CON | 28 | 1550 | ncep_gfswave016 | gfs_seamless | 3 | 269 m | 0 |
+| PT-MAD | 8 | 650 | ncep_gfswave016 | gfs_seamless | 1 | 464 m | 3 |
+| GB-CON | 28 | 1680 | ncep_gfswave016 | gfs_seamless | 3 | 269 m | 10 |
 | GB-DEV | 9 | 646 | ncep_gfswave016 | gfs_seamless | 3 | 240 m | 0 |
 | GB-SOU | 3 | 405 | ncep_gfswave016 | gfs_seamless | 2 | 790 m | 0 |
 | GB-WAL | 21 | 1298 | ncep_gfswave025 | gfs_seamless | 3 | 455 m | 6 |
 | GB-SCO | 21 | 1263 | ncep_gfswave025 | gfs_seamless | 3 | 607 m | 6 |
 | GB-NE | 25 | 1341 | ncep_gfswave025 | gfs_seamless | 1 | 420 m | 3 |
-| GB-NIR | 9 | 682 | ecmwf_wam | gfs_seamless | 3 | 433 m | 0 |
+| GB-NIR | 9 | 714 | ecmwf_wam | gfs_seamless | 3 | 433 m | 2 |
 | IE-NW | 9 | 813 | ncep_gfswave025 | gfs_seamless | 3 | 575 m | 4 |
-| IE-SW | 12 | 822 | ecmwf_wam | gfs_seamless | 3 | 199 m | 1 |
+| IE-SW | 12 | 854 | ecmwf_wam | gfs_seamless | 3 | 199 m | 3 |
 | IE-SE | 10 | 736 | ncep_gfswave016 | gfs_seamless | 3 | 704 m | 0 |
 | NO-S | 3 | 418 | ncep_gfswave025 | gfs_seamless | 2 | 406 m | 1 |
 | NO-N | 3 | 346 | ncep_gfswave025 | gfs_seamless | 2 | 71 m | 1 |
 | DK-ALL | 5 | 426 | ncep_gfswave025 | gfs_seamless | 2 | 391 m | 0 |
 | NL-ALL | 11 | 792 | ncep_gfswave025 | gfs_seamless | 3 | 425 m | 2 |
-| DE-ALL | 4 | 364 | ncep_gfswave025 | gfs_seamless | 1 | 779 m | 0 |
+| DE-ALL | 4 | 390 | ncep_gfswave025 | gfs_seamless | 1 | 779 m | 3 |
 | IT-ALL | 7 | 622 | ncep_gfswave016 | gfs_seamless | 3 | 232 m | 0 |
 | IT-SAR | 4 | 392 | ncep_gfswave016 | gfs_seamless | 1 | 104 m | 0 |
 | IS-ALL | 3 | 362 | ncep_gfswave025 | gfs_seamless | 2 | 419 m | 0 |
@@ -358,7 +358,7 @@
 | EC-GAL | LA LOBERÍA | V | 192 m | 230° | — |
 | CO-PAC | EL VALLE | L | 759 m | 225° | — |
 | CO-CAR | PUERTO COLOMBIA | K | 376 m | 8° | — |
-| PA-PAC | SANTA CATALINA | K | 267 m | 195° | — |
+| PA-PAC | SANTA CATALINA | K | 267 m | 195° | 7.50, -81.33 |
 | PA-PAC | PLAYA VENAO | V | 164 m | 184° | — |
 | CR-GUA | WITCH'S ROCK | V | 199 m | 228° | — |
 | CR-GUA | TAMARINDO | K | 241 m | 312° | 10.33, -86.00 |
@@ -516,7 +516,7 @@
 | NZ-TAR | STENT ROAD | V | 43 m | 271° | — |
 | NZ-TAR | WAIWHAKAIHO | K | 104 m | 326° | — |
 | NZ-BOP | WHANGAMATA BAR | V | 61 m | 104° | — |
-| NZ-BOP | MOUNT MAUNGANUI | V | 154 m | 31° | — |
+| NZ-BOP | MOUNT MAUNGANUI | V | 154 m | 31° | -37.50, 176.25 |
 | NZ-GIS | CENTRES | K | 21 m | 117° | -38.75, 178.25 |
 | NZ-GIS | MAKORORI POINT | V | 18 m | 141° | -38.75, 178.25 |
 | NZ-GIS | STOCK ROUTE | V | 153 m | 109° | -38.75, 178.25 |
@@ -589,12 +589,12 @@
 | MV-SOU | BEACONS | V | 158 m | 154° | — |
 | JP-CHI | TSURIGASAKI | V | 81 m | 77° | — |
 | JP-CHI | ONJUKU | V | 22 m | 155° | — |
-| JP-SHO | KUGENUMA | K | 13 m | 215° | — |
+| JP-SHO | KUGENUMA | K | 13 m | 215° | 35.17, 139.50 |
 | JP-IZU | SHIRAHAMA | V | 9 m | 66° | — |
 | JP-SHK | KAIFU | L | 69 m | 117° | — |
 | JP-KYU | KISAKIHAMA | V | 12 m | 81° | — |
 | TW-E | JINZUN HARBOR | V | 80 m | 149° | — |
-| TW-NE | WAI'AO | K | 885 m | 105° | — |
+| TW-NE | WAI'AO | K | 885 m | 105° | 24.83, 122.00 |
 | TW-NE | FULONG | K | 112 m | 40° | — |
 | ZA-WC-CPT | BIG BAY | K | 88 m | 245° | -33.75, 18.25 |
 | ZA-WC-CPT | LLANDUDNO | K | 91 m | 311° | — |
@@ -665,9 +665,9 @@
 | PT-CEN | CABEDELO | V | 55 m | 230° | — |
 | PT-CEN | PRAIA DO NORTE | K | 37 m | 234° | — |
 | PT-PEN | BALEAL | V | 9 m | 299° | — |
-| PT-PEN | MOLHE LESTE | K | 49 m | 232° | — |
-| PT-PEN | SUPERTUBOS | K | 6 m | 248° | — |
-| PT-PEN | CONSOLAÇÃO | V | 25 m | 265° | — |
+| PT-PEN | MOLHE LESTE | K | 49 m | 232° | 39.33, -9.50 |
+| PT-PEN | SUPERTUBOS | K | 6 m | 248° | 39.33, -9.50 |
+| PT-PEN | CONSOLAÇÃO | V | 25 m | 265° | 39.33, -9.50 |
 | PT-ERI | SÃO LOURENÇO | K | 21 m | 262° | — |
 | PT-ERI | COXOS | K | 125 m | 268° | — |
 | PT-ERI | RIBEIRA D'ILHAS | V | 16 m | 239° | — |
@@ -681,8 +681,8 @@
 | PT-ALG | TONEL | K | 109 m | 230° | — |
 | PT-AZO | SANTA BÁRBARA | K | 1664 m | 343° | 38.00, -25.67 |
 | PT-MAD | JARDIM DO MAR | V | 10 m | 249° | — |
-| GB-CON | WATERGATE BAY | V | 132 m | 289° | — |
-| GB-CON | FISTRAL | K | 30 m | 286° | — |
+| GB-CON | WATERGATE BAY | V | 132 m | 289° | 50.50, -5.17 |
+| GB-CON | FISTRAL | K | 30 m | 286° | 50.50, -5.17 |
 | GB-CON | SENNEN | K | 88 m | 338° | — |
 | GB-CON | PORTHLEVEN | K | 54 m | 208° | — |
 | GB-DEV | CROYDE | K | 295 m | 276° | — |
@@ -693,14 +693,14 @@
 | GB-SCO | THURSO EAST | V | 141 m | 314° | — |
 | GB-NE | TYNEMOUTH | V | 137 m | 58° | — |
 | GB-NE | SALTBURN | K | 217 m | 17° | — |
-| GB-NIR | EAST STRAND | K | 358 m | 335° | — |
+| GB-NIR | EAST STRAND | K | 358 m | 335° | 55.22, -6.67 |
 | IE-NW | THE PEAK | K | 35 m | 290° | — |
 | IE-NW | MULLAGHMORE | V | — | 315° | — |
 | IE-NW | STRANDHILL | K | 310 m | 290° | 54.50, -8.75 |
 | IE-NW | EASKEY | V | 213 m | 330° | — |
 | IE-SW | LAHINCH | K | 3 m | 246° | — |
-| IE-SW | AILEEN'S | K | 129 m | 281° | — |
-| IE-SW | CRAB ISLAND | K | 409 m | 270° | — |
+| IE-SW | AILEEN'S | K | 129 m | 281° | 52.97, -9.49 |
+| IE-SW | CRAB ISLAND | K | 409 m | 270° | 52.97, -9.49 |
 | IE-SE | TRAMORE | K | 352 m | 188° | — |
 | NO-N | UNSTAD | K | 16 m | 314° | — |
 | DK-ALL | KLITMOLLER | V | 19 m | 348° | — |
