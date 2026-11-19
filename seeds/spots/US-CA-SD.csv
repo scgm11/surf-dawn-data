@@ -1,17 +1,17 @@
 name,lat,lon,type,conf,src,flags,note
-OCEANSIDE HARBOR,33.2090,-117.3975,B,K,local,,jetty
+OCEANSIDE HARBOR,33.2042,-117.3954,B,V,local,nosnap checked,jetty; satélite 2026-11
 OCEANSIDE PIER,33.1942,-117.3852,B,V,local,nosnap top checked,satélite 2026-11
 SOUTH O,33.1730,-117.3659,B,V,local,nosnap checked,satélite 2026-11
 BUCCANEER,33.1766,-117.3693,B,V,local,nosnap checked,satélite 2026-11
-TAMARACK,33.1580,-117.3560,B,K,local,,Carlsbad
-WARM WATER JETTY,33.1400,-117.3490,B,K,local,,Carlsbad
+TAMARACK,33.1476,-117.3464,B,V,local,nosnap checked,Carlsbad; satélite 2026-11
+WARM WATER JETTY,33.1390,-117.3403,B,V,local,nosnap checked,Carlsbad; satélite 2026-11
 TERRAMAR,33.1230,-117.3400,B,K,local,,Carlsbad
-PONTO,33.0775,-117.3145,B,K,local,,
-BEACON'S,33.0690,-117.3120,B,K,local,,Leucadia
-STONE STEPS,33.0590,-117.3085,R,K,local,,Encinitas
-GRANDVIEW,33.0540,-117.3065,R,K,local,,Encinitas
+PONTO,33.0861,-117.3129,B,V,local,nosnap checked,satélite 2026-11
+BEACON'S,33.0651,-117.3055,B,V,local,nosnap checked,Leucadia; satélite 2026-11
+STONE STEPS,33.0546,-117.3013,R,V,local,nosnap checked,Encinitas; satélite 2026-11
+GRANDVIEW,33.0761,-117.3106,R,V,local,nosnap checked,Encinitas; satélite 2026-11
 MOONLIGHT,33.0475,-117.3040,B,K,local,,Encinitas
-PIPES,33.0365,-117.2965,R,K,local,,
+PIPES,33.0250,-117.2872,R,V,local,nosnap checked,satélite 2026-11
 SWAMI'S,33.0335,-117.2950,R,K,local,top,
 TURTLES,33.0295,-117.2940,R,K,local,,
 CARDIFF REEF,33.0170,-117.2845,R,K,local,,
@@ -23,17 +23,17 @@ TORREY PINES,32.9335,-117.2625,B,K,local,,
 BLACK'S,32.8895,-117.2545,B,K,local,top,
 SCRIPPS PIER,32.8665,-117.2570,B,K,local,,
 LA JOLLA SHORES,32.8565,-117.2615,B,K,local,,
-MARINE STREET,32.8420,-117.2805,B,K,local,,La Jolla
+MARINE STREET,32.8365,-117.2815,B,V,local,nosnap checked,La Jolla; satélite 2026-11
 WINDANSEA,32.8295,-117.2815,R,K,local,top,
 BIRD ROCK,32.8145,-117.2755,R,K,local,facing=255,
 TOURMALINE,32.8065,-117.2650,B,K,local,,Pacific Beach
 CRYSTAL PIER,32.7965,-117.2565,B,K,local,,Pacific Beach
 MISSION BEACH,32.7690,-117.2530,B,K,local,,
-SOUTH MISSION,32.7555,-117.2545,B,K,local,,jetty
+SOUTH MISSION,32.7597,-117.2540,B,V,local,nosnap checked facing=260,jetty; satélite 2026-11
 OCEAN BEACH PIER,32.7490,-117.2570,B,K,local,,
 SUNSET CLIFFS,32.7210,-117.2570,R,K,local,,
-LUSCOMBS,32.7140,-117.2590,R,K,local,,
-LADERA ST,32.7165,-117.2585,R,K,local,,
+LUSCOMBS,32.7256,-117.2582,R,V,local,nosnap checked,satélite 2026-11
+LADERA ST,32.7185,-117.2565,R,V,local,nosnap checked,satélite 2026-11
 CORONADO,32.6805,-117.1830,B,K,local,,
 IB PIER,32.5795,-117.1340,B,K,local,,
 TIJUANA SLOUGHS,32.5500,-117.1280,B,K,local,,
