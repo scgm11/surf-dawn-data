@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 COFFEE BAY,-31.9800,29.1530,B,K,local,top,
-MDUMBI,-31.9373,29.2188,,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+MDUMBI,-31.9373,29.2188,P,V,local,nosnap checked,posicion dudosa; satélite 2026-11
 SECOND BEACH,-31.6495,29.5185,B,V,local,nosnap checked,Port St Johns; satélite 2026-11
 KEI MOUTH,-32.6820,28.3830,B,K,local,,
-MORGAN BAY,-32.7115,28.3392,B,V,local,nosnap checked,satélite 2026-11
+MORGAN BAY,-32.7115,28.3392,P,V,local,nosnap checked,satélite 2026-11

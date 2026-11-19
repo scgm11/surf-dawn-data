@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-MANDIRI,-5.2495,103.9672,R,V,local,nosnap swell=205 checked,Krui; posicion aprox; satélite 2026-11
+MANDIRI,-5.2495,103.9672,B,V,local,nosnap swell=205 checked,Krui; posicion aprox; satélite 2026-11
 WAY JAMBU,-5.3491,104.0302,R,L,web:mondo.surf,swell=210,izquierda de arrecife al sur de Ujung Bocur
 UJUNG BOCUR,-5.3048,103.9919,R,K,web:mondo.surf,swell=210,The Point de Tanjung Setia

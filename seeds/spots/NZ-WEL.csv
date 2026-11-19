@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 LYALL BAY,-41.3305,174.7960,B,K,local,top,
-HOUGHTON BAY,-41.3422,174.7850,R,V,local,nosnap checked,satélite 2026-11
+HOUGHTON BAY,-41.3422,174.7850,B,V,local,nosnap checked,satélite 2026-11
 ISLAND BAY,-41.3470,174.7700,B,L,local,,
 OWHIRO BAY,-41.3470,174.7520,B,L,local,,
 MAKARA BEACH,-41.2200,174.7130,B,L,local,,

@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 NOTRE DAME MONTS,46.8350,-2.1520,B,L,local,,Notre-Dame-de-Monts; posicion aproximada
 ST JEAN DE MONTS,46.7870,-2.0841,B,V,local,nosnap wave=46.6667;-2.1667 checked,Saint-Jean-de-Monts; posicion aproximada; satélite 2026-11
 BOISVINET,46.6946,-1.9537,B,V,local,nosnap checked facing=220,Saint-Gilles-Croix-de-Vie; satélite 2026-11
-LA SAUZAIE,46.6360,-1.8933,B,V,local,nosnap checked,Bretignolles; posicion aproximada; satélite 2026-11
+LA SAUZAIE,46.6360,-1.8933,R,V,local,nosnap checked,Bretignolles; posicion aproximada; satélite 2026-11
 MARAIS GIRARD,46.6170,-1.8700,B,V,local,nosnap checked,Bretignolles; posicion aproximada; satélite 2026-11
 TANCHET,46.4803,-1.7621,B,V,local,nosnap checked,Les Sables-d'Olonne; posicion aproximada; satélite 2026-11
 BUD BUD,46.3870,-1.4939,B,V,local,nosnap checked,Longeville-sur-Mer; posicion aproximada; satélite 2026-11

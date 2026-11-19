@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-TOTORALILLO,-30.0721,-71.3764,B,V,local,nosnap checked facing=270,Coquimbo; lejos del resto; satélite 2026-11
+TOTORALILLO,-30.0721,-71.3764,P,V,local,nosnap checked facing=270,Coquimbo; lejos del resto; satélite 2026-11
 PICHIDANGUI,-32.1370,-71.5290,P,K,local,swell=245,
 LOS MOLLES,-32.2400,-71.5090,P,K,local,swell=245,
 PICHICUY,-32.3430,-71.4580,B,L,local,facing=225,

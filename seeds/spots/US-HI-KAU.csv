@@ -2,11 +2,11 @@ name,lat,lon,type,conf,src,flags,note
 HANALEI,22.2169,-159.5019,R,V,local,nosnap top swell=340 checked facing=330,Hanalei Bay; swell de invierno; satélite 2026-11
 PINETREES,22.2036,-159.5037,R,V,local,nosnap checked,Hanalei Bay; satélite 2026-11
 LUMAHAI,22.2169,-159.5310,B,V,local,nosnap checked,satélite 2026-11
-WAINIHA,22.2136,-159.5389,R,V,local,nosnap checked,satélite 2026-11
+WAINIHA,22.2136,-159.5389,B,V,local,nosnap checked,satélite 2026-11
 HAENA,22.2207,-159.5661,B,V,local,nosnap checked,Haena Beach Park; satélite 2026-11
 CANNONS,22.2248,-159.5716,R,V,local,nosnap checked,junto a Tunnels; satélite 2026-11
 TUNNELS,22.2240,-159.5590,R,K,local,top,Makua
-KALIHIWAI,22.2205,-159.4256,B,V,local,nosnap checked,satélite 2026-11
+KALIHIWAI,22.2205,-159.4256,P,V,local,nosnap checked,satélite 2026-11
 ANINI,22.2290,-159.4440,R,L,local,,
 ANAHOLA,22.1450,-159.2985,B,K,local,,
 KEALIA,22.0985,-159.3005,B,K,local,wave=22.109;-159.2165,

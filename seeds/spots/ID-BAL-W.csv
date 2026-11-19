@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 KUTA BEACH,-8.7197,115.1675,B,K,local,top,playa clasica
 KUTA REEF,-8.7317,115.1546,R,V,local,nosnap swell=195 checked,arrecife frente al aeropuerto; satélite 2026-11
-HALFWAY KUTA,-8.7153,115.1678,R,V,local,nosnap swell=195 checked,posicion aprox; satélite 2026-11
+HALFWAY KUTA,-8.7153,115.1678,B,V,local,nosnap swell=195 checked,posicion aprox; satélite 2026-11
 LEGIAN,-8.7040,115.1620,B,K,local,,
 DOUBLE SIX,-8.6945,115.1580,B,K,local,,
 SEMINYAK,-8.6860,115.1520,B,K,local,,

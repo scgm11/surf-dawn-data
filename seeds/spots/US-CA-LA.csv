@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
-LEO CARRILLO,34.0440,-118.9345,B,K,local,,
-NICHOLAS CANYON,34.0419,-118.9158,B,V,local,nosnap checked,satélite 2026-11
+LEO CARRILLO,34.0440,-118.9345,P,K,local,,
+NICHOLAS CANYON,34.0419,-118.9158,P,V,local,nosnap checked,satélite 2026-11
 LECHUZA,34.0346,-118.8615,P,V,local,nosnap checked,satélite 2026-11
-TRANCAS,34.0289,-118.8428,B,V,local,nosnap checked,satélite 2026-11
+TRANCAS,34.0289,-118.8428,P,V,local,nosnap checked,satélite 2026-11
 ZUMA,34.0150,-118.8270,B,K,local,top,
 POINT DUME,34.0010,-118.8070,P,K,local,wave=33.9192;-118.8404,
 MALIBU,34.0345,-118.6830,P,K,local,top swell=210,First Point
