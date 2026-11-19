@@ -3,9 +3,9 @@ SOULAC,45.4950,-1.1700,B,L,local,,Soulac-sur-Mer
 MONTALIVET,45.3783,-1.1598,B,V,local,nosnap checked,satélite 2026-11
 HOURTIN,45.2234,-1.1728,B,V,local,nosnap checked,Hourtin-Plage; satélite 2026-11
 CARCANS,45.1090,-1.1700,B,K,local,,Carcans-Plage
-LACANAU NORD,45.0090,-1.2010,B,K,local,,Lacanau-Ocean
-LACANAU CENTRALE,45.0018,-1.2028,B,V,geonames:11072965,top,Lacanau-Ocean; exCT; plage Centrale; posición GeoNames
-LACANAU SUD,44.9930,-1.2040,B,K,local,,Lacanau-Ocean
+LACANAU NORD,45.0090,-1.2010,B,K,local,wave=45.0;-1.3333,Lacanau-Ocean
+LACANAU CENTRALE,45.0018,-1.2028,B,V,geonames:11072965,top wave=45.0;-1.3333,Lacanau-Ocean; exCT; plage Centrale; posición GeoNames
+LACANAU SUD,44.9930,-1.2040,B,K,local,wave=45.0;-1.3333,Lacanau-Ocean
 LE PORGE,44.8870,-1.2240,B,K,local,,Le Porge-Ocean
 GRAND CROHOT,44.7380,-1.2530,B,K,local,,Cap Ferret oceano
 TRUC VERT,44.7140,-1.2560,B,K,local,,Cap Ferret
