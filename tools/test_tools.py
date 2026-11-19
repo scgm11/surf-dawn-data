@@ -146,6 +146,58 @@ class CellControl(unittest.TestCase):
         self.assertIsNone(check_spots.cell_problem(self.M, spot, None, (-34.25, -53.5), 170))
         self.assertIn("sin respuesta", check_spots.cell_problem(self.M, spot, None, None, 94))
 
+    def test_own_cell_behind(self):
+        # BOB HALL PIER (Texas) before its wave=: ECMWF WAM answered from its own cell, 4.6 km behind
+        # the beach in the Laguna Madre
+        m, spot, lagoon = "ecmwf_wam", (27.5807, -97.2203), (27.5923, -97.2646)
+        self.assertTrue(check_spots.own_behind(m, spot, None, lagoon, 115))
+        self.assertIsNone(check_spots.cell_problem(m, spot, None, lagoon, 115))              # its waves unknown
+        self.assertIn("su celda", check_spots.cell_problem(m, spot, None, lagoon, 115, (0.24, 0.94)))
+        self.assertIsNone(check_spots.cell_problem(m, spot, None, lagoon, 115, (0.85, 0.94)))   # the same sea
+        self.assertIsNone(check_spots.cell_problem(m, spot, None, lagoon, 115, (0.24, None)))
+        self.assertFalse(check_spots.own_behind(m, spot, None, lagoon, 250))                # a swell window that way
+        self.assertFalse(check_spots.own_behind(m, spot, None, (27.5810, -97.2290), 115))   # under a km: says nothing
+        self.assertFalse(check_spots.own_behind(m, spot, (27.522, -97.1556), lagoon, 115))  # it has a wave point
+
+
+class CellsWithFront(unittest.TestCase):
+    """check_cells: the own cell behind is judged by its waves against the cell in front, which is proposed."""
+    M = "ecmwf_wam"
+    ZONE = {"id": "US-X", "m": ["ecmwf_wam"], "s": [["LAGOON", 27.5807, -97.2203, 115, 1],
+                                                     ["OPEN", 27.4238, -97.2976, 112, 1]]}
+
+    def test_flagged_with_its_front(self):
+        cells = {(27.5807, -97.2203): (27.5923, -97.2646), (27.4238, -97.2976): (27.4517, -97.2483)}
+        front = (27.5221, -97.1556)
+        means = {check_spots.cell(self.M, 27.5807, -97.2203): 0.24, check_spots.cell(self.M, *front): 0.94}
+        used = {"calls": 0, "requests": 0}
+        with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
+                mock.patch.object(om, "front_point", lambda m, spot, looks: front), \
+                mock.patch.object(check_spots, "fetch_points",
+                                  lambda want, used, days=14: {k: ([means.get(k, 1.0)] * 48, []) for k in want}):
+            out = check_spots.check_cells([self.ZONE], used)
+        self.assertEqual([c["spot"] for c in out], ["LAGOON"])
+        self.assertEqual(out[0]["front"], list(front))
+        self.assertEqual((out[0]["h"], out[0]["hf"]), (0.24, 0.94))
+
+        # with no cell in front within FIX_KM, the nearest one farther judges it, and none is proposed
+        with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
+                mock.patch.object(om, "front_point", lambda m, spot, looks, max_km=om.FIX_KM:
+                                  front if max_km > om.FIX_KM else None), \
+                mock.patch.object(check_spots, "fetch_points",
+                                  lambda want, used, days=14: {k: ([means.get(k, 1.0)] * 48, []) for k in want}):
+            out = check_spots.check_cells([self.ZONE], used)
+        self.assertEqual([c["spot"] for c in out], ["LAGOON"])
+        self.assertIsNone(out[0]["front"])
+        self.assertIn("ninguna a menos de 25 km", out[0]["why"])
+
+        # Open-Meteo stops answering (the hourly limit): the rest of the report is kept
+        def refused(*a, **k):
+            raise RuntimeError("Open-Meteo unavailable")
+        with mock.patch.object(om, "cells", lambda m, pts: [cells[p] for p in pts]), \
+                mock.patch.object(om, "front_point", refused), contextlib.redirect_stderr(io.StringIO()):
+            self.assertEqual(check_spots.check_cells([self.ZONE], used), [])
+
 
 class FlagshipCutOff(unittest.TestCase):
     """A run cut off while it looks for the flagship spots keeps the rest, with the last run's."""
