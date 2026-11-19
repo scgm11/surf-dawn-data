@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-DOMBURG,51.5640,3.4860,B,K,local,,Zelanda
+DOMBURG,51.5640,3.4860,B,K,local,wave=51.75;3.5,Zelanda
 HOEK VAN HOLLAND,51.9850,4.1060,B,L,local,,posicion aproximada
 KIJKDUIN,52.0720,4.2170,B,L,local,,La Haya; posicion aproximada
 SCHEVENINGEN,52.1100,4.2650,B,K,local,,La Haya
@@ -9,4 +9,4 @@ IJMUIDEN,52.4680,4.5420,B,L,local,,junto a los espigones; posicion aproximada
 WIJK AAN ZEE,52.4950,4.5770,B,L,local,,posicion aproximada
 EGMOND,52.6190,4.6120,B,L,local,,Egmond aan Zee; posicion aproximada
 BERGEN AAN ZEE,52.6670,4.6190,B,L,local,,posicion aproximada
-TEXEL,53.0900,4.7150,B,L,local,,costa oeste; posicion aproximada
+TEXEL,53.0900,4.7150,B,L,local,wave=53.25;4.75,costa oeste; posicion aproximada

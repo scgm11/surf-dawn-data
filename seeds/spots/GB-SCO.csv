@@ -5,10 +5,10 @@ MELVICH,58.5580,-3.9190,B,L,local,,Sutherland; posicion aproximada
 SANDSIDE BAY,58.5920,-3.7750,B,L,local,,Reay; posicion aproximada
 BRIMS NESS,58.6227,-3.6518,R,V,wd:Q24654399,top,Caithness; ola grande; posición de Wikidata
 THURSO EAST,58.6009,-3.5098,R,V,web:wikipedia.org,nosnap top checked,WC; ola de arrecife; satélite 2026-11
-DUNNET BAY,58.6140,-3.3530,B,K,local,,Caithness
+DUNNET BAY,58.6140,-3.3530,B,K,local,wave=58.75;-3.5,Caithness
 EOROPIE,58.5050,-6.2420,B,L,local,,Lewis; posicion aproximada
-LUSKENTYRE,57.8650,-6.9940,B,L,local,,Harris; posicion aproximada
-SCARISTA,57.8630,-7.0330,B,L,local,,Harris; posicion aproximada
+LUSKENTYRE,57.8650,-6.9940,B,L,local,wave=58;-7.25,Harris; posicion aproximada
+SCARISTA,57.8630,-7.0330,B,L,local,wave=58;-7.25,Harris; posicion aproximada
 MACHIR BAY,55.7940,-6.4490,B,K,local,,Islay
 GOTT BAY,56.5190,-6.8000,B,L,local,,Tiree; posicion aproximada
 LOSSIEMOUTH,57.7250,-3.2740,B,L,local,,Moray; posicion aproximada

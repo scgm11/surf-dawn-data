@@ -13,7 +13,7 @@ TRABA,43.2480,-8.9890,B,L,local,,Laxe; posicion aproximada
 LAXE,43.2191,-9.0022,B,V,osm:way/651998067,nosnap facing=60,Praia de Laxe; dentro de la ría y abrigada: anda con el NO grande
 NEMIÑA,43.0600,-9.2700,B,L,local,,Muxia; posicion aproximada
 MAR DE FORA,42.9094,-9.2748,B,V,local,nosnap checked,Fisterra; posicion aproximada; satélite 2026-11
-A LANZADA,42.4600,-8.8880,B,K,local,,Sanxenxo
-MONTALVO,42.4160,-8.8860,B,L,local,,Sanxenxo; posicion aproximada
+A LANZADA,42.4600,-8.8880,B,K,local,wave=42.3333;-9,Sanxenxo
+MONTALVO,42.4160,-8.8860,B,L,local,wave=42.3333;-9,Sanxenxo; posicion aproximada
 AMERICA,42.1300,-8.8130,B,L,local,,Nigran; posicion aproximada
 PATOS,42.1554,-8.8237,B,V,local,nosnap checked facing=285,Nigran; posicion aproximada; satélite 2026-11

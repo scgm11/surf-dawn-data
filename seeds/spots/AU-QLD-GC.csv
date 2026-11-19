@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
-SNAPPER ROCKS,-28.1625,153.5490,P,K,local,top swell=125,CT26; Superbank sur
-RAINBOW BAY,-28.1637,153.5474,P,V,local,nosnap top swell=125 checked,Superbank; satélite 2026-11
-GREENMOUNT,-28.1649,153.5437,P,V,local,nosnap top swell=125 checked,Superbank; satélite 2026-11
+SNAPPER ROCKS,-28.1625,153.5490,P,K,local,top swell=125 wave=-28.25;153.75,CT26; Superbank sur
+RAINBOW BAY,-28.1637,153.5474,P,V,local,nosnap top swell=125 checked wave=-28.25;153.75,Superbank; satélite 2026-11
+GREENMOUNT,-28.1649,153.5437,P,V,local,nosnap top swell=125 checked wave=-28.25;153.75,Superbank; satélite 2026-11
 COOLANGATTA,-28.1651,153.5376,B,V,local,nosnap checked,Superbank; satélite 2026-11
-KIRRA,-28.1654,153.5355,P,V,local,nosnap top swell=125 checked,Superbank norte; ola clase mundial; satélite 2026-11
-DURANBAH,-28.1673,153.5530,B,V,local,nosnap top checked,D-Bah; Tweed Heads NSW; satélite 2026-11
+KIRRA,-28.1654,153.5355,P,V,local,nosnap top swell=125 checked wave=-28.25;153.75,Superbank norte; ola clase mundial; satélite 2026-11
+DURANBAH,-28.1673,153.5530,B,V,local,nosnap top checked wave=-28.25;153.75,D-Bah; Tweed Heads NSW; satélite 2026-11
 BILINGA,-28.1538,153.5076,B,V,local,nosnap checked,satélite 2026-11
 TUGUN,-28.1417,153.4967,B,V,local,nosnap checked,satélite 2026-11
 CURRUMBIN ALLEY,-28.1249,153.4864,P,V,local,nosnap checked,Currumbin Creek; satélite 2026-11

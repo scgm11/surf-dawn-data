@@ -47,7 +47,8 @@ PIPELINE,21.6650,-158.0520,R,V,web:hawaii-gis,top,WSL CT
   que llegue a `-34;-53.5`). La Brava de Punta del Este, de La Virgen a Parada 30, lee `-35;-54.75` desde el
   2026-11-07: su celda más cercana (`-35;-55`) queda del otro lado de la Punta y partía la playa en dos entre
   Parada 30 y La Boca. Un `wave=` se pone a una celda de la que la API contesta (sección «Celdas de olas»
-  de `validation/spots.md`). Una región nueva que se congela va
+  de `validation/spots.md`, cuya columna «Enfrente» propone una; `tools/check_spots.py --cells` la arma
+  sin la revisión entera). Una región nueva que se congela va
   también en `FROZEN` de `tools/build_zones.py`, `tools/resolve_seeds.py` y `tools/tide/build_tides.py`.
 - Un código de región no se borra ni se cambia (`docs/formatos.md`, «Cuando cambia una región»). Al partir
   una región, el código viejo se queda con los picos que cambian de celda o de escala, y los que quedan
