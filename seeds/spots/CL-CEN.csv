@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
-TOTORALILLO,-30.0920,-71.3600,B,L,local,,Coquimbo; lejos del resto
+TOTORALILLO,-30.0721,-71.3764,B,V,local,nosnap checked facing=270,Coquimbo; lejos del resto; satélite 2026-11
 PICHIDANGUI,-32.1370,-71.5290,P,K,local,swell=245,
 LOS MOLLES,-32.2400,-71.5090,P,K,local,swell=245,
 PICHICUY,-32.3430,-71.4580,B,L,local,facing=225,
 PAPUDO,-32.5090,-71.4500,B,K,local,,
-CACHAGUA,-32.5810,-71.4620,B,K,local,,
+CACHAGUA,-32.5913,-71.4425,B,V,local,nosnap checked,satélite 2026-11
 MAITENCILLO,-32.6444,-71.4349,B,V,local,nosnap top checked,satélite 2026-11
 HORCÓN,-32.7149,-71.4820,B,V,local,nosnap facing=330 checked,satélite 2026-11
 RITOQUE,-32.8200,-71.5160,B,K,local,,
@@ -13,7 +13,7 @@ AMARILLA,-32.9229,-71.5246,B,V,local,nosnap checked,Concón; satélite 2026-11
 COCHOA,-32.9555,-71.5476,B,V,local,nosnap checked,Viña del Mar; satélite 2026-11
 REÑACA,-32.9636,-71.5473,B,V,local,nosnap top checked,satélite 2026-11
 LAS SALINAS,-32.9901,-71.5474,B,V,local,nosnap checked,Viña del Mar; satélite 2026-11
-TUNQUÉN,-33.2290,-71.6950,B,L,local,,
+TUNQUÉN,-33.2870,-71.6579,B,V,local,nosnap checked,satélite 2026-11
 ALGARROBO,-33.3600,-71.6700,B,K,local,,
 EL QUISCO,-33.3904,-71.6940,B,V,local,nosnap facing=335 checked,satélite 2026-11
 PUNTA DE TRALCA,-33.4260,-71.7060,P,K,local,,

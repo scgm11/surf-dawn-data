@@ -8,7 +8,7 @@ AYAMPE,-1.6800,-80.8030,P,K,local,,
 OLÓN,-1.8000,-80.7480,B,K,local,,
 MONTAÑITA,-1.8192,-80.7601,P,V,web:wikipedia.org,nosnap top checked,pueblo chequeado; la punta está a unos 300 m; satélite 2026-11
 BALLENITA,-2.2020,-80.8770,B,L,local,,
-PUNTA CARNERO,-2.2380,-80.9100,P,K,local,swell=240,Salinas
+PUNTA CARNERO,-2.2905,-80.9153,P,V,local,nosnap swell=240 checked,Salinas; satélite 2026-11
 LA CHOCOLATERA,-2.1900,-81.0100,R,K,local,top,Salinas
-ENGABAO,-2.5729,-80.4887,B,K,osm:node/372688302,,Playas; posición OSM
+ENGABAO,-2.5602,-80.5097,B,V,osm:node/372688302,nosnap checked,Playas; posición OSM; satélite 2026-11
 PLAYAS,-2.6310,-80.3870,B,L,local,,General Villamil

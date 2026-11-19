@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 PIE DE LA CUESTA,16.9120,-99.9990,B,L,local,,Acapulco; posición aproximada
-REVOLCADERO,16.7730,-99.8010,B,V,osm:relation/12204231,,Acapulco Diamante
-BARRA DE POTOSI,17.5150,-101.4800,B,K,local,,Petatlán
+REVOLCADERO,16.7892,-99.8190,B,V,osm:relation/12204231,nosnap checked,Acapulco Diamante; satélite 2026-11
+BARRA DE POTOSI,17.5377,-101.4438,B,V,local,nosnap checked,Petatlán; satélite 2026-11
 TRONCONES,17.7941,-101.7477,P,V,local,nosnap top checked,derecha; satélite 2026-11
 LA SALADITA,17.8363,-101.7706,P,V,local,nosnap top checked,derecha larga de arena y roca; satélite 2026-11
 NEXPA,18.0790,-102.7920,P,K,local,top,Barra de Nexpa; derecha
@@ -10,4 +10,4 @@ FARO DE BUCERIAS,18.3300,-103.4500,P,L,local,,Michoacán; posición aproximada
 LA TICLA,18.4500,-103.5600,P,K,local,top,Michoacán; derecha
 PASCUALES,18.8560,-103.9615,B,K,web:zonaturistica,top,Boca de Pascuales; tubular; ola grande
 CUYUTLAN,18.9160,-104.0640,B,L,local,,Colima; posición aproximada
-MIRAMAR,19.1010,-104.3650,B,K,local,,Manzanillo
+MIRAMAR,19.1182,-104.3867,B,V,local,nosnap checked,Manzanillo; satélite 2026-11

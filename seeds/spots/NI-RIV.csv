@@ -1,9 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
-GUASACATE,11.4790,-86.1380,B,L,local,,Popoyo norte; posición aproximada
-COLORADO,11.4700,-86.1330,R,K,local,,Popoyo
+GUASACATE,11.4687,-86.1219,B,V,local,nosnap checked,Popoyo norte; posición aproximada; satélite 2026-11
+COLORADO,11.4063,-86.0502,R,V,local,nosnap checked,Popoyo; satélite 2026-11
 POPOYO,11.4590,-86.1112,R,V,local,nosnap top checked,ola de arrecife frente a la playa; satélite 2026-11
 SANTANA,11.4430,-86.1060,P,K,local,,Rancho Santana; derecha
 MADERAS,11.2927,-85.9097,B,V,local,nosnap top checked,San Juan del Sur norte; satélite 2026-11
 MARSELLA,11.2848,-85.9034,B,V,local,nosnap checked,San Juan del Sur norte; posición aproximada; satélite 2026-11
-HERMOSA,11.2420,-85.8830,B,L,local,,San Juan del Sur sur; posición aproximada
-YANKEE,11.2330,-85.8780,B,L,local,,San Juan del Sur sur; posición aproximada
+HERMOSA,11.2040,-85.8345,B,V,local,nosnap checked,San Juan del Sur sur; posición aproximada; satélite 2026-11
+YANKEE,11.1814,-85.8165,B,V,local,nosnap checked,San Juan del Sur sur; posición aproximada; satélite 2026-11

@@ -4,14 +4,14 @@ MAR DEL TUYÚ,-36.5800,-56.6900,B,K,local,,
 SANTA TERESITA,-36.5430,-56.6970,B,K,local,,
 SAN BERNARDO,-36.6900,-56.6900,B,K,local,,
 MAR DE AJÓ,-36.7200,-56.6800,B,K,local,,
-COSTA DEL ESTE,-36.7900,-56.6850,B,K,local,,
+COSTA DEL ESTE,-36.6117,-56.6845,B,V,local,nosnap checked,satélite 2026-11
 PINAMAR,-37.1100,-56.8600,B,K,local,wave=-37.25;-56.75,
 OSTENDE,-37.1300,-56.8740,B,K,local,wave=-37.25;-56.75,
 CARILÓ,-37.1700,-56.9010,B,K,local,wave=-37.25;-56.75,
-VALERIA DEL MAR,-37.1990,-56.9200,B,K,local,wave=-37.25;-56.75,
-LAS GAVIOTAS,-37.2300,-56.9480,B,K,local,wave=-37.25;-56.75,
+VALERIA DEL MAR,-37.1460,-56.8761,B,V,local,nosnap wave=-37.25;-56.75 checked,satélite 2026-11
+LAS GAVIOTAS,-37.3366,-57.0223,B,V,local,nosnap wave=-37.25;-56.75 checked,satélite 2026-11
 GESELL NORTE,-37.2450,-56.9560,B,K,local,wave=-37.25;-56.75,Villa Gesell norte
 VILLA GESELL,-37.2640,-56.9680,B,K,local,wave=-37.25;-56.75,muelle y Paseo 101
 GESELL SUR,-37.2850,-56.9820,B,K,local,,
 MAR DE LAS PAMPAS,-37.3250,-57.0060,B,K,local,,
-MAR AZUL,-37.3380,-57.0200,B,K,local,,
+MAR AZUL,-37.3451,-57.0276,B,V,local,nosnap checked,satélite 2026-11

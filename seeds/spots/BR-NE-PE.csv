@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 BOA VIAGEM,-8.1200,-34.8960,B,K,local,,Recife
 PIEDADE,-8.1700,-34.9100,B,K,local,,Jaboatão
-CANDEIAS,-8.1800,-34.9150,B,L,local,,Jaboatão
+CANDEIAS,-8.1962,-34.9173,B,V,local,nosnap checked,Jaboatão; satélite 2026-11
 PAIVA,-8.2200,-34.9300,B,L,local,,
 CALHETAS,-8.3448,-34.9441,B,V,local,nosnap checked,Cabo de Santo Agostinho; satélite 2026-11
 GAIBU,-8.3416,-34.9492,B,V,local,nosnap checked,satélite 2026-11
