@@ -2,4 +2,4 @@ name,lat,lon,type,conf,src,flags,note
 URBIZTONDO,16.6583,120.3209,B,V,local,nosnap top checked,San Juan; playa; satélite 2026-11
 MONALIZA POINT,16.6640,120.3220,R,L,local,,posicion aprox
 SABANG,15.7650,121.5740,B,K,local,top,Baler; playa
-CHARLIE'S POINT,15.7680,121.5780,R,L,local,,Baler; posicion aprox
+CHARLIE'S POINT,15.7901,121.5578,R,V,local,nosnap checked,Baler; posicion aprox; satélite 2026-11

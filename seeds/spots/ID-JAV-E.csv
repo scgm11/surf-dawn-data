@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
-MONEY TREES,-8.7318,114.3421,R,V,web:indonesiansurfguide.com,top swell=205,G-Land; WC exCT; izquierda larga
-LAUNCHING PADS,-8.7075,114.3745,R,K,local,swell=205,G-Land; seccion interior
-KONGS,-8.7150,114.3645,R,L,local,swell=205,G-Land; seccion exterior
-SPEEDIES,-8.7210,114.3560,R,L,local,swell=205,G-Land; posicion aprox
-TIGER TRACKS,-8.7240,114.3500,R,L,local,swell=205,G-Land; posicion aprox
+MONEY TREES,-8.7319,114.3418,R,V,web:indonesiansurfguide.com,nosnap top swell=205 checked facing=230,G-Land; WC exCT; izquierda larga; satélite 2026-11
+LAUNCHING PADS,-8.7298,114.3443,R,V,local,nosnap swell=205 checked facing=230,G-Land; seccion interior; satélite 2026-11
+KONGS,-8.7346,114.3387,R,K,local,nosnap swell=205 checked,G-Land; seccion exterior; satélite 2026-11
+SPEEDIES,-8.7283,114.3465,R,V,local,nosnap swell=205 checked facing=230,G-Land; posicion aprox; satélite 2026-11
+TIGER TRACKS,-8.6907,114.3730,R,K,local,nosnap swell=205 checked,G-Land; posicion aprox; satélite 2026-11
 PULAU MERAH,-8.6050,114.0170,B,L,local,,Red Island; playa y punta
 TELENG RIA,-8.2180,111.0950,B,L,local,,Pacitan; posicion aprox

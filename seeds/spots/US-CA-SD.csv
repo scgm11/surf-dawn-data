@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 OCEANSIDE HARBOR,33.2090,-117.3975,B,K,local,,jetty
 OCEANSIDE PIER,33.1942,-117.3852,B,V,local,nosnap top checked,satélite 2026-11
 SOUTH O,33.1730,-117.3659,B,V,local,nosnap checked,satélite 2026-11
-BUCCANEER,33.1825,-117.3865,B,K,local,,
+BUCCANEER,33.1766,-117.3693,B,V,local,nosnap checked,satélite 2026-11
 TAMARACK,33.1580,-117.3560,B,K,local,,Carlsbad
 WARM WATER JETTY,33.1400,-117.3490,B,K,local,,Carlsbad
 TERRAMAR,33.1230,-117.3400,B,K,local,,Carlsbad
