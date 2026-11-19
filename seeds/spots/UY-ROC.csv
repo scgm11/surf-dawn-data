@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 LAGUNA DE ROCHA,-34.6852,-54.2813,B,V,local,nosnap facing=153,rompe en la boca de la laguna (el usuario). Satélite 2026-11-18: estaba 1400 m al ENE frente al caserío de la barra
-LA SERENA,-34.6621,-54.2041,B,K,osm:relation/19009852,nosnap facing=168,La Paloma; frente a La Serena
+LA SERENA,-34.6611,-54.2012,B,V,local,nosnap facing=168 checked,"La Paloma; playa La Serena (Turismo Rocha), 200 m al O de la última torre de guardavidas; satélite 2026-11: estaba 290 m al O"
 CORUMBÁ,-34.6609,-54.1964,B,K,osm:node/11575255863,nosnap facing=173,La Paloma; frente a la Posada del Corumbá; 400 m al oeste de ANACONDA
 ANACONDA,-34.6606,-54.192,B,V,local,nosnap facing=176,v1 (spots.json 2026-10)
 ZANJA HONDA,-34.6618,-54.1819,B,V,local,nosnap facing=190,v1 (spots.json 2026-10); SOLARI hasta 2026-11-16: la ola de Playa Solari se llama Zanja Honda
