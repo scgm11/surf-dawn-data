@@ -1,4 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
 ONE EYE,-20.4672,57.3024,R,K,local,nosnap checked,Le Morne; izquierda; satélite 2026-11
 TAMARIN BAY,-20.3291,57.3711,P,V,local,nosnap swell=210 checked,izquierda; satélite 2026-11
-RIAMBEL,-20.5240,57.4850,,L,local,,sur; posicion dudosa
