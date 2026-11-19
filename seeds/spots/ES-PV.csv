@@ -7,7 +7,7 @@ GAZTETAPE,43.3042,-2.2062,B,V,local,nosnap checked facing=335,Getaria; posicion 
 SANTIAGO,43.3031,-2.2464,B,V,local,nosnap checked facing=0,Zumaia; posicion aproximada; satélite 2026-11
 ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
 DEBA,43.2993,-2.3526,B,V,local,nosnap facing=10 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
-SATURRARAN,43.3219,-2.4109,B,V,local,nosnap checked facing=320,Mutriku; satélite 2026-11
+SATURRARAN,43.3219,-2.4109,B,V,local,nosnap checked facing=320 wave=43.5;-2.3333,Mutriku; satélite 2026-11
 KARRASPIO,43.3628,-2.4945,B,K,osm:way/652032389,,"Mendexa, frente a San Nicolas; posición OSM"
 EA,43.3780,-2.5890,B,L,local,,posicion aproximada
 LAGA,43.4106,-2.6584,B,V,local,nosnap checked,Ibarrangelu; posicion aproximada; satélite 2026-11
