@@ -3,7 +3,7 @@ PLAYA VERDE,-34.8341,-55.3126,B,V,osm:relation/17163908,nosnap facing=246,Piriá
 PLAYA GRANDE,-34.8550,-55.2992,B,V,osm:relation/2457885,nosnap facing=199,Piriápolis
 SAN FRANCISCO,-34.8887,-55.2758,B,V,local,nosnap facing=181,Piriápolis; punta oeste junto a Punta Fría (pin del usuario 2026-11-17)
 EL PEWE,-34.8908,-55.2671,B,V,local,nosnap facing=199,medio de San Francisco; tapado del viento E (pin del usuario 2026-11-17)
-LA FAROLETA,-34.9020,-55.2615,P,K,web:guiadesurfuruguay,nosnap facing=255 swell=158,izquierda en la punta de Punta Colorada; lado oeste
+LA FAROLETA,-34.9052,-55.2614,P,V,local,nosnap facing=255 swell=158 checked,"izquierda en la punta de Punta Colorada, junto a la luz (la faroleta); Lineup y guía de surf 2012; satélite 2026-11: estaba 350 m al N en el lado oeste"
 EL CUADRADO,-34.9011,-55.2526,B,V,local,nosnap facing=162,playa de Punta Colorada (pin del usuario 2026-11-17)
 PUNTA COLORADA,-34.9008,-55.2477,B,V,osm:relation/2503563,nosnap facing=176,playa al este de la punta
 EL RINCÓN,-34.9014,-55.2406,B,V,local,nosnap facing=215,punta este de la playa de Punta Colorada contra Punta Negra (pin del usuario 2026-11-17)
