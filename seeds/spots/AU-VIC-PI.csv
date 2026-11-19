@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
-SUMMERLAND,-38.5133,145.1509,B,V,local,nosnap facing=210 checked,Phillip Island; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+SUMMERLAND,-38.5133,145.1509,R,V,local,nosnap facing=210 checked,Phillip Island; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 KITTY MILLER BAY,-38.5095,145.1704,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
 FLYNNS BEACH,-38.4968,145.1488,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
-FOREST CAVES,-38.5183,145.3062,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
+FORREST CAVES,-38.5183,145.3062,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
 SMITHS BEACH,-38.5049,145.2553,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
 SURFIES POINT,-38.5115,145.2805,P,K,local,top,Phillip Island
 SUNSET STRIP,-38.5240,145.2960,B,L,local,,Phillip Island
-SUNDERLAND BAY,-38.5053,145.2722,B,V,local,nosnap checked,Phillip Island; satélite 2026-11
+SUNDERLAND BAY,-38.5053,145.2722,R,V,local,nosnap checked,Phillip Island; satélite 2026-11
 WOOLAMAI,-38.5510,145.3390,B,K,local,top,Cape Woolamai
 PORTSEA BACK BEACH,-38.3367,144.7072,B,V,local,nosnap checked wave=-38.5;144.75,satélite 2026-11
 SORRENTO BACK,-38.3461,144.7274,B,V,local,nosnap wave=-38.5;144.75 checked,satélite 2026-11
@@ -15,5 +15,5 @@ RYE BACK BEACH,-38.4178,144.8219,B,V,local,nosnap checked,satélite 2026-11
 ST ANDREWS BEACH,-38.4319,144.8411,B,V,local,nosnap checked,satélite 2026-11
 GUNNAMATTA,-38.4493,144.8579,B,V,web:mondo.surf,top checked,
 FINGAL BEACH,-38.4800,144.8700,B,L,local,,
-CAPE SCHANCK,-38.4940,144.8820,B,L,local,,
+CAPE SCHANCK,-38.4940,144.8820,R,L,local,,
 FLINDERS,-38.4890,145.0130,B,L,local,,Back Beach

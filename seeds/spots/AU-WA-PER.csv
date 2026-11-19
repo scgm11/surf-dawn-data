@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 TWO ROCKS,-31.4960,115.5880,B,L,local,,
 YANCHEP,-31.5480,115.6300,B,L,local,,
 QUINNS ROCKS,-31.6700,115.6790,B,L,local,,
-MINDARIE,-31.6951,115.7019,R,V,local,nosnap facing=260 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
+CLAYTONS,-31.6951,115.7019,R,V,local,nosnap facing=260 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 BURNS BEACH,-31.7304,115.7187,B,V,local,nosnap checked,satélite 2026-11
 OCEAN REEF,-31.7620,115.7220,R,L,local,,
 MULLALOO,-31.7856,115.7331,B,V,local,nosnap checked,satélite 2026-11
