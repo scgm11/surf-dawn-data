@@ -1,9 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
-UMDLOTI,-29.6510,31.1260,B,K,local,,
+UMDLOTI,-29.6673,31.1218,B,V,local,nosnap checked,satélite 2026-11
 UMHLANGA,-29.7250,31.0925,B,K,local,,
-NORTH BEACH,-29.8545,31.0495,B,K,local,,Durban centro
-BAY OF PLENTY,-29.8605,31.0490,B,K,local,,Durban centro
+NORTH BEACH,-29.8494,31.0388,B,V,local,nosnap checked,Durban centro; satélite 2026-11
+BAY OF PLENTY,-29.8461,31.0381,B,V,local,nosnap checked,Durban centro; satélite 2026-11
 NEW PIER,-29.8529,31.0408,B,V,osm:way/24825445,top,Durban centro; posición OSM
 CAVE ROCK,-29.9316,31.0139,R,V,wd:Q31511084,nosnap top checked,derecha tubular; Bluff; la punta Cave Rock; posición Wikidata; satélite 2026-11
-BRIGHTON BEACH,-29.9480,31.0185,B,L,local,,Bluff sur
-ISIPINGO,-29.9930,30.9530,B,K,local,,
+BRIGHTON BEACH,-29.9340,31.0125,B,V,local,nosnap checked,Bluff sur; satélite 2026-11
+ISIPINGO,-30.0035,30.9429,B,V,local,nosnap checked,satélite 2026-11
