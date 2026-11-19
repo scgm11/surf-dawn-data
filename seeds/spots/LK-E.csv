@@ -1,7 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 ARUGAM BAY,6.8445,81.8385,P,K,local,top swell=185,WC; derecha de punta
 BABY POINT,6.8405,81.8365,P,V,local,nosnap checked,principiantes; posicion aprox; satélite 2026-11
-ELEPHANT ROCK,6.8620,81.8460,R,L,local,,posicion aprox
 POTTUVIL POINT,6.8983,81.8477,P,V,local,nosnap checked,posicion aprox; satélite 2026-11
 WHISKEY POINT,6.9054,81.8450,P,V,web:mondo.surf,top,Urani
 PEANUT FARM,6.7826,81.8223,R,V,local,nosnap top checked,posicion dudosa; satélite 2026-11

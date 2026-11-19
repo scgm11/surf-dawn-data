@@ -6,7 +6,7 @@ PICHICUY,-32.3430,-71.4580,B,L,local,facing=225,
 PAPUDO,-32.5090,-71.4500,B,K,local,,
 CACHAGUA,-32.5810,-71.4620,B,K,local,,
 MAITENCILLO,-32.6444,-71.4349,B,V,local,nosnap top checked,satélite 2026-11
-HORCÓN,-32.7110,-71.4890,B,L,local,facing=330,
+HORCÓN,-32.7149,-71.4820,B,V,local,nosnap facing=330 checked,satélite 2026-11
 RITOQUE,-32.8200,-71.5160,B,K,local,,
 LA BOCA,-32.9188,-71.5116,B,V,local,nosnap checked,Concón; satélite 2026-11
 AMARILLA,-32.9229,-71.5246,B,V,local,nosnap checked,Concón; satélite 2026-11
@@ -15,7 +15,7 @@ REÑACA,-32.9636,-71.5473,B,V,local,nosnap top checked,satélite 2026-11
 LAS SALINAS,-32.9901,-71.5474,B,V,local,nosnap checked,Viña del Mar; satélite 2026-11
 TUNQUÉN,-33.2290,-71.6950,B,L,local,,
 ALGARROBO,-33.3600,-71.6700,B,K,local,,
-EL QUISCO,-33.3950,-71.7000,B,K,local,facing=335,
+EL QUISCO,-33.3904,-71.6940,B,V,local,nosnap facing=335 checked,satélite 2026-11
 PUNTA DE TRALCA,-33.4260,-71.7060,P,K,local,,
 LAS CRUCES,-33.4900,-71.6270,B,K,local,,
 CARTAGENA,-33.5530,-71.6050,B,K,local,,
