@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
 KERAMAS,-8.5985,115.3395,R,K,local,top,exCT; derecha de arrecife
-PURNAMA,-8.6070,115.3250,B,L,local,,posicion aprox
-SABA,-8.5900,115.3600,B,L,local,,posicion aprox
-MASCETI,-8.6160,115.3000,B,L,local,,posicion aprox
-LEBIH,-8.6250,115.2850,B,L,local,,posicion aprox
-PADANG GALAK,-8.6330,115.2740,B,L,local,,
+PURNAMA,-8.6195,115.3090,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+SABA,-8.6101,115.3228,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+MASCETI,-8.5943,115.3466,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+LEBIH,-8.5811,115.3556,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+PADANG GALAK,-8.6560,115.2676,B,V,local,nosnap checked,satélite 2026-11
 SANUR REEF,-8.6777,115.2674,R,V,local,nosnap top swell=195 checked wave=-8.8333;115.3333,arrecife a ~1 km de la costa; satélite 2026-11
 MERTASARI,-8.7230,115.2570,R,L,local,swell=195 wave=-8.8333;115.3333,posicion aprox
 SERANGAN,-8.7435,115.2423,R,V,local,nosnap wave=-8.8333;115.3333 checked,isla Serangan; satélite 2026-11

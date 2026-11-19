@@ -1,15 +1,14 @@
 name,lat,lon,type,conf,src,flags,note
 DESERT POINT,-8.7265,115.8405,R,V,osm:way/292730630,nosnap top swell=205 checked,WC; izquierda tubular de Bangko Bangko; posición OSM; satélite 2026-11
-BLONGAS,-8.8710,115.9590,R,L,local,,Sekotong; posicion dudosa
-SELONG BELANAK,-8.8900,116.1500,B,L,local,,posicion aprox
-BUMBANG,-8.8950,116.1050,R,L,local,,posicion dudosa
-MAWI,-8.9110,116.2175,R,L,local,facing=190,derecha
-MAWUN,-8.9060,116.2450,B,L,local,,
-KUTA LOMBOK,-8.8970,116.2710,B,L,local,facing=140,
+BLONGAS,-8.8836,116.0485,R,V,local,nosnap checked,Sekotong; posicion dudosa; satélite 2026-11
+SELONG BELANAK,-8.8728,116.1612,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+MAWI,-8.8868,116.1595,R,V,local,nosnap checked facing=220,derecha; satélite 2026-11
+MAWUN,-8.9034,116.2337,B,V,local,nosnap checked,satélite 2026-11
+KUTA LOMBOK,-8.9053,116.2850,B,V,local,nosnap facing=140 checked,satélite 2026-11
 SEGER,-8.9091,116.2957,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
-TANJUNG AAN,-8.9110,116.3090,B,L,local,,
+TANJUNG AAN,-8.9081,116.3267,B,V,local,nosnap checked,satélite 2026-11
 GERUPUK,-8.9136,116.3654,R,V,local,nosnap top swell=210 checked,bahia; seccion interior; satélite 2026-11
 OUTSIDE GERUPUK,-8.9390,116.3450,R,L,local,,seccion exterior de la bahia
 DON DON,-8.9117,116.3549,R,V,local,nosnap facing=205 checked,posicion dudosa; satélite 2026-11
 KIDS CORNER,-8.9145,116.3550,R,L,local,,principiantes
-EKAS,-8.9100,116.4400,R,L,local,,bahia de Ekas; posicion dudosa
+EKAS,-8.9023,116.4411,R,V,local,nosnap checked facing=200,bahia de Ekas; posicion dudosa; satélite 2026-11

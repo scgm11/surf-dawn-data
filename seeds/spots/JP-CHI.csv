@@ -1,9 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 TSURIGASAKI,35.3359,140.3946,B,V,wd:Q55524061,top,Juegos Olimpicos 2020; posición de Wikidata
-SHIDASHITA,35.3530,140.3860,B,L,local,,Ichinomiya; posicion aprox
 ICHINOMIYA,35.3700,140.3900,B,L,local,,posicion aprox
-HASUNUMA,35.5660,140.4520,B,L,local,,Kujukuri; posicion aprox
+HASUNUMA,35.5919,140.5135,B,V,local,nosnap checked,Kujukuri; posicion aprox; satélite 2026-11
 KATAKAI,35.5275,140.4533,B,V,local,nosnap checked,Kujukuri; posicion aprox; satélite 2026-11
-OHARA,35.2440,140.3920,B,L,local,,Isumi; posicion aprox
+OHARA,35.2616,140.4007,B,V,local,nosnap checked,Isumi; posicion aprox; satélite 2026-11
 ONJUKU,35.1817,140.3519,B,V,osm:node/12709872676,top,
 KAMOGAWA,35.1100,140.1050,B,L,local,,Matsubara; posicion aprox

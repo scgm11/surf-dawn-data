@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 BATU KARAS,-7.7492,108.5026,P,V,local,nosnap top swell=190 checked facing=240,derecha de punta; satélite 2026-11
-PANGANDARAN,-7.7040,108.6420,B,L,local,,playa oeste
-CIMAJA,-7.0470,106.5190,P,L,local,swell=205,derecha de punta; Pelabuhan Ratu
-KARANG HAWU,-7.0630,106.5080,R,L,local,swell=205,Pelabuhan Ratu; posicion aprox
-OMBAK TUJUH,-7.3500,106.4120,R,L,local,,Ujung Genteng; posicion aprox
+PANGANDARAN,-7.6998,108.6554,B,V,local,nosnap checked facing=220,playa oeste; satélite 2026-11
+CIMAJA,-6.9630,106.4800,P,V,local,nosnap swell=205 checked facing=200,derecha de punta; Pelabuhan Ratu; satélite 2026-11
+KARANG HAWU,-6.9549,106.4528,R,V,local,nosnap swell=205 checked,Pelabuhan Ratu; posicion aprox; satélite 2026-11
+OMBAK TUJUH,-7.2767,106.3714,R,V,local,nosnap checked,Ujung Genteng; posicion aprox; satélite 2026-11
 SAWARNA,-6.9923,106.3060,B,V,local,nosnap checked,Banten; posicion aprox; satélite 2026-11
 MADASARI,-7.7853,108.4908,B,K,osm:way/703258203,,"Masawah, Cimerak; posición OSM"
