@@ -18,4 +18,4 @@ KALK BAY REEF,-34.1300,18.4535,R,K,local,swell=215,frente al puerto
 MUIZENBERG,-34.1090,18.4700,B,K,local,top,Surfers Corner
 FISH HOEK,-34.1370,18.4340,B,K,local,,
 KOGEL BAY,-34.2570,18.8250,B,L,local,,False Bay este
-ROOI-ELS,-34.2975,18.8160,P,L,local,swell=210,False Bay este
+ROOI-ELS,-34.2975,18.8160,P,L,local,swell=210 wave=-34.5;18.75,False Bay este

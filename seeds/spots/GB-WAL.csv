@@ -5,7 +5,7 @@ HELLS MOUTH,52.8120,-4.5330,B,L,local,,Porth Neigwl; Llyn; posicion aproximada
 PORTH CEIRIAD,52.7970,-4.4650,B,L,local,,Llyn; posicion aproximada
 ABERYSTWYTH,52.4130,-4.0900,B,L,local,,posicion aproximada
 POPPIT SANDS,52.1180,-4.6960,B,L,local,,posicion aproximada
-WHITESANDS,51.8990,-5.3010,B,K,local,,St Davids
+WHITESANDS,51.8990,-5.3010,B,K,local,wave=51.75;-5.5,St Davids
 NEWGALE,51.8130,-5.1230,B,K,local,,
 FRESHWATER WEST,51.6561,-5.0627,B,V,local,nosnap top checked,satélite 2026-11
 BROAD HAVEN SOUTH,51.6090,-4.9207,B,K,osm:way/1493746576,,Bosherston; posición OSM

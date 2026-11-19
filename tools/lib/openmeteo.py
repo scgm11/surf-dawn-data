@@ -32,13 +32,70 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.normpath(os.path.join(HERE, "..", ".cache"))
 MARINE = "https://marine-api.open-meteo.com/v1/marine"
 BATCH = 50
-STEP = {                                         # grid spacing in degrees (lat, lon)
+STEP = {                                         # grid spacing in degrees (lat, lon) of the regular grids
     "ncep_gfswave025": (0.25, 0.25), "ncep_gfswave016": (1 / 6, 1 / 6), "meteofrance_wave": (1 / 12, 1 / 12),
-    "ecmwf_wam025": (0.25, 0.25), "ecmwf_wam": (0.1, 0.1), "dwd_gwam": (0.25, 0.25), "dwd_ewam": (0.05, 0.1),
+    "ecmwf_wam025": (0.25, 0.25), "dwd_gwam": (0.25, 0.25), "dwd_ewam": (0.05, 0.1),
 }
+# Octahedral reduced Gaussian grids (O<N>: 2N rows, the k-th from a pole with 20 + 4 (k - 1) points
+# from 0° of longitude). ECMWF WAM is O1280 (measured 2026-11: rows at 27.0299, 27.1002, 27.1705...,
+# 0.07° of longitude at the equator, 0.10° at 27°, 0.127° at 40.5°, 0.165° at 52°), not the 0.1°
+# grid it was taken for: a cell one row away counted as the spot's own.
+GAUSSIAN = {"ecmwf_wam": 1280}
 FRONT_DEG = 75                                   # a wave point this far from where the beach faces is in front of it
 FRONT_KM = 65                                    # ... and no farther than this (the farthest ones before were 62 km)
 MOVED = 0.75                                     # the API moved a point: its answer is this many cells away, or more
+FIX_KM = 25                                      # the cell proposed for a spot whose cell is behind it: this far at most
+
+
+def _row(n, lat):
+    """The row (1 to 2n, from the north pole) of an O<n> grid nearest this latitude."""
+    return min(2 * n, max(1, round((90 - lat) * (2 * n + 0.5) / 180 + 0.25)))
+
+
+def _row_lat(n, k):
+    """Latitude of row k of an O<n> grid (the Gauss-Legendre roots, to ~0.0001°)."""
+    return 90 - 180 * (k - 0.25) / (2 * n + 0.5)
+
+
+def _row_dlon(n, k):
+    return 360 / (20 + 4 * (min(k, 2 * n + 1 - k) - 1))
+
+
+def step(model, lat):
+    """Grid spacing (dlat, dlon) in degrees of the model around this latitude."""
+    n = GAUSSIAN.get(model)
+    if n is None:
+        return STEP.get(model, (0.25, 0.25))
+    return 180 / (2 * n + 0.5), _row_dlon(n, _row(n, lat))
+
+
+def index(model, lat, lon):
+    """(row, column) of the grid cell nearest (lat, lon): the same for two points only in the same cell."""
+    n = GAUSSIAN.get(model)
+    if n is None:
+        dlat, dlon = step(model, lat)
+        return round(lat / dlat), round(geo.wrap(lon) / dlon) % round(360 / dlon)
+    k = _row(n, lat)
+    dlon = _row_dlon(n, k)
+    return k, round(geo.wrap(lon) / dlon) % round(360 / dlon)
+
+
+def grid(model, lat, lon, rings):
+    """The model's grid cell centres (lat, lon) within `rings` rows and columns of (lat, lon)."""
+    n = GAUSSIAN.get(model)
+    out = []
+    if n is None:
+        dlat, dlon = step(model, lat)
+        i0, j0 = round(lat / dlat), round(lon / dlon)
+        for i in range(i0 - rings, i0 + rings + 1):
+            out += [(i * dlat, geo.wrap(j * dlon)) for j in range(j0 - rings, j0 + rings + 1)]
+        return out
+    k0 = _row(n, lat)
+    for k in range(max(1, k0 - rings), min(2 * n, k0 + rings) + 1):
+        dlon = _row_dlon(n, k)
+        j0 = round(geo.wrap(lon) / dlon)
+        out += [(_row_lat(n, k), geo.wrap(j * dlon)) for j in range(j0 - rings, j0 + rings + 1)]
+    return out
 
 
 def _cache_path(model, kind="probe"):
@@ -141,7 +198,7 @@ def cells(model, points):
 
 def moved(model, point, cell):
     """Whether the API answers from a cell that is not the one at this point."""
-    dlat, dlon = STEP.get(model, (0.25, 0.25))
+    dlat, dlon = step(model, point[0])
     return cell is None or abs(cell[0] - point[0]) >= MOVED * dlat or abs(geo.wrap(cell[1] - point[1])) >= MOVED * dlon
 
 
@@ -162,24 +219,21 @@ def _is_sea(lat, lon):
     return not globe.is_land(lat, geo.wrap(lon))
 
 
-def candidates(model, lat, lon, rings=4, keep=4, toward=None):
+def candidates(model, lat, lon, rings=4, keep=4, toward=None, max_km=FRONT_KM):
     """Grid cell centres around (lat, lon), nearest first, that are sea in the land mask (the
     centre and four points half a cell away), up to `keep` of them. With `toward`, only those in
-    front of a spot looking that way, FRONT_KM away at most."""
-    dlat, dlon = STEP.get(model, (0.25, 0.25))
-    i0, j0 = round(lat / dlat), round(lon / dlon)
+    front of a spot looking that way, max_km away at most."""
     out = []
-    for i in range(i0 - rings, i0 + rings + 1):
-        for j in range(j0 - rings, j0 + rings + 1):
-            clat, clon = i * dlat, geo.wrap(j * dlon)
-            if abs(clat) > 85:
-                continue
-            km = geo.km((lat, lon), (clat, clon))
-            if toward is not None and (km > FRONT_KM or off_front((lat, lon), (clat, clon), toward) > FRONT_DEG):
-                continue
-            ring = [(clat, clon)] + [(clat + a * dlat / 2, clon + b * dlon / 2) for a, b in ((1, 0), (-1, 0), (0, 1), (0, -1))]
-            if all(_is_sea(a, b) for a, b in ring):
-                out.append((km, round(clat, 4), round(clon, 4)))
+    for clat, clon in grid(model, lat, lon, rings):
+        if abs(clat) > 85:
+            continue
+        km = geo.km((lat, lon), (clat, clon))
+        if toward is not None and (km > max_km or off_front((lat, lon), (clat, clon), toward) > FRONT_DEG):
+            continue
+        dlat, dlon = step(model, clat)
+        ring = [(clat, clon)] + [(clat + a * dlat / 2, clon + b * dlon / 2) for a, b in ((1, 0), (-1, 0), (0, 1), (0, -1))]
+        if all(_is_sea(a, b) for a, b in ring):
+            out.append((km, round(clat, 4), round(clon, 4)))
     out.sort()
     return [(a, b) for _, a, b in out[:keep]]
 
@@ -190,6 +244,17 @@ def _usable(model, cs):
         return []
     hs, where = heights(model, cs), cells(model, cs)
     return [c for c, h, w in zip(cs, hs, where) if h and not moved(model, c, w)]
+
+
+def front_point(model, spot, toward, max_km=FIX_KM):
+    """The nearest cell in front of a spot (within FRONT_DEG of `toward`, its swell window or its
+    facing, and max_km) with waves that the API answers from itself, None if there is none: the
+    `wave=` for a spot the API answers from a cell behind its beach (tools/check_spots.py)."""
+    for rings, keep in ((4, 4), (8, 8)):
+        good = _usable(model, candidates(model, *spot, rings=rings, keep=keep, toward=toward, max_km=max_km))
+        if good:
+            return good[0]
+    return None
 
 
 def wave_points(model, spots, towards=None):

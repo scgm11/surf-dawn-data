@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 NOTRE DAME MONTS,46.8350,-2.1520,B,L,local,,Notre-Dame-de-Monts; posicion aproximada
-ST JEAN DE MONTS,46.7900,-2.0880,B,L,local,,Saint-Jean-de-Monts; posicion aproximada
+ST JEAN DE MONTS,46.7900,-2.0880,B,L,local,wave=46.6667;-2.1667,Saint-Jean-de-Monts; posicion aproximada
 BOISVINET,46.6830,-1.9470,B,K,local,,Saint-Gilles-Croix-de-Vie
 LA SAUZAIE,46.6340,-1.8760,B,L,local,,Bretignolles; posicion aproximada
 MARAIS GIRARD,46.6120,-1.8650,B,L,local,,Bretignolles; posicion aproximada

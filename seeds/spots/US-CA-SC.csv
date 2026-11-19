@@ -6,7 +6,7 @@ FOUR MILE,36.9605,-122.1280,B,L,local,,
 THREE MILE,36.9611,-122.1126,B,V,local,nosnap checked,satélite 2026-11
 NATURAL BRIDGES,36.9510,-122.0620,R,K,local,,
 MITCHELL'S COVE,36.9523,-122.0409,R,V,local,nosnap checked,satélite 2026-11
-STEAMER LANE,36.9505,-122.0265,P,K,local,top swell=255,WC
+STEAMER LANE,36.9505,-122.0265,P,K,local,top swell=255 wave=36.8717;-122.0921,WC
 COWELL'S,36.9609,-122.0245,B,V,local,nosnap facing=180 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 26TH AVE,36.9580,-121.9810,B,V,local,nosnap checked,satélite 2026-11
 38TH AVE,36.9575,-121.9678,R,V,local,nosnap checked,satélite 2026-11
@@ -26,6 +26,6 @@ DEL MONTE BEACH,36.6048,-121.8700,B,V,local,nosnap checked,Monterey; satélite 2
 LOVER'S POINT,36.6270,-121.9170,R,K,local,swell=290,Pacific Grove
 ASILOMAR,36.6181,-121.9430,R,V,local,nosnap checked,satélite 2026-11
 CARMEL BEACH,36.5550,-121.9306,B,V,local,nosnap facing=290 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-CARMEL RIVER,36.5370,-121.9300,B,K,local,,
+CARMEL RIVER,36.5370,-121.9300,B,K,local,wave=36.5905;-122.0419,
 MONASTERY BEACH,36.5250,-121.9275,B,K,local,,
 GHOST TREE,36.5606,-121.9518,R,V,local,nosnap top swell=290 checked facing=230,ola grande; satélite 2026-11

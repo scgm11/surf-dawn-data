@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-CALHAU,-2.4970,-44.2480,B,K,local,,São Luís
+CALHAU,-2.4970,-44.2480,B,K,local,wave=-2.3333;-44.1667,São Luís
 ARAÇAGI,-2.4770,-44.1800,B,L,local,,São Luís
 JERICOACOARA,-2.7930,-40.5130,B,K,local,,
 PREÁ,-2.8040,-40.4450,B,L,local,,

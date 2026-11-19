@@ -102,6 +102,33 @@ class WavePoints(unittest.TestCase):
         self.assertFalse(om.moved("ncep_gfswave025", (0.0, 179.95), (0.0, -180.0)))   # across ±180°
 
 
+class GaussianGrid(unittest.TestCase):
+    """ECMWF WAM is the reduced Gaussian grid O1280: the cells the API answered from in 2026-11."""
+    M = "ecmwf_wam"
+
+    def near(self, p, lat, lon):
+        return any(abs(a - lat) < 2e-4 and abs(b - lon) < 2e-4 for a, b in om.grid(self.M, p[0], p[1], 1))
+
+    def test_rows_and_columns(self):
+        self.assertTrue(self.near((27.0, -94.0), 27.029877, -94.0))
+        self.assertTrue(self.near((27.1, -94.0), 27.100174, -94.004456))
+        self.assertTrue(self.near((40.5, -68.97), 40.45694, -68.92807))
+        self.assertTrue(self.near((52.0, -11.47), 51.98594, -11.394501))
+        self.assertTrue(self.near((0.5, -30.0), 0.52724075, -30.023499))
+
+    def test_step_by_row(self):
+        self.assertAlmostEqual(om.step(self.M, 27.03)[1], 0.1, 3)
+        self.assertAlmostEqual(om.step(self.M, 52.0)[1], 0.1651, 3)
+        self.assertAlmostEqual(om.step(self.M, 52.0)[0], 0.0703, 3)
+        self.assertEqual(om.step(self.M, -52.0), om.step(self.M, 52.0))         # the south, like the north
+
+    def test_a_row_away_is_moved(self):
+        # with the 0.1° it was taken for, a cell 0.07° away (the next row, 8 km) was its own
+        self.assertTrue(om.moved(self.M, (27.1, -94.0), (27.170473, -94.00891)))
+        self.assertFalse(om.moved(self.M, (27.12, -94.0), (27.100174, -94.004456)))
+        self.assertFalse(om.moved(self.M, (52.0, -11.47), (51.98594, -11.394501)))   # 0.075° of a 0.165° column
+
+
 class CellControl(unittest.TestCase):
     M = "ncep_gfswave025"
 

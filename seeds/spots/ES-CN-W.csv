@@ -12,7 +12,7 @@ EL CAMISON,28.0532,-16.7354,R,V,local,nosnap checked,Tenerife; Las Americas; pos
 PUNTA BLANCA,28.0620,-16.7430,R,L,local,,Tenerife; Las Americas; posicion aproximada
 EL MEDANO,28.0401,-16.5422,B,V,local,nosnap checked,Tenerife; satélite 2026-11
 EL SOCORRO,28.3400,-16.3790,B,L,local,,Tenerife; Guimar; posicion aproximada
-ALMACIGA,28.5724,-16.1930,B,V,local,nosnap top checked,Tenerife; Anaga; posicion aproximada; satélite 2026-11
-BENIJO,28.5740,-16.2180,B,L,local,,Tenerife; Anaga; posicion aproximada
+ALMACIGA,28.5724,-16.1930,B,V,local,nosnap top checked wave=28.6667;-16.1667,Tenerife; Anaga; posicion aproximada; satélite 2026-11
+BENIJO,28.5740,-16.2180,B,L,local,wave=28.6667;-16.1667,Tenerife; Anaga; posicion aproximada
 BAJAMAR,28.5530,-16.3320,R,L,local,,Tenerife
 PUNTA DEL HIDALGO,28.5610,-16.3240,R,L,local,,Tenerife

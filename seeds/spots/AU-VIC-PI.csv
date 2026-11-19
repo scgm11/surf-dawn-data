@@ -8,9 +8,9 @@ SURFIES POINT,-38.5115,145.2805,P,K,local,top,Phillip Island
 SUNSET STRIP,-38.5240,145.2960,B,L,local,,Phillip Island
 SUNDERLAND BAY,-38.5270,145.3100,B,L,local,,Phillip Island
 WOOLAMAI,-38.5510,145.3390,B,K,local,top,Cape Woolamai
-PORTSEA BACK BEACH,-38.3367,144.7072,B,V,local,nosnap checked,satélite 2026-11
-SORRENTO BACK,-38.3665,144.7340,B,L,local,,
-NUMBER 16,-38.3790,144.7620,B,L,local,,
+PORTSEA BACK BEACH,-38.3367,144.7072,B,V,local,nosnap checked wave=-38.5;144.75,satélite 2026-11
+SORRENTO BACK,-38.3665,144.7340,B,L,local,wave=-38.5;144.75,
+NUMBER 16,-38.3790,144.7620,B,L,local,wave=-38.5;144.75,
 RYE BACK BEACH,-38.4178,144.8219,B,V,local,nosnap checked,satélite 2026-11
 ST ANDREWS BEACH,-38.4319,144.8411,B,V,local,nosnap checked,satélite 2026-11
 GUNNAMATTA,-38.4493,144.8579,B,V,web:mondo.surf,top checked,
