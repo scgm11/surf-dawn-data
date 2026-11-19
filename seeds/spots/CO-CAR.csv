@@ -2,3 +2,5 @@ name,lat,lon,type,conf,src,flags,note
 PUERTO COLOMBIA,11.0400,-74.9100,R,K,local,top checked wave=11.1667;-75,
 COSTEÑO,11.2735,-73.8400,B,K,web:colombiareports,,entre los rios Mendihuaca y Guachaca
 PALOMINO,11.2430,-73.5680,B,K,local,,La Guajira
+PUNTA ROCA,11.0466,-74.9186,R,V,local,nosnap checked wave=11.1667;-75.0,Puerto Colombia; cabo de Sabanilla; satélite 2026-11
+PRADOMAR,11.0052,-74.9531,B,V,local,nosnap checked,Puerto Colombia; satélite 2026-11
