@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 PIMENTEL,-6.8400,-79.9400,R,K,local,,Lambayeque
 SANTA ROSA,-6.8800,-79.9500,B,L,local,,Chiclayo
-PUERTO ÉTEN,-6.9400,-79.8670,B,L,local,,
+PUERTO ÉTEN,-6.9324,-79.8670,B,V,local,nosnap checked,satélite 2026-11
 PACASMAYO,-7.4138,-79.5886,P,V,local,nosnap top swell=225 checked,satélite 2026-11
 CHICAMA,-7.7100,-79.4500,P,K,local,top checked swell=235,ola larga; Malabrigo
 BUENOS AIRES,-8.1449,-79.0563,B,K,local,nosnap checked,"Trujillo; Víctor Larco, playa de ~4 km: posición aproximada; satélite 2026-11"

@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-MOSTEIROS,37.8880,-25.8180,B,L,local,,Sao Miguel; posicion aproximada
+MOSTEIROS,37.8883,-25.8242,B,V,local,nosnap checked,Sao Miguel; posicion aproximada; satélite 2026-11
 POPULO,37.7470,-25.6420,B,L,local,,Sao Miguel; Ponta Delgada; posicion aproximada
 MONTE VERDE,37.8232,-25.5283,B,V,local,nosnap wave=38.0;-25.6667 checked,Sao Miguel; Ribeira Grande; posicion aproximada; satélite 2026-11
 SANTA BÁRBARA,37.8182,-25.5449,B,V,local,nosnap top wave=38.0;-25.6667 checked,Sao Miguel; Ribeira Grande; satélite 2026-11
