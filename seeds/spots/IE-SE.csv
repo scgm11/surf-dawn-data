@@ -5,7 +5,7 @@ OWENAHINCHA,51.5652,-8.9940,B,V,local,nosnap checked,Rosscarbery; posicion aprox
 INCHYDONEY,51.5956,-8.8633,B,V,local,nosnap checked,Clonakilty; posicion aproximada; satélite 2026-11
 GARRETTSTOWN,51.6434,-8.5809,B,V,osm:way/165985431,,Kinsale
 CLAYCASTLE,51.9335,-7.8584,B,V,local,nosnap checked,Youghal; posicion aproximada; satélite 2026-11
-ARDMORE,51.9521,-7.7198,B,V,local,nosnap checked,Waterford; posicion aproximada; satélite 2026-11
+ARDMORE,51.9521,-7.7198,B,V,local,nosnap checked facing=100,Waterford; posicion aproximada; satélite 2026-11
 BUNMAHON,52.1420,-7.3830,B,L,local,,Copper Coast; posicion aproximada
 ANNESTOWN,52.1394,-7.2727,B,V,local,nosnap checked,Copper Coast; posicion aproximada; satélite 2026-11
 TRAMORE,52.1610,-7.1440,B,K,local,top,Waterford

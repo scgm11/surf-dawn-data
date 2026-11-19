@@ -13,7 +13,7 @@ WATERGATE BAY,50.4444,-5.0441,B,V,local,nosnap top checked wave=50.5;-5.1667,sat
 TOWAN,50.4175,-5.0820,B,K,local,facing=10 wave=50.5;-5.1667,Newquay; orientación a mano (la calculada miraba a otra costa)
 FISTRAL,50.4170,-5.1000,B,K,local,top wave=50.5;-5.1667,Newquay
 THE CRIBBAR,50.4258,-5.1020,R,V,local,nosnap wave=50.5;-5.1667 checked,Newquay; ola grande; posicion aproximada; satélite 2026-11
-CRANTOCK,50.4056,-5.1236,B,V,local,nosnap wave=50.5;-5.1667 checked,satélite 2026-11
+CRANTOCK,50.4056,-5.1236,B,V,local,nosnap wave=50.5;-5.1667 checked facing=300,satélite 2026-11
 HOLYWELL BAY,50.3921,-5.1469,B,V,local,nosnap wave=50.5;-5.1667 checked,satélite 2026-11
 PERRANPORTH,50.3470,-5.1590,B,K,local,wave=50.5;-5.1667,
 CHAPEL PORTH,50.3009,-5.2352,B,V,local,nosnap facing=300 checked,posicion aproximada; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
