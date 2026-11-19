@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
-HARTLEN POINT,44.5990,-63.4640,P,L,local,,Halifax
+HARTLEN POINT,44.5893,-63.4516,P,K,local,nosnap checked,Halifax; satélite 2026-11
 COW BAY,44.6140,-63.4290,B,K,local,,
 COLE HARBOUR,44.6501,-63.4173,B,K,osm:way/159247000,,Rainbow Haven; boca de Cole Harbour
 CONRAD'S BEACH,44.6444,-63.3757,B,V,local,nosnap checked,satélite 2026-11
 LAWRENCETOWN,44.6418,-63.3512,P,V,local,nosnap top checked,satélite 2026-11
 EAST LAWRENCETOWN,44.6540,-63.3000,B,L,local,,
 MARTINIQUE BEACH,44.7000,-63.1400,B,K,local,top,
-CRYSTAL CRESCENT,44.4440,-63.6280,B,K,local,,Halifax
-RISSERS BEACH,44.2340,-64.3560,B,K,local,,South Shore
-HIRTLE'S BEACH,44.2500,-64.3260,B,L,local,,South Shore
+CRYSTAL CRESCENT,44.4600,-63.6188,B,K,local,nosnap checked,Halifax; satélite 2026-11
+RISSERS BEACH,44.2301,-64.4302,B,V,local,nosnap checked,South Shore; satélite 2026-11
+HIRTLE'S BEACH,44.2652,-64.2722,B,V,local,nosnap checked,South Shore; satélite 2026-11
 SUMMERVILLE,43.9513,-64.8177,B,K,web:wanderlog,,Summerville Beach Provincial Park
