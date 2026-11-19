@@ -6,7 +6,7 @@ LONG SANDS,43.1770,-70.5950,B,K,local,,York
 POPHAM BEACH,43.7380,-69.8090,B,L,local,,Maine
 HAMPTON BEACH,42.9060,-70.8090,B,K,local,,New Hampshire
 JENNESS BEACH,43.0050,-70.7590,B,L,local,,Rye
-WALLIS SANDS,43.0265,-70.7320,B,L,local,,Rye
+WALLIS SANDS,43.0265,-70.7320,B,L,local,wave=43.058;-70.5804,Rye
 SALISBURY BEACH,42.8450,-70.8150,B,L,local,,
 PLUM ISLAND,42.8050,-70.8030,B,L,local,wave=42.7768;-70.6953,
 GOOD HARBOR,42.6090,-70.5830,B,K,local,,Gloucester
@@ -38,7 +38,7 @@ JONES BEACH,40.5890,-73.5000,B,K,local,,
 POINT LOOKOUT,40.5890,-73.5820,B,K,local,wave=40.5272;-73.6017,
 LONG BEACH NY,40.5800,-73.6500,B,K,local,wave=40.5272;-73.6017,
 BEACH 67TH,40.5855,-73.7910,B,L,local,wave=40.5272;-73.7288,Rockaway
-ROCKAWAY,40.5831,-73.8119,B,V,local,nosnap top checked,Beach 90th; satélite 2026-11
+ROCKAWAY,40.5831,-73.8119,B,V,local,nosnap top checked wave=40.5272;-73.8559,Beach 90th; satélite 2026-11
 FORT TILDEN,40.5535,-73.8880,B,K,local,,Rockaway
 SANDY HOOK,40.4100,-73.9960,B,L,local,wave=40.3866;-73.9014,
 SEA BRIGHT,40.3600,-73.9760,B,L,local,facing=95 wave=40.3866;-73.9014,orientación a mano (la calculada miraba a la laguna o la bahía)
