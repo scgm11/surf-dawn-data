@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 KEWALOS,21.2880,-157.8610,R,K,local,,Kewalo Basin
 COCKROACHES,21.2870,-157.8555,R,L,local,,Ala Moana
-ALA MOANA BOWLS,21.2870,-157.8515,R,K,local,top,Bowls; izquierda
+ALA MOANA BOWLS,21.2802,-157.8436,R,V,local,nosnap top checked,Bowls; izquierda; satélite 2026-11
 CONCESSIONS,21.2865,-157.8480,R,L,local,swell=180,Ala Moana
 KAISERS,21.2784,-157.8403,R,V,local,nosnap checked,Hilton Hawaiian Village; satélite 2026-11
 POPULARS,21.2720,-157.8320,R,V,local,nosnap checked,Waikiki; satélite 2026-11

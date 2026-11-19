@@ -1,50 +1,50 @@
 name,lat,lon,type,conf,src,flags,note
-HIGGINS BEACH,43.5540,-70.2160,B,K,local,,Maine
+HIGGINS BEACH,43.5603,-70.2779,B,V,local,nosnap checked,Maine; satélite 2026-11
 OLD ORCHARD PIER,43.5163,-70.3752,B,K,local,,Maine
-CAMP ELLIS,43.4580,-70.3830,B,L,local,,Maine jetty
-LONG SANDS,43.1770,-70.5950,B,K,local,,York
-POPHAM BEACH,43.7380,-69.8090,B,L,local,,Maine
+CAMP ELLIS,43.4639,-70.3803,B,V,local,nosnap checked wave=43.4798;-70.2703,Maine jetty; satélite 2026-11
+LONG SANDS,43.1633,-70.6179,B,V,local,nosnap checked,York; satélite 2026-11
+POPHAM BEACH,43.7371,-69.7952,B,V,local,nosnap checked,Maine; satélite 2026-11
 HAMPTON BEACH,42.9060,-70.8090,B,K,local,,New Hampshire
-JENNESS BEACH,43.0050,-70.7590,B,L,local,,Rye
+JENNESS BEACH,42.9857,-70.7613,B,V,local,nosnap checked,Rye; satélite 2026-11
 WALLIS SANDS,43.0265,-70.7320,B,L,local,wave=43.058;-70.5804,Rye
 SALISBURY BEACH,42.8450,-70.8150,B,L,local,,
 PLUM ISLAND,42.8050,-70.8030,B,L,local,wave=42.7768;-70.6953,
-GOOD HARBOR,42.6090,-70.5830,B,K,local,,Gloucester
-NAHANT,42.4300,-70.9250,B,L,local,,
+GOOD HARBOR,42.6197,-70.6312,B,V,local,nosnap checked,Gloucester; satélite 2026-11
+NAHANT,42.4455,-70.9379,B,V,local,nosnap checked wave=42.4253;-70.837,satélite 2026-11
 REVERE BEACH,42.4170,-70.9890,B,K,local,,
 NANTASKET,42.2700,-70.8625,B,K,local,,Hull
 NAUSET LIGHT,41.8590,-69.9440,B,K,local,wave=41.8629;-69.8839,Cape Cod
-MARCONI BEACH,41.9060,-69.9710,B,K,local,,Cape Cod
-CAHOON HOLLOW,41.9340,-69.9770,B,L,local,,Cape Cod
-NOBADEER,41.2590,-70.0690,B,K,local,,Nantucket
-SURFSIDE,41.2440,-70.1030,B,K,local,,Nantucket
-CISCO,41.2600,-70.1440,B,L,local,,Nantucket
+MARCONI BEACH,41.8911,-69.9622,B,V,local,nosnap checked,Cape Cod; satélite 2026-11
+CAHOON HOLLOW,41.9437,-69.9838,B,V,local,nosnap checked,Cape Cod; satélite 2026-11
+NOBADEER,41.2444,-70.0784,B,V,local,nosnap checked,Nantucket; satélite 2026-11
+SURFSIDE,41.2426,-70.0944,B,V,local,nosnap checked,Nantucket; satélite 2026-11
+CISCO,41.2520,-70.1519,B,V,local,nosnap checked,Nantucket; satélite 2026-11
 SOUTH BEACH MV,41.3550,-70.5180,B,L,local,wave=41.3005;-70.5022,Martha's Vineyard
-SQUIBNOCKET,41.3300,-70.7500,B,L,local,,Martha's Vineyard
-HORSENECK,41.5050,-71.0260,B,L,local,wave=41.4411;-70.964,Westport MA
+SQUIBNOCKET,41.3152,-70.7658,B,V,local,nosnap checked,Martha's Vineyard; satélite 2026-11
+HORSENECK,41.5057,-71.0563,B,K,local,nosnap wave=41.4411;-70.964 checked,Westport MA; satélite 2026-11
 RUGGLES,41.4680,-71.2962,R,V,web:mondo.surf,top wave=41.4411;-71.223,Newport
 EASTON'S BEACH,41.4890,-71.2970,B,K,local,wave=41.4411;-71.223,Newport
-SECOND BEACH,41.4830,-71.2570,B,L,local,,Middletown
-NARRAGANSETT,41.4310,-71.4570,B,K,local,,
-POINT JUDITH,41.3630,-71.4790,R,L,local,,
-MATUNUCK,41.3780,-71.5380,B,K,local,facing=175,orientación a mano (la calculada miraba a la laguna o la bahía)
+SECOND BEACH,41.4892,-71.2661,B,V,local,nosnap checked wave=41.4411;-71.223,Middletown; satélite 2026-11
+NARRAGANSETT,41.4325,-71.4568,B,V,local,nosnap checked,satélite 2026-11
+POINT JUDITH,41.3612,-71.4804,R,V,local,nosnap checked,satélite 2026-11
+MATUNUCK,41.3732,-71.5390,B,V,local,nosnap facing=175 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 MISQUAMICUT,41.3190,-71.7980,B,K,local,,Westerly
 DITCH PLAINS,41.0391,-71.9140,R,V,local,nosnap top checked,Montauk; satélite 2026-11
-TURTLE COVE,41.0430,-71.9035,R,L,local,,Montauk
-FLYING POINT,40.8800,-72.4150,B,L,local,,Southampton
-SHINNECOCK INLET,40.8370,-72.4780,B,K,local,,
-ROBERT MOSES,40.6240,-73.2600,B,L,local,facing=178 wave=40.5975;-73.3239,Fire Island; orientación a mano (la calculada miraba a la laguna o la bahía)
-JONES BEACH,40.5890,-73.5000,B,K,local,,
+TURTLE COVE,41.0698,-71.8582,R,V,local,nosnap checked,Montauk; satélite 2026-11
+FLYING POINT,40.8874,-72.3389,B,V,local,nosnap checked,Southampton; satélite 2026-11
+SHINNECOCK INLET,40.8409,-72.4782,B,V,local,nosnap checked facing=170,satélite 2026-11
+ROBERT MOSES,40.6216,-73.2703,B,V,local,nosnap facing=178 wave=40.5975;-73.3239 checked,Fire Island; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
+JONES BEACH,40.5795,-73.5567,B,V,local,nosnap checked wave=40.5272;-73.6017,satélite 2026-11
 POINT LOOKOUT,40.5890,-73.5820,B,K,local,wave=40.5272;-73.6017,
-LONG BEACH NY,40.5800,-73.6500,B,K,local,wave=40.5272;-73.6017,
-BEACH 67TH,40.5855,-73.7910,B,L,local,wave=40.5272;-73.7288,Rockaway
+LONG BEACH NY,40.5824,-73.6524,B,V,local,nosnap wave=40.5272;-73.6017 checked,satélite 2026-11
+BEACH 67TH,40.5862,-73.7967,B,V,local,nosnap wave=40.5272;-73.7288 checked,Rockaway; satélite 2026-11
 ROCKAWAY,40.5831,-73.8119,B,V,local,nosnap top checked wave=40.5272;-73.8559,Beach 90th; satélite 2026-11
 FORT TILDEN,40.5535,-73.8880,B,K,local,,Rockaway
 SANDY HOOK,40.4100,-73.9960,B,L,local,wave=40.3866;-73.9014,
 SEA BRIGHT,40.3600,-73.9760,B,L,local,facing=95 wave=40.3866;-73.9014,orientación a mano (la calculada miraba a la laguna o la bahía)
 LONG BRANCH,40.3050,-73.9770,B,L,local,,
 ASBURY PARK,40.2220,-73.9970,B,K,local,,
-BELMAR,40.1780,-74.0160,B,K,local,,16th Ave
+BELMAR,40.1720,-74.0142,B,V,local,nosnap checked,16th Ave; satélite 2026-11
 MANASQUAN INLET,40.1033,-74.0339,B,V,web:wikipedia.org,nosnap top checked,satélite 2026-11
 POINT PLEASANT,40.0870,-74.0430,B,K,local,,
 SEASIDE HEIGHTS,39.9440,-74.0690,B,K,local,,
