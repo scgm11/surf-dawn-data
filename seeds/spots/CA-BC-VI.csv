@@ -1,15 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
-SAN JOSEF,50.6520,-128.3340,B,L,local,facing=270,Cape Scott remote
-RAFT COVE,50.5912,-128.2477,B,K,web:10adventures,,remoto
+SAN JOSEF,50.6735,-128.2760,B,V,local,nosnap facing=270 checked,Cape Scott remote; satélite 2026-11
+RAFT COVE,50.5906,-128.2410,B,V,web:10adventures,nosnap checked,remoto; satélite 2026-11
 MACKENZIE BEACH,49.1370,-125.9090,B,K,local,,Tofino
 CHESTERMAN,49.1162,-125.8948,B,V,local,nosnap top facing=230 checked,Tofino; satélite 2026-11
 COX BAY,49.1024,-125.8744,B,V,local,nosnap top facing=260 checked,Tofino; satélite 2026-11
-SCHOONER COVE,49.0880,-125.7950,B,L,local,,Long Beach
+SCHOONER COVE,49.0676,-125.8021,B,V,local,nosnap checked,Long Beach; satélite 2026-11
 LONG BEACH,49.0720,-125.7700,B,K,local,,Pacific Rim
-COMBERS,49.0600,-125.7350,B,L,local,,Pacific Rim
+COMBERS,49.0449,-125.7130,B,V,local,nosnap checked,Pacific Rim; satélite 2026-11
 FLORENCIA BAY,49.0041,-125.6488,B,K,web:komoot,,Wreck Beach
-WICK BEACH,49.0240,-125.6950,B,L,local,,Wickaninnish
+WICK BEACH,49.0181,-125.6758,B,V,local,nosnap checked,Wickaninnish; satélite 2026-11
 WYA POINT,48.9740,-125.6520,B,L,local,,Ucluelet
 SOMBRIO,48.4990,-124.3040,B,K,local,,
-CHINA BEACH,48.4410,-124.1180,B,K,local,,
+CHINA BEACH,48.4316,-124.0903,B,V,local,nosnap checked,satélite 2026-11
 JORDAN RIVER,48.4199,-124.0564,P,V,local,nosnap top swell=275 checked,satélite 2026-11

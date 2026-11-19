@@ -1,24 +1,24 @@
 name,lat,lon,type,conf,src,flags,note
 LEO CARRILLO,34.0440,-118.9345,B,K,local,,
-NICHOLAS CANYON,34.0375,-118.9010,B,K,local,,
-LECHUZA,34.0245,-118.8465,P,K,local,,
-TRANCAS,34.0205,-118.8330,B,K,local,,
+NICHOLAS CANYON,34.0419,-118.9158,B,V,local,nosnap checked,satélite 2026-11
+LECHUZA,34.0346,-118.8615,P,V,local,nosnap checked,satélite 2026-11
+TRANCAS,34.0289,-118.8428,B,V,local,nosnap checked,satélite 2026-11
 ZUMA,34.0150,-118.8270,B,K,local,top,
 POINT DUME,34.0010,-118.8070,P,K,local,wave=33.9192;-118.8404,
 MALIBU,34.0345,-118.6830,P,K,local,top swell=210,First Point
 SECOND POINT,34.0352,-118.6812,P,K,local,swell=210,Malibu
-THIRD POINT,34.0360,-118.6790,P,K,local,swell=210,Malibu
+THIRD POINT,34.0310,-118.6811,P,V,local,nosnap swell=210 checked,Malibu; satélite 2026-11
 TOPANGA,34.0378,-118.5810,P,K,local,,
-SANTA MONICA PIER,34.0085,-118.4985,B,K,local,,
-VENICE PIER,33.9845,-118.4760,B,K,local,,
-PLAYA DEL REY,33.9605,-118.4590,B,K,local,,
+SANTA MONICA PIER,34.0079,-118.4970,B,V,local,nosnap checked,satélite 2026-11
+VENICE PIER,33.9781,-118.4679,B,V,local,nosnap checked,satélite 2026-11
+PLAYA DEL REY,33.9604,-118.4549,B,V,local,nosnap checked,satélite 2026-11
 EL PORTO,33.9035,-118.4235,B,K,local,top,
 MANHATTAN PIER,33.8845,-118.4130,B,K,local,,
 HERMOSA PIER,33.8625,-118.4005,B,K,local,,
 REDONDO,33.8509,-118.3997,B,V,local,nosnap checked,breakwater; satélite 2026-11
-HAGGERTY'S,33.8090,-118.3940,R,K,local,,Torrance
+HAGGERTY'S,33.8028,-118.3999,R,V,local,nosnap checked,Torrance; satélite 2026-11
 MALAGA COVE,33.8005,-118.4175,R,K,local,,
-BLUFF COVE,33.7780,-118.4240,R,L,local,,Palos Verdes
+BLUFF COVE,33.7926,-118.4092,R,V,local,nosnap checked,Palos Verdes; satélite 2026-11
 LUNADA BAY,33.7710,-118.4200,P,K,local,top,ola grande
-ROYAL PALMS,33.7155,-118.3180,R,K,local,,San Pedro
-CABRILLO BEACH,33.7075,-118.2800,B,K,local,,San Pedro
+ROYAL PALMS,33.7171,-118.3205,R,V,local,nosnap checked,San Pedro; satélite 2026-11
+CABRILLO BEACH,33.7090,-118.2838,B,V,local,nosnap checked,San Pedro; satélite 2026-11

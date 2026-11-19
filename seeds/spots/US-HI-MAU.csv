@@ -1,22 +1,22 @@
 name,lat,lon,type,conf,src,flags,note
 JAWS,20.9437,-156.2984,R,K,local,top nosnap facing=10 checked,Pe'ahi; ola grande; mar adentro; satélite 2026-11
 HO'OKIPA,20.9355,-156.3570,R,K,local,top,
-PAVILIONS,20.9350,-156.3590,R,L,local,,Ho'okipa oeste
-LANES,20.9362,-156.3540,R,L,local,,Ho'okipa este
-PAIA BAY,20.9170,-156.3650,B,L,local,,
+PAVILIONS,20.9352,-156.3564,R,V,local,nosnap checked,Ho'okipa este; satélite 2026-11
+LANES,20.9335,-156.3626,R,V,local,nosnap checked,Ho'okipa oeste; satélite 2026-11
+PAIA BAY,20.9160,-156.3838,B,V,local,nosnap checked,satélite 2026-11
 BALDWIN,20.9250,-156.3930,B,L,local,,Baldwin Beach
 STABLES,20.9290,-156.4090,R,L,local,,Spreckelsville
 SPRECKS,20.9290,-156.4190,R,L,local,,Spreckelsville
 HONOLUA,21.0180,-156.6408,P,V,local,nosnap top swell=345 checked,Honolua Bay; derecha larga; satélite 2026-11
-DT FLEMING,21.0105,-156.6600,B,L,local,,Fleming Beach
-MALA RAMP,20.8825,-156.6865,R,L,local,wave=20.9139;-156.7477,Lahaina
-BREAKWALL,20.8712,-156.6808,R,K,local,,Lahaina Harbor
+DT FLEMING,21.0047,-156.6521,B,V,local,nosnap checked,Fleming Beach; satélite 2026-11
+MALA RAMP,20.8842,-156.6883,R,V,local,nosnap wave=20.9139;-156.7477 checked,Lahaina; satélite 2026-11
+BREAKWALL,20.8699,-156.6790,R,V,local,nosnap checked,Lahaina Harbor; satélite 2026-11
 PUAMANA,20.8550,-156.6710,R,L,local,,
-LAUNIUPOKO,20.8430,-156.6600,R,K,local,,
-OLOWALU,20.8090,-156.6190,R,L,local,,
+LAUNIUPOKO,20.8422,-156.6534,R,V,local,nosnap checked,satélite 2026-11
+OLOWALU,20.8101,-156.6243,R,V,local,nosnap checked,satélite 2026-11
 MAALAEA,20.7906,-156.5098,R,V,local,nosnap checked facing=200,Freight Trains; derecha rapida; satélite 2026-11
 KALAMA PARK,20.7350,-156.4530,R,L,local,,Kihei
-COVE PARK,20.7250,-156.4490,R,L,local,,Kihei
+COVE PARK,20.7277,-156.4514,R,V,local,nosnap checked,Kihei; satélite 2026-11
 BIG BEACH,20.6300,-156.4490,B,K,local,,Makena; shorebreak
-HAMOA,20.7138,-155.9860,B,K,local,,Hana
-KOKI BEACH,20.7450,-155.9930,B,L,local,,Hana
+HAMOA,20.7190,-155.9877,B,V,local,nosnap checked,Hana; satélite 2026-11
+KOKI BEACH,20.7290,-155.9855,B,V,local,nosnap checked,Hana; satélite 2026-11

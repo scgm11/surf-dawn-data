@@ -1,34 +1,34 @@
 name,lat,lon,type,conf,src,flags,note
-HOBUCK,48.2990,-124.6730,B,L,local,facing=300,Neah Bay
+HOBUCK,48.3366,-124.6658,B,V,local,nosnap checked facing=260,Neah Bay; satélite 2026-11
 RIALTO,47.9215,-124.6400,B,K,local,,La Push
-SECOND BEACH,47.8770,-124.6385,B,K,local,,La Push
-WESTPORT JETTY,46.9100,-124.1400,B,L,local,facing=265 wave=46.8541;-124.2233,orientación a mano (la calculada miraba a otra costa)
+SECOND BEACH,47.8840,-124.6183,B,V,local,nosnap checked,La Push; satélite 2026-11
+WESTPORT JETTY,46.9039,-124.1327,B,V,local,nosnap facing=265 wave=46.8541;-124.2233 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 WESTPORT,46.8950,-124.1200,B,K,local,top wave=46.8541;-124.2233,
-GRAYLAND,46.7950,-124.1070,B,L,local,,
+GRAYLAND,46.7940,-124.1060,B,V,local,nosnap checked,satélite 2026-11
 LONG BEACH,46.3400,-124.0640,B,K,local,,
-BENSON BEACH,46.3010,-124.0740,B,L,local,,Cape Disappointment
-SEASIDE COVE,45.9800,-123.9420,B,L,local,,
-INDIAN BEACH,45.9195,-123.9760,B,K,local,,Ecola
+BENSON BEACH,46.2869,-124.0770,B,V,local,nosnap checked,Cape Disappointment; satélite 2026-11
+SEASIDE COVE,45.9757,-123.9399,B,V,local,nosnap checked,satélite 2026-11
+INDIAN BEACH,45.9293,-123.9788,B,V,local,nosnap checked,Ecola; satélite 2026-11
 CANNON BEACH,45.8935,-123.9690,B,K,local,,
 SHORT SANDS,45.7640,-123.9680,B,K,local,top,Oswald West
 MANZANITA,45.7150,-123.9380,B,K,local,,
 ROCKAWAY,45.6120,-123.9440,B,K,local,,
-OCEANSIDE,45.4660,-123.9740,B,K,local,,
+OCEANSIDE,45.4600,-123.9716,B,V,local,nosnap checked,satélite 2026-11
 PACIFIC CITY,45.2170,-123.9748,B,V,local,nosnap checked,Cape Kiwanda; satélite 2026-11
 NESKOWIN,45.1010,-123.9945,B,L,local,,
-D RIVER,44.9190,-124.0140,B,K,local,,Lincoln City
-GLENEDEN,44.8890,-124.0580,B,L,local,,
+D RIVER,44.9678,-124.0187,B,V,local,nosnap checked,Lincoln City; satélite 2026-11
+GLENEDEN,44.8761,-124.0399,B,V,local,nosnap checked wave=44.8858;-124.1331,satélite 2026-11
 DEPOE BAY,44.8070,-124.0640,R,K,local,,
 OTTER ROCK,44.7450,-124.0670,B,K,local,top,
 BEVERLY BEACH,44.7370,-124.0660,B,K,local,,
-AGATE BEACH,44.6730,-124.0620,B,K,local,,Newport
+AGATE BEACH,44.6589,-124.0608,B,V,local,nosnap checked wave=44.6046;-124.2,Newport; satélite 2026-11
 NYE BEACH,44.6370,-124.0680,B,K,local,,Newport
 SOUTH BEACH,44.6080,-124.0680,B,K,local,,Newport
 SEAL ROCK,44.4950,-124.0820,B,K,local,,
-FLORENCE JETTY,43.9660,-124.1300,B,L,local,,
-WINCHESTER BAY,43.6700,-124.2010,B,L,local,,
-SUNSET BAY,43.3320,-124.3730,B,K,local,,
+FLORENCE JETTY,44.0158,-124.1388,B,V,local,nosnap checked,satélite 2026-11
+WINCHESTER BAY,43.6627,-124.2096,B,V,local,nosnap checked,satélite 2026-11
+SUNSET BAY,43.3342,-124.3723,B,V,local,nosnap checked,satélite 2026-11
 BANDON,43.1180,-124.4350,B,K,local,,
 FACE ROCK,43.1015,-124.4235,B,K,local,,Bandon
-PORT ORFORD,42.7390,-124.4990,B,K,local,,
+PORT ORFORD,42.7413,-124.4892,B,V,local,nosnap checked,satélite 2026-11
 HARRIS BEACH,42.0580,-124.3030,B,K,local,,Brookings
