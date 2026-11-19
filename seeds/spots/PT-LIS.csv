@@ -1,16 +1,16 @@
 name,lat,lon,type,conf,src,flags,note
-MAÇÃS,38.8360,-9.4680,B,K,local,,Sintra; Praia das Maçãs
-ADRAGA,38.8250,-9.4810,B,L,local,,Sintra; posicion aproximada
-MAGOITO,38.8030,-9.4600,B,L,local,,Sintra; posicion aproximada
+MAÇÃS,38.8253,-9.4705,B,V,local,nosnap checked,Sintra; Praia das Maçãs; satélite 2026-11
+ADRAGA,38.8033,-9.4847,B,V,local,nosnap checked,Sintra; posicion aproximada; satélite 2026-11
+MAGOITO,38.8634,-9.4495,B,V,local,nosnap checked,Sintra; posicion aproximada; satélite 2026-11
 PRAIA GRANDE,38.8050,-9.4740,B,K,local,,Sintra
 GUINCHO,38.7340,-9.4760,B,K,local,top,Cascais
-PAREDE,38.6850,-9.3630,B,L,local,,Cascais; posicion aproximada
+PAREDE,38.6856,-9.3541,B,V,local,nosnap checked,Cascais; posicion aproximada; satélite 2026-11
 CARCAVELOS,38.6800,-9.3380,B,K,local,top,Cascais
-COVA DO VAPOR,38.6670,-9.2330,B,K,local,,Costa da Caparica
+COVA DO VAPOR,38.6621,-9.2601,B,V,local,nosnap checked,Costa da Caparica; satélite 2026-11
 SÃO JOÃO,38.6560,-9.2420,B,L,local,,Costa da Caparica; posicion aproximada
 COSTA DA CAPARICA,38.6420,-9.2370,B,K,local,top,
-RAINHA,38.6330,-9.2350,B,L,local,,Costa da Caparica; posicion aproximada
-CDS,38.6230,-9.2290,B,L,local,,Costa da Caparica; posicion aproximada
-MATA,38.5900,-9.2150,B,L,local,,Costa da Caparica; posicion aproximada
-FONTE DA TELHA,38.5560,-9.1960,B,L,local,,Costa da Caparica; posicion aproximada
+RAINHA,38.6160,-9.2186,B,V,local,nosnap checked,Costa da Caparica; posicion aproximada; satélite 2026-11
+CDS,38.6455,-9.2422,B,V,local,nosnap checked,Costa da Caparica; posicion aproximada; satélite 2026-11
+MATA,38.6243,-9.2245,B,V,local,nosnap checked,Costa da Caparica; posicion aproximada; satélite 2026-11
+FONTE DA TELHA,38.5733,-9.1972,B,V,local,nosnap checked,Costa da Caparica; posicion aproximada; satélite 2026-11
 MECO,38.4907,-9.1886,B,V,gov:visitportugal,,Sesimbra

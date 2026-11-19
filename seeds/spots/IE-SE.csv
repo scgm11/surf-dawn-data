@@ -1,11 +1,11 @@
 name,lat,lon,type,conf,src,flags,note
-BARLEYCOVE,51.4720,-9.8140,B,L,local,,Mizen; posicion aproximada
+BARLEYCOVE,51.4688,-9.7771,B,V,local,nosnap checked facing=190,Mizen; posicion aproximada; satélite 2026-11
 LONG STRAND,51.5600,-8.9600,B,L,local,,Castlefreke; posicion aproximada
-OWENAHINCHA,51.5760,-8.9680,B,L,local,,Rosscarbery; posicion aproximada
+OWENAHINCHA,51.5652,-8.9940,B,V,local,nosnap checked,Rosscarbery; posicion aproximada; satélite 2026-11
 INCHYDONEY,51.5956,-8.8633,B,V,local,nosnap checked,Clonakilty; posicion aproximada; satélite 2026-11
 GARRETTSTOWN,51.6434,-8.5809,B,V,osm:way/165985431,,Kinsale
-CLAYCASTLE,51.9500,-7.8280,B,L,local,,Youghal; posicion aproximada
-ARDMORE,51.9450,-7.7170,B,L,local,,Waterford; posicion aproximada
+CLAYCASTLE,51.9335,-7.8584,B,V,local,nosnap checked,Youghal; posicion aproximada; satélite 2026-11
+ARDMORE,51.9521,-7.7198,B,V,local,nosnap checked,Waterford; posicion aproximada; satélite 2026-11
 BUNMAHON,52.1420,-7.3830,B,L,local,,Copper Coast; posicion aproximada
-ANNESTOWN,52.1560,-7.2360,B,L,local,,Copper Coast; posicion aproximada
+ANNESTOWN,52.1394,-7.2727,B,V,local,nosnap checked,Copper Coast; posicion aproximada; satélite 2026-11
 TRAMORE,52.1610,-7.1440,B,K,local,top,Waterford

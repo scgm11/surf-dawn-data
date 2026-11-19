@@ -2,9 +2,9 @@ name,lat,lon,type,conf,src,flags,note
 WESTWARD HO,51.0431,-4.2394,B,V,local,nosnap checked,satélite 2026-11
 SAUNTON,51.1157,-4.2252,B,V,local,nosnap checked,Saunton Sands; satélite 2026-11
 CROYDE,51.1300,-4.2420,B,K,local,top,Croyde Bay
-BAGGY POINT,51.1380,-4.2700,R,L,local,,Croyde; posicion aproximada
-PUTSBOROUGH,51.1600,-4.2150,B,K,local,,
+BAGGY POINT,51.1340,-4.2437,R,V,local,nosnap checked,Croyde; posicion aproximada; satélite 2026-11
+PUTSBOROUGH,51.1475,-4.2244,B,V,local,nosnap checked,satélite 2026-11
 WOOLACOMBE,51.1725,-4.2140,B,V,local,nosnap top checked,satélite 2026-11
 BANTHAM,50.2785,-3.8805,B,V,local,nosnap checked facing=230,Sur de Devon; satélite 2026-11
 BIGBURY,50.2816,-3.8953,B,V,local,nosnap checked,Bigbury-on-Sea; sur de Devon; satélite 2026-11
-THURLESTONE,50.2420,-3.8620,B,L,local,,South Milton Sands; posicion aproximada
+THURLESTONE,50.2597,-3.8582,B,V,local,nosnap checked,South Milton Sands; posicion aproximada; satélite 2026-11

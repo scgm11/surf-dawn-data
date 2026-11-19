@@ -5,8 +5,8 @@ FAMARA,29.1180,-13.5580,B,K,local,top,Lanzarote; Caleta de Famara
 PUNTA MUJERES,29.1580,-13.4560,R,L,local,swell=345,Lanzarote; posicion aproximada
 LOBOS,28.7500,-13.8330,P,K,local,top swell=330,Fuerteventura
 FLAG BEACH,28.7213,-13.8414,B,V,local,nosnap checked,Corralejo; posicion aproximada; satélite 2026-11
-MAJANICHO,28.7420,-13.9030,R,L,local,,Fuerteventura norte; posicion aproximada
+MAJANICHO,28.7489,-13.9348,R,V,local,nosnap checked,Fuerteventura norte; posicion aproximada; satélite 2026-11
 EL COTILLO,28.6757,-14.0101,B,V,local,nosnap top wave=28.6667;-14.1667 checked,Fuerteventura; satélite 2026-11
-ROCKY POINT,28.6910,-14.0200,R,L,local,swell=325,El Cotillo; posicion aproximada
-ESQUINZO,28.6270,-14.0500,B,L,local,,Fuerteventura; posicion aproximada
+ROCKY POINT,28.7328,-13.8570,R,V,local,nosnap swell=325 checked,El Cotillo; posicion aproximada; satélite 2026-11
+ESQUINZO,28.6358,-14.0263,B,V,local,nosnap checked,Fuerteventura; posicion aproximada; satélite 2026-11
 LA PARED,28.2128,-14.2252,B,V,local,nosnap checked wave=28.3333;-14.3333,Fuerteventura sur; satélite 2026-11

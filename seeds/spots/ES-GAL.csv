@@ -6,14 +6,14 @@ ORZAN,43.3710,-8.4040,B,K,local,,A Coruña
 SANTA CRISTINA,43.3399,-8.3793,B,V,local,nosnap checked,Oleiros; posicion aproximada; satélite 2026-11
 BASTIAGUEIRO,43.3418,-8.3636,B,V,local,nosnap checked,Oleiros; posicion aproximada; satélite 2026-11
 BARRAÑAN,43.3118,-8.5522,B,V,local,nosnap checked,Arteixo; posicion aproximada; satélite 2026-11
-BALDAIO,43.3170,-8.6200,B,L,local,,Carballo; posicion aproximada
+BALDAIO,43.3014,-8.6657,B,V,local,nosnap checked,Carballo; posicion aproximada; satélite 2026-11
 RAZO,43.2914,-8.7021,B,V,local,nosnap top checked,Carballo; satélite 2026-11
-SOESTO,43.2650,-8.9300,B,L,local,,Laxe; posicion aproximada
-TRABA,43.2480,-8.9890,B,L,local,,Laxe; posicion aproximada
+SOESTO,43.2146,-9.0218,B,V,local,nosnap checked,Laxe; posicion aproximada; satélite 2026-11
+TRABA,43.1898,-9.0494,B,V,local,nosnap checked,Laxe; posicion aproximada; satélite 2026-11
 LAXE,43.2191,-9.0022,B,V,osm:way/651998067,nosnap facing=60,Praia de Laxe; dentro de la ría y abrigada: anda con el NO grande
-NEMIÑA,43.0600,-9.2700,B,L,local,,Muxia; posicion aproximada
+NEMIÑA,43.0082,-9.2612,B,V,local,nosnap checked,Muxia; posicion aproximada; satélite 2026-11
 MAR DE FORA,42.9094,-9.2748,B,V,local,nosnap checked,Fisterra; posicion aproximada; satélite 2026-11
 A LANZADA,42.4600,-8.8880,B,K,local,wave=42.3333;-9,Sanxenxo
-MONTALVO,42.4160,-8.8860,B,L,local,wave=42.3333;-9,Sanxenxo; posicion aproximada
+MONTALVO,42.3976,-8.8496,B,V,local,nosnap wave=42.3333;-9 checked,Sanxenxo; posicion aproximada; satélite 2026-11
 AMERICA,42.1300,-8.8130,B,L,local,,Nigran; posicion aproximada
 PATOS,42.1554,-8.8237,B,V,local,nosnap checked facing=285,Nigran; posicion aproximada; satélite 2026-11

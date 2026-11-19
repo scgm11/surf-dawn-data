@@ -2,14 +2,14 @@ name,lat,lon,type,conf,src,flags,note
 HENDAYE,43.3800,-1.7760,B,K,local,,plage de Hendaye
 BELHARRA,43.4036,-1.7178,R,V,wd:Q2894399,top nosnap facing=315,ola grande; ~2 km mar adentro; posición de Wikidata
 SOCOA,43.3965,-1.6845,R,K,local,swell=300,junto al fuerte
-SAINTE BARBE,43.4030,-1.6500,B,K,local,,St-Jean-de-Luz
+SAINTE BARBE,43.3988,-1.6662,B,V,local,nosnap checked,St-Jean-de-Luz; satélite 2026-11
 ERROMARDIE,43.4090,-1.6440,B,K,local,,
 LAFITENIA,43.4150,-1.6300,P,K,local,top,
 PARLEMENTIA,43.4310,-1.6100,R,V,local,nosnap top checked,Guethary; satélite 2026-11
 AVALANCHE,43.4277,-1.6162,R,V,local,nosnap checked,ola grande; Guethary; satélite 2026-11
 CENITZ,43.4219,-1.6210,R,V,local,nosnap checked,Guethary norte; satélite 2026-11
 BIDART,43.4370,-1.5960,B,K,local,,plage du Centre
-UHABIA,43.4440,-1.5910,B,K,local,,Bidart
+UHABIA,43.4317,-1.6019,B,V,local,nosnap checked,Bidart; satélite 2026-11
 ILBARRITZ,43.4620,-1.5790,B,K,local,,
 COTE DES BASQUES,43.4780,-1.5710,B,K,local,top,Biarritz; longboard
 MILADY,43.4649,-1.5749,B,V,local,nosnap checked,Biarritz; satélite 2026-11

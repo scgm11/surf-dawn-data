@@ -1,15 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
 MERON,43.3820,-4.3680,B,L,local,,San Vicente de la Barquera; posicion aproximada
-GERRA,43.3915,-4.3330,B,L,local,,Oyambre; posicion aproximada
-OYAMBRE,43.3910,-4.3070,B,L,local,,posicion aproximada
-LA CONCHA,43.4430,-4.0480,B,L,local,,Suances; posicion aproximada
+GERRA,43.4006,-4.3567,B,V,local,nosnap checked,Oyambre; posicion aproximada; satélite 2026-11
+OYAMBRE,43.3935,-4.3325,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+LA CONCHA,43.4363,-4.0413,B,V,local,nosnap checked,Suances; posicion aproximada; satélite 2026-11
 LOS LOCOS,43.4390,-4.0480,B,V,local,nosnap top facing=350 checked,Suances; satélite 2026-11
 LIENCRES,43.4517,-3.9651,B,V,local,nosnap top checked,Valdearenas; satélite 2026-11
-PORTIO,43.4640,-3.9440,B,L,local,,Liencres; posicion aproximada
+PORTIO,43.4703,-3.9301,B,V,local,nosnap checked facing=340,Liencres; posicion aproximada; satélite 2026-11
 SOMO,43.4580,-3.7340,B,K,local,top,
-LOREDO,43.4660,-3.7050,B,K,local,wave=43.6667;-3.6667,
+LOREDO,43.4626,-3.7282,B,V,local,nosnap wave=43.6667;-3.6667 checked,satélite 2026-11
 GALIZANO,43.4780,-3.6580,B,L,local,wave=43.6667;-3.8333,posicion aproximada
-LANGRE,43.4770,-3.6350,B,L,local,wave=43.6667;-3.6667,posicion aproximada
-JOYEL,43.4760,-3.5890,B,L,local,facing=345,Arnuero; posicion aproximada; orientación a mano (la calculada miraba a otra costa)
-TRENGANDIN,43.4890,-3.5300,B,L,local,,Noja; posicion aproximada
+LANGRE,43.4762,-3.6901,B,V,local,nosnap wave=43.6667;-3.6667 checked,posicion aproximada; satélite 2026-11
+JOYEL,43.4937,-3.5379,B,V,local,nosnap facing=345 checked wave=43.6667;-3.5,Arnuero; posicion aproximada; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+TRENGANDIN,43.4787,-3.5157,B,V,local,nosnap checked,Noja; posicion aproximada; satélite 2026-11
 BERRIA,43.4560,-3.4640,B,L,local,,Santoña; posicion aproximada

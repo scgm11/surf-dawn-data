@@ -2,12 +2,12 @@ name,lat,lon,type,conf,src,flags,note
 SOULAC,45.4950,-1.1700,B,L,local,,Soulac-sur-Mer
 MONTALIVET,45.3783,-1.1598,B,V,local,nosnap checked wave=45.3333;-1.3333,satélite 2026-11
 HOURTIN,45.2234,-1.1728,B,V,local,nosnap checked wave=45.1667;-1.3333,Hourtin-Plage; satélite 2026-11
-CARCANS,45.1090,-1.1700,B,K,local,,Carcans-Plage
+CARCANS,45.0829,-1.1927,B,V,local,nosnap checked,Carcans-Plage; satélite 2026-11
 LACANAU NORD,45.0090,-1.2010,B,K,local,wave=45.0;-1.3333,Lacanau-Ocean
 LACANAU CENTRALE,45.0018,-1.2028,B,V,geonames:11072965,top wave=45.0;-1.3333,Lacanau-Ocean; exCT; plage Centrale; posición GeoNames
 LACANAU SUD,44.9930,-1.2040,B,K,local,wave=45.0;-1.3333,Lacanau-Ocean
-LE PORGE,44.8870,-1.2240,B,K,local,,Le Porge-Ocean
-GRAND CROHOT,44.7380,-1.2530,B,K,local,,Cap Ferret oceano
+LE PORGE,44.8939,-1.2206,B,V,local,nosnap checked,Le Porge-Ocean; satélite 2026-11
+GRAND CROHOT,44.7989,-1.2367,B,V,local,nosnap checked,Cap Ferret oceano; satélite 2026-11
 TRUC VERT,44.7155,-1.2534,B,V,local,nosnap checked,Cap Ferret; satélite 2026-11
 L'HORIZON,44.6390,-1.2650,B,L,local,,Cap Ferret; posicion aproximada
 BISCARROSSE,44.4450,-1.2610,B,K,local,top,Biscarrosse-Plage
@@ -16,4 +16,4 @@ CONTIS,44.0890,-1.3220,B,K,local,,Contis-Plage
 SAINT-GIRONS,43.9535,-1.3671,B,V,local,nosnap checked,Saint-Girons-Plage; posicion aproximada; satélite 2026-11
 MOLIETS,43.8570,-1.4050,B,K,local,,Moliets-Plage
 MESSANGES,43.8162,-1.4063,B,V,local,nosnap checked,Messanges; satélite 2026-11
-VIEUX-BOUCAU,43.7880,-1.4260,B,K,local,,Vieux-Boucau; La Centrale
+VIEUX-BOUCAU,43.7878,-1.4154,B,V,local,nosnap checked,Vieux-Boucau; La Centrale; satélite 2026-11

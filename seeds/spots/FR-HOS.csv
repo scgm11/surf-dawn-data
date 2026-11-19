@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 ONDRES,43.5792,-1.4875,B,K,geonames:3232812,,plage d'Ondres; posición GeoNames
-LABENNE,43.6040,-1.4540,B,K,local,,Labenne-Ocean
+LABENNE,43.5996,-1.4739,B,V,local,nosnap checked,Labenne-Ocean; satélite 2026-11
 L'ESTACADE,43.6546,-1.4464,B,V,local,nosnap checked,Capbreton; junto al espigon; satélite 2026-11
 SANTOCHA,43.6467,-1.4460,B,V,local,nosnap top checked,Capbreton; satélite 2026-11
 LE PREVENT,43.6500,-1.4467,B,V,local,nosnap checked,Capbreton; satélite 2026-11
