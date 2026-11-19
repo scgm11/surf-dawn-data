@@ -289,7 +289,7 @@ class Era5Normals(unittest.TestCase):
         pl = era5.plan(self.zone(), self.TODAY)
         self.assertEqual(pl["spot"], "LA VIRGEN")   # the first of the Brava's eight, not PUNTA DEL CHILENO in the bay
         wind, marine = dict(pl["wind"][1]), dict(pl["marine"][1])
-        self.assertEqual((wind["latitude"], wind["longitude"]), ("-34.9653", "-54.9422"))
+        self.assertEqual((wind["latitude"], wind["longitude"]), ("-34.9648", "-54.9402"))
         self.assertEqual((marine["latitude"], marine["longitude"]), ("-35.0000", "-54.7500"))
         self.assertEqual(wind["models"], "era5")
         self.assertEqual(marine["models"], "era5_ocean")
@@ -324,7 +324,7 @@ class Era5Normals(unittest.TestCase):
         self.assertEqual([a["timezone"] for a in asked[4:]], ["America/Montevideo"] * 3)   # the water and the air too
         self.assertEqual([a["timezone"] for a in asked[2:4]], ["GMT", "GMT"])              # the factor's, as they were
         self.assertEqual(asked[0]["daily"], "sunrise,sunset,temperature_2m_max,temperature_2m_min")
-        self.assertEqual((asked[4]["latitude"], asked[4]["longitude"]), ("-34.9653", "-54.9422"))   # the water at the spot
+        self.assertEqual((asked[4]["latitude"], asked[4]["longitude"]), ("-34.9648", "-54.9402"))   # the water at the spot
         self.assertEqual(asked[5]["models"], "gfs_seamless")                                        # the zone's wind model
         self.assertEqual(sorted(b["asked"]), ["air_era5", "air_model", "factor_era5", "factor_model", "marine", "water", "wind"])
         self.assertEqual(era5.entry(b)["hours"], 1)
@@ -332,7 +332,7 @@ class Era5Normals(unittest.TestCase):
         old = dict(era5.entry(b), v=1)              # asked before the water and the air: again
         self.assertFalse(era5.current(old, era5.plan(self.zone(), self.TODAY)))
         moved = self.zone()
-        moved["s"] = moved["s"][9:]                 # LA BOCA first, its own wave point
+        moved["s"] = moved["s"][[s[0] for s in moved["s"]].index("LA BOCA"):]   # LA BOCA first, its own wave point
         self.assertFalse(era5.current(era5.entry(b), era5.plan(moved, self.TODAY)))
 
 
