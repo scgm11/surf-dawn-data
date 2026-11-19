@@ -1,2 +1,2 @@
 name,lat,lon,type,conf,src,flags,note
-SURFERS BEACH,25.4200,-76.6230,B,L,local,,Eleuthera; costa atlántica cerca de Gregory Town; posición aproximada
+SURFERS BEACH,25.3824,-76.5254,B,V,local,nosnap checked facing=41 wave=25.5;-76.3333,Eleuthera; costa atlántica al sur de Gregory Town; el arrecife frente a la playa; satélite 2026-11 (estaba 11 km al NO en la bahía de Eleuthera y miraba a 168°)

@@ -5,10 +5,10 @@ BLANCS SABLONS,48.3750,-4.7800,B,L,local,facing=270,Le Conquet; posicion aproxim
 LOSTMARC'H,48.2200,-4.6000,B,L,local,,Crozon; posicion aproximada
 LA PALUE,48.1995,-4.5528,B,V,local,nosnap checked,Crozon; posicion aproximada; satélite 2026-11
 STE ANNE LA PALUD,48.1398,-4.2748,B,V,local,checked,Plonevez-Porzay; posicion aproximada; satélite 2026-11
-PENHORS,47.9150,-4.3570,B,L,local,,Pouldreuzic; posicion aproximada
-TRONOEN,47.8620,-4.3550,B,L,local,,Saint-Jean-Trolimon; posicion aproximada
-LA TORCHE,47.8394,-4.3476,B,V,local,nosnap top checked,Plomeur; kite y surf; satélite 2026-11
-PORS CARN,47.8120,-4.3620,B,L,local,,Penmarc'h; posicion aproximada
+PENHORS,47.9150,-4.3570,B,L,local,wave=47.8333;-4.5,Pouldreuzic; posicion aproximada
+TRONOEN,47.8620,-4.3550,B,L,local,wave=47.8333;-4.5,Saint-Jean-Trolimon; posicion aproximada
+LA TORCHE,47.8394,-4.3476,B,V,local,nosnap top checked wave=47.8333;-4.5,Plomeur; kite y surf; satélite 2026-11
+PORS CARN,47.8120,-4.3620,B,L,local,wave=47.8333;-4.5,Penmarc'h; posicion aproximada
 LE POULDU,47.7670,-3.5410,B,L,local,,Clohars-Carnoet; posicion aproximada
 GUIDEL,47.7650,-3.5230,B,K,local,top,Guidel-Plages
 FORT BLOQUE,47.7200,-3.4450,B,L,local,,Ploemeur; posicion aproximada
