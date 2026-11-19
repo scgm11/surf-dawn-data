@@ -2,6 +2,6 @@ name,lat,lon,type,conf,src,flags,note
 WAI'AO,24.8780,121.8350,B,K,local,top checked,Toucheng
 FULONG,25.0210,121.9440,B,K,local,top,
 WUSHI,24.8660,121.8330,B,L,local,,puerto; posicion aprox
-DAXI,24.8550,121.8400,B,L,local,,Toucheng; posicion aprox
+DAXI,24.9323,121.8861,B,V,local,nosnap checked,Toucheng; posicion aprox; satélite 2026-11
 HONEYMOON BAY,24.9400,121.9250,B,L,local,,posicion aprox
 GREEN BAY,25.1840,121.6890,B,L,local,,Wanli; posicion aprox

@@ -2,8 +2,8 @@ name,lat,lon,type,conf,src,flags,note
 PIE DE LA CUESTA,16.9120,-99.9990,B,L,local,,Acapulco; posición aproximada
 REVOLCADERO,16.7730,-99.8010,B,V,osm:relation/12204231,,Acapulco Diamante
 BARRA DE POTOSI,17.5150,-101.4800,B,K,local,,Petatlán
-TRONCONES,17.7870,-101.7380,P,K,local,top,derecha
-LA SALADITA,17.8330,-101.7700,P,K,local,top,derecha larga de arena y roca
+TRONCONES,17.7941,-101.7477,P,V,local,nosnap top checked,derecha; satélite 2026-11
+LA SALADITA,17.8363,-101.7706,P,V,local,nosnap top checked,derecha larga de arena y roca; satélite 2026-11
 NEXPA,18.0790,-102.7920,P,K,local,top,Barra de Nexpa; derecha
 MARUATA,18.2700,-103.3500,B,L,local,,Michoacán; posición aproximada
 FARO DE BUCERIAS,18.3300,-103.4500,P,L,local,,Michoacán; posición aproximada

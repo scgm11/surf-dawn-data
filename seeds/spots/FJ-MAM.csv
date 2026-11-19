@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 CLOUDBREAK,-17.8860,177.1865,R,V,web:mondo.surf,top nosnap facing=220,WSL CT; izquierda; a ~4 km de Tavarua
-RESTAURANTS,-17.8565,177.1985,R,V,web:mondo.surf,top checked,Tavarua; derecha
-NAMOTU LEFT,-17.8530,177.1800,R,K,local,top,izquierda de Namotu
-SWIMMING POOLS,-17.8530,177.1890,R,V,web:mondo.surf,top checked,derecha entre Namotu y Tavarua
-WILKES PASSAGE,-17.8610,177.1910,R,L,local,,paso entre Namotu y Tavarua
+RESTAURANTS,-17.8532,177.2010,R,V,web:mondo.surf,nosnap top checked,Tavarua; derecha; satélite 2026-11
+NAMOTU LEFT,-17.8453,177.1781,R,V,local,nosnap top checked facing=250,izquierda de Namotu; satélite 2026-11
+SWIMMING POOLS,-17.8476,177.1890,R,V,web:mondo.surf,nosnap top checked,derecha entre Namotu y Tavarua; satélite 2026-11
+WILKES PASSAGE,-17.8415,177.1708,R,V,local,nosnap checked,paso entre Namotu y Tavarua; satélite 2026-11
 DESPERATIONS,-17.8645,177.2020,R,L,local,,Tavarua

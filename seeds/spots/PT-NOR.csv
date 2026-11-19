@@ -1,15 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
-MOLEDO,41.8420,-8.8780,B,L,local,,Caminha; posicion aproximada
-ANCORA,41.8080,-8.8670,B,K,local,,Vila Praia de Ancora
+MOLEDO,41.8489,-8.8667,B,V,local,nosnap checked,Caminha; posicion aproximada; satélite 2026-11
+ANCORA,41.8114,-8.8645,B,V,local,nosnap checked,Vila Praia de Ancora; satélite 2026-11
 AFIFE,41.7640,-8.8730,B,L,local,,Viana do Castelo; posicion aproximada
 PRAIA NORTE,41.7050,-8.8500,B,L,local,,Viana do Castelo; posicion aproximada
 CABEDELO,41.6780,-8.8600,B,L,local,facing=273,Viana do Castelo; posicion aproximada; orientación a mano (la calculada miraba a la laguna o la bahía)
 ESPOSENDE,41.5370,-8.7900,B,L,local,,posicion aproximada
 APULIA,41.4650,-8.7880,B,L,local,,Esposende; posicion aproximada
-AGUCADOURA,41.4420,-8.7890,B,L,local,,Povoa de Varzim; posicion aproximada
+AGUCADOURA,41.4323,-8.7847,B,V,local,nosnap checked,Povoa de Varzim; posicion aproximada; satélite 2026-11
 POVOA DE VARZIM,41.3690,-8.7700,B,K,local,,
 ANGEIRAS,41.2430,-8.7480,B,L,local,,Matosinhos; posicion aproximada
-LEÇA,41.2010,-8.7230,B,K,local,,Leça da Palmeira
+LEÇA,41.1887,-8.7073,B,V,local,nosnap checked,Leça da Palmeira; satélite 2026-11
 MATOSINHOS,41.1765,-8.6939,B,V,osm:way/338635402,top,
 CARNEIRO,41.1430,-8.6810,B,L,local,wave=41.1667;-8.8333,Foz do Douro; posicion aproximada
 MOLHE,41.1480,-8.6880,B,L,local,,Foz do Douro; junto al espigon; posicion aproximada

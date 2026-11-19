@@ -6,9 +6,9 @@ BLYTH,55.1210,-1.4880,B,K,local,,Blyth South Beach
 SEATON SLUICE,55.0830,-1.4690,B,L,local,,posicion aproximada
 WHITLEY BAY,55.0450,-1.4430,B,K,local,,
 CULLERCOATS,55.0335,-1.4235,B,K,local,,
-KING EDWARDS BAY,55.0215,-1.4230,B,L,local,,Tynemouth; posicion aproximada
-TYNEMOUTH,55.0155,-1.4215,B,K,local,top,Longsands
-SOUTH SHIELDS,55.0050,-1.4020,B,L,local,,posicion aproximada
+KING EDWARDS BAY,55.0192,-1.4192,B,V,local,nosnap checked,Tynemouth; posicion aproximada; satélite 2026-11
+TYNEMOUTH,55.0260,-1.4242,B,V,local,nosnap top checked,Longsands; satélite 2026-11
+SOUTH SHIELDS,54.9991,-1.4103,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
 SEABURN,54.9380,-1.3580,B,L,local,,Sunderland; posicion aproximada
 ROKER,54.9230,-1.3620,B,L,local,,Sunderland; posicion aproximada
 SEAHAM,54.8400,-1.3280,B,L,local,,posicion aproximada

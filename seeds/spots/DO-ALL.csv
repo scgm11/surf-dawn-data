@@ -1,3 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
 ENCUENTRO,19.7830,-70.4500,R,V,web:surfnerd.com,top,Cabarete oeste; arrecife de coral; izquierda larga y derecha corta
-CABARETE,19.7570,-70.4200,B,K,local,,bahía de Cabarete
+CABARETE,19.7508,-70.4100,B,V,local,nosnap checked,bahía de Cabarete; satélite 2026-11

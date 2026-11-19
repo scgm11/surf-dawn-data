@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 SOULAC,45.4950,-1.1700,B,L,local,,Soulac-sur-Mer
-MONTALIVET,45.3740,-1.1680,B,K,local,,
-HOURTIN,45.2290,-1.1660,B,K,local,,Hourtin-Plage
+MONTALIVET,45.3783,-1.1598,B,V,local,nosnap checked,satélite 2026-11
+HOURTIN,45.2234,-1.1728,B,V,local,nosnap checked,Hourtin-Plage; satélite 2026-11
 CARCANS,45.1090,-1.1700,B,K,local,,Carcans-Plage
 LACANAU NORD,45.0090,-1.2010,B,K,local,,Lacanau-Ocean
 LACANAU CENTRALE,45.0018,-1.2028,B,V,geonames:11072965,top,Lacanau-Ocean; exCT; plage Centrale; posición GeoNames

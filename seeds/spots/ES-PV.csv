@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
-HONDARRIBIA,43.3790,-1.7860,B,K,local,,Fuenterrabia
+HONDARRIBIA,43.3783,-1.7914,B,V,local,nosnap checked facing=15,Fuenterrabia; satélite 2026-11
 ZURRIOLA,43.3265,-1.9790,B,K,local,top,Donostia-Gros
 ORIO,43.2890,-2.1250,B,L,local,,barra del rio Oria; posicion aproximada
 ZARAUTZ,43.2885,-2.1700,B,K,local,top,
 GAZTETAPE,43.2985,-2.1930,B,L,local,,Getaria; posicion aproximada
-SANTIAGO,43.3005,-2.2515,B,L,local,,Zumaia; posicion aproximada
+SANTIAGO,43.3031,-2.2464,B,V,local,nosnap checked facing=0,Zumaia; posicion aproximada; satélite 2026-11
 ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
-DEBA,43.3010,-2.3560,B,K,local,facing=10,orientación a mano (la calculada miraba a otra costa)
+DEBA,43.2993,-2.3526,B,V,local,nosnap facing=10 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 SATURRARAN,43.3170,-2.3790,B,K,local,,Mutriku
 KARRASPIO,43.3628,-2.4945,B,K,osm:way/652032389,,"Mendexa, frente a San Nicolas; posición OSM"
 EA,43.3780,-2.5890,B,L,local,,posicion aproximada
@@ -16,12 +16,12 @@ MUNDAKA,43.4090,-2.6970,B,K,local,top,barra de rio; WC exCT
 BAKIO,43.4370,-2.8100,B,K,local,top,
 ARMINTZA,43.4300,-2.9060,B,L,local,,posicion aproximada
 GORLIZ,43.4170,-2.9330,B,K,local,,
-PLENTZIA,43.4090,-2.9470,B,K,local,,
-BARRIKA,43.4050,-2.9610,B,K,local,,
-MEÑAKOZ,43.4010,-2.9650,R,L,local,top,ola grande
-ARRIETARA,43.3945,-2.9820,B,L,local,,Sopelana; posicion aproximada
+PLENTZIA,43.4117,-2.9470,B,V,local,nosnap checked,satélite 2026-11
+BARRIKA,43.4027,-2.9759,B,V,local,nosnap checked,satélite 2026-11
+MEÑAKOZ,43.3984,-2.9865,R,V,local,nosnap top checked,ola grande; satélite 2026-11
+ARRIETARA,43.3894,-2.9951,B,V,local,nosnap checked,Sopelana; posicion aproximada; satélite 2026-11
 SOPELA,43.3925,-2.9890,B,K,local,top,Sopelana
 LA SALVAJE,43.3870,-3.0050,B,L,local,,Barinatxe-Sopelana; posicion aproximada
-AZKORRI,43.3790,-3.0100,B,L,local,,Getxo-Gorrondatxe; posicion aproximada
+AZKORRI,43.3806,-3.0161,B,V,local,nosnap checked,Getxo-Gorrondatxe; posicion aproximada; satélite 2026-11
 PUNTA GALEA,43.3760,-3.0210,R,L,local,,Getxo; ola grande
 LA ARENA,43.3560,-3.1300,B,L,local,,Muskiz-Zierbena; posicion aproximada

@@ -1,27 +1,27 @@
 name,lat,lon,type,conf,src,flags,note
-FINGAL HEAD,-28.2105,153.5715,P,K,local,,punto derecho; Tweed
-KINGSCLIFF,-28.2640,153.5790,B,K,local,,
+FINGAL HEAD,-28.1988,153.5709,P,V,local,nosnap checked,punto derecho; Tweed; satélite 2026-11
+KINGSCLIFF,-28.2541,153.5790,B,V,local,nosnap checked,satélite 2026-11
 CABARITA BEACH,-28.3360,153.5815,B,K,local,,QS
 HASTINGS POINT,-28.3735,153.5810,P,K,local,,
 POTTSVILLE,-28.3900,153.5700,B,L,local,,
 BRUNSWICK HEADS,-28.5400,153.5535,B,K,local,,boca del rio
 BELONGIL,-28.6300,153.5850,B,L,local,,
 MAIN BEACH BYRON,-28.6420,153.6110,B,L,local,,
-CLARKES BEACH,-28.6395,153.6190,B,K,local,,Byron Bay
+CLARKES BEACH,-28.6415,153.6216,B,V,local,nosnap checked,Byron Bay; satélite 2026-11
 THE PASS,-28.6385,153.6255,P,K,local,top swell=130,Byron Bay; punto derecho largo
 WATEGOS,-28.6368,153.6325,P,K,local,swell=130,Cape Byron
 TALLOW BEACH,-28.6700,153.6275,B,K,local,,
-SUFFOLK PARK,-28.6990,153.6215,B,L,local,,
-BROKEN HEAD,-28.7095,153.6185,P,K,local,top,
+SUFFOLK PARK,-28.6971,153.6145,B,V,local,nosnap checked,satélite 2026-11
+BROKEN HEAD,-28.7058,153.6198,P,V,local,nosnap top checked,satélite 2026-11
 SEVEN MILE BEACH,-28.7700,153.6045,B,L,local,,
-LENNOX HEAD,-28.8000,153.6020,P,K,local,top,WC; punto derecho
+LENNOX HEAD,-28.8058,153.6041,P,V,local,nosnap top checked,WC; punto derecho; satélite 2026-11
 LIGHTHOUSE BEACH,-28.8545,153.5880,B,L,local,,Ballina
 SHELLY BEACH,-28.8625,153.5895,B,L,local,,Ballina
 NORTH WALL,-28.8725,153.5915,B,L,local,,Ballina; espigon del Richmond
-EVANS HEAD,-29.1170,153.4435,B,K,local,facing=105,
-AIRFORCE BEACH,-29.1360,153.4380,B,L,local,,Evans Head sur
+EVANS HEAD,-29.1125,153.4357,B,V,local,nosnap checked facing=75,satélite 2026-11
+AIRFORCE BEACH,-29.0991,153.4335,B,V,local,nosnap checked,Evans Head sur; satélite 2026-11
 ANGOURIE POINT,-29.4815,153.3635,P,K,local,top,
 SPOOKIES,-29.4860,153.3650,P,L,local,,Angourie
-YAMBA MAIN BEACH,-29.4385,153.3640,B,L,local,,
-TURNERS BEACH,-29.4560,153.3590,B,L,local,,Yamba
+YAMBA MAIN BEACH,-29.4352,153.3650,B,V,local,nosnap checked,satélite 2026-11
+TURNERS BEACH,-29.4299,153.3639,B,V,local,nosnap checked,Yamba; satélite 2026-11
 BROOMS HEAD,-29.6070,153.3390,P,L,local,,

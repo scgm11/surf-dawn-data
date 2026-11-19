@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-BOILERS,30.6240,-9.8815,R,V,osm:node/6447811161,top swell=310,antes del faro de Cap Ghir; caldera hundida
+BOILERS,30.6246,-9.8789,R,V,osm:node/6447811161,nosnap top swell=310 checked,antes del faro de Cap Ghir; caldera hundida; satélite 2026-11
 KILLER POINT,30.5501,-9.7400,P,V,osm:node/6447811170,top swell=300,al norte de Anchor Point
 ANCHOR POINT,30.5452,-9.7267,P,V,osm:node/6447811159,top swell=300,derecha larga; cabo al oeste del pueblo
 LA SOURCE,30.5496,-9.7328,P,K,osm:node/2080862374,swell=300,entre Killer y Mysteries; frente a Résidence La Source
@@ -11,10 +11,10 @@ DEVIL'S ROCK,30.5040,-9.6858,R,V,osm:node/6447811166,swell=300,Tamraght
 TAMRAGHT,30.5130,-9.6810,B,L,local,,
 CROCODILE,30.5109,-9.6880,B,V,osm:node/6447811163,,Tamraght; Cro Cro
 IMOURAN,30.4940,-9.6720,B,L,local,,Aourir
-ANZA,30.4600,-9.6620,B,L,local,,
-AGADIR,30.4200,-9.6350,B,K,local,,
-IMSOUANE,30.8425,-9.8220,P,K,local,top,The Bay; derecha larga
-CATHEDRAL,30.8395,-9.8265,R,L,local,swell=300,Imsouane; posicion dudosa
+ANZA,30.4468,-9.6620,B,V,local,nosnap checked,satélite 2026-11
+AGADIR,30.3961,-9.6004,B,V,local,nosnap checked,satélite 2026-11
+IMSOUANE,30.8390,-9.8200,P,V,local,nosnap top checked,The Bay; derecha larga; satélite 2026-11
+CATHEDRAL,30.8446,-9.8230,R,V,local,nosnap swell=300 checked,Imsouane; posicion dudosa; satélite 2026-11
 MADRABA,30.8470,-9.8180,B,L,local,,Imsouane; posicion dudosa
-SIDI KAOUKI,31.3590,-9.8090,B,K,local,,Essaouira
-ESSAOUIRA,31.5050,-9.7710,B,K,local,,
+SIDI KAOUKI,31.3546,-9.7990,B,V,local,nosnap checked,Essaouira; satélite 2026-11
+ESSAOUIRA,31.4987,-9.7653,B,V,local,nosnap checked,satélite 2026-11

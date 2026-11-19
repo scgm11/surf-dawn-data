@@ -7,10 +7,10 @@ THE BOMBIE,-8.8190,115.0825,R,L,local,swell=200,ola grande mar adentro de Ulu
 SULUBAN,-8.8142,115.0880,R,L,local,swell=200,cueva de Suluban; Blue Point
 PADANG PADANG,-8.8115,115.1002,R,K,local,top swell=200,WC; derecha tubular
 THUNDERS,-8.8108,115.1030,R,L,local,swell=200,derecha pesada; posicion aprox
-IMPOSSIBLES,-8.8107,115.1052,R,K,local,top swell=200,izquierda rapida
-BINGIN,-8.8082,115.1085,R,K,local,top swell=200,izquierda tubular
+IMPOSSIBLES,-8.8074,115.1076,R,V,local,nosnap top swell=200 checked,izquierda rapida; satélite 2026-11
+BINGIN,-8.8047,115.1128,R,V,local,nosnap top swell=200 checked,izquierda tubular; satélite 2026-11
 DREAMLAND,-8.8003,115.1177,B,K,local,,playa con laja
-BALANGAN,-8.7905,115.1235,R,K,local,top swell=200,izquierda larga
+BALANGAN,-8.7929,115.1209,R,V,local,nosnap top swell=200 checked,izquierda larga; satélite 2026-11
 NYANG NYANG,-8.8390,115.0990,R,L,local,,posicion dudosa
 GREEN BOWL,-8.8400,115.1550,R,L,local,,posicion dudosa
 NUSA DUA,-8.8000,115.2370,R,L,local,swell=200,costa este; solo con swell grande

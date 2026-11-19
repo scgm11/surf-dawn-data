@@ -1,25 +1,25 @@
 name,lat,lon,type,conf,src,flags,note
 SNAPPER ROCKS,-28.1625,153.5490,P,K,local,top swell=125,CT26; Superbank sur
-RAINBOW BAY,-28.1640,153.5440,P,K,local,top swell=125,Superbank
-GREENMOUNT,-28.1690,153.5390,P,K,local,top swell=125,Superbank
-COOLANGATTA,-28.1692,153.5355,B,K,local,,Superbank
-KIRRA,-28.1675,153.5315,P,K,local,top swell=125,Superbank norte; ola clase mundial
-DURANBAH,-28.1735,153.5540,B,K,local,top,D-Bah; Tweed Heads NSW
-BILINGA,-28.1535,153.5190,B,K,local,,
-TUGUN,-28.1450,153.5070,B,K,local,,
-CURRUMBIN ALLEY,-28.1360,153.4955,P,K,local,,Currumbin Creek
-ELEPHANT ROCK,-28.1385,153.4925,P,K,local,,Currumbin
+RAINBOW BAY,-28.1637,153.5474,P,V,local,nosnap top swell=125 checked,Superbank; satélite 2026-11
+GREENMOUNT,-28.1649,153.5437,P,V,local,nosnap top swell=125 checked,Superbank; satélite 2026-11
+COOLANGATTA,-28.1651,153.5376,B,V,local,nosnap checked,Superbank; satélite 2026-11
+KIRRA,-28.1654,153.5355,P,V,local,nosnap top swell=125 checked,Superbank norte; ola clase mundial; satélite 2026-11
+DURANBAH,-28.1673,153.5530,B,V,local,nosnap top checked,D-Bah; Tweed Heads NSW; satélite 2026-11
+BILINGA,-28.1538,153.5076,B,V,local,nosnap checked,satélite 2026-11
+TUGUN,-28.1417,153.4967,B,V,local,nosnap checked,satélite 2026-11
+CURRUMBIN ALLEY,-28.1249,153.4864,P,V,local,nosnap checked,Currumbin Creek; satélite 2026-11
+ELEPHANT ROCK,-28.1318,153.4905,P,V,local,nosnap checked,Currumbin; satélite 2026-11
 PALM BEACH,-28.1190,153.4790,B,K,local,,
-TALLEBUDGERA,-28.1055,153.4695,B,L,local,,boca del arroyo
-BURLEIGH HEADS,-28.0935,153.4625,P,K,local,top,WC
+TALLEBUDGERA,-28.1000,153.4638,B,V,local,nosnap checked,boca del arroyo; satélite 2026-11
+BURLEIGH HEADS,-28.0902,153.4593,P,V,local,nosnap top checked,WC; satélite 2026-11
 MIAMI,-28.0720,153.4430,B,K,local,,
-NOBBYS,-28.0510,153.4390,B,L,local,,
+NOBBYS,-28.0588,153.4427,B,V,local,nosnap checked,satélite 2026-11
 MERMAID BEACH,-28.0415,153.4355,B,L,local,,
 BROADBEACH,-28.0285,153.4335,B,K,local,,
 SURFERS PARADISE,-28.0020,153.4315,B,K,local,,
-NARROWNECK,-27.9860,153.4295,R,L,local,,arrecife artificial
-MAIN BEACH,-27.9700,153.4290,B,K,local,,
+NARROWNECK,-27.9850,153.4330,R,V,local,nosnap checked,arrecife artificial; satélite 2026-11
+MAIN BEACH,-27.9753,153.4302,B,V,local,nosnap checked,satélite 2026-11
 THE SPIT,-27.9500,153.4295,B,K,local,,
-CYLINDER BEACH,-27.4390,153.5445,B,K,local,,Isla Stradbroke
-HOME BEACH,-27.4450,153.5455,B,L,local,,Isla Stradbroke
-STRADDIE MAIN,-27.4540,153.5450,B,L,local,,Isla Stradbroke
+CYLINDER BEACH,-27.4253,153.5319,B,V,local,nosnap checked,Isla Stradbroke; satélite 2026-11
+HOME BEACH,-27.4238,153.5223,B,V,local,nosnap checked,Isla Stradbroke; satélite 2026-11
+STRADDIE MAIN,-27.4377,153.5421,B,V,local,nosnap checked,Isla Stradbroke; satélite 2026-11

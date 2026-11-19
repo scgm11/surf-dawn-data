@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
 FAZENDA,-23.3680,-44.8300,B,L,local,,Picinguaba
-PRUMIRIM,-23.3720,-44.9360,B,L,local,,
-FÉLIX,-23.3730,-44.9650,B,L,local,,
+PRUMIRIM,-23.3799,-44.9598,B,V,local,nosnap checked,satélite 2026-11
+FÉLIX,-23.3870,-44.9679,B,V,local,nosnap checked,satélite 2026-11
 ITAMAMBUCA,-23.4000,-45.0050,B,K,local,top,
 VERMELHA DO NORTE,-23.4050,-45.0170,B,L,local,,
 PRAIA GRANDE,-23.4670,-45.0630,B,K,local,,Ubatuba
-TENÓRIO,-23.4850,-45.0720,B,L,local,,Ubatuba
-TONINHAS,-23.4700,-45.0780,B,L,local,,Ubatuba
+TENÓRIO,-23.4655,-45.0561,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
+TONINHAS,-23.4812,-45.0717,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 SUNUNGA,-23.5094,-45.1324,B,V,osm:relation/7785033,,Ubatuba
 MARANDUBA,-23.5150,-45.1200,B,K,local,,Ubatuba
 LÁZARO,-23.5160,-45.1330,B,L,local,,Ubatuba
@@ -21,8 +21,8 @@ BONETE,-23.8910,-45.3260,B,K,local,,Ilhabela
 CASTELHANOS,-23.8210,-45.2600,B,K,local,,Ilhabela
 BORACÉIA,-23.7600,-45.8700,B,K,local,,
 ITAGUARÉ,-23.7850,-45.9830,B,K,local,,Bertioga
-TOMBO,-24.0060,-46.2670,B,K,local,,Guarujá
-ASTÚRIAS,-24.0000,-46.2630,B,L,local,,Guarujá
+TOMBO,-24.0136,-46.2716,B,V,local,nosnap checked,Guarujá; satélite 2026-11
+ASTÚRIAS,-24.0058,-46.2673,B,V,local,nosnap checked,Guarujá; satélite 2026-11
 PITANGUEIRAS,-23.9930,-46.2570,B,L,local,,Guarujá
 ENSEADA,-23.9750,-46.2310,B,L,local,,Guarujá
 PRAIA GRANDE SP,-24.0350,-46.4880,B,L,local,,Guilhermina

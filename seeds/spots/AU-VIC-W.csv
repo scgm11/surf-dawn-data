@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 WYE RIVER,-38.6370,143.8860,B,L,local,,Great Ocean Road
-KENNETT RIVER,-38.6600,143.8650,B,L,local,,Great Ocean Road
+KENNETT RIVER,-38.6680,143.8639,B,V,local,nosnap checked,Great Ocean Road; satélite 2026-11
 JOHANNA BEACH,-38.7800,143.4000,B,L,local,,Otway NP
-PRINCETOWN,-38.7150,143.1700,B,L,local,,boca del Gellibrand
+PRINCETOWN,-38.7072,143.1585,B,V,local,nosnap checked,boca del Gellibrand; satélite 2026-11
 PETERBOROUGH,-38.6140,142.8630,B,L,local,,
 LOGANS BEACH,-38.4080,142.4600,B,L,local,,Warrnambool
 KILLARNEY BEACH,-38.3600,142.3170,B,L,local,,
