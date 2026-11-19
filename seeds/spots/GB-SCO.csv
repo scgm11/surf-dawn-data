@@ -1,22 +1,22 @@
 name,lat,lon,type,conf,src,flags,note
 BAY OF SKAILL,59.0480,-3.3480,B,L,local,facing=275,Orkney; posicion aproximada
-STRATHY,58.5900,-4.0170,B,L,local,,Sutherland; posicion aproximada
+STRATHY,58.5698,-4.0047,B,V,local,nosnap checked,Sutherland; posicion aproximada; satélite 2026-11
 MELVICH,58.5608,-3.9117,B,V,local,nosnap checked facing=10,Sutherland; posicion aproximada; satélite 2026-11
-SANDSIDE BAY,58.5920,-3.7750,B,L,local,,Reay; posicion aproximada
+SANDSIDE BAY,58.5654,-3.7836,B,V,local,nosnap checked,Reay; posicion aproximada; satélite 2026-11
 BRIMS NESS,58.6227,-3.6518,R,V,wd:Q24654399,top,Caithness; ola grande; posición de Wikidata
 THURSO EAST,58.6009,-3.5098,R,V,web:wikipedia.org,nosnap top checked wave=58.75;-3.5,WC; ola de arrecife; satélite 2026-11
 DUNNET BAY,58.6140,-3.3530,B,K,local,wave=58.75;-3.5,Caithness
-EOROPIE,58.5050,-6.2420,B,L,local,,Lewis; posicion aproximada
-LUSKENTYRE,57.8650,-6.9940,B,L,local,wave=58;-7.25,Harris; posicion aproximada
-SCARISTA,57.8630,-7.0330,B,L,local,wave=58;-7.25,Harris; posicion aproximada
+EOROPIE,58.4988,-6.2719,B,V,local,nosnap checked,Lewis; posicion aproximada; satélite 2026-11
+LUSKENTYRE,57.8808,-6.9564,B,V,local,nosnap wave=58;-7.25 checked facing=270,Harris; posicion aproximada; satélite 2026-11
+SCARISTA,57.8239,-7.0584,B,V,local,nosnap wave=58;-7.25 checked,Harris; posicion aproximada; satélite 2026-11
 MACHIR BAY,55.7826,-6.4575,B,V,local,nosnap checked,Islay; satélite 2026-11
 GOTT BAY,56.5190,-6.8000,B,L,local,,Tiree; posicion aproximada
 LOSSIEMOUTH,57.7185,-3.2782,B,V,local,nosnap checked,Moray; posicion aproximada; satélite 2026-11
-FRASERBURGH,57.6940,-2.0010,B,L,local,,posicion aproximada
-CRUDEN BAY,57.4150,-1.8400,B,K,local,,
+FRASERBURGH,57.6836,-2.0001,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+CRUDEN BAY,57.4117,-1.8502,B,V,local,nosnap checked,satélite 2026-11
 BALMEDIE,57.2530,-2.0440,B,L,local,,Aberdeenshire; posicion aproximada
 ABERDEEN,57.1650,-2.0600,B,K,local,,Aberdeen Beach; muelle norte
 WEST SANDS,56.3740,-2.8180,B,K,local,facing=75,St Andrews
-BELHAVEN BAY,56.0000,-2.5800,B,L,local,,Dunbar; posicion aproximada
-PEASE BAY,55.9340,-2.3710,B,L,local,,Cockburnspath; posicion aproximada
+BELHAVEN BAY,56.0044,-2.5514,B,V,local,nosnap checked,Dunbar; posicion aproximada; satélite 2026-11
+PEASE BAY,55.9322,-2.3330,B,V,local,nosnap checked,Cockburnspath; posicion aproximada; satélite 2026-11
 COLDINGHAM,55.8924,-2.1328,B,V,local,nosnap checked,Coldingham Bay; posicion aproximada; satélite 2026-11

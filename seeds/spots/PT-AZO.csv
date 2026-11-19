@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 MOSTEIROS,37.8883,-25.8242,B,V,local,nosnap checked,Sao Miguel; posicion aproximada; satélite 2026-11
-POPULO,37.7470,-25.6420,B,L,local,,Sao Miguel; Ponta Delgada; posicion aproximada
+POPULO,37.7505,-25.6238,B,V,local,nosnap checked,Sao Miguel; Ponta Delgada; posicion aproximada; satélite 2026-11
 MONTE VERDE,37.8232,-25.5283,B,V,local,nosnap wave=38.0;-25.6667 checked,Sao Miguel; Ribeira Grande; posicion aproximada; satélite 2026-11
 SANTA BÁRBARA,37.8182,-25.5449,B,V,local,nosnap top wave=38.0;-25.6667 checked,Sao Miguel; Ribeira Grande; satélite 2026-11
-MOINHOS,37.8350,-25.4800,B,L,local,,Sao Miguel; Porto Formoso; posicion aproximada
+MOINHOS,37.8236,-25.4448,B,V,local,nosnap checked,Sao Miguel; Porto Formoso; posicion aproximada; satélite 2026-11
 PRAIA DA VITÓRIA,38.7303,-27.0592,B,V,local,nosnap checked facing=140,Terceira; posicion aproximada; satélite 2026-11
 ALMOXARIFE,38.5541,-28.6093,B,V,osm:relation/6938706,nosnap checked,"Faial, frente a Pico; posición OSM; satélite 2026-11"

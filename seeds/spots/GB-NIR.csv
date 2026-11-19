@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
-BALLYCASTLE,55.2030,-6.2380,B,L,local,wave=55.29;-6.3253,posicion aproximada
-WHITEROCKS,55.2170,-6.6050,B,L,local,wave=55.2197;-6.6733,Portrush; posicion aproximada
-EAST STRAND,55.2100,-6.6370,B,K,local,top wave=55.2197;-6.6733,Portrush East Strand
-WEST STRAND,55.2060,-6.6610,B,L,local,,Portrush; posicion aproximada
-PORTSTEWART,55.1840,-6.7250,B,L,local,,Portstewart Strand; posicion aproximada
+BALLYCASTLE,55.2048,-6.2370,B,V,local,nosnap wave=55.29;-6.3253 checked,posicion aproximada; satélite 2026-11
+WHITEROCKS,55.2068,-6.6122,B,V,local,nosnap checked wave=55.29;-6.6867,Portrush; posicion aproximada; satélite 2026-11
+EAST STRAND,55.2100,-6.6370,B,K,local,top wave=55.29;-6.6867,Portrush East Strand
+WEST STRAND,55.2014,-6.6563,B,V,local,nosnap checked,Portrush; posicion aproximada; satélite 2026-11
+PORTSTEWART,55.1719,-6.7312,B,V,local,nosnap checked,Portstewart Strand; posicion aproximada; satélite 2026-11
 CASTLEROCK,55.1690,-6.7930,B,L,local,,posicion aproximada
-BENONE,55.1790,-6.9200,B,L,local,,Benone Strand; posicion aproximada
-TYRELLA,54.2620,-5.7800,B,L,local,,Co. Down; posicion aproximada
+BENONE,55.1688,-6.8762,B,V,local,nosnap checked,Benone Strand; posicion aproximada; satélite 2026-11
+TYRELLA,54.2511,-5.7459,B,V,local,nosnap checked,Co. Down; posicion aproximada; satélite 2026-11
 NEWCASTLE,54.2130,-5.8820,B,L,local,,Co. Down; Dundrum Bay; posicion aproximada
