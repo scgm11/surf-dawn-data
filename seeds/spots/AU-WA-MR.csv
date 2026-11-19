@@ -1,33 +1,33 @@
 name,lat,lon,type,conf,src,flags,note
 BORANUP,-34.1691,115.0303,B,V,web:komoot,,
-CONTOS,-34.0900,114.9850,B,L,local,,
-REDGATE,-34.0400,114.9840,B,K,local,,
-BOODJIDUP,-34.0100,114.9860,R,L,local,,
-GAS BAY,-33.9970,114.9860,R,L,local,,
-GRUNTERS,-33.9890,114.9840,R,L,local,,
-SOUTHSIDE,-33.9810,114.9830,R,L,local,,Surfers Point
+CONTOS,-34.0803,115.0039,B,V,local,nosnap checked,satélite 2026-11
+REDGATE,-34.0418,115.0004,B,V,local,nosnap checked,satélite 2026-11
+BOODJIDUP,-34.0052,114.9965,R,V,local,nosnap checked,satélite 2026-11
+GAS BAY,-34.0040,114.9953,R,V,local,nosnap checked,satélite 2026-11
+GRUNTERS,-34.0007,114.9907,R,V,local,nosnap checked,satélite 2026-11
+SOUTHSIDE,-33.9780,114.9837,R,V,local,nosnap checked,Surfers Point; satélite 2026-11
 MAIN BREAK,-33.9780,114.9830,R,V,web:mondo.surf,top checked,Surfers Point; CT26; WC
-BOATRAMP,-33.9760,114.9835,R,L,local,,Surfers Point
+BOATRAMP,-33.9908,114.9867,R,V,local,nosnap checked,Surfers Point; satélite 2026-11
 THE RIVERMOUTH,-33.9695,114.9835,R,K,local,,
-THE BOX,-33.9660,114.9780,R,V,wd:Q5034947,top checked,ola grande; Cape Mentelle
-THE WOMB,-33.9140,114.9770,R,L,local,,Ellensbrook
-LEFT HANDERS,-33.8900,114.9810,R,L,local,,
-HUZZAWOUIE,-33.8770,114.9830,R,L,local,,Gracetown
-SOUTH POINT,-33.8735,114.9825,R,L,local,,Gracetown
-COW BOMBIE,-33.8620,114.9760,R,L,local,swell=235,ola grande; Gracetown
+THE BOX,-33.9709,114.9798,R,V,wd:Q5034947,nosnap top checked,ola grande; Cape Mentelle; satélite 2026-11
+THE WOMB,-33.8995,114.9845,R,V,local,nosnap checked,Ellensbrook; satélite 2026-11
+LEFT HANDERS,-33.8804,114.9803,R,V,local,nosnap checked,satélite 2026-11
+HUZZAWOUIE,-33.8657,114.9814,R,V,local,nosnap checked,Gracetown; satélite 2026-11
+SOUTH POINT,-33.8630,114.9768,R,V,local,nosnap checked,Gracetown; satélite 2026-11
+COW BOMBIE,-33.8557,114.9679,R,V,local,nosnap swell=235 checked,ola grande; Gracetown; satélite 2026-11
 NORTH POINT,-33.8600,114.9800,R,V,web:mondo.surf,top checked,Gracetown
-GUILLOTINE,-33.8180,114.9860,R,L,local,,
-GALLOWS,-33.7800,114.9870,R,L,local,,
-HONEYCOMBS,-33.7330,114.9870,R,L,local,,
-MOSES ROCK,-33.7190,114.9880,R,K,local,,
+GUILLOTINE,-33.8266,114.9952,R,V,local,nosnap checked,satélite 2026-11
+GALLOWS,-33.8207,114.9965,R,V,local,nosnap checked,satélite 2026-11
+HONEYCOMBS,-33.7726,114.9928,R,V,local,nosnap checked,satélite 2026-11
+MOSES ROCK,-33.7590,114.9897,R,V,local,nosnap checked,satélite 2026-11
 WILDCAT,-33.7110,114.9885,R,L,local,,
-THE WINDOW,-33.7085,114.9890,R,L,local,,
-CAPE CLAIRAULT,-33.7005,114.9890,R,L,local,swell=250,
-PEA BREAK,-33.6940,114.9915,R,L,local,,Injidup
-INJIDUP POINT,-33.6920,114.9925,R,L,local,,
+THE WINDOW,-33.7183,114.9818,R,V,local,nosnap checked,satélite 2026-11
+CAPE CLAIRAULT,-33.7038,114.9751,R,V,local,nosnap swell=250 checked,satélite 2026-11
+PEA BREAK,-33.6977,114.9880,R,V,local,nosnap checked,Injidup; satélite 2026-11
+INJIDUP POINT,-33.6983,114.9768,R,V,local,nosnap checked,satélite 2026-11
 SUPERTUBES,-33.6530,115.0186,R,V,web:mondo.surf,top,Smiths Beach
-SMITHS,-33.6480,115.0165,R,L,local,,Smiths Beach
-YALLINGUP,-33.6420,115.0200,R,K,local,top,
-RABBIT HILL,-33.6380,115.0170,R,L,local,,Yallingup
+SMITHS,-33.6571,115.0146,R,V,local,nosnap checked,Smiths Beach; satélite 2026-11
+YALLINGUP,-33.6388,115.0225,R,V,local,nosnap top checked,satélite 2026-11
+RABBIT HILL,-33.6343,115.0277,R,V,local,nosnap checked,Yallingup; satélite 2026-11
 THREE BEARS,-33.5829,115.0121,R,V,web:exploroz,,entre Sugarloaf Rock y Yallingup
 WINDMILLS,-33.5442,115.0081,R,K,web:mondo.surf,,"1,7 km al norte de Sugarloaf Rock"

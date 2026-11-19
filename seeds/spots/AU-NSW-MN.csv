@@ -2,23 +2,23 @@ name,lat,lon,type,conf,src,flags,note
 CORINDI BEACH,-29.9990,153.2400,B,L,local,,
 ARRAWARRA,-30.0690,153.2050,P,L,local,,Arrawarra Headland
 WOOLGOOLGA,-30.1060,153.2040,P,K,local,swell=105,
-EMERALD BEACH,-30.1870,153.1910,B,L,local,,
+EMERALD BEACH,-30.1709,153.1900,B,V,local,nosnap checked,satélite 2026-11
 SAPPHIRE BEACH,-30.2150,153.1820,B,L,local,,
 MOONEE BEACH,-30.2400,153.1730,B,L,local,facing=100,orientación a mano (la calculada miraba a otra costa)
-DIGGERS BEACH,-30.2880,153.1495,B,K,local,,Coffs Harbour
-PARK BEACH,-30.2965,153.1490,B,K,local,,Coffs Harbour
-SAWTELL,-30.3840,153.1040,B,K,local,,
+DIGGERS BEACH,-30.2718,153.1428,B,V,local,nosnap checked,Coffs Harbour; satélite 2026-11
+PARK BEACH,-30.2888,153.1398,B,V,local,nosnap checked,Coffs Harbour; satélite 2026-11
+SAWTELL,-30.3709,153.1032,B,V,local,nosnap checked,satélite 2026-11
 URUNGA,-30.5030,153.0280,B,L,local,,boca del Bellinger
 V-WALL,-30.6425,153.0145,B,L,local,,Nambucca Heads; espigon
 VALLA BEACH,-30.7040,153.0120,B,L,local,,
-SCOTTS HEAD,-30.7470,153.0045,P,K,local,top,
+SCOTTS HEAD,-30.7432,152.9979,P,V,local,nosnap top checked,satélite 2026-11
 GRASSY HEAD,-30.7922,152.9978,P,K,web:anycamp,,
 BACK BEACH,-30.8970,153.0560,B,L,local,,South West Rocks
-HAT HEAD,-31.0580,153.0450,B,L,local,wave=-31.0;153.25,
-CRESCENT HEAD,-31.1900,152.9835,P,K,local,top,punto derecho; longboard
-DELICATE NOBBY,-31.1795,152.9840,P,L,local,,Crescent Head norte
-POINT PLOMER,-31.3320,152.9910,P,L,local,,Limeburners Creek NP
-TOWN BEACH,-31.4335,152.9210,B,K,local,,Port Macquarie
+HAT HEAD,-31.0538,153.0547,B,V,local,nosnap wave=-31.0;153.25 checked facing=30,satélite 2026-11
+CRESCENT HEAD,-31.1862,152.9831,P,V,local,nosnap top checked,punto derecho; longboard; satélite 2026-11
+DELICATE NOBBY,-31.2609,152.9705,P,V,local,nosnap checked,Crescent Head norte; satélite 2026-11
+POINT PLOMER,-31.3114,152.9731,P,V,local,nosnap checked,Limeburners Creek NP; satélite 2026-11
+TOWN BEACH,-31.4276,152.9178,B,V,local,nosnap checked,Port Macquarie; satélite 2026-11
 FLYNNS BEACH,-31.4470,152.9190,B,L,local,,Port Macquarie
 LIGHTHOUSE BEACH,-31.4790,152.9190,B,K,local,,Port Macquarie
 LAKE CATHIE,-31.5400,152.8650,B,L,local,,

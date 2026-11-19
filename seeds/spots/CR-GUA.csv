@@ -5,9 +5,9 @@ PLAYA GRANDE,10.3300,-85.8530,B,K,local,,Las Baulas
 EL ESTERO,10.3090,-85.8450,B,K,local,wave=10.3333;-86.0,boca del estero norte de Tamarindo
 TAMARINDO,10.3000,-85.8450,B,K,local,top wave=10.3333;-86.0,
 PICO PEQUEÑO,10.2955,-85.8465,R,L,local,swell=225,roca frente al hotel; posición aproximada
-LANGOSTA,10.2840,-85.8470,B,K,local,,
+LANGOSTA,10.2853,-85.8511,B,V,local,nosnap checked,satélite 2026-11
 PARGOS,10.2400,-85.8420,B,L,local,,posición aproximada
-PLAYA NEGRA,10.2010,-85.8350,R,K,local,top,derecha sobre roca
+PLAYA NEGRA,10.1966,-85.8336,R,V,local,nosnap top checked,derecha sobre roca; satélite 2026-11
 AVELLANAS,10.2293,-85.8378,B,K,osm:way/518442272,,posición OSM
 LITTLE HAWAII,10.2377,-85.8448,R,K,web:mondo.surf,,"norte de Playa Avellanas, boca del rio"
 JUNQUILLAL,10.1581,-85.8069,B,K,osm:node/4300006594,,posición aproximada; posición OSM

@@ -29,7 +29,7 @@ NARRAGANSETT,41.4310,-71.4570,B,K,local,,
 POINT JUDITH,41.3630,-71.4790,R,L,local,,
 MATUNUCK,41.3780,-71.5380,B,K,local,facing=175,orientación a mano (la calculada miraba a la laguna o la bahía)
 MISQUAMICUT,41.3190,-71.7980,B,K,local,,Westerly
-DITCH PLAINS,41.0380,-71.9175,R,K,local,top,Montauk
+DITCH PLAINS,41.0391,-71.9140,R,V,local,nosnap top checked,Montauk; satélite 2026-11
 TURTLE COVE,41.0430,-71.9035,R,L,local,,Montauk
 FLYING POINT,40.8800,-72.4150,B,L,local,,Southampton
 SHINNECOCK INLET,40.8370,-72.4780,B,K,local,,
@@ -38,14 +38,14 @@ JONES BEACH,40.5890,-73.5000,B,K,local,,
 POINT LOOKOUT,40.5890,-73.5820,B,K,local,,
 LONG BEACH NY,40.5800,-73.6500,B,K,local,,
 BEACH 67TH,40.5855,-73.7910,B,L,local,,Rockaway
-ROCKAWAY,40.5835,-73.8170,B,K,local,top,Beach 90th
+ROCKAWAY,40.5831,-73.8119,B,V,local,nosnap top checked,Beach 90th; satélite 2026-11
 FORT TILDEN,40.5535,-73.8880,B,K,local,,Rockaway
 SANDY HOOK,40.4100,-73.9960,B,L,local,,
 SEA BRIGHT,40.3600,-73.9760,B,L,local,facing=95,orientación a mano (la calculada miraba a la laguna o la bahía)
 LONG BRANCH,40.3050,-73.9770,B,L,local,,
 ASBURY PARK,40.2220,-73.9970,B,K,local,,
 BELMAR,40.1780,-74.0160,B,K,local,,16th Ave
-MANASQUAN INLET,40.1028,-74.0350,B,V,web:wikipedia.org,top,
+MANASQUAN INLET,40.1033,-74.0339,B,V,web:wikipedia.org,nosnap top checked,satélite 2026-11
 POINT PLEASANT,40.0870,-74.0430,B,K,local,,
 SEASIDE HEIGHTS,39.9440,-74.0690,B,K,local,,
 ISLAND BEACH,39.7950,-74.0980,B,L,local,,State Park

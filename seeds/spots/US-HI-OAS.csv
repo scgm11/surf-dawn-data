@@ -4,9 +4,9 @@ COCKROACHES,21.2870,-157.8555,R,L,local,,Ala Moana
 ALA MOANA BOWLS,21.2870,-157.8515,R,K,local,top,Bowls; izquierda
 CONCESSIONS,21.2865,-157.8480,R,L,local,swell=180,Ala Moana
 KAISERS,21.2800,-157.8400,R,K,local,,Hilton Hawaiian Village
-POPULARS,21.2703,-157.8305,R,K,local,,Waikiki
-CANOES,21.2665,-157.8250,R,K,local,swell=180,Waikiki
-QUEENS,21.2650,-157.8225,R,K,local,top swell=180,Waikiki
+POPULARS,21.2720,-157.8320,R,V,local,nosnap checked,Waikiki; satélite 2026-11
+CANOES,21.2739,-157.8276,R,V,local,nosnap swell=180 checked,Waikiki; satélite 2026-11
+QUEENS,21.2737,-157.8263,R,V,local,nosnap top swell=180 checked,Waikiki; satélite 2026-11
 PUBLICS,21.2630,-157.8195,R,L,local,swell=180,Waikiki
 THREES,21.2610,-157.8170,R,L,local,,Waikiki
 FOURS,21.2595,-157.8140,R,L,local,,Kaimana

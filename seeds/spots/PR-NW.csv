@@ -1,16 +1,16 @@
 name,lat,lon,type,conf,src,flags,note
 TUNELES,18.5153,-67.1011,B,K,web:puertoricodaytrips,,"Shacks, Isabela"
-GAS CHAMBERS,18.5150,-67.0650,R,L,local,,Isabela; izquierda pesada; posición aproximada
+GAS CHAMBERS,18.4603,-67.1655,R,V,local,nosnap checked,Isabela; izquierda pesada; posición aproximada; satélite 2026-11
 SHACKS,18.5120,-67.0950,R,L,local,,Isabela; posición aproximada
-JOBOS,18.5116,-67.0790,R,K,local,top,Isabela; arrecife
+JOBOS,18.5148,-67.0767,R,V,local,nosnap top checked,Isabela; arrecife; satélite 2026-11
 WILDERNESS,18.4870,-67.1610,R,V,osm:way/433148435,top checked,Aguadilla; frente a las ruinas del faro de Punta Borinquen
 CRASH BOAT,18.4600,-67.1650,B,K,local,,Aguadilla
 TABLE TOPS,18.4930,-67.1595,R,L,local,,Aguadilla; Punta Borinquen; posición aproximada
-INDICATORS,18.3640,-67.2770,R,K,local,swell=340,Rincón norte; ola grande
-DOMES,18.3575,-67.2705,R,K,local,top swell=340,Rincón; frente a la cúpula del reactor
-SANDY BEACH,18.3520,-67.2685,B,K,local,,Rincón
-DOGMAN'S,18.3490,-67.2670,R,K,local,swell=340,Rincón
-STEPS,18.3460,-67.2652,R,K,local,swell=340,Rincón
-TRES PALMAS,18.3485,-67.2660,R,V,osm:way/128565797,top swell=340,Rincón; ola grande de invierno; reserva marina frente a Steps
-MARIA'S,18.3415,-67.2565,R,K,local,swell=340,Rincón
+INDICATORS,18.3612,-67.2711,R,V,local,nosnap swell=340 checked,Rincón norte; ola grande; satélite 2026-11
+DOMES,18.3653,-67.2702,R,V,local,nosnap top swell=340 checked,Rincón; frente a la cúpula del reactor; satélite 2026-11
+SANDY BEACH,18.3707,-67.2578,B,V,local,nosnap checked facing=340,Rincón; satélite 2026-11
+DOGMAN'S,18.3556,-67.2693,R,V,local,nosnap swell=340 checked,Rincón; satélite 2026-11
+STEPS,18.3497,-67.2647,R,V,local,nosnap swell=340 checked,Rincón; satélite 2026-11
+TRES PALMAS,18.3505,-67.2696,R,V,osm:way/128565797,nosnap top swell=340 checked,Rincón; ola grande de invierno; reserva marina frente a Steps; satélite 2026-11
+MARIA'S,18.3577,-67.2703,R,V,local,nosnap swell=340 checked,Rincón; satélite 2026-11
 CÓRCEGA,18.3300,-67.2535,B,K,local,,Rincón sur

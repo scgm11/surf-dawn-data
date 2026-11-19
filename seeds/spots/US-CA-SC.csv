@@ -1,31 +1,31 @@
 name,lat,lon,type,conf,src,flags,note
 WADDELL CREEK,37.0940,-122.2760,B,K,local,,
 SCOTT CREEK,37.0415,-122.2335,B,K,local,,
-DAVENPORT LANDING,37.0120,-122.2110,R,L,local,,
+DAVENPORT LANDING,37.0230,-122.2164,R,V,local,nosnap checked,satélite 2026-11
 FOUR MILE,36.9605,-122.1280,B,L,local,,
-THREE MILE,36.9585,-122.1120,B,L,local,,
+THREE MILE,36.9611,-122.1126,B,V,local,nosnap checked,satélite 2026-11
 NATURAL BRIDGES,36.9510,-122.0620,R,K,local,,
-MITCHELL'S COVE,36.9530,-122.0520,R,K,local,,
+MITCHELL'S COVE,36.9523,-122.0409,R,V,local,nosnap checked,satélite 2026-11
 STEAMER LANE,36.9505,-122.0265,P,K,local,top swell=255,WC
-COWELL'S,36.9580,-122.0230,B,K,local,facing=180,orientación a mano (la calculada miraba a la laguna o la bahía)
-26TH AVE,36.9575,-121.9860,B,K,local,,
-38TH AVE,36.9560,-121.9790,R,K,local,,
-SEWER PEAK,36.9548,-121.9755,R,K,local,,
-THE HOOK,36.9535,-121.9725,R,K,local,swell=255,
-PLEASURE POINT,36.9530,-121.9700,R,K,local,top swell=255,
-MORAN LAKE,36.9600,-121.9640,B,L,local,,
+COWELL'S,36.9609,-122.0245,B,V,local,nosnap facing=180 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
+26TH AVE,36.9580,-121.9810,B,V,local,nosnap checked,satélite 2026-11
+38TH AVE,36.9575,-121.9678,R,V,local,nosnap checked,satélite 2026-11
+SEWER PEAK,36.9535,-121.9729,R,V,local,nosnap checked,satélite 2026-11
+THE HOOK,36.9593,-121.9644,R,V,local,nosnap swell=255 checked,satélite 2026-11
+PLEASURE POINT,36.9546,-121.9710,R,V,local,nosnap top swell=255 checked,satélite 2026-11
+MORAN LAKE,36.9560,-121.9784,B,V,local,nosnap checked,satélite 2026-11
 CAPITOLA,36.9710,-121.9515,B,K,local,,
-SEACLIFF,36.9715,-121.9215,B,L,local,,
+SEACLIFF,36.9717,-121.9141,B,V,local,nosnap checked,satélite 2026-11
 RIO DEL MAR,36.9690,-121.9030,B,L,local,,
-MANRESA,36.9310,-121.8700,B,L,local,,
+MANRESA,36.9321,-121.8635,B,V,local,nosnap checked,satélite 2026-11
 SUNSET BEACH,36.8860,-121.8440,B,L,local,,
-MOSS LANDING,36.8050,-121.7940,B,K,local,,
+MOSS LANDING,36.8083,-121.7903,B,V,local,nosnap checked,satélite 2026-11
 MARINA,36.6960,-121.8160,B,L,local,,
 SAND CITY,36.6140,-121.8500,B,K,local,,
-DEL MONTE BEACH,36.6050,-121.8800,B,K,local,,Monterey
+DEL MONTE BEACH,36.6048,-121.8700,B,V,local,nosnap checked,Monterey; satélite 2026-11
 LOVER'S POINT,36.6270,-121.9170,R,K,local,swell=290,Pacific Grove
-ASILOMAR,36.6245,-121.9420,R,K,local,,
-CARMEL BEACH,36.5560,-121.9335,B,K,local,facing=290,orientación a mano (la calculada miraba a la laguna o la bahía)
+ASILOMAR,36.6181,-121.9430,R,V,local,nosnap checked,satélite 2026-11
+CARMEL BEACH,36.5550,-121.9306,B,V,local,nosnap facing=290 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 CARMEL RIVER,36.5370,-121.9300,B,K,local,,
 MONASTERY BEACH,36.5250,-121.9275,B,K,local,,
-GHOST TREE,36.5645,-121.9660,R,K,local,top swell=290,ola grande
+GHOST TREE,36.5606,-121.9518,R,V,local,nosnap top swell=290 checked facing=230,ola grande; satélite 2026-11

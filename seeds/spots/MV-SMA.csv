@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-KANDOOMA RIGHT,3.9005,73.4690,R,L,local,top,derecha; posicion aprox
+KANDOOMA RIGHT,3.9031,73.4758,R,V,local,nosnap top checked,derecha; posicion aprox; satélite 2026-11
 COCOA CORNER,3.8780,73.4770,R,L,local,swell=155,posicion dudosa
 GURAIDHOO,3.9005,73.4662,R,K,geonames:11103468,swell=165,Guraidhoo Corner; posición GeoNames

@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-MEHDIA,34.2570,-6.6890,B,K,local,top,Kenitra
+MEHDIA,34.2595,-6.6788,B,V,local,nosnap top checked,Kenitra; satélite 2026-11
 OUDAYAS,34.0335,-6.8395,B,L,local,,Rabat
 BOUZNIKA,33.7900,-7.1750,B,K,local,,
 AIN DIAB,33.5970,-7.6790,,L,local,,Casablanca; posicion dudosa

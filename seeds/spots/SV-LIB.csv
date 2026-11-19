@@ -2,8 +2,8 @@ name,lat,lon,type,conf,src,flags,note
 MIZATA,13.5030,-89.5850,B,L,local,,costa oeste; posición aproximada
 SAN BLAS,13.4960,-89.4730,B,L,local,,Chiltiupán; posición aproximada
 EL ZONTE,13.4900,-89.4430,P,K,local,top,derecha sobre roca
-BOCANA,13.4995,-89.4040,R,L,local,,desembocadura del río en Sunzal; posición aproximada
-SUNZAL,13.4975,-89.4010,P,K,local,top,derecha larga
+BOCANA,13.4914,-89.3813,R,V,local,nosnap checked,desembocadura del río en Sunzal; posición aproximada; satélite 2026-11
+SUNZAL,13.4919,-89.3904,P,V,local,nosnap top checked,derecha larga; satélite 2026-11
 EL TUNCO,13.4930,-89.3850,R,K,local,top,rocas frente a la playa
-EL PALMARCITO,13.4940,-89.3790,B,L,local,,junto a El Tunco; posición aproximada
+EL PALMARCITO,13.4937,-89.4219,B,V,local,nosnap checked,junto a El Tunco; posición aproximada; satélite 2026-11
 PUNTA ROCA,13.4870,-89.3230,P,K,local,top checked swell=210,La Libertad; derecha; ola de clase mundial
