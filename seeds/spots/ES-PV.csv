@@ -3,7 +3,7 @@ HONDARRIBIA,43.3783,-1.7914,B,V,local,nosnap checked facing=15,Fuenterrabia; sat
 ZURRIOLA,43.3265,-1.9790,B,K,local,top,Donostia-Gros
 ORIO,43.2890,-2.1250,B,L,local,,barra del rio Oria; posicion aproximada
 ZARAUTZ,43.2885,-2.1700,B,K,local,top,
-GAZTETAPE,43.3042,-2.2062,B,V,local,nosnap checked,Getaria; posicion aproximada; satélite 2026-11
+GAZTETAPE,43.3042,-2.2062,B,V,local,nosnap checked facing=335,Getaria; posicion aproximada; satélite 2026-11
 SANTIAGO,43.3031,-2.2464,B,V,local,nosnap checked facing=0,Zumaia; posicion aproximada; satélite 2026-11
 ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
 DEBA,43.2993,-2.3526,B,V,local,nosnap facing=10 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11

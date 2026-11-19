@@ -43,5 +43,5 @@ BOCA INLET,26.3380,-80.0690,B,L,local,,
 DEERFIELD PIER,26.3175,-80.0690,B,K,local,,
 POMPANO PIER,26.2352,-80.0880,B,V,local,nosnap checked,satélite 2026-11
 HOLLYWOOD,26.0140,-80.1150,B,L,local,,
-HAULOVER,25.9011,-80.1214,B,V,local,nosnap checked,satélite 2026-11
-SOUTH POINTE,25.7644,-80.1300,B,V,local,nosnap checked,Miami Beach; satélite 2026-11
+HAULOVER,25.9011,-80.1214,B,V,local,nosnap checked facing=90,satélite 2026-11
+SOUTH POINTE,25.7644,-80.1300,B,V,local,nosnap checked facing=95 wave=25.8333;-80.0,Miami Beach; satélite 2026-11

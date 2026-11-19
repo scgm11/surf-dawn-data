@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 WESTWARD HO,51.0431,-4.2394,B,V,local,nosnap checked,satélite 2026-11
 SAUNTON,51.1157,-4.2252,B,V,local,nosnap checked,Saunton Sands; satélite 2026-11
 CROYDE,51.1300,-4.2420,B,K,local,top,Croyde Bay
-BAGGY POINT,51.1340,-4.2437,R,V,local,nosnap checked,Croyde; posicion aproximada; satélite 2026-11
+BAGGY POINT,51.1340,-4.2437,R,V,local,nosnap checked,Croyde Reef: el arrecife del extremo norte de Croyde (no la punta); satélite 2026-11
 PUTSBOROUGH,51.1475,-4.2244,B,V,local,nosnap checked,satélite 2026-11
 WOOLACOMBE,51.1725,-4.2140,B,V,local,nosnap top checked,satélite 2026-11
 BANTHAM,50.2785,-3.8805,B,V,local,nosnap checked facing=230,Sur de Devon; satélite 2026-11

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 BAY OF SKAILL,59.0480,-3.3480,B,L,local,facing=275,Orkney; posicion aproximada
-STRATHY,58.5698,-4.0047,B,V,local,nosnap checked,Sutherland; posicion aproximada; satélite 2026-11
+STRATHY,58.5698,-4.0047,B,V,local,nosnap checked facing=0,Sutherland; posicion aproximada; satélite 2026-11
 MELVICH,58.5608,-3.9117,B,V,local,nosnap checked facing=10,Sutherland; posicion aproximada; satélite 2026-11
 SANDSIDE BAY,58.5654,-3.7836,B,V,local,nosnap checked,Reay; posicion aproximada; satélite 2026-11
 BRIMS NESS,58.6227,-3.6518,R,V,wd:Q24654399,top,Caithness; ola grande; posición de Wikidata
