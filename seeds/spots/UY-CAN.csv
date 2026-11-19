@@ -1,12 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-TROUVILLE,-34.9176,-56.1483,B,V,local,nosnap facing=78,Pocitos; Playa Trouville frente a la rambla: mira al E (Lineup). Satélite 2026-11-18: estaba 310 m al SE en las piedras de Punta Trouville
-POCITOS,-34.9147,-56.1475,B,V,osm:relation/7130760,nosnap facing=118,
-BUCEO,-34.9002,-56.1217,B,V,osm:way/37351175,nosnap facing=126,Playa del Buceo
-PLAYA MALVÍN,-34.8989,-56.0998,B,V,osm:relation/2554678,nosnap facing=179,Malvín Nuevo
 PLAYA HONDA,-34.8958,-56.0920,B,V,osm:relation/2554677,nosnap facing=167,Malvín
 LA PANTALLA,-34.9003,-56.0812,B,K,osm:node/11174419920,nosnap facing=189,Playa Brava de Punta Gorda (sin playa en OSM)
-PLAYA VERDE,-34.8986,-56.0728,B,V,osm:relation/18660843,nosnap facing=191,Punta Gorda
-CARRASCO,-34.8871,-56.0433,B,V,osm:relation/3474219,nosnap facing=151,Playa Carrasco
 EL PINAR,-34.8123,-55.9074,B,K,osm:node/1987912393,nosnap facing=148,playa sin nombre en OSM
 ARROYO PANDO,-34.7958,-55.8650,B,K,web:guiadesurfuruguay,nosnap facing=181,desembocadura del Pando; Neptunia
 SALINAS,-34.7865,-55.8362,B,V,osm:relation/2578274,nosnap facing=155,
