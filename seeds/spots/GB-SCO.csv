@@ -4,7 +4,7 @@ STRATHY,58.5900,-4.0170,B,L,local,,Sutherland; posicion aproximada
 MELVICH,58.5608,-3.9117,B,V,local,nosnap checked facing=10,Sutherland; posicion aproximada; satélite 2026-11
 SANDSIDE BAY,58.5920,-3.7750,B,L,local,,Reay; posicion aproximada
 BRIMS NESS,58.6227,-3.6518,R,V,wd:Q24654399,top,Caithness; ola grande; posición de Wikidata
-THURSO EAST,58.6009,-3.5098,R,V,web:wikipedia.org,nosnap top checked,WC; ola de arrecife; satélite 2026-11
+THURSO EAST,58.6009,-3.5098,R,V,web:wikipedia.org,nosnap top checked wave=58.75;-3.5,WC; ola de arrecife; satélite 2026-11
 DUNNET BAY,58.6140,-3.3530,B,K,local,wave=58.75;-3.5,Caithness
 EOROPIE,58.5050,-6.2420,B,L,local,,Lewis; posicion aproximada
 LUSKENTYRE,57.8650,-6.9940,B,L,local,wave=58;-7.25,Harris; posicion aproximada
