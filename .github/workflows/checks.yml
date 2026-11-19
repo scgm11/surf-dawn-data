@@ -37,6 +37,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install numpy global-land-mask==1.0.0      # la celda de enfrente de las que quedan detrás
       - name: Controles
         shell: bash
         run: |

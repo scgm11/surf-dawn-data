@@ -264,9 +264,15 @@ punta o una laguna), la altura contra la mediana de su zona (sin olas, o más de
 emblemáticos (`top`), la posición contra el ítem más cercano con su nombre en Wikidata o GeoNames
 (si no hay, OpenStreetMap). También pregunta a la API desde qué celda contesta a cada pico, como las
 apps (sin `cell_selection`, que puede correr el punto): marca el punto de olas corrido o detrás de la
-playa (a más de 75° de hacia donde mira, o de su ventana de swell) y el pico que la API corre a una
-celda detrás de la playa o a más de 35 km. El JSON tiene `flags` (`region`, `spot`, `why`, `top`),
-`cells` (`region`, `spot`, `wave`, `cell`, `km`, `why`), `flagship`
+playa (a más de 75° de hacia donde mira, o de su ventana de swell), el pico que la API corre a una
+celda detrás de la playa o a más de 35 km, y el que contesta desde su propia celda cuando esa queda
+detrás de la playa y tiene menos del 70 % de las olas de la de enfrente (una laguna o una bahía: así
+leían el agua de atrás de la isla de barrera los picos de Texas). La grilla de ECMWF WAM es la
+gaussiana reducida O1280 (filas cada 0,07°), no una de 0,1°. Para cada uno propone la celda de
+enfrente (a menos de 75° y de 25 km, con olas y desde la que contesta la API), el `wave=` para su
+semilla. Con `--cells OUT.json` revisa solo las celdas, sin tocar `validation/`. El JSON tiene `flags`
+(`region`, `spot`, `why`, `top`), `cells` (`region`, `spot`, `wave`, `cell`, `km`, `why`, `front`,
+`h`, `hf`: la celda de enfrente y la altura media en la suya y en esa), `flagship`
 (`status`: `ok`, `lejos`, `revisado`, `sin fuente` o `error`; `km`, `qid`, `wd_lat`, `wd_lon`) y, por
 región, la mediana de la altura y de las horas con olas de frente.
 
