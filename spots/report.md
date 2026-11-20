@@ -70,7 +70,7 @@
 | BR-ES | 18 | 1128 | ncep_gfswave025 | gfs_seamless | 3 | 405 m | 5 |
 | BR-BA | 20 | 1150 | ncep_gfswave025 | gfs_seamless | 3 | 442 m | 0 |
 | BR-NE-CE | 12 | 849 | ncep_gfswave016 | gfs_seamless | 3 | 821 m | 3 |
-| BR-NE-RN | 12 | 933 | ncep_gfswave016 | gfs_seamless | 3 | 562 m | 4 |
+| BR-NE-RN | 12 | 950 | ncep_gfswave016 | gfs_seamless | 3 | 562 m | 5 |
 | BR-NE-PE | 10 | 772 | ncep_gfswave016 | gfs_seamless | 3 | 647 m | 1 |
 | BR-NOR | 5 | 436 | ncep_gfswave016 | gfs_seamless | 1 | 305 m | 0 |
 | CL-NOR | 11 | 817 | ncep_gfswave025 | gfs_seamless | 2 | 715 m | 0 |
