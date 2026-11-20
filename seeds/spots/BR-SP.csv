@@ -8,7 +8,7 @@ PRAIA GRANDE,-23.4670,-45.0630,B,K,local,,Ubatuba
 TENÓRIO,-23.4655,-45.0561,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 TONINHAS,-23.4812,-45.0717,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 SUNUNGA,-23.5094,-45.1324,B,V,osm:relation/7785033,,Ubatuba
-MARANDUBA,-23.5403,-45.2287,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
+MARANDUBA,-23.5403,-45.2287,B,V,local,nosnap checked facing=130,Ubatuba; satélite 2026-11
 LÁZARO,-23.5018,-45.1369,B,V,local,nosnap checked,Ubatuba; satélite 2026-11
 TOQUE-TOQUE,-23.8162,-45.5322,B,K,osm:node/368180038,,Toque-Toque Pequeno; posición OSM
 PAÚBA,-23.8028,-45.5527,B,V,osm:relation/9678518,,
