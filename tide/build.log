@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 83 s
+catalogs: 3902 stations in 43 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -310,7 +310,7 @@ GOT5.6: 163 points, 17520 hours each
   BR-BA        got-f2f875     6.. 259 cm  4 spots
   BR-NE-CE     got-0a9164     6.. 545 cm  2 spots
   BR-NE-RN     got-a8e5b2     5.. 286 cm  5 spots
-  BR-NE-RN     got-770eaa     6.. 283 cm  5 spots
+  BR-NE-RN     got-45461c     6.. 283 cm  5 spots
   BR-NE-RN     got-f89309     5.. 285 cm  2 spots
   BR-NE-PE     got-aa96f4     5.. 269 cm  3 spots
   BR-NE-PE     got-1afd1e     6.. 264 cm  2 spots
@@ -318,7 +318,7 @@ GOT5.6: 163 points, 17520 hours each
   CL-CEN       got-8d3f90     6.. 177 cm  1 spots
   CL-PIC       got-668790     5.. 186 cm  5 spots
   CL-PIC       got-dfa80c     6.. 189 cm  5 spots
-  CL-MAU       got-2dfa1e     6.. 194 cm  4 spots
+  CL-MAU       got-398b01     6.. 192 cm  4 spots
   CL-MAU       got-9e2e3f     6.. 188 cm  3 spots
   CL-MAU       got-04ac46     5.. 191 cm  2 spots
   CL-SUR       got-0d6795     5.. 199 cm  3 spots
@@ -331,7 +331,7 @@ GOT5.6: 163 points, 17520 hours each
   EC-COS       got-26250e     5.. 366 cm  2 spots
   EC-COS       got-cff16a     5.. 314 cm  2 spots
   CO-PAC       got-377e5e     5.. 406 cm  3 spots
-  CO-CAR       got-808330     6..  56 cm  3 spots
+  CO-CAR       got-201a4e     5..  56 cm  3 spots
   CO-CAR       got-d2f680     6..  57 cm  1 spots
   VE-ALL       got-c73835     5..  60 cm  1 spots
   VE-MAR       got-c96e4a     6..  71 cm  1 spots
@@ -350,7 +350,7 @@ GOT5.6: 163 points, 17520 hours each
   MX-OAX       got-56fcd4     6.. 143 cm  6 spots
   MX-OAX       got-517ab1     5.. 133 cm  1 spots
   MX-NAY       got-addc69     6.. 185 cm  4 spots
-  MX-NAY       got-f60a19     6.. 182 cm  3 spots
+  MX-NAY       got-25fa56     5.. 181 cm  3 spots
   MX-BCS       got-cc1393     5.. 221 cm  1 spots
   MX-BCS-N     got-8d76ed     6.. 258 cm  1 spots
   MX-BCS-N     got-a806af     5.. 260 cm  1 spots
@@ -382,7 +382,7 @@ GOT5.6: 163 points, 17520 hours each
   ID-SBW       got-caf35c     5.. 309 cm  4 spots
   ID-SMB       got-8e70be     6.. 359 cm  2 spots
   ID-ROT       got-ee9d3e     5.. 380 cm  4 spots
-  ID-MEN       got-a73695     5.. 133 cm  5 spots
+  ID-MEN       got-01f90a     5.. 131 cm  5 spots
   ID-MEN       got-a21f3c     6.. 148 cm  4 spots
   ID-MEN       got-9103e7     5.. 132 cm  1 spots
   ID-NIA       got-d76764     6.. 105 cm  2 spots
@@ -410,7 +410,7 @@ GOT5.6: 163 points, 17520 hours each
   CN-HAI       got-0548a0     5.. 202 cm  1 spots
   CN-HAI       got-2ee07d     6.. 209 cm  1 spots
   ZA-WC-WCO    got-2172a0     5.. 215 cm  2 spots
-  ZA-WC-WCO    got-8af89e     5.. 202 cm  1 spots
+  ZA-WC-WCO    got-bb3de4     6.. 203 cm  1 spots
   ZA-WC-GR     got-ca81fb     5.. 240 cm  7 spots
   ZA-WC-GR     got-b9b340     5.. 233 cm  4 spots
   ZA-WC-GR     got-ec35aa     5.. 225 cm  1 spots
@@ -467,5 +467,10 @@ validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.4 cm, rango 100 cm, m
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 9.9 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 montevideo Montevideo (SOHMA): RMS 7.7 cm, rango 97 cm, modelo/oficial 0.86
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-removing tide/noaa-8517137 (no region uses it)
-done: 433 ports, 210 regions with ports, 2343/2434 spots, 10825 files 28.7 MB, 476 s
+removing tide/got-2dfa1e (no region uses it)
+removing tide/got-770eaa (no region uses it)
+removing tide/got-808330 (no region uses it)
+removing tide/got-8af89e (no region uses it)
+removing tide/got-a73695 (no region uses it)
+removing tide/got-f60a19 (no region uses it)
+done: 433 ports, 210 regions with ports, 2340/2431 spots, 10825 files 28.7 MB, 444 s
