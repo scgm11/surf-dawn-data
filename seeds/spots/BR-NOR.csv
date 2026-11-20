@@ -2,5 +2,5 @@ name,lat,lon,type,conf,src,flags,note
 CACIMBA DO PADRE,-3.8493,-32.4397,B,V,local,nosnap top checked,isla; Mar de Dentro; ola grande; satélite 2026-11
 BOLDRÓ,-3.8450,-32.4280,B,L,local,,isla; posición aproximada
 CONCEIÇÃO,-3.8470,-32.4190,B,L,local,,isla; posición aproximada
-PRAIA DO MEIO,-3.8397,-32.4133,B,V,local,nosnap checked,isla; posición aproximada; satélite 2026-11
-CACHORRO,-3.8390,-32.4111,B,V,local,nosnap checked facing=340,isla; posición aproximada; satélite 2026-11
+PRAIA DO MEIO,-3.8397,-32.4133,B,V,local,nosnap checked,isla; satélite 2026-11
+CACHORRO,-3.8390,-32.4111,B,V,local,nosnap checked facing=340,isla; satélite 2026-11

@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 NGOR RIGHT,14.7540,-17.5150,R,L,local,facing=290,isla de Ngor; Dakar
 NGOR LEFT,14.7573,-17.5113,R,V,local,nosnap checked,isla de Ngor; Dakar; satélite 2026-11
-VIRAGE,14.7562,-17.4959,R,V,local,nosnap checked,Dakar; posicion dudosa; satélite 2026-11
+VIRAGE,14.7562,-17.4959,R,V,local,nosnap checked,Dakar; satélite 2026-11
 ALMADIES,14.7440,-17.5265,R,L,local,,"Dakar; posición dudosa (revisado 20/11, sin fuente)"
 YOFF,14.7625,-17.4640,B,V,local,nosnap checked,Dakar; satélite 2026-11
 CLUB MED,14.7406,-17.5299,R,V,local,nosnap checked facing=200,Dakar; Pointe des Almadies; satélite 2026-11

@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-CASSAVA POINT,6.7446,-11.3856,P,V,local,nosnap swell=200 checked,Robertsport; posicion dudosa; satélite 2026-11
-FISHERMANS POINT,6.7528,-11.3798,P,V,local,nosnap swell=200 checked,Robertsport; posicion dudosa; satélite 2026-11
-COTTON TREE,6.7493,-11.3827,B,V,local,nosnap checked,Robertsport; posicion dudosa; satélite 2026-11
+CASSAVA POINT,6.7446,-11.3856,P,V,local,nosnap swell=200 checked,Robertsport; satélite 2026-11
+FISHERMANS POINT,6.7528,-11.3798,P,V,local,nosnap swell=200 checked,Robertsport; satélite 2026-11
+COTTON TREE,6.7493,-11.3827,B,V,local,nosnap checked,Robertsport; satélite 2026-11

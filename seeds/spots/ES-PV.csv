@@ -3,15 +3,15 @@ HONDARRIBIA,43.3783,-1.7914,B,V,local,nosnap checked facing=15,Fuenterrabia; sat
 ZURRIOLA,43.3265,-1.9790,B,K,local,top,Donostia-Gros
 ORIO,43.2890,-2.1250,B,L,local,,barra del rio Oria; posicion aproximada
 ZARAUTZ,43.2885,-2.1700,B,K,local,top,
-GAZTETAPE,43.3042,-2.2062,B,V,local,nosnap checked facing=335,Getaria; posicion aproximada; satélite 2026-11
-SANTIAGO,43.3031,-2.2464,B,V,local,nosnap checked facing=0,Zumaia; posicion aproximada; satélite 2026-11
+GAZTETAPE,43.3042,-2.2062,B,V,local,nosnap checked facing=335,Getaria; satélite 2026-11
+SANTIAGO,43.3031,-2.2464,B,V,local,nosnap checked facing=0,Zumaia; satélite 2026-11
 ITZURUN,43.3010,-2.2640,B,L,local,,Zumaia; posicion aproximada
 DEBA,43.2993,-2.3526,B,V,local,nosnap facing=10 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 SATURRARAN,43.3219,-2.4109,B,V,local,nosnap checked facing=320 wave=43.5;-2.3333,Mutriku; satélite 2026-11
 KARRASPIO,43.3628,-2.4945,B,K,osm:way/652032389,,"Mendexa, frente a San Nicolas; posición OSM"
-EA,43.3828,-2.5840,B,V,local,nosnap checked facing=10,posicion aproximada; satélite 2026-11
-LAGA,43.4106,-2.6584,B,V,local,nosnap checked,Ibarrangelu; posicion aproximada; satélite 2026-11
-LAIDA,43.4016,-2.6851,B,V,local,nosnap checked facing=340,estuario de Urdaibai; posicion aproximada; satélite 2026-11
+EA,43.3828,-2.5840,B,V,local,nosnap checked facing=10,satélite 2026-11
+LAGA,43.4106,-2.6584,B,V,local,nosnap checked,Ibarrangelu; satélite 2026-11
+LAIDA,43.4016,-2.6851,B,V,local,nosnap checked facing=340,estuario de Urdaibai; satélite 2026-11
 MUNDAKA,43.4090,-2.6970,B,K,local,top,barra de rio; WC exCT
 BAKIO,43.4370,-2.8100,B,K,local,top,
 ARMINTZA,43.4300,-2.9060,B,L,local,,posicion aproximada
@@ -19,8 +19,8 @@ GORLIZ,43.4170,-2.9330,B,K,local,,
 PLENTZIA,43.4117,-2.9470,B,V,local,nosnap checked,satélite 2026-11
 BARRIKA,43.4027,-2.9759,B,V,local,nosnap checked,satélite 2026-11
 MEÑAKOZ,43.3984,-2.9865,R,V,local,nosnap top checked,ola grande; satélite 2026-11
-ARRIETARA,43.3894,-2.9951,B,V,local,nosnap top checked,Sopelana; posicion aproximada; satélite 2026-11
+ARRIETARA,43.3894,-2.9951,B,V,local,nosnap top checked,Sopelana; satélite 2026-11
 LA SALVAJE,43.3870,-3.0050,B,L,local,,Barinatxe-Sopelana; posicion aproximada
-AZKORRI,43.3806,-3.0161,B,V,local,nosnap checked,Getxo-Gorrondatxe; posicion aproximada; satélite 2026-11
+AZKORRI,43.3806,-3.0161,B,V,local,nosnap checked,Getxo-Gorrondatxe; satélite 2026-11
 PUNTA GALEA,43.3701,-3.0373,P,V,local,nosnap checked facing=300,Getxo; ola grande; satélite 2026-11
-LA ARENA,43.3490,-3.1167,B,V,local,nosnap checked,Muskiz-Zierbena; posicion aproximada; satélite 2026-11
+LA ARENA,43.3490,-3.1167,B,V,local,nosnap checked,Muskiz-Zierbena; satélite 2026-11

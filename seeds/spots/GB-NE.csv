@@ -1,18 +1,18 @@
 name,lat,lon,type,conf,src,flags,note
-ALNMOUTH,55.3882,-1.6039,B,V,local,nosnap checked,Northumberland; posicion aproximada; satélite 2026-11
+ALNMOUTH,55.3882,-1.6039,B,V,local,nosnap checked,Northumberland; satélite 2026-11
 DRURIDGE BAY,55.2850,-1.5530,B,L,local,,Northumberland; posicion aproximada
 NEWBIGGIN,55.1830,-1.4930,R,K,local,,
 BLYTH,55.1158,-1.4948,B,V,local,nosnap checked,Blyth South Beach; satélite 2026-11
-SEATON SLUICE,55.0880,-1.4777,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+SEATON SLUICE,55.0880,-1.4777,B,V,local,nosnap checked,satélite 2026-11
 WHITLEY BAY,55.0450,-1.4430,B,K,local,,
 CULLERCOATS,55.0335,-1.4235,B,K,local,,
-KING EDWARDS BAY,55.0192,-1.4192,B,V,local,nosnap checked,Tynemouth; posicion aproximada; satélite 2026-11
+KING EDWARDS BAY,55.0192,-1.4192,B,V,local,nosnap checked,Tynemouth; satélite 2026-11
 TYNEMOUTH,55.0260,-1.4242,B,V,local,nosnap top checked,Longsands; satélite 2026-11
-SOUTH SHIELDS,54.9991,-1.4103,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+SOUTH SHIELDS,54.9991,-1.4103,B,V,local,nosnap checked,satélite 2026-11
 SEABURN,54.9380,-1.3580,B,L,local,,Sunderland; posicion aproximada
 ROKER,54.9230,-1.3620,B,L,local,,Sunderland; posicion aproximada
-SEAHAM,54.8397,-1.3302,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
-HARTLEPOOL,54.6943,-1.1835,B,V,local,nosnap checked facing=150,Fish Sands; posicion aproximada; satélite 2026-11
+SEAHAM,54.8397,-1.3302,B,V,local,nosnap checked,satélite 2026-11
+HARTLEPOOL,54.6943,-1.1835,B,V,local,nosnap checked facing=150,Fish Sands; satélite 2026-11
 SEATON CAREW,54.6600,-1.1840,B,K,local,,
 REDCAR,54.6200,-1.0610,B,K,local,,
 SALTBURN,54.5875,-0.9665,B,K,local,top,junto al muelle
@@ -20,7 +20,7 @@ STAITHES,54.5590,-0.7870,B,L,local,,Yorkshire; posicion aproximada
 RUNSWICK BAY,54.5330,-0.7360,R,L,local,,Yorkshire; posicion aproximada
 SANDSEND,54.4770,-0.6670,B,K,local,,Yorkshire
 WHITBY,54.4930,-0.6178,B,V,local,nosnap checked,Yorkshire; satélite 2026-11
-ROBIN HOODS BAY,54.4302,-0.5318,B,V,local,nosnap checked,Yorkshire; posicion aproximada; satélite 2026-11
+ROBIN HOODS BAY,54.4302,-0.5318,B,V,local,nosnap checked,Yorkshire; satélite 2026-11
 SCARBOROUGH SOUTH,54.2750,-0.3960,B,K,local,,Yorkshire
 CAYTON BAY,54.2456,-0.3636,B,V,local,nosnap checked,Yorkshire; satélite 2026-11
-FILEY,54.2121,-0.2806,B,V,local,nosnap checked,Yorkshire; posicion aproximada; satélite 2026-11
+FILEY,54.2121,-0.2806,B,V,local,nosnap checked,Yorkshire; satélite 2026-11

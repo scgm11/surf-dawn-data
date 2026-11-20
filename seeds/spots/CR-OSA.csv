@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
 ZANCUDO,8.5340,-83.1400,B,K,local,,
 PAVONES,8.3929,-83.1394,P,V,web:mondo.surf,top swell=215 wave=8.3333;-83.3333,izquierda larguísima; Golfo Dulce
-MATAPALO,8.3766,-83.2894,P,V,local,nosnap wave=8.3333;-83.3333 checked,Cabo Matapalo; Península de Osa; posición aproximada; satélite 2026-11
+MATAPALO,8.3766,-83.2894,P,V,local,nosnap wave=8.3333;-83.3333 checked,Cabo Matapalo; Península de Osa; satélite 2026-11

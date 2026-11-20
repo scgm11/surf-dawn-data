@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
-MOTELS,-21.0693,-175.3374,R,V,local,nosnap checked,Ha'atafu; izquierda; posicion dudosa; satélite 2026-11
+MOTELS,-21.0693,-175.3374,R,V,local,nosnap checked,Ha'atafu; izquierda; satélite 2026-11
 KAMIKAZE'S,-21.0683,-175.3365,R,V,local,nosnap checked,Ha'atafu; 150 m al norte de Motels; satélite 2026-11
 FISHTRAPS,-21.1130,-175.3450,R,L,local,,"Ha'atafu; izquierda larga; posicion dudosa; posición dudosa (revisado 20/11, sin fuente)"
-LIGHTHOUSE,-21.1160,-175.3450,R,L,local,,"Ha'atafu; posicion dudosa; posición dudosa (revisado 20/11, sin fuente)"
-PASS LEFTS,-21.0734,-175.3406,R,V,local,nosnap swell=225 checked,Kanokupolu; posicion dudosa; satélite 2026-11
-PASS RIGHTS,-21.0727,-175.3399,R,V,local,nosnap swell=225 checked,Kanokupolu; posicion dudosa; satélite 2026-11
+LIGHTHOUSE,-21.0637,-175.3315,R,V,local,nosnap checked,Ha'atafu; satélite 2026-11; frente a la luz de Niu 'Aunofo Point (punta noroeste de Tongatapu); derecha que anda con mar del norte (verano)
+PASS LEFTS,-21.0734,-175.3406,R,V,local,nosnap swell=225 checked,Kanokupolu; satélite 2026-11
+PASS RIGHTS,-21.0727,-175.3399,R,V,local,nosnap swell=225 checked,Kanokupolu; satélite 2026-11

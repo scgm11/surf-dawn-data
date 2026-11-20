@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
-KAIFU,33.5949,134.3622,P,V,local,nosnap top checked,Tokushima; posicion dudosa; satélite 2026-11
-SHISHIKUI,33.5679,134.3081,B,V,local,nosnap checked,Tokushima; posicion aprox; satélite 2026-11
+KAIFU,33.5949,134.3622,P,V,local,nosnap top checked,Tokushima; satélite 2026-11
+SHISHIKUI,33.5679,134.3081,B,V,local,nosnap checked,Tokushima; satélite 2026-11
 HIWASA,33.7270,134.5300,B,L,local,,"Tokushima; posicion aprox; posición dudosa (revisado 20/11, sin fuente)"

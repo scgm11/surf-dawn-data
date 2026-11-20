@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
 HODDEVIK,62.1228,5.1594,B,K,web:wikipedia,,Stad; cabecera de la bahia
-ERVIK,62.1656,5.1132,B,V,local,nosnap checked,Stad; posicion aproximada; satélite 2026-11
-BRUSAND,58.5363,5.7433,B,V,local,nosnap checked,Jaeren; posicion aproximada; satélite 2026-11
+ERVIK,62.1656,5.1132,B,V,local,nosnap checked,Stad; satélite 2026-11
+BRUSAND,58.5363,5.7433,B,V,local,nosnap checked,Jaeren; satélite 2026-11

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-PLAYA BONITA,10.0124,-83.0627,R,V,local,nosnap checked,Limón; posición aproximada; satélite 2026-11
+PLAYA BONITA,10.0124,-83.0627,R,V,local,nosnap checked,Limón; satélite 2026-11
 SALSA BRAVA,9.6603,-82.7502,R,V,local,nosnap top checked,Puerto Viejo; ola grande de arrecife; satélite 2026-11
 COCLES,9.6521,-82.7377,B,V,local,nosnap checked,Puerto Viejo sur; satélite 2026-11
 CHIQUITA,9.6340,-82.7120,B,K,local,,
-PUNTA UVA,9.6462,-82.6886,B,V,local,nosnap checked,posición aproximada; satélite 2026-11
+PUNTA UVA,9.6462,-82.6886,B,V,local,nosnap checked,satélite 2026-11

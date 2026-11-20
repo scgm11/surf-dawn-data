@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 JUKDO,37.9750,128.7600,B,V,local,nosnap checked,Yangyang; satélite 2026-11
-DONGHO,38.0555,128.6866,B,V,local,nosnap checked,Yangyang; posicion aprox; satélite 2026-11
+DONGHO,38.0555,128.6866,B,V,local,nosnap checked,Yangyang; satélite 2026-11
 SONGJEONG,35.1795,129.1995,B,K,local,,Busan
 HAEUNDAE,35.1590,129.1620,B,K,local,,Busan
 JUNGMUN,33.2447,126.4118,B,K,local,,Jeju

@@ -1,12 +1,12 @@
 name,lat,lon,type,conf,src,flags,note
 KERAMAS,-8.5985,115.3395,R,K,local,top,exCT; derecha de arrecife
-PURNAMA,-8.6195,115.3090,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
-SABA,-8.6101,115.3228,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
-MASCETI,-8.5943,115.3466,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
-LEBIH,-8.5811,115.3556,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+PURNAMA,-8.6195,115.3090,B,V,local,nosnap checked,satélite 2026-11
+SABA,-8.6101,115.3228,B,V,local,nosnap checked,satélite 2026-11
+MASCETI,-8.5943,115.3466,B,V,local,nosnap checked,satélite 2026-11
+LEBIH,-8.5811,115.3556,B,V,local,nosnap checked,satélite 2026-11
 PADANG GALAK,-8.6560,115.2676,B,V,local,nosnap checked,satélite 2026-11
 SANUR REEF,-8.6777,115.2674,R,V,local,nosnap top swell=195 checked wave=-8.8333;115.3333,arrecife a ~1 km de la costa; satélite 2026-11
 SERANGAN,-8.7435,115.2423,R,V,local,nosnap wave=-8.8333;115.3333 checked,isla Serangan; satélite 2026-11
 SHIPWRECKS,-8.6655,115.4436,R,V,web:mondo.surf,nosnap top swell=200 checked facing=255,Lembongan; derecha; satélite 2026-11
-LACERATIONS,-8.6721,115.4419,R,V,local,nosnap swell=200 checked facing=255,Lembongan; posicion aprox; satélite 2026-11
+LACERATIONS,-8.6721,115.4419,R,V,local,nosnap swell=200 checked facing=255,Lembongan; satélite 2026-11
 PLAYGROUNDS,-8.6778,115.4411,R,V,local,nosnap swell=200 checked,Lembongan; izquierda; satélite 2026-11

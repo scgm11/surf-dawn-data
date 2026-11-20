@@ -1,29 +1,29 @@
 name,lat,lon,type,conf,src,flags,note
-CRACKINGTON HAVEN,50.7423,-4.6371,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+CRACKINGTON HAVEN,50.7423,-4.6371,B,V,local,nosnap checked,satélite 2026-11
 WIDEMOUTH,50.7960,-4.5570,B,K,local,,Bude
 SUMMERLEAZE,50.8316,-4.5529,B,V,local,nosnap checked,Bude; satélite 2026-11
 CROOKLETS,50.8358,-4.5548,B,V,local,nosnap checked,Bude; satélite 2026-11
 POLZEATH,50.5760,-4.9120,B,K,local,,
-HARLYN BAY,50.5420,-4.9957,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
-CONSTANTINE BAY,50.5346,-5.0246,B,V,local,nosnap wave=50.5;-5.1667 checked,posicion aproximada; satélite 2026-11
+HARLYN BAY,50.5420,-4.9957,B,V,local,nosnap checked,satélite 2026-11
+CONSTANTINE BAY,50.5346,-5.0246,B,V,local,nosnap wave=50.5;-5.1667 checked,satélite 2026-11
 TREYARNON,50.5262,-5.0248,B,V,local,nosnap wave=50.5;-5.1667 checked,Treyarnon Bay; satélite 2026-11
-PORTHCOTHAN,50.5100,-5.0289,B,V,local,nosnap checked facing=300,posicion aproximada; satélite 2026-11
+PORTHCOTHAN,50.5100,-5.0289,B,V,local,nosnap checked facing=300,satélite 2026-11
 MAWGAN PORTH,50.4660,-5.0310,B,K,local,wave=50.5;-5.1667,
 WATERGATE BAY,50.4444,-5.0441,B,V,local,nosnap top checked wave=50.5;-5.1667,satélite 2026-11
 TOWAN,50.4175,-5.0820,B,K,local,facing=10 wave=50.5;-5.1667,Newquay; orientación a mano (la calculada miraba a otra costa)
 FISTRAL,50.4170,-5.1000,B,K,local,top wave=50.5;-5.1667,Newquay
-THE CRIBBAR,50.4258,-5.1020,R,V,local,nosnap wave=50.5;-5.1667 checked,Newquay; ola grande; posicion aproximada; satélite 2026-11
+THE CRIBBAR,50.4258,-5.1020,R,V,local,nosnap wave=50.5;-5.1667 checked,Newquay; ola grande; satélite 2026-11
 CRANTOCK,50.4056,-5.1236,B,V,local,nosnap wave=50.5;-5.1667 checked facing=300,satélite 2026-11
 HOLYWELL BAY,50.3921,-5.1469,B,V,local,nosnap wave=50.5;-5.1667 checked,satélite 2026-11
 PERRANPORTH,50.3470,-5.1590,B,K,local,wave=50.5;-5.1667,
-CHAPEL PORTH,50.3009,-5.2352,B,V,local,nosnap facing=300 checked,posicion aproximada; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+CHAPEL PORTH,50.3009,-5.2352,B,V,local,nosnap facing=300 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 TREVAUNANCE COVE,50.3150,-5.2060,B,L,local,,St Agnes; posicion aproximada
 PORTHTOWAN,50.2900,-5.2490,B,K,local,,
 PORTREATH,50.2616,-5.2935,B,V,local,nosnap checked,satélite 2026-11
 GWITHIAN,50.2251,-5.3959,B,V,local,nosnap checked,satélite 2026-11
-GODREVY,50.2298,-5.3922,B,V,local,nosnap facing=300 checked,posicion aproximada; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+GODREVY,50.2298,-5.3922,B,V,local,nosnap facing=300 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 PORTHMEOR,50.2150,-5.4830,B,K,local,,St Ives
-GWENVER,50.0894,-5.6888,B,V,local,nosnap facing=305 checked,posicion aproximada; satélite 2026-11
+GWENVER,50.0894,-5.6888,B,V,local,nosnap facing=305 checked,satélite 2026-11
 SENNEN,50.0775,-5.6985,B,K,local,top,Sennen Cove
 PRAA SANDS,50.1010,-5.3880,B,K,local,,
 PORTHLEVEN,50.0820,-5.3190,R,K,local,top,ola de arrecife; ola grande con swell fuerte
