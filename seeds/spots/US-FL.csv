@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 FERNANDINA,30.6700,-81.4390,B,K,local,,Amelia Island
-HUGUENOT,30.4089,-81.4033,B,V,local,nosnap checked,Jacksonville; satélite 2026-11
+HUGUENOT,30.4053,-81.4014,B,V,local,nosnap checked facing=75,Jacksonville; satélite 2026-11
 THE POLES,30.3815,-81.3964,B,V,local,nosnap facing=90 checked,Mayport; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 HANNA PARK,30.3735,-81.4020,B,K,local,,Jacksonville
 ATLANTIC BEACH,30.3340,-81.3980,B,K,local,,

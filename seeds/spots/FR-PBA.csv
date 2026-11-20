@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HENDAYE,43.3800,-1.7760,B,K,local,,plage de Hendaye
-BELHARRA,43.4036,-1.7178,R,V,wd:Q2894399,top nosnap facing=315,ola grande; ~2 km mar adentro; posición de Wikidata
+BELHARRA,43.4102,-1.7178,R,V,wd:Q2894399,top nosnap facing=315 checked,ola grande; ~2 km mar adentro; posición de Wikidata; satélite 2026-11
 SOCOA,43.3965,-1.6845,R,K,local,swell=300,junto al fuerte
 SAINTE BARBE,43.3988,-1.6662,B,V,local,nosnap checked,St-Jean-de-Luz; satélite 2026-11
 ERROMARDIE,43.4090,-1.6440,B,K,local,,
