@@ -15,13 +15,13 @@ BR-RJL      20 spots  1226 bytes  v4c0d28
 BR-ES       18 spots  1128 bytes  v34c35e
 BR-BA       20 spots  1150 bytes  va5c171
 BR-NE-CE    12 spots   849 bytes  vf46def
-BR-NE-RN    12 spots   933 bytes  v399513
+BR-NE-RN    12 spots   933 bytes  vb7b6de
 BR-NE-PE    10 spots   772 bytes  v96e2f7
 BR-NOR       5 spots   436 bytes  vac0eca
 CL-NOR      11 spots   817 bytes  v261e1f
 CL-CEN      20 spots  1427 bytes  vfab81d
 CL-PIC      10 spots   822 bytes  vfdaa3d
-CL-MAU      14 spots  1031 bytes  v9cce09
+CL-MAU      14 spots  1035 bytes  vf763d6
 CL-SUR      10 spots   761 bytes  vcfba5d
 PE-NOR      10 spots   815 bytes  v28b64f
 PE-LLB       8 spots   731 bytes  vd77a11
@@ -30,7 +30,7 @@ PE-SUR       5 spots   478 bytes  vaa5523
 EC-COS      13 spots   949 bytes  va50a2d
 EC-GAL       5 spots   480 bytes  v60a35f
 CO-PAC       5 spots   454 bytes  vb60193
-CO-CAR       5 spots   529 bytes  v960107
+CO-CAR       5 spots   529 bytes  v60bd12
 VE-ALL       1 spots   238 bytes  vf04015
 VE-MAR       1 spots   274 bytes  v6c1a18
 PA-PAC       7 spots   657 bytes  vdb3819
@@ -47,7 +47,7 @@ SV-ORI       4 spots   437 bytes  va102a9
 GT-PAC       4 spots   447 bytes  vb9dcfc
 MX-OAX      13 spots   923 bytes  vcfbcd6
 MX-PAC      12 spots   901 bytes  v8f4524
-MX-NAY      10 spots   844 bytes  v161706
+MX-NAY      10 spots   844 bytes  vcd2c1d
 MX-BCS       5 spots   496 bytes  v84c981
 MX-BCS-N     2 spots   353 bytes  vfe6a5e
 MX-BCN       4 spots   423 bytes  v14b279
@@ -70,7 +70,6 @@ US-CA-SF    30 spots  2038 bytes  v77e231
 US-CA-NOR   25 spots  1576 bytes  ved6ce4
 US-PNW      34 spots  2020 bytes  vcb2c66
 US-GULF     15 spots  1110 bytes  v347b44
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 US-FL       46 spots  2410 bytes  v704e86
 US-FL-PAN    6 spots   715 bytes  v0f1ae4
 US-SE       23 spots  1470 bytes  v92e761
@@ -129,7 +128,7 @@ ID-LOM      13 spots   900 bytes  v28accf
 ID-SBW       9 spots   675 bytes  v1b8e23
 ID-SMB       2 spots   278 bytes  v9a55ce
 ID-ROT       4 spots   350 bytes  v90391e
-ID-MEN      10 spots   742 bytes  v5ab162
+ID-MEN      10 spots   742 bytes  v17490f
 ID-NIA       3 spots   380 bytes  vb9df19
 ID-KRU       3 spots   370 bytes  v631985
 PH-SIA       9 spots   632 bytes  vb7e9ed
@@ -155,7 +154,7 @@ VN-ALL       5 spots   469 bytes  vab403b
 KR-ALL       6 spots   526 bytes  v0397e4
 CN-HAI       2 spots   291 bytes  v958002
 ZA-WC-CPT   20 spots  1293 bytes  vb1c403
-ZA-WC-WCO    6 spots   652 bytes  vfbe64b
+ZA-WC-WCO    6 spots   654 bytes  vea1a2f
 ZA-WC-GR    12 spots   935 bytes  v6e02d2
 ZA-EC-JB    10 spots   834 bytes  vacb4dd
 ZA-EC-PE    19 spots  1178 bytes  v734614
@@ -188,7 +187,7 @@ ES-GAL      18 spots  1066 bytes  vb9c807
 ES-AND      15 spots   927 bytes  vbba246
 ES-CN-E     11 spots   909 bytes  v6a5876
 ES-CN-W     17 spots  1135 bytes  v8cbfb0
-PT-NOR      19 spots  1095 bytes  vb5598e
+PT-NOR      19 spots  1095 bytes  vfba13c
 PT-CEN      20 spots  1231 bytes  v8c3559
 PT-PEN      12 spots   802 bytes  v95ae1b
 PT-ERI       9 spots   601 bytes  vdef44c
