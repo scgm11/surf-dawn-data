@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 77 s
+catalogs: 3902 stations in 41 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -60,6 +60,7 @@ pass 1: 267 ports for 152 regions
   noaa-9415020     noaa    -65.. 226 cm  Point Reyes, CA
   noaa-9416841     noaa    -66.. 232 cm  ARENA COVE, CA
   noaa-9418767     noaa    -71.. 268 cm  HUMBOLDT BAY (North Spit), CA
+  noaa-9433445     noaa    -74.. 273 cm  Umpqua River Entrance, Half Moon Bay, OR
   noaa-9435380     noaa    -85.. 320 cm  Southbeach, OR
   noaa-9640507     noaa    -37.. 338 cm  La Union (Cutuco)
   noaa-9684403     noaa    -34.. 321 cm  Puntarenas
@@ -155,7 +156,6 @@ pass 1: 267 ports for 152 regions
   ticon-b486e0     ticon    99.. 548 cm  TICON-3 44.665N 1.163W (gesla.uhslc)
   ticon-757122     ticon    60.. 243 cm  TICON-3 25.017S 47.925W (gesla.meds)
   ticon-56fc43     ticon    33.. 209 cm  TICON-3 35.745N 140.858E (gesla.bom)
-  ticon-ea07a4     ticon    59.. 424 cm  TICON-3 43.345N 124.322W (gesla.uhslc)
   ticon-00efc3     ticon    26.. 167 cm  TICON-3 42.549S 147.928E (gesla.cmems)
   ticon-c4827f     ticon    79.. 536 cm  TICON-3 64.151N 21.940W (gesla.noaa)
   ticon-66dd4f     ticon    11..  52 cm  TICON-3 43.546N 10.299E (gesla.rws)
@@ -281,7 +281,7 @@ pass 1: 267 ports for 152 regions
   ticon-10c275     ticon    58.. 275 cm  TICON-3 44.520N 64.000W (gesla.uhslc)
   ticon-f1b139     ticon    45.. 260 cm  TICON-3 14.300N 91.917W (gesla.usgs)
   ticon-c17f38     ticon    34.. 159 cm  TICON-3 4.183N 73.517E (gesla.uhslc)
-GOT5.6: 165 points, 17520 hours each
+GOT5.6: 163 points, 17520 hours each
   AR-MDP       got-b94349     6.. 187 cm  13 spots
   AR-MDP       got-7d5db3     6.. 193 cm  5 spots
   AR-MDP       got-798f17     6.. 205 cm  3 spots
@@ -296,12 +296,12 @@ GOT5.6: 165 points, 17520 hours each
   BR-RS-SUL    got-47f025     5.. 119 cm  2 spots
   BR-SC-NOR    got-59c9d7     6.. 143 cm  7 spots
   BR-SC-NOR    got-d8f761     5.. 219 cm  5 spots
-  BR-SC-NOR    got-439c55     6.. 167 cm  4 spots
+  BR-SC-NOR    got-d9ce28     6.. 166 cm  5 spots
   BR-SP        got-4fc66e     5.. 162 cm  6 spots
   BR-RJL       got-442fe7     5.. 146 cm  10 spots
   BR-RJL       got-af45e1     5.. 159 cm  5 spots
   BR-ES        got-d43a78     6.. 189 cm  9 spots
-  BR-ES        got-a6dd41     6.. 190 cm  5 spots
+  BR-ES        got-a6dd41     6.. 190 cm  4 spots
   BR-ES        got-1426bf     5.. 327 cm  2 spots
   BR-BA        got-bc9748     5.. 255 cm  6 spots
   BR-BA        got-f2f875     6.. 259 cm  4 spots
@@ -319,17 +319,16 @@ GOT5.6: 165 points, 17520 hours each
   CL-MAU       got-9e2e3f     6.. 188 cm  3 spots
   CL-MAU       got-04ac46     5.. 191 cm  2 spots
   CL-SUR       got-0d6795     5.. 199 cm  3 spots
-  CL-SUR       got-b81c05     6.. 199 cm  3 spots
   CL-SUR       got-2c3e08     6.. 200 cm  2 spots
+  CL-SUR       got-877712     5.. 197 cm  2 spots
   PE-NOR       got-04911c     6.. 246 cm  2 spots
-  PE-LLB       got-30731c     5.. 177 cm  3 spots
+  PE-LLB       got-30731c     5.. 177 cm  4 spots
   PE-LLB       got-331843     6.. 169 cm  2 spots
   PE-LLB       got-3c06e1     5.. 161 cm  2 spots
   EC-COS       got-26250e     5.. 366 cm  2 spots
   EC-COS       got-cff16a     5.. 314 cm  2 spots
-  CO-PAC       got-cc7218     6.. 407 cm  3 spots
-  CO-PAC       got-b461dd     5.. 401 cm  1 spots
-  CO-CAR       got-f4a045     6..  56 cm  1 spots
+  CO-PAC       got-377e5e     5.. 406 cm  3 spots
+  CO-CAR       got-808330     6..  56 cm  3 spots
   CO-CAR       got-d2f680     6..  57 cm  1 spots
   VE-ALL       got-c73835     5..  60 cm  1 spots
   VE-MAR       got-c96e4a     6..  71 cm  1 spots
@@ -371,7 +370,7 @@ GOT5.6: 165 points, 17520 hours each
   FJ-SOU       got-248797     5.. 199 cm  1 spots
   VU-ALL       got-1a8699     5.. 160 cm  2 spots
   PG-ALL       got-d9fb66     5.. 150 cm  1 spots
-  ID-JAV-E     got-52e97f     6.. 304 cm  6 spots
+  ID-JAV-E     got-52e97f     6.. 304 cm  7 spots
   ID-JAV-E     got-4f1433     6.. 245 cm  1 spots
   ID-JAV-W     got-096ac0     6.. 170 cm  4 spots
   ID-LOM       got-659979     6.. 311 cm  7 spots
@@ -386,7 +385,7 @@ GOT5.6: 165 points, 17520 hours each
   ID-NIA       got-d76764     6.. 105 cm  2 spots
   ID-NIA       got-39b84c     6.. 111 cm  1 spots
   ID-KRU       got-d30559     6.. 150 cm  3 spots
-  PH-SIA       got-7a5c53     5.. 225 cm  8 spots
+  PH-SIA       got-7a5c53     5.. 225 cm  9 spots
   PH-LUZ       got-b9d77f     5.. 138 cm  2 spots
   PH-LUZ       got-529ee2     6.. 211 cm  2 spots
   PH-EAS       got-47544d     5.. 223 cm  1 spots
@@ -395,7 +394,7 @@ GOT5.6: 165 points, 17520 hours each
   LK-E         got-1868f1     6..  35 cm  7 spots
   LK-S         got-c5390b     6..  80 cm  10 spots
   LK-S         got-a41a13     5..  71 cm  1 spots
-  MV-CEN       got-7db3f1     6.. 121 cm  1 spots
+  MV-CEN       got-7db3f1     6.. 121 cm  2 spots
   TW-E         got-6614ad     6.. 209 cm  3 spots
   TW-E         got-a95390     5.. 193 cm  1 spots
   IN-W         got-af9925     6.. 115 cm  2 spots
@@ -410,7 +409,7 @@ GOT5.6: 165 points, 17520 hours each
   ZA-WC-WCO    got-2172a0     5.. 215 cm  2 spots
   ZA-WC-WCO    got-8af89e     5.. 202 cm  1 spots
   ZA-WC-GR     got-ca81fb     5.. 240 cm  7 spots
-  ZA-WC-GR     got-fb1f64     5.. 233 cm  3 spots
+  ZA-WC-GR     got-b9b340     5.. 233 cm  4 spots
   ZA-WC-GR     got-ec35aa     5.. 225 cm  1 spots
   ZA-EC-JB     got-f548fb     6.. 212 cm  10 spots
   ZA-EC-PE     got-17532b     6.. 210 cm  7 spots
@@ -433,13 +432,12 @@ GOT5.6: 165 points, 17520 hours each
   MA-N         got-1f3dfc     5.. 359 cm  1 spots
   MA-S         got-45dd2a     6.. 350 cm  4 spots
   MA-S         got-360725     5.. 347 cm  2 spots
-  SN-ALL       got-316049     6.. 164 cm  5 spots
+  SN-ALL       got-316049     6.. 164 cm  7 spots
   LR-ALL       got-92ddcb     6.. 166 cm  3 spots
   GH-ALL       got-532262     5.. 189 cm  1 spots
   MZ-S         got-7378ab     5.. 270 cm  3 spots
   MZ-INH       got-110685     6.. 331 cm  3 spots
   MG-ALL       got-0c4434     6..  64 cm  2 spots
-  MG-ALL       got-ab6d4c     5.. 314 cm  1 spots
   ES-CAN       got-cd9364     5.. 463 cm  7 spots
   ES-AST       got-ed8569     5.. 447 cm  3 spots
   ES-AST       got-70a590     5.. 464 cm  1 spots
@@ -447,7 +445,7 @@ GOT5.6: 165 points, 17520 hours each
   PT-ALG       got-f0b002     6.. 363 cm  1 spots
   PT-MAD       got-043c05     6.. 264 cm  8 spots
   IS-ALL       got-8ae671     5.. 307 cm  1 spots
-GOT5.6: 165 model points
+GOT5.6: 163 model points
 validación GOT5.6 noaa-9410230 La Jolla (Scripps Institution Wharf), CA: RMS 6.6 cm, rango 275 cm, modelo/oficial 0.95
 validación GOT5.6 noaa-1612340 HONOLULU, HI: RMS 5.5 cm, rango 95 cm, modelo/oficial 1.05
 validación GOT5.6 noaa-9414290 SAN FRANCISCO (Golden Gate), CA: RMS 6.6 cm, rango 278 cm, modelo/oficial 1.02
@@ -466,56 +464,12 @@ validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.4 cm, rango 100 cm, m
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 9.9 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 montevideo Montevideo (SOHMA): RMS 7.7 cm, rango 97 cm, modelo/oficial 0.86
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-removing tide/got-07bdb8 (no region uses it)
-removing tide/got-0b9f85 (no region uses it)
-removing tide/got-0bc1cc (no region uses it)
-removing tide/got-1a5319 (no region uses it)
-removing tide/got-1e8580 (no region uses it)
-removing tide/got-1f6754 (no region uses it)
-removing tide/got-2175da (no region uses it)
-removing tide/got-22dcfd (no region uses it)
-removing tide/got-2613c9 (no region uses it)
-removing tide/got-28a8b3 (no region uses it)
-removing tide/got-2ad22c (no region uses it)
-removing tide/got-2f1c38 (no region uses it)
-removing tide/got-38e06a (no region uses it)
-removing tide/got-48d2ad (no region uses it)
-removing tide/got-4e1d64 (no region uses it)
-removing tide/got-57076f (no region uses it)
-removing tide/got-5c5f01 (no region uses it)
-removing tide/got-63d295 (no region uses it)
-removing tide/got-67fdcb (no region uses it)
-removing tide/got-6d1313 (no region uses it)
-removing tide/got-78d608 (no region uses it)
-removing tide/got-7a487c (no region uses it)
-removing tide/got-86e0a9 (no region uses it)
-removing tide/got-913e13 (no region uses it)
-removing tide/got-9803e3 (no region uses it)
-removing tide/got-9decc4 (no region uses it)
-removing tide/got-b07ca8 (no region uses it)
-removing tide/got-bea209 (no region uses it)
-removing tide/got-c1e848 (no region uses it)
-removing tide/got-c504a0 (no region uses it)
-removing tide/got-c939f5 (no region uses it)
-removing tide/got-c94e22 (no region uses it)
-removing tide/got-ca232b (no region uses it)
-removing tide/got-cb786a (no region uses it)
-removing tide/got-d42e6d (no region uses it)
-removing tide/got-d5b42a (no region uses it)
-removing tide/got-d6cb2e (no region uses it)
-removing tide/got-def45c (no region uses it)
-removing tide/got-dfbfb8 (no region uses it)
-removing tide/got-e07ca7 (no region uses it)
-removing tide/got-ef40bc (no region uses it)
-removing tide/got-f03581 (no region uses it)
-removing tide/got-f0c08b (no region uses it)
-removing tide/imi-castletownbere (no region uses it)
-removing tide/imi-kinsale (no region uses it)
-removing tide/jma-d2 (no region uses it)
-removing tide/noaa-8459338 (no region uses it)
-removing tide/noaa-8534720 (no region uses it)
-removing tide/noaa-8659897 (no region uses it)
-removing tide/noaa-9411406 (no region uses it)
-removing tide/noaa-9418817 (no region uses it)
-removing tide/ticon-c9798b (no region uses it)
-done: 432 ports, 209 regions with ports, 2312/2417 spots, 10800 files 28.6 MB, 548 s
+removing tide/got-439c55 (no region uses it)
+removing tide/got-ab6d4c (no region uses it)
+removing tide/got-b461dd (no region uses it)
+removing tide/got-b81c05 (no region uses it)
+removing tide/got-cc7218 (no region uses it)
+removing tide/got-f4a045 (no region uses it)
+removing tide/got-fb1f64 (no region uses it)
+removing tide/ticon-ea07a4 (no region uses it)
+done: 430 ports, 209 regions with ports, 2327/2433 spots, 10750 files 28.5 MB, 430 s
