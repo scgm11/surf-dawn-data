@@ -5,46 +5,46 @@
   "AR-BAN": {
    "model": "ncep_gfswave025",
    "median_m": 0.95,
-   "median_share": 0.91
+   "median_share": 0.9
   },
   "AR-MDP": {
    "model": "ncep_gfswave025",
-   "median_m": 1.05,
-   "median_share": 0.76
+   "median_m": 1.06,
+   "median_share": 0.71
   },
   "AR-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 0.89,
-   "median_share": 0.66
+   "median_m": 0.91,
+   "median_share": 0.71
   },
   "AU-NSW-MN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.51,
-   "median_share": 0.4
+   "median_m": 1.48,
+   "median_share": 0.53
   },
   "AU-NSW-NC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.5,
-   "median_share": 0.8
+   "median_m": 1.49,
+   "median_share": 0.74
   },
   "AU-NSW-NR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.58,
-   "median_share": 0.37
+   "median_m": 1.56,
+   "median_share": 0.42
   },
   "AU-NSW-SC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.58,
-   "median_share": 0.49
+   "median_m": 1.54,
+   "median_share": 0.54
   },
   "AU-NSW-SYD": {
    "model": "ncep_gfswave025",
-   "median_m": 1.66,
-   "median_share": 0.54
+   "median_m": 1.65,
+   "median_share": 0.59
   },
   "AU-QLD-GC": {
    "model": "ncep_gfswave025",
-   "median_m": 0.94,
+   "median_m": 0.93,
    "median_share": 0.81
   },
   "AU-QLD-SC": {
@@ -54,97 +54,97 @@
   },
   "AU-SA-EYR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.19,
+   "median_m": 1.17,
    "median_share": 1.0
   },
   "AU-SA": {
    "model": "ecmwf_wam",
-   "median_m": 1.29,
-   "median_share": 0.71
+   "median_m": 1.27,
+   "median_share": 0.7
   },
   "AU-TAS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.27,
-   "median_share": 0.36
+   "median_m": 1.3,
+   "median_share": 0.42
   },
   "AU-VIC-PI": {
    "model": "ncep_gfswave025",
-   "median_m": 1.28,
+   "median_m": 1.24,
    "median_share": 1.0
   },
   "AU-VIC-SC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.16,
-   "median_share": 0.96
+   "median_m": 1.13,
+   "median_share": 0.97
   },
   "AU-VIC-W": {
    "model": "ncep_gfswave025",
-   "median_m": 2.17,
-   "median_share": 0.96
+   "median_m": 2.11,
+   "median_share": 0.06
   },
   "AU-WA-GAS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.18,
+   "median_m": 1.17,
    "median_share": 1.0
   },
   "AU-WA-MR": {
    "model": "ncep_gfswave025",
-   "median_m": 2.13,
+   "median_m": 2.2,
    "median_share": 0.97
   },
   "AU-WA-NW": {
    "model": "ncep_gfswave025",
-   "median_m": 1.72,
+   "median_m": 1.64,
    "median_share": 1.0
   },
   "AU-WA-PER": {
    "model": "ncep_gfswave025",
-   "median_m": 1.46,
+   "median_m": 1.51,
    "median_share": 1.0
   },
   "BB-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.19,
-   "median_share": 0.35
+   "median_m": 1.23,
+   "median_share": 0.33
   },
   "BR-BA": {
    "model": "ncep_gfswave025",
-   "median_m": 1.2,
-   "median_share": 0.93
+   "median_m": 1.19,
+   "median_share": 0.9
   },
   "BR-ES": {
    "model": "ncep_gfswave025",
-   "median_m": 1.08,
-   "median_share": 0.96
+   "median_m": 1.12,
+   "median_share": 0.97
   },
   "BR-NE-CE": {
    "model": "ncep_gfswave016",
    "median_m": 0.96,
-   "median_share": 0.86
+   "median_share": 0.76
   },
   "BR-NE-PE": {
    "model": "ncep_gfswave016",
-   "median_m": 0.97,
-   "median_share": 0.99
+   "median_m": 1.0,
+   "median_share": 0.96
   },
   "BR-NE-RN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.02,
-   "median_share": 0.95
+   "median_m": 1.07,
+   "median_share": 0.92
   },
   "BR-NOR": {
    "model": "ncep_gfswave016",
    "median_m": 1.21,
-   "median_share": 0.72
+   "median_share": 0.66
   },
   "BR-RJ": {
    "model": "ncep_gfswave025",
-   "median_m": 0.87,
+   "median_m": 0.88,
    "median_share": 1.0
   },
   "BR-RJL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.09,
+   "median_m": 1.12,
    "median_share": 0.71
   },
   "BR-RS-SUL": {
@@ -154,13 +154,13 @@
   },
   "BR-RS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.4,
+   "median_m": 1.41,
    "median_share": 1.0
   },
   "BR-SC-FLN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.48,
-   "median_share": 0.79
+   "median_m": 1.49,
+   "median_share": 0.78
   },
   "BR-SC-NOR": {
    "model": "ncep_gfswave025",
@@ -169,38 +169,38 @@
   },
   "BR-SC-SUL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.42,
-   "median_share": 0.88
+   "median_m": 1.43,
+   "median_share": 0.87
   },
   "BR-SP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.84,
-   "median_share": 0.95
+   "median_m": 0.85,
+   "median_share": 0.88
   },
   "BS-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.65,
+   "median_m": 1.67,
    "median_share": 0.95
   },
   "CA-BC-VI": {
    "model": "ecmwf_wam",
-   "median_m": 3.25,
-   "median_share": 0.77
+   "median_m": 3.31,
+   "median_share": 0.85
   },
   "CA-NS": {
    "model": "ncep_gfswave016",
-   "median_m": 0.87,
-   "median_share": 0.8
+   "median_m": 0.85,
+   "median_share": 0.9
   },
   "CL-CEN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.81,
-   "median_share": 0.52
+   "median_m": 1.8,
+   "median_share": 0.71
   },
   "CL-MAU": {
    "model": "ncep_gfswave025",
-   "median_m": 1.59,
-   "median_share": 0.8
+   "median_m": 1.62,
+   "median_share": 0.73
   },
   "CL-NOR": {
    "model": "ncep_gfswave025",
@@ -209,83 +209,83 @@
   },
   "CL-PIC": {
    "model": "ncep_gfswave025",
-   "median_m": 2.01,
-   "median_share": 0.83
+   "median_m": 2.0,
+   "median_share": 0.85
   },
   "CL-SUR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.73,
+   "median_m": 1.72,
    "median_share": 1.0
   },
   "CN-HAI": {
    "model": "ncep_gfswave016",
-   "median_m": 1.23,
+   "median_m": 1.28,
    "median_share": 0.16
   },
   "CO-CAR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.89,
-   "median_share": 0.98
+   "median_m": 0.92,
+   "median_share": 0.87
   },
   "CO-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.72,
+   "median_m": 0.59,
    "median_share": 1.0
   },
   "CR-CAR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.72,
+   "median_m": 0.75,
    "median_share": 0.96
   },
   "CR-GUA": {
    "model": "ncep_gfswave016",
-   "median_m": 0.95,
+   "median_m": 0.92,
    "median_share": 1.0
   },
   "CR-NIC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
+   "median_m": 0.89,
    "median_share": 1.0
   },
   "CR-OSA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.08,
+   "median_m": 1.05,
    "median_share": 0.39
   },
   "CR-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
+   "median_m": 0.89,
    "median_share": 1.0
   },
   "CV-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.28,
-   "median_share": 0.83
+   "median_m": 1.31,
+   "median_share": 0.85
   },
   "DE-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.21,
-   "median_share": 0.66
+   "median_m": 1.32,
+   "median_share": 0.67
   },
   "DK-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.25,
-   "median_share": 0.6
+   "median_m": 1.35,
+   "median_share": 0.65
   },
   "DO-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.08,
+   "median_m": 1.1,
    "median_share": 0.92
   },
   "EC-COS": {
    "model": "ncep_gfswave016",
-   "median_m": 0.79,
+   "median_m": 0.8,
    "median_share": 1.0
   },
   "EC-GAL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.01,
-   "median_share": 0.94
+   "median_m": 1.02,
+   "median_share": 0.95
   },
   "ES-AND": {
    "model": "ncep_gfswave016",
@@ -294,153 +294,153 @@
   },
   "ES-AST": {
    "model": "ncep_gfswave016",
-   "median_m": 1.38,
+   "median_m": 1.5,
    "median_share": 0.91
   },
   "ES-CAN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.39,
-   "median_share": 0.79
+   "median_m": 1.46,
+   "median_share": 0.78
   },
   "ES-CN-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.51,
+   "median_m": 1.57,
    "median_share": 0.96
   },
   "ES-CN-W": {
    "model": "ncep_gfswave016",
-   "median_m": 1.03,
-   "median_share": 0.72
+   "median_m": 1.05,
+   "median_share": 0.7
   },
   "ES-GAL": {
    "model": "ncep_gfswave016",
-   "median_m": 2.18,
-   "median_share": 0.84
+   "median_m": 2.27,
+   "median_share": 0.8
   },
   "ES-PV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.16,
-   "median_share": 0.76
+   "median_m": 1.22,
+   "median_share": 0.8
   },
   "FJ-MAM": {
    "model": "ncep_gfswave025",
-   "median_m": 1.04,
+   "median_m": 1.07,
    "median_share": 0.71
   },
   "FJ-SOU": {
    "model": "ncep_gfswave025",
-   "median_m": 1.16,
-   "median_share": 0.91
+   "median_m": 1.19,
+   "median_share": 0.94
   },
   "FR-BRE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.69,
-   "median_share": 0.94
+   "median_m": 1.75,
+   "median_share": 0.91
   },
   "FR-GIR": {
    "model": "ncep_gfswave016",
-   "median_m": 1.84,
+   "median_m": 1.92,
    "median_share": 0.95
   },
   "FR-HOS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.49,
+   "median_m": 1.57,
    "median_share": 0.9
   },
   "FR-PBA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.49,
-   "median_share": 0.93
+   "median_m": 1.57,
+   "median_share": 0.94
   },
   "FR-VEN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.59,
-   "median_share": 0.93
+   "median_m": 1.65,
+   "median_share": 0.98
   },
   "GB-CON": {
    "model": "ncep_gfswave016",
-   "median_m": 1.58,
-   "median_share": 0.79
+   "median_m": 1.61,
+   "median_share": 0.9
   },
   "GB-DEV": {
    "model": "ncep_gfswave016",
-   "median_m": 1.2,
-   "median_share": 0.93
+   "median_m": 1.22,
+   "median_share": 0.85
   },
   "GB-NE": {
    "model": "ncep_gfswave025",
    "median_m": 1.22,
-   "median_share": 0.68
+   "median_share": 0.74
   },
   "GB-NIR": {
    "model": "ecmwf_wam",
-   "median_m": 0.79,
+   "median_m": 0.82,
    "median_share": 0.65
   },
   "GB-SCO": {
    "model": "ncep_gfswave025",
    "median_m": 1.47,
-   "median_share": 0.58
+   "median_share": 0.61
   },
   "GB-SOU": {
    "model": "ncep_gfswave016",
    "median_m": 1.3,
-   "median_share": 0.78
+   "median_share": 0.82
   },
   "GB-WAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.24,
-   "median_share": 0.86
+   "median_m": 1.26,
+   "median_share": 0.87
   },
   "GH-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.77,
+   "median_m": 0.78,
    "median_share": 1.0
   },
   "GP-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.02,
+   "median_m": 1.04,
    "median_share": 0.01
   },
   "GT-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.97,
+   "median_m": 0.95,
    "median_share": 1.0
   },
   "ID-BAL-BUK": {
    "model": "ncep_gfswave016",
-   "median_m": 1.19,
+   "median_m": 1.18,
    "median_share": 1.0
   },
   "ID-BAL-E": {
    "model": "ncep_gfswave016",
-   "median_m": 0.88,
-   "median_share": 0.42
+   "median_m": 0.8,
+   "median_share": 0.31
   },
   "ID-BAL-W": {
    "model": "ncep_gfswave016",
-   "median_m": 1.19,
+   "median_m": 1.18,
    "median_share": 1.0
   },
   "ID-JAV-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.07,
+   "median_m": 1.06,
    "median_share": 1.0
   },
   "ID-JAV-W": {
    "model": "ncep_gfswave016",
    "median_m": 1.2,
-   "median_share": 0.97
+   "median_share": 1.0
   },
   "ID-KRU": {
    "model": "ncep_gfswave016",
-   "median_m": 1.38,
+   "median_m": 1.36,
    "median_share": 1.0
   },
   "ID-LOM": {
    "model": "ncep_gfswave016",
-   "median_m": 1.29,
-   "median_share": 0.99
+   "median_m": 1.3,
+   "median_share": 1.0
   },
   "ID-MEN": {
    "model": "ncep_gfswave016",
@@ -459,93 +459,93 @@
   },
   "ID-SBW": {
    "model": "ncep_gfswave016",
-   "median_m": 0.99,
+   "median_m": 1.0,
    "median_share": 1.0
   },
   "ID-SMB": {
    "model": "ncep_gfswave016",
-   "median_m": 1.26,
+   "median_m": 1.27,
    "median_share": 1.0
   },
   "IE-NW": {
    "model": "ncep_gfswave025",
-   "median_m": 0.94,
+   "median_m": 0.93,
    "median_share": 0.87
   },
   "IE-SE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.74,
-   "median_share": 0.82
+   "median_m": 1.75,
+   "median_share": 0.73
   },
   "IE-SW": {
    "model": "ecmwf_wam",
-   "median_m": 1.4,
+   "median_m": 1.39,
    "median_share": 0.58
   },
   "IN-E": {
    "model": "ncep_gfswave016",
-   "median_m": 0.98,
+   "median_m": 0.97,
    "median_share": 1.0
   },
   "IN-W": {
    "model": "ncep_gfswave016",
-   "median_m": 0.53,
-   "median_share": 0.91
+   "median_m": 0.52,
+   "median_share": 0.94
   },
   "IS-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.06,
-   "median_share": 0.62
+   "median_m": 2.12,
+   "median_share": 0.43
   },
   "IT-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.12,
-   "median_share": 0.93
+   "median_m": 1.2,
+   "median_share": 0.86
   },
   "IT-SAR": {
    "model": "ncep_gfswave016",
-   "median_m": 1.27,
+   "median_m": 1.32,
    "median_share": 0.93
   },
   "JP-CHI": {
    "model": "ncep_gfswave016",
-   "median_m": 1.48,
-   "median_share": 0.72
+   "median_m": 1.36,
+   "median_share": 0.67
   },
   "JP-IBA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.18,
-   "median_share": 0.79
+   "median_m": 1.05,
+   "median_share": 0.96
   },
   "JP-IZU": {
    "model": "ncep_gfswave016",
-   "median_m": 1.08,
-   "median_share": 0.5
+   "median_m": 1.02,
+   "median_share": 0.43
   },
   "JP-KYU": {
    "model": "ncep_gfswave016",
-   "median_m": 0.99,
+   "median_m": 0.89,
    "median_share": 0.97
   },
   "JP-SHK": {
    "model": "ncep_gfswave016",
-   "median_m": 1.01,
-   "median_share": 0.76
+   "median_m": 0.89,
+   "median_share": 0.74
   },
   "JP-SHO": {
    "model": "ncep_gfswave016",
-   "median_m": 0.95,
+   "median_m": 0.92,
    "median_share": 0.74
   },
   "KR-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.96,
-   "median_share": 0.41
+   "median_m": 0.94,
+   "median_share": 0.4
   },
   "LK-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.24,
-   "median_share": 0.34
+   "median_m": 1.25,
+   "median_share": 0.36
   },
   "LK-S": {
    "model": "ncep_gfswave016",
@@ -554,43 +554,43 @@
   },
   "LR-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.72,
+   "median_m": 0.73,
    "median_share": 1.0
   },
   "MA-N": {
    "model": "ncep_gfswave016",
-   "median_m": 1.63,
-   "median_share": 0.98
+   "median_m": 1.69,
+   "median_share": 0.93
   },
   "MA-S": {
    "model": "ncep_gfswave016",
-   "median_m": 1.38,
+   "median_m": 1.45,
    "median_share": 1.0
   },
   "MA-TAG": {
    "model": "ncep_gfswave016",
-   "median_m": 1.23,
+   "median_m": 1.28,
    "median_share": 1.0
   },
   "MG-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.88,
-   "median_share": 0.65
+   "median_m": 1.87,
+   "median_share": 0.31
   },
   "MQ-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.12,
-   "median_share": 0.44
+   "median_m": 1.05,
+   "median_share": 0.52
   },
   "MU-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.27,
+   "median_m": 1.19,
    "median_share": 1.0
   },
   "MV-CEN": {
    "model": "ncep_gfswave016",
-   "median_m": 0.74,
-   "median_share": 0.98
+   "median_m": 0.77,
+   "median_share": 0.48
   },
   "MV-NMA": {
    "model": "ncep_gfswave016",
@@ -600,12 +600,12 @@
   "MV-SMA": {
    "model": "ncep_gfswave016",
    "median_m": 0.73,
-   "median_share": 0.97
+   "median_share": 0.92
   },
   "MV-SOU": {
    "model": "ncep_gfswave016",
-   "median_m": 0.92,
-   "median_share": 0.54
+   "median_m": 0.91,
+   "median_share": 0.55
   },
   "MX-BCN": {
    "model": "ecmwf_wam",
@@ -614,17 +614,17 @@
   },
   "MX-BCS-N": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
-   "median_share": 0.73
+   "median_m": 0.92,
+   "median_share": 0.72
   },
   "MX-BCS": {
    "model": "ncep_gfswave016",
-   "median_m": 0.62,
-   "median_share": 0.69
+   "median_m": 0.6,
+   "median_share": 0.61
   },
   "MX-CAR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.64,
+   "median_m": 0.63,
    "median_share": 0.91
   },
   "MX-NAY": {
@@ -634,112 +634,112 @@
   },
   "MX-OAX": {
    "model": "ncep_gfswave016",
-   "median_m": 1.09,
+   "median_m": 1.06,
    "median_share": 1.0
   },
   "MX-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 1.07,
-   "median_share": 1.0
+   "median_m": 1.05,
+   "median_share": 0.94
   },
   "MZ-INH": {
    "model": "ncep_gfswave025",
-   "median_m": 1.85,
-   "median_share": 0.71
+   "median_m": 1.87,
+   "median_share": 0.13
   },
   "MZ-S": {
    "model": "ncep_gfswave025",
-   "median_m": 1.81,
-   "median_share": 0.35
+   "median_m": 1.82,
+   "median_share": 0.32
   },
   "NA-ERO": {
    "model": "ncep_gfswave025",
-   "median_m": 1.56,
+   "median_m": 1.58,
    "median_share": 1.0
   },
   "NI-NW": {
    "model": "ncep_gfswave016",
-   "median_m": 0.87,
+   "median_m": 0.84,
    "median_share": 1.0
   },
   "NI-RIV": {
    "model": "ncep_gfswave016",
-   "median_m": 0.97,
+   "median_m": 0.89,
    "median_share": 1.0
   },
   "NL-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 0.9,
-   "median_share": 0.56
+   "median_m": 0.93,
+   "median_share": 0.6
   },
   "NO-N": {
    "model": "ncep_gfswave025",
-   "median_m": 2.13,
-   "median_share": 0.57
+   "median_m": 2.01,
+   "median_share": 0.63
   },
   "NO-S": {
    "model": "ncep_gfswave025",
-   "median_m": 1.55,
-   "median_share": 0.95
+   "median_m": 2.17,
+   "median_share": 0.88
   },
   "NZ-AKL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.82,
+   "median_m": 1.86,
    "median_share": 1.0
   },
   "NZ-BOP": {
    "model": "ncep_gfswave025",
-   "median_m": 0.95,
+   "median_m": 0.94,
    "median_share": 1.0
   },
   "NZ-GIS": {
    "model": "ncep_gfswave025",
-   "median_m": 1.21,
-   "median_share": 0.35
+   "median_m": 1.22,
+   "median_share": 0.41
   },
   "NZ-KAI": {
    "model": "ncep_gfswave025",
-   "median_m": 0.97,
+   "median_m": 0.98,
    "median_share": 0.55
   },
   "NZ-NTL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.34,
+   "median_m": 1.33,
    "median_share": 0.98
   },
   "NZ-OTA": {
    "model": "ncep_gfswave025",
-   "median_m": 1.36,
-   "median_share": 0.35
+   "median_m": 1.41,
+   "median_share": 0.31
   },
   "NZ-RAG": {
    "model": "ncep_gfswave025",
-   "median_m": 1.43,
+   "median_m": 1.46,
    "median_share": 1.0
   },
   "NZ-TAR": {
    "model": "ncep_gfswave025",
-   "median_m": 1.47,
-   "median_share": 0.29
+   "median_m": 1.48,
+   "median_share": 0.31
   },
   "NZ-WC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.55,
-   "median_share": 0.64
+   "median_m": 1.5,
+   "median_share": 0.62
   },
   "NZ-WEL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.15,
-   "median_share": 0.51
+   "median_m": 1.19,
+   "median_share": 0.5
   },
   "PA-BDT": {
    "model": "ncep_gfswave016",
-   "median_m": 0.76,
+   "median_m": 0.79,
    "median_share": 1.0
   },
   "PA-PAC": {
    "model": "ncep_gfswave016",
-   "median_m": 0.66,
+   "median_m": 0.64,
    "median_share": 1.0
   },
   "PE-LIM": {
@@ -754,8 +754,8 @@
   },
   "PE-NOR": {
    "model": "ncep_gfswave016",
-   "median_m": 0.91,
-   "median_share": 0.8
+   "median_m": 0.94,
+   "median_share": 0.76
   },
   "PE-SUR": {
    "model": "ncep_gfswave025",
@@ -764,102 +764,102 @@
   },
   "PF-ISL": {
    "model": "ncep_gfswave025",
-   "median_m": 2.24,
-   "median_share": 0.43
+   "median_m": 2.23,
+   "median_share": 0.38
   },
   "PF-TAH": {
    "model": "ncep_gfswave025",
-   "median_m": 2.15,
-   "median_share": 0.41
+   "median_m": 2.13,
+   "median_share": 0.37
   },
   "PG-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 0.85,
-   "median_share": 0.21
+   "median_share": 0.58
   },
   "PH-EAS": {
    "model": "ncep_gfswave016",
-   "median_m": 1.44,
+   "median_m": 1.45,
    "median_share": 1.0
   },
   "PH-LUZ": {
    "model": "ncep_gfswave016",
-   "median_m": 0.9,
+   "median_m": 0.93,
    "median_share": 0.97
   },
   "PH-SIA": {
    "model": "ncep_gfswave016",
-   "median_m": 1.39,
-   "median_share": 0.95
+   "median_m": 1.41,
+   "median_share": 0.99
   },
   "PR-N": {
    "model": "ncep_gfswave016",
-   "median_m": 0.99,
-   "median_share": 1.0
+   "median_m": 1.01,
+   "median_share": 0.98
   },
   "PR-NW": {
    "model": "ncep_gfswave016",
-   "median_m": 0.94,
+   "median_m": 0.95,
    "median_share": 0.83
   },
   "PT-ALG": {
    "model": "ncep_gfswave016",
-   "median_m": 2.19,
-   "median_share": 0.98
+   "median_m": 2.21,
+   "median_share": 0.99
   },
   "PT-AZO": {
    "model": "ncep_gfswave016",
-   "median_m": 2.41,
-   "median_share": 0.29
+   "median_m": 2.47,
+   "median_share": 0.57
   },
   "PT-CEN": {
    "model": "ncep_gfswave016",
-   "median_m": 2.2,
-   "median_share": 0.98
+   "median_m": 2.31,
+   "median_share": 0.99
   },
   "PT-ERI": {
    "model": "ncep_gfswave016",
-   "median_m": 2.59,
+   "median_m": 2.7,
    "median_share": 0.98
   },
   "PT-LIS": {
    "model": "ncep_gfswave016",
-   "median_m": 2.17,
-   "median_share": 0.88
+   "median_m": 2.26,
+   "median_share": 0.95
   },
   "PT-MAD": {
    "model": "ncep_gfswave016",
-   "median_m": 1.93,
+   "median_m": 1.97,
    "median_share": 0.8
   },
   "PT-NOR": {
    "model": "ncep_gfswave016",
-   "median_m": 2.46,
+   "median_m": 2.59,
    "median_share": 1.0
   },
   "PT-PEN": {
    "model": "ncep_gfswave016",
-   "median_m": 2.5,
-   "median_share": 0.88
+   "median_m": 2.61,
+   "median_share": 0.92
   },
   "RE-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.11,
-   "median_share": 0.75
+   "median_m": 1.13,
+   "median_share": 0.46
   },
   "SN-ALL": {
    "model": "ncep_gfswave016",
    "median_m": 1.59,
-   "median_share": 0.99
+   "median_share": 0.68
   },
   "SV-LIB": {
    "model": "ncep_gfswave016",
-   "median_m": 0.95,
+   "median_m": 1.0,
    "median_share": 1.0
   },
   "SV-ORI": {
    "model": "ncep_gfswave016",
-   "median_m": 0.96,
+   "median_m": 0.93,
    "median_share": 1.0
   },
   "TO-ALL": {
@@ -869,32 +869,32 @@
   },
   "TT-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.86,
+   "median_m": 0.87,
    "median_share": 0.98
   },
   "TW-E": {
    "model": "ncep_gfswave016",
-   "median_m": 1.27,
-   "median_share": 0.29
+   "median_m": 1.29,
+   "median_share": 0.39
   },
   "TW-NE": {
    "model": "ncep_gfswave016",
-   "median_m": 1.57,
+   "median_m": 1.55,
    "median_share": 0.7
   },
   "US-CA-CEN": {
    "model": "ecmwf_wam",
-   "median_m": 2.68,
+   "median_m": 2.64,
    "median_share": 1.0
   },
   "US-CA-LA": {
    "model": "ecmwf_wam",
-   "median_m": 1.25,
+   "median_m": 1.26,
    "median_share": 1.0
   },
   "US-CA-NOR": {
    "model": "ecmwf_wam",
-   "median_m": 3.52,
+   "median_m": 3.49,
    "median_share": 0.97
   },
   "US-CA-OC": {
@@ -905,12 +905,12 @@
   "US-CA-SB": {
    "model": "ecmwf_wam",
    "median_m": 1.35,
-   "median_share": 0.05
+   "median_share": 0.04
   },
   "US-CA-SC": {
    "model": "ecmwf_wam",
-   "median_m": 2.5,
-   "median_share": 0.82
+   "median_m": 2.47,
+   "median_share": 0.81
   },
   "US-CA-SD": {
    "model": "ncep_gfswave016",
@@ -919,158 +919,158 @@
   },
   "US-CA-SF": {
    "model": "ecmwf_wam",
-   "median_m": 2.93,
-   "median_share": 1.0
+   "median_m": 2.9,
+   "median_share": 0.99
   },
   "US-FL-PAN": {
    "model": "ecmwf_wam",
-   "median_m": 0.71,
-   "median_share": 0.18
+   "median_m": 0.73,
+   "median_share": 0.06
   },
   "US-FL": {
    "model": "ncep_gfswave016",
-   "median_m": 1.09,
-   "median_share": 0.88
+   "median_m": 1.14,
+   "median_share": 0.89
   },
   "US-GULF": {
    "model": "ecmwf_wam",
-   "median_m": 0.96,
+   "median_m": 1.12,
    "median_share": 0.94
   },
   "US-HI-BIG": {
    "model": "ecmwf_wam",
-   "median_m": 0.88,
-   "median_share": 0.72
+   "median_m": 0.89,
+   "median_share": 0.71
   },
   "US-HI-KAU": {
    "model": "ecmwf_wam",
-   "median_m": 2.12,
-   "median_share": 0.78
+   "median_m": 2.09,
+   "median_share": 0.66
   },
   "US-HI-MAU": {
    "model": "ecmwf_wam",
-   "median_m": 2.61,
-   "median_share": 0.2
+   "median_m": 2.6,
+   "median_share": 0.23
   },
   "US-HI-OAN": {
    "model": "ncep_gfswave016",
-   "median_m": 1.85,
-   "median_share": 0.89
+   "median_m": 1.82,
+   "median_share": 0.86
   },
   "US-HI-OAS": {
    "model": "ecmwf_wam",
-   "median_m": 1.26,
+   "median_m": 1.25,
    "median_share": 0.0
   },
   "US-MID": {
    "model": "ncep_gfswave025",
-   "median_m": 0.68,
-   "median_share": 0.74
+   "median_m": 0.65,
+   "median_share": 0.77
   },
   "US-NE": {
    "model": "ecmwf_wam",
-   "median_m": 0.67,
-   "median_share": 0.46
+   "median_m": 0.64,
+   "median_share": 0.47
   },
   "US-PNW": {
    "model": "ecmwf_wam",
-   "median_m": 3.48,
+   "median_m": 3.46,
    "median_share": 1.0
   },
   "US-SC-GA": {
    "model": "ncep_gfswave016",
-   "median_m": 0.76,
-   "median_share": 0.69
+   "median_m": 0.8,
+   "median_share": 0.71
   },
   "US-SE": {
    "model": "ncep_gfswave025",
-   "median_m": 0.86,
+   "median_m": 0.93,
    "median_share": 0.76
   },
   "UY-CAN": {
    "model": "ncep_gfswave025",
-   "median_m": 0.71,
-   "median_share": 0.48
+   "median_m": 0.69,
+   "median_share": 0.51
   },
   "UY-MAL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.04,
-   "median_share": 0.52
+   "median_m": 1.03,
+   "median_share": 0.57
   },
   "UY-ROC": {
    "model": "ncep_gfswave025",
-   "median_m": 1.21,
-   "median_share": 0.74
+   "median_m": 1.2,
+   "median_share": 0.68
   },
   "VE-ALL": {
-   "model": "ncep_gfswave016",
-   "median_m": 0.97,
-   "median_share": 1.0
-  },
-  "VE-MAR": {
    "model": "ncep_gfswave016",
    "median_m": 1.0,
    "median_share": 1.0
   },
+  "VE-MAR": {
+   "model": "ncep_gfswave016",
+   "median_m": 1.02,
+   "median_share": 1.0
+  },
   "VN-ALL": {
    "model": "ncep_gfswave016",
-   "median_m": 0.93,
+   "median_m": 0.98,
    "median_share": 1.0
   },
   "VU-ALL": {
    "model": "ncep_gfswave025",
-   "median_m": 1.1,
-   "median_share": 0.17
+   "median_m": 1.12,
+   "median_share": 0.15
   },
   "WS-ALL": {
    "model": "ncep_gfswave025",
    "median_m": 2.07,
-   "median_share": 0.76
+   "median_share": 0.69
   },
   "ZA-EC-JB": {
    "model": "ncep_gfswave025",
-   "median_m": 2.19,
+   "median_m": 2.2,
    "median_share": 0.95
   },
   "ZA-EC-PE": {
    "model": "ncep_gfswave025",
-   "median_m": 2.41,
-   "median_share": 0.32
+   "median_m": 2.36,
+   "median_share": 0.34
   },
   "ZA-EC-WLD": {
    "model": "ncep_gfswave025",
-   "median_m": 1.99,
+   "median_m": 1.98,
    "median_share": 0.53
   },
   "ZA-KZN-DBN": {
    "model": "ncep_gfswave025",
-   "median_m": 1.91,
-   "median_share": 0.65
+   "median_m": 1.89,
+   "median_share": 0.7
   },
   "ZA-KZN-N": {
    "model": "ncep_gfswave025",
-   "median_m": 1.91,
-   "median_share": 0.73
+   "median_m": 1.89,
+   "median_share": 0.74
   },
   "ZA-KZN-S": {
    "model": "ncep_gfswave025",
-   "median_m": 2.04,
+   "median_m": 2.02,
    "median_share": 0.55
   },
   "ZA-WC-CPT": {
    "model": "ncep_gfswave025",
-   "median_m": 1.96,
-   "median_share": 0.85
+   "median_m": 2.0,
+   "median_share": 0.97
   },
   "ZA-WC-GR": {
    "model": "ncep_gfswave025",
-   "median_m": 2.05,
-   "median_share": 0.92
+   "median_m": 2.09,
+   "median_share": 0.9
   },
   "ZA-WC-WCO": {
    "model": "ncep_gfswave025",
-   "median_m": 1.76,
-   "median_share": 0.0
+   "median_m": 1.64,
+   "median_share": 0.27
   }
  },
  "flags": [
@@ -1081,7 +1081,7 @@
     "las olas casi nunca le entran de frente (2 % de las horas; la zona 90 %) y en 92 días 4 %"
    ],
    "facing": 17,
-   "swell": 121,
+   "swell": 119,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -1090,74 +1090,44 @@
    "share_long": 0.0398936170212766
   },
   {
-   "region": "AU-SA",
-   "spot": "CHINAMANS",
-   "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 71 %) y en 92 días 1 %"
-   ],
-   "facing": 325,
-   "swell": 232,
-   "near": 250,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.01152482269503546
-  },
-  {
-   "region": "AU-TAS",
-   "spot": "MARION BAY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 36 %) y en 92 días 2 %"
-   ],
-   "facing": 269,
-   "swell": 126,
-   "near": 146,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0199468085106383
-  },
-  {
    "region": "AU-TAS",
    "spot": "MARRAWAH",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 36 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %) y en 92 días 0 %"
    ],
-   "facing": 314,
-   "swell": 227,
+   "facing": 344,
+   "swell": 228,
    "near": null,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.014184397163120567
+   "share_long": 0.0004432624113475177
   },
   {
-   "region": "AU-VIC-PI",
-   "spot": "FOREST CAVES",
+   "region": "AU-VIC-SC",
+   "spot": "POINT IMPOSSIBLE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 97 %) y en 92 días 1 %"
    ],
    "facing": 127,
-   "swell": 221,
-   "near": 207,
+   "swell": 198,
+   "near": 151,
    "flipped": false,
    "whole": false,
-   "type": 1,
+   "type": 2,
    "top": false,
-   "share_long": 0.0
+   "share_long": 0.010638297872340425
   },
   {
    "region": "AU-VIC-SC",
    "spot": "TORQUAY BACK BEACH",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 96 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (2 % de las horas; la zona 97 %) y en 92 días 2 %"
    ],
    "facing": 133,
-   "swell": 218,
-   "near": 152,
+   "swell": 217,
+   "near": 154,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1166,45 +1136,60 @@
   },
   {
    "region": "AU-VIC-SC",
-   "spot": "JAN JUC",
+   "spot": "POINT ADDIS",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 96 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (2 % de las horas; la zona 97 %) y en 92 días 1 %"
    ],
-   "facing": 118,
-   "swell": 218,
-   "near": 153,
+   "facing": 71,
+   "swell": 217,
+   "near": 150,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.01950354609929078
+   "share_long": 0.01152482269503546
   },
   {
    "region": "AU-VIC-SC",
-   "spot": "POINT ADDIS",
+   "spot": "URQUHART BLUFF",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 96 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (2 % de las horas; la zona 97 %) y en 92 días 2 %"
    ],
-   "facing": 71,
-   "swell": 218,
-   "near": 148,
+   "facing": 130,
+   "swell": 217,
+   "near": 142,
    "flipped": false,
    "whole": false,
-   "type": 1,
+   "type": 3,
    "top": false,
-   "share_long": 0.013297872340425532
+   "share_long": 0.0199468085106383
+  },
+  {
+   "region": "AU-VIC-SC",
+   "spot": "SPLIT POINT",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 2 %"
+   ],
+   "facing": 160,
+   "swell": 226,
+   "near": 138,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.01950354609929078
   },
   {
    "region": "AU-VIC-W",
    "spot": "WYE RIVER",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (6 %) y en 92 días 1 %"
    ],
    "facing": 110,
    "swell": 226,
    "near": null,
    "flipped": false,
-   "whole": false,
+   "whole": true,
    "type": 1,
    "top": false,
    "share_long": 0.007978723404255319
@@ -1213,13 +1198,13 @@
    "region": "AU-VIC-W",
    "spot": "KENNETT RIVER",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 96 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (2 % de las horas) y a su zona tampoco (6 %) y en 92 días 1 %"
    ],
    "facing": 82,
    "swell": 222,
    "near": null,
    "flipped": false,
-   "whole": false,
+   "whole": true,
    "type": 1,
    "top": false,
    "share_long": 0.012854609929078014
@@ -1228,13 +1213,28 @@
    "region": "AU-VIC-W",
    "spot": "PORT FAIRY EAST",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (6 %) y en 92 días 0 %"
    ],
    "facing": 140,
-   "swell": 216,
-   "near": 229,
+   "swell": 215,
+   "near": 172,
    "flipped": false,
-   "whole": false,
+   "whole": true,
+   "type": 1,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "AU-VIC-W",
+   "spot": "BRIDGEWATER BAY",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (6 %) y en 92 días 0 %"
+   ],
+   "facing": 125,
+   "swell": 221,
+   "near": null,
+   "flipped": false,
+   "whole": true,
    "type": 1,
    "top": false,
    "share_long": 0.0
@@ -1273,16 +1273,16 @@
    "region": "AU-WA-MR",
    "spot": "PEA BREAK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 4 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %) y en 92 días 4 %"
    ],
    "facing": 313,
-   "swell": 247,
+   "swell": 248,
    "near": 281,
    "flipped": false,
    "whole": false,
    "type": 3,
    "top": false,
-   "share_long": 0.0350177304964539
+   "share_long": 0.03634751773049645
   },
   {
    "region": "AU-WA-MR",
@@ -1291,7 +1291,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 1 %"
    ],
    "facing": 350,
-   "swell": 247,
+   "swell": 248,
    "near": 280,
    "flipped": false,
    "whole": false,
@@ -1303,25 +1303,25 @@
    "region": "AU-WA-MR",
    "spot": "SMITHS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 97 %) y en 92 días 3 %"
    ],
    "facing": 318,
-   "swell": 247,
+   "swell": 248,
    "near": 281,
    "flipped": false,
    "whole": false,
    "type": 3,
    "top": false,
-   "share_long": 0.026152482269503546
+   "share_long": 0.027039007092198582
   },
   {
    "region": "BB-ALL",
    "spot": "BRANDONS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 33 %) y en 92 días 0 %"
    ],
    "facing": 277,
-   "swell": 31,
+   "swell": 33,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -1333,11 +1333,11 @@
    "region": "BR-NE-PE",
    "spot": "CALHETAS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 %"
    ],
    "facing": 19,
    "swell": 103,
-   "near": 96,
+   "near": 86,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1348,11 +1348,11 @@
    "region": "BR-NE-PE",
    "spot": "GAIBU",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 3 %"
    ],
    "facing": 37,
    "swell": 103,
-   "near": 95,
+   "near": 83,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1366,8 +1366,8 @@
     "las olas casi nunca le entran de frente (1 % de las horas; la zona 71 %) y en 92 días 1 %"
    ],
    "facing": 272,
-   "swell": 154,
-   "near": 148,
+   "swell": 151,
+   "near": 125,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1375,29 +1375,14 @@
    "share_long": 0.0062056737588652485
   },
   {
-   "region": "BR-SP",
-   "spot": "FAZENDA",
+   "region": "BR-SC-NOR",
+   "spot": "ENSEADA",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
-   "facing": 260,
-   "swell": 137,
-   "near": 141,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.002216312056737589
-  },
-  {
-   "region": "BR-SP",
-   "spot": "MARANDUBA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 95 %) y en 92 días 0 %"
-   ],
-   "facing": 234,
-   "swell": 131,
-   "near": 156,
+   "facing": 357,
+   "swell": 108,
+   "near": 100,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1405,45 +1390,15 @@
    "share_long": 0.0
   },
   {
-   "region": "BR-SP",
-   "spot": "CAMBURI",
+   "region": "BR-SC-NOR",
+   "spot": "LAGOINHA",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 95 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
-   "facing": 261,
-   "swell": 140,
-   "near": 188,
+   "facing": 316,
+   "swell": 97,
+   "near": 79,
    "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.007978723404255319
-  },
-  {
-   "region": "BR-SP",
-   "spot": "ILHA COMPRIDA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 95 %) y en 92 días 0 %"
-   ],
-   "facing": 269,
-   "swell": 132,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "CA-BC-VI",
-   "spot": "SCHOONER COVE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 77 %) y en 92 días 0 %"
-   ],
-   "facing": 44,
-   "swell": 233,
-   "near": 204,
-   "flipped": true,
    "whole": false,
    "type": 1,
    "top": false,
@@ -1453,11 +1408,11 @@
    "region": "CA-BC-VI",
    "spot": "WYA POINT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 77 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
    ],
    "facing": 90,
    "swell": 236,
-   "near": 210,
+   "near": 216,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1465,29 +1420,14 @@
    "share_long": 0.0
   },
   {
-   "region": "CA-BC-VI",
-   "spot": "CHINA BEACH",
-   "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 77 %) y en 92 días 1 %"
-   ],
-   "facing": 202,
-   "swell": 272,
-   "near": 213,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.011716989634970707
-  },
-  {
    "region": "CL-CEN",
    "spot": "PAPUDO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 52 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 71 %) y en 92 días 0 %"
    ],
    "facing": 19,
-   "swell": 243,
-   "near": 283,
+   "swell": 245,
+   "near": 278,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1498,46 +1438,31 @@
    "region": "CL-CEN",
    "spot": "ALGARROBO",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 52 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 71 %) y en 92 días 1 %"
    ],
    "facing": 339,
-   "swell": 242,
-   "near": 293,
+   "swell": 244,
+   "near": 267,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.011081560283687944
+   "share_long": 0.012854609929078014
   },
   {
    "region": "CL-MAU",
-   "spot": "CURANIPE",
+   "spot": "LEBU",
    "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 80 %) y en 92 días 5 %"
+    "las olas casi nunca le entran de frente (3 % de las horas; la zona 73 %) y en 92 días 2 %"
    ],
-   "facing": 346,
-   "swell": 254,
-   "near": 309,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.04521276595744681
-  },
-  {
-   "region": "CL-MAU",
-   "spot": "BUCHUPUREO",
-   "why": [
-    "las olas casi nunca le entran de frente (4 % de las horas; la zona 80 %) y en 92 días 4 %"
-   ],
-   "facing": 350,
-   "swell": 246,
-   "near": 310,
+   "facing": 344,
+   "swell": 239,
+   "near": null,
    "flipped": false,
    "whole": false,
    "type": 2,
    "top": true,
-   "share_long": 0.03856382978723404
+   "share_long": 0.023936170212765957
   },
   {
    "region": "CL-NOR",
@@ -1555,21 +1480,6 @@
    "share_long": 0.0
   },
   {
-   "region": "CO-PAC",
-   "spot": "HUINA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
-   ],
-   "facing": 312,
-   "swell": 231,
-   "near": 236,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0013297872340425532
-  },
-  {
    "region": "CR-CAR",
    "spot": "SALSA BRAVA",
    "why": [
@@ -1585,28 +1495,13 @@
    "share_long": 0.03764172335600907
   },
   {
-   "region": "CR-GUA",
-   "spot": "TAMARINDO",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 2 %"
-   ],
-   "facing": 312,
-   "swell": 229,
-   "near": 251,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": true,
-   "share_long": 0.02127659574468085
-  },
-  {
    "region": "CR-OSA",
    "spot": "RIO CLARO",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 39 %) y en 92 días 0 %"
    ],
    "facing": 308,
-   "swell": 216,
+   "swell": 217,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -1621,7 +1516,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 39 %) y en 92 días 0 %"
    ],
    "facing": 131,
-   "swell": 214,
+   "swell": 216,
    "near": 284,
    "flipped": false,
    "whole": false,
@@ -1633,7 +1528,7 @@
    "region": "CV-ALL",
    "spot": "SANTA MARIA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
    ],
    "facing": 193,
    "swell": 359,
@@ -1645,49 +1540,49 @@
    "share_long": 0.0008865248226950354
   },
   {
-   "region": "ES-AND",
-   "spot": "REGLA",
+   "region": "EC-GAL",
+   "spot": "EL CAÑÓN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 91 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 95 %) y en 92 días 1 %"
    ],
-   "facing": 7,
-   "swell": 247,
-   "near": 285,
+   "facing": 336,
+   "swell": 221,
+   "near": 271,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.0070921985815602835
+  },
+  {
+   "region": "ES-AND",
+   "spot": "LOS CAÑOS",
+   "why": [
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 91 %) y en 92 días 3 %"
+   ],
+   "facing": 172,
+   "swell": 242,
+   "near": 232,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.004672897196261682
+   "share_long": 0.03307303628847037
   },
   {
    "region": "ES-AND",
    "spot": "BOLONIA",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 91 %) y en 92 días 2 %"
+    "las olas casi nunca le entran de frente (2 % de las horas; la zona 91 %) y en 92 días 2 %"
    ],
    "facing": 191,
    "swell": 265,
-   "near": 226,
+   "near": 221,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.016979445933869526
-  },
-  {
-   "region": "ES-AST",
-   "spot": "XAGO",
-   "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 91 %) y en 92 días 1 %"
-   ],
-   "facing": 82,
-   "swell": 326,
-   "near": 353,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.008865248226950355
+   "share_long": 0.016956715751896476
   },
   {
    "region": "ES-CN-E",
@@ -1696,8 +1591,8 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 96 %) y en 92 días 0 %"
    ],
    "facing": 72,
-   "swell": 313,
-   "near": 272,
+   "swell": 314,
+   "near": 292,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1706,33 +1601,18 @@
   },
   {
    "region": "ES-CN-W",
-   "spot": "PLAYA DEL HOMBRE",
+   "spot": "MELENARA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 72 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 70 %) y en 92 días 0 %"
    ],
-   "facing": 89,
-   "swell": 343,
-   "near": 330,
-   "flipped": false,
+   "facing": 130,
+   "swell": 342,
+   "near": 331,
+   "flipped": true,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "ES-PV",
-   "spot": "LAGA",
-   "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas; la zona 76 %) y en 92 días 1 %"
-   ],
-   "facing": 73,
-   "swell": 317,
-   "near": 351,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0070921985815602835
+   "share_long": 0.0004432624113475177
   },
   {
    "region": "FJ-MAM",
@@ -1741,7 +1621,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 71 %) y en 92 días 0 %"
    ],
    "facing": 354,
-   "swell": 236,
+   "swell": 235,
    "near": 252,
    "flipped": false,
    "whole": false,
@@ -1750,64 +1630,49 @@
    "share_long": 0.0
   },
   {
+   "region": "FJ-MAM",
+   "spot": "WILKES PASSAGE",
+   "why": [
+    "las olas casi nunca le entran de frente (5 % de las horas; la zona 71 %) y en 92 días 1 %"
+   ],
+   "facing": 297,
+   "swell": 217,
+   "near": 256,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.01152482269503546
+  },
+  {
    "region": "FR-BRE",
    "spot": "LE POULDU",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 94 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (4 % de las horas; la zona 91 %) y en 92 días 1 %"
    ],
    "facing": 132,
    "swell": 239,
-   "near": 221,
+   "near": 242,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.01122586439155815
+   "share_long": 0.013022002694207453
   },
   {
    "region": "FR-VEN",
    "spot": "LA TRANCHE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 0 %"
    ],
    "facing": 151,
-   "swell": 255,
-   "near": 230,
+   "swell": 256,
+   "near": 242,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
    "share_long": 0.0026607538802660754
-  },
-  {
-   "region": "GB-DEV",
-   "spot": "THURLESTONE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) y en 92 días 2 %"
-   ],
-   "facing": 326,
-   "swell": 226,
-   "near": 217,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.021062271062271064
-  },
-  {
-   "region": "GB-SCO",
-   "spot": "STRATHY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 58 %) y en 92 días 3 %"
-   ],
-   "facing": 77,
-   "swell": 335,
-   "near": 351,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.028368794326241134
   },
   {
    "region": "GH-ALL",
@@ -1831,7 +1696,7 @@
     "las olas casi nunca le entran de frente (1 % de las horas) y a su zona tampoco (1 %) y en 92 días 0 %"
    ],
    "facing": 180,
-   "swell": 86,
+   "swell": 87,
    "near": null,
    "flipped": false,
    "whole": true,
@@ -1846,7 +1711,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (1 %) y en 92 días 0 %"
    ],
    "facing": 270,
-   "swell": 44,
+   "swell": 46,
    "near": null,
    "flipped": false,
    "whole": true,
@@ -1861,23 +1726,8 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 286,
-   "swell": 206,
-   "near": 315,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "ID-BAL-E",
-   "spot": "PURNAMA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %) y en 92 días 0 %"
-   ],
-   "facing": 133,
-   "swell": 200,
-   "near": null,
+   "swell": 207,
+   "near": 322,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1888,9 +1738,9 @@
    "region": "ID-BAL-E",
    "spot": "SABA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 31 %) y en 92 días 0 %"
    ],
-   "facing": 130,
+   "facing": 116,
    "swell": 200,
    "near": null,
    "flipped": false,
@@ -1903,7 +1753,22 @@
    "region": "ID-BAL-E",
    "spot": "LEBIH",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 31 %) y en 92 días 3 %"
+   ],
+   "facing": 139,
+   "swell": 200,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 1,
+   "top": false,
+   "share_long": 0.031914893617021274
+  },
+  {
+   "region": "ID-BAL-E",
+   "spot": "PADANG GALAK",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 31 %) y en 92 días 0 %"
    ],
    "facing": 132,
    "swell": 200,
@@ -1918,10 +1783,40 @@
    "region": "ID-BAL-E",
    "spot": "SERANGAN",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 42 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 31 %) y en 92 días 0 %"
    ],
    "facing": 145,
-   "swell": 212,
+   "swell": 213,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "ID-JAV-E",
+   "spot": "20-20",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
+   ],
+   "facing": 293,
+   "swell": 205,
+   "near": 249,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "ID-JAV-W",
+   "spot": "OMBAK TUJUH",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
+   ],
+   "facing": 327,
+   "swell": 210,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -1931,58 +1826,13 @@
   },
   {
    "region": "ID-JAV-W",
-   "spot": "PANGANDARAN",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 0 %"
-   ],
-   "facing": 280,
-   "swell": 203,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "ID-JAV-W",
    "spot": "MADASARI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 119,
-   "swell": 198,
-   "near": 260,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "ID-LOM",
-   "spot": "SELONG BELANAK",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 %"
-   ],
-   "facing": 296,
-   "swell": 210,
-   "near": 199,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0
-  },
-  {
-   "region": "ID-LOM",
-   "spot": "MAWUN",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 %"
-   ],
-   "facing": 133,
-   "swell": 210,
-   "near": 206,
+   "swell": 199,
+   "near": 230,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -1993,14 +1843,14 @@
    "region": "ID-LOM",
    "spot": "KUTA LOMBOK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 99 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 140,
-   "swell": 210,
-   "near": 206,
+   "swell": 211,
+   "near": 227,
    "flipped": false,
    "whole": false,
-   "type": 1,
+   "type": 3,
    "top": false,
    "share_long": 0.0008865248226950354
   },
@@ -2038,16 +1888,16 @@
    "region": "KR-ALL",
    "spot": "SONGJEONG",
    "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 41 %) y en 92 días 4 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 40 %) y en 92 días 4 %"
    ],
    "facing": 142,
-   "swell": 36,
+   "swell": 33,
    "near": null,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.04178674351585014
+   "share_long": 0.041567128523650264
   },
   {
    "region": "LR-ALL",
@@ -2056,13 +1906,28 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 307,
-   "swell": 200,
+   "swell": 201,
    "near": 290,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
    "share_long": 0.0
+  },
+  {
+   "region": "MA-N",
+   "spot": "DAR BOUAZZA",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 93 %) y en 92 días 2 %"
+   ],
+   "facing": 61,
+   "swell": 306,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.01773049645390071
   },
   {
    "region": "MA-TAG",
@@ -2080,13 +1945,28 @@
    "share_long": 0.0
   },
   {
+   "region": "MV-CEN",
+   "spot": "MULI INSIDE",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 48 %) y en 92 días 0 %"
+   ],
+   "facing": 345,
+   "swell": 140,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.002216312056737589
+  },
+  {
    "region": "MX-NAY",
    "spot": "EL ANCLOTE",
    "why": [
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
    "facing": 149,
-   "swell": 236,
+   "swell": 237,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2141,30 +2021,30 @@
   },
   {
    "region": "MX-PAC",
-   "spot": "MIRAMAR",
+   "spot": "BARRA DE POTOSI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 94 %) y en 92 días 0 %"
    ],
-   "facing": 314,
-   "swell": 210,
+   "facing": 329,
+   "swell": 213,
    "near": null,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.012411347517730497
+   "share_long": 0.004432624113475178
   },
   {
    "region": "MZ-INH",
    "spot": "TOFO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 71 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (13 %) y en 92 días 1 %"
    ],
    "facing": 15,
    "swell": 143,
-   "near": 79,
+   "near": 53,
    "flipped": false,
-   "whole": false,
+   "whole": true,
    "type": 1,
    "top": false,
    "share_long": 0.014627659574468085
@@ -2185,40 +2065,10 @@
    "share_long": 0.0
   },
   {
-   "region": "NZ-BOP",
-   "spot": "ONEMANA",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 3 %"
-   ],
-   "facing": 164,
-   "swell": 49,
-   "near": 80,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.027763755678950026
-  },
-  {
-   "region": "NZ-NTL",
-   "spot": "MATAURI BAY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 98 %) y en 92 días 1 %"
-   ],
-   "facing": 224,
-   "swell": 46,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.01407811080835604
-  },
-  {
    "region": "NZ-OTA",
    "spot": "COLAC BAY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 35 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 31 %) y en 92 días 0 %"
    ],
    "facing": 159,
    "swell": 253,
@@ -2230,19 +2080,34 @@
    "share_long": 0.0
   },
   {
-   "region": "NZ-WC",
-   "spot": "TAURANGA BAY",
+   "region": "PE-LLB",
+   "spot": "LA FAROLA",
    "why": [
-    "las olas casi nunca le entran de frente (3 % de las horas; la zona 64 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
-   "facing": 34,
-   "swell": 277,
-   "near": null,
+   "facing": 300,
+   "swell": 215,
+   "near": 256,
    "flipped": false,
    "whole": false,
-   "type": 0,
+   "type": 2,
    "top": false,
-   "share_long": 0.004432624113475178
+   "share_long": 0.0
+  },
+  {
+   "region": "PE-NOR",
+   "spot": "LOS ÓRGANOS",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
+   ],
+   "facing": 12,
+   "swell": 282,
+   "near": 325,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.0
   },
   {
    "region": "PR-NW",
@@ -2252,7 +2117,7 @@
    ],
    "facing": 234,
    "swell": 17,
-   "near": 286,
+   "near": 285,
    "flipped": false,
    "whole": false,
    "type": 3,
@@ -2281,8 +2146,8 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 83 %) y en 92 días 0 %"
    ],
    "facing": 246,
-   "swell": 18,
-   "near": 285,
+   "swell": 19,
+   "near": 284,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -2293,7 +2158,7 @@
    "region": "PT-AZO",
    "spot": "ALMOXARIFE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 29 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 57 %) y en 92 días 0 %"
    ],
    "facing": 68,
    "swell": 284,
@@ -2311,7 +2176,7 @@
     "las olas casi nunca le entran de frente (0 % de las horas; la zona 80 %) y en 92 días 0 %"
    ],
    "facing": 122,
-   "swell": 306,
+   "swell": 304,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2320,17 +2185,47 @@
    "share_long": 0.0
   },
   {
+   "region": "PT-MAD",
+   "spot": "RIBEIRA DA JANELA",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 80 %) y en 92 días 4 %"
+   ],
+   "facing": 80,
+   "swell": 305,
+   "near": 209,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.04343971631205674
+  },
+  {
    "region": "RE-ALL",
    "spot": "BOUCAN CANOT",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 0 %"
    ],
    "facing": 312,
    "swell": 209,
-   "near": 265,
+   "near": 277,
    "flipped": false,
    "whole": false,
    "type": 1,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "RE-ALL",
+   "spot": "SAINT-LEU",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 0 %"
+   ],
+   "facing": 282,
+   "swell": 210,
+   "near": 274,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
    "top": false,
    "share_long": 0.0
   },
@@ -2338,16 +2233,91 @@
    "region": "RE-ALL",
    "spot": "BARACHOIS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 75 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 0 %"
    ],
    "facing": 325,
-   "swell": 107,
-   "near": null,
+   "swell": 108,
+   "near": 307,
    "flipped": false,
    "whole": false,
    "type": 0,
    "top": false,
    "share_long": 0.004432624113475178
+  },
+  {
+   "region": "RE-ALL",
+   "spot": "AIGRETTES",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 0 %"
+   ],
+   "facing": 303,
+   "swell": 209,
+   "near": 278,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "RE-ALL",
+   "spot": "LA DIGUE",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 1 %"
+   ],
+   "facing": 278,
+   "swell": 209,
+   "near": 275,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.011968085106382979
+  },
+  {
+   "region": "SN-ALL",
+   "spot": "NGOR LEFT",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 68 %) y en 92 días 0 %"
+   ],
+   "facing": 68,
+   "swell": 332,
+   "near": 283,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0004432624113475177
+  },
+  {
+   "region": "TO-ALL",
+   "spot": "MOTELS",
+   "why": [
+    "las olas casi nunca le entran de frente (2 % de las horas) y a su zona tampoco (12 %) y en 92 días 1 %"
+   ],
+   "facing": 311,
+   "swell": 105,
+   "near": 288,
+   "flipped": false,
+   "whole": true,
+   "type": 3,
+   "top": false,
+   "share_long": 0.005319148936170213
+  },
+  {
+   "region": "TO-ALL",
+   "spot": "KAMIKAZE'S",
+   "why": [
+    "las olas casi nunca le entran de frente (2 % de las horas) y a su zona tampoco (12 %) y en 92 días 1 %"
+   ],
+   "facing": 308,
+   "swell": 105,
+   "near": 289,
+   "flipped": false,
+   "whole": true,
+   "type": 3,
+   "top": false,
+   "share_long": 0.00576241134751773
   },
   {
    "region": "US-CA-CEN",
@@ -2365,40 +2335,40 @@
    "share_long": 0.02925531914893617
   },
   {
-   "region": "US-CA-NOR",
-   "spot": "NORTH JETTY",
+   "region": "US-CA-LA",
+   "spot": "HAGGERTY'S",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 100 %) y en 92 días 0 %"
    ],
-   "facing": 19,
-   "swell": 282,
-   "near": 288,
+   "facing": 337,
+   "swell": 268,
+   "near": 241,
    "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0017730496453900709
+  },
+  {
+   "region": "US-CA-LA",
+   "spot": "CABRILLO BEACH",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 100 %) y en 92 días 3 %"
+   ],
+   "facing": 126,
+   "swell": 261,
+   "near": 264,
+   "flipped": true,
    "whole": false,
    "type": 1,
    "top": false,
-   "share_long": 0.02526595744680851
-  },
-  {
-   "region": "US-CA-SB",
-   "spot": "SANDSPIT",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (5 %) y en 92 días 0 %"
-   ],
-   "facing": 112,
-   "swell": 226,
-   "near": 193,
-   "flipped": false,
-   "whole": true,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0013339261894175188
+   "share_long": 0.03280141843971631
   },
   {
    "region": "US-CA-SC",
    "spot": "MITCHELL'S COVE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %) y en 92 días 3 %"
    ],
    "facing": 161,
    "swell": 269,
@@ -2413,7 +2383,7 @@
    "region": "US-CA-SC",
    "spot": "38TH AVE",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %) y en 92 días 0 %"
    ],
    "facing": 144,
    "swell": 269,
@@ -2428,7 +2398,7 @@
    "region": "US-CA-SC",
    "spot": "SEWER PEAK",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %) y en 92 días 3 %"
    ],
    "facing": 158,
    "swell": 269,
@@ -2443,7 +2413,7 @@
    "region": "US-CA-SC",
    "spot": "CAPITOLA",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 82 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 81 %) y en 92 días 3 %"
    ],
    "facing": 157,
    "swell": 269,
@@ -2461,7 +2431,7 @@
     "2.4 m de media, más del doble de la zona (0.9 m)"
    ],
    "facing": 88,
-   "swell": 60,
+   "swell": 61,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2472,10 +2442,10 @@
    "region": "US-HI-BIG",
    "spot": "RICHARDSONS",
    "why": [
-    "2.4 m de media, más del doble de la zona (0.9 m)"
+    "2.5 m de media, más del doble de la zona (0.9 m)"
    ],
    "facing": 35,
-   "swell": 60,
+   "swell": 61,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2488,13 +2458,14 @@
    "why": [
     "2.4 m de media, más del doble de la zona (0.9 m)"
    ],
-   "facing": 126,
-   "swell": 85,
+   "facing": 162,
+   "swell": 86,
    "near": null,
    "flipped": false,
    "whole": false,
    "type": 3,
-   "top": false
+   "top": false,
+   "share_long": 0.2850177304964539
   },
   {
    "region": "US-HI-BIG",
@@ -2503,7 +2474,7 @@
     "2.3 m de media, más del doble de la zona (0.9 m)"
    ],
    "facing": 58,
-   "swell": 46,
+   "swell": 47,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2516,8 +2487,8 @@
    "why": [
     "2.3 m de media, más del doble de la zona (0.9 m)"
    ],
-   "facing": 351,
-   "swell": 45,
+   "facing": 15,
+   "swell": 46,
    "near": null,
    "flipped": false,
    "whole": false,
@@ -2532,32 +2503,62 @@
    ],
    "facing": 57,
    "swell": 56,
-   "near": 307,
+   "near": 319,
    "flipped": false,
    "whole": false,
    "type": 1,
    "top": false
   },
   {
-   "region": "US-HI-MAU",
-   "spot": "MALA RAMP",
+   "region": "US-HI-KAU",
+   "spot": "KALIHIWAI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (20 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 66 %) y en 92 días 3 %"
    ],
-   "facing": 262,
-   "swell": 37,
-   "near": 253,
+   "facing": 284,
+   "swell": 19,
+   "near": 12,
+   "flipped": false,
+   "whole": false,
+   "type": 2,
+   "top": false,
+   "share_long": 0.02969858156028369
+  },
+  {
+   "region": "US-HI-KAU",
+   "spot": "PAKALA",
+   "why": [
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 66 %) y en 92 días 1 %"
+   ],
+   "facing": 266,
+   "swell": 152,
+   "near": 215,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.007535460992907801
+  },
+  {
+   "region": "US-HI-MAU",
+   "spot": "MALA WHARF",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (23 %) y en 92 días 1 %"
+   ],
+   "facing": 272,
+   "swell": 38,
+   "near": 257,
    "flipped": false,
    "whole": true,
    "type": 3,
    "top": false,
-   "share_long": 0.010638297872340425
+   "share_long": 0.011081560283687944
   },
   {
    "region": "US-NE",
    "spot": "ATLANTIC CITY",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 46 %) y en 92 días 3 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 47 %) y en 92 días 3 %"
    ],
    "facing": 149,
    "swell": 274,
@@ -2569,44 +2570,14 @@
    "share_long": 0.031746031746031744
   },
   {
-   "region": "US-PNW",
-   "spot": "PORT ORFORD",
-   "why": [
-    "las olas casi nunca le entran de frente (2 % de las horas; la zona 100 %) y en 92 días 1 %"
-   ],
-   "facing": 162,
-   "swell": 268,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.00975177304964539
-  },
-  {
-   "region": "US-SE",
-   "spot": "OCRACOKE",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 76 %) y en 92 días 0 %"
-   ],
-   "facing": 262,
-   "swell": 126,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.0031028368794326243
-  },
-  {
    "region": "ZA-EC-PE",
    "spot": "HOBIE BEACH",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 32 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 34 %) y en 92 días 0 %"
    ],
-   "facing": 31,
-   "swell": 180,
-   "near": 132,
+   "facing": 24,
+   "swell": 178,
+   "near": null,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -2614,13 +2585,43 @@
    "share_long": 0.0
   },
   {
+   "region": "ZA-EC-PE",
+   "spot": "MILLERS",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 34 %) y en 92 días 0 %"
+   ],
+   "facing": 15,
+   "swell": 178,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
+   "region": "ZA-EC-PE",
+   "spot": "BAKED BEANS",
+   "why": [
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 34 %) y en 92 días 0 %"
+   ],
+   "facing": 24,
+   "swell": 178,
+   "near": null,
+   "flipped": false,
+   "whole": false,
+   "type": 3,
+   "top": false,
+   "share_long": 0.0
+  },
+  {
    "region": "ZA-WC-CPT",
    "spot": "LLANDUDNO",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 0 %"
    ],
    "facing": 311,
-   "swell": 228,
+   "swell": 227,
    "near": 253,
    "flipped": false,
    "whole": false,
@@ -2632,11 +2633,11 @@
    "region": "ZA-WC-CPT",
    "spot": "LONG BEACH",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 97 %) y en 92 días 0 %"
    ],
    "facing": 344,
-   "swell": 226,
-   "near": 254,
+   "swell": 225,
+   "near": 253,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -2644,29 +2645,14 @@
    "share_long": 0.003989361702127659
   },
   {
-   "region": "ZA-WC-CPT",
-   "spot": "KOGEL BAY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 85 %) y en 92 días 0 %"
-   ],
-   "facing": 332,
-   "swell": 207,
-   "near": null,
-   "flipped": false,
-   "whole": false,
-   "type": 1,
-   "top": false,
-   "share_long": 0.004432624113475178
-  },
-  {
    "region": "ZA-WC-GR",
    "spot": "SANTOS",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas; la zona 92 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 90 %) y en 92 días 0 %"
    ],
    "facing": 50,
-   "swell": 195,
-   "near": 147,
+   "swell": 192,
+   "near": 142,
    "flipped": false,
    "whole": false,
    "type": 1,
@@ -2677,66 +2663,36 @@
    "region": "ZA-WC-WCO",
    "spot": "MELKBOS",
    "why": [
-    "las olas casi nunca le entran de frente (1 % de las horas) y a su zona tampoco (0 %) y en 92 días 0 %"
+    "las olas casi nunca le entran de frente (1 % de las horas; la zona 27 %) y en 92 días 0 %"
    ],
    "facing": 310,
-   "swell": 231,
+   "swell": 230,
    "near": null,
    "flipped": false,
-   "whole": true,
+   "whole": false,
    "type": 1,
    "top": false,
    "share_long": 0.004875886524822695
   },
   {
    "region": "ZA-WC-WCO",
-   "spot": "LAMBERTS BAY",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (0 %) y en 92 días 1 %"
-   ],
-   "facing": 320,
-   "swell": 235,
-   "near": null,
-   "flipped": false,
-   "whole": true,
-   "type": 0,
-   "top": false,
-   "share_long": 0.009308510638297872
-  },
-  {
-   "region": "ZA-WC-WCO",
    "spot": "JACOBSBAAI",
    "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (0 %) y en 92 días 1 %"
+    "las olas casi nunca le entran de frente (0 % de las horas; la zona 27 %) y en 92 días 1 %"
    ],
    "facing": 318,
    "swell": 226,
    "near": null,
    "flipped": false,
-   "whole": true,
+   "whole": false,
    "type": 0,
    "top": false,
    "share_long": 0.010638297872340425
-  },
-  {
-   "region": "ZA-WC-WCO",
-   "spot": "YZERFONTEIN",
-   "why": [
-    "las olas casi nunca le entran de frente (0 % de las horas) y a su zona tampoco (0 %) y en 92 días 0 %"
-   ],
-   "facing": 351,
-   "swell": 231,
-   "near": null,
-   "flipped": false,
-   "whole": true,
-   "type": 0,
-   "top": false,
-   "share_long": 0.0
   }
  ],
  "flagship": [
   {
-   "km": 0.22,
+   "km": 0.55,
    "qid": "Q30262816",
    "label": "Instituto de Biología Marina",
    "wd_lat": -38.03122,
@@ -2744,8 +2700,8 @@
    "status": "ok",
    "region": "AR-MDP",
    "spot": "BIOLOGÍA",
-   "lat": -38.0298,
-   "lon": -57.5312
+   "lat": -38.027,
+   "lon": -57.5298
   },
   {
    "km": 0.13,
@@ -2784,31 +2740,31 @@
    "lon": -57.8321
   },
   {
-   "km": 0.29,
-   "qid": "Q111386484",
-   "label": "Quequen",
-   "wd_lat": -38.58333,
-   "wd_lon": -58.7,
+   "km": 0.62,
+   "qid": "Q3458763",
+   "label": "Quequén Grande Nehri",
+   "wd_lat": -38.5823,
+   "wd_lon": -58.6982,
    "status": "ok",
    "region": "AR-MDP",
    "spot": "QUEQUÉN",
-   "lat": -38.5811,
-   "lon": -58.7017
+   "lat": -38.5774,
+   "lon": -58.6949
   },
   {
-   "km": 0.23,
-   "qid": "Q123630475",
-   "label": "SCOTTS HEAD POST OFFICE",
-   "wd_lat": -30.75,
-   "wd_lon": 153.0,
+   "km": 0.07,
+   "qid": "geonames:2150059",
+   "label": "Scotts Head",
+   "wd_lat": -30.74373,
+   "wd_lon": 152.99828,
    "status": "ok",
    "region": "AU-NSW-MN",
    "spot": "SCOTTS HEAD",
-   "lat": -30.7484,
-   "lon": 153.0015
+   "lat": -30.7432,
+   "lon": 152.9979
   },
   {
-   "km": 0.66,
+   "km": 0.79,
    "qid": "Q5184368",
    "label": "Crescent Head",
    "wd_lat": -31.19,
@@ -2816,8 +2772,8 @@
    "status": "ok",
    "region": "AU-NSW-MN",
    "spot": "CRESCENT HEAD",
-   "lat": -31.1905,
-   "lon": 152.983
+   "lat": -31.1862,
+   "lon": 152.9831
   },
   {
    "km": 0.24,
@@ -2832,16 +2788,16 @@
    "lon": 151.7698
   },
   {
-   "km": 0.43,
-   "qid": "Q21957003",
+   "km": 0.33,
+   "qid": "geonames:8214598",
    "label": "Merewether Beach",
-   "wd_lat": -32.94861,
-   "wd_lon": 151.75972,
+   "wd_lat": -32.9485,
+   "wd_lon": 151.7596,
    "status": "ok",
    "region": "AU-NSW-NC",
    "spot": "MEREWETHER",
-   "lat": -32.9517,
-   "lon": 151.7569
+   "lat": -32.95,
+   "lon": 151.7565
   },
   {
    "km": 0.24,
@@ -2856,28 +2812,28 @@
    "lon": 153.6273
   },
   {
-   "km": 0.2,
-   "qid": "geonames:2173912",
-   "label": "Broken Head",
-   "wd_lat": -28.71106,
-   "wd_lon": 153.61795,
+   "km": 0.51,
+   "qid": "Q4973384",
+   "label": "Broken Head Nature Reserve",
+   "wd_lat": -28.709,
+   "wd_lon": 153.616,
    "status": "ok",
    "region": "AU-NSW-NR",
    "spot": "BROKEN HEAD",
-   "lat": -28.7093,
-   "lon": 153.618
+   "lat": -28.7058,
+   "lon": 153.6198
   },
   {
-   "km": 0.3,
-   "qid": "Q123630175",
-   "label": "LENNOX HEAD",
-   "wd_lat": -28.8,
-   "wd_lon": 153.6,
+   "km": 0.4,
+   "qid": "geonames:2160350",
+   "label": "Lennox Head",
+   "wd_lat": -28.80885,
+   "wd_lon": 153.60627,
    "status": "ok",
    "region": "AU-NSW-NR",
    "spot": "LENNOX HEAD",
-   "lat": -28.8026,
-   "lon": 153.5991
+   "lat": -28.8058,
+   "lon": 153.6041
   },
   {
    "km": 0.25,
@@ -2892,7 +2848,7 @@
    "lon": 153.3648
   },
   {
-   "km": 0.79,
+   "km": 0.25,
    "qid": "Q17001781",
    "label": "Bulli Jetty, Sandon Point, New South Wales",
    "wd_lat": -34.32965,
@@ -2900,8 +2856,8 @@
    "status": "ok",
    "region": "AU-NSW-SC",
    "spot": "SANDON POINT",
-   "lat": -34.3228,
-   "lon": 150.9251
+   "lat": -34.3306,
+   "lon": 150.9298
   },
   {
    "km": 1.43,
@@ -2983,43 +2939,43 @@
    "lon": 153.5491
   },
   {
-   "km": 0.16,
-   "qid": "Q111124612",
-   "label": "Rainbow Bay Backpackers",
-   "wd_lat": -28.16598,
-   "wd_lon": 153.54508,
+   "km": 0.06,
+   "qid": "geonames:8193013",
+   "label": "Rainbow Bay",
+   "wd_lat": -28.16318,
+   "wd_lon": 153.54768,
    "status": "ok",
    "region": "AU-QLD-GC",
    "spot": "RAINBOW BAY",
-   "lat": -28.1646,
-   "lon": 153.5447
+   "lat": -28.1637,
+   "lon": 153.5474
   },
   {
-   "km": 0.09,
-   "qid": "Q5604331",
-   "label": "Greenmount Beach",
-   "wd_lat": -28.16647,
-   "wd_lon": 153.5405,
+   "km": 0.11,
+   "qid": "Q21964940",
+   "label": "Greenmount Hill",
+   "wd_lat": -28.16528,
+   "wd_lon": 153.54472,
    "status": "ok",
    "region": "AU-QLD-GC",
    "spot": "GREENMOUNT",
-   "lat": -28.1659,
-   "lon": 153.5399
+   "lat": -28.1649,
+   "lon": 153.5437
   },
   {
-   "km": 0.06,
-   "qid": "Q6415994",
-   "label": "Kirra",
-   "wd_lat": -28.16682,
-   "wd_lon": 153.53154,
+   "km": 0.21,
+   "qid": "Q21910465",
+   "label": "Kirra Point",
+   "wd_lat": -28.16456,
+   "wd_lon": 153.53743,
    "status": "ok",
    "region": "AU-QLD-GC",
    "spot": "KIRRA",
-   "lat": -28.1664,
-   "lon": 153.532
+   "lat": -28.1654,
+   "lon": 153.5355
   },
   {
-   "km": 0.69,
+   "km": 0.1,
    "qid": "Q16969931",
    "label": "Duranbah Beach",
    "wd_lat": -28.1674,
@@ -3027,39 +2983,39 @@
    "status": "ok",
    "region": "AU-QLD-GC",
    "spot": "DURANBAH",
-   "lat": -28.1728,
-   "lon": 153.5555
+   "lat": -28.1673,
+   "lon": 153.553
   },
   {
-   "km": 0.46,
+   "km": 0.6,
    "qid": "Q1016604",
-   "label": "Vườn quốc gia Burleigh Head",
+   "label": "Burleigh Head National Park",
    "wd_lat": -28.09528,
    "wd_lon": 153.45722,
    "status": "ok",
    "region": "AU-QLD-GC",
    "spot": "BURLEIGH HEADS",
-   "lat": -28.0944,
-   "lon": 153.4618
+   "lat": -28.0902,
+   "lon": 153.4593
   },
   {
-   "km": 0.12,
-   "qid": "geonames:2168506",
-   "label": "Double Island Point",
-   "wd_lat": -25.93043,
-   "wd_lon": 153.19131,
+   "km": 0.65,
+   "qid": "Q5299823",
+   "label": "Double Island Point Light",
+   "wd_lat": -25.93212,
+   "wd_lon": 153.18896,
    "status": "ok",
    "region": "AU-QLD-SC",
    "spot": "DOUBLE ISLAND PT",
-   "lat": -25.9302,
-   "lon": 153.1901
+   "lat": -25.9269,
+   "lon": 153.186
   },
   {
-   "km": 0.08,
-   "qid": "osm:node/765658680",
+   "km": 0.02,
+   "qid": "osm:node/14366804134",
    "label": "First Point",
-   "wd_lat": -26.38534,
-   "wd_lon": 153.0943,
+   "wd_lat": -26.38466,
+   "wd_lon": 153.09458,
    "status": "ok",
    "region": "AU-QLD-SC",
    "spot": "FIRST POINT",
@@ -3067,16 +3023,16 @@
    "lon": 153.0944
   },
   {
-   "km": 0.03,
-   "qid": "Q21956399",
+   "km": 0.27,
+   "qid": "geonames:8215202",
    "label": "Cactus Beach",
-   "wd_lat": -32.08472,
-   "wd_lon": 132.98194,
+   "wd_lat": -32.0848,
+   "wd_lon": 132.98183,
    "status": "ok",
    "region": "AU-SA-EYR",
    "spot": "CACTUS",
-   "lat": -32.0845,
-   "lon": 132.9822
+   "lat": -32.0863,
+   "lon": 132.9796
   },
   {
    "km": 0.78,
@@ -3151,16 +3107,16 @@
    "lon": 144.8592
   },
   {
-   "km": 0.25,
+   "km": 0.3,
    "qid": "Q137645094",
-   "label": "Spiaggia del surf di Torquay",
+   "label": "Torquay Surf Beach",
    "wd_lat": -38.3427,
    "wd_lon": 144.3203,
    "status": "ok",
    "region": "AU-VIC-SC",
    "spot": "TORQUAY POINT",
-   "lat": -38.3414,
-   "lon": 144.3226
+   "lat": -38.3452,
+   "lon": 144.3189
   },
   {
    "status": "sin fuente",
@@ -3182,19 +3138,19 @@
    "lon": 144.2818
   },
   {
-   "km": 0.34,
-   "qid": "Q111868168",
-   "label": "Lorne Hotel",
-   "wd_lat": -38.54274,
-   "wd_lon": 143.97567,
+   "km": 0.39,
+   "qid": "Q123661299",
+   "label": "LORNE POST OFFICE",
+   "wd_lat": -38.55,
+   "wd_lon": 143.9833,
    "status": "ok",
    "region": "AU-VIC-SC",
    "spot": "LORNE POINT",
-   "lat": -38.5435,
-   "lon": 143.9795
+   "lat": -38.5469,
+   "lon": 143.9855
   },
   {
-   "km": 0.46,
+   "km": 0.27,
    "qid": "osm:node/10572249309",
    "label": "Tombstones",
    "wd_lat": -23.88362,
@@ -3202,8 +3158,8 @@
    "status": "ok",
    "region": "AU-WA-GAS",
    "spot": "TOMBSTONES",
-   "lat": -23.8812,
-   "lon": 113.4876
+   "lat": -23.882,
+   "lon": 113.482
   },
   {
    "km": 1.17,
@@ -3225,16 +3181,16 @@
    "lon": 114.9851
   },
   {
-   "km": 0.31,
+   "km": 0.0,
    "qid": "Q5034947",
    "label": "fuente de la semilla",
-   "wd_lat": -33.966,
-   "wd_lon": 114.978,
+   "wd_lat": -33.9709,
+   "wd_lon": 114.9798,
    "status": "ok",
    "region": "AU-WA-MR",
    "spot": "THE BOX",
-   "lat": -33.9644,
-   "lon": 114.9808
+   "lat": -33.9709,
+   "lon": 114.9798
   },
   {
    "status": "sin fuente",
@@ -3256,7 +3212,7 @@
    "lon": 115.0201
   },
   {
-   "km": 0.38,
+   "km": 0.23,
    "qid": "geonames:8216002",
    "label": "Yallingup Beach",
    "wd_lat": -33.64028,
@@ -3264,8 +3220,8 @@
    "status": "ok",
    "region": "AU-WA-MR",
    "spot": "YALLINGUP",
-   "lat": -33.6426,
-   "lon": 115.0212
+   "lat": -33.6388,
+   "lon": 115.0225
   },
   {
    "km": 0.1,
@@ -3280,28 +3236,28 @@
    "lon": 114.1462
   },
   {
-   "km": 0.38,
+   "km": 0.01,
    "qid": "Q28220089",
-   "label": "Trigg Adası",
+   "label": "Trigg Island",
    "wd_lat": -31.87586,
    "wd_lon": 115.751,
    "status": "ok",
    "region": "AU-WA-PER",
    "spot": "TRIGG POINT",
-   "lat": -31.8726,
-   "lon": 115.7521
+   "lat": -31.8758,
+   "lon": 115.7509
   },
   {
-   "km": 0.13,
-   "qid": "Q21896354",
+   "km": 0.67,
+   "qid": "geonames:2078812",
    "label": "Strickland Bay",
-   "wd_lat": -32.01722,
-   "wd_lon": 115.4764,
+   "wd_lat": -32.01765,
+   "wd_lon": 115.47985,
    "status": "ok",
    "region": "AU-WA-PER",
    "spot": "STRICKLAND BAY",
-   "lat": -32.0161,
-   "lon": 115.476
+   "lat": -32.0187,
+   "lon": 115.4869
   },
   {
    "km": 0.13,
@@ -3328,43 +3284,38 @@
    "lon": -59.535
   },
   {
-   "km": 0.98,
-   "qid": "Q111883593",
-   "label": "Pousada Costa do Cacau Itacare",
-   "wd_lat": -14.28004,
-   "wd_lon": -38.98927,
-   "status": "ok",
+   "status": "sin fuente",
    "region": "BR-BA",
-   "spot": "ITACARÉ",
-   "lat": -14.2881,
-   "lon": -38.9855
+   "spot": "TIRIRICA",
+   "lat": -14.286,
+   "lon": -38.9852
   },
   {
-   "km": 0.13,
-   "qid": "Q111413717",
-   "label": "Hotel Pipa Atlântico",
-   "wd_lat": -6.22833,
-   "wd_lon": -35.05098,
-   "status": "ok",
+   "km": 1.85,
+   "qid": "Q10352940",
+   "label": "Praia do Amor",
+   "wd_lat": -6.23436,
+   "wd_lon": -35.05769,
+   "status": "lejos",
    "region": "BR-NE-RN",
-   "spot": "PIPA",
-   "lat": -6.2278,
-   "lon": -35.0499
+   "spot": "PRAIA DO AMOR",
+   "lat": -6.233,
+   "lon": -35.041
   },
   {
-   "km": 0.87,
-   "qid": "Q22061669",
+   "km": 0.58,
+   "qid": "Q282133",
    "label": "Baía Formosa",
-   "wd_lat": -6.36944,
+   "wd_lat": -6.36889,
    "wd_lon": -35.00778,
    "status": "ok",
    "region": "BR-NE-RN",
    "spot": "BAÍA FORMOSA",
-   "lat": -6.3699,
-   "lon": -34.9999
+   "lat": -6.3661,
+   "lon": -35.0033
   },
   {
-   "km": 0.38,
+   "km": 0.09,
    "qid": "osm:relation/5476220",
    "label": "Praia do Cacimba do Padre",
    "wd_lat": -3.84975,
@@ -3372,8 +3323,8 @@
    "status": "ok",
    "region": "BR-NOR",
    "spot": "CACIMBA DO PADRE",
-   "lat": -3.8483,
-   "lon": -32.4421
+   "lat": -3.8493,
+   "lon": -32.4397
   },
   {
    "km": 0.13,
@@ -3412,16 +3363,16 @@
    "lon": -43.5073
   },
   {
-   "km": 1.67,
+   "km": 0.41,
    "qid": "osm:node/651221993",
    "label": "Itaúna",
    "wd_lat": -22.93355,
    "wd_lon": -42.47566,
-   "status": "revisado",
+   "status": "ok",
    "region": "BR-RJL",
    "spot": "ITAÚNA",
-   "lat": -22.938,
-   "lon": -42.4912
+   "lat": -22.9371,
+   "lon": -42.4766
   },
   {
    "km": 0.08,
@@ -3460,7 +3411,7 @@
    "lon": -45.5607
   },
   {
-   "km": 0.49,
+   "km": 0.05,
    "qid": "Q22490147",
    "label": "Chesterman Beach",
    "wd_lat": 49.11593,
@@ -3469,43 +3420,43 @@
    "region": "CA-BC-VI",
    "spot": "CHESTERMAN",
    "lat": 49.1162,
-   "lon": -125.9009
+   "lon": -125.8948
   },
   {
-   "km": 0.63,
-   "qid": "Q22407979",
-   "label": "Cox Point",
-   "wd_lat": 49.09444,
-   "wd_lon": -125.88924,
+   "km": 0.91,
+   "qid": "Q22407240",
+   "label": "Cox Bay",
+   "wd_lat": 49.10287,
+   "wd_lon": -125.88693,
    "status": "ok",
    "region": "CA-BC-VI",
    "spot": "COX BAY",
-   "lat": 49.0901,
-   "lon": -125.8836
+   "lat": 49.1024,
+   "lon": -125.8744
   },
   {
-   "km": 0.31,
+   "km": 0.25,
    "qid": "Q6276922",
-   "label": "Jordan River",
+   "label": "Jordan River, British Columbia",
    "wd_lat": 48.4219,
    "wd_lon": -124.055,
    "status": "ok",
    "region": "CA-BC-VI",
    "spot": "JORDAN RIVER",
-   "lat": 48.4212,
-   "lon": -124.0509
+   "lat": 48.4199,
+   "lon": -124.0564
   },
   {
    "km": 0.1,
-   "qid": "Q112330309",
-   "label": "Conrods and Lawrencetown Beach",
-   "wd_lat": 44.64404,
-   "wd_lon": -63.34294,
+   "qid": "geonames:6050878",
+   "label": "Lawrencetown Head",
+   "wd_lat": 44.64206,
+   "wd_lon": -63.35245,
    "status": "ok",
    "region": "CA-NS",
    "spot": "LAWRENCETOWN",
-   "lat": 44.6436,
-   "lon": -63.344
+   "lat": 44.6418,
+   "lon": -63.3512
   },
   {
    "km": 0.36,
@@ -3520,28 +3471,28 @@
    "lon": -63.1362
   },
   {
-   "km": 0.11,
-   "qid": "geonames:3880935",
-   "label": "Caleta Maitencillo de Valparaíso",
-   "wd_lat": -32.64761,
-   "wd_lon": -71.43926,
+   "km": 0.22,
+   "qid": "Q5990218",
+   "label": "Maitencillo",
+   "wd_lat": -32.6446,
+   "wd_lon": -71.4326,
    "status": "ok",
    "region": "CL-CEN",
    "spot": "MAITENCILLO",
-   "lat": -32.6485,
-   "lon": -71.4398
+   "lat": -32.6444,
+   "lon": -71.4349
   },
   {
-   "km": 0.1,
-   "qid": "Q2737863",
-   "label": "Reñaca",
-   "wd_lat": -32.96939,
-   "wd_lon": -71.54503,
+   "km": 0.42,
+   "qid": "Q124053847",
+   "label": "Reñaca beach",
+   "wd_lat": -32.96667,
+   "wd_lon": -71.55,
    "status": "ok",
    "region": "CL-CEN",
    "spot": "REÑACA",
-   "lat": -32.9697,
-   "lon": -71.546
+   "lat": -32.9636,
+   "lon": -71.5473
   },
   {
    "km": 0.19,
@@ -3556,7 +3507,7 @@
    "lon": -72.5771
   },
   {
-   "km": 0.89,
+   "km": 0.1,
    "qid": "Q23652636",
    "label": "Río Buchupureo",
    "wd_lat": -36.07861,
@@ -3564,8 +3515,8 @@
    "status": "ok",
    "region": "CL-MAU",
    "spot": "BUCHUPUREO",
-   "lat": -36.0719,
-   "lon": -72.7916
+   "lat": -36.0778,
+   "lon": -72.7973
   },
   {
    "km": 0.59,
@@ -3580,7 +3531,7 @@
    "lon": -72.8053
   },
   {
-   "km": 1.17,
+   "km": 0.73,
    "qid": "Q86281101",
    "label": "Museo Minero de Lebu",
    "wd_lat": -37.59824,
@@ -3588,15 +3539,15 @@
    "status": "ok",
    "region": "CL-MAU",
    "spot": "LEBU",
-   "lat": -37.6068,
-   "lon": -73.6729
+   "lat": -37.5924,
+   "lon": -73.669
   },
   {
    "status": "sin fuente",
    "region": "CL-NOR",
    "spot": "EL GRINGO",
-   "lat": -18.4801,
-   "lon": -70.3305
+   "lat": -18.4814,
+   "lon": -70.333
   },
   {
    "km": 0.73,
@@ -3611,7 +3562,7 @@
    "lon": -71.946
   },
   {
-   "km": 0.58,
+   "km": 0.07,
    "qid": "geonames:12010395",
    "label": "Punta La Puntilla",
    "wd_lat": -34.38115,
@@ -3619,11 +3570,11 @@
    "status": "ok",
    "region": "CL-PIC",
    "spot": "LA PUNTILLA",
-   "lat": -34.3835,
-   "lon": -72.0104
+   "lat": -34.3805,
+   "lon": -72.0159
   },
   {
-   "km": 0.67,
+   "km": 0.51,
    "qid": "osm:node/12663433215",
    "label": "Infiernillo",
    "wd_lat": -34.39318,
@@ -3631,20 +3582,20 @@
    "status": "ok",
    "region": "CL-PIC",
    "spot": "INFIERNILLO",
-   "lat": -34.398,
-   "lon": -72.026
+   "lat": -34.3886,
+   "lon": -72.0222
   },
   {
-   "km": 0.5,
-   "qid": "Q111124032",
-   "label": "Conviento de Lobos",
-   "wd_lat": -34.42616,
-   "wd_lon": -72.04581,
+   "km": 0.07,
+   "qid": "Q23660431",
+   "label": "Punta de Lobos (klippa)",
+   "wd_lat": -34.42448,
+   "wd_lon": -72.04888,
    "status": "ok",
    "region": "CL-PIC",
    "spot": "PUNTA DE LOBOS",
-   "lat": -34.4265,
-   "lon": -72.0404
+   "lat": -34.4247,
+   "lon": -72.0482
   },
   {
    "km": 5.34,
@@ -3659,7 +3610,7 @@
    "lon": -74.9088
   },
   {
-   "km": 0.5,
+   "km": 0.1,
    "qid": "Q23681582",
    "label": "Río Valle",
    "wd_lat": 6.09861,
@@ -3667,11 +3618,11 @@
    "status": "ok",
    "region": "CO-PAC",
    "spot": "EL VALLE",
-   "lat": 6.0953,
-   "lon": -77.425
+   "lat": 6.0991,
+   "lon": -77.4288
   },
   {
-   "km": 0.29,
+   "km": 0.18,
    "qid": "osm:way/395453155",
    "label": "Salsa Brava",
    "wd_lat": 9.65891,
@@ -3679,8 +3630,8 @@
    "status": "ok",
    "region": "CR-CAR",
    "spot": "SALSA BRAVA",
-   "lat": 9.6596,
-   "lon": -82.7485
+   "lat": 9.6603,
+   "lon": -82.7502
   },
   {
    "status": "sin fuente",
@@ -3690,19 +3641,19 @@
    "lon": -85.679
   },
   {
-   "km": 0.12,
-   "qid": "Q125952944",
-   "label": "Tamarindo Playa",
-   "wd_lat": 10.29766,
-   "wd_lon": -85.84375,
+   "km": 0.39,
+   "qid": "Q7680907",
+   "label": "Abhainn Tamarindo",
+   "wd_lat": 10.30718,
+   "wd_lon": -85.84025,
    "status": "ok",
    "region": "CR-GUA",
    "spot": "TAMARINDO",
-   "lat": 10.2986,
-   "lon": -85.8433
+   "lat": 10.3037,
+   "lon": -85.8405
   },
   {
-   "km": 0.78,
+   "km": 0.36,
    "qid": "geonames:11048911",
    "label": "Playa Negra",
    "wd_lat": 10.19515,
@@ -3710,8 +3661,8 @@
    "status": "ok",
    "region": "CR-GUA",
    "spot": "PLAYA NEGRA",
-   "lat": 10.2004,
-   "lon": -85.8353
+   "lat": 10.1966,
+   "lon": -85.8336
   },
   {
    "km": 1.42,
@@ -3745,7 +3696,7 @@
    "lon": -83.1387
   },
   {
-   "km": 0.37,
+   "km": 0.63,
    "qid": "geonames:3624670",
    "label": "Boca Barranca",
    "wd_lat": 9.96234,
@@ -3753,8 +3704,8 @@
    "status": "ok",
    "region": "CR-PAC",
    "spot": "BOCA BARRANCA",
-   "lat": 9.9652,
-   "lon": -84.739
+   "lat": 9.9582,
+   "lon": -84.7412
   },
   {
    "km": 1.96,
@@ -3769,7 +3720,7 @@
    "lon": -84.5869
   },
   {
-   "km": 1.24,
+   "km": 1.02,
    "qid": "geonames:2618718",
    "label": "Klitmøller",
    "wd_lat": 57.04072,
@@ -3777,8 +3728,8 @@
    "status": "ok",
    "region": "DK-ALL",
    "spot": "KLITMOLLER",
-   "lat": 57.0419,
-   "lon": 8.4711
+   "lat": 57.0455,
+   "lon": 8.4771
   },
   {
    "km": 0.16,
@@ -3793,28 +3744,28 @@
    "lon": -70.45
   },
   {
-   "km": 0.09,
-   "qid": "Q111111107",
-   "label": "La Casa Mompiche",
-   "wd_lat": 0.50776,
-   "wd_lon": -80.02184,
+   "km": 0.06,
+   "qid": "geonames:3654093",
+   "label": "Punta Mompiche",
+   "wd_lat": 0.50972,
+   "wd_lon": -80.03111,
    "status": "ok",
    "region": "EC-COS",
    "spot": "MOMPICHE",
-   "lat": 0.5082,
-   "lon": -80.0225
+   "lat": 0.5092,
+   "lon": -80.0312
   },
   {
-   "km": 0.35,
-   "qid": "Q111120279",
-   "label": "Selina Montañita",
-   "wd_lat": -1.82747,
-   "wd_lon": -80.75342,
+   "km": 0.66,
+   "qid": "Q111885348",
+   "label": "Hotel Baja Montañita",
+   "wd_lat": -1.82148,
+   "wd_lon": -80.75466,
    "status": "ok",
    "region": "EC-COS",
    "spot": "MONTAÑITA",
-   "lat": -1.8306,
-   "lon": -80.7531
+   "lat": -1.8192,
+   "lon": -80.7601
   },
   {
    "km": 0.19,
@@ -3841,33 +3792,33 @@
    "lon": -89.6138
   },
   {
-   "km": 0.3,
-   "qid": "Q112021731",
-   "label": "Hostal Tongo Reef",
-   "wd_lat": -0.90086,
-   "wd_lon": -89.60745,
+   "km": 0.48,
+   "qid": "geonames:12513657",
+   "label": "El Cañón",
+   "wd_lat": -0.90919,
+   "wd_lon": -89.62293,
    "status": "ok",
    "region": "EC-GAL",
    "spot": "TONGO REEF",
-   "lat": -0.9001,
-   "lon": -89.61
+   "lat": -0.9106,
+   "lon": -89.627
   },
   {
-   "km": 0.31,
-   "qid": "geonames:12513691",
-   "label": "La Lobería",
-   "wd_lat": -0.92549,
-   "wd_lon": -89.61215,
+   "km": 0.24,
+   "qid": "geonames:12513810",
+   "label": "Playa La Lobería",
+   "wd_lat": -0.92662,
+   "wd_lon": -89.61198,
    "status": "ok",
    "region": "EC-GAL",
    "spot": "LA LOBERÍA",
-   "lat": -0.9244,
-   "lon": -89.6147
+   "lat": -0.9286,
+   "lon": -89.6128
   },
   {
    "km": 0.25,
    "qid": "Q6078968",
-   "label": "Praia de Rodiles",
+   "label": "Rodiles Beach",
    "wd_lat": 43.53253,
    "wd_lon": -5.38244,
    "status": "ok",
@@ -3877,31 +3828,31 @@
    "lon": -5.3804
   },
   {
-   "km": 0.44,
-   "qid": "Q97166016",
-   "label": "Real Club Náutico de Salinas",
-   "wd_lat": 43.57678,
-   "wd_lon": -5.96443,
+   "km": 0.04,
+   "qid": "Q6078975",
+   "label": "Playa de Salinas",
+   "wd_lat": 43.57741,
+   "wd_lon": -5.96214,
    "status": "ok",
    "region": "ES-AST",
    "spot": "SALINAS",
-   "lat": 43.5803,
-   "lon": -5.9668
+   "lat": 43.5775,
+   "lon": -5.9617
   },
   {
-   "km": 0.53,
+   "km": 0.1,
    "qid": "Q5979921",
-   "label": "Los Locos (Suances)",
+   "label": "Los Locos",
    "wd_lat": 43.43882,
    "wd_lon": -4.04674,
    "status": "ok",
    "region": "ES-CAN",
    "spot": "LOS LOCOS",
-   "lat": 43.4422,
-   "lon": -4.0422
+   "lat": 43.439,
+   "lon": -4.048
   },
   {
-   "km": 1.32,
+   "km": 0.48,
    "qid": "Q3384715",
    "label": "Dunas de Liencres y Costa Quebrada Natural Park",
    "wd_lat": 43.44781,
@@ -3909,8 +3860,8 @@
    "status": "ok",
    "region": "ES-CAN",
    "spot": "LIENCRES",
-   "lat": 43.4583,
-   "lon": -3.9551
+   "lat": 43.4517,
+   "lon": -3.9651
   },
   {
    "km": 0.55,
@@ -3933,10 +3884,10 @@
   },
   {
    "km": 0.19,
-   "qid": "Q28119689",
-   "label": "La Santa (Pueblo)",
-   "wd_lat": 29.1093,
-   "wd_lon": -13.6659,
+   "qid": "Q5387887",
+   "label": "La Santa (Canary Islands)",
+   "wd_lat": 29.10823,
+   "wd_lon": -13.66609,
    "status": "ok",
    "region": "ES-CN-E",
    "spot": "LA SANTA",
@@ -3968,28 +3919,28 @@
    "lon": -13.834
   },
   {
-   "km": 0.34,
-   "qid": "geonames:2519133",
-   "label": "Caleta del Cotillo",
-   "wd_lat": 28.68348,
-   "wd_lon": -14.01164,
+   "km": 0.43,
+   "qid": "Q115210559",
+   "label": "Ziphius cavirostris skeletal mount in El Cotillo",
+   "wd_lat": 28.67954,
+   "wd_lon": -14.01044,
    "status": "ok",
    "region": "ES-CN-E",
    "spot": "EL COTILLO",
-   "lat": 28.6857,
-   "lon": -14.014
+   "lat": 28.6757,
+   "lon": -14.0101
   },
   {
-   "km": 0.33,
-   "qid": "Q23987029",
-   "label": "Punta del Confital",
-   "wd_lat": 28.16282,
-   "wd_lon": -15.44171,
+   "km": 0.17,
+   "qid": "Q23987026",
+   "label": "Laja del Confital",
+   "wd_lat": 28.15934,
+   "wd_lon": -15.43699,
    "status": "ok",
    "region": "ES-CN-W",
    "spot": "EL CONFITAL",
-   "lat": 28.1658,
-   "lon": -15.4417
+   "lat": 28.1579,
+   "lon": -15.4364
   },
   {
    "status": "sin fuente",
@@ -4006,31 +3957,31 @@
    "lon": -16.7365
   },
   {
-   "km": 0.27,
-   "qid": "Q5669924",
-   "label": "Almáciga (Santa Cruz de Tenerife)",
-   "wd_lat": 28.57139,
-   "wd_lon": -16.19694,
+   "km": 0.03,
+   "qid": "Q5390835",
+   "label": "Playa de Almáciga",
+   "wd_lat": 28.57222,
+   "wd_lon": -16.19278,
    "status": "ok",
    "region": "ES-CN-W",
    "spot": "ALMACIGA",
-   "lat": 28.5723,
-   "lon": -16.1995
+   "lat": 28.5724,
+   "lon": -16.193
   },
   {
-   "km": 0.83,
-   "qid": "Q3986817",
-   "label": "The Ferrolterra Pantin Classic",
-   "wd_lat": 43.6389,
-   "wd_lon": -8.10944,
+   "km": 0.12,
+   "qid": "Q12398087",
+   "label": "Pantín",
+   "wd_lat": 43.63958,
+   "wd_lon": -8.11209,
    "status": "ok",
    "region": "ES-GAL",
    "spot": "PANTIN",
-   "lat": 43.6455,
-   "lon": -8.1045
+   "lat": 43.6406,
+   "lon": -8.1116
   },
   {
-   "km": 1.37,
+   "km": 0.85,
    "qid": "Q28121665",
    "label": "Razo",
    "wd_lat": 43.2897,
@@ -4038,8 +3989,8 @@
    "status": "ok",
    "region": "ES-GAL",
    "spot": "RAZO",
-   "lat": 43.2932,
-   "lon": -8.6962
+   "lat": 43.2914,
+   "lon": -8.7021
   },
   {
    "km": 0.28,
@@ -4090,7 +4041,7 @@
    "lon": -2.8113
   },
   {
-   "km": 1.45,
+   "km": 0.4,
    "qid": "Q28120559",
    "label": "Meñakoz",
    "wd_lat": 43.3948,
@@ -4098,20 +4049,20 @@
    "status": "ok",
    "region": "ES-PV",
    "spot": "MEÑAKOZ",
-   "lat": 43.4044,
-   "lon": -2.9738
+   "lat": 43.3984,
+   "lon": -2.9865
   },
   {
-   "km": 0.65,
-   "qid": "geonames:3108701",
+   "km": 0.06,
+   "qid": "Q8204949",
    "label": "Arrietara",
-   "wd_lat": 43.38889,
-   "wd_lon": -2.99575,
+   "wd_lat": 43.38929,
+   "wd_lon": -2.99442,
    "status": "ok",
    "region": "ES-PV",
-   "spot": "SOPELA",
-   "lat": 43.393,
-   "lon": -2.9901
+   "spot": "ARRIETARA",
+   "lat": 43.3894,
+   "lon": -2.9951
   },
   {
    "status": "sin fuente",
@@ -4124,27 +4075,27 @@
    "status": "sin fuente",
    "region": "FJ-MAM",
    "spot": "RESTAURANTS",
-   "lat": -17.857,
-   "lon": 177.2006
+   "lat": -17.8532,
+   "lon": 177.201
   },
   {
-   "km": 0.09,
+   "km": 0.57,
    "qid": "Q13155006",
-   "label": "Namotu Island",
+   "label": "Namotu",
    "wd_lat": -17.8442,
    "wd_lon": 177.1834,
    "status": "ok",
    "region": "FJ-MAM",
    "spot": "NAMOTU LEFT",
-   "lat": -17.845,
-   "lon": 177.1835
+   "lat": -17.8453,
+   "lon": 177.1781
   },
   {
    "status": "sin fuente",
    "region": "FJ-MAM",
    "spot": "SWIMMING POOLS",
-   "lat": -17.845,
-   "lon": 177.1837
+   "lat": -17.8476,
+   "lon": 177.189
   },
   {
    "km": 4.06,
@@ -4159,16 +4110,16 @@
    "lon": 177.9256
   },
   {
-   "km": 0.3,
-   "qid": "Q116591237",
-   "label": "allée couverte de la presqu'île de la Torche",
-   "wd_lat": 47.83716,
-   "wd_lon": -4.35325,
+   "km": 0.22,
+   "qid": "Q113587078",
+   "label": "Mahnmal bei La Torche",
+   "wd_lat": 47.83868,
+   "wd_lon": -4.34484,
    "status": "ok",
    "region": "FR-BRE",
    "spot": "LA TORCHE",
-   "lat": 47.8379,
-   "lon": -4.3494
+   "lat": 47.8394,
+   "lon": -4.3476
   },
   {
    "km": 0.37,
@@ -4207,40 +4158,40 @@
    "lon": -1.2571
   },
   {
-   "km": 0.15,
-   "qid": "osm:node/12451463163",
-   "label": "Santocha",
-   "wd_lat": 43.65031,
-   "wd_lon": -1.44532,
+   "km": 0.1,
+   "qid": "osm:node/2417680233",
+   "label": "Plage du Santocha",
+   "wd_lat": 43.6458,
+   "wd_lon": -1.44568,
    "status": "ok",
    "region": "FR-HOS",
    "spot": "SANTOCHA",
-   "lat": 43.6511,
-   "lon": -1.4468
+   "lat": 43.6467,
+   "lon": -1.446
   },
   {
-   "km": 0.09,
-   "qid": "Q49322634",
+   "km": 0.37,
+   "qid": "geonames:11072939",
    "label": "Plage de la Gravière",
    "wd_lat": 43.67439,
    "wd_lon": -1.44101,
    "status": "ok",
    "region": "FR-HOS",
    "spot": "LA GRAVIERE",
-   "lat": 43.6748,
-   "lon": -1.442
+   "lat": 43.6714,
+   "lon": -1.4429
   },
   {
-   "km": 0.13,
+   "km": 1.71,
    "qid": "geonames:11072940",
    "label": "Plage Nord",
    "wd_lat": 43.68023,
    "wd_lon": -1.44015,
-   "status": "ok",
+   "status": "revisado",
    "region": "FR-HOS",
    "spot": "LA NORD",
-   "lat": 43.6804,
-   "lon": -1.4418
+   "lat": 43.6651,
+   "lon": -1.4436
   },
   {
    "km": 0.08,
@@ -4267,7 +4218,7 @@
    "lon": -1.4412
   },
   {
-   "km": 0.41,
+   "km": 0.69,
    "qid": "geonames:6559499",
    "label": "Le Penon",
    "wd_lat": 43.70583,
@@ -4275,8 +4226,8 @@
    "status": "ok",
    "region": "FR-HOS",
    "spot": "LE PENON",
-   "lat": 43.7074,
-   "lon": -1.4374
+   "lat": 43.7095,
+   "lon": -1.4397
   },
   {
    "km": 0.0,
@@ -4303,7 +4254,7 @@
    "lon": -1.6287
   },
   {
-   "km": 0.4,
+   "km": 0.43,
    "qid": "Q120215227",
    "label": "plage de Parlementia",
    "wd_lat": 43.42889,
@@ -4311,8 +4262,8 @@
    "status": "ok",
    "region": "FR-PBA",
    "spot": "PARLEMENTIA",
-   "lat": 43.4265,
-   "lon": -1.6092
+   "lat": 43.431,
+   "lon": -1.61
   },
   {
    "km": 0.03,
@@ -4327,7 +4278,7 @@
    "lon": -1.5674
   },
   {
-   "km": 0.3,
+   "km": 0.03,
    "qid": "Q25478600",
    "label": "Grande plage",
    "wd_lat": 43.485,
@@ -4335,11 +4286,11 @@
    "status": "ok",
    "region": "FR-PBA",
    "spot": "GRANDE PLAGE",
-   "lat": 43.4853,
-   "lon": -1.5626
+   "lat": 43.485,
+   "lon": -1.5592
   },
   {
-   "km": 0.6,
+   "km": 0.36,
    "qid": "osm:node/11952254203",
    "label": "Les Cavaliers",
    "wd_lat": 43.51967,
@@ -4347,11 +4298,11 @@
    "status": "ok",
    "region": "FR-PBA",
    "spot": "LES CAVALIERS",
-   "lat": 43.5175,
-   "lon": -1.5301
+   "lat": 43.5206,
+   "lon": -1.5275
   },
   {
-   "km": 0.52,
+   "km": 0.29,
    "qid": "Q7974111",
    "label": "Watergate Beach",
    "wd_lat": 50.444,
@@ -4359,8 +4310,8 @@
    "status": "ok",
    "region": "GB-CON",
    "spot": "WATERGATE BAY",
-   "lat": 50.4411,
-   "lon": -5.0457
+   "lat": 50.4444,
+   "lon": -5.0441
   },
   {
    "km": 0.2,
@@ -4411,28 +4362,28 @@
    "lon": -4.2378
   },
   {
-   "km": 0.22,
-   "qid": "geonames:2633608",
+   "km": 0.49,
+   "qid": "Q542671",
    "label": "Woolacombe",
-   "wd_lat": 51.17296,
-   "wd_lon": -4.20689,
+   "wd_lat": 51.172,
+   "wd_lon": -4.207,
    "status": "ok",
    "region": "GB-DEV",
    "spot": "WOOLACOMBE",
-   "lat": 51.1728,
-   "lon": -4.21
+   "lat": 51.1725,
+   "lon": -4.214
   },
   {
-   "km": 0.15,
-   "qid": "Q26480287",
-   "label": "Tynemouth Watch House",
-   "wd_lat": 55.01464,
-   "wd_lon": -1.41899,
+   "km": 0.24,
+   "qid": "Q105427433",
+   "label": "Tynemouth Plaza",
+   "wd_lat": 55.02458,
+   "wd_lon": -1.4271,
    "status": "ok",
    "region": "GB-NE",
    "spot": "TYNEMOUTH",
-   "lat": 55.0139,
-   "lon": -1.421
+   "lat": 55.026,
+   "lon": -1.4242
   },
   {
    "km": 0.1,
@@ -4471,7 +4422,7 @@
    "lon": -3.6521
   },
   {
-   "km": 0.04,
+   "km": 0.19,
    "qid": "Q3990974",
    "label": "Thurso East",
    "wd_lat": 58.5992,
@@ -4479,20 +4430,20 @@
    "status": "ok",
    "region": "GB-SCO",
    "spot": "THURSO EAST",
-   "lat": 58.5989,
-   "lon": -3.5099
+   "lat": 58.6009,
+   "lon": -3.5098
   },
   {
-   "km": 0.22,
-   "qid": "Q107357993",
-   "label": "Freshwater West Public Conveniences",
-   "wd_lat": 51.6549,
-   "wd_lon": -5.05761,
+   "km": 0.23,
+   "qid": "Q5503127",
+   "label": "Freshwater West",
+   "wd_lat": 51.6565,
+   "wd_lon": -5.0594,
    "status": "ok",
    "region": "GB-WAL",
    "spot": "FRESHWATER WEST",
-   "lat": 51.6532,
-   "lon": -5.0592
+   "lat": 51.6561,
+   "lon": -5.0627
   },
   {
    "km": 0.28,
@@ -4543,7 +4494,7 @@
    "lon": 115.0997
   },
   {
-   "km": 0.52,
+   "km": 0.15,
    "qid": "osm:relation/9849151",
    "label": "Impossibles Beach",
    "wd_lat": -8.8076,
@@ -4551,32 +4502,32 @@
    "status": "ok",
    "region": "ID-BAL-BUK",
    "spot": "IMPOSSIBLES",
-   "lat": -8.8103,
-   "lon": 115.1051
-  },
-  {
-   "km": 0.56,
-   "qid": "Q110982165",
-   "label": "Bingin Beach House",
-   "wd_lat": -8.80643,
-   "wd_lon": 115.11329,
-   "status": "ok",
-   "region": "ID-BAL-BUK",
-   "spot": "BINGIN",
-   "lat": -8.8079,
-   "lon": 115.1084
+   "lat": -8.8074,
+   "lon": 115.1076
   },
   {
    "km": 0.11,
-   "qid": "Q25020266",
-   "label": "Balangan River",
-   "wd_lat": -8.79167,
-   "wd_lon": 115.125,
+   "qid": "Q124343204",
+   "label": "Bingin Beach",
+   "wd_lat": -8.80566,
+   "wd_lon": 115.11307,
+   "status": "ok",
+   "region": "ID-BAL-BUK",
+   "spot": "BINGIN",
+   "lat": -8.8047,
+   "lon": 115.1128
+  },
+  {
+   "km": 0.21,
+   "qid": "Q111996954",
+   "label": "The Point Beach-Front Balangan",
+   "wd_lat": -8.79345,
+   "wd_lon": 115.12271,
    "status": "ok",
    "region": "ID-BAL-BUK",
    "spot": "BALANGAN",
-   "lat": -8.7912,
-   "lon": 115.1241
+   "lat": -8.7929,
+   "lon": 115.1209
   },
   {
    "km": 0.5,
@@ -4591,23 +4542,23 @@
    "lon": 115.3392
   },
   {
-   "km": 0.25,
-   "qid": "Q111331515",
-   "label": "Sari Villa Sanur Beach",
-   "wd_lat": -8.69099,
-   "wd_lon": 115.26477,
+   "km": 0.5,
+   "qid": "geonames:7350989",
+   "label": "Sanur",
+   "wd_lat": -8.67462,
+   "wd_lon": 115.26405,
    "status": "ok",
    "region": "ID-BAL-E",
    "spot": "SANUR REEF",
-   "lat": -8.6908,
-   "lon": 115.267
+   "lat": -8.6777,
+   "lon": 115.2674
   },
   {
    "status": "sin fuente",
    "region": "ID-BAL-E",
    "spot": "SHIPWRECKS",
-   "lat": -8.6671,
-   "lon": 115.4479
+   "lat": -8.6655,
+   "lon": 115.4436
   },
   {
    "km": 0.06,
@@ -4634,26 +4585,26 @@
    "lon": 115.1251
   },
   {
-   "km": 0.31,
-   "qid": "Q111855254",
-   "label": "Bombora Medewi Wavelodge",
-   "wd_lat": -8.41938,
-   "wd_lon": 114.80531,
+   "km": 0.03,
+   "qid": "Q26728468",
+   "label": "Enjung Medewi",
+   "wd_lat": -8.42028,
+   "wd_lon": 114.80528,
    "status": "ok",
    "region": "ID-BAL-W",
    "spot": "MEDEWI",
-   "lat": -8.4167,
-   "lon": 114.8045
+   "lat": -8.4202,
+   "lon": 114.805
   },
   {
    "status": "sin fuente",
    "region": "ID-JAV-E",
    "spot": "MONEY TREES",
-   "lat": -8.7336,
-   "lon": 114.3438
+   "lat": -8.7319,
+   "lon": 114.3418
   },
   {
-   "km": 0.62,
+   "km": 0.3,
    "qid": "Q10981490",
    "label": "Batu Karas",
    "wd_lat": -7.75,
@@ -4661,47 +4612,47 @@
    "status": "ok",
    "region": "ID-JAV-W",
    "spot": "BATU KARAS",
-   "lat": -7.745,
-   "lon": 108.4975
+   "lat": -7.7492,
+   "lon": 108.5026
   },
   {
-   "km": 0.14,
-   "qid": "osm:way/292730630",
+   "km": 0.58,
+   "qid": "osm:node/2967490402",
    "label": "Desert Point Surf Break",
-   "wd_lat": -8.73467,
-   "wd_lon": 115.83631,
+   "wd_lat": -8.73003,
+   "wd_lon": 115.83666,
    "status": "ok",
    "region": "ID-LOM",
    "spot": "DESERT POINT",
-   "lat": -8.7348,
-   "lon": 115.8376
+   "lat": -8.7265,
+   "lon": 115.8405
   },
   {
-   "km": 0.85,
+   "km": 2.36,
    "qid": "geonames:7376475",
    "label": "Gerupuk",
    "wd_lat": -8.9106,
    "wd_lon": 116.3441,
-   "status": "ok",
+   "status": "revisado",
    "region": "ID-LOM",
    "spot": "GERUPUK",
-   "lat": -8.9167,
-   "lon": 116.3488
+   "lat": -8.9136,
+   "lon": 116.3654
   },
   {
-   "km": 2.63,
+   "km": 0.37,
    "qid": "osm:node/8377755317",
    "label": "HT'S surf camp katiet",
    "wd_lat": -2.37634,
    "wd_lon": 99.85629,
-   "status": "revisado",
+   "status": "ok",
    "region": "ID-MEN",
    "spot": "HT'S",
-   "lat": -2.3992,
-   "lon": 99.8625
+   "lat": -2.3763,
+   "lon": 99.8596
   },
   {
-   "km": 2.22,
+   "km": 2.6,
    "qid": "Q61987172",
    "label": "Lance's Right",
    "wd_lat": -2.37567,
@@ -4709,29 +4660,29 @@
    "status": "revisado",
    "region": "ID-MEN",
    "spot": "LANCE'S LEFT",
-   "lat": -2.3953,
-   "lon": 99.8629
+   "lat": -2.3845,
+   "lon": 99.8379
   },
   {
    "status": "sin fuente",
    "region": "ID-MEN",
    "spot": "MACARONIS",
-   "lat": -2.7855,
-   "lon": 99.9753
+   "lat": -2.7891,
+   "lon": 99.9903
   },
   {
    "status": "sin fuente",
    "region": "ID-MEN",
    "spot": "KANDUI LEFT",
-   "lat": -1.9017,
-   "lon": 99.2946
+   "lat": -1.899,
+   "lon": 99.2932
   },
   {
    "status": "sin fuente",
    "region": "ID-MEN",
    "spot": "RIFLES",
-   "lat": -1.9207,
-   "lon": 99.3142
+   "lat": -1.9202,
+   "lon": 99.3193
   },
   {
    "km": 2.82,
@@ -4773,11 +4724,11 @@
    "status": "sin fuente",
    "region": "ID-ROT",
    "spot": "T-LAND",
-   "lat": -10.8948,
-   "lon": 122.8206
+   "lat": -10.8915,
+   "lon": 122.8122
   },
   {
-   "km": 0.8,
+   "km": 0.46,
    "qid": "geonames:7057284",
    "label": "Lakey",
    "wd_lat": -8.8033,
@@ -4785,11 +4736,11 @@
    "status": "ok",
    "region": "ID-SBW",
    "spot": "LAKEY PEAK",
-   "lat": -8.7968,
-   "lon": 118.3795
+   "lat": -8.8045,
+   "lon": 118.3787
   },
   {
-   "km": 0.0,
+   "km": 0.68,
    "qid": "osm:node/7217881385",
    "label": "Scar reef",
    "wd_lat": -8.86063,
@@ -4797,15 +4748,15 @@
    "status": "ok",
    "region": "ID-SBW",
    "spot": "SCAR REEF",
-   "lat": -8.8606,
-   "lon": 116.7627
+   "lat": -8.8556,
+   "lon": 116.7592
   },
   {
    "status": "sin fuente",
    "region": "ID-SBW",
    "spot": "SUPERSUCK",
-   "lat": -8.9327,
-   "lon": 116.7425
+   "lat": -8.9333,
+   "lon": 116.7391
   },
   {
    "km": 0.38,
@@ -4820,7 +4771,7 @@
    "lon": -8.2814
   },
   {
-   "km": 0.68,
+   "km": 1.04,
    "qid": "Q2577946",
    "label": "Mullaghmore",
    "wd_lat": 54.46639,
@@ -4828,8 +4779,8 @@
    "status": "ok",
    "region": "IE-NW",
    "spot": "MULLAGHMORE",
-   "lat": 54.4719,
-   "lon": -8.4532
+   "lat": 54.4732,
+   "lon": -8.4597
   },
   {
    "km": 0.3,
@@ -4918,52 +4869,52 @@
    "lon": 140.3955
   },
   {
-   "km": 1.03,
-   "qid": "geonames:2111105",
-   "label": "Shinmachi",
-   "wd_lat": 35.18738,
-   "wd_lon": 140.35792,
+   "km": 0.72,
+   "qid": "Q552783",
+   "label": "Onjuku Station",
+   "wd_lat": 35.188,
+   "wd_lon": 140.3519,
    "status": "ok",
    "region": "JP-CHI",
    "spot": "ONJUKU",
-   "lat": 35.1803,
-   "lon": 140.3652
+   "lat": 35.1815,
+   "lon": 140.352
   },
   {
-   "km": 0.43,
-   "qid": "Q112009231",
-   "label": "Garden Villa Shirahama",
-   "wd_lat": 34.68315,
-   "wd_lon": 138.97646,
+   "km": 0.55,
+   "qid": "Q97686547",
+   "label": "Shirahama",
+   "wd_lat": 34.69275,
+   "wd_lon": 138.97269,
    "status": "ok",
    "region": "JP-IZU",
    "spot": "SHIRAHAMA",
-   "lat": 34.6815,
-   "lon": 138.9807
+   "lat": 34.6878,
+   "lon": 138.9734
   },
   {
-   "km": 2.74,
+   "km": 1.37,
    "qid": "geonames:1859396",
    "label": "Kizaki",
    "wd_lat": 31.83289,
    "wd_lon": 131.4399,
-   "status": "revisado",
+   "status": "ok",
    "region": "JP-KYU",
    "spot": "KISAKIHAMA",
-   "lat": 31.8132,
-   "lon": 131.4574
+   "lat": 31.8282,
+   "lon": 131.4533
   },
   {
-   "km": 1.68,
-   "qid": "Q11559321",
-   "label": "château de Kaifu",
-   "wd_lat": 33.59444,
-   "wd_lon": 134.35794,
-   "status": "revisado",
+   "km": 0.11,
+   "qid": "Q11559324",
+   "label": "Kaifu-gawa",
+   "wd_lat": 33.59495,
+   "wd_lon": 134.36107,
+   "status": "ok",
    "region": "JP-SHK",
    "spot": "KAIFU",
-   "lat": 33.5794,
-   "lon": 134.36
+   "lat": 33.5949,
+   "lon": 134.3622
   },
   {
    "km": 0.35,
@@ -4997,16 +4948,16 @@
    "lon": 81.8451
   },
   {
-   "km": 0.45,
-   "qid": "osm:relation/18669419",
-   "label": "Peanut Farm Beach",
-   "wd_lat": 6.79638,
-   "wd_lon": 81.82099,
+   "km": 0.29,
+   "qid": "osm:way/1182031928",
+   "label": "Peanut Farm Surf Spot",
+   "wd_lat": 6.7839,
+   "wd_lon": 81.82,
    "status": "ok",
    "region": "LK-E",
    "spot": "PEANUT FARM",
-   "lat": 6.7998,
-   "lon": 81.8232
+   "lat": 6.7826,
+   "lon": 81.8223
   },
   {
    "km": 0.13,
@@ -5021,19 +4972,19 @@
    "lon": 80.0993
   },
   {
-   "km": 0.58,
-   "qid": "geonames:1235197",
-   "label": "Midigama East",
-   "wd_lat": 5.9668,
-   "wd_lon": 80.3968,
+   "km": 0.65,
+   "qid": "geonames:1235196",
+   "label": "Midigama West",
+   "wd_lat": 5.9706,
+   "wd_lon": 80.3909,
    "status": "ok",
    "region": "LK-S",
    "spot": "MIDIGAMA",
-   "lat": 5.9626,
-   "lon": 80.3937
+   "lat": 5.9648,
+   "lon": 80.3906
   },
   {
-   "km": 0.67,
+   "km": 0.28,
    "qid": "Q111122486",
    "label": "Doray Hostel Weligama",
    "wd_lat": 5.97208,
@@ -5041,20 +4992,20 @@
    "status": "ok",
    "region": "LK-S",
    "spot": "WELIGAMA",
-   "lat": 5.9679,
-   "lon": 80.433
+   "lat": 5.9714,
+   "lon": 80.431
   },
   {
-   "km": 1.2,
+   "km": 0.57,
    "qid": "Q598684",
-   "label": "Mehdía",
+   "label": "Mehdia",
    "wd_lat": 34.25572,
    "wd_lon": -6.67454,
    "status": "ok",
    "region": "MA-N",
    "spot": "MEHDIA",
-   "lat": 34.262,
-   "lon": -6.6851
+   "lat": 34.2595,
+   "lon": -6.6788
   },
   {
    "status": "sin fuente",
@@ -5072,8 +5023,8 @@
    "status": "ok",
    "region": "MA-TAG",
    "spot": "BOILERS",
-   "lat": 30.6248,
-   "lon": -9.8811
+   "lat": 30.6246,
+   "lon": -9.8789
   },
   {
    "km": 0.13,
@@ -5124,16 +5075,16 @@
    "lon": -9.7077
   },
   {
-   "km": 0.31,
-   "qid": "geonames:2561684",
-   "label": "Aftas Imsouane",
-   "wd_lat": 30.84022,
-   "wd_lon": -9.82006,
+   "km": 0.09,
+   "qid": "Q138214426",
+   "label": "Mosquée Port Imsouane",
+   "wd_lat": 30.83879,
+   "wd_lon": -9.82095,
    "status": "ok",
    "region": "MA-TAG",
    "spot": "IMSOUANE",
-   "lat": 30.8425,
-   "lon": -9.8219
+   "lat": 30.839,
+   "lon": -9.82
   },
   {
    "status": "sin fuente",
@@ -5178,16 +5129,16 @@
    "lon": 73.5764
   },
   {
-   "km": 0.52,
-   "qid": "Q2100734",
-   "label": "Kandoomaafushi",
-   "wd_lat": 3.90283,
-   "wd_lon": 73.4735,
+   "km": 0.22,
+   "qid": "geonames:12924674",
+   "label": "Kan’doomaafushi",
+   "wd_lat": 3.90313,
+   "wd_lon": 73.47382,
    "status": "ok",
    "region": "MV-SMA",
    "spot": "KANDOOMA RIGHT",
-   "lat": 3.9003,
-   "lon": 73.4696
+   "lat": 3.9031,
+   "lon": 73.4758
   },
   {
    "status": "sin fuente",
@@ -5200,20 +5151,20 @@
    "status": "sin fuente",
    "region": "MV-SOU",
    "spot": "BEACONS",
-   "lat": 0.2137,
-   "lon": 73.1412
+   "lat": 0.2123,
+   "lon": 73.1416
   },
   {
-   "km": 1.0,
-   "qid": "Q27780184",
-   "label": "Punta San Miguel",
-   "wd_lat": 31.9023,
-   "wd_lon": -116.74488,
+   "km": 0.9,
+   "qid": "geonames:3979367",
+   "label": "San Miguel",
+   "wd_lat": 31.90654,
+   "wd_lon": -116.72501,
    "status": "ok",
    "region": "MX-BCN",
    "spot": "SAN MIGUEL",
-   "lat": 31.9022,
-   "lon": -116.7343
+   "lat": 31.9005,
+   "lon": -116.7314
   },
   {
    "km": 0.18,
@@ -5271,7 +5222,7 @@
    "lon": -105.442
   },
   {
-   "km": 0.08,
+   "km": 0.26,
    "qid": "geonames:13472407",
    "label": "Playa el Anclote",
    "wd_lat": 20.77114,
@@ -5279,8 +5230,8 @@
    "status": "ok",
    "region": "MX-NAY",
    "spot": "EL ANCLOTE",
-   "lat": 20.7713,
-   "lon": -105.5189
+   "lat": 20.7689,
+   "lon": -105.5204
   },
   {
    "km": 0.65,
@@ -5307,31 +5258,31 @@
    "lon": -97.0563
   },
   {
-   "km": 0.34,
-   "qid": "Q111114976",
-   "label": "Hostal Akumal La Punta",
-   "wd_lat": 15.83719,
-   "wd_lon": -97.04402,
+   "km": 0.26,
+   "qid": "geonames:9626479",
+   "label": "Punta de Zicatela",
+   "wd_lat": 15.82816,
+   "wd_lon": -97.04577,
    "status": "ok",
    "region": "MX-OAX",
    "spot": "LA PUNTA",
-   "lat": 15.8373,
-   "lon": -97.0472
+   "lat": 15.8304,
+   "lon": -97.0465
   },
   {
-   "km": 1.9,
+   "km": 0.38,
    "qid": "geonames:9625179",
    "label": "Barra de la Cruz",
    "wd_lat": 15.81974,
    "wd_lon": -95.96858,
-   "status": "revisado",
+   "status": "ok",
    "region": "MX-OAX",
    "spot": "BARRA DE LA CRUZ",
-   "lat": 15.8294,
-   "lon": -95.9539
+   "lat": 15.8205,
+   "lon": -95.9651
   },
   {
-   "km": 1.07,
+   "km": 0.23,
    "qid": "Q111110915",
    "label": "Troncones Point Hostel",
    "wd_lat": 17.79353,
@@ -5339,11 +5290,11 @@
    "status": "ok",
    "region": "MX-PAC",
    "spot": "TRONCONES",
-   "lat": 17.7878,
-   "lon": -101.7375
+   "lat": 17.7941,
+   "lon": -101.7477
   },
   {
-   "km": 0.41,
+   "km": 0.13,
    "qid": "Q49004962",
    "label": "Boca La Saladita",
    "wd_lat": 17.83667,
@@ -5351,8 +5302,8 @@
    "status": "ok",
    "region": "MX-PAC",
    "spot": "LA SALADITA",
-   "lat": 17.833,
-   "lon": -101.7697
+   "lat": 17.8363,
+   "lon": -101.7706
   },
   {
    "km": 0.68,
@@ -5398,28 +5349,28 @@
    "lon": 14.4173
   },
   {
-   "km": 0.77,
-   "qid": "Q14229773",
-   "label": "Popoyo",
-   "wd_lat": 11.47294,
-   "wd_lon": -86.12786,
+   "km": 0.18,
+   "qid": "Q111112908",
+   "label": "Breaks Lodge en Finca Popoyo",
+   "wd_lat": 11.46047,
+   "wd_lon": -86.11058,
    "status": "ok",
    "region": "NI-RIV",
    "spot": "POPOYO",
-   "lat": 11.4686,
-   "lon": -86.1224
+   "lat": 11.459,
+   "lon": -86.1112
   },
   {
-   "km": 0.27,
-   "qid": "Q111888768",
-   "label": "Villas Playa Maderas",
-   "wd_lat": 11.29445,
-   "wd_lon": -85.91045,
+   "km": 0.18,
+   "qid": "Q14229553",
+   "label": "Playa Maderas",
+   "wd_lat": 11.29211,
+   "wd_lon": -85.90815,
    "status": "ok",
    "region": "NI-RIV",
    "spot": "MADERAS",
-   "lat": 11.2955,
-   "lon": -85.9127
+   "lat": 11.2927,
+   "lon": -85.9097
   },
   {
    "km": 0.35,
@@ -5434,31 +5385,31 @@
    "lon": 13.5793
   },
   {
-   "km": 0.2,
-   "qid": "Q122312963",
-   "label": "Piha Stream",
-   "wd_lat": -36.95348,
-   "wd_lon": 174.46816,
+   "km": 0.12,
+   "qid": "Q99977",
+   "label": "Piha Rescue",
+   "wd_lat": -36.95428,
+   "wd_lon": 174.46768,
    "status": "ok",
    "region": "NZ-AKL",
    "spot": "PIHA",
-   "lat": -36.9531,
-   "lon": 174.466
+   "lat": -36.9547,
+   "lon": 174.4664
   },
   {
-   "km": 1.79,
+   "km": 1.1,
    "qid": "geonames:2179328",
    "label": "Whangamata",
    "wd_lat": -37.2,
    "wd_lon": 175.86667,
-   "status": "revisado",
+   "status": "ok",
    "region": "NZ-BOP",
    "spot": "WHANGAMATA BAR",
-   "lat": -37.2131,
-   "lon": 175.8784
+   "lat": -37.2026,
+   "lon": 175.8787
   },
   {
-   "km": 1.2,
+   "km": 0.7,
    "qid": "Q765857",
    "label": "Mount Maunganui",
    "wd_lat": -37.63033,
@@ -5466,8 +5417,8 @@
    "status": "ok",
    "region": "NZ-BOP",
    "spot": "MOUNT MAUNGANUI",
-   "lat": -37.6294,
-   "lon": 176.1856
+   "lat": -37.6304,
+   "lon": 176.18
   },
   {
    "status": "sin fuente",
@@ -5528,8 +5479,8 @@
    "status": "sin fuente",
    "region": "NZ-GIS",
    "spot": "WHALES",
-   "lat": -38.6717,
-   "lon": 178.0907
+   "lat": -38.6681,
+   "lon": 178.0992
   },
   {
    "status": "sin fuente",
@@ -5610,7 +5561,7 @@
    "lon": 170.6655
   },
   {
-   "km": 0.45,
+   "km": 0.59,
    "qid": "Q49325281",
    "label": "Whareakeake",
    "wd_lat": -45.762,
@@ -5618,8 +5569,8 @@
    "status": "ok",
    "region": "NZ-OTA",
    "spot": "WHAREAKEAKE",
-   "lat": -45.7615,
-   "lon": 170.6737
+   "lat": -45.7592,
+   "lon": 170.6745
   },
   {
    "km": 1.17,
@@ -5634,16 +5585,16 @@
    "lon": 170.711
   },
   {
-   "km": 1.9,
+   "km": 1.17,
    "qid": "geonames:2184943",
    "label": "Papatowai",
    "wd_lat": -46.56069,
    "wd_lon": 169.47068,
-   "status": "revisado",
+   "status": "ok",
    "region": "NZ-OTA",
    "spot": "PAPATOWAI",
-   "lat": -46.5778,
-   "lon": 169.4702
+   "lat": -46.5601,
+   "lon": 169.4859
   },
   {
    "km": 0.33,
@@ -5677,7 +5628,7 @@
    "lon": 174.793
   },
   {
-   "km": 1.73,
+   "km": 1.96,
    "qid": "osm:way/172901710",
    "label": "Stent Road",
    "wd_lat": -39.23063,
@@ -5685,8 +5636,8 @@
    "status": "revisado",
    "region": "NZ-TAR",
    "spot": "STENT ROAD",
-   "lat": -39.2268,
-   "lon": 173.7752
+   "lat": -39.2192,
+   "lon": 173.7773
   },
   {
    "km": 0.31,
@@ -5713,7 +5664,7 @@
    "lon": 174.7954
   },
   {
-   "km": 1.05,
+   "km": 0.91,
    "qid": "geonames:3701258",
    "label": "Santa Catalina",
    "wd_lat": 7.6317,
@@ -5721,35 +5672,35 @@
    "status": "ok",
    "region": "PA-PAC",
    "spot": "SANTA CATALINA",
-   "lat": 7.6266,
-   "lon": -81.2458
+   "lat": 7.6243,
+   "lon": -81.2573
   },
   {
-   "km": 0.27,
-   "qid": "Q111111151",
-   "label": "Selina Playa Venao",
-   "wd_lat": 7.43073,
-   "wd_lon": -80.18868,
+   "km": 0.25,
+   "qid": "Q111885716",
+   "label": "Playa Venao Hotel Resort",
+   "wd_lat": 7.43326,
+   "wd_lon": -80.1962,
    "status": "ok",
    "region": "PA-PAC",
    "spot": "PLAYA VENAO",
-   "lat": 7.4288,
-   "lon": -80.1872
+   "lat": 7.4312,
+   "lon": -80.197
   },
   {
-   "km": 0.8,
-   "qid": "geonames:11003369",
-   "label": "Playa La Herradura",
-   "wd_lat": -12.1729,
-   "wd_lon": -77.03281,
+   "km": 0.51,
+   "qid": "geonames:3937127",
+   "label": "La Herradura",
+   "wd_lat": -12.17609,
+   "wd_lon": -77.03773,
    "status": "ok",
    "region": "PE-LIM",
    "spot": "LA HERRADURA",
-   "lat": -12.1684,
-   "lon": -77.0386
+   "lat": -12.1806,
+   "lon": -77.0383
   },
   {
-   "km": 0.77,
+   "km": 0.43,
    "qid": "osm:way/399820055",
    "label": "Playa Señoritas",
    "wd_lat": -12.32527,
@@ -5757,11 +5708,11 @@
    "status": "ok",
    "region": "PE-LIM",
    "spot": "SEÑORITAS",
-   "lat": -12.331,
-   "lon": -76.831
+   "lat": -12.3291,
+   "lon": -76.8355
   },
   {
-   "km": 0.61,
+   "km": 0.92,
    "qid": "osm:node/4281342760",
    "label": "Hotel La Planicie de Pico Alto",
    "wd_lat": -12.33324,
@@ -5769,32 +5720,32 @@
    "status": "ok",
    "region": "PE-LIM",
    "spot": "PICO ALTO",
-   "lat": -12.3385,
-   "lon": -76.8283
+   "lat": -12.3372,
+   "lon": -76.8373
   },
   {
-   "km": 0.33,
-   "qid": "Q26823227",
-   "label": "Punta Rocas",
-   "wd_lat": -12.35454,
-   "wd_lon": -76.81103,
+   "km": 0.3,
+   "qid": "geonames:3930316",
+   "label": "Punta Roca",
+   "wd_lat": -12.3506,
+   "wd_lon": -76.81641,
    "status": "ok",
    "region": "PE-LIM",
    "spot": "PUNTA ROCAS",
-   "lat": -12.3561,
-   "lon": -76.8085
+   "lat": -12.353,
+   "lon": -76.8176
   },
   {
-   "km": 0.9,
-   "qid": "geonames:3690601",
-   "label": "Punta Pacasmayo",
-   "wd_lat": -7.41667,
-   "wd_lon": -79.58333,
+   "km": 0.32,
+   "qid": "Q115204842",
+   "label": "Punta Pacasmayo Lighthouse",
+   "wd_lat": -7.4167,
+   "wd_lon": -79.5883,
    "status": "ok",
    "region": "PE-LLB",
    "spot": "PACASMAYO",
-   "lat": -7.4092,
-   "lon": -79.5803
+   "lat": -7.4138,
+   "lon": -79.5886
   },
   {
    "km": 2.03,
@@ -5809,112 +5760,112 @@
    "lon": -79.4508
   },
   {
-   "km": 0.09,
-   "qid": "Q42842481",
-   "label": "Inmueble la climática en la caleta de Huanchaco",
-   "wd_lat": -8.07884,
-   "wd_lon": -79.12015,
+   "km": 0.14,
+   "qid": "geonames:13060804",
+   "label": "Huanchaco Point",
+   "wd_lat": -8.08334,
+   "wd_lon": -79.12376,
    "status": "ok",
    "region": "PE-LLB",
    "spot": "HUANCHACO",
-   "lat": -8.0786,
-   "lon": -79.1209
+   "lat": -8.0821,
+   "lon": -79.1236
   },
   {
-   "km": 0.29,
-   "qid": "Q111125140",
-   "label": "Wild Rover Beach Resort Mancora",
-   "wd_lat": -4.09768,
-   "wd_lon": -81.05016,
+   "km": 0.23,
+   "qid": "geonames:3745340",
+   "label": "Punta Máncora",
+   "wd_lat": -4.10417,
+   "wd_lon": -81.05833,
    "status": "ok",
    "region": "PE-NOR",
    "spot": "MÁNCORA",
-   "lat": -4.0997,
-   "lon": -81.0518
+   "lat": -4.1059,
+   "lon": -81.0595
   },
   {
-   "km": 0.01,
-   "qid": "geonames:3699168",
-   "label": "Cabo Blanco",
-   "wd_lat": -4.25066,
-   "wd_lon": -81.23904,
+   "km": 0.08,
+   "qid": "Q111387198",
+   "label": "Puerto Cabo Blanco",
+   "wd_lat": -4.25,
+   "wd_lon": -81.23333,
    "status": "ok",
    "region": "PE-NOR",
    "spot": "CABO BLANCO",
-   "lat": -4.2507,
-   "lon": -81.2391
+   "lat": -4.25,
+   "lon": -81.2326
   },
   {
-   "km": 0.26,
-   "qid": "Q6663726",
-   "label": "Lobitos tumani",
-   "wd_lat": -4.45279,
-   "wd_lon": -81.27771,
+   "km": 0.31,
+   "qid": "geonames:3695297",
+   "label": "Punta Lobitos",
+   "wd_lat": -4.45265,
+   "wd_lon": -81.29011,
    "status": "ok",
    "region": "PE-NOR",
    "spot": "LOBITOS",
-   "lat": -4.4508,
-   "lon": -81.2789
+   "lat": -4.4517,
+   "lon": -81.2875
   },
   {
-   "km": 0.44,
-   "qid": "Q26988113",
-   "label": "église Saint-Benoît de Teahupoo",
-   "wd_lat": -17.85567,
-   "wd_lon": -149.25446,
+   "km": 0.8,
+   "qid": "Q127881429",
+   "label": "vague de Teahupo'o",
+   "wd_lat": -17.8615,
+   "wd_lon": -149.25744,
    "status": "ok",
    "region": "PF-TAH",
    "spot": "TEAHUPO'O",
-   "lat": -17.855,
-   "lon": -149.2586
+   "lat": -17.8671,
+   "lon": -149.2527
   },
   {
-   "km": 1.52,
-   "qid": "Q120473666",
-   "label": "complexe sportif communal Tavana Reia de Papara",
-   "wd_lat": -17.7622,
-   "wd_lon": -149.50607,
-   "status": "revisado",
+   "km": 0.3,
+   "qid": "Q1970268",
+   "label": "Papara",
+   "wd_lat": -17.77167,
+   "wd_lon": -149.48278,
+   "status": "ok",
    "region": "PF-TAH",
    "spot": "PAPARA",
-   "lat": -17.7603,
-   "lon": -149.5203
+   "lat": -17.772,
+   "lon": -149.48
   },
   {
-   "km": 0.37,
-   "qid": "Q31930394",
+   "km": 0.16,
+   "qid": "Q120475313",
    "label": "passe de Taapuna",
-   "wd_lat": -17.6,
-   "wd_lon": -149.61667,
+   "wd_lat": -17.6022,
+   "wd_lon": -149.62219,
    "status": "ok",
    "region": "PF-TAH",
    "spot": "TAAPUNA",
-   "lat": -17.6029,
-   "lon": -149.6149
+   "lat": -17.6036,
+   "lon": -149.6219
   },
   {
    "km": 1.35,
-   "qid": "Q120476339",
-   "label": "salle polyvalente Haapiti",
-   "wd_lat": -17.55985,
-   "wd_lon": -149.87282,
+   "qid": "Q60383793",
+   "label": "Gereja Keluarga Kudus, Haapiti",
+   "wd_lat": -17.5644,
+   "wd_lon": -149.8701,
    "status": "ok",
    "region": "PF-TAH",
    "spot": "HA'APITI",
-   "lat": -17.5667,
-   "lon": -149.8833
+   "lat": -17.5734,
+   "lon": -149.8786
   },
   {
-   "km": 0.22,
-   "qid": "Q111113917",
-   "label": "The Escape San Juan",
-   "wd_lat": 16.66066,
-   "wd_lon": 120.32214,
+   "km": 1.24,
+   "qid": "geonames:1680203",
+   "label": "Urbistondo",
+   "wd_lat": 16.66417,
+   "wd_lon": 120.33083,
    "status": "ok",
    "region": "PH-LUZ",
-   "spot": "SAN JUAN",
-   "lat": 16.6624,
-   "lon": 120.3232
+   "spot": "URBIZTONDO",
+   "lat": 16.6583,
+   "lon": 120.3209
   },
   {
    "km": 0.23,
@@ -5929,7 +5880,7 @@
    "lon": 121.5685
   },
   {
-   "km": 0.29,
+   "km": 0.19,
    "qid": "Q123496861",
    "label": "Cloud 9",
    "wd_lat": 9.81367,
@@ -5937,39 +5888,39 @@
    "status": "ok",
    "region": "PH-SIA",
    "spot": "CLOUD 9",
-   "lat": 9.8118,
-   "lon": 126.167
+   "lat": 9.814,
+   "lon": 126.1669
   },
   {
    "status": "sin fuente",
    "region": "PH-SIA",
    "spot": "JACKING HORSE",
-   "lat": 9.8136,
-   "lon": 126.1633
+   "lat": 9.8154,
+   "lon": 126.1646
   },
   {
-   "km": 0.28,
+   "km": 0.0,
    "qid": "osm:node/5894267085",
    "label": "fuente de la semilla",
-   "wd_lat": 9.8151,
-   "wd_lon": 126.1654,
+   "wd_lat": 9.8148,
+   "wd_lon": 126.1655,
    "status": "ok",
    "region": "PH-SIA",
    "spot": "QUICKSILVER",
-   "lat": 9.8135,
-   "lon": 126.1634
+   "lat": 9.8148,
+   "lon": 126.1655
   },
   {
-   "km": 0.35,
+   "km": 0.12,
    "qid": "Q6206837",
-   "label": "Jobos Beach",
+   "label": "Playa de Jobos",
    "wd_lat": 18.51422,
    "wd_lon": -67.07574,
    "status": "ok",
    "region": "PR-NW",
    "spot": "JOBOS",
-   "lat": 18.5132,
-   "lon": -67.0789
+   "lat": 18.5148,
+   "lon": -67.0767
   },
   {
    "km": 0.23,
@@ -5984,28 +5935,28 @@
    "lon": -67.1621
   },
   {
-   "km": 0.67,
-   "qid": "geonames:4564126",
-   "label": "Domes Beach",
-   "wd_lat": 18.36411,
-   "wd_lon": -67.27018,
+   "km": 0.13,
+   "qid": "Q49320541",
+   "label": "Playa Domes",
+   "wd_lat": 18.36417,
+   "wd_lon": -67.27028,
    "status": "ok",
    "region": "PR-NW",
    "spot": "DOMES",
-   "lat": 18.3581,
-   "lon": -67.27
+   "lat": 18.3653,
+   "lon": -67.2702
   },
   {
-   "km": 0.2,
+   "km": 0.0,
    "qid": "osm:way/128565797",
    "label": "fuente de la semilla",
-   "wd_lat": 18.3485,
-   "wd_lon": -67.266,
+   "wd_lat": 18.3505,
+   "wd_lon": -67.2696,
    "status": "ok",
    "region": "PR-NW",
    "spot": "TRES PALMAS",
-   "lat": 18.35,
-   "lon": -67.2649
+   "lat": 18.3505,
+   "lon": -67.2696
   },
   {
    "km": 0.11,
@@ -6044,7 +5995,7 @@
    "lon": -8.949
   },
   {
-   "km": 0.88,
+   "km": 0.1,
    "qid": "geonames:11810990",
    "label": "Praia do Areal de Santa Bárbara",
    "wd_lat": 37.81768,
@@ -6052,8 +6003,8 @@
    "status": "ok",
    "region": "PT-AZO",
    "spot": "SANTA BÁRBARA",
-   "lat": 37.8215,
-   "lon": -25.5371
+   "lat": 37.8182,
+   "lon": -25.5449
   },
   {
    "km": 0.46,
@@ -6064,8 +6015,8 @@
    "status": "ok",
    "region": "PT-CEN",
    "spot": "CABEDELO",
-   "lat": 40.1319,
-   "lon": -8.8639
+   "lat": 40.14,
+   "lon": -8.8636
   },
   {
    "km": 0.18,
@@ -6104,7 +6055,7 @@
    "lon": -9.4277
   },
   {
-   "km": 0.55,
+   "km": 0.18,
    "qid": "geonames:10342431",
    "label": "Praia de Ribeira d'Ilhas",
    "wd_lat": 38.98767,
@@ -6112,11 +6063,11 @@
    "status": "ok",
    "region": "PT-ERI",
    "spot": "RIBEIRA D'ILHAS",
-   "lat": 38.9918,
-   "lon": -9.4231
+   "lat": 38.9891,
+   "lon": -9.4207
   },
   {
-   "km": 0.3,
+   "km": 0.11,
    "qid": "osm:way/876569604",
    "label": "Pedra Branca",
    "wd_lat": 38.97867,
@@ -6124,8 +6075,8 @@
    "status": "ok",
    "region": "PT-ERI",
    "spot": "PEDRA BRANCA",
-   "lat": 38.9763,
-   "lon": -9.4202
+   "lat": 38.9791,
+   "lon": -9.4229
   },
   {
    "km": 0.24,
@@ -6176,28 +6127,28 @@
    "lon": -9.2388
   },
   {
-   "km": 0.22,
-   "qid": "Q49355030",
-   "label": "Jardim do Mar",
-   "wd_lat": 32.73884,
-   "wd_lon": -17.21146,
+   "km": 0.11,
+   "qid": "geonames:2267365",
+   "label": "Ponta do Jardim do Mar",
+   "wd_lat": 32.73774,
+   "wd_lon": -17.21281,
    "status": "ok",
    "region": "PT-MAD",
    "spot": "JARDIM DO MAR",
-   "lat": 32.7405,
-   "lon": -17.2128
+   "lat": 32.7386,
+   "lon": -17.2133
   },
   {
-   "km": 0.43,
-   "qid": "Q18480375",
-   "label": "Padrão do Bom Jesus de Matosinhos",
-   "wd_lat": 41.18115,
-   "wd_lon": -8.69431,
+   "km": 0.09,
+   "qid": "Q49323934",
+   "label": "Praia de Matosinhos",
+   "wd_lat": 41.1765,
+   "wd_lon": -8.69305,
    "status": "ok",
    "region": "PT-NOR",
    "spot": "MATOSINHOS",
-   "lat": 41.1786,
-   "lon": -8.6981
+   "lat": 41.1763,
+   "lon": -8.6941
   },
   {
    "km": 0.4,
@@ -6212,16 +6163,16 @@
    "lon": -8.6496
   },
   {
-   "km": 0.13,
-   "qid": "geonames:2271197",
-   "label": "Baleal",
-   "wd_lat": 39.37529,
-   "wd_lon": -9.34069,
+   "km": 0.6,
+   "qid": "Q833967",
+   "label": "Baleal Adası",
+   "wd_lat": 39.37306,
+   "wd_lon": -9.33889,
    "status": "ok",
    "region": "PT-PEN",
    "spot": "BALEAL",
-   "lat": 39.3743,
-   "lon": -9.3415
+   "lat": 39.3677,
+   "lon": -9.3397
   },
   {
    "km": 0.22,
@@ -6248,16 +6199,16 @@
    "lon": -9.3619
   },
   {
-   "km": 0.4,
-   "qid": "Q10352581",
-   "label": "Praia da Consolação",
-   "wd_lat": 39.32717,
-   "wd_lon": -9.35985,
+   "km": 0.08,
+   "qid": "Q10283741",
+   "label": "Forte da Praia da Consolação",
+   "wd_lat": 39.32447,
+   "wd_lon": -9.36117,
    "status": "ok",
    "region": "PT-PEN",
    "spot": "CONSOLAÇÃO",
-   "lat": 39.3308,
-   "lon": -9.3595
+   "lat": 39.3244,
+   "lon": -9.3621
   },
   {
    "km": 0.1,
@@ -6272,16 +6223,16 @@
    "lon": -89.4409
   },
   {
-   "km": 0.76,
-   "qid": "Q134300530",
-   "label": "Ola Verde Sunzal",
-   "wd_lat": 13.49603,
-   "wd_lon": -89.3932,
+   "km": 0.18,
+   "qid": "geonames:3810487",
+   "label": "Playa El Sunzal",
+   "wd_lat": 13.4925,
+   "wd_lon": -89.39194,
    "status": "ok",
    "region": "SV-LIB",
    "spot": "SUNZAL",
-   "lat": 13.4937,
-   "lon": -89.3998
+   "lat": 13.4919,
+   "lon": -89.3904
   },
   {
    "km": 0.21,
@@ -6296,7 +6247,7 @@
    "lon": -89.385
   },
   {
-   "km": 2.91,
+   "km": 2.61,
    "qid": "Q112020487",
    "label": "Punta Roca Surf Resort",
    "wd_lat": 13.48572,
@@ -6304,8 +6255,8 @@
    "status": "revisado",
    "region": "SV-LIB",
    "spot": "PUNTA ROCA",
-   "lat": 13.4861,
-   "lon": -89.3226
+   "lat": 13.4821,
+   "lon": -89.3256
   },
   {
    "status": "sin fuente",
@@ -6531,19 +6482,19 @@
    "lon": -122.0265
   },
   {
-   "km": 0.3,
-   "qid": "geonames:5397178",
-   "label": "Soquel Point",
-   "wd_lat": 36.95412,
-   "wd_lon": -121.97579,
+   "km": 0.4,
+   "qid": "geonames:5383795",
+   "label": "Pleasure Point",
+   "wd_lat": 36.95773,
+   "wd_lon": -121.96885,
    "status": "ok",
    "region": "US-CA-SC",
    "spot": "PLEASURE POINT",
    "lat": 36.9546,
-   "lon": -121.9725
+   "lon": -121.971
   },
   {
-   "km": 1.32,
+   "km": 0.03,
    "qid": "Q5557204",
    "label": "Ghost Trees",
    "wd_lat": 36.5608,
@@ -6551,20 +6502,20 @@
    "status": "ok",
    "region": "US-CA-SC",
    "spot": "GHOST TREE",
-   "lat": 36.5671,
-   "lon": -121.9641
+   "lat": 36.5606,
+   "lon": -121.9518
   },
   {
-   "km": 0.31,
-   "qid": "geonames:5378821",
+   "km": 0.12,
+   "qid": "Q49322335",
    "label": "Oceanside City Beach",
-   "wd_lat": 33.19531,
-   "wd_lon": -117.38532,
+   "wd_lat": 33.19528,
+   "wd_lon": -117.38528,
    "status": "ok",
    "region": "US-CA-SD",
    "spot": "OCEANSIDE PIER",
-   "lat": 33.1974,
-   "lon": -117.3875
+   "lat": 33.1942,
+   "lon": -117.3852
   },
   {
    "km": 0.2,
@@ -6663,7 +6614,7 @@
    "lon": -80.6018
   },
   {
-   "km": 0.12,
+   "km": 0.29,
    "qid": "Q7442437",
    "label": "Sebastian Inlet",
    "wd_lat": 27.8603,
@@ -6671,20 +6622,20 @@
    "status": "ok",
    "region": "US-FL",
    "spot": "SEBASTIAN INLET",
-   "lat": 27.8611,
-   "lon": -80.4464
+   "lat": 27.8629,
+   "lon": -80.4473
   },
   {
-   "km": 0.26,
-   "qid": "geonames:5856193",
+   "km": 0.1,
+   "qid": "Q49379793",
    "label": "Honolii Cove",
-   "wd_lat": 19.7562,
-   "wd_lon": -155.09142,
+   "wd_lat": 19.75611,
+   "wd_lon": -155.09139,
    "status": "ok",
    "region": "US-HI-BIG",
    "spot": "HONOLI'I",
-   "lat": 19.7584,
-   "lon": -155.0905
+   "lat": 19.7555,
+   "lon": -155.0907
   },
   {
    "status": "sin fuente",
@@ -6694,7 +6645,7 @@
    "lon": -155.977
   },
   {
-   "km": 0.34,
+   "km": 0.15,
    "qid": "Q4495384",
    "label": "Hanalei",
    "wd_lat": 22.21778,
@@ -6702,8 +6653,8 @@
    "status": "ok",
    "region": "US-HI-KAU",
    "spot": "HANALEI",
-   "lat": 22.2199,
-   "lon": -159.4984
+   "lat": 22.2169,
+   "lon": -159.5019
   },
   {
    "km": 0.07,
@@ -6725,7 +6676,7 @@
    "lon": -159.4756
   },
   {
-   "km": 4.02,
+   "km": 3.94,
    "qid": "Q1684289",
    "label": "Jaws",
    "wd_lat": 20.93861,
@@ -6733,8 +6684,8 @@
    "status": "revisado",
    "region": "US-HI-MAU",
    "spot": "JAWS",
-   "lat": 20.947,
-   "lon": -156.2985
+   "lat": 20.9437,
+   "lon": -156.2984
   },
   {
    "km": 0.32,
@@ -6749,7 +6700,7 @@
    "lon": -156.3559
   },
   {
-   "km": 0.17,
+   "km": 0.41,
    "qid": "Q3140164",
    "label": "Honolua Bay",
    "wd_lat": 21.01449,
@@ -6757,20 +6708,20 @@
    "status": "ok",
    "region": "US-HI-MAU",
    "spot": "HONOLUA",
-   "lat": 21.0131,
-   "lon": -156.6388
+   "lat": 21.018,
+   "lon": -156.6408
   },
   {
    "km": 0.59,
-   "qid": "Q5641466",
-   "label": "Haleiwa Fighter Strip",
-   "wd_lat": 21.6044,
-   "wd_lon": -158.102,
+   "qid": "geonames:5855420",
+   "label": "Hale‘iwa",
+   "wd_lat": 21.59284,
+   "wd_lon": -158.10339,
    "status": "ok",
    "region": "US-HI-OAN",
    "spot": "HALEIWA",
-   "lat": 21.6027,
-   "lon": -158.1074
+   "lat": 21.5953,
+   "lon": -158.1084
   },
   {
    "km": 0.08,
@@ -6800,11 +6751,11 @@
    "status": "sin fuente",
    "region": "US-HI-OAN",
    "spot": "BACKDOOR",
-   "lat": 21.6653,
-   "lon": -158.0516
+   "lat": 21.665,
+   "lon": -158.0528
   },
   {
-   "km": 0.53,
+   "km": 0.1,
    "qid": "osm:node/7094739485",
    "label": "Off the wall",
    "wd_lat": 21.66336,
@@ -6812,35 +6763,35 @@
    "status": "ok",
    "region": "US-HI-OAN",
    "spot": "OFF THE WALL",
-   "lat": 21.6669,
-   "lon": -158.0496
+   "lat": 21.6635,
+   "lon": -158.054
   },
   {
-   "km": 0.26,
-   "qid": "geonames:5853785",
-   "label": "Sunset Point",
-   "wd_lat": 21.68094,
-   "wd_lon": -158.03788,
+   "km": 0.32,
+   "qid": "Q49567787",
+   "label": "Sunset Beach Support Park",
+   "wd_lat": 21.67778,
+   "wd_lon": -158.04306,
    "status": "ok",
    "region": "US-HI-OAN",
    "spot": "SUNSET",
-   "lat": 21.679,
-   "lon": -158.0392
+   "lat": 21.6795,
+   "lon": -158.0406
   },
   {
-   "km": 1.69,
+   "km": 1.24,
    "qid": "geonames:7302670",
    "label": "Velzyland",
    "wd_lat": 21.67569,
    "wd_lon": -158.0397,
-   "status": "revisado",
+   "status": "ok",
    "region": "US-HI-OAN",
    "spot": "VELZYLAND",
-   "lat": 21.6874,
-   "lon": -158.0293
+   "lat": 21.6848,
+   "lon": -158.0328
   },
   {
-   "km": 0.87,
+   "km": 1.32,
    "qid": "geonames:11103866",
    "label": "Ala Moana",
    "wd_lat": 21.29201,
@@ -6848,11 +6799,11 @@
    "status": "ok",
    "region": "US-HI-OAS",
    "spot": "ALA MOANA BOWLS",
-   "lat": 21.2894,
-   "lon": -157.8507
+   "lat": 21.2802,
+   "lon": -157.8436
   },
   {
-   "km": 0.73,
+   "km": 0.32,
    "qid": "Q49547252",
    "label": "Queens Surf Beach Park",
    "wd_lat": 21.27083,
@@ -6860,8 +6811,8 @@
    "status": "ok",
    "region": "US-HI-OAS",
    "spot": "QUEENS",
-   "lat": 21.265,
-   "lon": -157.8225
+   "lat": 21.2737,
+   "lon": -157.8263
   },
   {
    "km": 0.16,
@@ -6895,7 +6846,7 @@
    "lon": -71.2971
   },
   {
-   "km": 0.2,
+   "km": 0.37,
    "qid": "geonames:5115091",
    "label": "Ditch Plains",
    "wd_lat": 41.04066,
@@ -6903,23 +6854,23 @@
    "status": "ok",
    "region": "US-NE",
    "spot": "DITCH PLAINS",
-   "lat": 41.0389,
-   "lon": -71.9178
+   "lat": 41.0391,
+   "lon": -71.914
   },
   {
-   "km": 0.26,
-   "qid": "Q7354964",
-   "label": "Rockaways' Playland",
-   "wd_lat": 40.58389,
-   "wd_lon": -73.81861,
+   "km": 0.4,
+   "qid": "Q62289",
+   "label": "Rockaway Beach",
+   "wd_lat": 40.58671,
+   "wd_lon": -73.81147,
    "status": "ok",
    "region": "US-NE",
    "spot": "ROCKAWAY",
-   "lat": 40.5822,
-   "lon": -73.8164
+   "lat": 40.5831,
+   "lon": -73.8119
   },
   {
-   "km": 0.22,
+   "km": 0.13,
    "qid": "Q6747006",
    "label": "Manasquan Inlet",
    "wd_lat": 40.1025,
@@ -6927,8 +6878,8 @@
    "status": "ok",
    "region": "US-NE",
    "spot": "MANASQUAN INLET",
-   "lat": 40.1021,
-   "lon": -74.0325
+   "lat": 40.1033,
+   "lon": -74.0339
   },
   {
    "km": 0.39,
@@ -6967,7 +6918,7 @@
    "lon": -124.0653
   },
   {
-   "km": 0.55,
+   "km": 0.87,
    "qid": "Q2508238",
    "label": "Cape Hatteras Lighthouse",
    "wd_lat": 35.25056,
@@ -6975,8 +6926,8 @@
    "status": "ok",
    "region": "US-SE",
    "spot": "HATTERAS LIGHT",
-   "lat": 35.2485,
-   "lon": -75.5233
+   "lat": 35.2544,
+   "lon": -75.5204
   },
   {
    "km": 0.32,
@@ -6991,7 +6942,7 @@
    "lon": -77.7929
   },
   {
-   "km": 0.77,
+   "km": 0.2,
    "qid": "Q111859688",
    "label": "Shaloha Guesthouse on Supertubes",
    "wd_lat": -34.03208,
@@ -6999,8 +6950,8 @@
    "status": "ok",
    "region": "ZA-EC-JB",
    "spot": "SUPERTUBES",
-   "lat": -34.039,
-   "lon": 24.932
+   "lat": -34.0326,
+   "lon": 24.9343
   },
   {
    "status": "sin fuente",
@@ -7022,16 +6973,16 @@
    "lon": 24.838
   },
   {
-   "km": 0.32,
-   "qid": "Q1963705",
+   "km": 0.11,
+   "qid": "geonames:972180",
    "label": "Nahoon Point",
-   "wd_lat": -32.99701,
-   "wd_lon": 27.95082,
+   "wd_lat": -32.99781,
+   "wd_lon": 27.95323,
    "status": "ok",
    "region": "ZA-EC-PE",
    "spot": "NAHOON REEF",
-   "lat": -32.9942,
-   "lon": 27.9502
+   "lat": -32.9971,
+   "lon": 27.954
   },
   {
    "km": 0.27,
@@ -7058,28 +7009,28 @@
    "lon": 31.0402
   },
   {
-   "km": 0.2,
+   "km": 0.0,
    "qid": "Q31511084",
-   "label": "Cave Rock",
-   "wd_lat": -29.87998,
-   "wd_lon": 31.05608,
+   "label": "fuente de la semilla",
+   "wd_lat": -29.9316,
+   "wd_lon": 31.0139,
    "status": "ok",
    "region": "ZA-KZN-DBN",
    "spot": "CAVE ROCK",
-   "lat": -29.8811,
-   "lon": 31.0577
+   "lat": -29.9316,
+   "lon": 31.0139
   },
   {
-   "km": 0.5,
-   "qid": "geonames:1021361",
-   "label": "Ballito Bay",
-   "wd_lat": -29.54249,
-   "wd_lon": 31.22058,
+   "km": 0.68,
+   "qid": "Q805287",
+   "label": "Ballito",
+   "wd_lat": -29.53333,
+   "wd_lon": 31.21667,
    "status": "ok",
    "region": "ZA-KZN-N",
    "spot": "BALLITO",
-   "lat": -29.5382,
-   "lon": 31.222
+   "lat": -29.5322,
+   "lon": 31.2236
   },
   {
    "km": 0.23,
@@ -7116,8 +7067,8 @@
    "status": "sin fuente",
    "region": "ZA-WC-CPT",
    "spot": "SUNSET REEF",
-   "lat": -34.121,
-   "lon": 18.328
+   "lat": -34.1267,
+   "lon": 18.3322
   },
   {
    "km": 0.25,
@@ -7156,19 +7107,19 @@
    "lon": 22.1586
   },
   {
-   "km": 0.64,
-   "qid": "Q2093759",
+   "km": 0.29,
+   "qid": "Q32039601",
    "label": "Victoria Bay",
-   "wd_lat": -34.0,
-   "wd_lon": 22.55,
+   "wd_lat": -34.0045,
+   "wd_lon": 22.54873,
    "status": "ok",
    "region": "ZA-WC-GR",
    "spot": "VICTORIA BAY",
-   "lat": -33.998,
-   "lon": 22.5565
+   "lat": -34.0071,
+   "lon": 22.5492
   },
   {
-   "km": 0.83,
+   "km": 0.38,
    "qid": "Q24233920",
    "label": "Elands Bay Cave",
    "wd_lat": -32.31764,
@@ -7176,24 +7127,24 @@
    "status": "ok",
    "region": "ZA-WC-WCO",
    "spot": "ELANDS BAY",
-   "lat": -32.3161,
-   "lon": 18.3266
+   "lat": -32.3174,
+   "lon": 18.322
   }
  ],
- "season_cleared": 89,
+ "season_cleared": 90,
  "zones": [
   {
-   "region": "ZA-WC-WCO",
+   "region": "AU-VIC-W",
    "flagged": 4,
-   "spots": 6,
+   "spots": 9,
    "points": 0,
-   "facing": 325,
-   "swell": 231,
+   "facing": 114,
+   "swell": 221,
    "names": [
-    "MELKBOS",
-    "LAMBERTS BAY",
-    "JACOBSBAAI",
-    "YZERFONTEIN"
+    "WYE RIVER",
+    "KENNETT RIVER",
+    "PORT FAIRY EAST",
+    "BRIDGEWATER BAY"
    ]
   }
  ],
@@ -7209,21 +7160,21 @@
    "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 85° de hacia donde mira, 13 km): 1.1 m de media contra 1.6 m en la de enfrente, a 31 km (ninguna a menos de 25 km)",
    "km": 12.8,
    "front": null,
-   "h": 1.12,
+   "h": 1.11,
    "hf": null
   },
   {
-   "region": "AU-NSW-SC",
-   "spot": "PAMBULA BEACH",
+   "region": "AU-NSW-MN",
+   "spot": "CRESCENT HEAD",
    "cell": [
-    -37.0,
-    150.0
+    -31.25,
+    153.0
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 88° de hacia donde mira, 9 km): 0.9 m de media contra 1.5 m en la de enfrente, a 29 km (ninguna a menos de 25 km)",
-   "km": 8.7,
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 116° de hacia donde mira, 7 km): 1.1 m de media contra 1.6 m en la de enfrente, a 26 km (ninguna a menos de 25 km)",
+   "km": 7.3,
    "front": null,
-   "h": 0.95,
+   "h": 1.14,
    "hf": null
   },
   {
@@ -7248,10 +7199,10 @@
     153.5
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 132° de hacia donde mira, 9 km): 1.0 m de media contra 1.6 m en la de enfrente, a 29 km (ninguna a menos de 25 km)",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 132° de hacia donde mira, 9 km): 1.0 m de media contra 1.5 m en la de enfrente, a 29 km (ninguna a menos de 25 km)",
    "km": 8.9,
    "front": null,
-   "h": 1.01,
+   "h": 1.0,
    "hf": null
   },
   {
@@ -7262,10 +7213,10 @@
     153.5
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 170° de hacia donde mira, 9 km): 1.0 m de media contra 1.6 m en la de enfrente, a 30 km (ninguna a menos de 25 km)",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 170° de hacia donde mira, 9 km): 1.0 m de media contra 1.5 m en la de enfrente, a 30 km (ninguna a menos de 25 km)",
    "km": 8.8,
    "front": null,
-   "h": 1.01,
+   "h": 1.0,
    "hf": null
   },
   {
@@ -7290,42 +7241,25 @@
     144.75
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 135° de hacia donde mira, 13 km): 0.7 m de media contra 1.4 m en la de enfrente, a 25 km (ninguna a menos de 25 km)",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 135° de hacia donde mira, 13 km): 0.7 m de media contra 1.3 m en la de enfrente, a 25 km (ninguna a menos de 25 km)",
    "km": 13.5,
    "front": null,
-   "h": 0.72,
+   "h": 0.7,
    "hf": null
   },
   {
-   "region": "AU-WA-MR",
-   "spot": "THREE BEARS",
+   "region": "AU-VIC-SC",
+   "spot": "COLLENDINA",
    "cell": [
-    -33.5,
-    115.0
+    -38.25,
+    144.75
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 104° de hacia donde mira, 9 km): 1.5 m de media contra 2.1 m en la de enfrente, a 26 km (ninguna a menos de 25 km)",
-   "km": 9.2,
+   "why": "la API lo contesta desde una celda detrás de la playa (a 105° de hacia donde mira, 18 km)",
+   "km": 18.0,
    "front": null,
-   "h": 1.48,
+   "h": 0.7,
    "hf": null
-  },
-  {
-   "region": "AU-WA-MR",
-   "spot": "WINDMILLS",
-   "cell": [
-    -33.5,
-    115.0
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 91° de hacia donde mira, 5 km): 1.5 m de media contra 2.1 m en la de enfrente",
-   "km": 5.0,
-   "front": [
-    -33.5,
-    114.75
-   ],
-   "h": 1.48,
-   "hf": 2.13
   },
   {
    "region": "BR-NE-CE",
@@ -7361,66 +7295,35 @@
     -8.5,
     -34.8333
    ],
-   "h": 1.11,
-   "hf": 1.11
-  },
-  {
-   "region": "BR-NE-RN",
-   "spot": "PRAIA DO MEIO",
-   "cell": [
-    -5.8333,
-    -35.1667
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 82° de hacia donde mira, 7 km): 0.8 m de media contra 1.1 m en la de enfrente",
-   "km": 6.6,
-   "front": [
-    -5.8333,
-    -35.0
-   ],
-   "h": 0.77,
+   "h": 1.12,
    "hf": 1.12
   },
   {
+   "region": "BR-SC-NOR",
+   "spot": "MARISCAL",
+   "cell": [
+    -27.25,
+    -48.5
+   ],
+   "wave": null,
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 75° de hacia donde mira, 9 km): 0.6 m de media contra 1.4 m en la de enfrente, a 26 km (ninguna a menos de 25 km)",
+   "km": 8.9,
+   "front": null,
+   "h": 0.62,
+   "hf": null
+  },
+  {
    "region": "BR-SP",
-   "spot": "ILHA COMPRIDA",
+   "spot": "MARANDUBA",
    "cell": [
-    -24.75,
-    -47.5
+    -23.75,
+    -45.25
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 144° de hacia donde mira, 7 km): 0.7 m de media contra 1.1 m en la de enfrente, a 63 km (ninguna a menos de 25 km)",
-   "km": 7.1,
+   "why": "la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 23 km)",
+   "km": 23.4,
    "front": null,
-   "h": 0.73,
-   "hf": null
-  },
-  {
-   "region": "CA-BC-VI",
-   "spot": "SCHOONER COVE",
-   "cell": [
-    49.0334,
-    -125.724
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 105° de hacia donde mira, 8 km)",
-   "km": 7.8,
-   "front": null,
-   "h": 3.25,
-   "hf": null
-  },
-  {
-   "region": "CL-CEN",
-   "spot": "PAPUDO",
-   "cell": [
-    -32.5,
-    -71.5
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 101° de hacia donde mira, 5 km): 1.4 m de media contra 2.0 m en la de enfrente, a 40 km (ninguna a menos de 25 km)",
-   "km": 4.8,
-   "front": null,
-   "h": 1.4,
+   "h": 0.79,
    "hf": null
   },
   {
@@ -7440,8 +7343,8 @@
     8.1667,
     -83.3333
    ],
-   "h": 1.13,
-   "hf": 1.2
+   "h": 1.1,
+   "hf": 1.17
   },
   {
    "region": "ES-GAL",
@@ -7457,8 +7360,8 @@
     43.5,
     -8.5
    ],
-   "h": 1.91,
-   "hf": 2.05
+   "h": 1.95,
+   "hf": 2.09
   },
   {
    "region": "FR-PBA",
@@ -7474,8 +7377,8 @@
     43.5,
     -1.6667
    ],
-   "h": 1.49,
-   "hf": 1.37
+   "h": 1.57,
+   "hf": 1.44
   },
   {
    "region": "FR-VEN",
@@ -7485,14 +7388,14 @@
     -1.1667
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 79° de hacia donde mira, 10 km): 0.4 m de media contra 1.7 m en la de enfrente",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 79° de hacia donde mira, 10 km): 0.4 m de media contra 1.8 m en la de enfrente",
    "km": 10.0,
    "front": [
     45.6667,
     -1.3333
    ],
-   "h": 0.35,
-   "hf": 1.7
+   "h": 0.36,
+   "hf": 1.77
   },
   {
    "region": "GB-CON",
@@ -7508,22 +7411,8 @@
     50.5,
     -5.1667
    ],
-   "h": 1.53,
-   "hf": 1.58
-  },
-  {
-   "region": "GB-NIR",
-   "spot": "WEST STRAND",
-   "cell": [
-    55.2197,
-    -6.6733
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 102° de hacia donde mira, 2 km): 0.8 m de media contra 1.4 m en la de enfrente, a 45 km (ninguna a menos de 25 km)",
-   "km": 1.7,
-   "front": null,
-   "h": 0.79,
-   "hf": null
+   "h": 1.55,
+   "hf": 1.61
   },
   {
    "region": "GB-WAL",
@@ -7536,42 +7425,22 @@
    "why": "la API lo contesta desde una celda detrás de la playa (a 78° de hacia donde mira, 16 km)",
    "km": 15.7,
    "front": null,
-   "h": 0.95,
+   "h": 0.96,
    "hf": null
   },
   {
-   "region": "ID-JAV-W",
-   "spot": "CIMAJA",
+   "region": "ID-LOM",
+   "spot": "SELONG BELANAK",
    "cell": [
-    -7.0,
-    106.3333
+    -9.0,
+    116.1667
    ],
    "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 83° de hacia donde mira, 23 km)",
-   "km": 23.0,
-   "front": [
-    -7.1667,
-    106.3333
-   ],
-   "h": 1.01,
-   "hf": 1.18
-  },
-  {
-   "region": "ID-JAV-W",
-   "spot": "KARANG HAWU",
-   "cell": [
-    -7.0,
-    106.3333
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 86° de hacia donde mira, 23 km)",
-   "km": 22.8,
-   "front": [
-    -7.1667,
-    106.3333
-   ],
-   "h": 1.01,
-   "hf": 1.18
+   "why": "la API lo contesta desde una celda detrás de la playa (a 87° de hacia donde mira, 14 km)",
+   "km": 14.2,
+   "front": null,
+   "h": 1.34,
+   "hf": null
   },
   {
    "region": "ID-MEN",
@@ -7602,7 +7471,7 @@
     122.6667
    ],
    "h": 0.81,
-   "hf": 0.84
+   "hf": 0.85
   },
   {
    "region": "ID-ROT",
@@ -7619,21 +7488,7 @@
     122.6667
    ],
    "h": 0.81,
-   "hf": 0.84
-  },
-  {
-   "region": "IE-NW",
-   "spot": "TULLAN STRAND",
-   "cell": [
-    54.5,
-    -8.5
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 77° de hacia donde mira, 13 km)",
-   "km": 12.8,
-   "front": null,
-   "h": 0.54,
-   "hf": null
+   "hf": 0.85
   },
   {
    "region": "LK-E",
@@ -7646,7 +7501,7 @@
    "why": "la API lo contesta desde una celda detrás de la playa (a 92° de hacia donde mira, 18 km)",
    "km": 17.9,
    "front": null,
-   "h": 1.24,
+   "h": 1.25,
    "hf": null
   },
   {
@@ -7660,7 +7515,7 @@
    "why": "la API lo contesta desde una celda detrás de la playa (a 77° de hacia donde mira, 18 km)",
    "km": 18.1,
    "front": null,
-   "h": 1.24,
+   "h": 1.25,
    "hf": null
   },
   {
@@ -7677,8 +7532,8 @@
     6.8333,
     82.0
    ],
-   "h": 1.24,
-   "hf": 1.24
+   "h": 1.25,
+   "hf": 1.25
   },
   {
    "region": "MX-CAR",
@@ -7688,14 +7543,14 @@
     -87.0
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 84° de hacia donde mira, 8 km): 0.6 m de media contra 0.9 m en la de enfrente",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 84° de hacia donde mira, 8 km): 0.6 m de media contra 0.8 m en la de enfrente",
    "km": 8.4,
    "front": [
     20.6667,
     -86.8333
    ],
-   "h": 0.58,
-   "hf": 0.86
+   "h": 0.57,
+   "hf": 0.84
   },
   {
    "region": "MX-OAX",
@@ -7711,8 +7566,8 @@
     15.5,
     -96.5
    ],
-   "h": 1.09,
-   "hf": 1.18
+   "h": 1.06,
+   "hf": 1.19
   },
   {
    "region": "MX-OAX",
@@ -7728,8 +7583,22 @@
     15.5,
     -96.5
    ],
-   "h": 1.09,
-   "hf": 1.18
+   "h": 1.06,
+   "hf": 1.19
+  },
+  {
+   "region": "NZ-OTA",
+   "spot": "ORETI BEACH",
+   "cell": [
+    -46.5,
+    168.25
+   ],
+   "wave": null,
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 88° de hacia donde mira, 7 km): 0.5 m de media contra 2.5 m en la de enfrente, a 56 km (ninguna a menos de 25 km)",
+   "km": 7.0,
+   "front": null,
+   "h": 0.47,
+   "hf": null
   },
   {
    "region": "NZ-WEL",
@@ -7745,7 +7614,7 @@
     -41.0,
     174.75
    ],
-   "h": 1.28,
+   "h": 1.32,
    "hf": 1.15
   },
   {
@@ -7762,25 +7631,8 @@
     37.3333,
     -9.0
    ],
-   "h": 2.11,
-   "hf": 2.42
-  },
-  {
-   "region": "US-CA-LA",
-   "spot": "POINT DUME",
-   "cell": [
-    33.9895,
-    -118.764
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 76° de hacia donde mira, 4 km): 1.0 m de media contra 1.4 m en la de enfrente",
-   "km": 4.2,
-   "front": [
-    33.9192,
-    -118.8404
-   ],
-   "h": 0.99,
-   "hf": 1.42
+   "h": 2.18,
+   "hf": 2.49
   },
   {
    "region": "US-CA-NOR",
@@ -7796,25 +7648,8 @@
     38.9807,
     -123.7808
    ],
-   "h": 3.54,
-   "hf": 3.64
-  },
-  {
-   "region": "US-CA-NOR",
-   "spot": "AGATE BEACH",
-   "cell": [
-    41.0896,
-    -124.2
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 147° de hacia donde mira, 7 km)",
-   "km": 6.9,
-   "front": [
-    41.1599,
-    -124.2489
-   ],
-   "h": 3.6,
-   "hf": 3.76
+   "h": 3.51,
+   "hf": 3.61
   },
   {
    "region": "US-CA-SF",
@@ -7824,14 +7659,14 @@
     -122.4531
    ],
    "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 113° de hacia donde mira, 5 km): 0.3 m de media contra 2.9 m en la de enfrente",
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 113° de hacia donde mira, 5 km): 0.3 m de media contra 2.8 m en la de enfrente",
    "km": 5.5,
    "front": [
     37.7856,
     -122.6506
    ],
    "h": 0.33,
-   "hf": 2.88
+   "hf": 2.84
   },
   {
    "region": "US-CA-SF",
@@ -7847,25 +7682,8 @@
     37.645,
     -122.5634
    ],
-   "h": 2.98,
-   "hf": 2.98
-  },
-  {
-   "region": "US-CA-SF",
-   "spot": "MIRADA SURF",
-   "cell": [
-    37.5747,
-    -122.52
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 127° de hacia donde mira, 8 km)",
-   "km": 7.8,
-   "front": [
-    37.5044,
-    -122.5965
-   ],
-   "h": 2.94,
-   "hf": 3.4
+   "h": 2.95,
+   "hf": 2.95
   },
   {
    "region": "US-CA-SF",
@@ -7881,25 +7699,8 @@
     37.8559,
     -122.6944
    ],
-   "h": 2.36,
-   "hf": 2.67
-  },
-  {
-   "region": "US-NE",
-   "spot": "WALLIS SANDS",
-   "cell": [
-    43.058,
-    -70.7143
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 102° de hacia donde mira, 4 km): 0.4 m de media contra 0.6 m en la de enfrente",
-   "km": 3.8,
-   "front": [
-    43.058,
-    -70.5804
-   ],
-   "h": 0.43,
-   "hf": 0.64
+   "h": 2.33,
+   "hf": 2.64
   },
   {
    "region": "US-NE",
@@ -7909,48 +7710,14 @@
     -71.5086
    ],
    "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 121° de hacia donde mira, 8 km)",
+   "why": "la API lo contesta desde una celda detrás de la playa (a 117° de hacia donde mira, 8 km)",
    "km": 8.1,
    "front": [
     41.4411,
     -71.3525
    ],
-   "h": 0.61,
-   "hf": 0.65
-  },
-  {
-   "region": "US-NE",
-   "spot": "ROCKAWAY",
-   "cell": [
-    40.5975,
-    -73.8331
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 148° de hacia donde mira, 2 km): 0.4 m de media contra 0.6 m en la de enfrente",
-   "km": 2.4,
-   "front": [
-    40.5272,
-    -73.8559
-   ],
-   "h": 0.42,
-   "hf": 0.65
-  },
-  {
-   "region": "US-PNW",
-   "spot": "GRAYLAND",
-   "cell": [
-    46.8541,
-    -124.0777
-   ],
-   "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 106° de hacia donde mira, 7 km)",
-   "km": 6.8,
-   "front": [
-    46.7838,
-    -124.168
-   ],
-   "h": 1.73,
-   "hf": 1.73
+   "h": 0.58,
+   "hf": 0.62
   },
   {
    "region": "US-PNW",
@@ -7966,8 +7733,8 @@
     44.7452,
     -124.1667
    ],
-   "h": 3.47,
-   "hf": 3.74
+   "h": 3.44,
+   "hf": 3.71
   },
   {
    "region": "US-PNW",
@@ -7983,8 +7750,25 @@
     44.7452,
     -124.1667
    ],
-   "h": 3.47,
-   "hf": 3.74
+   "h": 3.44,
+   "hf": 3.71
+  },
+  {
+   "region": "US-SC-GA",
+   "spot": "ST SIMONS PIER",
+   "cell": [
+    31.1667,
+    -81.3333
+   ],
+   "wave": null,
+   "why": "la API lo contesta desde su celda, que queda detrás de la playa (a 120° de hacia donde mira, 7 km): 0.6 m de media contra 0.8 m en la de enfrente",
+   "km": 6.6,
+   "front": [
+    31.0,
+    -81.3333
+   ],
+   "h": 0.55,
+   "hf": 0.8
   },
   {
    "region": "ZA-EC-PE",
@@ -7997,7 +7781,7 @@
    "why": "la API lo contesta desde una celda detrás de la playa (a 85° de hacia donde mira, 20 km)",
    "km": 19.6,
    "front": null,
-   "h": 1.99,
+   "h": 2.0,
    "hf": null
   },
   {
@@ -8008,19 +7792,18 @@
     30.75
    ],
    "wave": null,
-   "why": "la API lo contesta desde una celda detrás de la playa (a 80° de hacia donde mira, 24 km)",
-   "km": 23.7,
+   "why": "la API lo contesta desde una celda detrás de la playa (a 100° de hacia donde mira, 24 km)",
+   "km": 24.5,
    "front": [
     -30.25,
     31.0
    ],
-   "h": 2.04,
-   "hf": 2.04
+   "h": 2.02,
+   "hf": 2.02
   }
  ],
- "flagship_old": true,
  "open_meteo": {
   "requests": 46,
-  "calls": 5045
+  "calls": 5002
  }
 }
