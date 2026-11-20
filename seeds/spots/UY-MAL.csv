@@ -23,7 +23,7 @@ PARADA 30,-34.9246,-54.8801,B,V,local,nosnap facing=158 wave=-35.0;-54.75,la are
 LA BOCA,-34.9195,-54.8664,B,V,local,nosnap facing=145,v1 (spots.json 2026-10)
 LA MARTINEZ,-34.9168,-54.8625,B,V,local,nosnap facing=150,La Barra; la playita entre la boca y La Posta del otro lado de la salida (el usuario). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 80 m mar adentro
 LA POSTA,-34.9167,-54.8586,B,V,local,nosnap facing=181,v1 (spots.json 2026-10)
-LA BOYA,-34.9167,-54.8493,P,V,local,nosnap facing=137,v1 (spots.json 2026-10)
+LA BOYA,-34.9187,-54.8543,P,V,local,nosnap facing=181 swell=137 checked,"izquierda en las piedras del lado oeste de Punta Montoya, entre la marca del usuario y el pin de Lineup (el usuario 2026-11-20); mira al S y anda con el swell del SE que dobla la punta. La v1 de 2026-10 lo ponía 510 m al ENE en la playa de Montoya, mirando a 137"
 MONTOYA,-34.9136,-54.8439,B,V,local,nosnap facing=144,v1 (spots.json 2026-10)
 MANANTIALES,-34.9088,-54.8237,B,V,local,nosnap facing=167,la playa frente al pueblo entre la punta (BIKINI) y Terrazas (el usuario). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 750 m al O en la arena seca
 TERRAZAS,-34.9079,-54.8222,B,K,osm:way/257089318,nosnap facing=173,Manantiales
