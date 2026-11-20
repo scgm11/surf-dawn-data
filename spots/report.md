@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-215 regiones, 2526 picos. Errores: 0. Avisos: 45.
+215 regiones, 2526 picos. Errores: 0. Avisos: 44.
 
 ## Avisos
 
@@ -27,7 +27,6 @@
 - US-NY-NJ/ISLAND BEACH: no direction open to the sea, moved 508 m from the seed (facing 256 -> 98)
 - US-NY-NJ/BEACH HAVEN: no direction open to the sea, moved 411 m from the seed (facing 276 -> 124)
 - CA-BC-VI/MACKENZIE BEACH: no direction open to the sea, moved 500 m from the seed (facing 222 -> 180)
-- CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1903 m from the seed (facing 111 -> 217)
 - CA-NS/MARTINIQUE BEACH: no direction open to the sea, moved 980 m from the seed (facing 78 -> 166)
 - AU-NSW-SYD/WHALE BEACH: no direction open to the sea, moved 687 m from the seed (facing 100 -> 100)
 - AU-WA-PER/TWO ROCKS: no direction open to the sea, moved 469 m from the seed (facing 254 -> 235)
@@ -55,7 +54,7 @@
 | Región | Picos | Bytes | Olas | Viento | Puertos | Ajuste medio a la costa | Punto de olas |
 |---|---|---|---|---|---|---|---|
 | UY-CAN | 16 | 1000 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
-| UY-MAL | 31 | 1871 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
+| UY-MAL | 31 | 1870 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | UY-ROC | 28 | 1560 | ncep_gfswave025 | gfs_seamless | 1 | — | 8 |
 | AR-MDP | 22 | 1266 | ncep_gfswave025 | gfs_seamless | 3 | 557 m | 0 |
 | AR-BAN | 16 | 1131 | ncep_gfswave025 | gfs_seamless | 2 | 587 m | 8 |
@@ -117,7 +116,7 @@
 | BS-ALL | 1 | 237 | ncep_gfswave016 | gfs_seamless | 1 | — | 1 |
 | TT-ALL | 4 | 466 | ncep_gfswave016 | gfs_seamless | 2 | 1023 m | 0 |
 | US-CA-SD | 38 | 2130 | ncep_gfswave016 | gfs_seamless | 3 | 189 m | 0 |
-| US-CA-OC | 31 | 1794 | ecmwf_wam | gfs_seamless | 3 | 213 m | 1 |
+| US-CA-OC | 31 | 1794 | ecmwf_wam | gfs_seamless | 3 | 203 m | 1 |
 | US-CA-LA | 23 | 1516 | ecmwf_wam | gfs_seamless | 3 | 157 m | 1 |
 | US-CA-SB | 27 | 1770 | ecmwf_wam | gfs_seamless | 3 | 221 m | 3 |
 | US-CA-CEN | 16 | 1198 | ecmwf_wam | gfs_seamless | 3 | 349 m | 5 |
@@ -139,7 +138,7 @@
 | US-HI-KAU | 21 | 1271 | ecmwf_wam | gfs_seamless | 2 | 215 m | 1 |
 | US-HI-BIG | 15 | 1068 | ecmwf_wam | gfs_seamless | 3 | 165 m | 0 |
 | CA-BC-VI | 14 | 1021 | ecmwf_wam | gfs_seamless | 3 | 181 m | 0 |
-| CA-NS | 11 | 800 | ncep_gfswave016 | gfs_seamless | 3 | 313 m | 0 |
+| CA-NS | 11 | 802 | ncep_gfswave016 | gfs_seamless | 3 | 107 m | 0 |
 | AU-QLD-SC | 27 | 1632 | ncep_gfswave025 | gfs_seamless | 3 | 243 m | 0 |
 | AU-QLD-GC | 24 | 1533 | ncep_gfswave025 | gfs_seamless | 2 | 201 m | 5 |
 | AU-NSW-NR | 26 | 1710 | ncep_gfswave025 | gfs_seamless | 3 | 318 m | 5 |
@@ -250,7 +249,7 @@
 | PT-LIS | 15 | 887 | ncep_gfswave016 | gfs_seamless | 1 | 373 m | 0 |
 | PT-ALG | 18 | 1100 | ncep_gfswave016 | gfs_seamless | 3 | 152 m | 0 |
 | PT-AZO | 8 | 675 | ncep_gfswave016 | gfs_seamless | 3 | — | 3 |
-| PT-MAD | 8 | 648 | ncep_gfswave016 | gfs_seamless | 1 | 355 m | 4 |
+| PT-MAD | 8 | 648 | ncep_gfswave016 | gfs_seamless | 1 | 302 m | 4 |
 | GB-CON | 28 | 1696 | ncep_gfswave016 | gfs_seamless | 3 | 147 m | 10 |
 | GB-DEV | 9 | 608 | ncep_gfswave016 | gfs_seamless | 2 | 295 m | 0 |
 | GB-SOU | 3 | 414 | ncep_gfswave016 | gfs_seamless | 2 | 101 m | 1 |

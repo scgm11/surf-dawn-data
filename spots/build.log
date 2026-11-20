@@ -1,5 +1,5 @@
 UY-CAN      16 spots  1000 bytes  v7cd185
-UY-MAL      31 spots  1871 bytes  v1b209e
+UY-MAL      31 spots  1870 bytes  v2a3206
 UY-ROC      28 spots  1560 bytes  v00e5d0
 AR-MDP      22 spots  1266 bytes  va97550
 AR-BAN      16 spots  1131 bytes  vdbd205
@@ -61,7 +61,7 @@ MQ-ALL       2 spots   270 bytes  v88437a
 BS-ALL       1 spots   237 bytes  vd0d2d6
 TT-ALL       4 spots   466 bytes  v7a403a
 US-CA-SD    38 spots  2130 bytes  vf100d6
-US-CA-OC    31 spots  1794 bytes  vdbff10
+US-CA-OC    31 spots  1794 bytes  vcd7c0a
 US-CA-LA    23 spots  1516 bytes  v9ea603
 US-CA-SB    27 spots  1770 bytes  va5bacb
 US-CA-CEN   16 spots  1198 bytes  v3a33bb
@@ -70,7 +70,7 @@ US-CA-SF    30 spots  2038 bytes  v77e231
 US-CA-NOR   25 spots  1576 bytes  ved6ce4
 US-PNW      34 spots  2020 bytes  vcb2c66
 US-GULF     15 spots  1110 bytes  v347b44
-US-FL       46 spots  2410 bytes  v704e86
+US-FL       46 spots  2410 bytes  v6449dd
 US-FL-PAN    6 spots   715 bytes  v0f1ae4
 US-SE       23 spots  1470 bytes  v92e761
 US-SC-GA    10 spots   802 bytes  v0b7b0b
@@ -83,7 +83,7 @@ US-HI-MAU   23 spots  1437 bytes  v698df3
 US-HI-KAU   21 spots  1271 bytes  v98ff6d
 US-HI-BIG   15 spots  1068 bytes  v5caca8
 CA-BC-VI    14 spots  1021 bytes  v5373cd
-CA-NS       11 spots   800 bytes  v3048b7
+CA-NS       11 spots   802 bytes  v17cc3f
 AU-QLD-SC   27 spots  1632 bytes  v3ea2c3
 AU-QLD-GC   24 spots  1533 bytes  v49dd84
 AU-NSW-NR   26 spots  1710 bytes  v4e04ac
@@ -175,7 +175,7 @@ MG-ALL       2 spots   263 bytes  v3a4a6c
 RE-ALL      10 spots   723 bytes  vc675a9
 MU-ALL       2 spots   302 bytes  vcff7bc
 CV-ALL       3 spots   345 bytes  v030110
-FR-PBA      23 spots  1428 bytes  vec3f97
+FR-PBA      23 spots  1428 bytes  v5073af
 FR-HOS      16 spots  1008 bytes  v561919
 FR-GIR      18 spots  1213 bytes  vcfe4a1
 FR-VEN      13 spots   911 bytes  vc6d6ed
@@ -194,7 +194,7 @@ PT-ERI       9 spots   601 bytes  vdef44c
 PT-LIS      15 spots   887 bytes  v0cbca7
 PT-ALG      18 spots  1100 bytes  v597da9
 PT-AZO       8 spots   675 bytes  v531211
-PT-MAD       8 spots   648 bytes  v5197f0
+PT-MAD       8 spots   648 bytes  v3271e4
 GB-CON      28 spots  1696 bytes  va27333
 GB-DEV       9 spots   608 bytes  v75e954
 GB-SOU       3 spots   414 bytes  vcb5c85
@@ -236,7 +236,6 @@ warning: US-NY-NJ/SEA BRIGHT: no direction open to the sea, moved 373 m from the
 warning: US-NY-NJ/ISLAND BEACH: no direction open to the sea, moved 508 m from the seed (facing 256 -> 98)
 warning: US-NY-NJ/BEACH HAVEN: no direction open to the sea, moved 411 m from the seed (facing 276 -> 124)
 warning: CA-BC-VI/MACKENZIE BEACH: no direction open to the sea, moved 500 m from the seed (facing 222 -> 180)
-warning: CA-NS/EAST LAWRENCETOWN: no direction open to the sea, moved 1903 m from the seed (facing 111 -> 217)
 warning: CA-NS/MARTINIQUE BEACH: no direction open to the sea, moved 980 m from the seed (facing 78 -> 166)
 warning: AU-NSW-SYD/WHALE BEACH: no direction open to the sea, moved 687 m from the seed (facing 100 -> 100)
 warning: AU-WA-PER/TWO ROCKS: no direction open to the sea, moved 469 m from the seed (facing 254 -> 235)
@@ -258,4 +257,4 @@ warning: GB-WAL: ncep_gfswave016 has no waves near 5 spots: ncep_gfswave025
 warning: GB-SCO/BAY OF SKAILL: no direction open to the sea, moved 462 m from the seed (facing 275 -> 275)
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: NL-ALL: ncep_gfswave016 has no waves near 9 spots: ncep_gfswave025
-215 regions, 2526 spots, 0 errors, 45 warnings
+215 regions, 2526 spots, 0 errors, 44 warnings
