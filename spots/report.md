@@ -86,7 +86,7 @@
 | VE-MAR | 1 | 274 | ncep_gfswave016 | gfs_seamless | 1 | 249 m | 1 |
 | PA-PAC | 7 | 657 | ncep_gfswave016 | gfs_seamless | 3 | 268 m | 4 |
 | PA-BDT | 4 | 370 | ncep_gfswave016 | gfs_seamless | 1 | 106 m | 0 |
-| CR-GUA | 12 | 891 | ncep_gfswave016 | gfs_seamless | 2 | 276 m | 2 |
+| CR-GUA | 12 | 894 | ncep_gfswave016 | gfs_seamless | 2 | 276 m | 2 |
 | CR-NIC | 10 | 668 | ncep_gfswave016 | gfs_seamless | 2 | 596 m | 0 |
 | CR-PAC | 10 | 702 | ncep_gfswave016 | gfs_seamless | 2 | 305 m | 2 |
 | CR-OSA | 3 | 400 | ncep_gfswave016 | gfs_seamless | 1 | 279 m | 2 |
@@ -111,7 +111,7 @@
 | MQ-ALL | 2 | 270 | ncep_gfswave016 | gfs_seamless | 1 | 850 m | 0 |
 | BS-ALL | 1 | 237 | ncep_gfswave016 | gfs_seamless | 1 | — | 1 |
 | TT-ALL | 4 | 466 | ncep_gfswave016 | gfs_seamless | 2 | 1023 m | 0 |
-| US-CA-SD | 38 | 2130 | ncep_gfswave016 | gfs_seamless | 3 | 189 m | 0 |
+| US-CA-SD | 38 | 2132 | ncep_gfswave016 | gfs_seamless | 3 | 180 m | 0 |
 | US-CA-OC | 31 | 1794 | ecmwf_wam | gfs_seamless | 3 | 203 m | 1 |
 | US-CA-LA | 23 | 1516 | ecmwf_wam | gfs_seamless | 3 | 157 m | 1 |
 | US-CA-SB | 27 | 1768 | ecmwf_wam | gfs_seamless | 3 | 231 m | 3 |
@@ -121,7 +121,7 @@
 | US-CA-NOR | 25 | 1575 | ecmwf_wam | gfs_seamless | 3 | 297 m | 3 |
 | US-PNW | 34 | 2020 | ecmwf_wam | gfs_seamless | 3 | 315 m | 4 |
 | US-GULF | 15 | 1110 | ecmwf_wam | gfs_seamless | 3 | 369 m | 10 |
-| US-FL | 46 | 2410 | ncep_gfswave016 | gfs_seamless | 3 | 294 m | 1 |
+| US-FL | 46 | 2412 | ncep_gfswave016 | gfs_seamless | 3 | 294 m | 1 |
 | US-FL-PAN | 6 | 715 | ecmwf_wam | gfs_seamless | 3 | 393 m | 5 |
 | US-SE | 23 | 1469 | ncep_gfswave025 | ecmwf_ifs | 3 | 250 m | 8 |
 | US-SC-GA | 10 | 802 | ncep_gfswave016 | ecmwf_ifs | 3 | 576 m | 1 |
@@ -167,7 +167,7 @@
 | PF-TAH | 8 | 665 | ncep_gfswave025 | gfs_seamless | 1 | 170 m | 3 |
 | PF-ISL | 2 | 333 | ncep_gfswave025 | gfs_seamless | 1 | — | 0 |
 | WS-ALL | 6 | 575 | ncep_gfswave025 | gfs_seamless | 2 | 436 m | 6 |
-| TO-ALL | 6 | 499 | ncep_gfswave025 | gfs_seamless | 1 | 441 m | 0 |
+| TO-ALL | 6 | 500 | ncep_gfswave025 | gfs_seamless | 1 | 481 m | 0 |
 | VU-ALL | 5 | 475 | ncep_gfswave025 | gfs_seamless | 2 | 157 m | 2 |
 | PG-ALL | 2 | 346 | ncep_gfswave016 | gfs_seamless | 2 | 31 m | 0 |
 | ID-BAL-BUK | 14 | 905 | ncep_gfswave016 | gfs_seamless | 1 | 136 m | 0 |
