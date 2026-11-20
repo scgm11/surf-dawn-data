@@ -1,6 +1,6 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-20 16:49 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-20 18:21 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
@@ -95,12 +95,12 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | got-398b01 | got5.6:-36.078,-72.797 | GOT5.6 36.078S 72.797W (CL-MAU) | MSL+87 cm (modelo) | 6..192 | — | 1.1 |
 | got-39b84c | got5.6:0.569,97.734 | GOT5.6 0.569N 97.734E (ID-NIA) | MSL+51 cm (modelo) | 6..111 | — | 0.8 |
 | got-3c06e1 | got5.6:-8.145,-79.056 | GOT5.6 8.145S 79.056W (PE-LLB) | MSL+83 cm (modelo) | 5..161 | — | 1.0 |
-| got-3d80b7 | got5.6:10.240,-85.842 | GOT5.6 10.240N 85.842W (CR-GUA) | MSL+147 cm (modelo) | 6..293 | — | 1.4 |
 | got-421e4e | got5.6:-29.386,-49.759 | GOT5.6 29.386S 49.759W (BR-RS) | MSL+53 cm (modelo) | 6..96 | — | 1.2 |
 | got-439ad8 | got5.6:-22.115,14.268 | GOT5.6 22.115S 14.268E (NA-ERO) | MSL+97 cm (modelo) | 6..189 | — | 1.1 |
 | got-442fe7 | got5.6:-22.944,-42.220 | GOT5.6 22.944S 42.220W (BR-RJL) | MSL+83 cm (modelo) | 5..146 | — | 1.1 |
 | got-45461c | got5.6:-7.113,-34.823 | GOT5.6 7.113S 34.823W (BR-NE-RN) | MSL+143 cm (modelo) | 6..283 | — | 1.5 |
 | got-45dd2a | got5.6:29.446,-10.117 | GOT5.6 29.446N 10.117W (MA-S) | MSL+173 cm (modelo) | 6..350 | — | 1.9 |
+| got-47251d | got5.6:10.238,-85.845 | GOT5.6 10.238N 85.845W (CR-GUA) | MSL+147 cm (modelo) | 6..293 | — | 1.4 |
 | got-47544d | got5.6:13.689,124.393 | GOT5.6 13.689N 124.393E (PH-EAS) | MSL+125 cm (modelo) | 5..223 | — | 1.4 |
 | got-47f025 | got5.6:-33.743,-53.370 | GOT5.6 33.743S 53.370W (BR-RS-SUL) | MSL+59 cm (modelo) | 5..119 | — | 1.1 |
 | got-4eb18f | got5.6:-38.763,143.380 | GOT5.6 38.763S 143.380E (AU-VIC-W) | MSL+92 cm (modelo) | 5..169 | — | 1.3 |
@@ -279,7 +279,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | noaa-8668498 | noaa:8668498 | Fripps Inlet, Hunting Island Bridge, SC | MLLW | -46..242 | — | 1.8 |
 | noaa-8677344 | noaa:8677344 | St. Simons Light, GA | MLLW | -54..267 | — | 1.9 |
 | noaa-8721649 | noaa:8721649 | Cocoa Beach, FL | MLLW | -31..155 | — | 1.0 |
-| noaa-8723080 | noaa:8723080 | Haulover Pier, N. Miami Beach, FL | MLLW | -25..112 | — | 0.4 |
+| noaa-8722375 | noaa:8722375 | South Point, St. Lucie Inlet, FL | MLLW | -16..85 | — | 0.5 |
 | noaa-8729210 | noaa:8729210 | Panama City Beach, FL | MLLW | -31..68 | — | 1.0 |
 | noaa-8731269 | noaa:8731269 | Gulf State Park Pier, AL | MLLW | -30..67 | — | 0.9 |
 | noaa-8761724 | noaa:8761724 | EAST POINT, GRAND ISLE, LA | MLLW | -33..56 | — | 0.6 |
@@ -510,7 +510,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### BR-RS — Rio Grande do Sul (18 picos)
 
-- `got-c9dd3b` GOT5.6 29.813S 50.048W (BR-RS) — modelo global GOT5.6: 7 picos a 0.0–26 km, radio 36 km
+- `got-c9dd3b` GOT5.6 29.813S 50.048W (BR-RS) — modelo global GOT5.6: 7 picos a 0.0–23 km, radio 34 km
 - `got-421e4e` GOT5.6 29.386S 49.759W (BR-RS) — modelo global GOT5.6: 6 picos a 0.0–21 km, radio 31 km
 - `got-a0b2f5` GOT5.6 30.240S 50.230W (BR-RS) — modelo global GOT5.6: 3 picos a 0.0–12 km, radio 22 km
 - Sin puerto (Open-Meteo): CASSINO, MOLHES DA BARRA
@@ -662,7 +662,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### CO-PAC — Pacífico colombiano (5 picos)
 
-- `ticon-67a479` TICON-3 3.890N 77.062W (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 34–35 km, radio 45 km
+- `ticon-67a479` TICON-3 3.890N 77.062W (gesla.noaa) — TICON-3, cruzando tierra: 2 picos a 33–34 km, radio 45 km
 - `got-377e5e` GOT5.6 6.099N 77.429W (CO-PAC) — modelo global GOT5.6: 3 picos a 0.0–47 km, radio 57 km
 
 ### CO-CAR — Caribe colombiano (5 picos)
@@ -693,7 +693,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### CR-GUA — Guanacaste norte (12 picos)
 
-- `got-3d80b7` GOT5.6 10.240N 85.842W (CR-GUA) — modelo global GOT5.6: 10 picos a 0.0–10 km, radio 21 km
+- `got-47251d` GOT5.6 10.238N 85.845W (CR-GUA) — modelo global GOT5.6: 10 picos a 0.0–10 km, radio 21 km
 - `got-91f084` GOT5.6 10.850N 85.801W (CR-GUA) — modelo global GOT5.6: 2 picos a 0.0–15 km, radio 25 km
 - Descartadas: `ticon-c1d17a` 109 km, cruza 70 km de tierra
 
@@ -816,8 +816,8 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### GP-ALL — Guadalupe (3 picos)
 
-- `ticon-b604d6` TICON-3 16.303N 61.072W (gesla.usgs) — TICON-3, misma costa: 3 picos a 12–52 km, radio 62 km (niveles 2,4)
-- Descartadas: `ticon-8856b1` 22 km, fuera por el tope de 3 puertos (nivel 4); `ticon-3aa8da` 30 km, fuera por el tope de 3 puertos (nivel 4); `ticon-7c3620` 108 km, cruza 30 km de tierra
+- `ticon-b604d6` TICON-3 16.303N 61.072W (gesla.usgs) — TICON-3, misma costa: 3 picos a 14–52 km, radio 62 km (niveles 2,4)
+- Descartadas: `ticon-8856b1` 22 km, fuera por el tope de 3 puertos (nivel 4); `ticon-3aa8da` 30 km, fuera por el tope de 3 puertos (nivel 4); `ticon-7c3620` 107 km, cruza 30 km de tierra
 
 ### MQ-ALL — Martinica (2 picos)
 
@@ -894,14 +894,14 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `noaa-9418767` HUMBOLDT BAY (North Spit), CA — oficial, misma costa: 7 picos a 1.3–42 km, radio 53 km (niveles 1,3)
 - `noaa-9415020` Point Reyes, CA — oficial, misma costa: 4 picos a 36–52 km, radio 62 km (niveles 1,3)
 - Sin puerto (Open-Meteo): GLASS BEACH (noaa-9417426 a 3.0 km: fuera por el tope de 3 puertos), VIRGIN CREEK (noaa-9417426 a 5.2 km: fuera por el tope de 3 puertos), WESTPORT (noaa-9417426 a 23 km: fuera por el tope de 3 puertos), SHELTER COVE (noaa-9418024 a 0.0 km: fuera por el tope de 3 puertos), CRESCENT BEACH (noaa-9419750 a 5.2 km: fuera por el tope de 3 puertos)
-- Descartadas: `ticon-0aba89` 0.0 km, cruza 37 km de tierra; `noaa-9418024` 0.0 km, fuera por el tope de 3 puertos (nivel 1); `noaa-9417426` 0.7 km, fuera por el tope de 3 puertos (nivel 3); `ticon-00c121` 1.4 km, cruza 80 km de tierra
+- Descartadas: `ticon-0aba89` 0.0 km, cruza 37 km de tierra; `noaa-9418024` 0.0 km, fuera por el tope de 3 puertos (nivel 1); `noaa-9417426` 0.5 km, fuera por el tope de 3 puertos (nivel 3); `ticon-00c121` 1.4 km, cruza 80 km de tierra
 
 ### US-PNW — Oregón y Washington (34 picos)
 
 - `ticon-f43039` TICON-3 46.281N 124.046W (gesla.nhs) — TICON-3, misma costa: 12 picos a 2.5–118 km, radio 129 km (niveles 2,4)
 - `noaa-9435380` Southbeach, OR — oficial, misma costa: 10 picos a 2.2–53 km, radio 64 km (niveles 1,3)
 - `noaa-9433445` Umpqua River Entrance, Half Moon Bay, OR — oficial, misma costa: 4 picos a 2.0–41 km, radio 51 km
-- Sin puerto (Open-Meteo): HOBUCK (ticon-a43379 a 5.0 km: fuera por el tope de 3 puertos), RIALTO (noaa-9442396 a 1.0 km: fuera por el tope de 3 puertos), SECOND BEACH (noaa-9442396 a 3.5 km: fuera por el tope de 3 puertos), MANZANITA (noaa-9437954 a 5.2 km: fuera por el tope de 3 puertos), BANDON (noaa-9432436 a 20 km: fuera por el tope de 3 puertos), FACE ROCK (noaa-9432436 a 21 km: fuera por el tope de 3 puertos), PORT ORFORD (ticon-c2a383 a 0.7 km: fuera por el tope de 3 puertos), HARRIS BEACH (noaa-9419945 a 15 km: fuera por el tope de 3 puertos)
+- Sin puerto (Open-Meteo): HOBUCK (ticon-a43379 a 5.0 km: fuera por el tope de 3 puertos), RIALTO (noaa-9442396 a 1.0 km: fuera por el tope de 3 puertos), SECOND BEACH (noaa-9442396 a 3.5 km: fuera por el tope de 3 puertos), MANZANITA (noaa-9437954 a 5.2 km: fuera por el tope de 3 puertos), BANDON (noaa-9432436 a 20 km: fuera por el tope de 3 puertos), FACE ROCK (noaa-9432436 a 21 km: fuera por el tope de 3 puertos), PORT ORFORD (ticon-c2a383 a 0.7 km: fuera por el tope de 3 puertos), HARRIS BEACH (noaa-9419945 a 16 km: fuera por el tope de 3 puertos)
 - Descartadas: `noaa-9435827` 0.6 km, fuera por el tope de 3 puertos (nivel 1); `ticon-c2a383` 0.7 km, cruza 45 km de tierra; `noaa-9431647` 0.8 km, fuera por el tope de 3 puertos (nivel 3); `noaa-9442396` 1.0 km, fuera por el tope de 3 puertos (nivel 3)
 
 ### US-GULF — Texas (15 picos)
@@ -915,8 +915,8 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 - `ticon-1b2d0f` TICON-3 29.857N 81.263W (gesla.meds) — TICON-3, misma costa: 18 picos a 0.3–113 km, radio 124 km (niveles 2,4)
 - `noaa-8721649` Cocoa Beach, FL — oficial, misma costa: 12 picos a 0.1–59 km, radio 69 km (niveles 1,3)
-- `noaa-8723080` Haulover Pier, N. Miami Beach, FL — oficial, misma costa: 6 picos a 0.3–49 km, radio 59 km (niveles 1,3)
-- Sin puerto (Open-Meteo): WABASSO (ticon-fe5fc9 a 3.2 km: fuera por el tope de 3 puertos), VERO BEACH (noaa-8722125 a 2.6 km: fuera por el tope de 3 puertos), FORT PIERCE INLET (noaa-8722213 a 1.2 km: fuera por el tope de 3 puertos), JENSEN BEACH (noaa-8722329 a 2.3 km: fuera por el tope de 3 puertos), STUART BEACH (ticon-00e8da a 3.7 km: fuera por el tope de 3 puertos), JUPITER INLET (ticon-d6a529 a 1.7 km: fuera por el tope de 3 puertos), JUNO PIER (noaa-8722548 a 5.6 km: fuera por el tope de 3 puertos), LAKE WORTH PIER (ticon-4477db a 0.1 km: fuera por el tope de 3 puertos), BOYNTON INLET (ticon-bbc21e a 0.9 km: fuera por el tope de 3 puertos), DELRAY BEACH (noaa-8722761 a 1.6 km: fuera por el tope de 3 puertos)
+- `noaa-8722375` South Point, St. Lucie Inlet, FL — oficial, misma costa: 6 picos a 6.5–58 km, radio 68 km (niveles 1,3)
+- Sin puerto (Open-Meteo): WABASSO (ticon-fe5fc9 a 3.2 km: fuera por el tope de 3 puertos), LAKE WORTH PIER (ticon-4477db a 0.1 km: fuera por el tope de 3 puertos), BOYNTON INLET (ticon-bbc21e a 0.9 km: fuera por el tope de 3 puertos), DELRAY BEACH (noaa-8722761 a 1.6 km: fuera por el tope de 3 puertos), BOCA INLET (ticon-6eec7b a 1.1 km: fuera por el tope de 3 puertos), DEERFIELD PIER (noaa-8722832 a 1.3 km: fuera por el tope de 3 puertos), POMPANO PIER (noaa-8722859 a 2.8 km: fuera por el tope de 3 puertos), HOLLYWOOD (noaa-8722956 a 7.5 km: fuera por el tope de 3 puertos), HAULOVER (ticon-8f077e a 0.3 km: fuera por el tope de 3 puertos), SOUTH POINTE (noaa-8723178 a 0.1 km: fuera por el tope de 3 puertos)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): APOLLO BEACH → noaa-8721649
 - Descartadas: `ticon-266c41` 0.1 km, cruza 50 km de tierra; `ticon-4477db` 0.1 km, cruza 62 km de tierra; `noaa-8723178` 0.1 km, fuera por el tope de 3 puertos (nivel 3); `noaa-8722670` 0.1 km, fuera por el tope de 3 puertos (nivel 3)
 
@@ -1088,7 +1088,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### AU-VIC-W — Oeste de Victoria (9 picos)
 
-- `ticon-3927f3` TICON-3 38.351S 141.620E (gesla.mi_c) — TICON-3, misma costa: 5 picos a 19–112 km, radio 123 km (niveles 2,4)
+- `ticon-3927f3` TICON-3 38.351S 141.620E (gesla.mi_c) — TICON-3, misma costa: 5 picos a 19–114 km, radio 124 km (niveles 2,4)
 - `ticon-902798` TICON-3 38.292S 144.614E (gesla.uhslc) — TICON-3, misma costa: 2 picos a 74–78 km, radio 88 km
 - `got-4eb18f` GOT5.6 38.763S 143.380E (AU-VIC-W) — modelo global GOT5.6: 2 picos a 0.0–20 km, radio 31 km
 - Descartadas: `ticon-4ab7b4` 18 km, cruza 20 km de tierra; `ticon-a1d519` 69 km, cruza 45 km de tierra; `ticon-dd3cfd` 79 km, fuera por el tope de 3 puertos (nivel 2); `ticon-3e42a1` 89 km, cruza 36 km de tierra
@@ -1190,7 +1190,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 ### NZ-KAI — Kaikoura y Canterbury (9 picos)
 
 - `linz-new-brighton-pier` New Brighton Pier — oficial, misma costa: 5 picos a 1.1–58 km, radio 68 km
-- `linz-kaikoura` Kaikōura — oficial, misma costa: 3 picos a 1.1–13 km, radio 24 km
+- `linz-kaikoura` Kaikōura — oficial, misma costa: 3 picos a 1.7–13 km, radio 24 km
 - `ticon-9caabc` TICON-3 41.283S 174.783E (gesla.noaa) — TICON-3, misma costa: 1 picos a 102–102 km, radio 113 km
 - Descartadas: `linz-sumner-head` 0.4 km, fuera por el tope de 3 puertos (nivel 1); `ticon-2f9d0a` 5.0 km, fuera por el tope de 3 puertos (nivel 2); `linz-lyttelton` 5.0 km, fuera por el tope de 3 puertos (nivel 3); `linz-akaroa` 29 km, fuera por el tope de 3 puertos (nivel 3)
 
@@ -1242,7 +1242,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 - `ticon-fc3571` TICON-3 17.762S 168.293E (gesla.cmems) — TICON-3, misma costa: 3 picos a 1.8–12 km, radio 23 km
 - `got-1a8699` GOT5.6 19.537S 169.265E (VU-ALL) — modelo global GOT5.6: 2 picos a 0.0–25 km, radio 36 km
-- Descartadas: `ticon-1af54e` 5.5 km, fuera por el tope de 3 puertos (nivel 2)
+- Descartadas: `ticon-1af54e` 5.5 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### PG-ALL — Papúa Nueva Guinea (2 picos)
 
@@ -1485,7 +1485,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### NA-ERO — Walvis Bay y Swakopmund (3 picos)
 
-- `got-f341c0` GOT5.6 22.938S 14.418E (NA-ERO) — modelo global GOT5.6: 2 picos a 0.0–30 km, radio 41 km
+- `got-f341c0` GOT5.6 22.938S 14.418E (NA-ERO) — modelo global GOT5.6: 2 picos a 0.0–31 km, radio 42 km
 - `got-439ad8` GOT5.6 22.115S 14.268E (NA-ERO) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 
 ### MA-TAG — Taghazout y Agadir (16 picos)
@@ -1528,7 +1528,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### MG-ALL — Madagascar (2 picos)
 
-- `got-0c4434` GOT5.6 25.039S 46.994E (MG-ALL) — modelo global GOT5.6: 2 picos a 0.0–1.9 km, radio 12 km
+- `got-0c4434` GOT5.6 25.039S 46.994E (MG-ALL) — modelo global GOT5.6: 2 picos a 0.0–12 km, radio 22 km
 
 ### RE-ALL — Reunión (9 picos)
 
@@ -1559,12 +1559,12 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 ### FR-GIR — Gironda y Landas norte (18 picos)
 
-- `ticon-ad634c` TICON-3 45.853N 1.178W (gesla.meds) — TICON-3, misma costa: 7 picos a 40–117 km, radio 128 km (niveles 2,4)
+- `ticon-ad634c` TICON-3 45.853N 1.178W (gesla.meds) — TICON-3, misma costa: 7 picos a 38–117 km, radio 128 km (niveles 2,4)
 - `ticon-ae0728` TICON-3 43.398N 1.673W (gesla.nwfwmd) — TICON-3, misma costa: 6 picos a 48–95 km, radio 105 km
 - `ticon-b486e0` TICON-3 44.665N 1.163W (gesla.uhslc) — TICON-3, misma costa: 4 picos a 8.6–47 km, radio 57 km (niveles 2,4)
 - Sin puerto (Open-Meteo): HOURTIN (ticon-a21394 a 32 km: fuera por el tope de 3 puertos)
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LACANAU NORD → ticon-b486e0, LACANAU CENTRALE → ticon-b486e0, LACANAU SUD → ticon-b486e0, LE PORGE → ticon-b486e0, GRAND CROHOT → ticon-b486e0, MIMIZAN → ticon-b486e0
-- Descartadas: `ticon-66c157` 0.4 km, cruza 19 km de tierra; `ticon-a3cf33` 12 km, fuera por el tope de 3 puertos (nivel 2); `ticon-bebc3a` 18 km, fuera por el tope de 3 puertos (nivel 2); `ticon-a3f536` 20 km, fuera por el tope de 3 puertos (nivel 4)
+- Descartadas: `ticon-66c157` 0.4 km, cruza 19 km de tierra; `ticon-a3cf33` 7.8 km, fuera por el tope de 3 puertos (nivel 4); `ticon-bebc3a` 14 km, fuera por el tope de 3 puertos (nivel 2); `ticon-a3f536` 18 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### FR-VEN — Vendée y Charentes (13 picos)
 
@@ -1716,7 +1716,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `ticon-b027ca` TICON-3 58.441N 3.086W (gesla.meds) — TICON-3, misma costa: 8 picos a 25–106 km, radio 116 km (niveles 2,4)
 - `ticon-1fb951` TICON-3 57.144N 2.080W (gesla.noaa) — TICON-3, misma costa: 4 picos a 0.7–33 km, radio 43 km
 - `ticon-701a8e` TICON-3 57.895N 5.158W (gesla.meds) — TICON-3, misma costa: 3 picos a 94–113 km, radio 123 km
-- Sin puerto (Open-Meteo): BAY OF SKAILL (ticon-947cf4 a 118 km: fuera por el tope de 3 puertos), MACHIR BAY (ticon-9ab05d a 24 km: fuera por el tope de 3 puertos), GOTT BAY (ticon-f7d787 a 47 km: fuera por el tope de 3 puertos), WEST SANDS (ticon-1fb951 a 99 km: cruza 46 km de tierra), BELHAVEN BAY, PEASE BAY, COLDINGHAM
+- Sin puerto (Open-Meteo): BAY OF SKAILL (ticon-947cf4 a 119 km: fuera por el tope de 3 puertos), MACHIR BAY (ticon-9ab05d a 24 km: fuera por el tope de 3 puertos), GOTT BAY (ticon-f7d787 a 47 km: fuera por el tope de 3 puertos), WEST SANDS (ticon-1fb951 a 99 km: cruza 46 km de tierra), BELHAVEN BAY, PEASE BAY, COLDINGHAM
 - Descartadas: `ticon-9ab05d` 24 km, fuera por el tope de 3 puertos (nivel 4); `ticon-3e251a` 33 km, fuera por el tope de 3 puertos (nivel 4); `ticon-f7d787` 47 km, cruza 16 km de tierra; `ticon-1fb951` 60 km, cruza 51 km de tierra
 
 ### GB-NE — Noreste de Inglaterra (25 picos)
