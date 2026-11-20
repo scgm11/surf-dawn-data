@@ -72,15 +72,15 @@ US-PNW      34 spots  2020 bytes  vcb2c66
 US-GULF     15 spots  1110 bytes  v347b44
 US-FL       46 spots  2410 bytes  v6449dd
 US-FL-PAN    6 spots   715 bytes  v0f1ae4
-US-SE       23 spots  1470 bytes  v92e761
+US-SE       23 spots  1469 bytes  vb9fd8a
 US-SC-GA    10 spots   802 bytes  v0b7b0b
 US-MID      11 spots   858 bytes  v8dc826
 US-NE       31 spots  1869 bytes  v886a32
-US-NY-NJ    30 spots  1914 bytes  vd6deb7
+US-NY-NJ    30 spots  1913 bytes  v480423
 US-HI-OAN   21 spots  1209 bytes  vc45e29
 US-HI-OAS   23 spots  1525 bytes  v5adccc
 US-HI-MAU   23 spots  1437 bytes  v698df3
-US-HI-KAU   21 spots  1271 bytes  v98ff6d
+US-HI-KAU   21 spots  1271 bytes  v5d11ea
 US-HI-BIG   15 spots  1068 bytes  v5caca8
 CA-BC-VI    14 spots  1021 bytes  v5373cd
 CA-NS       11 spots   802 bytes  v17cc3f
@@ -147,7 +147,7 @@ JP-IBA       5 spots   484 bytes  v20518a
 JP-SHK       3 spots   311 bytes  vb3a80c
 JP-KYU       2 spots   334 bytes  vcb9879
 TW-E         4 spots   444 bytes  v2a127d
-TW-NE        4 spots   452 bytes  vfdbd1e
+TW-NE        5 spots   487 bytes  ve398eb
 IN-W         3 spots   355 bytes  v9a0e6d
 IN-E         3 spots   378 bytes  vae96a2
 VN-ALL       5 spots   469 bytes  vab403b
@@ -157,11 +157,11 @@ ZA-WC-CPT   20 spots  1293 bytes  vb1c403
 ZA-WC-WCO    6 spots   654 bytes  vea1a2f
 ZA-WC-GR    12 spots   935 bytes  v6e02d2
 ZA-EC-JB    10 spots   834 bytes  vacb4dd
-ZA-EC-PE    19 spots  1178 bytes  v734614
+ZA-EC-PE    19 spots  1177 bytes  v18bed8
 ZA-EC-WLD    5 spots   470 bytes  v1c8c88
 ZA-KZN-DBN   8 spots   525 bytes  vbba312
 ZA-KZN-N     6 spots   539 bytes  vea72a0
-ZA-KZN-S     9 spots   641 bytes  v6fd66e
+ZA-KZN-S     9 spots   642 bytes  v1cd714
 NA-ERO       3 spots   418 bytes  v47296a
 MA-TAG      16 spots  1052 bytes  vfa8d5f
 MA-N         6 spots   560 bytes  v4ebcb2
@@ -172,7 +172,7 @@ GH-ALL       3 spots   331 bytes  vfe148f
 MZ-S         3 spots   322 bytes  v427fe1
 MZ-INH       3 spots   398 bytes  ve26f4a
 MG-ALL       2 spots   263 bytes  v3a4a6c
-RE-ALL      10 spots   723 bytes  vc675a9
+RE-ALL       9 spots   673 bytes  vff585c
 MU-ALL       2 spots   302 bytes  vcff7bc
 CV-ALL       3 spots   345 bytes  v030110
 FR-PBA      23 spots  1428 bytes  v5073af
@@ -199,7 +199,7 @@ GB-CON      28 spots  1696 bytes  va27333
 GB-DEV       9 spots   608 bytes  v75e954
 GB-SOU       3 spots   414 bytes  vcb5c85
 GB-WAL      21 spots  1308 bytes  vb92e1c
-GB-SCO      21 spots  1300 bytes  vc7da2b
+GB-SCO      22 spots  1352 bytes  v9a5f4c
 GB-NE       25 spots  1338 bytes  vfc2703
 GB-NIR       9 spots   721 bytes  vc52aa2
 IE-NW       10 spots   872 bytes  v8114cc
@@ -257,4 +257,4 @@ warning: GB-WAL: ncep_gfswave016 has no waves near 5 spots: ncep_gfswave025
 warning: GB-SCO/BAY OF SKAILL: no direction open to the sea, moved 462 m from the seed (facing 275 -> 275)
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: NL-ALL: ncep_gfswave016 has no waves near 9 spots: ncep_gfswave025
-215 regions, 2526 spots, 0 errors, 44 warnings
+215 regions, 2527 spots, 0 errors, 44 warnings
