@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-20 00:33 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-20 10:50 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 430 (got 163, imi 9, jma 10, linz 20, noaa 58, ticon 170); más los 4 de Uruguay y Brasil, sin cambios.
-- Regiones con puerto: 209 de 209 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
-- Picos con puerto: 2327 de 2433.
-- Archivos: 10750, 28.5 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
+- Puertos nuevos: 433 (got 163, imi 9, jma 10, linz 20, noaa 61, ticon 170); más los 4 de Uruguay y Brasil, sin cambios.
+- Regiones con puerto: 210 de 210 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
+- Picos con puerto: 2343 de 2434.
+- Archivos: 10825, 28.7 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
@@ -264,9 +264,12 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | noaa-1617760 | noaa:1617760 | HILO, HI | MLLW | -22..99 | — | 0.6 |
 | noaa-1732417 | noaa:1732417 | Papeete Harbor, Fare Ute Point | MLLW | -8..33 | — | 0.4 |
 | noaa-1778000 | noaa:1778000 | APIA (Observatory), Upolu Island, AS | MLLW | 95..228 | — | 0.4 |
+| noaa-8418606 | noaa:8418606 | Camp Ellis, Saco River Entrance, ME | MLLW | -45..344 | — | 1.2 |
 | noaa-8441571 | noaa:8441571 | Annisquam, Lobster Cove, MA | MLLW | -60..342 | — | 2.9 |
 | noaa-8448725 | noaa:8448725 | Menemsha Harbor, MA, MA | MLLW | -20..121 | — | 0.8 |
-| noaa-8517137 | noaa:8517137 | Beach Channel (bridge), NY | MLLW | -37..218 | — | 1.8 |
+| noaa-8516881 | noaa:8516881 | East Rockaway Inlet, Atlantic Beach, NY | MLLW | -33..182 | — | 0.6 |
+| noaa-8533615 | noaa:8533615 | Barnegat Inlet, USCG Station, NJ | MLLW | -22..98 | — | 0.8 |
+| noaa-8534770 | noaa:8534770 | Ventnor City, ocean pier, NJ | MLLW | -31..174 | — | 1.0 |
 | noaa-8536110 | noaa:8536110 | Cape May, ferry terminal, NJ | MLLW | -30..197 | — | 1.1 |
 | noaa-8570280 | noaa:8570280 | OCEAN CITY (FISHING PIER), MD | MLLW | -32..152 | — | 0.7 |
 | noaa-8639207 | noaa:8639207 | Rudee Inlet, interior channel, VA | MLLW | -26..141 | — | 0.8 |
@@ -947,13 +950,23 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): FENWICK ISLAND → noaa-8570280
 - Descartadas: `ticon-9f975c` 0.3 km, fuera por el tope de 3 puertos (nivel 2); `ticon-b5103e` 0.3 km, fuera por el tope de 3 puertos (nivel 4); `ticon-19e4b6` 0.4 km, fuera por el tope de 3 puertos (nivel 2); `ticon-13e72d` 0.4 km, fuera por el tope de 3 puertos (nivel 4)
 
-### US-NE — Nueva Inglaterra Nueva York y Nueva Jersey (60 picos)
+### US-NE — Nueva Inglaterra (31 picos)
 
-- `noaa-8517137` Beach Channel (bridge), NY — oficial, misma costa: 14 picos a 0.9–59 km, radio 69 km (niveles 1,3)
 - `noaa-8448725` Menemsha Harbor, MA, MA — oficial, misma costa: 11 picos a 4.4–59 km, radio 70 km (niveles 1,3)
 - `noaa-8441571` Annisquam, Lobster Cove, MA — oficial, misma costa: 10 picos a 5.4–57 km, radio 67 km (niveles 1,3)
-- Sin puerto (Open-Meteo): HIGGINS BEACH (noaa-8418445 a 4.8 km: fuera por el tope de 3 puertos), OLD ORCHARD PIER (noaa-8418445 a 4.6 km: fuera por el tope de 3 puertos), CAMP ELLIS (ticon-0142ea a 0.3 km: fuera por el tope de 3 puertos), POPHAM BEACH (noaa-8417177 a 2.2 km: fuera por el tope de 3 puertos), NAUSET LIGHT (noaa-8447435 a 19 km: fuera por el tope de 3 puertos), MARCONI BEACH (noaa-8447241 a 22 km: fuera por el tope de 3 puertos), CAHOON HOLLOW (noaa-8446121 a 20 km: fuera por el tope de 3 puertos), MATUNUCK (noaa-8455083 a 4.2 km: fuera por el tope de 3 puertos), MISQUAMICUT (noaa-8458022 a 3.2 km: fuera por el tope de 3 puertos), DITCH PLAINS (noaa-8510560 a 3.9 km: fuera por el tope de 3 puertos), TURTLE COVE (noaa-8510448 a 6.5 km: fuera por el tope de 3 puertos), FLYING POINT (noaa-8512354 a 13 km: fuera por el tope de 3 puertos), SHINNECOCK INLET (noaa-8512354 a 0.5 km: fuera por el tope de 3 puertos), SEASIDE HEIGHTS (ticon-fe5724 a 1.3 km: fuera por el tope de 3 puertos), ISLAND BEACH (ticon-7fb0af a 3.9 km: fuera por el tope de 3 puertos), BARNEGAT INLET (noaa-8533615 a 0.7 km: fuera por el tope de 3 puertos), SHIP BOTTOM (ticon-8fcf63 a 1.7 km: fuera por el tope de 3 puertos), BEACH HAVEN (noaa-8534319 a 9.1 km: fuera por el tope de 3 puertos), BRIGANTINE (ticon-096046 a 8.7 km: fuera por el tope de 3 puertos), ATLANTIC CITY (ticon-096046 a 0.4 km: fuera por el tope de 3 puertos), OCEAN CITY NJ (noaa-8534836 a 5.1 km: fuera por el tope de 3 puertos), WILDWOOD (noaa-8535835 a 2.0 km: fuera por el tope de 3 puertos), CAPE MAY (ticon-8eeb07 a 3.1 km: fuera por el tope de 3 puertos), SEA ISLE CITY (noaa-8535375 a 3.8 km: fuera por el tope de 3 puertos), AVALON (ticon-9450c6 a 2.0 km: fuera por el tope de 3 puertos)
-- Descartadas: `ticon-0142ea` 0.3 km, fuera por el tope de 3 puertos (nivel 2); `noaa-8418606` 0.3 km, fuera por el tope de 3 puertos (nivel 1); `ticon-c19baa` 0.4 km, fuera por el tope de 3 puertos (nivel 2); `ticon-096046` 0.4 km, cruza 18 km de tierra
+- `noaa-8418606` Camp Ellis, Saco River Entrance, ME — oficial, misma costa: 4 picos a 0.3–56 km, radio 67 km
+- Sin puerto (Open-Meteo): NAUSET LIGHT (noaa-8447435 a 19 km: fuera por el tope de 3 puertos), MARCONI BEACH (noaa-8447241 a 22 km: fuera por el tope de 3 puertos), CAHOON HOLLOW (noaa-8446121 a 20 km: fuera por el tope de 3 puertos), MATUNUCK (noaa-8455083 a 4.2 km: fuera por el tope de 3 puertos), MISQUAMICUT (noaa-8458022 a 3.2 km: fuera por el tope de 3 puertos), WHITE CREST BEACH (noaa-8446121 a 21 km: fuera por el tope de 3 puertos)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): LONG SANDS → noaa-8418606
+- Descartadas: `ticon-0142ea` 0.3 km, fuera por el tope de 3 puertos (nivel 2); `noaa-8455083` 0.8 km, fuera por el tope de 3 puertos (nivel 1); `noaa-8443187` 1.5 km, fuera por el tope de 3 puertos (nivel 3); `noaa-8440452` 1.9 km, fuera por el tope de 3 puertos (nivel 3)
+
+### US-NY-NJ — Nueva York y Nueva Jersey (30 picos)
+
+- `noaa-8516881` East Rockaway Inlet, Atlantic Beach, NY — oficial, misma costa: 13 picos a 4.6–60 km, radio 70 km (niveles 1,3)
+- `noaa-8533615` Barnegat Inlet, USCG Station, NJ — oficial, misma costa: 7 picos a 0.7–44 km, radio 54 km (niveles 1,3)
+- `noaa-8534770` Ventnor City, ocean pier, NJ — oficial, misma costa: 6 picos a 6.0–59 km, radio 69 km (niveles 1,3)
+- Sin puerto (Open-Meteo): DITCH PLAINS (noaa-8510560 a 3.9 km: fuera por el tope de 3 puertos), TURTLE COVE (noaa-8510448 a 6.5 km: fuera por el tope de 3 puertos), FLYING POINT (noaa-8512354 a 13 km: fuera por el tope de 3 puertos), SHINNECOCK INLET (noaa-8512354 a 0.5 km: fuera por el tope de 3 puertos)
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): BELMAR → noaa-8533615, MANASQUAN INLET → noaa-8533615, BRIGANTINE → noaa-8534770
+- Descartadas: `ticon-c19baa` 0.4 km, fuera por el tope de 3 puertos (nivel 2); `ticon-096046` 0.4 km, cruza 18 km de tierra; `noaa-8534720` 0.5 km, fuera por el tope de 3 puertos (nivel 3); `ticon-721a2d` 0.5 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### US-HI-OAN — North Shore de Oahu (21 picos)
 
