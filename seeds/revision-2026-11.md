@@ -2,6 +2,8 @@
 
 Del 18 al 20/11/2026 se revisaron en el satélite, la web, Apple Maps y OSM las posiciones de los picos de todas las regiones. Uruguay lo confirmó el usuario; el resto lo aprobó la sesión principal con un criterio fijo, por pedido del usuario («aprobalos vos directamente», «Decidí vos», «hacerlos todos»). Este archivo deja escrita la decisión final de cada sugerencia que **no** se aplicó, para que no quede ninguna abierta.
 
+**Aprobado por el usuario el 20/11/2026** («Dejarlos así»): los renombres sin aplicar conservan su nombre y los sugeridos para sacar se quedan.
+
 ## Criterio
 
 - **Mover:** fuente concreta + una pista independiente (marca de Apple u OSM) + el lugar visto en el satélite. Un pico de playa (B) que estaba en otro lugar con nombre propio va a la arena del lugar que dice su nombre. Los movidos llevan `checked` y «satélite 2026-11».
