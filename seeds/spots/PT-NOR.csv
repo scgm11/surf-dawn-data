@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
 MOLEDO,41.8489,-8.8667,B,V,local,nosnap checked,Caminha; posicion aproximada; satélite 2026-11
 ANCORA,41.8114,-8.8645,B,V,local,nosnap checked,Vila Praia de Ancora; satélite 2026-11
-AFIFE,41.7640,-8.8730,B,L,local,,Viana do Castelo; posicion aproximada
+AFIFE,41.7793,-8.8711,B,K,local,nosnap checked,Viana do Castelo; satélite 2026-11
 PRAIA NORTE,41.7050,-8.8500,B,L,local,,Viana do Castelo; posicion aproximada
 CABEDELO,41.6792,-8.8336,B,V,local,nosnap checked facing=220,Viana do Castelo; posicion aproximada; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-ESPOSENDE,41.5370,-8.7900,B,L,local,,posicion aproximada
+ESPOSENDE,41.5466,-8.7924,B,V,local,nosnap checked,satélite 2026-11
 APULIA,41.4825,-8.7783,B,V,local,nosnap checked,Esposende; posicion aproximada; satélite 2026-11
 AGUCADOURA,41.4323,-8.7847,B,V,local,nosnap checked,Povoa de Varzim; posicion aproximada; satélite 2026-11
 POVOA DE VARZIM,41.3842,-8.7727,B,V,local,nosnap checked,satélite 2026-11

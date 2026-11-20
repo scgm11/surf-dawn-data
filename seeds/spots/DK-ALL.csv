@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-HANSTHOLM,57.1140,8.5780,B,L,local,,posicion aproximada
+HANSTHOLM,57.1230,8.6328,R,V,local,nosnap checked,arrecife al este del puerto; satélite 2026-11
 KLITMOLLER,57.0455,8.4771,B,V,local,nosnap top checked,Cold Hawaii; satélite 2026-11
 VORUPOR,56.9596,8.3665,B,V,local,nosnap checked,Norre Vorupor; satélite 2026-11
 AGGER,56.7900,8.2200,B,L,local,wave=56.75;8,Agger Tange; posicion aproximada
