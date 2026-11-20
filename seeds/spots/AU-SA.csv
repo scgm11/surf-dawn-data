@@ -1,11 +1,11 @@
 name,lat,lon,type,conf,src,flags,note
 PONDALOWIE BAY,-35.2380,136.8650,B,L,local,,Innes NP; Yorke
 CHINAMANS,-35.2887,136.9153,R,V,local,nosnap checked,Innes NP; Yorke; satélite 2026-11
-DALY HEAD,-35.0329,136.9337,B,K,web:monumentaustralia,,Yorke; reserva de surf
+DALY HEAD,-35.0329,136.9337,B,K,web:monumentaustralia,,"Yorke; reserva de surf; posición dudosa (revisado 20/11, sin fuente)"
 PORT NOARLUNGA,-35.1500,138.4640,R,K,local,,Adelaide
 MOANA,-35.2030,138.4680,B,K,local,,Adelaide
 PORT WILLUNGA,-35.2630,138.4620,B,K,local,,Adelaide
-ALDINGA,-35.2760,138.4480,B,L,local,,
+ALDINGA,-35.2760,138.4480,B,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
 SELLICKS,-35.3350,138.4430,B,L,local,,
 WAITPINGA,-35.6330,138.4990,B,K,local,top,Fleurieu
 BOOMER BEACH,-35.5362,138.6730,B,V,local,nosnap checked,Port Elliot; satélite 2026-11

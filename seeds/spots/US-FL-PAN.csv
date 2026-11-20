@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 PENSACOLA BEACH,30.3320,-87.1380,B,K,local,wave=30.2636;-87.1546,Gulf side
-PCB PIER,30.1795,-85.8275,B,L,local,wave=30.123;-85.8995,Panama City Beach
-GRAND ISLE,29.2370,-89.9730,B,K,local,,Louisiana
+PCB PIER,30.1795,-85.8275,B,L,local,wave=30.123;-85.8995,"Panama City Beach; posición dudosa (revisado 20/11, sin fuente)"
+GRAND ISLE,29.2370,-89.9730,B,K,local,,"Louisiana; posición dudosa (revisado 20/11, sin fuente)"
 DAUPHIN ISLAND,30.2438,-88.1280,B,V,local,nosnap wave=30.1933;-88.0 checked facing=170,Alabama; satélite 2026-11
 GULF STATE PIER,30.2487,-87.6678,B,V,local,nosnap wave=30.1933;-87.4737 checked,Gulf Shores; satélite 2026-11
 ALABAMA POINT,30.2721,-87.5536,B,V,local,nosnap wave=30.1933;-87.4737 checked facing=180,Orange Beach; satélite 2026-11

@@ -10,7 +10,7 @@ PULPOS,-12.3089,-76.8451,R,V,local,nosnap checked,Punta Hermosa; satélite 2026-
 CABALLEROS,-12.3257,-76.8399,P,V,local,nosnap checked,Punta Hermosa; satélite 2026-11
 PICO ALTO,-12.3372,-76.8373,R,V,local,nosnap top checked,ola grande; Punta Hermosa; satélite 2026-11
 PUNTA ROCAS,-12.3530,-76.8176,R,V,local,nosnap top checked,satélite 2026-11
-PUNTA NEGRA,-12.3700,-76.7920,P,K,local,,
+PUNTA NEGRA,-12.3700,-76.7920,P,K,local,,"posición dudosa (revisado 20/11, sin fuente)"
 SAN BARTOLO,-12.3880,-76.7830,P,K,local,,
 SANTA MARÍA,-12.4022,-76.7770,B,V,local,nosnap checked,satélite 2026-11
 CERRO AZUL,-13.0300,-76.4830,P,K,local,swell=230,Cañete

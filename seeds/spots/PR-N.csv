@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 MAR CHIQUITA,18.4739,-66.4849,R,V,local,nosnap checked,Manatí; posición aproximada; satélite 2026-11
 LOS TUBOS,18.4724,-66.4487,R,V,local,nosnap checked,Vega Baja/Manatí; posición aproximada; satélite 2026-11
 PUERTO NUEVO,18.4910,-66.3950,B,L,local,,Vega Baja; posición aproximada
-CERRO GORDO,18.4815,-66.3401,B,V,local,nosnap facing=5 checked,Vega Alta; orientación a mano (la calculada miraba a otra costa); satélite 2026-11
+CERRO GORDO,18.4815,-66.3401,B,V,local,nosnap facing=5 checked,Vega Alta; orientación a mano (la calculada miraba a otra costa); satélite 2026-11; ola ocasional: el balneario es una playa protegida que solo tiene olas surfeables con mar grande del norte
 PINE GROVE,18.4442,-66.0111,B,V,local,nosnap wave=18.6667;-66.0 checked,Isla Verde/Carolina; posición aproximada; satélite 2026-11
 PUNTA LAS MARIAS,18.4554,-66.0410,R,L,local,wave=18.6667;-66.0,San Juan; entre Ocean Park e Isla Verde
 OCEAN PARK,18.4582,-66.0560,B,K,local,wave=18.6667;-66.0,San Juan

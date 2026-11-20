@@ -3,7 +3,7 @@ ATACAMES,0.8700,-79.8500,B,L,local,,Esmeraldas
 MOMPICHE,0.5092,-80.0312,P,V,osm:node/249596749,nosnap top swell=285 checked facing=300,posición OSM; satélite 2026-11
 CANOA,-0.4640,-80.4590,B,K,local,,Manabí
 MURCIÉLAGO,-0.9390,-80.7330,B,L,local,,Manta
-SAN LORENZO,-1.0540,-80.8850,P,L,local,,Manta
+SAN LORENZO,-1.0540,-80.8850,P,L,local,,"Manta; posición dudosa (revisado 20/11, sin fuente)"
 AYAMPE,-1.6800,-80.8030,P,K,local,,
 OLÓN,-1.8000,-80.7480,B,K,local,,
 MONTAÑITA,-1.8192,-80.7601,P,V,web:wikipedia.org,nosnap top checked,pueblo chequeado; la punta está a unos 300 m; satélite 2026-11

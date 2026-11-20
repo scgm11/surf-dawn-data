@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-ITAIPUAÇU,-22.9560,-42.9700,B,K,local,,Maricá
+ITAIPUAÇU,-22.9560,-42.9700,B,K,local,,"Maricá; posición dudosa (revisado 20/11, sin fuente)"
 BARRA DE MARICÁ,-22.9610,-42.8200,B,L,local,,
 PONTA NEGRA,-22.9574,-42.6980,B,V,local,nosnap checked,Maricá; satélite 2026-11
 JACONÉ,-22.9460,-42.6650,B,K,local,,

@@ -11,12 +11,12 @@ MICKLER'S,30.1622,-81.3551,B,V,local,nosnap checked,satélite 2026-11
 VILANO,29.9165,-81.2892,B,V,local,nosnap checked,St Augustine; satélite 2026-11
 ST AUGUSTINE PIER,29.8550,-81.2650,B,K,local,,
 FLAGLER PIER,29.4794,-81.1256,B,V,local,nosnap checked,Flagler Beach; satélite 2026-11
-ORMOND PIER,29.3335,-81.0580,B,V,local,nosnap checked,Ormond-by-the-Sea; donde estaba el muelle; satélite 2026-11
+ORMOND PIER,29.3335,-81.0580,B,V,local,nosnap checked,"Ormond-by-the-Sea; donde estaba el muelle; satélite 2026-11; el muelle ya no existe: una tormenta se llevó gran parte en noviembre de 1984 y el resto se demolió a principios de los 90 (Wikipedia, Ormond-by-the-Sea); el tramo se sigue llamando «the old Ormond Pier»"
 DAYTONA PIER,29.2280,-81.0010,B,K,local,,
 SUNGLOW PIER,29.1469,-80.9653,B,V,local,nosnap checked,Daytona Beach Shores; satélite 2026-11
 NEW SMYRNA INLET,29.0690,-80.9040,B,K,local,top checked,Ponce Inlet
 FLAGLER AVE,29.0385,-80.8948,B,V,local,nosnap checked,New Smyrna Beach; satélite 2026-11
-APOLLO BEACH,28.9150,-80.8130,B,L,local,,Canaveral Seashore
+APOLLO BEACH,28.9150,-80.8130,B,L,local,,"Canaveral Seashore; posición dudosa (revisado 20/11, sin fuente)"
 PLAYALINDA,28.6340,-80.6330,B,L,local,,Canaveral Seashore
 JETTY PARK,28.4075,-80.5890,B,K,local,,Port Canaveral
 CHERIE DOWN,28.3920,-80.5953,B,V,local,nosnap checked,Cape Canaveral; satélite 2026-11
@@ -39,7 +39,7 @@ JUNO PIER,26.8930,-80.0564,B,V,local,nosnap checked,satélite 2026-11
 LAKE WORTH PIER,26.6140,-80.0340,B,K,local,facing=90,orientación a mano (la calculada miraba a la laguna o la bahía)
 BOYNTON INLET,26.5430,-80.0465,B,L,local,,
 DELRAY BEACH,26.4600,-80.0590,B,K,local,,
-BOCA INLET,26.3380,-80.0690,B,L,local,,
+BOCA INLET,26.3345,-80.0722,B,V,local,nosnap checked,satélite 2026-11
 DEERFIELD PIER,26.3175,-80.0690,B,K,local,,
 POMPANO PIER,26.2352,-80.0880,B,V,local,nosnap checked,satélite 2026-11
 HOLLYWOOD,26.0140,-80.1150,B,L,local,,

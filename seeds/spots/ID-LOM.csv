@@ -10,5 +10,5 @@ TANJUNG AAN,-8.9081,116.3267,R,V,local,nosnap checked,satélite 2026-11
 GERUPUK,-8.9136,116.3654,R,V,local,nosnap top swell=210 checked,bahia; seccion interior; satélite 2026-11
 OUTSIDE GERUPUK,-8.9390,116.3450,R,L,local,,seccion exterior de la bahia
 DON DON,-8.9117,116.3549,R,V,local,nosnap facing=205 checked,posicion dudosa; satélite 2026-11
-KIDS CORNER,-8.9145,116.3550,R,L,local,,principiantes
+KIDS CORNER,-8.9145,116.3550,R,L,local,,"principiantes; posición dudosa (revisado 20/11, sin fuente)"
 EKAS,-8.9023,116.4411,R,V,local,nosnap checked facing=200,bahia de Ekas; posicion dudosa; satélite 2026-11

@@ -2,6 +2,6 @@ name,lat,lon,type,conf,src,flags,note
 ELANDS BAY,-32.3174,18.3220,P,V,local,nosnap top swell=245 checked,izquierda larga; satélite 2026-11
 MELKBOS,-33.7270,18.4410,B,K,local,,Melkbosstrand
 LAMBERTS BAY,-32.0851,18.3131,B,K,local,nosnap checked,satélite 2026-11
-PATERNOSTER,-32.8029,17.9002,,V,local,nosnap checked,satélite 2026-11
-JACOBSBAAI,-32.9700,17.8780,,L,local,,posicion dudosa
+PATERNOSTER,-32.8029,17.9002,B,V,local,nosnap checked,satélite 2026-11
+JACOBSBAAI,-32.9700,17.8780,R,L,local,,"posicion dudosa; posición dudosa (revisado 20/11, sin fuente)"
 YZERFONTEIN,-33.3407,18.1605,B,K,local,nosnap checked,Main Beach; Yzerfontein Point sería otra ola; satélite 2026-11

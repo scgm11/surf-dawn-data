@@ -2,11 +2,11 @@ name,lat,lon,type,conf,src,flags,note
 KINGS BEACH,-33.9704,25.6470,B,V,local,nosnap checked,Gqeberha; satélite 2026-11
 HOBIE BEACH,-33.9807,25.6603,B,V,local,nosnap checked,Gqeberha; satélite 2026-11
 POLLOK BEACH,-33.9859,25.6729,B,V,local,nosnap checked,Gqeberha; satélite 2026-11
-SCHOENMAKERSKOP,-34.0380,25.5380,,L,local,,Gqeberha oeste
+SCHOENMAKERSKOP,-34.0380,25.5380,R,L,local,,Gqeberha oeste
 SARDINIA BAY,-34.0290,25.4950,B,K,web:lekkeslaap,,Gqeberha oeste
 KELLY'S BEACH,-33.6102,26.8907,B,V,local,nosnap checked,Port Alfred; satélite 2026-11
 KENTON-ON-SEA,-33.6915,26.6700,B,K,local,,
-CANNON ROCKS,-33.7480,26.5370,,K,local,,
+CANNON ROCKS,-33.7480,26.5370,B,K,local,,
 KIDDS BEACH,-33.1400,27.7040,B,K,local,,East London oeste
 ORIENT BEACH,-33.0251,27.9161,B,V,local,nosnap checked,East London; satélite 2026-11
 EASTERN BEACH,-33.0120,27.9300,B,K,local,,East London
@@ -15,6 +15,6 @@ NAHOON REEF,-32.9971,27.9540,R,V,local,nosnap facing=125 top checked,East London
 BONZA BAY,-32.9761,27.9650,B,V,local,nosnap checked,East London; satélite 2026-11
 GONUBIE,-32.9409,28.0355,P,V,local,nosnap checked,East London norte; satélite 2026-11
 CINTSA,-32.8340,28.1230,B,K,local,,
-HAGA HAGA,-32.7550,28.2430,P,L,local,,
+HAGA HAGA,-32.7550,28.2430,P,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
 MILLERS,-33.9812,25.6642,R,V,local,nosnap checked,Gqeberha; Summerstrand; satélite 2026-11
 BAKED BEANS,-33.9790,25.6563,R,V,local,nosnap checked,Gqeberha; Humewood; satélite 2026-11

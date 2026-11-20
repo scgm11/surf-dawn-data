@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 MAR CHIQUITA,-37.7450,-57.4190,B,K,local,,desembocadura de la laguna
-MAR DE COBO,-37.7700,-57.4400,B,K,local,,
+MAR DE COBO,-37.7773,-57.4487,B,V,local,nosnap checked,satélite 2026-11
 SANTA CLARA,-37.8500,-57.4900,B,K,local,,
 LA PERLA,-37.9873,-57.5437,B,V,local,nosnap checked,satélite 2026-11
 BRISTOL,-38.0051,-57.5395,B,V,local,nosnap checked,satélite 2026-11
@@ -14,10 +14,10 @@ ALFAR,-38.1028,-57.5576,B,V,local,nosnap checked,posición aproximada; satélite
 LOS ACANTILADOS,-38.1190,-57.5922,B,V,local,nosnap checked,posición aproximada; satélite 2026-11
 PLAYA ESCONDIDA,-38.2267,-57.7266,B,V,local,nosnap checked,posición aproximada; satélite 2026-11
 CHAPADMALAL,-38.1800,-57.6500,B,K,local,top,
-SAN EDUARDO,-38.2100,-57.7100,B,K,local,,San Eduardo del Mar
+SAN EDUARDO,-38.2111,-57.6975,B,V,local,nosnap checked,"San Eduardo del Mar; satélite 2026-11; Es la playa del barrio San Eduardo de Chapadmalal, en la boca del Arroyo Chapadmalal; San Eduardo del Mar es otro barrio, 5 km al SO (OSM)"
 MIRAMAR,-38.2700,-57.8400,B,K,local,top,
-MAR DEL SUD,-38.3330,-57.9900,B,K,local,,
+MAR DEL SUD,-38.3330,-57.9900,B,K,local,,"posición dudosa (revisado 20/11, sin fuente)"
 NECOCHEA,-38.5890,-58.7400,B,K,local,,
 QUEQUÉN,-38.5774,-58.6949,B,V,local,nosnap top checked,boca del río y escolleras; satélite 2026-11
-PUNTA NEGRA,-38.6150,-58.8470,B,L,local,,posición aproximada
+PUNTA NEGRA,-38.6150,-58.8470,B,L,local,,"posición aproximada; posición dudosa (revisado 20/11, sin fuente)"
 CLAROMECÓ,-38.8680,-60.0680,B,K,local,,

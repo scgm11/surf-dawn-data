@@ -2,5 +2,5 @@ name,lat,lon,type,conf,src,flags,note
 WAI'AO,24.8780,121.8350,B,K,local,top checked wave=24.8333;122.0,Toucheng
 FULONG,25.0210,121.9440,B,K,local,top,
 DAXI,24.9323,121.8861,B,V,local,nosnap checked wave=24.8333;122.0,Toucheng; posicion aprox; satélite 2026-11
-GREEN BAY,25.1840,121.6890,B,L,local,,Wanli; posicion aprox
+GREEN BAY,25.1867,121.6871,B,V,local,nosnap checked,Wanli; posicion aprox; satélite 2026-11
 WANLI,25.1807,121.6919,B,V,local,nosnap checked facing=45,Wanli; extremo sur de la playa de Green Bay; satélite 2026-11

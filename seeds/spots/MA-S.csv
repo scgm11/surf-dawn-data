@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-TIFNIT,30.1980,-9.6393,,K,web:mondo.surf,,
+TIFNIT,30.1980,-9.6393,B,K,web:mondo.surf,,
 AGLOU,29.8108,-9.8382,B,K,web:wikipedia,,playa frente al pueblo
 MIRLEFT,29.5921,-10.0380,B,V,local,nosnap checked,satélite 2026-11
 AFTAS,29.5782,-10.0478,B,V,local,nosnap checked,Mirleft; satélite 2026-11
