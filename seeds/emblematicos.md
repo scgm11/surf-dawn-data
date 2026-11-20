@@ -12,7 +12,7 @@ Regiones de 20–60 picos. Los códigos son una propuesta; se fijan en la fase 1
 
 **América**
 - CA: CA-BC-VI Isla de Vancouver · CA-NS Nueva Escocia
-- US: US-PNW Washington y Oregón · US-CA-NOR Humboldt–Mendocino · US-CA-SF San Francisco y San Mateo · US-CA-SC Santa Cruz y Monterey · US-CA-CEN Big Sur y San Luis Obispo · US-CA-SB Santa Bárbara y Ventura · US-CA-LA Los Ángeles · US-CA-OC Orange County · US-CA-SD San Diego · US-NE Nueva Inglaterra, NY y NJ · US-SE Carolina del Norte a Georgia · US-FL Florida · US-GULF Texas y golfo
+- US: US-PNW Washington y Oregón · US-CA-NOR Humboldt–Mendocino · US-CA-SF San Francisco y San Mateo · US-CA-SC Santa Cruz y Monterey · US-CA-CEN Big Sur y San Luis Obispo · US-CA-SB Santa Bárbara y Ventura · US-CA-LA Los Ángeles · US-CA-OC Orange County · US-CA-SD San Diego · US-NE Nueva Inglaterra · US-NY-NJ Nueva York y Nueva Jersey · US-SE Carolina del Norte a Georgia · US-FL Florida · US-GULF Texas y golfo
 - Hawái: US-HI-OAN North Shore de Oahu · US-HI-OAS resto de Oahu · US-HI-MAU Maui · US-HI-KAU Kauai · US-HI-BIG Isla Grande
 - PR: PR-NW Rincón–Isabela · PR-N San Juan y costa norte
 - MX: MX-BCN Baja Norte · MX-BCS Baja Sur · MX-NAY Nayarit, Jalisco y Sinaloa · MX-PAC Colima, Michoacán y Guerrero · MX-OAX Oaxaca
@@ -98,9 +98,9 @@ Regiones de 20–60 picos. Los códigos son una propuesta; se fijan en la fase 1
 - [ ] US-PNW Westport · B · 46.90, -124.12 · K
 - [ ] US-PNW Short Sands · B · 45.76, -123.96 · K
 - [ ] US-PNW Otter Rock · B · 44.75, -124.06 · K
-- [ ] US-NE Ditch Plains · R · 41.04, -71.92 · K
-- [ ] US-NE Rockaway · B · 40.58, -73.82 · K
-- [ ] US-NE Manasquan Inlet · B · 40.10, -74.03 · K
+- [ ] US-NY-NJ Ditch Plains · R · 41.04, -71.92 · K
+- [ ] US-NY-NJ Rockaway · B · 40.58, -73.82 · K
+- [ ] US-NY-NJ Manasquan Inlet · B · 40.10, -74.03 · K
 - [ ] US-NE Ruggles · R · 41.47, -71.30 · K
 - [ ] US-SE Hatteras Light · B · 35.25, -75.52 · K
 - [ ] US-SE Wrightsville · B · 34.21, -77.79 · K
