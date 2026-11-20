@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
-PUERTO SAAVEDRA,-38.7800,-73.4000,B,L,local,,Boca Budi
-TOLTÉN,-39.2100,-73.2300,B,L,local,,
-QUEULE,-39.3900,-73.2150,B,L,local,,
+PUERTO SAAVEDRA,-38.7800,-73.4000,B,L,local,,"Boca Budi; posición dudosa (revisado 20/11, sin fuente)"
+TOLTÉN,-39.2100,-73.2300,B,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
+QUEULE,-39.3900,-73.2150,B,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
 MEHUÍN,-39.4300,-73.2100,B,K,local,,
 CURIÑANCO,-39.7412,-73.3954,B,V,local,nosnap checked,Valdivia; satélite 2026-11
 NIEBLA,-39.8637,-73.3959,B,V,local,nosnap checked,Valdivia; satélite 2026-11

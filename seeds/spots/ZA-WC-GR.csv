@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 INNER POOL,-34.1833,22.1590,R,V,osm:way/276490395,top swell=185,Mossel Bay; The Point; frente a la piscina de marea
-SANTOS,-34.1740,22.1380,B,L,local,,Mossel Bay
+SANTOS,-34.1740,22.1380,B,L,local,,"Mossel Bay; posición dudosa (revisado 20/11, sin fuente)"
 HARTENBOS,-34.1110,22.1100,B,L,local,,
 DANA BAY,-34.2058,22.0475,B,V,local,nosnap checked,satélite 2026-11
 HEROLDS BAY,-34.0545,22.3926,B,V,local,nosnap checked,satélite 2026-11

@@ -16,6 +16,6 @@ LAS SALINAS,-32.9901,-71.5474,B,V,local,nosnap checked,Viña del Mar; satélite 
 TUNQUÉN,-33.2870,-71.6579,B,V,local,nosnap checked,satélite 2026-11
 ALGARROBO,-33.3600,-71.6700,B,K,local,,
 EL QUISCO,-33.3904,-71.6940,B,V,local,nosnap facing=335 checked,satélite 2026-11
-PUNTA DE TRALCA,-33.4260,-71.7060,P,K,local,,
+PUNTA DE TRALCA,-33.4260,-71.7060,P,K,local,,"posición dudosa (revisado 20/11, sin fuente)"
 LAS CRUCES,-33.5004,-71.6247,B,V,local,nosnap checked,satélite 2026-11
 CARTAGENA,-33.5530,-71.6050,B,K,local,,

@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
 PONTA PRETA,16.6066,-22.9300,P,V,local,nosnap swell=345 checked,Sal; satélite 2026-11
-SANTA MARIA,16.5880,-22.9040,B,K,local,,Sal
+SANTA MARIA,16.5972,-22.9070,B,V,local,nosnap checked,Sal; satélite 2026-11
 PRAIA DE CHAVES,16.1143,-22.9197,B,V,web:wikipedia,,Boa Vista

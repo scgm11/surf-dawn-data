@@ -5,7 +5,7 @@ SECOND BEACH,47.8840,-124.6183,B,V,local,nosnap checked,La Push; satélite 2026-
 WESTPORT JETTY,46.9039,-124.1327,B,V,local,nosnap facing=265 wave=46.8541;-124.2233 checked,orientación a mano (la calculada miraba a otra costa); satélite 2026-11
 WESTPORT,46.8950,-124.1200,B,K,local,top wave=46.8541;-124.2233,
 GRAYLAND,46.7940,-124.1060,B,V,local,nosnap checked,satélite 2026-11
-LONG BEACH,46.3400,-124.0640,B,K,local,,
+LONG BEACH,46.3304,-124.0686,B,V,local,nosnap checked,"satélite 2026-11; se surfea en la bajada de Seaview, calle 38 (turismo del condado de Pacific)"
 BENSON BEACH,46.2869,-124.0770,B,V,local,nosnap checked,Cape Disappointment; satélite 2026-11
 SEASIDE COVE,45.9757,-123.9399,B,V,local,nosnap checked,satélite 2026-11
 INDIAN BEACH,45.9293,-123.9788,B,V,local,nosnap checked,Ecola; satélite 2026-11
@@ -18,9 +18,9 @@ PACIFIC CITY,45.2170,-123.9748,B,V,local,nosnap checked,Cape Kiwanda; satélite 
 NESKOWIN,45.1010,-123.9945,B,L,local,,
 D RIVER,44.9678,-124.0187,B,V,local,nosnap checked,Lincoln City; satélite 2026-11
 GLENEDEN,44.8761,-124.0399,B,V,local,nosnap checked wave=44.8858;-124.1331,satélite 2026-11
-DEPOE BAY,44.8070,-124.0640,R,K,local,,
+DEPOE BAY,44.8070,-124.0640,R,K,local,,"posición dudosa (revisado 20/11, sin fuente)"
 OTTER ROCK,44.7450,-124.0670,B,K,local,top,
-BEVERLY BEACH,44.7370,-124.0660,B,K,local,,
+BEVERLY BEACH,44.7370,-124.0660,B,K,local,,"posición dudosa (revisado 20/11, sin fuente)"
 AGATE BEACH,44.6589,-124.0608,B,V,local,nosnap checked wave=44.6046;-124.2,Newport; satélite 2026-11
 NYE BEACH,44.6370,-124.0680,B,K,local,,Newport
 SOUTH BEACH,44.6080,-124.0680,B,K,local,,Newport
@@ -31,5 +31,5 @@ SUNSET BAY,43.3342,-124.3723,B,V,local,nosnap checked,satélite 2026-11
 BANDON,43.1220,-124.4291,B,V,local,nosnap checked,satélite 2026-11
 FACE ROCK,43.1015,-124.4235,B,K,local,,Bandon
 PORT ORFORD,42.7413,-124.4892,B,V,local,nosnap checked,satélite 2026-11
-HARRIS BEACH,42.0580,-124.3030,B,K,local,,Brookings
+HARRIS BEACH,42.0627,-124.3043,B,V,local,nosnap checked,Brookings; satélite 2026-11
 BASTENDORFF BEACH,43.3455,-124.3494,B,V,local,nosnap checked,Charleston; Coos Bay; satélite 2026-11

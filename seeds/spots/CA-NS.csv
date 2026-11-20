@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 HARTLEN POINT,44.5893,-63.4516,P,K,local,nosnap checked,Halifax; satélite 2026-11
-COW BAY,44.6140,-63.4290,B,K,local,,
+COW BAY,44.6140,-63.4290,B,K,local,,"En Cow Bay hay varias olas de arrecife con nombre propio: The Moose, Minutes y Osborne (American Surf Magazine; video «Cow Bay wave check»); posición dudosa (revisado 20/11, sin fuente)"
 COLE HARBOUR,44.6501,-63.4173,B,K,osm:way/159247000,,Rainbow Haven; boca de Cole Harbour
 CONRAD'S BEACH,44.6444,-63.3757,B,V,local,nosnap checked,satélite 2026-11
 LAWRENCETOWN,44.6418,-63.3512,P,V,local,nosnap top checked,satélite 2026-11

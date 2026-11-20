@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 CERRITOS,23.2930,-106.4780,B,L,local,,Mazatlán norte; posición aproximada
-OLAS ALTAS,23.1957,-106.4268,,V,local,nosnap checked,Mazatlán; satélite 2026-11
+OLAS ALTAS,23.1957,-106.4268,B,V,local,nosnap checked,Mazatlán; satélite 2026-11
 CHACALA,21.1631,-105.2248,B,V,local,nosnap checked,Nayarit; posición aproximada; satélite 2026-11
 LO DE MARCOS,20.9550,-105.3565,B,L,web:pvangels,,Nayarit; izquierda de arrecife al sur
 SAN PANCHO,20.9001,-105.4172,B,V,web:aroundus,nosnap checked,San Francisco; Nayarit; satélite 2026-11

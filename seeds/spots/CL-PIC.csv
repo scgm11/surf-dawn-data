@@ -7,5 +7,5 @@ INFIERNILLO,-34.3886,-72.0222,P,V,local,nosnap top checked,Pichilemu; satélite 
 PLAYA HERMOSA,-34.4010,-72.0280,B,V,local,nosnap checked,Pichilemu; satélite 2026-11
 PUNTA DE LOBOS,-34.4247,-72.0482,P,V,local,nosnap top swell=250 checked,ola grande; satélite 2026-11
 CAHUIL,-34.4786,-72.0168,B,K,osm:node/1085350813,,posición OSM
-CIRUELOS,-34.5159,-72.0413,B,L,local,,Los Ciruelos; sobre la costa GSHHS
+CIRUELOS,-34.5159,-72.0413,B,L,local,,"Los Ciruelos; sobre la costa GSHHS; posición dudosa (revisado 20/11, sin fuente)"
 BUCALEMU,-34.6322,-72.0434,B,V,local,nosnap checked,Paredones; satélite 2026-11

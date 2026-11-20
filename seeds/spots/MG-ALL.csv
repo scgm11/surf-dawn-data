@@ -1,3 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
-LIBANONA,-25.0387,46.9944,,V,osm:way/120666411,,Fort Dauphin
-EVATRAHA,-25.0480,47.0100,,L,local,,Fort Dauphin; posicion dudosa
+LIBANONA,-25.0387,46.9944,B,V,osm:way/120666411,,Fort Dauphin
+EVATRAHA,-24.9737,47.0887,B,V,local,nosnap checked,Fort Dauphin; posicion dudosa; satélite 2026-11

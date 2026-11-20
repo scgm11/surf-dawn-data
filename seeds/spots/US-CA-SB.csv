@@ -14,7 +14,7 @@ RINCON,34.3730,-119.4755,P,K,local,top,
 TAR PITS,34.3890,-119.5175,P,K,local,,Carpinteria
 PADARO,34.4066,-119.5498,B,V,local,nosnap checked,satélite 2026-11
 LOON POINT,34.4124,-119.5768,P,V,local,nosnap checked wave=34.3409;-119.6231,Summerland; satélite 2026-11
-LOOKOUT,34.4180,-119.5975,P,K,local,,Summerland
+LOOKOUT,34.4200,-119.6023,B,V,local,nosnap checked,Summerland; satélite 2026-11
 HAMMOND'S,34.4155,-119.6375,R,V,local,nosnap checked wave=34.3409;-119.6231,Montecito; satélite 2026-11
 SANDSPIT,34.4045,-119.6876,B,V,local,nosnap checked wave=34.3409;-119.7362,satélite 2026-11
 LEADBETTER,34.4015,-119.7035,P,K,local,,
@@ -22,7 +22,7 @@ HENDRY'S,34.4003,-119.7425,R,K,local,,
 CAMPUS POINT,34.4035,-119.8430,P,K,local,,UCSB
 COAL OIL POINT,34.4035,-119.8785,P,K,local,,Sands
 HASKELL'S,34.4306,-119.9161,R,V,local,nosnap checked,satélite 2026-11
-ELLWOOD,34.4140,-119.9070,P,L,local,,
+ELLWOOD,34.4140,-119.9070,P,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
 EL CAPITAN,34.4580,-120.0230,P,K,local,swell=245,
 REFUGIO,34.4608,-120.0731,P,V,local,nosnap checked,satélite 2026-11
 JALAMA,34.5090,-120.5010,B,K,local,top,

@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 ITAÚNAS,-18.4260,-39.7040,B,K,local,,
-GURIRI,-18.7160,-39.7410,B,K,local,,São Mateus
+GURIRI,-18.7160,-39.7410,B,K,local,,"São Mateus; posición dudosa (revisado 20/11, sin fuente)"
 REGÊNCIA,-19.6508,-39.8109,B,V,local,nosnap checked,boca del Rio Doce; satélite 2026-11
 BARRA DO RIACHO,-19.8276,-40.0583,B,K,local,nosnap checked,Aracruz; satélite 2026-11
 MANGUINHOS,-20.1916,-40.1909,B,V,local,nosnap checked,Serra; satélite 2026-11

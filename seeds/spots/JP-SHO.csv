@@ -7,4 +7,4 @@ OISO,35.3099,139.3218,B,V,osm:relation/16024383,nosnap checked,posicion aprox; p
 SHICHIRIGAHAMA,35.3047,139.5106,B,V,local,nosnap wave=35.1667;139.5 checked,satélite 2026-11
 YUIGAHAMA,35.3086,139.5421,B,V,local,nosnap checked,Kamakura; satélite 2026-11
 ZUSHI,35.2880,139.5850,B,K,local,facing=225,
-ISSHIKI,35.2610,139.5780,B,L,local,,Hayama; posicion aprox
+ISSHIKI,35.2610,139.5780,B,L,local,,"Hayama; posicion aprox; posición dudosa (revisado 20/11, sin fuente)"

@@ -6,7 +6,7 @@ EL ESTERO,10.3090,-85.8450,B,K,local,wave=10.3333;-86.0,boca del estero norte de
 TAMARINDO,10.3037,-85.8405,B,V,local,nosnap top wave=10.3333;-86.0 checked,satélite 2026-11
 PICO PEQUEÑO,10.3005,-85.8431,R,V,local,nosnap swell=225 checked,roca frente al hotel; posición aproximada; satélite 2026-11
 LANGOSTA,10.2853,-85.8511,B,V,local,nosnap checked,satélite 2026-11
-PARGOS,10.2400,-85.8420,B,L,local,,posición aproximada
+PARGOS,10.2069,-85.8354,B,V,local,nosnap checked,posición aproximada; satélite 2026-11
 PLAYA NEGRA,10.1966,-85.8336,R,V,local,nosnap top checked,derecha sobre roca; satélite 2026-11
 AVELLANAS,10.2293,-85.8378,B,K,osm:way/518442272,,posición OSM
 LITTLE HAWAII,10.2377,-85.8448,R,K,web:mondo.surf,,"norte de Playa Avellanas, boca del rio"

@@ -2,6 +2,6 @@ name,lat,lon,type,conf,src,flags,note
 MEHDIA,34.2595,-6.6788,B,V,local,nosnap top checked,Kenitra; satélite 2026-11
 OUDAYAS,34.0335,-6.8395,B,L,local,,Rabat
 BOUZNIKA,33.8262,-7.1513,R,V,local,nosnap checked,satélite 2026-11
-AIN DIAB,33.5860,-7.6905,,V,local,nosnap checked,Casablanca; posicion dudosa; satélite 2026-11
+AIN DIAB,33.5860,-7.6905,B,V,local,nosnap checked,Casablanca; posicion dudosa; satélite 2026-11
 DAR BOUAZZA,33.5354,-7.8197,P,V,local,nosnap checked,Casablanca oeste; satélite 2026-11
 SAFI LE JARDIN,32.3198,-9.2581,R,V,web:mondo.surf,top swell=310,derecha; Garden

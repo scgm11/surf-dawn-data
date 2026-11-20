@@ -11,8 +11,8 @@ TYNEMOUTH,55.0260,-1.4242,B,V,local,nosnap top checked,Longsands; satélite 2026
 SOUTH SHIELDS,54.9991,-1.4103,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
 SEABURN,54.9380,-1.3580,B,L,local,,Sunderland; posicion aproximada
 ROKER,54.9230,-1.3620,B,L,local,,Sunderland; posicion aproximada
-SEAHAM,54.8400,-1.3280,B,L,local,,posicion aproximada
-HARTLEPOOL,54.6980,-1.1700,B,L,local,,Fish Sands; posicion aproximada
+SEAHAM,54.8397,-1.3302,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+HARTLEPOOL,54.6943,-1.1835,B,V,local,nosnap checked facing=150,Fish Sands; posicion aproximada; satélite 2026-11
 SEATON CAREW,54.6600,-1.1840,B,K,local,,
 REDCAR,54.6200,-1.0610,B,K,local,,
 SALTBURN,54.5875,-0.9665,B,K,local,top,junto al muelle
