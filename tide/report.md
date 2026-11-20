@@ -1,12 +1,12 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-20 16:31 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-20 16:49 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
 - Puertos nuevos: 433 (got 163, imi 9, jma 10, linz 20, noaa 61, ticon 170); más los 4 de Uruguay y Brasil, sin cambios.
 - Regiones con puerto: 210 de 210 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
-- Picos con puerto: 2340 de 2431.
+- Picos con puerto: 2341 de 2432.
 - Archivos: 10825, 28.7 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
@@ -1399,9 +1399,9 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - `got-a95390` GOT5.6 24.027N 121.627E (TW-E) — modelo global GOT5.6: 1 picos a 0.0–0.0 km, radio 10 km
 - Descartadas: `ticon-f34273` 102 km, cruza 99 km de tierra
 
-### TW-NE — Yilan y costa norte (4 picos)
+### TW-NE — Yilan y costa norte (5 picos)
 
-- `ticon-5969a5` TICON-3 25.155N 121.752E (gesla.noaa) — TICON-3, misma costa: 2 picos a 7.1–32 km, radio 42 km (niveles 2,4)
+- `ticon-5969a5` TICON-3 25.155N 121.752E (gesla.noaa) — TICON-3, misma costa: 3 picos a 6.7–32 km, radio 42 km (niveles 2,4)
 - `ticon-b3b22e` TICON-3 24.452N 122.942E (gesla.meds) — TICON-3, misma costa: 2 picos a 119–119 km, radio 130 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): FULONG → ticon-5969a5, DAXI → ticon-5969a5
 
@@ -1530,9 +1530,9 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 
 - `got-0c4434` GOT5.6 25.039S 46.994E (MG-ALL) — modelo global GOT5.6: 2 picos a 0.0–1.9 km, radio 12 km
 
-### RE-ALL — Reunión (10 picos)
+### RE-ALL — Reunión (9 picos)
 
-- `ticon-2ebaf5` TICON-3 20.935S 55.285E (gesla.noaa) — TICON-3, misma costa: 10 picos a 12–58 km, radio 69 km (niveles 2,4)
+- `ticon-2ebaf5` TICON-3 20.935S 55.285E (gesla.noaa) — TICON-3, misma costa: 9 picos a 12–58 km, radio 69 km (niveles 2,4)
 - Descartadas: `ticon-e3ec7b` 9.3 km, fuera por el tope de 3 puertos (nivel 4); `ticon-e021f9` 14 km, fuera por el tope de 3 puertos (nivel 2)
 
 ### MU-ALL — Mauricio (2 picos)
@@ -1711,10 +1711,10 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): WHITESANDS → ticon-a03088, FRESHWATER WEST → ticon-a03088, BROAD HAVEN SOUTH → ticon-a03088, MANORBIER → ticon-a03088
 - Descartadas: `ticon-7b004f` 6.8 km, cruza 72 km de tierra; `ticon-70fbc6` 12 km, fuera por el tope de 3 puertos (nivel 4); `ticon-8fb0ea` 33 km, cruza 30 km de tierra; `ticon-672ff4` 33 km, cruza 16 km de tierra
 
-### GB-SCO — Escocia (21 picos)
+### GB-SCO — Escocia (22 picos)
 
 - `ticon-b027ca` TICON-3 58.441N 3.086W (gesla.meds) — TICON-3, misma costa: 8 picos a 25–106 km, radio 116 km (niveles 2,4)
-- `ticon-1fb951` TICON-3 57.144N 2.080W (gesla.noaa) — TICON-3, misma costa: 3 picos a 2.6–33 km, radio 43 km
+- `ticon-1fb951` TICON-3 57.144N 2.080W (gesla.noaa) — TICON-3, misma costa: 4 picos a 0.7–33 km, radio 43 km
 - `ticon-701a8e` TICON-3 57.895N 5.158W (gesla.meds) — TICON-3, misma costa: 3 picos a 94–113 km, radio 123 km
 - Sin puerto (Open-Meteo): BAY OF SKAILL (ticon-947cf4 a 118 km: fuera por el tope de 3 puertos), MACHIR BAY (ticon-9ab05d a 24 km: fuera por el tope de 3 puertos), GOTT BAY (ticon-f7d787 a 47 km: fuera por el tope de 3 puertos), WEST SANDS (ticon-1fb951 a 99 km: cruza 46 km de tierra), BELHAVEN BAY, PEASE BAY, COLDINGHAM
 - Descartadas: `ticon-9ab05d` 24 km, fuera por el tope de 3 puertos (nivel 4); `ticon-3e251a` 33 km, fuera por el tope de 3 puertos (nivel 4); `ticon-f7d787` 47 km, cruza 16 km de tierra; `ticon-1fb951` 60 km, cruza 51 km de tierra
