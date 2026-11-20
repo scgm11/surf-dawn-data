@@ -29,33 +29,4 @@ NARRAGANSETT,41.4325,-71.4568,B,V,local,nosnap checked,satélite 2026-11
 POINT JUDITH,41.3612,-71.4804,R,V,local,nosnap checked,satélite 2026-11
 MATUNUCK,41.3732,-71.5390,R,V,local,nosnap facing=175 checked,orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
 MISQUAMICUT,41.3190,-71.7980,B,K,local,,Westerly
-DITCH PLAINS,41.0391,-71.9140,R,V,local,nosnap top checked,Montauk; satélite 2026-11
-TURTLE COVE,41.0698,-71.8582,R,V,local,nosnap checked,Montauk; satélite 2026-11
-FLYING POINT,40.8874,-72.3389,B,V,local,nosnap checked,Southampton; satélite 2026-11
-SHINNECOCK INLET,40.8409,-72.4782,B,V,local,nosnap checked facing=170,satélite 2026-11
-ROBERT MOSES,40.6216,-73.2703,B,V,local,nosnap facing=178 wave=40.5975;-73.3239 checked,Fire Island; orientación a mano (la calculada miraba a la laguna o la bahía); satélite 2026-11
-JONES BEACH,40.5795,-73.5567,B,V,local,nosnap checked wave=40.5272;-73.6017,satélite 2026-11
-POINT LOOKOUT,40.5890,-73.5820,B,K,local,wave=40.5272;-73.6017,
-LONG BEACH NY,40.5824,-73.6524,B,V,local,nosnap wave=40.5272;-73.6017 checked,satélite 2026-11
-BEACH 67TH,40.5862,-73.7967,B,V,local,nosnap wave=40.5272;-73.7288 checked,Rockaway; satélite 2026-11
-ROCKAWAY,40.5831,-73.8119,B,V,local,nosnap top checked wave=40.5272;-73.8559,Beach 90th; satélite 2026-11
-FORT TILDEN,40.5535,-73.8880,B,K,local,,Rockaway
-SANDY HOOK,40.4100,-73.9960,B,L,local,wave=40.3866;-73.9014,
-SEA BRIGHT,40.3600,-73.9760,B,L,local,facing=95 wave=40.3866;-73.9014,orientación a mano (la calculada miraba a la laguna o la bahía)
-LONG BRANCH,40.3050,-73.9770,B,L,local,,
-ASBURY PARK,40.2220,-73.9970,B,K,local,,
-BELMAR,40.1720,-74.0142,B,V,local,nosnap checked,16th Ave; satélite 2026-11
-MANASQUAN INLET,40.1033,-74.0339,B,V,web:wikipedia.org,nosnap top checked,satélite 2026-11
-POINT PLEASANT,40.0870,-74.0430,B,K,local,,
-SEASIDE HEIGHTS,39.9440,-74.0690,B,K,local,,
-ISLAND BEACH,39.7950,-74.0980,B,L,local,wave=39.754;-73.9777,State Park
-BARNEGAT INLET,39.7645,-74.1050,B,K,local,wave=39.8243;-73.9554,
-SHIP BOTTOM,39.6420,-74.1730,B,K,local,,LBI
-BEACH HAVEN,39.5600,-74.2420,B,K,local,wave=39.5431;-74.169,LBI
-BRIGANTINE,39.4150,-74.3500,B,L,local,,
-ATLANTIC CITY,39.3600,-74.4150,B,L,local,,
-OCEAN CITY NJ,39.2760,-74.5760,B,L,local,wave=39.2619;-74.5041,
-WILDWOOD,38.9870,-74.8060,B,L,local,wave=38.9807;-74.7123,
-CAPE MAY,38.9310,-74.9180,B,L,local,,
-SEA ISLE CITY,39.1500,-74.6930,B,K,local,,
-AVALON,39.0980,-74.7180,B,L,local,,
+WHITE CREST BEACH,41.9342,-69.9785,B,V,local,nosnap checked,Wellfleet; Cape Cod; Surfers' Beach; satélite 2026-11
