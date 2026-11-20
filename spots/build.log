@@ -4,7 +4,7 @@ UY-ROC      28 spots  1560 bytes  v1e0462
 AR-MDP      22 spots  1265 bytes  v25ddf9
 AR-BAN      16 spots  1131 bytes  vdbd205
 AR-SUR       6 spots   549 bytes  vec40c2
-BR-RS       18 spots  1188 bytes  v51f935
+BR-RS       18 spots  1188 bytes  v0a9a08
 BR-RS-SUL    2 spots   334 bytes  v54fd46
 BR-SC-FLN   14 spots  1014 bytes  v496273
 BR-SC-SUL    6 spots   526 bytes  v99f52b
@@ -35,8 +35,7 @@ VE-ALL       1 spots   238 bytes  v376338
 VE-MAR       1 spots   274 bytes  v6c1a18
 PA-PAC       7 spots   657 bytes  vdb3819
 PA-BDT       4 spots   370 bytes  v8a61c7
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-CR-GUA      12 spots   891 bytes  va5500d
+CR-GUA      12 spots   894 bytes  v0baaaf
 CR-NIC      10 spots   668 bytes  vbd308b
 CR-PAC      10 spots   702 bytes  v764549
 CR-OSA       3 spots   400 bytes  v40a896
@@ -61,19 +60,17 @@ GP-ALL       3 spots   318 bytes  v4f4fae
 MQ-ALL       2 spots   270 bytes  v88437a
 BS-ALL       1 spots   237 bytes  vd0d2d6
 TT-ALL       4 spots   466 bytes  v7a403a
-US-CA-SD    38 spots  2130 bytes  vf100d6
+US-CA-SD    38 spots  2132 bytes  vfd513f
 US-CA-OC    31 spots  1794 bytes  vcd7c0a
 US-CA-LA    23 spots  1516 bytes  v9ea603
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 US-CA-SB    27 spots  1768 bytes  v9264f1
 US-CA-CEN   16 spots  1198 bytes  v3a33bb
 US-CA-SC    30 spots  1903 bytes  vb109a4
 US-CA-SF    30 spots  2038 bytes  v77e231
 US-CA-NOR   25 spots  1575 bytes  vb14d02
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 US-PNW      34 spots  2020 bytes  vebfef5
 US-GULF     15 spots  1110 bytes  v347b44
-US-FL       46 spots  2410 bytes  vcd1849
+US-FL       46 spots  2412 bytes  vba22a5
 US-FL-PAN    6 spots   715 bytes  v0f1ae4
 US-SE       23 spots  1469 bytes  vd91c45
 US-SC-GA    10 spots   802 bytes  v0b7b0b
@@ -96,7 +93,7 @@ AU-NSW-SYD  37 spots  1870 bytes  v7aefa5
 AU-NSW-SC   32 spots  1721 bytes  v72949a
 AU-VIC-SC   21 spots  1343 bytes  v4c0caf
 AU-VIC-PI   18 spots  1264 bytes  v8d8116
-AU-VIC-W     9 spots   725 bytes  vb01b9a
+AU-VIC-W     9 spots   725 bytes  vd625d8
 AU-TAS      13 spots   949 bytes  va4f6af
 AU-SA       14 spots   958 bytes  vfe659d
 AU-SA-EYR    3 spots   346 bytes  v93f619
@@ -110,7 +107,6 @@ NZ-RAG       5 spots   437 bytes  v0529db
 NZ-TAR       7 spots   549 bytes  va74677
 NZ-BOP      11 spots   894 bytes  v688761
 NZ-GIS      13 spots   910 bytes  v4b85d0
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 NZ-WEL      13 spots   914 bytes  vf351a5
 NZ-KAI       9 spots   800 bytes  v377b5c
 NZ-OTA      13 spots   979 bytes  v4d7062
@@ -120,8 +116,7 @@ FJ-SOU       2 spots   367 bytes  vcefc88
 PF-TAH       8 spots   665 bytes  v98c5f1
 PF-ISL       2 spots   333 bytes  v4daadd
 WS-ALL       6 spots   575 bytes  v8df822
-TO-ALL       6 spots   499 bytes  vdbc6ba
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
+TO-ALL       6 spots   500 bytes  va2e588
 VU-ALL       5 spots   475 bytes  v7439f3
 PG-ALL       2 spots   346 bytes  v311d97
 ID-BAL-BUK  14 spots   905 bytes  v345bbb
@@ -152,7 +147,6 @@ JP-IBA       5 spots   484 bytes  v20518a
 JP-SHK       3 spots   311 bytes  vb3a80c
 JP-KYU       2 spots   334 bytes  vcb9879
 TW-E         4 spots   444 bytes  v2a127d
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 TW-NE        5 spots   488 bytes  v75b3a9
 IN-W         3 spots   355 bytes  v9a0e6d
 IN-E         3 spots   378 bytes  vae96a2
@@ -168,8 +162,7 @@ ZA-EC-WLD    5 spots   470 bytes  v1c8c88
 ZA-KZN-DBN   8 spots   525 bytes  vbba312
 ZA-KZN-N     6 spots   539 bytes  vea72a0
 ZA-KZN-S     9 spots   643 bytes  v64dfb7
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
-NA-ERO       3 spots   418 bytes  v2b470c
+NA-ERO       3 spots   418 bytes  v4fe442
 MA-TAG      16 spots  1052 bytes  vfa8d5f
 MA-N         6 spots   560 bytes  v92b311
 MA-S         6 spots   521 bytes  v601cb3
@@ -178,17 +171,15 @@ LR-ALL       3 spots   359 bytes  vfe7bca
 GH-ALL       3 spots   331 bytes  vfe148f
 MZ-S         3 spots   322 bytes  v427fe1
 MZ-INH       3 spots   398 bytes  ve26f4a
-MG-ALL       2 spots   266 bytes  v0a5377
+MG-ALL       2 spots   266 bytes  vb570fd
 RE-ALL       9 spots   674 bytes  v183396
 MU-ALL       2 spots   302 bytes  vcff7bc
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 CV-ALL       3 spots   345 bytes  v960ccf
 FR-PBA      23 spots  1428 bytes  v5073af
 FR-HOS      16 spots  1008 bytes  v561919
 FR-GIR      18 spots  1213 bytes  vd56e52
 FR-VEN      13 spots   911 bytes  vc6d6ed
 FR-BRE      15 spots  1009 bytes  va17b7c
-  open-meteo failed (<urlopen error _ssl.c:994: The handshake operation timed out>), retrying
 ES-PV       25 spots  1342 bytes  v58e082
 ES-CAN      15 spots   931 bytes  v431653
 ES-AST      14 spots   890 bytes  v77786c
