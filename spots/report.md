@@ -77,7 +77,7 @@
 | CL-NOR | 11 | 817 | ncep_gfswave025 | gfs_seamless | 2 | 715 m | 0 |
 | CL-CEN | 20 | 1427 | ncep_gfswave025 | gfs_seamless | 2 | 296 m | 8 |
 | CL-PIC | 10 | 822 | ncep_gfswave025 | gfs_seamless | 2 | 597 m | 5 |
-| CL-MAU | 14 | 1031 | ncep_gfswave025 | gfs_seamless | 3 | 541 m | 2 |
+| CL-MAU | 14 | 1035 | ncep_gfswave025 | gfs_seamless | 3 | 541 m | 2 |
 | CL-SUR | 10 | 761 | ncep_gfswave025 | gfs_seamless | 3 | 560 m | 1 |
 | PE-NOR | 10 | 815 | ncep_gfswave016 | gfs_seamless | 3 | 400 m | 1 |
 | PE-LLB | 8 | 731 | ncep_gfswave016 | gfs_seamless | 3 | 936 m | 0 |
@@ -210,7 +210,7 @@
 | KR-ALL | 6 | 526 | ncep_gfswave016 | gfs_seamless | 3 | 72 m | 0 |
 | CN-HAI | 2 | 291 | ncep_gfswave016 | gfs_seamless | 2 | 48 m | 0 |
 | ZA-WC-CPT | 20 | 1293 | ncep_gfswave025 | gfs_seamless | 1 | 264 m | 3 |
-| ZA-WC-WCO | 6 | 652 | ncep_gfswave025 | gfs_seamless | 3 | 241 m | 3 |
+| ZA-WC-WCO | 6 | 654 | ncep_gfswave025 | gfs_seamless | 3 | 241 m | 3 |
 | ZA-WC-GR | 12 | 935 | ncep_gfswave025 | gfs_seamless | 3 | 520 m | 5 |
 | ZA-EC-JB | 10 | 834 | ncep_gfswave025 | gfs_seamless | 1 | 26 m | 8 |
 | ZA-EC-PE | 19 | 1178 | ncep_gfswave025 | gfs_seamless | 3 | 622 m | 0 |
