@@ -15,7 +15,7 @@ NOYO,39.4260,-123.8130,B,K,local,,Fort Bragg
 GLASS BEACH,39.4520,-123.8135,B,K,local,,Fort Bragg
 VIRGIN CREEK,39.4725,-123.8052,B,V,local,nosnap checked,Fort Bragg; satélite 2026-11
 WESTPORT,39.6350,-123.7910,B,L,local,facing=270,orientación a mano (la calculada miraba a la laguna o la bahía)
-SHELTER COVE,40.0240,-124.0720,B,K,local,,
+SHELTER COVE,40.0250,-124.0575,B,V,local,nosnap checked,satélite 2026-11
 CENTERVILLE,40.5742,-124.3501,B,V,local,nosnap checked,satélite 2026-11
 SOUTH JETTY,40.7554,-124.2365,B,V,local,nosnap wave=40.7381;-124.3404 checked,Humboldt Bay; satélite 2026-11
 NORTH JETTY,40.7654,-124.2331,B,V,local,nosnap wave=40.8787;-124.3101 checked,Humboldt Bay; satélite 2026-11

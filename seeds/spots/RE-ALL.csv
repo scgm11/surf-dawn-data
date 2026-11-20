@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
-BOUCAN CANOT,-21.0350,55.2240,B,K,local,,Saint-Gilles
+BOUCAN CANOT,-21.0284,55.2255,B,V,local,nosnap checked,Saint-Gilles; satélite 2026-11
 ROCHES NOIRES,-21.0475,55.2262,B,K,local,,Saint-Gilles
 LES BRISANTS,-21.0560,55.2170,R,L,local,swell=210,Saint-Gilles; posicion dudosa
 TROIS BASSINS,-21.1111,55.2527,R,V,local,nosnap checked,satélite 2026-11
