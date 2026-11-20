@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 41 s
+catalogs: 3902 stations in 83 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -13,7 +13,7 @@ validación 8518750 NEW YORK (The Battery), NY: TICON gesla.uhslc a 0.05 km, 369
 validación 8724580 KEY WEST, FL: TICON gesla.uhslc a 0.30 km, 38697 días; RMS FES 1.6 GOT 1.6 perth3 1.6 OTIS 1.8
 validación 1910000 SUVA HARBOR, Viti Levu Island: TICON gesla.jodc_jma a 0.03 km, 1095 días; RMS FES 2.4 GOT 2.4 perth3 2.4 OTIS 2.5
 nodal corrections: FES
-pass 1: 267 ports for 152 regions
+pass 1: 270 ports for 153 regions
   noaa-1611347     noaa    -19..  83 cm  Port Allen, Hanapepe Bay, HI
   noaa-1611400     noaa    -15..  79 cm  NAWILIWILI, HI
   noaa-1612340     noaa    -13..  82 cm  HONOLULU, HI
@@ -24,9 +24,12 @@ pass 1: 267 ports for 152 regions
   noaa-1617760     noaa    -22..  99 cm  HILO, HI
   noaa-1732417     noaa     -8..  33 cm  Papeete Harbor, Fare Ute Point
   noaa-1778000     noaa     95.. 228 cm  APIA (Observatory), Upolu Island, AS
+  noaa-8418606     noaa    -45.. 344 cm  Camp Ellis, Saco River Entrance, ME
   noaa-8441571     noaa    -60.. 342 cm  Annisquam, Lobster Cove, MA
   noaa-8448725     noaa    -20.. 121 cm  Menemsha Harbor, MA, MA
-  noaa-8517137     noaa    -37.. 218 cm  Beach Channel (bridge), NY
+  noaa-8516881     noaa    -33.. 182 cm  East Rockaway Inlet, Atlantic Beach, NY
+  noaa-8533615     noaa    -22..  98 cm  Barnegat Inlet, USCG Station, NJ
+  noaa-8534770     noaa    -31.. 174 cm  Ventnor City, ocean pier, NJ
   noaa-8536110     noaa    -30.. 197 cm  Cape May, ferry terminal, NJ
   noaa-8570280     noaa    -32.. 152 cm  OCEAN CITY (FISHING PIER), MD
   noaa-8639207     noaa    -26.. 141 cm  Rudee Inlet, interior channel, VA
@@ -464,12 +467,5 @@ validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.4 cm, rango 100 cm, m
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 9.9 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 montevideo Montevideo (SOHMA): RMS 7.7 cm, rango 97 cm, modelo/oficial 0.86
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-removing tide/got-439c55 (no region uses it)
-removing tide/got-ab6d4c (no region uses it)
-removing tide/got-b461dd (no region uses it)
-removing tide/got-b81c05 (no region uses it)
-removing tide/got-cc7218 (no region uses it)
-removing tide/got-f4a045 (no region uses it)
-removing tide/got-fb1f64 (no region uses it)
-removing tide/ticon-ea07a4 (no region uses it)
-done: 430 ports, 209 regions with ports, 2327/2433 spots, 10750 files 28.5 MB, 430 s
+removing tide/noaa-8517137 (no region uses it)
+done: 433 ports, 210 regions with ports, 2343/2434 spots, 10825 files 28.7 MB, 476 s
