@@ -1,11 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
 BOUCAN CANOT,-21.0284,55.2255,B,V,local,nosnap checked,Saint-Gilles; satélite 2026-11
 ROCHES NOIRES,-21.0475,55.2262,B,K,local,,Saint-Gilles
-LES BRISANTS,-21.0560,55.2170,R,L,local,swell=210,Saint-Gilles; posicion dudosa
+LES BRISANTS,-21.0589,55.2202,R,K,local,nosnap checked swell=210,Saint-Gilles; detrás de la escollera (La Digue); satélite 2026-11
 TROIS BASSINS,-21.1111,55.2527,R,V,local,nosnap checked,satélite 2026-11
 SAINT-LEU,-21.1661,55.2845,R,V,local,nosnap checked,izquierda famosa; satélite 2026-11
 ÉTANG-SALÉ,-21.2650,55.3317,B,V,local,nosnap checked,satélite 2026-11
 MANAPANY,-21.3740,55.5884,R,V,local,nosnap checked,satélite 2026-11
 BARACHOIS,-20.8760,55.4490,,L,local,,Saint-Denis
 AIGRETTES,-21.0356,55.2171,R,V,local,nosnap checked,Cap Homard; Pointe des Aigrettes; satélite 2026-11
-LA DIGUE,-21.0589,55.2202,R,K,local,nosnap checked,Saint-Gilles; al sur de la escollera; satélite 2026-11

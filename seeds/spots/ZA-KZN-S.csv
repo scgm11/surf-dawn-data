@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 AMANZIMTOTI,-30.0520,30.8940,B,K,local,,Toti
-WARNER BEACH,-30.0750,30.8710,B,K,local,,
+WARNER BEACH,-30.0788,30.8726,B,V,local,nosnap checked,satélite 2026-11
 UMKOMAAS,-30.2000,30.8070,B,K,local,,desembocadura
 SCOTTBURGH,-30.2802,30.7603,P,V,local,nosnap checked,satélite 2026-11
 UVONGO,-30.8350,30.3950,B,K,local,,
