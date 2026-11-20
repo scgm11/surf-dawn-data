@@ -1,9 +1,9 @@
 name,lat,lon,type,conf,src,flags,note
 SOUP BOWL,13.2145,-59.5220,R,K,local,top,Bathsheba; costa este; ola de clase mundial
-PARLOUR,13.2136,-59.5178,R,V,local,nosnap checked,Bathsheba norte; posición aproximada; satélite 2026-11
-DUPPIES,13.3165,-59.6454,R,V,local,nosnap checked,Bathsheba sur; posición aproximada; satélite 2026-11
+PARLOUR,13.2136,-59.5178,R,V,local,nosnap checked,Bathsheba norte; satélite 2026-11
+DUPPIES,13.3165,-59.6454,R,V,local,nosnap checked,Bathsheba sur; satélite 2026-11
 SANDY LANE,13.1719,-59.6384,R,V,local,nosnap swell=315 checked,costa oeste; solo con swell del oeste; satélite 2026-11
 BRANDONS,13.1153,-59.6275,R,V,local,nosnap checked,costa oeste junto a Bridgetown; satélite 2026-11
 DRILL HALL,13.0768,-59.6082,R,V,local,nosnap swell=180 checked,costa sur; Bridgetown; satélite 2026-11
 FREIGHTS BAY,13.0529,-59.5352,P,V,osm:node/5542983921,top swell=150,costa sur; derecha; posición OSM
-SURFERS POINT,13.0522,-59.5047,R,V,local,nosnap swell=85 checked,Silver Sands/South Point; posición aproximada; satélite 2026-11
+SURFERS POINT,13.0522,-59.5047,R,V,local,nosnap swell=85 checked,Silver Sands/South Point; satélite 2026-11

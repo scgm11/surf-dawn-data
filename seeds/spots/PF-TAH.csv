@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 TEAHUPO'O,-17.8671,-149.2527,R,V,local,nosnap top checked,WSL CT; ola grande; izquierda tubular; satélite 2026-11
-VAIRAO,-17.8022,-149.3127,R,V,local,nosnap swell=195 checked,paso; posicion dudosa; satélite 2026-11
-PAPARA,-17.7720,-149.4800,B,V,local,nosnap top checked,posicion dudosa (Papara/Taharuu); satélite 2026-11
+VAIRAO,-17.8022,-149.3127,R,V,local,nosnap swell=195 checked,paso; satélite 2026-11
+PAPARA,-17.7720,-149.4800,B,V,local,nosnap top checked,Papara/Taharuu; satélite 2026-11
 TAAPUNA,-17.6036,-149.6219,R,V,local,nosnap top checked,Punaauia; satélite 2026-11
 PAPENOO,-17.5115,-149.4200,B,V,local,nosnap checked,desembocadura; satélite 2026-11
 HA'APITI,-17.5734,-149.8786,R,V,geonames:4034224,top nosnap facing=207 checked,Moorea; izquierda en el paso Matauvau; posición GeoNames del paso; satélite 2026-11

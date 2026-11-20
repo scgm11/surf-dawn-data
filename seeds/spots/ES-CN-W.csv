@@ -2,17 +2,17 @@ name,lat,lon,type,conf,src,flags,note
 EL CONFITAL,28.1579,-15.4364,R,V,local,nosnap top checked facing=310,Gran Canaria; La Isleta; satélite 2026-11
 LAS CANTERAS,28.1430,-15.4420,B,K,local,facing=310,Gran Canaria; Las Palmas
 LA CICER,28.1315,-15.4375,R,K,local,,Gran Canaria; extremo sur de Las Canteras
-MELENARA,27.9873,-15.3751,B,V,local,nosnap checked,Gran Canaria; Telde; posicion aproximada; satélite 2026-11
-PLAYA DEL HOMBRE,27.9972,-15.3745,B,V,local,nosnap checked,Gran Canaria; Telde; posicion aproximada; satélite 2026-11
-BOCABARRANCO,28.1586,-15.6659,B,V,local,nosnap checked,Gran Canaria; Galdar; posicion aproximada; satélite 2026-11
+MELENARA,27.9873,-15.3751,B,V,local,nosnap checked,Gran Canaria; Telde; satélite 2026-11
+PLAYA DEL HOMBRE,27.9972,-15.3745,B,V,local,nosnap checked,Gran Canaria; Telde; satélite 2026-11
+BOCABARRANCO,28.1586,-15.6659,B,V,local,nosnap checked,Gran Canaria; Galdar; satélite 2026-11
 EL FRONTON,28.1651,-15.6549,R,V,gov:hellocanaryislands,top,Gran Canaria; ola grande; Gáldar
-SARDINA,28.1519,-15.6962,B,V,local,nosnap checked,Gran Canaria; Sardina del Norte; posicion aproximada; satélite 2026-11
+SARDINA,28.1519,-15.6962,B,V,local,nosnap checked,Gran Canaria; Sardina del Norte; satélite 2026-11
 LA IZQUIERDA,28.0570,-16.7360,R,V,gov:hellocanaryislands,top checked,Tenerife; Las Americas
-EL CAMISON,28.0532,-16.7354,R,V,local,nosnap checked,Tenerife; Las Americas; posicion aproximada; satélite 2026-11
+EL CAMISON,28.0532,-16.7354,R,V,local,nosnap checked,Tenerife; Las Americas; satélite 2026-11
 PUNTA BLANCA,28.2130,-16.8380,R,V,local,nosnap checked,Tenerife; Guía de Isora; satélite 2026-11
 EL MEDANO,28.0401,-16.5422,B,V,local,nosnap checked,Tenerife; satélite 2026-11
-EL SOCORRO,28.3254,-16.3625,B,V,local,nosnap checked,Tenerife; Guimar; posicion aproximada; satélite 2026-11
-ALMACIGA,28.5724,-16.1930,B,V,local,nosnap top checked wave=28.6667;-16.1667,Tenerife; Anaga; posicion aproximada; satélite 2026-11
-BENIJO,28.5761,-16.1853,B,V,local,nosnap wave=28.6667;-16.1667 checked,Tenerife; Anaga; posicion aproximada; satélite 2026-11
+EL SOCORRO,28.3254,-16.3625,B,V,local,nosnap checked,Tenerife; Guimar; satélite 2026-11
+ALMACIGA,28.5724,-16.1930,B,V,local,nosnap top checked wave=28.6667;-16.1667,Tenerife; Anaga; satélite 2026-11
+BENIJO,28.5761,-16.1853,B,V,local,nosnap wave=28.6667;-16.1667 checked,Tenerife; Anaga; satélite 2026-11
 BAJAMAR,28.5530,-16.3320,R,L,local,,Tenerife
 PUNTA DEL HIDALGO,28.5610,-16.3240,R,L,local,,Tenerife

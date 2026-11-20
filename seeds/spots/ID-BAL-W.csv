@@ -1,7 +1,7 @@
 name,lat,lon,type,conf,src,flags,note
 KUTA BEACH,-8.7197,115.1675,B,K,local,top,playa clasica
 KUTA REEF,-8.7317,115.1546,R,V,local,nosnap swell=195 checked,arrecife frente al aeropuerto; satélite 2026-11
-HALFWAY KUTA,-8.7153,115.1678,B,V,local,nosnap swell=195 checked,posicion aprox; satélite 2026-11
+HALFWAY KUTA,-8.7153,115.1678,B,V,local,nosnap swell=195 checked,satélite 2026-11
 LEGIAN,-8.7040,115.1620,B,K,local,,
 DOUBLE SIX,-8.6945,115.1580,B,K,local,,
 SEMINYAK,-8.6860,115.1520,B,K,local,,
@@ -10,10 +10,10 @@ OLD MANS,-8.6598,115.1302,B,V,local,nosnap checked,satélite 2026-11
 BATU BOLONG,-8.6617,115.1308,R,V,local,nosnap checked,satélite 2026-11
 ECHO BEACH,-8.6560,115.1235,R,K,local,top,
 PERERENAN,-8.6526,115.1220,B,V,local,nosnap checked,satélite 2026-11
-SESEH,-8.6483,115.1158,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
-NYANYI,-8.6341,115.0979,B,V,local,nosnap checked,posicion aprox; satélite 2026-11
+SESEH,-8.6483,115.1158,B,V,local,nosnap checked,satélite 2026-11
+NYANYI,-8.6341,115.0979,B,V,local,nosnap checked,satélite 2026-11
 KEDUNGU,-8.6090,115.0833,B,V,web:bali.com,,
 SOKA,-8.5280,114.9952,B,L,web:beachatlas,,una sola fuente
 BALIAN,-8.5032,114.9656,B,V,web:bali.com,,boca del rio
 MEDEWI,-8.4202,114.8050,P,V,local,nosnap top checked,izquierda larga de punta; satélite 2026-11
-PULUKAN,-8.4226,114.8073,P,V,local,nosnap checked,posicion aprox; satélite 2026-11
+PULUKAN,-8.4226,114.8073,P,V,local,nosnap checked,satélite 2026-11

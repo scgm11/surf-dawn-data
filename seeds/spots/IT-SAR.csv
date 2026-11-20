@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
 CAPO MANNU,40.0300,8.3820,R,K,local,top swell=275,Cerdeña oeste
-PUTZU IDU,40.0290,8.4069,B,V,local,nosnap checked,Cerdeña oeste; posicion aproximada; satélite 2026-11
-BUGGERRU,39.4040,8.4020,B,V,local,nosnap checked,Cerdeña suroeste; posicion aproximada; satélite 2026-11
+PUTZU IDU,40.0290,8.4069,B,V,local,nosnap checked,Cerdeña oeste; satélite 2026-11
+BUGGERRU,39.4040,8.4020,B,V,local,nosnap checked,Cerdeña suroeste; satélite 2026-11
 PISCINAS,39.5480,8.4540,B,L,local,,Cerdeña suroeste; posicion aproximada

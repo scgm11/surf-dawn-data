@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
 LOS CERRITOS,23.3280,-110.1770,B,K,local,top,Pescadero
-SAN PEDRITO,23.3688,-110.2046,P,V,local,nosnap checked,Todos Santos; posición aproximada; satélite 2026-11
+SAN PEDRITO,23.3688,-110.2046,P,V,local,nosnap checked,Todos Santos; satélite 2026-11
 PALMILLA,23.0068,-109.7124,P,V,local,nosnap checked,Los Cabos corredor; derecha; satélite 2026-11
 ZIPPERS,23.0293,-109.7141,P,V,web:mondo.surf,top swell=185,Costa Azul; derecha
 ACAPULQUITO,23.0239,-109.7159,B,V,local,nosnap checked,Costa Azul este; satélite 2026-11

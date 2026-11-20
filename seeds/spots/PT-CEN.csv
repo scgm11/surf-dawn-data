@@ -1,21 +1,21 @@
 name,lat,lon,type,conf,src,flags,note
 ESMORIZ,40.9640,-8.6500,B,L,local,,Ovar; posicion aproximada
-CORTEGACA,40.9392,-8.6586,B,V,local,nosnap checked,Ovar; posicion aproximada; satélite 2026-11
+CORTEGACA,40.9392,-8.6586,B,V,local,nosnap checked,Ovar; satélite 2026-11
 FURADOURO,40.8710,-8.6560,B,K,local,,Ovar
-TORREIRA,40.7620,-8.7141,B,V,local,nosnap checked,Murtosa; posicion aproximada; satélite 2026-11
+TORREIRA,40.7620,-8.7141,B,V,local,nosnap checked,Murtosa; satélite 2026-11
 BARRA,40.6420,-8.7510,B,K,local,,Aveiro; junto al faro
 COSTA NOVA,40.6130,-8.7560,B,L,local,,Aveiro; posicion aproximada
-VAGUEIRA,40.5649,-8.7693,B,V,local,nosnap checked,Vagos; posicion aproximada; satélite 2026-11
+VAGUEIRA,40.5649,-8.7693,B,V,local,nosnap checked,Vagos; satélite 2026-11
 PRAIA DE MIRA,40.4400,-8.8200,B,K,local,,
-TOCHA,40.3299,-8.8455,B,V,local,nosnap checked,Cantanhede; posicion aproximada; satélite 2026-11
+TOCHA,40.3299,-8.8455,B,V,local,nosnap checked,Cantanhede; satélite 2026-11
 QUIAIOS,40.2150,-8.8920,B,L,local,,Figueira da Foz; posicion aproximada
 CABEDELO,40.1400,-8.8636,B,V,local,nosnap top checked,Figueira da Foz; satélite 2026-11
-COSTA DE LAVOS,40.0913,-8.8774,B,V,local,nosnap checked,Figueira da Foz; posicion aproximada; satélite 2026-11
-LEIROSA,40.0568,-8.8929,B,V,local,nosnap checked,Figueira da Foz; posicion aproximada; satélite 2026-11
+COSTA DE LAVOS,40.0913,-8.8774,B,V,local,nosnap checked,Figueira da Foz; satélite 2026-11
+LEIROSA,40.0568,-8.8929,B,V,local,nosnap checked,Figueira da Foz; satélite 2026-11
 PEDROGAO,39.9230,-8.9520,B,L,local,,Leiria; posicion aproximada
 VIEIRA,39.8762,-8.9723,B,V,web:playocean,,Marinha Grande
 SAO PEDRO DE MOEL,39.7570,-9.0270,B,K,local,,
 PAREDES DA VITORIA,39.7000,-9.0560,B,L,local,,Alcobaca; posicion aproximada
 PRAIA DO NORTE,39.6060,-9.0860,B,K,local,top,Nazaré; ola grande; canon submarino
 NAZARE,39.6010,-9.0770,B,K,local,,Nazaré; praia da vila
-SALGADO,39.5457,-9.1142,B,V,local,nosnap checked,Nazaré-Alfeizerão; posicion aproximada; satélite 2026-11
+SALGADO,39.5457,-9.1142,B,V,local,nosnap checked,Nazaré-Alfeizerão; satélite 2026-11

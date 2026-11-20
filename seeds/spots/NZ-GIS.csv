@@ -2,7 +2,7 @@ name,lat,lon,type,conf,src,flags,note
 TATAPOURI,-38.6520,178.1471,P,V,osm:node/1954387753,,"Tatapōuri Point; posición dudosa (revisado 20/11, sin fuente)"
 CORNERS,-38.6506,178.1275,B,K,web:blitzsurf,,Makorori norte; frente al caserío
 FARMHOUSE,-38.6522,178.1236,B,L,web:blitzsurf,,Makorori; entre Creeks y Corners; posicion dudosa
-CREEKS,-38.6568,178.1143,B,V,web:blitzsurf,nosnap checked,Makorori; carpark chico al norte del principal; posicion dudosa; satélite 2026-11
+CREEKS,-38.6568,178.1143,B,V,web:blitzsurf,nosnap checked,Makorori; carpark chico al norte del principal; satélite 2026-11
 RED BUS,-38.6580,178.1112,B,V,osm:node/5426085626,,Makorori; frente al carpark principal
 CENTRES,-38.6612,178.1069,B,K,web:blitzsurf,top,NZCPS; Makorori; entre la Point y Red Bus
 MAKORORI POINT,-38.6661,178.1044,P,V,osm:node/11662418911,top,NZCPS; derecha

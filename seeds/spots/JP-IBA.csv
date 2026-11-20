@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-HASAKI,35.7560,140.8329,B,V,local,nosnap checked,Kamisu; posicion aprox; satélite 2026-11
-KASHIMA,35.9740,140.6730,B,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+HASAKI,35.7560,140.8329,B,V,local,nosnap checked,Kamisu; satélite 2026-11
+KASHIMA,35.9740,140.6730,B,V,local,nosnap checked,satélite 2026-11
 OARAI,36.2992,140.5679,B,V,local,nosnap checked,satélite 2026-11
-ISOHARA,36.7960,140.7578,B,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+ISOHARA,36.7960,140.7578,B,V,local,nosnap checked,satélite 2026-11
 NAKOSO,36.8820,140.8140,B,L,local,,Iwaki; posicion dudosa

@@ -1,23 +1,23 @@
 name,lat,lon,type,conf,src,flags,note
-BAY OF SKAILL,59.0533,-3.3353,B,V,local,nosnap facing=275 checked,Orkney; posicion aproximada; satélite 2026-11
-STRATHY,58.5698,-4.0047,B,V,local,nosnap checked facing=0,Sutherland; posicion aproximada; satélite 2026-11
-MELVICH,58.5608,-3.9117,B,V,local,nosnap checked facing=10,Sutherland; posicion aproximada; satélite 2026-11
-SANDSIDE BAY,58.5690,-3.7913,R,V,local,nosnap checked,Reay; posicion aproximada; satélite 2026-11
+BAY OF SKAILL,59.0533,-3.3353,B,V,local,nosnap facing=275 checked,Orkney; satélite 2026-11
+STRATHY,58.5698,-4.0047,B,V,local,nosnap checked facing=0,Sutherland; satélite 2026-11
+MELVICH,58.5608,-3.9117,B,V,local,nosnap checked facing=10,Sutherland; satélite 2026-11
+SANDSIDE BAY,58.5690,-3.7913,R,V,local,nosnap checked,Reay; satélite 2026-11
 BRIMS NESS,58.6227,-3.6518,R,V,wd:Q24654399,top,Caithness; ola grande; posición de Wikidata
 THURSO EAST,58.6009,-3.5098,R,V,web:wikipedia.org,nosnap top checked wave=58.75;-3.5,WC; ola de arrecife; satélite 2026-11
 DUNNET BAY,58.6140,-3.3530,B,K,local,wave=58.75;-3.5,Caithness
-EOROPIE,58.4988,-6.2719,B,V,local,nosnap checked,Lewis; posicion aproximada; satélite 2026-11
-LUSKENTYRE,57.8808,-6.9564,B,V,local,nosnap wave=58;-7.25 checked facing=270,Harris; posicion aproximada; satélite 2026-11
-SCARISTA,57.8239,-7.0584,B,V,local,nosnap wave=58;-7.25 checked,Harris; posicion aproximada; satélite 2026-11
+EOROPIE,58.4988,-6.2719,B,V,local,nosnap checked,Lewis; satélite 2026-11
+LUSKENTYRE,57.8808,-6.9564,B,V,local,nosnap wave=58;-7.25 checked facing=270,Harris; satélite 2026-11
+SCARISTA,57.8239,-7.0584,B,V,local,nosnap wave=58;-7.25 checked,Harris; satélite 2026-11
 MACHIR BAY,55.7826,-6.4575,B,V,local,nosnap checked,Islay; satélite 2026-11
 GOTT BAY,56.5190,-6.8000,B,L,local,,"Tiree; posicion aproximada; posición dudosa (revisado 20/11, sin fuente)"
-LOSSIEMOUTH,57.7185,-3.2782,B,V,local,nosnap checked,Moray; posicion aproximada; satélite 2026-11
-FRASERBURGH,57.6836,-2.0001,B,V,local,nosnap checked,posicion aproximada; satélite 2026-11
+LOSSIEMOUTH,57.7185,-3.2782,B,V,local,nosnap checked,Moray; satélite 2026-11
+FRASERBURGH,57.6836,-2.0001,B,V,local,nosnap checked,satélite 2026-11
 CRUDEN BAY,57.4117,-1.8502,B,V,local,nosnap checked,satélite 2026-11
 BALMEDIE,57.2530,-2.0440,B,L,local,,Aberdeenshire; posicion aproximada
 ABERDEEN,57.1650,-2.0600,B,K,local,,Aberdeen Beach; muelle norte
 WEST SANDS,56.3493,-2.8053,B,V,local,nosnap facing=75 checked,St Andrews; satélite 2026-11
-BELHAVEN BAY,56.0044,-2.5514,B,V,local,nosnap checked,Dunbar; posicion aproximada; satélite 2026-11
-PEASE BAY,55.9322,-2.3330,B,V,local,nosnap checked,Cockburnspath; posicion aproximada; satélite 2026-11
-COLDINGHAM,55.8924,-2.1328,B,V,local,nosnap checked,Coldingham Bay; posicion aproximada; satélite 2026-11
+BELHAVEN BAY,56.0044,-2.5514,B,V,local,nosnap checked,Dunbar; satélite 2026-11
+PEASE BAY,55.9322,-2.3330,B,V,local,nosnap checked,Cockburnspath; satélite 2026-11
+COLDINGHAM,55.8924,-2.1328,B,V,local,nosnap checked,Coldingham Bay; satélite 2026-11
 FITTIE,57.1445,-2.0686,R,V,local,nosnap checked,Aberdeen; Footdee; arrecife junto al North Pier; satélite 2026-11

@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
 CLOUD 9,9.8140,126.1669,R,V,osm:node/13057141265,nosnap top checked,CT26 QS WC; derecha tubular; satélite 2026-11
-STIMPY'S,9.8441,126.1569,R,V,local,nosnap checked facing=60,General Luna; posicion aprox; satélite 2026-11
+STIMPY'S,9.8441,126.1569,R,V,local,nosnap checked facing=60,General Luna; satélite 2026-11
 JACKING HORSE,9.8154,126.1646,R,V,web:mondo.surf,nosnap top checked,al norte de Cloud 9; satélite 2026-11
 QUICKSILVER,9.8148,126.1655,R,V,osm:node/5894267085,nosnap top checked,junto a Cloud 9; satélite 2026-11
-TUASON POINT,9.8065,126.1691,R,V,osm:node/5251355821,nosnap swell=45 checked,posicion dudosa; satélite 2026-11
-ROCK ISLAND,9.8329,126.1670,R,V,local,nosnap checked,posicion dudosa; satélite 2026-11
-DAKU ISLAND,9.7459,126.1723,R,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+TUASON POINT,9.8065,126.1691,R,V,osm:node/5251355821,nosnap swell=45 checked,satélite 2026-11
+ROCK ISLAND,9.8329,126.1670,R,V,local,nosnap checked,satélite 2026-11
+DAKU ISLAND,9.7459,126.1723,R,V,local,nosnap checked,satélite 2026-11
 PACIFICO,9.9500,126.1100,B,L,local,,norte de Siargao; posicion aprox
 TUESDAY ROCK,9.8394,126.1604,R,K,local,nosnap checked,General Luna; satélite 2026-11

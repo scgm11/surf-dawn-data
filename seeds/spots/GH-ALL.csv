@@ -1,4 +1,4 @@
 name,lat,lon,type,conf,src,flags,note
 BUSUA,4.8063,-1.9379,B,V,local,nosnap facing=160 checked,satélite 2026-11
-DIXCOVE,4.7883,-1.9470,P,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+DIXCOVE,4.7883,-1.9470,P,V,local,nosnap checked,satélite 2026-11
 KOKROBITE,5.4959,-0.3631,B,V,local,nosnap checked,Accra oeste; satélite 2026-11

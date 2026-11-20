@@ -1,19 +1,19 @@
 name,lat,lon,type,conf,src,flags,note
-SÃO TORPES,37.9229,-8.8061,B,V,local,nosnap checked,Sines; posicion aproximada; satélite 2026-11
+SÃO TORPES,37.9229,-8.8061,B,V,local,nosnap checked,Sines; satélite 2026-11
 PORTO COVO,37.8540,-8.7940,B,L,local,,Sines; posicion aproximada
-MALHÃO,37.7803,-8.8022,B,V,local,nosnap checked,Vila Nova de Milfontes; posicion aproximada; satélite 2026-11
+MALHÃO,37.7803,-8.8022,B,V,local,nosnap checked,Vila Nova de Milfontes; satélite 2026-11
 ALMOGRAVE,37.6530,-8.8010,B,L,local,,Odemira; posicion aproximada
-CARVALHAL,37.5002,-8.7925,B,V,local,nosnap checked,Odemira; posicion aproximada; satélite 2026-11
-ZAMBUJEIRA,37.5229,-8.7871,B,V,local,nosnap checked,Zambujeira do Mar; posicion aproximada; satélite 2026-11
+CARVALHAL,37.5002,-8.7925,B,V,local,nosnap checked,Odemira; satélite 2026-11
+ZAMBUJEIRA,37.5229,-8.7871,B,V,local,nosnap checked,Zambujeira do Mar; satélite 2026-11
 ODECEIXE,37.4421,-8.7992,B,V,local,nosnap checked,satélite 2026-11
-AMOREIRA,37.3517,-8.8462,B,V,local,nosnap checked,Aljezur; posicion aproximada; satélite 2026-11
-MONTE CLÉRIGO,37.3420,-8.8532,B,V,local,nosnap checked,Aljezur; posicion aproximada; satélite 2026-11
+AMOREIRA,37.3517,-8.8462,B,V,local,nosnap checked,Aljezur; satélite 2026-11
+MONTE CLÉRIGO,37.3420,-8.8532,B,V,local,nosnap checked,Aljezur; satélite 2026-11
 ARRIFANA,37.2910,-8.8680,P,K,local,top,Aljezur
 BORDEIRA,37.1950,-8.9040,B,K,local,,Carrapateira
 AMADO,37.1670,-8.9020,B,K,local,top,Carrapateira
-CASTELEJO,37.1002,-8.9459,B,V,local,nosnap checked,Vila do Bispo; posicion aproximada; satélite 2026-11
-CORDOAMA,37.1096,-8.9384,B,V,local,nosnap checked,Vila do Bispo; posicion aproximada; satélite 2026-11
-MURRAÇÃO,37.1549,-8.9090,B,V,local,nosnap checked,Vila do Bispo; posicion aproximada; satélite 2026-11
+CASTELEJO,37.1002,-8.9459,B,V,local,nosnap checked,Vila do Bispo; satélite 2026-11
+CORDOAMA,37.1096,-8.9384,B,V,local,nosnap checked,Vila do Bispo; satélite 2026-11
+MURRAÇÃO,37.1549,-8.9090,B,V,local,nosnap checked,Vila do Bispo; satélite 2026-11
 BELICHE,37.0255,-8.9642,B,V,local,nosnap checked,Sagres; satélite 2026-11
 TONEL,37.0070,-8.9500,B,K,local,top,Sagres
 ZAVIAL,37.0463,-8.8715,B,K,osm:way/156814657,,Vila do Bispo; posición OSM

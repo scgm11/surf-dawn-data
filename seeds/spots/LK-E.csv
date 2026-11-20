@@ -1,8 +1,8 @@
 name,lat,lon,type,conf,src,flags,note
 ARUGAM BAY,6.8445,81.8385,P,K,local,top swell=185,WC; derecha de punta
-BABY POINT,6.8405,81.8365,P,V,local,nosnap checked,principiantes; posicion aprox; satélite 2026-11
-POTTUVIL POINT,6.8983,81.8477,P,V,local,nosnap checked,posicion aprox; satélite 2026-11
+BABY POINT,6.8405,81.8365,P,V,local,nosnap checked,principiantes; satélite 2026-11
+POTTUVIL POINT,6.8983,81.8477,P,V,local,nosnap checked,satélite 2026-11
 WHISKEY POINT,6.9054,81.8450,P,V,web:mondo.surf,top,Urani
-PEANUT FARM,6.7826,81.8223,R,V,local,nosnap top checked,posicion dudosa; satélite 2026-11
-CROCODILE ROCK,6.8105,81.8246,R,V,local,nosnap checked,posicion dudosa; satélite 2026-11
-OKANDA,6.6529,81.7759,P,V,local,nosnap checked,posicion dudosa; satélite 2026-11
+PEANUT FARM,6.7826,81.8223,R,V,local,nosnap top checked,satélite 2026-11
+CROCODILE ROCK,6.8105,81.8246,R,V,local,nosnap checked,satélite 2026-11
+OKANDA,6.6529,81.7759,P,V,local,nosnap checked,satélite 2026-11

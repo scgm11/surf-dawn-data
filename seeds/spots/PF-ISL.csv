@@ -1,3 +1,3 @@
 name,lat,lon,type,conf,src,flags,note
-FARE PASS,-16.7084,-151.0436,R,V,local,nosnap checked,Huahine; paso Avamoa; posicion dudosa; satélite 2026-11
-TEAVAPITI,-16.7472,-151.4191,R,V,local,nosnap swell=195 checked facing=90,Raiatea; paso; posicion dudosa; satélite 2026-11
+FARE PASS,-16.7084,-151.0436,R,V,local,nosnap checked,Huahine; paso Avamoa; satélite 2026-11
+TEAVAPITI,-16.7472,-151.4191,R,V,local,nosnap swell=195 checked facing=90,Raiatea; paso; satélite 2026-11

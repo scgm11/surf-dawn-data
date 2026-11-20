@@ -1,5 +1,5 @@
 name,lat,lon,type,conf,src,flags,note
 SHIRAHAMA,34.6878,138.9734,B,V,local,nosnap top checked,Shimoda; satélite 2026-11
-TATADO,34.6605,138.9328,B,V,local,nosnap wave=34.5;139 checked,Shimoda; posicion aprox; satélite 2026-11
-KISAMI,34.6533,138.9197,B,V,local,nosnap checked,Shimoda; posicion aprox; satélite 2026-11
+TATADO,34.6605,138.9328,B,V,local,nosnap wave=34.5;139 checked,Shimoda; satélite 2026-11
+KISAMI,34.6533,138.9197,B,V,local,nosnap checked,Shimoda; satélite 2026-11
 KAWAZU,34.7430,138.9780,B,L,local,,posicion aprox

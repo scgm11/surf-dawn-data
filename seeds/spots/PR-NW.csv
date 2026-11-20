@@ -1,10 +1,10 @@
 name,lat,lon,type,conf,src,flags,note
-GAS CHAMBERS,18.4603,-67.1655,R,V,local,nosnap checked,Isabela; izquierda pesada; posición aproximada; satélite 2026-11
-SHACKS,18.5165,-67.1012,R,V,local,nosnap wave=18.6667;-67.1667 checked,Isabela; posición aproximada; satélite 2026-11
+GAS CHAMBERS,18.4603,-67.1655,R,V,local,nosnap checked,Isabela; izquierda pesada; satélite 2026-11
+SHACKS,18.5165,-67.1012,R,V,local,nosnap wave=18.6667;-67.1667 checked,Isabela; satélite 2026-11
 JOBOS,18.5148,-67.0767,R,V,local,nosnap top checked,Isabela; arrecife; satélite 2026-11
 WILDERNESS,18.4870,-67.1610,R,V,osm:way/433148435,top checked,Aguadilla; frente a las ruinas del faro de Punta Borinquen
 CRASH BOAT,18.4578,-67.1640,B,V,local,nosnap checked,Aguadilla; satélite 2026-11
-TABLE TOPS,18.5076,-67.1386,R,V,local,nosnap checked,Aguadilla; Punta Borinquen; posición aproximada; satélite 2026-11
+TABLE TOPS,18.5076,-67.1386,R,V,local,nosnap checked,Aguadilla; Punta Borinquen; satélite 2026-11
 INDICATORS,18.3612,-67.2711,R,V,local,nosnap swell=340 checked,Rincón norte; ola grande; satélite 2026-11
 DOMES,18.3653,-67.2702,R,V,local,nosnap top swell=340 checked,Rincón; frente a la cúpula del reactor; satélite 2026-11
 SANDY BEACH,18.3707,-67.2578,B,V,local,nosnap checked facing=340,Rincón; satélite 2026-11

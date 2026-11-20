@@ -1,15 +1,15 @@
 name,lat,lon,type,conf,src,flags,note
 SAN ANTOLIN,43.4270,-4.8930,B,L,local,,Naves-Llanes; posicion aproximada
-SANTA MARINA,43.4658,-5.0672,B,V,local,nosnap checked,Ribadesella; posicion aproximada; satélite 2026-11
-VEGA,43.4804,-5.1391,B,V,local,nosnap checked facing=350,Ribadesella; posicion aproximada; satélite 2026-11
+SANTA MARINA,43.4658,-5.0672,B,V,local,nosnap checked,Ribadesella; satélite 2026-11
+VEGA,43.4804,-5.1391,B,V,local,nosnap checked facing=350,Ribadesella; satélite 2026-11
 LA ESPASA,43.4744,-5.2107,B,V,web:hispanopedia,,Caravia-Colunga
 RODILES,43.5315,-5.3800,B,K,local,top,ria de Villaviciosa
 SAN LORENZO,43.5421,-5.6523,B,V,local,nosnap facing=30 checked,Gijon; satélite 2026-11
-XAGO,43.6045,-5.9193,B,V,local,nosnap checked,Gozon; posicion aproximada; satélite 2026-11
+XAGO,43.6045,-5.9193,B,V,local,nosnap checked,Gozon; satélite 2026-11
 SALINAS,43.5775,-5.9617,B,V,local,nosnap top checked,Castrillon; satélite 2026-11
 EL ESPARTAL,43.5760,-5.9470,B,L,local,,Salinas-Avilés; posicion aproximada
 LOS QUEBRANTOS,43.5620,-6.0610,B,L,local,,San Juan de la Arena; posicion aproximada
-AGUILAR,43.5546,-6.1168,B,V,local,nosnap checked,Muros de Nalon; posicion aproximada; satélite 2026-11
-OTUR,43.5529,-6.5962,B,V,local,nosnap checked,Valdes; posicion aproximada; satélite 2026-11
-FREJULFE,43.5592,-6.6781,B,V,local,nosnap checked,Navia; posicion aproximada; satélite 2026-11
-PENARRONDA,43.5538,-6.9954,B,V,local,nosnap checked,Castropol; posicion aproximada; satélite 2026-11
+AGUILAR,43.5546,-6.1168,B,V,local,nosnap checked,Muros de Nalon; satélite 2026-11
+OTUR,43.5529,-6.5962,B,V,local,nosnap checked,Valdes; satélite 2026-11
+FREJULFE,43.5592,-6.6781,B,V,local,nosnap checked,Navia; satélite 2026-11
+PENARRONDA,43.5538,-6.9954,B,V,local,nosnap checked,Castropol; satélite 2026-11

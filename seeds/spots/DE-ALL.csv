@@ -2,5 +2,5 @@ name,lat,lon,type,conf,src,flags,note
 HORNUM,54.7620,8.2740,B,L,local,,Sylt; posicion aproximada
 WESTERLAND,54.9070,8.2900,B,K,local,wave=55.0;8.0,Sylt
 WENNINGSTEDT,54.9400,8.2960,B,L,local,wave=55.0;8.0,Sylt; posicion aproximada
-KAMPEN,54.9615,8.3304,B,V,local,nosnap wave=55.0;8.0 checked,Sylt; posicion aproximada; satélite 2026-11
+KAMPEN,54.9615,8.3304,B,V,local,nosnap wave=55.0;8.0 checked,Sylt; satélite 2026-11
 BUHNE 16,54.9773,8.3424,B,V,local,nosnap checked,Kampen; Sylt; satélite 2026-11

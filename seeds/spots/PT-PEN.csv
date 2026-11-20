@@ -1,13 +1,13 @@
 name,lat,lon,type,conf,src,flags,note
 FOZ DO ARELHO,39.4350,-9.2300,B,L,local,,Lagoa de Obidos; posicion aproximada
-PRAIA D'EL REI,39.3977,-9.2804,B,V,local,nosnap checked,Obidos; posicion aproximada; satélite 2026-11
+PRAIA D'EL REI,39.3977,-9.2804,B,V,local,nosnap checked,Obidos; satélite 2026-11
 BALEAL,39.3677,-9.3397,B,V,local,nosnap top checked,satélite 2026-11
-CANTINHO,39.3712,-9.3394,B,V,local,nosnap checked,Baleal; posicion aproximada; satélite 2026-11
-LAGIDE,39.3736,-9.3360,B,V,local,nosnap checked,Baleal; posicion aproximada; satélite 2026-11
+CANTINHO,39.3712,-9.3394,B,V,local,nosnap checked,Baleal; satélite 2026-11
+LAGIDE,39.3736,-9.3360,B,V,local,nosnap checked,Baleal; satélite 2026-11
 MOLHE LESTE,39.3490,-9.3660,B,K,local,top wave=39.3333;-9.5,Peniche; junto al espigon del puerto
 SUPERTUBOS,39.3415,-9.3620,B,K,local,top wave=39.3333;-9.5,Peniche; WC; CT26
 CONSOLAÇÃO,39.3244,-9.3621,R,V,local,nosnap top checked wave=39.3333;-9.5,Peniche; satélite 2026-11
-SAO BERNARDINO,39.3108,-9.3465,B,V,local,nosnap checked wave=39.3333;-9.5,Atouguia da Baleia; posicion aproximada; satélite 2026-11
-AREIA BRANCA,39.2658,-9.3362,B,V,local,nosnap checked wave=39.3333;-9.5,Lourinha; posicion aproximada; satélite 2026-11
-PORTO NOVO,39.1783,-9.3564,B,V,local,nosnap checked,Torres Vedras; posicion aproximada; satélite 2026-11
+SAO BERNARDINO,39.3108,-9.3465,B,V,local,nosnap checked wave=39.3333;-9.5,Atouguia da Baleia; satélite 2026-11
+AREIA BRANCA,39.2658,-9.3362,B,V,local,nosnap checked wave=39.3333;-9.5,Lourinha; satélite 2026-11
+PORTO NOVO,39.1783,-9.3564,B,V,local,nosnap checked,Torres Vedras; satélite 2026-11
 SANTA CRUZ,39.1250,-9.3860,B,L,local,,Torres Vedras; posicion aproximada
