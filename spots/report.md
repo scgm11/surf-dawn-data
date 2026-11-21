@@ -112,7 +112,7 @@
 | BS-ALL | 1 | 237 | ncep_gfswave016 | gfs_seamless | 1 | — | 1 |
 | TT-ALL | 4 | 466 | ncep_gfswave016 | gfs_seamless | 2 | 1023 m | 0 |
 | US-CA-SD | 38 | 2132 | ncep_gfswave016 | gfs_seamless | 3 | 180 m | 0 |
-| US-CA-OC | 31 | 1794 | ecmwf_wam | gfs_seamless | 3 | 203 m | 1 |
+| US-CA-OC | 31 | 1795 | ecmwf_wam | gfs_seamless | 3 | 203 m | 1 |
 | US-CA-LA | 23 | 1516 | ecmwf_wam | gfs_seamless | 3 | 157 m | 1 |
 | US-CA-SB | 27 | 1768 | ecmwf_wam | gfs_seamless | 3 | 231 m | 3 |
 | US-CA-CEN | 16 | 1198 | ecmwf_wam | gfs_seamless | 3 | 349 m | 5 |
@@ -122,7 +122,7 @@
 | US-PNW | 34 | 2020 | ecmwf_wam | gfs_seamless | 3 | 315 m | 4 |
 | US-GULF | 15 | 1110 | ecmwf_wam | gfs_seamless | 3 | 369 m | 10 |
 | US-FL | 46 | 2412 | ncep_gfswave016 | gfs_seamless | 3 | 294 m | 1 |
-| US-FL-PAN | 6 | 715 | ecmwf_wam | gfs_seamless | 3 | 393 m | 5 |
+| US-FL-PAN | 6 | 714 | ecmwf_wam | gfs_seamless | 3 | 393 m | 5 |
 | US-SE | 23 | 1469 | ncep_gfswave025 | ecmwf_ifs | 3 | 250 m | 8 |
 | US-SC-GA | 10 | 802 | ncep_gfswave016 | ecmwf_ifs | 3 | 576 m | 1 |
 | US-MID | 11 | 858 | ncep_gfswave025 | gfs_seamless | 3 | 363 m | 2 |
