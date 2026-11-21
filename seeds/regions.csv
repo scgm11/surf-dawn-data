@@ -80,7 +80,8 @@ US-NE,US,Nueva Inglaterra,New England,Nova Inglaterra
 US-NY-NJ,US,Nueva York y Nueva Jersey,New York and New Jersey,Nova York e Nova Jersey
 US-HI-OAN,US,North Shore de Oahu,Oahu North Shore,North Shore de Oahu
 US-HI-OAS,US,Oahu sur oeste y este,Oahu South West and East,Oahu sul oeste e leste
-US-HI-MAU,US,Maui,Maui,Maui
+US-HI-MAU,US,Maui norte y este,Maui North and East,Maui norte e leste
+US-HI-MAS,US,Maui sur y oeste,Maui South and West,Maui sul e oeste
 US-HI-KAU,US,Kauai,Kauai,Kauai
 US-HI-BIG,US,Isla Grande de Hawái,Big Island of Hawaii,Ilha Grande do Havaí
 CA-BC-VI,CA,Isla de Vancouver,Vancouver Island,Ilha de Vancouver
@@ -97,6 +98,7 @@ AU-VIC-PI,AU,Phillip Island y Mornington,Phillip Island and Mornington,Phillip I
 AU-VIC-W,AU,Oeste de Victoria,West Victoria,Oeste de Victoria
 AU-TAS,AU,Tasmania,Tasmania,Tasmânia
 AU-SA,AU,Australia del Sur,South Australia,Austrália Meridional
+AU-SA-ADL,AU,Costa de Adelaida,Adelaide Mid Coast,Costa de Adelaide
 AU-SA-EYR,AU,Península de Eyre,Eyre Peninsula,Península de Eyre
 AU-WA-MR,AU,Margaret River,Margaret River,Margaret River
 AU-WA-PER,AU,Perth y Rottnest,Perth and Rottnest,Perth e Rottnest

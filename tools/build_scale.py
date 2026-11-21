@@ -49,17 +49,13 @@ PERIOD = 1.7                                     # s over the p90 period: Rocha'
 PACE = 18                                        # s between requests: 26 calls each, 5,000 an hour
 GFS = "ncep_gfswave025"                          # the global grid: the one with a year of history everywhere
 SPOT = {                                         # measured here and not at the middle spot: the spot whose p90 of
-    "IE-SW": "SPANISH PT BEACH",                 # 92 days (to 2026-11-21, ECMWF WAM, every spot of the region) is the
-    "US-CA-SC": "SAND CITY",                     # median of its region's. The middle ones: ROSSBEIGH inside Dingle
-    "US-GULF": "PADRE SEASHORE",                 # Bay, CAPITOLA the smallest of 30, FREEPORT JETTY and BELMAR off
-    "US-HI-KAU": "HANALEI",                      # the median, KEALIA the biggest of Kauai
+    "AU-SA": "PENNINGTON BAY",                   # 92 days (to 2026-11-21, ECMWF WAM, every spot of the region) is the
+    "IE-SW": "SPANISH PT BEACH",                 # median of its region's. The middle ones: BOOMER BEACH the third
+    "US-CA-SC": "SAND CITY",                     # biggest of 9, ROSSBEIGH inside Dingle Bay, CAPITOLA the smallest of
+    "US-GULF": "PADRE SEASHORE",                 # 30, FREEPORT JETTY and BELMAR off the median, KEALIA the biggest
+    "US-HI-KAU": "HANALEI",                      # of Kauai
     "US-NY-NJ": "WILDWOOD",
 }
-KEPT = {"AU-SA", "US-HI-MAU"}                    # two coasts in one region: their rows stay as measured in GFS on the
-                                                 # sheltered side (Adelaide's coast, Lahaina and Kihei) until they are
-                                                 # split. In ECMWF WAM the open side's median spot gives 1.69 m 17.2 s
-                                                 # (MIDDLETON) and 2.38 m 15.2 s (SPRECKS), the middle spot 1.07 m
-                                                 # 17.2 s (SELLICKS) and 0.90 m 18.3 s (BREAKWALL)
 MIN_HS, MIN_T, MIN_HOURS = 0.3, 4.0, 4000        # less is not the sea: a land cell gives 0.0 m, 0.0 s (null before 5/2025)
 
 
@@ -149,9 +145,6 @@ def main():
         with open(OUT, newline="") as f:
             old = {r["region"]: r for r in csv.DictReader(f)}
     for i, code in enumerate(codes):
-        if code in KEPT and code in old:
-            print("%s: kept as it is (KEPT)" % code, file=sys.stderr)
-            continue
         with open(os.path.join(REGIONS, "%s.json" % code), encoding="utf-8") as f:
             z = json.load(f)
         lat, lon, model = point(z, code)

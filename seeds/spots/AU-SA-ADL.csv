@@ -1,0 +1,6 @@
+name,lat,lon,type,conf,src,flags,note
+PORT NOARLUNGA,-35.1500,138.4640,R,K,local,,Adelaide
+MOANA,-35.2030,138.4680,B,K,local,,Adelaide
+PORT WILLUNGA,-35.2630,138.4620,B,K,local,,Adelaide
+ALDINGA,-35.2760,138.4480,B,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
+SELLICKS,-35.3350,138.4430,B,L,local,,

@@ -13,7 +13,7 @@ Regiones de 20–60 picos. Los códigos son una propuesta; se fijan en la fase 1
 **América**
 - CA: CA-BC-VI Isla de Vancouver · CA-NS Nueva Escocia
 - US: US-PNW Washington y Oregón · US-CA-NOR Humboldt–Mendocino · US-CA-SF San Francisco y San Mateo · US-CA-SC Santa Cruz y Monterey · US-CA-CEN Big Sur y San Luis Obispo · US-CA-SB Santa Bárbara y Ventura · US-CA-LA Los Ángeles · US-CA-OC Orange County · US-CA-SD San Diego · US-NE Nueva Inglaterra · US-NY-NJ Nueva York y Nueva Jersey · US-SE Carolina del Norte a Georgia · US-FL Florida · US-GULF Texas y golfo
-- Hawái: US-HI-OAN North Shore de Oahu · US-HI-OAS resto de Oahu · US-HI-MAU Maui · US-HI-KAU Kauai · US-HI-BIG Isla Grande
+- Hawái: US-HI-OAN North Shore de Oahu · US-HI-OAS resto de Oahu · US-HI-MAU Maui norte y este · US-HI-MAS Maui sur y oeste · US-HI-KAU Kauai · US-HI-BIG Isla Grande
 - PR: PR-NW Rincón–Isabela · PR-N San Juan y costa norte
 - MX: MX-BCN Baja Norte · MX-BCS Baja Sur · MX-NAY Nayarit, Jalisco y Sinaloa · MX-PAC Colima, Michoacán y Guerrero · MX-OAX Oaxaca
 - Centroamérica: GT-PAC · SV-LIB La Libertad · SV-ORI Oriente · NI-RIV Rivas · NI-NW Chinandega/León · CR-GUA Guanacaste norte · CR-NIC Nicoya sur · CR-PAC Pacífico central · CR-OSA Osa · CR-CAR Caribe · PA-PAC Pacífico · PA-BDT Bocas del Toro
@@ -25,7 +25,7 @@ Regiones de 20–60 picos. Los códigos son una propuesta; se fijan en la fase 1
 - AR: AR-MDP Mar del Plata–Necochea · AR-BAN Pinamar/Gesell · UY: UY-MAL y UY-ROC (ya están)
 
 **Oceanía**
-- AU: AU-QLD-SC Sunshine Coast · AU-QLD-GC Gold Coast · AU-NSW-NR Northern Rivers · AU-NSW-MN Mid North Coast · AU-NSW-NC Newcastle y Central Coast · AU-NSW-SYD Sídney · AU-NSW-SC Illawarra y South Coast · AU-VIC-SC Surf Coast · AU-VIC-PI Phillip Island y Mornington · AU-VIC-W costa oeste · AU-TAS Tasmania · AU-SA Australia del Sur · AU-WA-MR Margaret River · AU-WA-PER Perth y Rottnest · AU-WA-NW Gascoyne
+- AU: AU-QLD-SC Sunshine Coast · AU-QLD-GC Gold Coast · AU-NSW-NR Northern Rivers · AU-NSW-MN Mid North Coast · AU-NSW-NC Newcastle y Central Coast · AU-NSW-SYD Sídney · AU-NSW-SC Illawarra y South Coast · AU-VIC-SC Surf Coast · AU-VIC-PI Phillip Island y Mornington · AU-VIC-W costa oeste · AU-TAS Tasmania · AU-SA Australia del Sur · AU-SA-ADL costa de Adelaida · AU-WA-MR Margaret River · AU-WA-PER Perth y Rottnest · AU-WA-NW Gascoyne
 - NZ: NZ-NTL Northland · NZ-AKL Auckland oeste · NZ-RAG Raglan · NZ-TAR Taranaki · NZ-BOP Coromandel y Bay of Plenty · NZ-GIS Gisborne · NZ-WEL Wellington · NZ-KAI Kaikōura y Canterbury · NZ-OTA Otago y Southland · NZ-WC West Coast
 - Pacífico: FJ-MAM Mamanucas · FJ-SOU Coral Coast · PF-TAH Tahití y Moorea · PF-ISL islas de Sotavento · WS Samoa · XP-PAC Tonga, Vanuatu, PNG
 
