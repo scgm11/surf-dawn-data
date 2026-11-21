@@ -1,13 +1,13 @@
 # Mareas: reporte del último build
 
-Generado 2026-11-20 18:21 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
+Generado 2026-11-21 16:01 UTC por `tools/tide/build_tides.py`. Años: 2026, 2027. Correcciones nodales: pyTMD `FES`.
 
 ## Resumen
 
-- Puertos nuevos: 433 (got 163, imi 9, jma 10, linz 20, noaa 61, ticon 170); más los 4 de Uruguay y Brasil, sin cambios.
-- Regiones con puerto: 210 de 210 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
+- Puertos nuevos: 435 (got 163, imi 9, jma 10, linz 20, noaa 61, ticon 172); más los 4 de Uruguay y Brasil, sin cambios.
+- Regiones con puerto: 212 de 212 (más UY-CAN, UY-MAL, UY-ROC, BR-SC-FLN y BR-SC-SUL, congeladas); sin puerto: 0.
 - Picos con puerto: 2341 de 2432.
-- Archivos: 10825, 28.7 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
+- Archivos: 10875, 28.8 MB (cada mes ≤ 6144 bytes; el mayor: 4096).
 - Marine Institute: datum `LAT`; predicciones hasta 2029-01-01T00:20:00Z.
 
 ## Validación TICON-3 vs NOAA
@@ -427,6 +427,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | ticon-ae29cb | ticon3:28.100,-15.400 | TICON-3 28.100N 15.400W (gesla.jodc_jcg) | MSL+ΣA (MSL+177 cm) | 48..319 | — | 2.2 |
 | ticon-afa9fb | ticon3:-34.780,138.481 | TICON-3 34.780S 138.481E (gesla.unam) | MSL+ΣA (MSL+230 cm) | 104..373 | — | 3.5 |
 | ticon-b027ca | ticon3:58.441,-3.086 | TICON-3 58.441N 3.086W (gesla.meds) | MSL+ΣA (MSL+258 cm) | 72..440 | — | 2.1 |
+| ticon-b36d04 | ticon3:20.780,-156.900 | TICON-3 20.780N 156.900W (gesla.noaa) | MSL+ΣA (MSL+83 cm) | 42..145 | — | 0.5 |
 | ticon-b3b22e | ticon3:24.452,122.942 | TICON-3 24.452N 122.942E (gesla.meds) | MSL+ΣA (MSL+164 cm) | 36..270 | — | 1.2 |
 | ticon-b486e0 | ticon3:44.665,-1.163 | TICON-3 44.665N 1.163W (gesla.uhslc) | MSL+ΣA (MSL+323 cm) | 99..548 | — | 4.7 |
 | ticon-b604d6 | ticon3:16.303,-61.072 | TICON-3 16.303N 61.072W (gesla.usgs) | MSL+ΣA (MSL+58 cm) | 19..86 | — | 0.8 |
@@ -465,6 +466,7 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 | ticon-e3d81c | ticon3:37.735,-25.672 | TICON-3 37.735N 25.672W (gesla.noaa) | MSL+ΣA (MSL+115 cm) | 29..209 | — | 0.9 |
 | ticon-e4bed3 | ticon3:48.022,-4.538 | TICON-3 48.022N 4.538W (gesla.noaa) | MSL+ΣA (MSL+350 cm) | 86..610 | — | 3.1 |
 | ticon-e56019 | ticon3:53.392,-6.068 | TICON-3 53.392N 6.068W (gesla.cmems) | MSL+ΣA (MSL+334 cm) | 99..557 | — | 3.3 |
+| ticon-e560dd | ticon3:-35.600,138.100 | TICON-3 35.600S 138.100E (gesla.noaa) | MSL+ΣA (MSL+144 cm) | 70..233 | — | 3.1 |
 | ticon-e56f80 | ticon3:46.007,-1.174 | TICON-3 46.007N 1.174W (gesla.noaa) | MSL+ΣA (MSL+446 cm) | 93..725 | — | 4.4 |
 | ticon-e5fdba | ticon3:31.850,-116.633 | TICON-3 31.850N 116.633W (gesla.noaa) | MSL+ΣA (MSL+193 cm) | 60..324 | — | 1.1 |
 | ticon-e6afd5 | ticon3:-7.752,109.017 | TICON-3 7.752S 109.017E (gesla.noaa) | MSL+ΣA (MSL+179 cm) | 67..298 | — | 1.3 |
@@ -981,13 +983,20 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): YOKOHAMA BAY → ticon-71d7df, KAHALA → noaa-1612340, CHINA WALLS → noaa-1612340, SANDY BEACH → noaa-1612340, MAKAPUU → noaa-1612340, WAIMANALO → noaa-1612340, BELLOWS → noaa-1612340, KAILUA → noaa-1612340
 - Descartadas: `ticon-30cfc5` 0.8 km, fuera por el tope de 3 puertos (nivel 2); `ticon-8de1e3` 2.2 km, fuera por el tope de 3 puertos (nivel 2); `ticon-1dd3c0` 4.2 km, fuera por el tope de 3 puertos (nivel 2); `noaa-1612480` 7.6 km, fuera por el tope de 3 puertos (nivel 3)
 
-### US-HI-MAU — Maui (23 picos)
+### US-HI-MAU — Maui norte y este (14 picos)
 
-- `noaa-1615680` KAHULUI, HI — oficial, misma costa: 12 picos a 6.4–54 km, radio 64 km (niveles 1,3)
+- `noaa-1615680` KAHULUI, HI — oficial, misma costa: 8 picos a 6.4–54 km, radio 64 km (niveles 1,3)
 - `ticon-215748` TICON-3 20.900N 156.467W (gesla.noaa) — TICON-3, misma costa: 6 picos a 8.2–12 km, radio 23 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): JAWS → ticon-215748, PAIA BAY → ticon-215748, STABLES → ticon-215748, SPRECKS → ticon-215748, HONOLUA → ticon-215748, DT FLEMING → ticon-215748
+- Descartadas: `ticon-828e7d` 7.1 km, fuera por el tope de 3 puertos (nivel 4); `ticon-b36d04` 36 km, cruza 38 km de tierra; `noaa-1613198` 40 km, fuera por el tope de 3 puertos (nivel 3); `ticon-f923c0` 43 km, cruza 21 km de tierra
+
+### US-HI-MAS — Maui sur y oeste (9 picos)
+
 - `noaa-1613198` Kaunakakai, HI — oficial, misma costa: 5 picos a 42–52 km, radio 63 km
-- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): JAWS → ticon-215748, PAIA BAY → ticon-215748, STABLES → ticon-215748, SPRECKS → ticon-215748, HONOLUA → ticon-215748, DT FLEMING → ticon-215748, MALA WHARF → noaa-1615680, BREAKWALL → noaa-1615680, BREAKWALL → ticon-215748, PUAMANA → noaa-1615680, PUAMANA → ticon-215748, LAUNIUPOKO → noaa-1615680, LAUNIUPOKO → ticon-215748, OLOWALU → noaa-1615680, OLOWALU → ticon-215748
-- Descartadas: `ticon-828e7d` 7.1 km, fuera por el tope de 3 puertos (nivel 4); `ticon-b36d04` 25 km, cruza 38 km de tierra; `ticon-f923c0` 34 km, cruza 21 km de tierra; `ticon-311cc3` 78 km, cruza 25 km de tierra
+- `ticon-b36d04` TICON-3 20.780N 156.900W (gesla.noaa) — TICON-3, misma costa: 3 picos a 47–50 km, radio 60 km
+- `noaa-1615680` KAHULUI, HI — oficial, cruzando tierra: 1 picos a 12–12 km, radio 23 km
+- Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): MALA WHARF → ticon-b36d04, MALA WHARF → noaa-1615680, BREAKWALL → ticon-b36d04, BREAKWALL → noaa-1615680, PUAMANA → ticon-b36d04, PUAMANA → noaa-1615680, LAUNIUPOKO → ticon-b36d04, LAUNIUPOKO → noaa-1615680, OLOWALU → ticon-b36d04, OLOWALU → noaa-1615680, KALAMA PARK → noaa-1615680, COVE PARK → noaa-1615680
+- Descartadas: `ticon-828e7d` 12 km, fuera por el tope de 3 puertos (nivel 4); `ticon-215748` 13 km, fuera por el tope de 3 puertos (nivel 4); `ticon-f923c0` 34 km, fuera por el tope de 3 puertos (nivel 4); `ticon-311cc3` 92 km, cruza 20 km de tierra
 
 ### US-HI-KAU — Kauai (21 picos)
 
@@ -1101,14 +1110,20 @@ El modelo global (nivel 6, donde no hay mareógrafo cerca) predicho 2026 en la p
 - Sin puerto (Open-Meteo): BINALONG BAY, MARRAWAH (ticon-c246f2 a 105 km: cruza 102 km de tierra), GREEN POINT (ticon-c246f2 a 105 km: cruza 102 km de tierra), OCEAN BEACH
 - Descartadas: `ticon-00efc3` 69 km, cruza 12 km de tierra; `ticon-c246f2` 105 km, cruza 102 km de tierra
 
-### AU-SA — Australia del Sur (14 picos)
+### AU-SA — Australia del Sur (9 picos)
 
-- `ticon-ec093c` TICON-3 35.109S 138.467E (gesla.jodc_jma) — TICON-3, misma costa: 8 picos a 4.6–105 km, radio 116 km (niveles 2,4)
-- `ticon-e0b462` TICON-3 34.716S 135.870E (gesla.cco) — TICON-3, misma costa: 3 picos a 103–115 km, radio 125 km
-- `ticon-afa9fb` TICON-3 34.780S 138.481E (gesla.unam) — TICON-3, misma costa: 2 picos a 54–62 km, radio 72 km
+- `ticon-e560dd` TICON-3 35.600S 138.100E (gesla.noaa) — TICON-3, misma costa: 3 picos a 36–113 km, radio 123 km (niveles 2,4)
+- `ticon-ec093c` TICON-3 35.109S 138.467E (gesla.jodc_jma) — TICON-3, cruzando tierra: 3 picos a 50–54 km, radio 64 km
+- `ticon-e0b462` TICON-3 34.716S 135.870E (gesla.cco) — TICON-3, misma costa: 2 picos a 103–108 km, radio 118 km
 - Sin puerto (Open-Meteo): VIVONNE BAY (ticon-e560dd a 93 km: cruza 59 km de tierra)
+- Descartadas: `ticon-e560dd` 62 km, cruza 49 km de tierra; `ticon-8a7678` 76 km, cruza 73 km de tierra; `ticon-afa9fb` 84 km, cruza 81 km de tierra
+
+### AU-SA-ADL — Costa de Adelaida (5 picos)
+
+- `ticon-ec093c` TICON-3 35.109S 138.467E (gesla.jodc_jma) — TICON-3, misma costa: 3 picos a 4.6–19 km, radio 29 km (niveles 2,4)
+- `ticon-afa9fb` TICON-3 34.780S 138.481E (gesla.unam) — TICON-3, misma costa: 2 picos a 54–62 km, radio 72 km
 - Radios superpuestos (el reloj toma el puerto más cercano que lo cubre): PORT WILLUNGA → ticon-ec093c, SELLICKS → ticon-ec093c
-- Descartadas: `ticon-8a7678` 34 km, fuera por el tope de 3 puertos (nivel 4); `ticon-e560dd` 36 km, fuera por el tope de 3 puertos (nivel 2); `ticon-afa9fb` 84 km, cruza 81 km de tierra
+- Descartadas: `ticon-8a7678` 34 km, fuera por el tope de 3 puertos (nivel 4); `ticon-e560dd` 43 km, fuera por el tope de 3 puertos (nivel 4)
 
 ### AU-SA-EYR — Península de Eyre (3 picos)
 

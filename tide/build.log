@@ -5,7 +5,7 @@ IMI: 38 stations (datum LAT)
 LINZ: 87 ports with CSV
 TICON-3: 3457 gauges {'Coastal': 2782, 'Lake': 132, 'River': 543}
 TICON-3: 2782 Coastal gauges, 2278 after merging duplicates within 1 km
-catalogs: 3902 stations in 45 s
+catalogs: 3902 stations in 88 s
 validación 9410230 La Jolla (Scripps Institution Wharf), CA: TICON gesla.usgs a 0.02 km, 35428 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 1612340 HONOLULU, HI: TICON gesla.meds a 0.48 km, 39293 días; RMS FES 1.8 GOT 1.8 perth3 1.8 OTIS 1.8
 validación 9414290 SAN FRANCISCO (Golden Gate), CA: TICON gesla.jodc_jma a 0.04 km, 45167 días; RMS FES 3.5 GOT 3.5 perth3 3.6 OTIS 3.6
@@ -13,7 +13,7 @@ validación 8518750 NEW YORK (The Battery), NY: TICON gesla.uhslc a 0.05 km, 369
 validación 8724580 KEY WEST, FL: TICON gesla.uhslc a 0.30 km, 38697 días; RMS FES 1.6 GOT 1.6 perth3 1.6 OTIS 1.8
 validación 1910000 SUVA HARBOR, Viti Levu Island: TICON gesla.jodc_jma a 0.03 km, 1095 días; RMS FES 2.4 GOT 2.4 perth3 2.4 OTIS 2.5
 nodal corrections: FES
-pass 1: 270 ports for 153 regions
+pass 1: 272 ports for 155 regions
   noaa-1611347     noaa    -19..  83 cm  Port Allen, Hanapepe Bay, HI
   noaa-1611400     noaa    -15..  79 cm  NAWILIWILI, HI
   noaa-1612340     noaa    -13..  82 cm  HONOLULU, HI
@@ -178,6 +178,7 @@ pass 1: 270 ports for 153 regions
   ticon-789208     ticon   120.. 364 cm  TICON-3 52.462N 4.555E (gesla.uhslc)
   ticon-5969a5     ticon    28.. 188 cm  TICON-3 25.155N 121.752E (gesla.noaa)
   ticon-a75e0c     ticon    86.. 674 cm  TICON-3 47.025N 2.298W (gesla.usgs)
+  ticon-e560dd     ticon    70.. 233 cm  TICON-3 35.600S 138.100E (gesla.noaa)
   ticon-e5fdba     ticon    60.. 324 cm  TICON-3 31.850N 116.633W (gesla.noaa)
   ticon-16f890     ticon  -651.. 632 cm  TICON-3 48.641N 2.028W (gesla.bodc)
   ticon-f6d60a     ticon    51.. 375 cm  TICON-3 9.400N 84.167W (gesla.noaa)
@@ -257,6 +258,7 @@ pass 1: 270 ports for 153 regions
   ticon-4c1a6a     ticon    21.. 109 cm  TICON-3 14.678N 60.941W (gesla.fmi)
   ticon-9c5cfc     ticon   170.. 570 cm  TICON-3 51.592N 3.555E (gesla.noaa)
   ticon-293edc     ticon    50.. 373 cm  TICON-3 9.425N 84.172W (gesla.uhslc)
+  ticon-b36d04     ticon    42.. 145 cm  TICON-3 20.780N 156.900W (gesla.noaa)
   ticon-67b5b2     ticon    32.. 195 cm  TICON-3 38.650N 27.240W (gesla.cmems)
   ticon-b63d75     ticon    26.. 120 cm  TICON-3 19.798N 70.702W (gesla.noaa)
   ticon-de0584     ticon     2..   7 cm  TICON-3 20.868N 86.867W (gesla.smhi)
@@ -467,6 +469,4 @@ validación GOT5.6 imbituba Porto de Imbituba (DHN): RMS 7.4 cm, rango 100 cm, m
 validación GOT5.6 la-paloma La Paloma (SOHMA): RMS 9.9 cm, rango 74 cm, modelo/oficial 1.03
 validación GOT5.6 montevideo Montevideo (SOHMA): RMS 7.7 cm, rango 97 cm, modelo/oficial 0.86
 validación GOT5.6 punta-del-este Punta del Este (SOHMA): RMS 7.3 cm, rango 61 cm, modelo/oficial 0.84
-removing tide/got-3d80b7 (no region uses it)
-removing tide/noaa-8723080 (no region uses it)
-done: 433 ports, 210 regions with ports, 2341/2432 spots, 10825 files 28.7 MB, 473 s
+done: 435 ports, 212 regions with ports, 2341/2432 spots, 10875 files 28.8 MB, 558 s
