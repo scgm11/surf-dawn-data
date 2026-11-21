@@ -103,8 +103,13 @@ de las zonas.
   las olas de las apps llega a todo (`Score.wave` en surf-dawn: con la del mundo, 1,8 m y 13 s).
   El 88 % de la altura que se pasa el 10 % de las horas con luz (07–18 h) de un año y 1,7 s más que
   el período que se pasa el 10 % de las horas, en el punto de olas del pico del medio de la región
-  y en su modelo de olas (GFS Wave 0,25° donde es ECMWF WAM, que no tiene historia de ese año en
-  Open-Meteo; si GFS tiene tierra en ese pico, en la celda de mar delante de él):
+  (o del pico que nombra `SPOT` en `tools/build_scale.py`, donde el del medio no es el mar de la
+  región: una bahía, o el lado de una isla que recibe más o menos que el resto) y en su modelo de
+  olas, con el período que las apps le piden a ese modelo (el `wave_peak_period` de ECMWF WAM, el
+  `wave_period` de los demás). El año es de noviembre de 2024 a octubre de 2025; el de ECMWF WAM,
+  que en Open-Meteo tiene historia desde el 18/11/2025, del 18/11/2025 al 17/11/2026 (hasta
+  entonces sus regiones se medían en GFS Wave 0,25°). Si el modelo tiene tierra en ese pico, en la
+  celda de mar delante de él:
   así la de Rocha (UY-ROC) es la del mundo. Lo calcula `tools/build_scale.py` en
   `seeds/scale.csv` (un año pesa 26 llamadas de la API gratis: se corre a mano, no en cada build) y
   `tools/build_zones.py` lo copia acá. Los niveles de la energía del mar van con ella. Las apps

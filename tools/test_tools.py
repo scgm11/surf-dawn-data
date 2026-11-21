@@ -42,6 +42,26 @@ class Scale(unittest.TestCase):
         top, per, hs, tp, n = build_scale.scale(year(2.04, 11.3))
         self.assertEqual((top, per, hs, tp, n), (1.8, 13.0, 2.04, 11.3, 4380))
 
+    def test_ecmwf_is_measured_in_ecmwf_with_its_peak_period(self):
+        z = {"m": ["ecmwf_wam", "gfs_seamless"], "s": [["A", 1.0, 2.0, 90, "B"], ["B", 3.0, 4.0, 90, "B", 3.5, 4.5], ["C", 5.0, 6.0, 90, "B"]]}
+        self.assertEqual(build_scale.point(z), (3.5, 4.5, "ecmwf_wam"))          # the middle spot's wave point
+        self.assertEqual(build_scale.asked("ecmwf_wam"), ("wave_peak_period", "2025-11-18", "2026-11-17"))
+        self.assertEqual(build_scale.asked("ncep_gfswave016"), ("wave_period", "2024-11-01", "2025-10-31"))
+        d = year(2.04, 11.3)
+        d["hourly"]["wave_peak_period"] = d["hourly"].pop("wave_period")
+        self.assertEqual(build_scale.scale(d)[:2], (1.8, 13.0))
+
+    def test_a_region_measured_at_a_named_spot(self):
+        z = {"m": ["ncep_gfswave016"], "s": [["A", 1.0, 2.0, 90, "B"], ["B", 3.0, 4.0, 90, "B"], ["C", 5.0, 6.0, 90, "B"]]}
+        with mock.patch.dict(build_scale.SPOT, {"XX": "C"}):
+            self.assertEqual(build_scale.point(z, "XX"), (5.0, 6.0, "ncep_gfswave016"))
+            self.assertEqual(build_scale.point(z, "YY"), (3.0, 4.0, "ncep_gfswave016"))
+
+    def test_the_named_spots_are_in_their_regions(self):
+        for code, name in build_scale.SPOT.items():
+            with open(os.path.join(build_scale.REGIONS, "%s.json" % code), encoding="utf-8") as f:
+                self.assertIn(name, [s[0] for s in json.load(f)["s"]], code)
+
     def test_the_published_scales_were_measured_at_sea(self):
         errors = []
         check_seeds.check_scale(errors)

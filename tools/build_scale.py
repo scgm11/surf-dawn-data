@@ -12,9 +12,14 @@ hours of a year go over (p90), its period top 1.7 s over its p90 period, so that
 (the 30 cm and 5 s floors in the same proportion), and the levels of the sea's energy too.
 
 A year of hourly waves (07-18 h at the region's time) at one point per region, its middle spot's wave
-point, in its wave model; the ECMWF WAM models have no history in Open-Meteo for that year, so those
-regions go with GFS Wave 0.25°. They have no wave points of their own: where GFS has land at the middle
-spot (0.0 m all year, not null) it goes to the sea cell in front of it that build_zones would choose.
+point, in its wave model and with the period the apps ask that model for (OpenMeteo.periodField in
+surf-dawn: ECMWF WAM's wave_peak_period, the others' wave_period). ECMWF WAM has history in Open-Meteo
+from 2025-11-18 only, so its regions have their own year (surf-dawn#68; until 2026-11 they went with
+GFS Wave 0.25°, which in sheltered coasts is not the same sea: US-CA-OC 0.80 m against 1.24 m).
+Where the spot in the middle of the list is not the region's sea (a bay, the side of an island that
+gets the most or the least) the region is measured at the spot named in SPOT. Where the model has
+land at the spot (0.0 m all year, not null) it goes to the sea cell in front of it that build_zones
+would choose.
 A year weighs 26 calls of the free API (10,000 a day, 5,000 an hour): the answers are cached in
 tools/.cache/scale/ and the requests paced.
 
@@ -37,11 +42,24 @@ CACHE = os.path.join(ROOT, "tools", ".cache", "scale")
 OUT = os.path.join(ROOT, "seeds", "scale.csv")
 MARINE = "https://marine-api.open-meteo.com/v1/marine"
 FROM, TO = "2024-11-01", "2025-10-31"             # a whole year: every season once
+ECMWF_FROM, ECMWF_TO = "2025-11-18", "2026-11-17"  # ECMWF WAM's first whole year in Open-Meteo
 HOURS = range(7, 19)                             # daylight at any latitude where people surf
 HEIGHT = 0.88                                    # of the p90 height: Rocha's 2.04 m gives 1.8 m
 PERIOD = 1.7                                     # s over the p90 period: Rocha's 11.3 s gives 13 s
 PACE = 18                                        # s between requests: 26 calls each, 5,000 an hour
 GFS = "ncep_gfswave025"                          # the global grid: the one with a year of history everywhere
+SPOT = {                                         # measured here and not at the middle spot: the spot whose p90 of
+    "IE-SW": "SPANISH PT BEACH",                 # 92 days (to 2026-11-21, ECMWF WAM, every spot of the region) is the
+    "US-CA-SC": "SAND CITY",                     # median of its region's. The middle ones: ROSSBEIGH inside Dingle
+    "US-GULF": "PADRE SEASHORE",                 # Bay, CAPITOLA the smallest of 30, FREEPORT JETTY and BELMAR off
+    "US-HI-KAU": "HANALEI",                      # the median, KEALIA the biggest of Kauai
+    "US-NY-NJ": "WILDWOOD",
+}
+KEPT = {"AU-SA", "US-HI-MAU"}                    # two coasts in one region: their rows stay as measured in GFS on the
+                                                 # sheltered side (Adelaide's coast, Lahaina and Kihei) until they are
+                                                 # split. In ECMWF WAM the open side's median spot gives 1.69 m 17.2 s
+                                                 # (MIDDLETON) and 2.38 m 15.2 s (SPRECKS), the middle spot 1.07 m
+                                                 # 17.2 s (SELLICKS) and 0.90 m 18.3 s (BREAKWALL)
 MIN_HS, MIN_T, MIN_HOURS = 0.3, 4.0, 4000        # less is not the sea: a land cell gives 0.0 m, 0.0 s (null before 5/2025)
 
 
@@ -50,17 +68,31 @@ def pct(a, p):
     return a[min(len(a) - 1, int(p / 100 * len(a)))]
 
 
-def point(z):
-    """The middle spot's wave point (its own position when it has none) and the wave model to ask."""
-    s = z["s"][len(z["s"]) // 2]
+def spot(z, code):
+    """The index of the spot the region is measured at: SPOT's, else the middle one."""
+    names = [s[0] for s in z["s"]]
+    return names.index(SPOT[code]) if code in SPOT else len(names) // 2
+
+
+def point(z, code=None):
+    """The measured spot's wave point (its own position when it has none) and the wave model to ask."""
+    s = z["s"][spot(z, code)]
     lat, lon = (s[5], s[6]) if len(s) >= 7 else (s[1], s[2])
-    model = z["m"][0] if "ecmwf" not in z["m"][0] else GFS
-    return lat, lon, model
+    return lat, lon, z["m"][0]
 
 
-def sea_point(z, model):
-    """The sea cell in front of the middle spot, for a spot whose own cell is land in this model."""
-    i = len(z["s"]) // 2
+def asked(model):
+    """(period field, from, to) for a model: what the apps read as its period, and the year it has."""
+    return ("wave_peak_period", ECMWF_FROM, ECMWF_TO) if "ecmwf" in model else ("wave_period", FROM, TO)
+
+
+def cached(code, model):
+    return os.path.join(CACHE, "%s-%s.json" % (code, model))
+
+
+def sea_point(z, model, code=None):
+    """The sea cell in front of the measured spot, for a spot whose own cell is land in this model."""
+    i = spot(z, code)
     s = z["s"][i]
     window = (z.get("sw") or [None] * len(z["s"]))[i]
     wp = openmeteo.wave_points(model, [(s[1], s[2])], [window if window is not None else s[3]])[0]
@@ -68,12 +100,13 @@ def sea_point(z, model):
 
 
 def fetch(code, lat, lon, model):
-    path = os.path.join(CACHE, "%s.json" % code)
+    path = cached(code, model)
     if os.path.exists(path):
         with open(path) as f:
             return json.load(f)
-    url = ("%s?latitude=%.4f&longitude=%.4f&hourly=wave_height,wave_period&models=%s&start_date=%s&end_date=%s&timezone=auto"
-           % (MARINE, lat, lon, model, FROM, TO))
+    period, since, until = asked(model)
+    url = ("%s?latitude=%.4f&longitude=%.4f&hourly=wave_height,%s&models=%s&start_date=%s&end_date=%s&timezone=auto"
+           % (MARINE, lat, lon, period, model, since, until))
     for attempt in range(6):
         try:
             with urllib.request.urlopen(url, timeout=120) as r:
@@ -95,7 +128,8 @@ def scale(d):
     """(height top, period top, p90 height, p90 period, hours) of a year's answer, None without waves
     (a land cell answers 0.0 m and 0.0 s: the floors below would make that a scale, and a broken one)."""
     h = d.get("hourly", {})
-    rows = [(a, b) for t, a, b in zip(h.get("time", []), h.get("wave_height", []), h.get("wave_period", []))
+    period = h.get("wave_peak_period") or h.get("wave_period", [])      # the one asked: asked()
+    rows = [(a, b) for t, a, b in zip(h.get("time", []), h.get("wave_height", []), period)
             if a is not None and b is not None and int(t[11:13]) in HOURS]
     if len(rows) < MIN_HOURS:
         return None
@@ -115,20 +149,22 @@ def main():
         with open(OUT, newline="") as f:
             old = {r["region"]: r for r in csv.DictReader(f)}
     for i, code in enumerate(codes):
+        if code in KEPT and code in old:
+            print("%s: kept as it is (KEPT)" % code, file=sys.stderr)
+            continue
         with open(os.path.join(REGIONS, "%s.json" % code), encoding="utf-8") as f:
             z = json.load(f)
-        lat, lon, model = point(z)
+        lat, lon, model = point(z, code)
         try:
             d = fetch(code, lat, lon, model)
             if scale(d) is None and model != GFS:
                 model = GFS                          # a regional model without history there
-                os.remove(os.path.join(CACHE, "%s.json" % code))
                 d = fetch(code, lat, lon, model)
             if scale(d) is None:
-                sea = sea_point(z, model)            # the spot's own cell is land in this model
+                sea = sea_point(z, model, code)      # the spot's own cell is land in this model
                 if sea is not None:
                     lat, lon = sea
-                    os.remove(os.path.join(CACHE, "%s.json" % code))
+                    os.remove(cached(code, model))
                     d = fetch(code, lat, lon, model)
         except (urllib.error.URLError, OSError, ValueError, RuntimeError) as e:
             print("%s: %s" % (code, e), file=sys.stderr)
