@@ -1,6 +1,6 @@
 # Picos: reporte del último build
 
-215 regiones, 2527 picos. Errores: 0. Avisos: 40.
+217 regiones, 2527 picos. Errores: 0. Avisos: 40.
 
 ## Avisos
 
@@ -130,7 +130,8 @@
 | US-NY-NJ | 30 | 1913 | ecmwf_wam | gfs_seamless | 3 | 207 m | 13 |
 | US-HI-OAN | 21 | 1209 | ncep_gfswave016 | gfs_seamless | 1 | 138 m | 0 |
 | US-HI-OAS | 23 | 1525 | ecmwf_wam | gfs_seamless | 3 | 294 m | 3 |
-| US-HI-MAU | 23 | 1437 | ecmwf_wam | gfs_seamless | 3 | 884 m | 1 |
+| US-HI-MAU | 14 | 968 | ecmwf_wam | gfs_seamless | 2 | 1293 m | 0 |
+| US-HI-MAS | 9 | 730 | ecmwf_wam | gfs_seamless | 3 | 340 m | 1 |
 | US-HI-KAU | 21 | 1271 | ecmwf_wam | gfs_seamless | 2 | 242 m | 1 |
 | US-HI-BIG | 15 | 1068 | ecmwf_wam | gfs_seamless | 3 | 165 m | 0 |
 | CA-BC-VI | 14 | 1021 | ecmwf_wam | gfs_seamless | 3 | 181 m | 0 |
@@ -146,7 +147,8 @@
 | AU-VIC-PI | 18 | 1264 | ncep_gfswave025 | gfs_seamless | 3 | 409 m | 3 |
 | AU-VIC-W | 9 | 725 | ncep_gfswave025 | gfs_seamless | 3 | 519 m | 2 |
 | AU-TAS | 13 | 949 | ncep_gfswave025 | gfs_seamless | 3 | 682 m | 5 |
-| AU-SA | 14 | 958 | ecmwf_wam | gfs_seamless | 3 | 471 m | 0 |
+| AU-SA | 9 | 714 | ecmwf_wam | gfs_seamless | 3 | 671 m | 0 |
+| AU-SA-ADL | 5 | 495 | ecmwf_wam | gfs_seamless | 2 | 311 m | 0 |
 | AU-SA-EYR | 3 | 346 | ncep_gfswave025 | gfs_seamless | 1 | 83 m | 0 |
 | AU-WA-MR | 32 | 2364 | ncep_gfswave025 | gfs_seamless | 3 | 217 m | 30 |
 | AU-WA-PER | 17 | 1206 | ncep_gfswave025 | gfs_seamless | 3 | 513 m | 0 |

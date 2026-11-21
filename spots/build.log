@@ -79,7 +79,8 @@ US-NE       31 spots  1869 bytes  va9438f
 US-NY-NJ    30 spots  1913 bytes  v9192fa
 US-HI-OAN   21 spots  1209 bytes  vc45e29
 US-HI-OAS   23 spots  1525 bytes  vc0dd6d
-US-HI-MAU   23 spots  1437 bytes  v698df3
+US-HI-MAU   14 spots   968 bytes  v00b217
+US-HI-MAS    9 spots   730 bytes  v1b531e
 US-HI-KAU   21 spots  1271 bytes  v875235
 US-HI-BIG   15 spots  1068 bytes  va521c7
 CA-BC-VI    14 spots  1021 bytes  v0e75ff
@@ -95,7 +96,8 @@ AU-VIC-SC   21 spots  1343 bytes  v4c0caf
 AU-VIC-PI   18 spots  1264 bytes  v8d8116
 AU-VIC-W     9 spots   725 bytes  vd625d8
 AU-TAS      13 spots   949 bytes  va4f6af
-AU-SA       14 spots   958 bytes  vfe659d
+AU-SA        9 spots   714 bytes  v5551e0
+AU-SA-ADL    5 spots   495 bytes  v7cdc0e
 AU-SA-EYR    3 spots   346 bytes  v93f619
 AU-WA-MR    32 spots  2364 bytes  v6e9187
 AU-WA-PER   17 spots  1206 bytes  vc18bbf
@@ -253,4 +255,4 @@ warning: PT-AZO/PRAIA DA VITÓRIA: no direction open to the sea from facing 140:
 warning: GB-WAL: ncep_gfswave016 has no waves near 5 spots: ncep_gfswave025
 warning: IE-SW/VENTRY: no direction open to the sea from facing 198: check the facing (no shelter)
 warning: NL-ALL: ncep_gfswave016 has no waves near 9 spots: ncep_gfswave025
-215 regions, 2527 spots, 0 errors, 40 warnings
+217 regions, 2527 spots, 0 errors, 40 warnings
