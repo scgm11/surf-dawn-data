@@ -857,7 +857,7 @@
   <span class="eyebrow" data-t="qE">Preguntas</span>
   <h2 id="q-h" data-t="qH">Lo que te estás preguntando.</h2>
   <div class="faq" style="text-align:left">
-    <details><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Todas las apps son gratis, sin publicidad y sin cuentas, en memoria de Gonzalo Moratorio. Si te sirve, podés invitar un café desde la app del teléfono (muy pronto en el iPhone).</p></details>
+    <details><summary data-t="q1">¿Cuánto cuesta?</summary><p data-t="a1">Nada. Todas las apps son gratis, sin publicidad y sin cuentas, en memoria de Gonzalo Moratorio.</p></details>
     <details><summary data-t="q2">¿Qué reloj necesito?</summary><p data-t="a2">Un Garmin redondo de 5 botones (fēnix, epix, Forerunner y otros) para la esfera, Pronóstico y Sesión; Anillos y los campos de datos andan en casi 100 relojes Garmin. O un Apple Watch con watchOS 10 y un iPhone con iOS 17. O un reloj con Wear OS 4 y un Android 9, en beta. Y sin reloj, la app del teléfono sirve sola.</p></details>
     <details><summary data-t="q7">¿Me sirve con Android?</summary><p data-h="a7">Con un Garmin, sí: las apps del reloj andan con Android o con iPhone, porque hablan con la app Garmin Connect del teléfono. Y la app de Android y la del reloj con Wear OS ya están en prueba, antes de salir en Google Play: <a href="testers.html#es">sumate a los primeros</a>.</p></details>
     <details><summary data-t="q8">¿Tengo que cambiar mi esfera?</summary><p data-t="a8">No. Pronóstico y Sesión se abren desde cualquier esfera, y el glance de Pronóstico te deja a la vista el mejor pico del día. Además, Pronóstico pone tres complicaciones de tu pico (las mejores horas, las olas y el viento de ahora) y Sesión dos (tu última sesión y tu mejor ventana) en Face It y en las esferas de Connect IQ que las aceptan; las esferas de Garmin no muestran complicaciones de otras apps.</p></details>
@@ -918,7 +918,8 @@
   </div>
 </section>
 
-<section class="apoyo" id="apoyar" aria-labelledby="ap-h">
+<!-- hidden since 21/11/2026: App Review rejected the iPhone app (guideline 3.1.1) while its tips are not submitted; show it again when the three In-App Purchases are approved -->
+<section class="apoyo" id="apoyar" aria-labelledby="ap-h" hidden>
   <span class="eyebrow" data-t="apE">Apoyá Surf Dawn</span>
   <h2 id="ap-h" data-t="apH">¿Te sirve? Invitá un café.</h2>
   <p class="lead" data-t="apLead">Surf Dawn es gratis y va a seguir siéndolo. Si te ayuda a agarrar mejores olas, podés invitarle algo al que la hace. No desbloquea nada: es un gracias.</p>
@@ -1055,7 +1056,7 @@ const T = {
     nodeG: "Seven apps: the watch face, Forecast, Session and the data fields", nodeI: "Your spots' week and all your sessions, from any watch", nodeA: "Forecast, Session and Train in one app",
     
     qE: "Questions", qH: "What you're wondering.",
-    q1: "How much does it cost?", a1: "Nothing. All the apps are free, with no ads and no accounts, in memory of Gonzalo Moratorio. If it helps you, you can buy a coffee from the phone app (very soon on the iPhone).", memE: "In memory of", memWhy: "Surf Dawn is free in his memory.",
+    q1: "How much does it cost?", a1: "Nothing. All the apps are free, with no ads and no accounts, in memory of Gonzalo Moratorio.", memE: "In memory of", memWhy: "Surf Dawn is free in his memory.",
     q2: "Which watch do I need?", a2: "A round 5-button Garmin (fēnix, epix, Forerunner and more) for the watch face, Forecast and Session; Rings and the data fields run on almost 100 Garmin watches. Or an Apple Watch with watchOS 10 and an iPhone with iOS 17. Or a Wear OS 4 watch and an Android 9 phone, in beta. And with no watch at all, the phone app works on its own.",
     q7: "Does it work with Android?", a7: 'With a Garmin, yes: the watch apps work with Android or with an iPhone, because they talk to the Garmin Connect app on your phone. And the Android app and the Wear OS one are already in testing, before they reach Google Play: <a href="testers.html#en">be one of the first</a>.',
     q8: "Do I have to change my watch face?", a8: "No. Forecast and Session open from any watch face, and Forecast's glance keeps the day's best spot in view. Forecast also puts three complications for your spot (the best hours, and the waves and wind right now) and Session two (your last session and your best window) on Face It and on the Connect IQ watch faces that take them; Garmin's own faces don't show other apps' complications.",
@@ -1167,7 +1168,7 @@ const T = {
     nodeG: "Sete apps: o mostrador, a Previsão, o Sessão e os campos de dados", nodeI: "A semana dos seus picos e todas as suas sessões, de qualquer relógio", nodeA: "Previsão, Sessão e Treinar num só app",
     
     qE: "Perguntas", qH: "O que você está se perguntando.",
-    q1: "Quanto custa?", a1: "Nada. Todos os apps são grátis, sem anúncios e sem conta, em memória de Gonzalo Moratorio. Se ele te ajuda, você pode pagar um café pelo app do celular (muito em breve no iPhone).", memE: "Em memória de", memWhy: "O Surf Dawn é grátis em memória dele.",
+    q1: "Quanto custa?", a1: "Nada. Todos os apps são grátis, sem anúncios e sem conta, em memória de Gonzalo Moratorio.", memE: "Em memória de", memWhy: "O Surf Dawn é grátis em memória dele.",
     q2: "Que relógio eu preciso?", a2: "Um Garmin redondo de 5 botões (fēnix, epix, Forerunner e outros) para o mostrador, a Previsão e o Sessão; os Anéis e os campos de dados funcionam em quase 100 relógios Garmin. Ou um Apple Watch com watchOS 10 e um iPhone com iOS 17. Ou um relógio com Wear OS 4 e um Android 9, em beta. E sem relógio, o app do celular funciona sozinho.",
     q7: "Funciona com Android?", a7: 'Com um Garmin, sim: os apps do relógio funcionam com Android ou com iPhone, porque conversam com o app Garmin Connect do celular. E o app de Android e o do relógio com Wear OS já estão em teste, antes de chegar ao Google Play: <a href="testers.html#pt">seja um dos primeiros</a>.',
     q8: "Preciso trocar o meu mostrador?", a8: "Não. A Previsão e o Sessão abrem de qualquer mostrador, e o glance da Previsão deixa à vista o melhor pico do dia. Além disso, a Previsão põe três complicações do seu pico (as melhores horas, as ondas e o vento de agora) e o Sessão duas (a sua última sessão e a sua melhor janela) no Face It e nos mostradores da Connect IQ que as aceitam; os mostradores da Garmin não mostram complicações de outros apps.",
