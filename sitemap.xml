@@ -1,40 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://scgm11.github.io/surf-dawn-data/</loc>
-    <lastmod>2026-11-23</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://scgm11.github.io/surf-dawn-data/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scgm11.github.io/surf-dawn-data/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://scgm11.github.io/surf-dawn-data/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scgm11.github.io/surf-dawn-data/"/>
-  </url>
-  <url>
-    <loc>https://scgm11.github.io/surf-dawn-data/?lang=es</loc>
-    <lastmod>2026-11-23</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://scgm11.github.io/surf-dawn-data/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scgm11.github.io/surf-dawn-data/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://scgm11.github.io/surf-dawn-data/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scgm11.github.io/surf-dawn-data/"/>
-  </url>
-  <url>
-    <loc>https://scgm11.github.io/surf-dawn-data/?lang=en</loc>
-    <lastmod>2026-11-23</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://scgm11.github.io/surf-dawn-data/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scgm11.github.io/surf-dawn-data/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://scgm11.github.io/surf-dawn-data/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scgm11.github.io/surf-dawn-data/"/>
-  </url>
-  <url>
-    <loc>https://scgm11.github.io/surf-dawn-data/?lang=pt</loc>
-    <lastmod>2026-11-23</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://scgm11.github.io/surf-dawn-data/?lang=es"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://scgm11.github.io/surf-dawn-data/?lang=en"/>
-    <xhtml:link rel="alternate" hreflang="pt" href="https://scgm11.github.io/surf-dawn-data/?lang=pt"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://scgm11.github.io/surf-dawn-data/"/>
-  </url>
-  <url><loc>https://scgm11.github.io/surf-dawn-data/testers.html</loc><lastmod>2026-11-17</lastmod></url>
-  <url><loc>https://scgm11.github.io/surf-dawn-data/support.html</loc><lastmod>2026-11-23</lastmod></url>
-  <url><loc>https://scgm11.github.io/surf-dawn-data/privacy.html</loc><lastmod>2026-11-23</lastmod></url>
+<!-- the web is at https://surfdawn.app/ (its own sitemap); here only the manuals, which are published from this repo -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual.pdf</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual-en.pdf</loc><lastmod>2026-11-20</lastmod></url>
   <url><loc>https://scgm11.github.io/surf-dawn-data/manual/Surf-Dawn-manual-pt.pdf</loc><lastmod>2026-11-20</lastmod></url>

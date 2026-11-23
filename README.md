@@ -5,6 +5,13 @@ Datos públicos que bajan la esfera **Surf Dawn**, **Pronóstico** y **Sesión**
 por GitHub Pages desde `https://scgm11.github.io/surf-dawn-data/`, lo arman las Actions de este
 repo y los formatos están en [`docs/formatos.md`](docs/formatos.md).
 
+**La web** (portada, Soporte, Privacidad, testers) está desde el 23/11/2026 en [surfdawn.app](https://surfdawn.app/),
+repo [`scgm11/surf-dawn-web`](https://github.com/scgm11/surf-dawn-web): los cambios de la web van allá. Acá quedan
+`index.html`, `support.html`, `privacy.html` y `testers.html` como redirecciones (las apps todavía enlazan estas
+direcciones), `web/` (las apps muestran `web/gonzalo.jpg`) y los manuales en `manual/`. El dominio no se pone en
+este repo: GitHub redirigiría también los datos que bajan los relojes. `google78534b9b27cb149f.html` es la
+verificación de Search Console: no borrarlo.
+
 | Carpeta | Qué es | Lo arma |
 |---|---|---|
 | `spots/` | Los picos del mundo en zonas de hasta 60: una por región (`r/`), los índices por continente (`idx.json`, `idx/`) y las celdas de 10° que el reloj mira por posición (`g/`) | `tools/build_zones.py` (Action `zones.yml`) |
