@@ -116,14 +116,19 @@
   nav.bar .wrap { display: flex; align-items: center; gap: 18px; height: 64px; }
   .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 1.15rem; color: var(--text); margin-right: auto; white-space: nowrap; }
   .brand img { width: 32px; height: 32px; border-radius: 8px; }
-  .links { display: none; gap: 20px; font-weight: 500; }
-  .links a { color: var(--label); } .links a:hover { color: var(--text); }
+  .links { display: none; gap: 18px; font-weight: 500; }
+  .links a { color: var(--label); white-space: nowrap; } .links a:hover { color: var(--text); }
   @media (min-width: 1100px) { .links { display: flex; } }
   .langs { display: flex; gap: 2px; background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .12); border-radius: 999px; padding: 3px; }
   .langs button { font: 600 .78rem/1 var(--head); letter-spacing: .06em; color: var(--label); background: none; border: 0; border-radius: 999px; padding: 7px 10px; cursor: pointer; }
   .langs button[aria-pressed="true"] { background: rgba(255, 255, 255, .16); color: var(--text); }
   .btn.nav-cta { display: none; }
   @media (min-width: 560px) { .btn.nav-cta { display: inline-flex; } }
+  /* the manual: in the links when they show, and as its own button (just the book, on a phone or a small tablet) when they don't */
+  @media (min-width: 1100px) { .btn.nav-man { display: none; } }
+  @media (max-width: 639px) { .btn.small.nav-man { padding: 9px 12px; } .nav-man span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } }
+  @media (max-width: 479px) { nav.bar .wrap { gap: 12px; } }
+  @media (max-width: 359px) { .brand span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; } }  /* the smallest phones: just the icon, so the book fits */
 
   /* buttons */
   .btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; padding: 14px 22px; border-radius: 999px; font-weight: 600; font-size: 1.04rem;
@@ -468,9 +473,10 @@
 <body>
 
 <nav class="bar" id="bar"><div class="wrap">
-  <a class="brand" href="#"><img src="web/icono.png" width="32" height="32" alt="">Surf Dawn</a>
-  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#funciones" data-t="lDoes">Qué hace</a><a href="#entrenar" data-t="t4">Entrenar</a><a href="#garmin">Garmin</a><a href="#apple">Apple</a><a href="#android">Android</a><a href="#preguntas" data-t="lFaq">Preguntas</a></div>
+  <a class="brand" href="#"><img src="web/icono.png" width="32" height="32" alt=""><span>Surf Dawn</span></a>
+  <div class="links"><a href="#dia" data-t="lDay">Cómo funciona</a><a href="#funciones" data-t="lDoes">Qué hace</a><a href="#entrenar" data-t="t4">Entrenar</a><a href="#garmin">Garmin</a><a href="#apple">Apple</a><a href="#android">Android</a><a href="#preguntas" data-t="lFaq">Preguntas</a><a class="pdf-link" href="manual/Surf-Dawn-manual.pdf" data-t="lMan">Manual</a></div>
   <div class="langs" role="group" aria-label="Idioma / Language"><button type="button" data-lang="es">ES</button><button type="button" data-lang="en">EN</button><button type="button" data-lang="pt">PT</button></div>
+  <a class="btn ghost small nav-man pdf-link" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"/></svg><span data-t="lMan">Manual</span></a>
   <a class="btn small nav-cta" href="#instalar" data-t="install">Instalar gratis</a>
 </div></nav>
 
@@ -723,6 +729,7 @@
   <span class="eyebrow">Garmin · Connect IQ</span>
   <h2 id="g-h" data-t="gH">En Garmin, siete apps.</h2>
   <p class="lead" data-t="gLead">Instalá las que quieras: cada una anda sola, y juntas te acompañan desde que mirás el reloj hasta que salís del agua.</p>
+  <div class="actions"><a class="btn ghost small pdf-link" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"/></svg><span data-t="mHow">Cómo se usa: el manual en PDF</span></a></div>
 
   <article class="feature">
     <div class="shot pair">
@@ -790,6 +797,7 @@
   <span class="eyebrow">iPhone · Apple Watch</span>
   <h2 id="a-h" data-t="aH">Una sola app, con el Apple Watch adentro.</h2>
   <p class="lead" data-t="aLead">La app de iPhone junta tus sesiones del Apple Watch y de tu Garmin, y trae adentro la app del Apple Watch.</p>
+  <div class="actions"><a class="btn ghost small pdf-link" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"/></svg><span data-t="mHow">Cómo se usa: el manual en PDF</span></a></div>
 
   <article class="feature">
     <div class="shot duo"><figure><img data-img="web/iphone-pronostico-{l}.webp" src="web/iphone-pronostico-es.webp" width="440" height="930" alt="Pronóstico de surf de los picos cercanos en Surf Dawn para iPhone" loading="lazy"></figure><figure><img data-img="web/iphone-mapa-{l}.webp" src="web/iphone-mapa-es.webp" width="440" height="930" alt="Mapa del tiempo con las olas y el viento, en el iPhone" loading="lazy"></figure></div>
@@ -821,6 +829,7 @@
   <span class="eyebrow">Android · Wear OS <span class="beta">Beta</span></span>
   <h2 id="and-h" data-t="andH">También en Android.</h2>
   <p class="lead" data-t="andLead">La misma app en tu teléfono Android y en tu reloj con Wear OS. Está en prueba antes de salir en Google Play, y ya la podés usar.</p>
+  <div class="actions"><a class="btn ghost small pdf-link" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"/></svg><span data-t="mHow">Cómo se usa: el manual en PDF</span></a></div>
 
   <article class="feature">
     <div class="shot"><div class="spots phone cut"><img data-img="web/android-pronostico-{l}.webp" src="web/android-pronostico-es.webp" width="440" height="741" alt="Pronóstico de surf de los picos cercanos en Surf Dawn para Android" loading="lazy"></div></div>
@@ -861,6 +870,7 @@
     <details><summary data-t="q2">¿Qué reloj necesito?</summary><p data-t="a2">Un Garmin redondo de 5 botones (fēnix, epix, Forerunner y otros) para la esfera, Pronóstico y Sesión; Anillos y los campos de datos andan en casi 100 relojes Garmin. O un Apple Watch con watchOS 10 y un iPhone con iOS 17. O un reloj con Wear OS 4 y un Android 9, en beta. Y sin reloj, la app del teléfono sirve sola.</p></details>
     <details><summary data-t="q7">¿Me sirve con Android?</summary><p data-h="a7">Con un Garmin, sí: las apps del reloj andan con Android o con iPhone, porque hablan con la app Garmin Connect del teléfono. Y la app de Android y la del reloj con Wear OS ya están en prueba, antes de salir en Google Play: <a href="testers.html#es">sumate a los primeros</a>.</p></details>
     <details><summary data-t="q8">¿Tengo que cambiar mi esfera?</summary><p data-t="a8">No. Pronóstico y Sesión se abren desde cualquier esfera, y el glance de Pronóstico te deja a la vista el mejor pico del día. Además, Pronóstico pone tres complicaciones de tu pico (las mejores horas, las olas y el viento de ahora) y Sesión dos (tu última sesión y tu mejor ventana) en Face It y en las esferas de Connect IQ que las aceptan; las esferas de Garmin no muestran complicaciones de otras apps.</p></details>
+    <details><summary data-t="q9">¿Hay un manual?</summary><p><span data-t="a9">Sí, en PDF: cómo se instala y cómo se usa cada app, en Garmin, el Apple Watch, el iPhone, Wear OS y Android. La primera página te dice por dónde empezar según lo que tengas.</span> <a class="pdf-link" href="manual/Surf-Dawn-manual.pdf" data-t="mBtn">El manual en PDF</a></p></details>
     <details><summary data-t="q3">¿Anda en mi playa?</summary><p data-t="a3">Hay más de 2.500 picos en 63 países, y la app elige sola el más cercano. Si falta el tuyo, avisanos desde Soporte y lo sumamos.</p></details>
     <details><summary data-t="q4">¿De dónde salen los datos?</summary><p data-t="a4">Las olas, el viento y el tiempo vienen de Open-Meteo, con los modelos de olas que mejor andan en cada zona; las mareas, de las tablas de cada puerto.</p></details>
     <details><summary data-t="q5">¿Necesito el teléfono en el agua?</summary><p data-t="a5">No. El reloj baja el pronóstico antes, y en el agua anda solo: Sesión graba con el GPS del reloj.</p></details>
@@ -943,7 +953,7 @@
       <a class="badge ciq" href="testers.html#es"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 18.5a9.5 9.5 0 0 1 19 0z"/><path d="M7.8 10.4 5.9 6.6M16.2 10.4l1.9-3.8"/><circle cx="8.6" cy="14.8" r="1.25" fill="currentColor" stroke="none"/><circle cx="15.4" cy="14.8" r="1.25" fill="currentColor" stroke="none"/></svg><span><small data-t="gpTop">Android y Wear OS</small><b>Beta</b></span></a>
     </div>
     <div class="actions links">
-      <a class="btn ghost small" id="pdf" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg><span data-t="mBtn">El manual en PDF</span></a>
+      <a class="btn ghost small pdf-link" href="manual/Surf-Dawn-manual.pdf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0M3 6v13M12 6v13M21 6v13"/></svg><span data-t="mBtn">El manual en PDF</span></a>
       <a class="btn ghost small" id="sup" href="support.html#es"><span data-t="sup">Soporte</span></a>
       <a class="btn ghost small ig" href="https://www.instagram.com/surfdawn.app/" rel="noopener" aria-label="Instagram @surfdawn.app"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z"/><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0-6 0"/><path d="M16.5 7.5v.01"/></svg><span>@surfdawn.app</span></a>
     </div>
@@ -959,7 +969,7 @@
 <script>
 const T = {
   en: {
-    lDay: "How it works", lFaq: "Questions", install: "Install for free", how: "See how it works",
+    lDay: "How it works", lFaq: "Questions", lMan: "Manual", install: "Install for free", how: "See how it works",
     lDoes: "What it does",
     platsL: "On your watch and on your phone:",
     ecoLead: "Each watch works on its own in the water, and with the phone it all comes together. The same forecast and the same Session on all of them, and free on every one.",
@@ -1060,18 +1070,19 @@ const T = {
     q2: "Which watch do I need?", a2: "A round 5-button Garmin (fēnix, epix, Forerunner and more) for the watch face, Forecast and Session; Rings and the data fields run on almost 100 Garmin watches. Or an Apple Watch with watchOS 10 and an iPhone with iOS 17. Or a Wear OS 4 watch and an Android 9 phone, in beta. And with no watch at all, the phone app works on its own.",
     q7: "Does it work with Android?", a7: 'With a Garmin, yes: the watch apps work with Android or with an iPhone, because they talk to the Garmin Connect app on your phone. And the Android app and the Wear OS one are already in testing, before they reach Google Play: <a href="testers.html#en">be one of the first</a>.',
     q8: "Do I have to change my watch face?", a8: "No. Forecast and Session open from any watch face, and Forecast's glance keeps the day's best spot in view. Forecast also puts three complications for your spot (the best hours, and the waves and wind right now) and Session two (your last session and your best window) on Face It and on the Connect IQ watch faces that take them; Garmin's own faces don't show other apps' complications.",
+    q9: "Is there a manual?", a9: "Yes, a PDF: how to install and use each app, on Garmin, the Apple Watch, the iPhone, Wear OS and Android. Its first page tells you where to start, depending on what you have.",
     q3: "Does it work at my beach?", a3: "There are more than 2,500 spots in 63 countries, and the app picks the nearest by itself. If yours is missing, tell us through Support and we'll add it.",
     q4: "Where does the data come from?", a4: "Waves, wind and weather come from Open-Meteo, with the wave models that work best in each area; tides, from each port's tables.",
     q5: "Do I need my phone in the water?", a5: "No. The watch downloads the forecast beforehand and works on its own in the water: Session records with the watch's GPS.",
     q6: "What about my data?", a6: "It stays on your watch, on your phone and in your own cloud (iCloud, or your Google account's backup). We have no servers and no accounts.", privL: "Privacy",
     iE: "Install", iH: "Your next session starts here.", iG: "Search for “Surf Dawn” in the Connect IQ app on your phone, or go straight there:", iA: "One app, with the Apple Watch one inside.",
     bH: "Free. No ads. No accounts.", bLead: "Made in Uruguay by surfers. If it helps you catch better waves, leave a review on the store and pass it on to whoever surfs with you.",
-    mBtn: "The manual (PDF)", sup: "Support", om: "Forecasts from Open-Meteo", andTm: "Android is a trademark of Google LLC.",
+    mBtn: "The manual (PDF)", mHow: "How to use it: the manual (PDF)", sup: "Support", om: "Forecasts from Open-Meteo", andTm: "Android is a trademark of Google LLC.",
     _pdf: "manual/Surf-Dawn-manual-en.pdf", _hash: "#en", _title: "Surf Dawn · Free surf forecast and wave counter",
     _desc: "Free surf forecast and wave counter: Surf Dawn works out the best hours at your spot and counts every wave you catch. On Garmin, Apple Watch, Wear OS, iPhone and Android."
   },
   pt: {
-    lDay: "Como funciona", lFaq: "Perguntas", install: "Instalar grátis", how: "Ver como funciona",
+    lDay: "Como funciona", lFaq: "Perguntas", lMan: "Manual", install: "Instalar grátis", how: "Ver como funciona",
     lDoes: "O que faz",
     platsL: "No seu relógio e no seu celular:",
     ecoLead: "Cada relógio funciona sozinho na água, e com o celular tudo se junta. A mesma previsão e o mesmo Sessão em todos, e grátis em todos.",
@@ -1172,13 +1183,14 @@ const T = {
     q2: "Que relógio eu preciso?", a2: "Um Garmin redondo de 5 botões (fēnix, epix, Forerunner e outros) para o mostrador, a Previsão e o Sessão; os Anéis e os campos de dados funcionam em quase 100 relógios Garmin. Ou um Apple Watch com watchOS 10 e um iPhone com iOS 17. Ou um relógio com Wear OS 4 e um Android 9, em beta. E sem relógio, o app do celular funciona sozinho.",
     q7: "Funciona com Android?", a7: 'Com um Garmin, sim: os apps do relógio funcionam com Android ou com iPhone, porque conversam com o app Garmin Connect do celular. E o app de Android e o do relógio com Wear OS já estão em teste, antes de chegar ao Google Play: <a href="testers.html#pt">seja um dos primeiros</a>.',
     q8: "Preciso trocar o meu mostrador?", a8: "Não. A Previsão e o Sessão abrem de qualquer mostrador, e o glance da Previsão deixa à vista o melhor pico do dia. Além disso, a Previsão põe três complicações do seu pico (as melhores horas, as ondas e o vento de agora) e o Sessão duas (a sua última sessão e a sua melhor janela) no Face It e nos mostradores da Connect IQ que as aceitam; os mostradores da Garmin não mostram complicações de outros apps.",
+    q9: "Tem um manual?", a9: "Sim, em PDF: como instalar e usar cada app, no Garmin, no Apple Watch, no iPhone, no Wear OS e no Android. A primeira página diz por onde começar, conforme o que você tem.",
     q3: "Funciona na minha praia?", a3: "São mais de 2.500 picos em 63 países, e o app escolhe sozinho o mais próximo. Se faltar o seu, avise pelo Suporte que a gente adiciona.",
     q4: "De onde vêm os dados?", a4: "As ondas, o vento e o tempo vêm do Open-Meteo, com os modelos de ondas que funcionam melhor em cada região; as marés, das tábuas de cada porto.",
     q5: "Preciso do celular na água?", a5: "Não. O relógio baixa a previsão antes, e na água funciona sozinho: o Sessão grava com o GPS do relógio.",
     q6: "E os meus dados?", a6: "Ficam no seu relógio, no seu celular e na sua própria nuvem (o iCloud ou o backup da sua conta do Google). Não temos servidores nem contas.", privL: "Privacidade",
     iE: "Instalar", iH: "A sua próxima sessão começa aqui.", iG: "Procure “Surf Dawn” no app Connect IQ do celular, ou entre direto:", iA: "Um só app, com o do Apple Watch dentro.",
     bH: "Grátis. Sem anúncios. Sem conta.", bLead: "Feito no Uruguai por surfistas. Se ele te ajuda a pegar ondas melhores, deixe uma avaliação na loja e passe para quem surfa com você.",
-    mBtn: "O manual em PDF", sup: "Suporte", om: "Previsões do Open-Meteo", andTm: "Android é uma marca da Google LLC.",
+    mBtn: "O manual em PDF", mHow: "Como se usa: o manual em PDF", sup: "Suporte", om: "Previsões do Open-Meteo", andTm: "Android é uma marca da Google LLC.",
     _pdf: "manual/Surf-Dawn-manual-pt.pdf", _hash: "#pt", _title: "Surf Dawn · Previsão de surf e contador de ondas grátis",
     _desc: "Previsão de surf e contador de ondas grátis: o Surf Dawn calcula as melhores horas do seu pico e conta cada onda que você pega. No Garmin, Apple Watch, Wear OS, iPhone e Android."
   }
@@ -1217,7 +1229,7 @@ function setLang(l) {
   document.querySelectorAll("[data-h]").forEach(e => { if (d[e.dataset.h]) e.innerHTML = d[e.dataset.h]; });
   document.querySelectorAll("[data-img]").forEach(e => { e.src = e.dataset.img.replace("{l}", l); });
   document.querySelectorAll('a[href^="testers.html"]').forEach(a => { a.setAttribute("href", "testers.html" + d._hash); });
-  document.getElementById("pdf").href = d._pdf;
+  document.querySelectorAll(".pdf-link").forEach(a => { a.href = d._pdf; });
   ["sup", "sup2"].forEach(id => { document.getElementById(id).href = "support.html" + d._hash; });
   ["priv", "priv2"].forEach(id => { document.getElementById(id).href = "privacy.html" + d._hash; });
   document.querySelector('meta[name="description"]').content = d._desc;
@@ -1275,7 +1287,7 @@ if (!still) {
   const stats = document.querySelector(".stats");
   counted = 0; drawNums();
   const count = () => { const t0 = performance.now(); const tick = t => { const k = Math.min(1, (t - t0) / 1400); counted = 1 - Math.pow(1 - k, 3); drawNums(); if (k < 1) requestAnimationFrame(tick); }; requestAnimationFrame(tick); };
-  const rise = document.querySelectorAll("main > section > .eyebrow, main > section > h2, main > section > .lead, .stats, .step, .hours, .light > div:last-child, .feature, .mini, .drill, .safe, .tiles.four .tile, .node, .flow, .faq details, .store, .memoria .card, .tip, .photoband p, .band .copy");
+  const rise = document.querySelectorAll("main > section > .eyebrow, main > section > h2, main > section > .lead, main > section > .actions, .stats, .step, .hours, .light > div:last-child, .feature, .mini, .drill, .safe, .tiles.four .tile, .node, .flow, .faq details, .store, .memoria .card, .tip, .photoband p, .band .copy");
   rise.forEach(e => e.classList.add("rv"));
   const io = new IntersectionObserver(seen => {
     let i = 0;
