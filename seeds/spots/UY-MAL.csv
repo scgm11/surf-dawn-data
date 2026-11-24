@@ -14,9 +14,9 @@ PUNTA DEL CHILENO,-34.9126,-55.015,B,V,local,nosnap facing=147,v1 (spots.json 20
 MAILHOS,-34.9585,-54.9455,B,K,osm:way/516420469,nosnap facing=304 swell=225,Punta del Este; muelle de Mailhos en la Mansa; abierto solo al O: anda con el swell del SO que da la vuelta (el usuario 2026-11-19: con el del SE no entra)
 LA VIRGEN,-34.9648,-54.9402,P,V,local,nosnap facing=139 wave=-35.0;-54.75,las piedras frente a la imagen de la Virgen de la Candelaria. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 190 m al SO en la rambla
 EL EMIR,-34.9629,-54.94,B,V,local,nosnap facing=118 wave=-35.0;-54.75,v1 (spots.json 2026-10)
-LOS DEDOS,-34.958,-54.9358,B,V,local,nosnap facing=135 wave=-35.0;-54.75,v1 (spots.json 2026-10)
-LA OLLA,-34.954,-54.929,P,V,local,nosnap facing=137 wave=-35.0;-54.75,v1 (spots.json 2026-10)
-ZORBA,-34.9496,-54.9244,B,V,local,nosnap facing=133 wave=-35.0;-54.75,la Brava entre las Paradas 7 y 8. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 480 m al SO en la Parada 6
+LOS DEDOS,-34.9600,-54.9377,B,V,local,nosnap facing=135 wave=-35.0;-54.75,"en el agua frente al final de la calle 31 (Emilio Inzaurraga), 240 m al SSO de la escultura de La Mano (el usuario 2026-11-23: «va al final de la calle 31»). La v1 de 2026-10 lo ponía 280 m al NE, pasando la mano"
+LA OLLA,-34.9555,-54.9302,P,V,local,nosnap facing=137 wave=-35.0;-54.75,"la punta de piedra de la Brava entre La Mano y Zorba (el usuario 2026-11-23: «la punta de piedra a la izquierda es La Olla»; se ve en el satélite). La v1 de 2026-10 lo ponía 200 m al NE en la arena, casi en Zorba"
+ZORBA,-34.9540,-54.9290,B,V,local,nosnap facing=133 wave=-35.0;-54.75,"donde la lista ponía LA OLLA, en la orilla de la Brava bajando de la calle Rosa de los Vientos (el usuario 2026-11-23: «zorba es al final de la calle rosa de los vientos» y «está donde antes estaba la olla»). La revisión del 2026-11-18 lo había llevado 640 m al NE, entre las Paradas 7 y 8; la v1 de 2026-10 estaba 160 m al NE de acá"
 LA PLAGE,-34.9436,-54.9142,B,V,local,nosnap facing=148 wave=-35.0;-54.75,frente al parador La Plage (Parada 12 de la Brava; medido en el satélite 2026-11-18: la v1 de 2026-10 lo ponía en la orilla 150 m al SO)
 PARADA 20,-34.9355,-54.9003,B,V,local,nosnap facing=145 wave=-35.0;-54.75,v1 (spots.json 2026-10)
 PARADA 30,-34.9246,-54.8801,B,V,local,nosnap facing=158 wave=-35.0;-54.75,la arena frente al parador de la Parada 30. Satélite 2026-11-18: la v1 de 2026-10 lo ponía 220 m al E
@@ -24,7 +24,7 @@ LA BOCA,-34.9195,-54.8664,B,V,local,nosnap facing=145,v1 (spots.json 2026-10)
 LA MARTINEZ,-34.9168,-54.8625,B,V,local,nosnap facing=150,La Barra; la playita entre la boca y La Posta del otro lado de la salida (el usuario). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 80 m mar adentro
 LA POSTA,-34.9167,-54.8586,B,V,local,nosnap facing=181,v1 (spots.json 2026-10)
 LA BOYA,-34.9187,-54.8543,P,V,local,nosnap facing=181 swell=137 checked,"izquierda en las piedras del lado oeste de Punta Montoya, en la marca del usuario (2026-11-20); mira al S y anda con el swell del SE que dobla la punta. La v1 de 2026-10 lo ponía 510 m al ENE en la playa de Montoya, mirando a 137"
-MONTOYA,-34.9136,-54.8439,B,V,local,nosnap facing=144,v1 (spots.json 2026-10)
+MONTOYA,-34.9161,-54.8473,B,V,local,nosnap facing=144,"el medio de la playa de Montoya, la ensenada entre Punta Montoya y las piedras del NE (el usuario 2026-11-23: «al medio de la ensenada que hay entre las piedras»). La v1 de 2026-10 lo ponía 420 m al NE, pasando esas piedras"
 MANANTIALES,-34.9088,-54.8237,B,V,local,nosnap facing=167,la playa frente al pueblo entre la punta (BIKINI) y Terrazas (el usuario). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 750 m al O en la arena seca
 TERRAZAS,-34.9079,-54.8222,B,K,osm:way/257089318,nosnap facing=173,Manantiales
 BIKINI,-34.9091,-54.8260,R,V,local,nosnap facing=164,la punta de piedras de Manantiales: la que sigue al E de Playa Bikini (el usuario; Apple la llama Manantiales). Satélite 2026-11-18: la v1 de 2026-10 lo ponía 600 m al ENE pasando las Terrazas
