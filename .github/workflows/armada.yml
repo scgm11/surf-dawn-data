@@ -5,6 +5,7 @@ name: Mareógrafos de la Armada
 # para validar la marea de las apps (issue scgm11/surf-dawn#72, R2 y R10). Desde el 16/11/2026 guarda
 # también el nivel que pronostica Open-Meteo en La Paloma y Montevideo (validation/armada/openmeteo),
 # para probar R2 con lo que vería la app días antes (tools/marea_meteo.py --dia N).
+# Desde el 25/11/2026 rehace también la referencia del nivel de cada puerto (nivel/<puerto>.json, tools/nivel.py).
 on:
   workflow_dispatch:
   schedule:
@@ -27,11 +28,15 @@ jobs:
           python-version: "3.12"
       - name: Bajar las 48 h
         run: python3 tools/armada.py
+      - name: La referencia del nivel de cada puerto
+        # nivel/<puerto>.json, lo que las apps restan al nivel de Open-Meteo (tools/nivel.py, scgm11/surf-dawn#84);
+        # si falla, queda la de antes
+        run: python3 tools/nivel.py || echo "sin la referencia nueva"
       - name: Publicar
         run: |
           git config user.name "surf-dawn-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add validation/armada
+          git add validation/armada nivel
           if git diff --cached --quiet; then echo "sin cambios"; exit 0; fi
           git commit -m "Mareógrafos de la Armada: $(date -u +%Y-%m-%d) [skip ci]"
           for i in 1 2 3 4 5; do

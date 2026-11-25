@@ -189,6 +189,21 @@ menos de 60 horas).
 {"AR-MDP":[["mdp",-38.04,-57.53,80,0]]}
 ```
 
+## El nivel del mar: `nivel/`
+
+### `nivel/<clave>.json` — lo normal del nivel de Open-Meteo en un puerto (apps)
+
+```json
+{"port":"punta-del-este","lat":-34.9617,"lon":-54.9517,"ref":0.05,"days":92,"at":"2026-11-25"}
+```
+
+`ref` es la media, en metros, del `sea_level_height_msl` de Open-Meteo en el puerto en los últimos `days` días
+(`tools/nivel.py`, cada día con `armada.yml`; solo se reescribe cuando cambia al centímetro). Las apps le restan
+`ref` al promedio de 25 h del nivel que ya piden: lo que queda es el agua de más o de menos que traen el viento
+y la presión, y lo suman a la tabla del puerto (scgm11/surf-dawn#84). Solo hay archivo en los puertos donde se
+midió contra mareógrafos (La Paloma, Montevideo y Punta del Este): un puerto sin archivo (404) queda con la
+tabla sola.
+
 ## Validación: `validation/`
 
 ### `validation/<REGIÓN>.json`
