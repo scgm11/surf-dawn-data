@@ -34,6 +34,8 @@ from armada import MARINE  # noqa: E402
 OUT = os.path.join(ROOT, "nivel")
 # puertos sin referencia: Open-Meteo no sigue a su mareógrafo, o un pico suyo se aparta de la media del puerto
 SIN = ("ticon-55de77", "ticon-d44c01", "ticon-041ef0", "jma-zf", "ticon-de0584", "noaa-1617433")
+# puertos cuya celda de Open-Meteo es tierra: el punto de mar más cercano
+SEA = {"ticon-701a8e": (57.95, -5.40)}
 BATCH = 50                                  # puertos por pedido a Open-Meteo
 DAYS = 92                                   # lo más que da Open-Meteo para atrás, y lo medido en marea_meteo.py
 MIN_HOURS = 24 * 60                         # con menos horas que estas no se publica
@@ -42,9 +44,11 @@ AGENT = {"User-Agent": "surf-dawn-data (nivel del mar)"}
 
 
 def points():
-    """{puerto: (lat, lon)} de tide/ports.json (los meses de las tablas de afuera de Uruguay no lo dicen)."""
+    """{puerto: (lat, lon)} de tide/ports.json (los meses de las tablas de afuera de Uruguay no lo dicen), o de SEA."""
     with open(os.path.join(ROOT, "tide", "ports.json"), encoding="utf-8") as f:
-        return {p["key"]: (p["lat"], p["lon"]) for p in json.load(f)}
+        out = {p["key"]: (p["lat"], p["lon"]) for p in json.load(f)}
+    out.update(SEA)
+    return out
 
 
 def ports():
