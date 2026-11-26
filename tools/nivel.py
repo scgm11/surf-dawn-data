@@ -8,11 +8,12 @@ Uruguay, más que la marea misma) sale del nivel de Open-Meteo: su promedio de 2
 menos lo normal ahí. Lo normal es esta referencia: la media del nivel de Open-Meteo en el puerto en los
 últimos 92 días. Las apps no pueden pedir 92 días cada vez (el reloj no tiene dónde), así que se publica.
 
-Solo en los puertos donde se midió contra mareógrafos (tools/marea_meteo.py, validation/armada): La Paloma
-y Montevideo, y Punta del Este, que está entre los dos; y los de Brasil. Un puerto sin su archivo queda con la
-tabla sola.
+En los puertos de tide/regions.json, menos los de SIN. Un puerto sin su archivo queda con la tabla sola; el
+archivo de un puerto que ya no está se borra.
 
-La media cambia centímetros por mes: una corrida que falla deja la de antes, que sigue sirviendo.
+La media cambia centímetros por mes: una corrida que falla deja la de antes, que sigue sirviendo. A Open-Meteo
+se le pide de a BATCH puertos, con una pausa entre pedidos (un pedido de 92 días pesa unas 7 llamadas por
+puerto, y el tope es 600 por minuto).
 
     python3 tools/nivel.py            baja el nivel de cada puerto y reescribe nivel/<puerto>.json si cambió
 """
@@ -21,6 +22,7 @@ import json
 import os
 import statistics as st
 import sys
+import time
 import urllib.parse
 import urllib.request
 
@@ -30,16 +32,13 @@ sys.path.insert(0, HERE)
 from armada import MARINE  # noqa: E402
 
 OUT = os.path.join(ROOT, "nivel")
-BRASIL = (
-    "got-0a9164", "got-1426bf", "got-1afd1e", "got-421e4e", "got-442fe7", "got-45461c", "got-47f025",
-    "got-4fc66e", "got-59c9d7", "got-a0b2f5", "got-a6dd41", "got-a8e5b2", "got-aa96f4", "got-af45e1",
-    "got-bc9748", "got-c9dd3b", "got-d43a78", "got-d8f761", "got-d9ce28", "got-f2f875", "got-f89309",
-    "imbituba", "ticon-2559e1", "ticon-2b1454", "ticon-4c1497", "ticon-752b4c", "ticon-757122", "ticon-cf2b1c",
-    "ticon-ee2dcc", "ticon-f5b09a",)
-PORTS = ("la-paloma", "montevideo", "punta-del-este") + BRASIL
+# puertos sin referencia: Open-Meteo no sigue a su mareógrafo, o un pico suyo se aparta de la media del puerto
+SIN = ("ticon-55de77", "ticon-d44c01", "ticon-041ef0", "jma-zf", "ticon-de0584", "noaa-1617433")
 BATCH = 50                                  # puertos por pedido a Open-Meteo
 DAYS = 92                                   # lo más que da Open-Meteo para atrás, y lo medido en marea_meteo.py
 MIN_HOURS = 24 * 60                         # con menos horas que estas no se publica
+PER_MINUTE = 450                            # llamadas de Open-Meteo por minuto, con margen
+AGENT = {"User-Agent": "surf-dawn-data (nivel del mar)"}
 
 
 def points():
@@ -48,21 +47,47 @@ def points():
         return {p["key"]: (p["lat"], p["lon"]) for p in json.load(f)}
 
 
-def fetch(ports):
-    """{puerto: [nivel en m de cada hora de los últimos DAYS días hasta ahora]}, BATCH puertos por pedido."""
+def ports():
+    """Los puertos de las regiones (tide/regions.json), menos SIN."""
+    with open(os.path.join(ROOT, "tide", "regions.json"), encoding="utf-8") as f:
+        used = {p[0] for ps in json.load(f).values() for p in ps}
+    return sorted(used - set(SIN))
+
+
+def ask(url):
+    """El JSON de url, con tres reintentos (Open-Meteo contesta 429 si se pasa del minuto o la hora)."""
+    err = None
+    for wait in (0, 60, 120, 240):
+        time.sleep(wait)
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=AGENT), timeout=120) as r:
+                return json.load(r)
+        except Exception as e:                       # noqa: BLE001
+            err = e
+    raise err
+
+
+def fetch(keys):
+    """{puerto: [nivel en m de cada hora de los últimos DAYS días hasta ahora]}, BATCH puertos por pedido; los de
+    un pedido que falla no están (queda su referencia de antes)."""
     now = dt.datetime.now(dt.timezone.utc).timestamp()
     where = points()
+    pause = 60 * BATCH * (DAYS + 1) / 14 / PER_MINUTE
     out = {}
-    for i in range(0, len(ports), BATCH):
-        part = ports[i:i + BATCH]
+    for i in range(0, len(keys), BATCH):
+        if i:
+            time.sleep(pause)
+        part = keys[i:i + BATCH]
         pts = [where[p] for p in part]
         q = urllib.parse.urlencode({
             "latitude": ",".join("%.4f" % la for la, _ in pts), "longitude": ",".join("%.4f" % lo for _, lo in pts),
             "hourly": "sea_level_height_msl", "past_days": DAYS, "forecast_days": 1,
             "timezone": "GMT", "timeformat": "unixtime"}, safe=",")
-        req = urllib.request.Request(MARINE + "?" + q, headers={"User-Agent": "surf-dawn-data (nivel del mar)"})
-        with urllib.request.urlopen(req, timeout=90) as r:
-            res = json.load(r)
+        try:
+            res = ask(MARINE + "?" + q)
+        except Exception as e:                       # noqa: BLE001
+            print("%s a %s: Open-Meteo no contestó (%s): quedan las de antes" % (part[0], part[-1], e))
+            continue
         res = res if isinstance(res, list) else [res]
         for port, block in zip(part, res):
             h = block.get("hourly") or {}
@@ -80,7 +105,12 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     today = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     where = points()
-    for port, levels in fetch(PORTS).items():
+    keys = ports()
+    for f in sorted(os.listdir(OUT)):
+        if f.endswith(".json") and f[:-5] not in keys:
+            os.remove(os.path.join(OUT, f))
+            print("%s: ya no tiene referencia" % f[:-5])
+    for port, levels in fetch(keys).items():
         ref = reference(levels)
         if ref is None:
             print("%s: %d horas, no alcanza: queda la de antes" % (port, len(levels)))
