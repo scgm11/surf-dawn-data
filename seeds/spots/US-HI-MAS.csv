@@ -5,6 +5,6 @@ PUAMANA,20.8550,-156.6710,R,L,local,,
 LAUNIUPOKO,20.8422,-156.6534,R,V,local,nosnap checked,satélite 2026-11
 OLOWALU,20.8101,-156.6243,R,V,local,nosnap checked,satélite 2026-11
 MAALAEA,20.7906,-156.5098,R,V,local,nosnap checked facing=200,Freight Trains; derecha rapida; satélite 2026-11
-KALAMA PARK,20.7350,-156.4530,R,L,local,,"Kihei; posición dudosa (revisado 20/11, sin fuente)"
-COVE PARK,20.7277,-156.4514,R,V,local,nosnap checked,Kihei; satélite 2026-11
+KALAMA PARK,20.7350,-156.4530,R,L,local,wave=20.703;-156.4545,"Kihei; posición dudosa (revisado 20/11, sin fuente)"
+COVE PARK,20.7277,-156.4514,R,V,local,nosnap checked wave=20.703;-156.4545,Kihei; satélite 2026-11
 BIG BEACH,20.6300,-156.4490,B,K,local,,Makena; shorebreak
