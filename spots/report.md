@@ -131,7 +131,7 @@
 | US-HI-OAN | 21 | 1209 | ncep_gfswave016 | gfs_seamless | 1 | 138 m | 0 |
 | US-HI-OAS | 23 | 1525 | ecmwf_wam | gfs_seamless | 3 | 294 m | 3 |
 | US-HI-MAU | 14 | 968 | ecmwf_wam | gfs_seamless | 2 | 1293 m | 0 |
-| US-HI-MAS | 9 | 730 | ecmwf_wam | gfs_seamless | 3 | 340 m | 1 |
+| US-HI-MAS | 9 | 764 | ecmwf_wam | gfs_seamless | 3 | 340 m | 3 |
 | US-HI-KAU | 21 | 1271 | ecmwf_wam | gfs_seamless | 2 | 242 m | 1 |
 | US-HI-BIG | 15 | 1068 | ecmwf_wam | gfs_seamless | 3 | 165 m | 0 |
 | CA-BC-VI | 14 | 1021 | ecmwf_wam | gfs_seamless | 3 | 181 m | 0 |
