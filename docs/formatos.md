@@ -201,8 +201,8 @@ menos de 60 horas).
 (`tools/nivel.py`, cada día con `armada.yml`; solo se reescribe cuando cambia al centímetro). Las apps le restan
 `ref` al promedio de 25 h del nivel que ya piden: lo que queda es el agua de más o de menos que traen el viento
 y la presión, y lo suman a la tabla del puerto (scgm11/surf-dawn#84). Solo hay archivo en los puertos donde se
-midió contra mareógrafos (La Paloma, Montevideo y Punta del Este): un puerto sin archivo (404) queda con la
-tabla sola.
+midió contra mareógrafos (los de Uruguay y los de Brasil, `PORTS` en `tools/nivel.py`): un puerto sin archivo
+(404) queda con la tabla sola.
 
 ## Validación: `validation/`
 
