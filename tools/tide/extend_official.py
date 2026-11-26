@@ -7,7 +7,9 @@ tables come out late in the year, and without the next one the field Marea's las
 December came out short (84 h, so it was asked for again every 15 min from the 30th) and January
 had only the watch's 30 harmonics without nodal corrections. The official tables of the next year
 replace these months when they are run (those scripts); until then these are written again on each
-run, so a fix to this year's table reaches them. The other sources (build_tides.py) already bring
+run, so a fix to this year's table reaches them. While this year's official table has not come out
+(this year's months are extended themselves), the next one comes from the last official year, so
+there is always a next year even if a table never comes out. The other sources (build_tides.py) already bring
 the next year. tools/tide/chunks.py runs after this (.github/workflows/tides.yml).
 
     python3 tools/tide/extend_official.py [--year 2026]
@@ -29,6 +31,7 @@ from lib import tide as T  # noqa: E402
 ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))
 TIDE = os.path.join(ROOT, "tide")
 KEEP = ("port", "name", "lat", "lon", "utc_offset", "unit", "datum")
+BACK = 3                                     # años para atrás que se busca uno oficial
 
 
 def month_epochs(y, m, off):
@@ -38,25 +41,25 @@ def month_epochs(y, m, off):
 
 
 def extend(key, year):
-    """Writes key's months of year + 1 from its 12 of year; (rms of the analysis, months) or None."""
+    """Writes key's months of year + 1 from its last official year (year itself, or an earlier one while the
+    official table of year has not come out); (rms of the analysis, months, that year) or None."""
     d = os.path.join(TIDE, key)
     idx_path = os.path.join(d, "index.json")
     idx = json.load(open(idx_path, encoding="utf-8"))
     have = idx.get("months", [])
-    mine = ["%04d-%02d" % (year, m) for m in range(1, 13)]
     nxt = ["%04d-%02d" % (year + 1, m) for m in range(1, 13)]
-    if not all(k in have for k in mine):
-        return None
     if nxt[0] in have and not json.load(open(os.path.join(d, nxt[0] + ".json"), encoding="utf-8")).get("ext"):
         return None                          # the next year's official table is out
-    first = json.load(open(os.path.join(d, mine[-1] + ".json"), encoding="utf-8"))
-    if first.get("ext"):
+    src = next((y for y in range(year, year - BACK - 1, -1) if T.official(d, y, have)), None)
+    if src is None:
         return None                          # only from an official year, not from one extended
+    mine = ["%04d-%02d" % (src, m) for m in range(1, 13)]
+    first = json.load(open(os.path.join(d, mine[-1] + ".json"), encoding="utf-8"))
     off = int(first.get("utc_offset", 0))
     t, y = [], []
     for m in range(1, 13):
         doc = json.load(open(os.path.join(d, mine[m - 1] + ".json"), encoding="utf-8"))
-        t += month_epochs(year, m, off)
+        t += month_epochs(src, m, off)
         y += [np.nan if v is None else float(v) for v in doc["h"]]
     tn = []
     for m in range(1, 13):
@@ -64,7 +67,7 @@ def extend(key, year):
     filled, n, rms = H.fill(np.array(t + tn, dtype=float), np.array(y + [np.nan] * len(tn)))
     ahead = filled[len(t):]
     source = "Extendido con un análisis armónico de %d (tools/tide/extend_official.py) hasta que salga la tabla oficial de %d; %d: %s" % (
-        year, year + 1, year, first.get("source", ""))
+        src, year + 1, src, first.get("source", ""))
     i = 0
     for m in range(1, 13):
         days = calendar.monthrange(year + 1, m)[1]
@@ -75,7 +78,7 @@ def extend(key, year):
         T.write_json(os.path.join(d, nxt[m - 1] + ".json"), doc)
     idx["months"] = have + [k for k in nxt if k not in have]
     T.write_json(idx_path, idx)
-    return rms, 12
+    return rms, 12, src
 
 
 def main():
@@ -89,7 +92,7 @@ def main():
         r = extend(key, a.year)
         if r:
             done += 1
-            print("%s: %d meses de %d, análisis de %d con rms %.1f cm" % (key, r[1], a.year + 1, a.year, r[0]))
+            print("%s: %d meses de %d, análisis de %d con rms %.1f cm" % (key, r[1], a.year + 1, r[2], r[0]))
     print("puertos extendidos: %d" % done)
 
 

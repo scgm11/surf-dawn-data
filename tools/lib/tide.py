@@ -101,6 +101,22 @@ def half_cosine(ext, hours):
     return out, ext
 
 
+def official(folder, year, months=None):
+    """True when the port's folder (tide/<puerto>) has the 12 months of year and none of them is extended
+    ("ext": tools/tide/extend_official.py, until the official table comes out). months: index.json's list."""
+    if months is None:
+        with open(os.path.join(folder, "index.json"), encoding="utf-8") as f:
+            months = json.load(f).get("months", [])
+    for m in range(1, 13):
+        k = "%04d-%02d" % (year, m)
+        if k not in months:
+            return False
+        with open(os.path.join(folder, k + ".json"), encoding="utf-8") as f:
+            if json.load(f).get("ext"):
+                return False
+    return True
+
+
 def days_in(year, month):
     return calendar.monthrange(year, month)[1]
 

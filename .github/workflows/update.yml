@@ -34,6 +34,9 @@ jobs:
       - name: Brasil, Imbituba (DHN vía Epagri/CIRAM; el PDF anual se renueva solo)
         if: always()
         run: python3 tools/ciram_tide.py --port imbituba
+      - name: Armónicos de respaldo de las tablas oficiales, cuando su año ya está entero
+        if: always()
+        run: python3 tools/fit_tide.py --oficiales
       - name: Tramos para el campo Marea
         if: always()
         run: python3 tools/tide/chunks.py
