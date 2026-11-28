@@ -160,7 +160,7 @@
 | NZ-TAR | 7 | 549 | ncep_gfswave025 | gfs_seamless | 2 | 154 m | 0 |
 | NZ-BOP | 11 | 894 | ncep_gfswave025 | gfs_seamless | 3 | 529 m | 4 |
 | NZ-GIS | 13 | 910 | ncep_gfswave025 | gfs_seamless | 1 | 143 m | 11 |
-| NZ-WEL | 13 | 914 | ncep_gfswave025 | gfs_seamless | 3 | 150 m | 2 |
+| NZ-WEL | 13 | 938 | ncep_gfswave025 | gfs_seamless | 3 | 150 m | 4 |
 | NZ-KAI | 9 | 800 | ncep_gfswave025 | gfs_seamless | 3 | 332 m | 6 |
 | NZ-OTA | 13 | 979 | ncep_gfswave025 | gfs_seamless | 3 | 213 m | 1 |
 | NZ-WC | 4 | 409 | ncep_gfswave025 | gfs_seamless | 2 | 536 m | 0 |
@@ -482,7 +482,7 @@
 | NZ-GIS | PINES | V | 52 m | 131° | -38.75, 178.25 |
 | NZ-GIS | WHALES | V | 25 m | 155° | -38.75, 178.25 |
 | NZ-GIS | THE ISLAND | V | 361 m | 97° | -38.75, 178.25 |
-| NZ-WEL | LYALL BAY | K | 87 m | 146° | — |
+| NZ-WEL | LYALL BAY | K | 87 m | 146° | -41.50, 174.70 |
 | NZ-KAI | MANGAMAUNU | V | 82 m | 58° | -42.25, 174.00 |
 | NZ-KAI | MEATWORKS | V | 194 m | 120° | — |
 | NZ-OTA | KARITANE | V | 107 m | 42° | — |
