@@ -1,6 +1,6 @@
 name,lat,lon,type,conf,src,flags,note
-LYALL BAY,-41.3305,174.7960,B,K,local,top,
-HOUGHTON BAY,-41.3422,174.7850,B,V,local,nosnap checked,satélite 2026-11
+LYALL BAY,-41.3305,174.7960,B,K,local,top wave=-41.5;174.7,
+HOUGHTON BAY,-41.3422,174.7850,B,V,local,nosnap checked wave=-41.5;174.7,satélite 2026-11
 ISLAND BAY,-41.3501,174.7746,R,V,local,nosnap checked facing=140,"satélite 2026-11; Island Bay Rights (derecha, lado este de Taputeranga Island) e Island Bay Lefts (izquierda, lado suroeste, desde 2 m), según GWRC/eCoast 2015"
 OWHIRO BAY,-41.3470,174.7520,B,L,local,,"posición dudosa (revisado 20/11, sin fuente)"
 MAKARA BEACH,-41.2200,174.7130,B,L,local,,
